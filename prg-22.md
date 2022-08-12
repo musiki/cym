@@ -11,6 +11,7 @@ aula=Taller de tecnología musical
 horario=Martes de 18:00 a 22:00
 ---
 
+![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
 # Descripción
 <cite>
 “¿Que es el arte? como una declaración de amor: la conciencia de nuestra dependencia mutua los unos a los otros. Una confesión. Un acto inconsciente que, no obstante, refleja el verdadero significado de la vida - amor y sacrificio.”

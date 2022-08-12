@@ -2,6 +2,7 @@
 person: Hito Steyerl
 year: 2014
 publisher: Caja Negra
+status: reading
 tags: libros,capitalismo, farocki, imagen, crítica cultural
 cover: '![](https://cajanegraeditora.com.ar/wp-content/uploads/2018/12/tapa_HITO_alta.jpg)'
 ---
@@ -12,11 +13,3 @@ En la línea de su principal mentor, Harun Farocki, Steyerl se enfrenta al flujo
 
 La obra de Hito Steyerl, parafraseando a Franco “Bifo” Berardi, funciona como una cartografía de la producción mediática en tiempos del semiocapitalismo, que describe con precisión cómo las imágenes son generadas, transportadas y consumidas hoy. Pero también como una cartografía de la sensibilidad emergente a partir de la cual imaginar hacia dónde debemos dirigirnos si queremos descubrir una nueva forma de actividad que ocupe el lugar del arte y la política.
 
-![](https://cajanegraeditora.com.ar/wp-content/uploads/2018/12/36.jpg)
-
--   [CONTACTO](https://cajanegraeditora.com.ar/libros/los-condenados-de-la-pantalla-0/#)
--   [NEWSLETTER](https://cajanegraeditora.com.ar/libros/los-condenados-de-la-pantalla-0/#newsletter-modal)
--   [IG](https://www.instagram.com/cajanegraeditora/)
--   [FB](https://es-la.facebook.com/cajanegraeditora/)
--   [TW](https://twitter.com/cajanegraedit)
--   [](https://open.spotify.com/user/qepz0am9ezkfy9lfmh5xp1mlj?si=e9e5004ac17146d1)
