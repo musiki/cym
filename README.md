@@ -7,7 +7,8 @@ este es el repositorio de la cátedra de ciencia y música de la licenciatura en
 # Recursos
 
 ## representación
-###  ## shaders
+
+### shaders
 - https://www.shadertoy.com/view/XdcGW2
 
 ## machine learning
