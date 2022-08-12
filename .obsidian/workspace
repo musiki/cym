@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "305c92baa1d14e54",
+        "id": "d784ee84234f43d0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "web/recursos.md",
-            "mode": "preview",
+            "file": "web/html.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "web/recursos.md",
+                "file": "web/html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "web/recursos.md",
+                "file": "web/html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/recursos.md"
+                "file": "web/html.md"
               }
             }
           }
@@ -128,17 +128,17 @@
     "direction": "horizontal",
     "width": 141.5
   },
-  "active": "305c92baa1d14e54",
+  "active": "d784ee84234f43d0",
   "lastOpenFiles": [
-    "web/html.md",
-    "web/recursos.md",
-    "web/jasvascript/01-fundamentals.md",
-    "manual de instrucciones.md",
-    "README.md",
-    "topoi/sistemas de universos.md",
-    "Untitled.md",
+    "música/partitura.md",
     "topoi/física.md",
-    "web/cloud ides.md",
-    "música/partitura.md"
+    "manual de instrucciones.md",
+    "Untitled.md",
+    "README.md",
+    "Untitled 1.md",
+    "web/recursos.md",
+    "web/html.md",
+    "web/jasvascript/01-fundamentals.md",
+    "topoi/sistemas de universos.md"
   ]
 }

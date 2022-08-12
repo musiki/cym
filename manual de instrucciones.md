@@ -42,3 +42,25 @@ C -->|Two| E[iPhone]
 
 C -->|Three| F[fa:fa-car Car]
 
+```
+
+
+# accesos rápidos en obsidian
+
+```javascript
+
+NAVEGACION
+
+cP   abrir paleta de comandos
+cO   quick switch
+cE   edit / preview mode
+
+PANELES
+cN   crear un nuevo panel
+cW   cerrar panel activo
+```
+
+- https://santiyounger.com/obsidian-shortcuts
+
+- https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125
+
