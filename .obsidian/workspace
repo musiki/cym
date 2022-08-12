@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "4f8b45b6da8fd0ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "305c92baa1d14e54",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "44d6a8c886fe4140",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a76311d69a0e1ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "6cc6c8dea85ac2cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "555b7d6a97b69d1d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "6bacf6338ce5ed34",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83f19c3adc82e373",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "right": {
+    "id": "a579e552f75167f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "998bdb50970edc84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "923ee64299ff8d90",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "acdfc19eeee6c8fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e56d1965eb58ed4e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d2b05bb5db74eae7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 141.5
+  },
+  "active": "44d6a8c886fe4140",
+  "lastOpenFiles": [
+    "topoi/sistemas de universos.md",
+    "Untitled.md",
+    "web/html.md",
+    "manual de instrucciones.md",
+    "topoi/física.md",
+    "web/cloud ides.md",
+    "música/partitura.md"
+  ]
+}
