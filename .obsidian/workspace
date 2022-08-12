@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d784ee84234f43d0",
+        "id": "e9772666b5a9b442",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "personas/Yotam.md",
             "mode": "preview",
             "backlinks": true,
             "source": true
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 127
+    "width": 207.00130462646484
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "personas/Yotam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "personas/Yotam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "personas/Yotam.md"
               }
             }
           }
@@ -127,19 +127,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 137.5
+    "width": 137.5,
+    "collapsed": true
   },
-  "active": "d784ee84234f43d0",
+  "active": "e9772666b5a9b442",
   "lastOpenFiles": [
+    "personas/personas.md",
+    "personas/Yotam.md",
+    "referencias/referencias.md",
+    "Hito Steyerl.md",
+    "referencias/los condenados de la pantalla.md",
+    "README.md",
+    "obras/tone.js.md",
     "web/jasvascript/01-fundamentals.md",
     "web/jasvascript/playground.md",
-    "README.md",
-    "prg-22.md",
-    "manual de instrucciones.md",
-    "web/cloud ides.md",
-    "web/html.md",
-    "música/partitura.md",
-    "topoi/física.md",
-    "Untitled 1.md"
+    "prg-22.md"
   ]
 }
