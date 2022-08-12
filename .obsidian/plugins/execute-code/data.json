@@ -1,0 +1,15 @@
+{
+  "timeout": 10000,
+  "nodePath": "/usr/local/bin/node",
+  "nodeArgs": "",
+  "pythonPath": "python",
+  "pythonArgs": "",
+  "pythonEmbedPlots": true,
+  "shellPath": "bash",
+  "shellArgs": "",
+  "shellFileExtension": "sh",
+  "groovyPath": "groovy",
+  "groovyArgs": "",
+  "groovyFileExtension": "groovy",
+  "maxPrologAnswers": 15
+}

@@ -1,7 +1,7 @@
 ### repl.it
 #### comandos emmet.
 
-```python
+```javascript
 
  ! #incluir una plantilla básica de html
 
