@@ -17,7 +17,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "web/jasvascript/01-fundamentals.md",
             "mode": "source",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "web/jasvascript/01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "web/jasvascript/01-fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "web/jasvascript/01-fundamentals.md"
               }
             }
           }
@@ -138,10 +138,11 @@
   },
   "active": "44d6a8c886fe4140",
   "lastOpenFiles": [
+    "manual de instrucciones.md",
+    "README.md",
     "topoi/sistemas de universos.md",
     "Untitled.md",
     "web/html.md",
-    "manual de instrucciones.md",
     "topoi/física.md",
     "web/cloud ides.md",
     "música/partitura.md"
