@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "referencias/los condenados de la pantalla.md",
+            "file": "README.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.00130462646484
+    "width": 187.0008087158203
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "referencias/los condenados de la pantalla.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "referencias/los condenados de la pantalla.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "referencias/los condenados de la pantalla.md"
+                "file": "README.md"
               }
             }
           }
@@ -132,15 +132,15 @@
   },
   "active": "8d56c706cd1a328b",
   "lastOpenFiles": [
-    "db/referencias.md",
-    "web/jasvascript/01-fundamentals.md",
-    "db/personas.md",
-    "personas/Hito Steyerl.md",
     "prg-22.md",
     "README.md",
+    "música/partitura.md",
+    "db/personas.md",
+    "db/referencias.md",
+    "referencias/los condenados de la pantalla.md",
+    "web/jasvascript/01-fundamentals.md",
+    "personas/Hito Steyerl.md",
     "web/cloud ides.md",
-    "manual de instrucciones.md",
-    "www.sciencedirect.com.md",
-    "topoi/física.md"
+    "manual de instrucciones.md"
   ]
 }
