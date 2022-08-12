@@ -7,18 +7,10 @@
         "id": "305c92baa1d14e54",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "44d6a8c886fe4140",
-        "type": "leaf",
-        "state": {
           "type": "markdown",
           "state": {
-            "file": "web/jasvascript/01-fundamentals.md",
-            "mode": "source",
+            "file": "web/recursos.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -69,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 183.5
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -85,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "web/jasvascript/01-fundamentals.md",
+                "file": "web/recursos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "web/jasvascript/01-fundamentals.md",
+                "file": "web/recursos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/jasvascript/01-fundamentals.md"
+                "file": "web/recursos.md"
               }
             }
           }
@@ -136,13 +128,15 @@
     "direction": "horizontal",
     "width": 141.5
   },
-  "active": "44d6a8c886fe4140",
+  "active": "305c92baa1d14e54",
   "lastOpenFiles": [
+    "web/html.md",
+    "web/recursos.md",
+    "web/jasvascript/01-fundamentals.md",
     "manual de instrucciones.md",
     "README.md",
     "topoi/sistemas de universos.md",
     "Untitled.md",
-    "web/html.md",
     "topoi/física.md",
     "web/cloud ides.md",
     "música/partitura.md"
