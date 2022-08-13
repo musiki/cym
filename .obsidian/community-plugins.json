@@ -29,5 +29,9 @@
   "obsidian-paste-png-to-jpeg",
   "obsidian-jupyter",
   "code-block-copy",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "calendar",
+  "recent-files-obsidian",
+  "simple-embeds",
+  "obsidian-style-settings"
 ]
