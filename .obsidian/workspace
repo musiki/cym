@@ -7,8 +7,13 @@
         "id": "e99289386a6643dc",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/topoi/t01-sistemas de universos.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
         }
       }
     ],
@@ -32,7 +37,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -74,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 190
+    "width": 207,
+    "collapsed": true
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -91,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-ref/topoi/t01-sistemas de universos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03-ref/topoi/t01-sistemas de universos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "03-ref/topoi/t01-sistemas de universos.md"
+              }
             }
           }
         ],
@@ -151,19 +161,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 224.5,
+    "collapsed": true
   },
-  "active": "e56d1965eb58ed4e",
+  "active": "e99289386a6643dc",
   "lastOpenFiles": [
-    "03-ref/db/topoi.md",
-    "03-ref/db/referencias.md",
-    "03-ref/topoi/t00-método científico.md",
-    "03-ref/topoi/t09-física.md",
-    "03-ref/topoi/t01-sistemas de universos.md",
-    "01-proj/tp/2022-08-30.md",
-    "02-mat/tone.js.md",
+    "03-ref/manual de instrucciones.md",
+    "03-ref/class/c-cym01-presentación.md",
     "README.md",
-    "03-ref/bibliografía/los condenados de la pantalla.md",
-    "03-ref/class/c-cym01-presentación.md"
+    "03-ref/db/obras.md",
+    "03-ref/topoi/t01-sistemas de universos.md",
+    "image/gallery.md",
+    "03-ref/db/topoi.md",
+    "03-ref/bibliografía/notes/@XuanThuan1988.md",
+    "00-in/prg-22.md",
+    "00-in/meta-aprendizaje.md"
   ]
 }

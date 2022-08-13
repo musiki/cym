@@ -4,7 +4,7 @@ unit: 0
 ---
 
 # modelos de universos [14^9]
-
+>[!abstract] > en este topos estudiaremos las cosmogonias históricas para así reflexionar sobre las nociones de verdad y realidad en nuestra era.
 ---
 
 >Sé de cielos que estallan en rayos, sé de trombas, 
@@ -270,6 +270,7 @@ Orfismo: transmigración de las almas. El pensamiento órfico cree en la vida fu
 
 # referencias
 
+[[@XuanThuan1988]]
 
 
 

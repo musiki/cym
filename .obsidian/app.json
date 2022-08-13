@@ -12,5 +12,6 @@
   "foldHeading": true,
   "alwaysUpdateLinks": true,
   "newFileLocation": "root",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "image"
 }
