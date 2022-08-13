@@ -44,22 +44,26 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 - La aplicación de matrices científicas y filosóficas en el pensamiento que puede ser transferido o transformado en axiomas.
 - La aplicación de los conceptos en las artes musicales y del tiempo, la estética y el pensamiento musical en general, intentando transferir los diferentes paradigmas a aplicaciones musicales concretas. 
 
-## Módulos de conocimiento, dependiendo la tipología del trabajo final
-*Trabajos de investigación
-    *Metodología de la investigación
-    *Formato de presentación de artículos académicos
-    *mediawiki y musiki
-    *Agenda de congresos
-*Obra Musical	
-    *De los sistemas de hipótesis a los sistemas discretos. 
-    *Aplicación de herramientas algorítmicas y generativas.
-*Instrumento Resonante
-    *Teoría y práctica específica
-    *Interactividad, arquitectura, y guía para la realización.
-*Herramientas comunes a todos los módulos:
-    *[[[Puredata]([hydra]],)], [[[MaxMsp]([Supercollider]],)], [Manuscript]([Sibelius)], [*Lenguajes:
-    *html, css, java script
+## Topoi: Módulos de conocimiento
 
+### contextuales
+[[t00-método científico]]
+[[t01-sistemas de universos]]
+
+### artísticos
+[[t50-generatividad]]
+[[t60-complejidad]]
+	
+### técnicos
+[[js01-fundamentals]]
+[[py-foundations]]
+[[pd-foundations]]
+[[mx-maxmsp]]
+[[hd-hydra]]
+[[sc-supercollider]]
+[[sib-sibelius manuscript]]
+
+    
 ## Plan de estudios
 el siguiente plan es una guía de contenidos modular de la materia Ciencia y Música. Cada año, en conjunto con los alumnos se deciden los contenidos a abordar dependiendo de los objetivos personales propuestos. El siguiente programa es por lo tanto un compendio de las unidades posibles con contenidos mínimos obligatorios y otros potenciales.
 
@@ -72,7 +76,7 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 
 ### Aplicación
 *musiki y paradigmas wiki. 
-*p5. jquery. 
+*p5. js, tone.js  
 *interfaces, relaciones hápticas, usabilidad.
 *instrumentación digital. 
 
@@ -83,9 +87,10 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 *Diccionarios y traducciones
 
 ## Trabajos Prácticos
-### topoi
-### proyectual
-### proyecto online
+```dataview
+TASK 
+WHERE project = "cym22" 
+```
 
 # Recursos
 

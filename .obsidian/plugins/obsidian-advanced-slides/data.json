@@ -7,10 +7,10 @@
   "enableMenu": false,
   "theme": "black",
   "highlightTheme": "zenburn",
-  "transition": "fade",
+  "transition": "slide",
   "transitionSpeed": "default",
-  "controls": false,
-  "progress": false,
+  "controls": true,
+  "progress": true,
   "slideNumber": false,
   "showGrid": false,
   "autoComplete": "inPreview"

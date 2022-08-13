@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e99289386a6643dc",
+        "id": "6b9e7274ff1cd2ab",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/topoi/t01-sistemas de universos.md",
+            "file": "README.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207,
-    "collapsed": true
+    "width": 229.0050811767578
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/topoi/t01-sistemas de universos.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/topoi/t01-sistemas de universos.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,12 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/topoi/t01-sistemas de universos.md"
+                "file": "README.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "96bfbf91cec6020f",
@@ -161,20 +160,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5,
-    "collapsed": true
+    "width": 224.5
   },
-  "active": "e99289386a6643dc",
+  "active": "6b9e7274ff1cd2ab",
   "lastOpenFiles": [
-    "03-ref/manual de instrucciones.md",
-    "03-ref/class/c-cym01-presentación.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/2022-08-30.md",
     "README.md",
-    "03-ref/db/obras.md",
-    "03-ref/topoi/t01-sistemas de universos.md",
-    "image/gallery.md",
-    "03-ref/db/topoi.md",
-    "03-ref/bibliografía/notes/@XuanThuan1988.md",
-    "00-in/prg-22.md",
-    "00-in/meta-aprendizaje.md"
+    "03-ref/manual de instrucciones.md",
+    "02-mat/procesos/r-vinculación bidireccional.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "class.md"
   ]
 }

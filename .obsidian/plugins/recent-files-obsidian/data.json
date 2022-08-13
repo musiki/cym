@@ -1,20 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "t01-sistemas de universos",
-      "path": "03-ref/topoi/t01-sistemas de universos.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
     },
     {
       "basename": "manual de instrucciones",
       "path": "03-ref/manual de instrucciones.md"
     },
     {
-      "basename": "c-cym01-presentación",
-      "path": "03-ref/class/c-cym01-presentación.md"
+      "basename": "r-vinculación bidireccional",
+      "path": "02-mat/procesos/r-vinculación bidireccional.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
+    },
+    {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "class",
+      "path": "class.md"
+    },
+    {
+      "basename": "t01-sistemas de universos",
+      "path": "03-ref/topoi/t01-sistemas de universos.md"
+    },
+    {
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/class/c-cym01-presentación.md"
     },
     {
       "basename": "obras",
@@ -61,10 +93,6 @@
       "path": "03-ref/topoi/t00-método científico.md"
     },
     {
-      "basename": "2022-08-30",
-      "path": "01-proj/tp/2022-08-30.md"
-    },
-    {
       "basename": "tone.js",
       "path": "02-mat/tone.js.md"
     },
@@ -75,10 +103,6 @@
     {
       "basename": "personas",
       "path": "03-ref/db/personas.md"
-    },
-    {
-      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
-      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
     }
   ],
   "omittedPaths": [],
