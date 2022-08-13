@@ -77,5 +77,47 @@
       ],
       "key": "P"
     }
+  ],
+  "editor:rename-heading": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "templater-obsidian:jump-to-next-cursor-location": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "templater-obsidian:create-new-note-from-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-collapse-all-plugin:collapse-all-collapse": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-collapse-all-plugin:collapse-all-expand": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
   ]
 }

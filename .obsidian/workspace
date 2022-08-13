@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8d56c706cd1a328b",
+        "id": "1f4a41ead4342aeb",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "03-ref/bibliografía/notes/@Padilla2010.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -27,14 +27,6 @@
         "id": "6cc6c8dea85ac2cf",
         "type": "tabs",
         "children": [
-          {
-            "id": "555b7d6a97b69d1d",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
           {
             "id": "6bacf6338ce5ed34",
             "type": "leaf",
@@ -57,12 +49,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "6b62e6932c7a653d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 187.0008087158203
+    "width": 288
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -78,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "03-ref/bibliografía/notes/@Padilla2010.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "03-ref/bibliografía/notes/@Padilla2010.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "03-ref/bibliografía/notes/@Padilla2010.md"
               }
             }
           }
@@ -130,17 +131,17 @@
     "width": 137.5,
     "collapsed": true
   },
-  "active": "8d56c706cd1a328b",
+  "active": "1f4a41ead4342aeb",
   "lastOpenFiles": [
-    "prg-22.md",
+    "03-ref/db/obras.md",
+    "03-ref/db/referencias.md",
+    "03-ref/db/personas.md",
+    "03-ref/bibliografía/los condenados de la pantalla.md",
+    "03-ref/personas/Yotam Mann.md",
+    "03-ref/manual de instrucciones.md",
+    "02-mat/jasvascript/01-fundamentals.md",
+    "03-ref/topoi/sistemas de universos.md",
     "README.md",
-    "música/partitura.md",
-    "db/personas.md",
-    "db/referencias.md",
-    "referencias/los condenados de la pantalla.md",
-    "web/jasvascript/01-fundamentals.md",
-    "personas/Hito Steyerl.md",
-    "web/cloud ides.md",
-    "manual de instrucciones.md"
+    "02-mat/cloud ides.md"
   ]
 }

@@ -6,5 +6,16 @@
   "dataview",
   "shortcuts-extender",
   "execute-code",
-  "obsidian-sortable"
+  "obsidian-sortable",
+  "dbfolder",
+  "buttons",
+  "templater-obsidian",
+  "link-favicon",
+  "obsidian-icon-shortcodes",
+  "obsidian-metatable",
+  "obsidian-collapse-all-plugin",
+  "obsidian-outliner",
+  "obsidian-frontmatter-tag-suggest",
+  "obsidian-zoom",
+  "obsidian-citation-plugin"
 ]

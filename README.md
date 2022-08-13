@@ -1,4 +1,4 @@
-![|100x30](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
+![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
 # Ciencia  y Música
 este es el repositorio de la cátedra de ciencia y música de la licenciatura en música de la universidad nacional de tres de febrero
 
