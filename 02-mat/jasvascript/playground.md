@@ -21,3 +21,19 @@ const buffer = canvas.toBuffer('image/png')
 fs.writeFileSync('./image.png', buffer)
 
 ```
+
+
+```javascript
+
+import { AudioContext } from 'web-audio-api'
+import Speaker from 'speaker'
+
+const context = new AudioContext
+
+context.outStream = new Speaker({
+  channels: context.format.numberOfChannels,
+  bitDepth: context.format.bitDepth,
+  sampleRate: context.sampleRate
+})
+
+```

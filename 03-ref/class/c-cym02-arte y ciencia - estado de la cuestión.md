@@ -20,9 +20,11 @@ UNTREF | CYM22
 
 ---
 # objetivos
+
 --
 - pensar y crear el futuro de la música.
 note: esto es una nota
+
 --
 - crear proyectos musicales significativos.
 
@@ -36,6 +38,21 @@ note: esto es una nota
 ---
 ## que es la música?
 
+>music  is organized sound [Varese]
+
+>order, combination of tones with temporal relationships of unity and continuity [Webster]
+
+>el arte de combinar velocidades [zztt]
+
+
+--
+En el auge de la reproducción técnica de la música **Varese** abstrae su función y se concentra en diseñar sonido mas que escribir para la gestualidad del músico.
+
+
+---
+## que es el arte?
+
+<!-- slide  -->
 
 ---
 # la  técnica
@@ -45,18 +62,27 @@ note: this is presenter note
 ---
 # relaciones 
 
+--
 ## tecnologías como herramientas
+
+
+--
+- Meta instrumento 
+- Instrumento ubicuo
+- Navegador como instrumento
 
 ---
 ## tecnologías como creadoras de espacios
 
-```mermaid
-graph LR
+Uno de los efectos mas elocuentes de la aparación de los meta-instrumentos es la posiblidad de crear espacios compuestos, immersivos que usan las propiedades físicas del sonido espacializado.
 
-a(hello) --> b
 
-```
+--
+ Microtonal Wall 
+ [[Sarah Rara]], [[Tristan Perich]]
 
+--
+<iframe title="Tristan Perich - Microtonal Wall at Interaccess - Walkthrough" height="360" width="640" src="https://player.vimeo.com/video/45225412?h=7a7bf944e4&amp;app_id=122963" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 ---
 ## tecnologías como exo-cerebros
 

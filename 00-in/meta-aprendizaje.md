@@ -1,9 +1,13 @@
+---
+status: dev
+tags: pkm, knowledge, education
+---
 PKM [personal knowledge managment]
-
+ lo
 -   creation
     - imaginación
 	    - hello world
-	- combinational creativity
+	- [[combinational creativity]]
 		- combine old ideas with new
 		- new combinations of old information
 		- three driven approaches [](https://journals.sagepub.com/doi/abs/10.1177/0954406217750189?journalCode=picb)

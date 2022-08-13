@@ -26,5 +26,8 @@
   "oz-image-plugin",
   "obsidian-image-uploader",
   "obsidian-image-gallery",
-  "obsidian-paste-png-to-jpeg"
+  "obsidian-paste-png-to-jpeg",
+  "obsidian-jupyter",
+  "code-block-copy",
+  "highlightr-plugin"
 ]

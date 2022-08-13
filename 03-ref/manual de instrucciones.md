@@ -1,4 +1,4 @@
-# paso 1 instalar obsidian
+# instalar obsidian
 
 - crear un vault (Boveda)
 - introducción al lenguaje mark-up 
@@ -9,11 +9,16 @@
 **negritas**
 *italica*
 
-## teclas de acceso rápido de obsidian
+#  teclas de acceso rápido 
 
 - (ctrl  / command = c) 
 -  cE / prender apagar   modo edición
 -  c, /  ir a la configuración 
+
+
+# bloques
+
+## código
 
 ```javascript
 
@@ -28,6 +33,7 @@ console.log(sumar(a,b));
 
 ```
 
+## mapas mentales (mermaid)
 
 ```mermaid
 graph TD
@@ -43,6 +49,27 @@ C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
 ```
+
+
+## call-outs
+> [!INFO] > Here's a callout block. > It supports **markdown** and [[Internal link|wikilinks]].
+
+>[!danger] > now I know
+
+
+### tipos
+-   note
+-   abstract, summary, tldr
+-   info, todo
+-   tip, hint, important
+-   success, check, done
+-   question, help, faq
+-   warning, caution, attention
+-   failure, fail, missing
+-   danger, error
+-   bug
+-   example
+-   quote, cite
 
 
 # accesos rápidos en obsidian

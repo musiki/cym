@@ -48,6 +48,8 @@ class c c3;
 
 
 # variables
+un espacio de memoria asignable mediante un nombre y un valor. Tres aspectos fundamentales de las variable en js son: los tipos (enteros, reales, cadenas de texto, boleanos, null y undefined),  el scope y el uso de variables como objetos. 
+
 ```javascript
 
 var a = 10;
@@ -57,6 +59,33 @@ console.log (a + b)
 ```
 
 
+# arrays
+```javascript
+var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
+
+var total = notas.length;
+
+console.log ("listar toda la escala :", notas, "\n" , 
+			'la cantidad de notas es :', total, "\n",
+			'la tercera nota es : ', notas[3], "\n", 
+			'la posición de la nota F es : ', notas.lastIndexOf('F'), "\n",
+			'las tres últimas notas som : ',notas.slice(total-3,total), "\n",
+			'la escala retrógrada es : ', notas.reverse(), '\n',
+
+			'la escala contiene un Bb : ', notas.includes('Bb'), "\n",
+		    'la escala contiene un G# : ', notas.includes('G#')
+)
+
+
+```
+
+```javascript
+var notas=["C","C#","D","E","F","G","A","B"]
+
+console.log ("listar toda la escala", notas)
+
+```
+#
 ```
 # librerias
 ## tone.js

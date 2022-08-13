@@ -2,7 +2,7 @@
   "timeout": 10000,
   "nodePath": "/usr/local/bin/node",
   "nodeArgs": "",
-  "pythonPath": "python",
+  "pythonPath": "/usr/local/bin/python3",
   "pythonArgs": "",
   "pythonEmbedPlots": true,
   "shellPath": "bash",
