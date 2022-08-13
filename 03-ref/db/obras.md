@@ -11,3 +11,7 @@ action t-bibliografía Note Template
 templater true
 ```
 
+
+## metaversos
+
+[virtual burning man experience](https://brcvr.org/)

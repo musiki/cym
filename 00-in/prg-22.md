@@ -1,14 +1,14 @@
 ---
-institución=Universidad Nacional de Tres de Febrero
-carrera=Licenciatura en Música
-cátedra=Ciencia y Música
-código=900
-sigla=CYM
-titular=Luciano Azzigotti
-ayudante=Carolina Di Paola
-año=2022
-aula=Taller de tecnología musical
-horario=Martes de 18:00 a 22:00
+institución: Universidad Nacional de Tres de Febrero
+carrera: Licenciatura en Música
+cátedra: Ciencia y Música
+código:900
+sigla:CYM
+titular:Luciano Azzigotti
+ayudante:Carolina Di Paola
+año:2022
+aula:Taller de tecnología musical
+horario:Martes de 18:00 a 22:00
 ---
 
 ![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)

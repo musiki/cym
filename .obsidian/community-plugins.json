@@ -17,5 +17,10 @@
   "obsidian-outliner",
   "obsidian-frontmatter-tag-suggest",
   "obsidian-zoom",
-  "obsidian-citation-plugin"
+  "obsidian-citation-plugin",
+  "obsidian-drag-n-drop-plugin",
+  "obsidian-link-embed",
+  "convert-url-to-iframe",
+  "obsidian-advanced-slides",
+  "cycle-through-panes"
 ]

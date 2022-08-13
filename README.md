@@ -20,18 +20,25 @@ Gastón Bachelard, La formación del espíritu científico
 Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por asociación y por oposición.  Las características principales que las diferencian son las mismas que existen entre la filosofía natural dentro de la metafísica opuesta al estudio de la intuición y el carácter místico. El binomio acción musical-observación de la naturaleza despliega un entramado lógico similar al del binomio razón-instinto. La ciencia encuentra al mundo inteligible, ordinario y medible, en cambio para el instinto resulta indivisible, unificante, sin bien ni mal, sin pasado ni futuro.  Siguiendo a Russell, el material musical puede ser visto a partir de su función científica o de su recurso intuitivo por parte del compositor. Se intenta a la vez reflejar el pensamiento de la ciencia en la estética filosófica, tratando de obtener un entendimiento reflexivo que permita establecer relaciones recíprocas entre la naturaleza y el valor del arte. Algunos de los problemas a resolver serán el significado y surgimiento del arte y la representación comparando el punto de vista estético con el neurocientífico.  El origen cualitativo y cuantitativo de las emociones, de la belleza, del concepto de forma y la experiencia estética. Nos centraremos en la historia de la música pero también se incluirán conceptos de otras artes. Veremos también cómo los métodos de la investigación científica pueden equipararse con aquellos tradicionales en la filosofía del arte , desde la ciencia de la percepción empírica, la biología evolutiva y las ciencias cognitivas. De este modo  se extenderán las teorías filosóficas de los paradigmas  científicos confrontándolos con nuestras reacciones vividas en la valoración de obras artísticas.
 
 ## Objetivos del Curso
-- Que los alumnos comprendan la naturaleza del pensamiento científico  y sus relaciones con la creación artística.
-- Incorporar paradigmas de pensamiento y análisis que habitan la filosofía general de la ciencia en los diferentes períodos históricos.
-- Generar la capacidad de plantear un constructo epistemológico como matriz del pensamiento estético y proyectar a partir de herramientas a la creación de una obra artística, un instrumento o un trabajo teórico.
+
+- pensar y crear el futuro de la música.
+- crear proyectos musicales significativos.
+- diseñar patrones metacognitivos y metamusicales a la acción musical
+- comprender las bases del pensamiento científico y su relación con la creación artística.
+- incorporar paradigmas de pensamiento y análisis que habitan la filosofía general de la ciencia en los diferentes períodos históricos.
+- generar la capacidad de plantear un constructo epistemológico como matriz del pensamiento estético y proyectar a partir de herramientas a la creación de una obra artística, un instrumento o un trabajo teórico.
+
 
 ## Pre Requisitos
 *Taller de Creación Musical VI
 
 ## Criterios de Evaluación y Acreditación
-Promoción: directa.
-Para la aprobación de la asignatura se requiere asistencia mínima del 80% a las clases teórico-prácticas y la presentación de todos los trabajos prácticos requeridos en tiempo y forma.
-La aprobación de un parcial integrador al promediar la cursada.
-Aprobación del Trabajo Final.
+- Promoción: directa.
+- Asistencia: 80% a las clases teórico-prácticas y la presentación de todos los trabajos prácticos.
+### graduación
+- 1/3 proyecto final
+- 1/3 trabajos prácticos
+- 1/3 participación
 
 ## Metodología
 El marco metodológico considera la construcción del conocimiento a partir de la alternancia de la praxis, la teoría, la creación sonora, el análisis crítico de lo hecho y la referencia en la bibliografía existente. 
@@ -91,3 +98,5 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 
 ## machine learning
 - [**gpt2-spanish generation**](https://colab.research.google.com/drive/1O6dii5zQVWON1pTrDYmNdVy4tF9ZqBB0#scrollTo=wvQyJu_IJUHr)
+
+VERSION UPDATE
