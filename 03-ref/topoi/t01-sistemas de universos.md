@@ -1,3 +1,8 @@
+---
+tags: topoi
+unit: 0
+---
+
 # modelos de universos [14^9]
 
 ---
@@ -263,4 +268,8 @@ Cuerpos = devienen de las líneas y caen bajo el dominio de los sentidos proveni
 
 Orfismo: transmigración de las almas. El pensamiento órfico cree en la vida futura y la necesidad de purificación.
 
-**
+# referencias
+
+
+
+

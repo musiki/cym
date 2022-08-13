@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "t01-sistemas de universos",
-      "path": "03-ref/topoi/t01-sistemas de universos.md"
+      "basename": "topoi",
+      "path": "03-ref/db/topoi.md"
+    },
+    {
+      "basename": "referencias",
+      "path": "03-ref/db/referencias.md"
     },
     {
       "basename": "t00-método científico",
       "path": "03-ref/topoi/t00-método científico.md"
+    },
+    {
+      "basename": "t09-física",
+      "path": "03-ref/topoi/t09-física.md"
+    },
+    {
+      "basename": "t01-sistemas de universos",
+      "path": "03-ref/topoi/t01-sistemas de universos.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "los condenados de la pantalla",
+      "path": "03-ref/bibliografía/los condenados de la pantalla.md"
+    },
+    {
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/class/c-cym01-presentación.md"
+    },
+    {
+      "basename": "P-Hito Steyerl",
+      "path": "03-ref/personas/P-Hito Steyerl.md"
     },
     {
       "basename": "meta-aprendizaje",
@@ -15,10 +51,6 @@
     {
       "basename": "combinational creativity",
       "path": "00-in/combinational creativity.md"
-    },
-    {
-      "basename": "referencias",
-      "path": "03-ref/db/referencias.md"
     },
     {
       "basename": "personas",
@@ -31,10 +63,6 @@
     {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
-    },
-    {
-      "basename": "c-cym01-presentación",
-      "path": "03-ref/class/c-cym01-presentación.md"
     }
   ],
   "omittedPaths": [],

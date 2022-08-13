@@ -6,9 +6,15 @@ tags: cym
 
 # calendario cym 22
 
-TP1 - Monografia sobre un topos [basados en textos] 30 / 08 / 22
-TP 2 - Hydra P5 27 / 09 / 22
-17 25 OCT 1 8 NOV > clases presenciales.
-TP3 - Proyectual <
-TRABAJO FINAL 23 / 11 / 2022
-Proyecto Cym WEB.
+## tp1
+- [ ] topoi | Monografía basada en textos de cym ⏫ 📅 2022-08-30
+
+## tp2
+- [ ] hydra | componer una pieza audiovisual online ⏫ 📅 2022-09-22
+
+## tp3
+- [ ] proyectual |como hacer un dossier de un proyecto de música expandida ⏫ 📅 2022-11-15
+## tp final
+- [ ] proyecto cym | proyecto online ⏫ 📅 2022-11-29
+
+

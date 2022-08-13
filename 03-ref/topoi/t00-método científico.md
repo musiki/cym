@@ -1,3 +1,8 @@
+---
+tag: topoi, ciencia, método científico
+---
+
+
 ## Definición de ciencia
 
 Ciencia es la que produce un tipo especial de conocimiento o saber que se supone distinto al saber del sentido común. Es un saber **sistematizado** y **controlable subjetivamente.**

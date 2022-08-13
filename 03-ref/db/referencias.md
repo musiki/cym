@@ -13,3 +13,7 @@ templater true
 
 
 
+
+```query
+tag: #libros
+```

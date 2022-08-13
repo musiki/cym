@@ -1,14 +1,43 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#topoi",
+      "color": {
+        "a": 1,
+        "rgb": 9261797
+      }
+    },
+    {
+      "query": "tag:#libros",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "type: person",
+      "color": {
+        "a": 1,
+        "rgb": 5814761
+      }
+    },
+    {
+      "query": "type: obra",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -17,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 1.5833250891663593,
+  "scale": 0.4628354417744028,
   "close": true
 }
