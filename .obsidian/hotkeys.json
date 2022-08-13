@@ -181,7 +181,7 @@
         "Mod",
         "Shift"
       ],
-      "key": "E"
+      "key": "L"
     }
   ],
   "editor:unfold-all": [
@@ -225,6 +225,25 @@
         "Alt"
       ],
       "key": "ArrowUp"
+    }
+  ],
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "obsidian-advanced-slides:reload-advanced-slides-preview": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
     }
   ]
 }
