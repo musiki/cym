@@ -4,8 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "1f4a41ead4342aeb",
+        "id": "0b226031ae931012",
         "type": "leaf",
+        "dimension": 66.94214876033058,
         "state": {
           "type": "markdown",
           "state": {
@@ -17,16 +18,12 @@
         }
       },
       {
-        "id": "41dcb7fd985c7cf1",
+        "id": "4192405d7838ab31",
         "type": "leaf",
+        "dimension": 33.057851239669425,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
+          "type": "reveal-preview-view",
+          "state": {}
         }
       }
     ],
@@ -76,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236
+    "width": 236,
+    "collapsed": true
   },
   "right": {
     "id": "a579e552f75167f2",
@@ -144,11 +142,11 @@
     "width": 137.5,
     "collapsed": true
   },
-  "active": "1f4a41ead4342aeb",
+  "active": "0b226031ae931012",
   "lastOpenFiles": [
-    "Untitled.md",
-    "README.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "README.md",
+    "Untitled.md",
     "03-ref/class/c-cym01-presentación.md",
     "03-ref/db/referencias.md",
     "03-ref/bibliografía/los condenados de la pantalla.md",

@@ -72,8 +72,8 @@
   "workspace:export-pdf": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Ctrl"
       ],
       "key": "P"
     }
@@ -120,15 +120,7 @@
       "key": "T"
     }
   ],
-  "slides:start": [
-    {
-      "modifiers": [
-        "Alt",
-        "Ctrl"
-      ],
-      "key": "P"
-    }
-  ],
+  "slides:start": [],
   "app:go-back": [
     {
       "modifiers": [
@@ -152,6 +144,62 @@
         "Shift"
       ],
       "key": "I"
+    }
+  ],
+  "workspace:split-horizontal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "editor:unfold-all": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "switcher:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
     }
   ]
 }

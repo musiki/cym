@@ -7,15 +7,13 @@ este es el repositorio de la cátedra de ciencia y música de la licenciatura en
 # Plan de Estudios 
 
 ## Descripción
-<cite>
-“¿Que es el arte? como una declaración de amor: la conciencia de nuestra dependencia mutua los unos a los otros. Una confesión. Un acto inconsciente que, no obstante, refleja el verdadero significado de la vida - amor y sacrificio.”
-Andrei Tarkovsky, Solaris, 1972.
-</cite>
 
-<cite>
-“Tornar geométrica la representación, dibujar los fenómenos y ordenar en serie los acontecimientos decisivos de una experiencia, he ahí la primera tarea en la que se funda el espíritu científico”
-Gastón Bachelard, La formación del espíritu científico
-</cite>
+>“Tornar geométrica la representación, dibujar los fenómenos y ordenar en serie los acontecimientos decisivos de una experiencia, he ahí la primera tarea en la que se funda el espíritu científico”
+Gastón Bachelard, La formación del espíritu científico, 1974
+
+>“¿Que es el arte? como una declaración de amor: la conciencia de nuestra dependencia mutua los unos a los otros. Una confesión. Un acto inconsciente que, no obstante, refleja el verdadero significado de la vida - amor y sacrificio.”
+Andrei Tarkovsky, Solaris, 1972.
+
 
 Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por asociación y por oposición.  Las características principales que las diferencian son las mismas que existen entre la filosofía natural dentro de la metafísica opuesta al estudio de la intuición y el carácter místico. El binomio acción musical-observación de la naturaleza despliega un entramado lógico similar al del binomio razón-instinto. La ciencia encuentra al mundo inteligible, ordinario y medible, en cambio para el instinto resulta indivisible, unificante, sin bien ni mal, sin pasado ni futuro.  Siguiendo a Russell, el material musical puede ser visto a partir de su función científica o de su recurso intuitivo por parte del compositor. Se intenta a la vez reflejar el pensamiento de la ciencia en la estética filosófica, tratando de obtener un entendimiento reflexivo que permita establecer relaciones recíprocas entre la naturaleza y el valor del arte. Algunos de los problemas a resolver serán el significado y surgimiento del arte y la representación comparando el punto de vista estético con el neurocientífico.  El origen cualitativo y cuantitativo de las emociones, de la belleza, del concepto de forma y la experiencia estética. Nos centraremos en la historia de la música pero también se incluirán conceptos de otras artes. Veremos también cómo los métodos de la investigación científica pueden equipararse con aquellos tradicionales en la filosofía del arte , desde la ciencia de la percepción empírica, la biología evolutiva y las ciencias cognitivas. De este modo  se extenderán las teorías filosóficas de los paradigmas  científicos confrontándolos con nuestras reacciones vividas en la valoración de obras artísticas.
 
@@ -99,4 +97,3 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 ## machine learning
 - [**gpt2-spanish generation**](https://colab.research.google.com/drive/1O6dii5zQVWON1pTrDYmNdVy4tF9ZqBB0#scrollTo=wvQyJu_IJUHr)
 
-VERSION UPDATE

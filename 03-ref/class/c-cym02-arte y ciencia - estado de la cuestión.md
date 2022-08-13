@@ -25,10 +25,16 @@ UNTREF | CYM22
 note: esto es una nota
 --
 - crear proyectos musicales significativos.
+
 --
 - diseñar patrones metacognitivos y metamusicales a la acción musical
+
 --
 - comprender las bases del pensamiento científico y su relación con la creación artística.
+
+
+---
+## que es la música?
 
 
 ---
