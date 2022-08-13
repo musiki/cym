@@ -169,10 +169,9 @@
   "command-palette:open": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Mod"
       ],
-      "key": "P"
+      "key": "O"
     }
   ],
   "editor:toggle-source": [
@@ -189,9 +188,9 @@
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
-      "key": "T"
+      "key": "ArrowDown"
     }
   ],
   "switcher:open": [
@@ -200,6 +199,32 @@
         "Mod"
       ],
       "key": "P"
+    }
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "editor:fold-all": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:toggle-fold": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
     }
   ]
 }

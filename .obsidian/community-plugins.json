@@ -22,5 +22,9 @@
   "obsidian-link-embed",
   "convert-url-to-iframe",
   "obsidian-advanced-slides",
-  "cycle-through-panes"
+  "cycle-through-panes",
+  "oz-image-plugin",
+  "obsidian-image-uploader",
+  "obsidian-image-gallery",
+  "obsidian-paste-png-to-jpeg"
 ]

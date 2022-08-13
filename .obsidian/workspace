@@ -4,26 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0b226031ae931012",
+        "id": "4531402ca8e946f0",
         "type": "leaf",
-        "dimension": 66.94214876033058,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "source",
+            "file": "00-in/meta-aprendizaje.md",
+            "mode": "preview",
             "backlinks": false,
             "source": true
           }
-        }
-      },
-      {
-        "id": "4192405d7838ab31",
-        "type": "leaf",
-        "dimension": 33.057851239669425,
-        "state": {
-          "type": "reveal-preview-view",
-          "state": {}
         }
       }
     ],
@@ -73,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236,
+    "width": 373,
     "collapsed": true
   },
   "right": {
@@ -90,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "00-in/meta-aprendizaje.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "00-in/meta-aprendizaje.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,29 +120,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "00-in/meta-aprendizaje.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 137.5,
-    "collapsed": true
+    "width": 137.5
   },
-  "active": "0b226031ae931012",
+  "active": "4531402ca8e946f0",
   "lastOpenFiles": [
+    "00-in/meta-aprendizaje.md",
+    "02-mat/procesos/vinculación bidireccional.md",
+    "image/vinculación bidireccional-1660394778685.jpeg",
+    "Untitled.md",
+    "Untitled 1.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
     "README.md",
-    "Untitled.md",
     "03-ref/class/c-cym01-presentación.md",
     "03-ref/db/referencias.md",
-    "03-ref/bibliografía/los condenados de la pantalla.md",
-    "03-ref/bibliografía/notes/@Padilla2010.md",
-    "02-mat/org/partitura.md",
-    "03-ref/db/personas.md",
-    "03-ref/manual de instrucciones.md"
+    "03-ref/bibliografía/los condenados de la pantalla.md"
   ]
 }
