@@ -275,5 +275,33 @@
       ],
       "key": "I"
     }
+  ],
+  "file-explorer:new-file-in-new-pane": [],
+  "note-refactor-obsidian:app:extract-selection-first-line": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "9"
+    }
+  ],
+  "obsidian-note-sharing:obsidian-note-sharing-share-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
   ]
 }

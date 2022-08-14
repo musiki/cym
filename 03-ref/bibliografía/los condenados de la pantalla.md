@@ -3,7 +3,7 @@ person: Hito Steyerl
 year: 2014
 publisher: Caja Negra
 status: reading
-tags: libros,capitalismo, farocki, imagen, crítica cultural
+tags: libros,capitalismo, imagen, crítica cultural
 cover: '![](https://cajanegraeditora.com.ar/wp-content/uploads/2018/12/tapa_HITO_alta.jpg)'
 ---
 

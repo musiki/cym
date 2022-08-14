@@ -46,14 +46,20 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 
 ## Topoi: Módulos de conocimiento
 
-### contextuales
+### ontológicos
 [[t00-método científico]]
 [[t01-sistemas de universos]]
 
-### artísticos
-[[t50-generatividad]]
-[[t60-complejidad]]
-	
+### materiales
+
+### generativos
+
+### humanos 
+
+### sociales
+
+### espaciales
+
 ### técnicos
 [[js01-fundamentals]]
 [[py-foundations]]

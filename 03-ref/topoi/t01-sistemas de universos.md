@@ -1,5 +1,5 @@
 ---
-tags: topoi
+tags: universo, física, historiadelaciencia , topoi, astronomia
 unit: 0
 ---
 
@@ -11,7 +11,7 @@ unit: 0
 resacas y corrientes; sé de noches... del Alba 
 exaltada como una bandada de palomas.
 ¡Y, a veces, yo sí he visto lo que alguien creyó ver! 
-  He visto el sol poniente, tinto de horrores místicos, 
+  He visto el sol poniente, tinto de h`fas:500Px`orrores místicos, 
 alumbrando con lentos cuajarones violetas, 
 que recuerdan a actores de dramas muy antiguos, 
 las olas, que a lo lejos, despliegan sus latidos.

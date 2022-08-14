@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "tag #instrumento",
+      "color": {
+        "a": 1,
+        "rgb": 16734464
+      }
     }
   ],
   "collapse-display": false,
@@ -46,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.39089062075341446,
-  "close": true
+  "scale": 0.6698822223534205,
+  "close": false
 }

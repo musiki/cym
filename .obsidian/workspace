@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6b9e7274ff1cd2ab",
+        "id": "328a571250345e34",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "02-mat/jasvascript/js01-fundamentals.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -20,16 +20,31 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1a76311d69a0e1ad",
+    "id": "d6166551a0d55c37",
     "type": "split",
     "children": [
       {
-        "id": "6cc6c8dea85ac2cf",
+        "id": "4883d166bb0b98ef",
         "type": "tabs",
-        "dimension": 79.63340122199592,
         "children": [
           {
-            "id": "6bacf6338ce5ed34",
+            "id": "65731d4cd99e2b93",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "5778389b8a8eae99",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "25e6b97dfbf75028",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -37,66 +52,50 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "83f19c3adc82e373",
+            "id": "fc23e69c119a4c2d",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "6b62e6932c7a653d",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "b0a738ffc92693e6",
-        "type": "tabs",
-        "dimension": 20.366598778004075,
-        "children": [
-          {
-            "id": "c5cd6cd01f979825",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 229.0050811767578
+    "width": 291
   },
   "right": {
-    "id": "a579e552f75167f2",
+    "id": "e8638d586bf3e8da",
     "type": "split",
     "children": [
       {
-        "id": "998bdb50970edc84",
+        "id": "04d7afbe4f7da983",
         "type": "tabs",
-        "dimension": 68.22810590631364,
         "children": [
           {
-            "id": "923ee64299ff8d90",
+            "id": "6b490683ac98a8c2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "77d09e14076729fb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,71 +107,56 @@
             }
           },
           {
-            "id": "acdfc19eeee6c8fe",
+            "id": "7582181150c36363",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e56d1965eb58ed4e",
+            "id": "b0342ea1aee8ecd4",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           },
           {
-            "id": "d2b05bb5db74eae7",
+            "id": "51d12f499785fdaa",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           }
         ],
         "currentTab": 3
-      },
-      {
-        "id": "96bfbf91cec6020f",
-        "type": "tabs",
-        "dimension": 31.771894093686353,
-        "children": [
-          {
-            "id": "8f630d761c214ce2",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 158.5
   },
-  "active": "6b9e7274ff1cd2ab",
+  "active": "328a571250345e34",
   "lastOpenFiles": [
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/2022-08-30.md",
-    "README.md",
-    "03-ref/manual de instrucciones.md",
-    "02-mat/procesos/r-vinculación bidireccional.md",
     "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "class.md"
+    "image/vinculación bidireccional-1660394778685.jpeg",
+    "image/t01-sistemas de universos-1660410536915.jpeg",
+    "image/t01-sistemas de universos-1660410382651.jpeg",
+    "image/meta-aprendizaje-1660395828475.jpeg",
+    "image/gallery.md",
+    "03-ref/topoi/t60-espacio.md",
+    "03-ref/topoi/t50-generatividad.md",
+    "03-ref/topoi/t30-vida artificial.md",
+    "03-ref/topoi/t21-interfaces.md"
   ]
 }

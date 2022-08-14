@@ -7,20 +7,25 @@ tag: topoi, ciencia, método científico
 
 Ciencia es la que produce un tipo especial de conocimiento o saber que se supone distinto al saber del sentido común. Es un saber **sistematizado** y **controlable subjetivamente.**
 
+---
 Se construye de ...
+--
 ### concepto
-
+--
 1. definición corta de algo que sirve como base a una definición universal.
+--
 2. construcción teórica para solucionar un problema o pregunta que se le hace a la naturaleza. Dicha construcción se contextualiza en una teoría y  método. [Zambrano]
+--
 3. desarrollo de un concepto:
 	1. real [empírico] podemos conocerlo realmente y conocer sus características?
 	2. gráfico, [abstracción], se describe el objeto a conceptualizar de forma discreta.
 	3. simbólico, se genera una representación.
-
+--
 el proceso de aceptación de un concepto c. debe pasar por una comunidad académica que certifique su validez. Es flexible y puede ser modificado.
 
+---
 ### hipótesis
-
+--
 1. proposición que establece relaciones entre los hechos. [Tamayo]
 	establece variables para relacionarlas.
 	método de comprobación.
@@ -29,13 +34,13 @@ el proceso de aceptación de un concepto c. debe pasar por una comunidad académ
 		procesos inductivos [de lo particular a lo general]
 		procesos deductivos [de lo general a lo particular]
 		analógico /abductivos [ inferencia, mecanismo de creación a-lógica]
-		
-1. ordena, estructura y sistematiza el conocimiento a través de proposiciones. Puente entre el conocimiento verificado y el conocimiento nuevo.
-
+--
+1.  ordena, estructura y sistematiza el conocimiento a través de proposiciones. Puente entre el conocimiento verificado y el conocimiento nuevo.
+---
 #### Como generar una hipótesis
-
+--
 1.  generar un problema de investigación a través de una pregunta o proposición educada.
-    
+--
 	> ej: ¿por qué la música contemporánea está desconectada de la sociedad?
     
 

@@ -9,8 +9,6 @@ UNTREF | CYM22
 # arte y ciencia
 ## estado de la cuestión
 ---
-
-
 # espectactivas
 --
  la clase de cym es **modular**. No es una clase expositiva unicamente, sino que se trazan mapas , módulos y referencias por donde construir un proyecto pero también un contexto. 
@@ -52,12 +50,10 @@ En el auge de la reproducción técnica de la música **Varese** abstrae su func
 ---
 ## que es el arte?
 
-<!-- slide  -->
-
 ---
-# la  técnica
+# topoi 
 
-note: this is presenter note
+![[topoi#definition]]
 
 ---
 # relaciones 
@@ -90,3 +86,19 @@ Uno de los efectos mas elocuentes de la aparación de los meta-instrumentos es l
 
 footnote [^1]
 <!-- element class="red" -->
+
+
+
+<div id="exp"> hello<div>
+<script> document.getElementById("exp") </script>
+
+
+
+
+ ### 10 ontológicos
+ 
+  - método científico y arte. 
+ - modelos de universos
+- filosofía 21
+- filosofía histórica
+- historia de la tecnología

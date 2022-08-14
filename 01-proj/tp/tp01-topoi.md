@@ -21,3 +21,10 @@ definir temas para comprender el mundo actual, crear o editar artículos para y 
 
 -   El artículo debe tener un mínimo de 1000 y un máximo de 5000 palabras. Debe contar con todos los elementos y recursos posibles en el lenguaje wiki (fuentes abiertas, hipervínculos, usos de wikicommons si fuera necesario, índices de wikidata, y links a otros recursos de musiki.
 
+
+# entregas
+---
+```query
+
+
+```

@@ -15,7 +15,7 @@ date: 2022-08-30
 Generar una obra o instrumento online , aplicando los principios de generatividad, interfaces y organización temporal descriptos.
 
 ## Consignas
-
+**
 -  HYDRA
 - P5
 - tone.js
