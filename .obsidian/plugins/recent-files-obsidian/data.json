@@ -1,16 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "t09-física",
+      "path": "03-ref/topoi/t09-física.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "t11-sistemas de universos",
+      "path": "03-ref/topoi/t11-sistemas de universos.md"
+    },
+    {
+      "basename": "t21-interfaces",
+      "path": "03-ref/topoi/t21-interfaces.md"
+    },
+    {
+      "basename": "t30-vida artificial",
+      "path": "03-ref/topoi/t30-vida artificial.md"
+    },
+    {
+      "basename": "t31-generatividad",
+      "path": "03-ref/topoi/t31-generatividad.md"
+    },
+    {
+      "basename": "t40-humanos",
+      "path": "03-ref/topoi/t40-humanos.md"
+    },
+    {
+      "basename": "t51-arte relacional",
+      "path": "03-ref/topoi/t51-arte relacional.md"
+    },
+    {
+      "basename": "t60-espacio",
+      "path": "03-ref/topoi/t60-espacio.md"
+    },
+    {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
+    },
+    {
+      "basename": "html",
+      "path": "02-mat/html.md"
+    },
+    {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "t-class",
+      "path": "03-ref/templates/t-class.md"
     },
     {
       "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "t01-sistemas de universos",
-      "path": "03-ref/topoi/t01-sistemas de universos.md"
+      "basename": "Douglas Barret",
+      "path": "03-ref/personas/Douglas Barret.md"
     },
     {
       "basename": "@XuanThuan1988",
@@ -37,14 +85,6 @@
       "path": "00-in/combinational creativity.md"
     },
     {
-      "basename": "t09-física",
-      "path": "03-ref/topoi/t09-física.md"
-    },
-    {
-      "basename": "html",
-      "path": "02-mat/html.md"
-    },
-    {
       "basename": "los condenados de la pantalla",
       "path": "03-ref/bibliografía/los condenados de la pantalla.md"
     },
@@ -54,11 +94,7 @@
     },
     {
       "basename": "Hugh Le Caine",
-      "path": "Hugh Le Caine.md"
-    },
-    {
-      "basename": "t30-vida artificial",
-      "path": "03-ref/topoi/t30-vida artificial.md"
+      "path": "03-ref/personas/Hugh Le Caine.md"
     },
     {
       "basename": "prg-22",
@@ -91,22 +127,6 @@
     {
       "basename": "gallery",
       "path": "image/gallery.md"
-    },
-    {
-      "basename": "t60-espacio",
-      "path": "03-ref/topoi/t60-espacio.md"
-    },
-    {
-      "basename": "t50-generatividad",
-      "path": "03-ref/topoi/t50-generatividad.md"
-    },
-    {
-      "basename": "t21-interfaces",
-      "path": "03-ref/topoi/t21-interfaces.md"
-    },
-    {
-      "basename": "t00-método científico",
-      "path": "03-ref/topoi/t00-método científico.md"
     },
     {
       "basename": "meta-aprendizaje",
@@ -167,10 +187,6 @@
     {
       "basename": "r-vinculación bidireccional",
       "path": "02-mat/procesos/r-vinculación bidireccional.md"
-    },
-    {
-      "basename": "t401-arte relacional",
-      "path": "03-ref/topoi/t401-arte relacional.md"
     },
     {
       "basename": "tone.js",

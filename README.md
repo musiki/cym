@@ -47,8 +47,8 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 ## Topoi: Módulos de conocimiento
 
 ### ontológicos
-[[t00-método científico]]
-[[t01-sistemas de universos]]
+[[t10-método científico]]
+[[t11-sistemas de universos]]
 
 ### materiales
 

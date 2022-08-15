@@ -10,6 +10,9 @@ UNTREF | CYM22
 ## estado de la cuestión
 ---
 # espectactivas
+
+<i class="fas fa-spinner fa-pulse fa-3x"></i>
+
 --
  la clase de cym es **modular**. No es una clase expositiva unicamente, sino que se trazan mapas , módulos y referencias por donde construir un proyecto pero también un contexto. 
  
@@ -32,6 +35,7 @@ note: esto es una nota
 --
 - comprender las bases del pensamiento científico y su relación con la creación artística.
 
+- 
 
 ---
 ## que es la música?

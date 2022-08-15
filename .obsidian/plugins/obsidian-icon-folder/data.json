@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FlTriangleOfTriangles",
-      "IbTriangleRight",
-      "IbRectangleSmallWithBlocks",
-      "IbAcademicBook",
-      "IbRectangleLeftFilledRounded"
+      "FabGithubSquare",
+      "IbHugContentVertical",
+      "IbArrowCircleForward",
+      "FlPendantOfSmallPolygonalShape",
+      "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -25,9 +25,14 @@
   "00-in": "IbArrowLeft",
   "01-proj": "IbArrowRight",
   "02-mat": "IbTabLeftCompact",
-  "03-ref": "IbRectangleLeftFilledRounded",
+  "03-ref": "IbArrowCircleForward",
   "03-ref/bibliografía": "IbAcademicBook",
   "03-ref/class": "IbRectangleSmallWithBlocks",
   "02-mat/org": "IbTriangleRight",
-  "02-mat/tone.js.md": "FlTriangleOfTriangles"
+  "02-mat/tone.js.md": "FlTriangleOfTriangles",
+  "03-ref/db": "IbDatabse",
+  "03-ref/obras": "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite",
+  "03-ref/personas": "FlPendantOfSmallPolygonalShape",
+  "03-ref/topoi": "IbHugContentVertical",
+  "02-mat/que es git.md": "FabGithubSquare"
 }

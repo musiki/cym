@@ -278,16 +278,7 @@
       "key": "L"
     }
   ],
-  "templater-obsidian:insert-templater": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "T"
-    }
-  ],
+  "templater-obsidian:insert-templater": [],
   "backlink:open": [
     {
       "modifiers": [
@@ -385,6 +376,16 @@
         "Shift"
       ],
       "key": "M"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
     }
   ]
 }
