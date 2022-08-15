@@ -1,10 +1,9 @@
-# list
-  
-
+# lista
+---
 ```query
 tag: #topoi
 ```
-
+---
 # definition
 
 - mutación del método y del medio.
@@ -34,6 +33,7 @@ note: electronic music is part of media art, where the artistic subject concentr
 	- realimentación
 	- instrumentos aumentados
 	- microsonido
+--
 - música visual
 - artes visuales
 - literatura generativa
@@ -54,29 +54,30 @@ note: electronic music is part of media art, where the artistic subject concentr
   - inteligencia artificial 
   - matemática y  algorítmica 
   - literatura generativa
--- 
+--
+
  ### 40 humanos
  -  post-humanismo 
   - feminismo cyborg queer 
  -  humanos y neurociencias 
   - alteraciones perceptivas 
--  arte de performance 
-  
--- 
-  ### 50 sociales
--  arte participativo 
--  exhibiciones históricas 
--  sistemas de creencias
--  hacktivismo 
+-  arte de performance
+--
 
--- 
+  ### 50 sociales
+  - arte participativo 
+  - exhibiciones históricas  
+  - sistemas de creencias
+  - hacktivismo 
+--
+
   ### [[t60-espacio]]
   
--  arquitectura 
+- arquitectura 
  - arquitectura aural 
 -  tiempo 
 -  soundscape 
 - percepción auditica 
-
+--
 ###  [[t61-internetmusic]]	  
   

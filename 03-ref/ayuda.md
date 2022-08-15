@@ -2,7 +2,6 @@
 
 # instalar obsidian
 
-- crear un vault (Boveda)
 - introducción al lenguaje mark-up 
 					#(numeral) nivel de título 1
 					##(numeral) nivel de título 2

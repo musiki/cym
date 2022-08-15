@@ -1,7 +1,7 @@
 ---
 title: arte y ciencia estado de la cuestión
 tags: cym
-theme: moon
+theme: black
 ---
 
 <!-- slide bg="#010100" -->
@@ -49,7 +49,17 @@ En el auge de la reproducción técnica de la música **Varese** abstrae su func
 
 ---
 ## que es el arte?
+> El arte es una gama diversa de actividades humanas en la creación de artefactos visuales, auditivos o escénicos (obras de arte), que expresan  este es un comentario </span></label> la habilidad imaginativa o técnica del autor, destinados a ser apreciados por su belleza o poder emocional. [wikipedia]
 
+--
+- la definición de arte incluye el requerimiento de un receptor. Alguien que pueda apreciar. 
+- Pero esta definición no tiene relación con la historia del arte, donde ni la génesis ni la producción estan direccionadas hacia el receptor. 
+- Es decir, nada en el arte se construye para que sea recibido de tal modo (?)
+- En los mismos términos deberíamos decir: la música es el arte que permite escuchar sonoridades en determinadas circunstancias.
+
+--
+> ...el arte crítico se esfuerza, en palabras de Chantal Mouffe, por "contribuir a desestabilizar la <mark style="background: #FFF3A3A6;">hegemonía dominante</mark> "...Como forma de arte crítico, la música crítica es crítica en y por <mark style="background: #BBFABBA6;">su propia forma</mark> . Sin limitarse al discurso y más allá de las formas de representación incuestionables, la música crítica requiere algo más que una simple música "sobre" diversos temas: un arte así debe cuestionar sus formas y sus respectivas historias. <br>
+[[Douglas Barret]] [[b-After Sound]]
 ---
 # topoi 
 

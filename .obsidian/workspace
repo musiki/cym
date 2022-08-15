@@ -4,31 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "328a571250345e34",
+        "id": "ebc7cd8435ba0b89",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "02-mat/jasvascript/js01-fundamentals.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
+          "type": "graph",
+          "state": {}
+        }
+      },
+      {
+        "id": "c67ffeaeca129e72",
+        "type": "leaf",
+        "state": {
+          "type": "reveal-preview-view",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d6166551a0d55c37",
+    "id": "86d85f7756a5574d",
     "type": "split",
     "children": [
       {
-        "id": "4883d166bb0b98ef",
+        "id": "2dfce336c98f010c",
         "type": "tabs",
         "children": [
           {
-            "id": "65731d4cd99e2b93",
+            "id": "692f42f8a086dc32",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -36,7 +39,7 @@
             }
           },
           {
-            "id": "5778389b8a8eae99",
+            "id": "806c35ecc969d3e9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +47,7 @@
             }
           },
           {
-            "id": "25e6b97dfbf75028",
+            "id": "881bd359e94e8c6e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,30 +62,29 @@
             }
           },
           {
-            "id": "fc23e69c119a4c2d",
+            "id": "c8d1a0aece029368",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 291
+    "width": 151
   },
   "right": {
-    "id": "e8638d586bf3e8da",
+    "id": "58220bb01f083970",
     "type": "split",
     "children": [
       {
-        "id": "04d7afbe4f7da983",
+        "id": "57ca34748df00d78",
         "type": "tabs",
         "children": [
           {
-            "id": "6b490683ac98a8c2",
+            "id": "51603fcbd571ed16",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -90,12 +92,11 @@
             }
           },
           {
-            "id": "77d09e14076729fb",
+            "id": "0e1b4691172ccd34",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,19 +108,18 @@
             }
           },
           {
-            "id": "7582181150c36363",
+            "id": "648dee53923a036f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "b0342ea1aee8ecd4",
+            "id": "a167160bf63e0ecf",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -130,33 +130,55 @@
             }
           },
           {
-            "id": "51d12f499785fdaa",
+            "id": "55b1a4e23a2db9af",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "ba414aa4f988b0f8",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "e14130299c212a13",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          },
+          {
+            "id": "7c20787b5fbb5c78",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 158.5
+    "width": 300
   },
-  "active": "328a571250345e34",
+  "active": "ebc7cd8435ba0b89",
   "lastOpenFiles": [
-    "02-mat/jasvascript/js-playground.md",
-    "image/vinculación bidireccional-1660394778685.jpeg",
-    "image/t01-sistemas de universos-1660410536915.jpeg",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/topoi/t01-sistemas de universos.md",
+    "03-ref/bibliografía/notes/@XuanThuan1988.md",
+    "README.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/python/py-foundations.md",
     "image/t01-sistemas de universos-1660410382651.jpeg",
-    "image/meta-aprendizaje-1660395828475.jpeg",
-    "image/gallery.md",
-    "03-ref/topoi/t60-espacio.md",
-    "03-ref/topoi/t50-generatividad.md",
-    "03-ref/topoi/t30-vida artificial.md",
-    "03-ref/topoi/t21-interfaces.md"
+    "image/t01-sistemas de universos-1660410536915.jpeg",
+    "03-ref/db/referencias.md",
+    "02-mat/org/i-sackbut.md"
   ]
 }

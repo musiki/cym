@@ -1,13 +1,5 @@
 {
-  "editor:toggle-bullet-list": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "5"
-    }
-  ],
+  "editor:toggle-bullet-list": [],
   "editor:toggle-numbered-list": [
     {
       "modifiers": [
@@ -17,15 +9,7 @@
       "key": "6"
     }
   ],
-  "editor:cycle-list-checklist": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "4"
-    }
-  ],
+  "editor:cycle-list-checklist": [],
   "shortcuts-extender:shortcut-code-block": [
     {
       "modifiers": [
@@ -302,6 +286,105 @@
         "Shift"
       ],
       "key": "T"
+    }
+  ],
+  "backlink:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "2"
+    }
+  ],
+  "tag-pane:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "4"
+    }
+  ],
+  "editor:focus-top": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "editor:focus-bottom": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ],
+  "calendar:show-calendar-view": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "1"
+    }
+  ],
+  "outgoing-links:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "3"
+    }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "5"
+    }
+  ],
+  "obsidian-minimal-settings:toggle-minimal-dark-cycle": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ],
+  "workspace:close-others": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "obsidian-comments:add-comment": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
     }
   ]
 }

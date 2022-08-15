@@ -1,6 +1,6 @@
 {
   "cssTheme": "Minimal",
-  "baseFontSize": 14,
+  "baseFontSize": 11,
   "theme": "obsidian",
   "enabledCssSnippets": [
     "obsidian"
