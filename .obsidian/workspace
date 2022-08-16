@@ -17,6 +17,19 @@
         }
       },
       {
+        "id": "cd4ecfc648d74032",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
         "id": "b7b2e38242242e37",
         "type": "leaf",
         "state": {
@@ -96,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +148,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md"
+              }
             }
           },
           {
@@ -174,6 +191,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,10 +227,10 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "b7b2e38242242e37",
+  "active": "d6aa1745f888b249",
   "lastOpenFiles": [
-    "01-proj/Juan Ignacio Gutierrez/hola mund.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/Juan Ignacio Gutierrez/hola mund.md",
     "03-ref/topoi/t09-física.md",
     "01-proj/Untitled 1.md",
     "rant.md",
