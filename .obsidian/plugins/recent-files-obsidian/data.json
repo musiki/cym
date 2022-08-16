@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "rant",
-      "path": "rant.md"
+      "basename": "hola mundo",
+      "path": "01-proj/Juan Ignacio Gutierrez/hola mundo.md"
     },
     {
       "basename": "t09-física",
       "path": "03-ref/topoi/t09-física.md"
+    },
+    {
+      "basename": "Untitled 1",
+      "path": "01-proj/Untitled 1.md"
+    },
+    {
+      "basename": "rant",
+      "path": "rant.md"
     },
     {
       "basename": "templater",
@@ -191,14 +199,6 @@
     {
       "basename": "meta-aprendizaje-1660395828475",
       "path": "image/meta-aprendizaje-1660395828475.jpeg"
-    },
-    {
-      "basename": "gallery",
-      "path": "image/gallery.md"
-    },
-    {
-      "basename": "i-sackbut",
-      "path": "02-mat/org/i-sackbut.md"
     }
   ],
   "omittedPaths": [],
