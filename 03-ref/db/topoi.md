@@ -19,11 +19,11 @@ note: electronic music is part of media art, where the artistic subject concentr
 ---
  ### 10 ontológicos
  
-  - método científico y arte. 
- - modelos de universos
-- filosofía 21
-- filosofía histórica
-- historia de la tecnología
+  - [[t10-método científico]]
+ - [[t11-sistemas de universos]]
+- [[t12-filosofía 21]]
+- [[t13-filosofía histórica]]
+- [[t14-historia de la tecnología]]
 
 --
 ### 20 materiales y exo-instrumentales
@@ -42,9 +42,10 @@ note: electronic music is part of media art, where the artistic subject concentr
 - interfaces
 - química y elementos
 - biomúsica
+
 --
   
-  ###  30 generativos
+###  30 generativos
   
   - complejidad 
   - vida artificial 
@@ -54,7 +55,9 @@ note: electronic music is part of media art, where the artistic subject concentr
   - inteligencia artificial 
   - matemática y  algorítmica 
   - literatura generativa
+  
 --
+
 
  ### 40 humanos
  -  post-humanismo 
@@ -62,6 +65,7 @@ note: electronic music is part of media art, where the artistic subject concentr
  -  humanos y neurociencias 
   - alteraciones perceptivas 
 -  arte de performance
+
 --
 
   ### 50 sociales
@@ -69,6 +73,7 @@ note: electronic music is part of media art, where the artistic subject concentr
   - exhibiciones históricas  
   - sistemas de creencias
   - hacktivismo 
+
 --
 
   ### [[t60-espacio]]
@@ -78,6 +83,19 @@ note: electronic music is part of media art, where the artistic subject concentr
 -  tiempo 
 -  soundscape 
 - percepción auditica 
+
 --
 ###  [[t61-internetmusic]]	  
-  
+
+--
+
+### técnicos
+[[js01-fundamentals]]
+[[py-foundations]]
+[[pd-foundations]]
+[[mx-maxmsp]]
+[[hd-hydra]]
+[[sc-supercollider]]
+[[sib-sibelius manuscript]]
+[[que es git]]
+

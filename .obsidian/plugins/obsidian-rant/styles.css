@@ -1,0 +1,11 @@
+.rant-highlight {
+    border: 1px solid var(--background-modifier-border);
+}
+
+.rant-highlight.rant-inline {
+    padding: 0px 4px;
+}
+
+.rant-highlight.rant-block {
+    padding: 0px 8px;
+}

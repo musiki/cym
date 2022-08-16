@@ -1,6 +1,6 @@
 ---
 title: cym22
-tags: cym
+tags: cym, class
 ---
 
 

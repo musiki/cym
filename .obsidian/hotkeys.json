@@ -1,5 +1,13 @@
 {
-  "editor:toggle-bullet-list": [],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "5"
+    }
+  ],
   "editor:toggle-numbered-list": [
     {
       "modifiers": [
@@ -9,7 +17,15 @@
       "key": "6"
     }
   ],
-  "editor:cycle-list-checklist": [],
+  "editor:cycle-list-checklist": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "4"
+    }
+  ],
   "shortcuts-extender:shortcut-code-block": [
     {
       "modifiers": [
@@ -283,7 +299,7 @@
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
       "key": "2"
     }
@@ -328,27 +344,18 @@
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
-      "key": "1"
+      "key": "5"
     }
   ],
   "outgoing-links:open": [
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
       "key": "3"
-    }
-  ],
-  "outline:open": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "5"
     }
   ],
   "obsidian-minimal-settings:toggle-minimal-dark-cycle": [
@@ -386,6 +393,134 @@
         "Shift"
       ],
       "key": "T"
+    }
+  ],
+  "shortcuts-extender:heading-1": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "1"
+    }
+  ],
+  "shortcuts-extender:heading-2": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "2"
+    }
+  ],
+  "shortcuts-extender:heading-3": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "3"
+    }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "1"
+    }
+  ],
+  "obsidian-link-embed:use-selection": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ],
+  "note-composer:split-file": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "9"
+    }
+  ],
+  "calendar:open-weekly-note": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "daily-notes:goto-next": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "graph:open-local": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "multi-column-markdown:insert-multi-column-region": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-columns:insert-column-wrapper": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-columns:insert-column": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:03-ref/templates/t-topoi.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "6"
+    }
+  ],
+  "templater-obsidian:replace-in-file-templater": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
     }
   ]
 }

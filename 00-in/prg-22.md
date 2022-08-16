@@ -11,8 +11,28 @@ aula:Taller de tecnología musical
 horario:Martes de 18:00 a 22:00
 ---
 
+#  clases
+
+
+```query
+tag: #class
+```
+
+```dataview
+
+
+```
+
 ![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
 
+# calendario
+
+## semana 1
+	presentación. introducción a js, vscode, obsidian, musical mind.
+## semana 2
+	arrays, indeterminación, definiciones de música, arte, y el estado del sistema cultural en el '21.
+##
+	cohesión audiovisual, 
 
 # Tareas
 *Tarea 1:{{asignación|cym|30/08/2022|Topoi}}

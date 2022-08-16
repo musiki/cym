@@ -46,28 +46,13 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 
 ## Topoi: Módulos de conocimiento
 
-### ontológicos
-[[t10-método científico]]
-[[t11-sistemas de universos]]
-
-### materiales
-
-### generativos
-
-### humanos 
-
-### sociales
-
-### espaciales
-
-### técnicos
-[[js01-fundamentals]]
-[[py-foundations]]
-[[pd-foundations]]
-[[mx-maxmsp]]
-[[hd-hydra]]
-[[sc-supercollider]]
-[[sib-sibelius manuscript]]
+![[topoi#10 ontológicos]]
+![[topoi#20 materiales y exo-instrumentales]]
+![[topoi#30 generativos]]
+![[topoi#40 humanos]]
+![[topoi#50 sociales]]
+![[topoi#t60-espacio]]
+![[topoi#técnicos]]
 
     
 ## Plan de estudios

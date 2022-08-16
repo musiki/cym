@@ -1,6 +1,6 @@
 ---
 title: arte y ciencia estado de la cuestión
-tags: cym
+tags: cym , class
 theme: black
 ---
 
@@ -21,6 +21,7 @@ UNTREF | CYM22
 
 ---
 # objetivos
+
 
 --
 - pensar y crear el futuro de la música.
@@ -45,6 +46,19 @@ note: esto es una nota
 >order, combination of tones with temporal relationships of unity and continuity [Webster]
 
 >el arte de combinar velocidades [zztt]
+
+--
+
+<style> .reveal section p { display: inline-block; font-size: 0.5em; line-height: 1.2em; vertical-align: top; } </style>
+
+>[[Ianni Xenakis]]  [b-Formalized Music]] <br><br>
+	Es una especie de comportamiento necesario para quien la piensa y la hace.
+	Es un pleroma individual, una realización.
+	Es una fijación en el sonido de virtualidades imaginadas (argumentos cosmológicos, filosóficos, ...,)
+	Es normativo, es decir, inconscientemente es un modelo para ser o para hacer por pulsión simpática.
+	Es catalizador: su mera presencia permite transformaciones psíquicas o mentales internas del mismo modo que la bola de cristal del hipnotizador.
+	Es el juego gratuito de un niño.
+	Es una ascesis mística (pero atea). En consecuencia, las expresiones de tristeza, alegría, amor y situaciones dramáticas son sólo instancias particulares muy limitadas.
 
 
 --
@@ -94,25 +108,47 @@ Uno de los efectos mas elocuentes de la aparación de los meta-instrumentos es l
 --
 <iframe title="Tristan Perich - Microtonal Wall at Interaccess - Walkthrough" height="360" width="640" src="https://player.vimeo.com/video/45225412?h=7a7bf944e4&amp;app_id=122963" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 ---
-## tecnologías como exo-cerebros
+
+-  cnologías como exo-cerebros
 
 
 
-footnote [^1]
-<!-- element class="red" -->
+---
+Internet como espacio
+
+--
+## AI-Duet
+https://experiments.withgoogle.com/ai-duet
 
 
 
-<div id="exp"> hello<div>
-<script> document.getElementById("exp") </script>
+---
 
 
+# generatividad
+
+## azar
+
+![[t32-azar]]
 
 
- ### 10 ontológicos
- 
-  - método científico y arte. 
- - modelos de universos
-- filosofía 21
-- filosofía histórica
-- historia de la tecnología
+--
+#  proyecto 01  
+
+>[!todo] > generativida aleatoría sonora
+
+- Aplica un proceso aleatorio a tus Notas. El proceso podría consistir en añadir algún proceso aleatorio o probabilístico a cuándo, si o durante cuánto tiempo se tocan tus Notas. El timbre o la espectromorfología podrían controlarse de forma probabilística.
+
+- Experimentar  con la aplicación del mismo proceso aleatorio a múltiples parámetros o características.
+
+- Trabaje con la probabilidad para hacerla musical. ¿Por qué o cómo has elegido las probabilidades que has hecho? ¿Cuándo se convierte la aleatoriedad en ruido? ¿Qué es el ruido para vos?
+
+- Documenta tu proceso y/o crea algún artefacto, subilo a discord, a tu carpeta del repo y comentá el trabajo de tus compañerxs.
+
+
+# referencias y actividades recomendadas
+
+- javascript the good parts en español
+https://www.youtube.com/watch?v=lP9-Zx_cCUg
+
+>[!note] > leer [[b-Spectromorphology]] de [[Dennis Smalley]]

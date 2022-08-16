@@ -12,9 +12,17 @@
 
 #  teclas de acceso rápido 
 
+```bash
+
 - (ctrl  / command = c) 
--  cE / prender apagar   modo edición
--  c, /  ir a la c-onfiguración 
+-  cE # prender apagar   modo edición
+-  c, # ir a la c-onfiguración 
+- csT # abrir tabla
+
+```
+
+
+
 
 
 # bloques
@@ -51,8 +59,25 @@ C -->|Three| F[fa:fa-car Car]
 
 ```
 
+## notas
 
+
+```note
+
+hello world
+
+```
+
+# checkbox raros (css agregado)
+
+- [  ] sin chequear
+- [x]  chequeado
+- [>] diferido
+- [-]  cancelado
+- [?] need more info
+- [!] important 
 ## call-outs
+
 > [!INFO] > Here's a callout block. > It supports **markdown** and [[Internal link|wikilinks]].
 
 >[!danger] > now I know
@@ -157,20 +182,30 @@ https://github.com/Richardsl/heatmap-calendar-obsidian/tree/master/EXAMPLE_VAULT
 
 ... when $x < y$ we have ...
 
-... we have `\(x_1 = 132\)` and `\(x_2 = 370\)` and so ...
+... we have 
 
-\\begin{array}{cc}
-  a & b \\\\
-  c & c
-\\end{array}
+$(x_1 = 132)$
 
-\begin{equation}
-   E = mc^2
-\end{equation}
+and 
+$(x_2 = 370)$ and so ...
 
-\begin{equation*}
-   e^{\pi i} + 1 = 0
-\end{equation*}
+$E = mc^2$
+
+$e^{\pi i} + 1 = 0$
+
+$\times$
+
+$X_{n+1} = (a X_n + b)\, \textrm{mod}\, m$
 
 
-`\mathtip{math}{tip}`
+# tablas
+
+| New Column | New Column | New Column | New Column |
+| ---------- | ---------- | ---------- | ---------- |
+| hello      | lyric      |            |            |
+| world      | joya       |            |            |
+| sum        |            |            |            |
+
+
+
+![[dataview]]
