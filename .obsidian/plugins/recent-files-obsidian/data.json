@@ -1,16 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "rant",
-      "path": "rant.md"
+      "path": "02-mat/rant.md"
+    },
+    {
+      "basename": "templater",
+      "path": "03-ref/templater.md"
+    },
+    {
+      "basename": "t-liquid",
+      "path": "03-ref/templates/t-liquid.md"
+    },
+    {
+      "basename": "t-class",
+      "path": "03-ref/templates/t-class.md"
+    },
+    {
+      "basename": "t-book",
+      "path": "03-ref/templates/t-book.md"
+    },
+    {
+      "basename": "t-topoi",
+      "path": "03-ref/templates/t-topoi.md"
     },
     {
       "basename": "t09-física",
       "path": "03-ref/topoi/t09-física.md"
-    },
-    {
-      "basename": "templater",
-      "path": "templater.md"
     },
     {
       "basename": "t-bibliografía",
@@ -25,20 +53,8 @@
       "path": "03-ref/topoi/t34-livecoding.md"
     },
     {
-      "basename": "t-topoi",
-      "path": "03-ref/templates/t-topoi.md"
-    },
-    {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "t-book",
-      "path": "03-ref/templates/t-book.md"
     },
     {
       "basename": "t-movie",
@@ -75,10 +91,6 @@
     {
       "basename": "c-cym01-presentación",
       "path": "03-ref/class/c-cym01-presentación.md"
-    },
-    {
-      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
-      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
     },
     {
       "basename": "tp01-topoi",
@@ -149,16 +161,8 @@
       "path": "03-ref/topoi/t60-espacio.md"
     },
     {
-      "basename": "que es git",
-      "path": "02-mat/que es git.md"
-    },
-    {
       "basename": "html",
       "path": "02-mat/html.md"
-    },
-    {
-      "basename": "t-class",
-      "path": "03-ref/templates/t-class.md"
     },
     {
       "basename": "@XuanThuan1988",
@@ -191,14 +195,6 @@
     {
       "basename": "meta-aprendizaje-1660395828475",
       "path": "image/meta-aprendizaje-1660395828475.jpeg"
-    },
-    {
-      "basename": "gallery",
-      "path": "image/gallery.md"
-    },
-    {
-      "basename": "i-sackbut",
-      "path": "02-mat/org/i-sackbut.md"
     }
   ],
   "omittedPaths": [],
