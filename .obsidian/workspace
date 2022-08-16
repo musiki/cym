@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "rant.md",
-            "mode": "preview",
+            "file": "01-proj/Juan Martín Ancarola/Hola Mundo.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/Juan Martín Ancarola/Hola Mundo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/Juan Martín Ancarola/Hola Mundo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rant.md"
+                "file": "01-proj/Juan Martín Ancarola/Hola Mundo.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/Juan Martín Ancarola/Hola Mundo.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,15 +221,15 @@
   },
   "active": "929cba077ca2260a",
   "lastOpenFiles": [
-    "03-ref/topoi/t09-física.md",
+    "README.md",
     "rant.md",
+    "03-ref/topoi/t09-física.md",
     "templater.md",
     "03-ref/templates/t-bibliografía.md",
     "03-ref/dataview.md",
     "03-ref/topoi/t34-livecoding.md",
     "03-ref/templates/t-topoi.md",
     "03-ref/ayuda.md",
-    "README.md",
     "03-ref/templates/t-book.md"
   ]
 }

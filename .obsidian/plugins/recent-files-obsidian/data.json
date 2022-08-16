@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Hola Mundo",
+      "path": "01-proj/Juan Martín Ancarola/Hola Mundo.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "rant",
       "path": "rant.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "t-book",
@@ -195,10 +199,6 @@
     {
       "basename": "gallery",
       "path": "image/gallery.md"
-    },
-    {
-      "basename": "i-sackbut",
-      "path": "02-mat/org/i-sackbut.md"
     }
   ],
   "omittedPaths": [],
