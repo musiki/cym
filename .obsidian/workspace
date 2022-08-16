@@ -6,11 +6,12 @@
       {
         "id": "929cba077ca2260a",
         "type": "leaf",
+        "dimension": 71.91383595691798,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "rant.md",
-            "mode": "preview",
+            "file": "01-proj/lopez/helloworld.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -19,6 +20,7 @@
       {
         "id": "d6aa1745f888b249",
         "type": "leaf",
+        "dimension": 28.086164043082025,
         "state": {
           "type": "markdown",
           "state": {
@@ -80,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,20 +98,12 @@
         "dimension": 69.3196405648267,
         "children": [
           {
-            "id": "115b806839fbc80b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "afa41c41daa5e41d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,12 +143,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rant.md"
+                "file": "01-proj/lopez/helloworld.md"
               }
             }
           },
           {
-            "id": "8e9c3f3f1dba96d9",
+            "id": "3ed8df353f1c2d0b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "a8ad3db47b84b9c3",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -162,7 +164,7 @@
             }
           },
           {
-            "id": "959906143e4f3a76",
+            "id": "3f4fe9d8636a62a0",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -170,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "5a28386e4fdcd41d",
@@ -183,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "rant.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,15 +223,15 @@
   },
   "active": "929cba077ca2260a",
   "lastOpenFiles": [
-    "03-ref/topoi/t09-física.md",
     "rant.md",
-    "templater.md",
-    "03-ref/templates/t-bibliografía.md",
-    "03-ref/dataview.md",
-    "03-ref/topoi/t34-livecoding.md",
-    "03-ref/templates/t-topoi.md",
-    "03-ref/ayuda.md",
     "README.md",
-    "03-ref/templates/t-book.md"
+    "templater.md",
+    "03-ref/class/c-cym01-presentación.md",
+    "03-ref/bibliografía/los condenados de la pantalla.md",
+    "02-mat/html.md",
+    "02-mat/cloud ides.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/tone.js.md",
+    "02-mat/que es git.md"
   ]
 }
