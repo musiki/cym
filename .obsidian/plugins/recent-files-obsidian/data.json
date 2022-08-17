@@ -1,52 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "01-Azar",
-      "path": "01-proj/lopez/01-Azar.md"
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "rant",
+      "path": "02-mat/rant.md"
     },
     {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
     },
     {
-      "basename": "c-cym01-presentación",
-      "path": "03-ref/class/c-cym01-presentación.md"
-    },
-    {
-      "basename": "helloworld",
-      "path": "01-proj/lopez/helloworld.md"
-    },
-    {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "t32-azar",
       "path": "03-ref/topoi/t32-azar.md"
     },
     {
-      "basename": "Untitled 1",
-      "path": "01-proj/Untitled 1.md"
+      "basename": "py-foundations",
+      "path": "02-mat/python/py-foundations.md"
+    },
+    {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
     },
     {
       "basename": "Untitled",
       "path": "01-proj/Untitled.md"
     },
     {
-      "basename": "hola mund",
-      "path": "01-proj/Juan Ignacio Gutierrez/hola mund.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "templater",
+      "path": "03-ref/templater.md"
+    },
+    {
+      "basename": "t-liquid",
+      "path": "03-ref/templates/t-liquid.md"
+    },
+    {
+      "basename": "t-class",
+      "path": "03-ref/templates/t-class.md"
+    },
+    {
+      "basename": "t-book",
+      "path": "03-ref/templates/t-book.md"
+    },
+    {
+      "basename": "t-topoi",
+      "path": "03-ref/templates/t-topoi.md"
     },
     {
       "basename": "t09-física",
       "path": "03-ref/topoi/t09-física.md"
-    },
-    {
-      "basename": "rant",
-      "path": "rant.md"
-    },
-    {
-      "basename": "templater",
-      "path": "templater.md"
     },
     {
       "basename": "t-bibliografía",
@@ -59,22 +79,6 @@
     {
       "basename": "t34-livecoding",
       "path": "03-ref/topoi/t34-livecoding.md"
-    },
-    {
-      "basename": "t-topoi",
-      "path": "03-ref/templates/t-topoi.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "t-book",
-      "path": "03-ref/templates/t-book.md"
     },
     {
       "basename": "t-movie",
@@ -109,12 +113,12 @@
       "path": "03-ref/topoi/t33-sistemas complejos.md"
     },
     {
-      "basename": "tp01-topoi",
-      "path": "01-proj/tp/tp01-topoi.md"
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/class/c-cym01-presentación.md"
     },
     {
-      "basename": "t10-método científico",
-      "path": "03-ref/topoi/t10-método científico.md"
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
     },
     {
       "basename": "o-Boid Simulation",
@@ -173,24 +177,12 @@
       "path": "03-ref/topoi/t60-espacio.md"
     },
     {
-      "basename": "que es git",
-      "path": "02-mat/que es git.md"
-    },
-    {
       "basename": "html",
       "path": "02-mat/html.md"
     },
     {
-      "basename": "t-class",
-      "path": "03-ref/templates/t-class.md"
-    },
-    {
       "basename": "@XuanThuan1988",
       "path": "03-ref/bibliografía/notes/@XuanThuan1988.md"
-    },
-    {
-      "basename": "py-foundations",
-      "path": "02-mat/python/py-foundations.md"
     },
     {
       "basename": "t01-sistemas de universos-1660410382651",
@@ -199,6 +191,10 @@
     {
       "basename": "t01-sistemas de universos-1660410536915",
       "path": "image/t01-sistemas de universos-1660410536915.jpeg"
+    },
+    {
+      "basename": "los condenados de la pantalla",
+      "path": "03-ref/bibliografía/los condenados de la pantalla.md"
     }
   ],
   "omittedPaths": [],

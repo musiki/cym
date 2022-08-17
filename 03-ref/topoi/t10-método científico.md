@@ -386,3 +386,6 @@ por el contrario el progreso está ligado al dualismo ético de lo peor y lo mej
 En sí, bien, mal y tiempo son categorías tardías y especializadas de la jerarquía intelectual.
 
 **
+
+
+https://codepen.io/LucianoAzzigotti/pen/abYRgBv?editors=1010
