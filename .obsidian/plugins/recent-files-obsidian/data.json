@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "que es git",
-      "path": "02-mat/que es git.md"
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "rant",
+      "path": "02-mat/rant.md"
     },
     {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
-      "basename": "rant",
-      "path": "02-mat/rant.md"
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
+      "basename": "t32-azar",
+      "path": "03-ref/topoi/t32-azar.md"
+    },
+    {
+      "basename": "py-foundations",
+      "path": "02-mat/python/py-foundations.md"
+    },
+    {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "01-proj/Untitled.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "templater",
@@ -51,10 +79,6 @@
     {
       "basename": "t34-livecoding",
       "path": "03-ref/topoi/t34-livecoding.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "t-movie",
@@ -97,10 +121,6 @@
       "path": "01-proj/tp/tp01-topoi.md"
     },
     {
-      "basename": "t10-método científico",
-      "path": "03-ref/topoi/t10-método científico.md"
-    },
-    {
       "basename": "o-Boid Simulation",
       "path": "03-ref/obras/o-Boid Simulation.md"
     },
@@ -115,10 +135,6 @@
     {
       "basename": "vinculación bidireccional-1660394778685",
       "path": "image/vinculación bidireccional-1660394778685.jpeg"
-    },
-    {
-      "basename": "t32-azar",
-      "path": "03-ref/topoi/t32-azar.md"
     },
     {
       "basename": "referencias",
@@ -169,10 +185,6 @@
       "path": "03-ref/bibliografía/notes/@XuanThuan1988.md"
     },
     {
-      "basename": "py-foundations",
-      "path": "02-mat/python/py-foundations.md"
-    },
-    {
       "basename": "t01-sistemas de universos-1660410382651",
       "path": "image/t01-sistemas de universos-1660410382651.jpeg"
     },
@@ -183,18 +195,6 @@
     {
       "basename": "los condenados de la pantalla",
       "path": "03-ref/bibliografía/los condenados de la pantalla.md"
-    },
-    {
-      "basename": "js01-fundamentals",
-      "path": "02-mat/jasvascript/js01-fundamentals.md"
-    },
-    {
-      "basename": "js-playground",
-      "path": "02-mat/jasvascript/js-playground.md"
-    },
-    {
-      "basename": "meta-aprendizaje-1660395828475",
-      "path": "image/meta-aprendizaje-1660395828475.jpeg"
     }
   ],
   "omittedPaths": [],
