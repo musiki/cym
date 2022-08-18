@@ -6,10 +6,11 @@
       {
         "id": "d6aa1745f888b249",
         "type": "leaf",
+        "dimension": 63.54810238305384,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+            "file": "02-mat/jasvascript/js01-fundamentals.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -19,6 +20,7 @@
       {
         "id": "cd4ecfc648d74032",
         "type": "leaf",
+        "dimension": 18.79964695498676,
         "state": {
           "type": "empty",
           "state": {}
@@ -27,6 +29,7 @@
       {
         "id": "b7b2e38242242e37",
         "type": "leaf",
+        "dimension": 17.6522506619594,
         "state": {
           "type": "empty",
           "state": {}
@@ -65,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tp.file",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -186,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,17 +225,17 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "d6aa1745f888b249",
+  "active": "90ce32d259cad856",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "03-ref/topoi/t32-azar.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
     "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+    "conflict-files-obsidian-git.md",
     "03-ref/topoi/t09-física.md",
     "01-proj/Untitled 1.md",
     "rant.md",
     "templater.md",
-    "03-ref/templates/t-bibliografía.md",
-    "03-ref/dataview.md",
-    "03-ref/topoi/t34-livecoding.md",
-    "03-ref/templates/t-topoi.md"
+    "03-ref/templates/t-bibliografía.md"
   ]
 }

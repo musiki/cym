@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "t32-azar",
+      "path": "03-ref/topoi/t32-azar.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
       "basename": "hola mund",
       "path": "01-proj/Juan Ignacio Gutierrez/hola mund.md"
     },
@@ -85,10 +97,6 @@
       "path": "03-ref/class/c-cym01-presentación.md"
     },
     {
-      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
-      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
-    },
-    {
       "basename": "tp01-topoi",
       "path": "01-proj/tp/tp01-topoi.md"
     },
@@ -111,10 +119,6 @@
     {
       "basename": "vinculación bidireccional-1660394778685",
       "path": "image/vinculación bidireccional-1660394778685.jpeg"
-    },
-    {
-      "basename": "t32-azar",
-      "path": "03-ref/topoi/t32-azar.md"
     },
     {
       "basename": "referencias",
@@ -187,10 +191,6 @@
     {
       "basename": "los condenados de la pantalla",
       "path": "03-ref/bibliografía/los condenados de la pantalla.md"
-    },
-    {
-      "basename": "js01-fundamentals",
-      "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
       "basename": "js-playground",
