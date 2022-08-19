@@ -5,6 +5,10 @@
       "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
+      "basename": "01-Azar",
+      "path": "01-proj/lopez/01-Azar.md"
+    },
+    {
       "basename": "t32-azar",
       "path": "03-ref/topoi/t32-azar.md"
     },
@@ -19,18 +23,6 @@
     {
       "basename": "t09-física",
       "path": "03-ref/topoi/t09-física.md"
-    },
-    {
-      "basename": "Untitled 1",
-      "path": "01-proj/Untitled 1.md"
-    },
-    {
-      "basename": "rant",
-      "path": "rant.md"
-    },
-    {
-      "basename": "templater",
-      "path": "templater.md"
     },
     {
       "basename": "t-bibliografía",
