@@ -1,5 +1,14 @@
 # 1 - Azar
-## 1.1 Secuencia aleatoria de 3 notas 16/08
+## 22.08.19 Update
+- Agregué botón **Stop** y coloreé ambos botones
+- Ajusté la afinación del sintetizador
+- La consola ahora imprime el nombre de las notas que suenan
+
+https://codepen.io/nlpz404/pen/PoRVJjM?editors=1111
+
+---
+
+## 22.08.16 Secuencia aleatoria de 3 notas
 Sobre lo trabajado en la clase de hoy:
 
 - Logré que suene: había un problema con la variable *shift*. Aún no entiendo bien qué función cumplía, pero quitándola pudo arrancar.

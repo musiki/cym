@@ -15,6 +15,19 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "f628355d67e35c55",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/tone.js.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/tone.js.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/tone.js.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -161,8 +174,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "06488d2a3c0599ff",
+  "active": "f628355d67e35c55",
   "lastOpenFiles": [
+    "02-mat/tone.js.md",
     "image/vinculación bidireccional-1660394778685.jpeg",
     "01-proj/Untitled.md",
     "03-ref/templates/t-book.md",
@@ -171,7 +185,6 @@
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/procesos/r-vinculación bidireccional.md",
-    "back.md",
-    "02-mat/org/mat-partitura.md"
+    "back.md"
   ]
 }
