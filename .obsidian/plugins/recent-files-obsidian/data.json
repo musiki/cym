@@ -5,16 +5,16 @@
       "path": "01-proj/lopez/01-Azar.md"
     },
     {
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
     },
     {
       "basename": "c-cym01-presentación",
       "path": "03-ref/class/c-cym01-presentación.md"
-    },
-    {
-      "basename": "helloworld",
-      "path": "01-proj/lopez/helloworld.md"
     },
     {
       "basename": "js01-fundamentals",
