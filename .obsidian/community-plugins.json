@@ -57,5 +57,7 @@
   "quickadd",
   "obsidian-dynamic-embed",
   "obsidian-rant",
-  "liquid-templates"
+  "liquid-templates",
+  "obsidian-codemirror-options",
+  "obsidian-functionplot"
 ]

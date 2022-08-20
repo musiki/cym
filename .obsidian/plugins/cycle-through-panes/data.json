@@ -1,4 +1,6 @@
 {
-  "viewTypes": [],
+  "viewTypes": [
+    "recent-files"
+  ],
   "onlyRootLeaves": true
 }
