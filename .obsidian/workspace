@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "02-mat/jasvascript/js01-fundamentals.md",
+            "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md"
               }
             }
           },
@@ -203,7 +203,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/Juan Ignacio Gutierrez/hola mund.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,9 +241,9 @@
   },
   "active": "90ce32d259cad856",
   "lastOpenFiles": [
+    "02-mat/jasvascript/js01-fundamentals.md",
     "01-proj/lopez/01-Azar.md",
     "conflict-files-obsidian-git.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
     "03-ref/topoi/t32-azar.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
     "01-proj/Juan Ignacio Gutierrez/hola mund.md",
