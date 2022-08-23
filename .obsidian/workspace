@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "edd5f53fd90e2e1a",
     "type": "split",
     "children": [
       {
-        "id": "febe125efed552a1",
+        "id": "f0972b428169f4a8",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -15,33 +15,20 @@
             "source": true
           }
         }
-      },
-      {
-        "id": "f628355d67e35c55",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "02-mat/jasvascript/js01-fundamentals.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "86c4d507cf17b06f",
+    "id": "4792d222b7dd01f6",
     "type": "split",
     "children": [
       {
-        "id": "41c36bbef51e25ab",
+        "id": "6fc9947efadad6d9",
         "type": "tabs",
         "children": [
           {
-            "id": "06488d2a3c0599ff",
+            "id": "227ae17d3385eb46",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -49,7 +36,7 @@
             }
           },
           {
-            "id": "534d6978b260f4c4",
+            "id": "30efb62d20e4149c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -57,7 +44,7 @@
             }
           },
           {
-            "id": "73c88ee959762b8c",
+            "id": "1998093f5df621b2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,7 +59,7 @@
             }
           },
           {
-            "id": "750dd73c6f03e205",
+            "id": "e1661d4e5719302c",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -87,15 +74,15 @@
     "width": 300
   },
   "right": {
-    "id": "7774d1b51b5434f3",
+    "id": "37f490de96f37098",
     "type": "split",
     "children": [
       {
-        "id": "b14ef697ccb7613c",
+        "id": "1fbe60bf5c35602e",
         "type": "tabs",
         "children": [
           {
-            "id": "2d7ffe3962c65dd0",
+            "id": "d9a09cb0c03a9116",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -103,7 +90,7 @@
             }
           },
           {
-            "id": "9e61f8775ea30c0f",
+            "id": "beefd2a82517473c",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -120,7 +107,7 @@
             }
           },
           {
-            "id": "00e386b2e66a88e6",
+            "id": "58d99f0e7524b91f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -132,7 +119,7 @@
             }
           },
           {
-            "id": "a56d1daf6efbdda2",
+            "id": "6c03a6555a06706d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -143,7 +130,7 @@
             }
           },
           {
-            "id": "5932602b28965237",
+            "id": "0c6cc7a58b725616",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -153,7 +140,7 @@
             }
           },
           {
-            "id": "dd56916678682eb0",
+            "id": "e28c14cd7713dfeb",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -161,7 +148,7 @@
             }
           },
           {
-            "id": "4c4108699f1a2c61",
+            "id": "5bd6e12dcc3773e6",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -175,17 +162,6 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "febe125efed552a1",
-  "lastOpenFiles": [
-    "00-in/prg-22.md",
-    "03-ref/topoi/t32-azar.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/bibliografía/notes/@Padilla2010.md",
-    "03-ref/bibliografía/notes/@XuanThuan1988.md",
-    "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md",
-    "03-ref/bibliografía/los condenados de la pantalla.md",
-    "02-mat/tone.js.md",
-    "02-mat/rant.md",
-    "02-mat/que es git.md"
-  ]
+  "active": "f0972b428169f4a8",
+  "lastOpenFiles": []
 }
