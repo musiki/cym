@@ -1,6 +1,7 @@
 {
   "recentFiles": [
     {
+<<<<<<< HEAD
       "basename": "Hola Mundo",
       "path": "01-proj/ancarola/Hola Mundo.md"
     },
@@ -15,34 +16,63 @@
     {
       "basename": "Dennis Smalley",
       "path": "Dennis Smalley.md"
+=======
+      "basename": "01-Azar",
+      "path": "01-proj/lopez/01-Azar.md"
+    },
+    {
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+>>>>>>> origin/main
     },
     {
       "basename": "2022-08-30",
       "path": "01-proj/tp/2022-08-30.md"
     },
     {
+<<<<<<< HEAD
       "basename": "helloworld",
       "path": "01-proj/lopez/helloworld.md"
+=======
+      "basename": "Hola Mundo",
+      "path": "01-proj/ancarola/Hola Mundo.md"
+    },
+    {
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/class/c-cym03- cohesión audivisual.md"
+>>>>>>> origin/main
     },
     {
       "basename": "c-cym02-arte y ciencia - estado de la cuestión",
       "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+<<<<<<< HEAD
     },
     {
       "basename": "Untitled",
       "path": "01-proj/Untitled.md"
+=======
+>>>>>>> origin/main
     },
     {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
+<<<<<<< HEAD
       "basename": "t09-física",
       "path": "03-ref/topoi/t09-física.md"
     },
     {
       "basename": "README",
       "path": "README.md"
+=======
+      "basename": "t32-azar",
+      "path": "03-ref/topoi/t32-azar.md"
+    },
+    {
+      "basename": "t09-física",
+      "path": "03-ref/topoi/t09-física.md"
+>>>>>>> origin/main
     },
     {
       "basename": "t-bibliografía",
@@ -65,6 +95,13 @@
       "path": "03-ref/ayuda.md"
     },
     {
+<<<<<<< HEAD
+=======
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+>>>>>>> origin/main
       "basename": "t-book",
       "path": "03-ref/templates/t-book.md"
     },
@@ -183,6 +220,25 @@
     {
       "basename": "py-foundations",
       "path": "02-mat/python/py-foundations.md"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "basename": "t01-sistemas de universos-1660410382651",
+      "path": "image/t01-sistemas de universos-1660410382651.jpeg"
+    },
+    {
+      "basename": "t01-sistemas de universos-1660410536915",
+      "path": "image/t01-sistemas de universos-1660410536915.jpeg"
+    },
+    {
+      "basename": "los condenados de la pantalla",
+      "path": "03-ref/bibliografía/los condenados de la pantalla.md"
+    },
+    {
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
+>>>>>>> origin/main
     }
   ],
   "omittedPaths": [],
