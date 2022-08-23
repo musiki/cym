@@ -1,8 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/class/c-cym03- cohesión audivisual.md"
+    },
+    {
+      "basename": "prg-22",
+      "path": "00-in/prg-22.md"
+    },
+    {
+      "basename": "t32-azar",
+      "path": "03-ref/topoi/t32-azar.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "@Padilla2010",
+      "path": "03-ref/bibliografía/notes/@Padilla2010.md"
+    },
+    {
+      "basename": "@XuanThuan1988",
+      "path": "03-ref/bibliografía/notes/@XuanThuan1988.md"
+    },
+    {
+      "basename": "b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29",
+      "path": "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md"
+    },
+    {
+      "basename": "los condenados de la pantalla",
+      "path": "03-ref/bibliografía/los condenados de la pantalla.md"
+    },
+    {
       "basename": "tone.js",
       "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "rant",
+      "path": "02-mat/rant.md"
+    },
+    {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
+    },
+    {
+      "basename": "html",
+      "path": "02-mat/html.md"
     },
     {
       "basename": "r-vinculación bidireccional",
@@ -13,24 +57,72 @@
       "path": "02-mat/org/mat-partitura.md"
     },
     {
-      "basename": "i-sackbut",
-      "path": "02-mat/org/i-sackbut.md"
+      "basename": "meta-aprendizaje",
+      "path": "00-in/meta-aprendizaje.md"
     },
     {
-      "basename": "hola mund",
-      "path": "01-proj/gutierrez/hola mund.md"
+      "basename": "01-Azar",
+      "path": "01-proj/lopez/01-Azar.md"
     },
     {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
     },
     {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
-      "basename": "js-playground",
-      "path": "02-mat/jasvascript/js-playground.md"
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "topoi",
+      "path": "03-ref/db/topoi.md"
+    },
+    {
+      "basename": "referencias",
+      "path": "03-ref/db/referencias.md"
+    },
+    {
+      "basename": "personas",
+      "path": "03-ref/db/personas.md"
+    },
+    {
+      "basename": "obras",
+      "path": "03-ref/db/obras.md"
+    },
+    {
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/class/c-cym01-presentación.md"
+    },
+    {
+      "basename": "combinational creativity",
+      "path": "00-in/combinational creativity.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "Hola Mundo",
+      "path": "01-proj/ancarola/Hola Mundo.md"
+    },
+    {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
+      "basename": "i-sackbut",
+      "path": "02-mat/org/i-sackbut.md"
     }
   ],
   "omittedPaths": [],

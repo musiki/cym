@@ -6059,10 +6059,10 @@ var require_feather = __commonJS({
           var fails = __webpack_require__("./node_modules/core-js/internals/fails.js");
           var replacement = /#|\.prototype\./;
           var isForced = function(feature, detection) {
-            var value = data[normalize2(feature)];
+            var value = data[normalize(feature)];
             return value == POLYFILL ? true : value == NATIVE ? false : typeof detection == "function" ? fails(detection) : !!detection;
           };
-          var normalize2 = isForced.normalize = function(string) {
+          var normalize = isForced.normalize = function(string) {
             return String(string).replace(replacement, ".").toLowerCase();
           };
           var data = isForced.data = {};
@@ -6766,130 +6766,6 @@ var require_feather = __commonJS({
         }
       });
     });
-  }
-});
-
-// node_modules/path-normalize/lib/index.js
-var require_lib2 = __commonJS({
-  "node_modules/path-normalize/lib/index.js"(exports, module2) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports["default"] = void 0;
-    function _typeof(obj) {
-      "@babel/helpers - typeof";
-      return _typeof = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(obj2) {
-        return typeof obj2;
-      } : function(obj2) {
-        return obj2 && typeof Symbol == "function" && obj2.constructor === Symbol && obj2 !== Symbol.prototype ? "symbol" : typeof obj2;
-      }, _typeof(obj);
-    }
-    var SLASH = 47;
-    var DOT = 46;
-    var assertPath = function assertPath2(path2) {
-      var t = _typeof(path2);
-      if (t !== "string") {
-        throw new TypeError("Expected a string, got a ".concat(t));
-      }
-    };
-    var posixNormalize = function posixNormalize2(path2, allowAboveRoot) {
-      var res = "";
-      var lastSegmentLength = 0;
-      var lastSlash = -1;
-      var dots = 0;
-      var code;
-      for (var i = 0; i <= path2.length; ++i) {
-        if (i < path2.length) {
-          code = path2.charCodeAt(i);
-        } else if (code === SLASH) {
-          break;
-        } else {
-          code = SLASH;
-        }
-        if (code === SLASH) {
-          if (lastSlash === i - 1 || dots === 1) {
-          } else if (lastSlash !== i - 1 && dots === 2) {
-            if (res.length < 2 || lastSegmentLength !== 2 || res.charCodeAt(res.length - 1) !== DOT || res.charCodeAt(res.length - 2) !== DOT) {
-              if (res.length > 2) {
-                var lastSlashIndex = res.lastIndexOf("/");
-                if (lastSlashIndex !== res.length - 1) {
-                  if (lastSlashIndex === -1) {
-                    res = "";
-                    lastSegmentLength = 0;
-                  } else {
-                    res = res.slice(0, lastSlashIndex);
-                    lastSegmentLength = res.length - 1 - res.lastIndexOf("/");
-                  }
-                  lastSlash = i;
-                  dots = 0;
-                  continue;
-                }
-              } else if (res.length === 2 || res.length === 1) {
-                res = "";
-                lastSegmentLength = 0;
-                lastSlash = i;
-                dots = 0;
-                continue;
-              }
-            }
-            if (allowAboveRoot) {
-              if (res.length > 0) {
-                res += "/..";
-              } else {
-                res = "..";
-              }
-              lastSegmentLength = 2;
-            }
-          } else {
-            if (res.length > 0) {
-              res += "/" + path2.slice(lastSlash + 1, i);
-            } else {
-              res = path2.slice(lastSlash + 1, i);
-            }
-            lastSegmentLength = i - lastSlash - 1;
-          }
-          lastSlash = i;
-          dots = 0;
-        } else if (code === DOT && dots !== -1) {
-          ++dots;
-        } else {
-          dots = -1;
-        }
-      }
-      return res;
-    };
-    var decode = function decode2(s) {
-      try {
-        return decodeURIComponent(s);
-      } catch (_unused) {
-        return s;
-      }
-    };
-    var normalize2 = function normalize3(p) {
-      assertPath(p);
-      var path2 = p;
-      if (path2.length === 0) {
-        return ".";
-      }
-      var isAbsolute = path2.charCodeAt(0) === SLASH;
-      var trailingSeparator = path2.charCodeAt(path2.length - 1) === SLASH;
-      path2 = decode(path2);
-      path2 = posixNormalize(path2, !isAbsolute);
-      if (path2.length === 0 && !isAbsolute) {
-        path2 = ".";
-      }
-      if (path2.length > 0 && trailingSeparator) {
-        path2 += "/";
-      }
-      if (isAbsolute) {
-        return "/" + path2;
-      }
-      return path2;
-    };
-    var _default = normalize2;
-    exports["default"] = _default;
-    module2.exports = exports.default;
   }
 });
 
@@ -8780,9 +8656,9 @@ function parseLogOptions(opt = {}, customArgs = []) {
   if (maxCount) {
     command.push(`--max-count=${maxCount}`);
   }
-  if (opt.from && opt.to) {
+  if (opt.from || opt.to) {
     const rangeOperator = opt.symmetric !== false ? "..." : "..";
-    suffix.push(`${opt.from}${rangeOperator}${opt.to}`);
+    suffix.push(`${opt.from || ""}${rangeOperator}${opt.to || ""}`);
   }
   if (filterString(opt.file)) {
     suffix.push("--follow", opt.file);
@@ -11059,7 +10935,7 @@ var SimpleGit = class extends GitManager {
   }
   onError(error) {
     if (error) {
-      let networkFailure = error.message.contains("Could not resolve host");
+      let networkFailure = error.message.contains("Could not resolve host") || error.message.match(/ssh: connect to host .*? port .*?: Operation timed out/);
       if (!networkFailure) {
         this.plugin.displayError(error.message);
         this.plugin.setState(PluginState.idle);
@@ -11620,16 +11496,17 @@ var DiffView = class extends import_obsidian8.ItemView {
       var _a2;
       if (((_a2 = this.state) == null ? void 0 : _a2.file) && !this.gettingDiff && this.plugin.gitManager) {
         this.gettingDiff = true;
-        const diff = this.parser.parseFromString((0, import_diff2html.html)(yield this.plugin.gitManager.getDiffString(this.state.file, this.state.staged)), "text/html").querySelector(".d2h-file-diff");
+        let diff = yield this.plugin.gitManager.getDiffString(this.state.file, this.state.staged);
         this.contentEl.empty();
-        if (diff) {
-          this.contentEl.append(diff);
-        } else {
-          const div = this.contentEl.createDiv({ cls: "diff-err" });
-          div.createSpan({ text: "\u26A0\uFE0F", cls: "diff-err-sign" });
-          div.createEl("br");
-          div.createSpan({ text: "No changes to " + this.state.file });
+        if (!diff) {
+          const content = yield this.app.vault.adapter.read(this.plugin.gitManager.getVaultPath(this.state.file));
+          const header = `--- /dev/null
++++ ${this.state.file}
+@@ -0,0 +1,${content.split("\n").length} @@`;
+          diff = [...header.split("\n"), ...content.split("\n").map((line) => `+${line}`)].join("\n");
         }
+        const diffEl = this.parser.parseFromString((0, import_diff2html.html)(diff), "text/html").querySelector(".d2h-file-diff");
+        this.contentEl.append(diffEl);
         this.gettingDiff = false;
       }
     });
@@ -11654,8 +11531,16 @@ var GeneralModal = class extends import_obsidian9.SuggestModal {
     });
   }
   selectSuggestion(value, evt) {
-    if (this.resolve)
-      this.resolve(this.allowEmpty && value === " " ? "" : value);
+    if (this.resolve) {
+      let res;
+      if (this.allowEmpty && value === " ")
+        res = "";
+      else if (value === "...")
+        res = void 0;
+      else
+        res = value;
+      this.resolve(res);
+    }
     super.selectSuggestion(value, evt);
   }
   onClose() {
@@ -15205,7 +15090,6 @@ var GitView2 = class extends import_obsidian17.ItemView {
 };
 
 // src/main.ts
-var normalize = require_lib2();
 var ObsidianGit = class extends import_obsidian18.Plugin {
   constructor() {
     super(...arguments);
@@ -15624,10 +15508,16 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
       const modal = new GeneralModal(this.app, [], "Enter remote URL");
       const url = yield modal.open();
       if (url) {
-        let dir = yield new GeneralModal(this.app, [], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
+        let dir = yield new GeneralModal(this.app, ["Vault root"], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
         if (dir !== void 0) {
-          dir = normalize(dir);
-          if (dir === "" || dir === ".") {
+          if (dir === "Vault root") {
+            dir = ".";
+          }
+          dir = (0, import_obsidian18.normalizePath)(dir);
+          if (dir === "/") {
+            dir = ".";
+          }
+          if (dir === ".") {
             const modal2 = new GeneralModal(this.app, ["NO", "YES"], `Does your remote repo contain a ${app.vault.configDir} directory at the root?`, false, true);
             const containsConflictDir = yield modal2.open();
             if (containsConflictDir === void 0) {
@@ -15648,7 +15538,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
           yield this.gitManager.clone(url, dir);
           new import_obsidian18.Notice("Cloned new repo.");
           new import_obsidian18.Notice("Please restart Obsidian");
-          if (dir) {
+          if (dir && dir !== ".") {
             this.settings.basePath = dir;
             this.saveSettings();
           }
@@ -15839,6 +15729,9 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
   }
   pull() {
     return __async(this, null, function* () {
+      if (!(yield this.remotesAreSet())) {
+        return false;
+      }
       const pulledFiles = yield this.gitManager.pull();
       this.offlineMode = false;
       if (pulledFiles.length > 0) {
@@ -15878,7 +15771,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
         new import_obsidian18.Notice("No upstream branch is set. Please select one.");
         const remoteBranch = yield this.selectRemoteBranch();
         if (remoteBranch == void 0) {
-          this.displayError("Did not push. No upstream-branch is set!", 1e4);
+          this.displayError("Aborted. No upstream-branch is set!", 1e4);
           this.setState(PluginState.idle);
           return false;
         } else {
