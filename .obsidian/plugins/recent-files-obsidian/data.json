@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "c-cym03- cohesión audivisual",
-      "path": "03-ref/class/c-cym03- cohesión audivisual.md"
+      "basename": "prg-22",
+      "path": "00-in/prg-22.md"
+    },
+    {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
     {
       "basename": "01-Azar",
       "path": "01-proj/lopez/01-Azar.md"
     },
     {
-      "basename": "js01-fundamentals",
-      "path": "02-mat/jasvascript/js01-fundamentals.md"
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "rant",
+      "path": "02-mat/rant.md"
+    },
+    {
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/class/c-cym03- cohesión audivisual.md"
     },
     {
       "basename": "t32-azar",
@@ -63,10 +75,6 @@
     {
       "basename": "topoi",
       "path": "03-ref/db/topoi.md"
-    },
-    {
-      "basename": "prg-22",
-      "path": "00-in/prg-22.md"
     },
     {
       "basename": "Douglas Barret",

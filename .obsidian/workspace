@@ -6,61 +6,14 @@
       {
         "id": "d6aa1745f888b249",
         "type": "leaf",
-        "dimension": 32.03058623619371,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+            "file": "00-in/prg-22.md",
             "mode": "source",
             "backlinks": false,
             "source": true
           }
-        }
-      },
-      {
-        "id": "e46bcd3eafea346c",
-        "type": "leaf",
-        "dimension": 16.99235344095157,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "01-proj/lopez/01-Azar.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "1c2373d679d6a3c4",
-        "type": "leaf",
-        "dimension": 16.99235344095157,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "01-proj/lopez/01-Azar.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "cd4ecfc648d74032",
-        "type": "leaf",
-        "dimension": 16.99235344095157,
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "b7b2e38242242e37",
-        "type": "leaf",
-        "dimension": 16.99235344095157,
-        "state": {
-          "type": "empty",
-          "state": {}
         }
       }
     ],
@@ -135,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "00-in/prg-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "00-in/prg-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md"
+                "file": "00-in/prg-22.md"
               }
             }
           },
@@ -217,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "00-in/prg-22.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -253,17 +206,17 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "d6aa1745f888b249",
+  "active": "4ea5e4670a37df39",
   "lastOpenFiles": [
+    "02-mat/jasvascript/js01-fundamentals.md",
     "01-proj/lopez/01-Azar.md",
+    "02-mat/tone.js.md",
+    "02-mat/rant.md",
+    "00-in/prg-22.md",
+    "03-ref/class/c-cym03- cohesión audivisual.md",
     "conflict-files-obsidian-git.md",
     "01-proj/Juan Ignacio Gutierrez/hola mund.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
     "03-ref/topoi/t32-azar.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/topoi/t09-física.md",
-    "01-proj/Untitled 1.md",
-    "rant.md",
-    "templater.md"
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
   ]
 }
