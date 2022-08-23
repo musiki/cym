@@ -4,25 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d6aa1745f888b249",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/class/c-cym03- cohesión audivisual.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
         "id": "72d1e2b2e71c8f0d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/ancarola/Hola Mundo.md",
+            "file": "01-proj/lopez/01-Azar.md",
             "mode": "source",
             "backlinks": false,
             "source": true
@@ -101,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/ancarola/Hola Mundo.md",
+                "file": "01-proj/lopez/01-Azar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/ancarola/Hola Mundo.md",
+                "file": "01-proj/lopez/01-Azar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/Hola Mundo.md"
+                "file": "01-proj/lopez/01-Azar.md"
               }
             }
           },
@@ -183,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/ancarola/Hola Mundo.md",
+                "file": "01-proj/lopez/01-Azar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,15 +208,15 @@
   },
   "active": "72d1e2b2e71c8f0d",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-ref/class/c-cym03- cohesión audivisual.md",
+    "01-proj/lopez/helloworld.md",
     "01-proj/lopez/01-Azar.md",
+    "01-proj/gutierrez/hola mund.md",
+    "01-proj/ancarola/Hola Mundo.md",
+    "03-ref/class/c-cym03- cohesión audivisual.md",
+    "conflict-files-obsidian-git.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
     "01-proj/Juan Ignacio Gutierrez/hola mund.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "03-ref/topoi/t32-azar.md",
-    "03-ref/topoi/t09-física.md",
-    "01-proj/Untitled 1.md",
-    "rant.md"
+    "03-ref/topoi/t32-azar.md"
   ]
 }
