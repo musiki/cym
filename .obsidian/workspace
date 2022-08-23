@@ -4,22 +4,13 @@
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
         "id": "0d6c89f043327c59",
-=======
-        "id": "72d1e2b2e71c8f0d",
->>>>>>> origin/main
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "01-proj/ancarola/Hola Mundo.md",
+            "file": "03-ref/class/c-cym03- cohesión audivisual.md",
             "mode": "preview",
-=======
-            "file": "01-proj/lopez/01-Azar.md",
-            "mode": "source",
->>>>>>> origin/main
             "backlinks": false,
             "source": true
           }
@@ -92,7 +83,6 @@
         "dimension": 69.3196405648267,
         "children": [
           {
-<<<<<<< HEAD
             "id": "115b806839fbc80b",
             "type": "leaf",
             "state": {
@@ -101,18 +91,12 @@
             }
           },
           {
-=======
->>>>>>> origin/main
             "id": "afa41c41daa5e41d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "01-proj/ancarola/Hola Mundo.md",
-=======
-                "file": "01-proj/lopez/01-Azar.md",
->>>>>>> origin/main
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,11 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "01-proj/ancarola/Hola Mundo.md",
-=======
-                "file": "01-proj/lopez/01-Azar.md",
->>>>>>> origin/main
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,28 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "01-proj/ancarola/Hola Mundo.md"
-=======
-                "file": "01-proj/lopez/01-Azar.md"
->>>>>>> origin/main
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md"
               }
             }
           },
           {
-<<<<<<< HEAD
             "id": "8e9c3f3f1dba96d9",
-=======
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -185,11 +149,7 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "959906143e4f3a76",
-=======
-            "id": "f1b277c53a9b8c24",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -197,11 +157,7 @@
             }
           }
         ],
-<<<<<<< HEAD
         "currentTab": 4
-=======
-        "currentTab": 3
->>>>>>> origin/main
       },
       {
         "id": "5a28386e4fdcd41d",
@@ -214,11 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-<<<<<<< HEAD
-                "file": "01-proj/ancarola/Hola Mundo.md",
-=======
-                "file": "01-proj/lopez/01-Azar.md",
->>>>>>> origin/main
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -254,9 +206,9 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-<<<<<<< HEAD
   "active": "0d6c89f043327c59",
   "lastOpenFiles": [
+    "01-proj/ancarola/Hola Mundo.md",
     "03-ref/class/c-cym03- cohesión audivisual.md",
     "03-ref/topoi/t32-azar.md",
     "conflict-files-obsidian-git.md",
@@ -265,21 +217,6 @@
     "01-proj/tp/2022-08-30.md",
     "01-proj/lopez/helloworld.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "b-Spectromorphology.md",
-    "01-proj/Untitled 1.md"
-=======
-  "active": "72d1e2b2e71c8f0d",
-  "lastOpenFiles": [
-    "01-proj/lopez/helloworld.md",
-    "01-proj/lopez/01-Azar.md",
-    "01-proj/gutierrez/hola mund.md",
-    "01-proj/ancarola/Hola Mundo.md",
-    "03-ref/class/c-cym03- cohesión audivisual.md",
-    "conflict-files-obsidian-git.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "01-proj/Juan Ignacio Gutierrez/hola mund.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "03-ref/topoi/t32-azar.md"
->>>>>>> origin/main
+    "b-Spectromorphology.md"
   ]
 }
