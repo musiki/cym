@@ -2,6 +2,8 @@
 type: class
 tags: cym, música visual, armonía expandida,class
 unit: 0
+num:  3
+year: 2022
 ---
 
 
@@ -28,5 +30,3 @@ unit: 0
 # cohesión espacial
 
 [National Mall - BlueBrain](https://vimeo.com/25374903)
-
-[n - Drexler](http://www.wakeapp.com/n/en/)la

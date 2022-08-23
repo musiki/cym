@@ -5,53 +5,65 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "tag:#topoi",
+      "query": "tag:#generative",
       "color": {
         "a": 1,
-        "rgb": 9261797
+        "rgb": 14701138
       }
     },
     {
-      "query": "tag:#libros",
+      "query": "tag:#topoi",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "type: person",
+      "query": "tag:#libros",
       "color": {
         "a": 1,
-        "rgb": 5814761
+        "rgb": 11657298
       }
     },
     {
-      "query": "type: obra",
+      "query": "section:(h1)",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "tag #instrumento",
+      "query": "path:03-ref/personas",
       "color": {
         "a": 1,
-        "rgb": 16734464
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:03-ref/obras",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
       }
     }
   ],
-  "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -0.5,
-  "nodeSizeMultiplier": 1.6189453125,
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.376833545918367,
-  "repelStrength": 10.6489158163265,
+  "centerStrength": 0.331632653061224,
+  "repelStrength": 11.530612244898,
   "linkStrength": 1,
+<<<<<<< HEAD
+  "linkDistance": 152,
+  "scale": 0.10428490954000626,
+  "close": false
+=======
   "linkDistance": 51,
 <<<<<<< HEAD
   "scale": 2.127713790504623,
@@ -63,4 +75,5 @@
 >>>>>>> origin/main
 >>>>>>> origin/main
   "close": true
+>>>>>>> origin/main
 }

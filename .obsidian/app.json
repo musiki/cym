@@ -13,5 +13,6 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "root",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "image"
+  "attachmentFolderPath": "image",
+  "mobilePullAction": "obsidian-minimal-settings:toggle-minimal-light-cycle"
 }

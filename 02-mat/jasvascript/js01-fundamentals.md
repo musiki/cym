@@ -1,3 +1,5 @@
+> [!important] > Atención! para correr los snippets de javascript es necesario ir a configuración del plugin Executc de node.js. (ademas de tener instalado node.js) En windows la ruta es C:\Program Files\nodejs\node.exe
+
 
 ```mermaid
 graph LR
