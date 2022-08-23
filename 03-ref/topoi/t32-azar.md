@@ -6,9 +6,9 @@ unit: 0
 
 Según [[Jacques Monod]] en [[b-Azar y necesidad]] la vida es una cuestión de azar puro: la consecuencia de elementos químicos convergentes mas condiciones apropiadas para la transformación. En otras palabras la sopa primigenia. Una vez que se forman los primeros aminoácidos, la evolución de las formas de la vida depende de un grado de complejización necesaria. 
 
-El azar es una de las primeras acciones posibles de realizar en una computara. Esto es conocido como RGn (random number generation).
+El azar es una de las primeras acciones posibles de realizar en una computadora. Esto es conocido como RGn (random number generation).
 
-Si pensamos en las formas mas simples de azar , podemos trazar una relación directamente proporcional entre su eficiencia y la y la cantidad de impredictibilidad (en general dada por la cantidad de los factores). 
+Si pensamos en las formas mas simples de azar , podemos trazar una relación directamente proporcional entre su eficiencia y la cantidad de impredictibilidad (en general dada por la cantidad de los factores). 
 Entre comparar el arrojar una moneda y un dado, entendemos que la impredictibilidad de la moneda es 2 y la del dado 6, y la cantidad de factores la suma de fuerzas, condiciones ambientales, ejecutivas etc. 
 
 En el casos de las computadores se utilizan fenómenos físicos como el decaimiento radiactivo, el ruido térmico, los picos de los diodos Zener, aunque el método mas común es el PRnG y el generador linear congruente. 

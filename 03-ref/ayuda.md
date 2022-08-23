@@ -2,10 +2,49 @@
 
 # instalar obsidian
 
-- introducción al lenguaje mark-up 
+## .gitignore
+
+son los archivos recomendados para no sincronizar con github. Hasta ahora son estos:
+
+En el raiz del vault (en general cym) crea un archivo llamado .gitignore y copia el siguiente texto:
+
+```bash
+.DS_Store
+cym.bib
+.obsidian/graph.json
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/workspace
+.obsidian/plugins/execute-code/data.json
+
+```
+
+## execute-code
+
+el plugin necesita definir las rutas de node.js y python para correr código dentro de obsidian.
+
+### node .js
+
+mac 
+```
+/usr/local/bin/node
+```
+
+windows
+```
+ C:\Program Files\nodejs\node.exe
+```
+
+
+
+# introducción al lenguaje mark-up 
+
+control+E  // cambia entre modo edición y presentación
+
 					#(numeral) nivel de título 1
 					##(numeral) nivel de título 2
 					-  lista bullet
+
+
 
 **negritas**
 *italica*
@@ -206,6 +245,24 @@ $X_{n+1} = (a X_n + b)\, \textrm{mod}\, m$
 | world      | joya       |            |            |
 | sum        |            |            |            |
 
+## funciones matemáticas
 
+```functionplot
+---
+title: Graph
+disableZoom: false
+bounds: [-10, 10, -10, 10]
+grid: true
+xLabel: x
+yLabel: y
+---
+
+f(x) = x^2
+g(x) = 0.5*x^3+x^2-44
+```
+
+
+
+	
 
 ![[dataview]]
