@@ -5,8 +5,20 @@
       "path": "03-ref/class/c-cym03- cohesión audivisual.md"
     },
     {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
       "basename": "tone.js",
       "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
     },
     {
       "basename": "01-Azar",
@@ -31,14 +43,6 @@
     {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
-    },
-    {
-      "basename": "js01-fundamentals",
-      "path": "02-mat/jasvascript/js01-fundamentals.md"
-    },
-    {
-      "basename": "js-playground",
-      "path": "02-mat/jasvascript/js-playground.md"
     }
   ],
   "omittedPaths": [],

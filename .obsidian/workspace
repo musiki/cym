@@ -4,16 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "febe125efed552a1",
+        "id": "dd72c6d825e38917",
         "type": "leaf",
+        "dimension": 75.21685254027261,
         "state": {
           "type": "markdown",
           "state": {
             "file": "03-ref/class/c-cym03- cohesión audivisual.md",
-            "mode": "preview",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
+        }
+      },
+      {
+        "id": "e1ed1f6bf6b4ebfe",
+        "type": "leaf",
+        "dimension": 24.783147459727388,
+        "state": {
+          "type": "reveal-preview-view",
+          "state": {}
         }
       }
     ],
@@ -71,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 174
+    "width": 174,
+    "collapsed": true
   },
   "right": {
     "id": "7774d1b51b5434f3",
@@ -162,17 +173,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "febe125efed552a1",
+  "active": "dd72c6d825e38917",
   "lastOpenFiles": [
+    "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/tone.js.md",
+    "02-mat/jasvascript/js-playground.md",
+    "03-ref/class/c-cym03- cohesión audivisual.md",
+    "Untitled.md",
     "01-proj/lopez/01-Azar.md",
     "conflict-files-obsidian-git.md",
     "image/vinculación bidireccional-1660394778685.jpeg",
     "01-proj/Untitled.md",
-    "03-ref/templates/t-book.md",
-    "02-mat/python/py-foundations.md",
-    "03-ref/personas/Douglas Barret.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/jasvascript/js-playground.md"
+    "03-ref/templates/t-book.md"
   ]
 }
