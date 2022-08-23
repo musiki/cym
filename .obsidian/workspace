@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/lopez/01-Azar.md",
-            "mode": "source",
+            "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+            "mode": "preview",
             "backlinks": false,
             "source": true
           }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/lopez/01-Azar.md",
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/lopez/01-Azar.md",
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/lopez/01-Azar.md"
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md"
               }
             }
           },
@@ -170,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/lopez/01-Azar.md",
+                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,10 +208,10 @@
   },
   "active": "72d1e2b2e71c8f0d",
   "lastOpenFiles": [
-    "01-proj/lopez/helloworld.md",
     "01-proj/lopez/01-Azar.md",
-    "01-proj/gutierrez/hola mund.md",
     "01-proj/ancarola/Hola Mundo.md",
+    "01-proj/lopez/helloworld.md",
+    "01-proj/gutierrez/hola mund.md",
     "03-ref/class/c-cym03- cohesión audivisual.md",
     "conflict-files-obsidian-git.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
