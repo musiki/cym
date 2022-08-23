@@ -5,16 +5,28 @@
       "path": "03-ref/class/c-cym03- cohesión audivisual.md"
     },
     {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
+    },
+    {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
     },
     {
       "basename": "tone.js",
       "path": "02-mat/tone.js.md"
     },
     {
-      "basename": "js-playground",
-      "path": "02-mat/jasvascript/js-playground.md"
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/class/c-cym01-presentación.md"
     },
     {
       "basename": "Untitled",

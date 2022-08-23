@@ -6,24 +6,14 @@
       {
         "id": "dd72c6d825e38917",
         "type": "leaf",
-        "dimension": 75.21685254027261,
         "state": {
           "type": "markdown",
           "state": {
             "file": "03-ref/class/c-cym03- cohesión audivisual.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": false,
             "source": true
           }
-        }
-      },
-      {
-        "id": "e1ed1f6bf6b4ebfe",
-        "type": "leaf",
-        "dimension": 24.783147459727388,
-        "state": {
-          "type": "reveal-preview-view",
-          "state": {}
         }
       }
     ],
@@ -91,6 +81,7 @@
       {
         "id": "b14ef697ccb7613c",
         "type": "tabs",
+        "dimension": 60,
         "children": [
           {
             "id": "2d7ffe3962c65dd0",
@@ -166,24 +157,44 @@
               "state": {}
             }
           }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "6bc32cc4d9036524",
+        "type": "tabs",
+        "dimension": 40,
+        "children": [
+          {
+            "id": "a39789a751d19eeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-mat/jasvascript/js-cheatsheet.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 204.83328247070312
   },
   "active": "dd72c6d825e38917",
   "lastOpenFiles": [
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/tone.js.md",
-    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
     "03-ref/class/c-cym03- cohesión audivisual.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/tone.js.md",
+    "03-ref/class/c-cym01-presentación.md",
     "Untitled.md",
     "01-proj/lopez/01-Azar.md",
-    "conflict-files-obsidian-git.md",
-    "image/vinculación bidireccional-1660394778685.jpeg",
-    "01-proj/Untitled.md",
-    "03-ref/templates/t-book.md"
+    "conflict-files-obsidian-git.md"
   ]
 }

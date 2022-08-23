@@ -157,6 +157,11 @@ http://www.csounds.com/manual/html/ScoreTop.html
 
 ---
 
+# js2
+
+ejemplo. dela clase pasada
+
+<iframe src="https://codepen.io/LucianoAzzigotti/pen/abYRgBv" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 # scheduling
 
 <iframe src="https://codepen.io/LucianoAzzigotti/pen/wvPvrrO" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
