@@ -9,8 +9,13 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "03-ref/class/c-cym03- cohesión audivisual.md",
             "mode": "preview",
+=======
+            "file": "00-in/prg-22.md",
+            "mode": "source",
+>>>>>>> origin/main
             "backlinks": false,
             "source": true
           }
@@ -97,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "00-in/prg-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "00-in/prg-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md"
+                "file": "00-in/prg-22.md"
               }
             }
           },
@@ -171,10 +176,39 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "02-mat/jasvascript/js-cheatsheet.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
+=======
+                "file": "00-in/prg-22.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.8392020683344367,
+                  "close": true
+                }
+>>>>>>> origin/main
               }
             }
           }
@@ -184,6 +218,7 @@
     "direction": "horizontal",
     "width": 204.83328247070312
   },
+<<<<<<< HEAD
   "active": "dd72c6d825e38917",
   "lastOpenFiles": [
     "02-mat/jasvascript/js-cheatsheet.md",
@@ -196,5 +231,19 @@
     "Untitled.md",
     "01-proj/lopez/01-Azar.md",
     "conflict-files-obsidian-git.md"
+=======
+  "active": "4ea5e4670a37df39",
+  "lastOpenFiles": [
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "01-proj/lopez/01-Azar.md",
+    "02-mat/tone.js.md",
+    "02-mat/rant.md",
+    "00-in/prg-22.md",
+    "03-ref/class/c-cym03- cohesión audivisual.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/Juan Ignacio Gutierrez/hola mund.md",
+    "03-ref/topoi/t32-azar.md",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
+>>>>>>> origin/main
   ]
 }
