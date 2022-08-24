@@ -6,6 +6,10 @@ num:  3
 year: 2022
 ---
 
+<!-- slide bg="#010100" -->
+UNTREF | CYM22 | 03
+# cohesión audiovisual
+---
 
 # intro
 una partitura es muy parecida a un código. no hay sonido , pero si una serie de instrucciones para crearlo. Luego estas instrucciones son compiladas por personas. 
@@ -30,10 +34,11 @@ la abstracción propone un vínculo entre obra y oyente del tipo dialéctico. no
 ```mermaid
 graph TD
 
-a1(<font size=12>"obra > diccionario [objeto abstracto, forma, relación]")-->a2(" diccionario [objeto abstracto, forma, relación] ")-->a3("obra >- operaciones (rotar, variar, transparentar) - recepción (sincronia con la Gestalt)")
+a1("obra > diccionario [objeto abstracto, forma, relación]")-->a2(" diccionario [objeto abstracto, forma, relación] ")-->a3("obra >- operaciones (rotar, variar, transparentar) - recepción (sincronia con la Gestalt)")
 
 classDef className fill:#8ff,stroke:#fff,stroke-width:2px
 class start,a1,a2,a3 className;
+
 ```
 
 
@@ -159,7 +164,7 @@ http://www.csounds.com/manual/html/ScoreTop.html
 
 # js2
 
-ejemplo. dela clase pasada
+ejemplo. de la clase pasada
 
 <iframe src="https://codepen.io/LucianoAzzigotti/pen/abYRgBv" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 # scheduling
