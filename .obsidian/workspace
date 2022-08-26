@@ -15,6 +15,17 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "4e6cb141902562dd",
+        "type": "leaf",
+        "state": {
+          "type": "diff-view",
+          "state": {
+            "staged": false,
+            "file": "03-ref/bibliografía/notes/@XuanThuan1988.md"
+          }
+        }
       }
     ],
     "direction": "vertical"
