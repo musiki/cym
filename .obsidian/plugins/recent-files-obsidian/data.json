@@ -5,6 +5,10 @@
       "path": "01-proj/gutierrez/Generador de melodía.md"
     },
     {
+      "basename": "templater",
+      "path": "03-ref/templater.md"
+    },
+    {
       "basename": "01-Azar",
       "path": "01-proj/lopez/01-Azar.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "hola mund",
       "path": "01-proj/gutierrez/hola mund.md"
-    },
-    {
-      "basename": "templater",
-      "path": "03-ref/templater.md"
     },
     {
       "basename": "t-class",
