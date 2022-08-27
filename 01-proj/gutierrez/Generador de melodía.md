@@ -6,4 +6,4 @@ https://codepen.io/juanignaciog99/pen/ExEzMWw
 
 ----------------------------------
 
-## Mi idea es añadirle algún efecto que se pueda controlar con el movimiento del mouse, voy a estar trabajando en eso.
+## Mi idea es añadirle algún efecto que se pueda controlar con el movimiento del mouse, voy a estar trabajando en eso. Además me gustaría agregarle azar en algún parámetro.

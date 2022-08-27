@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/gutierrez/01-Azar.md",
+            "file": "01-proj/gutierrez/Generador de melodía.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/gutierrez/01-Azar.md",
+                "file": "01-proj/gutierrez/Generador de melodía.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/gutierrez/01-Azar.md",
+                "file": "01-proj/gutierrez/Generador de melodía.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/gutierrez/01-Azar.md"
+                "file": "01-proj/gutierrez/Generador de melodía.md"
               }
             }
           },
@@ -185,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/gutierrez/01-Azar.md",
+                "file": "01-proj/gutierrez/Generador de melodía.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,10 +221,10 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "29d5af361b74b0d8",
+  "active": "90ce32d259cad856",
   "lastOpenFiles": [
     "01-proj/lopez/01-Azar.md",
-    "01-proj/gutierrez/01-Azar.md",
+    "01-proj/gutierrez/Generador de melodía.md",
     "01-proj/lopez/helloworld.md",
     "01-proj/gutierrez/hola mund.md",
     "03-ref/templater.md",
