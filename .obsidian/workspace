@@ -6,10 +6,25 @@
       {
         "id": "29d5af361b74b0d8",
         "type": "leaf",
+        "dimension": 60.43643263757116,
         "state": {
           "type": "markdown",
           "state": {
             "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "00ca49d0ca3cb8a6",
+        "type": "leaf",
+        "dimension": 39.56356736242884,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/templater.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -71,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 191.00130462646484
+    "width": 254
   },
   "right": {
     "id": "c4e3217dccc5041e",
@@ -208,15 +223,15 @@
   },
   "active": "29d5af361b74b0d8",
   "lastOpenFiles": [
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/class/c-cym03- cohesión audivisual.md",
-    "03-ref/class/c-cym01-presentación.md",
-    "conflict-files-obsidian-git.md",
-    "00-in/prg-22.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
     "01-proj/lopez/01-Azar.md",
-    "02-mat/tone.js.md",
-    "02-mat/rant.md",
-    "01-proj/Juan Ignacio Gutierrez/hola mund.md"
+    "03-ref/class/c-cym03- cohesión audivisual.md",
+    "03-ref/templates/t-class.md",
+    "03-ref/templater.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/class/c-cym01-presentación.md",
+    "conflict-files-obsidian-git.md"
   ]
 }
