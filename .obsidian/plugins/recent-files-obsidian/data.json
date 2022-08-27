@@ -5,10 +5,6 @@
       "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
     },
     {
-      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
-      "path": "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md"
-    },
-    {
       "basename": "01-Azar",
       "path": "01-proj/lopez/01-Azar.md"
     },
@@ -19,6 +15,10 @@
     {
       "basename": "hola mund",
       "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md"
     },
     {
       "basename": "helloworld",

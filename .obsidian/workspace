@@ -15,27 +15,6 @@
             "source": true
           }
         }
-      },
-      {
-        "id": "7e055716888f1eea",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "9bc4af863591d9f9",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -116,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md"
               }
             }
           },
@@ -183,14 +162,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9bc4af863591d9f9",
+  "active": "1d7e60a97e5594a2",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
     "01-proj/lopez/01-Azar.md",
     "01-proj/ancarola/Hola Mundo.md",
     "01-proj/gutierrez/hola mund.md",
+    "03-ref/clases/c-cym03- cohesión audivisual.md",
+    "conflict-files-obsidian-git.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
     "01-proj/lopez/helloworld.md"
   ]
 }
