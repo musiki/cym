@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "c-cym03- cohesión audivisual",
-      "path": "03-ref/class/c-cym03- cohesión audivisual.md"
+      "basename": "01-Azar",
+      "path": "01-proj/gutierrez/01-Azar.md"
     },
     {
       "basename": "01-Azar",
       "path": "01-proj/lopez/01-Azar.md"
     },
     {
-      "basename": "t-class",
-      "path": "03-ref/templates/t-class.md"
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
     },
     {
       "basename": "templater",
       "path": "03-ref/templater.md"
+    },
+    {
+      "basename": "t-class",
+      "path": "03-ref/templates/t-class.md"
     },
     {
       "basename": "js-cheatsheet",
@@ -27,14 +35,6 @@
     {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
-    },
-    {
-      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
-      "path": "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md"
-    },
-    {
-      "basename": "c-cym01-presentación",
-      "path": "03-ref/class/c-cym01-presentación.md"
     },
     {
       "basename": "prg-22",
@@ -195,10 +195,6 @@
     {
       "basename": "t01-sistemas de universos-1660410536915",
       "path": "image/t01-sistemas de universos-1660410536915.jpeg"
-    },
-    {
-      "basename": "los condenados de la pantalla",
-      "path": "03-ref/bibliografía/los condenados de la pantalla.md"
     }
   ],
   "omittedPaths": [],

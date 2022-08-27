@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+            "file": "01-proj/gutierrez/01-Azar.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "01-proj/gutierrez/01-Azar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "01-proj/gutierrez/01-Azar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md"
+                "file": "01-proj/gutierrez/01-Azar.md"
               }
             }
           },
@@ -185,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-ref/class/c-cym03- cohesión audivisual.md",
+                "file": "01-proj/gutierrez/01-Azar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -224,14 +224,14 @@
   "active": "29d5af361b74b0d8",
   "lastOpenFiles": [
     "01-proj/lopez/01-Azar.md",
+    "01-proj/gutierrez/01-Azar.md",
+    "01-proj/lopez/helloworld.md",
+    "01-proj/gutierrez/hola mund.md",
+    "03-ref/templater.md",
     "03-ref/class/c-cym03- cohesión audivisual.md",
     "03-ref/templates/t-class.md",
-    "03-ref/templater.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/class/c-cym01-presentación.md",
-    "conflict-files-obsidian-git.md"
+    "02-mat/jasvascript/js01-fundamentals.md"
   ]
 }
