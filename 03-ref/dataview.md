@@ -41,16 +41,6 @@ SORT file.mtime DESC
 ## inline
 
 
-
-## list mode
-
-=== start-multi-column: ExampleRegion4  
-```column-settings  
-number of columns: 3  
-border: off  
-```
-
-
 ```dataview
 LIST FROM #topoi
 
@@ -59,23 +49,11 @@ LIST FROM #topoi
 
 basic field:: hellow
 
-
 ```dataview
 LIST FTOM "#basic field"
 
 ```
 
-
-
-=== end-column ===
-
-# Column 2
-
-=== end-column ===
-
-# Column 3
-
-=== end-multi-column
 
 
 # inline fields
