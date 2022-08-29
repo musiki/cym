@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
+            "file": "01-proj/lopez/helloworld.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "01-proj/lopez/helloworld.md"
               }
             }
           },
@@ -185,6 +185,7 @@
   },
   "active": "dd72c6d825e38917",
   "lastOpenFiles": [
+    "03-ref/clases/c-cym04-integración.md",
     "03-ref/ayuda.md",
     "00-in/prg-22.md",
     "03-ref/dataview.md",
@@ -193,7 +194,6 @@
     "01-proj/tp/tp01-topoi.md",
     "03-ref/bibliografía/notes/@XuanThuan1988.md",
     "03-ref/bibliografía/notes/@Steyerl2014a.md",
-    "00-in/combinational creativity.md",
-    "02-mat/jasvascript/js-cheatsheet.md"
+    "00-in/combinational creativity.md"
   ]
 }
