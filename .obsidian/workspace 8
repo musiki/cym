@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "08324aab8d76dcab",
     "type": "split",
     "children": [
       {
-        "id": "dd72c6d825e38917",
+        "id": "67420d98b56afbe5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
-            "mode": "preview",
+            "file": "03-ref/ayuda.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -20,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "86c4d507cf17b06f",
+    "id": "f50a17f61d5f2672",
     "type": "split",
     "children": [
       {
-        "id": "41c36bbef51e25ab",
+        "id": "ed805a4a1bb146f9",
         "type": "tabs",
         "children": [
           {
-            "id": "06488d2a3c0599ff",
+            "id": "008be91dfe80e531",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "534d6978b260f4c4",
+            "id": "444c2047ffe05b31",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "73c88ee959762b8c",
+            "id": "8fe8b4a1e014ee36",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +59,7 @@
             }
           },
           {
-            "id": "750dd73c6f03e205",
+            "id": "86e7511481b0c037",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -71,19 +71,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.00130462646484
+    "width": 300
   },
   "right": {
-    "id": "7774d1b51b5434f3",
+    "id": "142184c95a4995b7",
     "type": "split",
     "children": [
       {
-        "id": "b14ef697ccb7613c",
+        "id": "9712adfc83026fc6",
         "type": "tabs",
-        "dimension": 60,
         "children": [
           {
-            "id": "2d7ffe3962c65dd0",
+            "id": "690e42cf34dfbf36",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -91,12 +90,12 @@
             }
           },
           {
-            "id": "9e61f8775ea30c0f",
+            "id": "69a845f690034961",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "03-ref/ayuda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,19 +107,19 @@
             }
           },
           {
-            "id": "00e386b2e66a88e6",
+            "id": "89af1624ff669832",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "03-ref/ayuda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "a56d1daf6efbdda2",
+            "id": "fcc9f6c9a406bb28",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +130,17 @@
             }
           },
           {
-            "id": "5932602b28965237",
+            "id": "20c9f7dcbc09ba7c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "03-ref/ayuda.md"
               }
             }
           },
           {
-            "id": "dd56916678682eb0",
+            "id": "b78aef662faa338d",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -149,51 +148,23 @@
             }
           },
           {
-            "id": "4c4108699f1a2c61",
+            "id": "553eeb8c76322ab6",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "6bc32cc4d9036524",
-        "type": "tabs",
-        "dimension": 40,
-        "children": [
-          {
-            "id": "a39789a751d19eeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-mat/jasvascript/js-cheatsheet.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 204.83328247070312
+    "width": 300,
+    "collapsed": true
   },
-  "active": "dd72c6d825e38917",
+  "active": "67420d98b56afbe5",
   "lastOpenFiles": [
-    "03-ref/ayuda.md",
-    "00-in/prg-22.md",
-    "03-ref/dataview.md",
-    "01-proj/tp/2022-08-30.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
-    "03-ref/bibliografía/notes/@XuanThuan1988.md",
-    "03-ref/bibliografía/notes/@Steyerl2014a.md",
-    "00-in/combinational creativity.md",
-    "02-mat/jasvascript/js-cheatsheet.md"
+    "01-proj/lopez/helloworld.md",
+    "01-proj/lopez/01-Azar.md"
   ]
 }

@@ -262,7 +262,28 @@ g(x) = 0.5*x^3+x^2-44
 ```
 
 
+# list mode
+
+=== start-multi-column: ExampleRegion4  
+```column-settings  
+number of columns: 3  
+border: off  
+```
+
+
+=== end-column ===
+
+# Column 2
+
+=== end-column ===
+
+# Column 3
+
+=== end-multi-column
+
 
 	
 
 ![[dataview]]
+
+

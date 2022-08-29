@@ -5,5 +5,5 @@
   "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n---\n\n",
   "markdownCitationTemplate": "[@{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
-  "citationExportPath": "/Users/zztt/Library/Mobile Documents/iCloud~md~obsidian/Documents/cym/cym.bib"
+  "citationExportPath": "./cym.bib"
 }
