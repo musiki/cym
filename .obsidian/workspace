@@ -4,12 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "0d6c89f043327c59",
+        "id": "29d5af361b74b0d8",
         "type": "leaf",
+        "dimension": 60.43643263757116,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/ancarola/Generador de Melodías Random.md",
+            "file": "03-ref/topoi/t09-física.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "00ca49d0ca3cb8a6",
+        "type": "leaf",
+        "dimension": 39.56356736242884,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/templater.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -71,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 191.00130462646484
+    "width": 254
   },
   "right": {
     "id": "c4e3217dccc5041e",
@@ -83,20 +98,12 @@
         "dimension": 69.3196405648267,
         "children": [
           {
-            "id": "115b806839fbc80b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "afa41c41daa5e41d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "03-ref/topoi/t09-física.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "03-ref/topoi/t09-física.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,12 +143,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md"
+                "file": "03-ref/topoi/t09-física.md"
               }
             }
           },
           {
-            "id": "8e9c3f3f1dba96d9",
+            "id": "568e5e9ab625fd08",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9db3872603f929ad",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -149,7 +164,7 @@
             }
           },
           {
-            "id": "959906143e4f3a76",
+            "id": "f1b277c53a9b8c24",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -157,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "5a28386e4fdcd41d",
@@ -170,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "03-ref/topoi/t09-física.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -206,17 +221,17 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "0d6c89f043327c59",
+  "active": "29d5af361b74b0d8",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "03-ref/ayuda.md",
-    "01-proj/ancarola/Hola Mundo.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/html.md",
-    "b-Spectromorphology.md"
+    "03-ref/topoi/t21-interfaces.md",
+    "03-ref/topoi/t30-vida artificial.md",
+    "03-ref/topoi/t32-azar.md",
+    "03-ref/topoi/t33-sistemas complejos.md",
+    "03-ref/topoi/t60-espacio.md",
+    "03-ref/topoi/t51-arte relacional.md",
+    "03-ref/topoi/t09-física.md",
+    "03-ref/topoi/t10-método científico.md",
+    "03-ref/topoi/t11-sistemas de universos.md",
+    "01-proj/ancarola/Hola Sonido.md"
   ]
 }
