@@ -1,6 +1,6 @@
 {
   "timeout": 10000,
-  "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "nodePath": "/usr/local/bin/node",
   "nodeArgs": "",
   "pythonPath": "/usr/local/bin/python3",
   "pythonArgs": "",
