@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Generador de Melodías Random",
-      "path": "01-proj/ancarola/Generador de Melodías Random.md"
+      "basename": "TP1-Topoi",
+      "path": "01-proj/ancarola/TP1-Topoi.md"
     },
     {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
+      "basename": "Generador de Melodías Random",
+      "path": "01-proj/ancarola/Generador de Melodías Random.md"
     },
     {
       "basename": "Hola Mundo",
@@ -15,6 +15,10 @@
     {
       "basename": "Hola Sonido",
       "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "js-playground",

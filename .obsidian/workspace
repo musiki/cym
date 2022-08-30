@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/ancarola/Generador de Melodías Random.md",
-            "mode": "preview",
+            "file": "01-proj/ancarola/TP1-Topoi.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "01-proj/ancarola/TP1-Topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "01-proj/ancarola/TP1-Topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md"
+                "file": "01-proj/ancarola/TP1-Topoi.md"
               }
             }
           },
@@ -170,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random.md",
+                "file": "01-proj/ancarola/TP1-Topoi.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,15 +208,15 @@
   },
   "active": "0d6c89f043327c59",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "01-proj/ancarola/Generador de Melodías Random.md",
-    "03-ref/ayuda.md",
+    "01-proj/ancarola/TP1-Topoi.md",
     "01-proj/ancarola/Hola Mundo.md",
     "01-proj/ancarola/Hola Sonido.md",
+    "conflict-files-obsidian-git.md",
+    "03-ref/ayuda.md",
     "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/html.md",
-    "b-Spectromorphology.md"
+    "02-mat/html.md"
   ]
 }
