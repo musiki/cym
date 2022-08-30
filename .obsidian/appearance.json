@@ -1,7 +1,11 @@
 {
   "cssTheme": "Minimal",
   "baseFontSize": 12.5,
+<<<<<<< HEAD
   "theme": "system",
+=======
+  "theme": "moonstone",
+>>>>>>> origin/main
   "enabledCssSnippets": [
     "obsidian"
   ],

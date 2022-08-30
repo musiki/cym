@@ -15,6 +15,27 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "9fef13629a160252",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "0cd26afa708f5815",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -162,8 +183,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d76cbb179cfddbae",
+  "active": "0cd26afa708f5815",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
     "01-proj/tp/tp01-topoi.md",
     "03-ref/topoi/t10-método científico.md",
@@ -172,7 +194,6 @@
     "03-ref/personas/Douglas Barret.md",
     "03-ref/personas/Hito Steyerl.md",
     "03-ref/personas/Yotam Mann.md",
-    "03-ref/personas/Hugh Le Caine.md",
-    "03-ref/topoi/t11-sistemas de universos.md"
+    "03-ref/personas/Hugh Le Caine.md"
   ]
 }
