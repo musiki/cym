@@ -1,6 +1,6 @@
 ---
 type: topoi
-tags: virtualidad vr humanos realidad
+tags: virtualidad, vr, humanos, realidad
 author: Juan Ignacio Gutierrez
 unit: 61
 ---
