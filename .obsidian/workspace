@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/topoi/t10-método científico.md",
+            "file": "03-ref/topoi/t61-virtualidad y realidad.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/topoi/t10-método científico.md",
+                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/topoi/t10-método científico.md",
+                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/topoi/t10-método científico.md"
+                "file": "03-ref/topoi/t61-virtualidad y realidad.md"
               }
             }
           },
@@ -170,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-ref/topoi/t10-método científico.md",
+                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,15 +208,15 @@
   },
   "active": "00ca49d0ca3cb8a6",
   "lastOpenFiles": [
-    "03-ref/topoi/t61-virtualidad y realidad.md",
+    "03-ref/ayuda.md",
     "03-ref/topoi/t51-arte relacional.md",
-    "03-ref/topoi/t40-humanos.md",
-    "03-ref/topoi/t60-espacio.md",
-    "03-ref/topoi/t21-interfaces.md",
     "03-ref/topoi/t31-generatividad.md",
-    "03-ref/topoi/t33-sistemas complejos.md",
-    "03-ref/topoi/t34-livecoding.md",
     "03-ref/topoi/t32-azar.md",
-    "03-ref/topoi/t10-método científico.md"
+    "03-ref/topoi/t33-sistemas complejos.md",
+    "03-ref/topoi/b-Spectromorphology.md",
+    "03-ref/topoi/Cuarta Revolución Industrial.md",
+    "03-ref/topoi/t10-método científico.md",
+    "03-ref/topoi/t11-sistemas de universos.md",
+    "03-ref/topoi/t09-física.md"
   ]
 }

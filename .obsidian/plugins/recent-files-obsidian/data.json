@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "t10-método científico",
-      "path": "03-ref/topoi/t10-método científico.md"
-    },
-    {
       "basename": "t61-virtualidad y realidad",
       "path": "03-ref/topoi/t61-virtualidad y realidad.md"
     },
     {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
       "basename": "t51-arte relacional",
       "path": "03-ref/topoi/t51-arte relacional.md"
+    },
+    {
+      "basename": "t31-generatividad",
+      "path": "03-ref/topoi/t31-generatividad.md"
+    },
+    {
+      "basename": "t32-azar",
+      "path": "03-ref/topoi/t32-azar.md"
+    },
+    {
+      "basename": "t33-sistemas complejos",
+      "path": "03-ref/topoi/t33-sistemas complejos.md"
+    },
+    {
+      "basename": "b-Spectromorphology",
+      "path": "03-ref/topoi/b-Spectromorphology.md"
+    },
+    {
+      "basename": "Cuarta Revolución Industrial",
+      "path": "03-ref/topoi/Cuarta Revolución Industrial.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "t11-sistemas de universos",
+      "path": "03-ref/topoi/t11-sistemas de universos.md"
+    },
+    {
+      "basename": "t09-física",
+      "path": "03-ref/topoi/t09-física.md"
     },
     {
       "basename": "t40-humanos",
@@ -25,40 +57,12 @@
       "path": "03-ref/topoi/t21-interfaces.md"
     },
     {
-      "basename": "t31-generatividad",
-      "path": "03-ref/topoi/t31-generatividad.md"
-    },
-    {
-      "basename": "t33-sistemas complejos",
-      "path": "03-ref/topoi/t33-sistemas complejos.md"
-    },
-    {
       "basename": "t34-livecoding",
       "path": "03-ref/topoi/t34-livecoding.md"
     },
     {
-      "basename": "t32-azar",
-      "path": "03-ref/topoi/t32-azar.md"
-    },
-    {
-      "basename": "t11-sistemas de universos",
-      "path": "03-ref/topoi/t11-sistemas de universos.md"
-    },
-    {
-      "basename": "t09-física",
-      "path": "03-ref/topoi/t09-física.md"
-    },
-    {
       "basename": "t30-vida artificial",
       "path": "03-ref/topoi/t30-vida artificial.md"
-    },
-    {
-      "basename": "John Barrows",
-      "path": "John Barrows.md"
-    },
-    {
-      "basename": "Dennis Smalley",
-      "path": "Dennis Smalley.md"
     },
     {
       "basename": "Generador de melodía",
@@ -135,10 +139,6 @@
     {
       "basename": "t-topoi",
       "path": "03-ref/templates/t-topoi.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "README",

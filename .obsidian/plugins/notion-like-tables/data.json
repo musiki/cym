@@ -151,6 +151,157 @@
         "shouldUpdate": true,
         "tableCacheVersion": 425
       }
+    },
+    "03-ref/topoi/t61-virtualidad y realidad.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "initialIndex": 0,
+              "creationTime": 1661886377304
+            },
+            {
+              "id": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "initialIndex": 1,
+              "creationTime": 1661886377687
+            },
+            {
+              "id": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "initialIndex": 2,
+              "creationTime": 1661886377808
+            }
+          ],
+          "cells": [
+            {
+              "id": "ed453294-f664-47ce-8bb8-8f4b26a6a87d",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "hello"
+            },
+            {
+              "id": "df2f1f6a-f4d4-4275-894b-5a20aeeaf86f",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "type": "text",
+              "text": "lyric"
+            },
+            {
+              "id": "8007c259-5c8e-4a38-a3aa-1bb4789b349f",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "2846f39b-d809-4365-a2d0-91c3db98d04a",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "b3c7a442-01f1-4236-b7c7-39ea98e221bd",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "world"
+            },
+            {
+              "id": "8828d738-e191-43b3-913c-bb1569a7e71c",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "type": "text",
+              "text": "joya"
+            },
+            {
+              "id": "d92a5fe0-e7cd-45bf-9679-ec92a5f154e2",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "a1f20e76-65b4-4ffa-bc10-18fb6537229c",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "ff202384-27ea-4ed9-9bed-62e0052cf010",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "sum"
+            },
+            {
+              "id": "0b045ca6-0670-4f5b-af5a-10eac579d04a",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "edf73202-93a5-411d-867f-88b05e8eb1c5",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "c1ff94b9-0c41-48ed-bfc3-ffb9bf9207fe",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "shouldUpdate": false,
+        "viewType": "reading",
+        "tableCacheVersion": 425
+      }
     }
   },
   "focusedElement": {
