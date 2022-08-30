@@ -1,8 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "TP1-Topoi",
-      "path": "01-proj/ancarola/TP1-Topoi.md"
+      "basename": "c-cym04-integración",
+      "path": "03-ref/clases/c-cym04-integración.md"
+    },
+    {
+      "basename": "La instalación como forma del arte contemporáneo",
+      "path": "La instalación como forma del arte contemporáneo.md"
+    },
+    {
+      "basename": "py-foundations",
+      "path": "02-mat/python/py-foundations.md"
+    },
+    {
+      "basename": "todo",
+      "path": "01-proj/todo.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
+    },
+    {
+      "basename": "02-Melodia",
+      "path": "01-proj/lopez/02-Melodia.md"
+    },
+    {
+      "basename": "01-Azar",
+      "path": "01-proj/lopez/01-Azar.md"
+    },
+    {
+      "basename": "t61-virtualidad y realidad",
+      "path": "03-ref/topoi/t61-virtualidad y realidad.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "Generador de melodía",
+      "path": "01-proj/gutierrez/Generador de melodía.md"
+    },
+    {
+      "basename": "Cuarta Revolución Industrial 1",
+      "path": "03-ref/topoi/Cuarta Revolución Industrial 1.md"
+    },
+    {
+      "basename": "tp-01-topoi",
+      "path": "01-proj/ancarola/tp-01-topoi.md"
     },
     {
       "basename": "Hola Sonido",
@@ -13,20 +65,12 @@
       "path": "01-proj/ancarola/Generador de Melodías Random.md"
     },
     {
-      "basename": "js-cheatsheet",
-      "path": "02-mat/jasvascript/js-cheatsheet.md"
-    },
-    {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
     },
     {
       "basename": "dataview",
       "path": "03-ref/dataview.md"
-    },
-    {
-      "basename": "t61-virtualidad y realidad",
-      "path": "03-ref/topoi/t61-virtualidad y realidad.md"
     },
     {
       "basename": "t40-humanos",
@@ -45,10 +89,6 @@
       "path": "03-ref/topoi/t30-vida artificial.md"
     },
     {
-      "basename": "c-cym04-integración",
-      "path": "03-ref/clases/c-cym04-integración.md"
-    },
-    {
       "basename": "b-Los condenados de la pantalla",
       "path": "03-ref/bibliografía/b-Los condenados de la pantalla.md"
     },
@@ -65,10 +105,6 @@
       "path": "02-mat/que es git.md"
     },
     {
-      "basename": "py-foundations",
-      "path": "02-mat/python/py-foundations.md"
-    },
-    {
       "basename": "r-vinculación bidireccional",
       "path": "02-mat/procesos/r-vinculación bidireccional.md"
     },
@@ -81,20 +117,8 @@
       "path": "02-mat/partituras/ave maria palestrina.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "01-Azar",
-      "path": "01-proj/lopez/01-Azar.md"
-    },
-    {
       "basename": "tp02-aplicación",
       "path": "01-proj/tp/tp02-aplicación.md"
-    },
-    {
-      "basename": "tp01-topoi",
-      "path": "01-proj/tp/tp01-topoi.md"
     },
     {
       "basename": "2022-08-30",
@@ -103,14 +127,6 @@
     {
       "basename": "helloworld",
       "path": "01-proj/lopez/helloworld.md"
-    },
-    {
-      "basename": "02-Melodia",
-      "path": "01-proj/lopez/02-Melodia.md"
-    },
-    {
-      "basename": "hola mund",
-      "path": "01-proj/gutierrez/hola mund.md"
     },
     {
       "basename": "bianco dolce signo",
@@ -151,10 +167,6 @@
     {
       "basename": "c-cym03- cohesión audivisual",
       "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
-    },
-    {
-      "basename": "Generador de melodía",
-      "path": "01-proj/gutierrez/Generador de melodía.md"
     },
     {
       "basename": "@XuanThuan1988",

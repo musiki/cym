@@ -96,6 +96,11 @@ TASK
 WHERE project = "cym22" 
 ```
 
+
+## Habilidades dinámicas
+```dataview
+TASK from "todo"
+```
 # Recursos
 
 ## representación
