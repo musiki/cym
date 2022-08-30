@@ -5,6 +5,42 @@
       "path": "03-ref/topoi/t61-virtualidad y realidad.md"
     },
     {
+      "basename": "Untitled",
+      "path": "01-proj/Untitled.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
+      "basename": "TP1-Topoi",
+      "path": "01-proj/ancarola/TP1-Topoi.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "b-Spectromorphology",
+      "path": "03-ref/topoi/b-Spectromorphology.md"
+    },
+    {
+      "basename": "Cuarta Revolución Industrial",
+      "path": "03-ref/topoi/Cuarta Revolución Industrial.md"
+    },
+    {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
     },
@@ -23,18 +59,6 @@
     {
       "basename": "t33-sistemas complejos",
       "path": "03-ref/topoi/t33-sistemas complejos.md"
-    },
-    {
-      "basename": "b-Spectromorphology",
-      "path": "03-ref/topoi/b-Spectromorphology.md"
-    },
-    {
-      "basename": "Cuarta Revolución Industrial",
-      "path": "03-ref/topoi/Cuarta Revolución Industrial.md"
-    },
-    {
-      "basename": "t10-método científico",
-      "path": "03-ref/topoi/t10-método científico.md"
     },
     {
       "basename": "t11-sistemas de universos",
@@ -75,10 +99,6 @@
     {
       "basename": "hola mund",
       "path": "01-proj/gutierrez/hola mund.md"
-    },
-    {
-      "basename": "Hola Sonido",
-      "path": "01-proj/ancarola/Hola Sonido.md"
     },
     {
       "basename": "Hola Mundo",
@@ -165,10 +185,6 @@
       "path": "03-ref/personas/Hito Steyerl.md"
     },
     {
-      "basename": "tp01-topoi",
-      "path": "01-proj/tp/tp01-topoi.md"
-    },
-    {
       "basename": "o-Boid Simulation",
       "path": "03-ref/obras/o-Boid Simulation.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "vinculación bidireccional-1660394778685",
       "path": "image/vinculación bidireccional-1660394778685.jpeg"
-    },
-    {
-      "basename": "referencias",
-      "path": "03-ref/db/referencias.md"
-    },
-    {
-      "basename": "tp02-aplicación",
-      "path": "01-proj/tp/tp02-aplicación.md"
-    },
-    {
-      "basename": "meta-aprendizaje",
-      "path": "00-in/meta-aprendizaje.md"
-    },
-    {
-      "basename": "combinational creativity",
-      "path": "00-in/combinational creativity.md"
     }
   ],
   "omittedPaths": [],
