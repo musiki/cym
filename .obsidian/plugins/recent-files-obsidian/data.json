@@ -1,12 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "js-cheatsheet",
-      "path": "02-mat/jasvascript/js-cheatsheet.md"
+      "basename": "c-cym04-integración",
+      "path": "03-ref/clases/c-cym04-integración.md"
+    },
+    {
+      "basename": "b-Los condenados de la pantalla",
+      "path": "03-ref/bibliografía/b-Los condenados de la pantalla.md"
+    },
+    {
+      "basename": "b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29",
+      "path": "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md"
+    },
+    {
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "que es git",
+      "path": "02-mat/que es git.md"
+    },
+    {
+      "basename": "py-foundations",
+      "path": "02-mat/python/py-foundations.md"
+    },
+    {
+      "basename": "r-vinculación bidireccional",
+      "path": "02-mat/procesos/r-vinculación bidireccional.md"
+    },
+    {
+      "basename": "unendilech freude",
+      "path": "02-mat/partituras/unendilech freude.md"
+    },
+    {
+      "basename": "ave maria palestrina",
+      "path": "02-mat/partituras/ave maria palestrina.md"
     },
     {
       "basename": "README",
       "path": "README.md"
+    },
+    {
+      "basename": "01-Azar",
+      "path": "01-proj/lopez/01-Azar.md"
+    },
+    {
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
+      "basename": "02-Melodia",
+      "path": "01-proj/lopez/02-Melodia.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "bianco dolce signo",
+      "path": "02-mat/partituras/bianco dolce signo.md"
+    },
+    {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
     },
     {
       "basename": "Cuarta Revolución Industrial",
@@ -41,10 +117,6 @@
       "path": "03-ref/personas/Dennis Smalley.md"
     },
     {
-      "basename": "c-cym04-integración",
-      "path": "03-ref/clases/c-cym04-integración.md"
-    },
-    {
       "basename": "c-cym03- cohesión audivisual",
       "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
     },
@@ -57,28 +129,8 @@
       "path": "01-proj/ancarola/Hola Mundo.md"
     },
     {
-      "basename": "helloworld",
-      "path": "01-proj/lopez/helloworld.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
-    },
-    {
       "basename": "dataview",
       "path": "03-ref/dataview.md"
-    },
-    {
-      "basename": "2022-08-30",
-      "path": "01-proj/tp/2022-08-30.md"
-    },
-    {
-      "basename": "tp02-aplicación",
-      "path": "01-proj/tp/tp02-aplicación.md"
-    },
-    {
-      "basename": "tp01-topoi",
-      "path": "01-proj/tp/tp01-topoi.md"
     },
     {
       "basename": "@XuanThuan1988",
