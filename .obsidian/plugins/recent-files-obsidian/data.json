@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
       "basename": "dataview",
       "path": "03-ref/dataview.md"
     },
@@ -99,10 +103,6 @@
     {
       "basename": "bianco dolce signo",
       "path": "02-mat/partituras/bianco dolce signo.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "js-cheatsheet",
