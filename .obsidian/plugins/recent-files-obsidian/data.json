@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "02-Melodia",
+      "path": "01-proj/lopez/02-Melodia.md"
+    },
+    {
       "basename": "tp01-Racionalizacion_(videojuegos)",
       "path": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "Hola Sonido",
       "path": "01-proj/ancarola/Hola Sonido.md"
-    },
-    {
-      "basename": "02-Melodia",
-      "path": "01-proj/lopez/02-Melodia.md"
     },
     {
       "basename": "Generador de melodía",
