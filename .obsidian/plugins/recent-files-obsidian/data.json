@@ -1,16 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Cuarta Revolución Industrial",
+      "path": "03-ref/topoi/Cuarta Revolución Industrial.md"
+    },
+    {
+      "basename": "b-Spectromorphology",
+      "path": "03-ref/topoi/b-Spectromorphology.md"
+    },
+    {
+      "basename": "Stuart Russell",
+      "path": "03-ref/personas/Stuart Russell.md"
+    },
+    {
+      "basename": "Peter Novig",
+      "path": "03-ref/personas/Peter Novig.md"
+    },
+    {
+      "basename": "Klaus Schwab",
+      "path": "03-ref/personas/Klaus Schwab.md"
+    },
+    {
+      "basename": "John Barrows",
+      "path": "03-ref/personas/John Barrows.md"
+    },
+    {
+      "basename": "personas",
+      "path": "03-ref/db/personas.md"
+    },
+    {
+      "basename": "Dennis Smalley",
+      "path": "03-ref/personas/Dennis Smalley.md"
+    },
+    {
       "basename": "c-cym04-integración",
       "path": "03-ref/clases/c-cym04-integración.md"
     },
     {
       "basename": "c-cym03- cohesión audivisual",
       "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
-    },
-    {
-      "basename": "js-cheatsheet",
-      "path": "02-mat/jasvascript/js-cheatsheet.md"
     },
     {
       "basename": "Generador de melodía",
