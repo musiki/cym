@@ -28,6 +28,19 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "819a15a9c798b3f8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -183,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,10 +232,10 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "8609b3f2bdc7cf10",
+  "active": "819a15a9c798b3f8",
   "lastOpenFiles": [
-    "2022-08-30.md",
     "03-ref/clases/c-cym04-integración.md",
+    "2022-08-30.md",
     "conflict-files-obsidian-git.md",
     "03-ref/clases/c-cym01-presentación.md",
     "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",

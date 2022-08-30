@@ -151,6 +151,304 @@
         "shouldUpdate": true,
         "tableCacheVersion": 425
       }
+    },
+<<<<<<< HEAD
+    "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md": {
+=======
+    "03-ref/topoi/t61-virtualidad y realidad.md": {
+>>>>>>> origin/main
+      "0": {
+        "data": {
+          "headers": [
+            {
+<<<<<<< HEAD
+              "id": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "content": "Propiedad",
+=======
+              "id": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "content": "New Column",
+>>>>>>> origin/main
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+<<<<<<< HEAD
+              "id": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "content": "Descripción",
+=======
+              "id": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "content": "New Column",
+>>>>>>> origin/main
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+<<<<<<< HEAD
+              "id": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+=======
+              "id": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+>>>>>>> origin/main
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+<<<<<<< HEAD
+              "id": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "initialIndex": 0,
+              "creationTime": 1661840571832
+            },
+            {
+              "id": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "initialIndex": 1,
+              "creationTime": 1661840571618
+            },
+            {
+              "id": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "initialIndex": 2,
+              "creationTime": 1661840571724
+            },
+            {
+              "id": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "initialIndex": 3,
+              "creationTime": 1661840571757
+            },
+            {
+              "id": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "initialIndex": 4,
+              "creationTime": 1661840659946
+=======
+              "id": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "initialIndex": 0,
+              "creationTime": 1661886377304
+            },
+            {
+              "id": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "initialIndex": 1,
+              "creationTime": 1661886377687
+            },
+            {
+              "id": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "initialIndex": 2,
+              "creationTime": 1661886377808
+>>>>>>> origin/main
+            }
+          ],
+          "cells": [
+            {
+<<<<<<< HEAD
+              "id": "86bab1ad-fa54-4765-826f-35723187a9f6",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Reflexividad"
+            },
+            {
+              "id": "6cb07979-cc56-474d-a69e-a8e621a0e0ab",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": "A medida que el juego se racionaliza, se vuelve cada vez más autoreferencial, excluyendo temas y actividades que escapan a la realidad construida por el juego."
+            },
+            {
+              "id": "bb904b24-8717-4515-9d1e-1e7e4702a9ce",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Delimitación"
+            },
+            {
+              "id": "2d1f9592-0a1c-4cc7-a0b0-a94daa87f2ea",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+=======
+              "id": "ed453294-f664-47ce-8bb8-8f4b26a6a87d",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "hello"
+            },
+            {
+              "id": "df2f1f6a-f4d4-4275-894b-5a20aeeaf86f",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "type": "text",
+              "text": "lyric"
+            },
+            {
+              "id": "8007c259-5c8e-4a38-a3aa-1bb4789b349f",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "960d5681-4dcc-4353-8da7-69e984814e72",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Gobernabilidad por reglas"
+            },
+            {
+              "id": "2bd1de4e-546f-432d-b013-ad7969ab815f",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+=======
+              "id": "2846f39b-d809-4365-a2d0-91c3db98d04a",
+              "rowId": "b7d3d63d-abba-40e7-9bb4-328eb0694424",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "927113bc-a5d6-466f-81c6-dcc225c41d09",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Precisión"
+            },
+            {
+              "id": "f4218766-54d9-4110-8319-f79bd8f26afd",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+=======
+              "id": "b3c7a442-01f1-4236-b7c7-39ea98e221bd",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "world"
+            },
+            {
+              "id": "8828d738-e191-43b3-913c-bb1569a7e71c",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+              "type": "text",
+              "text": "joya"
+            },
+            {
+              "id": "d92a5fe0-e7cd-45bf-9679-ec92a5f154e2",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "67999b66-a541-4737-9e34-783e81ddac5b",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "*Playfulness*"
+            },
+            {
+              "id": "ba6b5c99-be86-47f5-b6ed-6749f6a55e16",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+=======
+              "id": "a1f20e76-65b4-4ffa-bc10-18fb6537229c",
+              "rowId": "cddd7864-e8fe-4a85-acdc-97162ddc937e",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "1ed9ddd9-19d9-4538-9e4b-abdf40b5bbfd",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+=======
+              "id": "ff202384-27ea-4ed9-9bed-62e0052cf010",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "86f21e34-c711-46ec-bbc9-efbb7d22afad",
+              "type": "text",
+              "text": "sum"
+            },
+            {
+              "id": "0b045ca6-0670-4f5b-af5a-10eac579d04a",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "00d87d3c-9b95-4911-8861-1ad9ab9cf754",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "86c75f03-7555-4be8-95ae-ac23ab48a370",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+=======
+              "id": "edf73202-93a5-411d-867f-88b05e8eb1c5",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "af0fa1f2-c7f6-4088-914a-62820eafe95e",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            },
+            {
+<<<<<<< HEAD
+              "id": "ae075030-5982-4053-bfd9-8ae5b1176479",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "0084d4c1-c582-4094-b485-f011a23cbc3a",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "bd0e6680-d765-4218-abf8-a974917dcc03",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+=======
+              "id": "c1ff94b9-0c41-48ed-bfc3-ffb9bf9207fe",
+              "rowId": "b3044bbc-1d11-4313-88bb-ef839c9d7f43",
+              "headerId": "1d8db4c3-eea1-41a5-b707-2c3c9f63ea24",
+>>>>>>> origin/main
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+<<<<<<< HEAD
+        "viewType": "reading",
+        "shouldUpdate": true,
+=======
+        "shouldUpdate": false,
+        "viewType": "reading",
+>>>>>>> origin/main
+        "tableCacheVersion": 425
+      }
     }
   },
   "focusedElement": {
