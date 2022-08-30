@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/lopez/helloworld.md",
+            "file": "03-ref/clases/c-cym04-integración.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -71,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.00130462646484
+    "width": 281.00130462646484,
+    "collapsed": true
   },
   "right": {
     "id": "7774d1b51b5434f3",
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/lopez/helloworld.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/lopez/helloworld.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/lopez/helloworld.md"
+                "file": "03-ref/clases/c-cym04-integración.md"
               }
             }
           },
@@ -181,19 +182,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.83328247070312
+    "width": 204.83328247070312,
+    "collapsed": true
   },
   "active": "dd72c6d825e38917",
   "lastOpenFiles": [
+    "03-ref/clases/c-cym01-presentación.md",
     "03-ref/clases/c-cym04-integración.md",
+    "03-ref/clases/c-cym03- cohesión audivisual.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "01-proj/gutierrez/Generador de melodía.md",
+    "01-proj/ancarola/Hola Mundo.md",
+    "01-proj/lopez/helloworld.md",
     "03-ref/ayuda.md",
     "00-in/prg-22.md",
-    "03-ref/dataview.md",
-    "01-proj/tp/2022-08-30.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
-    "03-ref/bibliografía/notes/@XuanThuan1988.md",
-    "03-ref/bibliografía/notes/@Steyerl2014a.md",
-    "00-in/combinational creativity.md"
+    "03-ref/dataview.md"
   ]
 }
