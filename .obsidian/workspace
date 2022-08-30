@@ -4,18 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "00ca49d0ca3cb8a6",
+        "id": "2d2fc451cc0f55e9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
             "file": "01-proj/ancarola/TP1-Topoi.md",
             "mode": "source",
-=======
-            "file": "03-ref/topoi/t61-virtualidad y realidad.md",
-            "mode": "preview",
->>>>>>> origin/main
             "backlinks": false,
             "source": true
           }
@@ -76,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254
+    "width": 191.00130462646484
   },
   "right": {
     "id": "c4e3217dccc5041e",
@@ -88,16 +83,20 @@
         "dimension": 69.3196405648267,
         "children": [
           {
+            "id": "115b806839fbc80b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
             "id": "afa41c41daa5e41d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
                 "file": "01-proj/ancarola/TP1-Topoi.md",
-=======
-                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
->>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,11 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
                 "file": "01-proj/ancarola/TP1-Topoi.md",
-=======
-                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
->>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,24 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
                 "file": "01-proj/ancarola/TP1-Topoi.md"
-=======
-                "file": "03-ref/topoi/t61-virtualidad y realidad.md"
->>>>>>> origin/main
               }
             }
           },
           {
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
+            "id": "8e9c3f3f1dba96d9",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -166,7 +149,7 @@
             }
           },
           {
-            "id": "f1b277c53a9b8c24",
+            "id": "959906143e4f3a76",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -174,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "5a28386e4fdcd41d",
@@ -187,11 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-<<<<<<< HEAD
                 "file": "01-proj/ancarola/TP1-Topoi.md",
-=======
-                "file": "03-ref/topoi/t61-virtualidad y realidad.md",
->>>>>>> origin/main
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,30 +206,17 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "00ca49d0ca3cb8a6",
+  "active": "2d2fc451cc0f55e9",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "01-proj/ancarola/Generador de Melodías Random.md",
+    "racionalidad.md",
     "01-proj/ancarola/TP1-Topoi.md",
-    "01-proj/ancarola/Hola Mundo.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "conflict-files-obsidian-git.md",
-    "03-ref/ayuda.md",
-    "03-ref/class/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/html.md"
-=======
-    "03-ref/topoi/t32-azar.md",
-    "03-ref/topoi/t61-virtualidad y realidad.md",
-    "03-ref/topoi/t51-arte relacional.md",
-    "03-ref/topoi/t33-sistemas complejos.md",
-    "03-ref/topoi/t10-método científico.md",
-    "03-ref/topoi/t11-sistemas de universos.md",
-    "03-ref/topoi/t21-interfaces.md",
-    "03-ref/topoi/t31-generatividad.md",
-    "03-ref/topoi/t34-livecoding.md",
-    "03-ref/topoi/t40-humanos.md"
->>>>>>> origin/main
+    "Inteligencia Artificial -Un enfoque moderno.md",
+    "Peter Novig.md",
+    "Stuart Russell.md",
+    "Inteligencia Artificial (IA).md",
+    "Klaus Schwab.md",
+    "Inteligencia artificial.md",
+    "Cuarta Revolución Industrial.md",
+    "Industria 4.0.md"
   ]
 }
