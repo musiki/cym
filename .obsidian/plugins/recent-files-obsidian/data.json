@@ -5,6 +5,22 @@
       "path": "03-ref/topoi/t61-virtualidad y realidad.md"
     },
     {
+      "basename": "ayuda",
+      "path": "03-ref/ayuda.md"
+    },
+    {
+      "basename": "Generador de melodía",
+      "path": "01-proj/gutierrez/Generador de melodía.md"
+    },
+    {
+      "basename": "TP1-Topoi",
+      "path": "01-proj/ancarola/TP1-Topoi.md"
+    },
+    {
+      "basename": "Generador de Melodías Random",
+      "path": "01-proj/ancarola/Generador de Melodías Random.md"
+    },
+    {
       "basename": "Untitled",
       "path": "01-proj/Untitled.md"
     },
@@ -21,10 +37,6 @@
       "path": "01-proj/tp/tp02-aplicación.md"
     },
     {
-      "basename": "TP1-Topoi",
-      "path": "01-proj/ancarola/TP1-Topoi.md"
-    },
-    {
       "basename": "Hola Sonido",
       "path": "01-proj/ancarola/Hola Sonido.md"
     },
@@ -39,10 +51,6 @@
     {
       "basename": "Cuarta Revolución Industrial",
       "path": "03-ref/topoi/Cuarta Revolución Industrial.md"
-    },
-    {
-      "basename": "ayuda",
-      "path": "03-ref/ayuda.md"
     },
     {
       "basename": "t51-arte relacional",
@@ -89,10 +97,6 @@
       "path": "03-ref/topoi/t30-vida artificial.md"
     },
     {
-      "basename": "Generador de melodía",
-      "path": "01-proj/gutierrez/Generador de melodía.md"
-    },
-    {
       "basename": "templater",
       "path": "03-ref/templater.md"
     },
@@ -103,10 +107,6 @@
     {
       "basename": "Hola Mundo",
       "path": "01-proj/ancarola/Hola Mundo.md"
-    },
-    {
-      "basename": "Generador de Melodías Random",
-      "path": "01-proj/ancarola/Generador de Melodías Random.md"
     },
     {
       "basename": "02-Melodia",
@@ -195,10 +195,6 @@
     {
       "basename": "Hugh Le Caine",
       "path": "03-ref/personas/Hugh Le Caine.md"
-    },
-    {
-      "basename": "vinculación bidireccional-1660394778685",
-      "path": "image/vinculación bidireccional-1660394778685.jpeg"
     }
   ],
   "omittedPaths": [],
