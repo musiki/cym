@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "dataview",
+      "path": "03-ref/dataview.md"
+    },
+    {
+      "basename": "t61-virtualidad y realidad",
+      "path": "03-ref/topoi/t61-virtualidad y realidad.md"
+    },
+    {
+      "basename": "t40-humanos",
+      "path": "03-ref/topoi/t40-humanos.md"
+    },
+    {
+      "basename": "t34-livecoding",
+      "path": "03-ref/topoi/t34-livecoding.md"
+    },
+    {
+      "basename": "t31-generatividad",
+      "path": "03-ref/topoi/t31-generatividad.md"
+    },
+    {
+      "basename": "t30-vida artificial",
+      "path": "03-ref/topoi/t30-vida artificial.md"
+    },
+    {
       "basename": "c-cym04-integración",
       "path": "03-ref/clases/c-cym04-integración.md"
     },
@@ -127,10 +151,6 @@
     {
       "basename": "Hola Mundo",
       "path": "01-proj/ancarola/Hola Mundo.md"
-    },
-    {
-      "basename": "dataview",
-      "path": "03-ref/dataview.md"
     },
     {
       "basename": "@XuanThuan1988",
