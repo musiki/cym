@@ -15,6 +15,27 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "ef3d508cc61e4001",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "bccd671729730eca",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -162,14 +183,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d76cbb179cfddbae",
+  "active": "bccd671729730eca",
   "lastOpenFiles": [
-    "01-proj/ancarola/TP1-Topoi.md",
+    "conflict-files-obsidian-git.md",
     "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+    "01-proj/ancarola/TP1-Topoi.md",
     "03-ref/personas/Stuart Russell.md",
     "03-ref/personas/Klaus Schwab.md",
     "03-ref/topoi/Cuarta Revolución Industrial.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/tp/tp01-topoi.md",
     "03-ref/topoi/t10-método científico.md",
     "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",

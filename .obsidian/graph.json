@@ -5,7 +5,26 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
+<<<<<<< HEAD
+<<<<<<< HEAD
   "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+=======
+  "collapse-color-groups": false,
+=======
+  "collapse-color-groups": true,
+>>>>>>> origin/main
   "colorGroups": [
     {
       "query": "tag:topoi",
@@ -46,6 +65,12 @@
   "repelStrength": 17.8212691326531,
   "linkStrength": 1,
   "linkDistance": 30,
+<<<<<<< HEAD
+  "scale": 0.24356531786549898,
+>>>>>>> 727b56cc0ddab86d24c912382c36ab906e8d8fa6
+  "close": false
+=======
   "scale": 0.3484678585258286,
   "close": true
+>>>>>>> origin/main
 }
