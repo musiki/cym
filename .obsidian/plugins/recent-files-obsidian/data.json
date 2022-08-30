@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "templater",
-      "path": "03-ref/templater.md"
+      "basename": "c-cym04-integración",
+      "path": "03-ref/clases/c-cym04-integración.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
+    },
+    {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
     },
     {
       "basename": "Hola Sonido",
       "path": "01-proj/ancarola/Hola Sonido.md"
     },
     {
-      "basename": "tone.js",
-      "path": "02-mat/tone.js.md"
+      "basename": "templater",
+      "path": "03-ref/templater.md"
     },
     {
       "basename": "2022-08-29",
