@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "4f8b45b6da8fd0ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "febe125efed552a1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/clases/c-cym03- cohesión audivisual.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "e5d09b2980a800ce",
+        "type": "leaf",
+        "state": {
+          "type": "reveal-preview-view",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "86c4d507cf17b06f",
+    "type": "split",
+    "children": [
+      {
+        "id": "41c36bbef51e25ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06488d2a3c0599ff",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "534d6978b260f4c4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "73c88ee959762b8c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "750dd73c6f03e205",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7774d1b51b5434f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "b14ef697ccb7613c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d7ffe3962c65dd0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e61f8775ea30c0f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "00e386b2e66a88e6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a56d1daf6efbdda2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5932602b28965237",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03-ref/clases/c-cym03- cohesión audivisual.md"
+              }
+            }
+          },
+          {
+            "id": "dd56916678682eb0",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "4c4108699f1a2c61",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "febe125efed552a1",
+  "lastOpenFiles": [
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/clases/c-cym04-integración.md",
+    "02-mat/tone.js.md",
+    "01-proj/lopez/01-Azar.md",
+    "conflict-files-obsidian-git.md",
+    "image/vinculación bidireccional-1660394778685.jpeg",
+    "01-proj/Untitled.md",
+    "03-ref/templates/t-book.md",
+    "02-mat/python/py-foundations.md",
+    "03-ref/personas/Douglas Barret.md"
+  ]
+}

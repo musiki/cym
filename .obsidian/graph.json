@@ -5,6 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
+<<<<<<< HEAD
   "collapse-color-groups": true,
   "colorGroups": [],
   "collapse-display": true,
@@ -18,5 +19,49 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1,
+=======
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:topoi",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:03-ref/personas",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:03-ref/bibliografía",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:03-ref/obras",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.2,
+  "nodeSizeMultiplier": 1.8791015625,
+  "lineSizeMultiplier": 2.913671875,
+  "collapse-forces": false,
+  "centerStrength": 0.627511160714286,
+  "repelStrength": 17.8212691326531,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.24356531786549898,
+>>>>>>> 727b56cc0ddab86d24c912382c36ab906e8d8fa6
   "close": false
 }

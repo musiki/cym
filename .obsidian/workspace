@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "4f8b45b6da8fd0ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "29d5af361b74b0d8",
+        "type": "leaf",
+        "dimension": 30.21821631878558,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "01-proj/ancarola/Hola Sonido.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "cb267f586dce2bdb",
+        "type": "leaf",
+        "dimension": 30.21821631878558,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "00ca49d0ca3cb8a6",
+        "type": "leaf",
+        "dimension": 39.56356736242884,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/templater.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed53a0ac44376330",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7e9a42aaf3a7ef4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4cdee6994d653791",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "90ce32d259cad856",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ea5e4670a37df39",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d4c78209f4204bd0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 254
+  },
+  "right": {
+    "id": "c4e3217dccc5041e",
+    "type": "split",
+    "children": [
+      {
+        "id": "18c12a2fea01698c",
+        "type": "tabs",
+        "dimension": 69.3196405648267,
+        "children": [
+          {
+            "id": "afa41c41daa5e41d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0b8d3476682f108",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9d1b2d8acacb4a24",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ea375318e888211d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
+            }
+          },
+          {
+            "id": "568e5e9ab625fd08",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9db3872603f929ad",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "f1b277c53a9b8c24",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "5a28386e4fdcd41d",
+        "type": "tabs",
+        "dimension": 30.680359435173294,
+        "children": [
+          {
+            "id": "01a59f3c62dd6c8a",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.8392020683344367,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 231.16664123535156,
+    "collapsed": true
+  },
+  "active": "cb267f586dce2bdb",
+  "lastOpenFiles": [
+    "01-proj/ancarola/Hola Sonido.md",
+    "02-mat/tone.js.md",
+    "2022-08-29.md",
+    "b-Spectromorphology.md",
+    "02-mat/html.md",
+    "02-mat/python/py-foundations.md",
+    "01-proj/ancarola/Generador de Melodías Random.md",
+    "01-proj/ancarola/Hola Mundo.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/2022-08-30.md"
+  ]
+}

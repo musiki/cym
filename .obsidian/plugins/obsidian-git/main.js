@@ -6849,7 +6849,7 @@ var GitManager = class {
         template = template.replace("{{numFiles}}", String(numFiles));
       }
       if (template.includes("{{hostname}}")) {
-        const hostname = localStorage.getItem(this.plugin.manifest.id + ":hostname") || "";
+        const hostname = this.plugin.localStorage.getHostname() || "";
         template = template.replace("{{hostname}}", hostname);
       }
       if (template.includes("{{files}}")) {
@@ -10572,7 +10572,7 @@ var SimpleGit = class extends GitManager {
         }
         this.git = esm_default({
           baseDir: basePath,
-          binary: this.plugin.settings.gitPath || void 0,
+          binary: this.plugin.localStorage.getGitPath() || void 0,
           config: ["core.quotepath=off"]
         });
         this.git.cwd(yield this.git.revparse("--show-toplevel"));
@@ -10901,7 +10901,17 @@ var SimpleGit = class extends GitManager {
   }
   updateUpstreamBranch(remoteBranch) {
     return __async(this, null, function* () {
-      yield this.git.push(["--set-upstream", ...remoteBranch.split("/")], (err) => this.onError(err));
+      try {
+        yield this.git.branch(["--set-upstream-to", remoteBranch]);
+      } catch (e) {
+        console.error(e);
+        try {
+          yield this.git.branch(["--set-upstream", remoteBranch]);
+        } catch (e2) {
+          console.error(e2);
+          yield this.git.push(["--set-upstream", ...remoteBranch.split("/")], (err) => this.onError(err));
+        }
+      }
     });
   }
   updateGitPath(gitPath) {
@@ -10924,7 +10934,7 @@ var SimpleGit = class extends GitManager {
     });
   }
   isGitInstalled() {
-    const command = (0, import_child_process2.spawnSync)(this.plugin.settings.gitPath || "git", ["--version"], {
+    const command = (0, import_child_process2.spawnSync)(this.plugin.localStorage.getGitPath() || "git", ["--version"], {
       stdio: "ignore"
     });
     if (command.error) {
@@ -11051,8 +11061,8 @@ var ObsidianGitSettingsTab = class extends import_obsidian2.PluginSettingTab {
         plugin.settings.commitDateFormat = value;
         yield plugin.saveSettings();
       })));
-      new import_obsidian2.Setting(containerEl).setName("{{hostname}} placeholder replacement").setDesc("Specify custom hostname for every device.").addText((text2) => text2.setValue(localStorage.getItem(plugin.manifest.id + ":hostname")).onChange((value) => __async(this, null, function* () {
-        localStorage.setItem(plugin.manifest.id + ":hostname", value);
+      new import_obsidian2.Setting(containerEl).setName("{{hostname}} placeholder replacement").setDesc("Specify custom hostname for every device.").addText((text2) => text2.setValue(plugin.localStorage.getHostname()).onChange((value) => __async(this, null, function* () {
+        plugin.localStorage.setHostname(value);
       })));
       new import_obsidian2.Setting(containerEl).setName("Preview commit message").addButton((button) => button.setButtonText("Preview").onClick(() => __async(this, null, function* () {
         let commitMessagePreview = yield plugin.gitManager.formatCommitMessage(plugin.settings.commitMessage);
@@ -11130,11 +11140,10 @@ var ObsidianGitSettingsTab = class extends import_obsidian2.PluginSettingTab {
       }));
     if (plugin.gitManager instanceof SimpleGit)
       new import_obsidian2.Setting(containerEl).setName("Custom Git binary path").addText((cb) => {
-        cb.setValue(plugin.settings.gitPath);
+        cb.setValue(plugin.localStorage.getGitPath());
         cb.setPlaceholder("git");
         cb.onChange((value) => {
-          plugin.settings.gitPath = value;
-          plugin.saveSettings();
+          plugin.localStorage.setGitPath(value);
           plugin.gitManager.updateGitPath(value || "git");
         });
       });
@@ -11152,7 +11161,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian2.PluginSettingTab {
         cb.inputEl.autocomplete = "off";
         cb.inputEl.spellcheck = false;
         cb.onChange((value) => {
-          localStorage.setItem(plugin.manifest.id + ":password", value);
+          plugin.localStorage.setPassword(value);
         });
       });
     if (gitReady)
@@ -11180,6 +11189,9 @@ var ObsidianGitSettingsTab = class extends import_obsidian2.PluginSettingTab {
         plugin.saveSettings();
         plugin.gitManager.updateBasePath(value || "");
       });
+    });
+    new import_obsidian2.Setting(containerEl).setName("Donate").setDesc("If you like this Plugin, consider donating to support continued development.").addButton((bt) => {
+      bt.buttonEl.outerHTML = "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>";
     });
     const info = containerEl.createDiv();
     info.setAttr("align", "center");
@@ -11387,7 +11399,6 @@ var DEFAULT_SETTINGS = {
   showStatusBar: true,
   updateSubmodules: false,
   syncMethod: "merge",
-  gitPath: "",
   customMessageOnAutoBackup: false,
   autoBackupAfterFileChange: false,
   treeStructure: false,
@@ -11408,18 +11419,69 @@ var DIFF_VIEW_CONFIG = {
   icon: "git-pull-request"
 };
 
+// src/localStorageSettings.ts
+var LocalStorageSettings = class {
+  constructor(plugin) {
+    this.plugin = plugin;
+    this.prefix = this.plugin.manifest.id;
+  }
+  getPassword() {
+    return localStorage.getItem(this.prefix + ":password");
+  }
+  setPassword(value) {
+    return localStorage.setItem(this.prefix + ":password", value);
+  }
+  getHostname() {
+    return localStorage.getItem(this.prefix + ":hostname");
+  }
+  setHostname(value) {
+    return localStorage.setItem(this.prefix + ":hostname", value);
+  }
+  getConflict() {
+    return localStorage.getItem(this.prefix + ":conflict");
+  }
+  setConflict(value) {
+    return localStorage.setItem(this.prefix + ":conflict", value);
+  }
+  getLastAutoPull() {
+    return localStorage.getItem(this.prefix + ":lastAutoPull");
+  }
+  setLastAutoPull(value) {
+    return localStorage.setItem(this.prefix + ":lastAutoPull", value);
+  }
+  getLastAutoBackup() {
+    return localStorage.getItem(this.prefix + ":lastAutoBackup");
+  }
+  setLastAutoBackup(value) {
+    return localStorage.setItem(this.prefix + ":lastAutoBackup", value);
+  }
+  getLastAutoPush() {
+    return localStorage.getItem(this.prefix + ":lastAutoPush");
+  }
+  setLastAutoPush(value) {
+    return localStorage.setItem(this.prefix + ":lastAutoPush", value);
+  }
+  getGitPath() {
+    return localStorage.getItem(this.prefix + ":gitPath");
+  }
+  setGitPath(value) {
+    return localStorage.setItem(this.prefix + ":gitPath", value);
+  }
+};
+
 // src/openInGitHub.ts
 var import_obsidian7 = __toModule(require("obsidian"));
 function openLineInGitHub(editor, file, manager) {
   return __async(this, null, function* () {
     const { isGitHub, branch, repo, user } = yield getData(manager);
     if (isGitHub) {
+      const path2 = manager.getPath(file.path, true);
       const from = editor.getCursor("from").line + 1;
       const to = editor.getCursor("to").line + 1;
       if (from === to) {
-        window.open(`https://github.com/${user}/${repo}/blob/${branch}/${file.path}?plain=1#L${from}`);
+        window.open(`https://github.com/${user}/${repo}/blob/${branch}/${path2}?plain=1#L${from}`);
       } else {
-        window.open(`https://github.com/${user}/${repo}/blob/${branch}/${file.path}?plain=1#L${from}-L${to}`);
+        window.open(`https://github.com/${user}/${repo}/blob/${branch}/${path2}?plain=1#L${from}-L${to}`);
       }
     } else {
       new import_obsidian7.Notice("It seems like you are not using GitHub");
@@ -11429,8 +11491,9 @@ function openLineInGitHub(editor, file, manager) {
 function openHistoryInGitHub(file, manager) {
   return __async(this, null, function* () {
     const { isGitHub, branch, repo, user } = yield getData(manager);
+    const path2 = manager.getPath(file.path, true);
     if (isGitHub) {
-      window.open(`https://github.com/${user}/${repo}/commits/${branch}/${file.path}`);
+      window.open(`https://github.com/${user}/${repo}/commits/${branch}/${path2}`);
     } else {
       new import_obsidian7.Notice("It seems like you are not using GitHub");
     }
@@ -14913,14 +14976,24 @@ function instance5($$self, $$props, $$invalidate) {
         });
       }
       if (status) {
-        $$invalidate(9, changeHierarchy = {
-          title: "",
-          children: plugin.gitManager.getTreeStructure(status.changed)
-        });
-        $$invalidate(10, stagedHierarchy = {
-          title: "",
-          children: plugin.gitManager.getTreeStructure(status.staged)
-        });
+        if (status.changed.length + status.staged.length > 500) {
+          $$invalidate(5, status = void 0);
+          if (!plugin.loading) {
+            plugin.displayError("Too many changes to display");
+          }
+        } else {
+          $$invalidate(9, changeHierarchy = {
+            title: "",
+            children: plugin.gitManager.getTreeStructure(status.changed)
+          });
+          $$invalidate(10, stagedHierarchy = {
+            title: "",
+            children: plugin.gitManager.getTreeStructure(status.staged)
+          });
+        }
+      } else {
+        $$invalidate(9, changeHierarchy = void 0);
+        $$invalidate(10, stagedHierarchy = void 0);
       }
       $$invalidate(4, loading = plugin.loading);
     });
@@ -15130,6 +15203,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
   onload() {
     return __async(this, null, function* () {
       console.log("loading " + this.manifest.name + " plugin");
+      this.localStorage = new LocalStorageSettings(this);
       yield this.loadSettings();
       this.migrateSettings();
       addEventListener("git-refresh", this.refresh.bind(this));
@@ -15210,6 +15284,14 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
         id: "push",
         name: "Create backup",
         callback: () => this.promiseQueue.addTask(() => this.createBackup(false))
+      });
+      this.addCommand({
+        id: "backup-and-close",
+        name: "Create backup and close",
+        callback: () => this.promiseQueue.addTask(() => __async(this, null, function* () {
+          yield this.createBackup(false);
+          window.close();
+        }))
       });
       this.addCommand({
         id: "commit-push-specified-message",
@@ -15318,6 +15400,10 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
             return;
           const status = yield this.gitManager.status();
           this.setState(PluginState.idle);
+          if (status.changed.length + status.staged.length > 500) {
+            this.displayError("Too many changes to display");
+            return;
+          }
           new ChangedFilesModal(this, status.changed).open();
         })
       });
@@ -15376,6 +15462,11 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
       this.settings.autoCommitMessage = this.settings.commitMessage;
       this.saveSettings();
     }
+    if (this.settings.gitPath != void 0) {
+      this.localStorage.setGitPath(this.settings.gitPath);
+      this.settings.gitPath = void 0;
+      this.saveSettings();
+    }
   }
   unloadPlugin() {
     this.gitReady = false;
@@ -15412,11 +15503,11 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
   saveLastAuto(date, mode) {
     return __async(this, null, function* () {
       if (mode === "backup") {
-        window.localStorage.setItem(this.manifest.id + ":lastAutoBackup", date.toString());
+        this.localStorage.setLastAutoBackup(date.toString());
       } else if (mode === "pull") {
-        window.localStorage.setItem(this.manifest.id + ":lastAutoPull", date.toString());
+        this.localStorage.setLastAutoPull(date.toString());
       } else if (mode === "push") {
-        window.localStorage.setItem(this.manifest.id + ":lastAutoPush", date.toString());
+        this.localStorage.setLastAutoPush(date.toString());
       }
     });
   }
@@ -15424,9 +15515,9 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
     return __async(this, null, function* () {
       var _a2, _b, _c;
       return {
-        "backup": new Date((_a2 = window.localStorage.getItem(this.manifest.id + ":lastAutoBackup")) != null ? _a2 : ""),
-        "pull": new Date((_b = window.localStorage.getItem(this.manifest.id + ":lastAutoPull")) != null ? _b : ""),
-        "push": new Date((_c = window.localStorage.getItem(this.manifest.id + ":lastAutoPush")) != null ? _c : "")
+        "backup": new Date((_a2 = this.localStorage.getLastAutoBackup()) != null ? _a2 : ""),
+        "pull": new Date((_b = this.localStorage.getLastAutoPull()) != null ? _b : ""),
+        "push": new Date((_c = this.localStorage.getLastAutoPush()) != null ? _c : "")
       };
     });
   }
@@ -15508,9 +15599,10 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
       const modal = new GeneralModal(this.app, [], "Enter remote URL");
       const url = yield modal.open();
       if (url) {
-        let dir = yield new GeneralModal(this.app, ["Vault root"], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
+        const confirmOption = "Vault Root";
+        let dir = yield new GeneralModal(this.app, [confirmOption], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
         if (dir !== void 0) {
-          if (dir === "Vault root") {
+          if (dir === confirmOption) {
             dir = ".";
           }
           dir = (0, import_obsidian18.normalizePath)(dir);
@@ -15524,8 +15616,9 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
               new import_obsidian18.Notice("Aborted clone");
               return;
             } else if (containsConflictDir === "YES") {
-              const modal3 = new GeneralModal(this.app, ["Abort clone", "DELETE ALL YOUR LOCAL CONFIG"], `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, false, true);
-              const shouldDelete = (yield modal3.open()) === "DELETE ALL YOUR LOCAL CONFIG AND PLUGINS";
+              const confirmOption2 = "DELETE ALL YOUR LOCAL CONFIG AND PLUGINS";
+              const modal3 = new GeneralModal(this.app, ["Abort clone", confirmOption2], `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, false, true);
+              const shouldDelete = (yield modal3.open()) === confirmOption2;
               if (shouldDelete) {
                 yield this.app.vault.adapter.rmdir(app.vault.configDir, true);
               } else {
@@ -15597,7 +15690,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
     return __async(this, null, function* () {
       if (!(yield this.isAllInitialized()))
         return false;
-      const hadConflict = localStorage.getItem(this.manifest.id + ":conflict") === "true";
+      const hadConflict = this.localStorage.getConflict() === "true";
       let changedFiles;
       let status;
       let unstagedFiles;
@@ -15698,7 +15791,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
         return false;
       }
       const file = this.app.vault.getAbstractFileByPath(this.conflictOutputFile);
-      const hadConflict = localStorage.getItem(this.manifest.id + ":conflict") === "true";
+      const hadConflict = this.localStorage.getConflict() === "true";
       if (this.gitManager instanceof SimpleGit && file)
         yield this.app.vault.delete(file);
       let status;
@@ -15858,7 +15951,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
   handleConflict(conflicted) {
     return __async(this, null, function* () {
       this.setState(PluginState.conflicted);
-      localStorage.setItem(this.manifest.id + ":conflict", "true");
+      this.localStorage.setConflict("true");
       let lines;
       if (conflicted !== void 0) {
         lines = [
