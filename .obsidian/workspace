@@ -15,19 +15,6 @@
             "source": true
           }
         }
-      },
-      {
-        "id": "c7e9f9763d0e8f51",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -108,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/ancarola/TP1-Topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/ancarola/TP1-Topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/ancarola/TP1-Topoi.md"
               }
             }
           },
@@ -175,11 +162,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c7e9f9763d0e8f51",
+  "active": "d76cbb179cfddbae",
   "lastOpenFiles": [
     "01-proj/ancarola/TP1-Topoi.md",
-    "01-proj/lopez/helloworld.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/lopez/helloworld.md",
     "01-proj/lopez/02-Melodia.md",
     "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
     "03-ref/personas/Stuart Russell.md",
