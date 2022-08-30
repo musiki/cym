@@ -6,6 +6,8 @@ El concepto [[Cuarta Revolución Industrial]], también llamado [[Industria 4.0]
 
 ## **Características y Diferencias con etapas anteriores** 
 
+![](https://i.imgur.com/gPP2k31.png)
+
 ![](file:///C:/Users/jmanc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)[[2]]
 
 Para distinguir la nueva y actual etapa, Klaus Schwab las diferencia de las anteriores:

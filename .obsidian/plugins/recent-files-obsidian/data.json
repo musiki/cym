@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "TP1-Topoi",
+      "path": "01-proj/ancarola/TP1-Topoi.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "Generador de Melodías Random",
+      "path": "01-proj/ancarola/Generador de Melodías Random.md"
+    },
+    {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
+    },
+    {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
     },
@@ -97,16 +113,8 @@
       "path": "01-proj/gutierrez/hola mund.md"
     },
     {
-      "basename": "Hola Sonido",
-      "path": "01-proj/ancarola/Hola Sonido.md"
-    },
-    {
       "basename": "bianco dolce signo",
       "path": "02-mat/partituras/bianco dolce signo.md"
-    },
-    {
-      "basename": "js-cheatsheet",
-      "path": "02-mat/jasvascript/js-cheatsheet.md"
     },
     {
       "basename": "Cuarta Revolución Industrial",
@@ -147,10 +155,6 @@
     {
       "basename": "Generador de melodía",
       "path": "01-proj/gutierrez/Generador de melodía.md"
-    },
-    {
-      "basename": "Hola Mundo",
-      "path": "01-proj/ancarola/Hola Mundo.md"
     },
     {
       "basename": "@XuanThuan1988",
