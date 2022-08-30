@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "d18f32faaf4698ca",
+    "id": "08324aab8d76dcab",
     "type": "split",
     "children": [
       {
-        "id": "d76cbb179cfddbae",
+        "id": "67420d98b56afbe5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
-            "mode": "preview",
+            "file": "03-ref/ayuda.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -20,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "54833cce6f618c0e",
+    "id": "f50a17f61d5f2672",
     "type": "split",
     "children": [
       {
-        "id": "bf3cd061be16947b",
+        "id": "ed805a4a1bb146f9",
         "type": "tabs",
         "children": [
           {
-            "id": "130745ec51fdda7d",
+            "id": "008be91dfe80e531",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "b76c9e47966828ab",
+            "id": "444c2047ffe05b31",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "ffaaa24e83265ab1",
+            "id": "8fe8b4a1e014ee36",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +59,7 @@
             }
           },
           {
-            "id": "e32d24188f2df1c3",
+            "id": "86e7511481b0c037",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -71,18 +71,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.0036334991455
+    "width": 300
   },
   "right": {
-    "id": "d5ccfe6b0816fd5e",
+    "id": "142184c95a4995b7",
     "type": "split",
     "children": [
       {
-        "id": "17011a421b77b0b7",
+        "id": "9712adfc83026fc6",
         "type": "tabs",
         "children": [
           {
-            "id": "97f7582581b7cf4b",
+            "id": "690e42cf34dfbf36",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -90,12 +90,12 @@
             }
           },
           {
-            "id": "0ba657dd48f810e5",
+            "id": "69a845f690034961",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "03-ref/ayuda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,19 +107,19 @@
             }
           },
           {
-            "id": "7603c20f9c19b2f7",
+            "id": "89af1624ff669832",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
+                "file": "03-ref/ayuda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1eded6c0ef0eab14",
+            "id": "fcc9f6c9a406bb28",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -130,17 +130,17 @@
             }
           },
           {
-            "id": "eb20eac0fd7888a0",
+            "id": "20c9f7dcbc09ba7c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md"
+                "file": "03-ref/ayuda.md"
               }
             }
           },
           {
-            "id": "65db8e4f70b90a2b",
+            "id": "b78aef662faa338d",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -148,7 +148,7 @@
             }
           },
           {
-            "id": "a2d9e19ec274e6aa",
+            "id": "553eeb8c76322ab6",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -162,17 +162,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d76cbb179cfddbae",
+  "active": "67420d98b56afbe5",
   "lastOpenFiles": [
-    "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md",
-    "01-proj/tp/tp01-topoi.md",
-    "03-ref/topoi/t10-método científico.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/clases/c-cym01-presentación.md",
-    "03-ref/personas/Douglas Barret.md",
-    "03-ref/personas/Hito Steyerl.md",
-    "03-ref/personas/Yotam Mann.md",
-    "03-ref/personas/Hugh Le Caine.md",
-    "03-ref/topoi/t11-sistemas de universos.md"
+    "01-proj/lopez/helloworld.md",
+    "01-proj/lopez/01-Azar.md"
   ]
 }

@@ -151,6 +151,179 @@
         "shouldUpdate": true,
         "tableCacheVersion": 425
       }
+    },
+    "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "content": "Propiedad",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "content": "Descripción",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "content": "New Column",
+              "sortDir": "default",
+              "width": "100px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "initialIndex": 0,
+              "creationTime": 1661840571832
+            },
+            {
+              "id": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "initialIndex": 1,
+              "creationTime": 1661840571618
+            },
+            {
+              "id": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "initialIndex": 2,
+              "creationTime": 1661840571724
+            },
+            {
+              "id": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "initialIndex": 3,
+              "creationTime": 1661840571757
+            },
+            {
+              "id": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "initialIndex": 4,
+              "creationTime": 1661840659946
+            }
+          ],
+          "cells": [
+            {
+              "id": "86bab1ad-fa54-4765-826f-35723187a9f6",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Reflexividad"
+            },
+            {
+              "id": "6cb07979-cc56-474d-a69e-a8e621a0e0ab",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": "A medida que el juego se racionaliza, se vuelve cada vez más autoreferencial, excluyendo temas y actividades que escapan a la realidad construida por el juego."
+            },
+            {
+              "id": "bb904b24-8717-4515-9d1e-1e7e4702a9ce",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Delimitación"
+            },
+            {
+              "id": "2d1f9592-0a1c-4cc7-a0b0-a94daa87f2ea",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "960d5681-4dcc-4353-8da7-69e984814e72",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Gobernabilidad por reglas"
+            },
+            {
+              "id": "2bd1de4e-546f-432d-b013-ad7969ab815f",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "927113bc-a5d6-466f-81c6-dcc225c41d09",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "Precisión"
+            },
+            {
+              "id": "f4218766-54d9-4110-8319-f79bd8f26afd",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "67999b66-a541-4737-9e34-783e81ddac5b",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "321814bf-eac3-46a7-9a7b-3cdbd94096d3",
+              "type": "text",
+              "text": "*Playfulness*"
+            },
+            {
+              "id": "ba6b5c99-be86-47f5-b6ed-6749f6a55e16",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "d73f8662-b50a-4270-a0a0-657d494b83a0",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "1ed9ddd9-19d9-4538-9e4b-abdf40b5bbfd",
+              "rowId": "2810bce0-b584-4468-a266-9a69f1298d6e",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "86c75f03-7555-4be8-95ae-ac23ab48a370",
+              "rowId": "3c32cd51-7a5b-4eb4-9744-78010e634180",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "ae075030-5982-4053-bfd9-8ae5b1176479",
+              "rowId": "a50d9c6c-5a02-444b-8331-089d7a93d6cc",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "0084d4c1-c582-4094-b485-f011a23cbc3a",
+              "rowId": "125bc270-c9a7-4e8b-8680-ffd0f1e53e67",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "bd0e6680-d765-4218-abf8-a974917dcc03",
+              "rowId": "d57c777a-fc4d-4ebe-a74b-2334e3c24e45",
+              "headerId": "d9a3f210-7ce9-4c4f-84ed-0fc45c0a6437",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "reading",
+        "shouldUpdate": true,
+        "tableCacheVersion": 425
+      }
     }
   },
   "focusedElement": {
