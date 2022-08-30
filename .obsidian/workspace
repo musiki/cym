@@ -4,27 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "29d5af361b74b0d8",
+        "id": "a0d560237ab4b2e0",
         "type": "leaf",
-        "dimension": 30.21821631878558,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/ancarola/Hola Sonido.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "cb267f586dce2bdb",
-        "type": "leaf",
-        "dimension": 30.21821631878558,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
+            "file": "2022-08-30.md",
             "mode": "source",
             "backlinks": false,
             "source": true
@@ -32,14 +17,13 @@
         }
       },
       {
-        "id": "00ca49d0ca3cb8a6",
+        "id": "8609b3f2bdc7cf10",
         "type": "leaf",
-        "dimension": 39.56356736242884,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/templater.md",
-            "mode": "preview",
+            "file": "03-ref/clases/c-cym04-integración.md",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -235,17 +219,17 @@
     "width": 231.16664123535156,
     "collapsed": true
   },
-  "active": "cb267f586dce2bdb",
+  "active": "8609b3f2bdc7cf10",
   "lastOpenFiles": [
-    "01-proj/gutierrez/hola mund.md",
-    "02-mat/tone.js.md",
+    "2022-08-30.md",
+    "03-ref/clases/c-cym04-integración.md",
+    "conflict-files-obsidian-git.md",
+    "03-ref/clases/c-cym01-presentación.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/clases/c-cym03- cohesión audivisual.md",
+    "02-mat/html.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "03-ref/templater.md",
-    "conflict-files-obsidian-git.md",
-    "2022-08-29.md",
-    "b-Spectromorphology.md"
+    "02-mat/jasvascript/js-cheatsheet.md"
   ]
 }

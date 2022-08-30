@@ -5,12 +5,24 @@
       "path": "03-ref/clases/c-cym04-integración.md"
     },
     {
-      "basename": "hola mund",
-      "path": "01-proj/gutierrez/hola mund.md"
+      "basename": "2022-08-30",
+      "path": "2022-08-30.md"
     },
     {
-      "basename": "tone.js",
-      "path": "02-mat/tone.js.md"
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/clases/c-cym01-presentación.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
+    },
+    {
+      "basename": "html",
+      "path": "02-mat/html.md"
     },
     {
       "basename": "js01-fundamentals",
@@ -25,24 +37,32 @@
       "path": "02-mat/jasvascript/js-cheatsheet.md"
     },
     {
-      "basename": "Hola Sonido",
-      "path": "01-proj/ancarola/Hola Sonido.md"
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
     },
     {
       "basename": "templater",
       "path": "03-ref/templater.md"
     },
     {
+      "basename": "b-Los condenados de la pantalla",
+      "path": "03-ref/bibliografía/b-Los condenados de la pantalla.md"
+    },
+    {
+      "basename": "b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29",
+      "path": "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
       "basename": "2022-08-29",
       "path": "2022-08-29.md"
-    },
-    {
-      "basename": "b-Spectromorphology",
-      "path": "b-Spectromorphology.md"
-    },
-    {
-      "basename": "html",
-      "path": "02-mat/html.md"
     },
     {
       "basename": "py-foundations",

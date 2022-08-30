@@ -522,5 +522,14 @@
       ],
       "key": "R"
     }
+  ],
+  "obsidian-fullscreen-plugin:fullscreen-focus": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "`"
+    }
   ]
 }
