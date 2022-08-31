@@ -4,44 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "a0d560237ab4b2e0",
+        "id": "cbf8b08b53a052be",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "3c0e257f0db75c43",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ed53a0ac44376330",
+    "id": "86c4d507cf17b06f",
     "type": "split",
     "children": [
       {
-        "id": "d7e9a42aaf3a7ef4",
+        "id": "41c36bbef51e25ab",
         "type": "tabs",
         "children": [
           {
-            "id": "4cdee6994d653791",
+            "id": "06488d2a3c0599ff",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -49,7 +31,7 @@
             }
           },
           {
-            "id": "90ce32d259cad856",
+            "id": "534d6978b260f4c4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -57,7 +39,7 @@
             }
           },
           {
-            "id": "4ea5e4670a37df39",
+            "id": "73c88ee959762b8c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,7 +54,7 @@
             }
           },
           {
-            "id": "d4c78209f4204bd0",
+            "id": "750dd73c6f03e205",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -84,24 +66,32 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254
+    "width": 280
   },
   "right": {
-    "id": "c4e3217dccc5041e",
+    "id": "7774d1b51b5434f3",
     "type": "split",
     "children": [
       {
-        "id": "18c12a2fea01698c",
+        "id": "b14ef697ccb7613c",
         "type": "tabs",
-        "dimension": 69.3196405648267,
+        "dimension": 60,
         "children": [
           {
-            "id": "afa41c41daa5e41d",
+            "id": "2d7ffe3962c65dd0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e61f8775ea30c0f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "02-mat/jasvascript/js-cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,19 +103,19 @@
             }
           },
           {
-            "id": "d0b8d3476682f108",
+            "id": "00e386b2e66a88e6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "02-mat/jasvascript/js-cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9d1b2d8acacb4a24",
+            "id": "a56d1daf6efbdda2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,25 +126,17 @@
             }
           },
           {
-            "id": "ea375318e888211d",
+            "id": "5932602b28965237",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "02-mat/jasvascript/js-cheatsheet.md"
               }
             }
           },
           {
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
+            "id": "dd56916678682eb0",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -162,7 +144,7 @@
             }
           },
           {
-            "id": "f1b277c53a9b8c24",
+            "id": "4c4108699f1a2c61",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -173,42 +155,20 @@
         "currentTab": 3
       },
       {
-        "id": "5a28386e4fdcd41d",
+        "id": "6bc32cc4d9036524",
         "type": "tabs",
-        "dimension": 30.680359435173294,
+        "dimension": 40,
         "children": [
           {
-            "id": "01a59f3c62dd6c8a",
+            "id": "a39789a751d19eeb",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "markdown",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8392020683344367,
-                  "close": true
-                }
+                "file": "02-mat/jasvascript/js-cheatsheet.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
               }
             }
           }
@@ -216,20 +176,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.16664123535156,
-    "collapsed": true
+    "width": 204.83328247070312
   },
-  "active": "3c0e257f0db75c43",
+  "active": "cbf8b08b53a052be",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "image/image/c-cym03- cohesión audivisual-1661272779233.jpeg",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "03-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md",
+    "03-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
+    "03-ref/topoi/b-Spectromorphology.md",
+    "03-ref/topoi/Cuarta Revolución Industrial.md",
+    "03-ref/db/topoi.md",
+    "03-ref/templates/t-topoi.md",
     "03-ref/clases/c-cym04-integración.md",
-    "02-mat/html.md",
-    "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/clases/c-cym01-presentación.md",
-    "2022-08-30.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md"
+    "02-mat/python/py-foundations.md"
   ]
 }
