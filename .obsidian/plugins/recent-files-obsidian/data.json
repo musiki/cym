@@ -21,10 +21,6 @@
       "path": "03-ref/clases/c-cym01-presentación.md"
     },
     {
-      "basename": "2022-08-30",
-      "path": "2022-08-30.md"
-    },
-    {
       "basename": "js01-fundamentals",
       "path": "02-mat/jasvascript/js01-fundamentals.md"
     },
@@ -61,20 +57,12 @@
       "path": "01-proj/ancarola/Hola Sonido.md"
     },
     {
-      "basename": "2022-08-29",
-      "path": "2022-08-29.md"
-    },
-    {
       "basename": "py-foundations",
       "path": "02-mat/python/py-foundations.md"
     },
     {
       "basename": "Generador de Melodías Random",
       "path": "01-proj/ancarola/Generador de Melodías Random.md"
-    },
-    {
-      "basename": "Hola Mundo",
-      "path": "01-proj/ancarola/Hola Mundo.md"
     },
     {
       "basename": "tp02-aplicación",

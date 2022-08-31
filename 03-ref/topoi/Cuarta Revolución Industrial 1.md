@@ -1,12 +1,17 @@
-# **Cuarta Revolución Industrial**
+---
+tags: topoi, revoluciónindustrial
+author: Juan Martín Ancarola
+---
 
-## **Origen**
+#  Cuarta Revolución Industrial
 
-El concepto [[Cuarta Revolución Industrial]], también llamado [[Industria 4.0]] o Cuarta etapa de la Revolución Industrial, fue instaurado por el economista y empresario alemán [[Klaus Schwab]], fundador y actual presidente del Foro Económico Mundial. El autor sostiene que esta cuarta etapa está marcada por los avances tecnológicos emergentes en los distintos campos de la vida humana. El biológico, laboral, cultural y político-social. Dentro de estos avances podemos encontrar la [[Inteligencia artificial]], la robótica, la nanotecnología, los vehículos autónomos, la impresión 3D, entre otros. Esta Cuarta Etapa impacta directamente en lo que somos, como pensamos, la forma en que vivimos, trabajamos y como nos relacionamos entre nosotros.[[1]]
+## Origen
 
-## **Características y Diferencias con etapas anteriores** 
+El concepto [[03-ref/topoi/Cuarta Revolución Industrial]], también llamado [[Industria 4.0]] o Cuarta etapa de la Revolución Industrial, fue instaurado por el economista y empresario alemán [[Klaus Schwab]], fundador y actual presidente del Foro Económico Mundial. El autor sostiene que esta cuarta etapa está marcada por los avances tecnológicos emergentes en los distintos campos de la vida humana. El biológico, laboral, cultural y político-social. Dentro de estos avances podemos encontrar la [[Inteligencia artificial]], la robótica, la nanotecnología, los vehículos autónomos, la impresión 3D, entre otros. Esta Cuarta Etapa impacta directamente en lo que somos, como pensamos, la forma en que vivimos, trabajamos y como nos relacionamos entre nosotros.^[[1]]
 
-![](file:///C:/Users/jmanc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)[[2]]
+## Características y Diferencias con etapas anteriores*
+
+<iframe src="https://4.bp.blogspot.com/-KZlahpTcMk4/W8iBucX_uVI/AAAAAAAABIA/qIFeJtP6auYJr-xZAsgNTszrrUi94GphQCLcBGAs/s320/download.png" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 Para distinguir la nueva y actual etapa, Klaus Schwab las diferencia de las anteriores:
 
@@ -32,7 +37,7 @@ Si bien es difícil realizar una definición completa sobre la [[Inteligencia Ar
 
 Según los autores, los sistemas que piensan y actúan como humanos, miden el éxito en términos de la fidelidad en la forma de actuar de estos. Por otro lado, los sistemas que piensan y actúan racionalmente hacen referencia al termino [[racionalidad]], siendo este el concepto ideal de inteligencia. Un sistema es racional si hace lo correcto en función de su conocimiento.
 
-## **Impactos de la IA en el campo laboral:**
+## Impactos de la IA en el campo laboral:
 
 Como menciona [[Harari Yuval Noah]], en su libro [[21 Lecciones para el siglo Xxi]][[5]] los empleos que requieran especialización en una gama de actividades rutinarias se automatizarán. Entre ellos podríamos mencionar determinadas ramas de la medicina, abogacía, periodismo, entre otros[[6]][[7]]. Esto no quiere decir que estos empleos van a ser reemplazados completamente, sino que será necesario que se reinventen adquiriendo o mejorando conocimientos relacionados a los avances tecnológicos emergentes y así combinarlos con sus estudios. Existen empleos más comprometidos como podría ser el caso de los chóferes, quienes se ven amenazados con la llegada inminente de los vehículos autónomos.
 
@@ -53,15 +58,9 @@ En conclusión, todo depende de la definición de arte:
 ## **Referencias** 
 
 1. [La Cuarta Revolución Industrial: qué significa y cómo responder | Foro Económico Mundial (weforum.org)](https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/)
-
 2. [Sejarah dan Proses pertumbuhan Revolusi Industri 1.0 s/d 4.0 - Cridealits](https://cridealits.blogspot.com/2018/10/sejarah-dan-proses-pertumbuhan-revolusi.html)
-
-3. [La Cuarta Revolución Industrial: qué significa y cómo responder | Foro Económico Mundial (weforum.org)](https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/)
-
-4. 
-
-5. Yuval Harari, _21 lecciones para el siglo XXI_,(Debate, 2018), pág. 41-45 
-
+3. [La Cuarta Revolución Industrial: qué significa y cómo responder | Foro Económico Mundial (weforum.org)](https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/
+4. Yuval Harari, _21 lecciones para el siglo XXI_,(Debate, 2018), pág. 41-45 
 6. [Seis puestos de trabajo que ya fueron ocupados por robots - Infobae](https://www.infobae.com/salud/ciencia/2016/07/11/seis-puestos-de-trabajo-que-ya-fueron-ocupados-por-robots/)
 
 7. [Estos son los trabajos que serán reemplazados por robots (aecoc.es)](https://www.aecoc.es/innovation-hub-noticias/estos-son-los-trabajos-que-seran-reemplazados-por-robots/)
