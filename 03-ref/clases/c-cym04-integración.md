@@ -129,6 +129,13 @@ generadores de señales
 #### canvas
 <iframe height="600" width="800" src="https://replit.com/@jsmusic/viewport02?embed=true" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
+
+#### flex-box
+<iframe src="https://codepen.io/carodip/pen/BarXqdw" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+
+
+<iframe src="https://codepen.io/carodip/pen/rNdXbrv" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+
 ### periféricos 
 
 #### MOUSE

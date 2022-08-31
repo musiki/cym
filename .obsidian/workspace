@@ -9,32 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-08-30.md",
+            "file": "03-ref/clases/c-cym04-integración.md",
             "mode": "source",
             "backlinks": false,
             "source": true
           }
-        }
-      },
-      {
-        "id": "8609b3f2bdc7cf10",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "819a15a9c798b3f8",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
         }
       }
     ],
@@ -109,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-08-30.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-08-30.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-08-30.md"
+                "file": "03-ref/clases/c-cym04-integración.md"
               }
             }
           },
@@ -191,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "2022-08-30.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -229,13 +208,13 @@
   },
   "active": "a0d560237ab4b2e0",
   "lastOpenFiles": [
+    "02-mat/html.md",
     "03-ref/clases/c-cym04-integración.md",
+    "03-ref/clases/c-cym03- cohesión audivisual.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/clases/c-cym01-presentación.md",
     "2022-08-30.md",
     "conflict-files-obsidian-git.md",
-    "03-ref/clases/c-cym01-presentación.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "02-mat/html.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js-cheatsheet.md"
