@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/ancarola/TP1-Topoi.md",
+            "file": "03-ref/clases/c-cym04-integración.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/ancarola/TP1-Topoi.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/ancarola/TP1-Topoi.md",
+                "file": "03-ref/clases/c-cym04-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/TP1-Topoi.md"
+                "file": "03-ref/clases/c-cym04-integración.md"
               }
             }
           },
