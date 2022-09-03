@@ -3,7 +3,7 @@
   "accentHue": 241,
   "accentSat": 35,
   "lightStyle": "minimal-light",
-  "darkStyle": "minimal-dark-black",
+  "darkStyle": "minimal-dark-tonal",
   "lightScheme": "minimal-atom-light",
   "darkScheme": "minimal-dracula-dark",
   "editorFont": "",

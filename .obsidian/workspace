@@ -1,15 +1,19 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "d18f32faaf4698ca",
     "type": "split",
     "children": [
       {
-        "id": "cbf8b08b53a052be",
+        "id": "d76cbb179cfddbae",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "03-ref/ayuda.md",
+=======
+            "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+>>>>>>> origin/main
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -20,15 +24,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "86c4d507cf17b06f",
+    "id": "54833cce6f618c0e",
     "type": "split",
     "children": [
       {
-        "id": "41c36bbef51e25ab",
+        "id": "bf3cd061be16947b",
         "type": "tabs",
         "children": [
           {
-            "id": "06488d2a3c0599ff",
+            "id": "130745ec51fdda7d",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -36,7 +40,7 @@
             }
           },
           {
-            "id": "534d6978b260f4c4",
+            "id": "b76c9e47966828ab",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "73c88ee959762b8c",
+            "id": "ffaaa24e83265ab1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +63,7 @@
             }
           },
           {
-            "id": "750dd73c6f03e205",
+            "id": "e32d24188f2df1c3",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -71,19 +75,22 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 134
+=======
+    "width": 222.0036334991455
+>>>>>>> origin/main
   },
   "right": {
-    "id": "7774d1b51b5434f3",
+    "id": "d5ccfe6b0816fd5e",
     "type": "split",
     "children": [
       {
-        "id": "b14ef697ccb7613c",
+        "id": "17011a421b77b0b7",
         "type": "tabs",
-        "dimension": 60,
         "children": [
           {
-            "id": "2d7ffe3962c65dd0",
+            "id": "97f7582581b7cf4b",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -91,12 +98,16 @@
             }
           },
           {
-            "id": "9e61f8775ea30c0f",
+            "id": "0ba657dd48f810e5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/ayuda.md",
+=======
+                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+>>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,19 +119,23 @@
             }
           },
           {
-            "id": "00e386b2e66a88e6",
+            "id": "7603c20f9c19b2f7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/ayuda.md",
+=======
+                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+>>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "a56d1daf6efbdda2",
+            "id": "1eded6c0ef0eab14",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +146,21 @@
             }
           },
           {
-            "id": "5932602b28965237",
+            "id": "eb20eac0fd7888a0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/ayuda.md"
+=======
+                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md"
+>>>>>>> origin/main
               }
             }
           },
           {
-            "id": "dd56916678682eb0",
+            "id": "65db8e4f70b90a2b",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -149,43 +168,27 @@
             }
           },
           {
-            "id": "4c4108699f1a2c61",
+            "id": "a2d9e19ec274e6aa",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "6bc32cc4d9036524",
-        "type": "tabs",
-        "dimension": 40,
-        "children": [
-          {
-            "id": "a39789a751d19eeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-mat/jasvascript/js-cheatsheet.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
         ]
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 204.83328247070312,
+=======
+    "width": 300,
+>>>>>>> origin/main
     "collapsed": true
   },
-  "active": "cbf8b08b53a052be",
+  "active": "d76cbb179cfddbae",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "README.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "image/image/c-cym03- cohesión audivisual-1661272779233.jpeg",
@@ -196,5 +199,17 @@
     "03-ref/db/topoi.md",
     "03-ref/templates/t-topoi.md",
     "03-ref/clases/c-cym04-integración.md"
+=======
+    "01-proj/lopez/tp-01-topoi.md",
+    "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+    "01-proj/ancarola/tp-01-topoi.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-ref/topoi/t60-espacio.md",
+    "03-ref/clases/c-cym01-presentación.md",
+    "03-ref/clases/c-cym04-integración.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/ancarola/TP1-Topoi.md",
+    "01-proj/lopez/helloworld.md"
+>>>>>>> origin/main
   ]
 }
