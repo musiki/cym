@@ -1,34 +1,29 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "85d863ff1d3645f7",
     "type": "split",
     "children": [
       {
-        "id": "cbf8b08b53a052be",
+        "id": "374741820ef5b2a7",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "03-ref/ayuda.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "86c4d507cf17b06f",
+    "id": "ee9577798d52a862",
     "type": "split",
     "children": [
       {
-        "id": "41c36bbef51e25ab",
+        "id": "768a0595cfaf7328",
         "type": "tabs",
         "children": [
           {
-            "id": "06488d2a3c0599ff",
+            "id": "3d46300189b81b9f",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -36,7 +31,7 @@
             }
           },
           {
-            "id": "534d6978b260f4c4",
+            "id": "acb139747cb9134c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +39,7 @@
             }
           },
           {
-            "id": "73c88ee959762b8c",
+            "id": "fd7f6eea6a25988b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +54,7 @@
             }
           },
           {
-            "id": "750dd73c6f03e205",
+            "id": "3730653589d7d0f6",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -71,19 +66,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 134
+    "width": 300
   },
   "right": {
-    "id": "7774d1b51b5434f3",
+    "id": "5d327d1bd7034287",
     "type": "split",
     "children": [
       {
-        "id": "b14ef697ccb7613c",
+        "id": "8fca7a78b3328f8d",
         "type": "tabs",
-        "dimension": 60,
         "children": [
           {
-            "id": "2d7ffe3962c65dd0",
+            "id": "88ed81b16f2bd056",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -91,12 +85,11 @@
             }
           },
           {
-            "id": "9e61f8775ea30c0f",
+            "id": "3883d08dd007f100",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/ayuda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,19 +101,18 @@
             }
           },
           {
-            "id": "00e386b2e66a88e6",
+            "id": "ba28eb53b8d89e9c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/ayuda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "a56d1daf6efbdda2",
+            "id": "d0278d4f268cab10",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +123,15 @@
             }
           },
           {
-            "id": "5932602b28965237",
+            "id": "65f0a13defc41aea",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "03-ref/ayuda.md"
-              }
+              "state": {}
             }
           },
           {
-            "id": "dd56916678682eb0",
+            "id": "827f06c1a57b49d7",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -149,52 +139,20 @@
             }
           },
           {
-            "id": "4c4108699f1a2c61",
+            "id": "9257e776b4f231d3",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "6bc32cc4d9036524",
-        "type": "tabs",
-        "dimension": 40,
-        "children": [
-          {
-            "id": "a39789a751d19eeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-mat/jasvascript/js-cheatsheet.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 204.83328247070312,
+    "width": 300,
     "collapsed": true
   },
-  "active": "cbf8b08b53a052be",
-  "lastOpenFiles": [
-    "README.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "image/image/c-cym03- cohesión audivisual-1661272779233.jpeg",
-    "03-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md",
-    "03-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "03-ref/topoi/b-Spectromorphology.md",
-    "03-ref/topoi/Cuarta Revolución Industrial.md",
-    "03-ref/db/topoi.md",
-    "03-ref/templates/t-topoi.md",
-    "03-ref/clases/c-cym04-integración.md"
-  ]
+  "active": "acb139747cb9134c",
+  "lastOpenFiles": []
 }
