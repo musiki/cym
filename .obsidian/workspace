@@ -4,25 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "a0d560237ab4b2e0",
+        "id": "cbf8b08b53a052be",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "03-ref/clases/c-cym05-flex-grid.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "35f7d3b144f90d71",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -33,23 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ed53a0ac44376330",
+    "id": "1b3bfb5982f82793",
     "type": "split",
     "children": [
       {
-        "id": "d7e9a42aaf3a7ef4",
+        "id": "ac7d8cb8b58aa7fb",
         "type": "tabs",
         "children": [
           {
-            "id": "4cdee6994d653791",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "90ce32d259cad856",
+            "id": "871feaf2d26ab8c2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -57,7 +36,7 @@
             }
           },
           {
-            "id": "4ea5e4670a37df39",
+            "id": "118499695b376826",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,31 +51,37 @@
             }
           },
           {
-            "id": "d4c78209f4204bd0",
+            "id": "a9ce03f82f15151d",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 254
+    "width": 300
   },
   "right": {
-    "id": "c4e3217dccc5041e",
+    "id": "d6bd81a3f7953e78",
     "type": "split",
     "children": [
       {
-        "id": "18c12a2fea01698c",
+        "id": "7b207c258ba579bd",
         "type": "tabs",
-        "dimension": 69.3196405648267,
         "children": [
           {
-            "id": "afa41c41daa5e41d",
+            "id": "d082409c460b1e79",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9f02c2fd3d8e9381",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -113,7 +98,7 @@
             }
           },
           {
-            "id": "d0b8d3476682f108",
+            "id": "51d03b6a098013c6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -125,7 +110,7 @@
             }
           },
           {
-            "id": "9d1b2d8acacb4a24",
+            "id": "7f7240f974412727",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,7 +121,7 @@
             }
           },
           {
-            "id": "ea375318e888211d",
+            "id": "d460e457004ba04a",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -146,15 +131,7 @@
             }
           },
           {
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
+            "id": "d52128766bec7167",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -162,74 +139,31 @@
             }
           },
           {
-            "id": "f1b277c53a9b8c24",
+            "id": "6aa9ee4036e41663",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "5a28386e4fdcd41d",
-        "type": "tabs",
-        "dimension": 30.680359435173294,
-        "children": [
-          {
-            "id": "01a59f3c62dd6c8a",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "03-ref/clases/c-cym05-flex-grid.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8392020683344367,
-                  "close": true
-                }
-              }
-            }
-          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 231.16664123535156,
+    "width": 300,
     "collapsed": true
   },
-  "active": "a0d560237ab4b2e0",
+  "active": "cbf8b08b53a052be",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-ref/clases/c-cym05-flex-grid.md",
-    "2022-09-06.md",
     "03-ref/clases/c-cym04-integración.md",
-    "02-mat/html.md",
-    "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/clases/c-cym01-presentación.md",
-    "2022-08-30.md",
-    "02-mat/jasvascript/js01-fundamentals.md"
+    "03-ref/clases/c-cym05-flex-grid.md",
+    "01-proj/todo.md",
+    "01-proj/lopez/01-Azar.md",
+    "01-proj/lopez/02-Melodia.md",
+    "01-proj/lopez/helloworld.md",
+    "01-proj/lopez/tp-01-topoi.md",
+    "01-proj/Untitled.md",
+    "02-mat/rant.md",
+    "03-ref/topoi/t12-filosofía 21.md"
   ]
 }

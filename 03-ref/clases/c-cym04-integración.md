@@ -76,19 +76,21 @@ if (condición) {
 }
 ```
 ## operadores de comparación
-```=``` Igual a 
-```!=``` Diferente a 
-```===``` Contenido y tipo igual a 
-`!==` Contenido o tipo diferente de 
-``>`` Mayor que 
-``>=`` Mayor o igual que 
-``<`` Menor que 
-``<=`` Menor o igual que
+```
+= Igual a 
+!= Diferente a 
+=== Contenido y tipo igual a 
+!== Contenido o tipo diferente de >`` Mayor que 
+>= Mayor o igual que 
+< Menor que 
+<= Menor o igual que
 
 ## operadores lógicos
-``&&`` and
-``||`` or
-``!`` not
+``&& and
+|| or
+! not
+
+```
 
 ---
 # bucles
