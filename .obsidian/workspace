@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+            "file": "01-proj/lopez/03-Máquina de ritmos.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+                "file": "01-proj/lopez/03-Máquina de ritmos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+                "file": "01-proj/lopez/03-Máquina de ritmos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/topoi/t52-Racionalizacion_(videojuegos).md"
+                "file": "01-proj/lopez/03-Máquina de ritmos.md"
               }
             }
           },
@@ -164,15 +164,15 @@
   },
   "active": "d76cbb179cfddbae",
   "lastOpenFiles": [
+    "01-proj/lopez/helloworld.md",
     "01-proj/lopez/tp-01-topoi.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/lopez/02-Melodia.md",
+    "03-ref/clases/c-cym04-integración.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
     "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
     "01-proj/ancarola/tp-01-topoi.md",
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-ref/topoi/t60-espacio.md",
-    "03-ref/clases/c-cym01-presentación.md",
-    "03-ref/clases/c-cym04-integración.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/ancarola/TP1-Topoi.md",
-    "01-proj/lopez/helloworld.md"
+    "03-ref/topoi/t60-espacio.md"
   ]
 }
