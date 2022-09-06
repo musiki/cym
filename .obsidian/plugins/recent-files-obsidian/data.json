@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "c-cym04-integración",
+      "path": "03-ref/clases/c-cym04-integración.md"
+    },
+    {
       "basename": "t61-virtualidad y realidad",
       "path": "03-ref/topoi/t61-virtualidad y realidad.md"
     },
@@ -103,10 +107,6 @@
     {
       "basename": "hola mund",
       "path": "01-proj/gutierrez/hola mund.md"
-    },
-    {
-      "basename": "Hola Mundo",
-      "path": "01-proj/ancarola/Hola Mundo.md"
     },
     {
       "basename": "02-Melodia",
