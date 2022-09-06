@@ -1,0 +1,13 @@
+{
+  "choices": [
+    {
+      "id": "b18a094e-b7f6-4376-8325-f8c187ba99a9",
+      "name": "kkkk",
+      "type": "Macro",
+      "command": true,
+      "macroId": null
+    }
+  ],
+  "macros": [],
+  "inputPrompt": "single-line"
+}
