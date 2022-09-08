@@ -4,13 +4,14 @@ cym.bib
 .obsidian/graph.json
 .obsidian/plugins/recent-files-obsidian/data.json
 .obsidian/plugins/recent-files-obsidian/
-<<<<<<< HEAD
 .obsidian/workspace
 .obsidian/plugins/execute-code/data.json
-.obsidian/graph.json
-
-=======
+.obsidian/app.json
 .obsidian/workspace/
 .obsidian/plugins/execute-code/data.json
 .obsidian/graph.json
->>>>>>> origin/main
+.obsidian/core-plugins.json
+.obsidian/appearance.json
+.obsidian/community-plugins.json
+.obsidian/plugins/obsidian-minimal-settings/data.json
+

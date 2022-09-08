@@ -3,6 +3,7 @@
     {
       "basename": "c-cym04-integración",
       "path": "03-ref/clases/c-cym04-integración.md"
+<<<<<<< HEAD
     },
     {
       "basename": "t61-virtualidad y realidad",
@@ -11,12 +12,142 @@
     {
       "basename": "ayuda",
       "path": "03-ref/ayuda.md"
+=======
+<<<<<<< HEAD
+    },
+    {
+      "basename": "TP1-Topoi",
+      "path": "01-proj/ancarola/TP1-Topoi.md"
+    },
+    {
+      "basename": "helloworld",
+      "path": "01-proj/lopez/helloworld.md"
+    },
+    {
+      "basename": "02-Melodia",
+      "path": "01-proj/lopez/02-Melodia.md"
+    },
+    {
+      "basename": "tp01-Racionalizacion_(videojuegos)",
+      "path": "01-proj/lopez/tp01-Racionalizacion_(videojuegos).md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "t10-método científico",
+      "path": "03-ref/topoi/t10-método científico.md"
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/clases/c-cym01-presentación.md"
+    },
+    {
+      "basename": "Douglas Barret",
+      "path": "03-ref/personas/Douglas Barret.md"
+    },
+    {
+      "basename": "Hito Steyerl",
+      "path": "03-ref/personas/Hito Steyerl.md"
+    },
+    {
+      "basename": "Yotam Mann",
+      "path": "03-ref/personas/Yotam Mann.md"
+    },
+    {
+      "basename": "Hugh Le Caine",
+      "path": "03-ref/personas/Hugh Le Caine.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+=======
+    },
+    {
+      "basename": "html",
+      "path": "02-mat/html.md"
+    },
+    {
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
+>>>>>>> origin/main
+    },
+    {
+      "basename": "c-cym02-arte y ciencia - estado de la cuestión",
+      "path": "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md"
+    },
+    {
+      "basename": "c-cym01-presentación",
+      "path": "03-ref/clases/c-cym01-presentación.md"
+    },
+    {
+      "basename": "js01-fundamentals",
+      "path": "02-mat/jasvascript/js01-fundamentals.md"
+    },
+    {
+      "basename": "js-playground",
+      "path": "02-mat/jasvascript/js-playground.md"
+    },
+    {
+      "basename": "js-cheatsheet",
+      "path": "02-mat/jasvascript/js-cheatsheet.md"
+    },
+    {
+      "basename": "tone.js",
+      "path": "02-mat/tone.js.md"
+    },
+    {
+      "basename": "templater",
+      "path": "03-ref/templater.md"
+    },
+    {
+      "basename": "b-Los condenados de la pantalla",
+      "path": "03-ref/bibliografía/b-Los condenados de la pantalla.md"
+    },
+    {
+      "basename": "b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29",
+      "path": "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "py-foundations",
+      "path": "02-mat/python/py-foundations.md"
+    },
+    {
+      "basename": "Generador de Melodías Random",
+      "path": "01-proj/ancarola/Generador de Melodías Random.md"
+    },
+    {
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+>>>>>>> origin/main
     },
     {
       "basename": "Generador de melodía",
       "path": "01-proj/gutierrez/Generador de melodía.md"
     },
     {
+<<<<<<< HEAD
       "basename": "TP1-Topoi",
       "path": "01-proj/ancarola/TP1-Topoi.md"
     },
@@ -113,10 +244,14 @@
       "path": "01-proj/lopez/02-Melodia.md"
     },
     {
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
       "basename": "01-Azar",
       "path": "01-proj/lopez/01-Azar.md"
     },
     {
+<<<<<<< HEAD
       "basename": "helloworld",
       "path": "01-proj/lopez/helloworld.md"
     },
@@ -195,6 +330,18 @@
     {
       "basename": "Hugh Le Caine",
       "path": "03-ref/personas/Hugh Le Caine.md"
+=======
+      "basename": "c-cym03- cohesión audivisual",
+      "path": "03-ref/clases/c-cym03- cohesión audivisual.md"
+    },
+    {
+      "basename": "hola mund",
+      "path": "01-proj/gutierrez/hola mund.md"
+=======
+      "basename": "t09-física",
+      "path": "03-ref/topoi/t09-física.md"
+>>>>>>> origin/main
+>>>>>>> origin/main
     }
   ],
   "omittedPaths": [],

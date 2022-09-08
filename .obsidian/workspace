@@ -9,10 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
+            "file": "03-ref/clases/c-cym05-flex-grid.md",
             "mode": "preview",
             "backlinks": false,
-            "source": true
+            "source": false
           }
         }
       }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "03-ref/clases/c-cym05-flex-grid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "03-ref/clases/c-cym05-flex-grid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "03-ref/clases/c-cym05-flex-grid.md"
               }
             }
           },
@@ -170,7 +170,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "03-ref/clases/c-cym05-flex-grid.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,15 +208,15 @@
   },
   "active": "00ca49d0ca3cb8a6",
   "lastOpenFiles": [
+    "03-ref/clases/c-cym04-integración.md",
+    "03-ref/clases/c-cym05-flex-grid.md",
+    "image/gallery.md",
+    "image/meta-aprendizaje-1660395828475.jpeg",
     "01-proj/gutierrez/ToDo.md",
     "03-ref/topoi/t61-virtualidad y realidad.md",
     "03-ref/ayuda.md",
     "01-proj/gutierrez/Generador de melodía.md",
     "01-proj/ancarola/TP1-Topoi.md",
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "01-proj/Untitled.md",
-    "01-proj/tp/2022-08-30.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md"
+    "01-proj/ancarola/Generador de Melodías Random.md"
   ]
 }
