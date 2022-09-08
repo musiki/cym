@@ -11,12 +11,10 @@ UNTREF | CYM22 | 06
 # un instrumento online colectivo
 ---
 
-
-
 # introducción 
 
 que es un exo-instrumento?
-
+---
 # objetivos
 
 - kiss [keep it simple stupid]
@@ -26,6 +24,10 @@ que es un exo-instrumento?
 	- modulación tímbrica
 - objetivos de máxima
 	- networking performance
+---
+![](https://i.imgur.com/ofxL8ML.png)
 
 
-<iframe height="600" width="800" src="https://replit.com/@jsmusic/generators05-simple?embed=true#index.html" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>e
+---
+
+<iframe height="600" width="800" src="https://replit.com/@jsmusic/generators05-simple?embed=true#index.html" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>

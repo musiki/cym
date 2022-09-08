@@ -4,44 +4,32 @@
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
         "id": "ae8bea57a6a98dd5",
-=======
-        "id": "a0d560237ab4b2e0",
->>>>>>> origin/main
         "type": "leaf",
-        "dimension": 58.41995841995842,
+        "dimension": 49.8913830557567,
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "README.md",
-=======
-            "file": "00-in/prg-22.md",
->>>>>>> origin/main
+            "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
             "mode": "source",
             "backlinks": false,
             "source": false
           }
         }
-<<<<<<< HEAD
-=======
       },
       {
-        "id": "b3847f1fef3b0b9b",
+        "id": "e3c73f5031cdba69",
         "type": "leaf",
-        "dimension": 41.58004158004158,
+        "dimension": 50.1086169442433,
         "state": {
-          "type": "empty",
+          "type": "reveal-preview-view",
           "state": {}
         }
->>>>>>> origin/main
       }
     ],
     "direction": "vertical"
   },
   "left": {
-<<<<<<< HEAD
     "id": "1b3bfb5982f82793",
     "type": "split",
     "children": [
@@ -51,25 +39,6 @@
         "children": [
           {
             "id": "871feaf2d26ab8c2",
-=======
-    "id": "ed53a0ac44376330",
-    "type": "split",
-    "children": [
-      {
-        "id": "d7e9a42aaf3a7ef4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4cdee6994d653791",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "90ce32d259cad856",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,11 +46,7 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "118499695b376826",
-=======
-            "id": "4ea5e4670a37df39",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "search",
@@ -96,11 +61,7 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "a9ce03f82f15151d",
-=======
-            "id": "d4c78209f4204bd0",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -111,7 +72,6 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
     "width": 235
   },
   "right": {
@@ -120,21 +80,9 @@
     "children": [
       {
         "id": "7b207c258ba579bd",
-=======
-    "width": 462
-  },
-  "right": {
-    "id": "c4e3217dccc5041e",
-    "type": "split",
-    "children": [
-      {
-        "id": "18c12a2fea01698c",
->>>>>>> origin/main
         "type": "tabs",
-        "dimension": 69.3196405648267,
         "children": [
           {
-<<<<<<< HEAD
             "id": "d082409c460b1e79",
             "type": "leaf",
             "state": {
@@ -144,18 +92,11 @@
           },
           {
             "id": "9f02c2fd3d8e9381",
-=======
-            "id": "afa41c41daa5e41d",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "README.md",
-=======
-                "file": "00-in/prg-22.md",
->>>>>>> origin/main
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,31 +108,19 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "51d03b6a098013c6",
-=======
-            "id": "d0b8d3476682f108",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "README.md",
-=======
-                "file": "00-in/prg-22.md",
->>>>>>> origin/main
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-<<<<<<< HEAD
             "id": "7f7240f974412727",
-=======
-            "id": "9d1b2d8acacb4a24",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -202,37 +131,17 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "d460e457004ba04a",
-=======
-            "id": "ea375318e888211d",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "README.md"
-=======
-                "file": "00-in/prg-22.md"
->>>>>>> origin/main
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
               }
             }
           },
           {
-<<<<<<< HEAD
             "id": "d52128766bec7167",
-=======
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -240,58 +149,11 @@
             }
           },
           {
-<<<<<<< HEAD
             "id": "6aa9ee4036e41663",
-=======
-            "id": "f1b277c53a9b8c24",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "5a28386e4fdcd41d",
-        "type": "tabs",
-        "dimension": 30.680359435173294,
-        "children": [
-          {
-            "id": "01a59f3c62dd6c8a",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "00-in/prg-22.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8392020683344367,
-                  "close": true
-                }
-              }
             }
           }
         ]
@@ -312,12 +174,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100,
+    "width": 300,
     "collapsed": true
   },
-<<<<<<< HEAD
   "active": "ae8bea57a6a98dd5",
   "lastOpenFiles": [
+    "README.md",
     "03-ref/a-dataview.md",
     "03-ref/topoi/b-Spectromorphology.md",
     "03-ref/a-yuda.md",
@@ -326,21 +188,6 @@
     "02-mat/html.md",
     "02-mat/que es git.md",
     "02-mat/cloud ides.md",
-    "README.md",
     "Untitled.md"
-=======
-  "active": "a0d560237ab4b2e0",
-  "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "00-in/prg-22.md",
-    "README.md",
-    "03-ref/clases/c-cym05-flex-grid.md",
-    "03-ref/clases/c-cym04-integración.md",
-    "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/combinational creativity.md"
->>>>>>> origin/main
   ]
 }
