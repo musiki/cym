@@ -8,13 +8,8 @@
         "type": "leaf",
         "dimension": 58.41995841995842,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "00-in/prg-22.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       },
       {
@@ -98,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/prg-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/prg-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00-in/prg-22.md"
-              }
+              "state": {}
             }
           },
           {
@@ -180,7 +171,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00-in/prg-22.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,17 +206,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "a0d560237ab4b2e0",
+  "active": "90ce32d259cad856",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "00-in/prg-22.md",
     "README.md",
+    "00-in/prg-22.md",
+    "00-in/combinational creativity.md",
+    "conflict-files-obsidian-git.md",
     "03-ref/clases/c-cym05-flex-grid.md",
     "03-ref/clases/c-cym04-integración.md",
     "03-ref/clases/c-cym03- cohesión audivisual.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/tp/tp02-aplicación.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/combinational creativity.md"
+    "00-in/meta-aprendizaje.md"
   ]
 }
