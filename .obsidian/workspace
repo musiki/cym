@@ -6,24 +6,14 @@
       {
         "id": "ae8bea57a6a98dd5",
         "type": "leaf",
-        "dimension": 49.8913830557567,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+            "file": "README.md",
             "mode": "source",
             "backlinks": false,
             "source": false
           }
-        }
-      },
-      {
-        "id": "e3c73f5031cdba69",
-        "type": "leaf",
-        "dimension": 50.1086169442433,
-        "state": {
-          "type": "reveal-preview-view",
-          "state": {}
         }
       }
     ],
@@ -72,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235
+    "width": 127
   },
   "right": {
     "id": "d6bd81a3f7953e78",
@@ -96,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
+                "file": "README.md"
               }
             }
           },
@@ -179,15 +169,15 @@
   },
   "active": "ae8bea57a6a98dd5",
   "lastOpenFiles": [
+    "00-in/prg-22.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/combinational creativity.md",
+    "03-ref/clases/c-cym06-un instrumento online colectivo.md",
     "README.md",
     "03-ref/a-dataview.md",
     "03-ref/topoi/b-Spectromorphology.md",
     "03-ref/a-yuda.md",
     "03-ref/templater.md",
-    "03-ref/clases/c-cym06-un instrumento online colectivo.md",
-    "02-mat/html.md",
-    "02-mat/que es git.md",
-    "02-mat/cloud ides.md",
-    "Untitled.md"
+    "02-mat/html.md"
   ]
 }

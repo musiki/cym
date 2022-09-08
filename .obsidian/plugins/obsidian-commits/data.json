@@ -12,7 +12,7 @@
     "README.md": {
       "size": 90637,
       "tags": 0,
-      "links": 7
+      "links": 8
     },
     "03-ref/topoi/t60-espacio.md": {
       "size": 69,
@@ -432,7 +432,7 @@
     "00-in/prg-22.md": {
       "size": 15460,
       "tags": 0,
-      "links": 3
+      "links": 0
     },
     "03-ref/clases/c-cym06-un instrumento online colectivo.md": {
       "size": 0,
@@ -452,9 +452,9 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 3,
+      "Refactor": 4,
       "Create": 1,
-      "Link": 1,
+      "Link": 2,
       "Expand": 1
     }
   },
@@ -467,7 +467,7 @@
       "4": 0,
       "5": 0,
       "6": 0,
-      "7": 0,
+      "7": 2,
       "8": 0,
       "9": 0,
       "10": 0,
@@ -491,7 +491,7 @@
       "Mon": 0,
       "Tue": 0,
       "Wed": 6,
-      "Thu": 0,
+      "Thu": 2,
       "Fri": 0,
       "Sat": 0,
       "Sun": 0
@@ -516,9 +516,13 @@
       "Deleted": [
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
-      "Linked": [],
+      "Linked": [
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+      ],
       "Removed Tags from": [],
-      "Removed Links from": []
+      "Removed Links from": [
+        "<a class=\"internal-link\" href=\"00-in/prg-22.md\"> prg-22 </a>"
+      ]
     }
   },
   "ignoreList": [],

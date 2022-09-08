@@ -40,7 +40,7 @@ Andrei Tarkovsky, Solaris, 1972.
 
 Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por asociación y por oposición.  Las características principales que las diferencian son las mismas que existen entre la filosofía natural dentro de la metafísica opuesta al estudio de la intuición y el carácter místico. El binomio acción musical-observación de la naturaleza despliega un entramado lógico similar al del binomio razón-instinto. La ciencia encuentra al mundo inteligible, ordinario y medible, en cambio para el instinto resulta indivisible, unificante, sin bien ni mal, sin pasado ni futuro.  Siguiendo a Russell, el material musical puede ser visto a partir de su función científica o de su recurso intuitivo por parte del compositor. Se intenta a la vez reflejar el pensamiento de la ciencia en la estética filosófica, tratando de obtener un entendimiento reflexivo que permita establecer relaciones recíprocas entre la naturaleza y el valor del arte. Algunos de los problemas a resolver serán el significado y surgimiento del arte y la representación comparando el punto de vista estético con el neurocientífico.  El origen cualitativo y cuantitativo de las emociones, de la belleza, del concepto de forma y la experiencia estética. Nos centraremos en la historia de la música pero también se incluirán conceptos de otras artes. Veremos también cómo los métodos de la investigación científica pueden equipararse con aquellos tradicionales en la filosofía del arte , desde la ciencia de la percepción empírica, la biología evolutiva y las ciencias cognitivas. De este modo  se extenderán las teorías filosóficas de los paradigmas  científicos confrontándolos con nuestras reacciones vividas en la valoración de obras artísticas.
 
-## Objetivos del Curso
+# Objetivos del Curso
 
 - pensar y crear el futuro de la música.
 - crear proyectos musicales significativos.
@@ -50,7 +50,7 @@ Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por aso
 - generar la capacidad de plantear un constructo epistemológico como matriz del pensamiento estético y proyectar a partir de herramientas a la creación de una obra artística, un instrumento o un trabajo teórico.
 
 
-## Pre Requisitos
+# Pre Requisitos
 *Taller de Creación Musical VI
 
 ## Criterios de Evaluación y Acreditación
@@ -61,7 +61,7 @@ Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por aso
 - 1/3 trabajos prácticos
 - 1/3 participación
 
-## Metodología
+# Metodología
 El marco metodológico considera la construcción del conocimiento a partir de la alternancia de la praxis, la teoría, la creación sonora, el análisis crítico de lo hecho y la referencia en la bibliografía existente. 
 Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y luego se extraerán conclusiones en dos aspectos:
 - La aplicación de matrices científicas y filosóficas en el pensamiento que puede ser transferido o transformado en axiomas.
@@ -78,7 +78,7 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 ![[topoi#técnicos]]
 
     
-## Plan de estudios
+# Plan de estudios
 el siguiente plan es una guía de contenidos modular de la materia Ciencia y Música. Cada año, en conjunto con los alumnos se deciden los contenidos a abordar dependiendo de los objetivos personales propuestos. El siguiente programa es por lo tanto un compendio de las unidades posibles con contenidos mínimos obligatorios y otros potenciales.
 
 ### Contenidos mínimos
@@ -111,17 +111,35 @@ WHERE project = "cym22"
 TASK from "todo"
 ```
 # Recursos
+## Textos de lectura obligatoria
+*Aira, Cesar. “ Sobre la Utilidad en Arte”, Ramona, [2005]([Processing]].) Buenos Aires
+*Galanter, Philip. "What is Generative Art?", Complexity Theory as a Context for Art Theory. ITP New York,2003.
+*Guerrini, Florencia et al."Usos de la ciencia en el arte argentino contemporáneo". Papers Editores, Buenos Aires, 2010.
+
+## Referencia de obras
+### Obras musicales
+* Xenakis, Ianni. "Akrata"
+* Grisey,Gérard. "Le noir de l'etoile"
+### Instalaciones
+* Azzigotti, Luciano. "Blanco","Osmos","Epinicios y Agonales", Performance en red (Spam, Kimi, Colisión)
+### Artistas Numéricos
+* Karl Sims, organismos evolutivos de movimiento
+* Dmitry Morozov, vtol.cc
+* Darien Brito
+* Daan Brinkmann
+* Joris Strijbos, www.macular.nl (colectivo)
+* Stian korntved ruud, https://www.stiankorntvedruud.com , forks
+* Spencer Topel, https://www.spencertopel.com/
+	
 
 ## representación
-
-### shaders
-- https://www.shadertoy.com/view/XdcGW2
-
+	### shaders
+	- https://www.shadertoy.com/view/XdcGW2
+	
 ## machine learning
-- [**gpt2-spanish generation**](https://colab.research.google.com/drive/1O6dii5zQVWON1pTrDYmNdVy4tF9ZqBB0#scrollTo=wvQyJu_IJUHr)
+	- [**gpt2-spanish generation**](https://colab.research.google.com/drive/1O6dii5zQVWON1pTrDYmNdVy4tF9ZqBB0#scrollTo=wvQyJu_IJUHr)
 
-# referencias 
-
+# Referencias 
 ## alteraciones perceptivas
 Gombrich, E. H. H. (1960). Art and Illusion. In _Callaloo_. Phaidon Press. https://doi.org/10.1353/cal.1998.0117
 ## arquitectura aural
@@ -1588,3 +1606,5 @@ Wilson, R. (1997). Astronomy through the Ages. Taylor & Francis.
 Xuan Thuan, T. (1999). O Caos e a Harmonia. A fabricação do real.
 Xuan Thuan, T. (1988). La mélodie secrète...et l’homme créa l’univers. Fayard.
 Xuan Thuan, T. (2012). Big Bang origine e destino dell’universo. Gallimard.
+
+
