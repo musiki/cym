@@ -1,0 +1,534 @@
+{
+  "initialized": true,
+  "trackedProjects": [
+    "/"
+  ],
+  "filesCheckpoint": {
+    "image/gallery.md": {
+      "size": 70,
+      "tags": 0,
+      "links": 0
+    },
+    "README.md": {
+      "size": 90637,
+      "tags": 0,
+      "links": 7
+    },
+    "03-ref/topoi/t60-espacio.md": {
+      "size": 69,
+      "tags": 5,
+      "links": 0
+    },
+    "03-ref/topoi/t40-humanos.md": {
+      "size": 41,
+      "tags": 1,
+      "links": 0
+    },
+    "03-ref/topoi/t34-livecoding.md": {
+      "size": 492,
+      "tags": 4,
+      "links": 0
+    },
+    "03-ref/topoi/t61-virtualidad y realidad.md": {
+      "size": 12341,
+      "tags": 4,
+      "links": 0
+    },
+    "03-ref/topoi/t52-Racionalizacion_(videojuegos).md": {
+      "size": 6657,
+      "tags": 3,
+      "links": 0
+    },
+    "03-ref/topoi/t51-arte relacional.md": {
+      "size": 14242,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/topoi/t33-sistemas complejos.md": {
+      "size": 2704,
+      "tags": 3,
+      "links": 2
+    },
+    "03-ref/topoi/t32-azar.md": {
+      "size": 1804,
+      "tags": 4,
+      "links": 2
+    },
+    "03-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md": {
+      "size": 5848,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/topoi/t31-generatividad.md": {
+      "size": 19,
+      "tags": 1,
+      "links": 0
+    },
+    "03-ref/topoi/t30-vida artificial.md": {
+      "size": 451,
+      "tags": 1,
+      "links": 5
+    },
+    "03-ref/topoi/t21-interfaces.md": {
+      "size": 126,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/topoi/t10-método científico.md": {
+      "size": 11972,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/topoi/t12.1-Cuarta Revolución Industrial.md": {
+      "size": 7669,
+      "tags": 2,
+      "links": 23
+    },
+    "03-ref/topoi/t12-filosofía 21.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/topoi/t11-sistemas de universos.md": {
+      "size": 8995,
+      "tags": 5,
+      "links": 3
+    },
+    "03-ref/topoi/t09-física.md": {
+      "size": 113,
+      "tags": 2,
+      "links": 1
+    },
+    "03-ref/topoi/b-Spectromorphology.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/templates/t-topoi.md": {
+      "size": 199,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/templates/t-movie.md": {
+      "size": 345,
+      "tags": 2,
+      "links": 1
+    },
+    "03-ref/templates/t-cym-init-slide.md": {
+      "size": 110,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/templates/t-cym-class.md": {
+      "size": 176,
+      "tags": 6,
+      "links": 0
+    },
+    "03-ref/templates/t-liquid.md": {
+      "size": 134,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/templates/t-class.md": {
+      "size": 73,
+      "tags": 3,
+      "links": 0
+    },
+    "03-ref/templates/t-book.md": {
+      "size": 434,
+      "tags": 1,
+      "links": 4
+    },
+    "03-ref/templates/t-bibliografía.md": {
+      "size": 79,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/templater.md": {
+      "size": 112,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/db/topoi.md": {
+      "size": 1800,
+      "tags": 0,
+      "links": 15
+    },
+    "03-ref/db/referencias.md": {
+      "size": 252,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/db/personas.md": {
+      "size": 72,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/db/obras.md": {
+      "size": 290,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/clases/c-cym03- cohesión audivisual.md": {
+      "size": 9705,
+      "tags": 7,
+      "links": 8
+    },
+    "03-ref/clases/c-cym04-integración.md": {
+      "size": 3478,
+      "tags": 6,
+      "links": 0
+    },
+    "03-ref/clases/c-cym05-flex-grid.md": {
+      "size": 598,
+      "tags": 6,
+      "links": 1
+    },
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md": {
+      "size": 5526,
+      "tags": 2,
+      "links": 9
+    },
+    "03-ref/clases/c-cym01-presentación.md": {
+      "size": 393,
+      "tags": 2,
+      "links": 0
+    },
+    "03-ref/personas/Yotam Mann.md": {
+      "size": 119,
+      "tags": 2,
+      "links": 0
+    },
+    "03-ref/personas/Stuart Russell.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/personas/Peter Novig.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/personas/Klaus Schwab.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/personas/Hugh Le Caine.md": {
+      "size": 44,
+      "tags": 3,
+      "links": 0
+    },
+    "03-ref/personas/John Barrows.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/personas/Douglas Barret.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/personas/Hito Steyerl.md": {
+      "size": 89,
+      "tags": 1,
+      "links": 0
+    },
+    "03-ref/personas/Dennis Smalley.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/obras/o-Boid Simulation.md": {
+      "size": 143,
+      "tags": 4,
+      "links": 0
+    },
+    "03-ref/bibliografía/notes/@XuanThuan1988.md": {
+      "size": 103,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/bibliografía/notes/@Steyerl2014a.md": {
+      "size": 79,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/bibliografía/notes/@Padilla2010.md": {
+      "size": 97,
+      "tags": 0,
+      "links": 0
+    },
+    "03-ref/bibliografía/b-Los condenados de la pantalla.md": {
+      "size": 2334,
+      "tags": 5,
+      "links": 0
+    },
+    "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/tone.js.md": {
+      "size": 809,
+      "tags": 1,
+      "links": 0
+    },
+    "02-mat/que es git.md": {
+      "size": 1490,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/rant.md": {
+      "size": 1089,
+      "tags": 5,
+      "links": 0
+    },
+    "02-mat/procesos/r-como hacer un proyectual.md": {
+      "size": 982,
+      "tags": 0,
+      "links": 1
+    },
+    "02-mat/procesos/r-vinculación bidireccional.md": {
+      "size": 1775,
+      "tags": 2,
+      "links": 1
+    },
+    "02-mat/python/py-foundations.md": {
+      "size": 802,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/partituras/unendilech freude.md": {
+      "size": 4043,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/partituras/bianco dolce signo.md": {
+      "size": 5014,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/partituras/ave maria palestrina.md": {
+      "size": 6768,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/org/i-theremin.md": {
+      "size": 127,
+      "tags": 3,
+      "links": 0
+    },
+    "02-mat/org/i-sackbut.md": {
+      "size": 1026,
+      "tags": 4,
+      "links": 2
+    },
+    "02-mat/org/mat-partitura.md": {
+      "size": 249,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/jasvascript/js01-fundamentals.md": {
+      "size": 1906,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/jasvascript/js-playground.md": {
+      "size": 798,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/jasvascript/js-cheatsheet.md": {
+      "size": 128,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/cloud ides.md": {
+      "size": 212,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/html.md": {
+      "size": 239,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/todo.md": {
+      "size": 411,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/tp/tp02-aplicación.md": {
+      "size": 394,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/tp/tp01-topoi.md": {
+      "size": 1023,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/tp/2022-08-30.md": {
+      "size": 50,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/lopez/tp-01-topoi.md": {
+      "size": 37,
+      "tags": 0,
+      "links": 1
+    },
+    "01-proj/lopez/helloworld.md": {
+      "size": 798,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/lopez/03-Máquina de ritmos.md": {
+      "size": 563,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/lopez/01-Azar.md": {
+      "size": 1188,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/lopez/02-Melodia.md": {
+      "size": 503,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/gutierrez/Generador de melodía.md": {
+      "size": 532,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/ancarola/Hola Sonido.md": {
+      "size": 96,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/ancarola/Generador de Melodías Random.md": {
+      "size": 627,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/ancarola/tp-01-topoi.md": {
+      "size": 39,
+      "tags": 0,
+      "links": 1
+    },
+    "00-in/meta-aprendizaje.md": {
+      "size": 1097,
+      "tags": 3,
+      "links": 2
+    },
+    "00-in/combinational creativity.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/prg-22.md": {
+      "size": 15460,
+      "tags": 0,
+      "links": 3
+    },
+    "03-ref/clases/c-cym06-un instrumento online colectivo.md": {
+      "size": 0,
+      "tags": 8,
+      "links": 0
+    },
+    "03-ref/a-yuda.md": {
+      "size": 4460,
+      "tags": 0,
+      "links": 2
+    },
+    "03-ref/a-dataview.md": {
+      "size": 874,
+      "tags": 0,
+      "links": 0
+    }
+  },
+  "commitTypes": {
+    "/": {
+      "Refactor": 3,
+      "Create": 1,
+      "Link": 1,
+      "Expand": 1
+    }
+  },
+  "dailyCommits": {
+    "/": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 4,
+      "21": 2,
+      "22": 0,
+      "23": 0
+    }
+  },
+  "weeklyCommits": {
+    "/": {
+      "Mon": 0,
+      "Tue": 0,
+      "Wed": 6,
+      "Thu": 0,
+      "Fri": 0,
+      "Sat": 0,
+      "Sun": 0
+    }
+  },
+  "recentCommits": {
+    "/": {
+      "Expanded": [
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+      ],
+      "Created": [
+        "<a class=\"internal-link\" href=\"03-ref/clases/Untitled.md\"> Untitled </a>"
+      ],
+      "Renamed": [
+        "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-ref/a-dataview.md\"> a-dataview </a>"
+      ],
+      "Tagged": [
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>"
+      ],
+      "Refactored": [],
+      "Deleted": [
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+      ],
+      "Linked": [],
+      "Removed Tags from": [],
+      "Removed Links from": []
+    }
+  },
+  "ignoreList": [],
+  "divWidth": 50,
+  "divHeight": 400,
+  "divAlign": "left",
+  "topCommits": 2,
+  "commitThreshold": 2000,
+  "commitPerc": 15,
+  "fillColor": "rgba(51, 153, 204, 0.4)",
+  "borderColor": "rgba(51, 153, 204, 1)",
+  "gridColor": "grey"
+}

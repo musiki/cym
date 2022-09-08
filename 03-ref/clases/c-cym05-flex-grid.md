@@ -8,6 +8,10 @@ year: 2022
 
 <!-- slide bg="#010100" -->
 UNTREF | CYM22 | 05
+
+- [ ] # [[r-como hacer un proyectual]]
+
+
 # flex-grid
 
 

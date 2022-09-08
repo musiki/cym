@@ -531,5 +531,15 @@
       ],
       "key": "`"
     }
+  ],
+  "obsidian-comments:show-comments-panel": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
   ]
 }
