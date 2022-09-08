@@ -36,7 +36,7 @@ tag: #class
 
 # Tareas
 *Tarea 1:{{asignación|cym|30/08/2022|Topoi}}
-*Tarea 2:{{asignación|cym|14/09/2022|Tone.js}}
+*Tarea 2:{{asignación|cym|20/09/2022|Tone.js}}
 *Tarea 3:{{asignación|cym|27/09/2022|Hydra-p5}}
 *Tarea 4:{{asignación|cym|25/10/2022|Proyectual}}
 *Tarea 5:{{asignación|cym|22/11/2022|Proyecto cym web}}

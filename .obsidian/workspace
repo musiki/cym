@@ -6,6 +6,7 @@
       {
         "id": "a0d560237ab4b2e0",
         "type": "leaf",
+        "dimension": 58.41995841995842,
         "state": {
           "type": "markdown",
           "state": {
@@ -19,14 +20,10 @@
       {
         "id": "b3847f1fef3b0b9b",
         "type": "leaf",
+        "dimension": 41.58004158004158,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -101,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/prg-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/prg-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/prg-22.md"
               }
             }
           },
@@ -183,7 +180,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/prg-22.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,8 +216,9 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "b3847f1fef3b0b9b",
+  "active": "a0d560237ab4b2e0",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "00-in/prg-22.md",
     "README.md",
     "03-ref/clases/c-cym05-flex-grid.md",
@@ -229,7 +227,6 @@
     "01-proj/tp/tp01-topoi.md",
     "01-proj/tp/tp02-aplicación.md",
     "00-in/meta-aprendizaje.md",
-    "00-in/combinational creativity.md",
-    "2022-09-06.md"
+    "00-in/combinational creativity.md"
   ]
 }
