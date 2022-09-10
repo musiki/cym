@@ -4,3 +4,5 @@
 	- [ ] interpretación como cabezera de un mensaje
 	- [ ] aprender a recibir dedo1 y dedo2
 	- [ ] teclado. grupos de teclas conectadas.  [leader dynamic]
+- [ ] proyecto colectivo : instrumento
+- [ ] proyecto individual: obra reactiva-interactiva.
