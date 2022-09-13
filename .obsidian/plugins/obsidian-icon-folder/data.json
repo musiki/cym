@@ -25,14 +25,8 @@
   "00-in": "IbArrowLeft",
   "01-proj": "IbArrowRight",
   "02-mat": "IbTabLeftCompact",
-  "03-ref": "IbArrowCircleForward",
-  "03-ref/bibliografía": "IbAcademicBook",
   "02-mat/org": "IbTriangleRight",
   "02-mat/tone.js.md": "FlTriangleOfTriangles",
-  "03-ref/db": "IbDatabse",
-  "03-ref/obras": "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite",
-  "03-ref/personas": "FlPendantOfSmallPolygonalShape",
-  "03-ref/topoi": "IbHugContentVertical",
   "02-mat/que es git.md": "FabGithubSquare",
   "02-mat/html.md": {
     "iconName": null,
@@ -46,8 +40,11 @@
     "iconName": null,
     "inheritanceIcon": "FlPolygonalOrnamentalShapeOfTriangles"
   },
-  "03-ref/clases": {
-    "iconName": null,
-    "inheritanceIcon": "IbStackHorizontal"
-  }
+  "03-cla": "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite",
+  "04-ref": "IbArrowCircleForward",
+  "04-ref/bibliografía": "IbAcademicBook",
+  "04-ref/db": "IbDatabse",
+  "04-ref/obras": "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite",
+  "04-ref/personas": "FlPendantOfSmallPolygonalShape",
+  "04-ref/topoi": "IbHugContentVertical"
 }

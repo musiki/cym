@@ -287,3 +287,8 @@ border: off
 ![[a-dataview]]
 
 
+a:: #inline
+
+
+`= this.a`
+
