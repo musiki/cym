@@ -5,6 +5,34 @@
       "path": "01-proj/ancarola/TP1-Topoi.md"
     },
     {
+      "basename": "c-cym04-integración",
+      "path": "01-proj/ancarola/c-cym04-integración.md"
+    },
+    {
+      "basename": "c-cym04-integración",
+      "path": "03-ref/clases/c-cym04-integración.md"
+    },
+    {
+      "basename": "Hola Mundo",
+      "path": "01-proj/ancarola/Hola Mundo.md"
+    },
+    {
+      "basename": "Hola Sonido",
+      "path": "01-proj/ancarola/Hola Sonido.md"
+    },
+    {
+      "basename": "tp01-topoi",
+      "path": "01-proj/tp/tp01-topoi.md"
+    },
+    {
+      "basename": "2022-08-30",
+      "path": "01-proj/tp/2022-08-30.md"
+    },
+    {
+      "basename": "tp02-aplicación",
+      "path": "01-proj/tp/tp02-aplicación.md"
+    },
+    {
       "basename": "racionalidad",
       "path": "racionalidad.md"
     },
@@ -33,20 +61,8 @@
       "path": "Cuarta Revolución Industrial.md"
     },
     {
-      "basename": "6",
-      "path": "6.md"
-    },
-    {
       "basename": "Generador de Melodías Random",
       "path": "01-proj/ancarola/Generador de Melodías Random.md"
-    },
-    {
-      "basename": "Hola Mundo",
-      "path": "01-proj/ancarola/Hola Mundo.md"
-    },
-    {
-      "basename": "Hola Sonido",
-      "path": "01-proj/ancarola/Hola Sonido.md"
     },
     {
       "basename": "ayuda",
@@ -79,10 +95,6 @@
     {
       "basename": "Dennis Smalley",
       "path": "Dennis Smalley.md"
-    },
-    {
-      "basename": "2022-08-30",
-      "path": "01-proj/tp/2022-08-30.md"
     },
     {
       "basename": "helloworld",
@@ -157,10 +169,6 @@
       "path": "03-ref/topoi/t33-sistemas complejos.md"
     },
     {
-      "basename": "tp01-topoi",
-      "path": "01-proj/tp/tp01-topoi.md"
-    },
-    {
       "basename": "t10-método científico",
       "path": "03-ref/topoi/t10-método científico.md"
     },
@@ -185,20 +193,12 @@
       "path": "03-ref/db/referencias.md"
     },
     {
-      "basename": "tp02-aplicación",
-      "path": "01-proj/tp/tp02-aplicación.md"
-    },
-    {
       "basename": "combinational creativity",
       "path": "00-in/combinational creativity.md"
     },
     {
       "basename": "t11-sistemas de universos",
       "path": "03-ref/topoi/t11-sistemas de universos.md"
-    },
-    {
-      "basename": "t21-interfaces",
-      "path": "03-ref/topoi/t21-interfaces.md"
     }
   ],
   "omittedPaths": [],

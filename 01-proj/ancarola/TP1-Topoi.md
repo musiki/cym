@@ -58,7 +58,7 @@ En conclusión, todo depende de la definición de arte:
 
 3. [La Cuarta Revolución Industrial: qué significa y cómo responder | Foro Económico Mundial (weforum.org)](https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/)
 
-4. 
+4. Stuart Russel, Peter Norvig, _Inteligencia Artificial - Un enfoque Moderno_, ()
 
 5. Yuval Harari, _21 lecciones para el siglo XXI_,(Debate, 2018), pág. 41-45 
 

@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "01-proj/ancarola/TP1-Topoi.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": false,
             "source": true
           }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "imgur",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -208,15 +207,15 @@
   },
   "active": "2d2fc451cc0f55e9",
   "lastOpenFiles": [
-    "racionalidad.md",
+    "01-proj/ancarola/c-cym04-integración.md",
+    "01-proj/ancarola/Untitled.md",
+    "01-proj/ancarola/Cym Clase 4.md",
+    "03-ref/clases/c-cym04-integración.md",
+    "01-proj/ancarola/Hola Mundo.md",
+    "01-proj/ancarola/Hola Sonido.md",
     "01-proj/ancarola/TP1-Topoi.md",
-    "Inteligencia Artificial -Un enfoque moderno.md",
-    "Peter Novig.md",
-    "Stuart Russell.md",
-    "Inteligencia Artificial (IA).md",
-    "Klaus Schwab.md",
-    "Inteligencia artificial.md",
-    "Cuarta Revolución Industrial.md",
-    "Industria 4.0.md"
+    "21 Lecciones para el siglo Xxi.md",
+    "Harari Yuval Noah.md",
+    "01-proj/tp/tp01-topoi.md"
   ]
 }
