@@ -31,7 +31,9 @@ que es un exo-instrumento?
 ---
 
 <iframe height="600" width="800" src="https://replit.com/@jsmusic/generators05-simple?embed=true#index.html" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
+
 ---
+
 # Mousetrap
 
 Mousetrap es una librería que utiliza shortcuts del teclado con JavaScript.
