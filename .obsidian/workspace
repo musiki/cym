@@ -6,18 +6,23 @@
       {
         "id": "a0d560237ab4b2e0",
         "type": "leaf",
-        "dimension": 58.41995841995842,
+        "dimension": 50,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
         }
       },
       {
-        "id": "b3847f1fef3b0b9b",
+        "id": "f68fcae430ee7469",
         "type": "leaf",
-        "dimension": 41.58004158004158,
+        "dimension": 50,
         "state": {
-          "type": "empty",
+          "type": "reveal-preview-view",
           "state": {}
         }
       }
@@ -93,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
+              }
             }
           },
           {
@@ -171,6 +180,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -206,17 +216,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "90ce32d259cad856",
+  "active": "a0d560237ab4b2e0",
   "lastOpenFiles": [
-    "README.md",
-    "00-in/prg-22.md",
-    "00-in/combinational creativity.md",
-    "conflict-files-obsidian-git.md",
     "03-ref/clases/c-cym05-flex-grid.md",
+    "03-ref/clases/c-cym06-un instrumento online colectivo.md",
     "03-ref/clases/c-cym04-integración.md",
+    "01-proj/tp/2022-08-30.md",
+    "01-proj/lopez/03-Máquina de ritmos.md",
+    "03-ref/clases/c-cym01-presentación.md",
+    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md",
     "03-ref/clases/c-cym03- cohesión audivisual.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "00-in/meta-aprendizaje.md"
+    "2022-09-06.md",
+    "README.md"
   ]
 }
