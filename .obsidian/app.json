@@ -1,18 +1,10 @@
 {
-  "livePreview": false,
   "promptDelete": false,
-  "communityThemeSortOrder": "download",
-  "showFrontmatter": false,
+  "alwaysUpdateLinks": true,
   "pdfExportSettings": {
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
-  },
-  "foldHeading": true,
-  "alwaysUpdateLinks": true,
-  "newFileLocation": "root",
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "image",
-  "mobilePullAction": "obsidian-minimal-settings:toggle-minimal-light-cycle"
+  }
 }

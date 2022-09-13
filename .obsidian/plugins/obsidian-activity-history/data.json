@@ -1,0 +1,46 @@
+{
+  "firstRun": false,
+  "initialized": [
+    {
+      "path": "/",
+      "initialized": true
+    }
+  ],
+  "trackedProjects": [
+    "/"
+  ],
+  "checkpointList": [
+    {
+      "path": "/",
+      "date": "2022-09-13",
+      "size": 236940
+    }
+  ],
+  "activityHistory": [
+    {
+      "path": "/",
+      "size": [
+        {
+          "date": "2022-09-08",
+          "value": 13720
+        },
+        {
+          "date": "2022-09-12",
+          "value": 553
+        },
+        {
+          "date": "2022-09-13",
+          "value": 385
+        }
+      ]
+    }
+  ],
+  "activityColor1": "#c6e48b",
+  "activityColor2": "#7bc96f",
+  "activityColor3": "#239a3b",
+  "activityColor4": "#196127",
+  "textColor": "#ffff00",
+  "emptyColor": "#000000",
+  "cellRadius": 1,
+  "type": "yearly"
+}

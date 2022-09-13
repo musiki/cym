@@ -1,20 +1,17 @@
-<<<<<<< HEAD
 cym.bib
-=======
 .DS_Store
 ./cym.bib
->>>>>>> origin/main
 .obsidian/graph.json
 .obsidian/plugins/recent-files-obsidian/data.json
-<<<<<<< HEAD
-.obsidian/workspace
-=======
+.obsidian/plugins/recent-files-obsidian/
 .obsidian/workspace
 .obsidian/plugins/execute-code/data.json
+.obsidian/app.json
+.obsidian/workspace/
+.obsidian/plugins/execute-code/data.json
 .obsidian/graph.json
-<<<<<<< HEAD
-./obsidian/workspace
->>>>>>> origin/main
-=======
- .obsidian/workspace
->>>>>>> origin/main
+.obsidian/core-plugins.json
+.obsidian/appearance.json
+.obsidian/community-plugins.json
+.obsidian/plugins/obsidian-minimal-settings/data.json
+

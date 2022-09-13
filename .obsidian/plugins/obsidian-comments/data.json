@@ -1,5 +1,5 @@
 {
-  "SHOW_RIBBON": false,
+  "SHOW_RIBBON": true,
   "DEFAULT_COLOR": "#b30202",
   "DEFAULT_BACKGROUND_COLOR": "#FFDE5C"
 }

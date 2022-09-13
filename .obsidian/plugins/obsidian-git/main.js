@@ -10901,7 +10901,17 @@ var SimpleGit = class extends GitManager {
   }
   updateUpstreamBranch(remoteBranch) {
     return __async(this, null, function* () {
-      yield this.git.push(["--set-upstream", ...remoteBranch.split("/")], (err) => this.onError(err));
+      try {
+        yield this.git.branch(["--set-upstream-to", remoteBranch]);
+      } catch (e) {
+        console.error(e);
+        try {
+          yield this.git.branch(["--set-upstream", remoteBranch]);
+        } catch (e2) {
+          console.error(e2);
+          yield this.git.push(["--set-upstream", ...remoteBranch.split("/")], (err) => this.onError(err));
+        }
+      }
     });
   }
   updateGitPath(gitPath) {
@@ -11179,6 +11189,9 @@ var ObsidianGitSettingsTab = class extends import_obsidian2.PluginSettingTab {
         plugin.saveSettings();
         plugin.gitManager.updateBasePath(value || "");
       });
+    });
+    new import_obsidian2.Setting(containerEl).setName("Donate").setDesc("If you like this Plugin, consider donating to support continued development.").addButton((bt) => {
+      bt.buttonEl.outerHTML = "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>";
     });
     const info = containerEl.createDiv();
     info.setAttr("align", "center");
@@ -15273,6 +15286,14 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
         callback: () => this.promiseQueue.addTask(() => this.createBackup(false))
       });
       this.addCommand({
+        id: "backup-and-close",
+        name: "Create backup and close",
+        callback: () => this.promiseQueue.addTask(() => __async(this, null, function* () {
+          yield this.createBackup(false);
+          window.close();
+        }))
+      });
+      this.addCommand({
         id: "commit-push-specified-message",
         name: "Create backup with specific message",
         callback: () => this.promiseQueue.addTask(() => this.createBackup(false, true))
@@ -15770,7 +15791,7 @@ var ObsidianGit = class extends import_obsidian18.Plugin {
         return false;
       }
       const file = this.app.vault.getAbstractFileByPath(this.conflictOutputFile);
-      const hadConflict = this.localStorage.getConflict();
+      const hadConflict = this.localStorage.getConflict() === "true";
       if (this.gitManager instanceof SimpleGit && file)
         yield this.app.vault.delete(file);
       let status;

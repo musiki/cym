@@ -1,8 +1,8 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
-  "showTags": false,
-  "showAttachments": false,
+  "showTags": true,
+  "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
@@ -15,37 +15,65 @@
       }
     },
     {
-      "query": "path:03-ref/personas",
+      "query": "tag: class",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:03-ref/bibliografía",
+      "query": "tag:armonía",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:03-ref/obras",
+      "query": "tag:generative",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "tag:#complejidad",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:03-ref/personas",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:02-mat/procesos",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "path:03-ref/obras",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -0.2,
-  "nodeSizeMultiplier": 1.8791015625,
-  "lineSizeMultiplier": 2.913671875,
-  "collapse-forces": false,
-  "centerStrength": 0.627511160714286,
-  "repelStrength": 17.8212691326531,
+  "showArrow": false,
+  "textFadeMultiplier": 1.4,
+  "nodeSizeMultiplier": 1.36898271276596,
+  "lineSizeMultiplier": 2.01528424202128,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 0.24356531786549898,
-  "close": false
+  "linkDistance": 250,
+  "scale": 0.4819874538656415,
+  "close": true
 }
