@@ -190,7 +190,7 @@
       "links": 1
     },
     "03-cla/c-cym06-un instrumento online colectivo.md": {
-      "size": 2377,
+      "size": 10387,
       "tags": 8,
       "links": 0
     },
@@ -458,14 +458,34 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "21 Lecciones para el siglo Xxi.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Harari Yuval Noah.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "image/c-cym04-integración.md": {
+      "size": 3184,
+      "tags": 6,
+      "links": 0
+    },
+    "01-proj/ancarola/c-cym04-integración.md": {
+      "size": 3184,
+      "tags": 6,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 67,
-      "Create": 3,
-      "Link": 4,
-      "Expand": 3
+      "Create": 7,
+      "Link": 6,
+      "Expand": 8
     }
   },
   "dailyCommits": {
@@ -480,9 +500,9 @@
       "7": 2,
       "8": 0,
       "9": 0,
-      "10": 0,
-      "11": 68,
-      "12": 0,
+      "10": 7,
+      "11": 71,
+      "12": 1,
       "13": 0,
       "14": 0,
       "15": 0,
@@ -500,7 +520,7 @@
     "/": {
       "Mon": 0,
       "Tue": 3,
-      "Wed": 6,
+      "Wed": 17,
       "Thu": 2,
       "Fri": 60,
       "Sat": 0,
@@ -512,12 +532,21 @@
       "Expanded": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"03-ref/clases/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>"
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
+        "<a class=\"internal-link\" href=\"21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
@@ -575,7 +604,9 @@
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"test.md\"> test </a>"
+        "<a class=\"internal-link\" href=\"test.md\"> test </a>",
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
       ],
       "Refactored": [],
       "Deleted": [
