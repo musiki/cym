@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
               }
             }
           },
@@ -156,13 +156,15 @@
   },
   "active": "8da957030a3a989d",
   "lastOpenFiles": [
+    "01-proj/lopez/01-Azar.md",
+    "04-ref/personas/Dennis Smalley.md",
+    "7.md",
+    "README.md",
     "03-cla/c-cym06-un instrumento online colectivo.md",
     "03-cla/c-cym05-flex-grid.md",
     "04-ref/topoi/t11-sistemas de universos.md",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
     "04-ref/personas/Hugh Le Caine.md",
-    "04-ref/personas/John Barrows.md",
-    "04-ref/personas/Dennis Smalley.md",
-    "04-ref/a-yuda.md"
+    "04-ref/personas/John Barrows.md"
   ]
 }
