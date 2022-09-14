@@ -190,7 +190,7 @@
       "links": 1
     },
     "03-cla/c-cym06-un instrumento online colectivo.md": {
-      "size": 0,
+      "size": 2377,
       "tags": 8,
       "links": 0
     },
@@ -453,14 +453,19 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "2022-09-13.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 67,
-      "Create": 2,
+      "Create": 3,
       "Link": 4,
-      "Expand": 1
+      "Expand": 3
     }
   },
   "dailyCommits": {
@@ -476,7 +481,7 @@
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 66,
+      "11": 68,
       "12": 0,
       "13": 0,
       "14": 0,
@@ -488,13 +493,13 @@
       "20": 4,
       "21": 2,
       "22": 0,
-      "23": 0
+      "23": 1
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 0,
-      "Tue": 0,
+      "Tue": 3,
       "Wed": 6,
       "Thu": 2,
       "Fri": 60,
@@ -505,11 +510,14 @@
   "recentCommits": {
     "/": {
       "Expanded": [
-        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"03-ref/clases/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
