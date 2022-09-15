@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-ref/clases/c-cym04-integración.md",
+            "file": "01-proj/lopez/03-Máquina de ritmos.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "google",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "01-proj/lopez/03-Máquina de ritmos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md",
+                "file": "01-proj/lopez/03-Máquina de ritmos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-ref/clases/c-cym04-integración.md"
+                "file": "01-proj/lopez/03-Máquina de ritmos.md"
               }
             }
           },
@@ -162,17 +162,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d76cbb179cfddbae",
+  "active": "ffaaa24e83265ab1",
   "lastOpenFiles": [
+    "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
     "03-ref/clases/c-cym05-flex-grid.md",
+    "03-ref/clases/c-cym04-integración.md",
     "01-proj/lopez/03-Máquina de ritmos.md",
     "01-proj/ancarola/Generador de Melodías Random.md",
     "conflict-files-obsidian-git.md",
     "01-proj/lopez/helloworld.md",
     "01-proj/lopez/tp-01-topoi.md",
     "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/lopez/02-Melodia.md",
-    "03-ref/clases/c-cym04-integración.md"
+    "01-proj/tp/tp02-aplicación.md"
   ]
 }
