@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
   "cssTheme": "Minimal",
   "theme": "obsidian"
+=======
+  "cssTheme": "Things",
+  "theme": "obsidian",
+  "baseFontSize": 17
+>>>>>>> origin/main
 }
