@@ -6,6 +6,7 @@
       {
         "id": "a0d560237ab4b2e0",
         "type": "leaf",
+        "dimension": 59.758551307847085,
         "state": {
           "type": "markdown",
           "state": {
@@ -14,6 +15,15 @@
             "backlinks": false,
             "source": false
           }
+        }
+      },
+      {
+        "id": "b74d58507a004449",
+        "type": "leaf",
+        "dimension": 40.24144869215292,
+        "state": {
+          "type": "reveal-preview-view",
+          "state": {}
         }
       }
     ],
@@ -71,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 462
+    "width": 172
   },
   "right": {
     "id": "c4e3217dccc5041e",
