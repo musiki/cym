@@ -13,9 +13,8 @@ UNTREF | CYM22 | 06
 
 # introducción 
 
-- Desde hace unas décadas, la música en red puede considerarse u
-- n conjunto de acciones musicales innovadoras facilitadas por la tecnología. 
-- Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (Lazzaro J & Wawzynel J ,2001) .
+- Desde hace unas décadas, la música en red puede considerarse un conjunto de acciones musicales innovadoras facilitadas por la tecnología. 
+- Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (bib::Lazzaro J & Wawzynel J ,2001) .
 - Sobre esta definición histórica, existe un sesgo que considera la red como un sustituto de la propagación natural del sonido y la luz.  
 - Entonces, para establecer ciertas tipologías, podemos llegar a una definición más amplia como:  
 	- la práctica de realizar una interacción musical en tiempo real a través de una red informática.  

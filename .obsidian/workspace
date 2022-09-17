@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+            "file": "README.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -62,8 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 458
   },
   "right": {
     "id": "5acd67cfbd2b07bc",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
+                "file": "README.md"
               }
             }
           },
@@ -147,7 +146,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -156,15 +156,15 @@
   },
   "active": "8da957030a3a989d",
   "lastOpenFiles": [
-    "01-proj/lopez/01-Azar.md",
-    "04-ref/personas/Dennis Smalley.md",
-    "7.md",
+    "04-ref/topoi/t10-método científico.md",
     "README.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "03-cla/c-cym05-flex-grid.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/personas/Hugh Le Caine.md",
-    "04-ref/personas/John Barrows.md"
+    "00-in/combinational creativity.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/prg-22.md",
+    "04-ref/a-yuda.md",
+    "04-ref/templater.md",
+    "04-ref/templates/t-cym-init-slide.md",
+    "04-ref/templates/t-topoi.md",
+    "04-ref/templates/t-movie.md"
   ]
 }

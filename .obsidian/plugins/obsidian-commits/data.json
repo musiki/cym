@@ -454,21 +454,6 @@
       "tags": 0,
       "links": 0
     },
-    "2022-09-13.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "21 Lecciones para el siglo Xxi.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "Harari Yuval Noah.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "image/c-cym04-integración.md": {
       "size": 3184,
       "tags": 6,
@@ -479,7 +464,12 @@
       "tags": 6,
       "links": 0
     },
-    "7.md": {
+    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Harari Yuval Noah.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -487,7 +477,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 67,
+      "Refactor": 71,
       "Create": 8,
       "Link": 6,
       "Expand": 8
@@ -507,7 +497,7 @@
       "9": 0,
       "10": 7,
       "11": 71,
-      "12": 2,
+      "12": 6,
       "13": 0,
       "14": 0,
       "15": 0,
@@ -526,7 +516,7 @@
       "Mon": 0,
       "Tue": 3,
       "Wed": 18,
-      "Thu": 2,
+      "Thu": 6,
       "Fri": 60,
       "Sat": 0,
       "Sun": 6
@@ -555,6 +545,8 @@
         "<a class=\"internal-link\" href=\"7.md\"> 7 </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
         "<a class=\"internal-link\" href=\"a-dataview playground.md\"> a-dataview playground </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
@@ -603,9 +595,7 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Douglas Barret.md\"> Douglas Barret </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
@@ -616,7 +606,9 @@
       ],
       "Refactored": [],
       "Deleted": [
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"
