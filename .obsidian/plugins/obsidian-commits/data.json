@@ -473,12 +473,22 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "new Tendencies.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "lwe.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 71,
-      "Create": 8,
+      "Create": 10,
       "Link": 6,
       "Expand": 8
     }
@@ -504,7 +514,7 @@
       "16": 0,
       "17": 0,
       "18": 0,
-      "19": 0,
+      "19": 2,
       "20": 4,
       "21": 2,
       "22": 0,
@@ -519,7 +529,7 @@
       "Thu": 6,
       "Fri": 60,
       "Sat": 0,
-      "Sun": 6
+      "Sun": 8
     }
   },
   "recentCommits": {
@@ -542,7 +552,9 @@
         "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
-        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>"
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
+        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",

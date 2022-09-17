@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "8da957030a3a989d",
+        "id": "9be5806cd330d2d4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "preview",
+            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+            "mode": "source",
             "backlinks": false,
             "source": false
           }
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 458
+    "width": 202.99999809265137
   },
   "right": {
     "id": "5acd67cfbd2b07bc",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
               }
             }
           },
@@ -154,17 +154,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8da957030a3a989d",
+  "active": "9be5806cd330d2d4",
   "lastOpenFiles": [
-    "04-ref/topoi/t10-método científico.md",
     "README.md",
-    "00-in/combinational creativity.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/prg-22.md",
-    "04-ref/a-yuda.md",
-    "04-ref/templater.md",
-    "04-ref/templates/t-cym-init-slide.md",
-    "04-ref/templates/t-topoi.md",
-    "04-ref/templates/t-movie.md"
+    "03-cla/c-cym06-un instrumento online colectivo.md",
+    "03-cla/c-cym04-integración.md",
+    "02-mat/partituras/bianco dolce signo.md",
+    "02-mat/partituras/ave maria palestrina.md",
+    "01-proj/ancarola/Generador de Melodías Random.md",
+    "03-cla/c-cym03- cohesión audivisual.md",
+    "03-cla/c-cym01-presentación.md",
+    "01-proj/ancarola/Hola Sonido.md",
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md"
   ]
 }

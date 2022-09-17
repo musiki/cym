@@ -141,11 +141,12 @@ Es decir que para utilizarlas debemos configurar un servidor , no es suficiente 
 
 repl.it y otros "cloud IDEs" permiten simular un servidor y programar sin problema un nodo. 
 
-Por recomendación de Caro , ya que le gusta glitch vamos a usar esa plataforma para desarrollar, pero eventualmente a medida que el proyecto crezca debería tener su propio github con versiones de archivos locales. Por muchas otras razones también decidimos usar react-express que facilita muchas tareas del navegador aunque tenga una curva de aprendizaje.
+~~Por recomendación de Caro , ya que le gusta glitch vamos a usar esa plataforma para desarrollar, pero eventualmente a medida que el proyecto crezca debería tener su propio github con versiones de archivos locales. (glitch dió varios problemas)~~ 
+
+Por muchas otras razones también decidimos usar react-express que facilita muchas tareas del navegador aunque tenga una curva de aprendizaje.
 
 proyecto:
-https://glitch.com/edit/#!/reflective-jagged-taleggio?path=.gitignore%3A6%3A5
-
+https://replit.com/@jsmusic/audio-chat-streaming#index.js
 ## Intro a react
 
 <iframe title="4.2 How to Create Projects on Glitch - Fun with WebSockets!" src="https://www.youtube.com/embed/BFN_h5bK_oc?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
