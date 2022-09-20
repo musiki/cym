@@ -7,8 +7,13 @@
         "id": "2d2fc451cc0f55e9",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
@@ -90,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
+              }
             }
           },
           {
@@ -160,6 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
