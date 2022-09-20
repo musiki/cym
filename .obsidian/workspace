@@ -1,20 +1,16 @@
 {
   "main": {
-    "id": "06155fffeb6c2afa",
+    "id": "21014af4e9464486",
     "type": "split",
     "children": [
       {
-        "id": "9be5806cd330d2d4",
+        "id": "d00af025bcc6c6f1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
-=======
-            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
->>>>>>> origin/main
-            "mode": "source",
+            "file": "01-proj/ancarola/Generador de Melodías Random 2.md",
+            "mode": "preview",
             "backlinks": false,
             "source": false
           }
@@ -24,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ef61728305644811",
+    "id": "031470ee8fb1135e",
     "type": "split",
     "children": [
       {
-        "id": "2234030c2ea05ffe",
+        "id": "87e6b0a7e57f4604",
         "type": "tabs",
         "children": [
           {
-            "id": "23a58d6043c266e2",
+            "id": "e91482535306e58e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -40,7 +36,7 @@
             }
           },
           {
-            "id": "740868e07c16e63f",
+            "id": "557689b59bfd69dc",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,7 +51,7 @@
             }
           },
           {
-            "id": "8f52aaa31462592b",
+            "id": "bc8022fe85e3e935",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -66,18 +62,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.99999809265137
+    "width": 300
   },
   "right": {
-    "id": "5acd67cfbd2b07bc",
+    "id": "c8a970a40c645b36",
     "type": "split",
     "children": [
       {
-        "id": "ea1f5b05913feb10",
+        "id": "f2184bf680f8adcb",
         "type": "tabs",
         "children": [
           {
-            "id": "5b369f4e67c79f53",
+            "id": "033c3fc42d342373",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -85,16 +81,12 @@
             }
           },
           {
-            "id": "2d751ba9aea7bf27",
+            "id": "12aa887a7f694fba",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
-=======
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
->>>>>>> origin/main
+                "file": "01-proj/ancarola/Generador de Melodías Random 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,23 +98,19 @@
             }
           },
           {
-            "id": "c8ce9e3b43c40f78",
+            "id": "87f55078bbb95fe1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
-=======
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
->>>>>>> origin/main
+                "file": "01-proj/ancarola/Generador de Melodías Random 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "ab8394a29f3dd397",
+            "id": "05399686fc26f8fb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,21 +121,17 @@
             }
           },
           {
-            "id": "8870cbd7c8a3935f",
+            "id": "58799109e8a5a4e9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
-=======
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
->>>>>>> origin/main
+                "file": "01-proj/ancarola/Generador de Melodías Random 2.md"
               }
             }
           },
           {
-            "id": "d9f88a0b612d2bb6",
+            "id": "be91cc8dd4ce83be",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -155,78 +139,23 @@
             }
           },
           {
-            "id": "bfb6da941fdd8c9d",
+            "id": "aeba09e642f32c10",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-<<<<<<< HEAD
-        "currentTab": 4
-      },
-      {
-        "id": "5a28386e4fdcd41d",
-        "type": "tabs",
-        "dimension": 30.680359435173294,
-        "children": [
-          {
-            "id": "01a59f3c62dd6c8a",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8392020683344367,
-                  "close": true
-                }
-              }
-            }
-          }
         ]
-=======
-        "currentTab": 5
->>>>>>> origin/main
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "9be5806cd330d2d4",
+  "active": "d00af025bcc6c6f1",
   "lastOpenFiles": [
-    "README.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "03-cla/c-cym04-integración.md",
-    "02-mat/partituras/bianco dolce signo.md",
-    "02-mat/partituras/ave maria palestrina.md",
     "01-proj/ancarola/Generador de Melodías Random.md",
-    "03-cla/c-cym03- cohesión audivisual.md",
-    "03-cla/c-cym01-presentación.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md"
+    "01-proj/ancarola/Generador de Melodías Random 2.md"
   ]
 }
