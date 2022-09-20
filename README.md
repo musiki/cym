@@ -13,7 +13,7 @@ Aula de Tecnología Musical, Caseros II, UTREF. Aula Virtual .
 /
 ```
 
----
+l
 >[! información útil] 
 email: lazzigotti@untref.edu.ar
 musiki v1: https://musiki.org.ar
@@ -28,7 +28,6 @@ github-classroom: https://classroom.github.com/classrooms/46442123-musiki-cym
 
 
 # Plan de Estudios 
-
 ## Descripción
 
 >“Tornar geométrica la representación, dibujar los fenómenos y ordenar en serie los acontecimientos decisivos de una experiencia, he ahí la primera tarea en la que se funda el espíritu científico”
@@ -40,6 +39,21 @@ Andrei Tarkovsky, Solaris, 1972.
 
 Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por asociación y por oposición.  Las características principales que las diferencian son las mismas que existen entre la filosofía natural dentro de la metafísica opuesta al estudio de la intuición y el carácter místico. El binomio acción musical-observación de la naturaleza despliega un entramado lógico similar al del binomio razón-instinto. La ciencia encuentra al mundo inteligible, ordinario y medible, en cambio para el instinto resulta indivisible, unificante, sin bien ni mal, sin pasado ni futuro.  Siguiendo a Russell, el material musical puede ser visto a partir de su función científica o de su recurso intuitivo por parte del compositor. Se intenta a la vez reflejar el pensamiento de la ciencia en la estética filosófica, tratando de obtener un entendimiento reflexivo que permita establecer relaciones recíprocas entre la naturaleza y el valor del arte. Algunos de los problemas a resolver serán el significado y surgimiento del arte y la representación comparando el punto de vista estético con el neurocientífico.  El origen cualitativo y cuantitativo de las emociones, de la belleza, del concepto de forma y la experiencia estética. Nos centraremos en la historia de la música pero también se incluirán conceptos de otras artes. Veremos también cómo los métodos de la investigación científica pueden equipararse con aquellos tradicionales en la filosofía del arte , desde la ciencia de la percepción empírica, la biología evolutiva y las ciencias cognitivas. De este modo  se extenderán las teorías filosóficas de los paradigmas  científicos confrontándolos con nuestras reacciones vividas en la valoración de obras artísticas.
 
+# Cronograma
+- semana 1: introducción, js ,paradigma científico, intuición razón.
+- semana 2: js controles, tone.js
+- semana 3: variables, arrays, dom.
+- semana 4: flex, interfaces.
+- semana 5: proyectual, flex2, integración.
+- semana 6: instrumento colectivo, interfaces avanzadas.
+- semana 7: referencias artísticas cym, investigación previa al proyectual.
+- semana 8: avance de proyectos.
+- semana 9: música generativa.
+- semana 10: performance en red.
+- semana 11: livecoding.
+- semana 12: hydra, p5, mozilla hubs.
+- semana 13: funciones y diseño de patrones.
+- semana 14: entrega proyecto final.
 # Objetivos del Curso
 
 - pensar y crear el futuro de la música.
@@ -78,7 +92,7 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 ![[topoi#técnicos]]
 
     
-# Plan de estudios
+## Plan de estudios
 el siguiente plan es una guía de contenidos modular de la materia Ciencia y Música. Cada año, en conjunto con los alumnos se deciden los contenidos a abordar dependiendo de los objetivos personales propuestos. El siguiente programa es por lo tanto un compendio de las unidades posibles con contenidos mínimos obligatorios y otros potenciales.
 
 ### Contenidos mínimos

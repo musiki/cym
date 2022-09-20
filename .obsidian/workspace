@@ -1,15 +1,19 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "06155fffeb6c2afa",
     "type": "split",
     "children": [
       {
-        "id": "2d2fc451cc0f55e9",
+        "id": "9be5806cd330d2d4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+=======
+            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+>>>>>>> origin/main
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -20,23 +24,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ed53a0ac44376330",
+    "id": "ef61728305644811",
     "type": "split",
     "children": [
       {
-        "id": "d7e9a42aaf3a7ef4",
+        "id": "2234030c2ea05ffe",
         "type": "tabs",
         "children": [
           {
-            "id": "4cdee6994d653791",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "90ce32d259cad856",
+            "id": "23a58d6043c266e2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,12 +40,12 @@
             }
           },
           {
-            "id": "4ea5e4670a37df39",
+            "id": "740868e07c16e63f",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "imgur",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +55,7 @@
             }
           },
           {
-            "id": "d4c78209f4204bd0",
+            "id": "8f52aaa31462592b",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -70,19 +66,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 191.00130462646484
+    "width": 202.99999809265137
   },
   "right": {
-    "id": "c4e3217dccc5041e",
+    "id": "5acd67cfbd2b07bc",
     "type": "split",
     "children": [
       {
-        "id": "18c12a2fea01698c",
+        "id": "ea1f5b05913feb10",
         "type": "tabs",
-        "dimension": 69.3196405648267,
         "children": [
           {
-            "id": "115b806839fbc80b",
+            "id": "5b369f4e67c79f53",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -90,12 +85,16 @@
             }
           },
           {
-            "id": "afa41c41daa5e41d",
+            "id": "2d751ba9aea7bf27",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+=======
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+>>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,19 +106,23 @@
             }
           },
           {
-            "id": "d0b8d3476682f108",
+            "id": "c8ce9e3b43c40f78",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md",
+=======
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+>>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9d1b2d8acacb4a24",
+            "id": "ab8394a29f3dd397",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -130,17 +133,21 @@
             }
           },
           {
-            "id": "ea375318e888211d",
+            "id": "8870cbd7c8a3935f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "03-ref/clases/c-cym06-un instrumento online colectivo.md"
+=======
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
+>>>>>>> origin/main
               }
             }
           },
           {
-            "id": "8e9c3f3f1dba96d9",
+            "id": "d9f88a0b612d2bb6",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -148,7 +155,7 @@
             }
           },
           {
-            "id": "959906143e4f3a76",
+            "id": "bfb6da941fdd8c9d",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -156,6 +163,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "currentTab": 4
       },
       {
@@ -199,23 +207,26 @@
             }
           }
         ]
+=======
+        "currentTab": 5
+>>>>>>> origin/main
       }
     ],
     "direction": "horizontal",
-    "width": 231.16664123535156,
+    "width": 300,
     "collapsed": true
   },
-  "active": "2d2fc451cc0f55e9",
+  "active": "9be5806cd330d2d4",
   "lastOpenFiles": [
-    "01-proj/ancarola/TP1-Topoi.md",
-    "01-proj/ancarola/c-cym04-integración.md",
-    "01-proj/ancarola/Untitled.md",
-    "01-proj/ancarola/Cym Clase 4.md",
-    "03-ref/clases/c-cym04-integración.md",
-    "01-proj/ancarola/Hola Mundo.md",
+    "README.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
+    "03-cla/c-cym04-integración.md",
+    "02-mat/partituras/bianco dolce signo.md",
+    "02-mat/partituras/ave maria palestrina.md",
+    "01-proj/ancarola/Generador de Melodías Random.md",
+    "03-cla/c-cym03- cohesión audivisual.md",
+    "03-cla/c-cym01-presentación.md",
     "01-proj/ancarola/Hola Sonido.md",
-    "21 Lecciones para el siglo Xxi.md",
-    "Harari Yuval Noah.md",
-    "01-proj/tp/tp01-topoi.md"
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md"
   ]
 }

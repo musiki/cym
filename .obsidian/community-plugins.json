@@ -63,5 +63,7 @@
   "obsidian-contextual-typography",
   "obsidian-comments",
   "obsidian-commits",
-  "obsidian-activity-history"
+  "obsidian-activity-history",
+  "obsidian-markdown-formatting-assistant-plugin",
+  "theme-picker"
 ]

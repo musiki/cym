@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": true,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:topoi",
@@ -64,16 +64,16 @@
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": 1.4,
+  "textFadeMultiplier": -1.1,
   "nodeSizeMultiplier": 1.36898271276596,
   "lineSizeMultiplier": 2.01528424202128,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0.669080839280009,
+  "repelStrength": 15.6033656406433,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.4819874538656415,
+  "linkDistance": 30,
+  "scale": 0.15435218481432314,
   "close": true
 }
