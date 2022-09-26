@@ -459,38 +459,48 @@
       "tags": 0,
       "links": 0
     },
-    "21 Lecciones para el siglo Xxi.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "7.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "Harari Yuval Noah.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "image/c-cym04-integración.md": {
       "size": 3184,
       "tags": 6,
       "links": 0
     },
     "03-cla/c-cym07-hydra.md": {
-      "size": 0,
+      "size": 2807,
       "tags": 6,
+      "links": 0
+    },
+    "01-proj/ancarola/Generador de Melodías Random 2.md": {
+      "size": 43,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Harari Yuval Noah.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "lwe.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "new Tendencies.md": {
+      "size": 0,
+      "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 61,
-      "Create": 65,
+      "Refactor": 65,
+      "Create": 70,
       "Link": 46,
-      "Expand": 1
+      "Expand": 3
     }
   },
   "dailyCommits": {
@@ -508,8 +518,8 @@
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 5,
-      "14": 0,
+      "13": 13,
+      "14": 3,
       "15": 0,
       "16": 0,
       "17": 0,
@@ -523,7 +533,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 5,
+      "Mon": 16,
       "Tue": 45,
       "Wed": 6,
       "Thu": 117,
@@ -535,9 +545,16 @@
   "recentCommits": {
     "/": {
       "Expanded": [
-        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
+        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/Generador de Melodías Random 2.md\"> Generador de Melodías Random 2 </a>",
         "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
         "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
@@ -583,12 +600,7 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-liquid.md\"> t-liquid </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/b-Spectromorphology.md\"> b-Spectromorphology </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
@@ -628,8 +640,13 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
       ],
-      "Refactored": [],
+      "Refactored": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"
+      ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
         "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
         "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
         "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
@@ -677,10 +694,7 @@
         "<a class=\"internal-link\" href=\"03-ref/topoi/t32-azar.md\"> t32-azar </a>",
         "<a class=\"internal-link\" href=\"03-ref/topoi/t33-sistemas complejos.md\"> t33-sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"03-ref/topoi/t34-livecoding.md\"> t34-livecoding </a>",
-        "<a class=\"internal-link\" href=\"03-ref/topoi/t40-humanos.md\"> t40-humanos </a>",
-        "<a class=\"internal-link\" href=\"03-ref/topoi/t51-arte relacional.md\"> t51-arte relacional </a>",
-        "<a class=\"internal-link\" href=\"03-ref/topoi/t52-Racionalizacion_(videojuegos).md\"> t52-Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"03-ref/topoi/t60-espacio.md\"> t60-espacio </a>"
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t40-humanos.md\"> t40-humanos </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",

@@ -13,7 +13,7 @@ Aula de Tecnología Musical, Caseros II, UTREF. Aula Virtual .
 /
 ```
 
----
+l
 >[! información útil] 
 email: lazzigotti@untref.edu.ar
 musiki v1: https://musiki.org.ar

@@ -14,7 +14,11 @@ UNTREF | CYM22 | 06
 # introducción 
 
 - Desde hace unas décadas, la música en red puede considerarse un conjunto de acciones musicales innovadoras facilitadas por la tecnología. 
+<<<<<<< HEAD
 - Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (Lazzaro J & Wawzynel J ,2001) .
+=======
+- Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (bib::Lazzaro J & Wawzynel J ,2001) .
+>>>>>>> origin/main
 - Sobre esta definición histórica, existe un sesgo que considera la red como un sustituto de la propagación natural del sonido y la luz.  
 - Entonces, para establecer ciertas tipologías, podemos llegar a una definición más amplia como:  
 	- la práctica de realizar una interacción musical en tiempo real a través de una red informática.  
@@ -140,11 +144,12 @@ Es decir que para utilizarlas debemos configurar un servidor , no es suficiente 
 
 repl.it y otros "cloud IDEs" permiten simular un servidor y programar sin problema un nodo. 
 
-Por recomendación de Caro , ya que le gusta glitch vamos a usar esa plataforma para desarrollar, pero eventualmente a medida que el proyecto crezca debería tener su propio github con versiones de archivos locales. Por muchas otras razones también decidimos usar react-express que facilita muchas tareas del navegador aunque tenga una curva de aprendizaje.
+~~Por recomendación de Caro , ya que le gusta glitch vamos a usar esa plataforma para desarrollar, pero eventualmente a medida que el proyecto crezca debería tener su propio github con versiones de archivos locales. (glitch dió varios problemas)~~ 
+
+Por muchas otras razones también decidimos usar react-express que facilita muchas tareas del navegador aunque tenga una curva de aprendizaje.
 
 proyecto:
-https://glitch.com/edit/#!/reflective-jagged-taleggio?path=.gitignore%3A6%3A5
-
+https://replit.com/@jsmusic/audio-chat-streaming#index.js
 ## Intro a react
 
 <iframe title="4.2 How to Create Projects on Glitch - Fun with WebSockets!" src="https://www.youtube.com/embed/BFN_h5bK_oc?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
