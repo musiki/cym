@@ -14,261 +14,6 @@
       "tags": 0,
       "links": 8
     },
-    "03-ref/topoi/t60-espacio.md": {
-      "size": 69,
-      "tags": 5,
-      "links": 0
-    },
-    "03-ref/topoi/t40-humanos.md": {
-      "size": 41,
-      "tags": 1,
-      "links": 0
-    },
-    "03-ref/topoi/t34-livecoding.md": {
-      "size": 492,
-      "tags": 4,
-      "links": 0
-    },
-    "03-ref/topoi/t61-virtualidad y realidad.md": {
-      "size": 12341,
-      "tags": 4,
-      "links": 0
-    },
-    "03-ref/topoi/t52-Racionalizacion_(videojuegos).md": {
-      "size": 6657,
-      "tags": 3,
-      "links": 0
-    },
-    "03-ref/topoi/t51-arte relacional.md": {
-      "size": 14242,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/topoi/t33-sistemas complejos.md": {
-      "size": 2704,
-      "tags": 3,
-      "links": 2
-    },
-    "03-ref/topoi/t32-azar.md": {
-      "size": 1804,
-      "tags": 4,
-      "links": 2
-    },
-    "03-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md": {
-      "size": 5848,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/topoi/t31-generatividad.md": {
-      "size": 19,
-      "tags": 1,
-      "links": 0
-    },
-    "03-ref/topoi/t30-vida artificial.md": {
-      "size": 451,
-      "tags": 1,
-      "links": 5
-    },
-    "03-ref/topoi/t21-interfaces.md": {
-      "size": 126,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/topoi/t10-método científico.md": {
-      "size": 11972,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/topoi/t12.1-Cuarta Revolución Industrial.md": {
-      "size": 7669,
-      "tags": 2,
-      "links": 23
-    },
-    "03-ref/topoi/t12-filosofía 21.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/topoi/t11-sistemas de universos.md": {
-      "size": 8995,
-      "tags": 5,
-      "links": 3
-    },
-    "03-ref/topoi/t09-física.md": {
-      "size": 113,
-      "tags": 2,
-      "links": 1
-    },
-    "03-ref/topoi/b-Spectromorphology.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/templates/t-topoi.md": {
-      "size": 199,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/templates/t-movie.md": {
-      "size": 345,
-      "tags": 2,
-      "links": 1
-    },
-    "03-ref/templates/t-cym-init-slide.md": {
-      "size": 110,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/templates/t-cym-class.md": {
-      "size": 176,
-      "tags": 6,
-      "links": 0
-    },
-    "03-ref/templates/t-liquid.md": {
-      "size": 134,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/templates/t-class.md": {
-      "size": 73,
-      "tags": 3,
-      "links": 0
-    },
-    "03-ref/templates/t-book.md": {
-      "size": 434,
-      "tags": 1,
-      "links": 4
-    },
-    "03-ref/templates/t-bibliografía.md": {
-      "size": 79,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/templater.md": {
-      "size": 112,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/db/topoi.md": {
-      "size": 1800,
-      "tags": 0,
-      "links": 15
-    },
-    "03-ref/db/referencias.md": {
-      "size": 252,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/db/personas.md": {
-      "size": 72,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/db/obras.md": {
-      "size": 290,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/clases/c-cym03- cohesión audivisual.md": {
-      "size": 9705,
-      "tags": 7,
-      "links": 8
-    },
-    "03-ref/clases/c-cym04-integración.md": {
-      "size": 3478,
-      "tags": 6,
-      "links": 0
-    },
-    "03-ref/clases/c-cym05-flex-grid.md": {
-      "size": 598,
-      "tags": 6,
-      "links": 1
-    },
-    "03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md": {
-      "size": 5526,
-      "tags": 2,
-      "links": 9
-    },
-    "03-ref/clases/c-cym01-presentación.md": {
-      "size": 393,
-      "tags": 2,
-      "links": 0
-    },
-    "03-ref/personas/Yotam Mann.md": {
-      "size": 119,
-      "tags": 2,
-      "links": 0
-    },
-    "03-ref/personas/Stuart Russell.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/personas/Peter Novig.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/personas/Klaus Schwab.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/personas/Hugh Le Caine.md": {
-      "size": 44,
-      "tags": 3,
-      "links": 0
-    },
-    "03-ref/personas/John Barrows.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/personas/Douglas Barret.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/personas/Hito Steyerl.md": {
-      "size": 89,
-      "tags": 1,
-      "links": 0
-    },
-    "03-ref/personas/Dennis Smalley.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/obras/o-Boid Simulation.md": {
-      "size": 143,
-      "tags": 4,
-      "links": 0
-    },
-    "03-ref/bibliografía/notes/@XuanThuan1988.md": {
-      "size": 103,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/bibliografía/notes/@Steyerl2014a.md": {
-      "size": 79,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/bibliografía/notes/@Padilla2010.md": {
-      "size": 97,
-      "tags": 0,
-      "links": 0
-    },
-    "03-ref/bibliografía/b-Los condenados de la pantalla.md": {
-      "size": 2334,
-      "tags": 5,
-      "links": 0
-    },
-    "03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/tone.js.md": {
       "size": 809,
       "tags": 1,
@@ -434,27 +179,317 @@
       "tags": 0,
       "links": 0
     },
-    "03-ref/clases/c-cym06-un instrumento online colectivo.md": {
-      "size": 0,
+    "01-proj/ancarola/c-cym04-integración.md": {
+      "size": 3184,
+      "tags": 6,
+      "links": 0
+    },
+    "03-cla/c-cym01-presentación.md": {
+      "size": 393,
+      "tags": 2,
+      "links": 0
+    },
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md": {
+      "size": 5526,
+      "tags": 2,
+      "links": 9
+    },
+    "03-cla/c-cym03- cohesión audivisual.md": {
+      "size": 9705,
+      "tags": 7,
+      "links": 8
+    },
+    "03-cla/c-cym04-integración.md": {
+      "size": 3478,
+      "tags": 6,
+      "links": 0
+    },
+    "03-cla/c-cym05-flex-grid.md": {
+      "size": 598,
+      "tags": 6,
+      "links": 1
+    },
+    "03-cla/c-cym06-un instrumento online colectivo.md": {
+      "size": 11642,
       "tags": 8,
       "links": 0
     },
-    "03-ref/a-yuda.md": {
-      "size": 4460,
+    "04-ref/a-dataview playground.md": {
+      "size": 409,
       "tags": 0,
-      "links": 2
+      "links": 0
     },
-    "03-ref/a-dataview.md": {
+    "04-ref/a-dataview.md": {
       "size": 874,
       "tags": 0,
+      "links": 0
+    },
+    "04-ref/a-yuda.md": {
+      "size": 4488,
+      "tags": 1,
+      "links": 2
+    },
+    "04-ref/templater.md": {
+      "size": 112,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/b-Los condenados de la pantalla.md": {
+      "size": 2334,
+      "tags": 5,
+      "links": 0
+    },
+    "04-ref/db/obras.md": {
+      "size": 290,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/db/personas.md": {
+      "size": 72,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/db/referencias.md": {
+      "size": 252,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/db/topoi.md": {
+      "size": 1800,
+      "tags": 0,
+      "links": 15
+    },
+    "04-ref/obras/o-Boid Simulation.md": {
+      "size": 143,
+      "tags": 4,
+      "links": 0
+    },
+    "04-ref/personas/Dennis Smalley.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Douglas Barret.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Hito Steyerl.md": {
+      "size": 89,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/personas/Hugh Le Caine.md": {
+      "size": 44,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/personas/John Barrows.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Klaus Schwab.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Peter Novig.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Stuart Russell.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Yotam Mann.md": {
+      "size": 119,
+      "tags": 2,
+      "links": 0
+    },
+    "04-ref/templates/t-bibliografía.md": {
+      "size": 79,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/t-book.md": {
+      "size": 434,
+      "tags": 1,
+      "links": 4
+    },
+    "04-ref/templates/t-class.md": {
+      "size": 73,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/templates/t-cym-class.md": {
+      "size": 176,
+      "tags": 6,
+      "links": 0
+    },
+    "04-ref/templates/t-cym-init-slide.md": {
+      "size": 110,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/t-liquid.md": {
+      "size": 134,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/t-movie.md": {
+      "size": 345,
+      "tags": 2,
+      "links": 1
+    },
+    "04-ref/templates/t-topoi.md": {
+      "size": 199,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/b-Spectromorphology.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t09-física.md": {
+      "size": 113,
+      "tags": 2,
+      "links": 1
+    },
+    "04-ref/topoi/t10-método científico.md": {
+      "size": 11972,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t11-sistemas de universos.md": {
+      "size": 8995,
+      "tags": 5,
+      "links": 3
+    },
+    "04-ref/topoi/t12-filosofía 21.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md": {
+      "size": 8178,
+      "tags": 2,
+      "links": 23
+    },
+    "04-ref/topoi/t21-interfaces.md": {
+      "size": 126,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md": {
+      "size": 5848,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t30-vida artificial.md": {
+      "size": 451,
+      "tags": 1,
+      "links": 5
+    },
+    "04-ref/topoi/t31-generatividad.md": {
+      "size": 19,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/t32-azar.md": {
+      "size": 1804,
+      "tags": 4,
+      "links": 2
+    },
+    "04-ref/topoi/t33-sistemas complejos.md": {
+      "size": 2704,
+      "tags": 3,
+      "links": 2
+    },
+    "04-ref/topoi/t34-livecoding.md": {
+      "size": 492,
+      "tags": 4,
+      "links": 0
+    },
+    "04-ref/topoi/t40-humanos.md": {
+      "size": 41,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/t51-arte relacional.md": {
+      "size": 14242,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t52-Racionalizacion_(videojuegos).md": {
+      "size": 6657,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/topoi/t60-espacio.md": {
+      "size": 69,
+      "tags": 5,
+      "links": 0
+    },
+    "04-ref/topoi/t61-virtualidad y realidad.md": {
+      "size": 12341,
+      "tags": 4,
+      "links": 0
+    },
+    "04-ref/bibliografía/notes/@Padilla2010.md": {
+      "size": 97,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/notes/@Steyerl2014a.md": {
+      "size": 79,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/notes/@XuanThuan1988.md": {
+      "size": 103,
+      "tags": 0,
+      "links": 0
+    },
+    "21 Lecciones para el siglo Xxi.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "7.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Harari Yuval Noah.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "image/c-cym04-integración.md": {
+      "size": 3184,
+      "tags": 6,
+      "links": 0
+    },
+    "03-cla/c-cym07-hydra.md": {
+      "size": 0,
+      "tags": 6,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 4,
-      "Create": 1,
-      "Link": 2,
+      "Refactor": 61,
+      "Create": 65,
+      "Link": 46,
       "Expand": 1
     }
   },
@@ -473,7 +508,7 @@
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 0,
+      "13": 5,
       "14": 0,
       "15": 0,
       "16": 0,
@@ -481,17 +516,17 @@
       "18": 0,
       "19": 0,
       "20": 4,
-      "21": 2,
+      "21": 162,
       "22": 0,
       "23": 0
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 0,
-      "Tue": 0,
+      "Mon": 5,
+      "Tue": 45,
       "Wed": 6,
-      "Thu": 2,
+      "Thu": 117,
       "Fri": 0,
       "Sat": 0,
       "Sun": 0
@@ -503,21 +538,165 @@
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"
       ],
       "Created": [
-        "<a class=\"internal-link\" href=\"03-ref/clases/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
+        "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t61-virtualidad y realidad.md\"> t61-virtualidad y realidad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t60-espacio.md\"> t60-espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t52-Racionalizacion_(videojuegos).md\"> t52-Racionalizacion_(videojuegos) </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templater.md\"> templater </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md\"> b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/obras.md\"> obras </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/referencias.md\"> referencias </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Douglas Barret.md\"> Douglas Barret </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Stuart Russell.md\"> Stuart Russell </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-liquid.md\"> t-liquid </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/b-Spectromorphology.md\"> b-Spectromorphology </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"03-ref/a-dataview.md\"> a-dataview </a>"
       ],
       "Tagged": [
-        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>"
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t61-virtualidad y realidad.md\"> t61-virtualidad y realidad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t60-espacio.md\"> t60-espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t52-Racionalizacion_(videojuegos).md\"> t52-Racionalizacion_(videojuegos) </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t40-humanos.md\"> t40-humanos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t34-livecoding.md\"> t34-livecoding </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t33-sistemas complejos.md\"> t33-sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t32-azar.md\"> t32-azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t31-generatividad.md\"> t31-generatividad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
       ],
       "Refactored": [],
       "Deleted": [
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
+        "<a class=\"internal-link\" href=\"2022-09-26.md\"> 2022-09-26 </a>",
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
+        "<a class=\"internal-link\" href=\"03-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md\"> b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29 </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"03-ref/personas/Douglas Barret.md\"> Douglas Barret </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"03-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>",
+        "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
+        "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym01-presentación.md\"> c-cym01-presentación </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-ref/db/obras.md\"> obras </a>",
+        "<a class=\"internal-link\" href=\"03-ref/db/personas.md\"> personas </a>",
+        "<a class=\"internal-link\" href=\"03-ref/db/referencias.md\"> referencias </a>",
+        "<a class=\"internal-link\" href=\"03-ref/db/topoi.md\"> topoi </a>",
+        "<a class=\"internal-link\" href=\"03-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"03-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"03-ref/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
+        "<a class=\"internal-link\" href=\"03-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templater.md\"> templater </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-class.md\"> t-class </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-cym-class.md\"> t-cym-class </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-liquid.md\"> t-liquid </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"03-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t09-física.md\"> t09-física </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t21-interfaces.md\"> t21-interfaces </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md\"> t22.1-La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t31-generatividad.md\"> t31-generatividad </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t32-azar.md\"> t32-azar </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t33-sistemas complejos.md\"> t33-sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t34-livecoding.md\"> t34-livecoding </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t40-humanos.md\"> t40-humanos </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t51-arte relacional.md\"> t51-arte relacional </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t52-Racionalizacion_(videojuegos).md\"> t52-Racionalizacion_(videojuegos) </a>",
+        "<a class=\"internal-link\" href=\"03-ref/topoi/t60-espacio.md\"> t60-espacio </a>"
       ],
       "Linked": [
-        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t33-sistemas complejos.md\"> t33-sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t32-azar.md\"> t32-azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": [
