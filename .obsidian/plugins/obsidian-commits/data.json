@@ -493,14 +493,19 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym08-hydra+p5.js.md": {
+      "size": 2097,
+      "tags": 6,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 65,
-      "Create": 70,
-      "Link": 46,
-      "Expand": 3
+      "Refactor": 66,
+      "Create": 71,
+      "Link": 47,
+      "Expand": 4
     }
   },
   "dailyCommits": {
@@ -519,8 +524,8 @@
       "11": 0,
       "12": 0,
       "13": 13,
-      "14": 3,
-      "15": 0,
+      "14": 6,
+      "15": 1,
       "16": 0,
       "17": 0,
       "18": 0,
@@ -533,7 +538,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 16,
+      "Mon": 20,
       "Tue": 45,
       "Wed": 6,
       "Thu": 117,
@@ -547,9 +552,11 @@
       "Expanded": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
         "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
@@ -599,12 +606,12 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"03-ref/a-dataview.md\"> a-dataview </a>"
+        "<a class=\"internal-link\" href=\"03-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
@@ -638,7 +645,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"

@@ -6,11 +6,11 @@
       {
         "id": "a0d560237ab4b2e0",
         "type": "leaf",
-        "dimension": 67.33668341708542,
+        "dimension": 67.10526315789474,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-cla/c-cym07-hydra.md",
+            "file": "03-cla/c-cym08-hydra+p5.js.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -20,7 +20,7 @@
       {
         "id": "42f8478bf5f61fda",
         "type": "leaf",
-        "dimension": 32.663316582914575,
+        "dimension": 32.89473684210527,
         "state": {
           "type": "reveal-preview-view",
           "state": {}
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
+                "file": "03-cla/c-cym08-hydra+p5.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
+                "file": "03-cla/c-cym08-hydra+p5.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md"
+                "file": "03-cla/c-cym08-hydra+p5.js.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
+                "file": "03-cla/c-cym08-hydra+p5.js.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -244,15 +244,15 @@
   },
   "active": "a0d560237ab4b2e0",
   "lastOpenFiles": [
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "2022-09-26.md",
-    "2022-09-13.md",
     "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym04-integración.md",
     "03-cla/c-cym05-flex-grid.md",
-    "00-in/prg-22.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
     "03-cla/c-cym01-presentación.md",
     "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym03- cohesión audivisual.md",
-    "03-cla/c-cym04-integración.md"
+    "2022-09-26.md",
+    "2022-09-13.md",
+    "00-in/prg-22.md"
   ]
 }
