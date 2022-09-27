@@ -9,31 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01-proj/lopez/03-Máquina de ritmos.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "df9696a6435b6882",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "c5b5ecf10337a15b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
+            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
             "mode": "source",
             "backlinks": false,
-            "source": false
+            "source": true
           }
         }
       }
@@ -70,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "google",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -116,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
               }
             }
           },
@@ -183,17 +162,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c5b5ecf10337a15b",
+  "active": "d76cbb179cfddbae",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Harari Yuval Noah.md",
+    "2022-09-13.md",
+    "7.md",
+    "21 Lecciones para el siglo Xxi.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
     "01-proj/lopez/03-Máquina de ritmos.md",
+    "conflict-files-obsidian-git.md",
     "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
     "03-ref/clases/c-cym05-flex-grid.md",
-    "03-ref/clases/c-cym04-integración.md",
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "01-proj/lopez/helloworld.md",
-    "01-proj/lopez/tp-01-topoi.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md"
+    "03-ref/clases/c-cym04-integración.md"
   ]
 }
