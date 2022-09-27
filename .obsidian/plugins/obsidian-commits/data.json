@@ -454,21 +454,6 @@
       "tags": 0,
       "links": 0
     },
-    "2022-09-13.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "21 Lecciones para el siglo Xxi.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "Harari Yuval Noah.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "image/c-cym04-integración.md": {
       "size": 3184,
       "tags": 6,
@@ -479,7 +464,37 @@
       "tags": 6,
       "links": 0
     },
-    "7.md": {
+    "01-proj/ancarola/Generador de Melodías Random 2.md": {
+      "size": 43,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym07-hydra.md": {
+      "size": 2724,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym08-hydra+p5.js.md": {
+      "size": 2650,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Harari Yuval Noah.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "lwe.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "new Tendencies.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -487,8 +502,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 67,
-      "Create": 8,
+      "Refactor": 73,
+      "Create": 17,
       "Link": 6,
       "Expand": 8
     }
@@ -515,7 +530,7 @@
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 4,
+      "20": 19,
       "21": 2,
       "22": 0,
       "23": 1
@@ -524,7 +539,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 0,
-      "Tue": 3,
+      "Tue": 18,
       "Wed": 18,
       "Thu": 2,
       "Fri": 60,
@@ -552,7 +567,16 @@
         "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
-        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>"
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/Generador de Melodías Random 2.md\"> Generador de Melodías Random 2 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
+        "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
@@ -616,7 +640,13 @@
       ],
       "Refactored": [],
       "Deleted": [
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
+        "<a class=\"internal-link\" href=\"21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
+        "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
+        "<a class=\"internal-link\" href=\"Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"

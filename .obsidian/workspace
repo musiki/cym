@@ -15,6 +15,27 @@
             "source": true
           }
         }
+      },
+      {
+        "id": "4688b278203170dc",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "c25e18518e425441",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -162,15 +183,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d76cbb179cfddbae",
+  "active": "c25e18518e425441",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
     "Harari Yuval Noah.md",
     "2022-09-13.md",
     "7.md",
     "21 Lecciones para el siglo Xxi.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
     "01-proj/lopez/03-Máquina de ritmos.md",
-    "conflict-files-obsidian-git.md",
     "03-ref/topoi/t52-Racionalizacion_(videojuegos).md",
     "03-ref/clases/c-cym05-flex-grid.md",
     "03-ref/clases/c-cym04-integración.md"
