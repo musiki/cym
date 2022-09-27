@@ -15,6 +15,19 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "76363f6df1beeba1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "conflict-files-obsidian-git.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random 2.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random 2.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/Generador de Melodías Random 2.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -153,9 +166,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d00af025bcc6c6f1",
+  "active": "76363f6df1beeba1",
   "lastOpenFiles": [
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "01-proj/ancarola/Generador de Melodías Random 2.md"
+    "01-proj/ancarola/Generador de Melodías Random 2.md",
+    "01-proj/ancarola/Generador de Melodías Random.md"
   ]
 }

@@ -728,12 +728,22 @@
       "size": 43,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym07-hydra.md": {
+      "size": 2799,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym08-hydra+p5.js.md": {
+      "size": 2741,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 12,
-      "Create": 65,
+      "Refactor": 13,
+      "Create": 68,
       "Link": 45,
       "Expand": 1
     }
@@ -760,7 +770,7 @@
       "17": 1,
       "18": 0,
       "19": 0,
-      "20": 4,
+      "20": 8,
       "21": 2,
       "22": 0,
       "23": 0
@@ -769,7 +779,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 0,
-      "Tue": 115,
+      "Tue": 119,
       "Wed": 6,
       "Thu": 2,
       "Fri": 0,
@@ -783,6 +793,9 @@
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Generador de Melodías Random 2.md\"> Generador de Melodías Random 2 </a>",
         "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
         "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
@@ -830,10 +843,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Stuart Russell.md\"> Stuart Russell </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-ref/a-yuda.md\"> a-yuda </a>",
@@ -882,7 +892,8 @@
         "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>",
         "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
         "<a class=\"internal-link\" href=\"03-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
-        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym01-presentación.md\"> c-cym01-presentación </a>"
+        "<a class=\"internal-link\" href=\"03-ref/clases/c-cym01-presentación.md\"> c-cym01-presentación </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",
