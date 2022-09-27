@@ -46,7 +46,7 @@ osc(20, 0.3, 2.3).rotate(0.8).pixelate(200, 30).layer(src(s1).scrollY(0, -0.3)).
 <iframe src="https://hydra.ojack.xyz/?sketch_id=QMCReGyGerpApHH8" name="myFrame" align="center" scrolling="no" style="width: 600px; height: 250px; border: solid 0px #000000;"></iframe>
 
 # hydra + p5.js
-[p5glitch](http://p5.glitch.me/) es una librería [p5.js](https://p5js.org/) para el browser.
+[p5glitch](http://p5.glitch.me/) es una clase [p5.js](https://p5js.org/) para el browser.
 Aquí, también se debe cargar la librería en el hydra con la función `loadScript()`, además de cargar a p5 con `p=new P5()`
 
 ```js

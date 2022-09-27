@@ -6,7 +6,6 @@
       {
         "id": "a0d560237ab4b2e0",
         "type": "leaf",
-        "dimension": 67.10526315789474,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,9 +17,8 @@
         }
       },
       {
-        "id": "42f8478bf5f61fda",
+        "id": "381689d8c7c381fe",
         "type": "leaf",
-        "dimension": 32.89473684210527,
         "state": {
           "type": "reveal-preview-view",
           "state": {}
