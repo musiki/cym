@@ -9,10 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+            "file": "04-ref/templates/t-topoi.md",
             "mode": "source",
             "backlinks": false,
-            "source": false
+            "source": true
           }
         }
       }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "04-ref/templates/t-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md",
+                "file": "04-ref/templates/t-topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym06-un instrumento online colectivo.md"
+                "file": "04-ref/templates/t-topoi.md"
               }
             }
           },
@@ -156,15 +156,15 @@
   },
   "active": "9be5806cd330d2d4",
   "lastOpenFiles": [
-    "README.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "03-cla/c-cym04-integración.md",
-    "02-mat/partituras/bianco dolce signo.md",
-    "02-mat/partituras/ave maria palestrina.md",
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "03-cla/c-cym03- cohesión audivisual.md",
-    "03-cla/c-cym01-presentación.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md"
+    "04-ref/templates/t-book.md",
+    "04-ref/templates/t-bibliografía.md",
+    "04-ref/templates/t-class.md",
+    "04-ref/templates/t-cym-class.md",
+    "04-ref/templates/t-cym-init-slide.md",
+    "04-ref/templates/t-movie.md",
+    "04-ref/templater.md",
+    "02-mat/partituras/unendilech freude.md",
+    "02-mat/partituras/kyrie.md",
+    "02-mat/partituras/bianco dolce signo.md"
   ]
 }

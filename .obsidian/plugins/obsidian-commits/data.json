@@ -483,13 +483,18 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym07-networking.md": {
+      "size": 0,
+      "tags": 7,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 71,
-      "Create": 10,
-      "Link": 6,
+      "Refactor": 74,
+      "Create": 12,
+      "Link": 7,
       "Expand": 8
     }
   },
@@ -504,11 +509,11 @@
       "6": 0,
       "7": 2,
       "8": 0,
-      "9": 0,
+      "9": 4,
       "10": 7,
       "11": 71,
       "12": 6,
-      "13": 0,
+      "13": 2,
       "14": 0,
       "15": 0,
       "16": 0,
@@ -523,9 +528,9 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 0,
-      "Tue": 3,
-      "Wed": 18,
+      "Mon": 2,
+      "Tue": 5,
+      "Wed": 20,
       "Thu": 6,
       "Fri": 60,
       "Sat": 0,
@@ -554,9 +559,13 @@
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
         "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
-        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>"
+        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-networking.md\"> c-cym07-networking </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-07-networking.md\"> c-07-networking </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/21 Lecciones para el siglo Xxi.md\"> 21 Lecciones para el siglo Xxi </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
@@ -605,22 +614,22 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
-        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>"
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"c-07-networking.md\"> c-07-networking </a>"
       ],
       "Refactored": [],
       "Deleted": [
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
-        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>"
+        "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/kyrie.md\"> kyrie </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"
