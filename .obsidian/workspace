@@ -15,14 +15,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "381689d8c7c381fe",
-        "type": "leaf",
-        "state": {
-          "type": "reveal-preview-view",
-          "state": {}
-        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 330.5
   },
   "right": {
     "id": "c4e3217dccc5041e",
@@ -242,15 +234,15 @@
   },
   "active": "a0d560237ab4b2e0",
   "lastOpenFiles": [
-    "03-cla/c-cym07-hydra.md",
+    "new Tendencies.md",
+    "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym04-integración.md",
     "03-cla/c-cym05-flex-grid.md",
     "03-cla/c-cym06-un instrumento online colectivo.md",
     "03-cla/c-cym01-presentación.md",
     "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "2022-09-26.md",
-    "2022-09-13.md",
-    "00-in/prg-22.md"
+    "2022-09-26.md"
   ]
 }

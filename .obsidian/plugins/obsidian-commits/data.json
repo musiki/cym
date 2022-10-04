@@ -495,7 +495,7 @@
       "links": 0
     },
     "03-cla/c-cym08-hydra+p5.js.md": {
-      "size": 2097,
+      "size": 2650,
       "tags": 6,
       "links": 0
     }
@@ -505,7 +505,7 @@
       "Refactor": 66,
       "Create": 71,
       "Link": 47,
-      "Expand": 4
+      "Expand": 5
     }
   },
   "dailyCommits": {
@@ -528,7 +528,7 @@
       "15": 1,
       "16": 0,
       "17": 0,
-      "18": 0,
+      "18": 1,
       "19": 0,
       "20": 4,
       "21": 162,
@@ -539,7 +539,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 20,
-      "Tue": 45,
+      "Tue": 46,
       "Wed": 6,
       "Thu": 117,
       "Fri": 0,
@@ -553,6 +553,7 @@
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>"
       ],
       "Created": [

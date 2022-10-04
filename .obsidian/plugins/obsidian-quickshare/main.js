@@ -3753,19 +3753,23 @@ var require_moment = __commonJS({
 __export(exports, {
   default: () => NoteSharingPlugin
 });
-var import_obsidian5 = __toModule(require("obsidian"));
+var import_obsidian4 = __toModule(require("obsidian"));
 
 // src/NoteSharingService.ts
 var import_moment = __toModule(require_moment());
-var import_obsidian2 = __toModule(require("obsidian"));
-
-// src/crypto/encryption.ts
 var import_obsidian = __toModule(require("obsidian"));
 
 // src/crypto/crypto.ts
-function generateKey(seed) {
+function generateRandomKey() {
   return __async(this, null, function* () {
-    const keyMaterial = yield window.crypto.subtle.importKey("raw", new TextEncoder().encode(seed), { name: "PBKDF2" }, false, ["deriveBits"]);
+    const seed = window.crypto.getRandomValues(new Uint8Array(64));
+    console.log("random key!!!");
+    return _generateKey(seed);
+  });
+}
+function _generateKey(seed) {
+  return __async(this, null, function* () {
+    const keyMaterial = yield window.crypto.subtle.importKey("raw", seed, { name: "PBKDF2" }, false, ["deriveBits"]);
     const masterKey = yield window.crypto.subtle.deriveBits({
       name: "PBKDF2",
       salt: new Uint8Array(16),
@@ -3801,7 +3805,7 @@ function _getSignKey(secret) {
 // src/crypto/encryption.ts
 function encryptMarkdown(plaintext) {
   return __async(this, null, function* () {
-    const key = yield generateKey(import_obsidian.moment.now() + plaintext);
+    const key = yield generateRandomKey();
     const { ciphertext, hmac } = yield encryptString(plaintext, key);
     return { ciphertext, hmac, key: masterKeyToString(key).slice(0, 43) };
   });
@@ -3826,7 +3830,7 @@ var NoteSharingService = class {
   }
   postNote(ciphertext, hmac) {
     return __async(this, null, function* () {
-      const res = yield (0, import_obsidian2.requestUrl)({
+      const res = yield (0, import_obsidian.requestUrl)({
         url: `${this._url}/api/note`,
         method: "POST",
         contentType: "application/json",
@@ -4151,8 +4155,8 @@ var DEFAULT_SETTINGS = {
 };
 
 // src/obsidian/SettingsTab.ts
-var import_obsidian3 = __toModule(require("obsidian"));
-var SettingsTab = class extends import_obsidian3.PluginSettingTab {
+var import_obsidian2 = __toModule(require("obsidian"));
+var SettingsTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -4162,7 +4166,7 @@ var SettingsTab = class extends import_obsidian3.PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("h2", { text: "QuickShare" });
-    new import_obsidian3.Setting(containerEl).setName("Use noteshare.space").setDesc("Noteshare.space is the free and official service for sharing your notes with QuickShare. Uncheck if you want to self-host.").addToggle((text2) => text2.setValue(!this.plugin.settings.selfHosted).onChange((value) => __async(this, null, function* () {
+    new import_obsidian2.Setting(containerEl).setName("Use noteshare.space").setDesc("Noteshare.space is the free and official service for sharing your notes with QuickShare. Uncheck if you want to self-host.").addToggle((text2) => text2.setValue(!this.plugin.settings.selfHosted).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.selfHosted = !value;
       this.showSelfhostedSettings(this.plugin.settings.selfHosted);
       if (this.plugin.settings.selfHosted === false) {
@@ -4173,7 +4177,7 @@ var SettingsTab = class extends import_obsidian3.PluginSettingTab {
     })));
     this.selfHostSettings = containerEl.createDiv();
     this.selfHostSettings.createEl("h3", { text: "Self-hosting options" });
-    new import_obsidian3.Setting(this.selfHostSettings).setName("Server URL").setDesc("Server URL hosting the encrypted notes. For more information about self-hosting, see https://github.com/mcndt/noteshare.space#deployment").addText((text2) => {
+    new import_obsidian2.Setting(this.selfHostSettings).setName("Server URL").setDesc("Server URL hosting the encrypted notes. For more information about self-hosting, see https://github.com/mcndt/noteshare.space#deployment").addText((text2) => {
       this.selfHostedUrl = text2;
       text2.setPlaceholder("enter URL").setValue(this.plugin.settings.serverUrl).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.serverUrl = value;
@@ -4188,7 +4192,7 @@ var SettingsTab = class extends import_obsidian3.PluginSettingTab {
 };
 
 // src/ui/SharedNoteSuccessModal.ts
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian3 = __toModule(require("obsidian"));
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -4641,7 +4645,7 @@ function instance($$self, $$props, $$invalidate) {
     navigator.clipboard.writeText(url);
     $$invalidate(2, buttonText = "Copied");
     buttonTextTimeout = setTimeout(() => {
-      $$invalidate(2, buttonText = "copy");
+      $$invalidate(2, buttonText = "Copy");
     }, 1500);
   }
   function onOpen() {
@@ -4668,7 +4672,7 @@ var SharedNoteSuccessComponent = class extends SvelteComponent {
 var SharedNoteSuccessComponent_default = SharedNoteSuccessComponent;
 
 // src/ui/SharedNoteSuccessModal.ts
-var SharedNoteSuccessModal = class extends import_obsidian4.Modal {
+var SharedNoteSuccessModal = class extends import_obsidian3.Modal {
   constructor(plugin, url, expire_time) {
     super(plugin.app);
     this.url = url;
@@ -4697,7 +4701,7 @@ var SharedNoteSuccessModal = class extends import_obsidian4.Modal {
 };
 
 // main.ts
-var NoteSharingPlugin = class extends import_obsidian5.Plugin {
+var NoteSharingPlugin = class extends import_obsidian4.Plugin {
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
@@ -4729,7 +4733,7 @@ var NoteSharingPlugin = class extends import_obsidian5.Plugin {
       id: "obsidian-quickshare-share-note",
       name: "Create share link",
       checkCallback: (checking) => {
-        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView);
+        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
         if (!activeView)
           return false;
         if (checking)
@@ -4739,7 +4743,7 @@ var NoteSharingPlugin = class extends import_obsidian5.Plugin {
     });
   }
   onMenuOpenCallback(menu, file, source) {
-    if (file instanceof import_obsidian5.TFile && file.extension === "md") {
+    if (file instanceof import_obsidian4.TFile && file.extension === "md") {
       menu.addItem((item) => {
         item.setIcon("paper-plane-glyph");
         item.setTitle("Create share link");
@@ -4755,7 +4759,7 @@ var NoteSharingPlugin = class extends import_obsidian5.Plugin {
         new SharedNoteSuccessModal(this, res.view_url, res.expire_time).open();
       }).catch((err) => {
         console.error(err);
-        new import_obsidian5.Notice(err.message, 7500);
+        new import_obsidian4.Notice(err.message, 7500);
       });
     });
   }
