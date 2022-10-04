@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "4f8b45b6da8fd0ab",
+    "id": "5a18c0d64014344d",
     "type": "split",
     "children": [
       {
-        "id": "a0d560237ab4b2e0",
+        "id": "5ade0e4d1d92d5f4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-cla/c-cym08-hydra+p5.js.md",
+            "file": "03-cla/c-cym09-hydra+tone.js.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -20,23 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ed53a0ac44376330",
+    "id": "d4718bd7ba3ba504",
     "type": "split",
     "children": [
       {
-        "id": "d7e9a42aaf3a7ef4",
+        "id": "7c967065551dd8ba",
         "type": "tabs",
         "children": [
           {
-            "id": "4cdee6994d653791",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "90ce32d259cad856",
+            "id": "9d30c2917a0c09e3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +36,7 @@
             }
           },
           {
-            "id": "4ea5e4670a37df39",
+            "id": "96ec3dbd878d0886",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,35 +51,42 @@
             }
           },
           {
-            "id": "d4c78209f4204bd0",
+            "id": "5f6979fcaa6edb43",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 330.5
+    "width": 300
   },
   "right": {
-    "id": "c4e3217dccc5041e",
+    "id": "80820653654ffa07",
     "type": "split",
     "children": [
       {
-        "id": "18c12a2fea01698c",
+        "id": "00280e8b2037d894",
         "type": "tabs",
         "children": [
           {
-            "id": "afa41c41daa5e41d",
+            "id": "d6bb19e283c34886",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "3ea2a834c2570976",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md",
+                "file": "03-cla/c-cym09-hydra+tone.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,19 +98,19 @@
             }
           },
           {
-            "id": "d0b8d3476682f108",
+            "id": "f183a64109c5ba3b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md",
+                "file": "03-cla/c-cym09-hydra+tone.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9d1b2d8acacb4a24",
+            "id": "4a15f9484f221c6c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -122,25 +121,17 @@
             }
           },
           {
-            "id": "ea375318e888211d",
+            "id": "dc9369bc847a8542",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md"
+                "file": "03-cla/c-cym09-hydra+tone.js.md"
               }
             }
           },
           {
-            "id": "568e5e9ab625fd08",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "9db3872603f929ad",
+            "id": "e948b467d593cd23",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -148,80 +139,10 @@
             }
           },
           {
-            "id": "f1b277c53a9b8c24",
+            "id": "3dad1fcc087884df",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "5a28386e4fdcd41d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "01a59f3c62dd6c8a",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8392020683344367,
-                  "close": true
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "65bc125395f03a87",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "108e3c35102668f2",
-            "type": "leaf",
-            "state": {
-              "type": "ob_comments",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "9694265a36204d6a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "10472947748cb761",
-            "type": "leaf",
-            "state": {
-              "type": "ob_comments",
               "state": {}
             }
           }
@@ -229,20 +150,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100,
+    "width": 300,
     "collapsed": true
   },
-  "active": "a0d560237ab4b2e0",
+  "active": "5ade0e4d1d92d5f4",
   "lastOpenFiles": [
-    "new Tendencies.md",
-    "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym04-integración.md",
-    "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "03-cla/c-cym01-presentación.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "2022-09-26.md"
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym07-hydra.md"
   ]
 }
