@@ -1,9 +1,9 @@
 {
-  "theme": "obsidian",
+  "theme": "moonstone",
   "accentHue": 241,
   "accentSat": 35,
   "lightStyle": "minimal-light",
-  "darkStyle": "minimal-dark-tonal",
+  "darkStyle": "minimal-dark-black",
   "lightScheme": "minimal-atom-light",
   "darkScheme": "minimal-dracula-dark",
   "editorFont": "",

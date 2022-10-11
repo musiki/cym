@@ -14,7 +14,11 @@ UNTREF | CYM22 | 06
 # introducción 
 
 - Desde hace unas décadas, la música en red puede considerarse un conjunto de acciones musicales innovadoras facilitadas por la tecnología. 
+<<<<<<< HEAD
+- Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (Lazzaro J & Wawzynel J ,2001) .
+=======
 - Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (bib::Lazzaro J & Wawzynel J ,2001) .
+>>>>>>> origin/main
 - Sobre esta definición histórica, existe un sesgo que considera la red como un sustituto de la propagación natural del sonido y la luz.  
 - Entonces, para establecer ciertas tipologías, podemos llegar a una definición más amplia como:  
 	- la práctica de realizar una interacción musical en tiempo real a través de una red informática.  
@@ -34,23 +38,22 @@ Si aparece un asterisco (*) para el RTT, significa que un paquete no fue devuelt
 
 ## que es un exo-instrumento?
 
-Es un concepto devenido de la teoría sobre Epitemeo de Bernard Stiegler . En ella Stiegler alude a una relación entre la técnica y la vida de los humanos como algo que se sabe antes de nacer, o en un mundo ideal  y que se recuerda (o aprende) mientras dura la vida. Así la técnica pasa a ser una extensión somática de las necesidades del cuerpo. Dentro de la técnica se incluyen los instrumentos de medición científica, las armas de guerra, las herramientas y también los instrumentos musicales. Un exo-instrumento es aquel que permite que este transpaso somático entre el cuerpo y el instrumento trascienda la cognición del emisor (el cuerpo ) y sea compartida con el instrumento. Mas aún, que ese instrumento musical, diseñado para generar un tipo de intercambio informativo en la situación de concieto, es decir entre los demás performers y el público, también pueda incorporarlos en su disposición material. 
+Es un concepto devenido de la teoría sobre Epitemeo de Bernard Stiegler. En ella Stiegler alude a una relación entre la técnica y la vida de los humanos como algo que se sabe antes de nacer, o en un mundo ideal  y que se recuerda (o aprende) mientras dura la vida. Así la técnica pasa a ser una extensión somática de las necesidades del cuerpo. Dentro de la técnica se incluyen los instrumentos de medición científica, las armas de guerra, las herramientas y también los instrumentos musicales. Un exo-instrumento es aquel que permite que este transpaso somático entre el cuerpo y el instrumento trascienda la cognición del emisor (el cuerpo ) y sea compartida con el instrumento. Mas aún, que ese instrumento musical, diseñado para generar un tipo de intercambio informativo en la situación de concieto, es decir entre los demás performers y el público, también pueda incorporarlos en su disposición material. 
 
 Todas ideas especulativas aparecen lentamente en allgunas experiencias e instrumentos del arte sonoro y la composición de la tradición escrita. 
 
 ## algunos ejemplos
 
 
-El programador petet creó este valence-aleator , no es exactamente un ejemplo , pero si puede aportar en cuanto al tipo de interface minimalista, y la utilización de simulación física para la introducción y relación de assests (positrones electrones, anillos).
+El programador petet creó este valence-aleator, no es exactamente un ejemplo, pero si puede aportar en cuanto al tipo de interface minimalista, y la utilización de simulación física para la introducción y relación de assests (positrones electrones, anillos).
 
 https://petet.itch.io/valence-aleator
-
 
 Por ejemplo en el Gravitaphon de Christian Grammel se propone un objeto no posible de manipular por una persona, que contiene mecanismos misteriosos dentro reaccionando a diferentes ángulos y momentos.
 
 <iframe title="Gravitaphon" height="240" width="426" src="https://player.vimeo.com/video/536362703?h=faed38eed0&amp;app_id=122963" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.775 / 1; width: 100%; height: 100%;"></iframe>
 
-o en "real-time ist getting realer all the time" de icholas Mortimer y Kevin Rittberger los performers reaccionan ante un exo-instrumento (llamado ICO-bass) hecho de tierra , cuerdas, vinchas electromagnéticas y un desbalance que modifica todos los parámetros. El instrumento es totalmente manipulado colectivamente.  
+o en "real-time ist getting realer all the time" de icholas Mortimer y Kevin Rittberger los performers reaccionan ante un exo-instrumento (llamado ICO-bass) hecho de tierra, cuerdas, vinchas electromagnéticas y un desbalance que modifica todos los parámetros. El instrumento es totalmente manipulado colectivamente.  
 
 <iframe title="real-time ist getting realer all the time // Nicholas Mortimer &amp;amp; Kevin Rittberger // Hoxton Arches Gallery London 2016" height="360" width="640" src="https://player.vimeo.com/video/168020099?h=e4e67132f9&amp;app_id=122963" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 
@@ -89,14 +92,14 @@ como se disparan los generadores
 ## estructura de la web 
 
 <iframe src="https://www.researchgate.net/publication/322414342/figure/fig4/AS:581787966296065@1515720468750/Web-server-front-end-A-Schematic-architecture-of-the-server-back-and-front-end-B.png" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
-Internet funciona por un lado con el código procesado por el navegador , llamado front-end, del lado local del usuario, y por otra parte por la información procesada por el servidor , cuyo desarrollo se llama back-end. 
+Internet funciona por un lado con el código procesado por el navegador, llamado front-end, del lado local del usuario, y por otra parte por la información procesada por el servidor , cuyo desarrollo se llama back-end. 
 
 Cuando programamos en js estamos utilizando el front-end, pero cuando hacemos un fetch o una llamada a APIs remotas, intercambiamos información con los servidores es decir el back end. 
 
 Los scripts y lenguajes  del front-end son html, css, javascript, parte de php, y los del back-end php, procesando los servidores apache y nginx, mysql , c++ y también python. 
 
 En el año 2009 Ryan Dahl , luego de 30 años introducido el entorno Javasreipt, ideó  un entorno de back-end basado en js. 
-Para entenderlo rapidamente node.js es como un navegador sin pantalla que toma y responde a comandos desde el prompt (linea de comandos). no es exactamente lo mismo , también existen los headless chromium y headless firefox, pero lo que permite node.js es escribir comandos js del lado del servidor que producen páginas dinámicas antes de que la información se envíe al browser. 
+Para entenderlo rapidamente node.js es como un navegador sin pantalla que toma y responde a comandos desde el prompt (linea de comandos). No es exactamente lo mismo , también existen los headless chromium y headless firefox, pero lo que permite node.js es escribir comandos js del lado del servidor que producen páginas dinámicas antes de que la información se envíe al browser. 
 
 ## node.js
 

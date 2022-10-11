@@ -27,5 +27,21 @@
   "02-mat": "IbTabLeftCompact",
   "02-mat/org": "IbTriangleRight",
   "02-mat/tone.js.md": "FlTriangleOfTriangles",
-  "02-mat/que es git.md": "FabGithubSquare"
+  "02-mat/que es git.md": "FabGithubSquare",
+  "02-mat/html.md": {
+    "iconName": null,
+    "inheritanceIcon": "FabHtml5"
+  },
+  "02-mat/cloud ides.md": {
+    "iconName": null,
+    "inheritanceIcon": "IbCloud"
+  },
+  "02-mat/rant.md": {
+    "iconName": null,
+    "inheritanceIcon": "FlPolygonalOrnamentalShapeOfTriangles"
+  },
+  "03-ref/clases": {
+    "iconName": null,
+    "inheritanceIcon": "IbStackHorizontal"
+  }
 }

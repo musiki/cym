@@ -2,7 +2,9 @@
 
 ## 28/8/2022
 
-[Generador de melodías Random (codepen.io)](https://codepen.io/jmancarola/pen/rNdErWW)
+
+
+
 
 
 - Extraje los tres sintetizadores que figuran en la página Tone.js en el apartado de Instrumentos: Tone.FMSynth, Tone.AMSynth and Tone.NoiseSynth. . El NoiseSynth no generaba las alturas establecidas, por eso lo cambié por PolySynth. 

@@ -459,11 +459,6 @@
       "tags": 6,
       "links": 0
     },
-    "01-proj/ancarola/c-cym04-integración.md": {
-      "size": 3184,
-      "tags": 6,
-      "links": 0
-    },
     "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
       "size": 0,
       "tags": 0,
@@ -474,27 +469,32 @@
       "tags": 0,
       "links": 0
     },
-    "new Tendencies.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "lwe.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "03-cla/c-cym07-networking.md": {
       "size": 0,
       "tags": 7,
+      "links": 0
+    },
+    "01-proj/ancarola/Generador de Melodías Random 2.md": {
+      "size": 43,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym07-hydra.md": {
+      "size": 2724,
+      "tags": 6,
+      "links": 0
+    },
+    "02-mat/python/pycolors.md": {
+      "size": 0,
+      "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 74,
-      "Create": 12,
-      "Link": 7,
+      "Refactor": 79,
+      "Create": 16,
+      "Link": 8,
       "Expand": 8
     }
   },
@@ -505,13 +505,13 @@
       "2": 0,
       "3": 0,
       "4": 0,
-      "5": 0,
+      "5": 9,
       "6": 0,
       "7": 2,
       "8": 0,
       "9": 4,
       "10": 7,
-      "11": 71,
+      "11": 72,
       "12": 6,
       "13": 2,
       "14": 0,
@@ -529,10 +529,10 @@
   "weeklyCommits": {
     "/": {
       "Mon": 2,
-      "Tue": 5,
+      "Tue": 6,
       "Wed": 20,
       "Thu": 6,
-      "Fri": 60,
+      "Fri": 69,
       "Sat": 0,
       "Sun": 8
     }
@@ -561,9 +561,14 @@
         "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>",
         "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/Generador de Melodías Random 2.md\"> Generador de Melodías Random 2 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-integración 1.md\"> c-cym04-integración 1 </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-networking.md\"> c-cym07-networking </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-07-networking.md\"> c-07-networking </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
@@ -613,8 +618,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-ref/clases/c-cym06-un instrumento online colectivo.md\"> c-cym06-un instrumento online colectivo </a>",
@@ -622,14 +626,19 @@
         "<a class=\"internal-link\" href=\"test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
-        "<a class=\"internal-link\" href=\"c-07-networking.md\"> c-07-networking </a>"
+        "<a class=\"internal-link\" href=\"c-07-networking.md\"> c-07-networking </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"
       ],
       "Refactored": [],
       "Deleted": [
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"7.md\"> 7 </a>",
         "<a class=\"internal-link\" href=\"2022-09-13.md\"> 2022-09-13 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/kyrie.md\"> kyrie </a>"
+        "<a class=\"internal-link\" href=\"02-mat/partituras/kyrie.md\"> kyrie </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-integración 1.md\"> c-cym04-integración 1 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
+        "<a class=\"internal-link\" href=\"lwe.md\"> lwe </a>",
+        "<a class=\"internal-link\" href=\"new Tendencies.md\"> new Tendencies </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"README.md\"> README </a>"
