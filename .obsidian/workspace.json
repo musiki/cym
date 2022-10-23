@@ -1,5 +1,6 @@
 {
   "main": {
+<<<<<<< HEAD
     "id": "06155fffeb6c2afa",
     "type": "split",
     "children": [
@@ -9,10 +10,22 @@
         "children": [
           {
             "id": "9be5806cd330d2d4",
+=======
+    "id": "5a18c0d64014344d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dde0344341cb0e2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d0812e1670e996a",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "00-in/prg-22.md",
                 "mode": "source",
                 "backlinks": false,
@@ -21,11 +34,41 @@
             }
           }
         ]
+=======
+                "file": "03-cla/c-cym01-presentación.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1af786fd99e0253",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapview",
+              "state": {
+                "file": "03-cla/c-cym-mindMap.md"
+              }
+            }
+          },
+          {
+            "id": "0c2ccbc686f078b8",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+>>>>>>> origin/main
       }
     ],
     "direction": "vertical"
   },
   "left": {
+<<<<<<< HEAD
     "id": "b602c04a731b296c",
     "type": "split",
     "children": [
@@ -35,6 +78,17 @@
         "children": [
           {
             "id": "58a6bf3eeea06c75",
+=======
+    "id": "d4718bd7ba3ba504",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c967065551dd8ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d30c2917a0c09e3",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +98,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "9c932be67380cd5c",
+=======
+            "id": "96ec3dbd878d0886",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +117,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "d0b6cdf86fad9d2c",
+=======
+            "id": "5f6979fcaa6edb43",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -70,6 +132,7 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 370.5
   },
   "right": {
@@ -82,6 +145,20 @@
         "children": [
           {
             "id": "0e7331fdb79d0276",
+=======
+    "width": 300
+  },
+  "right": {
+    "id": "80820653654ffa07",
+    "type": "split",
+    "children": [
+      {
+        "id": "00280e8b2037d894",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6bb19e283c34886",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -89,12 +166,20 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "151280da124cbf79",
+=======
+            "id": "3ea2a834c2570976",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "00-in/prg-22.md",
+=======
+                "file": "03-cla/c-cym-mindMap.md",
+>>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,19 +191,31 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "ca18ada4e82fb194",
+=======
+            "id": "f183a64109c5ba3b",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "00-in/prg-22.md",
+=======
+                "file": "03-cla/c-cym-mindMap.md",
+>>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
+<<<<<<< HEAD
             "id": "20c732dc2cc0ecaf",
+=======
+            "id": "4a15f9484f221c6c",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,17 +226,29 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "8c7ec6495dcddec6",
+=======
+            "id": "dc9369bc847a8542",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "00-in/prg-22.md"
+=======
+                "file": "03-cla/c-cym-mindMap.md"
+>>>>>>> origin/main
               }
             }
           },
           {
+<<<<<<< HEAD
             "id": "ce7c3311228e6e89",
+=======
+            "id": "e948b467d593cd23",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -147,7 +256,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "2401f8738cf8ce0a",
+=======
+            "id": "3dad1fcc087884df",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -164,6 +277,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
+<<<<<<< HEAD
   "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
     "02-mat/tone.js.md",
@@ -176,5 +290,19 @@
     "03-cla/c-cym05-flex-grid.md",
     "03-cla/c-cym04-integración 1.md",
     "03-cla/c-cym04-integración.md"
+=======
+  "active": "e1af786fd99e0253",
+  "lastOpenFiles": [
+    "03-cla/c-cym10&11-generative&Aframe.md",
+    "03-cla/c-cym-mindMap.md",
+    "04-ref/topoi/b-Spectromorphology.md",
+    "04-ref/topoi/t09-física.md",
+    "04-ref/topoi/t10-método científico.md",
+    "04-ref/topoi/t11-sistemas de universos.md",
+    "04-ref/topoi/t12-filosofía 21.md",
+    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
+    "04-ref/topoi/t21-interfaces.md",
+    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md"
+>>>>>>> origin/main
   ]
 }

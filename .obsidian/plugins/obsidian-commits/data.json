@@ -4,11 +4,6 @@
     "/"
   ],
   "filesCheckpoint": {
-    "image/c-cym04-integración.md": {
-      "size": 3184,
-      "tags": 6,
-      "links": 0
-    },
     "image/gallery.md": {
       "size": 70,
       "tags": 0,
@@ -498,12 +493,22 @@
       "size": 43,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym-mindMap.md": {
+      "size": 6920,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym10&11-generative&Aframe.md": {
+      "size": 7317,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 0,
-      "Create": 0,
+      "Refactor": 1,
+      "Create": 2,
       "Link": 0,
       "Expand": 0
     }
@@ -523,7 +528,7 @@
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 0,
+      "13": 3,
       "14": 0,
       "15": 0,
       "16": 0,
@@ -544,17 +549,22 @@
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 0
+      "Sun": 3
     }
   },
   "recentCommits": {
     "/": {
       "Expanded": [],
-      "Created": [],
+      "Created": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+      ],
       "Renamed": [],
       "Tagged": [],
       "Refactored": [],
-      "Deleted": [],
+      "Deleted": [
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>"
+      ],
       "Linked": [],
       "Removed Tags from": [],
       "Removed Links from": []
