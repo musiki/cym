@@ -112,4 +112,4 @@ Sinónimos
 <iframe height="600" width="800" src="https://aframe1.zzigo.repl.co/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 
-<iframe height="600" width="800" src="https://replit.com/@zzigo/aframe1?v=1#index.html" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+
