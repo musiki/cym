@@ -4,17 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "9be5806cd330d2d4",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "00-in/prg-22.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": true
+        "id": "70e533c0f6e5c315",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9be5806cd330d2d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/prg-22.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -32,7 +38,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -152,6 +160,9 @@
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
   },
   "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
