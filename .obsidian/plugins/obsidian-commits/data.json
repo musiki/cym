@@ -507,27 +507,32 @@
     "03-cla/c-cym10&11-generative&Aframe.md": {
       "size": 6954,
       "tags": 6,
-      "links": 1
+      "links": 2
     },
     "2022-10-23.md": {
       "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym-mindMap.md": {
+      "size": 4847,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 4,
-      "Create": 4,
-      "Link": 3,
-      "Expand": 6
+      "Refactor": 9,
+      "Create": 6,
+      "Link": 4,
+      "Expand": 8
     }
   },
   "dailyCommits": {
     "/": {
       "0": 0,
       "1": 0,
-      "2": 3,
+      "2": 13,
       "3": 0,
       "4": 0,
       "5": 0,
@@ -559,7 +564,7 @@
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 13
+      "Sun": 23
     }
   },
   "recentCommits": {
@@ -570,18 +575,26 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/cym_mindmap.md\"> cym_mindmap </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"2022-10-23.md\"> 2022-10-23 </a>"
+        "<a class=\"internal-link\" href=\"2022-10-23.md\"> 2022-10-23 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/Untitled mindmap.md\"> Untitled mindmap </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c- 1.md\"> c- 1 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative>Aframe.md\"> c-cym10&11-generative>Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c.md\"> c </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-.md\"> c- </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-c.md\"> c-c </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",
@@ -589,9 +602,11 @@
       ],
       "Refactored": [],
       "Deleted": [
-        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c- 1.md\"> c- 1 </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
       ],
       "Removed Tags from": [],

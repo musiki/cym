@@ -60,6 +60,10 @@ SOOLAS, L. (2010) _GENERATIVIDAD Y MOLDE INTERNO: Los sistemas de reglas en el d
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UA8Vie6dopw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+## Mindmap
+
+[[c-cym-mindMap]]
+
 # A-frame
 
 Es un framework en javascript para crear experiencias de realidad virtual. Utiliza la arquitectura ECS (Entity Component System) donde cada objeto es una entidad.
