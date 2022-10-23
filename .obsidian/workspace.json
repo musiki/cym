@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "5a18c0d64014344d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dde0344341cb0e2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d0812e1670e996a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c2ccbc686f078b8",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d4718bd7ba3ba504",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c967065551dd8ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d30c2917a0c09e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "96ec3dbd878d0886",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5f6979fcaa6edb43",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "80820653654ffa07",
+    "type": "split",
+    "children": [
+      {
+        "id": "00280e8b2037d894",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6bb19e283c34886",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "3ea2a834c2570976",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f183a64109c5ba3b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4a15f9484f221c6c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dc9369bc847a8542",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03-cla/c-cym10&11-generative&Aframe.md"
+              }
+            }
+          },
+          {
+            "id": "e948b467d593cd23",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dad1fcc087884df",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "1d0812e1670e996a",
+  "lastOpenFiles": [
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym04-integración.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
+    "03-cla/c-cym03- cohesión audivisual.md",
+    "image/meta-aprendizaje-1660395828475.jpeg",
+    "00-in/meta-aprendizaje.md",
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md"
+  ]
+}
