@@ -29,14 +29,6 @@
                 "file": "03-cla/c-cym-mindMap.md"
               }
             }
-          },
-          {
-            "id": "0c2ccbc686f078b8",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {}
-            }
           }
         ],
         "currentTab": 1
@@ -185,15 +177,15 @@
   },
   "active": "e1af786fd99e0253",
   "lastOpenFiles": [
-    "03-cla/c-cym10&11-generative&Aframe.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
     "03-cla/c-cym-mindMap.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
     "04-ref/topoi/b-Spectromorphology.md",
     "04-ref/topoi/t09-física.md",
     "04-ref/topoi/t10-método científico.md",
     "04-ref/topoi/t11-sistemas de universos.md",
     "04-ref/topoi/t12-filosofía 21.md",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/topoi/t21-interfaces.md",
-    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md"
+    "04-ref/topoi/t21-interfaces.md"
   ]
 }
