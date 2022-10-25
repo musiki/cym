@@ -6,8 +6,8 @@ este es el repositorio de la cátedra de ciencia y música de la licenciatura en
 
 **docentes**: Luciano Azzigotti y Carolina Di Paola
 **código**: 900
-Lunes de 18 a 22hs. 
-Aula de Tecnología Musical, Caseros II, UTREF. Aula Virtual .
+Martes de 18 a 22hs. 
+Aula de Tecnología Musical, Caseros II, UNTREF. Aula Virtual .
 
 ```ActivityHistory
 /

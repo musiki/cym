@@ -37,9 +37,12 @@
             "id": "1a18ca71d2e01b80",
             "type": "leaf",
             "state": {
-              "type": "mindmapview",
+              "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym-mindMap.md"
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
               }
             }
           },
@@ -128,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym-mindMap.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym-mindMap.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym-mindMap.md"
+                "file": "README.md"
               }
             }
           },
@@ -200,15 +203,15 @@
   },
   "active": "1a18ca71d2e01b80",
   "lastOpenFiles": [
-    "03-cla/c-cym12-Aframe.md",
+    "00-in/combinational creativity.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/prg-22.md",
     "03-cla/c-cym-mindMap.md",
+    "03-cla/c-cym12-Aframe.md",
     "Untitled.md",
     "03-cla/c-cym10&11-generative&Aframe.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
-    "04-ref/topoi/b-Spectromorphology.md",
-    "04-ref/topoi/t09-física.md",
-    "04-ref/topoi/t10-método científico.md"
+    "03-cla/c-cym06-un instrumento online colectivo.md"
   ]
 }
