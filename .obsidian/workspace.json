@@ -14,8 +14,17 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "1954b6dc77ef1ea9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,11 +164,11 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e91482535306e58e",
+  "active": "1954b6dc77ef1ea9",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "03-cla/c-cym07-hydra.md",
     "01-proj/ancarola/Generador de Melodías Random 2.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/ancarola/Generador de Melodías Random.md"
   ]
 }

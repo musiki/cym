@@ -13,7 +13,11 @@
     {
       "path": "/",
       "date": "2022-10-25",
+<<<<<<< HEAD
       "size": 265979
+=======
+      "size": 274929
+>>>>>>> origin/main
     }
   ],
   "activityHistory": [
@@ -21,10 +25,11 @@
       "path": "/",
       "size": [
         {
-          "date": "2022-09-08",
-          "value": 13720
+          "date": "2022-10-24",
+          "value": 1070
         },
         {
+<<<<<<< HEAD
           "date": "2022-09-12",
           "value": 553
         },
@@ -47,6 +52,10 @@
         {
           "date": "2022-10-25",
           "value": 75
+=======
+          "date": "2022-10-25",
+          "value": 1551
+>>>>>>> origin/main
         }
       ]
     }
@@ -55,8 +64,8 @@
   "activityColor2": "#7bc96f",
   "activityColor3": "#239a3b",
   "activityColor4": "#196127",
-  "textColor": "#ffff00",
-  "emptyColor": "#000000",
+  "textColor": "#000000",
+  "emptyColor": "#ecedf0",
   "cellRadius": 1,
   "type": "yearly"
 }
