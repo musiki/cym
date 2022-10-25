@@ -24,6 +24,29 @@
             "id": "e1af786fd99e0253",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1a18ca71d2e01b80",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapview",
+              "state": {
+                "file": "03-cla/c-cym-mindMap.md"
+              }
+            }
+          },
+          {
+            "id": "4dd30bc5b229df31",
+            "type": "leaf",
+            "state": {
               "type": "mindmapview",
               "state": {
                 "file": "03-cla/c-cym-mindMap.md"
@@ -31,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -175,17 +198,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e1af786fd99e0253",
+  "active": "1a18ca71d2e01b80",
   "lastOpenFiles": [
-    "03-cla/c-cym06-un instrumento online colectivo.md",
+    "03-cla/c-cym12-Aframe.md",
     "03-cla/c-cym-mindMap.md",
+    "Untitled.md",
     "03-cla/c-cym10&11-generative&Aframe.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
     "04-ref/topoi/b-Spectromorphology.md",
     "04-ref/topoi/t09-física.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t12-filosofía 21.md",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/topoi/t21-interfaces.md"
+    "04-ref/topoi/t10-método científico.md"
   ]
 }

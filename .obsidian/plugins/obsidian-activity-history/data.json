@@ -12,8 +12,8 @@
   "checkpointList": [
     {
       "path": "/",
-      "date": "2022-10-23",
-      "size": 272574
+      "date": "2022-10-25",
+      "size": 274929
     }
   ],
   "activityHistory": [
@@ -21,84 +21,12 @@
       "path": "/",
       "size": [
         {
-          "date": "2022-09-08",
-          "value": 13720
+          "date": "2022-10-24",
+          "value": 1070
         },
         {
-          "date": "2022-09-12",
-          "value": 553
-        },
-        {
-          "date": "2022-09-13",
-          "value": 528
-        },
-        {
-          "date": "2022-09-15",
-          "value": 17799
-        },
-        {
-          "date": "2022-09-20",
-          "value": 173
-        },
-        {
-          "date": "2022-09-21",
-          "value": 0
-        },
-        {
-          "date": "2022-09-22",
-          "value": 0
-        },
-        {
-          "date": "2022-09-23",
-          "value": 0
-        },
-        {
-          "date": "2022-09-24",
-          "value": 0
-        },
-        {
-          "date": "2022-09-25",
-          "value": 0
-        },
-        {
-          "date": "2022-09-26",
-          "value": 13384
-        },
-        {
-          "date": "2022-09-27",
-          "value": 908
-        },
-        {
-          "date": "2022-10-03",
-          "value": 0
-        },
-        {
-          "date": "2022-10-04",
-          "value": 1404
-        },
-        {
-          "date": "2022-10-18",
-          "value": 150
-        },
-        {
-          "date": "2022-10-19",
-          "value": 38
-        },
-        {
-          "date": "2022-10-20",
-          "value": 0
-        },
-        {
-          "date": "2022-10-21",
-          "value": 0
-        },
-        {
-          "date": "2022-10-22",
-          "value": 7685
-        },
-        {
-          "date": "2022-10-23",
-          "value": 12908
+          "date": "2022-10-25",
+          "value": 1551
         }
       ]
     }
@@ -107,8 +35,8 @@
   "activityColor2": "#7bc96f",
   "activityColor3": "#239a3b",
   "activityColor4": "#196127",
-  "textColor": "#ffff00",
-  "emptyColor": "#000000",
+  "textColor": "#000000",
+  "emptyColor": "#ecedf0",
   "cellRadius": 1,
   "type": "yearly"
 }

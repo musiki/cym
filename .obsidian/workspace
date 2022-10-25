@@ -1,18 +1,18 @@
 {
   "main": {
-    "id": "5a18c0d64014344d",
+    "id": "06155fffeb6c2afa",
     "type": "split",
     "children": [
       {
-        "id": "5ade0e4d1d92d5f4",
+        "id": "9be5806cd330d2d4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03-cla/c-cym09-hydra+tone.js.md",
+            "file": "00-in/prg-22.md",
             "mode": "source",
             "backlinks": false,
-            "source": false
+            "source": true
           }
         }
       }
@@ -20,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d4718bd7ba3ba504",
+    "id": "b602c04a731b296c",
     "type": "split",
     "children": [
       {
-        "id": "7c967065551dd8ba",
+        "id": "af95db91370f3ee0",
         "type": "tabs",
         "children": [
           {
-            "id": "9d30c2917a0c09e3",
+            "id": "58a6bf3eeea06c75",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "96ec3dbd878d0886",
+            "id": "9c932be67380cd5c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -51,7 +51,7 @@
             }
           },
           {
-            "id": "5f6979fcaa6edb43",
+            "id": "d0b6cdf86fad9d2c",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -62,18 +62,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 370.5
   },
   "right": {
-    "id": "80820653654ffa07",
+    "id": "f8c878636ee6998f",
     "type": "split",
     "children": [
       {
-        "id": "00280e8b2037d894",
+        "id": "aaca835876e592bb",
         "type": "tabs",
         "children": [
           {
-            "id": "d6bb19e283c34886",
+            "id": "0e7331fdb79d0276",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -81,12 +81,12 @@
             }
           },
           {
-            "id": "3ea2a834c2570976",
+            "id": "151280da124cbf79",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md",
+                "file": "00-in/prg-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,19 +98,19 @@
             }
           },
           {
-            "id": "f183a64109c5ba3b",
+            "id": "ca18ada4e82fb194",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md",
+                "file": "00-in/prg-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4a15f9484f221c6c",
+            "id": "20c732dc2cc0ecaf",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -121,17 +121,17 @@
             }
           },
           {
-            "id": "dc9369bc847a8542",
+            "id": "8c7ec6495dcddec6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md"
+                "file": "00-in/prg-22.md"
               }
             }
           },
           {
-            "id": "e948b467d593cd23",
+            "id": "ce7c3311228e6e89",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -139,7 +139,7 @@
             }
           },
           {
-            "id": "3dad1fcc087884df",
+            "id": "2401f8738cf8ce0a",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -153,10 +153,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5ade0e4d1d92d5f4",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "02-mat/tone.js.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym07-networking.md",
+    "README.md",
+    "new Tendencies.md",
+    "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym07-hydra.md"
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym04-integración 1.md",
+    "03-cla/c-cym04-integración.md"
   ]
 }
