@@ -4,12 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "249d89666687bd07",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
+        "id": "5a131195d7fb2d9f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "249d89666687bd07",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -27,7 +33,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -144,7 +152,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "249d89666687bd07",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "e91482535306e58e",
   "lastOpenFiles": [
     "03-cla/c-cym07-hydra.md",
     "01-proj/ancarola/Generador de Melodías Random 2.md",
