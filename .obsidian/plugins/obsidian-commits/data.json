@@ -501,15 +501,15 @@
     },
     "03-cla/c-cym10&11-generative&Aframe.md": {
       "size": 7317,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 2
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 1,
-      "Create": 2,
-      "Link": 0,
+      "Refactor": 2,
+      "Create": 3,
+      "Link": 2,
       "Expand": 0
     }
   },
@@ -526,10 +526,10 @@
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 0,
+      "11": 2,
       "12": 0,
       "13": 3,
-      "14": 0,
+      "14": 2,
       "15": 0,
       "16": 0,
       "17": 0,
@@ -546,10 +546,10 @@
       "Mon": 0,
       "Tue": 0,
       "Wed": 0,
-      "Thu": 0,
+      "Thu": 2,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 3
+      "Sun": 5
     }
   },
   "recentCommits": {
@@ -557,15 +557,21 @@
       "Expanded": [],
       "Created": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>"
       ],
       "Renamed": [],
-      "Tagged": [],
+      "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+      ],
       "Refactored": [],
       "Deleted": [
-        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>"
+        "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>"
       ],
-      "Linked": [],
+      "Linked": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+      ],
       "Removed Tags from": [],
       "Removed Links from": []
     }
