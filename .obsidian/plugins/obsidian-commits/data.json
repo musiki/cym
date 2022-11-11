@@ -495,7 +495,7 @@
       "links": 0
     },
     "03-cla/c-cym-mindMap.md": {
-      "size": 6920,
+      "size": 8470,
       "tags": 0,
       "links": 0
     },
@@ -503,14 +503,29 @@
       "size": 7317,
       "tags": 6,
       "links": 2
+    },
+    "03-cla/c-cym12-Aframe.md": {
+      "size": 1202,
+      "tags": 6,
+      "links": 0
+    },
+    "Buttons 1.0 is Coming.md": {
+      "size": 1794,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 2,
-      "Create": 3,
-      "Link": 2,
-      "Expand": 0
+      "Refactor": 4,
+      "Create": 8,
+      "Link": 3,
+      "Expand": 1
     }
   },
   "dailyCommits": {
@@ -521,19 +536,19 @@
       "3": 0,
       "4": 0,
       "5": 0,
-      "6": 0,
+      "6": 1,
       "7": 0,
       "8": 0,
       "9": 0,
       "10": 0,
       "11": 2,
-      "12": 0,
+      "12": 1,
       "13": 3,
       "14": 2,
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 0,
+      "18": 7,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -543,31 +558,41 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 0,
-      "Tue": 0,
+      "Mon": 1,
+      "Tue": 7,
       "Wed": 0,
       "Thu": 2,
-      "Fri": 0,
+      "Fri": 1,
       "Sat": 0,
       "Sun": 5
     }
   },
   "recentCommits": {
     "/": {
-      "Expanded": [],
+      "Expanded": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>"
+      ],
       "Created": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
-        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>"
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"2022-11-01.md\"> 2022-11-01 </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [],
       "Tagged": [
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>"
       ],
       "Refactored": [],
       "Deleted": [
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
-        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>"
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"2022-11-01.md\"> 2022-11-01 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"

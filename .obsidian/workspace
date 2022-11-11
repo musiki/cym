@@ -9,10 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00-in/prg-22.md",
+            "file": "01-proj/lopez/helloworld.md",
             "mode": "source",
             "backlinks": false,
-            "source": true
+            "source": false
           }
         }
       }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/prg-22.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/prg-22.md",
+                "file": "01-proj/lopez/helloworld.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/prg-22.md"
+                "file": "01-proj/lopez/helloworld.md"
               }
             }
           },
@@ -153,8 +153,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "9be5806cd330d2d4",
   "lastOpenFiles": [
+    "00-in/prg-22.md",
     "02-mat/tone.js.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym07-networking.md",
@@ -163,7 +164,6 @@
     "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym04-integración 1.md",
-    "03-cla/c-cym04-integración.md"
+    "03-cla/c-cym04-integración 1.md"
   ]
 }
