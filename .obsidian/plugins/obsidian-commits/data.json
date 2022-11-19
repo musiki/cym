@@ -509,11 +509,6 @@
       "tags": 6,
       "links": 0
     },
-    "Buttons 1.0 is Coming.md": {
-      "size": 1794,
-      "tags": 0,
-      "links": 0
-    },
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
       "size": 0,
       "tags": 0,
@@ -522,7 +517,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 4,
+      "Refactor": 6,
       "Create": 8,
       "Link": 3,
       "Expand": 1
@@ -536,7 +531,7 @@
       "3": 0,
       "4": 0,
       "5": 0,
-      "6": 1,
+      "6": 3,
       "7": 0,
       "8": 0,
       "9": 0,
@@ -562,7 +557,7 @@
       "Tue": 7,
       "Wed": 0,
       "Thu": 2,
-      "Fri": 1,
+      "Fri": 3,
       "Sat": 0,
       "Sun": 5
     }
@@ -582,7 +577,9 @@
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
         "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>"
       ],
-      "Renamed": [],
+      "Renamed": [
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is coming.md\"> Buttons 1.0 is coming </a>"
+      ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>"
@@ -592,7 +589,8 @@
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
         "<a class=\"internal-link\" href=\"2022-11-01.md\"> 2022-11-01 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is coming.md\"> Buttons 1.0 is coming </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"

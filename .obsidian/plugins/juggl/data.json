@@ -4,21 +4,7 @@
   "useImgServer": false,
   "imgServerPort": 3837,
   "debug": false,
-  "globalStyleGroups": [
-    {
-      "filter": "class:file -class:image",
-      "color": "rgb(186, 186, 186)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    }
-  ],
+  "globalStyleGroups": [],
   "globalGraphRibbon": true,
   "graphSettings": {
     "animateLayout": true,

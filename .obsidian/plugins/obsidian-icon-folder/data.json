@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbArrowDownLeft",
       "FabGithubSquare",
       "IbHugContentVertical",
       "IbArrowCircleForward",
-      "FlPendantOfSmallPolygonalShape",
-      "FlTrianglesCoupleOfTwoDifferentSizesInBlackAndWhite"
+      "FlPendantOfSmallPolygonalShape"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,5 +43,7 @@
   "03-ref/clases": {
     "iconName": null,
     "inheritanceIcon": "IbStackHorizontal"
-  }
+  },
+  "03-cla": "IbArrowCircleForward",
+  "04-ref": "IbArrowDownLeft"
 }
