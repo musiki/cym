@@ -12,13 +12,8 @@
   "checkpointList": [
     {
       "path": "/",
-<<<<<<< HEAD
       "date": "2022-11-21",
-      "size": 280883
-=======
-      "date": "2022-11-19",
-      "size": 276432
->>>>>>> origin/main
+      "size": 290418
     }
   ],
   "activityHistory": [
@@ -26,81 +21,8 @@
       "path": "/",
       "size": [
         {
-<<<<<<< HEAD
-          "date": "2022-09-08",
-          "value": 13720
-        },
-        {
-          "date": "2022-09-12",
-          "value": 553
-        },
-        {
-          "date": "2022-09-13",
-          "value": 385
-        },
-        {
-          "date": "2022-09-20",
-          "value": 226454
-        },
-        {
-          "date": "2022-09-21",
-          "value": 0
-        },
-        {
-          "date": "2022-09-27",
-          "value": 5816
-        },
-        {
-          "date": "2022-10-25",
-          "value": 14831
-        },
-        {
           "date": "2022-11-21",
-          "value": 148
-=======
-          "date": "2022-10-23",
           "value": 0
-        },
-        {
-          "date": "2022-10-24",
-          "value": 0
-        },
-        {
-          "date": "2022-10-25",
-          "value": 0
-        },
-        {
-          "date": "2022-11-01",
-          "value": 3026
-        },
-        {
-          "date": "2022-11-02",
-          "value": 0
-        },
-        {
-          "date": "2022-11-03",
-          "value": 0
-        },
-        {
-          "date": "2022-11-07",
-          "value": 1794
-        },
-        {
-          "date": "2022-11-08",
-          "value": 1501
-        },
-        {
-          "date": "2022-11-11",
-          "value": 2066
-        },
-        {
-          "date": "2022-11-17",
-          "value": 0
-        },
-        {
-          "date": "2022-11-19",
-          "value": 0
->>>>>>> origin/main
         }
       ]
     }
@@ -109,8 +31,8 @@
   "activityColor2": "#7bc96f",
   "activityColor3": "#239a3b",
   "activityColor4": "#196127",
-  "textColor": "#ffff00",
-  "emptyColor": "#000000",
+  "textColor": "#000000",
+  "emptyColor": "#ecedf0",
   "cellRadius": 1,
   "type": "yearly"
 }
