@@ -3763,7 +3763,6 @@ var import_obsidian = __toModule(require("obsidian"));
 function generateRandomKey() {
   return __async(this, null, function* () {
     const seed = window.crypto.getRandomValues(new Uint8Array(64));
-    console.log("random key!!!");
     return _generateKey(seed);
   });
 }
@@ -3785,29 +3784,25 @@ function masterKeyToString(masterKey) {
 function encryptString(md, secret) {
   return __async(this, null, function* () {
     const plaintext = new TextEncoder().encode(md);
-    const buf_ciphertext = yield window.crypto.subtle.encrypt({ name: "AES-CBC", iv: new Uint8Array(16) }, yield _getAesKey(secret), plaintext);
+    const iv = window.crypto.getRandomValues(new Uint8Array(16));
+    const buf_ciphertext = yield window.crypto.subtle.encrypt({ name: "AES-GCM", iv }, yield _getAesGcmKey(secret), plaintext);
     const ciphertext = arrayBufferToBase64(buf_ciphertext);
-    const buf_hmac = yield window.crypto.subtle.sign({ name: "HMAC", hash: "SHA-256" }, yield _getSignKey(secret), buf_ciphertext);
-    const hmac = arrayBufferToBase64(buf_hmac);
-    return { ciphertext, hmac };
+    return { ciphertext, iv: arrayBufferToBase64(iv) };
   });
 }
 function arrayBufferToBase64(buffer) {
   return window.btoa(String.fromCharCode(...new Uint8Array(buffer)));
 }
-function _getAesKey(secret) {
-  return window.crypto.subtle.importKey("raw", secret, { name: "AES-CBC", length: 256 }, false, ["encrypt", "decrypt"]);
-}
-function _getSignKey(secret) {
-  return window.crypto.subtle.importKey("raw", secret, { name: "HMAC", hash: "SHA-256" }, false, ["sign", "verify"]);
+function _getAesGcmKey(secret) {
+  return window.crypto.subtle.importKey("raw", secret, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
 }
 
 // src/crypto/encryption.ts
-function encryptMarkdown(plaintext) {
+function encryptString2(plaintext) {
   return __async(this, null, function* () {
     const key = yield generateRandomKey();
-    const { ciphertext, hmac } = yield encryptString(plaintext, key);
-    return { ciphertext, hmac, key: masterKeyToString(key).slice(0, 43) };
+    const { ciphertext, iv } = yield encryptString(plaintext, key);
+    return { ciphertext, iv, key: masterKeyToString(key).slice(0, 43) };
   });
 }
 
@@ -3818,17 +3813,22 @@ var NoteSharingService = class {
     this._userId = userId;
     this._pluginVersion = pluginVersion;
   }
-  shareNote(mdText) {
+  shareNote(body, options) {
     return __async(this, null, function* () {
-      mdText = this.sanitizeNote(mdText);
-      const cryptData = yield encryptMarkdown(mdText);
-      const res = yield this.postNote(cryptData.ciphertext, cryptData.hmac);
-      res.view_url += `#${cryptData.key}`;
+      body = this.sanitizeNote(body);
+      const jsonPayload = {
+        body,
+        title: options == null ? void 0 : options.title
+      };
+      const stringPayload = JSON.stringify(jsonPayload);
+      const { ciphertext, iv, key } = yield encryptString2(stringPayload);
+      const res = yield this.postNote(ciphertext, iv);
+      res.view_url += `#${key}`;
       console.log(`Note shared: ${res.view_url}`);
       return res;
     });
   }
-  postNote(ciphertext, hmac) {
+  postNote(ciphertext, iv) {
     return __async(this, null, function* () {
       const res = yield (0, import_obsidian.requestUrl)({
         url: `${this._url}/api/note`,
@@ -3836,10 +3836,10 @@ var NoteSharingService = class {
         contentType: "application/json",
         body: JSON.stringify({
           ciphertext,
-          hmac,
+          iv,
           user_id: this._userId,
           plugin_version: this._pluginVersion,
-          crypto_version: "v2"
+          crypto_version: "v3"
         })
       });
       if (res.status == 200 && res.json != null) {
@@ -4151,14 +4151,17 @@ function generateId() {
 var DEFAULT_SETTINGS = {
   serverUrl: "https://noteshare.space",
   selfHosted: false,
-  anonymousUserId: generateId()
+  anonymousUserId: generateId(),
+  useFrontmatter: true,
+  frontmatterDateFormat: "YYYY-MM-DD HH:mm:ss",
+  shareFilenameAsTitle: true
 };
 
 // src/obsidian/SettingsTab.ts
 var import_obsidian2 = __toModule(require("obsidian"));
 var SettingsTab = class extends import_obsidian2.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
+  constructor(app2, plugin) {
+    super(app2, plugin);
     this.plugin = plugin;
     this.hideSelfHosted = !plugin.settings.selfHosted;
   }
@@ -4176,7 +4179,7 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
       yield this.plugin.saveSettings();
     })));
     this.selfHostSettings = containerEl.createDiv();
-    this.selfHostSettings.createEl("h3", { text: "Self-hosting options" });
+    this.selfHostSettings.createEl("h2", { text: "Self-hosting options" });
     new import_obsidian2.Setting(this.selfHostSettings).setName("Server URL").setDesc("Server URL hosting the encrypted notes. For more information about self-hosting, see https://github.com/mcndt/noteshare.space#deployment").addText((text2) => {
       this.selfHostedUrl = text2;
       text2.setPlaceholder("enter URL").setValue(this.plugin.settings.serverUrl).onChange((value) => __async(this, null, function* () {
@@ -4185,9 +4188,29 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
       }));
     });
     this.showSelfhostedSettings(this.plugin.settings.selfHosted);
+    containerEl.createEl("h2", { text: "Sharing options" });
+    new import_obsidian2.Setting(containerEl).setName("Share filename as note title").setDesc(`Use the filename as the title of the note (like "Show inline title" in Obsidian's appearance settings). If unchecked, the title will be the first heading in the note.`).addToggle((text2) => text2.setValue(this.plugin.settings.shareFilenameAsTitle).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.shareFilenameAsTitle = value;
+      yield this.plugin.saveSettings();
+    })));
+    containerEl.createEl("h2", { text: "Frontmatter options" });
+    new import_obsidian2.Setting(containerEl).setName("Use frontmatter").setDesc("Use frontmatter to store the QuickShare URL and share date after sharing.").addToggle((text2) => text2.setValue(this.plugin.settings.useFrontmatter).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.useFrontmatter = value;
+      yield this.plugin.saveSettings();
+      this.showFrontmatterSettings(this.plugin.settings.useFrontmatter);
+    })));
+    this.frontmatterSettings = containerEl.createDiv();
+    new import_obsidian2.Setting(this.frontmatterSettings).setName("Frontmatter date format").setDesc("See https://momentjs.com/docs/#/displaying/format/ for formatting options.").addMomentFormat((text2) => text2.setDefaultFormat(DEFAULT_SETTINGS.frontmatterDateFormat).setValue(this.plugin.settings.frontmatterDateFormat).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.frontmatterDateFormat = value;
+      yield this.plugin.saveSettings();
+    })));
+    this.showFrontmatterSettings(this.plugin.settings.useFrontmatter);
   }
   showSelfhostedSettings(show) {
     this.selfHostSettings.hidden = !show;
+  }
+  showFrontmatterSettings(show) {
+    this.frontmatterSettings.hidden = !show;
   }
 };
 
@@ -4700,7 +4723,57 @@ var SharedNoteSuccessModal = class extends import_obsidian3.Modal {
   }
 };
 
+// src/obsidian/Frontmatter.ts
+var keyTypetoFrontmatterKey = {
+  url: "quickshare-url",
+  datetime: "quickshare-date"
+};
+function _getFrontmatterKey(file, key, app2) {
+  const fmCache = app2.metadataCache.getFileCache(file).frontmatter;
+  return (fmCache == null ? void 0 : fmCache[keyTypetoFrontmatterKey[key]]) || void 0;
+}
+function _setFrontmatterKey(file, key, value, content) {
+  if (_getFrontmatterKey(file, key, app) === value) {
+    console.log("returning");
+    return;
+  }
+  if (_getFrontmatterKey(file, key, app) !== void 0) {
+    content = content.replace(new RegExp(`^(${keyTypetoFrontmatterKey[key]}):\\s*(.*)$`, "m"), `${keyTypetoFrontmatterKey[key]}: ${value}`);
+  } else {
+    if (content.match(/^---/)) {
+      content = content.replace(/^---/, `---
+${keyTypetoFrontmatterKey[key]}: ${value}`);
+    } else {
+      content = `---
+${keyTypetoFrontmatterKey[key]}: ${value}
+---
+${content}`;
+    }
+  }
+  return content;
+}
+function _setFrontmatterKeys(file, records, app2) {
+  return __async(this, null, function* () {
+    let content = yield app2.vault.read(file);
+    for (const [key, value] of Object.entries(records)) {
+      if (_getFrontmatterKey(file, key, app2) !== value) {
+        content = _setFrontmatterKey(file, key, value, content);
+      }
+    }
+    app2.vault.modify(file, content);
+  });
+}
+function useFrontmatterHelper(app2) {
+  const getFrontmatterKey = (file, key) => _getFrontmatterKey(file, key, app2);
+  const setFrontmatterKeys = (file, records) => _setFrontmatterKeys(file, records, app2);
+  return {
+    getFrontmatterKey,
+    setFrontmatterKeys
+  };
+}
+
 // main.ts
+var import_moment3 = __toModule(require_moment());
 var NoteSharingPlugin = class extends import_obsidian4.Plugin {
   onload() {
     return __async(this, null, function* () {
@@ -4738,7 +4811,7 @@ var NoteSharingPlugin = class extends import_obsidian4.Plugin {
           return false;
         if (checking)
           return true;
-        this.shareNote(activeView.getViewData());
+        this.shareNote(activeView.file);
       }
     });
   }
@@ -4748,14 +4821,24 @@ var NoteSharingPlugin = class extends import_obsidian4.Plugin {
         item.setIcon("paper-plane-glyph");
         item.setTitle("Create share link");
         item.onClick((evt) => __async(this, null, function* () {
-          this.shareNote(yield this.app.vault.read(file));
+          this.shareNote(file);
         }));
       });
     }
   }
-  shareNote(mdText) {
+  shareNote(file) {
     return __async(this, null, function* () {
-      this.noteSharingService.shareNote(mdText).then((res) => {
+      const { setFrontmatterKeys } = useFrontmatterHelper(this.app);
+      const body = yield this.app.vault.read(file);
+      const title = this.settings.shareFilenameAsTitle ? file.basename : void 0;
+      this.noteSharingService.shareNote(body, { title }).then((res) => {
+        if (this.settings.useFrontmatter) {
+          const datetime = (0, import_moment3.default)(new Date()).format(this.settings.frontmatterDateFormat || DEFAULT_SETTINGS.frontmatterDateFormat);
+          setFrontmatterKeys(file, {
+            url: `"${res.view_url}"`,
+            datetime
+          });
+        }
         new SharedNoteSuccessModal(this, res.view_url, res.expire_time).open();
       }).catch((err) => {
         console.error(err);

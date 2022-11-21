@@ -19,8 +19,10 @@
             "id": "1954b6dc77ef1ea9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "mindmapview",
+              "state": {
+                "file": "03-cla/c-cym-mindMap.md"
+              }
             }
           }
         ],
@@ -98,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-cla/c-cym-mindMap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03-cla/c-cym-mindMap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "03-cla/c-cym-mindMap.md"
+              }
             }
           },
           {
@@ -166,6 +172,8 @@
   },
   "active": "1954b6dc77ef1ea9",
   "lastOpenFiles": [
+    "03-cla/c-cym01-presentación.md",
+    "03-cla/c-cym-mindMap.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym07-hydra.md",
     "01-proj/ancarola/Generador de Melodías Random 2.md",

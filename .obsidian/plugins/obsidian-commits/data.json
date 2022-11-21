@@ -731,22 +731,22 @@
     },
     "03-cla/c-cym07-networking.md": {
       "size": 907,
-      "tags": 0,
+      "tags": 7,
       "links": 0
     },
     "03-cla/c-cym09-hydra+tone.js.md": {
       "size": 866,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     },
     "03-cla/c-cym10&11-generative&Aframe.md": {
       "size": 7436,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 2
     },
     "03-cla/c-cym12-Aframe.md": {
       "size": 1277,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     }
   },
@@ -754,7 +754,7 @@
     "/": {
       "Refactor": 18,
       "Create": 75,
-      "Link": 47,
+      "Link": 52,
       "Expand": 1
     }
   },
@@ -780,7 +780,7 @@
       "17": 1,
       "18": 0,
       "19": 0,
-      "20": 22,
+      "20": 27,
       "21": 2,
       "22": 0,
       "23": 0
@@ -789,7 +789,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 0,
-      "Tue": 133,
+      "Tue": 138,
       "Wed": 6,
       "Thu": 2,
       "Fri": 0,
@@ -892,7 +892,11 @@
         "<a class=\"internal-link\" href=\"image/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra+p5.js.md\"> c-cym08-hydra+p5.js </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-networking.md\"> c-cym07-networking </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -926,7 +930,8 @@
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": [
