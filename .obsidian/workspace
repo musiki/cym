@@ -20,10 +20,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00-in/prg-22.md",
+            "file": "01-proj/lopez/helloworld.md",
             "mode": "source",
             "backlinks": false,
-            "source": true
+            "source": false
           }
 >>>>>>> origin/main
         }
@@ -138,8 +138,12 @@
               "type": "backlink",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 "file": "00-in/prg-22.md",
+>>>>>>> origin/main
+=======
+                "file": "01-proj/lopez/helloworld.md",
 >>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
@@ -162,8 +166,12 @@
               "type": "outgoing-link",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 "file": "00-in/prg-22.md",
+>>>>>>> origin/main
+=======
+                "file": "01-proj/lopez/helloworld.md",
 >>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
@@ -202,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/prg-22.md"
+                "file": "01-proj/lopez/helloworld.md"
               }
             }
           },
@@ -235,6 +243,7 @@
     "collapsed": true
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "active": "249d89666687bd07",
   "lastOpenFiles": [
     "03-cla/c-cym07-hydra.md",
@@ -243,7 +252,11 @@
     "01-proj/ancarola/Generador de Melodías Random.md"
 =======
   "active": "58a6bf3eeea06c75",
+=======
+  "active": "9be5806cd330d2d4",
+>>>>>>> origin/main
   "lastOpenFiles": [
+    "00-in/prg-22.md",
     "02-mat/tone.js.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym07-networking.md",
@@ -252,8 +265,12 @@
     "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym05-flex-grid.md",
+<<<<<<< HEAD
     "03-cla/c-cym04-integración 1.md",
     "03-cla/c-cym04-integración.md"
+>>>>>>> origin/main
+=======
+    "03-cla/c-cym04-integración 1.md"
 >>>>>>> origin/main
   ]
 }

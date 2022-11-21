@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "06155fffeb6c2afa",
+    "type": "split",
+    "children": [
+      {
+        "id": "9afe49079bfea73e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9be5806cd330d2d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/prg-22.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9a38a15484a45289",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Buttons 1.0 is Coming.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "117928a2398ce6d7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "dd2a452db0f43d5c",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "83b7e6c240438f76",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "553df2fcccd1aa87",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "4cfb82064f9498af",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "right": {
+    "id": "b42fbfc19da22536",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "65b62cbea7281bcf",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "52df5688f893ea5c",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Buttons 1.0 is Coming.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "689d5988f6115f09",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Buttons 1.0 is Coming.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b5d89bfd42d00b7e",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Buttons 1.0 is Coming.md"
+          }
+        }
+      },
+      {
+        "id": "ae739008ff4a8207",
+        "type": "leaf",
+        "state": {
+          "type": "juggl_nodes",
+          "state": {}
+        }
+      },
+      {
+        "id": "f2c952c95610061e",
+        "type": "leaf",
+        "state": {
+          "type": "juggl_style",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "9a38a15484a45289",
+  "lastOpenFiles": [
+    "00-in/prg-22.md",
+    "02-mat/tone.js.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym07-networking.md",
+    "README.md",
+    "new Tendencies.md",
+    "lwe.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym04-integración 1.md"
+  ]
+}
