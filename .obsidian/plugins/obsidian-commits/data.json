@@ -508,12 +508,22 @@
       "size": 9705,
       "tags": 7,
       "links": 8
+    },
+    "03-cla/c-cym-mindMap 1.md": {
+      "size": 8470,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
+      "size": 1501,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 18,
-      "Create": 12,
+      "Refactor": 19,
+      "Create": 15,
       "Link": 6,
       "Expand": 11
     }
@@ -532,7 +542,7 @@
       "9": 0,
       "10": 0,
       "11": 0,
-      "12": 0,
+      "12": 4,
       "13": 0,
       "14": 0,
       "15": 2,
@@ -548,7 +558,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 12,
+      "Mon": 16,
       "Tue": 8,
       "Wed": 0,
       "Thu": 0,
@@ -584,7 +594,10 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap 1.md\"> c-cym-mindMap 1 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -613,7 +626,8 @@
         "<a class=\"internal-link\" href=\"01-proj/ancarola/c-cym04-integración.md\"> c-cym04-integración </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
