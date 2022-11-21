@@ -294,11 +294,6 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym03- cohesión audivisual.md": {
-      "size": 9705,
-      "tags": 7,
-      "links": 8
-    },
     "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md": {
       "size": 5526,
       "tags": 2,
@@ -508,11 +503,16 @@
       "size": 0,
       "tags": 6,
       "links": 0
+    },
+    "03-cla/c-cym03- cohesión audiovisual.md": {
+      "size": 9705,
+      "tags": 7,
+      "links": 8
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 17,
+      "Refactor": 18,
       "Create": 12,
       "Link": 6,
       "Expand": 11
@@ -540,7 +540,7 @@
       "17": 4,
       "18": 17,
       "19": 2,
-      "20": 0,
+      "20": 1,
       "21": 2,
       "22": 0,
       "23": 0
@@ -549,7 +549,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 12,
-      "Tue": 7,
+      "Tue": 8,
       "Wed": 0,
       "Thu": 0,
       "Fri": 0,
@@ -593,7 +593,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c.md\"> c </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-.md\"> c- </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-c.md\"> c-c </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",
