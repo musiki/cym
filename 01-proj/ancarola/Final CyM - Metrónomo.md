@@ -1,4 +1,4 @@
-Buenos días. Entrego el final.
+Buenas tardes. Entrego el final.
 
 Adjunto el proyectual y un link a codepen sobre lo que estuve trabajando.
 
