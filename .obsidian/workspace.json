@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a0879bccfe8b03cd",
+        "id": "f69c826ea3af2236",
         "type": "tabs",
         "children": [
           {
-            "id": "fc0df3b0f96c147e",
+            "id": "7c68f28d0106a4c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -159,8 +159,9 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "fc0df3b0f96c147e",
+  "active": "7c68f28d0106a4c6",
   "lastOpenFiles": [
+    "README.md",
     "01-proj/22/lopez/tp-01-topoi.md",
     "01-proj/22/lopez/helloworld.md",
     "01-proj/22/lopez/03-Máquina de ritmos.md",
@@ -182,7 +183,6 @@
     "01-proj/untitled folder",
     "03-cla/c-cym03- cohesión audivisual.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "README.md",
     "04-ref/obras/ref música extendida.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "04-ref/obras/o-Boid Simulation.md",
