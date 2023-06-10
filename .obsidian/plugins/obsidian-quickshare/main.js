@@ -6316,7 +6316,7 @@ var QuickShareSideView_default = QuickShareSideView;
 var _QuickShareSideView = class extends import_obsidian6.ItemView {
   constructor(leaf) {
     super(leaf);
-    this.navigation = true;
+    this.navigation = false;
   }
   onOpen() {
     return __async(this, null, function* () {

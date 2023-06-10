@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "21014af4e9464486",
+    "id": "06155fffeb6c2afa",
     "type": "split",
     "children": [
       {
-        "id": "5a131195d7fb2d9f",
+        "id": "a0879bccfe8b03cd",
         "type": "tabs",
         "children": [
           {
-            "id": "249d89666687bd07",
+            "id": "fc0df3b0f96c147e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/ancarola/Final CyM - Metrónomo.md",
+                "file": "README.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -26,15 +26,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "031470ee8fb1135e",
+    "id": "b602c04a731b296c",
     "type": "split",
     "children": [
       {
-        "id": "87e6b0a7e57f4604",
+        "id": "af95db91370f3ee0",
         "type": "tabs",
         "children": [
           {
-            "id": "e91482535306e58e",
+            "id": "58a6bf3eeea06c75",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "557689b59bfd69dc",
+            "id": "9c932be67380cd5c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,10 +59,18 @@
             }
           },
           {
-            "id": "bc8022fe85e3e935",
+            "id": "d0b6cdf86fad9d2c",
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "74b08449f93c0350",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -70,18 +78,29 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "c8a970a40c645b36",
+    "id": "f8c878636ee6998f",
     "type": "split",
     "children": [
       {
-        "id": "f2184bf680f8adcb",
+        "id": "aaca835876e592bb",
         "type": "tabs",
         "children": [
           {
-            "id": "033c3fc42d342373",
+            "id": "20c732dc2cc0ecaf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "0e7331fdb79d0276",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -89,57 +108,17 @@
             }
           },
           {
-            "id": "12aa887a7f694fba",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "01-proj/ancarola/Final CyM - Metrónomo.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "87f55078bbb95fe1",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "01-proj/ancarola/Final CyM - Metrónomo.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "05399686fc26f8fb",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "58799109e8a5a4e9",
+            "id": "8c7ec6495dcddec6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/ancarola/Final CyM - Metrónomo.md"
+                "file": "README.md"
               }
             }
           },
           {
-            "id": "be91cc8dd4ce83be",
+            "id": "ce7c3311228e6e89",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -147,40 +126,81 @@
             }
           },
           {
-            "id": "aeba09e642f32c10",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {}
-            }
-          },
-          {
-            "id": "3ca25ac3787a7ef4",
+            "id": "055fb9ac87c85faf",
             "type": "leaf",
             "state": {
               "type": "QUICKSHARE_SIDE_VIEW",
               "state": {}
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
-  "active": "249d89666687bd07",
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
+      "juggl:Juggl global graph": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian-metatable:Metatable": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "notion-like-tables:Create Notion-Like table": false,
+      "dbfolder:Create a new database table": false,
+      "copilot:Copilot Chat": false
+    }
+  },
+  "active": "fc0df3b0f96c147e",
   "lastOpenFiles": [
-    "01-proj/ancarola/Final CyM - Metrónomo.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym-mindMap 1.md",
-    "03-cla/c-cym-mindMap.md",
-    "03-cla/c-cym01-presentación.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "Buttons 1.0 is Coming.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+    "01-proj/22/lopez/tp-01-topoi.md",
+    "01-proj/22/lopez/helloworld.md",
+    "01-proj/22/lopez/03-Máquina de ritmos.md",
+    "01-proj/22/lopez/02-Melodia.md",
+    "01-proj/22/lopez/01-Azar.md",
+    "01-proj/22/lopez",
+    "01-proj/22/gutierrez/Generador de melodía.md",
+    "01-proj/22/gutierrez",
+    "01-proj/22/cymproj/webgl/3js01/index.html",
+    "01-proj/22/cymproj/webgl/3js01",
+    "01-proj/22/cymproj/webgl",
+    "01-proj/22/cymproj",
+    "01-proj/22/ancarola/tp-01-topoi.md",
+    "01-proj/22/ancarola/Hola Sonido.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "01-proj/22/ancarola",
+    "01-proj/22",
+    "01-proj/untitled folder",
+    "03-cla/c-cym03- cohesión audivisual.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym05-flex-grid.md"
+    "README.md",
+    "04-ref/obras/ref música extendida.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "04-ref/obras/o-Boid Simulation.md",
+    "image/TP1-Topoi-1663103377102.jpeg",
+    "image/TP1-Topoi-1663103377085.jpeg",
+    "2023-06-10.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "01-proj/gutierrez/Generador de melodía.md",
+    "01-proj/ancarola/tp-01-topoi.md",
+    "01-proj/ancarola/Hola Sonido.md",
+    "01-proj/ancarola/Generador de Melodías Random.md",
+    "01-proj/ancarola/Generador de Melodías Random 2.md",
+    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
+    "01-proj/ancarola/Final CyM - Metrónomo.md",
+    "00-in/combinational creativity.md",
+    "01-proj/lopez",
+    "Untitled.canvas",
+    "03-cla/cym-map.canvas",
+    "image/meta-aprendizaje-1660395828475.jpeg"
   ]
 }
