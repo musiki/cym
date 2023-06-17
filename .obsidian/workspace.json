@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f69c826ea3af2236",
+        "id": "e62fba641b8c2d74",
         "type": "tabs",
         "children": [
           {
-            "id": "7c68f28d0106a4c6",
+            "id": "74a40f4a043b811d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 231.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -132,6 +132,43 @@
               "type": "QUICKSHARE_SIDE_VIEW",
               "state": {}
             }
+          },
+          {
+            "id": "144c44b7b3935a93",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2ee534ce5bfe466f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a65edfe6299e1c7f",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
           }
         ]
       }
@@ -159,8 +196,25 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "7c68f28d0106a4c6",
+  "active": "74a40f4a043b811d",
   "lastOpenFiles": [
+    "04-ref/templates/t-topoi.md",
+    "04-ref/db/referencias.md",
+    "04-ref/db/personas.md",
+    "04-ref/db/obras.md",
+    "04-ref/topoi/t11-sistemas de universos.md",
+    "04-ref/db/topoi.md",
+    "04-ref/topoi/t32-azar.md",
+    "04-ref/templates/t-bibliografía.md",
+    "04-ref/bibliografía/b-Los condenados de la pantalla.md",
+    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md",
+    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md",
+    "04-ref/a-dataview playground.md",
+    "04-ref/a-yuda.md",
+    "04-ref/templater.md",
+    "00-in/combinational creativity.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/prg-22.md",
     "README.md",
     "01-proj/22/lopez/tp-01-topoi.md",
     "01-proj/22/lopez/helloworld.md",
@@ -176,28 +230,11 @@
     "01-proj/22/cymproj",
     "01-proj/22/ancarola/tp-01-topoi.md",
     "01-proj/22/ancarola/Hola Sonido.md",
-    "01-proj/22/ancarola/Generador de Melodías Random.md",
-    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "01-proj/22/ancarola",
     "01-proj/22",
     "01-proj/untitled folder",
-    "03-cla/c-cym03- cohesión audivisual.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "04-ref/obras/ref música extendida.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "04-ref/obras/o-Boid Simulation.md",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
-    "2023-06-10.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "01-proj/gutierrez/Generador de melodía.md",
-    "01-proj/ancarola/tp-01-topoi.md",
-    "01-proj/ancarola/Hola Sonido.md",
-    "01-proj/ancarola/Generador de Melodías Random.md",
-    "01-proj/ancarola/Generador de Melodías Random 2.md",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "01-proj/ancarola/Final CyM - Metrónomo.md",
-    "00-in/combinational creativity.md",
     "01-proj/lopez",
     "Untitled.canvas",
     "03-cla/cym-map.canvas",
