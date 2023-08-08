@@ -13,23 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym04-integración.md",
-                "mode": "source",
+                "file": "01-proj/22/gutierrez/Generador de melodía.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
-          },
-          {
-            "id": "a7262985c67346b5",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 250.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -121,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/22/gutierrez/Generador de melodía.md"
+              }
             }
           },
           {
@@ -138,6 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/22/gutierrez/Generador de melodía.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "01-proj/22/gutierrez/Generador de melodía.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,34 +180,35 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "a7262985c67346b5",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "04-ref/topoi/t10-método científico.md",
+    "01-proj/23/beltrame",
+    "01-proj/23",
     "README.md",
+    "Untitled.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym04-integración.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym06-un instrumento online colectivo.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "04-ref/topoi/t12-filosofía 21.md",
+    "03-cla/c-cym01-presentación.md",
+    "hd-hydra.md",
+    "04-ref/topoi/t60-espacio.md",
+    "04-ref/topoi/t10-método científico.md",
+    "04-ref/topoi/t11-sistemas de universos.md",
     "02-mat/python/py-foundations.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
     "02-mat/rant.md",
     "01-proj/todo.md",
     "00-in/combinational creativity.md",
     "00-in/meta-aprendizaje.md",
     "00-in/prg-23.md",
-    "04-ref/topoi/t60-espacio.md",
-    "04-ref/topoi/t12-filosofía 21.md",
     "03-cla/c-cym03- cohesión audivisual.md",
     "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/2023-08-30.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym01-presentación.md",
-    "02-mat/que es git.md",
-    "02-mat/html.md",
-    "04-ref/topoi/t61-virtualidad y realidad.md",
-    "crisis de la representación.md",
-    "03-cla/c-cym04-integración.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym05-flex-grid.md",
     "01-proj/22/lopez",
     "01-proj/22/gutierrez",
     "01-proj/22/cymproj/webgl/3js01/index.html",
@@ -224,7 +220,6 @@
     "01-proj/untitled folder",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
-    "01-proj/lopez",
     "Untitled.canvas",
     "03-cla/cym-map.canvas",
     "image/meta-aprendizaje-1660395828475.jpeg"

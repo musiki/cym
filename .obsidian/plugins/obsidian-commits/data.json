@@ -523,12 +523,17 @@
       "size": 50,
       "tags": 1,
       "links": 0
+    },
+    "hd-hydra.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 22,
-      "Create": 21,
+      "Refactor": 23,
+      "Create": 23,
       "Link": 10,
       "Expand": 2
     }
@@ -549,7 +554,7 @@
       "11": 6,
       "12": 32,
       "13": 2,
-      "14": 11,
+      "14": 12,
       "15": 0,
       "16": 3,
       "17": 0,
@@ -558,13 +563,13 @@
       "20": 0,
       "21": 0,
       "22": 0,
-      "23": 0
+      "23": 2
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 15,
-      "Tue": 4,
+      "Tue": 7,
       "Wed": 3,
       "Thu": 0,
       "Fri": 0,
@@ -599,6 +604,8 @@
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/helloworld.md\"> helloworld </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
@@ -631,7 +638,8 @@
         "<a class=\"internal-link\" href=\"01-proj/lopez/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap 1.md\"> c-cym-mindMap 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>"
+        "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

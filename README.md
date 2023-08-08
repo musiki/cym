@@ -32,11 +32,11 @@ l
 email: lazzigotti@untref.edu.ar
 musiki v1: https://musiki.org.ar
 edu:  https://edu.musiki.org
-canal de discord: https://discord.gg/4dy2DS4
-github-repo: https://github.com/musiki/cym
-github-classroom: https://classroom.github.com/classrooms/46442123-musiki-cym
+[canal de discord](https://discord.gg/4dy2DS4)
+[github-repo](https://github.com/musiki/cym)
+[github-classroom](https://classroom.github.com/classrooms/46442123-musiki-cym)
 [carpeta púb](https://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
-[repositorio](https://drive.google.com/open?id=1up44v6FjRk4oujegZqF23ur7MdvH34_l&authuser=lazzigotti%40untref.edu.ar&usp=drive_fs)
+[repositorio](https://drive.google.com/drive/folders/1EsKeSeZXuxzBEJaqz91ZjhPcRBii8m9v?usp=sharing)
 
 ---
 
