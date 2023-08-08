@@ -33,6 +33,7 @@ If your plugin does not need CSS, delete this file.
   padding: 8px 8px 0;
   order: 1;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .icon-scaler {
@@ -124,7 +125,7 @@ If your plugin does not need CSS, delete this file.
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-size: 14px;
+  font-size: calc(var(--font-text-size) - 2px);
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin-top: auto;

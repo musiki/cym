@@ -14,8 +14,6 @@ UNTREF | CYM22 | 09
 <iframe height="600" width="800" src="https://hydra.ojack.xyz/?sketch_id=r0XuPfXjThcTefyX" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 
-
-
 ### Tone.Part
 ```js
 const synth = new Tone.Synth().toDestination();

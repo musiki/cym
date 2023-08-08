@@ -1,4 +1,18 @@
+---
+institución: Universidad Nacional de Tres de Febrero
+carrera: Licenciatura en Música
+cátedra: "Ciencia y Música"
+código: 900
+sigla: CYM
+titular: Luciano Azzigotti
+ayudante: Carolina Di Paola
+año: 2023
+aula: Taller de tecnología musical
+horario: Martes de 18:00 a 22:00
+---
+
 ![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
+
 # Ciencia  y Música
 este es el repositorio de la cátedra de ciencia y música de la licenciatura en música de la universidad nacional de tres de febrero
 
@@ -21,7 +35,7 @@ edu:  https://edu.musiki.org
 canal de discord: https://discord.gg/4dy2DS4
 github-repo: https://github.com/musiki/cym
 github-classroom: https://classroom.github.com/classrooms/46442123-musiki-cym
-[carpeta púb](ttps://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
+[carpeta púb](https://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
 [repositorio](https://drive.google.com/open?id=1up44v6FjRk4oujegZqF23ur7MdvH34_l&authuser=lazzigotti%40untref.edu.ar&usp=drive_fs)
 
 ---
@@ -54,6 +68,8 @@ Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por aso
 - semana 12: hydra, p5, mozilla hubs.
 - semana 13: funciones y diseño de patrones.
 - semana 14: entrega proyecto final.
+
+
 # Objetivos del Curso
 
 - pensar y crear el futuro de la música.
@@ -113,6 +129,12 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 *Mapeos
 *Generatividad
 *Diccionarios y traducciones
+
+## Clases
+```query
+tag: #class
+```
+
 
 ## Trabajos Prácticos
 ```dataview

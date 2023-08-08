@@ -1104,7 +1104,7 @@ var require_enc_base64 = __commonJS({
           stringify: function(wordArray) {
             var words = wordArray.words;
             var sigBytes = wordArray.sigBytes;
-            var map = this._map;
+            var map2 = this._map;
             wordArray.clamp();
             var base64Chars = [];
             for (var i = 0; i < sigBytes; i += 3) {
@@ -1113,10 +1113,10 @@ var require_enc_base64 = __commonJS({
               var byte3 = words[i + 2 >>> 2] >>> 24 - (i + 2) % 4 * 8 & 255;
               var triplet = byte1 << 16 | byte2 << 8 | byte3;
               for (var j = 0; j < 4 && i + j * 0.75 < sigBytes; j++) {
-                base64Chars.push(map.charAt(triplet >>> 6 * (3 - j) & 63));
+                base64Chars.push(map2.charAt(triplet >>> 6 * (3 - j) & 63));
               }
             }
-            var paddingChar = map.charAt(64);
+            var paddingChar = map2.charAt(64);
             if (paddingChar) {
               while (base64Chars.length % 4) {
                 base64Chars.push(paddingChar);
@@ -1139,15 +1139,15 @@ var require_enc_base64 = __commonJS({
            */
           parse: function(base64Str) {
             var base64StrLength = base64Str.length;
-            var map = this._map;
+            var map2 = this._map;
             var reverseMap = this._reverseMap;
             if (!reverseMap) {
               reverseMap = this._reverseMap = [];
-              for (var j = 0; j < map.length; j++) {
-                reverseMap[map.charCodeAt(j)] = j;
+              for (var j = 0; j < map2.length; j++) {
+                reverseMap[map2.charCodeAt(j)] = j;
               }
             }
-            var paddingChar = map.charAt(64);
+            var paddingChar = map2.charAt(64);
             if (paddingChar) {
               var paddingIndex = base64Str.indexOf(paddingChar);
               if (paddingIndex !== -1) {
@@ -1214,7 +1214,7 @@ var require_enc_base64url = __commonJS({
           stringify: function(wordArray, urlSafe = true) {
             var words = wordArray.words;
             var sigBytes = wordArray.sigBytes;
-            var map = urlSafe ? this._safe_map : this._map;
+            var map2 = urlSafe ? this._safe_map : this._map;
             wordArray.clamp();
             var base64Chars = [];
             for (var i = 0; i < sigBytes; i += 3) {
@@ -1223,10 +1223,10 @@ var require_enc_base64url = __commonJS({
               var byte3 = words[i + 2 >>> 2] >>> 24 - (i + 2) % 4 * 8 & 255;
               var triplet = byte1 << 16 | byte2 << 8 | byte3;
               for (var j = 0; j < 4 && i + j * 0.75 < sigBytes; j++) {
-                base64Chars.push(map.charAt(triplet >>> 6 * (3 - j) & 63));
+                base64Chars.push(map2.charAt(triplet >>> 6 * (3 - j) & 63));
               }
             }
-            var paddingChar = map.charAt(64);
+            var paddingChar = map2.charAt(64);
             if (paddingChar) {
               while (base64Chars.length % 4) {
                 base64Chars.push(paddingChar);
@@ -1251,15 +1251,15 @@ var require_enc_base64url = __commonJS({
            */
           parse: function(base64Str, urlSafe = true) {
             var base64StrLength = base64Str.length;
-            var map = urlSafe ? this._safe_map : this._map;
+            var map2 = urlSafe ? this._safe_map : this._map;
             var reverseMap = this._reverseMap;
             if (!reverseMap) {
               reverseMap = this._reverseMap = [];
-              for (var j = 0; j < map.length; j++) {
-                reverseMap[map.charCodeAt(j)] = j;
+              for (var j = 0; j < map2.length; j++) {
+                reverseMap[map2.charCodeAt(j)] = j;
               }
             }
-            var paddingChar = map.charAt(64);
+            var paddingChar = map2.charAt(64);
             if (paddingChar) {
               var paddingIndex = base64Str.indexOf(paddingChar);
               if (paddingIndex !== -1) {
@@ -5394,14 +5394,277 @@ var require_crypto_js = __commonJS({
   }
 });
 
+// node_modules/decamelize/index.js
+var require_decamelize = __commonJS({
+  "node_modules/decamelize/index.js"(exports, module2) {
+    "use strict";
+    module2.exports = function(str2, sep) {
+      if (typeof str2 !== "string") {
+        throw new TypeError("Expected a string");
+      }
+      sep = typeof sep === "undefined" ? "_" : sep;
+      return str2.replace(/([a-z\d])([A-Z])/g, "$1" + sep + "$2").replace(/([A-Z]+)([A-Z][a-z\d]+)/g, "$1" + sep + "$2").toLowerCase();
+    };
+  }
+});
+
+// node_modules/langchain/node_modules/camelcase/index.js
+var require_camelcase = __commonJS({
+  "node_modules/langchain/node_modules/camelcase/index.js"(exports, module2) {
+    "use strict";
+    var UPPERCASE = /[\p{Lu}]/u;
+    var LOWERCASE = /[\p{Ll}]/u;
+    var LEADING_CAPITAL = /^[\p{Lu}](?![\p{Lu}])/gu;
+    var IDENTIFIER = /([\p{Alpha}\p{N}_]|$)/u;
+    var SEPARATORS = /[_.\- ]+/;
+    var LEADING_SEPARATORS = new RegExp("^" + SEPARATORS.source);
+    var SEPARATORS_AND_IDENTIFIER = new RegExp(SEPARATORS.source + IDENTIFIER.source, "gu");
+    var NUMBERS_AND_IDENTIFIER = new RegExp("\\d+" + IDENTIFIER.source, "gu");
+    var preserveCamelCase = (string3, toLowerCase, toUpperCase) => {
+      let isLastCharLower = false;
+      let isLastCharUpper = false;
+      let isLastLastCharUpper = false;
+      for (let i = 0; i < string3.length; i++) {
+        const character = string3[i];
+        if (isLastCharLower && UPPERCASE.test(character)) {
+          string3 = string3.slice(0, i) + "-" + string3.slice(i);
+          isLastCharLower = false;
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = true;
+          i++;
+        } else if (isLastCharUpper && isLastLastCharUpper && LOWERCASE.test(character)) {
+          string3 = string3.slice(0, i - 1) + "-" + string3.slice(i - 1);
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = false;
+          isLastCharLower = true;
+        } else {
+          isLastCharLower = toLowerCase(character) === character && toUpperCase(character) !== character;
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = toUpperCase(character) === character && toLowerCase(character) !== character;
+        }
+      }
+      return string3;
+    };
+    var preserveConsecutiveUppercase = (input, toLowerCase) => {
+      LEADING_CAPITAL.lastIndex = 0;
+      return input.replace(LEADING_CAPITAL, (m1) => toLowerCase(m1));
+    };
+    var postProcess = (input, toUpperCase) => {
+      SEPARATORS_AND_IDENTIFIER.lastIndex = 0;
+      NUMBERS_AND_IDENTIFIER.lastIndex = 0;
+      return input.replace(SEPARATORS_AND_IDENTIFIER, (_, identifier) => toUpperCase(identifier)).replace(NUMBERS_AND_IDENTIFIER, (m) => toUpperCase(m));
+    };
+    var camelCase2 = (input, options) => {
+      if (!(typeof input === "string" || Array.isArray(input))) {
+        throw new TypeError("Expected the input to be `string | string[]`");
+      }
+      options = {
+        pascalCase: false,
+        preserveConsecutiveUppercase: false,
+        ...options
+      };
+      if (Array.isArray(input)) {
+        input = input.map((x) => x.trim()).filter((x) => x.length).join("-");
+      } else {
+        input = input.trim();
+      }
+      if (input.length === 0) {
+        return "";
+      }
+      const toLowerCase = options.locale === false ? (string3) => string3.toLowerCase() : (string3) => string3.toLocaleLowerCase(options.locale);
+      const toUpperCase = options.locale === false ? (string3) => string3.toUpperCase() : (string3) => string3.toLocaleUpperCase(options.locale);
+      if (input.length === 1) {
+        return options.pascalCase ? toUpperCase(input) : toLowerCase(input);
+      }
+      const hasUpperCase = input !== toLowerCase(input);
+      if (hasUpperCase) {
+        input = preserveCamelCase(input, toLowerCase, toUpperCase);
+      }
+      input = input.replace(LEADING_SEPARATORS, "");
+      if (options.preserveConsecutiveUppercase) {
+        input = preserveConsecutiveUppercase(input, toLowerCase);
+      } else {
+        input = toLowerCase(input);
+      }
+      if (options.pascalCase) {
+        input = toUpperCase(input.charAt(0)) + input.slice(1);
+      }
+      return postProcess(input, toUpperCase);
+    };
+    module2.exports = camelCase2;
+    module2.exports.default = camelCase2;
+  }
+});
+
+// node_modules/langchain/dist/load/map_keys.js
+function keyToJson(key, map2) {
+  return (map2 == null ? void 0 : map2[key]) || (0, import_decamelize.default)(key);
+}
+function mapKeys(fields, mapper2, map2) {
+  const mapped = {};
+  for (const key in fields) {
+    if (Object.hasOwn(fields, key)) {
+      mapped[mapper2(key, map2)] = fields[key];
+    }
+  }
+  return mapped;
+}
+var import_decamelize, import_camelcase;
+var init_map_keys = __esm({
+  "node_modules/langchain/dist/load/map_keys.js"() {
+    import_decamelize = __toESM(require_decamelize(), 1);
+    import_camelcase = __toESM(require_camelcase(), 1);
+  }
+});
+
+// node_modules/langchain/dist/load/serializable.js
+function shallowCopy(obj) {
+  return Array.isArray(obj) ? [...obj] : { ...obj };
+}
+function replaceSecrets(root2, secretsMap) {
+  const result = shallowCopy(root2);
+  for (const [path2, secretId] of Object.entries(secretsMap)) {
+    const [last, ...partsReverse] = path2.split(".").reverse();
+    let current = result;
+    for (const part of partsReverse.reverse()) {
+      if (current[part] === void 0) {
+        break;
+      }
+      current[part] = shallowCopy(current[part]);
+      current = current[part];
+    }
+    if (current[last] !== void 0) {
+      current[last] = {
+        lc: 1,
+        type: "secret",
+        id: [secretId]
+      };
+    }
+  }
+  return result;
+}
+var Serializable;
+var init_serializable = __esm({
+  "node_modules/langchain/dist/load/serializable.js"() {
+    init_map_keys();
+    Serializable = class {
+      /**
+       * A map of secrets, which will be omitted from serialization.
+       * Keys are paths to the secret in constructor args, e.g. "foo.bar.baz".
+       * Values are the secret ids, which will be used when deserializing.
+       */
+      get lc_secrets() {
+        return void 0;
+      }
+      /**
+       * A map of additional attributes to merge with constructor args.
+       * Keys are the attribute names, e.g. "foo".
+       * Values are the attribute values, which will be serialized.
+       * These attributes need to be accepted by the constructor as arguments.
+       */
+      get lc_attributes() {
+        return void 0;
+      }
+      /**
+       * A map of aliases for constructor args.
+       * Keys are the attribute names, e.g. "foo".
+       * Values are the alias that will replace the key in serialization.
+       * This is used to eg. make argument names match Python.
+       */
+      get lc_aliases() {
+        return void 0;
+      }
+      constructor(kwargs, ..._args) {
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "lc_kwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.lc_kwargs = kwargs || {};
+      }
+      toJSON() {
+        if (!this.lc_serializable) {
+          return this.toJSONNotImplemented();
+        }
+        if (
+          // eslint-disable-next-line no-instanceof/no-instanceof
+          this.lc_kwargs instanceof Serializable || typeof this.lc_kwargs !== "object" || Array.isArray(this.lc_kwargs)
+        ) {
+          return this.toJSONNotImplemented();
+        }
+        const aliases = {};
+        const secrets = {};
+        const kwargs = Object.keys(this.lc_kwargs).reduce((acc, key) => {
+          acc[key] = key in this ? this[key] : this.lc_kwargs[key];
+          return acc;
+        }, {});
+        for (let current = Object.getPrototypeOf(this); current; current = Object.getPrototypeOf(current)) {
+          Object.assign(aliases, Reflect.get(current, "lc_aliases", this));
+          Object.assign(secrets, Reflect.get(current, "lc_secrets", this));
+          Object.assign(kwargs, Reflect.get(current, "lc_attributes", this));
+        }
+        for (const key in secrets) {
+          if (key in this && this[key] !== void 0) {
+            kwargs[key] = this[key] || kwargs[key];
+          }
+        }
+        return {
+          lc: 1,
+          type: "constructor",
+          id: [...this.lc_namespace, this.constructor.name],
+          kwargs: mapKeys(Object.keys(secrets).length ? replaceSecrets(kwargs, secrets) : kwargs, keyToJson, aliases)
+        };
+      }
+      toJSONNotImplemented() {
+        return {
+          lc: 1,
+          type: "not_implemented",
+          id: [...this.lc_namespace, this.constructor.name]
+        };
+      }
+    };
+  }
+});
+
 // node_modules/langchain/dist/schema/index.js
-var RUN_KEY, BaseChatMessage, HumanChatMessage, AIChatMessage, SystemChatMessage, ChatMessage, BasePromptValue, BaseRetriever, BaseListChatMessageHistory;
+var RUN_KEY, BaseMessage, HumanMessage, AIMessage, SystemMessage, ChatMessage, BasePromptValue, BaseRetriever, BaseListChatMessageHistory;
 var init_schema = __esm({
   "node_modules/langchain/dist/schema/index.js"() {
+    init_serializable();
     RUN_KEY = "__run";
-    BaseChatMessage = class {
-      constructor(text4) {
-        Object.defineProperty(this, "text", {
+    BaseMessage = class extends Serializable {
+      /**
+       * @deprecated
+       * Use {@link BaseMessage.content} instead.
+       */
+      get text() {
+        return this.content;
+      }
+      constructor(fields, kwargs) {
+        if (typeof fields === "string") {
+          fields = { content: fields, additional_kwargs: kwargs };
+        }
+        super(fields);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "schema"]
+        });
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.defineProperty(this, "content", {
           enumerable: true,
           configurable: true,
           writable: true,
@@ -5413,58 +5676,66 @@ var init_schema = __esm({
           writable: true,
           value: void 0
         });
-        this.text = text4;
+        Object.defineProperty(this, "additional_kwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.name = fields.name;
+        this.content = fields.content;
+        this.additional_kwargs = fields.additional_kwargs || {};
       }
-      toJSON() {
+      toDict() {
         return {
           type: this._getType(),
-          data: {
-            content: this.text,
-            role: "role" in this ? this.role : void 0
-          }
+          data: this.toJSON().kwargs
         };
       }
     };
-    HumanChatMessage = class extends BaseChatMessage {
+    HumanMessage = class extends BaseMessage {
       _getType() {
         return "human";
       }
     };
-    AIChatMessage = class extends BaseChatMessage {
+    AIMessage = class extends BaseMessage {
       _getType() {
         return "ai";
       }
     };
-    SystemChatMessage = class extends BaseChatMessage {
+    SystemMessage = class extends BaseMessage {
       _getType() {
         return "system";
       }
     };
-    ChatMessage = class extends BaseChatMessage {
-      constructor(text4, role) {
-        super(text4);
+    ChatMessage = class extends BaseMessage {
+      constructor(fields, role) {
+        if (typeof fields === "string") {
+          fields = { content: fields, role };
+        }
+        super(fields);
         Object.defineProperty(this, "role", {
           enumerable: true,
           configurable: true,
           writable: true,
           value: void 0
         });
-        this.role = role;
+        this.role = fields.role;
       }
       _getType() {
         return "generic";
       }
     };
-    BasePromptValue = class {
+    BasePromptValue = class extends Serializable {
     };
     BaseRetriever = class {
     };
-    BaseListChatMessageHistory = class {
+    BaseListChatMessageHistory = class extends Serializable {
       addUserMessage(message) {
-        return this.addMessage(new HumanChatMessage(message));
+        return this.addMessage(new HumanMessage(message));
       }
       addAIChatMessage(message) {
-        return this.addMessage(new AIChatMessage(message));
+        return this.addMessage(new AIMessage(message));
       }
     };
   }
@@ -5552,12 +5823,37 @@ var BaseCallbackHandlerMethodsClass, BaseCallbackHandler;
 var init_base = __esm({
   "node_modules/langchain/dist/callbacks/base.js"() {
     init_esm_browser();
+    init_serializable();
     BaseCallbackHandlerMethodsClass = class {
     };
     BaseCallbackHandler = class extends BaseCallbackHandlerMethodsClass {
+      get lc_namespace() {
+        return ["langchain", "callbacks", this.name];
+      }
+      get lc_secrets() {
+        return void 0;
+      }
+      get lc_attributes() {
+        return void 0;
+      }
+      get lc_aliases() {
+        return void 0;
+      }
       constructor(input) {
-        var _a, _b, _c;
+        var _a, _b, _c, _d;
         super();
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "lc_kwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
         Object.defineProperty(this, "ignoreLLM", {
           enumerable: true,
           configurable: true,
@@ -5576,14 +5872,30 @@ var init_base = __esm({
           writable: true,
           value: false
         });
+        Object.defineProperty(this, "awaitHandlers", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: typeof process !== "undefined" ? (
+            // eslint-disable-next-line no-process-env
+            ((_a = process.env) == null ? void 0 : _a.LANGCHAIN_CALLBACKS_BACKGROUND) !== "true"
+          ) : true
+        });
+        this.lc_kwargs = input || {};
         if (input) {
-          this.ignoreLLM = (_a = input.ignoreLLM) != null ? _a : this.ignoreLLM;
-          this.ignoreChain = (_b = input.ignoreChain) != null ? _b : this.ignoreChain;
-          this.ignoreAgent = (_c = input.ignoreAgent) != null ? _c : this.ignoreAgent;
+          this.ignoreLLM = (_b = input.ignoreLLM) != null ? _b : this.ignoreLLM;
+          this.ignoreChain = (_c = input.ignoreChain) != null ? _c : this.ignoreChain;
+          this.ignoreAgent = (_d = input.ignoreAgent) != null ? _d : this.ignoreAgent;
         }
       }
       copy() {
         return new this.constructor(this);
+      }
+      toJSON() {
+        return Serializable.prototype.toJSON.call(this);
+      }
+      toJSONNotImplemented() {
+        return Serializable.prototype.toJSONNotImplemented.call(this);
       }
       static fromMethods(methods) {
         class Handler extends BaseCallbackHandler {
@@ -5748,8 +6060,8 @@ var init_tracer = __esm({
   "node_modules/langchain/dist/callbacks/handlers/tracer.js"() {
     init_base();
     BaseTracer = class extends BaseCallbackHandler {
-      constructor() {
-        super();
+      constructor(_fields) {
+        super(...arguments);
         Object.defineProperty(this, "runMap", {
           enumerable: true,
           configurable: true,
@@ -5788,42 +6100,58 @@ var init_tracer = __esm({
         }
         return parentRun.child_execution_order + 1;
       }
-      async handleLLMStart(llm, prompts, runId, parentRunId, extraParams) {
+      async handleLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata) {
         var _a;
         const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
         const run = {
           id: runId,
-          name: llm.name,
+          name: llm.id[llm.id.length - 1],
           parent_run_id: parentRunId,
-          start_time: Date.now(),
-          end_time: 0,
+          start_time,
           serialized: llm,
+          events: [
+            {
+              name: "start",
+              time: start_time
+            }
+          ],
           inputs: { prompts },
           execution_order,
           child_runs: [],
           child_execution_order: execution_order,
           run_type: "llm",
-          extra: extraParams
+          extra: finalExtraParams != null ? finalExtraParams : {},
+          tags: tags || []
         };
         this._startTrace(run);
         await ((_a = this.onLLMStart) == null ? void 0 : _a.call(this, run));
       }
-      async handleChatModelStart(llm, messages2, runId, parentRunId, extraParams) {
+      async handleChatModelStart(llm, messages4, runId, parentRunId, extraParams, tags, metadata) {
         var _a;
         const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
         const run = {
           id: runId,
-          name: llm.name,
+          name: llm.id[llm.id.length - 1],
           parent_run_id: parentRunId,
-          start_time: Date.now(),
-          end_time: 0,
+          start_time,
           serialized: llm,
-          inputs: { messages: messages2 },
+          events: [
+            {
+              name: "start",
+              time: start_time
+            }
+          ],
+          inputs: { messages: messages4 },
           execution_order,
           child_runs: [],
           child_execution_order: execution_order,
           run_type: "llm",
-          extra: extraParams
+          extra: finalExtraParams != null ? finalExtraParams : {},
+          tags: tags || []
         };
         this._startTrace(run);
         await ((_a = this.onLLMStart) == null ? void 0 : _a.call(this, run));
@@ -5836,6 +6164,10 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.outputs = output;
+        run.events.push({
+          name: "end",
+          time: run.end_time
+        });
         await ((_a = this.onLLMEnd) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
@@ -5847,24 +6179,36 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.error = error.message;
+        run.events.push({
+          name: "error",
+          time: run.end_time
+        });
         await ((_a = this.onLLMError) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
-      async handleChainStart(chain, inputs, runId, parentRunId) {
+      async handleChainStart(chain, inputs, runId, parentRunId, tags, metadata) {
         var _a;
         const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
         const run = {
           id: runId,
-          name: chain.name,
+          name: chain.id[chain.id.length - 1],
           parent_run_id: parentRunId,
-          start_time: Date.now(),
-          end_time: 0,
+          start_time,
           serialized: chain,
+          events: [
+            {
+              name: "start",
+              time: start_time
+            }
+          ],
           inputs,
           execution_order,
           child_execution_order: execution_order,
           run_type: "chain",
-          child_runs: []
+          child_runs: [],
+          extra: metadata ? { metadata } : {},
+          tags: tags || []
         };
         this._startTrace(run);
         await ((_a = this.onChainStart) == null ? void 0 : _a.call(this, run));
@@ -5877,6 +6221,10 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.outputs = outputs;
+        run.events.push({
+          name: "end",
+          time: run.end_time
+        });
         await ((_a = this.onChainEnd) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
@@ -5888,24 +6236,36 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.error = error.message;
+        run.events.push({
+          name: "error",
+          time: run.end_time
+        });
         await ((_a = this.onChainError) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
-      async handleToolStart(tool, input, runId, parentRunId) {
+      async handleToolStart(tool, input, runId, parentRunId, tags, metadata) {
         var _a;
         const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
         const run = {
           id: runId,
-          name: tool.name,
+          name: tool.id[tool.id.length - 1],
           parent_run_id: parentRunId,
-          start_time: Date.now(),
-          end_time: 0,
+          start_time,
           serialized: tool,
+          events: [
+            {
+              name: "start",
+              time: start_time
+            }
+          ],
           inputs: { input },
           execution_order,
           child_execution_order: execution_order,
           run_type: "tool",
-          child_runs: []
+          child_runs: [],
+          extra: metadata ? { metadata } : {},
+          tags: tags || []
         };
         this._startTrace(run);
         await ((_a = this.onToolStart) == null ? void 0 : _a.call(this, run));
@@ -5918,6 +6278,10 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.outputs = { output };
+        run.events.push({
+          name: "end",
+          time: run.end_time
+        });
         await ((_a = this.onToolEnd) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
@@ -5929,6 +6293,10 @@ var init_tracer = __esm({
         }
         run.end_time = Date.now();
         run.error = error.message;
+        run.events.push({
+          name: "error",
+          time: run.end_time
+        });
         await ((_a = this.onToolError) == null ? void 0 : _a.call(this, run));
         await this._endTrace(run);
       }
@@ -5941,7 +6309,51 @@ var init_tracer = __esm({
         const agentRun = run;
         agentRun.actions = agentRun.actions || [];
         agentRun.actions.push(action);
+        agentRun.events.push({
+          name: "agent_action",
+          time: Date.now(),
+          kwargs: { action }
+        });
         await ((_a = this.onAgentAction) == null ? void 0 : _a.call(this, run));
+      }
+      async handleAgentEnd(action, runId) {
+        var _a;
+        const run = this.runMap.get(runId);
+        if (!run || (run == null ? void 0 : run.run_type) !== "chain") {
+          return;
+        }
+        run.events.push({
+          name: "agent_end",
+          time: Date.now(),
+          kwargs: { action }
+        });
+        await ((_a = this.onAgentEnd) == null ? void 0 : _a.call(this, run));
+      }
+      async handleText(text4, runId) {
+        var _a;
+        const run = this.runMap.get(runId);
+        if (!run || (run == null ? void 0 : run.run_type) !== "chain") {
+          return;
+        }
+        run.events.push({
+          name: "text",
+          time: Date.now(),
+          kwargs: { text: text4 }
+        });
+        await ((_a = this.onText) == null ? void 0 : _a.call(this, run));
+      }
+      async handleLLMNewToken(token, idx, runId) {
+        var _a;
+        const run = this.runMap.get(runId);
+        if (!run || (run == null ? void 0 : run.run_type) !== "llm") {
+          return;
+        }
+        run.events.push({
+          name: "new_token",
+          time: Date.now(),
+          kwargs: { token, idx }
+        });
+        await ((_a = this.onLLMNewToken) == null ? void 0 : _a.call(this, run));
       }
     };
   }
@@ -5959,6 +6371,8 @@ function tryJsonStringify(obj, fallback) {
   }
 }
 function elapsed(run) {
+  if (!run.end_time)
+    return "";
   const elapsed2 = run.end_time - run.start_time;
   if (elapsed2 < 1e3) {
     return `${elapsed2}ms`;
@@ -6320,7 +6734,7 @@ var require_p_retry = __commonJS({
       return error;
     };
     var isNetworkError = (errorMessage) => networkErrorMsgs.includes(errorMessage);
-    var pRetry2 = (input, options) => new Promise((resolve, reject) => {
+    var pRetry3 = (input, options) => new Promise((resolve, reject) => {
       options = {
         onFailedAttempt: () => {
         },
@@ -6357,8 +6771,8 @@ var require_p_retry = __commonJS({
         }
       });
     });
-    module2.exports = pRetry2;
-    module2.exports.default = pRetry2;
+    module2.exports = pRetry3;
+    module2.exports.default = pRetry3;
     module2.exports.AbortError = AbortError;
   }
 });
@@ -6948,10 +7362,10 @@ var require_dist = __commonJS({
   }
 });
 
-// node_modules/langchain/dist/util/async_caller.js
+// node_modules/langchainplus-sdk/dist/utils/async_caller.js
 var import_p_retry, import_p_queue, STATUS_NO_RETRY, AsyncCaller;
 var init_async_caller = __esm({
-  "node_modules/langchain/dist/util/async_caller.js"() {
+  "node_modules/langchainplus-sdk/dist/utils/async_caller.js"() {
     import_p_retry = __toESM(require_p_retry(), 1);
     import_p_queue = __toESM(require_dist(), 1);
     STATUS_NO_RETRY = [
@@ -7042,20 +7456,31 @@ var init_async_caller = __esm({
   }
 });
 
-// node_modules/langchain/dist/util/env.js
+// node_modules/langchainplus-sdk/dist/utils/env.js
 async function getRuntimeEnvironment() {
   if (runtimeEnvironment === void 0) {
     const env = getEnv();
     runtimeEnvironment = {
-      library: "langchain-js",
+      library: "langsmith",
       runtime: env
     };
   }
   return runtimeEnvironment;
 }
+function getEnvironmentVariable(name) {
+  var _a;
+  try {
+    return typeof process !== "undefined" ? (
+      // eslint-disable-next-line no-process-env
+      (_a = process.env) == null ? void 0 : _a[name]
+    ) : void 0;
+  } catch (e) {
+    return void 0;
+  }
+}
 var isBrowser, isWebWorker, isJsDom, isDeno, isNode, getEnv, runtimeEnvironment;
 var init_env = __esm({
-  "node_modules/langchain/dist/util/env.js"() {
+  "node_modules/langchainplus-sdk/dist/utils/env.js"() {
     isBrowser = () => typeof window !== "undefined" && typeof window.document !== "undefined";
     isWebWorker = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
     isJsDom = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
@@ -7081,65 +7506,34 @@ var init_env = __esm({
   }
 });
 
-// node_modules/langchain/dist/callbacks/handlers/tracer_langchain.js
-var LangChainTracer;
-var init_tracer_langchain = __esm({
-  "node_modules/langchain/dist/callbacks/handlers/tracer_langchain.js"() {
+// node_modules/langchainplus-sdk/dist/client.js
+var isLocalhost, raiseForStatus, Client;
+var init_client = __esm({
+  "node_modules/langchainplus-sdk/dist/client.js"() {
+    init_esm_browser();
     init_async_caller();
     init_env();
-    init_tracer();
-    LangChainTracer = class extends BaseTracer {
-      constructor({ exampleId, tenantId, sessionName, sessionExtra, callerParams } = {}) {
-        var _a, _b, _c, _d, _e, _f;
-        super();
-        Object.defineProperty(this, "name", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "langchain_tracer"
-        });
-        Object.defineProperty(this, "endpoint", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: (typeof process !== "undefined" ? (
-            // eslint-disable-next-line no-process-env
-            (_a = process.env) == null ? void 0 : _a.LANGCHAIN_ENDPOINT
-          ) : void 0) || "http://localhost:8000"
-        });
-        Object.defineProperty(this, "headers", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: {
-            "Content-Type": "application/json"
-          }
-        });
-        Object.defineProperty(this, "sessionName", {
+    isLocalhost = (url) => {
+      const strippedUrl = url.replace("http://", "").replace("https://", "");
+      const hostname = strippedUrl.split("/")[0].split(":")[0];
+      return hostname === "localhost" || hostname === "127.0.0.1" || hostname === "::1";
+    };
+    raiseForStatus = async (response, operation) => {
+      const body = await response.text();
+      if (!response.ok) {
+        throw new Error(`Failed to ${operation}: ${response.status} ${response.statusText} ${body}`);
+      }
+    };
+    Client = class {
+      constructor(config = {}) {
+        var _a, _b, _c, _d;
+        Object.defineProperty(this, "apiKey", {
           enumerable: true,
           configurable: true,
           writable: true,
           value: void 0
         });
-        Object.defineProperty(this, "sessionExtra", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "session", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "exampleId", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "tenantId", {
+        Object.defineProperty(this, "apiUrl", {
           enumerable: true,
           configurable: true,
           writable: true,
@@ -7151,109 +7545,684 @@ var init_tracer_langchain = __esm({
           writable: true,
           value: void 0
         });
-        if (typeof process !== "undefined" && ((_b = process.env) == null ? void 0 : _b.LANGCHAIN_API_KEY)) {
-          this.headers["x-api-key"] = (_c = process.env) == null ? void 0 : _c.LANGCHAIN_API_KEY;
-        }
-        this.tenantId = tenantId != null ? tenantId : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_d = process.env) == null ? void 0 : _d.LANGCHAIN_TENANT_ID
-        ) : void 0;
-        this.sessionName = (_f = sessionName != null ? sessionName : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_e = process.env) == null ? void 0 : _e.LANGCHAIN_SESSION
-        ) : void 0) != null ? _f : "default";
-        this.sessionExtra = sessionExtra;
-        this.exampleId = exampleId;
-        this.caller = new AsyncCaller(callerParams != null ? callerParams : {});
-      }
-      async ensureSession() {
-        if (this.session) {
-          return this.session;
-        }
-        const tenantId = await this.ensureTenantId();
-        const endpoint = `${this.endpoint}/sessions?upsert=true`;
-        const res = await this.caller.call(fetch, endpoint, {
-          method: "POST",
-          headers: this.headers,
-          body: JSON.stringify({
-            name: this.sessionName,
-            tenant_id: tenantId,
-            extra: this.sessionExtra
-          })
+        Object.defineProperty(this, "timeout_ms", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
         });
-        if (!res.ok) {
-          const body = await res.text();
-          throw new Error(`Failed to create session: ${res.status} ${res.statusText} ${body}`);
-        }
-        const session = await res.json();
-        this.session = session;
-        return session;
+        const defaultConfig = Client.getDefaultClientConfig();
+        this.apiUrl = (_a = config.apiUrl) != null ? _a : defaultConfig.apiUrl;
+        this.apiKey = (_b = config.apiKey) != null ? _b : defaultConfig.apiKey;
+        this.validateApiKeyIfHosted();
+        this.timeout_ms = (_c = config.timeout_ms) != null ? _c : 4e3;
+        this.caller = new AsyncCaller((_d = config.callerOptions) != null ? _d : {});
       }
-      async ensureTenantId() {
-        if (this.tenantId) {
-          return this.tenantId;
+      static getDefaultClientConfig() {
+        var _a;
+        return {
+          apiUrl: (_a = getEnvironmentVariable("LANGCHAIN_ENDPOINT")) != null ? _a : "http://localhost:1984",
+          apiKey: getEnvironmentVariable("LANGCHAIN_API_KEY")
+        };
+      }
+      validateApiKeyIfHosted() {
+        const isLocal = isLocalhost(this.apiUrl);
+        if (!isLocal && !this.apiKey) {
+          throw new Error("API key must be provided when using hosted LangChain+ API");
         }
-        const endpoint = `${this.endpoint}/tenants`;
-        const response = await this.caller.call(fetch, endpoint, {
+      }
+      get headers() {
+        const headers = {};
+        if (this.apiKey) {
+          headers["x-api-key"] = `${this.apiKey}`;
+        }
+        return headers;
+      }
+      async _get(path2, queryParams) {
+        var _a;
+        const paramsString = (_a = queryParams == null ? void 0 : queryParams.toString()) != null ? _a : "";
+        const url = `${this.apiUrl}${path2}?${paramsString}`;
+        const response = await this.caller.call(fetch, url, {
           method: "GET",
-          headers: this.headers
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
         });
         if (!response.ok) {
-          const body = await response.text();
-          throw new Error(`Failed to fetch tenant ID: ${response.status} ${response.statusText} ${body}`);
+          throw new Error(`Failed to fetch ${path2}: ${response.status} ${response.statusText}`);
         }
-        const tenants = await response.json();
-        if (!tenants || tenants.length === 0) {
-          throw new Error(`No tenants found for endpoint ${endpoint}`);
+        return response.json();
+      }
+      async createRun(run) {
+        var _a;
+        const headers = { ...this.headers, "Content-Type": "application/json" };
+        const extra = (_a = run.extra) != null ? _a : {};
+        const runtimeEnv = await getRuntimeEnvironment();
+        const session_name = run.project_name;
+        delete run.project_name;
+        const runCreate = {
+          session_name,
+          ...run,
+          extra: {
+            ...run.extra,
+            runtime: {
+              ...runtimeEnv,
+              ...extra.runtime
+            }
+          }
+        };
+        const response = await this.caller.call(fetch, `${this.apiUrl}/runs`, {
+          method: "POST",
+          headers,
+          body: JSON.stringify(runCreate),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        await raiseForStatus(response, "create run");
+      }
+      async updateRun(runId, run) {
+        const headers = { ...this.headers, "Content-Type": "application/json" };
+        const response = await this.caller.call(fetch, `${this.apiUrl}/runs/${runId}`, {
+          method: "PATCH",
+          headers,
+          body: JSON.stringify(run),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        await raiseForStatus(response, "update run");
+      }
+      async readRun(runId, { loadChildRuns } = { loadChildRuns: false }) {
+        let run = await this._get(`/runs/${runId}`);
+        if (loadChildRuns && run.child_run_ids) {
+          run = await this._loadChildRuns(run);
         }
-        const tenantId = tenants[0].id;
-        this.tenantId = tenantId;
-        return tenantId;
+        return run;
+      }
+      async _loadChildRuns(run) {
+        const childRuns = await this.listRuns({ id: run.child_run_ids });
+        const treemap = {};
+        const runs = {};
+        childRuns.sort((a2, b) => a2.execution_order - b.execution_order);
+        for (const childRun of childRuns) {
+          if (childRun.parent_run_id === null || childRun.parent_run_id === void 0) {
+            throw new Error(`Child run ${childRun.id} has no parent`);
+          }
+          if (!(childRun.parent_run_id in treemap)) {
+            treemap[childRun.parent_run_id] = [];
+          }
+          treemap[childRun.parent_run_id].push(childRun);
+          runs[childRun.id] = childRun;
+        }
+        run.child_runs = treemap[run.id] || [];
+        for (const runId in treemap) {
+          if (runId !== run.id) {
+            runs[runId].child_runs = treemap[runId];
+          }
+        }
+        return run;
+      }
+      async listRuns({ projectId, projectName, executionOrder, runType, error, id, limit, offset }) {
+        const queryParams = new URLSearchParams();
+        let projectId_ = projectId;
+        if (projectName) {
+          if (projectId) {
+            throw new Error("Only one of projectId or projectName may be given");
+          }
+          projectId_ = (await this.readProject({ projectName })).id;
+        }
+        if (projectId_) {
+          queryParams.append("session", projectId_);
+        }
+        if (executionOrder) {
+          queryParams.append("execution_order", executionOrder.toString());
+        }
+        if (runType) {
+          queryParams.append("run_type", runType);
+        }
+        if (error !== void 0) {
+          queryParams.append("error", error.toString());
+        }
+        if (id !== void 0) {
+          for (const id_ of id) {
+            queryParams.append("id", id_);
+          }
+        }
+        if (limit !== void 0) {
+          queryParams.append("limit", limit.toString());
+        }
+        if (offset !== void 0) {
+          queryParams.append("offset", offset.toString());
+        }
+        return this._get("/runs", queryParams);
+      }
+      async deleteRun(runId) {
+        const response = await this.caller.call(fetch, `${this.apiUrl}/runs/${runId}`, {
+          method: "DELETE",
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        await raiseForStatus(response, "delete run");
+      }
+      async createProject({ projectName, projectExtra, mode, upsert: upsert2 }) {
+        const upsert_ = upsert2 ? `?upsert=true` : "";
+        const endpoint = `${this.apiUrl}/sessions${upsert_}`;
+        const body = {
+          name: projectName
+        };
+        if (projectExtra !== void 0) {
+          body["extra"] = projectExtra;
+        }
+        if (mode !== void 0) {
+          body["mode"] = mode;
+        }
+        const response = await this.caller.call(fetch, endpoint, {
+          method: "POST",
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        const result = await response.json();
+        if (!response.ok) {
+          throw new Error(`Failed to create session ${projectName}: ${response.status} ${response.statusText}`);
+        }
+        return result;
+      }
+      async readProject({ projectId, projectName }) {
+        let path2 = "/sessions";
+        const params = new URLSearchParams();
+        if (projectId !== void 0 && projectName !== void 0) {
+          throw new Error("Must provide either projectName or projectId, not both");
+        } else if (projectId !== void 0) {
+          path2 += `/${projectId}`;
+        } else if (projectName !== void 0) {
+          params.append("name", projectName);
+        } else {
+          throw new Error("Must provide projectName or projectId");
+        }
+        const response = await this._get(path2, params);
+        let result;
+        if (Array.isArray(response)) {
+          if (response.length === 0) {
+            throw new Error(`Project[id=${projectId}, name=${projectName}] not found`);
+          }
+          result = response[0];
+        } else {
+          result = response;
+        }
+        return result;
+      }
+      async listProjects() {
+        return this._get("/sessions");
+      }
+      async deleteProject({ projectId, projectName }) {
+        let projectId_;
+        if (projectId === void 0 && projectName === void 0) {
+          throw new Error("Must provide projectName or projectId");
+        } else if (projectId !== void 0 && projectName !== void 0) {
+          throw new Error("Must provide either projectName or projectId, not both");
+        } else if (projectId === void 0) {
+          projectId_ = (await this.readProject({ projectName })).id;
+        } else {
+          projectId_ = projectId;
+        }
+        const response = await this.caller.call(fetch, `${this.apiUrl}/sessions/${projectId_}`, {
+          method: "DELETE",
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        await raiseForStatus(response, `delete session ${projectId_} (${projectName})`);
+      }
+      async uploadCsv({ csvFile, fileName, inputKeys, outputKeys, description }) {
+        const url = `${this.apiUrl}/datasets/upload`;
+        const formData = new FormData();
+        formData.append("file", csvFile, fileName);
+        formData.append("input_keys", inputKeys.join(","));
+        formData.append("output_keys", outputKeys.join(","));
+        if (description) {
+          formData.append("description", description);
+        }
+        const response = await this.caller.call(fetch, url, {
+          method: "POST",
+          headers: this.headers,
+          body: formData,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          const result2 = await response.json();
+          if (result2.detail && result2.detail.includes("already exists")) {
+            throw new Error(`Dataset ${fileName} already exists`);
+          }
+          throw new Error(`Failed to upload CSV: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        return result;
+      }
+      async createDataset(name, { description } = {}) {
+        const response = await this.caller.call(fetch, `${this.apiUrl}/datasets`, {
+          method: "POST",
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name,
+            description
+          }),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          const result2 = await response.json();
+          if (result2.detail && result2.detail.includes("already exists")) {
+            throw new Error(`Dataset ${name} already exists`);
+          }
+          throw new Error(`Failed to create dataset ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        return result;
+      }
+      async readDataset({ datasetId, datasetName }) {
+        let path2 = "/datasets";
+        const params = new URLSearchParams({ limit: "1" });
+        if (datasetId !== void 0 && datasetName !== void 0) {
+          throw new Error("Must provide either datasetName or datasetId, not both");
+        } else if (datasetId !== void 0) {
+          path2 += `/${datasetId}`;
+        } else if (datasetName !== void 0) {
+          params.append("name", datasetName);
+        } else {
+          throw new Error("Must provide datasetName or datasetId");
+        }
+        const response = await this._get(path2, params);
+        let result;
+        if (Array.isArray(response)) {
+          if (response.length === 0) {
+            throw new Error(`Dataset[id=${datasetId}, name=${datasetName}] not found`);
+          }
+          result = response[0];
+        } else {
+          result = response;
+        }
+        return result;
+      }
+      async listDatasets({ limit = 100, offset = 0 } = {}) {
+        const path2 = "/datasets";
+        const params = new URLSearchParams({
+          limit: limit.toString(),
+          offset: offset.toString()
+        });
+        const response = await this._get(path2, params);
+        if (!Array.isArray(response)) {
+          throw new Error(`Expected ${path2} to return an array, but got ${response}`);
+        }
+        return response;
+      }
+      async deleteDataset({ datasetId, datasetName }) {
+        let path2 = "/datasets";
+        let datasetId_ = datasetId;
+        if (datasetId !== void 0 && datasetName !== void 0) {
+          throw new Error("Must provide either datasetName or datasetId, not both");
+        } else if (datasetName !== void 0) {
+          const dataset = await this.readDataset({ datasetName });
+          datasetId_ = dataset.id;
+        }
+        if (datasetId_ !== void 0) {
+          path2 += `/${datasetId_}`;
+        } else {
+          throw new Error("Must provide datasetName or datasetId");
+        }
+        const response = await this.caller.call(fetch, this.apiUrl + path2, {
+          method: "DELETE",
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to delete ${path2}: ${response.status} ${response.statusText}`);
+        }
+        await response.json();
+      }
+      async createExample(inputs, outputs, { datasetId, datasetName, createdAt }) {
+        let datasetId_ = datasetId;
+        if (datasetId_ === void 0 && datasetName === void 0) {
+          throw new Error("Must provide either datasetName or datasetId");
+        } else if (datasetId_ !== void 0 && datasetName !== void 0) {
+          throw new Error("Must provide either datasetName or datasetId, not both");
+        } else if (datasetId_ === void 0) {
+          const dataset = await this.readDataset({ datasetName });
+          datasetId_ = dataset.id;
+        }
+        const createdAt_ = createdAt || new Date();
+        const data = {
+          dataset_id: datasetId_,
+          inputs,
+          outputs,
+          created_at: createdAt_.toISOString()
+        };
+        const response = await this.caller.call(fetch, `${this.apiUrl}/examples`, {
+          method: "POST",
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to create example: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        return result;
+      }
+      async readExample(exampleId) {
+        const path2 = `/examples/${exampleId}`;
+        return await this._get(path2);
+      }
+      async listExamples({ datasetId, datasetName, limit, offset } = {}) {
+        var _a, _b;
+        let datasetId_;
+        if (datasetId !== void 0 && datasetName !== void 0) {
+          throw new Error("Must provide either datasetName or datasetId, not both");
+        } else if (datasetId !== void 0) {
+          datasetId_ = datasetId;
+        } else if (datasetName !== void 0) {
+          const dataset = await this.readDataset({ datasetName });
+          datasetId_ = dataset.id;
+        } else {
+          throw new Error("Must provide a datasetName or datasetId");
+        }
+        const response = await this._get("/examples", new URLSearchParams({
+          dataset: datasetId_,
+          limit: (_a = limit == null ? void 0 : limit.toString()) != null ? _a : "100",
+          offset: (_b = offset == null ? void 0 : offset.toString()) != null ? _b : "0"
+        }));
+        if (!Array.isArray(response)) {
+          throw new Error(`Expected /examples to return an array, but got ${response}`);
+        }
+        return response;
+      }
+      async deleteExample(exampleId) {
+        const path2 = `/examples/${exampleId}`;
+        const response = await this.caller.call(fetch, this.apiUrl + path2, {
+          method: "DELETE",
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to delete ${path2}: ${response.status} ${response.statusText}`);
+        }
+        await response.json();
+      }
+      async updateExample(exampleId, update) {
+        const response = await this.caller.call(fetch, `${this.apiUrl}/examples/${exampleId}`, {
+          method: "PATCH",
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          body: JSON.stringify(update),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to update example ${exampleId}: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        return result;
+      }
+      async evaluateRun(run, evaluator, { sourceInfo, loadChildRuns } = { loadChildRuns: false }) {
+        let run_;
+        if (typeof run === "string") {
+          run_ = await this.readRun(run, { loadChildRuns });
+        } else if (typeof run === "object" && "id" in run) {
+          run_ = run;
+        } else {
+          throw new Error(`Invalid run type: ${typeof run}`);
+        }
+        let referenceExample = void 0;
+        if (run_.reference_example_id !== null && run_.reference_example_id !== void 0) {
+          referenceExample = await this.readExample(run_.reference_example_id);
+        }
+        const feedbackResult = await evaluator.evaluateRun(run_, referenceExample);
+        let sourceInfo_ = sourceInfo != null ? sourceInfo : {};
+        if (feedbackResult.evaluatorInfo) {
+          sourceInfo_ = { ...sourceInfo_, ...feedbackResult.evaluatorInfo };
+        }
+        return await this.createFeedback(run_.id, feedbackResult.key, {
+          score: feedbackResult.score,
+          value: feedbackResult.value,
+          comment: feedbackResult.comment,
+          correction: feedbackResult.correction,
+          sourceInfo: sourceInfo_,
+          feedbackSourceType: "MODEL"
+        });
+      }
+      async createFeedback(runId, key, { score, value, correction, comment, sourceInfo, feedbackSourceType = "API" }) {
+        let feedback_source;
+        if (feedbackSourceType === "API") {
+          feedback_source = { type: "api", metadata: sourceInfo != null ? sourceInfo : {} };
+        } else if (feedbackSourceType === "MODEL") {
+          feedback_source = { type: "model", metadata: sourceInfo != null ? sourceInfo : {} };
+        } else {
+          throw new Error(`Unknown feedback source type ${feedbackSourceType}`);
+        }
+        const feedback = {
+          id: v4_default(),
+          run_id: runId,
+          key,
+          score,
+          value,
+          correction,
+          comment,
+          feedback_source
+        };
+        const response = await this.caller.call(fetch, `${this.apiUrl}/feedback`, {
+          method: "POST",
+          headers: { ...this.headers, "Content-Type": "application/json" },
+          body: JSON.stringify(feedback),
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to create feedback for run ${runId}: ${response.status} ${response.statusText}`);
+        }
+        const result = await response.json();
+        return result;
+      }
+      async readFeedback(feedbackId) {
+        const path2 = `/feedback/${feedbackId}`;
+        const response = await this._get(path2);
+        return response;
+      }
+      async deleteFeedback(feedbackId) {
+        const path2 = `/feedback/${feedbackId}`;
+        const response = await this.caller.call(fetch, this.apiUrl + path2, {
+          method: "DELETE",
+          headers: this.headers,
+          signal: AbortSignal.timeout(this.timeout_ms)
+        });
+        if (!response.ok) {
+          throw new Error(`Failed to delete ${path2}: ${response.status} ${response.statusText}`);
+        }
+        await response.json();
+      }
+      async listFeedback({ runIds, limit, offset } = {}) {
+        const queryParams = new URLSearchParams();
+        if (runIds) {
+          queryParams.append("run", runIds.join(","));
+        }
+        if (limit !== void 0) {
+          queryParams.append("limit", limit.toString());
+        }
+        if (offset !== void 0) {
+          queryParams.append("offset", offset.toString());
+        }
+        const response = await this._get("/feedback", queryParams);
+        return response;
+      }
+    };
+  }
+});
+
+// node_modules/langchainplus-sdk/dist/run_trees.js
+var init_run_trees = __esm({
+  "node_modules/langchainplus-sdk/dist/run_trees.js"() {
+    init_env();
+    init_client();
+  }
+});
+
+// node_modules/langchainplus-sdk/dist/index.js
+var init_dist = __esm({
+  "node_modules/langchainplus-sdk/dist/index.js"() {
+    init_client();
+    init_run_trees();
+  }
+});
+
+// node_modules/langchainplus-sdk/index.js
+var init_langchainplus_sdk = __esm({
+  "node_modules/langchainplus-sdk/index.js"() {
+    init_dist();
+  }
+});
+
+// node_modules/langchain/dist/util/env.js
+async function getRuntimeEnvironment2() {
+  if (runtimeEnvironment2 === void 0) {
+    const env = getEnv2();
+    runtimeEnvironment2 = {
+      library: "langchain-js",
+      runtime: env
+    };
+  }
+  return runtimeEnvironment2;
+}
+function getEnvironmentVariable2(name) {
+  var _a;
+  try {
+    return typeof process !== "undefined" ? (
+      // eslint-disable-next-line no-process-env
+      (_a = process.env) == null ? void 0 : _a[name]
+    ) : void 0;
+  } catch (e) {
+    return void 0;
+  }
+}
+var isBrowser2, isWebWorker2, isJsDom2, isDeno2, isNode2, getEnv2, runtimeEnvironment2;
+var init_env2 = __esm({
+  "node_modules/langchain/dist/util/env.js"() {
+    isBrowser2 = () => typeof window !== "undefined" && typeof window.document !== "undefined";
+    isWebWorker2 = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
+    isJsDom2 = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
+    isDeno2 = () => typeof Deno !== "undefined";
+    isNode2 = () => typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined" && !isDeno2();
+    getEnv2 = () => {
+      let env;
+      if (isBrowser2()) {
+        env = "browser";
+      } else if (isNode2()) {
+        env = "node";
+      } else if (isWebWorker2()) {
+        env = "webworker";
+      } else if (isJsDom2()) {
+        env = "jsdom";
+      } else if (isDeno2()) {
+        env = "deno";
+      } else {
+        env = "other";
+      }
+      return env;
+    };
+  }
+});
+
+// node_modules/langchain/dist/callbacks/handlers/tracer_langchain.js
+var LangChainTracer;
+var init_tracer_langchain = __esm({
+  "node_modules/langchain/dist/callbacks/handlers/tracer_langchain.js"() {
+    init_langchainplus_sdk();
+    init_env2();
+    init_tracer();
+    LangChainTracer = class extends BaseTracer {
+      constructor(fields = {}) {
+        var _a;
+        super(fields);
+        Object.defineProperty(this, "name", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "langchain_tracer"
+        });
+        Object.defineProperty(this, "projectName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "exampleId", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "client", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        const { exampleId, projectName, client } = fields;
+        this.projectName = (_a = projectName != null ? projectName : getEnvironmentVariable2("LANGCHAIN_PROJECT")) != null ? _a : getEnvironmentVariable2("LANGCHAIN_SESSION");
+        this.exampleId = exampleId;
+        this.client = client != null ? client : new Client({});
       }
       async _convertToCreate(run, example_id = void 0) {
-        var _a, _b;
-        const session = await this.ensureSession();
-        const runExtra = (_a = run.extra) != null ? _a : {};
-        runExtra.runtime = await getRuntimeEnvironment();
-        const persistedRun = {
-          id: run.id,
-          name: run.name,
-          start_time: run.start_time,
-          end_time: run.end_time,
-          run_type: run.run_type,
-          reference_example_id: example_id,
-          extra: runExtra,
-          execution_order: run.execution_order,
-          serialized: run.serialized,
-          error: run.error,
-          inputs: run.inputs,
-          outputs: (_b = run.outputs) != null ? _b : {},
-          session_id: session.id,
-          child_runs: await Promise.all(run.child_runs.map((child_run) => this._convertToCreate(child_run)))
+        return {
+          ...run,
+          extra: {
+            ...run.extra,
+            runtime: await getRuntimeEnvironment2()
+          },
+          child_runs: void 0,
+          session_name: this.projectName,
+          reference_example_id: run.parent_run_id ? void 0 : example_id
         };
-        return persistedRun;
       }
-      async persistRun(run) {
+      async persistRun(_run) {
+      }
+      async _persistRunSingle(run) {
         const persistedRun = await this._convertToCreate(run, this.exampleId);
-        const endpoint = `${this.endpoint}/runs`;
-        const response = await this.caller.call(fetch, endpoint, {
-          method: "POST",
-          headers: this.headers,
-          body: JSON.stringify(persistedRun)
-        });
-        if (!response.ok) {
-          const body = await response.text();
-          throw new Error(`Failed to persist run: ${response.status} ${response.statusText} ${body}`);
-        }
+        await this.client.createRun(persistedRun);
+      }
+      async _updateRunSingle(run) {
+        const runUpdate = {
+          end_time: run.end_time,
+          error: run.error,
+          outputs: run.outputs,
+          events: run.events
+        };
+        await this.client.updateRun(run.id, runUpdate);
+      }
+      async onLLMStart(run) {
+        await this._persistRunSingle(run);
+      }
+      async onLLMEnd(run) {
+        await this._updateRunSingle(run);
+      }
+      async onLLMError(run) {
+        await this._updateRunSingle(run);
+      }
+      async onChainStart(run) {
+        await this._persistRunSingle(run);
+      }
+      async onChainEnd(run) {
+        await this._updateRunSingle(run);
+      }
+      async onChainError(run) {
+        await this._updateRunSingle(run);
+      }
+      async onToolStart(run) {
+        await this._persistRunSingle(run);
+      }
+      async onToolEnd(run) {
+        await this._updateRunSingle(run);
+      }
+      async onToolError(run) {
+        await this._updateRunSingle(run);
       }
     };
   }
 });
 
 // node_modules/langchain/dist/memory/base.js
-function getBufferString(messages2, humanPrefix = "Human", aiPrefix = "AI") {
+function getBufferString(messages4, humanPrefix = "Human", aiPrefix = "AI") {
   const string_messages = [];
-  for (const m of messages2) {
+  for (const m of messages4) {
     let role;
     if (m._getType() === "human") {
       role = humanPrefix;
@@ -7261,12 +8230,15 @@ function getBufferString(messages2, humanPrefix = "Human", aiPrefix = "AI") {
       role = aiPrefix;
     } else if (m._getType() === "system") {
       role = "System";
+    } else if (m._getType() === "function") {
+      role = "Function";
     } else if (m._getType() === "generic") {
       role = m.role;
     } else {
       throw new Error(`Got unsupported message type: ${m}`);
     }
-    string_messages.push(`${role}: ${m.text}`);
+    const nameStr = m.name ? `${m.name}, ` : "";
+    string_messages.push(`${role}: ${nameStr}${m.content}`);
   }
   return string_messages.join("\n");
 }
@@ -7293,10 +8265,10 @@ var LangChainTracerV1;
 var init_tracer_langchain_v1 = __esm({
   "node_modules/langchain/dist/callbacks/handlers/tracer_langchain_v1.js"() {
     init_base2();
+    init_env2();
     init_tracer();
     LangChainTracerV1 = class extends BaseTracer {
       constructor() {
-        var _a, _b, _c;
         super();
         Object.defineProperty(this, "name", {
           enumerable: true,
@@ -7308,10 +8280,7 @@ var init_tracer_langchain_v1 = __esm({
           enumerable: true,
           configurable: true,
           writable: true,
-          value: (typeof process !== "undefined" ? (
-            // eslint-disable-next-line no-process-env
-            (_a = process.env) == null ? void 0 : _a.LANGCHAIN_ENDPOINT
-          ) : void 0) || "http://localhost:8000"
+          value: getEnvironmentVariable2("LANGCHAIN_ENDPOINT") || "http://localhost:1984"
         });
         Object.defineProperty(this, "headers", {
           enumerable: true,
@@ -7327,8 +8296,9 @@ var init_tracer_langchain_v1 = __esm({
           writable: true,
           value: void 0
         });
-        if (typeof process !== "undefined" && ((_b = process.env) == null ? void 0 : _b.LANGCHAIN_API_KEY)) {
-          this.headers["x-api-key"] = (_c = process.env) == null ? void 0 : _c.LANGCHAIN_API_KEY;
+        const apiKey = getEnvironmentVariable2("LANGCHAIN_API_KEY");
+        if (apiKey) {
+          this.headers["x-api-key"] = apiKey;
         }
       }
       async newSession(sessionName) {
@@ -7505,7 +8475,41 @@ var init_initialize = __esm({
   }
 });
 
+// node_modules/langchain/dist/callbacks/promises.js
+function createQueue() {
+  const PQueue = "default" in import_p_queue2.default ? import_p_queue2.default.default : import_p_queue2.default;
+  return new PQueue({
+    autoStart: true,
+    concurrency: 1
+  });
+}
+async function consumeCallback(promiseFn, wait) {
+  if (wait === true) {
+    await promiseFn();
+  } else {
+    if (typeof queue === "undefined") {
+      queue = createQueue();
+    }
+    void queue.add(promiseFn);
+  }
+}
+var import_p_queue2, queue;
+var init_promises = __esm({
+  "node_modules/langchain/dist/callbacks/promises.js"() {
+    import_p_queue2 = __toESM(require_dist(), 1);
+  }
+});
+
 // node_modules/langchain/dist/callbacks/manager.js
+function parseCallbackConfigArg(arg) {
+  if (!arg) {
+    return {};
+  } else if (Array.isArray(arg) || "name" in arg) {
+    return { callbacks: arg };
+  } else {
+    return arg;
+  }
+}
 function ensureHandler(handler) {
   if ("name" in handler) {
     return handler;
@@ -7520,13 +8524,16 @@ var init_manager = __esm({
     init_console();
     init_initialize();
     init_base2();
+    init_env2();
+    init_tracer_langchain();
+    init_promises();
     BaseCallbackManager = class {
       setHandler(handler) {
         return this.setHandlers([handler]);
       }
     };
     BaseRunManager = class {
-      constructor(runId, handlers2, inheritableHandlers, _parentRunId) {
+      constructor(runId, handlers2, inheritableHandlers, tags, inheritableTags, metadata, inheritableMetadata, _parentRunId) {
         Object.defineProperty(this, "runId", {
           enumerable: true,
           configurable: true,
@@ -7545,6 +8552,30 @@ var init_manager = __esm({
           writable: true,
           value: inheritableHandlers
         });
+        Object.defineProperty(this, "tags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: tags
+        });
+        Object.defineProperty(this, "inheritableTags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: inheritableTags
+        });
+        Object.defineProperty(this, "metadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: metadata
+        });
+        Object.defineProperty(this, "inheritableMetadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: inheritableMetadata
+        });
         Object.defineProperty(this, "_parentRunId", {
           enumerable: true,
           configurable: true,
@@ -7553,138 +8584,148 @@ var init_manager = __esm({
         });
       }
       async handleText(text4) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           try {
-            await ((_a = handler.handleText) == null ? void 0 : _a.call(handler, text4, this.runId, this._parentRunId));
+            await ((_a = handler.handleText) == null ? void 0 : _a.call(handler, text4, this.runId, this._parentRunId, this.tags));
           } catch (err) {
             console.error(`Error in handler ${handler.constructor.name}, handleText: ${err}`);
           }
-        }));
+        }, handler.awaitHandlers)));
       }
     };
     CallbackManagerForLLMRun = class extends BaseRunManager {
-      async handleLLMNewToken(token) {
-        await Promise.all(this.handlers.map(async (handler) => {
+      async handleLLMNewToken(token, idx = { prompt: 0, completion: 0 }) {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreLLM) {
             try {
-              await ((_a = handler.handleLLMNewToken) == null ? void 0 : _a.call(handler, token, this.runId, this._parentRunId));
+              await ((_a = handler.handleLLMNewToken) == null ? void 0 : _a.call(handler, token, idx, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleLLMNewToken: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleLLMError(err) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreLLM) {
             try {
-              await ((_a = handler.handleLLMError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId));
+              await ((_a = handler.handleLLMError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId, this.tags));
             } catch (err2) {
               console.error(`Error in handler ${handler.constructor.name}, handleLLMError: ${err2}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleLLMEnd(output) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreLLM) {
             try {
-              await ((_a = handler.handleLLMEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId));
+              await ((_a = handler.handleLLMEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleLLMEnd: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
     };
     CallbackManagerForChainRun = class extends BaseRunManager {
-      getChild() {
+      getChild(tag) {
         const manager = new CallbackManager(this.runId);
         manager.setHandlers(this.inheritableHandlers);
+        manager.addTags(this.inheritableTags);
+        manager.addMetadata(this.inheritableMetadata);
+        if (tag) {
+          manager.addTags([tag], false);
+        }
         return manager;
       }
       async handleChainError(err) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreChain) {
             try {
-              await ((_a = handler.handleChainError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId));
+              await ((_a = handler.handleChainError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId, this.tags));
             } catch (err2) {
               console.error(`Error in handler ${handler.constructor.name}, handleChainError: ${err2}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleChainEnd(output) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreChain) {
             try {
-              await ((_a = handler.handleChainEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId));
+              await ((_a = handler.handleChainEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleChainEnd: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleAgentAction(action) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreAgent) {
             try {
-              await ((_a = handler.handleAgentAction) == null ? void 0 : _a.call(handler, action, this.runId, this._parentRunId));
+              await ((_a = handler.handleAgentAction) == null ? void 0 : _a.call(handler, action, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleAgentAction: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleAgentEnd(action) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreAgent) {
             try {
-              await ((_a = handler.handleAgentEnd) == null ? void 0 : _a.call(handler, action, this.runId, this._parentRunId));
+              await ((_a = handler.handleAgentEnd) == null ? void 0 : _a.call(handler, action, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleAgentEnd: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
     };
     CallbackManagerForToolRun = class extends BaseRunManager {
-      getChild() {
+      getChild(tag) {
         const manager = new CallbackManager(this.runId);
         manager.setHandlers(this.inheritableHandlers);
+        manager.addTags(this.inheritableTags);
+        manager.addMetadata(this.inheritableMetadata);
+        if (tag) {
+          manager.addTags([tag], false);
+        }
         return manager;
       }
       async handleToolError(err) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreAgent) {
             try {
-              await ((_a = handler.handleToolError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId));
+              await ((_a = handler.handleToolError) == null ? void 0 : _a.call(handler, err, this.runId, this._parentRunId, this.tags));
             } catch (err2) {
               console.error(`Error in handler ${handler.constructor.name}, handleToolError: ${err2}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
       async handleToolEnd(output) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreAgent) {
             try {
-              await ((_a = handler.handleToolEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId));
+              await ((_a = handler.handleToolEnd) == null ? void 0 : _a.call(handler, output, this.runId, this._parentRunId, this.tags));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleToolEnd: ${err}`);
             }
           }
-        }));
+        }, handler.awaitHandlers)));
       }
     };
     CallbackManager = class extends BaseCallbackManager {
@@ -7702,6 +8743,30 @@ var init_manager = __esm({
           writable: true,
           value: void 0
         });
+        Object.defineProperty(this, "tags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: []
+        });
+        Object.defineProperty(this, "inheritableTags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: []
+        });
+        Object.defineProperty(this, "metadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: {}
+        });
+        Object.defineProperty(this, "inheritableMetadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: {}
+        });
         Object.defineProperty(this, "name", {
           enumerable: true,
           configurable: true,
@@ -7718,63 +8783,68 @@ var init_manager = __esm({
         this.inheritableHandlers = [];
         this._parentRunId = parentRunId;
       }
-      async handleLLMStart(llm, prompts, runId = v4_default(), _parentRunId = void 0, extraParams = void 0) {
-        await Promise.all(this.handlers.map(async (handler) => {
-          var _a;
-          if (!handler.ignoreLLM) {
-            try {
-              await ((_a = handler.handleLLMStart) == null ? void 0 : _a.call(handler, llm, prompts, runId, this._parentRunId, extraParams));
-            } catch (err) {
-              console.error(`Error in handler ${handler.constructor.name}, handleLLMStart: ${err}`);
-            }
-          }
-        }));
-        return new CallbackManagerForLLMRun(runId, this.handlers, this.inheritableHandlers, this._parentRunId);
-      }
-      async handleChatModelStart(llm, messages2, runId = v4_default(), _parentRunId = void 0, extraParams = void 0) {
-        let messageStrings;
-        await Promise.all(this.handlers.map(async (handler) => {
-          var _a, _b;
-          if (!handler.ignoreLLM) {
-            try {
-              if (handler.handleChatModelStart)
-                await ((_a = handler.handleChatModelStart) == null ? void 0 : _a.call(handler, llm, messages2, runId, this._parentRunId, extraParams));
-              else if (handler.handleLLMStart) {
-                messageStrings = messages2.map((x) => getBufferString(x));
-                await ((_b = handler.handleLLMStart) == null ? void 0 : _b.call(handler, llm, messageStrings, runId, this._parentRunId, extraParams));
+      async handleLLMStart(llm, prompts, _runId = void 0, _parentRunId = void 0, extraParams = void 0) {
+        return Promise.all(prompts.map(async (prompt) => {
+          const runId = v4_default();
+          await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
+            var _a;
+            if (!handler.ignoreLLM) {
+              try {
+                await ((_a = handler.handleLLMStart) == null ? void 0 : _a.call(handler, llm, [prompt], runId, this._parentRunId, extraParams, this.tags, this.metadata));
+              } catch (err) {
+                console.error(`Error in handler ${handler.constructor.name}, handleLLMStart: ${err}`);
               }
-            } catch (err) {
-              console.error(`Error in handler ${handler.constructor.name}, handleLLMStart: ${err}`);
             }
-          }
+          }, handler.awaitHandlers)));
+          return new CallbackManagerForLLMRun(runId, this.handlers, this.inheritableHandlers, this.tags, this.inheritableTags, this.metadata, this.inheritableMetadata, this._parentRunId);
         }));
-        return new CallbackManagerForLLMRun(runId, this.handlers, this.inheritableHandlers, this._parentRunId);
+      }
+      async handleChatModelStart(llm, messages4, _runId = void 0, _parentRunId = void 0, extraParams = void 0) {
+        return Promise.all(messages4.map(async (messageGroup) => {
+          const runId = v4_default();
+          await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
+            var _a, _b;
+            if (!handler.ignoreLLM) {
+              try {
+                if (handler.handleChatModelStart)
+                  await ((_a = handler.handleChatModelStart) == null ? void 0 : _a.call(handler, llm, [messageGroup], runId, this._parentRunId, extraParams, this.tags, this.metadata));
+                else if (handler.handleLLMStart) {
+                  const messageString = getBufferString(messageGroup);
+                  await ((_b = handler.handleLLMStart) == null ? void 0 : _b.call(handler, llm, [messageString], runId, this._parentRunId, extraParams, this.tags, this.metadata));
+                }
+              } catch (err) {
+                console.error(`Error in handler ${handler.constructor.name}, handleLLMStart: ${err}`);
+              }
+            }
+          }, handler.awaitHandlers)));
+          return new CallbackManagerForLLMRun(runId, this.handlers, this.inheritableHandlers, this.tags, this.inheritableTags, this.metadata, this.inheritableMetadata, this._parentRunId);
+        }));
       }
       async handleChainStart(chain, inputs, runId = v4_default()) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreChain) {
             try {
-              await ((_a = handler.handleChainStart) == null ? void 0 : _a.call(handler, chain, inputs, runId, this._parentRunId));
+              await ((_a = handler.handleChainStart) == null ? void 0 : _a.call(handler, chain, inputs, runId, this._parentRunId, this.tags, this.metadata));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleChainStart: ${err}`);
             }
           }
-        }));
-        return new CallbackManagerForChainRun(runId, this.handlers, this.inheritableHandlers, this._parentRunId);
+        }, handler.awaitHandlers)));
+        return new CallbackManagerForChainRun(runId, this.handlers, this.inheritableHandlers, this.tags, this.inheritableTags, this.metadata, this.inheritableMetadata, this._parentRunId);
       }
       async handleToolStart(tool, input, runId = v4_default()) {
-        await Promise.all(this.handlers.map(async (handler) => {
+        await Promise.all(this.handlers.map((handler) => consumeCallback(async () => {
           var _a;
           if (!handler.ignoreAgent) {
             try {
-              await ((_a = handler.handleToolStart) == null ? void 0 : _a.call(handler, tool, input, runId, this._parentRunId));
+              await ((_a = handler.handleToolStart) == null ? void 0 : _a.call(handler, tool, input, runId, this._parentRunId, this.tags, this.metadata));
             } catch (err) {
               console.error(`Error in handler ${handler.constructor.name}, handleToolStart: ${err}`);
             }
           }
-        }));
-        return new CallbackManagerForToolRun(runId, this.handlers, this.inheritableHandlers, this._parentRunId);
+        }, handler.awaitHandlers)));
+        return new CallbackManagerForToolRun(runId, this.handlers, this.inheritableHandlers, this.tags, this.inheritableTags, this.metadata, this.inheritableMetadata, this._parentRunId);
       }
       addHandler(handler, inherit = true) {
         this.handlers.push(handler);
@@ -7793,11 +8863,42 @@ var init_manager = __esm({
           this.addHandler(handler, inherit);
         }
       }
+      addTags(tags, inherit = true) {
+        this.removeTags(tags);
+        this.tags.push(...tags);
+        if (inherit) {
+          this.inheritableTags.push(...tags);
+        }
+      }
+      removeTags(tags) {
+        this.tags = this.tags.filter((tag) => !tags.includes(tag));
+        this.inheritableTags = this.inheritableTags.filter((tag) => !tags.includes(tag));
+      }
+      addMetadata(metadata, inherit = true) {
+        this.metadata = { ...this.metadata, ...metadata };
+        if (inherit) {
+          this.inheritableMetadata = { ...this.inheritableMetadata, ...metadata };
+        }
+      }
+      removeMetadata(metadata) {
+        for (const key of Object.keys(metadata)) {
+          delete this.metadata[key];
+          delete this.inheritableMetadata[key];
+        }
+      }
       copy(additionalHandlers = [], inherit = true) {
         const manager = new CallbackManager(this._parentRunId);
         for (const handler of this.handlers) {
           const inheritable = this.inheritableHandlers.includes(handler);
           manager.addHandler(handler, inheritable);
+        }
+        for (const tag of this.tags) {
+          const inheritable = this.inheritableTags.includes(tag);
+          manager.addTags([tag], inheritable);
+        }
+        for (const key of Object.keys(this.metadata)) {
+          const inheritable = Object.keys(this.inheritableMetadata).includes(key);
+          manager.addMetadata({ [key]: this.metadata[key] }, inheritable);
         }
         for (const handler of additionalHandlers) {
           if (
@@ -7827,8 +8928,8 @@ var init_manager = __esm({
         manager.addHandler(new Handler());
         return manager;
       }
-      static async configure(inheritableHandlers, localHandlers, options) {
-        var _a, _b, _c, _d, _e;
+      static async configure(inheritableHandlers, localHandlers, inheritableTags, localTags, inheritableMetadata, localMetadata, options) {
+        var _a, _b, _c;
         let callbackManager;
         if (inheritableHandlers || localHandlers) {
           if (Array.isArray(inheritableHandlers) || !inheritableHandlers) {
@@ -7839,18 +8940,9 @@ var init_manager = __esm({
           }
           callbackManager = callbackManager.copy(Array.isArray(localHandlers) ? localHandlers.map(ensureHandler) : localHandlers == null ? void 0 : localHandlers.handlers, false);
         }
-        const verboseEnabled = (typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          ((_b = process.env) == null ? void 0 : _b.LANGCHAIN_VERBOSE) !== void 0
-        ) : false) || (options == null ? void 0 : options.verbose);
-        const tracingV2Enabled = typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          ((_c = process.env) == null ? void 0 : _c.LANGCHAIN_TRACING_V2) !== void 0
-        ) : false;
-        const tracingEnabled = tracingV2Enabled || (typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          ((_d = process.env) == null ? void 0 : _d.LANGCHAIN_TRACING) !== void 0
-        ) : false);
+        const verboseEnabled = getEnvironmentVariable2("LANGCHAIN_VERBOSE") || (options == null ? void 0 : options.verbose);
+        const tracingV2Enabled = (_b = getEnvironmentVariable2("LANGCHAIN_TRACING_V2")) != null ? _b : false;
+        const tracingEnabled = tracingV2Enabled || ((_c = getEnvironmentVariable2("LANGCHAIN_TRACING")) != null ? _c : false);
         if (verboseEnabled || tracingEnabled) {
           if (!callbackManager) {
             callbackManager = new CallbackManager();
@@ -7863,15 +8955,118 @@ var init_manager = __esm({
             if (tracingV2Enabled) {
               callbackManager.addHandler(await getTracingV2CallbackHandler(), true);
             } else {
-              const session = typeof process !== "undefined" ? (
-                // eslint-disable-next-line no-process-env
-                (_e = process.env) == null ? void 0 : _e.LANGCHAIN_SESSION
-              ) : void 0;
+              const session = getEnvironmentVariable2("LANGCHAIN_PROJECT") && getEnvironmentVariable2("LANGCHAIN_SESSION");
               callbackManager.addHandler(await getTracingCallbackHandler(session), true);
             }
           }
         }
+        if (inheritableTags || localTags) {
+          if (callbackManager) {
+            callbackManager.addTags(inheritableTags != null ? inheritableTags : []);
+            callbackManager.addTags(localTags != null ? localTags : [], false);
+          }
+        }
+        if (inheritableMetadata || localMetadata) {
+          if (callbackManager) {
+            callbackManager.addMetadata(inheritableMetadata != null ? inheritableMetadata : {});
+            callbackManager.addMetadata(localMetadata != null ? localMetadata : {}, false);
+          }
+        }
         return callbackManager;
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/util/async_caller.js
+var import_p_retry2, import_p_queue3, STATUS_NO_RETRY2, AsyncCaller2;
+var init_async_caller2 = __esm({
+  "node_modules/langchain/dist/util/async_caller.js"() {
+    import_p_retry2 = __toESM(require_p_retry(), 1);
+    import_p_queue3 = __toESM(require_dist(), 1);
+    STATUS_NO_RETRY2 = [
+      400,
+      401,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409
+      // Conflict
+    ];
+    AsyncCaller2 = class {
+      constructor(params) {
+        var _a, _b;
+        Object.defineProperty(this, "maxConcurrency", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "maxRetries", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "queue", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.maxConcurrency = (_a = params.maxConcurrency) != null ? _a : Infinity;
+        this.maxRetries = (_b = params.maxRetries) != null ? _b : 6;
+        const PQueue = "default" in import_p_queue3.default ? import_p_queue3.default.default : import_p_queue3.default;
+        this.queue = new PQueue({ concurrency: this.maxConcurrency });
+      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      call(callable, ...args) {
+        return this.queue.add(() => (0, import_p_retry2.default)(() => callable(...args).catch((error) => {
+          if (error instanceof Error) {
+            throw error;
+          } else {
+            throw new Error(error);
+          }
+        }), {
+          onFailedAttempt(error) {
+            var _a;
+            if (error.message.startsWith("Cancel") || error.message.startsWith("TimeoutError") || error.message.startsWith("AbortError")) {
+              throw error;
+            }
+            if ((error == null ? void 0 : error.code) === "ECONNABORTED") {
+              throw error;
+            }
+            const status = (_a = error == null ? void 0 : error.response) == null ? void 0 : _a.status;
+            if (status && STATUS_NO_RETRY2.includes(+status)) {
+              throw error;
+            }
+          },
+          retries: this.maxRetries,
+          randomize: true
+          // If needed we can change some of the defaults here,
+          // but they're quite sensible.
+        }), { throwOnTimeout: true });
+      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      callWithOptions(options, callable, ...args) {
+        if (options.signal) {
+          return Promise.race([
+            this.call(callable, ...args),
+            new Promise((_, reject) => {
+              var _a;
+              (_a = options.signal) == null ? void 0 : _a.addEventListener("abort", () => {
+                reject(new Error("AbortError"));
+              });
+            })
+          ]);
+        }
+        return this.call(callable, ...args);
+      }
+      fetch(...args) {
+        return this.call(() => fetch(...args).then((res) => res.ok ? res : Promise.reject(res)));
       }
     };
   }
@@ -7992,7 +9187,7 @@ var require_base64_js = __commonJS({
   }
 });
 
-// node_modules/js-tiktoken/dist/chunk-HORODD5P.js
+// node_modules/js-tiktoken/dist/chunk-THGZSONF.js
 function bytePairMerge(piece, ranks) {
   let parts = Array.from(
     { length: piece.length },
@@ -8024,8 +9219,8 @@ function bytePairEncode(piece, ranks) {
     return [ranks.get(piece.join(","))];
   return bytePairMerge(piece, ranks).map((p) => ranks.get(piece.slice(p.start, p.end).join(","))).filter((x) => x != null);
 }
-function escapeRegex(str) {
-  return str.replace(/[\\^$*+?.()|[\]{}]/g, "\\$&");
+function escapeRegex(str2) {
+  return str2.replace(/[\\^$*+?.()|[\]{}]/g, "\\$&");
 }
 function getEncodingNameForModel(model) {
   switch (model) {
@@ -8066,11 +9261,16 @@ function getEncodingNameForModel(model) {
     case "text-similarity-davinci-001": {
       return "r50k_base";
     }
+    case "gpt-3.5-turbo-16k-0613":
+    case "gpt-3.5-turbo-16k":
+    case "gpt-3.5-turbo-0613":
     case "gpt-3.5-turbo-0301":
     case "gpt-3.5-turbo":
-    case "gpt-4-0314":
+    case "gpt-4-32k-0613":
     case "gpt-4-32k-0314":
     case "gpt-4-32k":
+    case "gpt-4-0613":
+    case "gpt-4-0314":
     case "gpt-4":
     case "text-embedding-ada-002": {
       return "cl100k_base";
@@ -8080,8 +9280,8 @@ function getEncodingNameForModel(model) {
   }
 }
 var import_base64_js, _Tiktoken, Tiktoken;
-var init_chunk_HORODD5P = __esm({
-  "node_modules/js-tiktoken/dist/chunk-HORODD5P.js"() {
+var init_chunk_THGZSONF = __esm({
+  "node_modules/js-tiktoken/dist/chunk-THGZSONF.js"() {
     init_chunk_XXPGZHWZ();
     import_base64_js = __toESM(require_base64_js(), 1);
     _Tiktoken = class {
@@ -8204,7 +9404,7 @@ var init_chunk_HORODD5P = __esm({
 // node_modules/js-tiktoken/dist/lite.js
 var init_lite = __esm({
   "node_modules/js-tiktoken/dist/lite.js"() {
-    init_chunk_HORODD5P();
+    init_chunk_THGZSONF();
     init_chunk_XXPGZHWZ();
   }
 });
@@ -8228,9 +9428,9 @@ var cache, caller;
 var init_tiktoken = __esm({
   "node_modules/langchain/dist/util/tiktoken.js"() {
     init_lite();
-    init_async_caller();
+    init_async_caller2();
     cache = {};
-    caller = /* @__PURE__ */ new AsyncCaller({});
+    caller = /* @__PURE__ */ new AsyncCaller2({});
   }
 });
 
@@ -8240,6 +9440,9 @@ var init_count_tokens = __esm({
   "node_modules/langchain/dist/base_language/count_tokens.js"() {
     init_tiktoken();
     getModelNameForTiktoken = (modelName) => {
+      if (modelName.startsWith("gpt-3.5-turbo-16k-")) {
+        return "gpt-3.5-turbo-16k";
+      }
       if (modelName.startsWith("gpt-3.5-turbo-")) {
         return "gpt-3.5-turbo";
       }
@@ -8275,7 +9478,7 @@ var require_utils = __commonJS({
   "node_modules/openai/node_modules/axios/lib/utils.js"(exports, module2) {
     "use strict";
     var bind2 = require_bind();
-    var toString6 = Object.prototype.toString;
+    var toString7 = Object.prototype.toString;
     function isArray4(val) {
       return Array.isArray(val);
     }
@@ -8286,10 +9489,10 @@ var require_utils = __commonJS({
       return val !== null && !isUndefined3(val) && val.constructor !== null && !isUndefined3(val.constructor) && typeof val.constructor.isBuffer === "function" && val.constructor.isBuffer(val);
     }
     function isArrayBuffer2(val) {
-      return toString6.call(val) === "[object ArrayBuffer]";
+      return toString7.call(val) === "[object ArrayBuffer]";
     }
     function isFormData3(val) {
-      return toString6.call(val) === "[object FormData]";
+      return toString7.call(val) === "[object FormData]";
     }
     function isArrayBufferView2(val) {
       var result;
@@ -8306,36 +9509,36 @@ var require_utils = __commonJS({
     function isNumber2(val) {
       return typeof val === "number";
     }
-    function isObject3(val) {
+    function isObject4(val) {
       return val !== null && typeof val === "object";
     }
     function isPlainObject4(val) {
-      if (toString6.call(val) !== "[object Object]") {
+      if (toString7.call(val) !== "[object Object]") {
         return false;
       }
       var prototype3 = Object.getPrototypeOf(val);
       return prototype3 === null || prototype3 === Object.prototype;
     }
     function isDate3(val) {
-      return toString6.call(val) === "[object Date]";
+      return toString7.call(val) === "[object Date]";
     }
     function isFile2(val) {
-      return toString6.call(val) === "[object File]";
+      return toString7.call(val) === "[object File]";
     }
     function isBlob2(val) {
-      return toString6.call(val) === "[object Blob]";
+      return toString7.call(val) === "[object Blob]";
     }
     function isFunction2(val) {
-      return toString6.call(val) === "[object Function]";
+      return toString7.call(val) === "[object Function]";
     }
     function isStream2(val) {
-      return isObject3(val) && isFunction2(val.pipe);
+      return isObject4(val) && isFunction2(val.pipe);
     }
     function isURLSearchParams3(val) {
-      return toString6.call(val) === "[object URLSearchParams]";
+      return toString7.call(val) === "[object URLSearchParams]";
     }
-    function trim2(str) {
-      return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, "");
+    function trim2(str2) {
+      return str2.trim ? str2.trim() : str2.replace(/^\s+|\s+$/g, "");
     }
     function isStandardBrowserEnv3() {
       if (typeof navigator !== "undefined" && (navigator.product === "ReactNative" || navigator.product === "NativeScript" || navigator.product === "NS")) {
@@ -8362,13 +9565,13 @@ var require_utils = __commonJS({
         }
       }
     }
-    function merge4() {
+    function merge5() {
       var result = {};
       function assignValue(val, key) {
         if (isPlainObject4(result[key]) && isPlainObject4(val)) {
-          result[key] = merge4(result[key], val);
+          result[key] = merge5(result[key], val);
         } else if (isPlainObject4(val)) {
-          result[key] = merge4({}, val);
+          result[key] = merge5({}, val);
         } else if (isArray4(val)) {
           result[key] = val.slice();
         } else {
@@ -8380,7 +9583,7 @@ var require_utils = __commonJS({
       }
       return result;
     }
-    function extend3(a2, b, thisArg) {
+    function extend5(a2, b, thisArg) {
       forEach3(b, function assignValue(val, key) {
         if (thisArg && typeof val === "function") {
           a2[key] = bind2(val, thisArg);
@@ -8404,7 +9607,7 @@ var require_utils = __commonJS({
       isArrayBufferView: isArrayBufferView2,
       isString: isString2,
       isNumber: isNumber2,
-      isObject: isObject3,
+      isObject: isObject4,
       isPlainObject: isPlainObject4,
       isUndefined: isUndefined3,
       isDate: isDate3,
@@ -8415,8 +9618,8 @@ var require_utils = __commonJS({
       isURLSearchParams: isURLSearchParams3,
       isStandardBrowserEnv: isStandardBrowserEnv3,
       forEach: forEach3,
-      merge: merge4,
-      extend: extend3,
+      merge: merge5,
+      extend: extend5,
       trim: trim2,
       stripBOM: stripBOM2
     };
@@ -8798,7 +10001,7 @@ var require_Cancel = __commonJS({
     function Cancel2(message) {
       this.message = message;
     }
-    Cancel2.prototype.toString = function toString6() {
+    Cancel2.prototype.toString = function toString7() {
       return "Cancel" + (this.message ? ": " + this.message : "");
     };
     Cancel2.prototype.__CANCEL__ = true;
@@ -9228,9 +10431,9 @@ var require_mergeConfig = __commonJS({
         "validateStatus": mergeDirectKeys
       };
       utils.forEach(Object.keys(config1).concat(Object.keys(config2)), function computeConfigValue(prop) {
-        var merge4 = mergeMap[prop] || mergeDeepProperties;
-        var configValue = merge4(prop);
-        utils.isUndefined(configValue) && merge4 !== mergeDirectKeys || (config[prop] = configValue);
+        var merge5 = mergeMap[prop] || mergeDeepProperties;
+        var configValue = merge5(prop);
+        utils.isUndefined(configValue) && merge5 !== mergeDirectKeys || (config[prop] = configValue);
       });
       return config;
     };
@@ -9252,9 +10455,9 @@ var require_validator = __commonJS({
     "use strict";
     var VERSION3 = require_data().version;
     var validators3 = {};
-    ["object", "boolean", "number", "function", "string", "symbol"].forEach(function(type, i) {
-      validators3[type] = function validator(thing) {
-        return typeof thing === type || "a" + (i < 1 ? "n " : " ") + type;
+    ["object", "boolean", "number", "function", "string", "symbol"].forEach(function(type2, i) {
+      validators3[type2] = function validator(thing) {
+        return typeof thing === type2 || "a" + (i < 1 ? "n " : " ") + type2;
       };
     });
     var deprecatedWarnings2 = {};
@@ -9278,7 +10481,7 @@ var require_validator = __commonJS({
         return validator ? validator(value, opt, opts) : true;
       };
     };
-    function assertOptions2(options, schema, allowUnknown) {
+    function assertOptions2(options, schema2, allowUnknown) {
       if (typeof options !== "object") {
         throw new TypeError("options must be an object");
       }
@@ -9286,7 +10489,7 @@ var require_validator = __commonJS({
       var i = keys3.length;
       while (i-- > 0) {
         var opt = keys3[i];
-        var validator = schema[opt];
+        var validator = schema2[opt];
         if (validator) {
           var value = options[opt];
           var result = value === void 0 || validator(value, opt, options);
@@ -9749,12 +10952,14 @@ var require_api = __commonJS({
     exports.ChatCompletionRequestMessageRoleEnum = {
       System: "system",
       User: "user",
-      Assistant: "assistant"
+      Assistant: "assistant",
+      Function: "function"
     };
     exports.ChatCompletionResponseMessageRoleEnum = {
       System: "system",
       User: "user",
-      Assistant: "assistant"
+      Assistant: "assistant",
+      Function: "function"
     };
     exports.CreateImageRequestSizeEnum = {
       _256x256: "256x256",
@@ -9824,7 +11029,7 @@ var require_api = __commonJS({
         }),
         /**
          *
-         * @summary Creates a completion for the chat message
+         * @summary Creates a model response for the given chat conversation.
          * @param {CreateChatCompletionRequest} createChatCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -9881,7 +11086,7 @@ var require_api = __commonJS({
         }),
         /**
          *
-         * @summary Creates a completion for the provided prompt and parameters
+         * @summary Creates a completion for the provided prompt and parameters.
          * @param {CreateCompletionRequest} createCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -10223,7 +11428,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Transcribes audio into the input language.
-         * @param {File} file The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should match the audio language.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -10276,7 +11481,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Translates audio into into English.
-         * @param {File} file The audio file to translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should be in English.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -10666,7 +11871,7 @@ var require_api = __commonJS({
         },
         /**
          *
-         * @summary Creates a completion for the chat message
+         * @summary Creates a model response for the given chat conversation.
          * @param {CreateChatCompletionRequest} createChatCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -10693,7 +11898,7 @@ var require_api = __commonJS({
         },
         /**
          *
-         * @summary Creates a completion for the provided prompt and parameters
+         * @summary Creates a completion for the provided prompt and parameters.
          * @param {CreateCompletionRequest} createCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -10837,7 +12042,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Transcribes audio into the input language.
-         * @param {File} file The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should match the audio language.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -10855,7 +12060,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Translates audio into into English.
-         * @param {File} file The audio file to translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should be in English.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -11052,7 +12257,7 @@ var require_api = __commonJS({
         },
         /**
          *
-         * @summary Creates a completion for the chat message
+         * @summary Creates a model response for the given chat conversation.
          * @param {CreateChatCompletionRequest} createChatCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -11073,7 +12278,7 @@ var require_api = __commonJS({
         },
         /**
          *
-         * @summary Creates a completion for the provided prompt and parameters
+         * @summary Creates a completion for the provided prompt and parameters.
          * @param {CreateCompletionRequest} createCompletionRequest
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -11187,7 +12392,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Transcribes audio into the input language.
-         * @param {File} file The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should match the audio language.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -11202,7 +12407,7 @@ var require_api = __commonJS({
         /**
          *
          * @summary Translates audio into into English.
-         * @param {File} file The audio file to translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+         * @param {File} file The audio file object (not file name) translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
          * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
          * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should be in English.
          * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -11334,7 +12539,7 @@ var require_api = __commonJS({
         }
       };
     };
-    var OpenAIApi4 = class extends base_1.BaseAPI {
+    var OpenAIApi5 = class extends base_1.BaseAPI {
       /**
        *
        * @summary Immediately cancel a fine-tune job.
@@ -11360,7 +12565,7 @@ var require_api = __commonJS({
       }
       /**
        *
-       * @summary Creates a completion for the chat message
+       * @summary Creates a model response for the given chat conversation.
        * @param {CreateChatCompletionRequest} createChatCompletionRequest
        * @param {*} [options] Override http request option.
        * @throws {RequiredError}
@@ -11383,7 +12588,7 @@ var require_api = __commonJS({
       }
       /**
        *
-       * @summary Creates a completion for the provided prompt and parameters
+       * @summary Creates a completion for the provided prompt and parameters.
        * @param {CreateCompletionRequest} createCompletionRequest
        * @param {*} [options] Override http request option.
        * @throws {RequiredError}
@@ -11507,7 +12712,7 @@ var require_api = __commonJS({
       /**
        *
        * @summary Transcribes audio into the input language.
-       * @param {File} file The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+       * @param {File} file The audio file object (not file name) to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
        * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
        * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should match the audio language.
        * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -11523,7 +12728,7 @@ var require_api = __commonJS({
       /**
        *
        * @summary Translates audio into into English.
-       * @param {File} file The audio file to translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+       * @param {File} file The audio file object (not file name) translate, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
        * @param {string} model ID of the model to use. Only &#x60;whisper-1&#x60; is currently available.
        * @param {string} [prompt] An optional text to guide the model\\\&#39;s style or continue a previous audio segment. The [prompt](/docs/guides/speech-to-text/prompting) should be in English.
        * @param {string} [responseFormat] The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
@@ -11667,7 +12872,7 @@ var require_api = __commonJS({
         return exports.OpenAIApiFp(this.configuration).retrieveModel(model, options).then((request) => request(this.axios, this.basePath));
       }
     };
-    exports.OpenAIApi = OpenAIApi4;
+    exports.OpenAIApi = OpenAIApi5;
   }
 });
 
@@ -11676,7 +12881,7 @@ var require_package = __commonJS({
   "node_modules/openai/package.json"(exports, module2) {
     module2.exports = {
       name: "openai",
-      version: "3.2.1",
+      version: "3.3.0",
       description: "Node.js library for the OpenAI API",
       repository: {
         type: "git",
@@ -11722,7 +12927,7 @@ var require_configuration = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Configuration = void 0;
     var packageJson = require_package();
-    var Configuration4 = class {
+    var Configuration5 = class {
       constructor(param = {}) {
         this.apiKey = param.apiKey;
         this.organization = param.organization;
@@ -11758,7 +12963,7 @@ var require_configuration = __commonJS({
         return mime !== null && (jsonMime.test(mime) || mime.toLowerCase() === "application/json-patch+json");
       }
     };
-    exports.Configuration = Configuration4;
+    exports.Configuration = Configuration5;
   }
 });
 
@@ -11880,14 +13085,14 @@ var init_utils = __esm({
     ({ toString: toString2 } = Object.prototype);
     ({ getPrototypeOf } = Object);
     kindOf = ((cache2) => (thing) => {
-      const str = toString2.call(thing);
-      return cache2[str] || (cache2[str] = str.slice(8, -1).toLowerCase());
+      const str2 = toString2.call(thing);
+      return cache2[str2] || (cache2[str2] = str2.slice(8, -1).toLowerCase());
     })(/* @__PURE__ */ Object.create(null));
-    kindOfTest = (type) => {
-      type = type.toLowerCase();
-      return (thing) => kindOf(thing) === type;
+    kindOfTest = (type2) => {
+      type2 = type2.toLowerCase();
+      return (thing) => kindOf(thing) === type2;
     };
-    typeOfTest = (type) => (thing) => typeof thing === type;
+    typeOfTest = (type2) => (thing) => typeof thing === type2;
     ({ isArray } = Array);
     isUndefined = typeOfTest("undefined");
     isArrayBuffer = kindOfTest("ArrayBuffer");
@@ -11914,7 +13119,7 @@ var init_utils = __esm({
       kind === "object" && isFunction(thing.toString) && thing.toString() === "[object FormData]"));
     };
     isURLSearchParams = kindOfTest("URLSearchParams");
-    trim = (str) => str.trim ? str.trim() : str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+    trim = (str2) => str2.trim ? str2.trim() : str2.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
     _global = (() => {
       if (typeof globalThis !== "undefined")
         return globalThis;
@@ -11967,13 +13172,13 @@ var init_utils = __esm({
       } while (sourceObj && (!filter3 || filter3(sourceObj, destObj)) && sourceObj !== Object.prototype);
       return destObj;
     };
-    endsWith = (str, searchString, position3) => {
-      str = String(str);
-      if (position3 === void 0 || position3 > str.length) {
-        position3 = str.length;
+    endsWith = (str2, searchString, position3) => {
+      str2 = String(str2);
+      if (position3 === void 0 || position3 > str2.length) {
+        position3 = str2.length;
       }
       position3 -= searchString.length;
-      const lastIndex = str.indexOf(searchString, position3);
+      const lastIndex = str2.indexOf(searchString, position3);
       return lastIndex !== -1 && lastIndex === position3;
     };
     toArray = (thing) => {
@@ -12004,17 +13209,17 @@ var init_utils = __esm({
         fn.call(obj, pair[0], pair[1]);
       }
     };
-    matchAll = (regExp, str) => {
+    matchAll = (regExp, str2) => {
       let matches;
       const arr = [];
-      while ((matches = regExp.exec(str)) !== null) {
+      while ((matches = regExp.exec(str2)) !== null) {
         arr.push(matches);
       }
       return arr;
     };
     isHTMLForm = kindOfTest("HTMLFormElement");
-    toCamelCase = (str) => {
-      return str.toLowerCase().replace(
+    toCamelCase = (str2) => {
+      return str2.toLowerCase().replace(
         /[-_\s]([a-z\d])(\w*)/g,
         function replacer(m, p1, p2) {
           return p1.toUpperCase() + p2;
@@ -12077,12 +13282,12 @@ var init_utils = __esm({
       ALPHA_DIGIT: ALPHA + ALPHA.toUpperCase() + DIGIT
     };
     generateString = (size = 16, alphabet = ALPHABET.ALPHA_DIGIT) => {
-      let str = "";
+      let str2 = "";
       const { length } = alphabet;
       while (size--) {
-        str += alphabet[Math.random() * length | 0];
+        str2 += alphabet[Math.random() * length | 0];
       }
-      return str;
+      return str2;
     };
     toJSONObject = (obj) => {
       const stack = new Array(10);
@@ -12373,7 +13578,7 @@ var init_toFormData = __esm({
 });
 
 // node_modules/axios/lib/helpers/AxiosURLSearchParams.js
-function encode(str) {
+function encode(str2) {
   const charMap = {
     "!": "%21",
     "'": "%27",
@@ -12383,7 +13588,7 @@ function encode(str) {
     "%20": "+",
     "%00": "\0"
   };
-  return encodeURIComponent(str).replace(/[!'()~]|%20|%00/g, function replacer(match2) {
+  return encodeURIComponent(str2).replace(/[!'()~]|%20|%00/g, function replacer(match2) {
     return charMap[match2];
   });
 }
@@ -12865,11 +14070,11 @@ function normalizeValue(value) {
   }
   return utils_default.isArray(value) ? value.map(normalizeValue) : String(value);
 }
-function parseTokens(str) {
+function parseTokens(str2) {
   const tokens = /* @__PURE__ */ Object.create(null);
   const tokensRE = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
   let match2;
-  while (match2 = tokensRE.exec(str)) {
+  while (match2 = tokensRE.exec(str2)) {
     tokens[match2[1]] = match2[2];
   }
   return tokens;
@@ -12891,8 +14096,8 @@ function matchHeaderValue(context, value, header, filter3, isHeaderNameFilter) {
   }
 }
 function formatHeader(header) {
-  return header.trim().toLowerCase().replace(/([a-z\d])(\w*)/g, (w, char, str) => {
-    return char.toUpperCase() + str;
+  return header.trim().toLowerCase().replace(/([a-z\d])(\w*)/g, (w, char, str2) => {
+    return char.toUpperCase() + str2;
   });
 }
 function buildAccessors(obj, header) {
@@ -12913,7 +14118,7 @@ var init_AxiosHeaders = __esm({
     init_utils();
     init_parseHeaders();
     $internals = Symbol("internals");
-    isValidHeaderName = (str) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(str.trim());
+    isValidHeaderName = (str2) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(str2.trim());
     AxiosHeaders = class {
       constructor(headers) {
         headers && this.set(headers);
@@ -13696,9 +14901,9 @@ function mergeConfig(config1, config2) {
     headers: (a2, b) => mergeDeepProperties(headersToObject(a2), headersToObject(b), true)
   };
   utils_default.forEach(Object.keys(config1).concat(Object.keys(config2)), function computeConfigValue(prop) {
-    const merge4 = mergeMap[prop] || mergeDeepProperties;
-    const configValue = merge4(config1[prop], config2[prop], prop);
-    utils_default.isUndefined(configValue) && merge4 !== mergeDirectKeys || (config[prop] = configValue);
+    const merge5 = mergeMap[prop] || mergeDeepProperties;
+    const configValue = merge5(config1[prop], config2[prop], prop);
+    utils_default.isUndefined(configValue) && merge5 !== mergeDirectKeys || (config[prop] = configValue);
   });
   return config;
 }
@@ -13721,7 +14926,7 @@ var init_data = __esm({
 });
 
 // node_modules/axios/lib/helpers/validator.js
-function assertOptions(options, schema, allowUnknown) {
+function assertOptions(options, schema2, allowUnknown) {
   if (typeof options !== "object") {
     throw new AxiosError_default("options must be an object", AxiosError_default.ERR_BAD_OPTION_VALUE);
   }
@@ -13729,7 +14934,7 @@ function assertOptions(options, schema, allowUnknown) {
   let i = keys3.length;
   while (i-- > 0) {
     const opt = keys3[i];
-    const validator = schema[opt];
+    const validator = schema2[opt];
     if (validator) {
       const value = options[opt];
       const result = value === void 0 || validator(value, opt, options);
@@ -13750,9 +14955,9 @@ var init_validator = __esm({
     init_data();
     init_AxiosError();
     validators = {};
-    ["object", "boolean", "number", "function", "string", "symbol"].forEach((type, i) => {
-      validators[type] = function validator(thing) {
-        return typeof thing === type || "a" + (i < 1 ? "n " : " ") + type;
+    ["object", "boolean", "number", "function", "string", "symbol"].forEach((type2, i) => {
+      validators[type2] = function validator(thing) {
+        return typeof thing === type2 || "a" + (i < 1 ? "n " : " ") + type2;
       };
     });
     deprecatedWarnings = {};
@@ -14646,11 +15851,15 @@ var init_base3 = __esm({
     BaseChatModel = class extends BaseLanguageModel {
       constructor(fields) {
         super(fields);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "chat_models", this._llmType()]
+        });
       }
-      async generate(messages2, options, callbacks) {
-        var _a;
-        const generations = [];
-        const llmOutputs = [];
+      async generate(messages4, options, callbacks) {
+        var _a, _b;
         let parsedOptions;
         if (Array.isArray(options)) {
           parsedOptions = { stop: options };
@@ -14662,28 +15871,44 @@ var init_base3 = __esm({
         } else {
           parsedOptions = options != null ? options : {};
         }
-        const callbackManager_ = await CallbackManager.configure(callbacks, this.callbacks, { verbose: this.verbose });
-        const invocationParams = { invocation_params: this == null ? void 0 : this.invocationParams() };
-        const runManager = await (callbackManager_ == null ? void 0 : callbackManager_.handleChatModelStart({ name: this._llmType() }, messages2, void 0, void 0, invocationParams));
-        try {
-          const results = await Promise.all(messages2.map((messageList) => this._generate(messageList, parsedOptions, runManager)));
-          for (const result of results) {
-            if (result.llmOutput) {
-              llmOutputs.push(result.llmOutput);
-            }
-            generations.push(result.generations);
+        const handledOptions = {
+          tags: parsedOptions.tags,
+          metadata: parsedOptions.metadata,
+          callbacks: (_a = parsedOptions.callbacks) != null ? _a : callbacks
+        };
+        delete parsedOptions.tags;
+        delete parsedOptions.metadata;
+        delete parsedOptions.callbacks;
+        const callbackManager_ = await CallbackManager.configure(handledOptions.callbacks, this.callbacks, handledOptions.tags, this.tags, handledOptions.metadata, this.metadata, { verbose: this.verbose });
+        const extra = {
+          options: parsedOptions,
+          invocation_params: this == null ? void 0 : this.invocationParams(parsedOptions)
+        };
+        const runManagers = await (callbackManager_ == null ? void 0 : callbackManager_.handleChatModelStart(this.toJSON(), messages4, void 0, void 0, extra));
+        const results = await Promise.allSettled(messages4.map((messageList, i) => this._generate(messageList, { ...parsedOptions, promptIndex: i }, runManagers == null ? void 0 : runManagers[i])));
+        const generations = [];
+        const llmOutputs = [];
+        await Promise.all(results.map(async (pResult, i) => {
+          var _a2, _b2;
+          if (pResult.status === "fulfilled") {
+            const result = pResult.value;
+            generations[i] = result.generations;
+            llmOutputs[i] = result.llmOutput;
+            return (_a2 = runManagers == null ? void 0 : runManagers[i]) == null ? void 0 : _a2.handleLLMEnd({
+              generations: [result.generations],
+              llmOutput: result.llmOutput
+            });
+          } else {
+            await ((_b2 = runManagers == null ? void 0 : runManagers[i]) == null ? void 0 : _b2.handleLLMError(pResult.reason));
+            return Promise.reject(pResult.reason);
           }
-        } catch (err) {
-          await (runManager == null ? void 0 : runManager.handleLLMError(err));
-          throw err;
-        }
+        }));
         const output = {
           generations,
-          llmOutput: llmOutputs.length ? (_a = this._combineLLMOutput) == null ? void 0 : _a.call(this, ...llmOutputs) : void 0
+          llmOutput: llmOutputs.length ? (_b = this._combineLLMOutput) == null ? void 0 : _b.call(this, ...llmOutputs) : void 0
         };
-        await (runManager == null ? void 0 : runManager.handleLLMEnd(output));
         Object.defineProperty(output, RUN_KEY, {
-          value: runManager ? { runId: runManager == null ? void 0 : runManager.runId } : void 0,
+          value: runManagers ? { runIds: runManagers == null ? void 0 : runManagers.map((manager) => manager.runId) } : void 0,
           configurable: true
         });
         return output;
@@ -14692,7 +15917,7 @@ var init_base3 = __esm({
        * Get the parameters used to invoke the model
        */
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      invocationParams() {
+      invocationParams(_options) {
         return {};
       }
       _modelType() {
@@ -14702,8 +15927,8 @@ var init_base3 = __esm({
         const promptMessages = promptValues.map((promptValue) => promptValue.toChatMessages());
         return this.generate(promptMessages, options, callbacks);
       }
-      async call(messages2, options, callbacks) {
-        const result = await this.generate([messages2], options, callbacks);
+      async call(messages4, options, callbacks) {
+        const result = await this.generate([messages4], options, callbacks);
         const generations = result.generations;
         return generations[0][0].message;
       }
@@ -14711,2332 +15936,42 @@ var init_base3 = __esm({
         const promptMessages = promptValue.toChatMessages();
         return this.call(promptMessages, options, callbacks);
       }
-      async predictMessages(messages2, options, callbacks) {
-        return this.call(messages2, options, callbacks);
+      async predictMessages(messages4, options, callbacks) {
+        return this.call(messages4, options, callbacks);
       }
       async predict(text4, options, callbacks) {
-        const message = new HumanChatMessage(text4);
+        const message = new HumanMessage(text4);
         const result = await this.call([message], options, callbacks);
-        return result.text;
+        return result.content;
       }
     };
   }
 });
 
-// node_modules/langchain/dist/chat_models/openai.js
-var openai_exports = {};
-__export(openai_exports, {
-  ChatOpenAI: () => ChatOpenAI
-});
-function messageTypeToOpenAIRole(type) {
-  switch (type) {
-    case "system":
-      return "system";
-    case "ai":
-      return "assistant";
-    case "human":
-      return "user";
-    default:
-      throw new Error(`Unknown message type: ${type}`);
-  }
-}
-function openAIResponseToChatMessage(role, text4) {
-  switch (role) {
-    case "user":
-      return new HumanChatMessage(text4);
-    case "assistant":
-      return new AIChatMessage(text4);
-    case "system":
-      return new SystemChatMessage(text4);
-    default:
-      return new ChatMessage(text4, role != null ? role : "unknown");
-  }
-}
-var import_openai, ChatOpenAI;
-var init_openai = __esm({
-  "node_modules/langchain/dist/chat_models/openai.js"() {
-    import_openai = __toESM(require_dist2(), 1);
-    init_env();
-    init_axios_fetch_adapter();
-    init_base3();
-    init_schema();
-    init_count_tokens();
-    ChatOpenAI = class extends BaseChatModel {
-      get callKeys() {
-        return ["stop", "signal", "timeout", "options"];
-      }
-      constructor(fields, configuration) {
-        var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r;
-        super(fields != null ? fields : {});
-        Object.defineProperty(this, "temperature", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 1
-        });
-        Object.defineProperty(this, "topP", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 1
-        });
-        Object.defineProperty(this, "frequencyPenalty", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 0
-        });
-        Object.defineProperty(this, "presencePenalty", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 0
-        });
-        Object.defineProperty(this, "n", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 1
-        });
-        Object.defineProperty(this, "logitBias", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "modelName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "gpt-3.5-turbo"
-        });
-        Object.defineProperty(this, "modelKwargs", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "stop", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "timeout", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "streaming", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "maxTokens", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "azureOpenAIApiVersion", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "azureOpenAIApiKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "azureOpenAIApiInstanceName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "azureOpenAIApiDeploymentName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "client", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "clientConfig", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        const apiKey = (_b = fields == null ? void 0 : fields.openAIApiKey) != null ? _b : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_a = process.env) == null ? void 0 : _a.OPENAI_API_KEY
-        ) : void 0;
-        const azureApiKey = (_d = fields == null ? void 0 : fields.azureOpenAIApiKey) != null ? _d : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_c = process.env) == null ? void 0 : _c.AZURE_OPENAI_API_KEY
-        ) : void 0;
-        if (!azureApiKey && !apiKey) {
-          throw new Error("(Azure) OpenAI API key not found");
-        }
-        const azureApiInstanceName = (_f = fields == null ? void 0 : fields.azureOpenAIApiInstanceName) != null ? _f : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_e = process.env) == null ? void 0 : _e.AZURE_OPENAI_API_INSTANCE_NAME
-        ) : void 0;
-        const azureApiDeploymentName = (_h = fields == null ? void 0 : fields.azureOpenAIApiDeploymentName) != null ? _h : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_g = process.env) == null ? void 0 : _g.AZURE_OPENAI_API_DEPLOYMENT_NAME
-        ) : void 0;
-        const azureApiVersion = (_j = fields == null ? void 0 : fields.azureOpenAIApiVersion) != null ? _j : typeof process !== "undefined" ? (
-          // eslint-disable-next-line no-process-env
-          (_i = process.env) == null ? void 0 : _i.AZURE_OPENAI_API_VERSION
-        ) : void 0;
-        this.modelName = (_k = fields == null ? void 0 : fields.modelName) != null ? _k : this.modelName;
-        this.modelKwargs = (_l = fields == null ? void 0 : fields.modelKwargs) != null ? _l : {};
-        this.timeout = fields == null ? void 0 : fields.timeout;
-        this.temperature = (_m = fields == null ? void 0 : fields.temperature) != null ? _m : this.temperature;
-        this.topP = (_n = fields == null ? void 0 : fields.topP) != null ? _n : this.topP;
-        this.frequencyPenalty = (_o = fields == null ? void 0 : fields.frequencyPenalty) != null ? _o : this.frequencyPenalty;
-        this.presencePenalty = (_p = fields == null ? void 0 : fields.presencePenalty) != null ? _p : this.presencePenalty;
-        this.maxTokens = fields == null ? void 0 : fields.maxTokens;
-        this.n = (_q = fields == null ? void 0 : fields.n) != null ? _q : this.n;
-        this.logitBias = fields == null ? void 0 : fields.logitBias;
-        this.stop = fields == null ? void 0 : fields.stop;
-        this.streaming = (_r = fields == null ? void 0 : fields.streaming) != null ? _r : false;
-        this.azureOpenAIApiVersion = azureApiVersion;
-        this.azureOpenAIApiKey = azureApiKey;
-        this.azureOpenAIApiInstanceName = azureApiInstanceName;
-        this.azureOpenAIApiDeploymentName = azureApiDeploymentName;
-        if (this.streaming && this.n > 1) {
-          throw new Error("Cannot stream results when n > 1");
-        }
-        if (this.azureOpenAIApiKey) {
-          if (!this.azureOpenAIApiInstanceName) {
-            throw new Error("Azure OpenAI API instance name not found");
-          }
-          if (!this.azureOpenAIApiDeploymentName) {
-            throw new Error("Azure OpenAI API deployment name not found");
-          }
-          if (!this.azureOpenAIApiVersion) {
-            throw new Error("Azure OpenAI API version not found");
-          }
-        }
-        this.clientConfig = {
-          apiKey,
-          ...configuration
-        };
-      }
-      /**
-       * Get the parameters used to invoke the model
-       */
-      invocationParams() {
-        return {
-          model: this.modelName,
-          temperature: this.temperature,
-          top_p: this.topP,
-          frequency_penalty: this.frequencyPenalty,
-          presence_penalty: this.presencePenalty,
-          max_tokens: this.maxTokens === -1 ? void 0 : this.maxTokens,
-          n: this.n,
-          logit_bias: this.logitBias,
-          stop: this.stop,
-          stream: this.streaming,
-          ...this.modelKwargs
-        };
-      }
-      /** @ignore */
-      _identifyingParams() {
-        return {
-          model_name: this.modelName,
-          ...this.invocationParams(),
-          ...this.clientConfig
-        };
-      }
-      /**
-       * Get the identifying parameters for the model
-       */
-      identifyingParams() {
-        return this._identifyingParams();
-      }
-      /** @ignore */
-      async _generate(messages2, options, runManager) {
-        var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-        const tokenUsage = {};
-        if (this.stop && (options == null ? void 0 : options.stop)) {
-          throw new Error("Stop found in input and default params");
-        }
-        const params = this.invocationParams();
-        params.stop = (_a = options == null ? void 0 : options.stop) != null ? _a : params.stop;
-        const messagesMapped = messages2.map((message) => ({
-          role: messageTypeToOpenAIRole(message._getType()),
-          content: message.text,
-          name: message.name
-        }));
-        const data = params.stream ? await new Promise((resolve, reject) => {
-          let response;
-          let rejected = false;
-          let resolved = false;
-          this.completionWithRetry({
-            ...params,
-            messages: messagesMapped
-          }, {
-            signal: options == null ? void 0 : options.signal,
-            ...options == null ? void 0 : options.options,
-            adapter: fetchAdapter,
-            responseType: "stream",
-            onmessage: (event) => {
-              var _a2, _b2, _c2, _d2, _e2, _f2, _g2, _h2, _i2, _j;
-              if (((_b2 = (_a2 = event.data) == null ? void 0 : _a2.trim) == null ? void 0 : _b2.call(_a2)) === "[DONE]") {
-                if (resolved) {
-                  return;
-                }
-                resolved = true;
-                resolve(response);
-              } else {
-                const message = JSON.parse(event.data);
-                if (!response) {
-                  response = {
-                    id: message.id,
-                    object: message.object,
-                    created: message.created,
-                    model: message.model,
-                    choices: []
-                  };
-                }
-                for (const part of message.choices) {
-                  if (part != null) {
-                    let choice = response.choices.find((c) => c.index === part.index);
-                    if (!choice) {
-                      choice = {
-                        index: part.index,
-                        finish_reason: (_c2 = part.finish_reason) != null ? _c2 : void 0
-                      };
-                      response.choices[part.index] = choice;
-                    }
-                    if (!choice.message) {
-                      choice.message = {
-                        role: (_d2 = part.delta) == null ? void 0 : _d2.role,
-                        content: (_f2 = (_e2 = part.delta) == null ? void 0 : _e2.content) != null ? _f2 : ""
-                      };
-                    }
-                    choice.message.content += (_h2 = (_g2 = part.delta) == null ? void 0 : _g2.content) != null ? _h2 : "";
-                    void (runManager == null ? void 0 : runManager.handleLLMNewToken((_j = (_i2 = part.delta) == null ? void 0 : _i2.content) != null ? _j : ""));
-                  }
-                }
-                if (!resolved && message.choices.every((c) => c.finish_reason != null)) {
-                  resolved = true;
-                  resolve(response);
-                }
-              }
-            }
-          }).catch((error) => {
-            if (!rejected) {
-              rejected = true;
-              reject(error);
-            }
-          });
-        }) : await this.completionWithRetry({
-          ...params,
-          messages: messagesMapped
-        }, {
-          signal: options == null ? void 0 : options.signal,
-          ...options == null ? void 0 : options.options
-        });
-        const { completion_tokens: completionTokens, prompt_tokens: promptTokens, total_tokens: totalTokens } = (_b = data.usage) != null ? _b : {};
-        if (completionTokens) {
-          tokenUsage.completionTokens = ((_c = tokenUsage.completionTokens) != null ? _c : 0) + completionTokens;
-        }
-        if (promptTokens) {
-          tokenUsage.promptTokens = ((_d = tokenUsage.promptTokens) != null ? _d : 0) + promptTokens;
-        }
-        if (totalTokens) {
-          tokenUsage.totalTokens = ((_e = tokenUsage.totalTokens) != null ? _e : 0) + totalTokens;
-        }
-        const generations = [];
-        for (const part of data.choices) {
-          const role = (_g = (_f = part.message) == null ? void 0 : _f.role) != null ? _g : void 0;
-          const text4 = (_i = (_h = part.message) == null ? void 0 : _h.content) != null ? _i : "";
-          generations.push({
-            text: text4,
-            message: openAIResponseToChatMessage(role, text4)
-          });
-        }
-        return {
-          generations,
-          llmOutput: { tokenUsage }
-        };
-      }
-      async getNumTokensFromMessages(messages2) {
-        let totalCount = 0;
-        let tokensPerMessage = 0;
-        let tokensPerName = 0;
-        if (getModelNameForTiktoken(this.modelName) === "gpt-3.5-turbo") {
-          tokensPerMessage = 4;
-          tokensPerName = -1;
-        } else if (getModelNameForTiktoken(this.modelName).startsWith("gpt-4")) {
-          tokensPerMessage = 3;
-          tokensPerName = 1;
-        }
-        const countPerMessage = await Promise.all(messages2.map(async (message) => {
-          const textCount = await this.getNumTokens(message.text);
-          const roleCount = await this.getNumTokens(messageTypeToOpenAIRole(message._getType()));
-          const nameCount = message.name !== void 0 ? tokensPerName + await this.getNumTokens(message.name) : 0;
-          const count = textCount + tokensPerMessage + roleCount + nameCount;
-          totalCount += count;
-          return count;
-        }));
-        totalCount += 3;
-        return { totalCount, countPerMessage };
-      }
-      /** @ignore */
-      async completionWithRetry(request, options) {
-        if (!this.client) {
-          const endpoint = this.azureOpenAIApiKey ? `https://${this.azureOpenAIApiInstanceName}.openai.azure.com/openai/deployments/${this.azureOpenAIApiDeploymentName}` : this.clientConfig.basePath;
-          const clientConfig = new import_openai.Configuration({
-            ...this.clientConfig,
-            basePath: endpoint,
-            baseOptions: {
-              timeout: this.timeout,
-              ...this.clientConfig.baseOptions
-            }
-          });
-          this.client = new import_openai.OpenAIApi(clientConfig);
-        }
-        const axiosOptions = {
-          adapter: isNode() ? void 0 : fetchAdapter,
-          ...this.clientConfig.baseOptions,
-          ...options
-        };
-        if (this.azureOpenAIApiKey) {
-          axiosOptions.headers = {
-            "api-key": this.azureOpenAIApiKey,
-            ...axiosOptions.headers
-          };
-          axiosOptions.params = {
-            "api-version": this.azureOpenAIApiVersion,
-            ...axiosOptions.params
-          };
-        }
-        return this.caller.call(this.client.createChatCompletion.bind(this.client), request, axiosOptions).then((res) => res.data);
-      }
-      _llmType() {
-        return "openai";
-      }
-      /** @ignore */
-      _combineLLMOutput(...llmOutputs) {
-        return llmOutputs.reduce((acc, llmOutput) => {
-          var _a, _b, _c;
-          if (llmOutput && llmOutput.tokenUsage) {
-            acc.tokenUsage.completionTokens += (_a = llmOutput.tokenUsage.completionTokens) != null ? _a : 0;
-            acc.tokenUsage.promptTokens += (_b = llmOutput.tokenUsage.promptTokens) != null ? _b : 0;
-            acc.tokenUsage.totalTokens += (_c = llmOutput.tokenUsage.totalTokens) != null ? _c : 0;
-          }
-          return acc;
-        }, {
-          tokenUsage: {
-            completionTokens: 0,
-            promptTokens: 0,
-            totalTokens: 0
-          }
-        });
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/base_language/index.js
-var getVerbosity, BaseLangChain, BaseLanguageModel;
-var init_base_language = __esm({
-  "node_modules/langchain/dist/base_language/index.js"() {
-    init_async_caller();
-    init_count_tokens();
-    init_tiktoken();
-    getVerbosity = () => false;
-    BaseLangChain = class {
-      constructor(params) {
-        var _a;
-        Object.defineProperty(this, "verbose", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "callbacks", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.verbose = (_a = params.verbose) != null ? _a : getVerbosity();
-        this.callbacks = params.callbacks;
-      }
-    };
-    BaseLanguageModel = class extends BaseLangChain {
-      /**
-       * Keys that the language model accepts as call options.
-       */
-      get callKeys() {
-        return ["stop", "timeout", "signal"];
-      }
-      constructor(params) {
-        var _a;
-        super({
-          verbose: params.verbose,
-          callbacks: (_a = params.callbacks) != null ? _a : params.callbackManager
-        });
-        Object.defineProperty(this, "caller", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "_encoding", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.caller = new AsyncCaller(params != null ? params : {});
-      }
-      async getNumTokens(text4) {
-        let numTokens = Math.ceil(text4.length / 4);
-        if (!this._encoding) {
-          try {
-            this._encoding = await encodingForModel("modelName" in this ? getModelNameForTiktoken(this.modelName) : "gpt2");
-          } catch (error) {
-            console.warn("Failed to calculate number of tokens, falling back to approximate count", error);
-          }
-        }
-        if (this._encoding) {
-          numTokens = this._encoding.encode(text4).length;
-        }
-        return numTokens;
-      }
-      /**
-       * Get the identifying parameters of the LLM.
-       */
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      _identifyingParams() {
-        return {};
-      }
-      /**
-       * Return a json-like object representing this LLM.
-       */
-      serialize() {
-        return {
-          ...this._identifyingParams(),
-          _type: this._llmType(),
-          _model: this._modelType()
-        };
-      }
-      /**
-       * Load an LLM from a json-like object describing it.
-       */
-      static async deserialize(data) {
-        const { _type, _model, ...rest } = data;
-        if (_model && _model !== "base_chat_model") {
-          throw new Error(`Cannot load LLM with model ${_model}`);
-        }
-        const Cls = {
-          openai: (await Promise.resolve().then(() => (init_openai(), openai_exports))).ChatOpenAI
-        }[_type];
-        if (Cls === void 0) {
-          throw new Error(`Cannot load  LLM with type ${_type}`);
-        }
-        return new Cls(rest);
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/template.js
-var parseFString, interpolateFString, DEFAULT_FORMATTER_MAPPING, DEFAULT_PARSER_MAPPING, renderTemplate, parseTemplate, checkValidTemplate;
-var init_template = __esm({
-  "node_modules/langchain/dist/prompts/template.js"() {
-    parseFString = (template) => {
-      const chars = template.split("");
-      const nodes = [];
-      const nextBracket = (bracket, start) => {
-        for (let i2 = start; i2 < chars.length; i2 += 1) {
-          if (bracket.includes(chars[i2])) {
-            return i2;
-          }
-        }
-        return -1;
-      };
-      let i = 0;
-      while (i < chars.length) {
-        if (chars[i] === "{" && i + 1 < chars.length && chars[i + 1] === "{") {
-          nodes.push({ type: "literal", text: "{" });
-          i += 2;
-        } else if (chars[i] === "}" && i + 1 < chars.length && chars[i + 1] === "}") {
-          nodes.push({ type: "literal", text: "}" });
-          i += 2;
-        } else if (chars[i] === "{") {
-          const j = nextBracket("}", i);
-          if (j < 0) {
-            throw new Error("Unclosed '{' in template.");
-          }
-          nodes.push({
-            type: "variable",
-            name: chars.slice(i + 1, j).join("")
-          });
-          i = j + 1;
-        } else if (chars[i] === "}") {
-          throw new Error("Single '}' in template.");
-        } else {
-          const next = nextBracket("{}", i);
-          const text4 = (next < 0 ? chars.slice(i) : chars.slice(i, next)).join("");
-          nodes.push({ type: "literal", text: text4 });
-          i = next < 0 ? chars.length : next;
-        }
-      }
-      return nodes;
-    };
-    interpolateFString = (template, values) => parseFString(template).reduce((res, node2) => {
-      if (node2.type === "variable") {
-        if (node2.name in values) {
-          return res + values[node2.name];
-        }
-        throw new Error(`Missing value for input ${node2.name}`);
-      }
-      return res + node2.text;
-    }, "");
-    DEFAULT_FORMATTER_MAPPING = {
-      "f-string": interpolateFString,
-      jinja2: (_, __) => ""
-    };
-    DEFAULT_PARSER_MAPPING = {
-      "f-string": parseFString,
-      jinja2: (_) => []
-    };
-    renderTemplate = (template, templateFormat, inputValues) => DEFAULT_FORMATTER_MAPPING[templateFormat](template, inputValues);
-    parseTemplate = (template, templateFormat) => DEFAULT_PARSER_MAPPING[templateFormat](template);
-    checkValidTemplate = (template, templateFormat, inputVariables) => {
-      if (!(templateFormat in DEFAULT_FORMATTER_MAPPING)) {
-        const validFormats = Object.keys(DEFAULT_FORMATTER_MAPPING);
-        throw new Error(`Invalid template format. Got \`${templateFormat}\`;
-                         should be one of ${validFormats}`);
-      }
-      try {
-        const dummyInputs = inputVariables.reduce((acc, v) => {
-          acc[v] = "foo";
-          return acc;
-        }, {});
-        renderTemplate(template, templateFormat, dummyInputs);
-      } catch (e) {
-        throw new Error("Invalid prompt schema.");
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/prompt.js
-var prompt_exports = {};
-__export(prompt_exports, {
-  PromptTemplate: () => PromptTemplate
-});
-var PromptTemplate;
-var init_prompt = __esm({
-  "node_modules/langchain/dist/prompts/prompt.js"() {
-    init_base4();
-    init_template();
-    PromptTemplate = class extends BaseStringPromptTemplate {
-      constructor(input) {
-        super(input);
-        Object.defineProperty(this, "template", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "templateFormat", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "f-string"
-        });
-        Object.defineProperty(this, "validateTemplate", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: true
-        });
-        Object.assign(this, input);
-        if (this.validateTemplate) {
-          let totalInputVariables = this.inputVariables;
-          if (this.partialVariables) {
-            totalInputVariables = totalInputVariables.concat(Object.keys(this.partialVariables));
-          }
-          checkValidTemplate(this.template, this.templateFormat, totalInputVariables);
-        }
-      }
-      _getPromptType() {
-        return "prompt";
-      }
-      async format(values) {
-        const allValues = await this.mergePartialAndUserVariables(values);
-        return renderTemplate(this.template, this.templateFormat, allValues);
-      }
-      /**
-       * Take examples in list format with prefix and suffix to create a prompt.
-       *
-       * Intendend to be used a a way to dynamically create a prompt from examples.
-       *
-       * @param examples - List of examples to use in the prompt.
-       * @param suffix - String to go after the list of examples. Should generally set up the user's input.
-       * @param inputVariables - A list of variable names the final prompt template will expect
-       * @param exampleSeparator - The separator to use in between examples
-       * @param prefix - String that should go before any examples. Generally includes examples.
-       *
-       * @returns The final prompt template generated.
-       */
-      static fromExamples(examples, suffix, inputVariables, exampleSeparator = "\n\n", prefix = "") {
-        const template = [prefix, ...examples, suffix].join(exampleSeparator);
-        return new PromptTemplate({
-          inputVariables,
-          template
-        });
-      }
-      /**
-       * Load prompt template from a template f-string
-       */
-      static fromTemplate(template, { templateFormat = "f-string", ...rest } = {}) {
-        const names = /* @__PURE__ */ new Set();
-        parseTemplate(template, templateFormat).forEach((node2) => {
-          if (node2.type === "variable") {
-            names.add(node2.name);
-          }
-        });
-        return new PromptTemplate({
-          inputVariables: [...names],
-          templateFormat,
-          template,
-          ...rest
-        });
-      }
-      async partial(values) {
-        var _a;
-        const promptDict = { ...this };
-        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
-        promptDict.partialVariables = {
-          ...(_a = this.partialVariables) != null ? _a : {},
-          ...values
-        };
-        return new PromptTemplate(promptDict);
-      }
-      serialize() {
-        if (this.outputParser !== void 0) {
-          throw new Error("Cannot serialize a prompt template with an output parser");
-        }
-        return {
-          _type: this._getPromptType(),
-          input_variables: this.inputVariables,
-          template: this.template,
-          template_format: this.templateFormat
-        };
-      }
-      static async deserialize(data) {
-        if (!data.template) {
-          throw new Error("Prompt template must have a template");
-        }
-        const res = new PromptTemplate({
-          inputVariables: data.input_variables,
-          template: data.template,
-          templateFormat: data.template_format
-        });
-        return res;
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/few_shot.js
-var few_shot_exports = {};
-__export(few_shot_exports, {
-  FewShotPromptTemplate: () => FewShotPromptTemplate
-});
-var FewShotPromptTemplate;
-var init_few_shot = __esm({
-  "node_modules/langchain/dist/prompts/few_shot.js"() {
-    init_base4();
-    init_template();
-    init_prompt();
-    FewShotPromptTemplate = class extends BaseStringPromptTemplate {
-      constructor(input) {
-        super(input);
-        Object.defineProperty(this, "examples", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "exampleSelector", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "examplePrompt", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "suffix", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: ""
-        });
-        Object.defineProperty(this, "exampleSeparator", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "\n\n"
-        });
-        Object.defineProperty(this, "prefix", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: ""
-        });
-        Object.defineProperty(this, "templateFormat", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "f-string"
-        });
-        Object.defineProperty(this, "validateTemplate", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: true
-        });
-        Object.assign(this, input);
-        if (this.examples !== void 0 && this.exampleSelector !== void 0) {
-          throw new Error("Only one of 'examples' and 'example_selector' should be provided");
-        }
-        if (this.examples === void 0 && this.exampleSelector === void 0) {
-          throw new Error("One of 'examples' and 'example_selector' should be provided");
-        }
-        if (this.validateTemplate) {
-          let totalInputVariables = this.inputVariables;
-          if (this.partialVariables) {
-            totalInputVariables = totalInputVariables.concat(Object.keys(this.partialVariables));
-          }
-          checkValidTemplate(this.prefix + this.suffix, this.templateFormat, totalInputVariables);
-        }
-      }
-      _getPromptType() {
-        return "few_shot";
-      }
-      async getExamples(inputVariables) {
-        if (this.examples !== void 0) {
-          return this.examples;
-        }
-        if (this.exampleSelector !== void 0) {
-          return this.exampleSelector.selectExamples(inputVariables);
-        }
-        throw new Error("One of 'examples' and 'example_selector' should be provided");
-      }
-      async partial(values) {
-        var _a;
-        const promptDict = { ...this };
-        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
-        promptDict.partialVariables = {
-          ...(_a = this.partialVariables) != null ? _a : {},
-          ...values
-        };
-        return new FewShotPromptTemplate(promptDict);
-      }
-      async format(values) {
-        const allValues = await this.mergePartialAndUserVariables(values);
-        const examples = await this.getExamples(allValues);
-        const exampleStrings = await Promise.all(examples.map((example) => this.examplePrompt.format(example)));
-        const template = [this.prefix, ...exampleStrings, this.suffix].join(this.exampleSeparator);
-        return renderTemplate(template, this.templateFormat, allValues);
-      }
-      serialize() {
-        if (this.exampleSelector || !this.examples) {
-          throw new Error("Serializing an example selector is not currently supported");
-        }
-        if (this.outputParser !== void 0) {
-          throw new Error("Serializing an output parser is not currently supported");
-        }
-        return {
-          _type: this._getPromptType(),
-          input_variables: this.inputVariables,
-          example_prompt: this.examplePrompt.serialize(),
-          example_separator: this.exampleSeparator,
-          suffix: this.suffix,
-          prefix: this.prefix,
-          template_format: this.templateFormat,
-          examples: this.examples
-        };
-      }
-      static async deserialize(data) {
-        const { example_prompt } = data;
-        if (!example_prompt) {
-          throw new Error("Missing example prompt");
-        }
-        const examplePrompt = await PromptTemplate.deserialize(example_prompt);
-        let examples;
-        if (Array.isArray(data.examples)) {
-          examples = data.examples;
-        } else {
-          throw new Error("Invalid examples format. Only list or string are supported.");
-        }
-        return new FewShotPromptTemplate({
-          inputVariables: data.input_variables,
-          examplePrompt,
-          examples,
-          exampleSeparator: data.example_separator,
-          prefix: data.prefix,
-          suffix: data.suffix,
-          templateFormat: data.template_format
-        });
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/base.js
-var StringPromptValue, BasePromptTemplate, BaseStringPromptTemplate;
-var init_base4 = __esm({
-  "node_modules/langchain/dist/prompts/base.js"() {
-    init_schema();
-    StringPromptValue = class extends BasePromptValue {
-      constructor(value) {
-        super();
-        Object.defineProperty(this, "value", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.value = value;
-      }
-      toString() {
-        return this.value;
-      }
-      toChatMessages() {
-        return [new HumanChatMessage(this.value)];
-      }
-    };
-    BasePromptTemplate = class {
-      constructor(input) {
-        Object.defineProperty(this, "inputVariables", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "outputParser", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "partialVariables", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        const { inputVariables } = input;
-        if (inputVariables.includes("stop")) {
-          throw new Error("Cannot have an input variable named 'stop', as it is used internally, please rename.");
-        }
-        Object.assign(this, input);
-      }
-      async mergePartialAndUserVariables(userVariables) {
-        var _a;
-        const partialVariables = (_a = this.partialVariables) != null ? _a : {};
-        const partialValues = {};
-        for (const [key, value] of Object.entries(partialVariables)) {
-          if (typeof value === "string") {
-            partialValues[key] = value;
-          } else {
-            partialValues[key] = await value();
-          }
-        }
-        const allKwargs = { ...partialValues, ...userVariables };
-        return allKwargs;
-      }
-      /**
-       * Load a prompt template from a json-like object describing it.
-       *
-       * @remarks
-       * Deserializing needs to be async because templates (e.g. {@link FewShotPromptTemplate}) can
-       * reference remote resources that we read asynchronously with a web
-       * request.
-       */
-      static async deserialize(data) {
-        switch (data._type) {
-          case "prompt": {
-            const { PromptTemplate: PromptTemplate2 } = await Promise.resolve().then(() => (init_prompt(), prompt_exports));
-            return PromptTemplate2.deserialize(data);
-          }
-          case void 0: {
-            const { PromptTemplate: PromptTemplate2 } = await Promise.resolve().then(() => (init_prompt(), prompt_exports));
-            return PromptTemplate2.deserialize({ ...data, _type: "prompt" });
-          }
-          case "few_shot": {
-            const { FewShotPromptTemplate: FewShotPromptTemplate2 } = await Promise.resolve().then(() => (init_few_shot(), few_shot_exports));
-            return FewShotPromptTemplate2.deserialize(data);
-          }
-          default:
-            throw new Error(`Invalid prompt type in config: ${data._type}`);
-        }
-      }
-    };
-    BaseStringPromptTemplate = class extends BasePromptTemplate {
-      async formatPromptValue(values) {
-        const formattedPrompt = await this.format(values);
-        return new StringPromptValue(formattedPrompt);
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/chains/llm_chain.js
-var llm_chain_exports = {};
-__export(llm_chain_exports, {
-  LLMChain: () => LLMChain
-});
-var LLMChain;
-var init_llm_chain = __esm({
-  "node_modules/langchain/dist/chains/llm_chain.js"() {
-    init_base5();
-    init_base4();
-    init_base_language();
-    LLMChain = class extends BaseChain {
-      get inputKeys() {
-        return this.prompt.inputVariables;
-      }
-      get outputKeys() {
-        return [this.outputKey];
-      }
-      constructor(fields) {
-        var _a, _b;
-        super(fields);
-        Object.defineProperty(this, "prompt", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "llm", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "outputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "text"
-        });
-        Object.defineProperty(this, "outputParser", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.prompt = fields.prompt;
-        this.llm = fields.llm;
-        this.outputKey = (_a = fields.outputKey) != null ? _a : this.outputKey;
-        this.outputParser = (_b = fields.outputParser) != null ? _b : this.outputParser;
-        if (this.prompt.outputParser) {
-          if (this.outputParser) {
-            throw new Error("Cannot set both outputParser and prompt.outputParser");
-          }
-          this.outputParser = this.prompt.outputParser;
-        }
-      }
-      /** @ignore */
-      async _getFinalOutput(generations, promptValue, runManager) {
-        const completion = generations[0].text;
-        let finalCompletion;
-        if (this.outputParser) {
-          finalCompletion = await this.outputParser.parseWithPrompt(completion, promptValue, runManager == null ? void 0 : runManager.getChild());
-        } else {
-          finalCompletion = completion;
-        }
-        return finalCompletion;
-      }
-      /**
-       * Run the core logic of this chain and add to output if desired.
-       *
-       * Wraps _call and handles memory.
-       */
-      call(values, callbacks) {
-        return super.call(values, callbacks);
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        const valuesForPrompt = { ...values };
-        const valuesForLLM = {};
-        for (const key of this.llm.callKeys) {
-          if (key in values) {
-            valuesForLLM[key] = values[key];
-            delete valuesForPrompt[key];
-          }
-        }
-        const promptValue = await this.prompt.formatPromptValue(valuesForPrompt);
-        const { generations } = await this.llm.generatePrompt([promptValue], valuesForLLM, runManager == null ? void 0 : runManager.getChild());
-        return {
-          [this.outputKey]: await this._getFinalOutput(generations[0], promptValue, runManager)
-        };
-      }
-      /**
-       * Format prompt with values and pass to LLM
-       *
-       * @param values - keys to pass to prompt template
-       * @param callbackManager - CallbackManager to use
-       * @returns Completion from LLM.
-       *
-       * @example
-       * ```ts
-       * llm.predict({ adjective: "funny" })
-       * ```
-       */
-      async predict(values, callbackManager) {
-        const output = await this.call(values, callbackManager);
-        return output[this.outputKey];
-      }
-      _chainType() {
-        return "llm_chain";
-      }
-      static async deserialize(data) {
-        const { llm, prompt } = data;
-        if (!llm) {
-          throw new Error("LLMChain must have llm");
-        }
-        if (!prompt) {
-          throw new Error("LLMChain must have prompt");
-        }
-        return new LLMChain({
-          llm: await BaseLanguageModel.deserialize(llm),
-          prompt: await BasePromptTemplate.deserialize(prompt)
-        });
-      }
-      serialize() {
-        return {
-          _type: this._chainType(),
-          llm: this.llm.serialize(),
-          prompt: this.prompt.serialize()
-        };
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/util/set.js
-function intersection(setA, setB) {
-  const _intersection = /* @__PURE__ */ new Set();
-  for (const elem of setB) {
-    if (setA.has(elem)) {
-      _intersection.add(elem);
-    }
-  }
-  return _intersection;
-}
-function union(setA, setB) {
-  const _union = new Set(setA);
-  for (const elem of setB) {
-    _union.add(elem);
-  }
-  return _union;
-}
-function difference(setA, setB) {
-  const _difference = new Set(setA);
-  for (const elem of setB) {
-    _difference.delete(elem);
-  }
-  return _difference;
-}
-var init_set = __esm({
-  "node_modules/langchain/dist/util/set.js"() {
-  }
-});
-
-// node_modules/langchain/dist/chains/sequential_chain.js
-var sequential_chain_exports = {};
-__export(sequential_chain_exports, {
-  SequentialChain: () => SequentialChain,
-  SimpleSequentialChain: () => SimpleSequentialChain
-});
-function formatSet(input) {
-  return Array.from(input).map((i) => `"${i}"`).join(", ");
-}
-var SequentialChain, SimpleSequentialChain;
-var init_sequential_chain = __esm({
-  "node_modules/langchain/dist/chains/sequential_chain.js"() {
-    init_base5();
-    init_set();
-    SequentialChain = class extends BaseChain {
-      get inputKeys() {
-        return this.inputVariables;
-      }
-      get outputKeys() {
-        return this.outputVariables;
-      }
-      constructor(fields) {
-        var _a, _b;
-        super(fields);
-        Object.defineProperty(this, "chains", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "inputVariables", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "outputVariables", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "returnAll", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.chains = fields.chains;
-        this.inputVariables = fields.inputVariables;
-        this.outputVariables = (_a = fields.outputVariables) != null ? _a : [];
-        if (this.outputVariables.length > 0 && fields.returnAll) {
-          throw new Error("Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
-        }
-        this.returnAll = (_b = fields.returnAll) != null ? _b : false;
-        this._validateChains();
-      }
-      /** @ignore */
-      _validateChains() {
-        var _a, _b;
-        if (this.chains.length === 0) {
-          throw new Error("Sequential chain must have at least one chain.");
-        }
-        const memoryKeys = (_b = (_a = this.memory) == null ? void 0 : _a.memoryKeys) != null ? _b : [];
-        const inputKeysSet = new Set(this.inputKeys);
-        const memoryKeysSet = new Set(memoryKeys);
-        const keysIntersection = intersection(inputKeysSet, memoryKeysSet);
-        if (keysIntersection.size > 0) {
-          throw new Error(`The following keys: ${formatSet(keysIntersection)} are overlapping between memory and input keys of the chain variables. This can lead to unexpected behaviour. Please use input and memory keys that don't overlap.`);
-        }
-        const availableKeys = union(inputKeysSet, memoryKeysSet);
-        for (const chain of this.chains) {
-          const missingKeys = difference(new Set(chain.inputKeys), availableKeys);
-          if (missingKeys.size > 0) {
-            throw new Error(`Missing variables for chain "${chain._chainType()}": ${formatSet(missingKeys)}. Only got the following variables: ${formatSet(availableKeys)}.`);
-          }
-          const outputKeysSet = new Set(chain.outputKeys);
-          const overlappinOutputKeys = intersection(availableKeys, outputKeysSet);
-          if (overlappinOutputKeys.size > 0) {
-            throw new Error(`The following output variables for chain "${chain._chainType()}" are overlapping: ${formatSet(overlappinOutputKeys)}. This can lead to unexpected behaviour.`);
-          }
-          for (const outputKey of outputKeysSet) {
-            availableKeys.add(outputKey);
-          }
-        }
-        if (this.outputVariables.length === 0) {
-          if (this.returnAll) {
-            const outputKeys = difference(availableKeys, inputKeysSet);
-            this.outputVariables = Array.from(outputKeys);
-          } else {
-            this.outputVariables = this.chains[this.chains.length - 1].outputKeys;
-          }
-        } else {
-          const missingKeys = difference(new Set(this.outputVariables), new Set(availableKeys));
-          if (missingKeys.size > 0) {
-            throw new Error(`The following output variables were expected to be in the final chain output but were not found: ${formatSet(missingKeys)}.`);
-          }
-        }
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        let input = values;
-        const allChainValues = {};
-        for (const chain of this.chains) {
-          input = await chain.call(input, runManager == null ? void 0 : runManager.getChild());
-          for (const key of Object.keys(input)) {
-            allChainValues[key] = input[key];
-          }
-        }
-        const output = {};
-        for (const key of this.outputVariables) {
-          output[key] = allChainValues[key];
-        }
-        return output;
-      }
-      _chainType() {
-        return "sequential_chain";
-      }
-      static async deserialize(data) {
-        const chains = [];
-        const inputVariables = data.input_variables;
-        const outputVariables = data.output_variables;
-        const serializedChains = data.chains;
-        for (const serializedChain of serializedChains) {
-          const deserializedChain = await BaseChain.deserialize(serializedChain);
-          chains.push(deserializedChain);
-        }
-        return new SequentialChain({ chains, inputVariables, outputVariables });
-      }
-      serialize() {
-        const chains = [];
-        for (const chain of this.chains) {
-          chains.push(chain.serialize());
-        }
-        return {
-          _type: this._chainType(),
-          input_variables: this.inputVariables,
-          output_variables: this.outputVariables,
-          chains
-        };
-      }
-    };
-    SimpleSequentialChain = class extends BaseChain {
-      get inputKeys() {
-        return [this.inputKey];
-      }
-      get outputKeys() {
-        return [this.outputKey];
-      }
-      constructor(fields) {
-        var _a, _b;
-        super(fields.memory, fields.verbose, (_a = fields.callbacks) != null ? _a : fields.callbackManager);
-        Object.defineProperty(this, "chains", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "inputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "input"
-        });
-        Object.defineProperty(this, "outputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "output"
-        });
-        Object.defineProperty(this, "trimOutputs", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.chains = fields.chains;
-        this.trimOutputs = (_b = fields.trimOutputs) != null ? _b : false;
-        this._validateChains();
-      }
-      /** @ignore */
-      _validateChains() {
-        for (const chain of this.chains) {
-          if (chain.inputKeys.length !== 1) {
-            throw new Error(`Chains used in SimpleSequentialChain should all have one input, got ${chain.inputKeys.length} for ${chain._chainType()}.`);
-          }
-          if (chain.outputKeys.length !== 1) {
-            throw new Error(`Chains used in SimpleSequentialChain should all have one output, got ${chain.outputKeys.length} for ${chain._chainType()}.`);
-          }
-        }
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        let input = values[this.inputKey];
-        for (const chain of this.chains) {
-          input = await chain.run(input, runManager == null ? void 0 : runManager.getChild());
-          if (this.trimOutputs) {
-            input = input.trim();
-          }
-          await (runManager == null ? void 0 : runManager.handleText(input));
-        }
-        return { [this.outputKey]: input };
-      }
-      _chainType() {
-        return "simple_sequential_chain";
-      }
-      static async deserialize(data) {
-        const chains = [];
-        const serializedChains = data.chains;
-        for (const serializedChain of serializedChains) {
-          const deserializedChain = await BaseChain.deserialize(serializedChain);
-          chains.push(deserializedChain);
-        }
-        return new SimpleSequentialChain({ chains });
-      }
-      serialize() {
-        const chains = [];
-        for (const chain of this.chains) {
-          chains.push(chain.serialize());
-        }
-        return {
-          _type: this._chainType(),
-          chains
-        };
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/chains/combine_docs_chain.js
-var combine_docs_chain_exports = {};
-__export(combine_docs_chain_exports, {
-  MapReduceDocumentsChain: () => MapReduceDocumentsChain,
-  RefineDocumentsChain: () => RefineDocumentsChain,
-  StuffDocumentsChain: () => StuffDocumentsChain
-});
-var StuffDocumentsChain, MapReduceDocumentsChain, RefineDocumentsChain;
-var init_combine_docs_chain = __esm({
-  "node_modules/langchain/dist/chains/combine_docs_chain.js"() {
-    init_base5();
-    init_llm_chain();
-    init_prompt();
-    StuffDocumentsChain = class extends BaseChain {
-      get inputKeys() {
-        return [this.inputKey, ...this.llmChain.inputKeys];
-      }
-      get outputKeys() {
-        return this.llmChain.outputKeys;
-      }
-      constructor(fields) {
-        var _a, _b;
-        super(fields);
-        Object.defineProperty(this, "llmChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "inputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "input_documents"
-        });
-        Object.defineProperty(this, "documentVariableName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "context"
-        });
-        this.llmChain = fields.llmChain;
-        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
-        this.inputKey = (_b = fields.inputKey) != null ? _b : this.inputKey;
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        if (!(this.inputKey in values)) {
-          throw new Error(`Document key ${this.inputKey} not found.`);
-        }
-        const { [this.inputKey]: docs, ...rest } = values;
-        const texts = docs.map(({ pageContent }) => pageContent);
-        const text4 = texts.join("\n\n");
-        const result = await this.llmChain.call({
-          ...rest,
-          [this.documentVariableName]: text4
-        }, runManager == null ? void 0 : runManager.getChild());
-        return result;
-      }
-      _chainType() {
-        return "stuff_documents_chain";
-      }
-      static async deserialize(data) {
-        if (!data.llm_chain) {
-          throw new Error("Missing llm_chain");
-        }
-        return new StuffDocumentsChain({
-          llmChain: await LLMChain.deserialize(data.llm_chain)
-        });
-      }
-      serialize() {
-        return {
-          _type: this._chainType(),
-          llm_chain: this.llmChain.serialize()
-        };
-      }
-    };
-    MapReduceDocumentsChain = class extends BaseChain {
-      get inputKeys() {
-        return [this.inputKey, ...this.combineDocumentChain.inputKeys];
-      }
-      get outputKeys() {
-        return this.combineDocumentChain.outputKeys;
-      }
-      constructor(fields) {
-        var _a, _b, _c, _d, _e, _f;
-        super(fields);
-        Object.defineProperty(this, "llmChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "inputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "input_documents"
-        });
-        Object.defineProperty(this, "documentVariableName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "context"
-        });
-        Object.defineProperty(this, "returnIntermediateSteps", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "maxTokens", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 3e3
-        });
-        Object.defineProperty(this, "maxIterations", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 10
-        });
-        Object.defineProperty(this, "ensureMapStep", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "combineDocumentChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.llmChain = fields.llmChain;
-        this.combineDocumentChain = fields.combineDocumentChain;
-        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
-        this.ensureMapStep = (_b = fields.ensureMapStep) != null ? _b : this.ensureMapStep;
-        this.inputKey = (_c = fields.inputKey) != null ? _c : this.inputKey;
-        this.maxTokens = (_d = fields.maxTokens) != null ? _d : this.maxTokens;
-        this.maxIterations = (_e = fields.maxIterations) != null ? _e : this.maxIterations;
-        this.returnIntermediateSteps = (_f = fields.returnIntermediateSteps) != null ? _f : false;
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        if (!(this.inputKey in values)) {
-          throw new Error(`Document key ${this.inputKey} not found.`);
-        }
-        const { [this.inputKey]: docs, ...rest } = values;
-        let currentDocs = docs;
-        let intermediateSteps = [];
-        for (let i = 0; i < this.maxIterations; i += 1) {
-          const inputs = currentDocs.map((d) => ({
-            [this.documentVariableName]: d.pageContent,
-            ...rest
-          }));
-          const promises = inputs.map(async (i2) => {
-            const prompt = await this.llmChain.prompt.format(i2);
-            return this.llmChain.llm.getNumTokens(prompt);
-          });
-          const length = await Promise.all(promises).then((results2) => results2.reduce((a2, b) => a2 + b, 0));
-          const canSkipMapStep = i !== 0 || !this.ensureMapStep;
-          const withinTokenLimit = length < this.maxTokens;
-          if (canSkipMapStep && withinTokenLimit) {
-            break;
-          }
-          const results = await this.llmChain.apply(inputs, runManager ? [runManager.getChild()] : void 0);
-          const { outputKey } = this.llmChain;
-          if (this.returnIntermediateSteps) {
-            intermediateSteps = intermediateSteps.concat(results.map((r) => r[outputKey]));
-          }
-          currentDocs = results.map((r) => ({
-            pageContent: r[outputKey]
-          }));
-        }
-        const newInputs = { input_documents: currentDocs, ...rest };
-        const result = await this.combineDocumentChain.call(newInputs, runManager == null ? void 0 : runManager.getChild());
-        if (this.returnIntermediateSteps) {
-          return { ...result, intermediateSteps };
-        }
-        return result;
-      }
-      _chainType() {
-        return "map_reduce_documents_chain";
-      }
-      static async deserialize(data) {
-        if (!data.llm_chain) {
-          throw new Error("Missing llm_chain");
-        }
-        if (!data.combine_document_chain) {
-          throw new Error("Missing combine_document_chain");
-        }
-        return new MapReduceDocumentsChain({
-          llmChain: await LLMChain.deserialize(data.llm_chain),
-          combineDocumentChain: await BaseChain.deserialize(data.combine_document_chain)
-        });
-      }
-      serialize() {
-        return {
-          _type: this._chainType(),
-          llm_chain: this.llmChain.serialize(),
-          combine_document_chain: this.combineDocumentChain.serialize()
-        };
-      }
-    };
-    RefineDocumentsChain = class extends BaseChain {
-      get defaultDocumentPrompt() {
-        return new PromptTemplate({
-          inputVariables: ["page_content"],
-          template: "{page_content}"
-        });
-      }
-      get inputKeys() {
-        return [this.inputKey, ...this.refineLLMChain.inputKeys];
-      }
-      get outputKeys() {
-        return [this.outputKey];
-      }
-      constructor(fields) {
-        var _a, _b, _c, _d, _e;
-        super(fields);
-        Object.defineProperty(this, "llmChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "inputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "input_documents"
-        });
-        Object.defineProperty(this, "outputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "output_text"
-        });
-        Object.defineProperty(this, "documentVariableName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "context"
-        });
-        Object.defineProperty(this, "initialResponseName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "existing_answer"
-        });
-        Object.defineProperty(this, "refineLLMChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "documentPrompt", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: this.defaultDocumentPrompt
-        });
-        this.llmChain = fields.llmChain;
-        this.refineLLMChain = fields.refineLLMChain;
-        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
-        this.inputKey = (_b = fields.inputKey) != null ? _b : this.inputKey;
-        this.outputKey = (_c = fields.outputKey) != null ? _c : this.outputKey;
-        this.documentPrompt = (_d = fields.documentPrompt) != null ? _d : this.documentPrompt;
-        this.initialResponseName = (_e = fields.initialResponseName) != null ? _e : this.initialResponseName;
-      }
-      /** @ignore */
-      async _constructInitialInputs(doc, rest) {
-        const baseInfo = {
-          page_content: doc.pageContent,
-          ...doc.metadata
-        };
-        const documentInfo = {};
-        this.documentPrompt.inputVariables.forEach((value) => {
-          documentInfo[value] = baseInfo[value];
-        });
-        const baseInputs = {
-          [this.documentVariableName]: await this.documentPrompt.format({
-            ...documentInfo
-          })
-        };
-        const inputs = { ...baseInputs, ...rest };
-        return inputs;
-      }
-      /** @ignore */
-      async _constructRefineInputs(doc, res) {
-        const baseInfo = {
-          page_content: doc.pageContent,
-          ...doc.metadata
-        };
-        const documentInfo = {};
-        this.documentPrompt.inputVariables.forEach((value) => {
-          documentInfo[value] = baseInfo[value];
-        });
-        const baseInputs = {
-          [this.documentVariableName]: await this.documentPrompt.format({
-            ...documentInfo
-          })
-        };
-        const inputs = { [this.initialResponseName]: res, ...baseInputs };
-        return inputs;
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        if (!(this.inputKey in values)) {
-          throw new Error(`Document key ${this.inputKey} not found.`);
-        }
-        const { [this.inputKey]: docs, ...rest } = values;
-        const currentDocs = docs;
-        const initialInputs = await this._constructInitialInputs(currentDocs[0], rest);
-        let res = await this.llmChain.predict({ ...initialInputs }, runManager == null ? void 0 : runManager.getChild());
-        const refineSteps = [res];
-        for (let i = 1; i < currentDocs.length; i += 1) {
-          const refineInputs = await this._constructRefineInputs(currentDocs[i], res);
-          const inputs = { ...refineInputs, ...rest };
-          res = await this.refineLLMChain.predict({ ...inputs }, runManager == null ? void 0 : runManager.getChild());
-          refineSteps.push(res);
-        }
-        return { [this.outputKey]: res };
-      }
-      _chainType() {
-        return "refine_documents_chain";
-      }
-      static async deserialize(data) {
-        const SerializedLLMChain = data.llm_chain;
-        if (!SerializedLLMChain) {
-          throw new Error("Missing llm_chain");
-        }
-        const SerializedRefineDocumentChain = data.refine_llm_chain;
-        if (!SerializedRefineDocumentChain) {
-          throw new Error("Missing refine_llm_chain");
-        }
-        return new RefineDocumentsChain({
-          llmChain: await LLMChain.deserialize(SerializedLLMChain),
-          refineLLMChain: await LLMChain.deserialize(SerializedRefineDocumentChain)
-        });
-      }
-      serialize() {
-        return {
-          _type: this._chainType(),
-          llm_chain: this.llmChain.serialize(),
-          refine_llm_chain: this.refineLLMChain.serialize()
-        };
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/chat.js
-var BaseMessagePromptTemplate, ChatPromptValue, MessagesPlaceholder, BaseMessageStringPromptTemplate, BaseChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, ChatPromptTemplate;
-var init_chat = __esm({
-  "node_modules/langchain/dist/prompts/chat.js"() {
-    init_schema();
-    init_base4();
-    init_prompt();
-    BaseMessagePromptTemplate = class {
-      serialize() {
-        return {
-          _type: this.constructor.name,
-          ...JSON.parse(JSON.stringify(this))
-        };
-      }
-    };
-    ChatPromptValue = class extends BasePromptValue {
-      constructor(messages2) {
-        super();
-        Object.defineProperty(this, "messages", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.messages = messages2;
-      }
-      toString() {
-        return JSON.stringify(this.messages);
-      }
-      toChatMessages() {
-        return this.messages;
-      }
-    };
-    MessagesPlaceholder = class extends BaseMessagePromptTemplate {
-      constructor(variableName) {
-        super();
-        Object.defineProperty(this, "variableName", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.variableName = variableName;
-      }
-      get inputVariables() {
-        return [this.variableName];
-      }
-      formatMessages(values) {
-        return Promise.resolve(values[this.variableName]);
-      }
-    };
-    BaseMessageStringPromptTemplate = class extends BaseMessagePromptTemplate {
-      constructor(prompt) {
-        super();
-        Object.defineProperty(this, "prompt", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.prompt = prompt;
-      }
-      get inputVariables() {
-        return this.prompt.inputVariables;
-      }
-      async formatMessages(values) {
-        return [await this.format(values)];
-      }
-    };
-    BaseChatPromptTemplate = class extends BasePromptTemplate {
-      constructor(input) {
-        super(input);
-      }
-      async format(values) {
-        return (await this.formatPromptValue(values)).toString();
-      }
-      async formatPromptValue(values) {
-        const resultMessages = await this.formatMessages(values);
-        return new ChatPromptValue(resultMessages);
-      }
-    };
-    HumanMessagePromptTemplate = class extends BaseMessageStringPromptTemplate {
-      async format(values) {
-        return new HumanChatMessage(await this.prompt.format(values));
-      }
-      constructor(prompt) {
-        super(prompt);
-      }
-      static fromTemplate(template) {
-        return new this(PromptTemplate.fromTemplate(template));
-      }
-    };
-    SystemMessagePromptTemplate = class extends BaseMessageStringPromptTemplate {
-      async format(values) {
-        return new SystemChatMessage(await this.prompt.format(values));
-      }
-      constructor(prompt) {
-        super(prompt);
-      }
-      static fromTemplate(template) {
-        return new this(PromptTemplate.fromTemplate(template));
-      }
-    };
-    ChatPromptTemplate = class extends BaseChatPromptTemplate {
-      constructor(input) {
-        super(input);
-        Object.defineProperty(this, "promptMessages", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "validateTemplate", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: true
-        });
-        Object.assign(this, input);
-        if (this.validateTemplate) {
-          const inputVariablesMessages = /* @__PURE__ */ new Set();
-          for (const promptMessage of this.promptMessages) {
-            for (const inputVariable of promptMessage.inputVariables) {
-              inputVariablesMessages.add(inputVariable);
-            }
-          }
-          const inputVariablesInstance = new Set(this.partialVariables ? this.inputVariables.concat(Object.keys(this.partialVariables)) : this.inputVariables);
-          const difference2 = new Set([...inputVariablesInstance].filter((x) => !inputVariablesMessages.has(x)));
-          if (difference2.size > 0) {
-            throw new Error(`Input variables \`${[
-              ...difference2
-            ]}\` are not used in any of the prompt messages.`);
-          }
-          const otherDifference = new Set([...inputVariablesMessages].filter((x) => !inputVariablesInstance.has(x)));
-          if (otherDifference.size > 0) {
-            throw new Error(`Input variables \`${[
-              ...otherDifference
-            ]}\` are used in prompt messages but not in the prompt template.`);
-          }
-        }
-      }
-      _getPromptType() {
-        return "chat";
-      }
-      async formatMessages(values) {
-        const allValues = await this.mergePartialAndUserVariables(values);
-        let resultMessages = [];
-        for (const promptMessage of this.promptMessages) {
-          const inputValues = promptMessage.inputVariables.reduce((acc, inputVariable) => {
-            if (!(inputVariable in allValues)) {
-              throw new Error(`Missing value for input variable \`${inputVariable}\``);
-            }
-            acc[inputVariable] = allValues[inputVariable];
-            return acc;
-          }, {});
-          const message = await promptMessage.formatMessages(inputValues);
-          resultMessages = resultMessages.concat(message);
-        }
-        return resultMessages;
-      }
-      serialize() {
-        if (this.outputParser !== void 0) {
-          throw new Error("ChatPromptTemplate cannot be serialized if outputParser is set");
-        }
-        return {
-          input_variables: this.inputVariables,
-          prompt_messages: this.promptMessages.map((m) => m.serialize())
-        };
-      }
-      async partial(values) {
-        var _a;
-        const promptDict = { ...this };
-        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
-        promptDict.partialVariables = {
-          ...(_a = this.partialVariables) != null ? _a : {},
-          ...values
-        };
-        return new ChatPromptTemplate(promptDict);
-      }
-      static fromPromptMessages(promptMessages) {
-        const flattenedMessages = promptMessages.reduce((acc, promptMessage) => acc.concat(
-          // eslint-disable-next-line no-instanceof/no-instanceof
-          promptMessage instanceof ChatPromptTemplate ? promptMessage.promptMessages : [promptMessage]
-        ), []);
-        const flattenedPartialVariables = promptMessages.reduce((acc, promptMessage) => (
-          // eslint-disable-next-line no-instanceof/no-instanceof
-          promptMessage instanceof ChatPromptTemplate ? Object.assign(acc, promptMessage.partialVariables) : acc
-        ), /* @__PURE__ */ Object.create(null));
-        const inputVariables = /* @__PURE__ */ new Set();
-        for (const promptMessage of flattenedMessages) {
-          for (const inputVariable of promptMessage.inputVariables) {
-            if (inputVariable in flattenedPartialVariables) {
-              continue;
-            }
-            inputVariables.add(inputVariable);
-          }
-        }
-        return new ChatPromptTemplate({
-          inputVariables: [...inputVariables],
-          promptMessages: flattenedMessages,
-          partialVariables: flattenedPartialVariables
-        });
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/selectors/conditional.js
-function isChatModel(llm) {
-  return llm._modelType() === "base_chat_model";
-}
-var BasePromptSelector, ConditionalPromptSelector;
-var init_conditional = __esm({
-  "node_modules/langchain/dist/prompts/selectors/conditional.js"() {
-    BasePromptSelector = class {
-      async getPromptAsync(llm, options) {
-        var _a;
-        const prompt = this.getPrompt(llm);
-        return prompt.partial((_a = options == null ? void 0 : options.partialVariables) != null ? _a : {});
-      }
-    };
-    ConditionalPromptSelector = class extends BasePromptSelector {
-      constructor(default_prompt, conditionals = []) {
-        super();
-        Object.defineProperty(this, "defaultPrompt", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "conditionals", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.defaultPrompt = default_prompt;
-        this.conditionals = conditionals;
-      }
-      getPrompt(llm) {
-        for (const [condition, prompt] of this.conditionals) {
-          if (condition(llm)) {
-            return prompt;
-          }
-        }
-        return this.defaultPrompt;
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/chains/question_answering/stuff_prompts.js
-var DEFAULT_QA_PROMPT, system_template, messages, CHAT_PROMPT, QA_PROMPT_SELECTOR;
-var init_stuff_prompts = __esm({
-  "node_modules/langchain/dist/chains/question_answering/stuff_prompts.js"() {
-    init_prompt();
-    init_chat();
-    init_conditional();
-    DEFAULT_QA_PROMPT = /* @__PURE__ */ new PromptTemplate({
-      template: "Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n{context}\n\nQuestion: {question}\nHelpful Answer:",
-      inputVariables: ["context", "question"]
-    });
-    system_template = `Use the following pieces of context to answer the users question. 
-If you don't know the answer, just say that you don't know, don't try to make up an answer.
-----------------
-{context}`;
-    messages = [
-      /* @__PURE__ */ SystemMessagePromptTemplate.fromTemplate(system_template),
-      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}")
-    ];
-    CHAT_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(messages);
-    QA_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(DEFAULT_QA_PROMPT, [[isChatModel, CHAT_PROMPT]]);
-  }
-});
-
-// node_modules/langchain/dist/chains/question_answering/map_reduce_prompts.js
-var init_map_reduce_prompts = __esm({
-  "node_modules/langchain/dist/chains/question_answering/map_reduce_prompts.js"() {
-    init_prompt();
-    init_chat();
-    init_conditional();
-  }
-});
-
-// node_modules/langchain/dist/prompts/selectors/LengthBasedExampleSelector.js
-var init_LengthBasedExampleSelector = __esm({
-  "node_modules/langchain/dist/prompts/selectors/LengthBasedExampleSelector.js"() {
-  }
-});
-
-// node_modules/langchain/dist/document.js
-var Document;
-var init_document = __esm({
-  "node_modules/langchain/dist/document.js"() {
-    Document = class {
-      constructor(fields) {
-        var _a;
-        Object.defineProperty(this, "pageContent", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "metadata", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.pageContent = fields.pageContent ? fields.pageContent.toString() : this.pageContent;
-        this.metadata = (_a = fields.metadata) != null ? _a : {};
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/prompts/selectors/SemanticSimilarityExampleSelector.js
-var init_SemanticSimilarityExampleSelector = __esm({
-  "node_modules/langchain/dist/prompts/selectors/SemanticSimilarityExampleSelector.js"() {
-    init_document();
-  }
-});
-
-// node_modules/langchain/dist/prompts/index.js
-var init_prompts = __esm({
-  "node_modules/langchain/dist/prompts/index.js"() {
-    init_base4();
-    init_prompt();
-    init_conditional();
-    init_LengthBasedExampleSelector();
-    init_SemanticSimilarityExampleSelector();
-    init_few_shot();
-    init_chat();
-    init_template();
-  }
-});
-
-// node_modules/langchain/dist/chains/question_answering/refine_prompts.js
-var init_refine_prompts = __esm({
-  "node_modules/langchain/dist/chains/question_answering/refine_prompts.js"() {
-    init_prompts();
-    init_conditional();
-  }
-});
-
-// node_modules/langchain/dist/chains/question_answering/load.js
-function loadQAStuffChain(llm, params = {}) {
-  const { prompt = QA_PROMPT_SELECTOR.getPrompt(llm), verbose } = params;
-  const llmChain = new LLMChain({ prompt, llm, verbose });
-  const chain = new StuffDocumentsChain({ llmChain, verbose });
-  return chain;
-}
-var init_load = __esm({
-  "node_modules/langchain/dist/chains/question_answering/load.js"() {
-    init_llm_chain();
-    init_combine_docs_chain();
-    init_stuff_prompts();
-    init_map_reduce_prompts();
-    init_refine_prompts();
-  }
-});
-
-// node_modules/langchain/dist/chains/vector_db_qa.js
-var vector_db_qa_exports = {};
-__export(vector_db_qa_exports, {
-  VectorDBQAChain: () => VectorDBQAChain
-});
-var VectorDBQAChain;
-var init_vector_db_qa = __esm({
-  "node_modules/langchain/dist/chains/vector_db_qa.js"() {
-    init_base5();
-    init_load();
-    VectorDBQAChain = class extends BaseChain {
-      get inputKeys() {
-        return [this.inputKey];
-      }
-      get outputKeys() {
-        return this.combineDocumentsChain.outputKeys.concat(this.returnSourceDocuments ? ["sourceDocuments"] : []);
-      }
-      constructor(fields) {
-        var _a, _b, _c;
-        super(fields);
-        Object.defineProperty(this, "k", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 4
-        });
-        Object.defineProperty(this, "inputKey", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: "query"
-        });
-        Object.defineProperty(this, "vectorstore", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "combineDocumentsChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "returnSourceDocuments", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        this.vectorstore = fields.vectorstore;
-        this.combineDocumentsChain = fields.combineDocumentsChain;
-        this.inputKey = (_a = fields.inputKey) != null ? _a : this.inputKey;
-        this.k = (_b = fields.k) != null ? _b : this.k;
-        this.returnSourceDocuments = (_c = fields.returnSourceDocuments) != null ? _c : this.returnSourceDocuments;
-      }
-      /** @ignore */
-      async _call(values, runManager) {
-        if (!(this.inputKey in values)) {
-          throw new Error(`Question key ${this.inputKey} not found.`);
-        }
-        const question = values[this.inputKey];
-        const docs = await this.vectorstore.similaritySearch(question, this.k, values.filter);
-        const inputs = { question, input_documents: docs };
-        const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild());
-        if (this.returnSourceDocuments) {
-          return {
-            ...result,
-            sourceDocuments: docs
-          };
-        }
-        return result;
-      }
-      _chainType() {
-        return "vector_db_qa";
-      }
-      static async deserialize(data, values) {
-        if (!("vectorstore" in values)) {
-          throw new Error(`Need to pass in a vectorstore to deserialize VectorDBQAChain`);
-        }
-        const { vectorstore } = values;
-        if (!data.combine_documents_chain) {
-          throw new Error(`VectorDBQAChain must have combine_documents_chain in serialized data`);
-        }
-        return new VectorDBQAChain({
-          combineDocumentsChain: await BaseChain.deserialize(data.combine_documents_chain),
-          k: data.k,
-          vectorstore
-        });
-      }
-      serialize() {
-        return {
-          _type: this._chainType(),
-          combine_documents_chain: this.combineDocumentsChain.serialize(),
-          k: this.k
-        };
-      }
-      static fromLLM(llm, vectorstore, options) {
-        const qaChain = loadQAStuffChain(llm);
-        return new this({
-          vectorstore,
-          combineDocumentsChain: qaChain,
-          ...options
-        });
-      }
-    };
-  }
-});
-
-// node_modules/langchain/dist/chains/base.js
-var BaseChain;
-var init_base5 = __esm({
-  "node_modules/langchain/dist/chains/base.js"() {
-    init_schema();
-    init_manager();
-    init_base_language();
-    BaseChain = class extends BaseLangChain {
-      constructor(fields, verbose, callbacks) {
-        if (arguments.length === 1 && typeof fields === "object" && !("saveContext" in fields)) {
-          const { memory, callbackManager, ...rest } = fields;
-          super({ ...rest, callbacks: callbackManager != null ? callbackManager : rest.callbacks });
-          this.memory = memory;
-        } else {
-          super({ verbose, callbacks });
-          this.memory = fields;
-        }
-      }
-      /**
-       * Return a json-like object representing this chain.
-       */
-      serialize() {
-        throw new Error("Method not implemented.");
-      }
-      async run(input, callbacks) {
-        const isKeylessInput = this.inputKeys.length <= 1;
-        if (!isKeylessInput) {
-          throw new Error(`Chain ${this._chainType()} expects multiple inputs, cannot use 'run' `);
-        }
-        const values = this.inputKeys.length ? { [this.inputKeys[0]]: input } : {};
-        const returnValues = await this.call(values, callbacks);
-        const keys3 = Object.keys(returnValues);
-        if (keys3.length === 1) {
-          return returnValues[keys3[0]];
-        }
-        throw new Error("return values have multiple keys, `run` only supported when one key currently");
-      }
-      /**
-       * Run the core logic of this chain and add to output if desired.
-       *
-       * Wraps _call and handles memory.
-       */
-      async call(values, callbacks) {
-        const fullValues = { ...values };
-        if (!(this.memory == null)) {
-          const newValues = await this.memory.loadMemoryVariables(values);
-          for (const [key, value] of Object.entries(newValues)) {
-            fullValues[key] = value;
-          }
-        }
-        const callbackManager_ = await CallbackManager.configure(callbacks, this.callbacks, { verbose: this.verbose });
-        const runManager = await (callbackManager_ == null ? void 0 : callbackManager_.handleChainStart({ name: this._chainType() }, fullValues));
-        let outputValues;
-        try {
-          outputValues = await this._call(fullValues, runManager);
-        } catch (e) {
-          await (runManager == null ? void 0 : runManager.handleChainError(e));
-          throw e;
-        }
-        if (!(this.memory == null)) {
-          await this.memory.saveContext(values, outputValues);
-        }
-        await (runManager == null ? void 0 : runManager.handleChainEnd(outputValues));
-        Object.defineProperty(outputValues, RUN_KEY, {
-          value: runManager ? { runId: runManager == null ? void 0 : runManager.runId } : void 0,
-          configurable: true
-        });
-        return outputValues;
-      }
-      /**
-       * Call the chain on all inputs in the list
-       */
-      async apply(inputs, callbacks) {
-        return Promise.all(inputs.map(async (i, idx) => this.call(i, callbacks == null ? void 0 : callbacks[idx])));
-      }
-      /**
-       * Load a chain from a json-like object describing it.
-       */
-      static async deserialize(data, values = {}) {
-        switch (data._type) {
-          case "llm_chain": {
-            const { LLMChain: LLMChain2 } = await Promise.resolve().then(() => (init_llm_chain(), llm_chain_exports));
-            return LLMChain2.deserialize(data);
-          }
-          case "sequential_chain": {
-            const { SequentialChain: SequentialChain2 } = await Promise.resolve().then(() => (init_sequential_chain(), sequential_chain_exports));
-            return SequentialChain2.deserialize(data);
-          }
-          case "simple_sequential_chain": {
-            const { SimpleSequentialChain: SimpleSequentialChain2 } = await Promise.resolve().then(() => (init_sequential_chain(), sequential_chain_exports));
-            return SimpleSequentialChain2.deserialize(data);
-          }
-          case "stuff_documents_chain": {
-            const { StuffDocumentsChain: StuffDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
-            return StuffDocumentsChain2.deserialize(data);
-          }
-          case "map_reduce_documents_chain": {
-            const { MapReduceDocumentsChain: MapReduceDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
-            return MapReduceDocumentsChain2.deserialize(data);
-          }
-          case "refine_documents_chain": {
-            const { RefineDocumentsChain: RefineDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
-            return RefineDocumentsChain2.deserialize(data);
-          }
-          case "vector_db_qa": {
-            const { VectorDBQAChain: VectorDBQAChain2 } = await Promise.resolve().then(() => (init_vector_db_qa(), vector_db_qa_exports));
-            return VectorDBQAChain2.deserialize(data, values);
-          }
-          default:
-            throw new Error(`Invalid prompt type in config: ${data._type}`);
-        }
-      }
+// node_modules/langchain/dist/util/prompt-layer.js
+var promptLayerTrackRequest;
+var init_prompt_layer = __esm({
+  "node_modules/langchain/dist/util/prompt-layer.js"() {
+    promptLayerTrackRequest = async (callerFunc, functionName, prompt, kwargs, plTags, requestResponse, startTime, endTime, apiKey) => {
+      const promptLayerResp = await callerFunc.call(fetch, "https://api.promptlayer.com/track-request", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          function_name: functionName,
+          provider: "langchain",
+          args: prompt,
+          kwargs,
+          tags: plTags,
+          request_response: requestResponse,
+          request_start_time: Math.floor(startTime / 1e3),
+          request_end_time: Math.floor(endTime / 1e3),
+          api_key: apiKey
+        })
+      });
+      return promptLayerResp.json();
     };
   }
 });
@@ -17207,8 +16142,8 @@ var require_ZodError = __commonJS({
       "not_finite"
     ]);
     var quotelessJson = (obj) => {
-      const json = JSON.stringify(obj, null, 2);
-      return json.replace(/"([^"]+)":/g, "$1:");
+      const json2 = JSON.stringify(obj, null, 2);
+      return json2.replace(/"([^"]+)":/g, "$1:");
     };
     exports.quotelessJson = quotelessJson;
     var ZodError = class extends Error {
@@ -17424,8 +16359,8 @@ var require_errors = __commonJS({
     var en_1 = __importDefault(require_en());
     exports.defaultErrorMap = en_1.default;
     var overrideErrorMap = en_1.default;
-    function setErrorMap(map) {
-      overrideErrorMap = map;
+    function setErrorMap(map2) {
+      overrideErrorMap = map2;
     }
     exports.setErrorMap = setErrorMap;
     function getErrorMap() {
@@ -17455,8 +16390,8 @@ var require_parseUtil = __commonJS({
       };
       let errorMessage = "";
       const maps = errorMaps.filter((m) => !!m).slice().reverse();
-      for (const map of maps) {
-        errorMessage = map(fullIssue, { data, defaultError: errorMessage }).message;
+      for (const map2 of maps) {
+        errorMessage = map2(fullIssue, { data, defaultError: errorMessage }).message;
       }
       return {
         ...issueData,
@@ -17504,9 +16439,9 @@ var require_parseUtil = __commonJS({
         }
         return { status: status.value, value: arrayValue };
       }
-      static async mergeObjectAsync(status, pairs) {
+      static async mergeObjectAsync(status, pairs2) {
         const syncPairs = [];
-        for (const pair of pairs) {
+        for (const pair of pairs2) {
           syncPairs.push({
             key: await pair.key,
             value: await pair.value
@@ -17514,9 +16449,9 @@ var require_parseUtil = __commonJS({
         }
         return ParseStatus.mergeObjectSync(status, syncPairs);
       }
-      static mergeObjectSync(status, pairs) {
+      static mergeObjectSync(status, pairs2) {
         const finalObject = {};
-        for (const pair of pairs) {
+        for (const pair of pairs2) {
           const { key, value } = pair;
           if (key.status === "aborted")
             return exports.INVALID;
@@ -19089,9 +18024,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodArray = ZodArray;
-    ZodArray.create = (schema, params) => {
+    ZodArray.create = (schema2, params) => {
       return new ZodArray({
-        type: schema,
+        type: schema2,
         minLength: null,
         maxLength: null,
         exactLength: null,
@@ -19099,30 +18034,30 @@ var require_types = __commonJS({
         ...processCreateParams(params)
       });
     };
-    function deepPartialify(schema) {
-      if (schema instanceof ZodObject) {
+    function deepPartialify(schema2) {
+      if (schema2 instanceof ZodObject) {
         const newShape = {};
-        for (const key in schema.shape) {
-          const fieldSchema = schema.shape[key];
+        for (const key in schema2.shape) {
+          const fieldSchema = schema2.shape[key];
           newShape[key] = ZodOptional.create(deepPartialify(fieldSchema));
         }
         return new ZodObject({
-          ...schema._def,
+          ...schema2._def,
           shape: () => newShape
         });
-      } else if (schema instanceof ZodArray) {
+      } else if (schema2 instanceof ZodArray) {
         return new ZodArray({
-          ...schema._def,
-          type: deepPartialify(schema.element)
+          ...schema2._def,
+          type: deepPartialify(schema2.element)
         });
-      } else if (schema instanceof ZodOptional) {
-        return ZodOptional.create(deepPartialify(schema.unwrap()));
-      } else if (schema instanceof ZodNullable) {
-        return ZodNullable.create(deepPartialify(schema.unwrap()));
-      } else if (schema instanceof ZodTuple) {
-        return ZodTuple.create(schema.items.map((item) => deepPartialify(item)));
+      } else if (schema2 instanceof ZodOptional) {
+        return ZodOptional.create(deepPartialify(schema2.unwrap()));
+      } else if (schema2 instanceof ZodNullable) {
+        return ZodNullable.create(deepPartialify(schema2.unwrap()));
+      } else if (schema2 instanceof ZodTuple) {
+        return ZodTuple.create(schema2.items.map((item) => deepPartialify(item)));
       } else {
-        return schema;
+        return schema2;
       }
     }
     var ZodObject = class extends ZodType {
@@ -19160,11 +18095,11 @@ var require_types = __commonJS({
             }
           }
         }
-        const pairs = [];
+        const pairs2 = [];
         for (const key of shapeKeys) {
           const keyValidator = shape[key];
           const value = ctx.data[key];
-          pairs.push({
+          pairs2.push({
             key: { status: "valid", value: key },
             value: keyValidator._parse(new ParseInputLazyPath(ctx, value, ctx.path, key)),
             alwaysSet: key in ctx.data
@@ -19174,7 +18109,7 @@ var require_types = __commonJS({
           const unknownKeys = this._def.unknownKeys;
           if (unknownKeys === "passthrough") {
             for (const key of extraKeys) {
-              pairs.push({
+              pairs2.push({
                 key: { status: "valid", value: key },
                 value: { status: "valid", value: ctx.data[key] }
               });
@@ -19195,7 +18130,7 @@ var require_types = __commonJS({
           const catchall = this._def.catchall;
           for (const key of extraKeys) {
             const value = ctx.data[key];
-            pairs.push({
+            pairs2.push({
               key: { status: "valid", value: key },
               value: catchall._parse(new ParseInputLazyPath(ctx, value, ctx.path, key)),
               alwaysSet: key in ctx.data
@@ -19205,7 +18140,7 @@ var require_types = __commonJS({
         if (ctx.common.async) {
           return Promise.resolve().then(async () => {
             const syncPairs = [];
-            for (const pair of pairs) {
+            for (const pair of pairs2) {
               const key = await pair.key;
               syncPairs.push({
                 key,
@@ -19218,7 +18153,7 @@ var require_types = __commonJS({
             return parseUtil_1.ParseStatus.mergeObjectSync(status, syncPairs);
           });
         } else {
-          return parseUtil_1.ParseStatus.mergeObjectSync(status, pairs);
+          return parseUtil_1.ParseStatus.mergeObjectSync(status, pairs2);
         }
       }
       get shape() {
@@ -19277,8 +18212,8 @@ var require_types = __commonJS({
         });
         return merged;
       }
-      setKey(key, schema) {
-        return this.augment({ [key]: schema });
+      setKey(key, schema2) {
+        return this.augment({ [key]: schema2 });
       }
       catchall(index2) {
         return new ZodObject({
@@ -19471,22 +18406,22 @@ var require_types = __commonJS({
         ...processCreateParams(params)
       });
     };
-    var getDiscriminator = (type) => {
-      if (type instanceof ZodLazy) {
-        return getDiscriminator(type.schema);
-      } else if (type instanceof ZodEffects) {
-        return getDiscriminator(type.innerType());
-      } else if (type instanceof ZodLiteral) {
-        return [type.value];
-      } else if (type instanceof ZodEnum) {
-        return type.options;
-      } else if (type instanceof ZodNativeEnum) {
-        return Object.keys(type.enum);
-      } else if (type instanceof ZodDefault) {
-        return getDiscriminator(type._def.innerType);
-      } else if (type instanceof ZodUndefined) {
+    var getDiscriminator = (type2) => {
+      if (type2 instanceof ZodLazy) {
+        return getDiscriminator(type2.schema);
+      } else if (type2 instanceof ZodEffects) {
+        return getDiscriminator(type2.innerType());
+      } else if (type2 instanceof ZodLiteral) {
+        return [type2.value];
+      } else if (type2 instanceof ZodEnum) {
+        return type2.options;
+      } else if (type2 instanceof ZodNativeEnum) {
+        return Object.keys(type2.enum);
+      } else if (type2 instanceof ZodDefault) {
+        return getDiscriminator(type2._def.innerType);
+      } else if (type2 instanceof ZodUndefined) {
         return [void 0];
-      } else if (type instanceof ZodNull) {
+      } else if (type2 instanceof ZodNull) {
         return [null];
       } else {
         return null;
@@ -19539,8 +18474,8 @@ var require_types = __commonJS({
       }
       static create(discriminator, options, params) {
         const optionsMap = /* @__PURE__ */ new Map();
-        for (const type of options) {
-          const discriminatorValues = getDiscriminator(type.shape[discriminator]);
+        for (const type2 of options) {
+          const discriminatorValues = getDiscriminator(type2.shape[discriminator]);
           if (!discriminatorValues) {
             throw new Error(`A discriminator value for key \`${discriminator}\` could not be extracted from all schema options`);
           }
@@ -19548,7 +18483,7 @@ var require_types = __commonJS({
             if (optionsMap.has(value)) {
               throw new Error(`Discriminator property ${String(discriminator)} has duplicate value ${String(value)}`);
             }
-            optionsMap.set(value, type);
+            optionsMap.set(value, type2);
           }
         }
         return new ZodDiscriminatedUnion({
@@ -19686,10 +18621,10 @@ var require_types = __commonJS({
           status.dirty();
         }
         const items = [...ctx.data].map((item, itemIndex) => {
-          const schema = this._def.items[itemIndex] || this._def.rest;
-          if (!schema)
+          const schema2 = this._def.items[itemIndex] || this._def.rest;
+          if (!schema2)
             return null;
-          return schema._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
+          return schema2._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
         }).filter((x) => !!x);
         if (ctx.common.async) {
           return Promise.all(items).then((results) => {
@@ -19738,19 +18673,19 @@ var require_types = __commonJS({
           });
           return parseUtil_1.INVALID;
         }
-        const pairs = [];
+        const pairs2 = [];
         const keyType = this._def.keyType;
         const valueType = this._def.valueType;
         for (const key in ctx.data) {
-          pairs.push({
+          pairs2.push({
             key: keyType._parse(new ParseInputLazyPath(ctx, key, ctx.path, key)),
             value: valueType._parse(new ParseInputLazyPath(ctx, ctx.data[key], ctx.path, key))
           });
         }
         if (ctx.common.async) {
-          return parseUtil_1.ParseStatus.mergeObjectAsync(status, pairs);
+          return parseUtil_1.ParseStatus.mergeObjectAsync(status, pairs2);
         } else {
-          return parseUtil_1.ParseStatus.mergeObjectSync(status, pairs);
+          return parseUtil_1.ParseStatus.mergeObjectSync(status, pairs2);
         }
       }
       get element() {
@@ -19787,7 +18722,7 @@ var require_types = __commonJS({
         }
         const keyType = this._def.keyType;
         const valueType = this._def.valueType;
-        const pairs = [...ctx.data.entries()].map(([key, value], index2) => {
+        const pairs2 = [...ctx.data.entries()].map(([key, value], index2) => {
           return {
             key: keyType._parse(new ParseInputLazyPath(ctx, key, ctx.path, [index2, "key"])),
             value: valueType._parse(new ParseInputLazyPath(ctx, value, ctx.path, [index2, "value"]))
@@ -19796,7 +18731,7 @@ var require_types = __commonJS({
         if (ctx.common.async) {
           const finalMap = /* @__PURE__ */ new Map();
           return Promise.resolve().then(async () => {
-            for (const pair of pairs) {
+            for (const pair of pairs2) {
               const key = await pair.key;
               const value = await pair.value;
               if (key.status === "aborted" || value.status === "aborted") {
@@ -19811,7 +18746,7 @@ var require_types = __commonJS({
           });
         } else {
           const finalMap = /* @__PURE__ */ new Map();
-          for (const pair of pairs) {
+          for (const pair of pairs2) {
             const key = pair.key;
             const value = pair.value;
             if (key.status === "aborted" || value.status === "aborted") {
@@ -20202,9 +19137,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodPromise = ZodPromise;
-    ZodPromise.create = (schema, params) => {
+    ZodPromise.create = (schema2, params) => {
       return new ZodPromise({
-        type: schema,
+        type: schema2,
         typeName: ZodFirstPartyTypeKind.ZodPromise,
         ...processCreateParams(params)
       });
@@ -20313,17 +19248,17 @@ var require_types = __commonJS({
     };
     exports.ZodEffects = ZodEffects;
     exports.ZodTransformer = ZodEffects;
-    ZodEffects.create = (schema, effect, params) => {
+    ZodEffects.create = (schema2, effect, params) => {
       return new ZodEffects({
-        schema,
+        schema: schema2,
         typeName: ZodFirstPartyTypeKind.ZodEffects,
         effect,
         ...processCreateParams(params)
       });
     };
-    ZodEffects.createWithPreprocess = (preprocess2, schema, params) => {
+    ZodEffects.createWithPreprocess = (preprocess2, schema2, params) => {
       return new ZodEffects({
-        schema,
+        schema: schema2,
         effect: { type: "preprocess", transform: preprocess2 },
         typeName: ZodFirstPartyTypeKind.ZodEffects,
         ...processCreateParams(params)
@@ -20342,9 +19277,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodOptional = ZodOptional;
-    ZodOptional.create = (type, params) => {
+    ZodOptional.create = (type2, params) => {
       return new ZodOptional({
-        innerType: type,
+        innerType: type2,
         typeName: ZodFirstPartyTypeKind.ZodOptional,
         ...processCreateParams(params)
       });
@@ -20362,9 +19297,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodNullable = ZodNullable;
-    ZodNullable.create = (type, params) => {
+    ZodNullable.create = (type2, params) => {
       return new ZodNullable({
-        innerType: type,
+        innerType: type2,
         typeName: ZodFirstPartyTypeKind.ZodNullable,
         ...processCreateParams(params)
       });
@@ -20387,9 +19322,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodDefault = ZodDefault;
-    ZodDefault.create = (type, params) => {
+    ZodDefault.create = (type2, params) => {
       return new ZodDefault({
-        innerType: type,
+        innerType: type2,
         typeName: ZodFirstPartyTypeKind.ZodDefault,
         defaultValue: typeof params.default === "function" ? params.default : () => params.default,
         ...processCreateParams(params)
@@ -20441,9 +19376,9 @@ var require_types = __commonJS({
       }
     };
     exports.ZodCatch = ZodCatch;
-    ZodCatch.create = (type, params) => {
+    ZodCatch.create = (type2, params) => {
       return new ZodCatch({
-        innerType: type,
+        innerType: type2,
         typeName: ZodFirstPartyTypeKind.ZodCatch,
         catchValue: typeof params.catch === "function" ? params.catch : () => params.catch,
         ...processCreateParams(params)
@@ -21008,10 +19943,10 @@ var require_intersection = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parseIntersectionDef = void 0;
     var parseDef_1 = require_parseDef();
-    var isJsonSchema7AllOfType = (type) => {
-      if ("type" in type && type.type === "string")
+    var isJsonSchema7AllOfType = (type2) => {
+      if ("type" in type2 && type2.type === "string")
         return false;
-      return "allOf" in type;
+      return "allOf" in type2;
     };
     function parseIntersectionDef(def, refs) {
       const allOf = [
@@ -21020,16 +19955,16 @@ var require_intersection = __commonJS({
       ].filter((x) => !!x);
       let unevaluatedProperties = refs.target === "jsonSchema2019-09" ? { unevaluatedProperties: false } : void 0;
       const mergedAllOf = [];
-      allOf.forEach((schema) => {
-        if (isJsonSchema7AllOfType(schema)) {
-          mergedAllOf.push(...schema.allOf);
-          if (schema.unevaluatedProperties === void 0) {
+      allOf.forEach((schema2) => {
+        if (isJsonSchema7AllOfType(schema2)) {
+          mergedAllOf.push(...schema2.allOf);
+          if (schema2.unevaluatedProperties === void 0) {
             unevaluatedProperties = void 0;
           }
         } else {
-          let nestedSchema = schema;
-          if ("additionalProperties" in schema && schema.additionalProperties === false) {
-            const { additionalProperties } = schema, rest = __rest(schema, ["additionalProperties"]);
+          let nestedSchema = schema2;
+          if ("additionalProperties" in schema2 && schema2.additionalProperties === false) {
+            const { additionalProperties } = schema2, rest = __rest(schema2, ["additionalProperties"]);
             nestedSchema = rest;
           } else {
             unevaluatedProperties = void 0;
@@ -21171,20 +20106,20 @@ var require_union = __commonJS({
       const options = def.options instanceof Map ? Array.from(def.options.values()) : def.options;
       if (options.every((x) => x._def.typeName in exports.primitiveMappings && (!x._def.checks || !x._def.checks.length))) {
         const types = options.reduce((types2, x) => {
-          const type = exports.primitiveMappings[x._def.typeName];
-          return type && !types2.includes(type) ? [...types2, type] : types2;
+          const type2 = exports.primitiveMappings[x._def.typeName];
+          return type2 && !types2.includes(type2) ? [...types2, type2] : types2;
         }, []);
         return {
           type: types.length > 1 ? types : types[0]
         };
       } else if (options.every((x) => x._def.typeName === "ZodLiteral" && !x.description)) {
         const types = options.reduce((acc, x) => {
-          const type = typeof x._def.value;
-          switch (type) {
+          const type2 = typeof x._def.value;
+          switch (type2) {
             case "string":
             case "number":
             case "boolean":
-              return [...acc, type];
+              return [...acc, type2];
             case "bigint":
               return [...acc, "integer"];
             case "object":
@@ -21248,10 +20183,10 @@ var require_nullable = __commonJS({
           ]
         };
       }
-      const type = (0, parseDef_1.parseDef)(def.innerType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "anyOf", "0"] }));
-      return type ? refs.target === "openApi3" ? Object.assign(Object.assign({}, type), { nullable: true }) : {
+      const type2 = (0, parseDef_1.parseDef)(def.innerType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "anyOf", "0"] }));
+      return type2 ? refs.target === "openApi3" ? Object.assign(Object.assign({}, type2), { nullable: true }) : {
         anyOf: [
-          type,
+          type2,
           {
             type: "null"
           }
@@ -21494,50 +20429,50 @@ var require_string = __commonJS({
     }
     exports.parseStringDef = parseStringDef;
     var escapeNonAlphaNumeric = (value) => Array.from(value).map((c) => /[a-zA-Z0-9]/.test(c) ? c : `\\${c}`).join("");
-    var addFormat = (schema, value, message, refs) => {
+    var addFormat = (schema2, value, message, refs) => {
       var _a;
-      if (schema.format || ((_a = schema.anyOf) === null || _a === void 0 ? void 0 : _a.some((x) => x.format))) {
-        if (!schema.anyOf) {
-          schema.anyOf = [];
+      if (schema2.format || ((_a = schema2.anyOf) === null || _a === void 0 ? void 0 : _a.some((x) => x.format))) {
+        if (!schema2.anyOf) {
+          schema2.anyOf = [];
         }
-        if (schema.format) {
-          schema.anyOf.push(Object.assign({ format: schema.format }, schema.errorMessage && refs.errorMessages && {
-            errorMessage: { format: schema.errorMessage.format }
+        if (schema2.format) {
+          schema2.anyOf.push(Object.assign({ format: schema2.format }, schema2.errorMessage && refs.errorMessages && {
+            errorMessage: { format: schema2.errorMessage.format }
           }));
-          delete schema.format;
-          if (schema.errorMessage) {
-            delete schema.errorMessage.format;
-            if (Object.keys(schema.errorMessage).length === 0) {
-              delete schema.errorMessage;
+          delete schema2.format;
+          if (schema2.errorMessage) {
+            delete schema2.errorMessage.format;
+            if (Object.keys(schema2.errorMessage).length === 0) {
+              delete schema2.errorMessage;
             }
           }
         }
-        schema.anyOf.push(Object.assign({ format: value }, message && refs.errorMessages && { errorMessage: { format: message } }));
+        schema2.anyOf.push(Object.assign({ format: value }, message && refs.errorMessages && { errorMessage: { format: message } }));
       } else {
-        (0, errorMessages_1.setResponseValueAndErrors)(schema, "format", value, message, refs);
+        (0, errorMessages_1.setResponseValueAndErrors)(schema2, "format", value, message, refs);
       }
     };
-    var addPattern = (schema, value, message, refs) => {
+    var addPattern = (schema2, value, message, refs) => {
       var _a;
-      if (schema.pattern || ((_a = schema.allOf) === null || _a === void 0 ? void 0 : _a.some((x) => x.pattern))) {
-        if (!schema.allOf) {
-          schema.allOf = [];
+      if (schema2.pattern || ((_a = schema2.allOf) === null || _a === void 0 ? void 0 : _a.some((x) => x.pattern))) {
+        if (!schema2.allOf) {
+          schema2.allOf = [];
         }
-        if (schema.pattern) {
-          schema.allOf.push(Object.assign({ pattern: schema.pattern }, schema.errorMessage && refs.errorMessages && {
-            errorMessage: { pattern: schema.errorMessage.pattern }
+        if (schema2.pattern) {
+          schema2.allOf.push(Object.assign({ pattern: schema2.pattern }, schema2.errorMessage && refs.errorMessages && {
+            errorMessage: { pattern: schema2.errorMessage.pattern }
           }));
-          delete schema.pattern;
-          if (schema.errorMessage) {
-            delete schema.errorMessage.pattern;
-            if (Object.keys(schema.errorMessage).length === 0) {
-              delete schema.errorMessage;
+          delete schema2.pattern;
+          if (schema2.errorMessage) {
+            delete schema2.errorMessage.pattern;
+            if (Object.keys(schema2.errorMessage).length === 0) {
+              delete schema2.errorMessage;
             }
           }
         }
-        schema.allOf.push(Object.assign({ pattern: value }, message && refs.errorMessages && { errorMessage: { pattern: message } }));
+        schema2.allOf.push(Object.assign({ pattern: value }, message && refs.errorMessages && { errorMessage: { pattern: message } }));
       } else {
-        (0, errorMessages_1.setResponseValueAndErrors)(schema, "pattern", value, message, refs);
+        (0, errorMessages_1.setResponseValueAndErrors)(schema2, "pattern", value, message, refs);
       }
     };
   }
@@ -21565,22 +20500,22 @@ var require_record = __commonJS({
           additionalProperties: false
         };
       }
-      const schema = {
+      const schema2 = {
         type: "object",
         additionalProperties: (_b = (0, parseDef_1.parseDef)(def.valueType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "additionalProperties"] }))) !== null && _b !== void 0 ? _b : {}
       };
       if (refs.target === "openApi3") {
-        return schema;
+        return schema2;
       }
       if (((_c = def.keyType) === null || _c === void 0 ? void 0 : _c._def.typeName) === zod_1.ZodFirstPartyTypeKind.ZodString && ((_d = def.keyType._def.checks) === null || _d === void 0 ? void 0 : _d.length)) {
         const keyType = Object.entries((0, string_1.parseStringDef)(def.keyType._def, refs)).reduce((acc, [key, value]) => key === "type" ? acc : Object.assign(Object.assign({}, acc), { [key]: value }), {});
-        return Object.assign(Object.assign({}, schema), { propertyNames: keyType });
+        return Object.assign(Object.assign({}, schema2), { propertyNames: keyType });
       } else if (((_e = def.keyType) === null || _e === void 0 ? void 0 : _e._def.typeName) === zod_1.ZodFirstPartyTypeKind.ZodEnum) {
-        return Object.assign(Object.assign({}, schema), { propertyNames: {
+        return Object.assign(Object.assign({}, schema2), { propertyNames: {
           enum: def.keyType._def.values
         } });
       }
-      return schema;
+      return schema2;
     }
     exports.parseRecordDef = parseRecordDef;
   }
@@ -21596,18 +20531,18 @@ var require_set = __commonJS({
     var parseDef_1 = require_parseDef();
     function parseSetDef(def, refs) {
       const items = (0, parseDef_1.parseDef)(def.valueType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "items"] }));
-      const schema = {
+      const schema2 = {
         type: "array",
         uniqueItems: true,
         items
       };
       if (def.minSize) {
-        (0, errorMessages_1.setResponseValueAndErrors)(schema, "minItems", def.minSize.value, def.minSize.message, refs);
+        (0, errorMessages_1.setResponseValueAndErrors)(schema2, "minItems", def.minSize.value, def.minSize.message, refs);
       }
       if (def.maxSize) {
-        (0, errorMessages_1.setResponseValueAndErrors)(schema, "maxItems", def.maxSize.value, def.maxSize.message, refs);
+        (0, errorMessages_1.setResponseValueAndErrors)(schema2, "maxItems", def.maxSize.value, def.maxSize.message, refs);
       }
-      return schema;
+      return schema2;
     }
     exports.parseSetDef = parseSetDef;
   }
@@ -21881,15 +20816,15 @@ var require_zodToJsonSchema = __commonJS({
     exports.zodToJsonSchema = void 0;
     var parseDef_1 = require_parseDef();
     var Refs_1 = require_Refs();
-    var zodToJsonSchema2 = (schema, options) => {
+    var zodToJsonSchema5 = (schema2, options) => {
       var _a;
       const refs = (0, Refs_1.getRefs)(options);
-      const definitions2 = typeof options === "object" && options.definitions ? Object.entries(options.definitions).reduce((acc, [name2, schema2]) => {
+      const definitions2 = typeof options === "object" && options.definitions ? Object.entries(options.definitions).reduce((acc, [name2, schema3]) => {
         var _a2;
-        return Object.assign(Object.assign({}, acc), { [name2]: (_a2 = (0, parseDef_1.parseDef)(schema2._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.basePath, refs.definitionPath, name2] }), true)) !== null && _a2 !== void 0 ? _a2 : {} });
+        return Object.assign(Object.assign({}, acc), { [name2]: (_a2 = (0, parseDef_1.parseDef)(schema3._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.basePath, refs.definitionPath, name2] }), true)) !== null && _a2 !== void 0 ? _a2 : {} });
       }, {}) : void 0;
       const name = typeof options === "string" ? options : options === null || options === void 0 ? void 0 : options.name;
-      const main = (_a = (0, parseDef_1.parseDef)(schema._def, name === void 0 ? refs : Object.assign(Object.assign({}, refs), { currentPath: [...refs.basePath, refs.definitionPath, name] }), false)) !== null && _a !== void 0 ? _a : {};
+      const main = (_a = (0, parseDef_1.parseDef)(schema2._def, name === void 0 ? refs : Object.assign(Object.assign({}, refs), { currentPath: [...refs.basePath, refs.definitionPath, name] }), false)) !== null && _a !== void 0 ? _a : {};
       const combined = name === void 0 ? definitions2 ? Object.assign(Object.assign({}, main), { [refs.definitionPath]: definitions2 }) : main : {
         $ref: [
           ...refs.$refStrategy === "relative" ? [] : refs.basePath,
@@ -21905,7 +20840,7 @@ var require_zodToJsonSchema = __commonJS({
       }
       return combined;
     };
-    exports.zodToJsonSchema = zodToJsonSchema2;
+    exports.zodToJsonSchema = zodToJsonSchema5;
   }
 });
 
@@ -21923,1956 +20858,3156 @@ var require_zod_to_json_schema = __commonJS({
   }
 });
 
-// node_modules/binary-search/index.js
-var require_binary_search = __commonJS({
-  "node_modules/binary-search/index.js"(exports, module2) {
-    module2.exports = function(haystack, needle, comparator, low, high) {
-      var mid, cmp;
-      if (low === void 0)
-        low = 0;
-      else {
-        low = low | 0;
-        if (low < 0 || low >= haystack.length)
-          throw new RangeError("invalid lower bound");
-      }
-      if (high === void 0)
-        high = haystack.length - 1;
-      else {
-        high = high | 0;
-        if (high < low || high >= haystack.length)
-          throw new RangeError("invalid upper bound");
-      }
-      while (low <= high) {
-        mid = low + (high - low >>> 1);
-        cmp = +comparator(haystack[mid], needle, mid, haystack);
-        if (cmp < 0)
-          low = mid + 1;
-        else if (cmp > 0)
-          high = mid - 1;
-        else
-          return mid;
-      }
-      return ~low;
-    };
+// node_modules/langchain/dist/tools/convert_to_openai.js
+function formatToOpenAIFunction(tool) {
+  return {
+    name: tool.name,
+    description: tool.description,
+    parameters: (0, import_zod_to_json_schema.zodToJsonSchema)(tool.schema)
+  };
+}
+var import_zod_to_json_schema;
+var init_convert_to_openai = __esm({
+  "node_modules/langchain/dist/tools/convert_to_openai.js"() {
+    import_zod_to_json_schema = __toESM(require_zod_to_json_schema(), 1);
   }
 });
 
-// node_modules/num-sort/index.js
-var require_num_sort = __commonJS({
-  "node_modules/num-sort/index.js"(exports) {
-    "use strict";
-    function assertNumber(number2) {
-      if (typeof number2 !== "number") {
-        throw new TypeError("Expected a number");
-      }
+// node_modules/langchain/dist/util/azure.js
+function getEndpoint(config) {
+  const { azureOpenAIApiDeploymentName, azureOpenAIApiInstanceName, azureOpenAIApiKey, azureOpenAIBasePath, basePath } = config;
+  if (azureOpenAIApiKey && azureOpenAIBasePath && azureOpenAIApiDeploymentName) {
+    return `${azureOpenAIBasePath}/${azureOpenAIApiDeploymentName}`;
+  }
+  if (azureOpenAIApiKey) {
+    if (!azureOpenAIApiInstanceName) {
+      throw new Error("azureOpenAIApiInstanceName is required when using azureOpenAIApiKey");
     }
-    exports.ascending = (left, right) => {
-      assertNumber(left);
-      assertNumber(right);
-      if (Number.isNaN(left)) {
-        return -1;
-      }
-      if (Number.isNaN(right)) {
-        return 1;
-      }
-      return left - right;
-    };
-    exports.descending = (left, right) => {
-      assertNumber(left);
-      assertNumber(right);
-      if (Number.isNaN(left)) {
-        return 1;
-      }
-      if (Number.isNaN(right)) {
-        return -1;
-      }
-      return right - left;
-    };
+    if (!azureOpenAIApiDeploymentName) {
+      throw new Error("azureOpenAIApiDeploymentName is a required parameter when using azureOpenAIApiKey");
+    }
+    return `https://${azureOpenAIApiInstanceName}.openai.azure.com/openai/deployments/${azureOpenAIApiDeploymentName}`;
+  }
+  return basePath;
+}
+var init_azure = __esm({
+  "node_modules/langchain/dist/util/azure.js"() {
   }
 });
 
-// node_modules/react/cjs/react.development.js
-var require_react_development = __commonJS({
-  "node_modules/react/cjs/react.development.js"(exports, module2) {
-    "use strict";
-    if (true) {
-      (function() {
-        "use strict";
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-        }
-        var ReactVersion = "18.2.0";
-        var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-        var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-        var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-        var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-        var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-        var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-        var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-        var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-        var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-        var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-        var REACT_MEMO_TYPE = Symbol.for("react.memo");
-        var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-        var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
-        var FAUX_ITERATOR_SYMBOL = "@@iterator";
-        function getIteratorFn(maybeIterable) {
-          if (maybeIterable === null || typeof maybeIterable !== "object") {
-            return null;
-          }
-          var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
-          if (typeof maybeIterator === "function") {
-            return maybeIterator;
-          }
-          return null;
-        }
-        var ReactCurrentDispatcher = {
-          /**
-           * @internal
-           * @type {ReactComponent}
-           */
-          current: null
+// node_modules/langchain/dist/chat_models/openai.js
+var openai_exports = {};
+__export(openai_exports, {
+  ChatOpenAI: () => ChatOpenAI,
+  PromptLayerChatOpenAI: () => PromptLayerChatOpenAI
+});
+function messageTypeToOpenAIRole(type2) {
+  switch (type2) {
+    case "system":
+      return "system";
+    case "ai":
+      return "assistant";
+    case "human":
+      return "user";
+    case "function":
+      return "function";
+    default:
+      throw new Error(`Unknown message type: ${type2}`);
+  }
+}
+function openAIResponseToChatMessage(message) {
+  var _a;
+  switch (message.role) {
+    case "user":
+      return new HumanMessage(message.content || "");
+    case "assistant":
+      return new AIMessage(message.content || "", {
+        function_call: message.function_call
+      });
+    case "system":
+      return new SystemMessage(message.content || "");
+    default:
+      return new ChatMessage(message.content || "", (_a = message.role) != null ? _a : "unknown");
+  }
+}
+var import_openai, ChatOpenAI, PromptLayerChatOpenAI;
+var init_openai = __esm({
+  "node_modules/langchain/dist/chat_models/openai.js"() {
+    import_openai = __toESM(require_dist2(), 1);
+    init_env2();
+    init_axios_fetch_adapter();
+    init_base3();
+    init_schema();
+    init_count_tokens();
+    init_prompt_layer();
+    init_convert_to_openai();
+    init_azure();
+    ChatOpenAI = class extends BaseChatModel {
+      get callKeys() {
+        return [
+          ...super.callKeys,
+          "options",
+          "function_call",
+          "functions",
+          "tools",
+          "promptIndex"
+        ];
+      }
+      get lc_secrets() {
+        return {
+          openAIApiKey: "OPENAI_API_KEY",
+          azureOpenAIApiKey: "AZURE_OPENAI_API_KEY"
         };
-        var ReactCurrentBatchConfig = {
-          transition: null
+      }
+      get lc_aliases() {
+        return {
+          modelName: "model",
+          openAIApiKey: "openai_api_key",
+          azureOpenAIApiVersion: "azure_openai_api_version",
+          azureOpenAIApiKey: "azure_openai_api_key",
+          azureOpenAIApiInstanceName: "azure_openai_api_instance_name",
+          azureOpenAIApiDeploymentName: "azure_openai_api_deployment_name"
         };
-        var ReactCurrentActQueue = {
-          current: null,
-          // Used to reproduce behavior of `batchedUpdates` in legacy mode.
-          isBatchingLegacy: false,
-          didScheduleLegacyUpdate: false
+      }
+      constructor(fields, configuration) {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n;
+        super(fields != null ? fields : {});
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.defineProperty(this, "temperature", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 1
+        });
+        Object.defineProperty(this, "topP", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 1
+        });
+        Object.defineProperty(this, "frequencyPenalty", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 0
+        });
+        Object.defineProperty(this, "presencePenalty", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 0
+        });
+        Object.defineProperty(this, "n", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 1
+        });
+        Object.defineProperty(this, "logitBias", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "modelName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "gpt-3.5-turbo"
+        });
+        Object.defineProperty(this, "modelKwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "stop", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "timeout", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "streaming", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "maxTokens", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "openAIApiKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "azureOpenAIApiVersion", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "azureOpenAIApiKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "azureOpenAIApiInstanceName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "azureOpenAIApiDeploymentName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "azureOpenAIBasePath", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "client", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "clientConfig", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.openAIApiKey = (_a = fields == null ? void 0 : fields.openAIApiKey) != null ? _a : getEnvironmentVariable2("OPENAI_API_KEY");
+        this.azureOpenAIApiKey = (_b = fields == null ? void 0 : fields.azureOpenAIApiKey) != null ? _b : getEnvironmentVariable2("AZURE_OPENAI_API_KEY");
+        if (!this.azureOpenAIApiKey && !this.openAIApiKey) {
+          throw new Error("OpenAI or Azure OpenAI API key not found");
+        }
+        this.azureOpenAIApiInstanceName = (_c = fields == null ? void 0 : fields.azureOpenAIApiInstanceName) != null ? _c : getEnvironmentVariable2("AZURE_OPENAI_API_INSTANCE_NAME");
+        this.azureOpenAIApiDeploymentName = (_d = fields == null ? void 0 : fields.azureOpenAIApiDeploymentName) != null ? _d : getEnvironmentVariable2("AZURE_OPENAI_API_DEPLOYMENT_NAME");
+        this.azureOpenAIApiVersion = (_e = fields == null ? void 0 : fields.azureOpenAIApiVersion) != null ? _e : getEnvironmentVariable2("AZURE_OPENAI_API_VERSION");
+        this.azureOpenAIBasePath = (_f = fields == null ? void 0 : fields.azureOpenAIBasePath) != null ? _f : getEnvironmentVariable2("AZURE_OPENAI_BASE_PATH");
+        this.modelName = (_g = fields == null ? void 0 : fields.modelName) != null ? _g : this.modelName;
+        this.modelKwargs = (_h = fields == null ? void 0 : fields.modelKwargs) != null ? _h : {};
+        this.timeout = fields == null ? void 0 : fields.timeout;
+        this.temperature = (_i = fields == null ? void 0 : fields.temperature) != null ? _i : this.temperature;
+        this.topP = (_j = fields == null ? void 0 : fields.topP) != null ? _j : this.topP;
+        this.frequencyPenalty = (_k = fields == null ? void 0 : fields.frequencyPenalty) != null ? _k : this.frequencyPenalty;
+        this.presencePenalty = (_l = fields == null ? void 0 : fields.presencePenalty) != null ? _l : this.presencePenalty;
+        this.maxTokens = fields == null ? void 0 : fields.maxTokens;
+        this.n = (_m = fields == null ? void 0 : fields.n) != null ? _m : this.n;
+        this.logitBias = fields == null ? void 0 : fields.logitBias;
+        this.stop = fields == null ? void 0 : fields.stop;
+        this.streaming = (_n = fields == null ? void 0 : fields.streaming) != null ? _n : false;
+        if (this.azureOpenAIApiKey) {
+          if (!this.azureOpenAIApiInstanceName) {
+            throw new Error("Azure OpenAI API instance name not found");
+          }
+          if (!this.azureOpenAIApiDeploymentName) {
+            throw new Error("Azure OpenAI API deployment name not found");
+          }
+          if (!this.azureOpenAIApiVersion) {
+            throw new Error("Azure OpenAI API version not found");
+          }
+        }
+        this.clientConfig = {
+          apiKey: this.openAIApiKey,
+          ...configuration,
+          ...fields == null ? void 0 : fields.configuration
         };
-        var ReactCurrentOwner = {
-          /**
-           * @internal
-           * @type {ReactComponent}
-           */
-          current: null
+      }
+      /**
+       * Get the parameters used to invoke the model
+       */
+      invocationParams(options) {
+        var _a, _b;
+        return {
+          model: this.modelName,
+          temperature: this.temperature,
+          top_p: this.topP,
+          frequency_penalty: this.frequencyPenalty,
+          presence_penalty: this.presencePenalty,
+          max_tokens: this.maxTokens === -1 ? void 0 : this.maxTokens,
+          n: this.n,
+          logit_bias: this.logitBias,
+          stop: (_a = options == null ? void 0 : options.stop) != null ? _a : this.stop,
+          stream: this.streaming,
+          functions: (_b = options == null ? void 0 : options.functions) != null ? _b : (options == null ? void 0 : options.tools) ? options == null ? void 0 : options.tools.map(formatToOpenAIFunction) : void 0,
+          function_call: options == null ? void 0 : options.function_call,
+          ...this.modelKwargs
         };
-        var ReactDebugCurrentFrame = {};
-        var currentExtraStackFrame = null;
-        function setExtraStackFrame(stack) {
-          {
-            currentExtraStackFrame = stack;
-          }
-        }
-        {
-          ReactDebugCurrentFrame.setExtraStackFrame = function(stack) {
-            {
-              currentExtraStackFrame = stack;
-            }
-          };
-          ReactDebugCurrentFrame.getCurrentStack = null;
-          ReactDebugCurrentFrame.getStackAddendum = function() {
-            var stack = "";
-            if (currentExtraStackFrame) {
-              stack += currentExtraStackFrame;
-            }
-            var impl = ReactDebugCurrentFrame.getCurrentStack;
-            if (impl) {
-              stack += impl() || "";
-            }
-            return stack;
-          };
-        }
-        var enableScopeAPI = false;
-        var enableCacheElement = false;
-        var enableTransitionTracing = false;
-        var enableLegacyHidden = false;
-        var enableDebugTracing = false;
-        var ReactSharedInternals = {
-          ReactCurrentDispatcher,
-          ReactCurrentBatchConfig,
-          ReactCurrentOwner
+      }
+      /** @ignore */
+      _identifyingParams() {
+        return {
+          model_name: this.modelName,
+          ...this.invocationParams(),
+          ...this.clientConfig
         };
-        {
-          ReactSharedInternals.ReactDebugCurrentFrame = ReactDebugCurrentFrame;
-          ReactSharedInternals.ReactCurrentActQueue = ReactCurrentActQueue;
-        }
-        function warn(format) {
-          {
-            {
-              for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-                args[_key - 1] = arguments[_key];
-              }
-              printWarning("warn", format, args);
-            }
-          }
-        }
-        function error(format) {
-          {
-            {
-              for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-                args[_key2 - 1] = arguments[_key2];
-              }
-              printWarning("error", format, args);
-            }
-          }
-        }
-        function printWarning(level, format, args) {
-          {
-            var ReactDebugCurrentFrame2 = ReactSharedInternals.ReactDebugCurrentFrame;
-            var stack = ReactDebugCurrentFrame2.getStackAddendum();
-            if (stack !== "") {
-              format += "%s";
-              args = args.concat([stack]);
-            }
-            var argsWithFormat = args.map(function(item) {
-              return String(item);
-            });
-            argsWithFormat.unshift("Warning: " + format);
-            Function.prototype.apply.call(console[level], console, argsWithFormat);
-          }
-        }
-        var didWarnStateUpdateForUnmountedComponent = {};
-        function warnNoop(publicInstance, callerName) {
-          {
-            var _constructor = publicInstance.constructor;
-            var componentName = _constructor && (_constructor.displayName || _constructor.name) || "ReactClass";
-            var warningKey = componentName + "." + callerName;
-            if (didWarnStateUpdateForUnmountedComponent[warningKey]) {
-              return;
-            }
-            error("Can't call %s on a component that is not yet mounted. This is a no-op, but it might indicate a bug in your application. Instead, assign to `this.state` directly or define a `state = {};` class property with the desired state in the %s component.", callerName, componentName);
-            didWarnStateUpdateForUnmountedComponent[warningKey] = true;
-          }
-        }
-        var ReactNoopUpdateQueue = {
-          /**
-           * Checks whether or not this composite component is mounted.
-           * @param {ReactClass} publicInstance The instance we want to test.
-           * @return {boolean} True if mounted, false otherwise.
-           * @protected
-           * @final
-           */
-          isMounted: function(publicInstance) {
-            return false;
-          },
-          /**
-           * Forces an update. This should only be invoked when it is known with
-           * certainty that we are **not** in a DOM transaction.
-           *
-           * You may want to call this when you know that some deeper aspect of the
-           * component's state has changed but `setState` was not called.
-           *
-           * This will not invoke `shouldComponentUpdate`, but it will invoke
-           * `componentWillUpdate` and `componentDidUpdate`.
-           *
-           * @param {ReactClass} publicInstance The instance that should rerender.
-           * @param {?function} callback Called after component is updated.
-           * @param {?string} callerName name of the calling function in the public API.
-           * @internal
-           */
-          enqueueForceUpdate: function(publicInstance, callback, callerName) {
-            warnNoop(publicInstance, "forceUpdate");
-          },
-          /**
-           * Replaces all of the state. Always use this or `setState` to mutate state.
-           * You should treat `this.state` as immutable.
-           *
-           * There is no guarantee that `this.state` will be immediately updated, so
-           * accessing `this.state` after calling this method may return the old value.
-           *
-           * @param {ReactClass} publicInstance The instance that should rerender.
-           * @param {object} completeState Next state.
-           * @param {?function} callback Called after component is updated.
-           * @param {?string} callerName name of the calling function in the public API.
-           * @internal
-           */
-          enqueueReplaceState: function(publicInstance, completeState, callback, callerName) {
-            warnNoop(publicInstance, "replaceState");
-          },
-          /**
-           * Sets a subset of the state. This only exists because _pendingState is
-           * internal. This provides a merging strategy that is not available to deep
-           * properties which is confusing. TODO: Expose pendingState or don't use it
-           * during the merge.
-           *
-           * @param {ReactClass} publicInstance The instance that should rerender.
-           * @param {object} partialState Next partial state to be merged with state.
-           * @param {?function} callback Called after component is updated.
-           * @param {?string} Name of the calling function in the public API.
-           * @internal
-           */
-          enqueueSetState: function(publicInstance, partialState, callback, callerName) {
-            warnNoop(publicInstance, "setState");
-          }
-        };
-        var assign2 = Object.assign;
-        var emptyObject = {};
-        {
-          Object.freeze(emptyObject);
-        }
-        function Component(props, context, updater) {
-          this.props = props;
-          this.context = context;
-          this.refs = emptyObject;
-          this.updater = updater || ReactNoopUpdateQueue;
-        }
-        Component.prototype.isReactComponent = {};
-        Component.prototype.setState = function(partialState, callback) {
-          if (typeof partialState !== "object" && typeof partialState !== "function" && partialState != null) {
-            throw new Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
-          }
-          this.updater.enqueueSetState(this, partialState, callback, "setState");
-        };
-        Component.prototype.forceUpdate = function(callback) {
-          this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
-        };
-        {
-          var deprecatedAPIs = {
-            isMounted: ["isMounted", "Instead, make sure to clean up subscriptions and pending requests in componentWillUnmount to prevent memory leaks."],
-            replaceState: ["replaceState", "Refactor your code to use setState instead (see https://github.com/facebook/react/issues/3236)."]
-          };
-          var defineDeprecationWarning = function(methodName, info) {
-            Object.defineProperty(Component.prototype, methodName, {
-              get: function() {
-                warn("%s(...) is deprecated in plain JavaScript React classes. %s", info[0], info[1]);
-                return void 0;
-              }
-            });
-          };
-          for (var fnName in deprecatedAPIs) {
-            if (deprecatedAPIs.hasOwnProperty(fnName)) {
-              defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
-            }
-          }
-        }
-        function ComponentDummy() {
-        }
-        ComponentDummy.prototype = Component.prototype;
-        function PureComponent(props, context, updater) {
-          this.props = props;
-          this.context = context;
-          this.refs = emptyObject;
-          this.updater = updater || ReactNoopUpdateQueue;
-        }
-        var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
-        pureComponentPrototype.constructor = PureComponent;
-        assign2(pureComponentPrototype, Component.prototype);
-        pureComponentPrototype.isPureReactComponent = true;
-        function createRef() {
-          var refObject = {
-            current: null
-          };
-          {
-            Object.seal(refObject);
-          }
-          return refObject;
-        }
-        var isArrayImpl = Array.isArray;
-        function isArray4(a2) {
-          return isArrayImpl(a2);
-        }
-        function typeName(value) {
-          {
-            var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
-            var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-            return type;
-          }
-        }
-        function willCoercionThrow(value) {
-          {
-            try {
-              testStringCoercion(value);
-              return false;
-            } catch (e) {
-              return true;
-            }
-          }
-        }
-        function testStringCoercion(value) {
-          return "" + value;
-        }
-        function checkKeyStringCoercion(value) {
-          {
-            if (willCoercionThrow(value)) {
-              error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
-              return testStringCoercion(value);
-            }
-          }
-        }
-        function getWrappedName(outerType, innerType, wrapperName) {
-          var displayName = outerType.displayName;
-          if (displayName) {
-            return displayName;
-          }
-          var functionName = innerType.displayName || innerType.name || "";
-          return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
-        }
-        function getContextName(type) {
-          return type.displayName || "Context";
-        }
-        function getComponentNameFromType(type) {
-          if (type == null) {
-            return null;
-          }
-          {
-            if (typeof type.tag === "number") {
-              error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
-            }
-          }
-          if (typeof type === "function") {
-            return type.displayName || type.name || null;
-          }
-          if (typeof type === "string") {
-            return type;
-          }
-          switch (type) {
-            case REACT_FRAGMENT_TYPE:
-              return "Fragment";
-            case REACT_PORTAL_TYPE:
-              return "Portal";
-            case REACT_PROFILER_TYPE:
-              return "Profiler";
-            case REACT_STRICT_MODE_TYPE:
-              return "StrictMode";
-            case REACT_SUSPENSE_TYPE:
-              return "Suspense";
-            case REACT_SUSPENSE_LIST_TYPE:
-              return "SuspenseList";
-          }
-          if (typeof type === "object") {
-            switch (type.$$typeof) {
-              case REACT_CONTEXT_TYPE:
-                var context = type;
-                return getContextName(context) + ".Consumer";
-              case REACT_PROVIDER_TYPE:
-                var provider = type;
-                return getContextName(provider._context) + ".Provider";
-              case REACT_FORWARD_REF_TYPE:
-                return getWrappedName(type, type.render, "ForwardRef");
-              case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
-                if (outerName !== null) {
-                  return outerName;
+      }
+      /**
+       * Get the identifying parameters for the model
+       */
+      identifyingParams() {
+        return this._identifyingParams();
+      }
+      /** @ignore */
+      async _generate(messages4, options, runManager) {
+        var _a, _b, _c, _d, _e, _f, _g;
+        const tokenUsage = {};
+        const params = this.invocationParams(options);
+        const messagesMapped = messages4.map((message) => ({
+          role: messageTypeToOpenAIRole(message._getType()),
+          content: message.content,
+          name: message.name,
+          function_call: message.additional_kwargs.function_call
+        }));
+        const data = params.stream ? await new Promise((resolve, reject) => {
+          let response;
+          let rejected = false;
+          let resolved = false;
+          this.completionWithRetry({
+            ...params,
+            messages: messagesMapped
+          }, {
+            signal: options == null ? void 0 : options.signal,
+            ...options == null ? void 0 : options.options,
+            adapter: fetchAdapter,
+            responseType: "stream",
+            onmessage: (event) => {
+              var _a2, _b2, _c2, _d2, _e2, _f2, _g2, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q;
+              if (((_b2 = (_a2 = event.data) == null ? void 0 : _a2.trim) == null ? void 0 : _b2.call(_a2)) === "[DONE]") {
+                if (resolved || rejected) {
+                  return;
                 }
-                return getComponentNameFromType(type.type) || "Memo";
-              case REACT_LAZY_TYPE: {
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init2 = lazyComponent._init;
-                try {
-                  return getComponentNameFromType(init2(payload));
-                } catch (x) {
-                  return null;
+                resolved = true;
+                resolve(response);
+              } else {
+                const data2 = JSON.parse(event.data);
+                if (data2 == null ? void 0 : data2.error) {
+                  if (rejected) {
+                    return;
+                  }
+                  rejected = true;
+                  reject(data2.error);
+                  return;
                 }
-              }
-            }
-          }
-          return null;
-        }
-        var hasOwnProperty3 = Object.prototype.hasOwnProperty;
-        var RESERVED_PROPS = {
-          key: true,
-          ref: true,
-          __self: true,
-          __source: true
-        };
-        var specialPropKeyWarningShown, specialPropRefWarningShown, didWarnAboutStringRefs;
-        {
-          didWarnAboutStringRefs = {};
-        }
-        function hasValidRef(config) {
-          {
-            if (hasOwnProperty3.call(config, "ref")) {
-              var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
-              if (getter && getter.isReactWarning) {
-                return false;
-              }
-            }
-          }
-          return config.ref !== void 0;
-        }
-        function hasValidKey(config) {
-          {
-            if (hasOwnProperty3.call(config, "key")) {
-              var getter = Object.getOwnPropertyDescriptor(config, "key").get;
-              if (getter && getter.isReactWarning) {
-                return false;
-              }
-            }
-          }
-          return config.key !== void 0;
-        }
-        function defineKeyPropWarningGetter(props, displayName) {
-          var warnAboutAccessingKey = function() {
-            {
-              if (!specialPropKeyWarningShown) {
-                specialPropKeyWarningShown = true;
-                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-              }
-            }
-          };
-          warnAboutAccessingKey.isReactWarning = true;
-          Object.defineProperty(props, "key", {
-            get: warnAboutAccessingKey,
-            configurable: true
-          });
-        }
-        function defineRefPropWarningGetter(props, displayName) {
-          var warnAboutAccessingRef = function() {
-            {
-              if (!specialPropRefWarningShown) {
-                specialPropRefWarningShown = true;
-                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-              }
-            }
-          };
-          warnAboutAccessingRef.isReactWarning = true;
-          Object.defineProperty(props, "ref", {
-            get: warnAboutAccessingRef,
-            configurable: true
-          });
-        }
-        function warnIfStringRefCannotBeAutoConverted(config) {
-          {
-            if (typeof config.ref === "string" && ReactCurrentOwner.current && config.__self && ReactCurrentOwner.current.stateNode !== config.__self) {
-              var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
-              if (!didWarnAboutStringRefs[componentName]) {
-                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', componentName, config.ref);
-                didWarnAboutStringRefs[componentName] = true;
-              }
-            }
-          }
-        }
-        var ReactElement = function(type, key, ref, self2, source, owner, props) {
-          var element2 = {
-            // This tag allows us to uniquely identify this as a React Element
-            $$typeof: REACT_ELEMENT_TYPE,
-            // Built-in properties that belong on the element
-            type,
-            key,
-            ref,
-            props,
-            // Record the component responsible for creating this element.
-            _owner: owner
-          };
-          {
-            element2._store = {};
-            Object.defineProperty(element2._store, "validated", {
-              configurable: false,
-              enumerable: false,
-              writable: true,
-              value: false
-            });
-            Object.defineProperty(element2, "_self", {
-              configurable: false,
-              enumerable: false,
-              writable: false,
-              value: self2
-            });
-            Object.defineProperty(element2, "_source", {
-              configurable: false,
-              enumerable: false,
-              writable: false,
-              value: source
-            });
-            if (Object.freeze) {
-              Object.freeze(element2.props);
-              Object.freeze(element2);
-            }
-          }
-          return element2;
-        };
-        function createElement2(type, config, children) {
-          var propName;
-          var props = {};
-          var key = null;
-          var ref = null;
-          var self2 = null;
-          var source = null;
-          if (config != null) {
-            if (hasValidRef(config)) {
-              ref = config.ref;
-              {
-                warnIfStringRefCannotBeAutoConverted(config);
-              }
-            }
-            if (hasValidKey(config)) {
-              {
-                checkKeyStringCoercion(config.key);
-              }
-              key = "" + config.key;
-            }
-            self2 = config.__self === void 0 ? null : config.__self;
-            source = config.__source === void 0 ? null : config.__source;
-            for (propName in config) {
-              if (hasOwnProperty3.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-                props[propName] = config[propName];
-              }
-            }
-          }
-          var childrenLength = arguments.length - 2;
-          if (childrenLength === 1) {
-            props.children = children;
-          } else if (childrenLength > 1) {
-            var childArray = Array(childrenLength);
-            for (var i = 0; i < childrenLength; i++) {
-              childArray[i] = arguments[i + 2];
-            }
-            {
-              if (Object.freeze) {
-                Object.freeze(childArray);
-              }
-            }
-            props.children = childArray;
-          }
-          if (type && type.defaultProps) {
-            var defaultProps = type.defaultProps;
-            for (propName in defaultProps) {
-              if (props[propName] === void 0) {
-                props[propName] = defaultProps[propName];
-              }
-            }
-          }
-          {
-            if (key || ref) {
-              var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
-              if (key) {
-                defineKeyPropWarningGetter(props, displayName);
-              }
-              if (ref) {
-                defineRefPropWarningGetter(props, displayName);
-              }
-            }
-          }
-          return ReactElement(type, key, ref, self2, source, ReactCurrentOwner.current, props);
-        }
-        function cloneAndReplaceKey(oldElement, newKey) {
-          var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
-          return newElement;
-        }
-        function cloneElement(element2, config, children) {
-          if (element2 === null || element2 === void 0) {
-            throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element2 + ".");
-          }
-          var propName;
-          var props = assign2({}, element2.props);
-          var key = element2.key;
-          var ref = element2.ref;
-          var self2 = element2._self;
-          var source = element2._source;
-          var owner = element2._owner;
-          if (config != null) {
-            if (hasValidRef(config)) {
-              ref = config.ref;
-              owner = ReactCurrentOwner.current;
-            }
-            if (hasValidKey(config)) {
-              {
-                checkKeyStringCoercion(config.key);
-              }
-              key = "" + config.key;
-            }
-            var defaultProps;
-            if (element2.type && element2.type.defaultProps) {
-              defaultProps = element2.type.defaultProps;
-            }
-            for (propName in config) {
-              if (hasOwnProperty3.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-                if (config[propName] === void 0 && defaultProps !== void 0) {
-                  props[propName] = defaultProps[propName];
-                } else {
-                  props[propName] = config[propName];
+                const message = data2;
+                if (!response) {
+                  response = {
+                    id: message.id,
+                    object: message.object,
+                    created: message.created,
+                    model: message.model,
+                    choices: []
+                  };
                 }
-              }
-            }
-          }
-          var childrenLength = arguments.length - 2;
-          if (childrenLength === 1) {
-            props.children = children;
-          } else if (childrenLength > 1) {
-            var childArray = Array(childrenLength);
-            for (var i = 0; i < childrenLength; i++) {
-              childArray[i] = arguments[i + 2];
-            }
-            props.children = childArray;
-          }
-          return ReactElement(element2.type, key, ref, self2, source, owner, props);
-        }
-        function isValidElement(object) {
-          return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-        }
-        var SEPARATOR = ".";
-        var SUBSEPARATOR = ":";
-        function escape2(key) {
-          var escapeRegex2 = /[=:]/g;
-          var escaperLookup = {
-            "=": "=0",
-            ":": "=2"
-          };
-          var escapedString = key.replace(escapeRegex2, function(match2) {
-            return escaperLookup[match2];
-          });
-          return "$" + escapedString;
-        }
-        var didWarnAboutMaps = false;
-        var userProvidedKeyEscapeRegex = /\/+/g;
-        function escapeUserProvidedKey(text4) {
-          return text4.replace(userProvidedKeyEscapeRegex, "$&/");
-        }
-        function getElementKey(element2, index2) {
-          if (typeof element2 === "object" && element2 !== null && element2.key != null) {
-            {
-              checkKeyStringCoercion(element2.key);
-            }
-            return escape2("" + element2.key);
-          }
-          return index2.toString(36);
-        }
-        function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
-          var type = typeof children;
-          if (type === "undefined" || type === "boolean") {
-            children = null;
-          }
-          var invokeCallback = false;
-          if (children === null) {
-            invokeCallback = true;
-          } else {
-            switch (type) {
-              case "string":
-              case "number":
-                invokeCallback = true;
-                break;
-              case "object":
-                switch (children.$$typeof) {
-                  case REACT_ELEMENT_TYPE:
-                  case REACT_PORTAL_TYPE:
-                    invokeCallback = true;
-                }
-            }
-          }
-          if (invokeCallback) {
-            var _child = children;
-            var mappedChild = callback(_child);
-            var childKey = nameSoFar === "" ? SEPARATOR + getElementKey(_child, 0) : nameSoFar;
-            if (isArray4(mappedChild)) {
-              var escapedChildKey = "";
-              if (childKey != null) {
-                escapedChildKey = escapeUserProvidedKey(childKey) + "/";
-              }
-              mapIntoArray(mappedChild, array, escapedChildKey, "", function(c) {
-                return c;
-              });
-            } else if (mappedChild != null) {
-              if (isValidElement(mappedChild)) {
-                {
-                  if (mappedChild.key && (!_child || _child.key !== mappedChild.key)) {
-                    checkKeyStringCoercion(mappedChild.key);
+                for (const part of (_c2 = message.choices) != null ? _c2 : []) {
+                  if (part != null) {
+                    let choice = response.choices.find((c) => c.index === part.index);
+                    if (!choice) {
+                      choice = {
+                        index: part.index,
+                        finish_reason: (_d2 = part.finish_reason) != null ? _d2 : void 0
+                      };
+                      response.choices[part.index] = choice;
+                    }
+                    if (!choice.message) {
+                      choice.message = {
+                        role: (_e2 = part.delta) == null ? void 0 : _e2.role,
+                        content: ""
+                      };
+                    }
+                    if (part.delta.function_call && !choice.message.function_call) {
+                      choice.message.function_call = {
+                        name: "",
+                        arguments: ""
+                      };
+                    }
+                    choice.message.content += (_g2 = (_f2 = part.delta) == null ? void 0 : _f2.content) != null ? _g2 : "";
+                    if (choice.message.function_call) {
+                      choice.message.function_call.name += (_j = (_i = (_h = part.delta) == null ? void 0 : _h.function_call) == null ? void 0 : _i.name) != null ? _j : "";
+                      choice.message.function_call.arguments += (_m = (_l = (_k = part.delta) == null ? void 0 : _k.function_call) == null ? void 0 : _l.arguments) != null ? _m : "";
+                    }
+                    void (runManager == null ? void 0 : runManager.handleLLMNewToken((_o = (_n = part.delta) == null ? void 0 : _n.content) != null ? _o : "", {
+                      prompt: (_p = options.promptIndex) != null ? _p : 0,
+                      completion: part.index
+                    }));
                   }
                 }
-                mappedChild = cloneAndReplaceKey(
-                  mappedChild,
-                  // Keep both the (mapped) and old keys if they differ, just as
-                  // traverseAllChildren used to do for objects as children
-                  escapedPrefix + // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
-                  (mappedChild.key && (!_child || _child.key !== mappedChild.key) ? (
-                    // $FlowFixMe Flow incorrectly thinks existing element's key can be a number
-                    // eslint-disable-next-line react-internal/safe-string-coercion
-                    escapeUserProvidedKey("" + mappedChild.key) + "/"
-                  ) : "") + childKey
-                );
-              }
-              array.push(mappedChild);
-            }
-            return 1;
-          }
-          var child;
-          var nextName;
-          var subtreeCount = 0;
-          var nextNamePrefix = nameSoFar === "" ? SEPARATOR : nameSoFar + SUBSEPARATOR;
-          if (isArray4(children)) {
-            for (var i = 0; i < children.length; i++) {
-              child = children[i];
-              nextName = nextNamePrefix + getElementKey(child, i);
-              subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
-            }
-          } else {
-            var iteratorFn = getIteratorFn(children);
-            if (typeof iteratorFn === "function") {
-              var iterableChildren = children;
-              {
-                if (iteratorFn === iterableChildren.entries) {
-                  if (!didWarnAboutMaps) {
-                    warn("Using Maps as children is not supported. Use an array of keyed ReactElements instead.");
-                  }
-                  didWarnAboutMaps = true;
+                if (!resolved && !rejected && ((_q = message.choices) == null ? void 0 : _q.every((c) => c.finish_reason != null))) {
+                  resolved = true;
+                  resolve(response);
                 }
               }
-              var iterator = iteratorFn.call(iterableChildren);
-              var step;
-              var ii = 0;
-              while (!(step = iterator.next()).done) {
-                child = step.value;
-                nextName = nextNamePrefix + getElementKey(child, ii++);
-                subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
-              }
-            } else if (type === "object") {
-              var childrenString = String(children);
-              throw new Error("Objects are not valid as a React child (found: " + (childrenString === "[object Object]" ? "object with keys {" + Object.keys(children).join(", ") + "}" : childrenString) + "). If you meant to render a collection of children, use an array instead.");
             }
-          }
-          return subtreeCount;
-        }
-        function mapChildren(children, func, context) {
-          if (children == null) {
-            return children;
-          }
-          var result = [];
-          var count = 0;
-          mapIntoArray(children, result, "", "", function(child) {
-            return func.call(context, child, count++);
+          }).catch((error) => {
+            if (!rejected) {
+              rejected = true;
+              reject(error);
+            }
           });
-          return result;
+        }) : await this.completionWithRetry({
+          ...params,
+          messages: messagesMapped
+        }, {
+          signal: options == null ? void 0 : options.signal,
+          ...options == null ? void 0 : options.options
+        });
+        const { completion_tokens: completionTokens, prompt_tokens: promptTokens, total_tokens: totalTokens } = (_a = data.usage) != null ? _a : {};
+        if (completionTokens) {
+          tokenUsage.completionTokens = ((_b = tokenUsage.completionTokens) != null ? _b : 0) + completionTokens;
         }
-        function countChildren(children) {
-          var n = 0;
-          mapChildren(children, function() {
-            n++;
+        if (promptTokens) {
+          tokenUsage.promptTokens = ((_c = tokenUsage.promptTokens) != null ? _c : 0) + promptTokens;
+        }
+        if (totalTokens) {
+          tokenUsage.totalTokens = ((_d = tokenUsage.totalTokens) != null ? _d : 0) + totalTokens;
+        }
+        const generations = [];
+        for (const part of data.choices) {
+          const text4 = (_f = (_e = part.message) == null ? void 0 : _e.content) != null ? _f : "";
+          generations.push({
+            text: text4,
+            message: openAIResponseToChatMessage((_g = part.message) != null ? _g : { role: "assistant" })
           });
-          return n;
         }
-        function forEachChildren(children, forEachFunc, forEachContext) {
-          mapChildren(children, function() {
-            forEachFunc.apply(this, arguments);
-          }, forEachContext);
+        return {
+          generations,
+          llmOutput: { tokenUsage }
+        };
+      }
+      async getNumTokensFromMessages(messages4) {
+        let totalCount = 0;
+        let tokensPerMessage = 0;
+        let tokensPerName = 0;
+        if (getModelNameForTiktoken(this.modelName) === "gpt-3.5-turbo") {
+          tokensPerMessage = 4;
+          tokensPerName = -1;
+        } else if (getModelNameForTiktoken(this.modelName).startsWith("gpt-4")) {
+          tokensPerMessage = 3;
+          tokensPerName = 1;
         }
-        function toArray3(children) {
-          return mapChildren(children, function(child) {
-            return child;
-          }) || [];
+        const countPerMessage = await Promise.all(messages4.map(async (message) => {
+          const textCount = await this.getNumTokens(message.content);
+          const roleCount = await this.getNumTokens(messageTypeToOpenAIRole(message._getType()));
+          const nameCount = message.name !== void 0 ? tokensPerName + await this.getNumTokens(message.name) : 0;
+          const count = textCount + tokensPerMessage + roleCount + nameCount;
+          totalCount += count;
+          return count;
+        }));
+        totalCount += 3;
+        return { totalCount, countPerMessage };
+      }
+      /** @ignore */
+      async completionWithRetry(request, options) {
+        if (!this.client) {
+          const openAIEndpointConfig = {
+            azureOpenAIApiDeploymentName: this.azureOpenAIApiDeploymentName,
+            azureOpenAIApiInstanceName: this.azureOpenAIApiInstanceName,
+            azureOpenAIApiKey: this.azureOpenAIApiKey,
+            azureOpenAIBasePath: this.azureOpenAIBasePath,
+            basePath: this.clientConfig.basePath
+          };
+          const endpoint = getEndpoint(openAIEndpointConfig);
+          const clientConfig = new import_openai.Configuration({
+            ...this.clientConfig,
+            basePath: endpoint,
+            baseOptions: {
+              timeout: this.timeout,
+              ...this.clientConfig.baseOptions
+            }
+          });
+          this.client = new import_openai.OpenAIApi(clientConfig);
         }
-        function onlyChild(children) {
-          if (!isValidElement(children)) {
-            throw new Error("React.Children.only expected to receive a single React element child.");
+        const axiosOptions = {
+          adapter: isNode2() ? void 0 : fetchAdapter,
+          ...this.clientConfig.baseOptions,
+          ...options
+        };
+        if (this.azureOpenAIApiKey) {
+          axiosOptions.headers = {
+            "api-key": this.azureOpenAIApiKey,
+            ...axiosOptions.headers
+          };
+          axiosOptions.params = {
+            "api-version": this.azureOpenAIApiVersion,
+            ...axiosOptions.params
+          };
+        }
+        return this.caller.call(this.client.createChatCompletion.bind(this.client), request, axiosOptions).then((res) => res.data);
+      }
+      _llmType() {
+        return "openai";
+      }
+      /** @ignore */
+      _combineLLMOutput(...llmOutputs) {
+        return llmOutputs.reduce((acc, llmOutput) => {
+          var _a, _b, _c;
+          if (llmOutput && llmOutput.tokenUsage) {
+            acc.tokenUsage.completionTokens += (_a = llmOutput.tokenUsage.completionTokens) != null ? _a : 0;
+            acc.tokenUsage.promptTokens += (_b = llmOutput.tokenUsage.promptTokens) != null ? _b : 0;
+            acc.tokenUsage.totalTokens += (_c = llmOutput.tokenUsage.totalTokens) != null ? _c : 0;
           }
-          return children;
+          return acc;
+        }, {
+          tokenUsage: {
+            completionTokens: 0,
+            promptTokens: 0,
+            totalTokens: 0
+          }
+        });
+      }
+    };
+    PromptLayerChatOpenAI = class extends ChatOpenAI {
+      constructor(fields) {
+        var _a, _b, _c, _d;
+        super(fields);
+        Object.defineProperty(this, "promptLayerApiKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "plTags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "returnPromptLayerId", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.promptLayerApiKey = (_b = fields == null ? void 0 : fields.promptLayerApiKey) != null ? _b : typeof process !== "undefined" ? (
+          // eslint-disable-next-line no-process-env
+          (_a = process.env) == null ? void 0 : _a.PROMPTLAYER_API_KEY
+        ) : void 0;
+        this.plTags = (_c = fields == null ? void 0 : fields.plTags) != null ? _c : [];
+        this.returnPromptLayerId = (_d = fields == null ? void 0 : fields.returnPromptLayerId) != null ? _d : false;
+      }
+      async _generate(messages4, options, runManager) {
+        const requestStartTime = Date.now();
+        let parsedOptions;
+        if (Array.isArray(options)) {
+          parsedOptions = { stop: options };
+        } else if ((options == null ? void 0 : options.timeout) && !options.signal) {
+          parsedOptions = {
+            ...options,
+            signal: AbortSignal.timeout(options.timeout)
+          };
+        } else {
+          parsedOptions = options != null ? options : {};
         }
-        function createContext2(defaultValue) {
-          var context = {
-            $$typeof: REACT_CONTEXT_TYPE,
-            // As a workaround to support multiple concurrent renderers, we categorize
-            // some renderers as primary and others as secondary. We only expect
-            // there to be two concurrent renderers at most: React Native (primary) and
-            // Fabric (secondary); React DOM (primary) and React ART (secondary).
-            // Secondary renderers store their context values on separate fields.
-            _currentValue: defaultValue,
-            _currentValue2: defaultValue,
-            // Used to track how many concurrent renderers this context currently
-            // supports within in a single renderer. Such as parallel server rendering.
-            _threadCount: 0,
-            // These are circular
-            Provider: null,
-            Consumer: null,
-            // Add these to use same hidden class in VM as ServerContext
-            _defaultValue: null,
-            _globalName: null
-          };
-          context.Provider = {
-            $$typeof: REACT_PROVIDER_TYPE,
-            _context: context
-          };
-          var hasWarnedAboutUsingNestedContextConsumers = false;
-          var hasWarnedAboutUsingConsumerProvider = false;
-          var hasWarnedAboutDisplayNameOnConsumer = false;
-          {
-            var Consumer = {
-              $$typeof: REACT_CONTEXT_TYPE,
-              _context: context
+        const generatedResponses = await super._generate(messages4, parsedOptions, runManager);
+        const requestEndTime = Date.now();
+        const _convertMessageToDict = (message) => {
+          let messageDict;
+          if (message._getType() === "human") {
+            messageDict = { role: "user", content: message.content };
+          } else if (message._getType() === "ai") {
+            messageDict = { role: "assistant", content: message.content };
+          } else if (message._getType() === "system") {
+            messageDict = { role: "system", content: message.content };
+          } else if (message._getType() === "generic") {
+            messageDict = {
+              role: message.role,
+              content: message.content
             };
-            Object.defineProperties(Consumer, {
-              Provider: {
-                get: function() {
-                  if (!hasWarnedAboutUsingConsumerProvider) {
-                    hasWarnedAboutUsingConsumerProvider = true;
-                    error("Rendering <Context.Consumer.Provider> is not supported and will be removed in a future major release. Did you mean to render <Context.Provider> instead?");
-                  }
-                  return context.Provider;
-                },
-                set: function(_Provider) {
-                  context.Provider = _Provider;
-                }
-              },
-              _currentValue: {
-                get: function() {
-                  return context._currentValue;
-                },
-                set: function(_currentValue) {
-                  context._currentValue = _currentValue;
-                }
-              },
-              _currentValue2: {
-                get: function() {
-                  return context._currentValue2;
-                },
-                set: function(_currentValue2) {
-                  context._currentValue2 = _currentValue2;
-                }
-              },
-              _threadCount: {
-                get: function() {
-                  return context._threadCount;
-                },
-                set: function(_threadCount) {
-                  context._threadCount = _threadCount;
-                }
-              },
-              Consumer: {
-                get: function() {
-                  if (!hasWarnedAboutUsingNestedContextConsumers) {
-                    hasWarnedAboutUsingNestedContextConsumers = true;
-                    error("Rendering <Context.Consumer.Consumer> is not supported and will be removed in a future major release. Did you mean to render <Context.Consumer> instead?");
-                  }
-                  return context.Consumer;
-                }
-              },
-              displayName: {
-                get: function() {
-                  return context.displayName;
-                },
-                set: function(displayName) {
-                  if (!hasWarnedAboutDisplayNameOnConsumer) {
-                    warn("Setting `displayName` on Context.Consumer has no effect. You should set it directly on the context with Context.displayName = '%s'.", displayName);
-                    hasWarnedAboutDisplayNameOnConsumer = true;
-                  }
-                }
-              }
-            });
-            context.Consumer = Consumer;
-          }
-          {
-            context._currentRenderer = null;
-            context._currentRenderer2 = null;
-          }
-          return context;
-        }
-        var Uninitialized = -1;
-        var Pending = 0;
-        var Resolved = 1;
-        var Rejected = 2;
-        function lazyInitializer(payload) {
-          if (payload._status === Uninitialized) {
-            var ctor = payload._result;
-            var thenable = ctor();
-            thenable.then(function(moduleObject2) {
-              if (payload._status === Pending || payload._status === Uninitialized) {
-                var resolved = payload;
-                resolved._status = Resolved;
-                resolved._result = moduleObject2;
-              }
-            }, function(error2) {
-              if (payload._status === Pending || payload._status === Uninitialized) {
-                var rejected = payload;
-                rejected._status = Rejected;
-                rejected._result = error2;
-              }
-            });
-            if (payload._status === Uninitialized) {
-              var pending = payload;
-              pending._status = Pending;
-              pending._result = thenable;
-            }
-          }
-          if (payload._status === Resolved) {
-            var moduleObject = payload._result;
-            {
-              if (moduleObject === void 0) {
-                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))\n\nDid you accidentally put curly braces around the import?", moduleObject);
-              }
-            }
-            {
-              if (!("default" in moduleObject)) {
-                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))", moduleObject);
-              }
-            }
-            return moduleObject.default;
           } else {
-            throw payload._result;
+            throw new Error(`Got unknown type ${message}`);
           }
-        }
-        function lazy(ctor) {
-          var payload = {
-            // We use these fields to store the result.
-            _status: Uninitialized,
-            _result: ctor
-          };
-          var lazyType = {
-            $$typeof: REACT_LAZY_TYPE,
-            _payload: payload,
-            _init: lazyInitializer
-          };
-          {
-            var defaultProps;
-            var propTypes;
-            Object.defineProperties(lazyType, {
-              defaultProps: {
-                configurable: true,
-                get: function() {
-                  return defaultProps;
-                },
-                set: function(newDefaultProps) {
-                  error("React.lazy(...): It is not supported to assign `defaultProps` to a lazy component import. Either specify them where the component is defined, or create a wrapping component around it.");
-                  defaultProps = newDefaultProps;
-                  Object.defineProperty(lazyType, "defaultProps", {
-                    enumerable: true
-                  });
-                }
-              },
-              propTypes: {
-                configurable: true,
-                get: function() {
-                  return propTypes;
-                },
-                set: function(newPropTypes) {
-                  error("React.lazy(...): It is not supported to assign `propTypes` to a lazy component import. Either specify them where the component is defined, or create a wrapping component around it.");
-                  propTypes = newPropTypes;
-                  Object.defineProperty(lazyType, "propTypes", {
-                    enumerable: true
-                  });
-                }
-              }
-            });
-          }
-          return lazyType;
-        }
-        function forwardRef(render) {
-          {
-            if (render != null && render.$$typeof === REACT_MEMO_TYPE) {
-              error("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).");
-            } else if (typeof render !== "function") {
-              error("forwardRef requires a render function but was given %s.", render === null ? "null" : typeof render);
-            } else {
-              if (render.length !== 0 && render.length !== 2) {
-                error("forwardRef render functions accept exactly two parameters: props and ref. %s", render.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined.");
-              }
-            }
-            if (render != null) {
-              if (render.defaultProps != null || render.propTypes != null) {
-                error("forwardRef render functions do not support propTypes or defaultProps. Did you accidentally pass a React component?");
-              }
-            }
-          }
-          var elementType = {
-            $$typeof: REACT_FORWARD_REF_TYPE,
-            render
-          };
-          {
-            var ownName;
-            Object.defineProperty(elementType, "displayName", {
-              enumerable: false,
-              configurable: true,
-              get: function() {
-                return ownName;
-              },
-              set: function(name) {
-                ownName = name;
-                if (!render.name && !render.displayName) {
-                  render.displayName = name;
-                }
-              }
-            });
-          }
-          return elementType;
-        }
-        var REACT_MODULE_REFERENCE;
-        {
-          REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
-        }
-        function isValidElementType(type) {
-          if (typeof type === "string" || typeof type === "function") {
-            return true;
-          }
-          if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
-            return true;
-          }
-          if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== void 0) {
-              return true;
-            }
-          }
-          return false;
-        }
-        function memo2(type, compare2) {
-          {
-            if (!isValidElementType(type)) {
-              error("memo: The first argument must be a component. Instead received: %s", type === null ? "null" : typeof type);
-            }
-          }
-          var elementType = {
-            $$typeof: REACT_MEMO_TYPE,
-            type,
-            compare: compare2 === void 0 ? null : compare2
-          };
-          {
-            var ownName;
-            Object.defineProperty(elementType, "displayName", {
-              enumerable: false,
-              configurable: true,
-              get: function() {
-                return ownName;
-              },
-              set: function(name) {
-                ownName = name;
-                if (!type.name && !type.displayName) {
-                  type.displayName = name;
-                }
-              }
-            });
-          }
-          return elementType;
-        }
-        function resolveDispatcher() {
-          var dispatcher = ReactCurrentDispatcher.current;
-          {
-            if (dispatcher === null) {
-              error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.");
-            }
-          }
-          return dispatcher;
-        }
-        function useContext2(Context) {
-          var dispatcher = resolveDispatcher();
-          {
-            if (Context._context !== void 0) {
-              var realContext = Context._context;
-              if (realContext.Consumer === Context) {
-                error("Calling useContext(Context.Consumer) is not supported, may cause bugs, and will be removed in a future major release. Did you mean to call useContext(Context) instead?");
-              } else if (realContext.Provider === Context) {
-                error("Calling useContext(Context.Provider) is not supported. Did you mean to call useContext(Context) instead?");
-              }
-            }
-          }
-          return dispatcher.useContext(Context);
-        }
-        function useState7(initialState) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useState(initialState);
-        }
-        function useReducer(reducer2, initialArg, init2) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useReducer(reducer2, initialArg, init2);
-        }
-        function useRef2(initialValue) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useRef(initialValue);
-        }
-        function useEffect6(create2, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useEffect(create2, deps);
-        }
-        function useInsertionEffect(create2, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useInsertionEffect(create2, deps);
-        }
-        function useLayoutEffect(create2, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useLayoutEffect(create2, deps);
-        }
-        function useCallback(callback, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useCallback(callback, deps);
-        }
-        function useMemo(create2, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useMemo(create2, deps);
-        }
-        function useImperativeHandle(ref, create2, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useImperativeHandle(ref, create2, deps);
-        }
-        function useDebugValue(value, formatterFn) {
-          {
-            var dispatcher = resolveDispatcher();
-            return dispatcher.useDebugValue(value, formatterFn);
-          }
-        }
-        function useTransition() {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useTransition();
-        }
-        function useDeferredValue(value) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useDeferredValue(value);
-        }
-        function useId() {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useId();
-        }
-        function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-        }
-        var disabledDepth = 0;
-        var prevLog;
-        var prevInfo;
-        var prevWarn;
-        var prevError;
-        var prevGroup;
-        var prevGroupCollapsed;
-        var prevGroupEnd;
-        function disabledLog() {
-        }
-        disabledLog.__reactDisabledLog = true;
-        function disableLogs() {
-          {
-            if (disabledDepth === 0) {
-              prevLog = console.log;
-              prevInfo = console.info;
-              prevWarn = console.warn;
-              prevError = console.error;
-              prevGroup = console.group;
-              prevGroupCollapsed = console.groupCollapsed;
-              prevGroupEnd = console.groupEnd;
-              var props = {
-                configurable: true,
-                enumerable: true,
-                value: disabledLog,
-                writable: true
-              };
-              Object.defineProperties(console, {
-                info: props,
-                log: props,
-                warn: props,
-                error: props,
-                group: props,
-                groupCollapsed: props,
-                groupEnd: props
-              });
-            }
-            disabledDepth++;
-          }
-        }
-        function reenableLogs() {
-          {
-            disabledDepth--;
-            if (disabledDepth === 0) {
-              var props = {
-                configurable: true,
-                enumerable: true,
-                writable: true
-              };
-              Object.defineProperties(console, {
-                log: assign2({}, props, {
-                  value: prevLog
-                }),
-                info: assign2({}, props, {
-                  value: prevInfo
-                }),
-                warn: assign2({}, props, {
-                  value: prevWarn
-                }),
-                error: assign2({}, props, {
-                  value: prevError
-                }),
-                group: assign2({}, props, {
-                  value: prevGroup
-                }),
-                groupCollapsed: assign2({}, props, {
-                  value: prevGroupCollapsed
-                }),
-                groupEnd: assign2({}, props, {
-                  value: prevGroupEnd
-                })
-              });
-            }
-            if (disabledDepth < 0) {
-              error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
-            }
-          }
-        }
-        var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher;
-        var prefix;
-        function describeBuiltInComponentFrame(name, source, ownerFn) {
-          {
-            if (prefix === void 0) {
-              try {
-                throw Error();
-              } catch (x) {
-                var match2 = x.stack.trim().match(/\n( *(at )?)/);
-                prefix = match2 && match2[1] || "";
-              }
-            }
-            return "\n" + prefix + name;
-          }
-        }
-        var reentry = false;
-        var componentFrameCache;
-        {
-          var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
-          componentFrameCache = new PossiblyWeakMap();
-        }
-        function describeNativeComponentFrame(fn, construct) {
-          if (!fn || reentry) {
-            return "";
-          }
-          {
-            var frame = componentFrameCache.get(fn);
-            if (frame !== void 0) {
-              return frame;
-            }
-          }
-          var control;
-          reentry = true;
-          var previousPrepareStackTrace = Error.prepareStackTrace;
-          Error.prepareStackTrace = void 0;
-          var previousDispatcher;
-          {
-            previousDispatcher = ReactCurrentDispatcher$1.current;
-            ReactCurrentDispatcher$1.current = null;
-            disableLogs();
-          }
-          try {
-            if (construct) {
-              var Fake = function() {
-                throw Error();
-              };
-              Object.defineProperty(Fake.prototype, "props", {
-                set: function() {
-                  throw Error();
-                }
-              });
-              if (typeof Reflect === "object" && Reflect.construct) {
-                try {
-                  Reflect.construct(Fake, []);
-                } catch (x) {
-                  control = x;
-                }
-                Reflect.construct(fn, [], Fake);
-              } else {
-                try {
-                  Fake.call();
-                } catch (x) {
-                  control = x;
-                }
-                fn.call(Fake.prototype);
-              }
-            } else {
-              try {
-                throw Error();
-              } catch (x) {
-                control = x;
-              }
-              fn();
-            }
-          } catch (sample) {
-            if (sample && control && typeof sample.stack === "string") {
-              var sampleLines = sample.stack.split("\n");
-              var controlLines = control.stack.split("\n");
-              var s = sampleLines.length - 1;
-              var c = controlLines.length - 1;
-              while (s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c]) {
-                c--;
-              }
-              for (; s >= 1 && c >= 0; s--, c--) {
-                if (sampleLines[s] !== controlLines[c]) {
-                  if (s !== 1 || c !== 1) {
-                    do {
-                      s--;
-                      c--;
-                      if (c < 0 || sampleLines[s] !== controlLines[c]) {
-                        var _frame = "\n" + sampleLines[s].replace(" at new ", " at ");
-                        if (fn.displayName && _frame.includes("<anonymous>")) {
-                          _frame = _frame.replace("<anonymous>", fn.displayName);
-                        }
-                        {
-                          if (typeof fn === "function") {
-                            componentFrameCache.set(fn, _frame);
-                          }
-                        }
-                        return _frame;
-                      }
-                    } while (s >= 1 && c >= 0);
-                  }
-                  break;
-                }
-              }
-            }
-          } finally {
-            reentry = false;
-            {
-              ReactCurrentDispatcher$1.current = previousDispatcher;
-              reenableLogs();
-            }
-            Error.prepareStackTrace = previousPrepareStackTrace;
-          }
-          var name = fn ? fn.displayName || fn.name : "";
-          var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
-          {
-            if (typeof fn === "function") {
-              componentFrameCache.set(fn, syntheticFrame);
-            }
-          }
-          return syntheticFrame;
-        }
-        function describeFunctionComponentFrame(fn, source, ownerFn) {
-          {
-            return describeNativeComponentFrame(fn, false);
-          }
-        }
-        function shouldConstruct(Component2) {
-          var prototype3 = Component2.prototype;
-          return !!(prototype3 && prototype3.isReactComponent);
-        }
-        function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
-          if (type == null) {
-            return "";
-          }
-          if (typeof type === "function") {
-            {
-              return describeNativeComponentFrame(type, shouldConstruct(type));
-            }
-          }
-          if (typeof type === "string") {
-            return describeBuiltInComponentFrame(type);
-          }
-          switch (type) {
-            case REACT_SUSPENSE_TYPE:
-              return describeBuiltInComponentFrame("Suspense");
-            case REACT_SUSPENSE_LIST_TYPE:
-              return describeBuiltInComponentFrame("SuspenseList");
-          }
-          if (typeof type === "object") {
-            switch (type.$$typeof) {
-              case REACT_FORWARD_REF_TYPE:
-                return describeFunctionComponentFrame(type.render);
-              case REACT_MEMO_TYPE:
-                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
-              case REACT_LAZY_TYPE: {
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init2 = lazyComponent._init;
-                try {
-                  return describeUnknownElementTypeFrameInDEV(init2(payload), source, ownerFn);
-                } catch (x) {
-                }
-              }
-            }
-          }
-          return "";
-        }
-        var loggedTypeFailures = {};
-        var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
-        function setCurrentlyValidatingElement(element2) {
-          {
-            if (element2) {
-              var owner = element2._owner;
-              var stack = describeUnknownElementTypeFrameInDEV(element2.type, element2._source, owner ? owner.type : null);
-              ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
-            } else {
-              ReactDebugCurrentFrame$1.setExtraStackFrame(null);
-            }
-          }
-        }
-        function checkPropTypes(typeSpecs, values, location, componentName, element2) {
-          {
-            var has = Function.call.bind(hasOwnProperty3);
-            for (var typeSpecName in typeSpecs) {
-              if (has(typeSpecs, typeSpecName)) {
-                var error$1 = void 0;
-                try {
-                  if (typeof typeSpecs[typeSpecName] !== "function") {
-                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                    err.name = "Invariant Violation";
-                    throw err;
-                  }
-                  error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-                } catch (ex) {
-                  error$1 = ex;
-                }
-                if (error$1 && !(error$1 instanceof Error)) {
-                  setCurrentlyValidatingElement(element2);
-                  error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
-                  setCurrentlyValidatingElement(null);
-                }
-                if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
-                  loggedTypeFailures[error$1.message] = true;
-                  setCurrentlyValidatingElement(element2);
-                  error("Failed %s type: %s", location, error$1.message);
-                  setCurrentlyValidatingElement(null);
-                }
-              }
-            }
-          }
-        }
-        function setCurrentlyValidatingElement$1(element2) {
-          {
-            if (element2) {
-              var owner = element2._owner;
-              var stack = describeUnknownElementTypeFrameInDEV(element2.type, element2._source, owner ? owner.type : null);
-              setExtraStackFrame(stack);
-            } else {
-              setExtraStackFrame(null);
-            }
-          }
-        }
-        var propTypesMisspellWarningShown;
-        {
-          propTypesMisspellWarningShown = false;
-        }
-        function getDeclarationErrorAddendum() {
-          if (ReactCurrentOwner.current) {
-            var name = getComponentNameFromType(ReactCurrentOwner.current.type);
-            if (name) {
-              return "\n\nCheck the render method of `" + name + "`.";
-            }
-          }
-          return "";
-        }
-        function getSourceInfoErrorAddendum(source) {
-          if (source !== void 0) {
-            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
-            var lineNumber = source.lineNumber;
-            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
-          }
-          return "";
-        }
-        function getSourceInfoErrorAddendumForProps(elementProps) {
-          if (elementProps !== null && elementProps !== void 0) {
-            return getSourceInfoErrorAddendum(elementProps.__source);
-          }
-          return "";
-        }
-        var ownerHasKeyUseWarning = {};
-        function getCurrentComponentErrorInfo(parentType) {
-          var info = getDeclarationErrorAddendum();
-          if (!info) {
-            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
-            if (parentName) {
-              info = "\n\nCheck the top-level render call using <" + parentName + ">.";
-            }
-          }
-          return info;
-        }
-        function validateExplicitKey(element2, parentType) {
-          if (!element2._store || element2._store.validated || element2.key != null) {
-            return;
-          }
-          element2._store.validated = true;
-          var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
-          if (ownerHasKeyUseWarning[currentComponentErrorInfo]) {
-            return;
-          }
-          ownerHasKeyUseWarning[currentComponentErrorInfo] = true;
-          var childOwner = "";
-          if (element2 && element2._owner && element2._owner !== ReactCurrentOwner.current) {
-            childOwner = " It was passed a child from " + getComponentNameFromType(element2._owner.type) + ".";
-          }
-          {
-            setCurrentlyValidatingElement$1(element2);
-            error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
-            setCurrentlyValidatingElement$1(null);
-          }
-        }
-        function validateChildKeys(node2, parentType) {
-          if (typeof node2 !== "object") {
-            return;
-          }
-          if (isArray4(node2)) {
-            for (var i = 0; i < node2.length; i++) {
-              var child = node2[i];
-              if (isValidElement(child)) {
-                validateExplicitKey(child, parentType);
-              }
-            }
-          } else if (isValidElement(node2)) {
-            if (node2._store) {
-              node2._store.validated = true;
-            }
-          } else if (node2) {
-            var iteratorFn = getIteratorFn(node2);
-            if (typeof iteratorFn === "function") {
-              if (iteratorFn !== node2.entries) {
-                var iterator = iteratorFn.call(node2);
-                var step;
-                while (!(step = iterator.next()).done) {
-                  if (isValidElement(step.value)) {
-                    validateExplicitKey(step.value, parentType);
-                  }
-                }
-              }
-            }
-          }
-        }
-        function validatePropTypes(element2) {
-          {
-            var type = element2.type;
-            if (type === null || type === void 0 || typeof type === "string") {
-              return;
-            }
-            var propTypes;
-            if (typeof type === "function") {
-              propTypes = type.propTypes;
-            } else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
-            // Inner props are checked in the reconciler.
-            type.$$typeof === REACT_MEMO_TYPE)) {
-              propTypes = type.propTypes;
-            } else {
-              return;
-            }
-            if (propTypes) {
-              var name = getComponentNameFromType(type);
-              checkPropTypes(propTypes, element2.props, "prop", name, element2);
-            } else if (type.PropTypes !== void 0 && !propTypesMisspellWarningShown) {
-              propTypesMisspellWarningShown = true;
-              var _name = getComponentNameFromType(type);
-              error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
-            }
-            if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) {
-              error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
-            }
-          }
-        }
-        function validateFragmentProps(fragment) {
-          {
-            var keys3 = Object.keys(fragment.props);
-            for (var i = 0; i < keys3.length; i++) {
-              var key = keys3[i];
-              if (key !== "children" && key !== "key") {
-                setCurrentlyValidatingElement$1(fragment);
-                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
-                setCurrentlyValidatingElement$1(null);
-                break;
-              }
-            }
-            if (fragment.ref !== null) {
-              setCurrentlyValidatingElement$1(fragment);
-              error("Invalid attribute `ref` supplied to `React.Fragment`.");
-              setCurrentlyValidatingElement$1(null);
-            }
-          }
-        }
-        function createElementWithValidation(type, props, children) {
-          var validType = isValidElementType(type);
-          if (!validType) {
-            var info = "";
-            if (type === void 0 || typeof type === "object" && type !== null && Object.keys(type).length === 0) {
-              info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
-            }
-            var sourceInfo = getSourceInfoErrorAddendumForProps(props);
-            if (sourceInfo) {
-              info += sourceInfo;
-            } else {
-              info += getDeclarationErrorAddendum();
-            }
-            var typeString;
-            if (type === null) {
-              typeString = "null";
-            } else if (isArray4(type)) {
-              typeString = "array";
-            } else if (type !== void 0 && type.$$typeof === REACT_ELEMENT_TYPE) {
-              typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
-              info = " Did you accidentally export a JSX literal instead of a component?";
-            } else {
-              typeString = typeof type;
-            }
-            {
-              error("React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
-            }
-          }
-          var element2 = createElement2.apply(this, arguments);
-          if (element2 == null) {
-            return element2;
-          }
-          if (validType) {
-            for (var i = 2; i < arguments.length; i++) {
-              validateChildKeys(arguments[i], type);
-            }
-          }
-          if (type === REACT_FRAGMENT_TYPE) {
-            validateFragmentProps(element2);
-          } else {
-            validatePropTypes(element2);
-          }
-          return element2;
-        }
-        var didWarnAboutDeprecatedCreateFactory = false;
-        function createFactoryWithValidation(type) {
-          var validatedFactory = createElementWithValidation.bind(null, type);
-          validatedFactory.type = type;
-          {
-            if (!didWarnAboutDeprecatedCreateFactory) {
-              didWarnAboutDeprecatedCreateFactory = true;
-              warn("React.createFactory() is deprecated and will be removed in a future major release. Consider using JSX or use React.createElement() directly instead.");
-            }
-            Object.defineProperty(validatedFactory, "type", {
-              enumerable: false,
-              get: function() {
-                warn("Factory.type is deprecated. Access the class directly before passing it to createFactory.");
-                Object.defineProperty(this, "type", {
-                  value: type
-                });
-                return type;
-              }
-            });
-          }
-          return validatedFactory;
-        }
-        function cloneElementWithValidation(element2, props, children) {
-          var newElement = cloneElement.apply(this, arguments);
-          for (var i = 2; i < arguments.length; i++) {
-            validateChildKeys(arguments[i], newElement.type);
-          }
-          validatePropTypes(newElement);
-          return newElement;
-        }
-        function startTransition(scope, options) {
-          var prevTransition = ReactCurrentBatchConfig.transition;
-          ReactCurrentBatchConfig.transition = {};
-          var currentTransition = ReactCurrentBatchConfig.transition;
-          {
-            ReactCurrentBatchConfig.transition._updatedFibers = /* @__PURE__ */ new Set();
-          }
-          try {
-            scope();
-          } finally {
-            ReactCurrentBatchConfig.transition = prevTransition;
-            {
-              if (prevTransition === null && currentTransition._updatedFibers) {
-                var updatedFibersCount = currentTransition._updatedFibers.size;
-                if (updatedFibersCount > 10) {
-                  warn("Detected a large number of updates inside startTransition. If this is due to a subscription please re-write it to use React provided hooks. Otherwise concurrent mode guarantees are off the table.");
-                }
-                currentTransition._updatedFibers.clear();
-              }
-            }
-          }
-        }
-        var didWarnAboutMessageChannel = false;
-        var enqueueTaskImpl = null;
-        function enqueueTask2(task) {
-          if (enqueueTaskImpl === null) {
-            try {
-              var requireString = ("require" + Math.random()).slice(0, 7);
-              var nodeRequire = module2 && module2[requireString];
-              enqueueTaskImpl = nodeRequire.call(module2, "timers").setImmediate;
-            } catch (_err) {
-              enqueueTaskImpl = function(callback) {
-                {
-                  if (didWarnAboutMessageChannel === false) {
-                    didWarnAboutMessageChannel = true;
-                    if (typeof MessageChannel === "undefined") {
-                      error("This browser does not have a MessageChannel implementation, so enqueuing tasks via await act(async () => ...) will fail. Please file an issue at https://github.com/facebook/react/issues if you encounter this warning.");
-                    }
-                  }
-                }
-                var channel = new MessageChannel();
-                channel.port1.onmessage = callback;
-                channel.port2.postMessage(void 0);
-              };
-            }
-          }
-          return enqueueTaskImpl(task);
-        }
-        var actScopeDepth = 0;
-        var didWarnNoAwaitAct = false;
-        function act(callback) {
-          {
-            var prevActScopeDepth = actScopeDepth;
-            actScopeDepth++;
-            if (ReactCurrentActQueue.current === null) {
-              ReactCurrentActQueue.current = [];
-            }
-            var prevIsBatchingLegacy = ReactCurrentActQueue.isBatchingLegacy;
-            var result;
-            try {
-              ReactCurrentActQueue.isBatchingLegacy = true;
-              result = callback();
-              if (!prevIsBatchingLegacy && ReactCurrentActQueue.didScheduleLegacyUpdate) {
-                var queue2 = ReactCurrentActQueue.current;
-                if (queue2 !== null) {
-                  ReactCurrentActQueue.didScheduleLegacyUpdate = false;
-                  flushActQueue(queue2);
-                }
-              }
-            } catch (error2) {
-              popActScope(prevActScopeDepth);
-              throw error2;
-            } finally {
-              ReactCurrentActQueue.isBatchingLegacy = prevIsBatchingLegacy;
-            }
-            if (result !== null && typeof result === "object" && typeof result.then === "function") {
-              var thenableResult = result;
-              var wasAwaited = false;
-              var thenable = {
-                then: function(resolve, reject) {
-                  wasAwaited = true;
-                  thenableResult.then(function(returnValue2) {
-                    popActScope(prevActScopeDepth);
-                    if (actScopeDepth === 0) {
-                      recursivelyFlushAsyncActWork(returnValue2, resolve, reject);
-                    } else {
-                      resolve(returnValue2);
-                    }
-                  }, function(error2) {
-                    popActScope(prevActScopeDepth);
-                    reject(error2);
-                  });
-                }
-              };
-              {
-                if (!didWarnNoAwaitAct && typeof Promise !== "undefined") {
-                  Promise.resolve().then(function() {
-                  }).then(function() {
-                    if (!wasAwaited) {
-                      didWarnNoAwaitAct = true;
-                      error("You called act(async () => ...) without await. This could lead to unexpected testing behaviour, interleaving multiple act calls and mixing their scopes. You should - await act(async () => ...);");
-                    }
-                  });
-                }
-              }
-              return thenable;
-            } else {
-              var returnValue = result;
-              popActScope(prevActScopeDepth);
-              if (actScopeDepth === 0) {
-                var _queue = ReactCurrentActQueue.current;
-                if (_queue !== null) {
-                  flushActQueue(_queue);
-                  ReactCurrentActQueue.current = null;
-                }
-                var _thenable = {
-                  then: function(resolve, reject) {
-                    if (ReactCurrentActQueue.current === null) {
-                      ReactCurrentActQueue.current = [];
-                      recursivelyFlushAsyncActWork(returnValue, resolve, reject);
-                    } else {
-                      resolve(returnValue);
-                    }
-                  }
-                };
-                return _thenable;
-              } else {
-                var _thenable2 = {
-                  then: function(resolve, reject) {
-                    resolve(returnValue);
-                  }
-                };
-                return _thenable2;
-              }
-            }
-          }
-        }
-        function popActScope(prevActScopeDepth) {
-          {
-            if (prevActScopeDepth !== actScopeDepth - 1) {
-              error("You seem to have overlapping act() calls, this is not supported. Be sure to await previous act() calls before making a new one. ");
-            }
-            actScopeDepth = prevActScopeDepth;
-          }
-        }
-        function recursivelyFlushAsyncActWork(returnValue, resolve, reject) {
-          {
-            var queue2 = ReactCurrentActQueue.current;
-            if (queue2 !== null) {
-              try {
-                flushActQueue(queue2);
-                enqueueTask2(function() {
-                  if (queue2.length === 0) {
-                    ReactCurrentActQueue.current = null;
-                    resolve(returnValue);
-                  } else {
-                    recursivelyFlushAsyncActWork(returnValue, resolve, reject);
-                  }
-                });
-              } catch (error2) {
-                reject(error2);
-              }
-            } else {
-              resolve(returnValue);
-            }
-          }
-        }
-        var isFlushing = false;
-        function flushActQueue(queue2) {
-          {
-            if (!isFlushing) {
-              isFlushing = true;
-              var i = 0;
-              try {
-                for (; i < queue2.length; i++) {
-                  var callback = queue2[i];
-                  do {
-                    callback = callback(true);
-                  } while (callback !== null);
-                }
-                queue2.length = 0;
-              } catch (error2) {
-                queue2 = queue2.slice(i + 1);
-                throw error2;
-              } finally {
-                isFlushing = false;
-              }
-            }
-          }
-        }
-        var createElement$1 = createElementWithValidation;
-        var cloneElement$1 = cloneElementWithValidation;
-        var createFactory = createFactoryWithValidation;
-        var Children = {
-          map: mapChildren,
-          forEach: forEachChildren,
-          count: countChildren,
-          toArray: toArray3,
-          only: onlyChild
+          return messageDict;
         };
-        exports.Children = Children;
-        exports.Component = Component;
-        exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.Profiler = REACT_PROFILER_TYPE;
-        exports.PureComponent = PureComponent;
-        exports.StrictMode = REACT_STRICT_MODE_TYPE;
-        exports.Suspense = REACT_SUSPENSE_TYPE;
-        exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
-        exports.cloneElement = cloneElement$1;
-        exports.createContext = createContext2;
-        exports.createElement = createElement$1;
-        exports.createFactory = createFactory;
-        exports.createRef = createRef;
-        exports.forwardRef = forwardRef;
-        exports.isValidElement = isValidElement;
-        exports.lazy = lazy;
-        exports.memo = memo2;
-        exports.startTransition = startTransition;
-        exports.unstable_act = act;
-        exports.useCallback = useCallback;
-        exports.useContext = useContext2;
-        exports.useDebugValue = useDebugValue;
-        exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect6;
-        exports.useId = useId;
-        exports.useImperativeHandle = useImperativeHandle;
-        exports.useInsertionEffect = useInsertionEffect;
-        exports.useLayoutEffect = useLayoutEffect;
-        exports.useMemo = useMemo;
-        exports.useReducer = useReducer;
-        exports.useRef = useRef2;
-        exports.useState = useState7;
-        exports.useSyncExternalStore = useSyncExternalStore;
-        exports.useTransition = useTransition;
-        exports.version = ReactVersion;
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+        const _createMessageDicts = (messages5, callOptions) => {
+          const params = {
+            ...this.invocationParams(),
+            model: this.modelName
+          };
+          if (callOptions == null ? void 0 : callOptions.stop) {
+            if (Object.keys(params).includes("stop")) {
+              throw new Error("`stop` found in both the input and default params.");
+            }
+          }
+          const messageDicts = messages5.map((message) => _convertMessageToDict(message));
+          return messageDicts;
+        };
+        for (let i = 0; i < generatedResponses.generations.length; i += 1) {
+          const generation = generatedResponses.generations[i];
+          const messageDicts = _createMessageDicts(messages4, parsedOptions);
+          let promptLayerRequestId;
+          const parsedResp = [
+            {
+              content: generation.text,
+              role: messageTypeToOpenAIRole(generation.message._getType())
+            }
+          ];
+          const promptLayerRespBody = await promptLayerTrackRequest(this.caller, "langchain.PromptLayerChatOpenAI", messageDicts, this._identifyingParams(), this.plTags, parsedResp, requestStartTime, requestEndTime, this.promptLayerApiKey);
+          if (this.returnPromptLayerId === true) {
+            if (promptLayerRespBody.success === true) {
+              promptLayerRequestId = promptLayerRespBody.request_id;
+            }
+            if (!generation.generationInfo || typeof generation.generationInfo !== "object") {
+              generation.generationInfo = {};
+            }
+            generation.generationInfo.promptLayerRequestId = promptLayerRequestId;
+          }
         }
-      })();
-    }
+        return generatedResponses;
+      }
+    };
   }
 });
 
-// node_modules/react/index.js
-var require_react = __commonJS({
-  "node_modules/react/index.js"(exports, module2) {
-    "use strict";
-    if (false) {
-      module2.exports = null;
-    } else {
-      module2.exports = require_react_development();
+// node_modules/langchain/dist/base_language/index.js
+var getVerbosity, BaseLangChain, BaseLanguageModel;
+var init_base_language = __esm({
+  "node_modules/langchain/dist/base_language/index.js"() {
+    init_async_caller2();
+    init_count_tokens();
+    init_tiktoken();
+    init_serializable();
+    init_count_tokens();
+    getVerbosity = () => false;
+    BaseLangChain = class extends Serializable {
+      get lc_attributes() {
+        return {
+          callbacks: void 0,
+          verbose: void 0
+        };
+      }
+      constructor(params) {
+        var _a, _b, _c;
+        super(params);
+        Object.defineProperty(this, "verbose", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "callbacks", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "tags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "metadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.verbose = (_a = params.verbose) != null ? _a : getVerbosity();
+        this.callbacks = params.callbacks;
+        this.tags = (_b = params.tags) != null ? _b : [];
+        this.metadata = (_c = params.metadata) != null ? _c : {};
+      }
+    };
+    BaseLanguageModel = class extends BaseLangChain {
+      /**
+       * Keys that the language model accepts as call options.
+       */
+      get callKeys() {
+        return ["stop", "timeout", "signal", "tags", "metadata", "callbacks"];
+      }
+      constructor({ callbacks, callbackManager, ...params }) {
+        super({
+          callbacks: callbacks != null ? callbacks : callbackManager,
+          ...params
+        });
+        Object.defineProperty(this, "caller", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "_encoding", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.caller = new AsyncCaller2(params != null ? params : {});
+      }
+      async getNumTokens(text4) {
+        let numTokens = Math.ceil(text4.length / 4);
+        if (!this._encoding) {
+          try {
+            this._encoding = await encodingForModel("modelName" in this ? getModelNameForTiktoken(this.modelName) : "gpt2");
+          } catch (error) {
+            console.warn("Failed to calculate number of tokens, falling back to approximate count", error);
+          }
+        }
+        if (this._encoding) {
+          numTokens = this._encoding.encode(text4).length;
+        }
+        return numTokens;
+      }
+      /**
+       * Get the identifying parameters of the LLM.
+       */
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      _identifyingParams() {
+        return {};
+      }
+      /**
+       * @deprecated
+       * Return a json-like object representing this LLM.
+       */
+      serialize() {
+        return {
+          ...this._identifyingParams(),
+          _type: this._llmType(),
+          _model: this._modelType()
+        };
+      }
+      /**
+       * @deprecated
+       * Load an LLM from a json-like object describing it.
+       */
+      static async deserialize(data) {
+        const { _type, _model, ...rest } = data;
+        if (_model && _model !== "base_chat_model") {
+          throw new Error(`Cannot load LLM with model ${_model}`);
+        }
+        const Cls = {
+          openai: (await Promise.resolve().then(() => (init_openai(), openai_exports))).ChatOpenAI
+        }[_type];
+        if (Cls === void 0) {
+          throw new Error(`Cannot load  LLM with type ${_type}`);
+        }
+        return new Cls(rest);
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/template.js
+var parseFString, interpolateFString, DEFAULT_FORMATTER_MAPPING, DEFAULT_PARSER_MAPPING, renderTemplate, parseTemplate, checkValidTemplate;
+var init_template = __esm({
+  "node_modules/langchain/dist/prompts/template.js"() {
+    parseFString = (template) => {
+      const chars = template.split("");
+      const nodes = [];
+      const nextBracket = (bracket, start) => {
+        for (let i2 = start; i2 < chars.length; i2 += 1) {
+          if (bracket.includes(chars[i2])) {
+            return i2;
+          }
+        }
+        return -1;
+      };
+      let i = 0;
+      while (i < chars.length) {
+        if (chars[i] === "{" && i + 1 < chars.length && chars[i + 1] === "{") {
+          nodes.push({ type: "literal", text: "{" });
+          i += 2;
+        } else if (chars[i] === "}" && i + 1 < chars.length && chars[i + 1] === "}") {
+          nodes.push({ type: "literal", text: "}" });
+          i += 2;
+        } else if (chars[i] === "{") {
+          const j = nextBracket("}", i);
+          if (j < 0) {
+            throw new Error("Unclosed '{' in template.");
+          }
+          nodes.push({
+            type: "variable",
+            name: chars.slice(i + 1, j).join("")
+          });
+          i = j + 1;
+        } else if (chars[i] === "}") {
+          throw new Error("Single '}' in template.");
+        } else {
+          const next = nextBracket("{}", i);
+          const text4 = (next < 0 ? chars.slice(i) : chars.slice(i, next)).join("");
+          nodes.push({ type: "literal", text: text4 });
+          i = next < 0 ? chars.length : next;
+        }
+      }
+      return nodes;
+    };
+    interpolateFString = (template, values) => parseFString(template).reduce((res, node2) => {
+      if (node2.type === "variable") {
+        if (node2.name in values) {
+          return res + values[node2.name];
+        }
+        throw new Error(`Missing value for input ${node2.name}`);
+      }
+      return res + node2.text;
+    }, "");
+    DEFAULT_FORMATTER_MAPPING = {
+      "f-string": interpolateFString,
+      jinja2: (_, __) => ""
+    };
+    DEFAULT_PARSER_MAPPING = {
+      "f-string": parseFString,
+      jinja2: (_) => []
+    };
+    renderTemplate = (template, templateFormat, inputValues) => DEFAULT_FORMATTER_MAPPING[templateFormat](template, inputValues);
+    parseTemplate = (template, templateFormat) => DEFAULT_PARSER_MAPPING[templateFormat](template);
+    checkValidTemplate = (template, templateFormat, inputVariables) => {
+      if (!(templateFormat in DEFAULT_FORMATTER_MAPPING)) {
+        const validFormats = Object.keys(DEFAULT_FORMATTER_MAPPING);
+        throw new Error(`Invalid template format. Got \`${templateFormat}\`;
+                         should be one of ${validFormats}`);
+      }
+      try {
+        const dummyInputs = inputVariables.reduce((acc, v) => {
+          acc[v] = "foo";
+          return acc;
+        }, {});
+        renderTemplate(template, templateFormat, dummyInputs);
+      } catch (e) {
+        throw new Error(`Invalid prompt schema: ${e.message}`);
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/prompt.js
+var prompt_exports = {};
+__export(prompt_exports, {
+  PromptTemplate: () => PromptTemplate
+});
+var PromptTemplate;
+var init_prompt = __esm({
+  "node_modules/langchain/dist/prompts/prompt.js"() {
+    init_base4();
+    init_template();
+    PromptTemplate = class extends BaseStringPromptTemplate {
+      constructor(input) {
+        super(input);
+        Object.defineProperty(this, "template", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "templateFormat", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "f-string"
+        });
+        Object.defineProperty(this, "validateTemplate", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.assign(this, input);
+        if (this.validateTemplate) {
+          let totalInputVariables = this.inputVariables;
+          if (this.partialVariables) {
+            totalInputVariables = totalInputVariables.concat(Object.keys(this.partialVariables));
+          }
+          checkValidTemplate(this.template, this.templateFormat, totalInputVariables);
+        }
+      }
+      _getPromptType() {
+        return "prompt";
+      }
+      async format(values) {
+        const allValues = await this.mergePartialAndUserVariables(values);
+        return renderTemplate(this.template, this.templateFormat, allValues);
+      }
+      /**
+       * Take examples in list format with prefix and suffix to create a prompt.
+       *
+       * Intendend to be used a a way to dynamically create a prompt from examples.
+       *
+       * @param examples - List of examples to use in the prompt.
+       * @param suffix - String to go after the list of examples. Should generally set up the user's input.
+       * @param inputVariables - A list of variable names the final prompt template will expect
+       * @param exampleSeparator - The separator to use in between examples
+       * @param prefix - String that should go before any examples. Generally includes examples.
+       *
+       * @returns The final prompt template generated.
+       */
+      static fromExamples(examples, suffix, inputVariables, exampleSeparator = "\n\n", prefix = "") {
+        const template = [prefix, ...examples, suffix].join(exampleSeparator);
+        return new PromptTemplate({
+          inputVariables,
+          template
+        });
+      }
+      /**
+       * Load prompt template from a template f-string
+       */
+      static fromTemplate(template, { templateFormat = "f-string", ...rest } = {}) {
+        const names = /* @__PURE__ */ new Set();
+        parseTemplate(template, templateFormat).forEach((node2) => {
+          if (node2.type === "variable") {
+            names.add(node2.name);
+          }
+        });
+        return new PromptTemplate({
+          inputVariables: [...names],
+          templateFormat,
+          template,
+          ...rest
+        });
+      }
+      async partial(values) {
+        var _a;
+        const promptDict = { ...this };
+        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
+        promptDict.partialVariables = {
+          ...(_a = this.partialVariables) != null ? _a : {},
+          ...values
+        };
+        return new PromptTemplate(promptDict);
+      }
+      serialize() {
+        if (this.outputParser !== void 0) {
+          throw new Error("Cannot serialize a prompt template with an output parser");
+        }
+        return {
+          _type: this._getPromptType(),
+          input_variables: this.inputVariables,
+          template: this.template,
+          template_format: this.templateFormat
+        };
+      }
+      static async deserialize(data) {
+        if (!data.template) {
+          throw new Error("Prompt template must have a template");
+        }
+        const res = new PromptTemplate({
+          inputVariables: data.input_variables,
+          template: data.template,
+          templateFormat: data.template_format
+        });
+        return res;
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/few_shot.js
+var few_shot_exports = {};
+__export(few_shot_exports, {
+  FewShotPromptTemplate: () => FewShotPromptTemplate
+});
+var FewShotPromptTemplate;
+var init_few_shot = __esm({
+  "node_modules/langchain/dist/prompts/few_shot.js"() {
+    init_base4();
+    init_template();
+    init_prompt();
+    FewShotPromptTemplate = class extends BaseStringPromptTemplate {
+      constructor(input) {
+        super(input);
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "examples", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "exampleSelector", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "examplePrompt", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "suffix", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ""
+        });
+        Object.defineProperty(this, "exampleSeparator", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "\n\n"
+        });
+        Object.defineProperty(this, "prefix", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ""
+        });
+        Object.defineProperty(this, "templateFormat", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "f-string"
+        });
+        Object.defineProperty(this, "validateTemplate", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.assign(this, input);
+        if (this.examples !== void 0 && this.exampleSelector !== void 0) {
+          throw new Error("Only one of 'examples' and 'example_selector' should be provided");
+        }
+        if (this.examples === void 0 && this.exampleSelector === void 0) {
+          throw new Error("One of 'examples' and 'example_selector' should be provided");
+        }
+        if (this.validateTemplate) {
+          let totalInputVariables = this.inputVariables;
+          if (this.partialVariables) {
+            totalInputVariables = totalInputVariables.concat(Object.keys(this.partialVariables));
+          }
+          checkValidTemplate(this.prefix + this.suffix, this.templateFormat, totalInputVariables);
+        }
+      }
+      _getPromptType() {
+        return "few_shot";
+      }
+      async getExamples(inputVariables) {
+        if (this.examples !== void 0) {
+          return this.examples;
+        }
+        if (this.exampleSelector !== void 0) {
+          return this.exampleSelector.selectExamples(inputVariables);
+        }
+        throw new Error("One of 'examples' and 'example_selector' should be provided");
+      }
+      async partial(values) {
+        var _a;
+        const promptDict = { ...this };
+        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
+        promptDict.partialVariables = {
+          ...(_a = this.partialVariables) != null ? _a : {},
+          ...values
+        };
+        return new FewShotPromptTemplate(promptDict);
+      }
+      async format(values) {
+        const allValues = await this.mergePartialAndUserVariables(values);
+        const examples = await this.getExamples(allValues);
+        const exampleStrings = await Promise.all(examples.map((example) => this.examplePrompt.format(example)));
+        const template = [this.prefix, ...exampleStrings, this.suffix].join(this.exampleSeparator);
+        return renderTemplate(template, this.templateFormat, allValues);
+      }
+      serialize() {
+        if (this.exampleSelector || !this.examples) {
+          throw new Error("Serializing an example selector is not currently supported");
+        }
+        if (this.outputParser !== void 0) {
+          throw new Error("Serializing an output parser is not currently supported");
+        }
+        return {
+          _type: this._getPromptType(),
+          input_variables: this.inputVariables,
+          example_prompt: this.examplePrompt.serialize(),
+          example_separator: this.exampleSeparator,
+          suffix: this.suffix,
+          prefix: this.prefix,
+          template_format: this.templateFormat,
+          examples: this.examples
+        };
+      }
+      static async deserialize(data) {
+        const { example_prompt } = data;
+        if (!example_prompt) {
+          throw new Error("Missing example prompt");
+        }
+        const examplePrompt = await PromptTemplate.deserialize(example_prompt);
+        let examples;
+        if (Array.isArray(data.examples)) {
+          examples = data.examples;
+        } else {
+          throw new Error("Invalid examples format. Only list or string are supported.");
+        }
+        return new FewShotPromptTemplate({
+          inputVariables: data.input_variables,
+          examplePrompt,
+          examples,
+          exampleSeparator: data.example_separator,
+          prefix: data.prefix,
+          suffix: data.suffix,
+          templateFormat: data.template_format
+        });
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/base.js
+var StringPromptValue, BasePromptTemplate, BaseStringPromptTemplate;
+var init_base4 = __esm({
+  "node_modules/langchain/dist/prompts/base.js"() {
+    init_schema();
+    init_serializable();
+    StringPromptValue = class extends BasePromptValue {
+      constructor(value) {
+        super(...arguments);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "prompts", "base"]
+        });
+        Object.defineProperty(this, "value", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.value = value;
+      }
+      toString() {
+        return this.value;
+      }
+      toChatMessages() {
+        return [new HumanMessage(this.value)];
+      }
+    };
+    BasePromptTemplate = class extends Serializable {
+      get lc_attributes() {
+        return {
+          partialVariables: void 0
+          // python doesn't support this yet
+        };
+      }
+      constructor(input) {
+        super(input);
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "prompts", this._getPromptType()]
+        });
+        Object.defineProperty(this, "inputVariables", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "outputParser", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "partialVariables", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: {}
+        });
+        const { inputVariables } = input;
+        if (inputVariables.includes("stop")) {
+          throw new Error("Cannot have an input variable named 'stop', as it is used internally, please rename.");
+        }
+        Object.assign(this, input);
+      }
+      async mergePartialAndUserVariables(userVariables) {
+        var _a;
+        const partialVariables = (_a = this.partialVariables) != null ? _a : {};
+        const partialValues = {};
+        for (const [key, value] of Object.entries(partialVariables)) {
+          if (typeof value === "string") {
+            partialValues[key] = value;
+          } else {
+            partialValues[key] = await value();
+          }
+        }
+        const allKwargs = { ...partialValues, ...userVariables };
+        return allKwargs;
+      }
+      /**
+       * Return a json-like object representing this prompt template.
+       * @deprecated
+       */
+      serialize() {
+        throw new Error("Use .toJSON() instead");
+      }
+      /**
+       * @deprecated
+       * Load a prompt template from a json-like object describing it.
+       *
+       * @remarks
+       * Deserializing needs to be async because templates (e.g. {@link FewShotPromptTemplate}) can
+       * reference remote resources that we read asynchronously with a web
+       * request.
+       */
+      static async deserialize(data) {
+        switch (data._type) {
+          case "prompt": {
+            const { PromptTemplate: PromptTemplate2 } = await Promise.resolve().then(() => (init_prompt(), prompt_exports));
+            return PromptTemplate2.deserialize(data);
+          }
+          case void 0: {
+            const { PromptTemplate: PromptTemplate2 } = await Promise.resolve().then(() => (init_prompt(), prompt_exports));
+            return PromptTemplate2.deserialize({ ...data, _type: "prompt" });
+          }
+          case "few_shot": {
+            const { FewShotPromptTemplate: FewShotPromptTemplate2 } = await Promise.resolve().then(() => (init_few_shot(), few_shot_exports));
+            return FewShotPromptTemplate2.deserialize(data);
+          }
+          default:
+            throw new Error(`Invalid prompt type in config: ${data._type}`);
+        }
+      }
+    };
+    BaseStringPromptTemplate = class extends BasePromptTemplate {
+      async formatPromptValue(values) {
+        const formattedPrompt = await this.format(values);
+        return new StringPromptValue(formattedPrompt);
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/schema/output_parser.js
+var BaseLLMOutputParser, BaseOutputParser;
+var init_output_parser = __esm({
+  "node_modules/langchain/dist/schema/output_parser.js"() {
+    init_serializable();
+    BaseLLMOutputParser = class extends Serializable {
+      parseResultWithPrompt(generations, _prompt, callbacks) {
+        return this.parseResult(generations, callbacks);
+      }
+    };
+    BaseOutputParser = class extends BaseLLMOutputParser {
+      parseResult(generations, callbacks) {
+        return this.parse(generations[0].text, callbacks);
+      }
+      async parseWithPrompt(text4, _prompt, callbacks) {
+        return this.parse(text4, callbacks);
+      }
+      /**
+       * Return the string type key uniquely identifying this class of parser
+       */
+      _type() {
+        throw new Error("_type not implemented");
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/output_parsers/noop.js
+var NoOpOutputParser;
+var init_noop = __esm({
+  "node_modules/langchain/dist/output_parsers/noop.js"() {
+    init_output_parser();
+    NoOpOutputParser = class extends BaseOutputParser {
+      constructor() {
+        super(...arguments);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "output_parsers", "default"]
+        });
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+      }
+      parse(text4) {
+        return Promise.resolve(text4);
+      }
+      getFormatInstructions() {
+        return "";
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/llm_chain.js
+var llm_chain_exports = {};
+__export(llm_chain_exports, {
+  LLMChain: () => LLMChain
+});
+var LLMChain;
+var init_llm_chain = __esm({
+  "node_modules/langchain/dist/chains/llm_chain.js"() {
+    init_base5();
+    init_base4();
+    init_base_language();
+    init_noop();
+    LLMChain = class extends BaseChain {
+      get inputKeys() {
+        return this.prompt.inputVariables;
+      }
+      get outputKeys() {
+        return [this.outputKey];
+      }
+      constructor(fields) {
+        var _a, _b;
+        super(fields);
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.defineProperty(this, "prompt", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "llm", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "llmKwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "outputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "text"
+        });
+        Object.defineProperty(this, "outputParser", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.prompt = fields.prompt;
+        this.llm = fields.llm;
+        this.llmKwargs = fields.llmKwargs;
+        this.outputKey = (_a = fields.outputKey) != null ? _a : this.outputKey;
+        this.outputParser = (_b = fields.outputParser) != null ? _b : new NoOpOutputParser();
+        if (this.prompt.outputParser) {
+          if (fields.outputParser) {
+            throw new Error("Cannot set both outputParser and prompt.outputParser");
+          }
+          this.outputParser = this.prompt.outputParser;
+        }
+      }
+      /** @ignore */
+      _selectMemoryInputs(values) {
+        const valuesForMemory = super._selectMemoryInputs(values);
+        for (const key of this.llm.callKeys) {
+          if (key in values) {
+            delete valuesForMemory[key];
+          }
+        }
+        return valuesForMemory;
+      }
+      /** @ignore */
+      async _getFinalOutput(generations, promptValue, runManager) {
+        let finalCompletion;
+        if (this.outputParser) {
+          finalCompletion = await this.outputParser.parseResultWithPrompt(generations, promptValue, runManager == null ? void 0 : runManager.getChild());
+        } else {
+          finalCompletion = generations[0].text;
+        }
+        return finalCompletion;
+      }
+      /**
+       * Run the core logic of this chain and add to output if desired.
+       *
+       * Wraps _call and handles memory.
+       */
+      call(values, callbacks) {
+        return super.call(values, callbacks);
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        const valuesForPrompt = { ...values };
+        const valuesForLLM = {
+          ...this.llmKwargs
+        };
+        for (const key of this.llm.callKeys) {
+          if (key in values) {
+            valuesForLLM[key] = values[key];
+            delete valuesForPrompt[key];
+          }
+        }
+        const promptValue = await this.prompt.formatPromptValue(valuesForPrompt);
+        const { generations } = await this.llm.generatePrompt([promptValue], valuesForLLM, runManager == null ? void 0 : runManager.getChild());
+        return {
+          [this.outputKey]: await this._getFinalOutput(generations[0], promptValue, runManager)
+        };
+      }
+      /**
+       * Format prompt with values and pass to LLM
+       *
+       * @param values - keys to pass to prompt template
+       * @param callbackManager - CallbackManager to use
+       * @returns Completion from LLM.
+       *
+       * @example
+       * ```ts
+       * llm.predict({ adjective: "funny" })
+       * ```
+       */
+      async predict(values, callbackManager) {
+        const output = await this.call(values, callbackManager);
+        return output[this.outputKey];
+      }
+      _chainType() {
+        return "llm";
+      }
+      static async deserialize(data) {
+        const { llm, prompt } = data;
+        if (!llm) {
+          throw new Error("LLMChain must have llm");
+        }
+        if (!prompt) {
+          throw new Error("LLMChain must have prompt");
+        }
+        return new LLMChain({
+          llm: await BaseLanguageModel.deserialize(llm),
+          prompt: await BasePromptTemplate.deserialize(prompt)
+        });
+      }
+      /** @deprecated */
+      serialize() {
+        return {
+          _type: `${this._chainType()}_chain`,
+          llm: this.llm.serialize(),
+          prompt: this.prompt.serialize()
+        };
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/util/set.js
+function intersection(setA, setB) {
+  const _intersection = /* @__PURE__ */ new Set();
+  for (const elem of setB) {
+    if (setA.has(elem)) {
+      _intersection.add(elem);
     }
+  }
+  return _intersection;
+}
+function union(setA, setB) {
+  const _union = new Set(setA);
+  for (const elem of setB) {
+    _union.add(elem);
+  }
+  return _union;
+}
+function difference(setA, setB) {
+  const _difference = new Set(setA);
+  for (const elem of setB) {
+    _difference.delete(elem);
+  }
+  return _difference;
+}
+var init_set = __esm({
+  "node_modules/langchain/dist/util/set.js"() {
+  }
+});
+
+// node_modules/langchain/dist/chains/sequential_chain.js
+var sequential_chain_exports = {};
+__export(sequential_chain_exports, {
+  SequentialChain: () => SequentialChain,
+  SimpleSequentialChain: () => SimpleSequentialChain
+});
+function formatSet(input) {
+  return Array.from(input).map((i) => `"${i}"`).join(", ");
+}
+var SequentialChain, SimpleSequentialChain;
+var init_sequential_chain = __esm({
+  "node_modules/langchain/dist/chains/sequential_chain.js"() {
+    init_base5();
+    init_set();
+    SequentialChain = class extends BaseChain {
+      get inputKeys() {
+        return this.inputVariables;
+      }
+      get outputKeys() {
+        return this.outputVariables;
+      }
+      constructor(fields) {
+        var _a, _b;
+        super(fields);
+        Object.defineProperty(this, "chains", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "inputVariables", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "outputVariables", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "returnAll", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.chains = fields.chains;
+        this.inputVariables = fields.inputVariables;
+        this.outputVariables = (_a = fields.outputVariables) != null ? _a : [];
+        if (this.outputVariables.length > 0 && fields.returnAll) {
+          throw new Error("Either specify variables to return using `outputVariables` or use `returnAll` param. Cannot apply both conditions at the same time.");
+        }
+        this.returnAll = (_b = fields.returnAll) != null ? _b : false;
+        this._validateChains();
+      }
+      /** @ignore */
+      _validateChains() {
+        var _a, _b;
+        if (this.chains.length === 0) {
+          throw new Error("Sequential chain must have at least one chain.");
+        }
+        const memoryKeys = (_b = (_a = this.memory) == null ? void 0 : _a.memoryKeys) != null ? _b : [];
+        const inputKeysSet = new Set(this.inputKeys);
+        const memoryKeysSet = new Set(memoryKeys);
+        const keysIntersection = intersection(inputKeysSet, memoryKeysSet);
+        if (keysIntersection.size > 0) {
+          throw new Error(`The following keys: ${formatSet(keysIntersection)} are overlapping between memory and input keys of the chain variables. This can lead to unexpected behaviour. Please use input and memory keys that don't overlap.`);
+        }
+        const availableKeys = union(inputKeysSet, memoryKeysSet);
+        for (const chain of this.chains) {
+          const missingKeys = difference(new Set(chain.inputKeys), availableKeys);
+          if (missingKeys.size > 0) {
+            throw new Error(`Missing variables for chain "${chain._chainType()}": ${formatSet(missingKeys)}. Only got the following variables: ${formatSet(availableKeys)}.`);
+          }
+          const outputKeysSet = new Set(chain.outputKeys);
+          const overlappingOutputKeys = intersection(availableKeys, outputKeysSet);
+          if (overlappingOutputKeys.size > 0) {
+            throw new Error(`The following output variables for chain "${chain._chainType()}" are overlapping: ${formatSet(overlappingOutputKeys)}. This can lead to unexpected behaviour.`);
+          }
+          for (const outputKey of outputKeysSet) {
+            availableKeys.add(outputKey);
+          }
+        }
+        if (this.outputVariables.length === 0) {
+          if (this.returnAll) {
+            const outputKeys = difference(availableKeys, inputKeysSet);
+            this.outputVariables = Array.from(outputKeys);
+          } else {
+            this.outputVariables = this.chains[this.chains.length - 1].outputKeys;
+          }
+        } else {
+          const missingKeys = difference(new Set(this.outputVariables), new Set(availableKeys));
+          if (missingKeys.size > 0) {
+            throw new Error(`The following output variables were expected to be in the final chain output but were not found: ${formatSet(missingKeys)}.`);
+          }
+        }
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        let input = {};
+        const allChainValues = values;
+        let i = 0;
+        for (const chain of this.chains) {
+          i += 1;
+          input = await chain.call(allChainValues, runManager == null ? void 0 : runManager.getChild(`step_${i}`));
+          for (const key of Object.keys(input)) {
+            allChainValues[key] = input[key];
+          }
+        }
+        const output = {};
+        for (const key of this.outputVariables) {
+          output[key] = allChainValues[key];
+        }
+        return output;
+      }
+      _chainType() {
+        return "sequential_chain";
+      }
+      static async deserialize(data) {
+        const chains = [];
+        const inputVariables = data.input_variables;
+        const outputVariables = data.output_variables;
+        const serializedChains = data.chains;
+        for (const serializedChain of serializedChains) {
+          const deserializedChain = await BaseChain.deserialize(serializedChain);
+          chains.push(deserializedChain);
+        }
+        return new SequentialChain({ chains, inputVariables, outputVariables });
+      }
+      serialize() {
+        const chains = [];
+        for (const chain of this.chains) {
+          chains.push(chain.serialize());
+        }
+        return {
+          _type: this._chainType(),
+          input_variables: this.inputVariables,
+          output_variables: this.outputVariables,
+          chains
+        };
+      }
+    };
+    SimpleSequentialChain = class extends BaseChain {
+      get inputKeys() {
+        return [this.inputKey];
+      }
+      get outputKeys() {
+        return [this.outputKey];
+      }
+      constructor(fields) {
+        var _a;
+        super(fields);
+        Object.defineProperty(this, "chains", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "input"
+        });
+        Object.defineProperty(this, "outputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "output"
+        });
+        Object.defineProperty(this, "trimOutputs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.chains = fields.chains;
+        this.trimOutputs = (_a = fields.trimOutputs) != null ? _a : false;
+        this._validateChains();
+      }
+      /** @ignore */
+      _validateChains() {
+        for (const chain of this.chains) {
+          if (chain.inputKeys.filter((k) => {
+            var _a;
+            return !((_a = chain.memory) == null ? void 0 : _a.memoryKeys.includes(k));
+          }).length !== 1) {
+            throw new Error(`Chains used in SimpleSequentialChain should all have one input, got ${chain.inputKeys.length} for ${chain._chainType()}.`);
+          }
+          if (chain.outputKeys.length !== 1) {
+            throw new Error(`Chains used in SimpleSequentialChain should all have one output, got ${chain.outputKeys.length} for ${chain._chainType()}.`);
+          }
+        }
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        let input = values[this.inputKey];
+        let i = 0;
+        for (const chain of this.chains) {
+          i += 1;
+          input = (await chain.call({ [chain.inputKeys[0]]: input, signal: values.signal }, runManager == null ? void 0 : runManager.getChild(`step_${i}`)))[chain.outputKeys[0]];
+          if (this.trimOutputs) {
+            input = input.trim();
+          }
+          await (runManager == null ? void 0 : runManager.handleText(input));
+        }
+        return { [this.outputKey]: input };
+      }
+      _chainType() {
+        return "simple_sequential_chain";
+      }
+      static async deserialize(data) {
+        const chains = [];
+        const serializedChains = data.chains;
+        for (const serializedChain of serializedChains) {
+          const deserializedChain = await BaseChain.deserialize(serializedChain);
+          chains.push(deserializedChain);
+        }
+        return new SimpleSequentialChain({ chains });
+      }
+      serialize() {
+        const chains = [];
+        for (const chain of this.chains) {
+          chains.push(chain.serialize());
+        }
+        return {
+          _type: this._chainType(),
+          chains
+        };
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/combine_docs_chain.js
+var combine_docs_chain_exports = {};
+__export(combine_docs_chain_exports, {
+  MapReduceDocumentsChain: () => MapReduceDocumentsChain,
+  RefineDocumentsChain: () => RefineDocumentsChain,
+  StuffDocumentsChain: () => StuffDocumentsChain
+});
+var StuffDocumentsChain, MapReduceDocumentsChain, RefineDocumentsChain;
+var init_combine_docs_chain = __esm({
+  "node_modules/langchain/dist/chains/combine_docs_chain.js"() {
+    init_base5();
+    init_llm_chain();
+    init_prompt();
+    StuffDocumentsChain = class extends BaseChain {
+      get inputKeys() {
+        return [this.inputKey, ...this.llmChain.inputKeys].filter((key) => key !== this.documentVariableName);
+      }
+      get outputKeys() {
+        return this.llmChain.outputKeys;
+      }
+      constructor(fields) {
+        var _a, _b;
+        super(fields);
+        Object.defineProperty(this, "llmChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "input_documents"
+        });
+        Object.defineProperty(this, "documentVariableName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "context"
+        });
+        this.llmChain = fields.llmChain;
+        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
+        this.inputKey = (_b = fields.inputKey) != null ? _b : this.inputKey;
+      }
+      /** @ignore */
+      _prepInputs(values) {
+        if (!(this.inputKey in values)) {
+          throw new Error(`Document key ${this.inputKey} not found.`);
+        }
+        const { [this.inputKey]: docs, ...rest } = values;
+        const texts = docs.map(({ pageContent }) => pageContent);
+        const text4 = texts.join("\n\n");
+        return {
+          ...rest,
+          [this.documentVariableName]: text4
+        };
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        const result = await this.llmChain.call(this._prepInputs(values), runManager == null ? void 0 : runManager.getChild("combine_documents"));
+        return result;
+      }
+      _chainType() {
+        return "stuff_documents_chain";
+      }
+      static async deserialize(data) {
+        if (!data.llm_chain) {
+          throw new Error("Missing llm_chain");
+        }
+        return new StuffDocumentsChain({
+          llmChain: await LLMChain.deserialize(data.llm_chain)
+        });
+      }
+      serialize() {
+        return {
+          _type: this._chainType(),
+          llm_chain: this.llmChain.serialize()
+        };
+      }
+    };
+    MapReduceDocumentsChain = class extends BaseChain {
+      get inputKeys() {
+        return [this.inputKey, ...this.combineDocumentChain.inputKeys];
+      }
+      get outputKeys() {
+        return this.combineDocumentChain.outputKeys;
+      }
+      constructor(fields) {
+        var _a, _b, _c, _d, _e, _f;
+        super(fields);
+        Object.defineProperty(this, "llmChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "input_documents"
+        });
+        Object.defineProperty(this, "documentVariableName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "context"
+        });
+        Object.defineProperty(this, "returnIntermediateSteps", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "maxTokens", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 3e3
+        });
+        Object.defineProperty(this, "maxIterations", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 10
+        });
+        Object.defineProperty(this, "ensureMapStep", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "combineDocumentChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.llmChain = fields.llmChain;
+        this.combineDocumentChain = fields.combineDocumentChain;
+        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
+        this.ensureMapStep = (_b = fields.ensureMapStep) != null ? _b : this.ensureMapStep;
+        this.inputKey = (_c = fields.inputKey) != null ? _c : this.inputKey;
+        this.maxTokens = (_d = fields.maxTokens) != null ? _d : this.maxTokens;
+        this.maxIterations = (_e = fields.maxIterations) != null ? _e : this.maxIterations;
+        this.returnIntermediateSteps = (_f = fields.returnIntermediateSteps) != null ? _f : false;
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        if (!(this.inputKey in values)) {
+          throw new Error(`Document key ${this.inputKey} not found.`);
+        }
+        const { [this.inputKey]: docs, ...rest } = values;
+        let currentDocs = docs;
+        let intermediateSteps = [];
+        for (let i = 0; i < this.maxIterations; i += 1) {
+          const inputs = currentDocs.map((d) => ({
+            [this.documentVariableName]: d.pageContent,
+            ...rest
+          }));
+          const canSkipMapStep = i !== 0 || !this.ensureMapStep;
+          if (canSkipMapStep) {
+            const formatted = await this.combineDocumentChain.llmChain.prompt.format(this.combineDocumentChain._prepInputs({
+              [this.combineDocumentChain.inputKey]: currentDocs,
+              ...rest
+            }));
+            const length = await this.combineDocumentChain.llmChain.llm.getNumTokens(formatted);
+            const withinTokenLimit = length < this.maxTokens;
+            if (withinTokenLimit) {
+              break;
+            }
+          }
+          const results = await this.llmChain.apply(
+            inputs,
+            // If we have a runManager, then we need to create a child for each input
+            // so that we can track the progress of each input.
+            runManager ? Array.from({ length: inputs.length }, (_, i2) => runManager.getChild(`map_${i2 + 1}`)) : void 0
+          );
+          const { outputKey } = this.llmChain;
+          if (this.returnIntermediateSteps) {
+            intermediateSteps = intermediateSteps.concat(results.map((r) => r[outputKey]));
+          }
+          currentDocs = results.map((r) => ({
+            pageContent: r[outputKey],
+            metadata: {}
+          }));
+        }
+        const newInputs = {
+          [this.combineDocumentChain.inputKey]: currentDocs,
+          ...rest
+        };
+        const result = await this.combineDocumentChain.call(newInputs, runManager == null ? void 0 : runManager.getChild("combine_documents"));
+        if (this.returnIntermediateSteps) {
+          return { ...result, intermediateSteps };
+        }
+        return result;
+      }
+      _chainType() {
+        return "map_reduce_documents_chain";
+      }
+      static async deserialize(data) {
+        if (!data.llm_chain) {
+          throw new Error("Missing llm_chain");
+        }
+        if (!data.combine_document_chain) {
+          throw new Error("Missing combine_document_chain");
+        }
+        return new MapReduceDocumentsChain({
+          llmChain: await LLMChain.deserialize(data.llm_chain),
+          combineDocumentChain: await StuffDocumentsChain.deserialize(data.combine_document_chain)
+        });
+      }
+      serialize() {
+        return {
+          _type: this._chainType(),
+          llm_chain: this.llmChain.serialize(),
+          combine_document_chain: this.combineDocumentChain.serialize()
+        };
+      }
+    };
+    RefineDocumentsChain = class extends BaseChain {
+      get defaultDocumentPrompt() {
+        return new PromptTemplate({
+          inputVariables: ["page_content"],
+          template: "{page_content}"
+        });
+      }
+      get inputKeys() {
+        return [
+          .../* @__PURE__ */ new Set([
+            this.inputKey,
+            ...this.llmChain.inputKeys,
+            ...this.refineLLMChain.inputKeys
+          ])
+        ].filter((key) => key !== this.documentVariableName && key !== this.initialResponseName);
+      }
+      get outputKeys() {
+        return [this.outputKey];
+      }
+      constructor(fields) {
+        var _a, _b, _c, _d, _e;
+        super(fields);
+        Object.defineProperty(this, "llmChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "input_documents"
+        });
+        Object.defineProperty(this, "outputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "output_text"
+        });
+        Object.defineProperty(this, "documentVariableName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "context"
+        });
+        Object.defineProperty(this, "initialResponseName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "existing_answer"
+        });
+        Object.defineProperty(this, "refineLLMChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "documentPrompt", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: this.defaultDocumentPrompt
+        });
+        this.llmChain = fields.llmChain;
+        this.refineLLMChain = fields.refineLLMChain;
+        this.documentVariableName = (_a = fields.documentVariableName) != null ? _a : this.documentVariableName;
+        this.inputKey = (_b = fields.inputKey) != null ? _b : this.inputKey;
+        this.outputKey = (_c = fields.outputKey) != null ? _c : this.outputKey;
+        this.documentPrompt = (_d = fields.documentPrompt) != null ? _d : this.documentPrompt;
+        this.initialResponseName = (_e = fields.initialResponseName) != null ? _e : this.initialResponseName;
+      }
+      /** @ignore */
+      async _constructInitialInputs(doc, rest) {
+        const baseInfo = {
+          page_content: doc.pageContent,
+          ...doc.metadata
+        };
+        const documentInfo = {};
+        this.documentPrompt.inputVariables.forEach((value) => {
+          documentInfo[value] = baseInfo[value];
+        });
+        const baseInputs = {
+          [this.documentVariableName]: await this.documentPrompt.format({
+            ...documentInfo
+          })
+        };
+        const inputs = { ...baseInputs, ...rest };
+        return inputs;
+      }
+      /** @ignore */
+      async _constructRefineInputs(doc, res) {
+        const baseInfo = {
+          page_content: doc.pageContent,
+          ...doc.metadata
+        };
+        const documentInfo = {};
+        this.documentPrompt.inputVariables.forEach((value) => {
+          documentInfo[value] = baseInfo[value];
+        });
+        const baseInputs = {
+          [this.documentVariableName]: await this.documentPrompt.format({
+            ...documentInfo
+          })
+        };
+        const inputs = { [this.initialResponseName]: res, ...baseInputs };
+        return inputs;
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        if (!(this.inputKey in values)) {
+          throw new Error(`Document key ${this.inputKey} not found.`);
+        }
+        const { [this.inputKey]: docs, ...rest } = values;
+        const currentDocs = docs;
+        const initialInputs = await this._constructInitialInputs(currentDocs[0], rest);
+        let res = await this.llmChain.predict({ ...initialInputs }, runManager == null ? void 0 : runManager.getChild("answer"));
+        const refineSteps = [res];
+        for (let i = 1; i < currentDocs.length; i += 1) {
+          const refineInputs = await this._constructRefineInputs(currentDocs[i], res);
+          const inputs = { ...refineInputs, ...rest };
+          res = await this.refineLLMChain.predict({ ...inputs }, runManager == null ? void 0 : runManager.getChild("refine"));
+          refineSteps.push(res);
+        }
+        return { [this.outputKey]: res };
+      }
+      _chainType() {
+        return "refine_documents_chain";
+      }
+      static async deserialize(data) {
+        const SerializedLLMChain = data.llm_chain;
+        if (!SerializedLLMChain) {
+          throw new Error("Missing llm_chain");
+        }
+        const SerializedRefineDocumentChain = data.refine_llm_chain;
+        if (!SerializedRefineDocumentChain) {
+          throw new Error("Missing refine_llm_chain");
+        }
+        return new RefineDocumentsChain({
+          llmChain: await LLMChain.deserialize(SerializedLLMChain),
+          refineLLMChain: await LLMChain.deserialize(SerializedRefineDocumentChain)
+        });
+      }
+      serialize() {
+        return {
+          _type: this._chainType(),
+          llm_chain: this.llmChain.serialize(),
+          refine_llm_chain: this.refineLLMChain.serialize()
+        };
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/chat.js
+var BaseMessagePromptTemplate, ChatPromptValue, MessagesPlaceholder, BaseMessageStringPromptTemplate, BaseChatPromptTemplate, HumanMessagePromptTemplate, AIMessagePromptTemplate, SystemMessagePromptTemplate, ChatPromptTemplate;
+var init_chat = __esm({
+  "node_modules/langchain/dist/prompts/chat.js"() {
+    init_schema();
+    init_serializable();
+    init_base4();
+    init_prompt();
+    BaseMessagePromptTemplate = class extends Serializable {
+      constructor() {
+        super(...arguments);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "prompts", "chat"]
+        });
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+      }
+    };
+    ChatPromptValue = class extends BasePromptValue {
+      constructor(fields) {
+        if (Array.isArray(fields)) {
+          fields = { messages: fields };
+        }
+        super(...arguments);
+        Object.defineProperty(this, "lc_namespace", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: ["langchain", "prompts", "chat"]
+        });
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.defineProperty(this, "messages", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.messages = fields.messages;
+      }
+      toString() {
+        return JSON.stringify(this.messages);
+      }
+      toChatMessages() {
+        return this.messages;
+      }
+    };
+    MessagesPlaceholder = class extends BaseMessagePromptTemplate {
+      constructor(fields) {
+        if (typeof fields === "string") {
+          fields = { variableName: fields };
+        }
+        super(fields);
+        Object.defineProperty(this, "variableName", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.variableName = fields.variableName;
+      }
+      get inputVariables() {
+        return [this.variableName];
+      }
+      formatMessages(values) {
+        return Promise.resolve(values[this.variableName]);
+      }
+    };
+    BaseMessageStringPromptTemplate = class extends BaseMessagePromptTemplate {
+      constructor(fields) {
+        if (!("prompt" in fields)) {
+          fields = { prompt: fields };
+        }
+        super(fields);
+        Object.defineProperty(this, "prompt", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.prompt = fields.prompt;
+      }
+      get inputVariables() {
+        return this.prompt.inputVariables;
+      }
+      async formatMessages(values) {
+        return [await this.format(values)];
+      }
+    };
+    BaseChatPromptTemplate = class extends BasePromptTemplate {
+      constructor(input) {
+        super(input);
+      }
+      async format(values) {
+        return (await this.formatPromptValue(values)).toString();
+      }
+      async formatPromptValue(values) {
+        const resultMessages = await this.formatMessages(values);
+        return new ChatPromptValue(resultMessages);
+      }
+    };
+    HumanMessagePromptTemplate = class extends BaseMessageStringPromptTemplate {
+      async format(values) {
+        return new HumanMessage(await this.prompt.format(values));
+      }
+      static fromTemplate(template) {
+        return new this(PromptTemplate.fromTemplate(template));
+      }
+    };
+    AIMessagePromptTemplate = class extends BaseMessageStringPromptTemplate {
+      async format(values) {
+        return new AIMessage(await this.prompt.format(values));
+      }
+      static fromTemplate(template) {
+        return new this(PromptTemplate.fromTemplate(template));
+      }
+    };
+    SystemMessagePromptTemplate = class extends BaseMessageStringPromptTemplate {
+      async format(values) {
+        return new SystemMessage(await this.prompt.format(values));
+      }
+      static fromTemplate(template) {
+        return new this(PromptTemplate.fromTemplate(template));
+      }
+    };
+    ChatPromptTemplate = class extends BaseChatPromptTemplate {
+      get lc_aliases() {
+        return {
+          promptMessages: "messages"
+        };
+      }
+      constructor(input) {
+        super(input);
+        Object.defineProperty(this, "promptMessages", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "validateTemplate", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
+        Object.assign(this, input);
+        if (this.validateTemplate) {
+          const inputVariablesMessages = /* @__PURE__ */ new Set();
+          for (const promptMessage of this.promptMessages) {
+            for (const inputVariable of promptMessage.inputVariables) {
+              inputVariablesMessages.add(inputVariable);
+            }
+          }
+          const inputVariablesInstance = new Set(this.partialVariables ? this.inputVariables.concat(Object.keys(this.partialVariables)) : this.inputVariables);
+          const difference2 = new Set([...inputVariablesInstance].filter((x) => !inputVariablesMessages.has(x)));
+          if (difference2.size > 0) {
+            throw new Error(`Input variables \`${[
+              ...difference2
+            ]}\` are not used in any of the prompt messages.`);
+          }
+          const otherDifference = new Set([...inputVariablesMessages].filter((x) => !inputVariablesInstance.has(x)));
+          if (otherDifference.size > 0) {
+            throw new Error(`Input variables \`${[
+              ...otherDifference
+            ]}\` are used in prompt messages but not in the prompt template.`);
+          }
+        }
+      }
+      _getPromptType() {
+        return "chat";
+      }
+      async formatMessages(values) {
+        const allValues = await this.mergePartialAndUserVariables(values);
+        let resultMessages = [];
+        for (const promptMessage of this.promptMessages) {
+          const inputValues = promptMessage.inputVariables.reduce((acc, inputVariable) => {
+            if (!(inputVariable in allValues)) {
+              throw new Error(`Missing value for input variable \`${inputVariable}\``);
+            }
+            acc[inputVariable] = allValues[inputVariable];
+            return acc;
+          }, {});
+          const message = await promptMessage.formatMessages(inputValues);
+          resultMessages = resultMessages.concat(message);
+        }
+        return resultMessages;
+      }
+      async partial(values) {
+        var _a;
+        const promptDict = { ...this };
+        promptDict.inputVariables = this.inputVariables.filter((iv) => !(iv in values));
+        promptDict.partialVariables = {
+          ...(_a = this.partialVariables) != null ? _a : {},
+          ...values
+        };
+        return new ChatPromptTemplate(promptDict);
+      }
+      static fromPromptMessages(promptMessages) {
+        const flattenedMessages = promptMessages.reduce((acc, promptMessage) => acc.concat(
+          // eslint-disable-next-line no-instanceof/no-instanceof
+          promptMessage instanceof ChatPromptTemplate ? promptMessage.promptMessages : [promptMessage]
+        ), []);
+        const flattenedPartialVariables = promptMessages.reduce((acc, promptMessage) => (
+          // eslint-disable-next-line no-instanceof/no-instanceof
+          promptMessage instanceof ChatPromptTemplate ? Object.assign(acc, promptMessage.partialVariables) : acc
+        ), /* @__PURE__ */ Object.create(null));
+        const inputVariables = /* @__PURE__ */ new Set();
+        for (const promptMessage of flattenedMessages) {
+          for (const inputVariable of promptMessage.inputVariables) {
+            if (inputVariable in flattenedPartialVariables) {
+              continue;
+            }
+            inputVariables.add(inputVariable);
+          }
+        }
+        return new ChatPromptTemplate({
+          inputVariables: [...inputVariables],
+          promptMessages: flattenedMessages,
+          partialVariables: flattenedPartialVariables
+        });
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/selectors/conditional.js
+function isChatModel(llm) {
+  return llm._modelType() === "base_chat_model";
+}
+var BasePromptSelector, ConditionalPromptSelector;
+var init_conditional = __esm({
+  "node_modules/langchain/dist/prompts/selectors/conditional.js"() {
+    BasePromptSelector = class {
+      async getPromptAsync(llm, options) {
+        var _a;
+        const prompt = this.getPrompt(llm);
+        return prompt.partial((_a = options == null ? void 0 : options.partialVariables) != null ? _a : {});
+      }
+    };
+    ConditionalPromptSelector = class extends BasePromptSelector {
+      constructor(default_prompt, conditionals = []) {
+        super();
+        Object.defineProperty(this, "defaultPrompt", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "conditionals", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.defaultPrompt = default_prompt;
+        this.conditionals = conditionals;
+      }
+      getPrompt(llm) {
+        for (const [condition, prompt] of this.conditionals) {
+          if (condition(llm)) {
+            return prompt;
+          }
+        }
+        return this.defaultPrompt;
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/question_answering/stuff_prompts.js
+var DEFAULT_QA_PROMPT, system_template, messages, CHAT_PROMPT, QA_PROMPT_SELECTOR;
+var init_stuff_prompts = __esm({
+  "node_modules/langchain/dist/chains/question_answering/stuff_prompts.js"() {
+    init_prompt();
+    init_chat();
+    init_conditional();
+    DEFAULT_QA_PROMPT = /* @__PURE__ */ new PromptTemplate({
+      template: "Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n{context}\n\nQuestion: {question}\nHelpful Answer:",
+      inputVariables: ["context", "question"]
+    });
+    system_template = `Use the following pieces of context to answer the users question. 
+If you don't know the answer, just say that you don't know, don't try to make up an answer.
+----------------
+{context}`;
+    messages = [
+      /* @__PURE__ */ SystemMessagePromptTemplate.fromTemplate(system_template),
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}")
+    ];
+    CHAT_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(messages);
+    QA_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(DEFAULT_QA_PROMPT, [[isChatModel, CHAT_PROMPT]]);
+  }
+});
+
+// node_modules/langchain/dist/chains/question_answering/map_reduce_prompts.js
+var qa_template, DEFAULT_COMBINE_QA_PROMPT, system_template2, messages2, CHAT_QA_PROMPT, COMBINE_QA_PROMPT_SELECTOR, combine_prompt, COMBINE_PROMPT, system_combine_template, combine_messages, CHAT_COMBINE_PROMPT, COMBINE_PROMPT_SELECTOR;
+var init_map_reduce_prompts = __esm({
+  "node_modules/langchain/dist/chains/question_answering/map_reduce_prompts.js"() {
+    init_prompt();
+    init_chat();
+    init_conditional();
+    qa_template = `Use the following portion of a long document to see if any of the text is relevant to answer the question. 
+Return any relevant text verbatim.
+{context}
+Question: {question}
+Relevant text, if any:`;
+    DEFAULT_COMBINE_QA_PROMPT = /* @__PURE__ */ PromptTemplate.fromTemplate(qa_template);
+    system_template2 = `Use the following portion of a long document to see if any of the text is relevant to answer the question. 
+Return any relevant text verbatim.
+----------------
+{context}`;
+    messages2 = [
+      /* @__PURE__ */ SystemMessagePromptTemplate.fromTemplate(system_template2),
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}")
+    ];
+    CHAT_QA_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(messages2);
+    COMBINE_QA_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(DEFAULT_COMBINE_QA_PROMPT, [
+      [isChatModel, CHAT_QA_PROMPT]
+    ]);
+    combine_prompt = `Given the following extracted parts of a long document and a question, create a final answer. 
+If you don't know the answer, just say that you don't know. Don't try to make up an answer.
+
+QUESTION: Which state/country's law governs the interpretation of the contract?
+=========
+Content: This Agreement is governed by English law and the parties submit to the exclusive jurisdiction of the English courts in  relation to any dispute (contractual or non-contractual) concerning this Agreement save that either party may apply to any court for an  injunction or other relief to protect its Intellectual Property Rights.
+
+Content: No Waiver. Failure or delay in exercising any right or remedy under this Agreement shall not constitute a waiver of such (or any other)  right or remedy.
+
+11.7 Severability. The invalidity, illegality or unenforceability of any term (or part of a term) of this Agreement shall not affect the continuation  in force of the remainder of the term (if any) and this Agreement.
+
+11.8 No Agency. Except as expressly stated otherwise, nothing in this Agreement shall create an agency, partnership or joint venture of any  kind between the parties.
+
+11.9 No Third-Party Beneficiaries.
+
+Content: (b) if Google believes, in good faith, that the Distributor has violated or caused Google to violate any Anti-Bribery Laws (as  defined in Clause 8.5) or that such a violation is reasonably likely to occur,
+=========
+FINAL ANSWER: This Agreement is governed by English law.
+
+QUESTION: What did the president say about Michael Jackson?
+=========
+Content: Madam Speaker, Madam Vice President, our First Lady and Second Gentleman. Members of Congress and the Cabinet. Justices of the Supreme Court. My fellow Americans.  
+
+Last year COVID-19 kept us apart. This year we are finally together again. 
+
+Tonight, we meet as Democrats Republicans and Independents. But most importantly as Americans. 
+
+With a duty to one another to the American people to the Constitution. 
+
+And with an unwavering resolve that freedom will always triumph over tyranny. 
+
+Six days ago, Russia\u2019s Vladimir Putin sought to shake the foundations of the free world thinking he could make it bend to his menacing ways. But he badly miscalculated. 
+
+He thought he could roll into Ukraine and the world would roll over. Instead he met a wall of strength he never imagined. 
+
+He met the Ukrainian people. 
+
+From President Zelenskyy to every Ukrainian, their fearlessness, their courage, their determination, inspires the world. 
+
+Groups of citizens blocking tanks with their bodies. Everyone from students to retirees teachers turned soldiers defending their homeland.
+
+Content: And we won\u2019t stop. 
+
+We have lost so much to COVID-19. Time with one another. And worst of all, so much loss of life. 
+
+Let\u2019s use this moment to reset. Let\u2019s stop looking at COVID-19 as a partisan dividing line and see it for what it is: A God-awful disease.  
+
+Let\u2019s stop seeing each other as enemies, and start seeing each other for who we really are: Fellow Americans.  
+
+We can\u2019t change how divided we\u2019ve been. But we can change how we move forward\u2014on COVID-19 and other issues we must face together. 
+
+I recently visited the New York City Police Department days after the funerals of Officer Wilbert Mora and his partner, Officer Jason Rivera. 
+
+They were responding to a 9-1-1 call when a man shot and killed them with a stolen gun. 
+
+Officer Mora was 27 years old. 
+
+Officer Rivera was 22. 
+
+Both Dominican Americans who\u2019d grown up on the same streets they later chose to patrol as police officers. 
+
+I spoke with their families and told them that we are forever in debt for their sacrifice, and we will carry on their mission to restore the trust and safety every community deserves.
+
+Content: And a proud Ukrainian people, who have known 30 years  of independence, have repeatedly shown that they will not tolerate anyone who tries to take their country backwards.  
+
+To all Americans, I will be honest with you, as I\u2019ve always promised. A Russian dictator, invading a foreign country, has costs around the world. 
+
+And I\u2019m taking robust action to make sure the pain of our sanctions  is targeted at Russia\u2019s economy. And I will use every tool at our disposal to protect American businesses and consumers. 
+
+Tonight, I can announce that the United States has worked with 30 other countries to release 60 Million barrels of oil from reserves around the world.  
+
+America will lead that effort, releasing 30 Million barrels from our own Strategic Petroleum Reserve. And we stand ready to do more if necessary, unified with our allies.  
+
+These steps will help blunt gas prices here at home. And I know the news about what\u2019s happening can seem alarming. 
+
+But I want you to know that we are going to be okay.
+
+Content: More support for patients and families. 
+
+To get there, I call on Congress to fund ARPA-H, the Advanced Research Projects Agency for Health. 
+
+It\u2019s based on DARPA\u2014the Defense Department project that led to the Internet, GPS, and so much more.  
+
+ARPA-H will have a singular purpose\u2014to drive breakthroughs in cancer, Alzheimer\u2019s, diabetes, and more. 
+
+A unity agenda for the nation. 
+
+We can do this. 
+
+My fellow Americans\u2014tonight , we have gathered in a sacred space\u2014the citadel of our democracy. 
+
+In this Capitol, generation after generation, Americans have debated great questions amid great strife, and have done great things. 
+
+We have fought for freedom, expanded liberty, defeated totalitarianism and terror. 
+
+And built the strongest, freest, and most prosperous nation the world has ever known. 
+
+Now is the hour. 
+
+Our moment of responsibility. 
+
+Our test of resolve and conscience, of history itself. 
+
+It is in this moment that our character is formed. Our purpose is found. Our future is forged. 
+
+Well I know this nation.
+=========
+FINAL ANSWER: The president did not mention Michael Jackson.
+
+QUESTION: {question}
+=========
+{summaries}
+=========
+FINAL ANSWER:`;
+    COMBINE_PROMPT = /* @__PURE__ */ PromptTemplate.fromTemplate(combine_prompt);
+    system_combine_template = `Given the following extracted parts of a long document and a question, create a final answer. 
+If you don't know the answer, just say that you don't know. Don't try to make up an answer.
+----------------
+{summaries}`;
+    combine_messages = [
+      /* @__PURE__ */ SystemMessagePromptTemplate.fromTemplate(system_combine_template),
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}")
+    ];
+    CHAT_COMBINE_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(combine_messages);
+    COMBINE_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(COMBINE_PROMPT, [
+      [isChatModel, CHAT_COMBINE_PROMPT]
+    ]);
+  }
+});
+
+// node_modules/langchain/dist/prompts/selectors/LengthBasedExampleSelector.js
+var init_LengthBasedExampleSelector = __esm({
+  "node_modules/langchain/dist/prompts/selectors/LengthBasedExampleSelector.js"() {
+    init_base4();
+  }
+});
+
+// node_modules/langchain/dist/document.js
+var Document;
+var init_document = __esm({
+  "node_modules/langchain/dist/document.js"() {
+    Document = class {
+      constructor(fields) {
+        var _a;
+        Object.defineProperty(this, "pageContent", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "metadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.pageContent = fields.pageContent ? fields.pageContent.toString() : this.pageContent;
+        this.metadata = (_a = fields.metadata) != null ? _a : {};
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/prompts/selectors/SemanticSimilarityExampleSelector.js
+var init_SemanticSimilarityExampleSelector = __esm({
+  "node_modules/langchain/dist/prompts/selectors/SemanticSimilarityExampleSelector.js"() {
+    init_document();
+    init_base4();
+  }
+});
+
+// node_modules/langchain/dist/prompts/pipeline.js
+var init_pipeline = __esm({
+  "node_modules/langchain/dist/prompts/pipeline.js"() {
+    init_base4();
+    init_chat();
+  }
+});
+
+// node_modules/langchain/dist/prompts/index.js
+var init_prompts = __esm({
+  "node_modules/langchain/dist/prompts/index.js"() {
+    init_base4();
+    init_prompt();
+    init_conditional();
+    init_LengthBasedExampleSelector();
+    init_SemanticSimilarityExampleSelector();
+    init_few_shot();
+    init_chat();
+    init_template();
+    init_pipeline();
+  }
+});
+
+// node_modules/langchain/dist/chains/question_answering/refine_prompts.js
+var DEFAULT_REFINE_PROMPT_TMPL, DEFAULT_REFINE_PROMPT, refineTemplate, messages3, CHAT_REFINE_PROMPT, REFINE_PROMPT_SELECTOR, DEFAULT_TEXT_QA_PROMPT_TMPL, DEFAULT_TEXT_QA_PROMPT, chat_qa_prompt_template, chat_messages, CHAT_QUESTION_PROMPT, QUESTION_PROMPT_SELECTOR;
+var init_refine_prompts = __esm({
+  "node_modules/langchain/dist/chains/question_answering/refine_prompts.js"() {
+    init_prompts();
+    init_conditional();
+    DEFAULT_REFINE_PROMPT_TMPL = `The original question is as follows: {question}
+We have provided an existing answer: {existing_answer}
+We have the opportunity to refine the existing answer
+(only if needed) with some more context below.
+------------
+{context}
+------------
+Given the new context, refine the original answer to better answer the question. 
+If the context isn't useful, return the original answer.`;
+    DEFAULT_REFINE_PROMPT = /* @__PURE__ */ new PromptTemplate({
+      inputVariables: ["question", "existing_answer", "context"],
+      template: DEFAULT_REFINE_PROMPT_TMPL
+    });
+    refineTemplate = `The original question is as follows: {question}
+We have provided an existing answer: {existing_answer}
+We have the opportunity to refine the existing answer
+(only if needed) with some more context below.
+------------
+{context}
+------------
+Given the new context, refine the original answer to better answer the question. 
+If the context isn't useful, return the original answer.`;
+    messages3 = [
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}"),
+      /* @__PURE__ */ AIMessagePromptTemplate.fromTemplate("{existing_answer}"),
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate(refineTemplate)
+    ];
+    CHAT_REFINE_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(messages3);
+    REFINE_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(DEFAULT_REFINE_PROMPT, [
+      [isChatModel, CHAT_REFINE_PROMPT]
+    ]);
+    DEFAULT_TEXT_QA_PROMPT_TMPL = `Context information is below. 
+---------------------
+{context}
+---------------------
+Given the context information and not prior knowledge, answer the question: {question}`;
+    DEFAULT_TEXT_QA_PROMPT = /* @__PURE__ */ new PromptTemplate({
+      inputVariables: ["context", "question"],
+      template: DEFAULT_TEXT_QA_PROMPT_TMPL
+    });
+    chat_qa_prompt_template = `Context information is below. 
+---------------------
+{context}
+---------------------
+Given the context information and not prior knowledge, answer any questions`;
+    chat_messages = [
+      /* @__PURE__ */ SystemMessagePromptTemplate.fromTemplate(chat_qa_prompt_template),
+      /* @__PURE__ */ HumanMessagePromptTemplate.fromTemplate("{question}")
+    ];
+    CHAT_QUESTION_PROMPT = /* @__PURE__ */ ChatPromptTemplate.fromPromptMessages(chat_messages);
+    QUESTION_PROMPT_SELECTOR = /* @__PURE__ */ new ConditionalPromptSelector(DEFAULT_TEXT_QA_PROMPT, [
+      [isChatModel, CHAT_QUESTION_PROMPT]
+    ]);
+  }
+});
+
+// node_modules/langchain/dist/chains/question_answering/load.js
+function loadQAStuffChain(llm, params = {}) {
+  const { prompt = QA_PROMPT_SELECTOR.getPrompt(llm), verbose } = params;
+  const llmChain = new LLMChain({ prompt, llm, verbose });
+  const chain = new StuffDocumentsChain({ llmChain, verbose });
+  return chain;
+}
+function loadQAMapReduceChain(llm, params = {}) {
+  const { combineMapPrompt = COMBINE_QA_PROMPT_SELECTOR.getPrompt(llm), combinePrompt = COMBINE_PROMPT_SELECTOR.getPrompt(llm), verbose, returnIntermediateSteps } = params;
+  const llmChain = new LLMChain({ prompt: combineMapPrompt, llm, verbose });
+  const combineLLMChain = new LLMChain({ prompt: combinePrompt, llm, verbose });
+  const combineDocumentChain = new StuffDocumentsChain({
+    llmChain: combineLLMChain,
+    documentVariableName: "summaries",
+    verbose
+  });
+  const chain = new MapReduceDocumentsChain({
+    llmChain,
+    combineDocumentChain,
+    returnIntermediateSteps,
+    verbose
+  });
+  return chain;
+}
+function loadQARefineChain(llm, params = {}) {
+  const { questionPrompt = QUESTION_PROMPT_SELECTOR.getPrompt(llm), refinePrompt = REFINE_PROMPT_SELECTOR.getPrompt(llm), verbose } = params;
+  const llmChain = new LLMChain({ prompt: questionPrompt, llm, verbose });
+  const refineLLMChain = new LLMChain({ prompt: refinePrompt, llm, verbose });
+  const chain = new RefineDocumentsChain({
+    llmChain,
+    refineLLMChain,
+    verbose
+  });
+  return chain;
+}
+var loadQAChain;
+var init_load = __esm({
+  "node_modules/langchain/dist/chains/question_answering/load.js"() {
+    init_llm_chain();
+    init_combine_docs_chain();
+    init_stuff_prompts();
+    init_map_reduce_prompts();
+    init_refine_prompts();
+    loadQAChain = (llm, params = { type: "stuff" }) => {
+      const { type: type2 } = params;
+      if (type2 === "stuff") {
+        return loadQAStuffChain(llm, params);
+      }
+      if (type2 === "map_reduce") {
+        return loadQAMapReduceChain(llm, params);
+      }
+      if (type2 === "refine") {
+        return loadQARefineChain(llm, params);
+      }
+      throw new Error(`Invalid _type: ${type2}`);
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/vector_db_qa.js
+var vector_db_qa_exports = {};
+__export(vector_db_qa_exports, {
+  VectorDBQAChain: () => VectorDBQAChain
+});
+var VectorDBQAChain;
+var init_vector_db_qa = __esm({
+  "node_modules/langchain/dist/chains/vector_db_qa.js"() {
+    init_base5();
+    init_load();
+    VectorDBQAChain = class extends BaseChain {
+      get inputKeys() {
+        return [this.inputKey];
+      }
+      get outputKeys() {
+        return this.combineDocumentsChain.outputKeys.concat(this.returnSourceDocuments ? ["sourceDocuments"] : []);
+      }
+      constructor(fields) {
+        var _a, _b, _c;
+        super(fields);
+        Object.defineProperty(this, "k", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 4
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "query"
+        });
+        Object.defineProperty(this, "vectorstore", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "combineDocumentsChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "returnSourceDocuments", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        this.vectorstore = fields.vectorstore;
+        this.combineDocumentsChain = fields.combineDocumentsChain;
+        this.inputKey = (_a = fields.inputKey) != null ? _a : this.inputKey;
+        this.k = (_b = fields.k) != null ? _b : this.k;
+        this.returnSourceDocuments = (_c = fields.returnSourceDocuments) != null ? _c : this.returnSourceDocuments;
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        if (!(this.inputKey in values)) {
+          throw new Error(`Question key ${this.inputKey} not found.`);
+        }
+        const question = values[this.inputKey];
+        const docs = await this.vectorstore.similaritySearch(question, this.k, values.filter);
+        const inputs = { question, input_documents: docs };
+        const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild("combine_documents"));
+        if (this.returnSourceDocuments) {
+          return {
+            ...result,
+            sourceDocuments: docs
+          };
+        }
+        return result;
+      }
+      _chainType() {
+        return "vector_db_qa";
+      }
+      static async deserialize(data, values) {
+        if (!("vectorstore" in values)) {
+          throw new Error(`Need to pass in a vectorstore to deserialize VectorDBQAChain`);
+        }
+        const { vectorstore } = values;
+        if (!data.combine_documents_chain) {
+          throw new Error(`VectorDBQAChain must have combine_documents_chain in serialized data`);
+        }
+        return new VectorDBQAChain({
+          combineDocumentsChain: await BaseChain.deserialize(data.combine_documents_chain),
+          k: data.k,
+          vectorstore
+        });
+      }
+      serialize() {
+        return {
+          _type: this._chainType(),
+          combine_documents_chain: this.combineDocumentsChain.serialize(),
+          k: this.k
+        };
+      }
+      static fromLLM(llm, vectorstore, options) {
+        const qaChain = loadQAStuffChain(llm);
+        return new this({
+          vectorstore,
+          combineDocumentsChain: qaChain,
+          ...options
+        });
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/api/prompts.js
+var API_URL_RAW_PROMPT_TEMPLATE, API_URL_PROMPT_TEMPLATE, API_RESPONSE_RAW_PROMPT_TEMPLATE, API_RESPONSE_PROMPT_TEMPLATE;
+var init_prompts2 = __esm({
+  "node_modules/langchain/dist/chains/api/prompts.js"() {
+    init_prompt();
+    API_URL_RAW_PROMPT_TEMPLATE = `You are given the below API Documentation:
+{api_docs}
+Using this documentation, generate the full API url to call for answering the user question.
+You should build the API url in order to get a response that is as short as possible, while still getting the necessary information to answer the question. Pay attention to deliberately exclude any unnecessary pieces of data in the API call.
+
+Question:{question}
+API url:`;
+    API_URL_PROMPT_TEMPLATE = /* @__PURE__ */ new PromptTemplate({
+      inputVariables: ["api_docs", "question"],
+      template: API_URL_RAW_PROMPT_TEMPLATE
+    });
+    API_RESPONSE_RAW_PROMPT_TEMPLATE = `${API_URL_RAW_PROMPT_TEMPLATE} {api_url}
+
+Here is the response from the API:
+
+{api_response}
+
+Summarize this response to answer the original question.
+
+Summary:`;
+    API_RESPONSE_PROMPT_TEMPLATE = /* @__PURE__ */ new PromptTemplate({
+      inputVariables: ["api_docs", "question", "api_url", "api_response"],
+      template: API_RESPONSE_RAW_PROMPT_TEMPLATE
+    });
+  }
+});
+
+// node_modules/langchain/dist/chains/api/api_chain.js
+var api_chain_exports = {};
+__export(api_chain_exports, {
+  APIChain: () => APIChain
+});
+var APIChain;
+var init_api_chain = __esm({
+  "node_modules/langchain/dist/chains/api/api_chain.js"() {
+    init_base5();
+    init_llm_chain();
+    init_prompts2();
+    APIChain = class extends BaseChain {
+      get inputKeys() {
+        return [this.inputKey];
+      }
+      get outputKeys() {
+        return [this.outputKey];
+      }
+      constructor(fields) {
+        var _a, _b, _c;
+        super(fields);
+        Object.defineProperty(this, "apiAnswerChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "apiRequestChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "apiDocs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "headers", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: {}
+        });
+        Object.defineProperty(this, "inputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "question"
+        });
+        Object.defineProperty(this, "outputKey", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: "output"
+        });
+        this.apiRequestChain = fields.apiRequestChain;
+        this.apiAnswerChain = fields.apiAnswerChain;
+        this.apiDocs = fields.apiDocs;
+        this.inputKey = (_a = fields.inputKey) != null ? _a : this.inputKey;
+        this.outputKey = (_b = fields.outputKey) != null ? _b : this.outputKey;
+        this.headers = (_c = fields.headers) != null ? _c : this.headers;
+      }
+      /** @ignore */
+      async _call(values, runManager) {
+        const question = values[this.inputKey];
+        const api_url = await this.apiRequestChain.predict({ question, api_docs: this.apiDocs }, runManager == null ? void 0 : runManager.getChild("request"));
+        const res = await fetch(api_url, { headers: this.headers });
+        const api_response = await res.text();
+        const answer = await this.apiAnswerChain.predict({ question, api_docs: this.apiDocs, api_url, api_response }, runManager == null ? void 0 : runManager.getChild("response"));
+        return { [this.outputKey]: answer };
+      }
+      _chainType() {
+        return "api_chain";
+      }
+      static async deserialize(data) {
+        const { api_request_chain, api_answer_chain, api_docs } = data;
+        if (!api_request_chain) {
+          throw new Error("LLMChain must have api_request_chain");
+        }
+        if (!api_answer_chain) {
+          throw new Error("LLMChain must have api_answer_chain");
+        }
+        if (!api_docs) {
+          throw new Error("LLMChain must have api_docs");
+        }
+        return new APIChain({
+          apiAnswerChain: await LLMChain.deserialize(api_answer_chain),
+          apiRequestChain: await LLMChain.deserialize(api_request_chain),
+          apiDocs: api_docs
+        });
+      }
+      serialize() {
+        return {
+          _type: this._chainType(),
+          api_answer_chain: this.apiAnswerChain.serialize(),
+          api_request_chain: this.apiRequestChain.serialize(),
+          api_docs: this.apiDocs
+        };
+      }
+      static fromLLMAndAPIDocs(llm, apiDocs, options = {}) {
+        const { apiUrlPrompt = API_URL_PROMPT_TEMPLATE, apiResponsePrompt = API_RESPONSE_PROMPT_TEMPLATE } = options;
+        const apiRequestChain = new LLMChain({ prompt: apiUrlPrompt, llm });
+        const apiAnswerChain = new LLMChain({ prompt: apiResponsePrompt, llm });
+        return new this({
+          apiAnswerChain,
+          apiRequestChain,
+          apiDocs,
+          ...options
+        });
+      }
+    };
+  }
+});
+
+// node_modules/langchain/dist/chains/base.js
+var BaseChain;
+var init_base5 = __esm({
+  "node_modules/langchain/dist/chains/base.js"() {
+    init_schema();
+    init_manager();
+    init_base_language();
+    BaseChain = class extends BaseLangChain {
+      get lc_namespace() {
+        return ["langchain", "chains", this._chainType()];
+      }
+      constructor(fields, verbose, callbacks) {
+        if (arguments.length === 1 && typeof fields === "object" && !("saveContext" in fields)) {
+          const { memory, callbackManager, ...rest } = fields;
+          super({ ...rest, callbacks: callbackManager != null ? callbackManager : rest.callbacks });
+          this.memory = memory;
+        } else {
+          super({ verbose, callbacks });
+          this.memory = fields;
+        }
+      }
+      /** @ignore */
+      _selectMemoryInputs(values) {
+        const valuesForMemory = { ...values };
+        if ("signal" in valuesForMemory) {
+          delete valuesForMemory.signal;
+        }
+        if ("timeout" in valuesForMemory) {
+          delete valuesForMemory.timeout;
+        }
+        return valuesForMemory;
+      }
+      /**
+       * Return a json-like object representing this chain.
+       */
+      serialize() {
+        throw new Error("Method not implemented.");
+      }
+      async run(input, config) {
+        const inputKeys = this.inputKeys.filter((k) => {
+          var _a;
+          return !((_a = this.memory) == null ? void 0 : _a.memoryKeys.includes(k));
+        });
+        const isKeylessInput = inputKeys.length <= 1;
+        if (!isKeylessInput) {
+          throw new Error(`Chain ${this._chainType()} expects multiple inputs, cannot use 'run' `);
+        }
+        const values = inputKeys.length ? { [inputKeys[0]]: input } : {};
+        const returnValues = await this.call(values, config);
+        const keys3 = Object.keys(returnValues);
+        if (keys3.length === 1) {
+          return returnValues[keys3[0]];
+        }
+        throw new Error("return values have multiple keys, `run` only supported when one key currently");
+      }
+      /**
+       * Run the core logic of this chain and add to output if desired.
+       *
+       * Wraps _call and handles memory.
+       */
+      async call(values, config, tags) {
+        const fullValues = { ...values };
+        if (fullValues.timeout && !fullValues.signal) {
+          fullValues.signal = AbortSignal.timeout(fullValues.timeout);
+          delete fullValues.timeout;
+        }
+        if (!(this.memory == null)) {
+          const newValues = await this.memory.loadMemoryVariables(this._selectMemoryInputs(values));
+          for (const [key, value] of Object.entries(newValues)) {
+            fullValues[key] = value;
+          }
+        }
+        const parsedConfig = parseCallbackConfigArg(config);
+        const callbackManager_ = await CallbackManager.configure(parsedConfig.callbacks, this.callbacks, parsedConfig.tags || tags, this.tags, parsedConfig.metadata, this.metadata, { verbose: this.verbose });
+        const runManager = await (callbackManager_ == null ? void 0 : callbackManager_.handleChainStart(this.toJSON(), fullValues));
+        let outputValues;
+        try {
+          outputValues = await (values.signal ? Promise.race([
+            this._call(fullValues, runManager),
+            new Promise((_, reject) => {
+              var _a;
+              (_a = values.signal) == null ? void 0 : _a.addEventListener("abort", () => {
+                reject(new Error("AbortError"));
+              });
+            })
+          ]) : this._call(fullValues, runManager));
+        } catch (e) {
+          await (runManager == null ? void 0 : runManager.handleChainError(e));
+          throw e;
+        }
+        if (!(this.memory == null)) {
+          await this.memory.saveContext(this._selectMemoryInputs(values), outputValues);
+        }
+        await (runManager == null ? void 0 : runManager.handleChainEnd(outputValues));
+        Object.defineProperty(outputValues, RUN_KEY, {
+          value: runManager ? { runId: runManager == null ? void 0 : runManager.runId } : void 0,
+          configurable: true
+        });
+        return outputValues;
+      }
+      /**
+       * Call the chain on all inputs in the list
+       */
+      async apply(inputs, config) {
+        return Promise.all(inputs.map(async (i, idx) => this.call(i, config == null ? void 0 : config[idx])));
+      }
+      /**
+       * Load a chain from a json-like object describing it.
+       */
+      static async deserialize(data, values = {}) {
+        switch (data._type) {
+          case "llm_chain": {
+            const { LLMChain: LLMChain2 } = await Promise.resolve().then(() => (init_llm_chain(), llm_chain_exports));
+            return LLMChain2.deserialize(data);
+          }
+          case "sequential_chain": {
+            const { SequentialChain: SequentialChain2 } = await Promise.resolve().then(() => (init_sequential_chain(), sequential_chain_exports));
+            return SequentialChain2.deserialize(data);
+          }
+          case "simple_sequential_chain": {
+            const { SimpleSequentialChain: SimpleSequentialChain2 } = await Promise.resolve().then(() => (init_sequential_chain(), sequential_chain_exports));
+            return SimpleSequentialChain2.deserialize(data);
+          }
+          case "stuff_documents_chain": {
+            const { StuffDocumentsChain: StuffDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
+            return StuffDocumentsChain2.deserialize(data);
+          }
+          case "map_reduce_documents_chain": {
+            const { MapReduceDocumentsChain: MapReduceDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
+            return MapReduceDocumentsChain2.deserialize(data);
+          }
+          case "refine_documents_chain": {
+            const { RefineDocumentsChain: RefineDocumentsChain2 } = await Promise.resolve().then(() => (init_combine_docs_chain(), combine_docs_chain_exports));
+            return RefineDocumentsChain2.deserialize(data);
+          }
+          case "vector_db_qa": {
+            const { VectorDBQAChain: VectorDBQAChain2 } = await Promise.resolve().then(() => (init_vector_db_qa(), vector_db_qa_exports));
+            return VectorDBQAChain2.deserialize(data, values);
+          }
+          case "api_chain": {
+            const { APIChain: APIChain2 } = await Promise.resolve().then(() => (init_api_chain(), api_chain_exports));
+            return APIChain2.deserialize(data);
+          }
+          default:
+            throw new Error(`Invalid prompt type in config: ${data._type}`);
+        }
+      }
+    };
   }
 });
 
@@ -23893,7 +24028,7 @@ var require_moment = __commonJS({
       function isArray4(input) {
         return input instanceof Array || Object.prototype.toString.call(input) === "[object Array]";
       }
-      function isObject3(input) {
+      function isObject4(input) {
         return input != null && Object.prototype.toString.call(input) === "[object Object]";
       }
       function hasOwnProp(a2, b) {
@@ -23921,14 +24056,14 @@ var require_moment = __commonJS({
       function isDate3(input) {
         return input instanceof Date || Object.prototype.toString.call(input) === "[object Date]";
       }
-      function map(arr, fn) {
+      function map2(arr, fn) {
         var res = [], i, arrLen = arr.length;
         for (i = 0; i < arrLen; ++i) {
           res.push(fn(arr[i], i));
         }
         return res;
       }
-      function extend3(a2, b) {
+      function extend5(a2, b) {
         for (var i in b) {
           if (hasOwnProp(b, i)) {
             a2[i] = b[i];
@@ -24004,7 +24139,7 @@ var require_moment = __commonJS({
       function createInvalid(flags) {
         var m = createUTC(NaN);
         if (flags != null) {
-          extend3(getParsingFlags(m), flags);
+          extend5(getParsingFlags(m), flags);
         } else {
           getParsingFlags(m).userInvalidated = true;
         }
@@ -24076,7 +24211,7 @@ var require_moment = __commonJS({
       }
       function deprecate(msg, fn) {
         var firstTime = true;
-        return extend3(function() {
+        return extend5(function() {
           if (hooks.deprecationHandler != null) {
             hooks.deprecationHandler(null, msg);
           }
@@ -24120,7 +24255,7 @@ var require_moment = __commonJS({
       function isFunction2(input) {
         return typeof Function !== "undefined" && input instanceof Function || Object.prototype.toString.call(input) === "[object Function]";
       }
-      function set(config) {
+      function set2(config) {
         var prop, i;
         for (i in config) {
           if (hasOwnProp(config, i)) {
@@ -24138,13 +24273,13 @@ var require_moment = __commonJS({
         );
       }
       function mergeConfigs(parentConfig, childConfig) {
-        var res = extend3({}, parentConfig), prop;
+        var res = extend5({}, parentConfig), prop;
         for (prop in childConfig) {
           if (hasOwnProp(childConfig, prop)) {
-            if (isObject3(parentConfig[prop]) && isObject3(childConfig[prop])) {
+            if (isObject4(parentConfig[prop]) && isObject4(childConfig[prop])) {
               res[prop] = {};
-              extend3(res[prop], parentConfig[prop]);
-              extend3(res[prop], childConfig[prop]);
+              extend5(res[prop], parentConfig[prop]);
+              extend5(res[prop], childConfig[prop]);
             } else if (childConfig[prop] != null) {
               res[prop] = childConfig[prop];
             } else {
@@ -24153,8 +24288,8 @@ var require_moment = __commonJS({
           }
         }
         for (prop in parentConfig) {
-          if (hasOwnProp(parentConfig, prop) && !hasOwnProp(childConfig, prop) && isObject3(parentConfig[prop])) {
-            res[prop] = extend3({}, res[prop]);
+          if (hasOwnProp(parentConfig, prop) && !hasOwnProp(childConfig, prop) && isObject4(parentConfig[prop])) {
+            res[prop] = extend5({}, res[prop]);
           }
         }
         return res;
@@ -25875,14 +26010,14 @@ var require_moment = __commonJS({
             }
           }
         }
-        extend3(config, bestMoment || tempConfig);
+        extend5(config, bestMoment || tempConfig);
       }
       function configFromObject(config) {
         if (config._d) {
           return;
         }
         var i = normalizeObjectUnits(config._i), dayOrDate = i.day === void 0 ? i.date : i.day;
-        config._a = map(
+        config._a = map2(
           [i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond],
           function(obj) {
             return obj && parseInt(obj, 10);
@@ -25932,11 +26067,11 @@ var require_moment = __commonJS({
         } else if (typeof input === "string") {
           configFromString(config);
         } else if (isArray4(input)) {
-          config._a = map(input.slice(0), function(obj) {
+          config._a = map2(input.slice(0), function(obj) {
             return parseInt(obj, 10);
           });
           configFromArray(config);
-        } else if (isObject3(input)) {
+        } else if (isObject4(input)) {
           configFromObject(config);
         } else if (isNumber2(input)) {
           config._d = new Date(input);
@@ -25954,7 +26089,7 @@ var require_moment = __commonJS({
           strict = locale2;
           locale2 = void 0;
         }
-        if (isObject3(input) && isObjectEmpty(input) || isArray4(input) && input.length === 0) {
+        if (isObject4(input) && isObjectEmpty(input) || isArray4(input) && input.length === 0) {
           input = void 0;
         }
         c._isAMomentObject = true;
@@ -26373,7 +26508,7 @@ var require_moment = __commonJS({
         return isMoment(input) || isDate3(input) || isString2(input) || isNumber2(input) || isNumberOrStringArray(input) || isMomentInputObject(input) || input === null || input === void 0;
       }
       function isMomentInputObject(input) {
-        var objectTest = isObject3(input) && !isObjectEmpty(input), propertyTest = false, properties = [
+        var objectTest = isObject4(input) && !isObjectEmpty(input), propertyTest = false, properties = [
           "years",
           "year",
           "y",
@@ -26415,7 +26550,7 @@ var require_moment = __commonJS({
         return arrayTest && dataTypeTest;
       }
       function isCalendarSpec(input) {
-        var objectTest = isObject3(input) && !isObjectEmpty(input), propertyTest = false, properties = [
+        var objectTest = isObject4(input) && !isObjectEmpty(input), propertyTest = false, properties = [
           "sameDay",
           "nextDay",
           "lastDay",
@@ -26562,7 +26697,7 @@ var require_moment = __commonJS({
       }
       hooks.defaultFormat = "YYYY-MM-DDTHH:mm:ssZ";
       hooks.defaultFormatUtc = "YYYY-MM-DDTHH:mm:ss[Z]";
-      function toString6() {
+      function toString7() {
         return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ");
       }
       function toISOString(keepOffset) {
@@ -26800,7 +26935,7 @@ var require_moment = __commonJS({
       function toDate() {
         return new Date(this.valueOf());
       }
-      function toArray3() {
+      function toArray4() {
         var m = this;
         return [
           m.year(),
@@ -26831,7 +26966,7 @@ var require_moment = __commonJS({
         return isValid(this);
       }
       function parsingFlags() {
-        return extend3({}, getParsingFlags(this));
+        return extend5({}, getParsingFlags(this));
       }
       function invalidAt() {
         return getParsingFlags(this).overflow;
@@ -27262,7 +27397,7 @@ var require_moment = __commonJS({
       proto.set = stringSet;
       proto.startOf = startOf;
       proto.subtract = subtract;
-      proto.toArray = toArray3;
+      proto.toArray = toArray4;
       proto.toObject = toObject2;
       proto.toDate = toDate;
       proto.toISOString = toISOString;
@@ -27273,7 +27408,7 @@ var require_moment = __commonJS({
         };
       }
       proto.toJSON = toJSON3;
-      proto.toString = toString6;
+      proto.toString = toString7;
       proto.unix = unix;
       proto.valueOf = valueOf;
       proto.creationData = creationData;
@@ -27353,7 +27488,7 @@ var require_moment = __commonJS({
       proto$1.postformat = preParsePostFormat;
       proto$1.relativeTime = relativeTime;
       proto$1.pastFuture = pastFuture;
-      proto$1.set = set;
+      proto$1.set = set2;
       proto$1.eras = localeEras;
       proto$1.erasParse = localeErasParse;
       proto$1.erasConvertYear = localeErasConvertYear;
@@ -27805,6 +27940,3169 @@ var require_moment = __commonJS({
   }
 });
 
+// node_modules/@fortaine/fetch-event-source/lib/cjs/parse.cjs
+var require_parse = __commonJS({
+  "node_modules/@fortaine/fetch-event-source/lib/cjs/parse.cjs"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.getMessages = exports.getLines = exports.getBytes = void 0;
+    async function getBytes2(stream, onChunk) {
+      const reader = stream.getReader();
+      let result;
+      while (!(result = await reader.read()).done) {
+        onChunk(result.value);
+      }
+    }
+    exports.getBytes = getBytes2;
+    function getLines3(onLine) {
+      let buffer2;
+      let position3;
+      let fieldLength;
+      let discardTrailingNewline = false;
+      return function onChunk(arr) {
+        if (buffer2 === void 0) {
+          buffer2 = arr;
+          position3 = 0;
+          fieldLength = -1;
+        } else {
+          buffer2 = concat3(buffer2, arr);
+        }
+        const bufLength = buffer2.length;
+        let lineStart = 0;
+        while (position3 < bufLength) {
+          if (discardTrailingNewline) {
+            if (buffer2[position3] === 10) {
+              lineStart = ++position3;
+            }
+            discardTrailingNewline = false;
+          }
+          let lineEnd = -1;
+          for (; position3 < bufLength && lineEnd === -1; ++position3) {
+            switch (buffer2[position3]) {
+              case 58:
+                if (fieldLength === -1) {
+                  fieldLength = position3 - lineStart;
+                }
+                break;
+              case 13:
+                discardTrailingNewline = true;
+              case 10:
+                lineEnd = position3;
+                break;
+            }
+          }
+          if (lineEnd === -1) {
+            break;
+          }
+          onLine(buffer2.subarray(lineStart, lineEnd), fieldLength);
+          lineStart = position3;
+          fieldLength = -1;
+        }
+        if (lineStart === bufLength) {
+          buffer2 = void 0;
+        } else if (lineStart !== 0) {
+          buffer2 = buffer2.subarray(lineStart);
+          position3 -= lineStart;
+        }
+      };
+    }
+    exports.getLines = getLines3;
+    function getMessages3(onMessage, onId, onRetry) {
+      let message = newMessage3();
+      const decoder = new TextDecoder();
+      return function onLine(line, fieldLength) {
+        if (line.length === 0) {
+          onMessage === null || onMessage === void 0 ? void 0 : onMessage(message);
+          message = newMessage3();
+        } else if (fieldLength > 0) {
+          const field = decoder.decode(line.subarray(0, fieldLength));
+          const valueOffset = fieldLength + (line[fieldLength + 1] === 32 ? 2 : 1);
+          const value = decoder.decode(line.subarray(valueOffset));
+          switch (field) {
+            case "data":
+              message.data = message.data ? message.data + "\n" + value : value;
+              break;
+            case "event":
+              message.event = value;
+              break;
+            case "id":
+              onId === null || onId === void 0 ? void 0 : onId(message.id = value);
+              break;
+            case "retry":
+              const retry = parseInt(value, 10);
+              if (!isNaN(retry)) {
+                onRetry === null || onRetry === void 0 ? void 0 : onRetry(message.retry = retry);
+              }
+              break;
+          }
+        }
+      };
+    }
+    exports.getMessages = getMessages3;
+    function concat3(a2, b) {
+      const res = new Uint8Array(a2.length + b.length);
+      res.set(a2);
+      res.set(b, a2.length);
+      return res;
+    }
+    function newMessage3() {
+      return {
+        data: "",
+        event: "",
+        id: "",
+        retry: void 0
+      };
+    }
+  }
+});
+
+// node_modules/@fortaine/fetch-event-source/lib/cjs/fetch.cjs
+var require_fetch = __commonJS({
+  "node_modules/@fortaine/fetch-event-source/lib/cjs/fetch.cjs"(exports) {
+    "use strict";
+    var __rest = exports && exports.__rest || function(s, e) {
+      var t = {};
+      for (var p in s)
+        if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+          t[p] = s[p];
+      if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+            t[p[i]] = s[p[i]];
+        }
+      return t;
+    };
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.fetchEventSource = exports.EventStreamContentType = void 0;
+    var parse_js_1 = require_parse();
+    exports.EventStreamContentType = "text/event-stream";
+    var DefaultRetryInterval = 1e3;
+    var LastEventId = "last-event-id";
+    function fetchEventSource(input, _a) {
+      var { signal: inputSignal, headers: inputHeaders, onopen: inputOnOpen, onmessage, onclose, onerror, openWhenHidden, fetch: inputFetch } = _a, rest = __rest(_a, ["signal", "headers", "onopen", "onmessage", "onclose", "onerror", "openWhenHidden", "fetch"]);
+      return new Promise((resolve, reject) => {
+        const headers = Object.assign({}, inputHeaders);
+        if (!headers.accept) {
+          headers.accept = exports.EventStreamContentType;
+        }
+        let curRequestController;
+        function onVisibilityChange() {
+          curRequestController.abort();
+          if (!document.hidden) {
+            create2();
+          }
+        }
+        if (typeof document !== "undefined" && !openWhenHidden) {
+          document.addEventListener("visibilitychange", onVisibilityChange);
+        }
+        let retryInterval = DefaultRetryInterval;
+        let retryTimer = 0;
+        function dispose() {
+          if (typeof document !== "undefined" && !openWhenHidden) {
+            document.removeEventListener("visibilitychange", onVisibilityChange);
+          }
+          clearTimeout(retryTimer);
+          curRequestController.abort();
+        }
+        inputSignal === null || inputSignal === void 0 ? void 0 : inputSignal.addEventListener("abort", () => {
+          dispose();
+          resolve();
+        });
+        const fetchFn = inputFetch !== null && inputFetch !== void 0 ? inputFetch : fetch;
+        const onopen = inputOnOpen !== null && inputOnOpen !== void 0 ? inputOnOpen : defaultOnOpen;
+        async function create2() {
+          var _a2;
+          curRequestController = new AbortController();
+          try {
+            const response = await fetchFn(input, Object.assign(Object.assign({}, rest), { headers, signal: curRequestController.signal }));
+            await onopen(response);
+            await (0, parse_js_1.getBytes)(response.body, (0, parse_js_1.getLines)((0, parse_js_1.getMessages)(onmessage, (id) => {
+              if (id) {
+                headers[LastEventId] = id;
+              } else {
+                delete headers[LastEventId];
+              }
+            }, (retry) => {
+              retryInterval = retry;
+            })));
+            onclose === null || onclose === void 0 ? void 0 : onclose();
+            dispose();
+            resolve();
+          } catch (err) {
+            if (!curRequestController.signal.aborted) {
+              try {
+                const interval = (_a2 = onerror === null || onerror === void 0 ? void 0 : onerror(err)) !== null && _a2 !== void 0 ? _a2 : retryInterval;
+                clearTimeout(retryTimer);
+                retryTimer = setTimeout(create2, interval);
+              } catch (innerErr) {
+                dispose();
+                reject(innerErr);
+              }
+            }
+          }
+        }
+        create2();
+      });
+    }
+    exports.fetchEventSource = fetchEventSource;
+    function defaultOnOpen(response) {
+      const contentType = response.headers.get("content-type");
+      if (!(contentType === null || contentType === void 0 ? void 0 : contentType.startsWith(exports.EventStreamContentType))) {
+        throw new Error(`Expected content-type to be ${exports.EventStreamContentType}, Actual: ${contentType}`);
+      }
+    }
+  }
+});
+
+// node_modules/@fortaine/fetch-event-source/lib/cjs/index.cjs
+var require_cjs = __commonJS({
+  "node_modules/@fortaine/fetch-event-source/lib/cjs/index.cjs"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.EventStreamContentType = exports.fetchEventSource = void 0;
+    var fetch_js_1 = require_fetch();
+    Object.defineProperty(exports, "fetchEventSource", { enumerable: true, get: function() {
+      return fetch_js_1.fetchEventSource;
+    } });
+    Object.defineProperty(exports, "EventStreamContentType", { enumerable: true, get: function() {
+      return fetch_js_1.EventStreamContentType;
+    } });
+  }
+});
+
+// node_modules/cross-fetch/dist/browser-ponyfill.js
+var require_browser_ponyfill = __commonJS({
+  "node_modules/cross-fetch/dist/browser-ponyfill.js"(exports, module2) {
+    var global2 = typeof self !== "undefined" ? self : exports;
+    var __self__ = function() {
+      function F() {
+        this.fetch = false;
+        this.DOMException = global2.DOMException;
+      }
+      F.prototype = global2;
+      return new F();
+    }();
+    (function(self2) {
+      var irrelevant = function(exports2) {
+        var support = {
+          searchParams: "URLSearchParams" in self2,
+          iterable: "Symbol" in self2 && "iterator" in Symbol,
+          blob: "FileReader" in self2 && "Blob" in self2 && function() {
+            try {
+              new Blob();
+              return true;
+            } catch (e) {
+              return false;
+            }
+          }(),
+          formData: "FormData" in self2,
+          arrayBuffer: "ArrayBuffer" in self2
+        };
+        function isDataView(obj) {
+          return obj && DataView.prototype.isPrototypeOf(obj);
+        }
+        if (support.arrayBuffer) {
+          var viewClasses = [
+            "[object Int8Array]",
+            "[object Uint8Array]",
+            "[object Uint8ClampedArray]",
+            "[object Int16Array]",
+            "[object Uint16Array]",
+            "[object Int32Array]",
+            "[object Uint32Array]",
+            "[object Float32Array]",
+            "[object Float64Array]"
+          ];
+          var isArrayBufferView2 = ArrayBuffer.isView || function(obj) {
+            return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1;
+          };
+        }
+        function normalizeName(name) {
+          if (typeof name !== "string") {
+            name = String(name);
+          }
+          if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(name)) {
+            throw new TypeError("Invalid character in header field name");
+          }
+          return name.toLowerCase();
+        }
+        function normalizeValue2(value) {
+          if (typeof value !== "string") {
+            value = String(value);
+          }
+          return value;
+        }
+        function iteratorFor(items) {
+          var iterator = {
+            next: function() {
+              var value = items.shift();
+              return { done: value === void 0, value };
+            }
+          };
+          if (support.iterable) {
+            iterator[Symbol.iterator] = function() {
+              return iterator;
+            };
+          }
+          return iterator;
+        }
+        function Headers2(headers) {
+          this.map = {};
+          if (headers instanceof Headers2) {
+            headers.forEach(function(value, name) {
+              this.append(name, value);
+            }, this);
+          } else if (Array.isArray(headers)) {
+            headers.forEach(function(header) {
+              this.append(header[0], header[1]);
+            }, this);
+          } else if (headers) {
+            Object.getOwnPropertyNames(headers).forEach(function(name) {
+              this.append(name, headers[name]);
+            }, this);
+          }
+        }
+        Headers2.prototype.append = function(name, value) {
+          name = normalizeName(name);
+          value = normalizeValue2(value);
+          var oldValue = this.map[name];
+          this.map[name] = oldValue ? oldValue + ", " + value : value;
+        };
+        Headers2.prototype["delete"] = function(name) {
+          delete this.map[normalizeName(name)];
+        };
+        Headers2.prototype.get = function(name) {
+          name = normalizeName(name);
+          return this.has(name) ? this.map[name] : null;
+        };
+        Headers2.prototype.has = function(name) {
+          return this.map.hasOwnProperty(normalizeName(name));
+        };
+        Headers2.prototype.set = function(name, value) {
+          this.map[normalizeName(name)] = normalizeValue2(value);
+        };
+        Headers2.prototype.forEach = function(callback, thisArg) {
+          for (var name in this.map) {
+            if (this.map.hasOwnProperty(name)) {
+              callback.call(thisArg, this.map[name], name, this);
+            }
+          }
+        };
+        Headers2.prototype.keys = function() {
+          var items = [];
+          this.forEach(function(value, name) {
+            items.push(name);
+          });
+          return iteratorFor(items);
+        };
+        Headers2.prototype.values = function() {
+          var items = [];
+          this.forEach(function(value) {
+            items.push(value);
+          });
+          return iteratorFor(items);
+        };
+        Headers2.prototype.entries = function() {
+          var items = [];
+          this.forEach(function(value, name) {
+            items.push([name, value]);
+          });
+          return iteratorFor(items);
+        };
+        if (support.iterable) {
+          Headers2.prototype[Symbol.iterator] = Headers2.prototype.entries;
+        }
+        function consumed(body) {
+          if (body.bodyUsed) {
+            return Promise.reject(new TypeError("Already read"));
+          }
+          body.bodyUsed = true;
+        }
+        function fileReaderReady(reader) {
+          return new Promise(function(resolve, reject) {
+            reader.onload = function() {
+              resolve(reader.result);
+            };
+            reader.onerror = function() {
+              reject(reader.error);
+            };
+          });
+        }
+        function readBlobAsArrayBuffer(blob) {
+          var reader = new FileReader();
+          var promise = fileReaderReady(reader);
+          reader.readAsArrayBuffer(blob);
+          return promise;
+        }
+        function readBlobAsText(blob) {
+          var reader = new FileReader();
+          var promise = fileReaderReady(reader);
+          reader.readAsText(blob);
+          return promise;
+        }
+        function readArrayBufferAsText(buf) {
+          var view = new Uint8Array(buf);
+          var chars = new Array(view.length);
+          for (var i = 0; i < view.length; i++) {
+            chars[i] = String.fromCharCode(view[i]);
+          }
+          return chars.join("");
+        }
+        function bufferClone(buf) {
+          if (buf.slice) {
+            return buf.slice(0);
+          } else {
+            var view = new Uint8Array(buf.byteLength);
+            view.set(new Uint8Array(buf));
+            return view.buffer;
+          }
+        }
+        function Body() {
+          this.bodyUsed = false;
+          this._initBody = function(body) {
+            this._bodyInit = body;
+            if (!body) {
+              this._bodyText = "";
+            } else if (typeof body === "string") {
+              this._bodyText = body;
+            } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+              this._bodyBlob = body;
+            } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+              this._bodyFormData = body;
+            } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+              this._bodyText = body.toString();
+            } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+              this._bodyArrayBuffer = bufferClone(body.buffer);
+              this._bodyInit = new Blob([this._bodyArrayBuffer]);
+            } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView2(body))) {
+              this._bodyArrayBuffer = bufferClone(body);
+            } else {
+              this._bodyText = body = Object.prototype.toString.call(body);
+            }
+            if (!this.headers.get("content-type")) {
+              if (typeof body === "string") {
+                this.headers.set("content-type", "text/plain;charset=UTF-8");
+              } else if (this._bodyBlob && this._bodyBlob.type) {
+                this.headers.set("content-type", this._bodyBlob.type);
+              } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+                this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+              }
+            }
+          };
+          if (support.blob) {
+            this.blob = function() {
+              var rejected = consumed(this);
+              if (rejected) {
+                return rejected;
+              }
+              if (this._bodyBlob) {
+                return Promise.resolve(this._bodyBlob);
+              } else if (this._bodyArrayBuffer) {
+                return Promise.resolve(new Blob([this._bodyArrayBuffer]));
+              } else if (this._bodyFormData) {
+                throw new Error("could not read FormData body as blob");
+              } else {
+                return Promise.resolve(new Blob([this._bodyText]));
+              }
+            };
+            this.arrayBuffer = function() {
+              if (this._bodyArrayBuffer) {
+                return consumed(this) || Promise.resolve(this._bodyArrayBuffer);
+              } else {
+                return this.blob().then(readBlobAsArrayBuffer);
+              }
+            };
+          }
+          this.text = function() {
+            var rejected = consumed(this);
+            if (rejected) {
+              return rejected;
+            }
+            if (this._bodyBlob) {
+              return readBlobAsText(this._bodyBlob);
+            } else if (this._bodyArrayBuffer) {
+              return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer));
+            } else if (this._bodyFormData) {
+              throw new Error("could not read FormData body as text");
+            } else {
+              return Promise.resolve(this._bodyText);
+            }
+          };
+          if (support.formData) {
+            this.formData = function() {
+              return this.text().then(decode2);
+            };
+          }
+          this.json = function() {
+            return this.text().then(JSON.parse);
+          };
+          return this;
+        }
+        var methods = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"];
+        function normalizeMethod(method) {
+          var upcased = method.toUpperCase();
+          return methods.indexOf(upcased) > -1 ? upcased : method;
+        }
+        function Request2(input, options) {
+          options = options || {};
+          var body = options.body;
+          if (input instanceof Request2) {
+            if (input.bodyUsed) {
+              throw new TypeError("Already read");
+            }
+            this.url = input.url;
+            this.credentials = input.credentials;
+            if (!options.headers) {
+              this.headers = new Headers2(input.headers);
+            }
+            this.method = input.method;
+            this.mode = input.mode;
+            this.signal = input.signal;
+            if (!body && input._bodyInit != null) {
+              body = input._bodyInit;
+              input.bodyUsed = true;
+            }
+          } else {
+            this.url = String(input);
+          }
+          this.credentials = options.credentials || this.credentials || "same-origin";
+          if (options.headers || !this.headers) {
+            this.headers = new Headers2(options.headers);
+          }
+          this.method = normalizeMethod(options.method || this.method || "GET");
+          this.mode = options.mode || this.mode || null;
+          this.signal = options.signal || this.signal;
+          this.referrer = null;
+          if ((this.method === "GET" || this.method === "HEAD") && body) {
+            throw new TypeError("Body not allowed for GET or HEAD requests");
+          }
+          this._initBody(body);
+        }
+        Request2.prototype.clone = function() {
+          return new Request2(this, { body: this._bodyInit });
+        };
+        function decode2(body) {
+          var form = new FormData();
+          body.trim().split("&").forEach(function(bytes) {
+            if (bytes) {
+              var split = bytes.split("=");
+              var name = split.shift().replace(/\+/g, " ");
+              var value = split.join("=").replace(/\+/g, " ");
+              form.append(decodeURIComponent(name), decodeURIComponent(value));
+            }
+          });
+          return form;
+        }
+        function parseHeaders(rawHeaders) {
+          var headers = new Headers2();
+          var preProcessedHeaders = rawHeaders.replace(/\r?\n[\t ]+/g, " ");
+          preProcessedHeaders.split(/\r?\n/).forEach(function(line) {
+            var parts = line.split(":");
+            var key = parts.shift().trim();
+            if (key) {
+              var value = parts.join(":").trim();
+              headers.append(key, value);
+            }
+          });
+          return headers;
+        }
+        Body.call(Request2.prototype);
+        function Response(bodyInit, options) {
+          if (!options) {
+            options = {};
+          }
+          this.type = "default";
+          this.status = options.status === void 0 ? 200 : options.status;
+          this.ok = this.status >= 200 && this.status < 300;
+          this.statusText = "statusText" in options ? options.statusText : "OK";
+          this.headers = new Headers2(options.headers);
+          this.url = options.url || "";
+          this._initBody(bodyInit);
+        }
+        Body.call(Response.prototype);
+        Response.prototype.clone = function() {
+          return new Response(this._bodyInit, {
+            status: this.status,
+            statusText: this.statusText,
+            headers: new Headers2(this.headers),
+            url: this.url
+          });
+        };
+        Response.error = function() {
+          var response = new Response(null, { status: 0, statusText: "" });
+          response.type = "error";
+          return response;
+        };
+        var redirectStatuses = [301, 302, 303, 307, 308];
+        Response.redirect = function(url, status) {
+          if (redirectStatuses.indexOf(status) === -1) {
+            throw new RangeError("Invalid status code");
+          }
+          return new Response(null, { status, headers: { location: url } });
+        };
+        exports2.DOMException = self2.DOMException;
+        try {
+          new exports2.DOMException();
+        } catch (err) {
+          exports2.DOMException = function(message, name) {
+            this.message = message;
+            this.name = name;
+            var error = Error(message);
+            this.stack = error.stack;
+          };
+          exports2.DOMException.prototype = Object.create(Error.prototype);
+          exports2.DOMException.prototype.constructor = exports2.DOMException;
+        }
+        function fetch2(input, init2) {
+          return new Promise(function(resolve, reject) {
+            var request = new Request2(input, init2);
+            if (request.signal && request.signal.aborted) {
+              return reject(new exports2.DOMException("Aborted", "AbortError"));
+            }
+            var xhr = new XMLHttpRequest();
+            function abortXhr() {
+              xhr.abort();
+            }
+            xhr.onload = function() {
+              var options = {
+                status: xhr.status,
+                statusText: xhr.statusText,
+                headers: parseHeaders(xhr.getAllResponseHeaders() || "")
+              };
+              options.url = "responseURL" in xhr ? xhr.responseURL : options.headers.get("X-Request-URL");
+              var body = "response" in xhr ? xhr.response : xhr.responseText;
+              resolve(new Response(body, options));
+            };
+            xhr.onerror = function() {
+              reject(new TypeError("Network request failed"));
+            };
+            xhr.ontimeout = function() {
+              reject(new TypeError("Network request failed"));
+            };
+            xhr.onabort = function() {
+              reject(new exports2.DOMException("Aborted", "AbortError"));
+            };
+            xhr.open(request.method, request.url, true);
+            if (request.credentials === "include") {
+              xhr.withCredentials = true;
+            } else if (request.credentials === "omit") {
+              xhr.withCredentials = false;
+            }
+            if ("responseType" in xhr && support.blob) {
+              xhr.responseType = "blob";
+            }
+            request.headers.forEach(function(value, name) {
+              xhr.setRequestHeader(name, value);
+            });
+            if (request.signal) {
+              request.signal.addEventListener("abort", abortXhr);
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                  request.signal.removeEventListener("abort", abortXhr);
+                }
+              };
+            }
+            xhr.send(typeof request._bodyInit === "undefined" ? null : request._bodyInit);
+          });
+        }
+        fetch2.polyfill = true;
+        if (!self2.fetch) {
+          self2.fetch = fetch2;
+          self2.Headers = Headers2;
+          self2.Request = Request2;
+          self2.Response = Response;
+        }
+        exports2.Headers = Headers2;
+        exports2.Request = Request2;
+        exports2.Response = Response;
+        exports2.fetch = fetch2;
+        Object.defineProperty(exports2, "__esModule", { value: true });
+        return exports2;
+      }({});
+    })(__self__);
+    __self__.fetch.ponyfill = true;
+    delete __self__.fetch.polyfill;
+    var ctx = __self__;
+    exports = ctx.fetch;
+    exports.default = ctx.fetch;
+    exports.fetch = ctx.fetch;
+    exports.Headers = ctx.Headers;
+    exports.Request = ctx.Request;
+    exports.Response = ctx.Response;
+    module2.exports = exports;
+  }
+});
+
+// node_modules/@anthropic-ai/sdk/build/src/index.js
+var require_src = __commonJS({
+  "node_modules/@anthropic-ai/sdk/build/src/index.js"(exports) {
+    "use strict";
+    var __awaiter = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __importDefault = exports && exports.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.Client = exports.AI_PROMPT = exports.HUMAN_PROMPT = void 0;
+    var fetch_event_source_1 = require_cjs();
+    var cross_fetch_1 = __importDefault(require_browser_ponyfill());
+    exports.HUMAN_PROMPT = "\n\nHuman:";
+    exports.AI_PROMPT = "\n\nAssistant:";
+    var CLIENT_ID = "anthropic-typescript/0.4.3";
+    var DEFAULT_API_URL = "https://api.anthropic.com";
+    var Event;
+    (function(Event2) {
+      Event2["Ping"] = "ping";
+    })(Event || (Event = {}));
+    var DONE_MESSAGE = "[DONE]";
+    var Client2 = class {
+      constructor(apiKey, options) {
+        var _a;
+        this.apiKey = apiKey;
+        this.apiUrl = (_a = options === null || options === void 0 ? void 0 : options.apiUrl) !== null && _a !== void 0 ? _a : DEFAULT_API_URL;
+      }
+      complete(params, options) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const response = yield (0, cross_fetch_1.default)(`${this.apiUrl}/v1/complete`, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              Client: CLIENT_ID,
+              "X-API-Key": this.apiKey
+            },
+            body: JSON.stringify(Object.assign(Object.assign({}, params), { stream: false })),
+            signal: options === null || options === void 0 ? void 0 : options.signal
+          });
+          if (!response.ok) {
+            const error = new Error(`Sampling error: ${response.status} ${response.statusText}`);
+            console.error(error);
+            throw error;
+          }
+          const completion = yield response.json();
+          return completion;
+        });
+      }
+      completeStream(params, { onOpen, onUpdate, signal }) {
+        const abortController = new AbortController();
+        return new Promise((resolve, reject) => {
+          signal === null || signal === void 0 ? void 0 : signal.addEventListener("abort", (event) => {
+            abortController.abort(event);
+            reject({
+              name: "AbortError",
+              message: "Caller aborted completeStream"
+            });
+          });
+          (0, fetch_event_source_1.fetchEventSource)(`${this.apiUrl}/v1/complete`, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              Client: CLIENT_ID,
+              "X-API-Key": this.apiKey
+            },
+            body: JSON.stringify(Object.assign(Object.assign({}, params), { stream: true })),
+            signal: abortController.signal,
+            onopen: (response) => __awaiter(this, void 0, void 0, function* () {
+              if (!response.ok) {
+                abortController.abort();
+                return reject(Error(`Failed to open sampling stream, HTTP status code ${response.status}: ${response.statusText}`));
+              }
+              if (onOpen) {
+                yield Promise.resolve(onOpen(response));
+              }
+            }),
+            onmessage: (ev) => {
+              if (ev.event === Event.Ping) {
+                return;
+              }
+              if (ev.data === DONE_MESSAGE) {
+                console.error("Unexpected done message before stop_reason has been issued");
+                return;
+              }
+              const completion = JSON.parse(ev.data);
+              if (onUpdate) {
+                Promise.resolve(onUpdate(completion)).catch((error) => {
+                  abortController.abort();
+                  reject(error);
+                });
+              }
+              if (completion.stop_reason !== null) {
+                abortController.abort();
+                return resolve(completion);
+              }
+            },
+            onerror: (error) => {
+              console.error("Sampling error:", error);
+              abortController.abort();
+              return reject(error);
+            }
+          });
+        });
+      }
+    };
+    exports.Client = Client2;
+  }
+});
+
+// node_modules/cohere-ai/dist/cohere.js
+var require_cohere = __commonJS({
+  "node_modules/cohere-ai/dist/cohere.js"(exports, module2) {
+    (function webpackUniversalModuleDefinition(root2, factory) {
+      if (typeof exports === "object" && typeof module2 === "object")
+        module2.exports = factory();
+      else if (typeof define === "function" && define.amd)
+        define([], factory);
+      else if (typeof exports === "object")
+        exports["cohere"] = factory();
+      else
+        root2["cohere"] = factory();
+    })(global, () => {
+      return (
+        /******/
+        (() => {
+          "use strict";
+          var __webpack_modules__ = {
+            /***/
+            828: (
+              /***/
+              function(module3, __unused_webpack_exports, __webpack_require__2) {
+                var __assign = this && this.__assign || function() {
+                  __assign = Object.assign || function(t) {
+                    for (var s, i = 1, n = arguments.length; i < n; i++) {
+                      s = arguments[i];
+                      for (var p in s)
+                        if (Object.prototype.hasOwnProperty.call(s, p))
+                          t[p] = s[p];
+                    }
+                    return t;
+                  };
+                  return __assign.apply(this, arguments);
+                };
+                var __importDefault = this && this.__importDefault || function(mod) {
+                  return mod && mod.__esModule ? mod : { "default": mod };
+                };
+                var api_service_1 = __importDefault(__webpack_require__2(836));
+                var ENDPOINT;
+                (function(ENDPOINT2) {
+                  ENDPOINT2["GENERATE"] = "/generate";
+                  ENDPOINT2["EMBED"] = "/embed";
+                  ENDPOINT2["CLASSIFY"] = "/classify";
+                  ENDPOINT2["TOKENIZE"] = "/tokenize";
+                  ENDPOINT2["DETOKENIZE"] = "/detokenize";
+                  ENDPOINT2["DETECT_LANGUAGE"] = "/detect-language";
+                  ENDPOINT2["SUMMARIZE"] = "/summarize";
+                })(ENDPOINT || (ENDPOINT = {}));
+                var COHERE_EMBED_BATCH_SIZE = 5;
+                var Cohere = (
+                  /** @class */
+                  function() {
+                    function Cohere2() {
+                    }
+                    Cohere2.prototype.init = function(key, version2) {
+                      api_service_1.default.init(key, version2);
+                    };
+                    Cohere2.prototype.makeRequest = function(endpoint, data) {
+                      return api_service_1.default.post(endpoint, data);
+                    };
+                    Cohere2.prototype.generate = function(config) {
+                      return this.makeRequest(ENDPOINT.GENERATE, config);
+                    };
+                    Cohere2.prototype.tokenize = function(_a) {
+                      var text4 = _a.text;
+                      return this.makeRequest(ENDPOINT.TOKENIZE, {
+                        text: text4
+                      });
+                    };
+                    Cohere2.prototype.detokenize = function(_a) {
+                      var tokens = _a.tokens;
+                      return this.makeRequest(ENDPOINT.DETOKENIZE, {
+                        tokens
+                      });
+                    };
+                    Cohere2.prototype.embed = function(config) {
+                      var _this = this;
+                      var createBatches = function(array) {
+                        var result = [];
+                        for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
+                          var value = array_1[_i];
+                          var lastArray = result[result.length - 1];
+                          if (!lastArray || lastArray.length === COHERE_EMBED_BATCH_SIZE) {
+                            result.push([value]);
+                          } else {
+                            lastArray.push(value);
+                          }
+                        }
+                        return result;
+                      };
+                      return Promise.all(createBatches(config.texts).map(function(texts) {
+                        return _this.makeRequest(ENDPOINT.EMBED, __assign(__assign({}, config), { texts }));
+                      })).then(function(results) {
+                        var embeddings = [];
+                        results.forEach(function(result) {
+                          embeddings = embeddings.concat(result.body.embeddings);
+                        });
+                        var response = {
+                          statusCode: results[0].statusCode,
+                          body: { embeddings }
+                        };
+                        return response;
+                      });
+                    };
+                    Cohere2.prototype.classify = function(config) {
+                      return this.makeRequest(ENDPOINT.CLASSIFY, config);
+                    };
+                    Cohere2.prototype.detectLanguage = function(config) {
+                      return this.makeRequest(ENDPOINT.DETECT_LANGUAGE, config);
+                    };
+                    Cohere2.prototype.summarize = function(config) {
+                      return this.makeRequest(ENDPOINT.SUMMARIZE, config);
+                    };
+                    return Cohere2;
+                  }()
+                );
+                var cohere = new Cohere();
+                module3.exports = cohere;
+              }
+            ),
+            /***/
+            836: (
+              /***/
+              function(module3, __unused_webpack_exports, __webpack_require__2) {
+                var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+                  function adopt(value) {
+                    return value instanceof P ? value : new P(function(resolve) {
+                      resolve(value);
+                    });
+                  }
+                  return new (P || (P = Promise))(function(resolve, reject) {
+                    function fulfilled(value) {
+                      try {
+                        step(generator.next(value));
+                      } catch (e) {
+                        reject(e);
+                      }
+                    }
+                    function rejected(value) {
+                      try {
+                        step(generator["throw"](value));
+                      } catch (e) {
+                        reject(e);
+                      }
+                    }
+                    function step(result) {
+                      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+                    }
+                    step((generator = generator.apply(thisArg, _arguments || [])).next());
+                  });
+                };
+                var __generator = this && this.__generator || function(thisArg, body) {
+                  var _ = { label: 0, sent: function() {
+                    if (t[0] & 1)
+                      throw t[1];
+                    return t[1];
+                  }, trys: [], ops: [] }, f, y, t, g;
+                  return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+                    return this;
+                  }), g;
+                  function verb(n) {
+                    return function(v) {
+                      return step([n, v]);
+                    };
+                  }
+                  function step(op) {
+                    if (f)
+                      throw new TypeError("Generator is already executing.");
+                    while (g && (g = 0, op[0] && (_ = 0)), _)
+                      try {
+                        if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done)
+                          return t;
+                        if (y = 0, t)
+                          op = [op[0] & 2, t.value];
+                        switch (op[0]) {
+                          case 0:
+                          case 1:
+                            t = op;
+                            break;
+                          case 4:
+                            _.label++;
+                            return { value: op[1], done: false };
+                          case 5:
+                            _.label++;
+                            y = op[1];
+                            op = [0];
+                            continue;
+                          case 7:
+                            op = _.ops.pop();
+                            _.trys.pop();
+                            continue;
+                          default:
+                            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                              _ = 0;
+                              continue;
+                            }
+                            if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                              _.label = op[1];
+                              break;
+                            }
+                            if (op[0] === 6 && _.label < t[1]) {
+                              _.label = t[1];
+                              t = op;
+                              break;
+                            }
+                            if (t && _.label < t[2]) {
+                              _.label = t[2];
+                              _.ops.push(op);
+                              break;
+                            }
+                            if (t[2])
+                              _.ops.pop();
+                            _.trys.pop();
+                            continue;
+                        }
+                        op = body.call(thisArg, _);
+                      } catch (e) {
+                        op = [6, e];
+                        y = 0;
+                      } finally {
+                        f = t = 0;
+                      }
+                    if (op[0] & 5)
+                      throw op[1];
+                    return { value: op[0] ? op[1] : void 0, done: true };
+                  }
+                };
+                var __importDefault = this && this.__importDefault || function(mod) {
+                  return mod && mod.__esModule ? mod : { "default": mod };
+                };
+                var https = __webpack_require__2(687);
+                var error_service_1 = __importDefault(__webpack_require__2(959));
+                var URL2;
+                (function(URL3) {
+                  URL3["COHERE_API"] = "api.cohere.ai";
+                })(URL2 || (URL2 = {}));
+                var APIImpl = (
+                  /** @class */
+                  function() {
+                    function APIImpl2() {
+                      this.COHERE_API_KEY = "";
+                      this.COHERE_VERSION = "";
+                    }
+                    APIImpl2.prototype.init = function(key, version2) {
+                      this.COHERE_API_KEY = key;
+                      if (version2 === void 0) {
+                        this.COHERE_VERSION = "2022-12-06";
+                      } else {
+                        this.COHERE_VERSION = version2;
+                      }
+                    };
+                    APIImpl2.prototype.post = function(endpoint, data) {
+                      return __awaiter(this, void 0, void 0, function() {
+                        var _this = this;
+                        return __generator(this, function(_a) {
+                          return [2, new Promise(function(resolve, reject) {
+                            try {
+                              data = JSON.parse("".concat(data));
+                            } catch (e) {
+                            }
+                            var reqData = JSON.stringify(data);
+                            var req = https.request({
+                              hostname: URL2.COHERE_API,
+                              path: endpoint,
+                              method: "POST",
+                              headers: {
+                                "Content-Type": "application/json; charset=utf-8",
+                                "Content-Length": Buffer.byteLength(reqData, "utf8"),
+                                "Cohere-Version": _this.COHERE_VERSION,
+                                Authorization: "Bearer ".concat(_this.COHERE_API_KEY),
+                                "Request-Source": "node-sdk"
+                              },
+                              timeout: 5e3
+                            }, function(res) {
+                              var data2 = [];
+                              res.on("data", function(chunk) {
+                                return data2.push(chunk);
+                              });
+                              res.on("end", function() {
+                                if ("x-api-warning" in res.headers) {
+                                  var warnHeader = res.headers["x-api-warning"];
+                                  if (typeof warnHeader === "string") {
+                                    console.warn("\x1B[33mWarning: %s\x1B[0m", warnHeader);
+                                  } else {
+                                    for (var warning in warnHeader) {
+                                      console.warn("\x1B[33mWarning: %s\x1B[0m", warning);
+                                    }
+                                  }
+                                }
+                                resolve({
+                                  statusCode: res.statusCode,
+                                  body: JSON.parse(Buffer.concat(data2).toString())
+                                });
+                              });
+                            });
+                            req.on("error", function(error) {
+                              return reject(error_service_1.default.handleError(error));
+                            });
+                            req.write(reqData, "utf8");
+                            req.end();
+                          })];
+                        });
+                      });
+                    };
+                    return APIImpl2;
+                  }()
+                );
+                var API = new APIImpl();
+                module3.exports = API;
+              }
+            ),
+            /***/
+            959: (
+              /***/
+              (module3) => {
+                var errorImpl = (
+                  /** @class */
+                  function() {
+                    function errorImpl2() {
+                    }
+                    errorImpl2.prototype.handleError = function(error) {
+                      var _a, _b, _c;
+                      var status = ((_a = error.response) === null || _a === void 0 ? void 0 : _a.status) || 500;
+                      var message = ((_c = (_b = error.response) === null || _b === void 0 ? void 0 : _b.data) === null || _c === void 0 ? void 0 : _c.message) || error.message;
+                      return {
+                        statusCode: status,
+                        body: {
+                          message
+                        }
+                      };
+                    };
+                    return errorImpl2;
+                  }()
+                );
+                var errors = new errorImpl();
+                module3.exports = errors;
+              }
+            ),
+            /***/
+            687: (
+              /***/
+              (module3) => {
+                module3.exports = require("https");
+              }
+            )
+            /******/
+          };
+          var __webpack_module_cache__ = {};
+          function __webpack_require__(moduleId) {
+            var cachedModule = __webpack_module_cache__[moduleId];
+            if (cachedModule !== void 0) {
+              return cachedModule.exports;
+            }
+            var module3 = __webpack_module_cache__[moduleId] = {
+              /******/
+              // no module.id needed
+              /******/
+              // no module.loaded needed
+              /******/
+              exports: {}
+              /******/
+            };
+            __webpack_modules__[moduleId].call(module3.exports, module3, module3.exports, __webpack_require__);
+            return module3.exports;
+          }
+          var __webpack_exports__ = __webpack_require__(828);
+          return __webpack_exports__;
+        })()
+      );
+    });
+  }
+});
+
+// node_modules/cohere-ai/index.js
+var require_cohere_ai = __commonJS({
+  "node_modules/cohere-ai/index.js"(exports, module2) {
+    module2.exports = require_cohere();
+  }
+});
+
+// node_modules/binary-search/index.js
+var require_binary_search = __commonJS({
+  "node_modules/binary-search/index.js"(exports, module2) {
+    module2.exports = function(haystack, needle, comparator, low, high) {
+      var mid, cmp;
+      if (low === void 0)
+        low = 0;
+      else {
+        low = low | 0;
+        if (low < 0 || low >= haystack.length)
+          throw new RangeError("invalid lower bound");
+      }
+      if (high === void 0)
+        high = haystack.length - 1;
+      else {
+        high = high | 0;
+        if (high < low || high >= haystack.length)
+          throw new RangeError("invalid upper bound");
+      }
+      while (low <= high) {
+        mid = low + (high - low >>> 1);
+        cmp = +comparator(haystack[mid], needle, mid, haystack);
+        if (cmp < 0)
+          low = mid + 1;
+        else if (cmp > 0)
+          high = mid - 1;
+        else
+          return mid;
+      }
+      return ~low;
+    };
+  }
+});
+
+// node_modules/num-sort/index.js
+var require_num_sort = __commonJS({
+  "node_modules/num-sort/index.js"(exports) {
+    "use strict";
+    function assertNumber(number2) {
+      if (typeof number2 !== "number") {
+        throw new TypeError("Expected a number");
+      }
+    }
+    exports.ascending = (left, right) => {
+      assertNumber(left);
+      assertNumber(right);
+      if (Number.isNaN(left)) {
+        return -1;
+      }
+      if (Number.isNaN(right)) {
+        return 1;
+      }
+      return left - right;
+    };
+    exports.descending = (left, right) => {
+      assertNumber(left);
+      assertNumber(right);
+      if (Number.isNaN(left)) {
+        return 1;
+      }
+      if (Number.isNaN(right)) {
+        return -1;
+      }
+      return right - left;
+    };
+  }
+});
+
+// node_modules/react/cjs/react.development.js
+var require_react_development = __commonJS({
+  "node_modules/react/cjs/react.development.js"(exports, module2) {
+    "use strict";
+    if (true) {
+      (function() {
+        "use strict";
+        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
+          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+        }
+        var ReactVersion = "18.2.0";
+        var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+        var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+        var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+        var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+        var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+        var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+        var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+        var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+        var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+        var REACT_MEMO_TYPE = Symbol.for("react.memo");
+        var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+        var FAUX_ITERATOR_SYMBOL = "@@iterator";
+        function getIteratorFn(maybeIterable) {
+          if (maybeIterable === null || typeof maybeIterable !== "object") {
+            return null;
+          }
+          var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+          if (typeof maybeIterator === "function") {
+            return maybeIterator;
+          }
+          return null;
+        }
+        var ReactCurrentDispatcher = {
+          /**
+           * @internal
+           * @type {ReactComponent}
+           */
+          current: null
+        };
+        var ReactCurrentBatchConfig = {
+          transition: null
+        };
+        var ReactCurrentActQueue = {
+          current: null,
+          // Used to reproduce behavior of `batchedUpdates` in legacy mode.
+          isBatchingLegacy: false,
+          didScheduleLegacyUpdate: false
+        };
+        var ReactCurrentOwner = {
+          /**
+           * @internal
+           * @type {ReactComponent}
+           */
+          current: null
+        };
+        var ReactDebugCurrentFrame = {};
+        var currentExtraStackFrame = null;
+        function setExtraStackFrame(stack) {
+          {
+            currentExtraStackFrame = stack;
+          }
+        }
+        {
+          ReactDebugCurrentFrame.setExtraStackFrame = function(stack) {
+            {
+              currentExtraStackFrame = stack;
+            }
+          };
+          ReactDebugCurrentFrame.getCurrentStack = null;
+          ReactDebugCurrentFrame.getStackAddendum = function() {
+            var stack = "";
+            if (currentExtraStackFrame) {
+              stack += currentExtraStackFrame;
+            }
+            var impl = ReactDebugCurrentFrame.getCurrentStack;
+            if (impl) {
+              stack += impl() || "";
+            }
+            return stack;
+          };
+        }
+        var enableScopeAPI = false;
+        var enableCacheElement = false;
+        var enableTransitionTracing = false;
+        var enableLegacyHidden = false;
+        var enableDebugTracing = false;
+        var ReactSharedInternals = {
+          ReactCurrentDispatcher,
+          ReactCurrentBatchConfig,
+          ReactCurrentOwner
+        };
+        {
+          ReactSharedInternals.ReactDebugCurrentFrame = ReactDebugCurrentFrame;
+          ReactSharedInternals.ReactCurrentActQueue = ReactCurrentActQueue;
+        }
+        function warn(format) {
+          {
+            {
+              for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+              }
+              printWarning("warn", format, args);
+            }
+          }
+        }
+        function error(format) {
+          {
+            {
+              for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+                args[_key2 - 1] = arguments[_key2];
+              }
+              printWarning("error", format, args);
+            }
+          }
+        }
+        function printWarning(level, format, args) {
+          {
+            var ReactDebugCurrentFrame2 = ReactSharedInternals.ReactDebugCurrentFrame;
+            var stack = ReactDebugCurrentFrame2.getStackAddendum();
+            if (stack !== "") {
+              format += "%s";
+              args = args.concat([stack]);
+            }
+            var argsWithFormat = args.map(function(item) {
+              return String(item);
+            });
+            argsWithFormat.unshift("Warning: " + format);
+            Function.prototype.apply.call(console[level], console, argsWithFormat);
+          }
+        }
+        var didWarnStateUpdateForUnmountedComponent = {};
+        function warnNoop(publicInstance, callerName) {
+          {
+            var _constructor = publicInstance.constructor;
+            var componentName = _constructor && (_constructor.displayName || _constructor.name) || "ReactClass";
+            var warningKey = componentName + "." + callerName;
+            if (didWarnStateUpdateForUnmountedComponent[warningKey]) {
+              return;
+            }
+            error("Can't call %s on a component that is not yet mounted. This is a no-op, but it might indicate a bug in your application. Instead, assign to `this.state` directly or define a `state = {};` class property with the desired state in the %s component.", callerName, componentName);
+            didWarnStateUpdateForUnmountedComponent[warningKey] = true;
+          }
+        }
+        var ReactNoopUpdateQueue = {
+          /**
+           * Checks whether or not this composite component is mounted.
+           * @param {ReactClass} publicInstance The instance we want to test.
+           * @return {boolean} True if mounted, false otherwise.
+           * @protected
+           * @final
+           */
+          isMounted: function(publicInstance) {
+            return false;
+          },
+          /**
+           * Forces an update. This should only be invoked when it is known with
+           * certainty that we are **not** in a DOM transaction.
+           *
+           * You may want to call this when you know that some deeper aspect of the
+           * component's state has changed but `setState` was not called.
+           *
+           * This will not invoke `shouldComponentUpdate`, but it will invoke
+           * `componentWillUpdate` and `componentDidUpdate`.
+           *
+           * @param {ReactClass} publicInstance The instance that should rerender.
+           * @param {?function} callback Called after component is updated.
+           * @param {?string} callerName name of the calling function in the public API.
+           * @internal
+           */
+          enqueueForceUpdate: function(publicInstance, callback, callerName) {
+            warnNoop(publicInstance, "forceUpdate");
+          },
+          /**
+           * Replaces all of the state. Always use this or `setState` to mutate state.
+           * You should treat `this.state` as immutable.
+           *
+           * There is no guarantee that `this.state` will be immediately updated, so
+           * accessing `this.state` after calling this method may return the old value.
+           *
+           * @param {ReactClass} publicInstance The instance that should rerender.
+           * @param {object} completeState Next state.
+           * @param {?function} callback Called after component is updated.
+           * @param {?string} callerName name of the calling function in the public API.
+           * @internal
+           */
+          enqueueReplaceState: function(publicInstance, completeState, callback, callerName) {
+            warnNoop(publicInstance, "replaceState");
+          },
+          /**
+           * Sets a subset of the state. This only exists because _pendingState is
+           * internal. This provides a merging strategy that is not available to deep
+           * properties which is confusing. TODO: Expose pendingState or don't use it
+           * during the merge.
+           *
+           * @param {ReactClass} publicInstance The instance that should rerender.
+           * @param {object} partialState Next partial state to be merged with state.
+           * @param {?function} callback Called after component is updated.
+           * @param {?string} Name of the calling function in the public API.
+           * @internal
+           */
+          enqueueSetState: function(publicInstance, partialState, callback, callerName) {
+            warnNoop(publicInstance, "setState");
+          }
+        };
+        var assign2 = Object.assign;
+        var emptyObject = {};
+        {
+          Object.freeze(emptyObject);
+        }
+        function Component(props, context, updater) {
+          this.props = props;
+          this.context = context;
+          this.refs = emptyObject;
+          this.updater = updater || ReactNoopUpdateQueue;
+        }
+        Component.prototype.isReactComponent = {};
+        Component.prototype.setState = function(partialState, callback) {
+          if (typeof partialState !== "object" && typeof partialState !== "function" && partialState != null) {
+            throw new Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+          }
+          this.updater.enqueueSetState(this, partialState, callback, "setState");
+        };
+        Component.prototype.forceUpdate = function(callback) {
+          this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
+        };
+        {
+          var deprecatedAPIs = {
+            isMounted: ["isMounted", "Instead, make sure to clean up subscriptions and pending requests in componentWillUnmount to prevent memory leaks."],
+            replaceState: ["replaceState", "Refactor your code to use setState instead (see https://github.com/facebook/react/issues/3236)."]
+          };
+          var defineDeprecationWarning = function(methodName, info) {
+            Object.defineProperty(Component.prototype, methodName, {
+              get: function() {
+                warn("%s(...) is deprecated in plain JavaScript React classes. %s", info[0], info[1]);
+                return void 0;
+              }
+            });
+          };
+          for (var fnName in deprecatedAPIs) {
+            if (deprecatedAPIs.hasOwnProperty(fnName)) {
+              defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
+            }
+          }
+        }
+        function ComponentDummy() {
+        }
+        ComponentDummy.prototype = Component.prototype;
+        function PureComponent(props, context, updater) {
+          this.props = props;
+          this.context = context;
+          this.refs = emptyObject;
+          this.updater = updater || ReactNoopUpdateQueue;
+        }
+        var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
+        pureComponentPrototype.constructor = PureComponent;
+        assign2(pureComponentPrototype, Component.prototype);
+        pureComponentPrototype.isPureReactComponent = true;
+        function createRef() {
+          var refObject = {
+            current: null
+          };
+          {
+            Object.seal(refObject);
+          }
+          return refObject;
+        }
+        var isArrayImpl = Array.isArray;
+        function isArray4(a2) {
+          return isArrayImpl(a2);
+        }
+        function typeName(value) {
+          {
+            var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
+            var type2 = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            return type2;
+          }
+        }
+        function willCoercionThrow(value) {
+          {
+            try {
+              testStringCoercion(value);
+              return false;
+            } catch (e) {
+              return true;
+            }
+          }
+        }
+        function testStringCoercion(value) {
+          return "" + value;
+        }
+        function checkKeyStringCoercion(value) {
+          {
+            if (willCoercionThrow(value)) {
+              error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
+              return testStringCoercion(value);
+            }
+          }
+        }
+        function getWrappedName(outerType, innerType, wrapperName) {
+          var displayName = outerType.displayName;
+          if (displayName) {
+            return displayName;
+          }
+          var functionName = innerType.displayName || innerType.name || "";
+          return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
+        }
+        function getContextName(type2) {
+          return type2.displayName || "Context";
+        }
+        function getComponentNameFromType(type2) {
+          if (type2 == null) {
+            return null;
+          }
+          {
+            if (typeof type2.tag === "number") {
+              error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+            }
+          }
+          if (typeof type2 === "function") {
+            return type2.displayName || type2.name || null;
+          }
+          if (typeof type2 === "string") {
+            return type2;
+          }
+          switch (type2) {
+            case REACT_FRAGMENT_TYPE:
+              return "Fragment";
+            case REACT_PORTAL_TYPE:
+              return "Portal";
+            case REACT_PROFILER_TYPE:
+              return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+              return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+              return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+              return "SuspenseList";
+          }
+          if (typeof type2 === "object") {
+            switch (type2.$$typeof) {
+              case REACT_CONTEXT_TYPE:
+                var context = type2;
+                return getContextName(context) + ".Consumer";
+              case REACT_PROVIDER_TYPE:
+                var provider = type2;
+                return getContextName(provider._context) + ".Provider";
+              case REACT_FORWARD_REF_TYPE:
+                return getWrappedName(type2, type2.render, "ForwardRef");
+              case REACT_MEMO_TYPE:
+                var outerName = type2.displayName || null;
+                if (outerName !== null) {
+                  return outerName;
+                }
+                return getComponentNameFromType(type2.type) || "Memo";
+              case REACT_LAZY_TYPE: {
+                var lazyComponent = type2;
+                var payload = lazyComponent._payload;
+                var init2 = lazyComponent._init;
+                try {
+                  return getComponentNameFromType(init2(payload));
+                } catch (x) {
+                  return null;
+                }
+              }
+            }
+          }
+          return null;
+        }
+        var hasOwnProperty3 = Object.prototype.hasOwnProperty;
+        var RESERVED_PROPS = {
+          key: true,
+          ref: true,
+          __self: true,
+          __source: true
+        };
+        var specialPropKeyWarningShown, specialPropRefWarningShown, didWarnAboutStringRefs;
+        {
+          didWarnAboutStringRefs = {};
+        }
+        function hasValidRef(config) {
+          {
+            if (hasOwnProperty3.call(config, "ref")) {
+              var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
+              if (getter && getter.isReactWarning) {
+                return false;
+              }
+            }
+          }
+          return config.ref !== void 0;
+        }
+        function hasValidKey(config) {
+          {
+            if (hasOwnProperty3.call(config, "key")) {
+              var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+              if (getter && getter.isReactWarning) {
+                return false;
+              }
+            }
+          }
+          return config.key !== void 0;
+        }
+        function defineKeyPropWarningGetter(props, displayName) {
+          var warnAboutAccessingKey = function() {
+            {
+              if (!specialPropKeyWarningShown) {
+                specialPropKeyWarningShown = true;
+                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+              }
+            }
+          };
+          warnAboutAccessingKey.isReactWarning = true;
+          Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: true
+          });
+        }
+        function defineRefPropWarningGetter(props, displayName) {
+          var warnAboutAccessingRef = function() {
+            {
+              if (!specialPropRefWarningShown) {
+                specialPropRefWarningShown = true;
+                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+              }
+            }
+          };
+          warnAboutAccessingRef.isReactWarning = true;
+          Object.defineProperty(props, "ref", {
+            get: warnAboutAccessingRef,
+            configurable: true
+          });
+        }
+        function warnIfStringRefCannotBeAutoConverted(config) {
+          {
+            if (typeof config.ref === "string" && ReactCurrentOwner.current && config.__self && ReactCurrentOwner.current.stateNode !== config.__self) {
+              var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+              if (!didWarnAboutStringRefs[componentName]) {
+                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', componentName, config.ref);
+                didWarnAboutStringRefs[componentName] = true;
+              }
+            }
+          }
+        }
+        var ReactElement = function(type2, key, ref, self2, source, owner, props) {
+          var element2 = {
+            // This tag allows us to uniquely identify this as a React Element
+            $$typeof: REACT_ELEMENT_TYPE,
+            // Built-in properties that belong on the element
+            type: type2,
+            key,
+            ref,
+            props,
+            // Record the component responsible for creating this element.
+            _owner: owner
+          };
+          {
+            element2._store = {};
+            Object.defineProperty(element2._store, "validated", {
+              configurable: false,
+              enumerable: false,
+              writable: true,
+              value: false
+            });
+            Object.defineProperty(element2, "_self", {
+              configurable: false,
+              enumerable: false,
+              writable: false,
+              value: self2
+            });
+            Object.defineProperty(element2, "_source", {
+              configurable: false,
+              enumerable: false,
+              writable: false,
+              value: source
+            });
+            if (Object.freeze) {
+              Object.freeze(element2.props);
+              Object.freeze(element2);
+            }
+          }
+          return element2;
+        };
+        function createElement2(type2, config, children) {
+          var propName;
+          var props = {};
+          var key = null;
+          var ref = null;
+          var self2 = null;
+          var source = null;
+          if (config != null) {
+            if (hasValidRef(config)) {
+              ref = config.ref;
+              {
+                warnIfStringRefCannotBeAutoConverted(config);
+              }
+            }
+            if (hasValidKey(config)) {
+              {
+                checkKeyStringCoercion(config.key);
+              }
+              key = "" + config.key;
+            }
+            self2 = config.__self === void 0 ? null : config.__self;
+            source = config.__source === void 0 ? null : config.__source;
+            for (propName in config) {
+              if (hasOwnProperty3.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+                props[propName] = config[propName];
+              }
+            }
+          }
+          var childrenLength = arguments.length - 2;
+          if (childrenLength === 1) {
+            props.children = children;
+          } else if (childrenLength > 1) {
+            var childArray = Array(childrenLength);
+            for (var i = 0; i < childrenLength; i++) {
+              childArray[i] = arguments[i + 2];
+            }
+            {
+              if (Object.freeze) {
+                Object.freeze(childArray);
+              }
+            }
+            props.children = childArray;
+          }
+          if (type2 && type2.defaultProps) {
+            var defaultProps = type2.defaultProps;
+            for (propName in defaultProps) {
+              if (props[propName] === void 0) {
+                props[propName] = defaultProps[propName];
+              }
+            }
+          }
+          {
+            if (key || ref) {
+              var displayName = typeof type2 === "function" ? type2.displayName || type2.name || "Unknown" : type2;
+              if (key) {
+                defineKeyPropWarningGetter(props, displayName);
+              }
+              if (ref) {
+                defineRefPropWarningGetter(props, displayName);
+              }
+            }
+          }
+          return ReactElement(type2, key, ref, self2, source, ReactCurrentOwner.current, props);
+        }
+        function cloneAndReplaceKey(oldElement, newKey) {
+          var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
+          return newElement;
+        }
+        function cloneElement(element2, config, children) {
+          if (element2 === null || element2 === void 0) {
+            throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element2 + ".");
+          }
+          var propName;
+          var props = assign2({}, element2.props);
+          var key = element2.key;
+          var ref = element2.ref;
+          var self2 = element2._self;
+          var source = element2._source;
+          var owner = element2._owner;
+          if (config != null) {
+            if (hasValidRef(config)) {
+              ref = config.ref;
+              owner = ReactCurrentOwner.current;
+            }
+            if (hasValidKey(config)) {
+              {
+                checkKeyStringCoercion(config.key);
+              }
+              key = "" + config.key;
+            }
+            var defaultProps;
+            if (element2.type && element2.type.defaultProps) {
+              defaultProps = element2.type.defaultProps;
+            }
+            for (propName in config) {
+              if (hasOwnProperty3.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+                if (config[propName] === void 0 && defaultProps !== void 0) {
+                  props[propName] = defaultProps[propName];
+                } else {
+                  props[propName] = config[propName];
+                }
+              }
+            }
+          }
+          var childrenLength = arguments.length - 2;
+          if (childrenLength === 1) {
+            props.children = children;
+          } else if (childrenLength > 1) {
+            var childArray = Array(childrenLength);
+            for (var i = 0; i < childrenLength; i++) {
+              childArray[i] = arguments[i + 2];
+            }
+            props.children = childArray;
+          }
+          return ReactElement(element2.type, key, ref, self2, source, owner, props);
+        }
+        function isValidElement(object) {
+          return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+        }
+        var SEPARATOR = ".";
+        var SUBSEPARATOR = ":";
+        function escape2(key) {
+          var escapeRegex2 = /[=:]/g;
+          var escaperLookup = {
+            "=": "=0",
+            ":": "=2"
+          };
+          var escapedString = key.replace(escapeRegex2, function(match2) {
+            return escaperLookup[match2];
+          });
+          return "$" + escapedString;
+        }
+        var didWarnAboutMaps = false;
+        var userProvidedKeyEscapeRegex = /\/+/g;
+        function escapeUserProvidedKey(text4) {
+          return text4.replace(userProvidedKeyEscapeRegex, "$&/");
+        }
+        function getElementKey(element2, index2) {
+          if (typeof element2 === "object" && element2 !== null && element2.key != null) {
+            {
+              checkKeyStringCoercion(element2.key);
+            }
+            return escape2("" + element2.key);
+          }
+          return index2.toString(36);
+        }
+        function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
+          var type2 = typeof children;
+          if (type2 === "undefined" || type2 === "boolean") {
+            children = null;
+          }
+          var invokeCallback = false;
+          if (children === null) {
+            invokeCallback = true;
+          } else {
+            switch (type2) {
+              case "string":
+              case "number":
+                invokeCallback = true;
+                break;
+              case "object":
+                switch (children.$$typeof) {
+                  case REACT_ELEMENT_TYPE:
+                  case REACT_PORTAL_TYPE:
+                    invokeCallback = true;
+                }
+            }
+          }
+          if (invokeCallback) {
+            var _child = children;
+            var mappedChild = callback(_child);
+            var childKey = nameSoFar === "" ? SEPARATOR + getElementKey(_child, 0) : nameSoFar;
+            if (isArray4(mappedChild)) {
+              var escapedChildKey = "";
+              if (childKey != null) {
+                escapedChildKey = escapeUserProvidedKey(childKey) + "/";
+              }
+              mapIntoArray(mappedChild, array, escapedChildKey, "", function(c) {
+                return c;
+              });
+            } else if (mappedChild != null) {
+              if (isValidElement(mappedChild)) {
+                {
+                  if (mappedChild.key && (!_child || _child.key !== mappedChild.key)) {
+                    checkKeyStringCoercion(mappedChild.key);
+                  }
+                }
+                mappedChild = cloneAndReplaceKey(
+                  mappedChild,
+                  // Keep both the (mapped) and old keys if they differ, just as
+                  // traverseAllChildren used to do for objects as children
+                  escapedPrefix + // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
+                  (mappedChild.key && (!_child || _child.key !== mappedChild.key) ? (
+                    // $FlowFixMe Flow incorrectly thinks existing element's key can be a number
+                    // eslint-disable-next-line react-internal/safe-string-coercion
+                    escapeUserProvidedKey("" + mappedChild.key) + "/"
+                  ) : "") + childKey
+                );
+              }
+              array.push(mappedChild);
+            }
+            return 1;
+          }
+          var child;
+          var nextName;
+          var subtreeCount = 0;
+          var nextNamePrefix = nameSoFar === "" ? SEPARATOR : nameSoFar + SUBSEPARATOR;
+          if (isArray4(children)) {
+            for (var i = 0; i < children.length; i++) {
+              child = children[i];
+              nextName = nextNamePrefix + getElementKey(child, i);
+              subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
+            }
+          } else {
+            var iteratorFn = getIteratorFn(children);
+            if (typeof iteratorFn === "function") {
+              var iterableChildren = children;
+              {
+                if (iteratorFn === iterableChildren.entries) {
+                  if (!didWarnAboutMaps) {
+                    warn("Using Maps as children is not supported. Use an array of keyed ReactElements instead.");
+                  }
+                  didWarnAboutMaps = true;
+                }
+              }
+              var iterator = iteratorFn.call(iterableChildren);
+              var step;
+              var ii = 0;
+              while (!(step = iterator.next()).done) {
+                child = step.value;
+                nextName = nextNamePrefix + getElementKey(child, ii++);
+                subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
+              }
+            } else if (type2 === "object") {
+              var childrenString = String(children);
+              throw new Error("Objects are not valid as a React child (found: " + (childrenString === "[object Object]" ? "object with keys {" + Object.keys(children).join(", ") + "}" : childrenString) + "). If you meant to render a collection of children, use an array instead.");
+            }
+          }
+          return subtreeCount;
+        }
+        function mapChildren(children, func, context) {
+          if (children == null) {
+            return children;
+          }
+          var result = [];
+          var count = 0;
+          mapIntoArray(children, result, "", "", function(child) {
+            return func.call(context, child, count++);
+          });
+          return result;
+        }
+        function countChildren(children) {
+          var n = 0;
+          mapChildren(children, function() {
+            n++;
+          });
+          return n;
+        }
+        function forEachChildren(children, forEachFunc, forEachContext) {
+          mapChildren(children, function() {
+            forEachFunc.apply(this, arguments);
+          }, forEachContext);
+        }
+        function toArray4(children) {
+          return mapChildren(children, function(child) {
+            return child;
+          }) || [];
+        }
+        function onlyChild(children) {
+          if (!isValidElement(children)) {
+            throw new Error("React.Children.only expected to receive a single React element child.");
+          }
+          return children;
+        }
+        function createContext2(defaultValue) {
+          var context = {
+            $$typeof: REACT_CONTEXT_TYPE,
+            // As a workaround to support multiple concurrent renderers, we categorize
+            // some renderers as primary and others as secondary. We only expect
+            // there to be two concurrent renderers at most: React Native (primary) and
+            // Fabric (secondary); React DOM (primary) and React ART (secondary).
+            // Secondary renderers store their context values on separate fields.
+            _currentValue: defaultValue,
+            _currentValue2: defaultValue,
+            // Used to track how many concurrent renderers this context currently
+            // supports within in a single renderer. Such as parallel server rendering.
+            _threadCount: 0,
+            // These are circular
+            Provider: null,
+            Consumer: null,
+            // Add these to use same hidden class in VM as ServerContext
+            _defaultValue: null,
+            _globalName: null
+          };
+          context.Provider = {
+            $$typeof: REACT_PROVIDER_TYPE,
+            _context: context
+          };
+          var hasWarnedAboutUsingNestedContextConsumers = false;
+          var hasWarnedAboutUsingConsumerProvider = false;
+          var hasWarnedAboutDisplayNameOnConsumer = false;
+          {
+            var Consumer = {
+              $$typeof: REACT_CONTEXT_TYPE,
+              _context: context
+            };
+            Object.defineProperties(Consumer, {
+              Provider: {
+                get: function() {
+                  if (!hasWarnedAboutUsingConsumerProvider) {
+                    hasWarnedAboutUsingConsumerProvider = true;
+                    error("Rendering <Context.Consumer.Provider> is not supported and will be removed in a future major release. Did you mean to render <Context.Provider> instead?");
+                  }
+                  return context.Provider;
+                },
+                set: function(_Provider) {
+                  context.Provider = _Provider;
+                }
+              },
+              _currentValue: {
+                get: function() {
+                  return context._currentValue;
+                },
+                set: function(_currentValue) {
+                  context._currentValue = _currentValue;
+                }
+              },
+              _currentValue2: {
+                get: function() {
+                  return context._currentValue2;
+                },
+                set: function(_currentValue2) {
+                  context._currentValue2 = _currentValue2;
+                }
+              },
+              _threadCount: {
+                get: function() {
+                  return context._threadCount;
+                },
+                set: function(_threadCount) {
+                  context._threadCount = _threadCount;
+                }
+              },
+              Consumer: {
+                get: function() {
+                  if (!hasWarnedAboutUsingNestedContextConsumers) {
+                    hasWarnedAboutUsingNestedContextConsumers = true;
+                    error("Rendering <Context.Consumer.Consumer> is not supported and will be removed in a future major release. Did you mean to render <Context.Consumer> instead?");
+                  }
+                  return context.Consumer;
+                }
+              },
+              displayName: {
+                get: function() {
+                  return context.displayName;
+                },
+                set: function(displayName) {
+                  if (!hasWarnedAboutDisplayNameOnConsumer) {
+                    warn("Setting `displayName` on Context.Consumer has no effect. You should set it directly on the context with Context.displayName = '%s'.", displayName);
+                    hasWarnedAboutDisplayNameOnConsumer = true;
+                  }
+                }
+              }
+            });
+            context.Consumer = Consumer;
+          }
+          {
+            context._currentRenderer = null;
+            context._currentRenderer2 = null;
+          }
+          return context;
+        }
+        var Uninitialized = -1;
+        var Pending = 0;
+        var Resolved = 1;
+        var Rejected = 2;
+        function lazyInitializer(payload) {
+          if (payload._status === Uninitialized) {
+            var ctor = payload._result;
+            var thenable = ctor();
+            thenable.then(function(moduleObject2) {
+              if (payload._status === Pending || payload._status === Uninitialized) {
+                var resolved = payload;
+                resolved._status = Resolved;
+                resolved._result = moduleObject2;
+              }
+            }, function(error2) {
+              if (payload._status === Pending || payload._status === Uninitialized) {
+                var rejected = payload;
+                rejected._status = Rejected;
+                rejected._result = error2;
+              }
+            });
+            if (payload._status === Uninitialized) {
+              var pending = payload;
+              pending._status = Pending;
+              pending._result = thenable;
+            }
+          }
+          if (payload._status === Resolved) {
+            var moduleObject = payload._result;
+            {
+              if (moduleObject === void 0) {
+                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))\n\nDid you accidentally put curly braces around the import?", moduleObject);
+              }
+            }
+            {
+              if (!("default" in moduleObject)) {
+                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))", moduleObject);
+              }
+            }
+            return moduleObject.default;
+          } else {
+            throw payload._result;
+          }
+        }
+        function lazy(ctor) {
+          var payload = {
+            // We use these fields to store the result.
+            _status: Uninitialized,
+            _result: ctor
+          };
+          var lazyType = {
+            $$typeof: REACT_LAZY_TYPE,
+            _payload: payload,
+            _init: lazyInitializer
+          };
+          {
+            var defaultProps;
+            var propTypes;
+            Object.defineProperties(lazyType, {
+              defaultProps: {
+                configurable: true,
+                get: function() {
+                  return defaultProps;
+                },
+                set: function(newDefaultProps) {
+                  error("React.lazy(...): It is not supported to assign `defaultProps` to a lazy component import. Either specify them where the component is defined, or create a wrapping component around it.");
+                  defaultProps = newDefaultProps;
+                  Object.defineProperty(lazyType, "defaultProps", {
+                    enumerable: true
+                  });
+                }
+              },
+              propTypes: {
+                configurable: true,
+                get: function() {
+                  return propTypes;
+                },
+                set: function(newPropTypes) {
+                  error("React.lazy(...): It is not supported to assign `propTypes` to a lazy component import. Either specify them where the component is defined, or create a wrapping component around it.");
+                  propTypes = newPropTypes;
+                  Object.defineProperty(lazyType, "propTypes", {
+                    enumerable: true
+                  });
+                }
+              }
+            });
+          }
+          return lazyType;
+        }
+        function forwardRef(render) {
+          {
+            if (render != null && render.$$typeof === REACT_MEMO_TYPE) {
+              error("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).");
+            } else if (typeof render !== "function") {
+              error("forwardRef requires a render function but was given %s.", render === null ? "null" : typeof render);
+            } else {
+              if (render.length !== 0 && render.length !== 2) {
+                error("forwardRef render functions accept exactly two parameters: props and ref. %s", render.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined.");
+              }
+            }
+            if (render != null) {
+              if (render.defaultProps != null || render.propTypes != null) {
+                error("forwardRef render functions do not support propTypes or defaultProps. Did you accidentally pass a React component?");
+              }
+            }
+          }
+          var elementType = {
+            $$typeof: REACT_FORWARD_REF_TYPE,
+            render
+          };
+          {
+            var ownName;
+            Object.defineProperty(elementType, "displayName", {
+              enumerable: false,
+              configurable: true,
+              get: function() {
+                return ownName;
+              },
+              set: function(name) {
+                ownName = name;
+                if (!render.name && !render.displayName) {
+                  render.displayName = name;
+                }
+              }
+            });
+          }
+          return elementType;
+        }
+        var REACT_MODULE_REFERENCE;
+        {
+          REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+        }
+        function isValidElementType(type2) {
+          if (typeof type2 === "string" || typeof type2 === "function") {
+            return true;
+          }
+          if (type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || enableDebugTracing || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type2 === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
+            return true;
+          }
+          if (typeof type2 === "object" && type2 !== null) {
+            if (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_PROVIDER_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type2.$$typeof === REACT_MODULE_REFERENCE || type2.getModuleId !== void 0) {
+              return true;
+            }
+          }
+          return false;
+        }
+        function memo2(type2, compare2) {
+          {
+            if (!isValidElementType(type2)) {
+              error("memo: The first argument must be a component. Instead received: %s", type2 === null ? "null" : typeof type2);
+            }
+          }
+          var elementType = {
+            $$typeof: REACT_MEMO_TYPE,
+            type: type2,
+            compare: compare2 === void 0 ? null : compare2
+          };
+          {
+            var ownName;
+            Object.defineProperty(elementType, "displayName", {
+              enumerable: false,
+              configurable: true,
+              get: function() {
+                return ownName;
+              },
+              set: function(name) {
+                ownName = name;
+                if (!type2.name && !type2.displayName) {
+                  type2.displayName = name;
+                }
+              }
+            });
+          }
+          return elementType;
+        }
+        function resolveDispatcher() {
+          var dispatcher = ReactCurrentDispatcher.current;
+          {
+            if (dispatcher === null) {
+              error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.");
+            }
+          }
+          return dispatcher;
+        }
+        function useContext2(Context) {
+          var dispatcher = resolveDispatcher();
+          {
+            if (Context._context !== void 0) {
+              var realContext = Context._context;
+              if (realContext.Consumer === Context) {
+                error("Calling useContext(Context.Consumer) is not supported, may cause bugs, and will be removed in a future major release. Did you mean to call useContext(Context) instead?");
+              } else if (realContext.Provider === Context) {
+                error("Calling useContext(Context.Provider) is not supported. Did you mean to call useContext(Context) instead?");
+              }
+            }
+          }
+          return dispatcher.useContext(Context);
+        }
+        function useState7(initialState) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useState(initialState);
+        }
+        function useReducer(reducer2, initialArg, init2) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useReducer(reducer2, initialArg, init2);
+        }
+        function useRef2(initialValue) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useRef(initialValue);
+        }
+        function useEffect6(create2, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useEffect(create2, deps);
+        }
+        function useInsertionEffect(create2, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useInsertionEffect(create2, deps);
+        }
+        function useLayoutEffect(create2, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useLayoutEffect(create2, deps);
+        }
+        function useCallback(callback, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useCallback(callback, deps);
+        }
+        function useMemo(create2, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useMemo(create2, deps);
+        }
+        function useImperativeHandle(ref, create2, deps) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useImperativeHandle(ref, create2, deps);
+        }
+        function useDebugValue(value, formatterFn) {
+          {
+            var dispatcher = resolveDispatcher();
+            return dispatcher.useDebugValue(value, formatterFn);
+          }
+        }
+        function useTransition() {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useTransition();
+        }
+        function useDeferredValue(value) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useDeferredValue(value);
+        }
+        function useId() {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useId();
+        }
+        function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
+          var dispatcher = resolveDispatcher();
+          return dispatcher.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+        }
+        var disabledDepth = 0;
+        var prevLog;
+        var prevInfo;
+        var prevWarn;
+        var prevError;
+        var prevGroup;
+        var prevGroupCollapsed;
+        var prevGroupEnd;
+        function disabledLog() {
+        }
+        disabledLog.__reactDisabledLog = true;
+        function disableLogs() {
+          {
+            if (disabledDepth === 0) {
+              prevLog = console.log;
+              prevInfo = console.info;
+              prevWarn = console.warn;
+              prevError = console.error;
+              prevGroup = console.group;
+              prevGroupCollapsed = console.groupCollapsed;
+              prevGroupEnd = console.groupEnd;
+              var props = {
+                configurable: true,
+                enumerable: true,
+                value: disabledLog,
+                writable: true
+              };
+              Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+              });
+            }
+            disabledDepth++;
+          }
+        }
+        function reenableLogs() {
+          {
+            disabledDepth--;
+            if (disabledDepth === 0) {
+              var props = {
+                configurable: true,
+                enumerable: true,
+                writable: true
+              };
+              Object.defineProperties(console, {
+                log: assign2({}, props, {
+                  value: prevLog
+                }),
+                info: assign2({}, props, {
+                  value: prevInfo
+                }),
+                warn: assign2({}, props, {
+                  value: prevWarn
+                }),
+                error: assign2({}, props, {
+                  value: prevError
+                }),
+                group: assign2({}, props, {
+                  value: prevGroup
+                }),
+                groupCollapsed: assign2({}, props, {
+                  value: prevGroupCollapsed
+                }),
+                groupEnd: assign2({}, props, {
+                  value: prevGroupEnd
+                })
+              });
+            }
+            if (disabledDepth < 0) {
+              error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+            }
+          }
+        }
+        var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher;
+        var prefix;
+        function describeBuiltInComponentFrame(name, source, ownerFn) {
+          {
+            if (prefix === void 0) {
+              try {
+                throw Error();
+              } catch (x) {
+                var match2 = x.stack.trim().match(/\n( *(at )?)/);
+                prefix = match2 && match2[1] || "";
+              }
+            }
+            return "\n" + prefix + name;
+          }
+        }
+        var reentry = false;
+        var componentFrameCache;
+        {
+          var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
+          componentFrameCache = new PossiblyWeakMap();
+        }
+        function describeNativeComponentFrame(fn, construct) {
+          if (!fn || reentry) {
+            return "";
+          }
+          {
+            var frame = componentFrameCache.get(fn);
+            if (frame !== void 0) {
+              return frame;
+            }
+          }
+          var control;
+          reentry = true;
+          var previousPrepareStackTrace = Error.prepareStackTrace;
+          Error.prepareStackTrace = void 0;
+          var previousDispatcher;
+          {
+            previousDispatcher = ReactCurrentDispatcher$1.current;
+            ReactCurrentDispatcher$1.current = null;
+            disableLogs();
+          }
+          try {
+            if (construct) {
+              var Fake = function() {
+                throw Error();
+              };
+              Object.defineProperty(Fake.prototype, "props", {
+                set: function() {
+                  throw Error();
+                }
+              });
+              if (typeof Reflect === "object" && Reflect.construct) {
+                try {
+                  Reflect.construct(Fake, []);
+                } catch (x) {
+                  control = x;
+                }
+                Reflect.construct(fn, [], Fake);
+              } else {
+                try {
+                  Fake.call();
+                } catch (x) {
+                  control = x;
+                }
+                fn.call(Fake.prototype);
+              }
+            } else {
+              try {
+                throw Error();
+              } catch (x) {
+                control = x;
+              }
+              fn();
+            }
+          } catch (sample) {
+            if (sample && control && typeof sample.stack === "string") {
+              var sampleLines = sample.stack.split("\n");
+              var controlLines = control.stack.split("\n");
+              var s = sampleLines.length - 1;
+              var c = controlLines.length - 1;
+              while (s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c]) {
+                c--;
+              }
+              for (; s >= 1 && c >= 0; s--, c--) {
+                if (sampleLines[s] !== controlLines[c]) {
+                  if (s !== 1 || c !== 1) {
+                    do {
+                      s--;
+                      c--;
+                      if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                        var _frame = "\n" + sampleLines[s].replace(" at new ", " at ");
+                        if (fn.displayName && _frame.includes("<anonymous>")) {
+                          _frame = _frame.replace("<anonymous>", fn.displayName);
+                        }
+                        {
+                          if (typeof fn === "function") {
+                            componentFrameCache.set(fn, _frame);
+                          }
+                        }
+                        return _frame;
+                      }
+                    } while (s >= 1 && c >= 0);
+                  }
+                  break;
+                }
+              }
+            }
+          } finally {
+            reentry = false;
+            {
+              ReactCurrentDispatcher$1.current = previousDispatcher;
+              reenableLogs();
+            }
+            Error.prepareStackTrace = previousPrepareStackTrace;
+          }
+          var name = fn ? fn.displayName || fn.name : "";
+          var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
+          {
+            if (typeof fn === "function") {
+              componentFrameCache.set(fn, syntheticFrame);
+            }
+          }
+          return syntheticFrame;
+        }
+        function describeFunctionComponentFrame(fn, source, ownerFn) {
+          {
+            return describeNativeComponentFrame(fn, false);
+          }
+        }
+        function shouldConstruct(Component2) {
+          var prototype3 = Component2.prototype;
+          return !!(prototype3 && prototype3.isReactComponent);
+        }
+        function describeUnknownElementTypeFrameInDEV(type2, source, ownerFn) {
+          if (type2 == null) {
+            return "";
+          }
+          if (typeof type2 === "function") {
+            {
+              return describeNativeComponentFrame(type2, shouldConstruct(type2));
+            }
+          }
+          if (typeof type2 === "string") {
+            return describeBuiltInComponentFrame(type2);
+          }
+          switch (type2) {
+            case REACT_SUSPENSE_TYPE:
+              return describeBuiltInComponentFrame("Suspense");
+            case REACT_SUSPENSE_LIST_TYPE:
+              return describeBuiltInComponentFrame("SuspenseList");
+          }
+          if (typeof type2 === "object") {
+            switch (type2.$$typeof) {
+              case REACT_FORWARD_REF_TYPE:
+                return describeFunctionComponentFrame(type2.render);
+              case REACT_MEMO_TYPE:
+                return describeUnknownElementTypeFrameInDEV(type2.type, source, ownerFn);
+              case REACT_LAZY_TYPE: {
+                var lazyComponent = type2;
+                var payload = lazyComponent._payload;
+                var init2 = lazyComponent._init;
+                try {
+                  return describeUnknownElementTypeFrameInDEV(init2(payload), source, ownerFn);
+                } catch (x) {
+                }
+              }
+            }
+          }
+          return "";
+        }
+        var loggedTypeFailures = {};
+        var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+        function setCurrentlyValidatingElement(element2) {
+          {
+            if (element2) {
+              var owner = element2._owner;
+              var stack = describeUnknownElementTypeFrameInDEV(element2.type, element2._source, owner ? owner.type : null);
+              ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+            } else {
+              ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+            }
+          }
+        }
+        function checkPropTypes(typeSpecs, values, location, componentName, element2) {
+          {
+            var has = Function.call.bind(hasOwnProperty3);
+            for (var typeSpecName in typeSpecs) {
+              if (has(typeSpecs, typeSpecName)) {
+                var error$1 = void 0;
+                try {
+                  if (typeof typeSpecs[typeSpecName] !== "function") {
+                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                    err.name = "Invariant Violation";
+                    throw err;
+                  }
+                  error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+                } catch (ex) {
+                  error$1 = ex;
+                }
+                if (error$1 && !(error$1 instanceof Error)) {
+                  setCurrentlyValidatingElement(element2);
+                  error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
+                  setCurrentlyValidatingElement(null);
+                }
+                if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+                  loggedTypeFailures[error$1.message] = true;
+                  setCurrentlyValidatingElement(element2);
+                  error("Failed %s type: %s", location, error$1.message);
+                  setCurrentlyValidatingElement(null);
+                }
+              }
+            }
+          }
+        }
+        function setCurrentlyValidatingElement$1(element2) {
+          {
+            if (element2) {
+              var owner = element2._owner;
+              var stack = describeUnknownElementTypeFrameInDEV(element2.type, element2._source, owner ? owner.type : null);
+              setExtraStackFrame(stack);
+            } else {
+              setExtraStackFrame(null);
+            }
+          }
+        }
+        var propTypesMisspellWarningShown;
+        {
+          propTypesMisspellWarningShown = false;
+        }
+        function getDeclarationErrorAddendum() {
+          if (ReactCurrentOwner.current) {
+            var name = getComponentNameFromType(ReactCurrentOwner.current.type);
+            if (name) {
+              return "\n\nCheck the render method of `" + name + "`.";
+            }
+          }
+          return "";
+        }
+        function getSourceInfoErrorAddendum(source) {
+          if (source !== void 0) {
+            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
+            var lineNumber = source.lineNumber;
+            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
+          }
+          return "";
+        }
+        function getSourceInfoErrorAddendumForProps(elementProps) {
+          if (elementProps !== null && elementProps !== void 0) {
+            return getSourceInfoErrorAddendum(elementProps.__source);
+          }
+          return "";
+        }
+        var ownerHasKeyUseWarning = {};
+        function getCurrentComponentErrorInfo(parentType) {
+          var info = getDeclarationErrorAddendum();
+          if (!info) {
+            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
+            if (parentName) {
+              info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+            }
+          }
+          return info;
+        }
+        function validateExplicitKey(element2, parentType) {
+          if (!element2._store || element2._store.validated || element2.key != null) {
+            return;
+          }
+          element2._store.validated = true;
+          var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+          if (ownerHasKeyUseWarning[currentComponentErrorInfo]) {
+            return;
+          }
+          ownerHasKeyUseWarning[currentComponentErrorInfo] = true;
+          var childOwner = "";
+          if (element2 && element2._owner && element2._owner !== ReactCurrentOwner.current) {
+            childOwner = " It was passed a child from " + getComponentNameFromType(element2._owner.type) + ".";
+          }
+          {
+            setCurrentlyValidatingElement$1(element2);
+            error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+            setCurrentlyValidatingElement$1(null);
+          }
+        }
+        function validateChildKeys(node2, parentType) {
+          if (typeof node2 !== "object") {
+            return;
+          }
+          if (isArray4(node2)) {
+            for (var i = 0; i < node2.length; i++) {
+              var child = node2[i];
+              if (isValidElement(child)) {
+                validateExplicitKey(child, parentType);
+              }
+            }
+          } else if (isValidElement(node2)) {
+            if (node2._store) {
+              node2._store.validated = true;
+            }
+          } else if (node2) {
+            var iteratorFn = getIteratorFn(node2);
+            if (typeof iteratorFn === "function") {
+              if (iteratorFn !== node2.entries) {
+                var iterator = iteratorFn.call(node2);
+                var step;
+                while (!(step = iterator.next()).done) {
+                  if (isValidElement(step.value)) {
+                    validateExplicitKey(step.value, parentType);
+                  }
+                }
+              }
+            }
+          }
+        }
+        function validatePropTypes(element2) {
+          {
+            var type2 = element2.type;
+            if (type2 === null || type2 === void 0 || typeof type2 === "string") {
+              return;
+            }
+            var propTypes;
+            if (typeof type2 === "function") {
+              propTypes = type2.propTypes;
+            } else if (typeof type2 === "object" && (type2.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+            // Inner props are checked in the reconciler.
+            type2.$$typeof === REACT_MEMO_TYPE)) {
+              propTypes = type2.propTypes;
+            } else {
+              return;
+            }
+            if (propTypes) {
+              var name = getComponentNameFromType(type2);
+              checkPropTypes(propTypes, element2.props, "prop", name, element2);
+            } else if (type2.PropTypes !== void 0 && !propTypesMisspellWarningShown) {
+              propTypesMisspellWarningShown = true;
+              var _name = getComponentNameFromType(type2);
+              error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
+            }
+            if (typeof type2.getDefaultProps === "function" && !type2.getDefaultProps.isReactClassApproved) {
+              error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+            }
+          }
+        }
+        function validateFragmentProps(fragment) {
+          {
+            var keys3 = Object.keys(fragment.props);
+            for (var i = 0; i < keys3.length; i++) {
+              var key = keys3[i];
+              if (key !== "children" && key !== "key") {
+                setCurrentlyValidatingElement$1(fragment);
+                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
+                setCurrentlyValidatingElement$1(null);
+                break;
+              }
+            }
+            if (fragment.ref !== null) {
+              setCurrentlyValidatingElement$1(fragment);
+              error("Invalid attribute `ref` supplied to `React.Fragment`.");
+              setCurrentlyValidatingElement$1(null);
+            }
+          }
+        }
+        function createElementWithValidation(type2, props, children) {
+          var validType = isValidElementType(type2);
+          if (!validType) {
+            var info = "";
+            if (type2 === void 0 || typeof type2 === "object" && type2 !== null && Object.keys(type2).length === 0) {
+              info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+            }
+            var sourceInfo = getSourceInfoErrorAddendumForProps(props);
+            if (sourceInfo) {
+              info += sourceInfo;
+            } else {
+              info += getDeclarationErrorAddendum();
+            }
+            var typeString;
+            if (type2 === null) {
+              typeString = "null";
+            } else if (isArray4(type2)) {
+              typeString = "array";
+            } else if (type2 !== void 0 && type2.$$typeof === REACT_ELEMENT_TYPE) {
+              typeString = "<" + (getComponentNameFromType(type2.type) || "Unknown") + " />";
+              info = " Did you accidentally export a JSX literal instead of a component?";
+            } else {
+              typeString = typeof type2;
+            }
+            {
+              error("React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
+            }
+          }
+          var element2 = createElement2.apply(this, arguments);
+          if (element2 == null) {
+            return element2;
+          }
+          if (validType) {
+            for (var i = 2; i < arguments.length; i++) {
+              validateChildKeys(arguments[i], type2);
+            }
+          }
+          if (type2 === REACT_FRAGMENT_TYPE) {
+            validateFragmentProps(element2);
+          } else {
+            validatePropTypes(element2);
+          }
+          return element2;
+        }
+        var didWarnAboutDeprecatedCreateFactory = false;
+        function createFactoryWithValidation(type2) {
+          var validatedFactory = createElementWithValidation.bind(null, type2);
+          validatedFactory.type = type2;
+          {
+            if (!didWarnAboutDeprecatedCreateFactory) {
+              didWarnAboutDeprecatedCreateFactory = true;
+              warn("React.createFactory() is deprecated and will be removed in a future major release. Consider using JSX or use React.createElement() directly instead.");
+            }
+            Object.defineProperty(validatedFactory, "type", {
+              enumerable: false,
+              get: function() {
+                warn("Factory.type is deprecated. Access the class directly before passing it to createFactory.");
+                Object.defineProperty(this, "type", {
+                  value: type2
+                });
+                return type2;
+              }
+            });
+          }
+          return validatedFactory;
+        }
+        function cloneElementWithValidation(element2, props, children) {
+          var newElement = cloneElement.apply(this, arguments);
+          for (var i = 2; i < arguments.length; i++) {
+            validateChildKeys(arguments[i], newElement.type);
+          }
+          validatePropTypes(newElement);
+          return newElement;
+        }
+        function startTransition(scope, options) {
+          var prevTransition = ReactCurrentBatchConfig.transition;
+          ReactCurrentBatchConfig.transition = {};
+          var currentTransition = ReactCurrentBatchConfig.transition;
+          {
+            ReactCurrentBatchConfig.transition._updatedFibers = /* @__PURE__ */ new Set();
+          }
+          try {
+            scope();
+          } finally {
+            ReactCurrentBatchConfig.transition = prevTransition;
+            {
+              if (prevTransition === null && currentTransition._updatedFibers) {
+                var updatedFibersCount = currentTransition._updatedFibers.size;
+                if (updatedFibersCount > 10) {
+                  warn("Detected a large number of updates inside startTransition. If this is due to a subscription please re-write it to use React provided hooks. Otherwise concurrent mode guarantees are off the table.");
+                }
+                currentTransition._updatedFibers.clear();
+              }
+            }
+          }
+        }
+        var didWarnAboutMessageChannel = false;
+        var enqueueTaskImpl = null;
+        function enqueueTask2(task) {
+          if (enqueueTaskImpl === null) {
+            try {
+              var requireString = ("require" + Math.random()).slice(0, 7);
+              var nodeRequire = module2 && module2[requireString];
+              enqueueTaskImpl = nodeRequire.call(module2, "timers").setImmediate;
+            } catch (_err) {
+              enqueueTaskImpl = function(callback) {
+                {
+                  if (didWarnAboutMessageChannel === false) {
+                    didWarnAboutMessageChannel = true;
+                    if (typeof MessageChannel === "undefined") {
+                      error("This browser does not have a MessageChannel implementation, so enqueuing tasks via await act(async () => ...) will fail. Please file an issue at https://github.com/facebook/react/issues if you encounter this warning.");
+                    }
+                  }
+                }
+                var channel = new MessageChannel();
+                channel.port1.onmessage = callback;
+                channel.port2.postMessage(void 0);
+              };
+            }
+          }
+          return enqueueTaskImpl(task);
+        }
+        var actScopeDepth = 0;
+        var didWarnNoAwaitAct = false;
+        function act(callback) {
+          {
+            var prevActScopeDepth = actScopeDepth;
+            actScopeDepth++;
+            if (ReactCurrentActQueue.current === null) {
+              ReactCurrentActQueue.current = [];
+            }
+            var prevIsBatchingLegacy = ReactCurrentActQueue.isBatchingLegacy;
+            var result;
+            try {
+              ReactCurrentActQueue.isBatchingLegacy = true;
+              result = callback();
+              if (!prevIsBatchingLegacy && ReactCurrentActQueue.didScheduleLegacyUpdate) {
+                var queue3 = ReactCurrentActQueue.current;
+                if (queue3 !== null) {
+                  ReactCurrentActQueue.didScheduleLegacyUpdate = false;
+                  flushActQueue(queue3);
+                }
+              }
+            } catch (error2) {
+              popActScope(prevActScopeDepth);
+              throw error2;
+            } finally {
+              ReactCurrentActQueue.isBatchingLegacy = prevIsBatchingLegacy;
+            }
+            if (result !== null && typeof result === "object" && typeof result.then === "function") {
+              var thenableResult = result;
+              var wasAwaited = false;
+              var thenable = {
+                then: function(resolve, reject) {
+                  wasAwaited = true;
+                  thenableResult.then(function(returnValue2) {
+                    popActScope(prevActScopeDepth);
+                    if (actScopeDepth === 0) {
+                      recursivelyFlushAsyncActWork(returnValue2, resolve, reject);
+                    } else {
+                      resolve(returnValue2);
+                    }
+                  }, function(error2) {
+                    popActScope(prevActScopeDepth);
+                    reject(error2);
+                  });
+                }
+              };
+              {
+                if (!didWarnNoAwaitAct && typeof Promise !== "undefined") {
+                  Promise.resolve().then(function() {
+                  }).then(function() {
+                    if (!wasAwaited) {
+                      didWarnNoAwaitAct = true;
+                      error("You called act(async () => ...) without await. This could lead to unexpected testing behaviour, interleaving multiple act calls and mixing their scopes. You should - await act(async () => ...);");
+                    }
+                  });
+                }
+              }
+              return thenable;
+            } else {
+              var returnValue = result;
+              popActScope(prevActScopeDepth);
+              if (actScopeDepth === 0) {
+                var _queue = ReactCurrentActQueue.current;
+                if (_queue !== null) {
+                  flushActQueue(_queue);
+                  ReactCurrentActQueue.current = null;
+                }
+                var _thenable = {
+                  then: function(resolve, reject) {
+                    if (ReactCurrentActQueue.current === null) {
+                      ReactCurrentActQueue.current = [];
+                      recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+                    } else {
+                      resolve(returnValue);
+                    }
+                  }
+                };
+                return _thenable;
+              } else {
+                var _thenable2 = {
+                  then: function(resolve, reject) {
+                    resolve(returnValue);
+                  }
+                };
+                return _thenable2;
+              }
+            }
+          }
+        }
+        function popActScope(prevActScopeDepth) {
+          {
+            if (prevActScopeDepth !== actScopeDepth - 1) {
+              error("You seem to have overlapping act() calls, this is not supported. Be sure to await previous act() calls before making a new one. ");
+            }
+            actScopeDepth = prevActScopeDepth;
+          }
+        }
+        function recursivelyFlushAsyncActWork(returnValue, resolve, reject) {
+          {
+            var queue3 = ReactCurrentActQueue.current;
+            if (queue3 !== null) {
+              try {
+                flushActQueue(queue3);
+                enqueueTask2(function() {
+                  if (queue3.length === 0) {
+                    ReactCurrentActQueue.current = null;
+                    resolve(returnValue);
+                  } else {
+                    recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+                  }
+                });
+              } catch (error2) {
+                reject(error2);
+              }
+            } else {
+              resolve(returnValue);
+            }
+          }
+        }
+        var isFlushing = false;
+        function flushActQueue(queue3) {
+          {
+            if (!isFlushing) {
+              isFlushing = true;
+              var i = 0;
+              try {
+                for (; i < queue3.length; i++) {
+                  var callback = queue3[i];
+                  do {
+                    callback = callback(true);
+                  } while (callback !== null);
+                }
+                queue3.length = 0;
+              } catch (error2) {
+                queue3 = queue3.slice(i + 1);
+                throw error2;
+              } finally {
+                isFlushing = false;
+              }
+            }
+          }
+        }
+        var createElement$1 = createElementWithValidation;
+        var cloneElement$1 = cloneElementWithValidation;
+        var createFactory = createFactoryWithValidation;
+        var Children = {
+          map: mapChildren,
+          forEach: forEachChildren,
+          count: countChildren,
+          toArray: toArray4,
+          only: onlyChild
+        };
+        exports.Children = Children;
+        exports.Component = Component;
+        exports.Fragment = REACT_FRAGMENT_TYPE;
+        exports.Profiler = REACT_PROFILER_TYPE;
+        exports.PureComponent = PureComponent;
+        exports.StrictMode = REACT_STRICT_MODE_TYPE;
+        exports.Suspense = REACT_SUSPENSE_TYPE;
+        exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
+        exports.cloneElement = cloneElement$1;
+        exports.createContext = createContext2;
+        exports.createElement = createElement$1;
+        exports.createFactory = createFactory;
+        exports.createRef = createRef;
+        exports.forwardRef = forwardRef;
+        exports.isValidElement = isValidElement;
+        exports.lazy = lazy;
+        exports.memo = memo2;
+        exports.startTransition = startTransition;
+        exports.unstable_act = act;
+        exports.useCallback = useCallback;
+        exports.useContext = useContext2;
+        exports.useDebugValue = useDebugValue;
+        exports.useDeferredValue = useDeferredValue;
+        exports.useEffect = useEffect6;
+        exports.useId = useId;
+        exports.useImperativeHandle = useImperativeHandle;
+        exports.useInsertionEffect = useInsertionEffect;
+        exports.useLayoutEffect = useLayoutEffect;
+        exports.useMemo = useMemo;
+        exports.useReducer = useReducer;
+        exports.useRef = useRef2;
+        exports.useState = useState7;
+        exports.useSyncExternalStore = useSyncExternalStore;
+        exports.useTransition = useTransition;
+        exports.version = ReactVersion;
+        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
+          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+        }
+      })();
+    }
+  }
+});
+
+// node_modules/react/index.js
+var require_react = __commonJS({
+  "node_modules/react/index.js"(exports, module2) {
+    "use strict";
+    if (false) {
+      module2.exports = null;
+    } else {
+      module2.exports = require_react_development();
+    }
+  }
+});
+
 // node_modules/is-buffer/index.js
 var require_is_buffer = __commonJS({
   "node_modules/is-buffer/index.js"(exports, module2) {
@@ -27864,7 +31162,7 @@ var require_extend = __commonJS({
       }
       return obj[name];
     };
-    module2.exports = function extend3() {
+    module2.exports = function extend5() {
       var options, name, src, copy, copyIsArray, clone2;
       var target = arguments[0];
       var i = 1;
@@ -27892,7 +31190,7 @@ var require_extend = __commonJS({
                 } else {
                   clone2 = src && isPlainObject4(src) ? src : {};
                 }
-                setProperty(target, { name, newValue: extend3(deep, clone2, copy) });
+                setProperty(target, { name, newValue: extend5(deep, clone2, copy) });
               } else if (typeof copy !== "undefined") {
                 setProperty(target, { name, newValue: copy });
               }
@@ -27931,26 +31229,26 @@ var require_react_is_development = __commonJS({
         var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 60117;
         var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 60118;
         var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 60119;
-        function isValidElementType(type) {
-          return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-          type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+        function isValidElementType(type2) {
+          return typeof type2 === "string" || typeof type2 === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+          type2 === REACT_FRAGMENT_TYPE || type2 === REACT_CONCURRENT_MODE_TYPE || type2 === REACT_PROFILER_TYPE || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || typeof type2 === "object" && type2 !== null && (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_PROVIDER_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || type2.$$typeof === REACT_FUNDAMENTAL_TYPE || type2.$$typeof === REACT_RESPONDER_TYPE || type2.$$typeof === REACT_SCOPE_TYPE || type2.$$typeof === REACT_BLOCK_TYPE);
         }
         function typeOf(object) {
           if (typeof object === "object" && object !== null) {
             var $$typeof = object.$$typeof;
             switch ($$typeof) {
               case REACT_ELEMENT_TYPE:
-                var type = object.type;
-                switch (type) {
+                var type2 = object.type;
+                switch (type2) {
                   case REACT_ASYNC_MODE_TYPE:
                   case REACT_CONCURRENT_MODE_TYPE:
                   case REACT_FRAGMENT_TYPE:
                   case REACT_PROFILER_TYPE:
                   case REACT_STRICT_MODE_TYPE:
                   case REACT_SUSPENSE_TYPE:
-                    return type;
+                    return type2;
                   default:
-                    var $$typeofType = type && type.$$typeof;
+                    var $$typeofType = type2 && type2.$$typeof;
                     switch ($$typeofType) {
                       case REACT_CONTEXT_TYPE:
                       case REACT_FORWARD_REF_TYPE:
@@ -28429,8 +31727,8 @@ var require_factoryWithTypeCheckers = __commonJS({
             }
           }
           var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-            var type = getPreciseType(value);
-            if (type === "symbol") {
+            var type2 = getPreciseType(value);
+            if (type2 === "symbol") {
               return String(value);
             }
             return value;
@@ -28494,16 +31792,16 @@ var require_factoryWithTypeCheckers = __commonJS({
       }
       function createNodeChecker() {
         function validate3(props, propName, componentName, location, propFullName) {
-          if (!isNode2(props[propName])) {
+          if (!isNode3(props[propName])) {
             return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
           }
           return null;
         }
         return createChainableTypeChecker(validate3);
       }
-      function invalidValidatorError(componentName, location, propFullName, key, type) {
+      function invalidValidatorError(componentName, location, propFullName, key, type2) {
         return new PropTypeError(
-          (componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + type + "`."
+          (componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + type2 + "`."
         );
       }
       function createShapeTypeChecker(shapeTypes) {
@@ -28554,7 +31852,7 @@ var require_factoryWithTypeCheckers = __commonJS({
         }
         return createChainableTypeChecker(validate3);
       }
-      function isNode2(propValue) {
+      function isNode3(propValue) {
         switch (typeof propValue) {
           case "number":
           case "string":
@@ -28564,7 +31862,7 @@ var require_factoryWithTypeCheckers = __commonJS({
             return !propValue;
           case "object":
             if (Array.isArray(propValue)) {
-              return propValue.every(isNode2);
+              return propValue.every(isNode3);
             }
             if (propValue === null || isValidElement(propValue)) {
               return true;
@@ -28575,7 +31873,7 @@ var require_factoryWithTypeCheckers = __commonJS({
               var step;
               if (iteratorFn !== propValue.entries) {
                 while (!(step = iterator.next()).done) {
-                  if (!isNode2(step.value)) {
+                  if (!isNode3(step.value)) {
                     return false;
                   }
                 }
@@ -28583,7 +31881,7 @@ var require_factoryWithTypeCheckers = __commonJS({
                 while (!(step = iterator.next()).done) {
                   var entry = step.value;
                   if (entry) {
-                    if (!isNode2(entry[1])) {
+                    if (!isNode3(entry[1])) {
                       return false;
                     }
                   }
@@ -28640,17 +31938,17 @@ var require_factoryWithTypeCheckers = __commonJS({
         return propType;
       }
       function getPostfixForTypeWarning(value) {
-        var type = getPreciseType(value);
-        switch (type) {
+        var type2 = getPreciseType(value);
+        switch (type2) {
           case "array":
           case "object":
-            return "an " + type;
+            return "an " + type2;
           case "boolean":
           case "date":
           case "regexp":
-            return "a " + type;
+            return "a " + type2;
           default:
-            return type;
+            return type2;
         }
       }
       function getClassName(propValue) {
@@ -28712,19 +32010,19 @@ var require_react_is_development2 = __commonJS({
         {
           REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
         }
-        function isValidElementType(type) {
-          if (typeof type === "string" || typeof type === "function") {
+        function isValidElementType(type2) {
+          if (typeof type2 === "string" || typeof type2 === "function") {
             return true;
           }
-          if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
+          if (type2 === REACT_FRAGMENT_TYPE || type2 === REACT_PROFILER_TYPE || enableDebugTracing || type2 === REACT_STRICT_MODE_TYPE || type2 === REACT_SUSPENSE_TYPE || type2 === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type2 === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
             return true;
           }
-          if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+          if (typeof type2 === "object" && type2 !== null) {
+            if (type2.$$typeof === REACT_LAZY_TYPE || type2.$$typeof === REACT_MEMO_TYPE || type2.$$typeof === REACT_PROVIDER_TYPE || type2.$$typeof === REACT_CONTEXT_TYPE || type2.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
             // types supported by any Flight configuration anywhere since
             // we don't know which Flight build this will end up being used
             // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== void 0) {
+            type2.$$typeof === REACT_MODULE_REFERENCE || type2.getModuleId !== void 0) {
               return true;
             }
           }
@@ -28735,16 +32033,16 @@ var require_react_is_development2 = __commonJS({
             var $$typeof = object.$$typeof;
             switch ($$typeof) {
               case REACT_ELEMENT_TYPE:
-                var type = object.type;
-                switch (type) {
+                var type2 = object.type;
+                switch (type2) {
                   case REACT_FRAGMENT_TYPE:
                   case REACT_PROFILER_TYPE:
                   case REACT_STRICT_MODE_TYPE:
                   case REACT_SUSPENSE_TYPE:
                   case REACT_SUSPENSE_LIST_TYPE:
-                    return type;
+                    return type2;
                   default:
-                    var $$typeofType = type && type.$$typeof;
+                    var $$typeofType = type2 && type2.$$typeof;
                     switch ($$typeofType) {
                       case REACT_SERVER_CONTEXT_TYPE:
                       case REACT_CONTEXT_TYPE:
@@ -28902,12 +32200,12 @@ var require_inline_style_parser = __commonJS({
       options = options || {};
       var lineno = 1;
       var column = 1;
-      function updatePosition(str) {
-        var lines = str.match(NEWLINE_REGEX);
+      function updatePosition(str2) {
+        var lines = str2.match(NEWLINE_REGEX);
         if (lines)
           lineno += lines.length;
-        var i = str.lastIndexOf(NEWLINE);
-        column = ~i ? str.length - i : column + str.length;
+        var i = str2.lastIndexOf(NEWLINE);
+        column = ~i ? str2.length - i : column + str2.length;
       }
       function position3() {
         var start = { line: lineno, column };
@@ -28943,9 +32241,9 @@ var require_inline_style_parser = __commonJS({
         var m = re.exec(style);
         if (!m)
           return;
-        var str = m[0];
-        updatePosition(str);
-        style = style.slice(str.length);
+        var str2 = m[0];
+        updatePosition(str2);
+        style = style.slice(str2.length);
         return m;
       }
       function whitespace2() {
@@ -28973,14 +32271,14 @@ var require_inline_style_parser = __commonJS({
         if (EMPTY_STRING === style.charAt(i - 1)) {
           return error("End of comment missing");
         }
-        var str = style.slice(2, i - 2);
+        var str2 = style.slice(2, i - 2);
         column += 2;
-        updatePosition(str);
+        updatePosition(str2);
         style = style.slice(i);
         column += 2;
         return pos({
           type: TYPE_COMMENT,
-          comment: str
+          comment: str2
         });
       }
       function declaration() {
@@ -29015,8 +32313,8 @@ var require_inline_style_parser = __commonJS({
       whitespace2();
       return declarations();
     };
-    function trim2(str) {
-      return str ? str.replace(TRIM_REGEX, EMPTY_STRING) : EMPTY_STRING;
+    function trim2(str2) {
+      return str2 ? str2.replace(TRIM_REGEX, EMPTY_STRING) : EMPTY_STRING;
     }
   }
 });
@@ -29635,8 +32933,8 @@ var require_react_dom_development = __commonJS({
         function typeName(value) {
           {
             var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
-            var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-            return type;
+            var type2 = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            return type2;
           }
         }
         function willCoercionThrow(value) {
@@ -29791,13 +33089,13 @@ var require_react_dom_development = __commonJS({
         function getPropertyInfo(name) {
           return properties.hasOwnProperty(name) ? properties[name] : null;
         }
-        function PropertyInfoRecord(name, type, mustUseProperty, attributeName, attributeNamespace, sanitizeURL2, removeEmptyString) {
-          this.acceptsBooleans = type === BOOLEANISH_STRING || type === BOOLEAN || type === OVERLOADED_BOOLEAN;
+        function PropertyInfoRecord(name, type2, mustUseProperty, attributeName, attributeNamespace, sanitizeURL2, removeEmptyString) {
+          this.acceptsBooleans = type2 === BOOLEANISH_STRING || type2 === BOOLEAN || type2 === OVERLOADED_BOOLEAN;
           this.attributeName = attributeName;
           this.attributeNamespace = attributeNamespace;
           this.mustUseProperty = mustUseProperty;
           this.propertyName = name;
-          this.type = type;
+          this.type = type2;
           this.sanitizeURL = sanitizeURL2;
           this.removeEmptyString = removeEmptyString;
         }
@@ -30286,8 +33584,8 @@ var require_react_dom_development = __commonJS({
           if (mustUseProperty) {
             var propertyName = propertyInfo.propertyName;
             if (value === null) {
-              var type = propertyInfo.type;
-              node2[propertyName] = type === BOOLEAN ? false : "";
+              var type2 = propertyInfo.type;
+              node2[propertyName] = type2 === BOOLEAN ? false : "";
             } else {
               node2[propertyName] = value;
             }
@@ -30566,32 +33864,32 @@ var require_react_dom_development = __commonJS({
           var prototype3 = Component.prototype;
           return !!(prototype3 && prototype3.isReactComponent);
         }
-        function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
-          if (type == null) {
+        function describeUnknownElementTypeFrameInDEV(type2, source, ownerFn) {
+          if (type2 == null) {
             return "";
           }
-          if (typeof type === "function") {
+          if (typeof type2 === "function") {
             {
-              return describeNativeComponentFrame(type, shouldConstruct(type));
+              return describeNativeComponentFrame(type2, shouldConstruct(type2));
             }
           }
-          if (typeof type === "string") {
-            return describeBuiltInComponentFrame(type);
+          if (typeof type2 === "string") {
+            return describeBuiltInComponentFrame(type2);
           }
-          switch (type) {
+          switch (type2) {
             case REACT_SUSPENSE_TYPE:
               return describeBuiltInComponentFrame("Suspense");
             case REACT_SUSPENSE_LIST_TYPE:
               return describeBuiltInComponentFrame("SuspenseList");
           }
-          if (typeof type === "object") {
-            switch (type.$$typeof) {
+          if (typeof type2 === "object") {
+            switch (type2.$$typeof) {
               case REACT_FORWARD_REF_TYPE:
-                return describeFunctionComponentFrame(type.render);
+                return describeFunctionComponentFrame(type2.render);
               case REACT_MEMO_TYPE:
-                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+                return describeUnknownElementTypeFrameInDEV(type2.type, source, ownerFn);
               case REACT_LAZY_TYPE: {
-                var lazyComponent = type;
+                var lazyComponent = type2;
                 var payload = lazyComponent._payload;
                 var init2 = lazyComponent._init;
                 try {
@@ -30648,25 +33946,25 @@ var require_react_dom_development = __commonJS({
           var functionName = innerType.displayName || innerType.name || "";
           return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
         }
-        function getContextName(type) {
-          return type.displayName || "Context";
+        function getContextName(type2) {
+          return type2.displayName || "Context";
         }
-        function getComponentNameFromType(type) {
-          if (type == null) {
+        function getComponentNameFromType(type2) {
+          if (type2 == null) {
             return null;
           }
           {
-            if (typeof type.tag === "number") {
+            if (typeof type2.tag === "number") {
               error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
             }
           }
-          if (typeof type === "function") {
-            return type.displayName || type.name || null;
+          if (typeof type2 === "function") {
+            return type2.displayName || type2.name || null;
           }
-          if (typeof type === "string") {
-            return type;
+          if (typeof type2 === "string") {
+            return type2;
           }
-          switch (type) {
+          switch (type2) {
             case REACT_FRAGMENT_TYPE:
               return "Fragment";
             case REACT_PORTAL_TYPE:
@@ -30680,24 +33978,24 @@ var require_react_dom_development = __commonJS({
             case REACT_SUSPENSE_LIST_TYPE:
               return "SuspenseList";
           }
-          if (typeof type === "object") {
-            switch (type.$$typeof) {
+          if (typeof type2 === "object") {
+            switch (type2.$$typeof) {
               case REACT_CONTEXT_TYPE:
-                var context = type;
+                var context = type2;
                 return getContextName(context) + ".Consumer";
               case REACT_PROVIDER_TYPE:
-                var provider = type;
+                var provider = type2;
                 return getContextName(provider._context) + ".Provider";
               case REACT_FORWARD_REF_TYPE:
-                return getWrappedName(type, type.render, "ForwardRef");
+                return getWrappedName(type2, type2.render, "ForwardRef");
               case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
+                var outerName = type2.displayName || null;
                 if (outerName !== null) {
                   return outerName;
                 }
-                return getComponentNameFromType(type.type) || "Memo";
+                return getComponentNameFromType(type2.type) || "Memo";
               case REACT_LAZY_TYPE: {
-                var lazyComponent = type;
+                var lazyComponent = type2;
                 var payload = lazyComponent._payload;
                 var init2 = lazyComponent._init;
                 try {
@@ -30714,28 +34012,28 @@ var require_react_dom_development = __commonJS({
           var functionName = innerType.displayName || innerType.name || "";
           return outerType.displayName || (functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName);
         }
-        function getContextName$1(type) {
-          return type.displayName || "Context";
+        function getContextName$1(type2) {
+          return type2.displayName || "Context";
         }
         function getComponentNameFromFiber(fiber) {
-          var tag = fiber.tag, type = fiber.type;
+          var tag = fiber.tag, type2 = fiber.type;
           switch (tag) {
             case CacheComponent:
               return "Cache";
             case ContextConsumer:
-              var context = type;
+              var context = type2;
               return getContextName$1(context) + ".Consumer";
             case ContextProvider:
-              var provider = type;
+              var provider = type2;
               return getContextName$1(provider._context) + ".Provider";
             case DehydratedFragment:
               return "DehydratedFragment";
             case ForwardRef:
-              return getWrappedName$1(type, type.render, "ForwardRef");
+              return getWrappedName$1(type2, type2.render, "ForwardRef");
             case Fragment:
               return "Fragment";
             case HostComponent:
-              return type;
+              return type2;
             case HostPortal:
               return "Portal";
             case HostRoot:
@@ -30743,9 +34041,9 @@ var require_react_dom_development = __commonJS({
             case HostText:
               return "Text";
             case LazyComponent:
-              return getComponentNameFromType(type);
+              return getComponentNameFromType(type2);
             case Mode:
-              if (type === REACT_STRICT_MODE_TYPE) {
+              if (type2 === REACT_STRICT_MODE_TYPE) {
                 return "StrictMode";
               }
               return "Mode";
@@ -30767,11 +34065,11 @@ var require_react_dom_development = __commonJS({
             case IndeterminateComponent:
             case MemoComponent:
             case SimpleMemoComponent:
-              if (typeof type === "function") {
-                return type.displayName || type.name || null;
+              if (typeof type2 === "function") {
+                return type2.displayName || type2.name || null;
               }
-              if (typeof type === "string") {
-                return type;
+              if (typeof type2 === "string") {
+                return type2;
               }
               break;
           }
@@ -30824,7 +34122,7 @@ var require_react_dom_development = __commonJS({
             isRendering = rendering;
           }
         }
-        function toString6(value) {
+        function toString7(value) {
           return "" + value;
         }
         function getToStringValue(value) {
@@ -30863,9 +34161,9 @@ var require_react_dom_development = __commonJS({
           }
         }
         function isCheckable(elem) {
-          var type = elem.type;
+          var type2 = elem.type;
           var nodeName = elem.nodeName;
-          return nodeName && nodeName.toLowerCase() === "input" && (type === "checkbox" || type === "radio");
+          return nodeName && nodeName.toLowerCase() === "input" && (type2 === "checkbox" || type2 === "radio");
         }
         function getTracker(node2) {
           return node2._valueTracker;
@@ -30895,7 +34193,7 @@ var require_react_dom_development = __commonJS({
           if (node2.hasOwnProperty(valueField) || typeof descriptor === "undefined" || typeof descriptor.get !== "function" || typeof descriptor.set !== "function") {
             return;
           }
-          var get2 = descriptor.get, set2 = descriptor.set;
+          var get2 = descriptor.get, set3 = descriptor.set;
           Object.defineProperty(node2, valueField, {
             configurable: true,
             get: function() {
@@ -30906,7 +34204,7 @@ var require_react_dom_development = __commonJS({
                 checkFormFieldValueStringCoercion(value);
               }
               currentValue = "" + value;
-              set2.call(this, value);
+              set3.call(this, value);
             }
           });
           Object.defineProperty(node2, valueField, {
@@ -31023,18 +34321,18 @@ var require_react_dom_development = __commonJS({
           }
           updateChecked(element2, props);
           var value = getToStringValue(props.value);
-          var type = props.type;
+          var type2 = props.type;
           if (value != null) {
-            if (type === "number") {
+            if (type2 === "number") {
               if (value === 0 && node2.value === "" || // We explicitly want to coerce to number here if possible.
               // eslint-disable-next-line
               node2.value != value) {
-                node2.value = toString6(value);
+                node2.value = toString7(value);
               }
-            } else if (node2.value !== toString6(value)) {
-              node2.value = toString6(value);
+            } else if (node2.value !== toString7(value)) {
+              node2.value = toString7(value);
             }
-          } else if (type === "submit" || type === "reset") {
+          } else if (type2 === "submit" || type2 === "reset") {
             node2.removeAttribute("value");
             return;
           }
@@ -31054,12 +34352,12 @@ var require_react_dom_development = __commonJS({
         function postMountWrapper(element2, props, isHydrating2) {
           var node2 = element2;
           if (props.hasOwnProperty("value") || props.hasOwnProperty("defaultValue")) {
-            var type = props.type;
-            var isButton = type === "submit" || type === "reset";
+            var type2 = props.type;
+            var isButton = type2 === "submit" || type2 === "reset";
             if (isButton && (props.value === void 0 || props.value === null)) {
               return;
             }
-            var initialValue = toString6(node2._wrapperState.initialValue);
+            var initialValue = toString7(node2._wrapperState.initialValue);
             if (!isHydrating2) {
               {
                 if (initialValue !== node2.value) {
@@ -31113,15 +34411,15 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function setDefaultValue(node2, type, value) {
+        function setDefaultValue(node2, type2, value) {
           if (
             // Focused number inputs synchronize on blur. See ChangeEventPlugin.js
-            type !== "number" || getActiveElement(node2.ownerDocument) !== node2
+            type2 !== "number" || getActiveElement(node2.ownerDocument) !== node2
           ) {
             if (value == null) {
-              node2.defaultValue = toString6(node2._wrapperState.initialValue);
-            } else if (node2.defaultValue !== toString6(value)) {
-              node2.defaultValue = toString6(value);
+              node2.defaultValue = toString7(node2._wrapperState.initialValue);
+            } else if (node2.defaultValue !== toString7(value)) {
+              node2.defaultValue = toString7(value);
             }
           }
         }
@@ -31159,7 +34457,7 @@ var require_react_dom_development = __commonJS({
         }
         function postMountWrapper$1(element2, props) {
           if (props.value != null) {
-            element2.setAttribute("value", toString6(getToStringValue(props.value)));
+            element2.setAttribute("value", toString7(getToStringValue(props.value)));
           }
         }
         var isArrayImpl = Array.isArray;
@@ -31213,7 +34511,7 @@ var require_react_dom_development = __commonJS({
               }
             }
           } else {
-            var _selectedValue = toString6(getToStringValue(propValue));
+            var _selectedValue = toString7(getToStringValue(propValue));
             var defaultSelected = null;
             for (var _i2 = 0; _i2 < options2.length; _i2++) {
               if (options2[_i2].value === _selectedValue) {
@@ -31293,7 +34591,7 @@ var require_react_dom_development = __commonJS({
           var hostProps = assign2({}, props, {
             value: void 0,
             defaultValue: void 0,
-            children: toString6(node2._wrapperState.initialValue)
+            children: toString7(node2._wrapperState.initialValue)
           });
           return hostProps;
         }
@@ -31340,7 +34638,7 @@ var require_react_dom_development = __commonJS({
           var value = getToStringValue(props.value);
           var defaultValue = getToStringValue(props.defaultValue);
           if (value != null) {
-            var newValue = toString6(value);
+            var newValue = toString7(value);
             if (newValue !== node2.value) {
               node2.value = newValue;
             }
@@ -31349,7 +34647,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           if (defaultValue != null) {
-            node2.defaultValue = toString6(defaultValue);
+            node2.defaultValue = toString7(defaultValue);
           }
         }
         function postMountWrapper$3(element2, props) {
@@ -31367,8 +34665,8 @@ var require_react_dom_development = __commonJS({
         var HTML_NAMESPACE = "http://www.w3.org/1999/xhtml";
         var MATH_NAMESPACE = "http://www.w3.org/1998/Math/MathML";
         var SVG_NAMESPACE = "http://www.w3.org/2000/svg";
-        function getIntrinsicNamespace(type) {
-          switch (type) {
+        function getIntrinsicNamespace(type2) {
+          switch (type2) {
             case "svg":
               return SVG_NAMESPACE;
             case "math":
@@ -31377,11 +34675,11 @@ var require_react_dom_development = __commonJS({
               return HTML_NAMESPACE;
           }
         }
-        function getChildNamespace(parentNamespace, type) {
+        function getChildNamespace(parentNamespace, type2) {
           if (parentNamespace == null || parentNamespace === HTML_NAMESPACE) {
-            return getIntrinsicNamespace(type);
+            return getIntrinsicNamespace(type2);
           }
-          if (parentNamespace === SVG_NAMESPACE && type === "foreignObject") {
+          if (parentNamespace === SVG_NAMESPACE && type2 === "foreignObject") {
             return HTML_NAMESPACE;
           }
           return parentNamespace;
@@ -32357,11 +35655,11 @@ var require_react_dom_development = __commonJS({
           }
           return true;
         }
-        function warnInvalidARIAProps(type, props) {
+        function warnInvalidARIAProps(type2, props) {
           {
             var invalidProps = [];
             for (var key in props) {
-              var isValid = validateProperty(type, key);
+              var isValid = validateProperty(type2, key);
               if (!isValid) {
                 invalidProps.push(key);
               }
@@ -32370,30 +35668,30 @@ var require_react_dom_development = __commonJS({
               return "`" + prop + "`";
             }).join(", ");
             if (invalidProps.length === 1) {
-              error("Invalid aria prop %s on <%s> tag. For details, see https://reactjs.org/link/invalid-aria-props", unknownPropString, type);
+              error("Invalid aria prop %s on <%s> tag. For details, see https://reactjs.org/link/invalid-aria-props", unknownPropString, type2);
             } else if (invalidProps.length > 1) {
-              error("Invalid aria props %s on <%s> tag. For details, see https://reactjs.org/link/invalid-aria-props", unknownPropString, type);
+              error("Invalid aria props %s on <%s> tag. For details, see https://reactjs.org/link/invalid-aria-props", unknownPropString, type2);
             }
           }
         }
-        function validateProperties(type, props) {
-          if (isCustomComponent(type, props)) {
+        function validateProperties(type2, props) {
+          if (isCustomComponent(type2, props)) {
             return;
           }
-          warnInvalidARIAProps(type, props);
+          warnInvalidARIAProps(type2, props);
         }
         var didWarnValueNull = false;
-        function validateProperties$1(type, props) {
+        function validateProperties$1(type2, props) {
           {
-            if (type !== "input" && type !== "textarea" && type !== "select") {
+            if (type2 !== "input" && type2 !== "textarea" && type2 !== "select") {
               return;
             }
             if (props != null && props.value === null && !didWarnValueNull) {
               didWarnValueNull = true;
-              if (type === "select" && props.multiple) {
-                error("`value` prop on `%s` should not be null. Consider using an empty array when `multiple` is set to `true` to clear the component or `undefined` for uncontrolled components.", type);
+              if (type2 === "select" && props.multiple) {
+                error("`value` prop on `%s` should not be null. Consider using an empty array when `multiple` is set to `true` to clear the component or `undefined` for uncontrolled components.", type2);
               } else {
-                error("`value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components.", type);
+                error("`value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components.", type2);
               }
             }
           }
@@ -32500,11 +35798,11 @@ var require_react_dom_development = __commonJS({
             return true;
           };
         }
-        var warnUnknownProperties = function(type, props, eventRegistry) {
+        var warnUnknownProperties = function(type2, props, eventRegistry) {
           {
             var unknownProps = [];
             for (var key in props) {
-              var isValid = validateProperty$1(type, key, props[key], eventRegistry);
+              var isValid = validateProperty$1(type2, key, props[key], eventRegistry);
               if (!isValid) {
                 unknownProps.push(key);
               }
@@ -32513,17 +35811,17 @@ var require_react_dom_development = __commonJS({
               return "`" + prop + "`";
             }).join(", ");
             if (unknownProps.length === 1) {
-              error("Invalid value for prop %s on <%s> tag. Either remove it from the element, or pass a string or number value to keep it in the DOM. For details, see https://reactjs.org/link/attribute-behavior ", unknownPropString, type);
+              error("Invalid value for prop %s on <%s> tag. Either remove it from the element, or pass a string or number value to keep it in the DOM. For details, see https://reactjs.org/link/attribute-behavior ", unknownPropString, type2);
             } else if (unknownProps.length > 1) {
-              error("Invalid values for props %s on <%s> tag. Either remove them from the element, or pass a string or number value to keep them in the DOM. For details, see https://reactjs.org/link/attribute-behavior ", unknownPropString, type);
+              error("Invalid values for props %s on <%s> tag. Either remove them from the element, or pass a string or number value to keep them in the DOM. For details, see https://reactjs.org/link/attribute-behavior ", unknownPropString, type2);
             }
           }
         };
-        function validateProperties$2(type, props, eventRegistry) {
-          if (isCustomComponent(type, props)) {
+        function validateProperties$2(type2, props, eventRegistry) {
+          if (isCustomComponent(type2, props)) {
             return;
           }
-          warnUnknownProperties(type, props, eventRegistry);
+          warnUnknownProperties(type2, props, eventRegistry);
         }
         var IS_EVENT_HANDLE_NON_MANAGED_NODE = 1;
         var IS_NON_DELEGATED = 1 << 1;
@@ -32637,7 +35935,7 @@ var require_react_dom_development = __commonJS({
         function isInteractive(tag) {
           return tag === "button" || tag === "input" || tag === "select" || tag === "textarea";
         }
-        function shouldPreventMouseEvent(name, type, props) {
+        function shouldPreventMouseEvent(name, type2, props) {
           switch (name) {
             case "onClick":
             case "onClickCapture":
@@ -32650,7 +35948,7 @@ var require_react_dom_development = __commonJS({
             case "onMouseUp":
             case "onMouseUpCapture":
             case "onMouseEnter":
-              return !!(props.disabled && isInteractive(type));
+              return !!(props.disabled && isInteractive(type2));
             default:
               return false;
           }
@@ -32817,7 +36115,7 @@ var require_react_dom_development = __commonJS({
         function has(key) {
           return key._reactInternals !== void 0;
         }
-        function set(key, value) {
+        function set2(key, value) {
           key._reactInternals = value;
         }
         var NoFlags = (
@@ -33289,14 +36587,14 @@ var require_react_dom_development = __commonJS({
         }
         function getLaneLabelMap() {
           {
-            var map = /* @__PURE__ */ new Map();
+            var map2 = /* @__PURE__ */ new Map();
             var lane = 1;
             for (var index3 = 0; index3 < TotalLanes; index3++) {
               var label = getLabelForLane(lane);
-              map.set(lane, label);
+              map2.set(lane, label);
               lane *= 2;
             }
-            return map;
+            return map2;
           }
         }
         function markCommitStarted(lanes) {
@@ -33950,14 +37248,14 @@ var require_react_dom_development = __commonJS({
         function includesSomeLane(a2, b) {
           return (a2 & b) !== NoLanes;
         }
-        function isSubsetOfLanes(set2, subset) {
-          return (set2 & subset) === subset;
+        function isSubsetOfLanes(set3, subset) {
+          return (set3 & subset) === subset;
         }
         function mergeLanes(a2, b) {
           return a2 | b;
         }
-        function removeLanes(set2, subset) {
-          return set2 & ~subset;
+        function removeLanes(set3, subset) {
+          return set3 & ~subset;
         }
         function intersectLanes(a2, b) {
           return a2 & b;
@@ -34393,9 +37691,9 @@ var require_react_dom_development = __commonJS({
           }
           return true;
         }
-        function attemptReplayContinuousQueuedEventInMap(queuedEvent, key, map) {
+        function attemptReplayContinuousQueuedEventInMap(queuedEvent, key, map2) {
           if (attemptReplayContinuousQueuedEvent(queuedEvent)) {
-            map.delete(key);
+            map2.delete(key);
           }
         }
         function replayUnblockedEvents() {
@@ -36059,9 +39357,9 @@ var require_react_dom_development = __commonJS({
         var mediaEventTypes = ["abort", "canplay", "canplaythrough", "durationchange", "emptied", "encrypted", "ended", "error", "loadeddata", "loadedmetadata", "loadstart", "pause", "play", "playing", "progress", "ratechange", "resize", "seeked", "seeking", "stalled", "suspend", "timeupdate", "volumechange", "waiting"];
         var nonDelegatedEvents = new Set(["cancel", "close", "invalid", "load", "scroll", "toggle"].concat(mediaEventTypes));
         function executeDispatch(event, listener, currentTarget) {
-          var type = event.type || "unknown-event";
+          var type2 = event.type || "unknown-event";
           event.currentTarget = currentTarget;
-          invokeGuardedCallbackAndCatchFirstError(type, listener, void 0, event);
+          invokeGuardedCallbackAndCatchFirstError(type2, listener, void 0, event);
           event.currentTarget = null;
         }
         function processDispatchQueueItemsInOrder(event, dispatchListeners, inCapturePhase) {
@@ -36318,16 +39616,16 @@ var require_react_dom_development = __commonJS({
           }
           return null;
         }
-        function accumulateEnterLeaveListenersForEvent(dispatchQueue, event, target, common, inCapturePhase) {
+        function accumulateEnterLeaveListenersForEvent(dispatchQueue, event, target, common2, inCapturePhase) {
           var registrationName = event._reactName;
           var listeners = [];
           var instance = target;
           while (instance !== null) {
-            if (instance === common) {
+            if (instance === common2) {
               break;
             }
             var _instance4 = instance, alternate = _instance4.alternate, stateNode = _instance4.stateNode, tag = _instance4.tag;
-            if (alternate !== null && alternate === common) {
+            if (alternate !== null && alternate === common2) {
               break;
             }
             if (tag === HostComponent && stateNode !== null) {
@@ -36354,12 +39652,12 @@ var require_react_dom_development = __commonJS({
           }
         }
         function accumulateEnterLeaveTwoPhaseListeners(dispatchQueue, leaveEvent, enterEvent, from, to) {
-          var common = from && to ? getLowestCommonAncestor(from, to) : null;
+          var common2 = from && to ? getLowestCommonAncestor(from, to) : null;
           if (from !== null) {
-            accumulateEnterLeaveListenersForEvent(dispatchQueue, leaveEvent, from, common, false);
+            accumulateEnterLeaveListenersForEvent(dispatchQueue, leaveEvent, from, common2, false);
           }
           if (to !== null && enterEvent !== null) {
-            accumulateEnterLeaveListenersForEvent(dispatchQueue, enterEvent, to, common, true);
+            accumulateEnterLeaveListenersForEvent(dispatchQueue, enterEvent, to, common2, true);
           }
         }
         function getListenerSetKey(domEventName, capture) {
@@ -36391,10 +39689,10 @@ var require_react_dom_development = __commonJS({
             // @see https://electronjs.org/docs/api/webview-tag
             webview: true
           };
-          validatePropertiesInDevelopment = function(type, props) {
-            validateProperties(type, props);
-            validateProperties$1(type, props);
-            validateProperties$2(type, props, {
+          validatePropertiesInDevelopment = function(type2, props) {
+            validateProperties(type2, props);
+            validateProperties$1(type2, props);
+            validateProperties$2(type2, props, {
               registrationNameDependencies,
               possibleRegistrationNames
             });
@@ -36531,33 +39829,33 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function createElement2(type, props, rootContainerElement, parentNamespace) {
+        function createElement2(type2, props, rootContainerElement, parentNamespace) {
           var isCustomComponentTag;
           var ownerDocument = getOwnerDocumentFromRootContainer(rootContainerElement);
           var domElement;
           var namespaceURI = parentNamespace;
           if (namespaceURI === HTML_NAMESPACE) {
-            namespaceURI = getIntrinsicNamespace(type);
+            namespaceURI = getIntrinsicNamespace(type2);
           }
           if (namespaceURI === HTML_NAMESPACE) {
             {
-              isCustomComponentTag = isCustomComponent(type, props);
-              if (!isCustomComponentTag && type !== type.toLowerCase()) {
-                error("<%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.", type);
+              isCustomComponentTag = isCustomComponent(type2, props);
+              if (!isCustomComponentTag && type2 !== type2.toLowerCase()) {
+                error("<%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.", type2);
               }
             }
-            if (type === "script") {
+            if (type2 === "script") {
               var div = ownerDocument.createElement("div");
               div.innerHTML = "<script><\/script>";
               var firstChild = div.firstChild;
               domElement = div.removeChild(firstChild);
             } else if (typeof props.is === "string") {
-              domElement = ownerDocument.createElement(type, {
+              domElement = ownerDocument.createElement(type2, {
                 is: props.is
               });
             } else {
-              domElement = ownerDocument.createElement(type);
-              if (type === "select") {
+              domElement = ownerDocument.createElement(type2);
+              if (type2 === "select") {
                 var node2 = domElement;
                 if (props.multiple) {
                   node2.multiple = true;
@@ -36567,13 +39865,13 @@ var require_react_dom_development = __commonJS({
               }
             }
           } else {
-            domElement = ownerDocument.createElementNS(namespaceURI, type);
+            domElement = ownerDocument.createElementNS(namespaceURI, type2);
           }
           {
             if (namespaceURI === HTML_NAMESPACE) {
-              if (!isCustomComponentTag && Object.prototype.toString.call(domElement) === "[object HTMLUnknownElement]" && !hasOwnProperty3.call(warnedUnknownTags, type)) {
-                warnedUnknownTags[type] = true;
-                error("The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.", type);
+              if (!isCustomComponentTag && Object.prototype.toString.call(domElement) === "[object HTMLUnknownElement]" && !hasOwnProperty3.call(warnedUnknownTags, type2)) {
+                warnedUnknownTags[type2] = true;
+                error("The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.", type2);
               }
             }
           }
@@ -37325,13 +40623,13 @@ var require_react_dom_development = __commonJS({
         var eventsEnabled = null;
         var selectionInformation = null;
         function getRootHostContext(rootContainerInstance) {
-          var type;
+          var type2;
           var namespace;
           var nodeType = rootContainerInstance.nodeType;
           switch (nodeType) {
             case DOCUMENT_NODE:
             case DOCUMENT_FRAGMENT_NODE: {
-              type = nodeType === DOCUMENT_NODE ? "#document" : "#fragment";
+              type2 = nodeType === DOCUMENT_NODE ? "#document" : "#fragment";
               var root3 = rootContainerInstance.documentElement;
               namespace = root3 ? root3.namespaceURI : getChildNamespace(null, "");
               break;
@@ -37339,13 +40637,13 @@ var require_react_dom_development = __commonJS({
             default: {
               var container = nodeType === COMMENT_NODE ? rootContainerInstance.parentNode : rootContainerInstance;
               var ownNamespace = container.namespaceURI || null;
-              type = container.tagName;
-              namespace = getChildNamespace(ownNamespace, type);
+              type2 = container.tagName;
+              namespace = getChildNamespace(ownNamespace, type2);
               break;
             }
           }
           {
-            var validatedTag = type.toLowerCase();
+            var validatedTag = type2.toLowerCase();
             var ancestorInfo = updatedAncestorInfo(null, validatedTag);
             return {
               namespace,
@@ -37353,11 +40651,11 @@ var require_react_dom_development = __commonJS({
             };
           }
         }
-        function getChildHostContext(parentHostContext, type, rootContainerInstance) {
+        function getChildHostContext(parentHostContext, type2, rootContainerInstance) {
           {
             var parentHostContextDev = parentHostContext;
-            var namespace = getChildNamespace(parentHostContextDev.namespace, type);
-            var ancestorInfo = updatedAncestorInfo(parentHostContextDev.ancestorInfo, type);
+            var namespace = getChildNamespace(parentHostContextDev.namespace, type2);
+            var ancestorInfo = updatedAncestorInfo(parentHostContextDev.ancestorInfo, type2);
             return {
               namespace,
               ancestorInfo
@@ -37380,19 +40678,19 @@ var require_react_dom_development = __commonJS({
           eventsEnabled = null;
           selectionInformation = null;
         }
-        function createInstance2(type, props, rootContainerInstance, hostContext, internalInstanceHandle) {
+        function createInstance2(type2, props, rootContainerInstance, hostContext, internalInstanceHandle) {
           var parentNamespace;
           {
             var hostContextDev = hostContext;
-            validateDOMNesting(type, null, hostContextDev.ancestorInfo);
+            validateDOMNesting(type2, null, hostContextDev.ancestorInfo);
             if (typeof props.children === "string" || typeof props.children === "number") {
               var string3 = "" + props.children;
-              var ownAncestorInfo = updatedAncestorInfo(hostContextDev.ancestorInfo, type);
+              var ownAncestorInfo = updatedAncestorInfo(hostContextDev.ancestorInfo, type2);
               validateDOMNesting(null, string3, ownAncestorInfo);
             }
             parentNamespace = hostContextDev.namespace;
           }
-          var domElement = createElement2(type, props, rootContainerInstance, parentNamespace);
+          var domElement = createElement2(type2, props, rootContainerInstance, parentNamespace);
           precacheFiberNode(internalInstanceHandle, domElement);
           updateFiberProps(domElement, props);
           return domElement;
@@ -37400,9 +40698,9 @@ var require_react_dom_development = __commonJS({
         function appendInitialChild(parentInstance, child) {
           parentInstance.appendChild(child);
         }
-        function finalizeInitialChildren(domElement, type, props, rootContainerInstance, hostContext) {
-          setInitialProperties(domElement, type, props, rootContainerInstance);
-          switch (type) {
+        function finalizeInitialChildren(domElement, type2, props, rootContainerInstance, hostContext) {
+          setInitialProperties(domElement, type2, props, rootContainerInstance);
+          switch (type2) {
             case "button":
             case "input":
             case "select":
@@ -37414,19 +40712,19 @@ var require_react_dom_development = __commonJS({
               return false;
           }
         }
-        function prepareUpdate(domElement, type, oldProps, newProps, rootContainerInstance, hostContext) {
+        function prepareUpdate(domElement, type2, oldProps, newProps, rootContainerInstance, hostContext) {
           {
             var hostContextDev = hostContext;
             if (typeof newProps.children !== typeof oldProps.children && (typeof newProps.children === "string" || typeof newProps.children === "number")) {
               var string3 = "" + newProps.children;
-              var ownAncestorInfo = updatedAncestorInfo(hostContextDev.ancestorInfo, type);
+              var ownAncestorInfo = updatedAncestorInfo(hostContextDev.ancestorInfo, type2);
               validateDOMNesting(null, string3, ownAncestorInfo);
             }
           }
-          return diffProperties(domElement, type, oldProps, newProps);
+          return diffProperties(domElement, type2, oldProps, newProps);
         }
-        function shouldSetTextContent(type, props) {
-          return type === "textarea" || type === "noscript" || typeof props.children === "string" || typeof props.children === "number" || typeof props.dangerouslySetInnerHTML === "object" && props.dangerouslySetInnerHTML !== null && props.dangerouslySetInnerHTML.__html != null;
+        function shouldSetTextContent(type2, props) {
+          return type2 === "textarea" || type2 === "noscript" || typeof props.children === "string" || typeof props.children === "number" || typeof props.dangerouslySetInnerHTML === "object" && props.dangerouslySetInnerHTML !== null && props.dangerouslySetInnerHTML.__html != null;
         }
         function createTextInstance(text4, rootContainerInstance, hostContext, internalInstanceHandle) {
           {
@@ -37456,8 +40754,8 @@ var require_react_dom_development = __commonJS({
             throw error2;
           });
         }
-        function commitMount(domElement, type, newProps, internalInstanceHandle) {
-          switch (type) {
+        function commitMount(domElement, type2, newProps, internalInstanceHandle) {
+          switch (type2) {
             case "button":
             case "input":
             case "select":
@@ -37474,8 +40772,8 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function commitUpdate(domElement, updatePayload, type, oldProps, newProps, internalInstanceHandle) {
-          updateProperties(domElement, updatePayload, type, oldProps, newProps);
+        function commitUpdate(domElement, updatePayload, type2, oldProps, newProps, internalInstanceHandle) {
+          updateProperties(domElement, updatePayload, type2, oldProps, newProps);
           updateFiberProps(domElement, newProps);
         }
         function resetTextContent(domElement) {
@@ -37583,8 +40881,8 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function canHydrateInstance(instance, type, props) {
-          if (instance.nodeType !== ELEMENT_NODE || type.toLowerCase() !== instance.nodeName.toLowerCase()) {
+        function canHydrateInstance(instance, type2, props) {
+          if (instance.nodeType !== ELEMENT_NODE || type2.toLowerCase() !== instance.nodeName.toLowerCase()) {
             return null;
           }
           return instance;
@@ -37658,7 +40956,7 @@ var require_react_dom_development = __commonJS({
         function getFirstHydratableChildWithinSuspenseInstance(parentInstance) {
           return getNextHydratable(parentInstance.nextSibling);
         }
-        function hydrateInstance(instance, type, props, rootContainerInstance, hostContext, internalInstanceHandle, shouldWarnDev) {
+        function hydrateInstance(instance, type2, props, rootContainerInstance, hostContext, internalInstanceHandle, shouldWarnDev) {
           precacheFiberNode(internalInstanceHandle, instance);
           updateFiberProps(instance, props);
           var parentNamespace;
@@ -37667,7 +40965,7 @@ var require_react_dom_development = __commonJS({
             parentNamespace = hostContextDev.namespace;
           }
           var isConcurrentMode = (internalInstanceHandle.mode & ConcurrentMode) !== NoMode;
-          return diffHydratedProperties(instance, type, props, parentNamespace, rootContainerInstance, isConcurrentMode, shouldWarnDev);
+          return diffHydratedProperties(instance, type2, props, parentNamespace, rootContainerInstance, isConcurrentMode, shouldWarnDev);
         }
         function hydrateTextInstance(textInstance, text4, internalInstanceHandle, shouldWarnDev) {
           precacheFiberNode(internalInstanceHandle, textInstance);
@@ -37774,9 +41072,9 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function didNotFindHydratableInstanceWithinContainer(parentContainer, type, props) {
+        function didNotFindHydratableInstanceWithinContainer(parentContainer, type2, props) {
           {
-            warnForInsertedHydratedElement(parentContainer, type);
+            warnForInsertedHydratedElement(parentContainer, type2);
           }
         }
         function didNotFindHydratableTextInstanceWithinContainer(parentContainer, text4) {
@@ -37784,11 +41082,11 @@ var require_react_dom_development = __commonJS({
             warnForInsertedHydratedText(parentContainer, text4);
           }
         }
-        function didNotFindHydratableInstanceWithinSuspenseInstance(parentInstance, type, props) {
+        function didNotFindHydratableInstanceWithinSuspenseInstance(parentInstance, type2, props) {
           {
             var parentNode = parentInstance.parentNode;
             if (parentNode !== null)
-              warnForInsertedHydratedElement(parentNode, type);
+              warnForInsertedHydratedElement(parentNode, type2);
           }
         }
         function didNotFindHydratableTextInstanceWithinSuspenseInstance(parentInstance, text4) {
@@ -37798,10 +41096,10 @@ var require_react_dom_development = __commonJS({
               warnForInsertedHydratedText(parentNode, text4);
           }
         }
-        function didNotFindHydratableInstance(parentType, parentProps, parentInstance, type, props, isConcurrentMode) {
+        function didNotFindHydratableInstance(parentType, parentProps, parentInstance, type2, props, isConcurrentMode) {
           {
             if (isConcurrentMode || parentProps[SUPPRESS_HYDRATION_WARNING$1] !== true) {
-              warnForInsertedHydratedElement(parentInstance, type);
+              warnForInsertedHydratedElement(parentInstance, type2);
             }
           }
         }
@@ -38013,8 +41311,8 @@ var require_react_dom_development = __commonJS({
         }
         function getMaskedContext(workInProgress2, unmaskedContext) {
           {
-            var type = workInProgress2.type;
-            var contextTypes = type.contextTypes;
+            var type2 = workInProgress2.type;
+            var contextTypes = type2.contextTypes;
             if (!contextTypes) {
               return emptyContextObject;
             }
@@ -38041,9 +41339,9 @@ var require_react_dom_development = __commonJS({
             return didPerformWorkStackCursor.current;
           }
         }
-        function isContextProvider(type) {
+        function isContextProvider(type2) {
           {
-            var childContextTypes = type.childContextTypes;
+            var childContextTypes = type2.childContextTypes;
             return childContextTypes !== null && childContextTypes !== void 0;
           }
         }
@@ -38068,10 +41366,10 @@ var require_react_dom_development = __commonJS({
             push2(didPerformWorkStackCursor, didChange, fiber);
           }
         }
-        function processChildContext(fiber, type, parentContext) {
+        function processChildContext(fiber, type2, parentContext) {
           {
             var instance = fiber.stateNode;
-            var childContextTypes = type.childContextTypes;
+            var childContextTypes = type2.childContextTypes;
             if (typeof instance.getChildContext !== "function") {
               {
                 var componentName = getComponentNameFromFiber(fiber) || "Unknown";
@@ -38105,14 +41403,14 @@ var require_react_dom_development = __commonJS({
             return true;
           }
         }
-        function invalidateContextProvider(workInProgress2, type, didChange) {
+        function invalidateContextProvider(workInProgress2, type2, didChange) {
           {
             var instance = workInProgress2.stateNode;
             if (!instance) {
               throw new Error("Expected to have an instance by this point. This error is likely caused by a bug in React. Please file an issue.");
             }
             if (didChange) {
-              var mergedContext = processChildContext(workInProgress2, type, previousContext);
+              var mergedContext = processChildContext(workInProgress2, type2, previousContext);
               instance.__reactInternalMemoizedMergedChildContext = mergedContext;
               pop2(didPerformWorkStackCursor, workInProgress2);
               pop2(contextStackCursor, workInProgress2);
@@ -38175,10 +41473,10 @@ var require_react_dom_development = __commonJS({
             var previousUpdatePriority = getCurrentUpdatePriority();
             try {
               var isSync = true;
-              var queue2 = syncQueue;
+              var queue3 = syncQueue;
               setCurrentUpdatePriority(DiscreteEventPriority);
-              for (; i < queue2.length; i++) {
-                var callback = queue2[i];
+              for (; i < queue3.length; i++) {
+                var callback = queue3[i];
                 do {
                   callback = callback(isSync);
                 } while (callback !== null);
@@ -38412,9 +41710,9 @@ var require_react_dom_development = __commonJS({
                 var parentContainer = returnFiber.stateNode.containerInfo;
                 switch (fiber.tag) {
                   case HostComponent:
-                    var type = fiber.type;
+                    var type2 = fiber.type;
                     var props = fiber.pendingProps;
-                    didNotFindHydratableInstanceWithinContainer(parentContainer, type);
+                    didNotFindHydratableInstanceWithinContainer(parentContainer, type2);
                     break;
                   case HostText:
                     var text4 = fiber.pendingProps;
@@ -38488,9 +41786,9 @@ var require_react_dom_development = __commonJS({
         function tryHydrate(fiber, nextInstance) {
           switch (fiber.tag) {
             case HostComponent: {
-              var type = fiber.type;
+              var type2 = fiber.type;
               var props = fiber.pendingProps;
-              var instance = canHydrateInstance(nextInstance, type);
+              var instance = canHydrateInstance(nextInstance, type2);
               if (instance !== null) {
                 fiber.stateNode = instance;
                 hydrationParentFiber = fiber;
@@ -38736,9 +42034,9 @@ var require_react_dom_development = __commonJS({
             }
             return maybeStrictRoot;
           };
-          var setToSortedString = function(set2) {
+          var setToSortedString = function(set3) {
             var array = [];
-            set2.forEach(function(value) {
+            set3.forEach(function(value) {
               array.push(value);
             });
             return array.sort().join(", ");
@@ -39116,66 +42414,66 @@ var require_react_dom_development = __commonJS({
           return value;
         }
         var concurrentQueues = null;
-        function pushConcurrentUpdateQueue(queue2) {
+        function pushConcurrentUpdateQueue(queue3) {
           if (concurrentQueues === null) {
-            concurrentQueues = [queue2];
+            concurrentQueues = [queue3];
           } else {
-            concurrentQueues.push(queue2);
+            concurrentQueues.push(queue3);
           }
         }
         function finishQueueingConcurrentUpdates() {
           if (concurrentQueues !== null) {
             for (var i = 0; i < concurrentQueues.length; i++) {
-              var queue2 = concurrentQueues[i];
-              var lastInterleavedUpdate = queue2.interleaved;
+              var queue3 = concurrentQueues[i];
+              var lastInterleavedUpdate = queue3.interleaved;
               if (lastInterleavedUpdate !== null) {
-                queue2.interleaved = null;
+                queue3.interleaved = null;
                 var firstInterleavedUpdate = lastInterleavedUpdate.next;
-                var lastPendingUpdate = queue2.pending;
+                var lastPendingUpdate = queue3.pending;
                 if (lastPendingUpdate !== null) {
                   var firstPendingUpdate = lastPendingUpdate.next;
                   lastPendingUpdate.next = firstInterleavedUpdate;
                   lastInterleavedUpdate.next = firstPendingUpdate;
                 }
-                queue2.pending = lastInterleavedUpdate;
+                queue3.pending = lastInterleavedUpdate;
               }
             }
             concurrentQueues = null;
           }
         }
-        function enqueueConcurrentHookUpdate(fiber, queue2, update, lane) {
-          var interleaved = queue2.interleaved;
+        function enqueueConcurrentHookUpdate(fiber, queue3, update, lane) {
+          var interleaved = queue3.interleaved;
           if (interleaved === null) {
             update.next = update;
-            pushConcurrentUpdateQueue(queue2);
+            pushConcurrentUpdateQueue(queue3);
           } else {
             update.next = interleaved.next;
             interleaved.next = update;
           }
-          queue2.interleaved = update;
+          queue3.interleaved = update;
           return markUpdateLaneFromFiberToRoot(fiber, lane);
         }
-        function enqueueConcurrentHookUpdateAndEagerlyBailout(fiber, queue2, update, lane) {
-          var interleaved = queue2.interleaved;
+        function enqueueConcurrentHookUpdateAndEagerlyBailout(fiber, queue3, update, lane) {
+          var interleaved = queue3.interleaved;
           if (interleaved === null) {
             update.next = update;
-            pushConcurrentUpdateQueue(queue2);
+            pushConcurrentUpdateQueue(queue3);
           } else {
             update.next = interleaved.next;
             interleaved.next = update;
           }
-          queue2.interleaved = update;
+          queue3.interleaved = update;
         }
-        function enqueueConcurrentClassUpdate(fiber, queue2, update, lane) {
-          var interleaved = queue2.interleaved;
+        function enqueueConcurrentClassUpdate(fiber, queue3, update, lane) {
+          var interleaved = queue3.interleaved;
           if (interleaved === null) {
             update.next = update;
-            pushConcurrentUpdateQueue(queue2);
+            pushConcurrentUpdateQueue(queue3);
           } else {
             update.next = interleaved.next;
             interleaved.next = update;
           }
-          queue2.interleaved = update;
+          queue3.interleaved = update;
           return markUpdateLaneFromFiberToRoot(fiber, lane);
         }
         function enqueueConcurrentRenderForLane(fiber, lane) {
@@ -39229,7 +42527,7 @@ var require_react_dom_development = __commonJS({
           currentlyProcessingQueue = null;
         }
         function initializeUpdateQueue(fiber) {
-          var queue2 = {
+          var queue3 = {
             baseState: fiber.memoizedState,
             firstBaseUpdate: null,
             lastBaseUpdate: null,
@@ -39240,12 +42538,12 @@ var require_react_dom_development = __commonJS({
             },
             effects: null
           };
-          fiber.updateQueue = queue2;
+          fiber.updateQueue = queue3;
         }
         function cloneUpdateQueue(current2, workInProgress2) {
-          var queue2 = workInProgress2.updateQueue;
+          var queue3 = workInProgress2.updateQueue;
           var currentQueue = current2.updateQueue;
-          if (queue2 === currentQueue) {
+          if (queue3 === currentQueue) {
             var clone2 = {
               baseState: currentQueue.baseState,
               firstBaseUpdate: currentQueue.firstBaseUpdate,
@@ -39308,14 +42606,14 @@ var require_react_dom_development = __commonJS({
           }
         }
         function enqueueCapturedUpdate(workInProgress2, capturedUpdate) {
-          var queue2 = workInProgress2.updateQueue;
+          var queue3 = workInProgress2.updateQueue;
           var current2 = workInProgress2.alternate;
           if (current2 !== null) {
             var currentQueue = current2.updateQueue;
-            if (queue2 === currentQueue) {
+            if (queue3 === currentQueue) {
               var newFirst = null;
               var newLast = null;
-              var firstBaseUpdate = queue2.firstBaseUpdate;
+              var firstBaseUpdate = queue3.firstBaseUpdate;
               if (firstBaseUpdate !== null) {
                 var update = firstBaseUpdate;
                 do {
@@ -39344,26 +42642,26 @@ var require_react_dom_development = __commonJS({
               } else {
                 newFirst = newLast = capturedUpdate;
               }
-              queue2 = {
+              queue3 = {
                 baseState: currentQueue.baseState,
                 firstBaseUpdate: newFirst,
                 lastBaseUpdate: newLast,
                 shared: currentQueue.shared,
                 effects: currentQueue.effects
               };
-              workInProgress2.updateQueue = queue2;
+              workInProgress2.updateQueue = queue3;
               return;
             }
           }
-          var lastBaseUpdate = queue2.lastBaseUpdate;
+          var lastBaseUpdate = queue3.lastBaseUpdate;
           if (lastBaseUpdate === null) {
-            queue2.firstBaseUpdate = capturedUpdate;
+            queue3.firstBaseUpdate = capturedUpdate;
           } else {
             lastBaseUpdate.next = capturedUpdate;
           }
-          queue2.lastBaseUpdate = capturedUpdate;
+          queue3.lastBaseUpdate = capturedUpdate;
         }
-        function getStateFromUpdate(workInProgress2, queue2, update, prevState, nextProps, instance) {
+        function getStateFromUpdate(workInProgress2, queue3, update, prevState, nextProps, instance) {
           switch (update.tag) {
             case ReplaceState: {
               var payload = update.payload;
@@ -39425,16 +42723,16 @@ var require_react_dom_development = __commonJS({
           return prevState;
         }
         function processUpdateQueue(workInProgress2, props, instance, renderLanes2) {
-          var queue2 = workInProgress2.updateQueue;
+          var queue3 = workInProgress2.updateQueue;
           hasForceUpdate = false;
           {
-            currentlyProcessingQueue = queue2.shared;
+            currentlyProcessingQueue = queue3.shared;
           }
-          var firstBaseUpdate = queue2.firstBaseUpdate;
-          var lastBaseUpdate = queue2.lastBaseUpdate;
-          var pendingQueue = queue2.shared.pending;
+          var firstBaseUpdate = queue3.firstBaseUpdate;
+          var lastBaseUpdate = queue3.lastBaseUpdate;
+          var pendingQueue = queue3.shared.pending;
           if (pendingQueue !== null) {
-            queue2.shared.pending = null;
+            queue3.shared.pending = null;
             var lastPendingUpdate = pendingQueue;
             var firstPendingUpdate = lastPendingUpdate.next;
             lastPendingUpdate.next = null;
@@ -39459,7 +42757,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           if (firstBaseUpdate !== null) {
-            var newState = queue2.baseState;
+            var newState = queue3.baseState;
             var newLanes = NoLanes;
             var newBaseState = null;
             var newFirstBaseUpdate = null;
@@ -39499,15 +42797,15 @@ var require_react_dom_development = __commonJS({
                   };
                   newLastBaseUpdate = newLastBaseUpdate.next = _clone;
                 }
-                newState = getStateFromUpdate(workInProgress2, queue2, update, newState, props, instance);
+                newState = getStateFromUpdate(workInProgress2, queue3, update, newState, props, instance);
                 var callback = update.callback;
                 if (callback !== null && // If the update was already committed, we should not queue its
                 // callback again.
                 update.lane !== NoLane) {
                   workInProgress2.flags |= Callback;
-                  var effects = queue2.effects;
+                  var effects = queue3.effects;
                   if (effects === null) {
-                    queue2.effects = [update];
+                    queue3.effects = [update];
                   } else {
                     effects.push(update);
                   }
@@ -39515,7 +42813,7 @@ var require_react_dom_development = __commonJS({
               }
               update = update.next;
               if (update === null) {
-                pendingQueue = queue2.shared.pending;
+                pendingQueue = queue3.shared.pending;
                 if (pendingQueue === null) {
                   break;
                 } else {
@@ -39523,18 +42821,18 @@ var require_react_dom_development = __commonJS({
                   var _firstPendingUpdate = _lastPendingUpdate.next;
                   _lastPendingUpdate.next = null;
                   update = _firstPendingUpdate;
-                  queue2.lastBaseUpdate = _lastPendingUpdate;
-                  queue2.shared.pending = null;
+                  queue3.lastBaseUpdate = _lastPendingUpdate;
+                  queue3.shared.pending = null;
                 }
               }
             } while (true);
             if (newLastBaseUpdate === null) {
               newBaseState = newState;
             }
-            queue2.baseState = newBaseState;
-            queue2.firstBaseUpdate = newFirstBaseUpdate;
-            queue2.lastBaseUpdate = newLastBaseUpdate;
-            var lastInterleaved = queue2.shared.interleaved;
+            queue3.baseState = newBaseState;
+            queue3.firstBaseUpdate = newFirstBaseUpdate;
+            queue3.lastBaseUpdate = newLastBaseUpdate;
+            var lastInterleaved = queue3.shared.interleaved;
             if (lastInterleaved !== null) {
               var interleaved = lastInterleaved;
               do {
@@ -39542,7 +42840,7 @@ var require_react_dom_development = __commonJS({
                 interleaved = interleaved.next;
               } while (interleaved !== lastInterleaved);
             } else if (firstBaseUpdate === null) {
-              queue2.shared.lanes = NoLanes;
+              queue3.shared.lanes = NoLanes;
             }
             markSkippedUpdateLanes(newLanes);
             workInProgress2.lanes = newLanes;
@@ -39610,9 +42908,9 @@ var require_react_dom_development = __commonJS({
               error("%s(...): Expected the last optional `callback` argument to be a function. Instead received: %s.", callerName, callback);
             }
           };
-          warnOnUndefinedDerivedState = function(type, partialState) {
+          warnOnUndefinedDerivedState = function(type2, partialState) {
             if (partialState === void 0) {
-              var componentName = getComponentNameFromType(type) || "Component";
+              var componentName = getComponentNameFromType(type2) || "Component";
               if (!didWarnAboutUndefinedDerivedState.has(componentName)) {
                 didWarnAboutUndefinedDerivedState.add(componentName);
                 error("%s.getDerivedStateFromProps(): A valid state object (or null) must be returned. You have returned undefined.", componentName);
@@ -39822,7 +43120,7 @@ var require_react_dom_development = __commonJS({
         function adoptClassInstance(workInProgress2, instance) {
           instance.updater = classComponentUpdater;
           workInProgress2.stateNode = instance;
-          set(instance, workInProgress2);
+          set2(instance, workInProgress2);
           {
             instance._reactInternalInstance = fakeInternalInstance;
           }
@@ -41286,9 +44584,9 @@ var require_react_dom_development = __commonJS({
           if (didScheduleRenderPhaseUpdate) {
             var hook = currentlyRenderingFiber$1.memoizedState;
             while (hook !== null) {
-              var queue2 = hook.queue;
-              if (queue2 !== null) {
-                queue2.pending = null;
+              var queue3 = hook.queue;
+              if (queue3 !== null) {
+                queue3.pending = null;
               }
               hook = hook.next;
             }
@@ -41382,7 +44680,7 @@ var require_react_dom_development = __commonJS({
             initialState = initialArg;
           }
           hook.memoizedState = hook.baseState = initialState;
-          var queue2 = {
+          var queue3 = {
             pending: null,
             interleaved: null,
             lanes: NoLanes,
@@ -41390,20 +44688,20 @@ var require_react_dom_development = __commonJS({
             lastRenderedReducer: reducer2,
             lastRenderedState: initialState
           };
-          hook.queue = queue2;
-          var dispatch = queue2.dispatch = dispatchReducerAction.bind(null, currentlyRenderingFiber$1, queue2);
+          hook.queue = queue3;
+          var dispatch = queue3.dispatch = dispatchReducerAction.bind(null, currentlyRenderingFiber$1, queue3);
           return [hook.memoizedState, dispatch];
         }
         function updateReducer(reducer2, initialArg, init2) {
           var hook = updateWorkInProgressHook();
-          var queue2 = hook.queue;
-          if (queue2 === null) {
+          var queue3 = hook.queue;
+          if (queue3 === null) {
             throw new Error("Should have a queue. This is likely a bug in React. Please file an issue.");
           }
-          queue2.lastRenderedReducer = reducer2;
+          queue3.lastRenderedReducer = reducer2;
           var current2 = currentHook;
           var baseQueue = current2.baseQueue;
-          var pendingQueue = queue2.pending;
+          var pendingQueue = queue3.pending;
           if (pendingQueue !== null) {
             if (baseQueue !== null) {
               var baseFirst = baseQueue.next;
@@ -41417,7 +44715,7 @@ var require_react_dom_development = __commonJS({
               }
             }
             current2.baseQueue = baseQueue = pendingQueue;
-            queue2.pending = null;
+            queue3.pending = null;
           }
           if (baseQueue !== null) {
             var first = baseQueue.next;
@@ -41478,9 +44776,9 @@ var require_react_dom_development = __commonJS({
             hook.memoizedState = newState;
             hook.baseState = newBaseState;
             hook.baseQueue = newBaseQueueLast;
-            queue2.lastRenderedState = newState;
+            queue3.lastRenderedState = newState;
           }
-          var lastInterleaved = queue2.interleaved;
+          var lastInterleaved = queue3.interleaved;
           if (lastInterleaved !== null) {
             var interleaved = lastInterleaved;
             do {
@@ -41490,23 +44788,23 @@ var require_react_dom_development = __commonJS({
               interleaved = interleaved.next;
             } while (interleaved !== lastInterleaved);
           } else if (baseQueue === null) {
-            queue2.lanes = NoLanes;
+            queue3.lanes = NoLanes;
           }
-          var dispatch = queue2.dispatch;
+          var dispatch = queue3.dispatch;
           return [hook.memoizedState, dispatch];
         }
         function rerenderReducer(reducer2, initialArg, init2) {
           var hook = updateWorkInProgressHook();
-          var queue2 = hook.queue;
-          if (queue2 === null) {
+          var queue3 = hook.queue;
+          if (queue3 === null) {
             throw new Error("Should have a queue. This is likely a bug in React. Please file an issue.");
           }
-          queue2.lastRenderedReducer = reducer2;
-          var dispatch = queue2.dispatch;
-          var lastRenderPhaseUpdate = queue2.pending;
+          queue3.lastRenderedReducer = reducer2;
+          var dispatch = queue3.dispatch;
+          var lastRenderPhaseUpdate = queue3.pending;
           var newState = hook.memoizedState;
           if (lastRenderPhaseUpdate !== null) {
-            queue2.pending = null;
+            queue3.pending = null;
             var firstRenderPhaseUpdate = lastRenderPhaseUpdate.next;
             var update = firstRenderPhaseUpdate;
             do {
@@ -41521,7 +44819,7 @@ var require_react_dom_development = __commonJS({
             if (hook.baseQueue === null) {
               hook.baseState = newState;
             }
-            queue2.lastRenderedState = newState;
+            queue3.lastRenderedState = newState;
           }
           return [newState, dispatch];
         }
@@ -41676,7 +44974,7 @@ var require_react_dom_development = __commonJS({
             initialState = initialState();
           }
           hook.memoizedState = hook.baseState = initialState;
-          var queue2 = {
+          var queue3 = {
             pending: null,
             interleaved: null,
             lanes: NoLanes,
@@ -41684,8 +44982,8 @@ var require_react_dom_development = __commonJS({
             lastRenderedReducer: basicStateReducer,
             lastRenderedState: initialState
           };
-          hook.queue = queue2;
-          var dispatch = queue2.dispatch = dispatchSetState.bind(null, currentlyRenderingFiber$1, queue2);
+          hook.queue = queue3;
+          var dispatch = queue3.dispatch = dispatchSetState.bind(null, currentlyRenderingFiber$1, queue3);
           return [hook.memoizedState, dispatch];
         }
         function updateState(initialState) {
@@ -41999,7 +45297,7 @@ var require_react_dom_development = __commonJS({
           var id = hook.memoizedState;
           return id;
         }
-        function dispatchReducerAction(fiber, queue2, action) {
+        function dispatchReducerAction(fiber, queue3, action) {
           {
             if (typeof arguments[3] === "function") {
               error("State updates from the useState() and useReducer() Hooks don't support the second callback argument. To execute a side effect after rendering, declare it in the component body with useEffect().");
@@ -42014,18 +45312,18 @@ var require_react_dom_development = __commonJS({
             next: null
           };
           if (isRenderPhaseUpdate(fiber)) {
-            enqueueRenderPhaseUpdate(queue2, update);
+            enqueueRenderPhaseUpdate(queue3, update);
           } else {
-            var root3 = enqueueConcurrentHookUpdate(fiber, queue2, update, lane);
+            var root3 = enqueueConcurrentHookUpdate(fiber, queue3, update, lane);
             if (root3 !== null) {
               var eventTime = requestEventTime();
               scheduleUpdateOnFiber(root3, fiber, lane, eventTime);
-              entangleTransitionUpdate(root3, queue2, lane);
+              entangleTransitionUpdate(root3, queue3, lane);
             }
           }
           markUpdateInDevTools(fiber, lane);
         }
-        function dispatchSetState(fiber, queue2, action) {
+        function dispatchSetState(fiber, queue3, action) {
           {
             if (typeof arguments[3] === "function") {
               error("State updates from the useState() and useReducer() Hooks don't support the second callback argument. To execute a side effect after rendering, declare it in the component body with useEffect().");
@@ -42040,11 +45338,11 @@ var require_react_dom_development = __commonJS({
             next: null
           };
           if (isRenderPhaseUpdate(fiber)) {
-            enqueueRenderPhaseUpdate(queue2, update);
+            enqueueRenderPhaseUpdate(queue3, update);
           } else {
             var alternate = fiber.alternate;
             if (fiber.lanes === NoLanes && (alternate === null || alternate.lanes === NoLanes)) {
-              var lastRenderedReducer = queue2.lastRenderedReducer;
+              var lastRenderedReducer = queue3.lastRenderedReducer;
               if (lastRenderedReducer !== null) {
                 var prevDispatcher;
                 {
@@ -42052,12 +45350,12 @@ var require_react_dom_development = __commonJS({
                   ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
                 }
                 try {
-                  var currentState = queue2.lastRenderedState;
+                  var currentState = queue3.lastRenderedState;
                   var eagerState = lastRenderedReducer(currentState, action);
                   update.hasEagerState = true;
                   update.eagerState = eagerState;
                   if (objectIs(eagerState, currentState)) {
-                    enqueueConcurrentHookUpdateAndEagerlyBailout(fiber, queue2, update, lane);
+                    enqueueConcurrentHookUpdateAndEagerlyBailout(fiber, queue3, update, lane);
                     return;
                   }
                 } catch (error2) {
@@ -42068,11 +45366,11 @@ var require_react_dom_development = __commonJS({
                 }
               }
             }
-            var root3 = enqueueConcurrentHookUpdate(fiber, queue2, update, lane);
+            var root3 = enqueueConcurrentHookUpdate(fiber, queue3, update, lane);
             if (root3 !== null) {
               var eventTime = requestEventTime();
               scheduleUpdateOnFiber(root3, fiber, lane, eventTime);
-              entangleTransitionUpdate(root3, queue2, lane);
+              entangleTransitionUpdate(root3, queue3, lane);
             }
           }
           markUpdateInDevTools(fiber, lane);
@@ -42081,23 +45379,23 @@ var require_react_dom_development = __commonJS({
           var alternate = fiber.alternate;
           return fiber === currentlyRenderingFiber$1 || alternate !== null && alternate === currentlyRenderingFiber$1;
         }
-        function enqueueRenderPhaseUpdate(queue2, update) {
+        function enqueueRenderPhaseUpdate(queue3, update) {
           didScheduleRenderPhaseUpdateDuringThisPass = didScheduleRenderPhaseUpdate = true;
-          var pending = queue2.pending;
+          var pending = queue3.pending;
           if (pending === null) {
             update.next = update;
           } else {
             update.next = pending.next;
             pending.next = update;
           }
-          queue2.pending = update;
+          queue3.pending = update;
         }
-        function entangleTransitionUpdate(root3, queue2, lane) {
+        function entangleTransitionUpdate(root3, queue3, lane) {
           if (isTransitionLane(lane)) {
-            var queueLanes = queue2.lanes;
+            var queueLanes = queue3.lanes;
             queueLanes = intersectLanes(queueLanes, root3.pendingLanes);
             var newQueueLanes = mergeLanes(queueLanes, lane);
-            queue2.lanes = newQueueLanes;
+            queue3.lanes = newQueueLanes;
             markRootEntangled(root3, newQueueLanes);
           }
         }
@@ -43401,29 +46699,29 @@ var require_react_dom_development = __commonJS({
         }
         function updateMemoComponent(current2, workInProgress2, Component, nextProps, renderLanes2) {
           if (current2 === null) {
-            var type = Component.type;
-            if (isSimpleFunctionComponent(type) && Component.compare === null && // SimpleMemoComponent codepath doesn't resolve outer props either.
+            var type2 = Component.type;
+            if (isSimpleFunctionComponent(type2) && Component.compare === null && // SimpleMemoComponent codepath doesn't resolve outer props either.
             Component.defaultProps === void 0) {
-              var resolvedType = type;
+              var resolvedType = type2;
               {
-                resolvedType = resolveFunctionForHotReloading(type);
+                resolvedType = resolveFunctionForHotReloading(type2);
               }
               workInProgress2.tag = SimpleMemoComponent;
               workInProgress2.type = resolvedType;
               {
-                validateFunctionComponentInDev(workInProgress2, type);
+                validateFunctionComponentInDev(workInProgress2, type2);
               }
               return updateSimpleMemoComponent(current2, workInProgress2, resolvedType, nextProps, renderLanes2);
             }
             {
-              var innerPropTypes = type.propTypes;
+              var innerPropTypes = type2.propTypes;
               if (innerPropTypes) {
                 checkPropTypes(
                   innerPropTypes,
                   nextProps,
                   // Resolved props
                   "prop",
-                  getComponentNameFromType(type)
+                  getComponentNameFromType(type2)
                 );
               }
             }
@@ -43836,14 +47134,14 @@ var require_react_dom_development = __commonJS({
           if (current2 === null) {
             tryToClaimNextHydratableInstance(workInProgress2);
           }
-          var type = workInProgress2.type;
+          var type2 = workInProgress2.type;
           var nextProps = workInProgress2.pendingProps;
           var prevProps = current2 !== null ? current2.memoizedProps : null;
           var nextChildren = nextProps.children;
-          var isDirectTextChild = shouldSetTextContent(type, nextProps);
+          var isDirectTextChild = shouldSetTextContent(type2, nextProps);
           if (isDirectTextChild) {
             nextChildren = null;
-          } else if (prevProps !== null && shouldSetTextContent(type, prevProps)) {
+          } else if (prevProps !== null && shouldSetTextContent(type2, prevProps)) {
             workInProgress2.flags |= ContentReset;
           }
           markRef(current2, workInProgress2);
@@ -44506,8 +47804,8 @@ var require_react_dom_development = __commonJS({
             var isAnArray = isArray4(childSlot);
             var isIterable = !isAnArray && typeof getIteratorFn(childSlot) === "function";
             if (isAnArray || isIterable) {
-              var type = isAnArray ? "array" : "iterable";
-              error("A nested %s was passed to row #%s in <SuspenseList />. Wrap it in an additional SuspenseList to configure its revealOrder: <SuspenseList revealOrder=...> ... <SuspenseList revealOrder=...>{%s}</SuspenseList> ... </SuspenseList>", type, index3, type);
+              var type2 = isAnArray ? "array" : "iterable";
+              error("A nested %s was passed to row #%s in <SuspenseList />. Wrap it in an additional SuspenseList to configure its revealOrder: <SuspenseList revealOrder=...> ... <SuspenseList revealOrder=...>{%s}</SuspenseList> ... </SuspenseList>", type2, index3, type2);
               return false;
             }
           }
@@ -44976,10 +48274,10 @@ var require_react_dom_development = __commonJS({
             case HostPortal:
               return updatePortalComponent(current2, workInProgress2, renderLanes2);
             case ForwardRef: {
-              var type = workInProgress2.type;
+              var type2 = workInProgress2.type;
               var _unresolvedProps2 = workInProgress2.pendingProps;
-              var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
-              return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
+              var _resolvedProps2 = workInProgress2.elementType === type2 ? _unresolvedProps2 : resolveDefaultProps(type2, _unresolvedProps2);
+              return updateForwardRef(current2, workInProgress2, type2, _resolvedProps2, renderLanes2);
             }
             case Fragment:
               return updateFragment(current2, workInProgress2, renderLanes2);
@@ -45074,14 +48372,14 @@ var require_react_dom_development = __commonJS({
           };
           updateHostContainer = function(current2, workInProgress2) {
           };
-          updateHostComponent$1 = function(current2, workInProgress2, type, newProps, rootContainerInstance) {
+          updateHostComponent$1 = function(current2, workInProgress2, type2, newProps, rootContainerInstance) {
             var oldProps = current2.memoizedProps;
             if (oldProps === newProps) {
               return;
             }
             var instance = workInProgress2.stateNode;
             var currentHostContext = getHostContext();
-            var updatePayload = prepareUpdate(instance, type, oldProps, newProps, rootContainerInstance, currentHostContext);
+            var updatePayload = prepareUpdate(instance, type2, oldProps, newProps, rootContainerInstance, currentHostContext);
             workInProgress2.updateQueue = updatePayload;
             if (updatePayload) {
               markUpdate(workInProgress2);
@@ -45303,9 +48601,9 @@ var require_react_dom_development = __commonJS({
             case HostComponent: {
               popHostContext(workInProgress2);
               var rootContainerInstance = getRootHostContainer();
-              var type = workInProgress2.type;
+              var type2 = workInProgress2.type;
               if (current2 !== null && workInProgress2.stateNode != null) {
-                updateHostComponent$1(current2, workInProgress2, type, newProps, rootContainerInstance);
+                updateHostComponent$1(current2, workInProgress2, type2, newProps, rootContainerInstance);
                 if (current2.ref !== workInProgress2.ref) {
                   markRef$1(workInProgress2);
                 }
@@ -45324,10 +48622,10 @@ var require_react_dom_development = __commonJS({
                     markUpdate(workInProgress2);
                   }
                 } else {
-                  var instance = createInstance2(type, newProps, rootContainerInstance, currentHostContext, workInProgress2);
+                  var instance = createInstance2(type2, newProps, rootContainerInstance, currentHostContext, workInProgress2);
                   appendAllChildren(instance, workInProgress2, false, false);
                   workInProgress2.stateNode = instance;
-                  if (finalizeInitialChildren(instance, type, newProps, rootContainerInstance)) {
+                  if (finalizeInitialChildren(instance, type2, newProps, rootContainerInstance)) {
                     markUpdate(workInProgress2);
                   }
                 }
@@ -46135,9 +49433,9 @@ var require_react_dom_development = __commonJS({
               case HostComponent: {
                 var _instance2 = finishedWork.stateNode;
                 if (current2 === null && finishedWork.flags & Update) {
-                  var type = finishedWork.type;
+                  var type2 = finishedWork.type;
                   var props = finishedWork.memoizedProps;
-                  commitMount(_instance2, type, props);
+                  commitMount(_instance2, type2, props);
                 }
                 break;
               }
@@ -46799,12 +50097,12 @@ var require_react_dom_development = __commonJS({
                   if (_instance4 != null) {
                     var newProps = finishedWork.memoizedProps;
                     var oldProps = current2 !== null ? current2.memoizedProps : newProps;
-                    var type = finishedWork.type;
+                    var type2 = finishedWork.type;
                     var updatePayload = finishedWork.updateQueue;
                     finishedWork.updateQueue = null;
                     if (updatePayload !== null) {
                       try {
-                        commitUpdate(_instance4, updatePayload, type, oldProps, newProps, finishedWork);
+                        commitUpdate(_instance4, updatePayload, type2, oldProps, newProps, finishedWork);
                       } catch (error2) {
                         captureCommitPhaseError(finishedWork, finishedWork.return, error2);
                       }
@@ -48931,42 +52229,42 @@ var require_react_dom_development = __commonJS({
             resolveFamily = handler;
           }
         };
-        function resolveFunctionForHotReloading(type) {
+        function resolveFunctionForHotReloading(type2) {
           {
             if (resolveFamily === null) {
-              return type;
+              return type2;
             }
-            var family = resolveFamily(type);
+            var family = resolveFamily(type2);
             if (family === void 0) {
-              return type;
+              return type2;
             }
             return family.current;
           }
         }
-        function resolveClassForHotReloading(type) {
-          return resolveFunctionForHotReloading(type);
+        function resolveClassForHotReloading(type2) {
+          return resolveFunctionForHotReloading(type2);
         }
-        function resolveForwardRefForHotReloading(type) {
+        function resolveForwardRefForHotReloading(type2) {
           {
             if (resolveFamily === null) {
-              return type;
+              return type2;
             }
-            var family = resolveFamily(type);
+            var family = resolveFamily(type2);
             if (family === void 0) {
-              if (type !== null && type !== void 0 && typeof type.render === "function") {
-                var currentRender = resolveFunctionForHotReloading(type.render);
-                if (type.render !== currentRender) {
+              if (type2 !== null && type2 !== void 0 && typeof type2.render === "function") {
+                var currentRender = resolveFunctionForHotReloading(type2.render);
+                if (type2.render !== currentRender) {
                   var syntheticType = {
                     $$typeof: REACT_FORWARD_REF_TYPE,
                     render: currentRender
                   };
-                  if (type.displayName !== void 0) {
-                    syntheticType.displayName = type.displayName;
+                  if (type2.displayName !== void 0) {
+                    syntheticType.displayName = type2.displayName;
                   }
                   return syntheticType;
                 }
               }
-              return type;
+              return type2;
             }
             return family.current;
           }
@@ -49063,16 +52361,16 @@ var require_react_dom_development = __commonJS({
         };
         function scheduleFibersWithFamiliesRecursively(fiber, updatedFamilies, staleFamilies) {
           {
-            var alternate = fiber.alternate, child = fiber.child, sibling = fiber.sibling, tag = fiber.tag, type = fiber.type;
+            var alternate = fiber.alternate, child = fiber.child, sibling = fiber.sibling, tag = fiber.tag, type2 = fiber.type;
             var candidateType = null;
             switch (tag) {
               case FunctionComponent:
               case SimpleMemoComponent:
               case ClassComponent:
-                candidateType = type;
+                candidateType = type2;
                 break;
               case ForwardRef:
-                candidateType = type.render;
+                candidateType = type2.render;
                 break;
             }
             if (resolveFamily === null) {
@@ -49128,16 +52426,16 @@ var require_react_dom_development = __commonJS({
         };
         function findHostInstancesForMatchingFibersRecursively(fiber, types, hostInstances) {
           {
-            var child = fiber.child, sibling = fiber.sibling, tag = fiber.tag, type = fiber.type;
+            var child = fiber.child, sibling = fiber.sibling, tag = fiber.tag, type2 = fiber.type;
             var candidateType = null;
             switch (tag) {
               case FunctionComponent:
               case SimpleMemoComponent:
               case ClassComponent:
-                candidateType = type;
+                candidateType = type2;
                 break;
               case ForwardRef:
-                candidateType = type.render;
+                candidateType = type2.render;
                 break;
             }
             var didMatch = false;
@@ -49273,8 +52571,8 @@ var require_react_dom_development = __commonJS({
           var prototype3 = Component.prototype;
           return !!(prototype3 && prototype3.isReactComponent);
         }
-        function isSimpleFunctionComponent(type) {
-          return typeof type === "function" && !shouldConstruct$1(type) && type.defaultProps === void 0;
+        function isSimpleFunctionComponent(type2) {
+          return typeof type2 === "function" && !shouldConstruct$1(type2) && type2.defaultProps === void 0;
         }
         function resolveLazyComponentTag(Component) {
           if (typeof Component === "function") {
@@ -49409,11 +52707,11 @@ var require_react_dom_development = __commonJS({
           }
           return createFiber(HostRoot, null, null, mode);
         }
-        function createFiberFromTypeAndProps(type, key, pendingProps, owner, mode, lanes) {
+        function createFiberFromTypeAndProps(type2, key, pendingProps, owner, mode, lanes) {
           var fiberTag = IndeterminateComponent;
-          var resolvedType = type;
-          if (typeof type === "function") {
-            if (shouldConstruct$1(type)) {
+          var resolvedType = type2;
+          if (typeof type2 === "function") {
+            if (shouldConstruct$1(type2)) {
               fiberTag = ClassComponent;
               {
                 resolvedType = resolveClassForHotReloading(resolvedType);
@@ -49423,11 +52721,11 @@ var require_react_dom_development = __commonJS({
                 resolvedType = resolveFunctionForHotReloading(resolvedType);
               }
             }
-          } else if (typeof type === "string") {
+          } else if (typeof type2 === "string") {
             fiberTag = HostComponent;
           } else {
             getTag:
-              switch (type) {
+              switch (type2) {
                 case REACT_FRAGMENT_TYPE:
                   return createFiberFromFragment(pendingProps.children, mode, lanes, key);
                 case REACT_STRICT_MODE_TYPE:
@@ -49451,8 +52749,8 @@ var require_react_dom_development = __commonJS({
                 case REACT_TRACING_MARKER_TYPE:
                 case REACT_DEBUG_TRACING_MODE_TYPE:
                 default: {
-                  if (typeof type === "object" && type !== null) {
-                    switch (type.$$typeof) {
+                  if (typeof type2 === "object" && type2 !== null) {
+                    switch (type2.$$typeof) {
                       case REACT_PROVIDER_TYPE:
                         fiberTag = ContextProvider;
                         break getTag;
@@ -49476,7 +52774,7 @@ var require_react_dom_development = __commonJS({
                   }
                   var info = "";
                   {
-                    if (type === void 0 || typeof type === "object" && type !== null && Object.keys(type).length === 0) {
+                    if (type2 === void 0 || typeof type2 === "object" && type2 !== null && Object.keys(type2).length === 0) {
                       info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
                     }
                     var ownerName = owner ? getComponentNameFromFiber(owner) : null;
@@ -49484,12 +52782,12 @@ var require_react_dom_development = __commonJS({
                       info += "\n\nCheck the render method of `" + ownerName + "`.";
                     }
                   }
-                  throw new Error("Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) " + ("but got: " + (type == null ? type : typeof type) + "." + info));
+                  throw new Error("Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) " + ("but got: " + (type2 == null ? type2 : typeof type2) + "." + info));
                 }
               }
           }
           var fiber = createFiber(fiberTag, pendingProps, key, mode);
-          fiber.elementType = type;
+          fiber.elementType = type2;
           fiber.type = resolvedType;
           fiber.lanes = lanes;
           {
@@ -49502,10 +52800,10 @@ var require_react_dom_development = __commonJS({
           {
             owner = element2._owner;
           }
-          var type = element2.type;
+          var type2 = element2.type;
           var key = element2.key;
           var pendingProps = element2.props;
-          var fiber = createFiberFromTypeAndProps(type, key, pendingProps, owner, mode, lanes);
+          var fiber = createFiberFromTypeAndProps(type2, key, pendingProps, owner, mode, lanes);
           {
             fiber._debugSource = element2._source;
             fiber._debugOwner = element2._owner;
@@ -50766,7 +54064,7 @@ var require_lib2 = __commonJS({
     var draining;
     var currentQueue;
     var queueIndex = -1;
-    var queue2 = [];
+    var queue3 = [];
     var scheduled = false;
     function cleanUpNextTick() {
       if (!draining || !currentQueue) {
@@ -50774,11 +54072,11 @@ var require_lib2 = __commonJS({
       }
       draining = false;
       if (currentQueue.length) {
-        queue2 = currentQueue.concat(queue2);
+        queue3 = currentQueue.concat(queue3);
       } else {
         queueIndex = -1;
       }
-      if (queue2.length) {
+      if (queue3.length) {
         nextTick();
       }
     }
@@ -50788,16 +54086,16 @@ var require_lib2 = __commonJS({
       }
       scheduled = false;
       draining = true;
-      var len2 = queue2.length;
+      var len2 = queue3.length;
       var timeout = setTimeout(cleanUpNextTick);
       while (len2) {
-        currentQueue = queue2;
-        queue2 = [];
+        currentQueue = queue3;
+        queue3 = [];
         while (currentQueue && ++queueIndex < len2) {
           currentQueue[queueIndex].run();
         }
         queueIndex = -1;
-        len2 = queue2.length;
+        len2 = queue3.length;
       }
       currentQueue = null;
       queueIndex = -1;
@@ -50841,7 +54139,7 @@ var require_lib2 = __commonJS({
           args[i2 - 1] = arguments[i2];
         }
       }
-      queue2.push(new Item(task, args));
+      queue3.push(new Item(task, args));
       if (!scheduled && !draining) {
         scheduled = true;
         scheduleDrain();
@@ -51125,16 +54423,16 @@ var require_spark_md5 = __commonJS({
           };
         })();
       }
-      function toUtf8(str) {
-        if (/[\u0080-\uFFFF]/.test(str)) {
-          str = unescape(encodeURIComponent(str));
+      function toUtf8(str2) {
+        if (/[\u0080-\uFFFF]/.test(str2)) {
+          str2 = unescape(encodeURIComponent(str2));
         }
-        return str;
+        return str2;
       }
-      function utf8Str2ArrayBuffer(str, returnUInt8Array) {
-        var length = str.length, buff = new ArrayBuffer(length), arr = new Uint8Array(buff), i;
+      function utf8Str2ArrayBuffer(str2, returnUInt8Array) {
+        var length = str2.length, buff = new ArrayBuffer(length), arr = new Uint8Array(buff), i;
         for (i = 0; i < length; i += 1) {
-          arr[i] = str.charCodeAt(i);
+          arr[i] = str2.charCodeAt(i);
         }
         return returnUInt8Array ? arr : buff;
       }
@@ -51157,8 +54455,8 @@ var require_spark_md5 = __commonJS({
       function SparkMD5() {
         this.reset();
       }
-      SparkMD5.prototype.append = function(str) {
-        this.appendBinary(toUtf8(str));
+      SparkMD5.prototype.append = function(str2) {
+        this.appendBinary(toUtf8(str2));
         return this;
       };
       SparkMD5.prototype.appendBinary = function(contents) {
@@ -51225,8 +54523,8 @@ var require_spark_md5 = __commonJS({
         tail[15] = hi;
         md5cycle(this._hash, tail);
       };
-      SparkMD5.hash = function(str, raw) {
-        return SparkMD5.hashBinary(toUtf8(str), raw);
+      SparkMD5.hash = function(str2, raw) {
+        return SparkMD5.hashBinary(toUtf8(str2), raw);
       };
       SparkMD5.hashBinary = function(content3, raw) {
         var hash = md51(content3), ret = hex(hash);
@@ -51288,11 +54586,11 @@ var require_vuvuzela = __commonJS({
   "node_modules/vuvuzela/index.js"(exports) {
     "use strict";
     exports.stringify = function stringify5(input) {
-      var queue2 = [];
-      queue2.push({ obj: input });
+      var queue3 = [];
+      queue3.push({ obj: input });
       var res = "";
       var next, obj, prefix, val, i, arrayPrefix, keys3, k, key, value, objPrefix;
-      while (next = queue2.pop()) {
+      while (next = queue3.pop()) {
         obj = next.obj;
         prefix = next.prefix || "";
         val = next.val || "";
@@ -51304,12 +54602,12 @@ var require_vuvuzela = __commonJS({
         } else if (obj === null) {
           res += "null";
         } else if (Array.isArray(obj)) {
-          queue2.push({ val: "]" });
+          queue3.push({ val: "]" });
           for (i = obj.length - 1; i >= 0; i--) {
             arrayPrefix = i === 0 ? "" : ",";
-            queue2.push({ obj: obj[i], prefix: arrayPrefix });
+            queue3.push({ obj: obj[i], prefix: arrayPrefix });
           }
-          queue2.push({ val: "[" });
+          queue3.push({ val: "[" });
         } else {
           keys3 = [];
           for (k in obj) {
@@ -51317,15 +54615,15 @@ var require_vuvuzela = __commonJS({
               keys3.push(k);
             }
           }
-          queue2.push({ val: "}" });
+          queue3.push({ val: "}" });
           for (i = keys3.length - 1; i >= 0; i--) {
             key = keys3[i];
             value = obj[key];
             objPrefix = i > 0 ? "," : "";
             objPrefix += JSON.stringify(key) + ":";
-            queue2.push({ obj: value, prefix: objPrefix });
+            queue3.push({ obj: value, prefix: objPrefix });
           }
-          queue2.push({ val: "{" });
+          queue3.push({ val: "{" });
         }
       }
       return res;
@@ -51347,7 +54645,7 @@ var require_vuvuzela = __commonJS({
         stack.push(obj);
       }
     }
-    exports.parse = function(str) {
+    exports.parse = function(str2) {
       var stack = [];
       var metaStack = [];
       var i = 0;
@@ -51355,7 +54653,7 @@ var require_vuvuzela = __commonJS({
       var parsedString, lastCh, numConsecutiveSlashes, ch;
       var arrayElement, objElement;
       while (true) {
-        collationIndex2 = str[i++];
+        collationIndex2 = str2[i++];
         if (collationIndex2 === "}" || collationIndex2 === "]" || typeof collationIndex2 === "undefined") {
           if (stack.length === 1) {
             return stack.pop();
@@ -51397,7 +54695,7 @@ var require_vuvuzela = __commonJS({
             parsedNum = "";
             i--;
             while (true) {
-              numChar = str[i++];
+              numChar = str2[i++];
               if (/[\d\.\-e\+]/.test(numChar)) {
                 parsedNum += numChar;
               } else {
@@ -51412,7 +54710,7 @@ var require_vuvuzela = __commonJS({
             lastCh = void 0;
             numConsecutiveSlashes = 0;
             while (true) {
-              ch = str[i++];
+              ch = str2[i++];
               if (ch !== '"' || lastCh === "\\" && numConsecutiveSlashes % 2 === 1) {
                 parsedString += ch;
                 lastCh = ch;
@@ -51460,6 +54758,7 @@ var import_crypto_js = __toESM(require_crypto_js());
 // node_modules/langchain/dist/chains/index.js
 init_base5();
 init_llm_chain();
+init_api_chain();
 
 // node_modules/langchain/dist/chains/conversation.js
 init_llm_chain();
@@ -51474,15 +54773,21 @@ init_base2();
 // node_modules/langchain/dist/stores/message/in_memory.js
 init_schema();
 var ChatMessageHistory = class extends BaseListChatMessageHistory {
-  constructor(messages2) {
-    super();
+  constructor(messages4) {
+    super(...arguments);
+    Object.defineProperty(this, "lc_namespace", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: ["langchain", "stores", "message", "in_memory"]
+    });
     Object.defineProperty(this, "messages", {
       enumerable: true,
       configurable: true,
       writable: true,
       value: []
     });
-    this.messages = messages2 != null ? messages2 : [];
+    this.messages = messages4 != null ? messages4 : [];
   }
   async getMessages() {
     return this.messages;
@@ -51574,15 +54879,15 @@ var BufferMemory = class extends BaseChatMemory {
     return [this.memoryKey];
   }
   async loadMemoryVariables(_values) {
-    const messages2 = await this.chatHistory.getMessages();
+    const messages4 = await this.chatHistory.getMessages();
     if (this.returnMessages) {
       const result2 = {
-        [this.memoryKey]: messages2
+        [this.memoryKey]: messages4
       };
       return result2;
     }
     const result = {
-      [this.memoryKey]: getBufferString(messages2, this.humanPrefix, this.aiPrefix)
+      [this.memoryKey]: getBufferString(messages4, this.humanPrefix, this.aiPrefix)
     };
     return result;
   }
@@ -51627,7 +54932,7 @@ init_document();
 init_tiktoken();
 var TextSplitter = class {
   constructor(fields) {
-    var _a, _b;
+    var _a, _b, _c;
     Object.defineProperty(this, "chunkSize", {
       enumerable: true,
       configurable: true,
@@ -51640,26 +54945,52 @@ var TextSplitter = class {
       writable: true,
       value: 200
     });
+    Object.defineProperty(this, "keepSeparator", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: false
+    });
     this.chunkSize = (_a = fields == null ? void 0 : fields.chunkSize) != null ? _a : this.chunkSize;
     this.chunkOverlap = (_b = fields == null ? void 0 : fields.chunkOverlap) != null ? _b : this.chunkOverlap;
+    this.keepSeparator = (_c = fields == null ? void 0 : fields.keepSeparator) != null ? _c : this.keepSeparator;
     if (this.chunkOverlap >= this.chunkSize) {
       throw new Error("Cannot have chunkOverlap >= chunkSize");
     }
   }
-  async createDocuments(texts, metadatas = []) {
+  splitOnSeparator(text4, separator) {
+    let splits;
+    if (separator) {
+      if (this.keepSeparator) {
+        const regexEscapedSeparator = separator.replace(/[/\-\\^$*+?.()|[\]{}]/g, "\\$&");
+        splits = text4.split(new RegExp(`(?=${regexEscapedSeparator})`));
+      } else {
+        splits = text4.split(separator);
+      }
+    } else {
+      splits = text4.split("");
+    }
+    return splits.filter((s) => s !== "");
+  }
+  async createDocuments(texts, metadatas = [], chunkHeaderOptions = {}) {
     const _metadatas = metadatas.length > 0 ? metadatas : new Array(texts.length).fill({});
+    const { chunkHeader = "", chunkOverlapHeader = "(cont'd) ", appendChunkOverlapHeader = false } = chunkHeaderOptions;
     const documents = new Array();
     for (let i = 0; i < texts.length; i += 1) {
       const text4 = texts[i];
       let lineCounterIndex = 1;
       let prevChunk = null;
       for (const chunk of await this.splitText(text4)) {
+        let pageContent = chunkHeader;
         let numberOfIntermediateNewLines = 0;
         if (prevChunk) {
           const indexChunk = text4.indexOf(chunk);
           const indexEndPrevChunk = text4.indexOf(prevChunk) + prevChunk.length;
           const removedNewlinesFromSplittingText = text4.slice(indexEndPrevChunk, indexChunk);
           numberOfIntermediateNewLines = (removedNewlinesFromSplittingText.match(/\n/g) || []).length;
+          if (appendChunkOverlapHeader) {
+            pageContent += chunkOverlapHeader;
+          }
         }
         lineCounterIndex += numberOfIntermediateNewLines;
         const newLinesCount = (chunk.match(/\n/g) || []).length;
@@ -51672,8 +55003,9 @@ var TextSplitter = class {
           ..._metadatas[i],
           loc
         };
+        pageContent += chunk;
         documents.push(new Document({
-          pageContent: chunk,
+          pageContent,
           metadata: metadataWithLinesNumber
         }));
         lineCounterIndex += newLinesCount;
@@ -51682,11 +55014,11 @@ var TextSplitter = class {
     }
     return documents;
   }
-  async splitDocuments(documents) {
+  async splitDocuments(documents, chunkHeaderOptions = {}) {
     const selectedDocuments = documents.filter((doc) => doc.pageContent !== void 0);
     const texts = selectedDocuments.map((doc) => doc.pageContent);
     const metadatas = selectedDocuments.map((doc) => doc.metadata);
-    return this.createDocuments(texts, metadatas);
+    return this.createDocuments(texts, metadatas, chunkHeaderOptions);
   }
   joinDocs(docs, separator) {
     const text4 = docs.join(separator).trim();
@@ -51726,7 +55058,7 @@ which is longer than the specified ${this.chunkSize}`);
 };
 var RecursiveCharacterTextSplitter = class extends TextSplitter {
   constructor(fields) {
-    var _a;
+    var _a, _b;
     super(fields);
     Object.defineProperty(this, "separators", {
       enumerable: true,
@@ -51735,45 +55067,403 @@ var RecursiveCharacterTextSplitter = class extends TextSplitter {
       value: ["\n\n", "\n", " ", ""]
     });
     this.separators = (_a = fields == null ? void 0 : fields.separators) != null ? _a : this.separators;
+    this.keepSeparator = (_b = fields == null ? void 0 : fields.keepSeparator) != null ? _b : true;
   }
-  async splitText(text4) {
+  async _splitText(text4, separators) {
     const finalChunks = [];
-    let separator = this.separators[this.separators.length - 1];
-    for (const s of this.separators) {
+    let separator = separators[separators.length - 1];
+    let newSeparators;
+    for (let i = 0; i < separators.length; i += 1) {
+      const s = separators[i];
       if (s === "") {
         separator = s;
         break;
       }
       if (text4.includes(s)) {
         separator = s;
+        newSeparators = separators.slice(i + 1);
         break;
       }
     }
-    let splits;
-    if (separator) {
-      splits = text4.split(separator);
-    } else {
-      splits = text4.split("");
-    }
+    const splits = this.splitOnSeparator(text4, separator);
     let goodSplits = [];
+    const _separator = this.keepSeparator ? "" : separator;
     for (const s of splits) {
       if (s.length < this.chunkSize) {
         goodSplits.push(s);
       } else {
         if (goodSplits.length) {
-          const mergedText = this.mergeSplits(goodSplits, separator);
+          const mergedText = this.mergeSplits(goodSplits, _separator);
           finalChunks.push(...mergedText);
           goodSplits = [];
         }
-        const otherInfo = await this.splitText(s);
-        finalChunks.push(...otherInfo);
+        if (!newSeparators) {
+          finalChunks.push(s);
+        } else {
+          const otherInfo = await this._splitText(s, newSeparators);
+          finalChunks.push(...otherInfo);
+        }
       }
     }
     if (goodSplits.length) {
-      const mergedText = this.mergeSplits(goodSplits, separator);
+      const mergedText = this.mergeSplits(goodSplits, _separator);
       finalChunks.push(...mergedText);
     }
     return finalChunks;
+  }
+  async splitText(text4) {
+    return this._splitText(text4, this.separators);
+  }
+  static fromLanguage(language, options) {
+    return new RecursiveCharacterTextSplitter({
+      ...options,
+      separators: RecursiveCharacterTextSplitter.getSeparatorsForLanguage(language)
+    });
+  }
+  static getSeparatorsForLanguage(language) {
+    if (language === "cpp") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        // Split along function definitions
+        "\nvoid ",
+        "\nint ",
+        "\nfloat ",
+        "\ndouble ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "go") {
+      return [
+        // Split along function definitions
+        "\nfunc ",
+        "\nvar ",
+        "\nconst ",
+        "\ntype ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "java") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        // Split along method definitions
+        "\npublic ",
+        "\nprotected ",
+        "\nprivate ",
+        "\nstatic ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "js") {
+      return [
+        // Split along function definitions
+        "\nfunction ",
+        "\nconst ",
+        "\nlet ",
+        "\nvar ",
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        "\ndefault ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "php") {
+      return [
+        // Split along function definitions
+        "\nfunction ",
+        // Split along class definitions
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nforeach ",
+        "\nwhile ",
+        "\ndo ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "proto") {
+      return [
+        // Split along message definitions
+        "\nmessage ",
+        // Split along service definitions
+        "\nservice ",
+        // Split along enum definitions
+        "\nenum ",
+        // Split along option definitions
+        "\noption ",
+        // Split along import statements
+        "\nimport ",
+        // Split along syntax declarations
+        "\nsyntax ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "python") {
+      return [
+        // First, try to split along class definitions
+        "\nclass ",
+        "\ndef ",
+        "\n	def ",
+        // Now split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "rst") {
+      return [
+        // Split along section titles
+        "\n===\n",
+        "\n---\n",
+        "\n***\n",
+        // Split along directive markers
+        "\n.. ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "ruby") {
+      return [
+        // Split along method definitions
+        "\ndef ",
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nunless ",
+        "\nwhile ",
+        "\nfor ",
+        "\ndo ",
+        "\nbegin ",
+        "\nrescue ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "rust") {
+      return [
+        // Split along function definitions
+        "\nfn ",
+        "\nconst ",
+        "\nlet ",
+        // Split along control flow statements
+        "\nif ",
+        "\nwhile ",
+        "\nfor ",
+        "\nloop ",
+        "\nmatch ",
+        "\nconst ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "scala") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        "\nobject ",
+        // Split along method definitions
+        "\ndef ",
+        "\nval ",
+        "\nvar ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nmatch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "swift") {
+      return [
+        // Split along function definitions
+        "\nfunc ",
+        // Split along class definitions
+        "\nclass ",
+        "\nstruct ",
+        "\nenum ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\ndo ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "markdown") {
+      return [
+        // First, try to split along Markdown headings (starting with level 2)
+        "\n## ",
+        "\n### ",
+        "\n#### ",
+        "\n##### ",
+        "\n###### ",
+        // Note the alternative syntax for headings (below) is not handled here
+        // Heading level 2
+        // ---------------
+        // End of code block
+        "```\n\n",
+        // Horizontal lines
+        "\n\n***\n\n",
+        "\n\n---\n\n",
+        "\n\n___\n\n",
+        // Note that this splitter doesn't handle horizontal lines defined
+        // by *three or more* of ***, ---, or ___, but this is not handled
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "latex") {
+      return [
+        // First, try to split along Latex sections
+        "\n\\chapter{",
+        "\n\\section{",
+        "\n\\subsection{",
+        "\n\\subsubsection{",
+        // Now split by environments
+        "\n\\begin{enumerate}",
+        "\n\\begin{itemize}",
+        "\n\\begin{description}",
+        "\n\\begin{list}",
+        "\n\\begin{quote}",
+        "\n\\begin{quotation}",
+        "\n\\begin{verse}",
+        "\n\\begin{verbatim}",
+        // Now split by math environments
+        "\n\\begin{align}",
+        "$$",
+        "$",
+        // Now split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "html") {
+      return [
+        // First, try to split along HTML tags
+        "<body>",
+        "<div>",
+        "<p>",
+        "<br>",
+        "<li>",
+        "<h1>",
+        "<h2>",
+        "<h3>",
+        "<h4>",
+        "<h5>",
+        "<h6>",
+        "<span>",
+        "<table>",
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<ul>",
+        "<ol>",
+        "<header>",
+        "<footer>",
+        "<nav>",
+        // Head
+        "<head>",
+        "<style>",
+        "<script>",
+        "<meta>",
+        "<title>",
+        // Normal type of lines
+        " ",
+        ""
+      ];
+    } else if (language === "sol") {
+      return [
+        // Split along compiler informations definitions
+        "\npragma ",
+        "\nusing ",
+        // Split along contract definitions
+        "\ncontract ",
+        "\ninterface ",
+        "\nlibrary ",
+        // Split along method definitions
+        "\nconstructor ",
+        "\ntype ",
+        "\nfunction ",
+        "\nevent ",
+        "\nmodifier ",
+        "\nerror ",
+        "\nstruct ",
+        "\nenum ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\ndo while ",
+        "\nassembly ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else {
+      throw new Error(`Language ${language} is not supported.`);
+    }
   }
 };
 
@@ -51791,15 +55481,6 @@ init_prompt();
 // node_modules/langchain/dist/chains/summarization/refine_prompts.js
 init_prompt();
 
-// node_modules/langchain/dist/chains/sql_db/sql_db_prompt.js
-init_prompt();
-
-// node_modules/langchain/dist/chains/sql_db/sql_db_chain.js
-init_base5();
-init_llm_chain();
-init_base_language();
-init_count_tokens();
-
 // node_modules/langchain/dist/chains/conversational_retrieval_chain.js
 init_prompt();
 init_base5();
@@ -51811,12 +55492,6 @@ Chat History:
 {chat_history}
 Follow Up Input: {question}
 Standalone question:`;
-var qa_template = `Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
-
-{context}
-
-Question: {question}
-Helpful Answer:`;
 var ConversationalRetrievalQAChain = class extends BaseChain {
   get inputKeys() {
     return [this.inputKey, this.chatHistoryKey];
@@ -51869,22 +55544,36 @@ var ConversationalRetrievalQAChain = class extends BaseChain {
     this.inputKey = (_a = fields.inputKey) != null ? _a : this.inputKey;
     this.returnSourceDocuments = (_b = fields.returnSourceDocuments) != null ? _b : this.returnSourceDocuments;
   }
+  static getChatHistoryString(chatHistory) {
+    if (Array.isArray(chatHistory)) {
+      return chatHistory.map((chatMessage) => {
+        if (chatMessage._getType() === "human") {
+          return `Human: ${chatMessage.content}`;
+        } else if (chatMessage._getType() === "ai") {
+          return `Assistant: ${chatMessage.content}`;
+        } else {
+          return `${chatMessage.content}`;
+        }
+      }).join("\n");
+    }
+    return chatHistory;
+  }
   /** @ignore */
   async _call(values, runManager) {
     if (!(this.inputKey in values)) {
       throw new Error(`Question key ${this.inputKey} not found.`);
     }
     if (!(this.chatHistoryKey in values)) {
-      throw new Error(`chat history key ${this.inputKey} not found.`);
+      throw new Error(`Chat history key ${this.chatHistoryKey} not found.`);
     }
     const question = values[this.inputKey];
-    const chatHistory = values[this.chatHistoryKey];
+    const chatHistory = ConversationalRetrievalQAChain.getChatHistoryString(values[this.chatHistoryKey]);
     let newQuestion = question;
     if (chatHistory.length > 0) {
       const result2 = await this.questionGeneratorChain.call({
         question,
         chat_history: chatHistory
-      }, runManager == null ? void 0 : runManager.getChild());
+      }, runManager == null ? void 0 : runManager.getChild("question_generator"));
       const keys3 = Object.keys(result2);
       if (keys3.length === 1) {
         newQuestion = result2[keys3[0]];
@@ -51898,7 +55587,7 @@ var ConversationalRetrievalQAChain = class extends BaseChain {
       input_documents: docs,
       chat_history: chatHistory
     };
-    const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild());
+    const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild("combine_documents"));
     if (this.returnSourceDocuments) {
       return {
         ...result,
@@ -51917,13 +55606,16 @@ var ConversationalRetrievalQAChain = class extends BaseChain {
     throw new Error("Not implemented.");
   }
   static fromLLM(llm, retriever, options = {}) {
-    const { questionGeneratorTemplate, qaTemplate, verbose, ...rest } = options;
-    const question_generator_prompt = PromptTemplate.fromTemplate(questionGeneratorTemplate || question_generator_template);
-    const qa_prompt = PromptTemplate.fromTemplate(qaTemplate || qa_template);
-    const qaChain = loadQAStuffChain(llm, { prompt: qa_prompt, verbose });
+    var _a, _b, _c;
+    const { questionGeneratorTemplate, qaTemplate, qaChainOptions = {
+      type: "stuff",
+      prompt: qaTemplate ? PromptTemplate.fromTemplate(qaTemplate) : void 0
+    }, questionGeneratorChainOptions, verbose, ...rest } = options;
+    const qaChain = loadQAChain(llm, qaChainOptions);
+    const questionGeneratorChainPrompt = PromptTemplate.fromTemplate((_b = (_a = questionGeneratorChainOptions == null ? void 0 : questionGeneratorChainOptions.template) != null ? _a : questionGeneratorTemplate) != null ? _b : question_generator_template);
     const questionGeneratorChain = new LLMChain({
-      prompt: question_generator_prompt,
-      llm,
+      prompt: questionGeneratorChainPrompt,
+      llm: (_c = questionGeneratorChainOptions == null ? void 0 : questionGeneratorChainOptions.llm) != null ? _c : llm,
       verbose
     });
     const instance = new this({
@@ -51987,7 +55679,7 @@ var RetrievalQAChain = class extends BaseChain {
     const question = values[this.inputKey];
     const docs = await this.retriever.getRelevantDocuments(question);
     const inputs = { question, input_documents: docs };
-    const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild());
+    const result = await this.combineDocumentsChain.call(inputs, runManager == null ? void 0 : runManager.getChild("combine_documents"));
     if (this.returnSourceDocuments) {
       return {
         ...result,
@@ -52010,9 +55702,9 @@ var RetrievalQAChain = class extends BaseChain {
       prompt: options == null ? void 0 : options.prompt
     });
     return new this({
+      ...options,
       retriever,
-      combineDocumentsChain: qaChain,
-      ...options
+      combineDocumentsChain: qaChain
     });
   }
 };
@@ -52029,7 +55721,8 @@ init_prompt();
 var import_openai2 = __toESM(require_dist2(), 1);
 init_base5();
 init_axios_fetch_adapter();
-init_async_caller();
+init_async_caller2();
+init_env2();
 
 // node_modules/langchain/dist/chains/router/multi_route.js
 init_base5();
@@ -52043,22 +55736,2710 @@ init_llm_chain();
 init_prompt();
 
 // node_modules/langchain/dist/output_parsers/structured.js
-var import_zod_to_json_schema = __toESM(require_zod_to_json_schema(), 1);
+var import_zod_to_json_schema2 = __toESM(require_zod_to_json_schema(), 1);
+init_output_parser();
+
+// node_modules/langchain/dist/output_parsers/router.js
+init_output_parser();
 
 // node_modules/langchain/dist/chains/router/multi_retrieval_qa.js
 init_template();
 init_prompt();
 
+// node_modules/langchain/dist/chains/transform.js
+init_base5();
+
+// node_modules/langchain/dist/chains/openai_functions/extraction.js
+var import_zod_to_json_schema3 = __toESM(require_zod_to_json_schema(), 1);
+init_prompt();
+
+// node_modules/langchain/dist/output_parsers/openai_functions.js
+init_output_parser();
+
+// node_modules/langchain/dist/chains/openai_functions/extraction.js
+init_llm_chain();
+
+// node_modules/langchain/dist/chains/openai_functions/tagging.js
+var import_zod_to_json_schema4 = __toESM(require_zod_to_json_schema(), 1);
+init_prompt();
+init_llm_chain();
+
+// node_modules/js-yaml/dist/js-yaml.mjs
+function isNothing(subject) {
+  return typeof subject === "undefined" || subject === null;
+}
+function isObject3(subject) {
+  return typeof subject === "object" && subject !== null;
+}
+function toArray2(sequence) {
+  if (Array.isArray(sequence))
+    return sequence;
+  else if (isNothing(sequence))
+    return [];
+  return [sequence];
+}
+function extend2(target, source) {
+  var index2, length, key, sourceKeys;
+  if (source) {
+    sourceKeys = Object.keys(source);
+    for (index2 = 0, length = sourceKeys.length; index2 < length; index2 += 1) {
+      key = sourceKeys[index2];
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function repeat(string3, count) {
+  var result = "", cycle;
+  for (cycle = 0; cycle < count; cycle += 1) {
+    result += string3;
+  }
+  return result;
+}
+function isNegativeZero(number2) {
+  return number2 === 0 && Number.NEGATIVE_INFINITY === 1 / number2;
+}
+var isNothing_1 = isNothing;
+var isObject_1 = isObject3;
+var toArray_1 = toArray2;
+var repeat_1 = repeat;
+var isNegativeZero_1 = isNegativeZero;
+var extend_1 = extend2;
+var common = {
+  isNothing: isNothing_1,
+  isObject: isObject_1,
+  toArray: toArray_1,
+  repeat: repeat_1,
+  isNegativeZero: isNegativeZero_1,
+  extend: extend_1
+};
+function formatError(exception2, compact) {
+  var where = "", message = exception2.reason || "(unknown reason)";
+  if (!exception2.mark)
+    return message;
+  if (exception2.mark.name) {
+    where += 'in "' + exception2.mark.name + '" ';
+  }
+  where += "(" + (exception2.mark.line + 1) + ":" + (exception2.mark.column + 1) + ")";
+  if (!compact && exception2.mark.snippet) {
+    where += "\n\n" + exception2.mark.snippet;
+  }
+  return message + " " + where;
+}
+function YAMLException$1(reason, mark2) {
+  Error.call(this);
+  this.name = "YAMLException";
+  this.reason = reason;
+  this.mark = mark2;
+  this.message = formatError(this, false);
+  if (Error.captureStackTrace) {
+    Error.captureStackTrace(this, this.constructor);
+  } else {
+    this.stack = new Error().stack || "";
+  }
+}
+YAMLException$1.prototype = Object.create(Error.prototype);
+YAMLException$1.prototype.constructor = YAMLException$1;
+YAMLException$1.prototype.toString = function toString4(compact) {
+  return this.name + ": " + formatError(this, compact);
+};
+var exception = YAMLException$1;
+function getLine(buffer2, lineStart, lineEnd, position3, maxLineLength) {
+  var head = "";
+  var tail = "";
+  var maxHalfLength = Math.floor(maxLineLength / 2) - 1;
+  if (position3 - lineStart > maxHalfLength) {
+    head = " ... ";
+    lineStart = position3 - maxHalfLength + head.length;
+  }
+  if (lineEnd - position3 > maxHalfLength) {
+    tail = " ...";
+    lineEnd = position3 + maxHalfLength - tail.length;
+  }
+  return {
+    str: head + buffer2.slice(lineStart, lineEnd).replace(/\t/g, "\u2192") + tail,
+    pos: position3 - lineStart + head.length
+    // relative position
+  };
+}
+function padStart(string3, max) {
+  return common.repeat(" ", max - string3.length) + string3;
+}
+function makeSnippet(mark2, options) {
+  options = Object.create(options || null);
+  if (!mark2.buffer)
+    return null;
+  if (!options.maxLength)
+    options.maxLength = 79;
+  if (typeof options.indent !== "number")
+    options.indent = 1;
+  if (typeof options.linesBefore !== "number")
+    options.linesBefore = 3;
+  if (typeof options.linesAfter !== "number")
+    options.linesAfter = 2;
+  var re = /\r?\n|\r|\0/g;
+  var lineStarts = [0];
+  var lineEnds = [];
+  var match2;
+  var foundLineNo = -1;
+  while (match2 = re.exec(mark2.buffer)) {
+    lineEnds.push(match2.index);
+    lineStarts.push(match2.index + match2[0].length);
+    if (mark2.position <= match2.index && foundLineNo < 0) {
+      foundLineNo = lineStarts.length - 2;
+    }
+  }
+  if (foundLineNo < 0)
+    foundLineNo = lineStarts.length - 1;
+  var result = "", i, line;
+  var lineNoLength = Math.min(mark2.line + options.linesAfter, lineEnds.length).toString().length;
+  var maxLineLength = options.maxLength - (options.indent + lineNoLength + 3);
+  for (i = 1; i <= options.linesBefore; i++) {
+    if (foundLineNo - i < 0)
+      break;
+    line = getLine(
+      mark2.buffer,
+      lineStarts[foundLineNo - i],
+      lineEnds[foundLineNo - i],
+      mark2.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo - i]),
+      maxLineLength
+    );
+    result = common.repeat(" ", options.indent) + padStart((mark2.line - i + 1).toString(), lineNoLength) + " | " + line.str + "\n" + result;
+  }
+  line = getLine(mark2.buffer, lineStarts[foundLineNo], lineEnds[foundLineNo], mark2.position, maxLineLength);
+  result += common.repeat(" ", options.indent) + padStart((mark2.line + 1).toString(), lineNoLength) + " | " + line.str + "\n";
+  result += common.repeat("-", options.indent + lineNoLength + 3 + line.pos) + "^\n";
+  for (i = 1; i <= options.linesAfter; i++) {
+    if (foundLineNo + i >= lineEnds.length)
+      break;
+    line = getLine(
+      mark2.buffer,
+      lineStarts[foundLineNo + i],
+      lineEnds[foundLineNo + i],
+      mark2.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo + i]),
+      maxLineLength
+    );
+    result += common.repeat(" ", options.indent) + padStart((mark2.line + i + 1).toString(), lineNoLength) + " | " + line.str + "\n";
+  }
+  return result.replace(/\n$/, "");
+}
+var snippet = makeSnippet;
+var TYPE_CONSTRUCTOR_OPTIONS = [
+  "kind",
+  "multi",
+  "resolve",
+  "construct",
+  "instanceOf",
+  "predicate",
+  "represent",
+  "representName",
+  "defaultStyle",
+  "styleAliases"
+];
+var YAML_NODE_KINDS = [
+  "scalar",
+  "sequence",
+  "mapping"
+];
+function compileStyleAliases(map2) {
+  var result = {};
+  if (map2 !== null) {
+    Object.keys(map2).forEach(function(style) {
+      map2[style].forEach(function(alias) {
+        result[String(alias)] = style;
+      });
+    });
+  }
+  return result;
+}
+function Type$1(tag, options) {
+  options = options || {};
+  Object.keys(options).forEach(function(name) {
+    if (TYPE_CONSTRUCTOR_OPTIONS.indexOf(name) === -1) {
+      throw new exception('Unknown option "' + name + '" is met in definition of "' + tag + '" YAML type.');
+    }
+  });
+  this.options = options;
+  this.tag = tag;
+  this.kind = options["kind"] || null;
+  this.resolve = options["resolve"] || function() {
+    return true;
+  };
+  this.construct = options["construct"] || function(data) {
+    return data;
+  };
+  this.instanceOf = options["instanceOf"] || null;
+  this.predicate = options["predicate"] || null;
+  this.represent = options["represent"] || null;
+  this.representName = options["representName"] || null;
+  this.defaultStyle = options["defaultStyle"] || null;
+  this.multi = options["multi"] || false;
+  this.styleAliases = compileStyleAliases(options["styleAliases"] || null);
+  if (YAML_NODE_KINDS.indexOf(this.kind) === -1) {
+    throw new exception('Unknown kind "' + this.kind + '" is specified for "' + tag + '" YAML type.');
+  }
+}
+var type = Type$1;
+function compileList(schema2, name) {
+  var result = [];
+  schema2[name].forEach(function(currentType) {
+    var newIndex = result.length;
+    result.forEach(function(previousType, previousIndex) {
+      if (previousType.tag === currentType.tag && previousType.kind === currentType.kind && previousType.multi === currentType.multi) {
+        newIndex = previousIndex;
+      }
+    });
+    result[newIndex] = currentType;
+  });
+  return result;
+}
+function compileMap() {
+  var result = {
+    scalar: {},
+    sequence: {},
+    mapping: {},
+    fallback: {},
+    multi: {
+      scalar: [],
+      sequence: [],
+      mapping: [],
+      fallback: []
+    }
+  }, index2, length;
+  function collectType(type2) {
+    if (type2.multi) {
+      result.multi[type2.kind].push(type2);
+      result.multi["fallback"].push(type2);
+    } else {
+      result[type2.kind][type2.tag] = result["fallback"][type2.tag] = type2;
+    }
+  }
+  for (index2 = 0, length = arguments.length; index2 < length; index2 += 1) {
+    arguments[index2].forEach(collectType);
+  }
+  return result;
+}
+function Schema$1(definition2) {
+  return this.extend(definition2);
+}
+Schema$1.prototype.extend = function extend3(definition2) {
+  var implicit = [];
+  var explicit = [];
+  if (definition2 instanceof type) {
+    explicit.push(definition2);
+  } else if (Array.isArray(definition2)) {
+    explicit = explicit.concat(definition2);
+  } else if (definition2 && (Array.isArray(definition2.implicit) || Array.isArray(definition2.explicit))) {
+    if (definition2.implicit)
+      implicit = implicit.concat(definition2.implicit);
+    if (definition2.explicit)
+      explicit = explicit.concat(definition2.explicit);
+  } else {
+    throw new exception("Schema.extend argument should be a Type, [ Type ], or a schema definition ({ implicit: [...], explicit: [...] })");
+  }
+  implicit.forEach(function(type$1) {
+    if (!(type$1 instanceof type)) {
+      throw new exception("Specified list of YAML types (or a single Type object) contains a non-Type object.");
+    }
+    if (type$1.loadKind && type$1.loadKind !== "scalar") {
+      throw new exception("There is a non-scalar type in the implicit list of a schema. Implicit resolving of such types is not supported.");
+    }
+    if (type$1.multi) {
+      throw new exception("There is a multi type in the implicit list of a schema. Multi tags can only be listed as explicit.");
+    }
+  });
+  explicit.forEach(function(type$1) {
+    if (!(type$1 instanceof type)) {
+      throw new exception("Specified list of YAML types (or a single Type object) contains a non-Type object.");
+    }
+  });
+  var result = Object.create(Schema$1.prototype);
+  result.implicit = (this.implicit || []).concat(implicit);
+  result.explicit = (this.explicit || []).concat(explicit);
+  result.compiledImplicit = compileList(result, "implicit");
+  result.compiledExplicit = compileList(result, "explicit");
+  result.compiledTypeMap = compileMap(result.compiledImplicit, result.compiledExplicit);
+  return result;
+};
+var schema = Schema$1;
+var str = new type("tag:yaml.org,2002:str", {
+  kind: "scalar",
+  construct: function(data) {
+    return data !== null ? data : "";
+  }
+});
+var seq = new type("tag:yaml.org,2002:seq", {
+  kind: "sequence",
+  construct: function(data) {
+    return data !== null ? data : [];
+  }
+});
+var map = new type("tag:yaml.org,2002:map", {
+  kind: "mapping",
+  construct: function(data) {
+    return data !== null ? data : {};
+  }
+});
+var failsafe = new schema({
+  explicit: [
+    str,
+    seq,
+    map
+  ]
+});
+function resolveYamlNull(data) {
+  if (data === null)
+    return true;
+  var max = data.length;
+  return max === 1 && data === "~" || max === 4 && (data === "null" || data === "Null" || data === "NULL");
+}
+function constructYamlNull() {
+  return null;
+}
+function isNull(object) {
+  return object === null;
+}
+var _null = new type("tag:yaml.org,2002:null", {
+  kind: "scalar",
+  resolve: resolveYamlNull,
+  construct: constructYamlNull,
+  predicate: isNull,
+  represent: {
+    canonical: function() {
+      return "~";
+    },
+    lowercase: function() {
+      return "null";
+    },
+    uppercase: function() {
+      return "NULL";
+    },
+    camelcase: function() {
+      return "Null";
+    },
+    empty: function() {
+      return "";
+    }
+  },
+  defaultStyle: "lowercase"
+});
+function resolveYamlBoolean(data) {
+  if (data === null)
+    return false;
+  var max = data.length;
+  return max === 4 && (data === "true" || data === "True" || data === "TRUE") || max === 5 && (data === "false" || data === "False" || data === "FALSE");
+}
+function constructYamlBoolean(data) {
+  return data === "true" || data === "True" || data === "TRUE";
+}
+function isBoolean2(object) {
+  return Object.prototype.toString.call(object) === "[object Boolean]";
+}
+var bool = new type("tag:yaml.org,2002:bool", {
+  kind: "scalar",
+  resolve: resolveYamlBoolean,
+  construct: constructYamlBoolean,
+  predicate: isBoolean2,
+  represent: {
+    lowercase: function(object) {
+      return object ? "true" : "false";
+    },
+    uppercase: function(object) {
+      return object ? "TRUE" : "FALSE";
+    },
+    camelcase: function(object) {
+      return object ? "True" : "False";
+    }
+  },
+  defaultStyle: "lowercase"
+});
+function isHexCode(c) {
+  return 48 <= c && c <= 57 || 65 <= c && c <= 70 || 97 <= c && c <= 102;
+}
+function isOctCode(c) {
+  return 48 <= c && c <= 55;
+}
+function isDecCode(c) {
+  return 48 <= c && c <= 57;
+}
+function resolveYamlInteger(data) {
+  if (data === null)
+    return false;
+  var max = data.length, index2 = 0, hasDigits = false, ch;
+  if (!max)
+    return false;
+  ch = data[index2];
+  if (ch === "-" || ch === "+") {
+    ch = data[++index2];
+  }
+  if (ch === "0") {
+    if (index2 + 1 === max)
+      return true;
+    ch = data[++index2];
+    if (ch === "b") {
+      index2++;
+      for (; index2 < max; index2++) {
+        ch = data[index2];
+        if (ch === "_")
+          continue;
+        if (ch !== "0" && ch !== "1")
+          return false;
+        hasDigits = true;
+      }
+      return hasDigits && ch !== "_";
+    }
+    if (ch === "x") {
+      index2++;
+      for (; index2 < max; index2++) {
+        ch = data[index2];
+        if (ch === "_")
+          continue;
+        if (!isHexCode(data.charCodeAt(index2)))
+          return false;
+        hasDigits = true;
+      }
+      return hasDigits && ch !== "_";
+    }
+    if (ch === "o") {
+      index2++;
+      for (; index2 < max; index2++) {
+        ch = data[index2];
+        if (ch === "_")
+          continue;
+        if (!isOctCode(data.charCodeAt(index2)))
+          return false;
+        hasDigits = true;
+      }
+      return hasDigits && ch !== "_";
+    }
+  }
+  if (ch === "_")
+    return false;
+  for (; index2 < max; index2++) {
+    ch = data[index2];
+    if (ch === "_")
+      continue;
+    if (!isDecCode(data.charCodeAt(index2))) {
+      return false;
+    }
+    hasDigits = true;
+  }
+  if (!hasDigits || ch === "_")
+    return false;
+  return true;
+}
+function constructYamlInteger(data) {
+  var value = data, sign = 1, ch;
+  if (value.indexOf("_") !== -1) {
+    value = value.replace(/_/g, "");
+  }
+  ch = value[0];
+  if (ch === "-" || ch === "+") {
+    if (ch === "-")
+      sign = -1;
+    value = value.slice(1);
+    ch = value[0];
+  }
+  if (value === "0")
+    return 0;
+  if (ch === "0") {
+    if (value[1] === "b")
+      return sign * parseInt(value.slice(2), 2);
+    if (value[1] === "x")
+      return sign * parseInt(value.slice(2), 16);
+    if (value[1] === "o")
+      return sign * parseInt(value.slice(2), 8);
+  }
+  return sign * parseInt(value, 10);
+}
+function isInteger(object) {
+  return Object.prototype.toString.call(object) === "[object Number]" && (object % 1 === 0 && !common.isNegativeZero(object));
+}
+var int = new type("tag:yaml.org,2002:int", {
+  kind: "scalar",
+  resolve: resolveYamlInteger,
+  construct: constructYamlInteger,
+  predicate: isInteger,
+  represent: {
+    binary: function(obj) {
+      return obj >= 0 ? "0b" + obj.toString(2) : "-0b" + obj.toString(2).slice(1);
+    },
+    octal: function(obj) {
+      return obj >= 0 ? "0o" + obj.toString(8) : "-0o" + obj.toString(8).slice(1);
+    },
+    decimal: function(obj) {
+      return obj.toString(10);
+    },
+    /* eslint-disable max-len */
+    hexadecimal: function(obj) {
+      return obj >= 0 ? "0x" + obj.toString(16).toUpperCase() : "-0x" + obj.toString(16).toUpperCase().slice(1);
+    }
+  },
+  defaultStyle: "decimal",
+  styleAliases: {
+    binary: [2, "bin"],
+    octal: [8, "oct"],
+    decimal: [10, "dec"],
+    hexadecimal: [16, "hex"]
+  }
+});
+var YAML_FLOAT_PATTERN = new RegExp(
+  // 2.5e4, 2.5 and integers
+  "^(?:[-+]?(?:[0-9][0-9_]*)(?:\\.[0-9_]*)?(?:[eE][-+]?[0-9]+)?|\\.[0-9_]+(?:[eE][-+]?[0-9]+)?|[-+]?\\.(?:inf|Inf|INF)|\\.(?:nan|NaN|NAN))$"
+);
+function resolveYamlFloat(data) {
+  if (data === null)
+    return false;
+  if (!YAML_FLOAT_PATTERN.test(data) || // Quick hack to not allow integers end with `_`
+  // Probably should update regexp & check speed
+  data[data.length - 1] === "_") {
+    return false;
+  }
+  return true;
+}
+function constructYamlFloat(data) {
+  var value, sign;
+  value = data.replace(/_/g, "").toLowerCase();
+  sign = value[0] === "-" ? -1 : 1;
+  if ("+-".indexOf(value[0]) >= 0) {
+    value = value.slice(1);
+  }
+  if (value === ".inf") {
+    return sign === 1 ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY;
+  } else if (value === ".nan") {
+    return NaN;
+  }
+  return sign * parseFloat(value, 10);
+}
+var SCIENTIFIC_WITHOUT_DOT = /^[-+]?[0-9]+e/;
+function representYamlFloat(object, style) {
+  var res;
+  if (isNaN(object)) {
+    switch (style) {
+      case "lowercase":
+        return ".nan";
+      case "uppercase":
+        return ".NAN";
+      case "camelcase":
+        return ".NaN";
+    }
+  } else if (Number.POSITIVE_INFINITY === object) {
+    switch (style) {
+      case "lowercase":
+        return ".inf";
+      case "uppercase":
+        return ".INF";
+      case "camelcase":
+        return ".Inf";
+    }
+  } else if (Number.NEGATIVE_INFINITY === object) {
+    switch (style) {
+      case "lowercase":
+        return "-.inf";
+      case "uppercase":
+        return "-.INF";
+      case "camelcase":
+        return "-.Inf";
+    }
+  } else if (common.isNegativeZero(object)) {
+    return "-0.0";
+  }
+  res = object.toString(10);
+  return SCIENTIFIC_WITHOUT_DOT.test(res) ? res.replace("e", ".e") : res;
+}
+function isFloat(object) {
+  return Object.prototype.toString.call(object) === "[object Number]" && (object % 1 !== 0 || common.isNegativeZero(object));
+}
+var float = new type("tag:yaml.org,2002:float", {
+  kind: "scalar",
+  resolve: resolveYamlFloat,
+  construct: constructYamlFloat,
+  predicate: isFloat,
+  represent: representYamlFloat,
+  defaultStyle: "lowercase"
+});
+var json = failsafe.extend({
+  implicit: [
+    _null,
+    bool,
+    int,
+    float
+  ]
+});
+var core = json;
+var YAML_DATE_REGEXP = new RegExp(
+  "^([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])$"
+);
+var YAML_TIMESTAMP_REGEXP = new RegExp(
+  "^([0-9][0-9][0-9][0-9])-([0-9][0-9]?)-([0-9][0-9]?)(?:[Tt]|[ \\t]+)([0-9][0-9]?):([0-9][0-9]):([0-9][0-9])(?:\\.([0-9]*))?(?:[ \\t]*(Z|([-+])([0-9][0-9]?)(?::([0-9][0-9]))?))?$"
+);
+function resolveYamlTimestamp(data) {
+  if (data === null)
+    return false;
+  if (YAML_DATE_REGEXP.exec(data) !== null)
+    return true;
+  if (YAML_TIMESTAMP_REGEXP.exec(data) !== null)
+    return true;
+  return false;
+}
+function constructYamlTimestamp(data) {
+  var match2, year, month, day, hour, minute, second, fraction = 0, delta = null, tz_hour, tz_minute, date;
+  match2 = YAML_DATE_REGEXP.exec(data);
+  if (match2 === null)
+    match2 = YAML_TIMESTAMP_REGEXP.exec(data);
+  if (match2 === null)
+    throw new Error("Date resolve error");
+  year = +match2[1];
+  month = +match2[2] - 1;
+  day = +match2[3];
+  if (!match2[4]) {
+    return new Date(Date.UTC(year, month, day));
+  }
+  hour = +match2[4];
+  minute = +match2[5];
+  second = +match2[6];
+  if (match2[7]) {
+    fraction = match2[7].slice(0, 3);
+    while (fraction.length < 3) {
+      fraction += "0";
+    }
+    fraction = +fraction;
+  }
+  if (match2[9]) {
+    tz_hour = +match2[10];
+    tz_minute = +(match2[11] || 0);
+    delta = (tz_hour * 60 + tz_minute) * 6e4;
+    if (match2[9] === "-")
+      delta = -delta;
+  }
+  date = new Date(Date.UTC(year, month, day, hour, minute, second, fraction));
+  if (delta)
+    date.setTime(date.getTime() - delta);
+  return date;
+}
+function representYamlTimestamp(object) {
+  return object.toISOString();
+}
+var timestamp = new type("tag:yaml.org,2002:timestamp", {
+  kind: "scalar",
+  resolve: resolveYamlTimestamp,
+  construct: constructYamlTimestamp,
+  instanceOf: Date,
+  represent: representYamlTimestamp
+});
+function resolveYamlMerge(data) {
+  return data === "<<" || data === null;
+}
+var merge2 = new type("tag:yaml.org,2002:merge", {
+  kind: "scalar",
+  resolve: resolveYamlMerge
+});
+var BASE64_MAP = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\n\r";
+function resolveYamlBinary(data) {
+  if (data === null)
+    return false;
+  var code2, idx, bitlen = 0, max = data.length, map2 = BASE64_MAP;
+  for (idx = 0; idx < max; idx++) {
+    code2 = map2.indexOf(data.charAt(idx));
+    if (code2 > 64)
+      continue;
+    if (code2 < 0)
+      return false;
+    bitlen += 6;
+  }
+  return bitlen % 8 === 0;
+}
+function constructYamlBinary(data) {
+  var idx, tailbits, input = data.replace(/[\r\n=]/g, ""), max = input.length, map2 = BASE64_MAP, bits = 0, result = [];
+  for (idx = 0; idx < max; idx++) {
+    if (idx % 4 === 0 && idx) {
+      result.push(bits >> 16 & 255);
+      result.push(bits >> 8 & 255);
+      result.push(bits & 255);
+    }
+    bits = bits << 6 | map2.indexOf(input.charAt(idx));
+  }
+  tailbits = max % 4 * 6;
+  if (tailbits === 0) {
+    result.push(bits >> 16 & 255);
+    result.push(bits >> 8 & 255);
+    result.push(bits & 255);
+  } else if (tailbits === 18) {
+    result.push(bits >> 10 & 255);
+    result.push(bits >> 2 & 255);
+  } else if (tailbits === 12) {
+    result.push(bits >> 4 & 255);
+  }
+  return new Uint8Array(result);
+}
+function representYamlBinary(object) {
+  var result = "", bits = 0, idx, tail, max = object.length, map2 = BASE64_MAP;
+  for (idx = 0; idx < max; idx++) {
+    if (idx % 3 === 0 && idx) {
+      result += map2[bits >> 18 & 63];
+      result += map2[bits >> 12 & 63];
+      result += map2[bits >> 6 & 63];
+      result += map2[bits & 63];
+    }
+    bits = (bits << 8) + object[idx];
+  }
+  tail = max % 3;
+  if (tail === 0) {
+    result += map2[bits >> 18 & 63];
+    result += map2[bits >> 12 & 63];
+    result += map2[bits >> 6 & 63];
+    result += map2[bits & 63];
+  } else if (tail === 2) {
+    result += map2[bits >> 10 & 63];
+    result += map2[bits >> 4 & 63];
+    result += map2[bits << 2 & 63];
+    result += map2[64];
+  } else if (tail === 1) {
+    result += map2[bits >> 2 & 63];
+    result += map2[bits << 4 & 63];
+    result += map2[64];
+    result += map2[64];
+  }
+  return result;
+}
+function isBinary(obj) {
+  return Object.prototype.toString.call(obj) === "[object Uint8Array]";
+}
+var binary = new type("tag:yaml.org,2002:binary", {
+  kind: "scalar",
+  resolve: resolveYamlBinary,
+  construct: constructYamlBinary,
+  predicate: isBinary,
+  represent: representYamlBinary
+});
+var _hasOwnProperty$3 = Object.prototype.hasOwnProperty;
+var _toString$2 = Object.prototype.toString;
+function resolveYamlOmap(data) {
+  if (data === null)
+    return true;
+  var objectKeys = [], index2, length, pair, pairKey, pairHasKey, object = data;
+  for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+    pair = object[index2];
+    pairHasKey = false;
+    if (_toString$2.call(pair) !== "[object Object]")
+      return false;
+    for (pairKey in pair) {
+      if (_hasOwnProperty$3.call(pair, pairKey)) {
+        if (!pairHasKey)
+          pairHasKey = true;
+        else
+          return false;
+      }
+    }
+    if (!pairHasKey)
+      return false;
+    if (objectKeys.indexOf(pairKey) === -1)
+      objectKeys.push(pairKey);
+    else
+      return false;
+  }
+  return true;
+}
+function constructYamlOmap(data) {
+  return data !== null ? data : [];
+}
+var omap = new type("tag:yaml.org,2002:omap", {
+  kind: "sequence",
+  resolve: resolveYamlOmap,
+  construct: constructYamlOmap
+});
+var _toString$1 = Object.prototype.toString;
+function resolveYamlPairs(data) {
+  if (data === null)
+    return true;
+  var index2, length, pair, keys3, result, object = data;
+  result = new Array(object.length);
+  for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+    pair = object[index2];
+    if (_toString$1.call(pair) !== "[object Object]")
+      return false;
+    keys3 = Object.keys(pair);
+    if (keys3.length !== 1)
+      return false;
+    result[index2] = [keys3[0], pair[keys3[0]]];
+  }
+  return true;
+}
+function constructYamlPairs(data) {
+  if (data === null)
+    return [];
+  var index2, length, pair, keys3, result, object = data;
+  result = new Array(object.length);
+  for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+    pair = object[index2];
+    keys3 = Object.keys(pair);
+    result[index2] = [keys3[0], pair[keys3[0]]];
+  }
+  return result;
+}
+var pairs = new type("tag:yaml.org,2002:pairs", {
+  kind: "sequence",
+  resolve: resolveYamlPairs,
+  construct: constructYamlPairs
+});
+var _hasOwnProperty$2 = Object.prototype.hasOwnProperty;
+function resolveYamlSet(data) {
+  if (data === null)
+    return true;
+  var key, object = data;
+  for (key in object) {
+    if (_hasOwnProperty$2.call(object, key)) {
+      if (object[key] !== null)
+        return false;
+    }
+  }
+  return true;
+}
+function constructYamlSet(data) {
+  return data !== null ? data : {};
+}
+var set = new type("tag:yaml.org,2002:set", {
+  kind: "mapping",
+  resolve: resolveYamlSet,
+  construct: constructYamlSet
+});
+var _default = core.extend({
+  implicit: [
+    timestamp,
+    merge2
+  ],
+  explicit: [
+    binary,
+    omap,
+    pairs,
+    set
+  ]
+});
+var _hasOwnProperty$1 = Object.prototype.hasOwnProperty;
+var CONTEXT_FLOW_IN = 1;
+var CONTEXT_FLOW_OUT = 2;
+var CONTEXT_BLOCK_IN = 3;
+var CONTEXT_BLOCK_OUT = 4;
+var CHOMPING_CLIP = 1;
+var CHOMPING_STRIP = 2;
+var CHOMPING_KEEP = 3;
+var PATTERN_NON_PRINTABLE = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x84\x86-\x9F\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/;
+var PATTERN_NON_ASCII_LINE_BREAKS = /[\x85\u2028\u2029]/;
+var PATTERN_FLOW_INDICATORS = /[,\[\]\{\}]/;
+var PATTERN_TAG_HANDLE = /^(?:!|!!|![a-z\-]+!)$/i;
+var PATTERN_TAG_URI = /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i;
+function _class(obj) {
+  return Object.prototype.toString.call(obj);
+}
+function is_EOL(c) {
+  return c === 10 || c === 13;
+}
+function is_WHITE_SPACE(c) {
+  return c === 9 || c === 32;
+}
+function is_WS_OR_EOL(c) {
+  return c === 9 || c === 32 || c === 10 || c === 13;
+}
+function is_FLOW_INDICATOR(c) {
+  return c === 44 || c === 91 || c === 93 || c === 123 || c === 125;
+}
+function fromHexCode(c) {
+  var lc;
+  if (48 <= c && c <= 57) {
+    return c - 48;
+  }
+  lc = c | 32;
+  if (97 <= lc && lc <= 102) {
+    return lc - 97 + 10;
+  }
+  return -1;
+}
+function escapedHexLen(c) {
+  if (c === 120) {
+    return 2;
+  }
+  if (c === 117) {
+    return 4;
+  }
+  if (c === 85) {
+    return 8;
+  }
+  return 0;
+}
+function fromDecimalCode(c) {
+  if (48 <= c && c <= 57) {
+    return c - 48;
+  }
+  return -1;
+}
+function simpleEscapeSequence(c) {
+  return c === 48 ? "\0" : c === 97 ? "\x07" : c === 98 ? "\b" : c === 116 ? "	" : c === 9 ? "	" : c === 110 ? "\n" : c === 118 ? "\v" : c === 102 ? "\f" : c === 114 ? "\r" : c === 101 ? "\x1B" : c === 32 ? " " : c === 34 ? '"' : c === 47 ? "/" : c === 92 ? "\\" : c === 78 ? "\x85" : c === 95 ? "\xA0" : c === 76 ? "\u2028" : c === 80 ? "\u2029" : "";
+}
+function charFromCodepoint(c) {
+  if (c <= 65535) {
+    return String.fromCharCode(c);
+  }
+  return String.fromCharCode(
+    (c - 65536 >> 10) + 55296,
+    (c - 65536 & 1023) + 56320
+  );
+}
+var simpleEscapeCheck = new Array(256);
+var simpleEscapeMap = new Array(256);
+for (i = 0; i < 256; i++) {
+  simpleEscapeCheck[i] = simpleEscapeSequence(i) ? 1 : 0;
+  simpleEscapeMap[i] = simpleEscapeSequence(i);
+}
+var i;
+function State$1(input, options) {
+  this.input = input;
+  this.filename = options["filename"] || null;
+  this.schema = options["schema"] || _default;
+  this.onWarning = options["onWarning"] || null;
+  this.legacy = options["legacy"] || false;
+  this.json = options["json"] || false;
+  this.listener = options["listener"] || null;
+  this.implicitTypes = this.schema.compiledImplicit;
+  this.typeMap = this.schema.compiledTypeMap;
+  this.length = input.length;
+  this.position = 0;
+  this.line = 0;
+  this.lineStart = 0;
+  this.lineIndent = 0;
+  this.firstTabInLine = -1;
+  this.documents = [];
+}
+function generateError(state, message) {
+  var mark2 = {
+    name: state.filename,
+    buffer: state.input.slice(0, -1),
+    // omit trailing \0
+    position: state.position,
+    line: state.line,
+    column: state.position - state.lineStart
+  };
+  mark2.snippet = snippet(mark2);
+  return new exception(message, mark2);
+}
+function throwError(state, message) {
+  throw generateError(state, message);
+}
+function throwWarning(state, message) {
+  if (state.onWarning) {
+    state.onWarning.call(null, generateError(state, message));
+  }
+}
+var directiveHandlers = {
+  YAML: function handleYamlDirective(state, name, args) {
+    var match2, major, minor;
+    if (state.version !== null) {
+      throwError(state, "duplication of %YAML directive");
+    }
+    if (args.length !== 1) {
+      throwError(state, "YAML directive accepts exactly one argument");
+    }
+    match2 = /^([0-9]+)\.([0-9]+)$/.exec(args[0]);
+    if (match2 === null) {
+      throwError(state, "ill-formed argument of the YAML directive");
+    }
+    major = parseInt(match2[1], 10);
+    minor = parseInt(match2[2], 10);
+    if (major !== 1) {
+      throwError(state, "unacceptable YAML version of the document");
+    }
+    state.version = args[0];
+    state.checkLineBreaks = minor < 2;
+    if (minor !== 1 && minor !== 2) {
+      throwWarning(state, "unsupported YAML version of the document");
+    }
+  },
+  TAG: function handleTagDirective(state, name, args) {
+    var handle, prefix;
+    if (args.length !== 2) {
+      throwError(state, "TAG directive accepts exactly two arguments");
+    }
+    handle = args[0];
+    prefix = args[1];
+    if (!PATTERN_TAG_HANDLE.test(handle)) {
+      throwError(state, "ill-formed tag handle (first argument) of the TAG directive");
+    }
+    if (_hasOwnProperty$1.call(state.tagMap, handle)) {
+      throwError(state, 'there is a previously declared suffix for "' + handle + '" tag handle');
+    }
+    if (!PATTERN_TAG_URI.test(prefix)) {
+      throwError(state, "ill-formed tag prefix (second argument) of the TAG directive");
+    }
+    try {
+      prefix = decodeURIComponent(prefix);
+    } catch (err) {
+      throwError(state, "tag prefix is malformed: " + prefix);
+    }
+    state.tagMap[handle] = prefix;
+  }
+};
+function captureSegment(state, start, end, checkJson) {
+  var _position, _length, _character, _result;
+  if (start < end) {
+    _result = state.input.slice(start, end);
+    if (checkJson) {
+      for (_position = 0, _length = _result.length; _position < _length; _position += 1) {
+        _character = _result.charCodeAt(_position);
+        if (!(_character === 9 || 32 <= _character && _character <= 1114111)) {
+          throwError(state, "expected valid JSON character");
+        }
+      }
+    } else if (PATTERN_NON_PRINTABLE.test(_result)) {
+      throwError(state, "the stream contains non-printable characters");
+    }
+    state.result += _result;
+  }
+}
+function mergeMappings(state, destination, source, overridableKeys) {
+  var sourceKeys, key, index2, quantity;
+  if (!common.isObject(source)) {
+    throwError(state, "cannot merge mappings; the provided source object is unacceptable");
+  }
+  sourceKeys = Object.keys(source);
+  for (index2 = 0, quantity = sourceKeys.length; index2 < quantity; index2 += 1) {
+    key = sourceKeys[index2];
+    if (!_hasOwnProperty$1.call(destination, key)) {
+      destination[key] = source[key];
+      overridableKeys[key] = true;
+    }
+  }
+}
+function storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, startLine, startLineStart, startPos) {
+  var index2, quantity;
+  if (Array.isArray(keyNode)) {
+    keyNode = Array.prototype.slice.call(keyNode);
+    for (index2 = 0, quantity = keyNode.length; index2 < quantity; index2 += 1) {
+      if (Array.isArray(keyNode[index2])) {
+        throwError(state, "nested arrays are not supported inside keys");
+      }
+      if (typeof keyNode === "object" && _class(keyNode[index2]) === "[object Object]") {
+        keyNode[index2] = "[object Object]";
+      }
+    }
+  }
+  if (typeof keyNode === "object" && _class(keyNode) === "[object Object]") {
+    keyNode = "[object Object]";
+  }
+  keyNode = String(keyNode);
+  if (_result === null) {
+    _result = {};
+  }
+  if (keyTag === "tag:yaml.org,2002:merge") {
+    if (Array.isArray(valueNode)) {
+      for (index2 = 0, quantity = valueNode.length; index2 < quantity; index2 += 1) {
+        mergeMappings(state, _result, valueNode[index2], overridableKeys);
+      }
+    } else {
+      mergeMappings(state, _result, valueNode, overridableKeys);
+    }
+  } else {
+    if (!state.json && !_hasOwnProperty$1.call(overridableKeys, keyNode) && _hasOwnProperty$1.call(_result, keyNode)) {
+      state.line = startLine || state.line;
+      state.lineStart = startLineStart || state.lineStart;
+      state.position = startPos || state.position;
+      throwError(state, "duplicated mapping key");
+    }
+    if (keyNode === "__proto__") {
+      Object.defineProperty(_result, keyNode, {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        value: valueNode
+      });
+    } else {
+      _result[keyNode] = valueNode;
+    }
+    delete overridableKeys[keyNode];
+  }
+  return _result;
+}
+function readLineBreak(state) {
+  var ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch === 10) {
+    state.position++;
+  } else if (ch === 13) {
+    state.position++;
+    if (state.input.charCodeAt(state.position) === 10) {
+      state.position++;
+    }
+  } else {
+    throwError(state, "a line break is expected");
+  }
+  state.line += 1;
+  state.lineStart = state.position;
+  state.firstTabInLine = -1;
+}
+function skipSeparationSpace(state, allowComments, checkIndent) {
+  var lineBreaks = 0, ch = state.input.charCodeAt(state.position);
+  while (ch !== 0) {
+    while (is_WHITE_SPACE(ch)) {
+      if (ch === 9 && state.firstTabInLine === -1) {
+        state.firstTabInLine = state.position;
+      }
+      ch = state.input.charCodeAt(++state.position);
+    }
+    if (allowComments && ch === 35) {
+      do {
+        ch = state.input.charCodeAt(++state.position);
+      } while (ch !== 10 && ch !== 13 && ch !== 0);
+    }
+    if (is_EOL(ch)) {
+      readLineBreak(state);
+      ch = state.input.charCodeAt(state.position);
+      lineBreaks++;
+      state.lineIndent = 0;
+      while (ch === 32) {
+        state.lineIndent++;
+        ch = state.input.charCodeAt(++state.position);
+      }
+    } else {
+      break;
+    }
+  }
+  if (checkIndent !== -1 && lineBreaks !== 0 && state.lineIndent < checkIndent) {
+    throwWarning(state, "deficient indentation");
+  }
+  return lineBreaks;
+}
+function testDocumentSeparator(state) {
+  var _position = state.position, ch;
+  ch = state.input.charCodeAt(_position);
+  if ((ch === 45 || ch === 46) && ch === state.input.charCodeAt(_position + 1) && ch === state.input.charCodeAt(_position + 2)) {
+    _position += 3;
+    ch = state.input.charCodeAt(_position);
+    if (ch === 0 || is_WS_OR_EOL(ch)) {
+      return true;
+    }
+  }
+  return false;
+}
+function writeFoldedLines(state, count) {
+  if (count === 1) {
+    state.result += " ";
+  } else if (count > 1) {
+    state.result += common.repeat("\n", count - 1);
+  }
+}
+function readPlainScalar(state, nodeIndent, withinFlowCollection) {
+  var preceding, following, captureStart, captureEnd, hasPendingContent, _line, _lineStart, _lineIndent, _kind = state.kind, _result = state.result, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (is_WS_OR_EOL(ch) || is_FLOW_INDICATOR(ch) || ch === 35 || ch === 38 || ch === 42 || ch === 33 || ch === 124 || ch === 62 || ch === 39 || ch === 34 || ch === 37 || ch === 64 || ch === 96) {
+    return false;
+  }
+  if (ch === 63 || ch === 45) {
+    following = state.input.charCodeAt(state.position + 1);
+    if (is_WS_OR_EOL(following) || withinFlowCollection && is_FLOW_INDICATOR(following)) {
+      return false;
+    }
+  }
+  state.kind = "scalar";
+  state.result = "";
+  captureStart = captureEnd = state.position;
+  hasPendingContent = false;
+  while (ch !== 0) {
+    if (ch === 58) {
+      following = state.input.charCodeAt(state.position + 1);
+      if (is_WS_OR_EOL(following) || withinFlowCollection && is_FLOW_INDICATOR(following)) {
+        break;
+      }
+    } else if (ch === 35) {
+      preceding = state.input.charCodeAt(state.position - 1);
+      if (is_WS_OR_EOL(preceding)) {
+        break;
+      }
+    } else if (state.position === state.lineStart && testDocumentSeparator(state) || withinFlowCollection && is_FLOW_INDICATOR(ch)) {
+      break;
+    } else if (is_EOL(ch)) {
+      _line = state.line;
+      _lineStart = state.lineStart;
+      _lineIndent = state.lineIndent;
+      skipSeparationSpace(state, false, -1);
+      if (state.lineIndent >= nodeIndent) {
+        hasPendingContent = true;
+        ch = state.input.charCodeAt(state.position);
+        continue;
+      } else {
+        state.position = captureEnd;
+        state.line = _line;
+        state.lineStart = _lineStart;
+        state.lineIndent = _lineIndent;
+        break;
+      }
+    }
+    if (hasPendingContent) {
+      captureSegment(state, captureStart, captureEnd, false);
+      writeFoldedLines(state, state.line - _line);
+      captureStart = captureEnd = state.position;
+      hasPendingContent = false;
+    }
+    if (!is_WHITE_SPACE(ch)) {
+      captureEnd = state.position + 1;
+    }
+    ch = state.input.charCodeAt(++state.position);
+  }
+  captureSegment(state, captureStart, captureEnd, false);
+  if (state.result) {
+    return true;
+  }
+  state.kind = _kind;
+  state.result = _result;
+  return false;
+}
+function readSingleQuotedScalar(state, nodeIndent) {
+  var ch, captureStart, captureEnd;
+  ch = state.input.charCodeAt(state.position);
+  if (ch !== 39) {
+    return false;
+  }
+  state.kind = "scalar";
+  state.result = "";
+  state.position++;
+  captureStart = captureEnd = state.position;
+  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
+    if (ch === 39) {
+      captureSegment(state, captureStart, state.position, true);
+      ch = state.input.charCodeAt(++state.position);
+      if (ch === 39) {
+        captureStart = state.position;
+        state.position++;
+        captureEnd = state.position;
+      } else {
+        return true;
+      }
+    } else if (is_EOL(ch)) {
+      captureSegment(state, captureStart, captureEnd, true);
+      writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
+      captureStart = captureEnd = state.position;
+    } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
+      throwError(state, "unexpected end of the document within a single quoted scalar");
+    } else {
+      state.position++;
+      captureEnd = state.position;
+    }
+  }
+  throwError(state, "unexpected end of the stream within a single quoted scalar");
+}
+function readDoubleQuotedScalar(state, nodeIndent) {
+  var captureStart, captureEnd, hexLength, hexResult, tmp, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch !== 34) {
+    return false;
+  }
+  state.kind = "scalar";
+  state.result = "";
+  state.position++;
+  captureStart = captureEnd = state.position;
+  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
+    if (ch === 34) {
+      captureSegment(state, captureStart, state.position, true);
+      state.position++;
+      return true;
+    } else if (ch === 92) {
+      captureSegment(state, captureStart, state.position, true);
+      ch = state.input.charCodeAt(++state.position);
+      if (is_EOL(ch)) {
+        skipSeparationSpace(state, false, nodeIndent);
+      } else if (ch < 256 && simpleEscapeCheck[ch]) {
+        state.result += simpleEscapeMap[ch];
+        state.position++;
+      } else if ((tmp = escapedHexLen(ch)) > 0) {
+        hexLength = tmp;
+        hexResult = 0;
+        for (; hexLength > 0; hexLength--) {
+          ch = state.input.charCodeAt(++state.position);
+          if ((tmp = fromHexCode(ch)) >= 0) {
+            hexResult = (hexResult << 4) + tmp;
+          } else {
+            throwError(state, "expected hexadecimal character");
+          }
+        }
+        state.result += charFromCodepoint(hexResult);
+        state.position++;
+      } else {
+        throwError(state, "unknown escape sequence");
+      }
+      captureStart = captureEnd = state.position;
+    } else if (is_EOL(ch)) {
+      captureSegment(state, captureStart, captureEnd, true);
+      writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
+      captureStart = captureEnd = state.position;
+    } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
+      throwError(state, "unexpected end of the document within a double quoted scalar");
+    } else {
+      state.position++;
+      captureEnd = state.position;
+    }
+  }
+  throwError(state, "unexpected end of the stream within a double quoted scalar");
+}
+function readFlowCollection(state, nodeIndent) {
+  var readNext = true, _line, _lineStart, _pos, _tag = state.tag, _result, _anchor = state.anchor, following, terminator, isPair, isExplicitPair, isMapping, overridableKeys = /* @__PURE__ */ Object.create(null), keyNode, keyTag, valueNode, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch === 91) {
+    terminator = 93;
+    isMapping = false;
+    _result = [];
+  } else if (ch === 123) {
+    terminator = 125;
+    isMapping = true;
+    _result = {};
+  } else {
+    return false;
+  }
+  if (state.anchor !== null) {
+    state.anchorMap[state.anchor] = _result;
+  }
+  ch = state.input.charCodeAt(++state.position);
+  while (ch !== 0) {
+    skipSeparationSpace(state, true, nodeIndent);
+    ch = state.input.charCodeAt(state.position);
+    if (ch === terminator) {
+      state.position++;
+      state.tag = _tag;
+      state.anchor = _anchor;
+      state.kind = isMapping ? "mapping" : "sequence";
+      state.result = _result;
+      return true;
+    } else if (!readNext) {
+      throwError(state, "missed comma between flow collection entries");
+    } else if (ch === 44) {
+      throwError(state, "expected the node content, but found ','");
+    }
+    keyTag = keyNode = valueNode = null;
+    isPair = isExplicitPair = false;
+    if (ch === 63) {
+      following = state.input.charCodeAt(state.position + 1);
+      if (is_WS_OR_EOL(following)) {
+        isPair = isExplicitPair = true;
+        state.position++;
+        skipSeparationSpace(state, true, nodeIndent);
+      }
+    }
+    _line = state.line;
+    _lineStart = state.lineStart;
+    _pos = state.position;
+    composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
+    keyTag = state.tag;
+    keyNode = state.result;
+    skipSeparationSpace(state, true, nodeIndent);
+    ch = state.input.charCodeAt(state.position);
+    if ((isExplicitPair || state.line === _line) && ch === 58) {
+      isPair = true;
+      ch = state.input.charCodeAt(++state.position);
+      skipSeparationSpace(state, true, nodeIndent);
+      composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
+      valueNode = state.result;
+    }
+    if (isMapping) {
+      storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos);
+    } else if (isPair) {
+      _result.push(storeMappingPair(state, null, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos));
+    } else {
+      _result.push(keyNode);
+    }
+    skipSeparationSpace(state, true, nodeIndent);
+    ch = state.input.charCodeAt(state.position);
+    if (ch === 44) {
+      readNext = true;
+      ch = state.input.charCodeAt(++state.position);
+    } else {
+      readNext = false;
+    }
+  }
+  throwError(state, "unexpected end of the stream within a flow collection");
+}
+function readBlockScalar(state, nodeIndent) {
+  var captureStart, folding, chomping = CHOMPING_CLIP, didReadContent = false, detectedIndent = false, textIndent = nodeIndent, emptyLines = 0, atMoreIndented = false, tmp, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch === 124) {
+    folding = false;
+  } else if (ch === 62) {
+    folding = true;
+  } else {
+    return false;
+  }
+  state.kind = "scalar";
+  state.result = "";
+  while (ch !== 0) {
+    ch = state.input.charCodeAt(++state.position);
+    if (ch === 43 || ch === 45) {
+      if (CHOMPING_CLIP === chomping) {
+        chomping = ch === 43 ? CHOMPING_KEEP : CHOMPING_STRIP;
+      } else {
+        throwError(state, "repeat of a chomping mode identifier");
+      }
+    } else if ((tmp = fromDecimalCode(ch)) >= 0) {
+      if (tmp === 0) {
+        throwError(state, "bad explicit indentation width of a block scalar; it cannot be less than one");
+      } else if (!detectedIndent) {
+        textIndent = nodeIndent + tmp - 1;
+        detectedIndent = true;
+      } else {
+        throwError(state, "repeat of an indentation width identifier");
+      }
+    } else {
+      break;
+    }
+  }
+  if (is_WHITE_SPACE(ch)) {
+    do {
+      ch = state.input.charCodeAt(++state.position);
+    } while (is_WHITE_SPACE(ch));
+    if (ch === 35) {
+      do {
+        ch = state.input.charCodeAt(++state.position);
+      } while (!is_EOL(ch) && ch !== 0);
+    }
+  }
+  while (ch !== 0) {
+    readLineBreak(state);
+    state.lineIndent = 0;
+    ch = state.input.charCodeAt(state.position);
+    while ((!detectedIndent || state.lineIndent < textIndent) && ch === 32) {
+      state.lineIndent++;
+      ch = state.input.charCodeAt(++state.position);
+    }
+    if (!detectedIndent && state.lineIndent > textIndent) {
+      textIndent = state.lineIndent;
+    }
+    if (is_EOL(ch)) {
+      emptyLines++;
+      continue;
+    }
+    if (state.lineIndent < textIndent) {
+      if (chomping === CHOMPING_KEEP) {
+        state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
+      } else if (chomping === CHOMPING_CLIP) {
+        if (didReadContent) {
+          state.result += "\n";
+        }
+      }
+      break;
+    }
+    if (folding) {
+      if (is_WHITE_SPACE(ch)) {
+        atMoreIndented = true;
+        state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
+      } else if (atMoreIndented) {
+        atMoreIndented = false;
+        state.result += common.repeat("\n", emptyLines + 1);
+      } else if (emptyLines === 0) {
+        if (didReadContent) {
+          state.result += " ";
+        }
+      } else {
+        state.result += common.repeat("\n", emptyLines);
+      }
+    } else {
+      state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
+    }
+    didReadContent = true;
+    detectedIndent = true;
+    emptyLines = 0;
+    captureStart = state.position;
+    while (!is_EOL(ch) && ch !== 0) {
+      ch = state.input.charCodeAt(++state.position);
+    }
+    captureSegment(state, captureStart, state.position, false);
+  }
+  return true;
+}
+function readBlockSequence(state, nodeIndent) {
+  var _line, _tag = state.tag, _anchor = state.anchor, _result = [], following, detected = false, ch;
+  if (state.firstTabInLine !== -1)
+    return false;
+  if (state.anchor !== null) {
+    state.anchorMap[state.anchor] = _result;
+  }
+  ch = state.input.charCodeAt(state.position);
+  while (ch !== 0) {
+    if (state.firstTabInLine !== -1) {
+      state.position = state.firstTabInLine;
+      throwError(state, "tab characters must not be used in indentation");
+    }
+    if (ch !== 45) {
+      break;
+    }
+    following = state.input.charCodeAt(state.position + 1);
+    if (!is_WS_OR_EOL(following)) {
+      break;
+    }
+    detected = true;
+    state.position++;
+    if (skipSeparationSpace(state, true, -1)) {
+      if (state.lineIndent <= nodeIndent) {
+        _result.push(null);
+        ch = state.input.charCodeAt(state.position);
+        continue;
+      }
+    }
+    _line = state.line;
+    composeNode(state, nodeIndent, CONTEXT_BLOCK_IN, false, true);
+    _result.push(state.result);
+    skipSeparationSpace(state, true, -1);
+    ch = state.input.charCodeAt(state.position);
+    if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
+      throwError(state, "bad indentation of a sequence entry");
+    } else if (state.lineIndent < nodeIndent) {
+      break;
+    }
+  }
+  if (detected) {
+    state.tag = _tag;
+    state.anchor = _anchor;
+    state.kind = "sequence";
+    state.result = _result;
+    return true;
+  }
+  return false;
+}
+function readBlockMapping(state, nodeIndent, flowIndent) {
+  var following, allowCompact, _line, _keyLine, _keyLineStart, _keyPos, _tag = state.tag, _anchor = state.anchor, _result = {}, overridableKeys = /* @__PURE__ */ Object.create(null), keyTag = null, keyNode = null, valueNode = null, atExplicitKey = false, detected = false, ch;
+  if (state.firstTabInLine !== -1)
+    return false;
+  if (state.anchor !== null) {
+    state.anchorMap[state.anchor] = _result;
+  }
+  ch = state.input.charCodeAt(state.position);
+  while (ch !== 0) {
+    if (!atExplicitKey && state.firstTabInLine !== -1) {
+      state.position = state.firstTabInLine;
+      throwError(state, "tab characters must not be used in indentation");
+    }
+    following = state.input.charCodeAt(state.position + 1);
+    _line = state.line;
+    if ((ch === 63 || ch === 58) && is_WS_OR_EOL(following)) {
+      if (ch === 63) {
+        if (atExplicitKey) {
+          storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
+          keyTag = keyNode = valueNode = null;
+        }
+        detected = true;
+        atExplicitKey = true;
+        allowCompact = true;
+      } else if (atExplicitKey) {
+        atExplicitKey = false;
+        allowCompact = true;
+      } else {
+        throwError(state, "incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line");
+      }
+      state.position += 1;
+      ch = following;
+    } else {
+      _keyLine = state.line;
+      _keyLineStart = state.lineStart;
+      _keyPos = state.position;
+      if (!composeNode(state, flowIndent, CONTEXT_FLOW_OUT, false, true)) {
+        break;
+      }
+      if (state.line === _line) {
+        ch = state.input.charCodeAt(state.position);
+        while (is_WHITE_SPACE(ch)) {
+          ch = state.input.charCodeAt(++state.position);
+        }
+        if (ch === 58) {
+          ch = state.input.charCodeAt(++state.position);
+          if (!is_WS_OR_EOL(ch)) {
+            throwError(state, "a whitespace character is expected after the key-value separator within a block mapping");
+          }
+          if (atExplicitKey) {
+            storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
+            keyTag = keyNode = valueNode = null;
+          }
+          detected = true;
+          atExplicitKey = false;
+          allowCompact = false;
+          keyTag = state.tag;
+          keyNode = state.result;
+        } else if (detected) {
+          throwError(state, "can not read an implicit mapping pair; a colon is missed");
+        } else {
+          state.tag = _tag;
+          state.anchor = _anchor;
+          return true;
+        }
+      } else if (detected) {
+        throwError(state, "can not read a block mapping entry; a multiline key may not be an implicit key");
+      } else {
+        state.tag = _tag;
+        state.anchor = _anchor;
+        return true;
+      }
+    }
+    if (state.line === _line || state.lineIndent > nodeIndent) {
+      if (atExplicitKey) {
+        _keyLine = state.line;
+        _keyLineStart = state.lineStart;
+        _keyPos = state.position;
+      }
+      if (composeNode(state, nodeIndent, CONTEXT_BLOCK_OUT, true, allowCompact)) {
+        if (atExplicitKey) {
+          keyNode = state.result;
+        } else {
+          valueNode = state.result;
+        }
+      }
+      if (!atExplicitKey) {
+        storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _keyLine, _keyLineStart, _keyPos);
+        keyTag = keyNode = valueNode = null;
+      }
+      skipSeparationSpace(state, true, -1);
+      ch = state.input.charCodeAt(state.position);
+    }
+    if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
+      throwError(state, "bad indentation of a mapping entry");
+    } else if (state.lineIndent < nodeIndent) {
+      break;
+    }
+  }
+  if (atExplicitKey) {
+    storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
+  }
+  if (detected) {
+    state.tag = _tag;
+    state.anchor = _anchor;
+    state.kind = "mapping";
+    state.result = _result;
+  }
+  return detected;
+}
+function readTagProperty(state) {
+  var _position, isVerbatim = false, isNamed = false, tagHandle, tagName, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch !== 33)
+    return false;
+  if (state.tag !== null) {
+    throwError(state, "duplication of a tag property");
+  }
+  ch = state.input.charCodeAt(++state.position);
+  if (ch === 60) {
+    isVerbatim = true;
+    ch = state.input.charCodeAt(++state.position);
+  } else if (ch === 33) {
+    isNamed = true;
+    tagHandle = "!!";
+    ch = state.input.charCodeAt(++state.position);
+  } else {
+    tagHandle = "!";
+  }
+  _position = state.position;
+  if (isVerbatim) {
+    do {
+      ch = state.input.charCodeAt(++state.position);
+    } while (ch !== 0 && ch !== 62);
+    if (state.position < state.length) {
+      tagName = state.input.slice(_position, state.position);
+      ch = state.input.charCodeAt(++state.position);
+    } else {
+      throwError(state, "unexpected end of the stream within a verbatim tag");
+    }
+  } else {
+    while (ch !== 0 && !is_WS_OR_EOL(ch)) {
+      if (ch === 33) {
+        if (!isNamed) {
+          tagHandle = state.input.slice(_position - 1, state.position + 1);
+          if (!PATTERN_TAG_HANDLE.test(tagHandle)) {
+            throwError(state, "named tag handle cannot contain such characters");
+          }
+          isNamed = true;
+          _position = state.position + 1;
+        } else {
+          throwError(state, "tag suffix cannot contain exclamation marks");
+        }
+      }
+      ch = state.input.charCodeAt(++state.position);
+    }
+    tagName = state.input.slice(_position, state.position);
+    if (PATTERN_FLOW_INDICATORS.test(tagName)) {
+      throwError(state, "tag suffix cannot contain flow indicator characters");
+    }
+  }
+  if (tagName && !PATTERN_TAG_URI.test(tagName)) {
+    throwError(state, "tag name cannot contain such characters: " + tagName);
+  }
+  try {
+    tagName = decodeURIComponent(tagName);
+  } catch (err) {
+    throwError(state, "tag name is malformed: " + tagName);
+  }
+  if (isVerbatim) {
+    state.tag = tagName;
+  } else if (_hasOwnProperty$1.call(state.tagMap, tagHandle)) {
+    state.tag = state.tagMap[tagHandle] + tagName;
+  } else if (tagHandle === "!") {
+    state.tag = "!" + tagName;
+  } else if (tagHandle === "!!") {
+    state.tag = "tag:yaml.org,2002:" + tagName;
+  } else {
+    throwError(state, 'undeclared tag handle "' + tagHandle + '"');
+  }
+  return true;
+}
+function readAnchorProperty(state) {
+  var _position, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch !== 38)
+    return false;
+  if (state.anchor !== null) {
+    throwError(state, "duplication of an anchor property");
+  }
+  ch = state.input.charCodeAt(++state.position);
+  _position = state.position;
+  while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
+    ch = state.input.charCodeAt(++state.position);
+  }
+  if (state.position === _position) {
+    throwError(state, "name of an anchor node must contain at least one character");
+  }
+  state.anchor = state.input.slice(_position, state.position);
+  return true;
+}
+function readAlias(state) {
+  var _position, alias, ch;
+  ch = state.input.charCodeAt(state.position);
+  if (ch !== 42)
+    return false;
+  ch = state.input.charCodeAt(++state.position);
+  _position = state.position;
+  while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
+    ch = state.input.charCodeAt(++state.position);
+  }
+  if (state.position === _position) {
+    throwError(state, "name of an alias node must contain at least one character");
+  }
+  alias = state.input.slice(_position, state.position);
+  if (!_hasOwnProperty$1.call(state.anchorMap, alias)) {
+    throwError(state, 'unidentified alias "' + alias + '"');
+  }
+  state.result = state.anchorMap[alias];
+  skipSeparationSpace(state, true, -1);
+  return true;
+}
+function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact) {
+  var allowBlockStyles, allowBlockScalars, allowBlockCollections, indentStatus = 1, atNewLine = false, hasContent = false, typeIndex, typeQuantity, typeList, type2, flowIndent, blockIndent;
+  if (state.listener !== null) {
+    state.listener("open", state);
+  }
+  state.tag = null;
+  state.anchor = null;
+  state.kind = null;
+  state.result = null;
+  allowBlockStyles = allowBlockScalars = allowBlockCollections = CONTEXT_BLOCK_OUT === nodeContext || CONTEXT_BLOCK_IN === nodeContext;
+  if (allowToSeek) {
+    if (skipSeparationSpace(state, true, -1)) {
+      atNewLine = true;
+      if (state.lineIndent > parentIndent) {
+        indentStatus = 1;
+      } else if (state.lineIndent === parentIndent) {
+        indentStatus = 0;
+      } else if (state.lineIndent < parentIndent) {
+        indentStatus = -1;
+      }
+    }
+  }
+  if (indentStatus === 1) {
+    while (readTagProperty(state) || readAnchorProperty(state)) {
+      if (skipSeparationSpace(state, true, -1)) {
+        atNewLine = true;
+        allowBlockCollections = allowBlockStyles;
+        if (state.lineIndent > parentIndent) {
+          indentStatus = 1;
+        } else if (state.lineIndent === parentIndent) {
+          indentStatus = 0;
+        } else if (state.lineIndent < parentIndent) {
+          indentStatus = -1;
+        }
+      } else {
+        allowBlockCollections = false;
+      }
+    }
+  }
+  if (allowBlockCollections) {
+    allowBlockCollections = atNewLine || allowCompact;
+  }
+  if (indentStatus === 1 || CONTEXT_BLOCK_OUT === nodeContext) {
+    if (CONTEXT_FLOW_IN === nodeContext || CONTEXT_FLOW_OUT === nodeContext) {
+      flowIndent = parentIndent;
+    } else {
+      flowIndent = parentIndent + 1;
+    }
+    blockIndent = state.position - state.lineStart;
+    if (indentStatus === 1) {
+      if (allowBlockCollections && (readBlockSequence(state, blockIndent) || readBlockMapping(state, blockIndent, flowIndent)) || readFlowCollection(state, flowIndent)) {
+        hasContent = true;
+      } else {
+        if (allowBlockScalars && readBlockScalar(state, flowIndent) || readSingleQuotedScalar(state, flowIndent) || readDoubleQuotedScalar(state, flowIndent)) {
+          hasContent = true;
+        } else if (readAlias(state)) {
+          hasContent = true;
+          if (state.tag !== null || state.anchor !== null) {
+            throwError(state, "alias node should not have any properties");
+          }
+        } else if (readPlainScalar(state, flowIndent, CONTEXT_FLOW_IN === nodeContext)) {
+          hasContent = true;
+          if (state.tag === null) {
+            state.tag = "?";
+          }
+        }
+        if (state.anchor !== null) {
+          state.anchorMap[state.anchor] = state.result;
+        }
+      }
+    } else if (indentStatus === 0) {
+      hasContent = allowBlockCollections && readBlockSequence(state, blockIndent);
+    }
+  }
+  if (state.tag === null) {
+    if (state.anchor !== null) {
+      state.anchorMap[state.anchor] = state.result;
+    }
+  } else if (state.tag === "?") {
+    if (state.result !== null && state.kind !== "scalar") {
+      throwError(state, 'unacceptable node kind for !<?> tag; it should be "scalar", not "' + state.kind + '"');
+    }
+    for (typeIndex = 0, typeQuantity = state.implicitTypes.length; typeIndex < typeQuantity; typeIndex += 1) {
+      type2 = state.implicitTypes[typeIndex];
+      if (type2.resolve(state.result)) {
+        state.result = type2.construct(state.result);
+        state.tag = type2.tag;
+        if (state.anchor !== null) {
+          state.anchorMap[state.anchor] = state.result;
+        }
+        break;
+      }
+    }
+  } else if (state.tag !== "!") {
+    if (_hasOwnProperty$1.call(state.typeMap[state.kind || "fallback"], state.tag)) {
+      type2 = state.typeMap[state.kind || "fallback"][state.tag];
+    } else {
+      type2 = null;
+      typeList = state.typeMap.multi[state.kind || "fallback"];
+      for (typeIndex = 0, typeQuantity = typeList.length; typeIndex < typeQuantity; typeIndex += 1) {
+        if (state.tag.slice(0, typeList[typeIndex].tag.length) === typeList[typeIndex].tag) {
+          type2 = typeList[typeIndex];
+          break;
+        }
+      }
+    }
+    if (!type2) {
+      throwError(state, "unknown tag !<" + state.tag + ">");
+    }
+    if (state.result !== null && type2.kind !== state.kind) {
+      throwError(state, "unacceptable node kind for !<" + state.tag + '> tag; it should be "' + type2.kind + '", not "' + state.kind + '"');
+    }
+    if (!type2.resolve(state.result, state.tag)) {
+      throwError(state, "cannot resolve a node with !<" + state.tag + "> explicit tag");
+    } else {
+      state.result = type2.construct(state.result, state.tag);
+      if (state.anchor !== null) {
+        state.anchorMap[state.anchor] = state.result;
+      }
+    }
+  }
+  if (state.listener !== null) {
+    state.listener("close", state);
+  }
+  return state.tag !== null || state.anchor !== null || hasContent;
+}
+function readDocument(state) {
+  var documentStart = state.position, _position, directiveName, directiveArgs, hasDirectives = false, ch;
+  state.version = null;
+  state.checkLineBreaks = state.legacy;
+  state.tagMap = /* @__PURE__ */ Object.create(null);
+  state.anchorMap = /* @__PURE__ */ Object.create(null);
+  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
+    skipSeparationSpace(state, true, -1);
+    ch = state.input.charCodeAt(state.position);
+    if (state.lineIndent > 0 || ch !== 37) {
+      break;
+    }
+    hasDirectives = true;
+    ch = state.input.charCodeAt(++state.position);
+    _position = state.position;
+    while (ch !== 0 && !is_WS_OR_EOL(ch)) {
+      ch = state.input.charCodeAt(++state.position);
+    }
+    directiveName = state.input.slice(_position, state.position);
+    directiveArgs = [];
+    if (directiveName.length < 1) {
+      throwError(state, "directive name must not be less than one character in length");
+    }
+    while (ch !== 0) {
+      while (is_WHITE_SPACE(ch)) {
+        ch = state.input.charCodeAt(++state.position);
+      }
+      if (ch === 35) {
+        do {
+          ch = state.input.charCodeAt(++state.position);
+        } while (ch !== 0 && !is_EOL(ch));
+        break;
+      }
+      if (is_EOL(ch))
+        break;
+      _position = state.position;
+      while (ch !== 0 && !is_WS_OR_EOL(ch)) {
+        ch = state.input.charCodeAt(++state.position);
+      }
+      directiveArgs.push(state.input.slice(_position, state.position));
+    }
+    if (ch !== 0)
+      readLineBreak(state);
+    if (_hasOwnProperty$1.call(directiveHandlers, directiveName)) {
+      directiveHandlers[directiveName](state, directiveName, directiveArgs);
+    } else {
+      throwWarning(state, 'unknown document directive "' + directiveName + '"');
+    }
+  }
+  skipSeparationSpace(state, true, -1);
+  if (state.lineIndent === 0 && state.input.charCodeAt(state.position) === 45 && state.input.charCodeAt(state.position + 1) === 45 && state.input.charCodeAt(state.position + 2) === 45) {
+    state.position += 3;
+    skipSeparationSpace(state, true, -1);
+  } else if (hasDirectives) {
+    throwError(state, "directives end mark is expected");
+  }
+  composeNode(state, state.lineIndent - 1, CONTEXT_BLOCK_OUT, false, true);
+  skipSeparationSpace(state, true, -1);
+  if (state.checkLineBreaks && PATTERN_NON_ASCII_LINE_BREAKS.test(state.input.slice(documentStart, state.position))) {
+    throwWarning(state, "non-ASCII line breaks are interpreted as content");
+  }
+  state.documents.push(state.result);
+  if (state.position === state.lineStart && testDocumentSeparator(state)) {
+    if (state.input.charCodeAt(state.position) === 46) {
+      state.position += 3;
+      skipSeparationSpace(state, true, -1);
+    }
+    return;
+  }
+  if (state.position < state.length - 1) {
+    throwError(state, "end of the stream or a document separator is expected");
+  } else {
+    return;
+  }
+}
+function loadDocuments(input, options) {
+  input = String(input);
+  options = options || {};
+  if (input.length !== 0) {
+    if (input.charCodeAt(input.length - 1) !== 10 && input.charCodeAt(input.length - 1) !== 13) {
+      input += "\n";
+    }
+    if (input.charCodeAt(0) === 65279) {
+      input = input.slice(1);
+    }
+  }
+  var state = new State$1(input, options);
+  var nullpos = input.indexOf("\0");
+  if (nullpos !== -1) {
+    state.position = nullpos;
+    throwError(state, "null byte is not allowed in input");
+  }
+  state.input += "\0";
+  while (state.input.charCodeAt(state.position) === 32) {
+    state.lineIndent += 1;
+    state.position += 1;
+  }
+  while (state.position < state.length - 1) {
+    readDocument(state);
+  }
+  return state.documents;
+}
+function loadAll$1(input, iterator, options) {
+  if (iterator !== null && typeof iterator === "object" && typeof options === "undefined") {
+    options = iterator;
+    iterator = null;
+  }
+  var documents = loadDocuments(input, options);
+  if (typeof iterator !== "function") {
+    return documents;
+  }
+  for (var index2 = 0, length = documents.length; index2 < length; index2 += 1) {
+    iterator(documents[index2]);
+  }
+}
+function load$1(input, options) {
+  var documents = loadDocuments(input, options);
+  if (documents.length === 0) {
+    return void 0;
+  } else if (documents.length === 1) {
+    return documents[0];
+  }
+  throw new exception("expected a single document in the stream, but found more");
+}
+var loadAll_1 = loadAll$1;
+var load_1 = load$1;
+var loader = {
+  loadAll: loadAll_1,
+  load: load_1
+};
+var _toString = Object.prototype.toString;
+var _hasOwnProperty = Object.prototype.hasOwnProperty;
+var CHAR_BOM = 65279;
+var CHAR_TAB = 9;
+var CHAR_LINE_FEED = 10;
+var CHAR_CARRIAGE_RETURN = 13;
+var CHAR_SPACE = 32;
+var CHAR_EXCLAMATION = 33;
+var CHAR_DOUBLE_QUOTE = 34;
+var CHAR_SHARP = 35;
+var CHAR_PERCENT = 37;
+var CHAR_AMPERSAND = 38;
+var CHAR_SINGLE_QUOTE = 39;
+var CHAR_ASTERISK = 42;
+var CHAR_COMMA = 44;
+var CHAR_MINUS = 45;
+var CHAR_COLON = 58;
+var CHAR_EQUALS = 61;
+var CHAR_GREATER_THAN = 62;
+var CHAR_QUESTION = 63;
+var CHAR_COMMERCIAL_AT = 64;
+var CHAR_LEFT_SQUARE_BRACKET = 91;
+var CHAR_RIGHT_SQUARE_BRACKET = 93;
+var CHAR_GRAVE_ACCENT = 96;
+var CHAR_LEFT_CURLY_BRACKET = 123;
+var CHAR_VERTICAL_LINE = 124;
+var CHAR_RIGHT_CURLY_BRACKET = 125;
+var ESCAPE_SEQUENCES = {};
+ESCAPE_SEQUENCES[0] = "\\0";
+ESCAPE_SEQUENCES[7] = "\\a";
+ESCAPE_SEQUENCES[8] = "\\b";
+ESCAPE_SEQUENCES[9] = "\\t";
+ESCAPE_SEQUENCES[10] = "\\n";
+ESCAPE_SEQUENCES[11] = "\\v";
+ESCAPE_SEQUENCES[12] = "\\f";
+ESCAPE_SEQUENCES[13] = "\\r";
+ESCAPE_SEQUENCES[27] = "\\e";
+ESCAPE_SEQUENCES[34] = '\\"';
+ESCAPE_SEQUENCES[92] = "\\\\";
+ESCAPE_SEQUENCES[133] = "\\N";
+ESCAPE_SEQUENCES[160] = "\\_";
+ESCAPE_SEQUENCES[8232] = "\\L";
+ESCAPE_SEQUENCES[8233] = "\\P";
+var DEPRECATED_BOOLEANS_SYNTAX = [
+  "y",
+  "Y",
+  "yes",
+  "Yes",
+  "YES",
+  "on",
+  "On",
+  "ON",
+  "n",
+  "N",
+  "no",
+  "No",
+  "NO",
+  "off",
+  "Off",
+  "OFF"
+];
+var DEPRECATED_BASE60_SYNTAX = /^[-+]?[0-9_]+(?::[0-9_]+)+(?:\.[0-9_]*)?$/;
+function compileStyleMap(schema2, map2) {
+  var result, keys3, index2, length, tag, style, type2;
+  if (map2 === null)
+    return {};
+  result = {};
+  keys3 = Object.keys(map2);
+  for (index2 = 0, length = keys3.length; index2 < length; index2 += 1) {
+    tag = keys3[index2];
+    style = String(map2[tag]);
+    if (tag.slice(0, 2) === "!!") {
+      tag = "tag:yaml.org,2002:" + tag.slice(2);
+    }
+    type2 = schema2.compiledTypeMap["fallback"][tag];
+    if (type2 && _hasOwnProperty.call(type2.styleAliases, style)) {
+      style = type2.styleAliases[style];
+    }
+    result[tag] = style;
+  }
+  return result;
+}
+function encodeHex(character) {
+  var string3, handle, length;
+  string3 = character.toString(16).toUpperCase();
+  if (character <= 255) {
+    handle = "x";
+    length = 2;
+  } else if (character <= 65535) {
+    handle = "u";
+    length = 4;
+  } else if (character <= 4294967295) {
+    handle = "U";
+    length = 8;
+  } else {
+    throw new exception("code point within a string may not be greater than 0xFFFFFFFF");
+  }
+  return "\\" + handle + common.repeat("0", length - string3.length) + string3;
+}
+var QUOTING_TYPE_SINGLE = 1;
+var QUOTING_TYPE_DOUBLE = 2;
+function State(options) {
+  this.schema = options["schema"] || _default;
+  this.indent = Math.max(1, options["indent"] || 2);
+  this.noArrayIndent = options["noArrayIndent"] || false;
+  this.skipInvalid = options["skipInvalid"] || false;
+  this.flowLevel = common.isNothing(options["flowLevel"]) ? -1 : options["flowLevel"];
+  this.styleMap = compileStyleMap(this.schema, options["styles"] || null);
+  this.sortKeys = options["sortKeys"] || false;
+  this.lineWidth = options["lineWidth"] || 80;
+  this.noRefs = options["noRefs"] || false;
+  this.noCompatMode = options["noCompatMode"] || false;
+  this.condenseFlow = options["condenseFlow"] || false;
+  this.quotingType = options["quotingType"] === '"' ? QUOTING_TYPE_DOUBLE : QUOTING_TYPE_SINGLE;
+  this.forceQuotes = options["forceQuotes"] || false;
+  this.replacer = typeof options["replacer"] === "function" ? options["replacer"] : null;
+  this.implicitTypes = this.schema.compiledImplicit;
+  this.explicitTypes = this.schema.compiledExplicit;
+  this.tag = null;
+  this.result = "";
+  this.duplicates = [];
+  this.usedDuplicates = null;
+}
+function indentString(string3, spaces) {
+  var ind = common.repeat(" ", spaces), position3 = 0, next = -1, result = "", line, length = string3.length;
+  while (position3 < length) {
+    next = string3.indexOf("\n", position3);
+    if (next === -1) {
+      line = string3.slice(position3);
+      position3 = length;
+    } else {
+      line = string3.slice(position3, next + 1);
+      position3 = next + 1;
+    }
+    if (line.length && line !== "\n")
+      result += ind;
+    result += line;
+  }
+  return result;
+}
+function generateNextLine(state, level) {
+  return "\n" + common.repeat(" ", state.indent * level);
+}
+function testImplicitResolving(state, str2) {
+  var index2, length, type2;
+  for (index2 = 0, length = state.implicitTypes.length; index2 < length; index2 += 1) {
+    type2 = state.implicitTypes[index2];
+    if (type2.resolve(str2)) {
+      return true;
+    }
+  }
+  return false;
+}
+function isWhitespace(c) {
+  return c === CHAR_SPACE || c === CHAR_TAB;
+}
+function isPrintable(c) {
+  return 32 <= c && c <= 126 || 161 <= c && c <= 55295 && c !== 8232 && c !== 8233 || 57344 <= c && c <= 65533 && c !== CHAR_BOM || 65536 <= c && c <= 1114111;
+}
+function isNsCharOrWhitespace(c) {
+  return isPrintable(c) && c !== CHAR_BOM && c !== CHAR_CARRIAGE_RETURN && c !== CHAR_LINE_FEED;
+}
+function isPlainSafe(c, prev, inblock) {
+  var cIsNsCharOrWhitespace = isNsCharOrWhitespace(c);
+  var cIsNsChar = cIsNsCharOrWhitespace && !isWhitespace(c);
+  return (
+    // ns-plain-safe
+    (inblock ? (
+      // c = flow-in
+      cIsNsCharOrWhitespace
+    ) : cIsNsCharOrWhitespace && c !== CHAR_COMMA && c !== CHAR_LEFT_SQUARE_BRACKET && c !== CHAR_RIGHT_SQUARE_BRACKET && c !== CHAR_LEFT_CURLY_BRACKET && c !== CHAR_RIGHT_CURLY_BRACKET) && c !== CHAR_SHARP && !(prev === CHAR_COLON && !cIsNsChar) || isNsCharOrWhitespace(prev) && !isWhitespace(prev) && c === CHAR_SHARP || prev === CHAR_COLON && cIsNsChar
+  );
+}
+function isPlainSafeFirst(c) {
+  return isPrintable(c) && c !== CHAR_BOM && !isWhitespace(c) && c !== CHAR_MINUS && c !== CHAR_QUESTION && c !== CHAR_COLON && c !== CHAR_COMMA && c !== CHAR_LEFT_SQUARE_BRACKET && c !== CHAR_RIGHT_SQUARE_BRACKET && c !== CHAR_LEFT_CURLY_BRACKET && c !== CHAR_RIGHT_CURLY_BRACKET && c !== CHAR_SHARP && c !== CHAR_AMPERSAND && c !== CHAR_ASTERISK && c !== CHAR_EXCLAMATION && c !== CHAR_VERTICAL_LINE && c !== CHAR_EQUALS && c !== CHAR_GREATER_THAN && c !== CHAR_SINGLE_QUOTE && c !== CHAR_DOUBLE_QUOTE && c !== CHAR_PERCENT && c !== CHAR_COMMERCIAL_AT && c !== CHAR_GRAVE_ACCENT;
+}
+function isPlainSafeLast(c) {
+  return !isWhitespace(c) && c !== CHAR_COLON;
+}
+function codePointAt(string3, pos) {
+  var first = string3.charCodeAt(pos), second;
+  if (first >= 55296 && first <= 56319 && pos + 1 < string3.length) {
+    second = string3.charCodeAt(pos + 1);
+    if (second >= 56320 && second <= 57343) {
+      return (first - 55296) * 1024 + second - 56320 + 65536;
+    }
+  }
+  return first;
+}
+function needIndentIndicator(string3) {
+  var leadingSpaceRe = /^\n* /;
+  return leadingSpaceRe.test(string3);
+}
+var STYLE_PLAIN = 1;
+var STYLE_SINGLE = 2;
+var STYLE_LITERAL = 3;
+var STYLE_FOLDED = 4;
+var STYLE_DOUBLE = 5;
+function chooseScalarStyle(string3, singleLineOnly, indentPerLevel, lineWidth, testAmbiguousType, quotingType, forceQuotes, inblock) {
+  var i;
+  var char = 0;
+  var prevChar = null;
+  var hasLineBreak = false;
+  var hasFoldableLine = false;
+  var shouldTrackWidth = lineWidth !== -1;
+  var previousLineBreak = -1;
+  var plain = isPlainSafeFirst(codePointAt(string3, 0)) && isPlainSafeLast(codePointAt(string3, string3.length - 1));
+  if (singleLineOnly || forceQuotes) {
+    for (i = 0; i < string3.length; char >= 65536 ? i += 2 : i++) {
+      char = codePointAt(string3, i);
+      if (!isPrintable(char)) {
+        return STYLE_DOUBLE;
+      }
+      plain = plain && isPlainSafe(char, prevChar, inblock);
+      prevChar = char;
+    }
+  } else {
+    for (i = 0; i < string3.length; char >= 65536 ? i += 2 : i++) {
+      char = codePointAt(string3, i);
+      if (char === CHAR_LINE_FEED) {
+        hasLineBreak = true;
+        if (shouldTrackWidth) {
+          hasFoldableLine = hasFoldableLine || // Foldable line = too long, and not more-indented.
+          i - previousLineBreak - 1 > lineWidth && string3[previousLineBreak + 1] !== " ";
+          previousLineBreak = i;
+        }
+      } else if (!isPrintable(char)) {
+        return STYLE_DOUBLE;
+      }
+      plain = plain && isPlainSafe(char, prevChar, inblock);
+      prevChar = char;
+    }
+    hasFoldableLine = hasFoldableLine || shouldTrackWidth && (i - previousLineBreak - 1 > lineWidth && string3[previousLineBreak + 1] !== " ");
+  }
+  if (!hasLineBreak && !hasFoldableLine) {
+    if (plain && !forceQuotes && !testAmbiguousType(string3)) {
+      return STYLE_PLAIN;
+    }
+    return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
+  }
+  if (indentPerLevel > 9 && needIndentIndicator(string3)) {
+    return STYLE_DOUBLE;
+  }
+  if (!forceQuotes) {
+    return hasFoldableLine ? STYLE_FOLDED : STYLE_LITERAL;
+  }
+  return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
+}
+function writeScalar(state, string3, level, iskey, inblock) {
+  state.dump = function() {
+    if (string3.length === 0) {
+      return state.quotingType === QUOTING_TYPE_DOUBLE ? '""' : "''";
+    }
+    if (!state.noCompatMode) {
+      if (DEPRECATED_BOOLEANS_SYNTAX.indexOf(string3) !== -1 || DEPRECATED_BASE60_SYNTAX.test(string3)) {
+        return state.quotingType === QUOTING_TYPE_DOUBLE ? '"' + string3 + '"' : "'" + string3 + "'";
+      }
+    }
+    var indent = state.indent * Math.max(1, level);
+    var lineWidth = state.lineWidth === -1 ? -1 : Math.max(Math.min(state.lineWidth, 40), state.lineWidth - indent);
+    var singleLineOnly = iskey || state.flowLevel > -1 && level >= state.flowLevel;
+    function testAmbiguity(string4) {
+      return testImplicitResolving(state, string4);
+    }
+    switch (chooseScalarStyle(
+      string3,
+      singleLineOnly,
+      state.indent,
+      lineWidth,
+      testAmbiguity,
+      state.quotingType,
+      state.forceQuotes && !iskey,
+      inblock
+    )) {
+      case STYLE_PLAIN:
+        return string3;
+      case STYLE_SINGLE:
+        return "'" + string3.replace(/'/g, "''") + "'";
+      case STYLE_LITERAL:
+        return "|" + blockHeader(string3, state.indent) + dropEndingNewline(indentString(string3, indent));
+      case STYLE_FOLDED:
+        return ">" + blockHeader(string3, state.indent) + dropEndingNewline(indentString(foldString(string3, lineWidth), indent));
+      case STYLE_DOUBLE:
+        return '"' + escapeString(string3) + '"';
+      default:
+        throw new exception("impossible error: invalid scalar style");
+    }
+  }();
+}
+function blockHeader(string3, indentPerLevel) {
+  var indentIndicator = needIndentIndicator(string3) ? String(indentPerLevel) : "";
+  var clip = string3[string3.length - 1] === "\n";
+  var keep = clip && (string3[string3.length - 2] === "\n" || string3 === "\n");
+  var chomp = keep ? "+" : clip ? "" : "-";
+  return indentIndicator + chomp + "\n";
+}
+function dropEndingNewline(string3) {
+  return string3[string3.length - 1] === "\n" ? string3.slice(0, -1) : string3;
+}
+function foldString(string3, width) {
+  var lineRe = /(\n+)([^\n]*)/g;
+  var result = function() {
+    var nextLF = string3.indexOf("\n");
+    nextLF = nextLF !== -1 ? nextLF : string3.length;
+    lineRe.lastIndex = nextLF;
+    return foldLine(string3.slice(0, nextLF), width);
+  }();
+  var prevMoreIndented = string3[0] === "\n" || string3[0] === " ";
+  var moreIndented;
+  var match2;
+  while (match2 = lineRe.exec(string3)) {
+    var prefix = match2[1], line = match2[2];
+    moreIndented = line[0] === " ";
+    result += prefix + (!prevMoreIndented && !moreIndented && line !== "" ? "\n" : "") + foldLine(line, width);
+    prevMoreIndented = moreIndented;
+  }
+  return result;
+}
+function foldLine(line, width) {
+  if (line === "" || line[0] === " ")
+    return line;
+  var breakRe = / [^ ]/g;
+  var match2;
+  var start = 0, end, curr = 0, next = 0;
+  var result = "";
+  while (match2 = breakRe.exec(line)) {
+    next = match2.index;
+    if (next - start > width) {
+      end = curr > start ? curr : next;
+      result += "\n" + line.slice(start, end);
+      start = end + 1;
+    }
+    curr = next;
+  }
+  result += "\n";
+  if (line.length - start > width && curr > start) {
+    result += line.slice(start, curr) + "\n" + line.slice(curr + 1);
+  } else {
+    result += line.slice(start);
+  }
+  return result.slice(1);
+}
+function escapeString(string3) {
+  var result = "";
+  var char = 0;
+  var escapeSeq;
+  for (var i = 0; i < string3.length; char >= 65536 ? i += 2 : i++) {
+    char = codePointAt(string3, i);
+    escapeSeq = ESCAPE_SEQUENCES[char];
+    if (!escapeSeq && isPrintable(char)) {
+      result += string3[i];
+      if (char >= 65536)
+        result += string3[i + 1];
+    } else {
+      result += escapeSeq || encodeHex(char);
+    }
+  }
+  return result;
+}
+function writeFlowSequence(state, level, object) {
+  var _result = "", _tag = state.tag, index2, length, value;
+  for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+    value = object[index2];
+    if (state.replacer) {
+      value = state.replacer.call(object, String(index2), value);
+    }
+    if (writeNode(state, level, value, false, false) || typeof value === "undefined" && writeNode(state, level, null, false, false)) {
+      if (_result !== "")
+        _result += "," + (!state.condenseFlow ? " " : "");
+      _result += state.dump;
+    }
+  }
+  state.tag = _tag;
+  state.dump = "[" + _result + "]";
+}
+function writeBlockSequence(state, level, object, compact) {
+  var _result = "", _tag = state.tag, index2, length, value;
+  for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+    value = object[index2];
+    if (state.replacer) {
+      value = state.replacer.call(object, String(index2), value);
+    }
+    if (writeNode(state, level + 1, value, true, true, false, true) || typeof value === "undefined" && writeNode(state, level + 1, null, true, true, false, true)) {
+      if (!compact || _result !== "") {
+        _result += generateNextLine(state, level);
+      }
+      if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
+        _result += "-";
+      } else {
+        _result += "- ";
+      }
+      _result += state.dump;
+    }
+  }
+  state.tag = _tag;
+  state.dump = _result || "[]";
+}
+function writeFlowMapping(state, level, object) {
+  var _result = "", _tag = state.tag, objectKeyList = Object.keys(object), index2, length, objectKey, objectValue, pairBuffer;
+  for (index2 = 0, length = objectKeyList.length; index2 < length; index2 += 1) {
+    pairBuffer = "";
+    if (_result !== "")
+      pairBuffer += ", ";
+    if (state.condenseFlow)
+      pairBuffer += '"';
+    objectKey = objectKeyList[index2];
+    objectValue = object[objectKey];
+    if (state.replacer) {
+      objectValue = state.replacer.call(object, objectKey, objectValue);
+    }
+    if (!writeNode(state, level, objectKey, false, false)) {
+      continue;
+    }
+    if (state.dump.length > 1024)
+      pairBuffer += "? ";
+    pairBuffer += state.dump + (state.condenseFlow ? '"' : "") + ":" + (state.condenseFlow ? "" : " ");
+    if (!writeNode(state, level, objectValue, false, false)) {
+      continue;
+    }
+    pairBuffer += state.dump;
+    _result += pairBuffer;
+  }
+  state.tag = _tag;
+  state.dump = "{" + _result + "}";
+}
+function writeBlockMapping(state, level, object, compact) {
+  var _result = "", _tag = state.tag, objectKeyList = Object.keys(object), index2, length, objectKey, objectValue, explicitPair, pairBuffer;
+  if (state.sortKeys === true) {
+    objectKeyList.sort();
+  } else if (typeof state.sortKeys === "function") {
+    objectKeyList.sort(state.sortKeys);
+  } else if (state.sortKeys) {
+    throw new exception("sortKeys must be a boolean or a function");
+  }
+  for (index2 = 0, length = objectKeyList.length; index2 < length; index2 += 1) {
+    pairBuffer = "";
+    if (!compact || _result !== "") {
+      pairBuffer += generateNextLine(state, level);
+    }
+    objectKey = objectKeyList[index2];
+    objectValue = object[objectKey];
+    if (state.replacer) {
+      objectValue = state.replacer.call(object, objectKey, objectValue);
+    }
+    if (!writeNode(state, level + 1, objectKey, true, true, true)) {
+      continue;
+    }
+    explicitPair = state.tag !== null && state.tag !== "?" || state.dump && state.dump.length > 1024;
+    if (explicitPair) {
+      if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
+        pairBuffer += "?";
+      } else {
+        pairBuffer += "? ";
+      }
+    }
+    pairBuffer += state.dump;
+    if (explicitPair) {
+      pairBuffer += generateNextLine(state, level);
+    }
+    if (!writeNode(state, level + 1, objectValue, true, explicitPair)) {
+      continue;
+    }
+    if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
+      pairBuffer += ":";
+    } else {
+      pairBuffer += ": ";
+    }
+    pairBuffer += state.dump;
+    _result += pairBuffer;
+  }
+  state.tag = _tag;
+  state.dump = _result || "{}";
+}
+function detectType(state, object, explicit) {
+  var _result, typeList, index2, length, type2, style;
+  typeList = explicit ? state.explicitTypes : state.implicitTypes;
+  for (index2 = 0, length = typeList.length; index2 < length; index2 += 1) {
+    type2 = typeList[index2];
+    if ((type2.instanceOf || type2.predicate) && (!type2.instanceOf || typeof object === "object" && object instanceof type2.instanceOf) && (!type2.predicate || type2.predicate(object))) {
+      if (explicit) {
+        if (type2.multi && type2.representName) {
+          state.tag = type2.representName(object);
+        } else {
+          state.tag = type2.tag;
+        }
+      } else {
+        state.tag = "?";
+      }
+      if (type2.represent) {
+        style = state.styleMap[type2.tag] || type2.defaultStyle;
+        if (_toString.call(type2.represent) === "[object Function]") {
+          _result = type2.represent(object, style);
+        } else if (_hasOwnProperty.call(type2.represent, style)) {
+          _result = type2.represent[style](object, style);
+        } else {
+          throw new exception("!<" + type2.tag + '> tag resolver accepts not "' + style + '" style');
+        }
+        state.dump = _result;
+      }
+      return true;
+    }
+  }
+  return false;
+}
+function writeNode(state, level, object, block, compact, iskey, isblockseq) {
+  state.tag = null;
+  state.dump = object;
+  if (!detectType(state, object, false)) {
+    detectType(state, object, true);
+  }
+  var type2 = _toString.call(state.dump);
+  var inblock = block;
+  var tagStr;
+  if (block) {
+    block = state.flowLevel < 0 || state.flowLevel > level;
+  }
+  var objectOrArray = type2 === "[object Object]" || type2 === "[object Array]", duplicateIndex, duplicate;
+  if (objectOrArray) {
+    duplicateIndex = state.duplicates.indexOf(object);
+    duplicate = duplicateIndex !== -1;
+  }
+  if (state.tag !== null && state.tag !== "?" || duplicate || state.indent !== 2 && level > 0) {
+    compact = false;
+  }
+  if (duplicate && state.usedDuplicates[duplicateIndex]) {
+    state.dump = "*ref_" + duplicateIndex;
+  } else {
+    if (objectOrArray && duplicate && !state.usedDuplicates[duplicateIndex]) {
+      state.usedDuplicates[duplicateIndex] = true;
+    }
+    if (type2 === "[object Object]") {
+      if (block && Object.keys(state.dump).length !== 0) {
+        writeBlockMapping(state, level, state.dump, compact);
+        if (duplicate) {
+          state.dump = "&ref_" + duplicateIndex + state.dump;
+        }
+      } else {
+        writeFlowMapping(state, level, state.dump);
+        if (duplicate) {
+          state.dump = "&ref_" + duplicateIndex + " " + state.dump;
+        }
+      }
+    } else if (type2 === "[object Array]") {
+      if (block && state.dump.length !== 0) {
+        if (state.noArrayIndent && !isblockseq && level > 0) {
+          writeBlockSequence(state, level - 1, state.dump, compact);
+        } else {
+          writeBlockSequence(state, level, state.dump, compact);
+        }
+        if (duplicate) {
+          state.dump = "&ref_" + duplicateIndex + state.dump;
+        }
+      } else {
+        writeFlowSequence(state, level, state.dump);
+        if (duplicate) {
+          state.dump = "&ref_" + duplicateIndex + " " + state.dump;
+        }
+      }
+    } else if (type2 === "[object String]") {
+      if (state.tag !== "?") {
+        writeScalar(state, state.dump, level, iskey, inblock);
+      }
+    } else if (type2 === "[object Undefined]") {
+      return false;
+    } else {
+      if (state.skipInvalid)
+        return false;
+      throw new exception("unacceptable kind of an object to dump " + type2);
+    }
+    if (state.tag !== null && state.tag !== "?") {
+      tagStr = encodeURI(
+        state.tag[0] === "!" ? state.tag.slice(1) : state.tag
+      ).replace(/!/g, "%21");
+      if (state.tag[0] === "!") {
+        tagStr = "!" + tagStr;
+      } else if (tagStr.slice(0, 18) === "tag:yaml.org,2002:") {
+        tagStr = "!!" + tagStr.slice(18);
+      } else {
+        tagStr = "!<" + tagStr + ">";
+      }
+      state.dump = tagStr + " " + state.dump;
+    }
+  }
+  return true;
+}
+function getDuplicateReferences(object, state) {
+  var objects = [], duplicatesIndexes = [], index2, length;
+  inspectNode(object, objects, duplicatesIndexes);
+  for (index2 = 0, length = duplicatesIndexes.length; index2 < length; index2 += 1) {
+    state.duplicates.push(objects[duplicatesIndexes[index2]]);
+  }
+  state.usedDuplicates = new Array(length);
+}
+function inspectNode(object, objects, duplicatesIndexes) {
+  var objectKeyList, index2, length;
+  if (object !== null && typeof object === "object") {
+    index2 = objects.indexOf(object);
+    if (index2 !== -1) {
+      if (duplicatesIndexes.indexOf(index2) === -1) {
+        duplicatesIndexes.push(index2);
+      }
+    } else {
+      objects.push(object);
+      if (Array.isArray(object)) {
+        for (index2 = 0, length = object.length; index2 < length; index2 += 1) {
+          inspectNode(object[index2], objects, duplicatesIndexes);
+        }
+      } else {
+        objectKeyList = Object.keys(object);
+        for (index2 = 0, length = objectKeyList.length; index2 < length; index2 += 1) {
+          inspectNode(object[objectKeyList[index2]], objects, duplicatesIndexes);
+        }
+      }
+    }
+  }
+}
+function dump$1(input, options) {
+  options = options || {};
+  var state = new State(options);
+  if (!state.noRefs)
+    getDuplicateReferences(input, state);
+  var value = input;
+  if (state.replacer) {
+    value = state.replacer.call({ "": value }, "", value);
+  }
+  if (writeNode(state, 0, value, true, true))
+    return state.dump + "\n";
+  return "";
+}
+var dump_1 = dump$1;
+var dumper = {
+  dump: dump_1
+};
+function renamed(from, to) {
+  return function() {
+    throw new Error("Function yaml." + from + " is removed in js-yaml 4. Use yaml." + to + " instead, which is now safe by default.");
+  };
+}
+var load = loader.load;
+var loadAll = loader.loadAll;
+var dump = dumper.dump;
+var safeLoad = renamed("safeLoad", "load");
+var safeLoadAll = renamed("safeLoadAll", "loadAll");
+var safeDump = renamed("safeDump", "dump");
+
+// node_modules/langchain/dist/chains/openai_functions/openapi.js
+init_base5();
+init_llm_chain();
+init_openai();
+init_chat();
+init_sequential_chain();
+
 // src/chainFactory.ts
-var LLM_CHAIN = "llm_chain";
-var RETRIEVAL_QA_CHAIN = "retrieval_qa";
 var _ChainFactory = class {
-  static getLLMChain(args) {
-    let instance = _ChainFactory.instances.get(LLM_CHAIN);
+  static createNewLLMChain(args) {
+    const instance = new ConversationChain(args);
+    console.log("New chain created: ", instance._chainType());
+    _ChainFactory.instances.set("llm_chain" /* LLM_CHAIN */, instance);
+    return instance;
+  }
+  static getLLMChainFromMap(args) {
+    let instance = _ChainFactory.instances.get("llm_chain" /* LLM_CHAIN */);
     if (!instance) {
-      instance = new ConversationChain(args);
-      console.log("New chain created: ", instance._chainType());
-      _ChainFactory.instances.set(LLM_CHAIN, instance);
+      instance = _ChainFactory.createNewLLMChain(args);
     }
     return instance;
   }
@@ -52092,27 +58473,598 @@ var CHAT_VIEWTYPE = "copilot-chat-view";
 var USER_SENDER = "user";
 var AI_SENDER = "ai";
 var DEFAULT_SYSTEM_PROMPT = "You are Obsidian Copilot, a helpful assistant that integrates AI to Obsidian note-taking.";
+var OPENAI_MODELS = /* @__PURE__ */ new Set([
+  "GPT-3.5" /* GPT_35_TURBO */,
+  "GPT-3.5 16K" /* GPT_35_TURBO_16K */,
+  "GPT-4" /* GPT_4 */,
+  "GPT-4 32K" /* GPT_4_32K */
+]);
+var AZURE_MODELS = /* @__PURE__ */ new Set([
+  "AZURE GPT-3.5" /* AZURE_GPT_35_TURBO */,
+  "AZURE GPT-3.5-16K" /* AZURE_GPT_35_TURBO_16K */,
+  "AZURE GPT-4" /* AZURE_GPT_4 */,
+  "AZURE GPT-4 32K" /* AZURE_GPT_4_32K */
+]);
+var CLAUDE_MODELS = /* @__PURE__ */ new Set([
+  "CLAUDE-1" /* CLAUDE_1 */,
+  "CLAUDE-1-100K" /* CLAUDE_1_100K */,
+  "CLAUDE-INSTANT" /* CLAUDE_INSTANT_1 */,
+  "CLAUDE-INSTANT-100K" /* CLAUDE_INSTANT_1_100K */
+]);
+var DISPLAY_NAME_TO_MODEL = {
+  ["GPT-3.5" /* GPT_35_TURBO */]: "gpt-3.5-turbo" /* GPT_35_TURBO */,
+  ["GPT-3.5 16K" /* GPT_35_TURBO_16K */]: "gpt-3.5-turbo-16k" /* GPT_35_TURBO_16K */,
+  ["GPT-4" /* GPT_4 */]: "gpt-4" /* GPT_4 */,
+  ["GPT-4 32K" /* GPT_4_32K */]: "gpt-4-32k" /* GPT_4_32K */,
+  ["CLAUDE-1" /* CLAUDE_1 */]: "claude-1" /* CLAUDE_1 */,
+  ["CLAUDE-1-100K" /* CLAUDE_1_100K */]: "claude-1-100k" /* CLAUDE_1_100K */,
+  ["CLAUDE-INSTANT" /* CLAUDE_INSTANT_1 */]: "claude-instant-1" /* CLAUDE_INSTANT_1 */,
+  ["CLAUDE-INSTANT-100K" /* CLAUDE_INSTANT_1_100K */]: "claude-instant-1-100k" /* CLAUDE_INSTANT_1_100K */,
+  ["AZURE GPT-3.5" /* AZURE_GPT_35_TURBO */]: "gpt-35-turbo" /* AZURE_GPT_35_TURBO */,
+  ["AZURE GPT-3.5-16K" /* AZURE_GPT_35_TURBO_16K */]: "gpt-35-turbo-16k" /* AZURE_GPT_35_TURBO_16K */,
+  ["AZURE GPT-4" /* AZURE_GPT_4 */]: "gpt-4" /* GPT_4 */,
+  ["AZURE GPT-4 32K" /* AZURE_GPT_4_32K */]: "gpt-4-32k" /* GPT_4_32K */
+};
 var OPENAI = "openai";
 var HUGGINGFACE = "huggingface";
+var COHEREAI = "cohereai";
+var AZURE_OPENAI = "azure_openai";
+var ANTHROPIC = "anthropic";
+var VENDOR_MODELS = {
+  [OPENAI]: OPENAI_MODELS,
+  [AZURE_OPENAI]: AZURE_MODELS,
+  [ANTHROPIC]: CLAUDE_MODELS
+};
 var DEFAULT_SETTINGS = {
-  openAiApiKey: "",
+  openAIApiKey: "",
   huggingfaceApiKey: "",
-  defaultModel: "gpt-3.5-turbo",
+  cohereApiKey: "",
+  anthropicApiKey: "",
+  azureOpenAIApiKey: "",
+  azureOpenAIApiInstanceName: "",
+  azureOpenAIApiDeploymentName: "",
+  azureOpenAIApiVersion: "",
+  azureOpenAIApiEmbeddingDeploymentName: "",
+  defaultModel: "gpt-3.5-turbo-16k" /* GPT_35_TURBO_16K */,
+  defaultModelDisplayName: "GPT-3.5 16K" /* GPT_35_TURBO_16K */,
   temperature: 0.7,
   maxTokens: 1e3,
   contextTurns: 3,
   useNotesAsContext: false,
   userSystemPrompt: "",
+  openAIProxyBaseUrl: "",
   stream: true,
   embeddingProvider: OPENAI,
   debug: false
 };
 
+// src/utils.ts
+var import_moment = __toESM(require_moment());
+var stringToChainType = (chain) => {
+  switch (chain) {
+    case "llm_chain":
+      return "llm_chain" /* LLM_CHAIN */;
+    case "retrieval_qa":
+      return "retrieval_qa" /* RETRIEVAL_QA_CHAIN */;
+    default:
+      throw new Error(`Unknown chain type: ${chain}`);
+  }
+};
+var isLLMChain = (chain) => {
+  return chain.llm !== void 0;
+};
+var isRetrievalQAChain = (chain) => {
+  return chain.retriever !== void 0;
+};
+var isSupportedChain = (chain) => {
+  return isLLMChain(chain) || isRetrievalQAChain(chain);
+};
+var getModelName = (modelDisplayName) => {
+  return DISPLAY_NAME_TO_MODEL[modelDisplayName];
+};
+var getChatContext = (chatHistory, contextSize) => {
+  if (chatHistory.length === 0) {
+    return [];
+  }
+  const lastAiMessageIndex = chatHistory.slice().reverse().findIndex((msg) => msg.sender !== USER_SENDER);
+  if (lastAiMessageIndex === -1) {
+    return [];
+  }
+  const lastIndex = chatHistory.length - 1 - lastAiMessageIndex;
+  const startIndex = Math.max(0, lastIndex - contextSize + 1);
+  return chatHistory.slice(startIndex, lastIndex + 1);
+};
+var formatDateTime = (now, timezone = "local") => {
+  const formattedDateTime = (0, import_moment.default)(now);
+  if (timezone === "utc") {
+    formattedDateTime.utc();
+  }
+  return formattedDateTime.format("YYYY_MM_DD-HH_mm_ss");
+};
+async function getFileContent(file) {
+  if (file.extension != "md")
+    return null;
+  return await this.app.vault.read(file);
+}
+function getFileName(file) {
+  return file.basename;
+}
+function sanitizeSettings(settings) {
+  const sanitizedSettings = { ...settings };
+  const temperature = Number(settings.temperature);
+  sanitizedSettings.temperature = isNaN(temperature) ? DEFAULT_SETTINGS.temperature : temperature;
+  const maxTokens = Number(settings.maxTokens);
+  sanitizedSettings.maxTokens = isNaN(maxTokens) ? DEFAULT_SETTINGS.maxTokens : maxTokens;
+  const contextTurns = Number(settings.contextTurns);
+  sanitizedSettings.contextTurns = isNaN(contextTurns) ? DEFAULT_SETTINGS.contextTurns : contextTurns;
+  return sanitizedSettings;
+}
+function fixGrammarSpellingSelectionPrompt(selectedText) {
+  return `Please fix the grammar and spelling of the following text and return it without any other changes:
+
+${selectedText}`;
+}
+function summarizePrompt(selectedText) {
+  return `Please summarize the following text into bullet points and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function tocPrompt(selectedText) {
+  return `Please generate a table of contents for the following text and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function glossaryPrompt(selectedText) {
+  return `Please generate a glossary for the following text and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function simplifyPrompt(selectedText) {
+  return `Please simplify the following text so that a 6th-grader can understand. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function emojifyPrompt(selectedText) {
+  return `Please insert emojis to the following content without changing the text.Insert at as many places as possible, but don't have any 2 emojis together. The original text must be returned.
+Content: ${selectedText}`;
+}
+function removeUrlsFromSelectionPrompt(selectedText) {
+  return `Please remove all URLs from the following text and return it without any other changes:
+
+${selectedText}`;
+}
+function rewriteTweetSelectionPrompt(selectedText) {
+  return `Please rewrite the following content to under 280 characters using simple sentences. Output in the same language as the source, do not output English if it is not English. Please follow the instruction strictly. Content:
+
+    + ${selectedText}`;
+}
+function rewriteTweetThreadSelectionPrompt(selectedText) {
+  return `Please follow the instructions closely step by step and rewrite the content to a thread. 1. Each paragraph must be under 240 characters. 2. The starting line is \`THREAD START
+\`, and the ending line is \`
+THREAD END\`. 3. You must use \`
+
+---
+
+\` to separate each paragraph! Then return it without any other changes. 4. Make it as engaging as possible.5. Output in the same language as the source, do not output English if it is not English.
+ The original content:
+
+${selectedText}`;
+}
+function rewriteShorterSelectionPrompt(selectedText) {
+  return `Please rewrite the following text to make it half as long while keeping the meaning as much as possible. Output in the same language as the source, do not output English if it is not English:
+${selectedText}`;
+}
+function rewriteLongerSelectionPrompt(selectedText) {
+  return `Please rewrite the following text to make it twice as long while keeping the meaning as much as possible. Output in the same language as the source, do not output English if it is not English:
+${selectedText}`;
+}
+function eli5SelectionPrompt(selectedText) {
+  return `Please explain the following text like I'm 5 years old. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function rewritePressReleaseSelectionPrompt(selectedText) {
+  return `Please rewrite the following text to make it sound like a press release. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+}
+function createTranslateSelectionPrompt(language) {
+  return (selectedText) => {
+    return `Please translate the following text to ${language}:
+
+${selectedText}`;
+  };
+}
+function createChangeToneSelectionPrompt(tone) {
+  return (selectedText) => {
+    return `Please change the tone of the following text to ${tone}. Output in the same language as the source, do not output English if it is not English:
+
+${selectedText}`;
+  };
+}
+function fillInSelectionForCustomPrompt(prompt) {
+  return (selectedText) => {
+    if (!prompt) {
+      return selectedText;
+    }
+    return prompt.replace("{}", selectedText);
+  };
+}
+
+// node_modules/langchain/dist/chat_models/anthropic.js
+var import_sdk = __toESM(require_src(), 1);
+init_base3();
+init_schema();
+init_env2();
+function getAnthropicPromptFromMessage(type2) {
+  switch (type2) {
+    case "ai":
+      return import_sdk.AI_PROMPT;
+    case "human":
+      return import_sdk.HUMAN_PROMPT;
+    case "system":
+      return "";
+    default:
+      throw new Error(`Unknown message type: ${type2}`);
+  }
+}
+var DEFAULT_STOP_SEQUENCES = [import_sdk.HUMAN_PROMPT];
+var ChatAnthropic = class extends BaseChatModel {
+  get lc_secrets() {
+    return {
+      anthropicApiKey: "ANTHROPIC_API_KEY"
+    };
+  }
+  get lc_aliases() {
+    return {
+      modelName: "model"
+    };
+  }
+  constructor(fields) {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+    super(fields != null ? fields : {});
+    Object.defineProperty(this, "lc_serializable", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: true
+    });
+    Object.defineProperty(this, "anthropicApiKey", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "apiUrl", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "temperature", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 1
+    });
+    Object.defineProperty(this, "topK", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: -1
+    });
+    Object.defineProperty(this, "topP", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: -1
+    });
+    Object.defineProperty(this, "maxTokensToSample", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 2048
+    });
+    Object.defineProperty(this, "modelName", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: "claude-v1"
+    });
+    Object.defineProperty(this, "invocationKwargs", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "stopSequences", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "streaming", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: false
+    });
+    Object.defineProperty(this, "batchClient", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "streamingClient", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    this.anthropicApiKey = (_a = fields == null ? void 0 : fields.anthropicApiKey) != null ? _a : getEnvironmentVariable2("ANTHROPIC_API_KEY");
+    if (!this.anthropicApiKey) {
+      throw new Error("Anthropic API key not found");
+    }
+    this.apiUrl = fields == null ? void 0 : fields.anthropicApiUrl;
+    this.modelName = (_b = fields == null ? void 0 : fields.modelName) != null ? _b : this.modelName;
+    this.invocationKwargs = (_c = fields == null ? void 0 : fields.invocationKwargs) != null ? _c : {};
+    this.temperature = (_d = fields == null ? void 0 : fields.temperature) != null ? _d : this.temperature;
+    this.topK = (_e = fields == null ? void 0 : fields.topK) != null ? _e : this.topK;
+    this.topP = (_f = fields == null ? void 0 : fields.topP) != null ? _f : this.topP;
+    this.maxTokensToSample = (_g = fields == null ? void 0 : fields.maxTokensToSample) != null ? _g : this.maxTokensToSample;
+    this.stopSequences = (_h = fields == null ? void 0 : fields.stopSequences) != null ? _h : this.stopSequences;
+    this.streaming = (_i = fields == null ? void 0 : fields.streaming) != null ? _i : false;
+  }
+  /**
+   * Get the parameters used to invoke the model
+   */
+  invocationParams(options) {
+    var _a, _b, _c;
+    return {
+      model: this.modelName,
+      temperature: this.temperature,
+      top_k: this.topK,
+      top_p: this.topP,
+      stop_sequences: (_c = (_b = (_a = options == null ? void 0 : options.stop) == null ? void 0 : _a.concat(DEFAULT_STOP_SEQUENCES)) != null ? _b : this.stopSequences) != null ? _c : DEFAULT_STOP_SEQUENCES,
+      max_tokens_to_sample: this.maxTokensToSample,
+      stream: this.streaming,
+      ...this.invocationKwargs
+    };
+  }
+  /** @ignore */
+  _identifyingParams() {
+    return {
+      model_name: this.modelName,
+      ...this.invocationParams()
+    };
+  }
+  /**
+   * Get the identifying parameters for the model
+   */
+  identifyingParams() {
+    return {
+      model_name: this.modelName,
+      ...this.invocationParams()
+    };
+  }
+  formatMessagesAsPrompt(messages4) {
+    return messages4.map((message) => {
+      const messagePrompt = getAnthropicPromptFromMessage(message._getType());
+      return `${messagePrompt} ${message.content}`;
+    }).join("") + import_sdk.AI_PROMPT;
+  }
+  /** @ignore */
+  async _generate(messages4, options, runManager) {
+    if (this.stopSequences && options.stop) {
+      throw new Error(`"stopSequence" parameter found in input and default params`);
+    }
+    const params = this.invocationParams(options);
+    const response = await this.completionWithRetry({
+      ...params,
+      prompt: this.formatMessagesAsPrompt(messages4)
+    }, { signal: options.signal }, runManager);
+    const generations = response.completion.split(import_sdk.AI_PROMPT).map((message) => ({
+      text: message,
+      message: new AIMessage(message)
+    }));
+    return {
+      generations
+    };
+  }
+  /** @ignore */
+  async completionWithRetry(request, options, runManager) {
+    if (!this.anthropicApiKey) {
+      throw new Error("Missing Anthropic API key.");
+    }
+    let makeCompletionRequest;
+    if (request.stream) {
+      if (!this.streamingClient) {
+        const options2 = this.apiUrl ? { apiUrl: this.apiUrl } : void 0;
+        this.streamingClient = new import_sdk.Client(this.anthropicApiKey, options2);
+      }
+      makeCompletionRequest = async () => {
+        let currentCompletion = "";
+        return this.streamingClient.completeStream(request, {
+          onUpdate: (data) => {
+            if (data.stop_reason) {
+              return;
+            }
+            const part = data.completion;
+            if (part) {
+              const delta = part.slice(currentCompletion.length);
+              currentCompletion += delta != null ? delta : "";
+              void (runManager == null ? void 0 : runManager.handleLLMNewToken(delta != null ? delta : ""));
+            }
+          },
+          signal: options.signal
+        }).catch((e) => {
+          if ((e == null ? void 0 : e.name) === "AbortError") {
+            throw new Error(`${e.name}: ${e.message}`);
+          }
+          throw e;
+        });
+      };
+    } else {
+      if (!this.batchClient) {
+        const options2 = this.apiUrl ? { apiUrl: this.apiUrl } : void 0;
+        this.batchClient = new import_sdk.Client(this.anthropicApiKey, options2);
+      }
+      makeCompletionRequest = async () => this.batchClient.complete(request, {
+        signal: options.signal
+      }).catch((e) => {
+        console.log(e);
+        if ((e == null ? void 0 : e.type) === "aborted") {
+          throw new Error(`${e.name}: ${e.message}`);
+        }
+        throw e;
+      });
+    }
+    return this.caller.call(makeCompletionRequest);
+  }
+  _llmType() {
+    return "anthropic";
+  }
+  /** @ignore */
+  _combineLLMOutput() {
+    return [];
+  }
+};
+
 // node_modules/langchain/chat_models/openai.js
 init_openai();
 
+// node_modules/langchain/dist/util/chunk.js
+var chunkArray = (arr, chunkSize) => arr.reduce((chunks, elem, index2) => {
+  const chunkIndex = Math.floor(index2 / chunkSize);
+  const chunk = chunks[chunkIndex] || [];
+  chunks[chunkIndex] = chunk.concat([elem]);
+  return chunks;
+}, []);
+
+// node_modules/langchain/dist/embeddings/cohere.js
+init_env2();
+
+// node_modules/langchain/dist/embeddings/base.js
+init_async_caller2();
+var Embeddings = class {
+  constructor(params) {
+    Object.defineProperty(this, "caller", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    this.caller = new AsyncCaller2(params != null ? params : {});
+  }
+};
+
+// node_modules/langchain/dist/embeddings/cohere.js
+var CohereEmbeddings = class extends Embeddings {
+  /**
+   * Constructor for the CohereEmbeddings class.
+   * @param fields - An optional object with properties to configure the instance.
+   */
+  constructor(fields) {
+    var _a, _b;
+    super(fields != null ? fields : {});
+    Object.defineProperty(this, "modelName", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: "small"
+    });
+    Object.defineProperty(this, "batchSize", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 48
+    });
+    Object.defineProperty(this, "apiKey", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "client", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    const apiKey = (fields == null ? void 0 : fields.apiKey) || getEnvironmentVariable2("COHERE_API_KEY");
+    if (!apiKey) {
+      throw new Error("Cohere API key not found");
+    }
+    this.modelName = (_a = fields == null ? void 0 : fields.modelName) != null ? _a : this.modelName;
+    this.batchSize = (_b = fields == null ? void 0 : fields.batchSize) != null ? _b : this.batchSize;
+    this.apiKey = apiKey;
+  }
+  /**
+   * Generates embeddings for an array of texts.
+   * @param texts - An array of strings to generate embeddings for.
+   * @returns A Promise that resolves to an array of embeddings.
+   */
+  async embedDocuments(texts) {
+    await this.maybeInitClient();
+    const subPrompts = chunkArray(texts, this.batchSize);
+    const embeddings = [];
+    for (let i = 0; i < subPrompts.length; i += 1) {
+      const input = subPrompts[i];
+      const { body } = await this.embeddingWithRetry({
+        model: this.modelName,
+        texts: input
+      });
+      for (let j = 0; j < input.length; j += 1) {
+        embeddings.push(body.embeddings[j]);
+      }
+    }
+    return embeddings;
+  }
+  /**
+   * Generates an embedding for a single text.
+   * @param text - A string to generate an embedding for.
+   * @returns A Promise that resolves to an array of numbers representing the embedding.
+   */
+  async embedQuery(text4) {
+    await this.maybeInitClient();
+    const { body } = await this.embeddingWithRetry({
+      model: this.modelName,
+      texts: [text4]
+    });
+    return body.embeddings[0];
+  }
+  /**
+   * Generates embeddings with retry capabilities.
+   * @param request - An object containing the request parameters for generating embeddings.
+   * @returns A Promise that resolves to the API response.
+   */
+  async embeddingWithRetry(request) {
+    await this.maybeInitClient();
+    return this.caller.call(this.client.embed.bind(this.client), request);
+  }
+  /**
+   * Initializes the Cohere client if it hasn't been initialized already.
+   */
+  async maybeInitClient() {
+    if (!this.client) {
+      const { cohere } = await CohereEmbeddings.imports();
+      this.client = cohere;
+      this.client.init(this.apiKey);
+    }
+  }
+  /** @ignore */
+  static async imports() {
+    try {
+      const { default: cohere } = await Promise.resolve().then(() => __toESM(require_cohere_ai(), 1));
+      return { cohere };
+    } catch (e) {
+      throw new Error("Please install cohere-ai as a dependency with, e.g. `yarn add cohere-ai`");
+    }
+  }
+};
+
 // node_modules/@huggingface/inference/dist/index.mjs
-function toArray2(obj) {
+function toArray3(obj) {
   if (Array.isArray(obj)) {
     return obj;
   }
@@ -52308,7 +59260,7 @@ var HfInference = class {
    * Usually used for sentence parsing, either grammatical, or Named Entity Recognition (NER) to understand keywords contained within text. Recommended model: dbmdz/bert-large-cased-finetuned-conll03-english
    */
   async tokenClassification(args, options) {
-    const res = toArray2(await this.request(args, options));
+    const res = toArray3(await this.request(args, options));
     const isValidOutput = Array.isArray(res) && res.every(
       (x) => typeof x.end === "number" && typeof x.entity_group === "string" && typeof x.score === "number" && typeof x.start === "number" && typeof x.word === "string"
     );
@@ -52334,7 +59286,7 @@ var HfInference = class {
    * This task is super useful to try out classification with zero code, you simply pass a sentence/paragraph and the possible labels for that sentence, and you get a result. Recommended model: facebook/bart-large-mnli.
    */
   async zeroShotClassification(args, options) {
-    const res = toArray2(
+    const res = toArray3(
       await this.request(args, options)
     );
     const isValidOutput = Array.isArray(res) && res.every(
@@ -52594,24 +59546,11 @@ var HfInference = class {
   }
 };
 
-// node_modules/langchain/dist/embeddings/base.js
-init_async_caller();
-var Embeddings = class {
-  constructor(params) {
-    Object.defineProperty(this, "caller", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    this.caller = new AsyncCaller(params != null ? params : {});
-  }
-};
-
 // node_modules/langchain/dist/embeddings/hf.js
+init_env2();
 var HuggingFaceInferenceEmbeddings = class extends Embeddings {
   constructor(fields) {
-    var _a, _b, _c;
+    var _a, _b;
     super(fields != null ? fields : {});
     Object.defineProperty(this, "apiKey", {
       enumerable: true,
@@ -52632,10 +59571,7 @@ var HuggingFaceInferenceEmbeddings = class extends Embeddings {
       value: void 0
     });
     this.model = (_a = fields == null ? void 0 : fields.model) != null ? _a : "sentence-transformers/distilbert-base-nli-mean-tokens";
-    this.apiKey = (_c = fields == null ? void 0 : fields.apiKey) != null ? _c : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      (_b = process.env) == null ? void 0 : _b.HUGGINGFACEHUB_API_KEY
-    ) : void 0;
+    this.apiKey = (_b = fields == null ? void 0 : fields.apiKey) != null ? _b : getEnvironmentVariable2("HUGGINGFACEHUB_API_KEY");
     this.client = new HfInference(this.apiKey);
   }
   async _embed(texts) {
@@ -52654,22 +59590,13 @@ var HuggingFaceInferenceEmbeddings = class extends Embeddings {
 };
 
 // node_modules/langchain/dist/embeddings/openai.js
-var import_openai3 = __toESM(require_dist2(), 1);
-init_env();
+var import_openai4 = __toESM(require_dist2(), 1);
+init_env2();
 init_axios_fetch_adapter();
-
-// node_modules/langchain/dist/util/chunk.js
-var chunkArray = (arr, chunkSize) => arr.reduce((chunks, elem, index2) => {
-  const chunkIndex = Math.floor(index2 / chunkSize);
-  const chunk = chunks[chunkIndex] || [];
-  chunks[chunkIndex] = chunk.concat([elem]);
-  return chunks;
-}, []);
-
-// node_modules/langchain/dist/embeddings/openai.js
+init_azure();
 var OpenAIEmbeddings = class extends Embeddings {
   constructor(fields, configuration) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
     super(fields != null ? fields : {});
     Object.defineProperty(this, "modelName", {
       enumerable: true,
@@ -52719,6 +59646,12 @@ var OpenAIEmbeddings = class extends Embeddings {
       writable: true,
       value: void 0
     });
+    Object.defineProperty(this, "azureOpenAIBasePath", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
     Object.defineProperty(this, "client", {
       enumerable: true,
       configurable: true,
@@ -52731,33 +59664,18 @@ var OpenAIEmbeddings = class extends Embeddings {
       writable: true,
       value: void 0
     });
-    const apiKey = (_b = fields == null ? void 0 : fields.openAIApiKey) != null ? _b : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      (_a = process.env) == null ? void 0 : _a.OPENAI_API_KEY
-    ) : void 0;
-    const azureApiKey = (_d = fields == null ? void 0 : fields.azureOpenAIApiKey) != null ? _d : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      (_c = process.env) == null ? void 0 : _c.AZURE_OPENAI_API_KEY
-    ) : void 0;
+    const apiKey = (_a = fields == null ? void 0 : fields.openAIApiKey) != null ? _a : getEnvironmentVariable2("OPENAI_API_KEY");
+    const azureApiKey = (_b = fields == null ? void 0 : fields.azureOpenAIApiKey) != null ? _b : getEnvironmentVariable2("AZURE_OPENAI_API_KEY");
     if (!azureApiKey && !apiKey) {
-      throw new Error("(Azure) OpenAI API key not found");
+      throw new Error("OpenAI or Azure OpenAI API key not found");
     }
-    const azureApiInstanceName = (_f = fields == null ? void 0 : fields.azureOpenAIApiInstanceName) != null ? _f : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      (_e = process.env) == null ? void 0 : _e.AZURE_OPENAI_API_INSTANCE_NAME
-    ) : void 0;
-    const azureApiDeploymentName = (_i = (fields == null ? void 0 : fields.azureOpenAIApiEmbeddingsDeploymentName) || (fields == null ? void 0 : fields.azureOpenAIApiDeploymentName)) != null ? _i : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      ((_g = process.env) == null ? void 0 : _g.AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME) || // eslint-disable-next-line no-process-env
-      ((_h = process.env) == null ? void 0 : _h.AZURE_OPENAI_API_DEPLOYMENT_NAME)
-    ) : void 0;
-    const azureApiVersion = (_k = fields == null ? void 0 : fields.azureOpenAIApiVersion) != null ? _k : typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      (_j = process.env) == null ? void 0 : _j.AZURE_OPENAI_API_VERSION
-    ) : void 0;
-    this.modelName = (_l = fields == null ? void 0 : fields.modelName) != null ? _l : this.modelName;
-    this.batchSize = (_m = fields == null ? void 0 : fields.batchSize) != null ? _m : this.batchSize;
-    this.stripNewLines = (_n = fields == null ? void 0 : fields.stripNewLines) != null ? _n : this.stripNewLines;
+    const azureApiInstanceName = (_c = fields == null ? void 0 : fields.azureOpenAIApiInstanceName) != null ? _c : getEnvironmentVariable2("AZURE_OPENAI_API_INSTANCE_NAME");
+    const azureApiDeploymentName = (_d = (fields == null ? void 0 : fields.azureOpenAIApiEmbeddingsDeploymentName) || (fields == null ? void 0 : fields.azureOpenAIApiDeploymentName)) != null ? _d : getEnvironmentVariable2("AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME") || getEnvironmentVariable2("AZURE_OPENAI_API_DEPLOYMENT_NAME");
+    const azureApiVersion = (_e = fields == null ? void 0 : fields.azureOpenAIApiVersion) != null ? _e : getEnvironmentVariable2("AZURE_OPENAI_API_VERSION");
+    this.azureOpenAIBasePath = (_f = fields == null ? void 0 : fields.azureOpenAIBasePath) != null ? _f : getEnvironmentVariable2("AZURE_OPENAI_BASE_PATH");
+    this.modelName = (_g = fields == null ? void 0 : fields.modelName) != null ? _g : this.modelName;
+    this.batchSize = ((_h = fields == null ? void 0 : fields.batchSize) != null ? _h : azureApiKey) ? 1 : this.batchSize;
+    this.stripNewLines = (_i = fields == null ? void 0 : fields.stripNewLines) != null ? _i : this.stripNewLines;
     this.timeout = fields == null ? void 0 : fields.timeout;
     this.azureOpenAIApiVersion = azureApiVersion;
     this.azureOpenAIApiKey = azureApiKey;
@@ -52803,17 +59721,24 @@ var OpenAIEmbeddings = class extends Embeddings {
   }
   async embeddingWithRetry(request) {
     if (!this.client) {
-      const endpoint = this.azureOpenAIApiKey ? `https://${this.azureOpenAIApiInstanceName}.openai.azure.com/openai/deployments/${this.azureOpenAIApiDeploymentName}` : this.clientConfig.basePath;
-      const clientConfig = new import_openai3.Configuration({
+      const openAIEndpointConfig = {
+        azureOpenAIApiDeploymentName: this.azureOpenAIApiDeploymentName,
+        azureOpenAIApiInstanceName: this.azureOpenAIApiInstanceName,
+        azureOpenAIApiKey: this.azureOpenAIApiKey,
+        azureOpenAIBasePath: this.azureOpenAIBasePath,
+        basePath: this.clientConfig.basePath
+      };
+      const endpoint = getEndpoint(openAIEndpointConfig);
+      const clientConfig = new import_openai4.Configuration({
         ...this.clientConfig,
         basePath: endpoint,
         baseOptions: {
           timeout: this.timeout,
-          adapter: isNode() ? void 0 : fetchAdapter,
+          adapter: isNode2() ? void 0 : fetchAdapter,
           ...this.clientConfig.baseOptions
         }
       });
-      this.client = new import_openai3.OpenAIApi(clientConfig);
+      this.client = new import_openai4.OpenAIApi(clientConfig);
     }
     const axiosOptions = {};
     if (this.azureOpenAIApiKey) {
@@ -52885,15 +59810,15 @@ var BufferWindowMemory = class extends BaseChatMemory {
     return [this.memoryKey];
   }
   async loadMemoryVariables(_values) {
-    const messages2 = await this.chatHistory.getMessages();
+    const messages4 = await this.chatHistory.getMessages();
     if (this.returnMessages) {
       const result2 = {
-        [this.memoryKey]: messages2.slice(-this.k * 2)
+        [this.memoryKey]: messages4.slice(-this.k * 2)
       };
       return result2;
     }
     const result = {
-      [this.memoryKey]: getBufferString(messages2.slice(-this.k * 2), this.humanPrefix, this.aiPrefix)
+      [this.memoryKey]: getBufferString(messages4.slice(-this.k * 2), this.humanPrefix, this.aiPrefix)
     };
     return result;
   }
@@ -52901,7 +59826,7 @@ var BufferWindowMemory = class extends BaseChatMemory {
 
 // node_modules/langchain/dist/memory/motorhead_memory.js
 init_base2();
-init_async_caller();
+init_async_caller2();
 
 // node_modules/langchain/dist/memory/vector_store.js
 init_document();
@@ -52916,6 +59841,137 @@ init_schema();
 
 // node_modules/langchain/prompts.js
 init_prompts();
+
+// node_modules/langchain/dist/retrievers/contextual_compression.js
+init_schema();
+var ContextualCompressionRetriever = class extends BaseRetriever {
+  constructor({ baseCompressor, baseRetriever }) {
+    super();
+    Object.defineProperty(this, "baseCompressor", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "baseRetriever", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    this.baseCompressor = baseCompressor;
+    this.baseRetriever = baseRetriever;
+  }
+  async getRelevantDocuments(query2) {
+    const docs = await this.baseRetriever.getRelevantDocuments(query2);
+    const compressedDocs = await this.baseCompressor.compressDocuments(docs, query2);
+    return compressedDocs;
+  }
+};
+
+// node_modules/langchain/dist/retrievers/document_compressors/chain_extract.js
+init_document();
+init_llm_chain();
+init_prompts();
+init_output_parser();
+
+// node_modules/langchain/dist/retrievers/document_compressors/index.js
+var BaseDocumentCompressor = class {
+};
+
+// node_modules/langchain/dist/retrievers/document_compressors/chain_extract_prompt.js
+var PROMPT_TEMPLATE = (noOutputStr) => `Given the following question and context, extract any part of the context *AS IS* that is relevant to answer the question. If none of the context is relevant return ${noOutputStr}.
+
+Remember, *DO NOT* edit the extracted parts of the context.
+
+> Question: {question}
+> Context:
+>>>
+{context}
+>>>
+Extracted relevant parts:`;
+
+// node_modules/langchain/dist/retrievers/document_compressors/chain_extract.js
+function defaultGetInput(query2, doc) {
+  return { question: query2, context: doc.pageContent };
+}
+var NoOutputParser = class extends BaseOutputParser {
+  constructor() {
+    super(...arguments);
+    Object.defineProperty(this, "lc_namespace", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: [
+        "langchain",
+        "retrievers",
+        "document_compressors",
+        "chain_extract"
+      ]
+    });
+    Object.defineProperty(this, "noOutputStr", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: "NO_OUTPUT"
+    });
+  }
+  parse(text4) {
+    const cleanedText = text4.trim();
+    if (cleanedText === this.noOutputStr) {
+      return Promise.resolve("");
+    }
+    return Promise.resolve(cleanedText);
+  }
+  getFormatInstructions() {
+    throw new Error("Method not implemented.");
+  }
+};
+function getDefaultChainPrompt() {
+  const outputParser = new NoOutputParser();
+  const template = PROMPT_TEMPLATE(outputParser.noOutputStr);
+  return new PromptTemplate({
+    template,
+    inputVariables: ["question", "context"],
+    outputParser
+  });
+}
+var LLMChainExtractor = class extends BaseDocumentCompressor {
+  constructor({ llmChain, getInput }) {
+    super();
+    Object.defineProperty(this, "llmChain", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "getInput", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: defaultGetInput
+    });
+    this.llmChain = llmChain;
+    this.getInput = getInput;
+  }
+  async compressDocuments(documents, query2) {
+    const compressedDocs = await Promise.all(documents.map(async (doc) => {
+      const input = this.getInput(query2, doc);
+      const output = await this.llmChain.predict(input);
+      return output.length > 0 ? new Document({
+        pageContent: output,
+        metadata: doc.metadata
+      }) : void 0;
+    }));
+    return compressedDocs.filter((doc) => doc !== void 0);
+  }
+  static fromLLM(llm, prompt, getInput) {
+    const _prompt = prompt || getDefaultChainPrompt();
+    const _getInput = getInput || defaultGetInput;
+    const llmChain = new LLMChain({ llm, prompt: _prompt });
+    return new LLMChainExtractor({ llmChain, getInput: _getInput });
+  }
+};
 
 // node_modules/langchain/schema.js
 init_schema();
@@ -53173,9 +60229,9 @@ function motyka2(a2, b) {
 }
 
 // node_modules/is-any-array/lib-esm/index.js
-var toString4 = Object.prototype.toString;
+var toString5 = Object.prototype.toString;
 function isAnyArray(value) {
-  const tag = toString4.call(value);
+  const tag = toString5.call(value);
   return tag.endsWith("Array]") && !tag.includes("Big");
 }
 
@@ -53313,15 +60369,26 @@ var MemoryVectorStore = class extends VectorStore {
     }));
     this.memoryVectors = this.memoryVectors.concat(memoryVectors);
   }
-  async similaritySearchVectorWithScore(query2, k) {
-    const searches = this.memoryVectors.map((vector, index2) => ({
+  async similaritySearchVectorWithScore(query2, k, filter3) {
+    const filterFunction = (memoryVector) => {
+      if (!filter3) {
+        return true;
+      }
+      const doc = new Document({
+        metadata: memoryVector.metadata,
+        pageContent: memoryVector.content
+      });
+      return filter3(doc);
+    };
+    const filteredMemoryVectors = this.memoryVectors.filter(filterFunction);
+    const searches = filteredMemoryVectors.map((vector, index2) => ({
       similarity: this.similarity(query2, vector.embedding),
       index: index2
     })).sort((a2, b) => a2.similarity > b.similarity ? -1 : 0).slice(0, k);
     const result = searches.map((search2) => [
       new Document({
-        metadata: this.memoryVectors[search2.index].metadata,
-        pageContent: this.memoryVectors[search2.index].content
+        metadata: filteredMemoryVectors[search2.index].metadata,
+        pageContent: filteredMemoryVectors[search2.index].content
       }),
       search2.similarity
     ]);
@@ -53353,15 +60420,41 @@ var MemoryVectorStore = class extends VectorStore {
 // src/aiState.ts
 var import_obsidian = require("obsidian");
 var import_react = __toESM(require_react());
+
+// src/langchainWrappers.ts
+var import_openai6 = __toESM(require_dist2());
+var ProxyChatOpenAI = class extends ChatOpenAI {
+  constructor(fields) {
+    super(fields != null ? fields : {});
+    const clientConfig = new import_openai6.Configuration({
+      ...this["clientConfig"],
+      basePath: fields.openAIProxyBaseUrl
+    });
+    this["client"] = new import_openai6.OpenAIApi(clientConfig);
+  }
+};
+
+// src/aiState.ts
 var AIState = class {
   constructor(langChainParams) {
     this.langChainParams = langChainParams;
+    this.buildModelMap();
+    this.initMemory();
+    this.initChatPrompt();
+    this.setModel(this.langChainParams.modelDisplayName);
+  }
+  initMemory() {
     this.memory = new BufferWindowMemory({
       k: this.langChainParams.chatContextTurns * 2,
       memoryKey: "history",
       inputKey: "input",
       returnMessages: true
     });
+  }
+  setNoteContent(noteContent) {
+    this.langChainParams.options.noteContent = noteContent;
+  }
+  initChatPrompt() {
     this.chatPrompt = ChatPromptTemplate.fromPromptMessages([
       SystemMessagePromptTemplate.fromTemplate(
         this.langChainParams.systemMessage
@@ -53369,20 +60462,99 @@ var AIState = class {
       new MessagesPlaceholder("history"),
       HumanMessagePromptTemplate.fromTemplate("{input}")
     ]);
-    this.createNewChain(LLM_CHAIN);
   }
-  clearChatMemory() {
-    console.log("clearing chat memory");
-    this.memory.clear();
+  validateChainType(chainType) {
+    if (chainType === void 0 || chainType === null)
+      throw new Error("No chain type set");
   }
-  setModel(newModel) {
-    console.log("setting model to", newModel);
-    this.langChainParams.model = newModel;
-    AIState.chatOpenAI.modelName = newModel;
+  validateChatModel(chatModel) {
+    if (chatModel === void 0 || chatModel === null)
+      throw new Error("No chat model set");
+  }
+  getModelConfig(chatModelProvider) {
+    const {
+      openAIApiKey,
+      anthropicApiKey,
+      azureOpenAIApiKey,
+      azureOpenAIApiInstanceName,
+      azureOpenAIApiDeploymentName,
+      azureOpenAIApiVersion,
+      model,
+      temperature,
+      maxTokens,
+      openAIProxyBaseUrl
+    } = this.langChainParams;
+    let config = {
+      modelName: model,
+      temperature,
+      streaming: true,
+      maxRetries: 3,
+      maxConcurrency: 3
+    };
+    switch (chatModelProvider) {
+      case OPENAI:
+        config = {
+          ...config,
+          openAIApiKey,
+          maxTokens,
+          openAIProxyBaseUrl
+        };
+        break;
+      case ANTHROPIC:
+        config = {
+          ...config,
+          anthropicApiKey
+        };
+        break;
+      case AZURE_OPENAI:
+        config = {
+          ...config,
+          maxTokens,
+          azureOpenAIApiKey,
+          azureOpenAIApiInstanceName,
+          azureOpenAIApiDeploymentName,
+          azureOpenAIApiVersion
+        };
+        break;
+    }
+    return config;
+  }
+  buildModelMap() {
+    const modelMap = {};
+    const OpenAIChatModel = this.langChainParams.openAIProxyBaseUrl ? ProxyChatOpenAI : ChatOpenAI;
+    for (const modelDisplayNameKey of OPENAI_MODELS) {
+      modelMap[modelDisplayNameKey] = {
+        hasApiKey: Boolean(this.langChainParams.openAIApiKey),
+        AIConstructor: OpenAIChatModel,
+        vendor: OPENAI
+      };
+    }
+    for (const modelDisplayNameKey of CLAUDE_MODELS) {
+      modelMap[modelDisplayNameKey] = {
+        hasApiKey: Boolean(this.langChainParams.anthropicApiKey),
+        AIConstructor: ChatAnthropic,
+        vendor: ANTHROPIC
+      };
+    }
+    for (const modelDisplayNameKey of AZURE_MODELS) {
+      modelMap[modelDisplayNameKey] = {
+        hasApiKey: Boolean(this.langChainParams.azureOpenAIApiKey),
+        AIConstructor: ChatOpenAI,
+        vendor: AZURE_OPENAI
+      };
+    }
+    this.modelMap = modelMap;
   }
   getEmbeddingsAPI() {
+    const {
+      openAIApiKey,
+      azureOpenAIApiKey,
+      azureOpenAIApiInstanceName,
+      azureOpenAIApiVersion,
+      azureOpenAIApiEmbeddingDeploymentName
+    } = this.langChainParams;
     const OpenAIEmbeddingsAPI = new OpenAIEmbeddings({
-      openAIApiKey: this.langChainParams.key,
+      openAIApiKey,
       maxRetries: 3,
       maxConcurrency: 3,
       timeout: 1e4
@@ -53396,58 +60568,115 @@ var AIState = class {
           maxRetries: 3,
           maxConcurrency: 3
         });
+      case COHEREAI:
+        return new CohereEmbeddings({
+          apiKey: this.langChainParams.cohereApiKey,
+          maxRetries: 3,
+          maxConcurrency: 3
+        });
+      case AZURE_OPENAI:
+        return new OpenAIEmbeddings({
+          azureOpenAIApiKey,
+          azureOpenAIApiInstanceName,
+          azureOpenAIApiDeploymentName: azureOpenAIApiEmbeddingDeploymentName,
+          azureOpenAIApiVersion,
+          maxRetries: 3,
+          maxConcurrency: 3
+        });
       default:
         console.error("No embedding provider set. Using OpenAI.");
         return OpenAIEmbeddingsAPI;
     }
   }
-  /* Create a new chain, or update chain with new model */
-  createNewChain(chainType, options) {
-    const {
-      key,
-      model,
-      temperature,
-      maxTokens
-    } = this.langChainParams;
-    if (!key) {
-      new import_obsidian.Notice(
-        "No OpenAI API key provided. Please set it in Copilot settings, and restart the plugin."
-      );
-      return;
+  clearChatMemory() {
+    console.log("clearing chat memory");
+    this.memory.clear();
+  }
+  setChatModel(modelDisplayName) {
+    if (!this.modelMap.hasOwnProperty(modelDisplayName)) {
+      throw new Error(`No model found for: ${modelDisplayName}`);
     }
-    AIState.chatOpenAI = new ChatOpenAI({
-      openAIApiKey: key,
-      modelName: model,
-      temperature,
-      maxTokens,
-      streaming: true,
-      maxRetries: 3,
-      maxConcurrency: 3
-    });
-    this.setChain(chainType, options);
+    const selectedModel = this.modelMap[modelDisplayName];
+    if (!selectedModel.hasApiKey) {
+      new import_obsidian.Notice(`API key is not provided for the model: ${modelDisplayName}`);
+      console.error(`API key is not provided for the model: ${modelDisplayName}`);
+    }
+    const modelConfig = this.getModelConfig(selectedModel.vendor);
+    try {
+      const newModelInstance = new selectedModel.AIConstructor({
+        ...modelConfig
+      });
+      switch (selectedModel.vendor) {
+        case OPENAI:
+          AIState.chatOpenAI = newModelInstance;
+          break;
+        case ANTHROPIC:
+          AIState.chatAnthropic = newModelInstance;
+          break;
+        case AZURE_OPENAI:
+          AIState.azureChatOpenAI = newModelInstance;
+          break;
+      }
+      AIState.chatModel = newModelInstance;
+    } catch (error) {
+      console.error(error);
+      new import_obsidian.Notice(`Error creating model: ${modelDisplayName}`);
+    }
+  }
+  setModel(newModelDisplayName) {
+    const newModel = getModelName(newModelDisplayName);
+    this.langChainParams.model = newModel;
+    this.langChainParams.modelDisplayName = newModelDisplayName;
+    this.setChatModel(newModelDisplayName);
+    this.createChain(
+      this.langChainParams.chainType,
+      { ...this.langChainParams.options, forceNewCreation: true }
+    );
+    console.log(`Setting model to ${newModelDisplayName}: ${newModel}`);
+  }
+  /* Create a new chain, or update chain with new model */
+  createChain(chainType, options) {
+    this.validateChainType(chainType);
+    try {
+      this.setChain(chainType, options);
+    } catch (error) {
+      new import_obsidian.Notice("Error creating chain:", error);
+      console.error("Error creating chain:", error);
+    }
   }
   async setChain(chainType, options = {}) {
+    this.validateChatModel(AIState.chatModel);
+    this.validateChainType(chainType);
     switch (chainType) {
-      case LLM_CHAIN: {
-        AIState.chain = chainFactory_default.getLLMChain({
-          llm: AIState.chatOpenAI,
-          memory: this.memory,
-          prompt: options.prompt || this.chatPrompt
-        });
-        this.langChainParams.chainType = LLM_CHAIN;
-        console.log("Set chain:", LLM_CHAIN);
+      case "llm_chain" /* LLM_CHAIN */: {
+        if (options.forceNewCreation) {
+          AIState.chain = chainFactory_default.createNewLLMChain({
+            llm: AIState.chatModel,
+            memory: this.memory,
+            prompt: options.prompt || this.chatPrompt
+          });
+        } else {
+          AIState.chain = chainFactory_default.getLLMChainFromMap({
+            llm: AIState.chatModel,
+            memory: this.memory,
+            prompt: options.prompt || this.chatPrompt
+          });
+        }
+        this.langChainParams.chainType = "llm_chain" /* LLM_CHAIN */;
+        console.log("Set chain:", "llm_chain" /* LLM_CHAIN */);
         break;
       }
-      case RETRIEVAL_QA_CHAIN: {
+      case "retrieval_qa" /* RETRIEVAL_QA_CHAIN */: {
         if (!options.noteContent) {
-          console.error("No note content provided.");
-          return;
+          new import_obsidian.Notice("No note content provided");
+          throw new Error("No note content provided");
         }
+        this.setNoteContent(options.noteContent);
         const docHash = chainFactory_default.getDocumentHash(options.noteContent);
         const vectorStore = chainFactory_default.vectorStoreMap.get(docHash);
         if (vectorStore) {
           AIState.retrievalChain = RetrievalQAChain.fromLLM(
-            AIState.chatOpenAI,
+            AIState.chatModel,
             vectorStore.asRetriever()
           );
           console.log("Existing vector store for document hash: ", docHash);
@@ -53457,18 +60686,26 @@ var AIState = class {
             console.error("Error creating vector store.");
             return;
           }
+          const baseCompressor = LLMChainExtractor.fromLLM(AIState.chatModel);
+          const retriever = new ContextualCompressionRetriever({
+            baseCompressor,
+            baseRetriever: this.vectorStore.asRetriever()
+          });
           AIState.retrievalChain = RetrievalQAChain.fromLLM(
-            AIState.chatOpenAI,
-            this.vectorStore.asRetriever()
+            AIState.chatModel,
+            retriever
           );
-          console.log("New retrieval qa chain created for document hash: ", docHash);
+          console.log(
+            "New retrieval qa chain with contextual compression created for document hash: ",
+            docHash
+          );
         }
-        this.langChainParams.chainType = RETRIEVAL_QA_CHAIN;
-        console.log("Set chain:", RETRIEVAL_QA_CHAIN);
+        this.langChainParams.chainType = "retrieval_qa" /* RETRIEVAL_QA_CHAIN */;
+        console.log("Set chain:", "retrieval_qa" /* RETRIEVAL_QA_CHAIN */);
         break;
       }
       default:
-        console.error("No chain type set.");
+        this.validateChainType(chainType);
         break;
     }
   }
@@ -53484,16 +60721,18 @@ var AIState = class {
       );
       chainFactory_default.setVectorStore(this.vectorStore, docHash);
       console.log("Vector store created successfully.");
+      new import_obsidian.Notice("Vector store created successfully.");
     } catch (error) {
       new import_obsidian.Notice("Failed to create vector store, please try again:", error);
-      console.log("Failed to create vector store, please try again.:", error);
+      console.error("Failed to create vector store, please try again.:", error);
     }
   }
   async countTokens(inputStr) {
     return AIState.chatOpenAI.getNumTokens(inputStr);
   }
-  async runChatOpenAI(userMessage, chatContext, abortController, updateCurrentAiMessage, addMessage, debug = false) {
+  async runChatModel(userMessage, chatContext, abortController, updateCurrentAiMessage, addMessage, debug = false) {
     if (debug) {
+      console.log("chatModel:", AIState.chatModel);
       for (const [i, chatMessage] of chatContext.entries()) {
         console.log(
           `chat message ${i}:
@@ -53503,16 +60742,16 @@ ${chatMessage.message}`
       }
     }
     const systemMessage = this.langChainParams.systemMessage || DEFAULT_SYSTEM_PROMPT;
-    const messages2 = [
-      new SystemChatMessage(systemMessage),
+    const messages4 = [
+      new SystemMessage(systemMessage),
       ...chatContext.map((chatMessage) => {
-        return chatMessage.sender === USER_SENDER ? new HumanChatMessage(chatMessage.message) : new AIChatMessage(chatMessage.message);
+        return chatMessage.sender === USER_SENDER ? new HumanMessage(chatMessage.message) : new AIMessage(chatMessage.message);
       }),
-      new HumanChatMessage(userMessage.message)
+      new HumanMessage(userMessage.message)
     ];
     let fullAIResponse = "";
-    await AIState.chatOpenAI.call(
-      messages2,
+    await AIState.chatModel.call(
+      messages4,
       { signal: abortController.signal },
       [
         {
@@ -53531,13 +60770,21 @@ ${chatMessage.message}`
     updateCurrentAiMessage("");
     return fullAIResponse;
   }
-  async runChain(userMessage, chatContext, abortController, updateCurrentAiMessage, addMessage, debug = false) {
+  async runChain(userMessage, abortController, updateCurrentAiMessage, addMessage, debug = false) {
     var _a, _b;
+    if (!isSupportedChain(AIState.chain)) {
+      console.error(
+        "Chain is not initialized properly, re-initializing chain: ",
+        this.langChainParams.chainType
+      );
+      this.setChain(this.langChainParams.chainType, this.langChainParams.options);
+    }
     let fullAIResponse = "";
     try {
       switch (this.langChainParams.chainType) {
-        case LLM_CHAIN:
+        case "llm_chain" /* LLM_CHAIN */:
           if (debug) {
+            console.log("chain:", AIState.chain);
             console.log("Chat memory:", this.memory);
           }
           await AIState.chain.call(
@@ -53555,13 +60802,14 @@ ${chatMessage.message}`
             ]
           );
           break;
-        case RETRIEVAL_QA_CHAIN:
+        case "retrieval_qa" /* RETRIEVAL_QA_CHAIN */:
           if (debug) {
             console.log("embedding provider:", this.langChainParams.embeddingProvider);
           }
           await AIState.retrievalChain.call(
             {
-              query: userMessage
+              query: userMessage,
+              signal: abortController.signal
             },
             [
               {
@@ -53596,16 +60844,16 @@ ${chatMessage.message}`
 };
 function useAIState(aiState) {
   const { langChainParams } = aiState;
-  const [currentModel, setCurrentModel] = (0, import_react.useState)(langChainParams.model);
+  const [currentModel, setCurrentModel] = (0, import_react.useState)(langChainParams.modelDisplayName);
   const [currentChain, setCurrentChain] = (0, import_react.useState)(langChainParams.chainType);
   const [, setChatMemory] = (0, import_react.useState)(aiState.memory);
   const clearChatMemory = () => {
     aiState.clearChatMemory();
     setChatMemory(aiState.memory);
   };
-  const setModel = (newModel) => {
-    aiState.setModel(newModel);
-    setCurrentModel(newModel);
+  const setModel = (newModelDisplayName) => {
+    aiState.setModel(newModelDisplayName);
+    setCurrentModel(newModelDisplayName);
   };
   const setChain = (newChain, options) => {
     aiState.setChain(newChain, options);
@@ -53705,137 +60953,6 @@ var AddPromptModal = class extends import_obsidian2.Modal {
     });
   }
 };
-
-// src/utils.ts
-var import_moment = __toESM(require_moment());
-var getChatContext = (chatHistory, contextSize) => {
-  if (chatHistory.length === 0) {
-    return [];
-  }
-  const lastAiMessageIndex = chatHistory.slice().reverse().findIndex((msg) => msg.sender !== USER_SENDER);
-  if (lastAiMessageIndex === -1) {
-    return [];
-  }
-  const lastIndex = chatHistory.length - 1 - lastAiMessageIndex;
-  const startIndex = Math.max(0, lastIndex - contextSize + 1);
-  return chatHistory.slice(startIndex, lastIndex + 1);
-};
-var formatDateTime = (now, timezone = "local") => {
-  const formattedDateTime = (0, import_moment.default)(now);
-  if (timezone === "utc") {
-    formattedDateTime.utc();
-  }
-  return formattedDateTime.format("YYYY_MM_DD-HH_mm_ss");
-};
-async function getFileContent(file) {
-  if (file.extension != "md")
-    return null;
-  return await this.app.vault.read(file);
-}
-function getFileName(file) {
-  return file.basename;
-}
-function sanitizeSettings(settings) {
-  const sanitizedSettings = { ...settings };
-  const temperature = Number(settings.temperature);
-  sanitizedSettings.temperature = isNaN(temperature) ? DEFAULT_SETTINGS.temperature : temperature;
-  const maxTokens = Number(settings.maxTokens);
-  sanitizedSettings.maxTokens = isNaN(maxTokens) ? DEFAULT_SETTINGS.maxTokens : maxTokens;
-  const contextTurns = Number(settings.contextTurns);
-  sanitizedSettings.contextTurns = isNaN(contextTurns) ? DEFAULT_SETTINGS.contextTurns : contextTurns;
-  return sanitizedSettings;
-}
-function fixGrammarSpellingSelectionPrompt(selectedText) {
-  return `Please fix the grammar and spelling of the following text and return it without any other changes:
-
-${selectedText}`;
-}
-function summarizePrompt(selectedText) {
-  return `Please summarize the following text into bullet points and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function tocPrompt(selectedText) {
-  return `Please generate a table of contents for the following text and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function glossaryPrompt(selectedText) {
-  return `Please generate a glossary for the following text and return it without any other changes. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function simplifyPrompt(selectedText) {
-  return `Please simplify the following text so that a 6th-grader can understand. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function emojifyPrompt(selectedText) {
-  return `Please insert emojis to the following content without changing the text.Insert at as many places as possible, but don't have any 2 emojis together. The original text must be returned.
-Content: ${selectedText}`;
-}
-function removeUrlsFromSelectionPrompt(selectedText) {
-  return `Please remove all URLs from the following text and return it without any other changes:
-
-${selectedText}`;
-}
-function rewriteTweetSelectionPrompt(selectedText) {
-  return `Please rewrite the following content to under 280 characters using simple sentences. Output in the same language as the source, do not output English if it is not English. Please follow the instruction strictly. Content:
-
-    + ${selectedText}`;
-}
-function rewriteTweetThreadSelectionPrompt(selectedText) {
-  return `Please follow the instructions closely step by step and rewrite the content to a thread. 1. Each paragraph must be under 240 characters. 2. The starting line is \`THREAD START
-\`, and the ending line is \`
-THREAD END\`. 3. You must use \`
-
----
-
-\` to separate each paragraph! Then return it without any other changes. 4. Make it as engaging as possible.5. Output in the same language as the source, do not output English if it is not English.
- The original content:
-
-${selectedText}`;
-}
-function rewriteShorterSelectionPrompt(selectedText) {
-  return `Please rewrite the following text to make it half as long while keeping the meaning as much as possible. Output in the same language as the source, do not output English if it is not English:
-${selectedText}`;
-}
-function rewriteLongerSelectionPrompt(selectedText) {
-  return `Please rewrite the following text to make it twice as long while keeping the meaning as much as possible. Output in the same language as the source, do not output English if it is not English:
-${selectedText}`;
-}
-function eli5SelectionPrompt(selectedText) {
-  return `Please explain the following text like I'm 5 years old. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function rewritePressReleaseSelectionPrompt(selectedText) {
-  return `Please rewrite the following text to make it sound like a press release. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-}
-function createTranslateSelectionPrompt(language) {
-  return (selectedText) => {
-    return `Please translate the following text to ${language}:
-
-${selectedText}`;
-  };
-}
-function createChangeToneSelectionPrompt(tone) {
-  return (selectedText) => {
-    return `Please change the tone of the following text to ${tone}. Output in the same language as the source, do not output English if it is not English:
-
-${selectedText}`;
-  };
-}
-function fillInSelectionForCustomPrompt(prompt) {
-  return (selectedText) => {
-    if (!prompt) {
-      return selectedText;
-    }
-    return prompt.replace("{}", selectedText);
-  };
-}
 
 // src/components/ChatComponents/ChatIcons.tsx
 var import_obsidian3 = require("obsidian");
@@ -53990,7 +61107,7 @@ var ChatIcons = ({
   onStopGenerating,
   onNewChat,
   onSaveAsNote,
-  onUseActiveNoteAsContext,
+  onForceRebuildActiveNoteContext,
   addMessage
 }) => {
   const [selectedChain, setSelectedChain] = (0, import_react3.useState)(currentChain);
@@ -53998,11 +61115,11 @@ var ChatIcons = ({
     setCurrentModel(event.target.value);
   };
   const handleChainChange = async (event) => {
-    setSelectedChain(event.target.value);
+    setSelectedChain(stringToChainType(event.target.value));
   };
   (0, import_react3.useEffect)(() => {
     const handleRetrievalQAChain = async () => {
-      if (selectedChain !== RETRIEVAL_QA_CHAIN) {
+      if (selectedChain !== "retrieval_qa" /* RETRIEVAL_QA_CHAIN */) {
         setCurrentChain(selectedChain);
         return;
       }
@@ -54024,7 +61141,9 @@ var ChatIcons = ({
         isVisible: true
       };
       addMessage(activeNoteOnMessage);
-      setCurrentChain(selectedChain, { noteContent });
+      if (noteContent) {
+        setCurrentChain(selectedChain, { noteContent });
+      }
     };
     handleRetrievalQAChain();
   }, [selectedChain]);
@@ -54036,8 +61155,14 @@ var ChatIcons = ({
       value: currentModel,
       onChange: handleModelChange
     },
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "gpt-3.5-turbo" }, "GPT-3.5"),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "gpt-4" }, "GPT-4")
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-3.5" /* GPT_35_TURBO */ }, "GPT-3.5" /* GPT_35_TURBO */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-3.5 16K" /* GPT_35_TURBO_16K */ }, "GPT-3.5 16K" /* GPT_35_TURBO_16K */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4" /* GPT_4 */ }, "GPT-4" /* GPT_4 */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4 32K" /* GPT_4_32K */ }, "GPT-4 32K" /* GPT_4_32K */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "AZURE GPT-3.5" /* AZURE_GPT_35_TURBO */ }, "AZURE GPT-3.5" /* AZURE_GPT_35_TURBO */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "AZURE GPT-3.5-16K" /* AZURE_GPT_35_TURBO_16K */ }, "AZURE GPT-3.5-16K" /* AZURE_GPT_35_TURBO_16K */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "AZURE GPT-4" /* AZURE_GPT_4 */ }, "AZURE GPT-4" /* AZURE_GPT_4 */),
+    /* @__PURE__ */ import_react4.default.createElement("option", { value: "AZURE GPT-4 32K" /* AZURE_GPT_4_32K */ }, "AZURE GPT-4 32K" /* AZURE_GPT_4_32K */)
   ), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Model Selection"))), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onStopGenerating }, /* @__PURE__ */ import_react4.default.createElement(StopIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Stop Generating")), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onNewChat }, /* @__PURE__ */ import_react4.default.createElement(RefreshIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "New Chat", /* @__PURE__ */ import_react4.default.createElement("br", null), "(unsaved history will be lost)")), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onSaveAsNote }, /* @__PURE__ */ import_react4.default.createElement(SaveAsNoteIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Save as Note")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "select-wrapper" }, /* @__PURE__ */ import_react4.default.createElement(
     "select",
     {
@@ -54048,7 +61173,7 @@ var ChatIcons = ({
     },
     /* @__PURE__ */ import_react4.default.createElement("option", { value: "llm_chain" }, "Conversation"),
     /* @__PURE__ */ import_react4.default.createElement("option", { value: "retrieval_qa" }, "QA: Active Note")
-  ), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Mode Selection"))), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onUseActiveNoteAsContext }, /* @__PURE__ */ import_react4.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Rebuild Index for Active Note")));
+  ), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Mode Selection"))), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onForceRebuildActiveNoteContext }, /* @__PURE__ */ import_react4.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Rebuild Index for Active Note")));
 };
 var ChatIcons_default = ChatIcons;
 
@@ -54866,14 +61991,14 @@ function wrap2(middleware, callback) {
     try {
       result = middleware.apply(this, parameters);
     } catch (error) {
-      const exception = (
+      const exception2 = (
         /** @type {Error} */
         error
       );
       if (fnExpectsCallback && called) {
-        throw exception;
+        throw exception2;
       }
-      return done(exception);
+      return done(exception2);
     }
     if (!fnExpectsCallback) {
       if (result instanceof Promise) {
@@ -55203,7 +62328,7 @@ function looksLikeAVFileValue(value) {
 
 // node_modules/mdast-util-to-string/lib/index.js
 var emptyOptions = {};
-function toString5(value, options) {
+function toString6(value, options) {
   const settings = options || emptyOptions;
   const includeImageAlt = typeof settings.includeImageAlt === "boolean" ? settings.includeImageAlt : true;
   const includeHtml = typeof settings.includeHtml === "boolean" ? settings.includeHtml : true;
@@ -55348,13 +62473,13 @@ function regexCheck(regex) {
 }
 
 // node_modules/micromark-factory-space/index.js
-function factorySpace(effects, ok2, type, max) {
+function factorySpace(effects, ok2, type2, max) {
   const limit = max ? max - 1 : Number.POSITIVE_INFINITY;
   let size = 0;
   return start;
   function start(code2) {
     if (markdownSpace(code2)) {
-      effects.enter(type);
+      effects.enter(type2);
       return prefix(code2);
     }
     return ok2(code2);
@@ -55364,7 +62489,7 @@ function factorySpace(effects, ok2, type, max) {
       effects.consume(code2);
       return prefix;
     }
-    effects.exit(type);
+    effects.exit(type2);
     return ok2(code2);
   }
 }
@@ -56613,13 +63738,13 @@ function tokenizeContinuation(effects, ok2, nok) {
 }
 
 // node_modules/micromark-factory-destination/index.js
-function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerType, rawType, stringType, max) {
+function factoryDestination(effects, ok2, nok, type2, literalType, literalMarkerType, rawType, stringType, max) {
   const limit = max || Number.POSITIVE_INFINITY;
   let balance = 0;
   return start;
   function start(code2) {
     if (code2 === 60) {
-      effects.enter(type);
+      effects.enter(type2);
       effects.enter(literalType);
       effects.enter(literalMarkerType);
       effects.consume(code2);
@@ -56629,7 +63754,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
     if (code2 === null || code2 === 41 || asciiControl(code2)) {
       return nok(code2);
     }
-    effects.enter(type);
+    effects.enter(type2);
     effects.enter(rawType);
     effects.enter(stringType);
     effects.enter("chunkString", {
@@ -56643,7 +63768,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
       effects.consume(code2);
       effects.exit(literalMarkerType);
       effects.exit(literalType);
-      effects.exit(type);
+      effects.exit(type2);
       return ok2;
     }
     effects.enter(stringType);
@@ -56683,7 +63808,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
         effects.exit("chunkString");
         effects.exit(stringType);
         effects.exit(rawType);
-        effects.exit(type);
+        effects.exit(type2);
         return ok2(code2);
       }
       effects.consume(code2);
@@ -56695,7 +63820,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
       effects.exit("chunkString");
       effects.exit(stringType);
       effects.exit(rawType);
-      effects.exit(type);
+      effects.exit(type2);
       return ok2(code2);
     }
     if (asciiControl(code2))
@@ -56713,13 +63838,13 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
 }
 
 // node_modules/micromark-factory-label/index.js
-function factoryLabel(effects, ok2, nok, type, markerType, stringType) {
+function factoryLabel(effects, ok2, nok, type2, markerType, stringType) {
   const self2 = this;
   let size = 0;
   let data;
   return start;
   function start(code2) {
-    effects.enter(type);
+    effects.enter(type2);
     effects.enter(markerType);
     effects.consume(code2);
     effects.exit(markerType);
@@ -56740,7 +63865,7 @@ function factoryLabel(effects, ok2, nok, type, markerType, stringType) {
       effects.enter(markerType);
       effects.consume(code2);
       effects.exit(markerType);
-      effects.exit(type);
+      effects.exit(type2);
       return ok2;
     }
     if (markdownLineEnding(code2)) {
@@ -56774,11 +63899,11 @@ function factoryLabel(effects, ok2, nok, type, markerType, stringType) {
 }
 
 // node_modules/micromark-factory-title/index.js
-function factoryTitle(effects, ok2, nok, type, markerType, stringType) {
+function factoryTitle(effects, ok2, nok, type2, markerType, stringType) {
   let marker;
   return start;
   function start(code2) {
-    effects.enter(type);
+    effects.enter(type2);
     effects.enter(markerType);
     effects.consume(code2);
     effects.exit(markerType);
@@ -56790,7 +63915,7 @@ function factoryTitle(effects, ok2, nok, type, markerType, stringType) {
       effects.enter(markerType);
       effects.consume(code2);
       effects.exit(markerType);
-      effects.exit(type);
+      effects.exit(type2);
       return ok2;
     }
     effects.enter(stringType);
@@ -58711,15 +65836,15 @@ function createTokenizer(parser2, initialize, from) {
     context.previous = code2;
     consumed = true;
   }
-  function enter(type, fields) {
+  function enter(type2, fields) {
     const token = fields || {};
-    token.type = type;
+    token.type = type2;
     token.start = now();
     context.events.push(["enter", token, context]);
     stack.push(token);
     return token;
   }
-  function exit2(type) {
+  function exit2(type2) {
     const token = stack.pop();
     token.end = now();
     context.events.push(["exit", token, context]);
@@ -58742,11 +65867,11 @@ function createTokenizer(parser2, initialize, from) {
         /* c8 ignore next 1 */
         handleListOfConstructs(constructs2)
       ) : "tokenize" in constructs2 ? handleListOfConstructs([constructs2]) : handleMapOfConstructs(constructs2);
-      function handleMapOfConstructs(map) {
+      function handleMapOfConstructs(map2) {
         return start;
         function start(code2) {
-          const def = code2 !== null && map[code2];
-          const all5 = code2 !== null && map.null;
+          const def = code2 !== null && map2[code2];
+          const all5 = code2 !== null && map2.null;
           const list3 = [
             // To do: add more extension tests.
             /* c8 ignore next 2 */
@@ -59464,7 +66589,7 @@ function compiler(options) {
     return node2;
   }
   function resume() {
-    return toString5(this.stack.pop());
+    return toString6(this.stack.pop());
   }
   function onenterlistordered() {
     setData("expectingFirstListItemValue", true);
@@ -59662,12 +66787,12 @@ function compiler(options) {
   }
   function onexitcharacterreferencevalue(token) {
     const data2 = this.sliceSerialize(token);
-    const type = getData("characterReferenceType");
+    const type2 = getData("characterReferenceType");
     let value;
-    if (type) {
+    if (type2) {
       value = decodeNumericCharacterReference(
         data2,
-        type === "characterReferenceMarkerNumeric" ? 10 : 16
+        type2 === "characterReferenceMarkerNumeric" ? 10 : 16
       );
       setData("characterReferenceType");
     } else {
@@ -60303,10 +67428,10 @@ var pointEnd = point3("end");
 function position2(node2) {
   return { start: pointStart(node2), end: pointEnd(node2) };
 }
-function point3(type) {
+function point3(type2) {
   return point4;
   function point4(node2) {
-    const point5 = node2 && node2.position && node2.position[type] || {};
+    const point5 = node2 && node2.position && node2.position[type2] || {};
     return {
       // @ts-expect-error: in practice, null is allowed.
       line: point5.line || null,
@@ -60553,8 +67678,8 @@ function propsFactory(check) {
   }
 }
 function typeFactory(check) {
-  return castFactory(type);
-  function type(node2) {
+  return castFactory(type2);
+  function type2(node2) {
     return node2 && node2.type === check;
   }
 }
@@ -60830,14 +67955,14 @@ function applyData(from, to) {
   return result;
 }
 function one2(state, node2, parent) {
-  const type = node2 && node2.type;
-  if (!type) {
+  const type2 = node2 && node2.type;
+  if (!type2) {
     throw new Error("Expected node, got `" + node2 + "`");
   }
-  if (own4.call(state.handlers, type)) {
-    return state.handlers[type](state, node2, parent);
+  if (own4.call(state.handlers, type2)) {
+    return state.handlers[type2](state, node2, parent);
   }
-  if (state.passThrough && state.passThrough.includes(type)) {
+  if (state.passThrough && state.passThrough.includes(type2)) {
     return "children" in node2 ? { ...node2, children: all4(state, node2) } : node2;
   }
   if (state.unknownHandler) {
@@ -61045,7 +68170,7 @@ Schema.prototype.normal = {};
 Schema.prototype.space = null;
 
 // node_modules/property-information/lib/util/merge.js
-function merge2(definitions2, space2) {
+function merge3(definitions2, space2) {
   const property = {};
   const normal = {};
   let index2 = -1;
@@ -62181,12 +69306,12 @@ var svg = create({
 var valid = /^data[-\w.:]+$/i;
 var dash = /-[a-z]/g;
 var cap = /[A-Z]/g;
-function find(schema, value) {
+function find(schema2, value) {
   const normal = normalize2(value);
   let prop = value;
   let Type = Info;
-  if (normal in schema.normal) {
-    return schema.property[schema.normal[normal]];
+  if (normal in schema2.normal) {
+    return schema2.property[schema2.normal[normal]];
   }
   if (normal.length > 4 && normal.slice(0, 4) === "data" && valid.test(value)) {
     if (value.charAt(4) === "-") {
@@ -62235,8 +69360,8 @@ var hastToReact = {
 };
 
 // node_modules/property-information/index.js
-var html3 = merge2([xml, xlink, xmlns, aria, html2], "html");
-var svg2 = merge2([xml, xlink, xmlns, aria, svg], "svg");
+var html3 = merge3([xml, xlink, xmlns, aria, html2], "html");
+var svg2 = merge3([xml, xlink, xmlns, aria, svg], "svg");
 
 // node_modules/react-markdown/lib/rehype-filter.js
 function rehypeFilter(options) {
@@ -62306,8 +69431,8 @@ function stringify2(values, options) {
 }
 
 // node_modules/style-to-object/index.mjs
-var import_index = __toESM(require_style_to_object(), 1);
-var style_to_object_default = import_index.default;
+var import_index2 = __toESM(require_style_to_object(), 1);
+var style_to_object_default = import_index2.default;
 
 // node_modules/react-markdown/lib/ast-to-react.js
 var own6 = {}.hasOwnProperty;
@@ -62336,11 +69461,11 @@ function toReact(context, node2, index2, parent) {
   const parentSchema = context.schema;
   const name = node2.tagName;
   const properties = {};
-  let schema = parentSchema;
+  let schema2 = parentSchema;
   let property;
   if (parentSchema.space === "html" && name === "svg") {
-    schema = svg2;
-    context.schema = schema;
+    schema2 = svg2;
+    context.schema = schema2;
   }
   if (node2.properties) {
     for (property in node2.properties) {
@@ -62681,19 +69806,12 @@ var AppContext = React8.createContext(void 0);
 var import_obsidian4 = require("obsidian");
 var getAIResponse = async (userMessage, chatContext, aiState, addMessage, updateCurrentAiMessage, updateShouldAbort, debug = false) => {
   const {
-    key,
     model,
     temperature,
     maxTokens,
     systemMessage,
     chatContextTurns
   } = aiState.langChainParams;
-  if (!key) {
-    new import_obsidian4.Notice(
-      "No OpenAI API key provided. Please set it in Copilot settings, and restart the plugin."
-    );
-    return;
-  }
   const abortController = new AbortController();
   updateShouldAbort(abortController);
   if (debug) {
@@ -62708,14 +69826,18 @@ chat context turns: ${chatContextTurns}
 `
     );
   }
-  await aiState.runChain(
-    userMessage.message,
-    chatContext,
-    abortController,
-    updateCurrentAiMessage,
-    addMessage,
-    debug
-  );
+  try {
+    await aiState.runChain(
+      userMessage.message,
+      abortController,
+      updateCurrentAiMessage,
+      addMessage,
+      debug
+    );
+  } catch (error) {
+    console.error("Model request failed:", error);
+    new import_obsidian4.Notice("Model request failed:", error);
+  }
 };
 
 // src/sharedState.ts
@@ -62826,7 +69948,7 @@ var Chat = ({
       console.error("Error saving chat as note:", error);
     }
   };
-  const useActiveNoteAsContext = async () => {
+  const forceRebuildActiveNoteContext = async () => {
     if (!app2) {
       console.error("App instance is not available.");
       return;
@@ -62844,29 +69966,17 @@ var Chat = ({
       console.error("No note content found.");
       return;
     }
-    let activeNoteOnMessage;
     const docHash = chainFactory_default.getDocumentHash(noteContent);
-    const vectorStore = chainFactory_default.vectorStoreMap.get(docHash);
-    if (vectorStore) {
-      activeNoteOnMessage = {
-        sender: AI_SENDER,
-        message: `I have read [[${noteName}]].
+    await aiState.buildIndex(noteContent, docHash);
+    const activeNoteOnMessage = {
+      sender: AI_SENDER,
+      message: `Reading [[${noteName}]]...
 
  Please switch to "QA: Active Note" in Mode Selection to ask questions about it.`,
-        isVisible: true
-      };
-      if (currentChain === RETRIEVAL_QA_CHAIN) {
-        setChain(RETRIEVAL_QA_CHAIN, { noteContent });
-      }
-    } else {
-      await aiState.buildIndex(noteContent, docHash);
-      activeNoteOnMessage = {
-        sender: AI_SENDER,
-        message: `Reading [[${noteName}]]...
-
- Please switch to "QA: Active Note" in Mode Selection to ask questions about it.`,
-        isVisible: true
-      };
+      isVisible: true
+    };
+    if (currentChain === "retrieval_qa" /* RETRIEVAL_QA_CHAIN */) {
+      setChain("retrieval_qa" /* RETRIEVAL_QA_CHAIN */, { noteContent });
     }
     addMessage(activeNoteOnMessage);
   };
@@ -62998,7 +70108,7 @@ var Chat = ({
         clearCurrentAiMessage();
       },
       onSaveAsNote: handleSaveAsNote,
-      onUseActiveNoteAsContext: useActiveNoteAsContext,
+      onForceRebuildActiveNoteContext: forceRebuildActiveNoteContext,
       addMessage
     }
   ), /* @__PURE__ */ import_react12.default.createElement(
@@ -63018,7 +70128,7 @@ var Chat_default = Chat;
 var import_events = require("events");
 var import_obsidian6 = require("obsidian");
 var React10 = __toESM(require_react());
-var import_client = __toESM(require_client());
+var import_client3 = __toESM(require_client());
 var CopilotView = class extends import_obsidian6.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
@@ -63058,7 +70168,7 @@ var CopilotView = class extends import_obsidian6.ItemView {
     return this.plugin.isChatVisible();
   }
   async onOpen() {
-    const root2 = (0, import_client.createRoot)(this.containerEl.children[1]);
+    const root2 = (0, import_client3.createRoot)(this.containerEl.children[1]);
     root2.render(
       /* @__PURE__ */ React10.createElement(AppContext.Provider, { value: this.app }, /* @__PURE__ */ React10.createElement(React10.StrictMode, null, /* @__PURE__ */ React10.createElement(
         Chat_default,
@@ -63219,7 +70329,37 @@ var CopilotSettingTab = class extends import_obsidian10.PluginSettingTab {
       "h6",
       { text: "Please reload the plugin when you change any setting below." }
     );
-    containerEl.createEl("h4", { text: "OpenAI API Settings" });
+    const modelDisplayNames = [
+      "GPT-3.5" /* GPT_35_TURBO */,
+      "GPT-3.5 16K" /* GPT_35_TURBO_16K */,
+      "GPT-4" /* GPT_4 */,
+      "GPT-4 32K" /* GPT_4_32K */,
+      // ChatModelDisplayNames.CLAUDE_1,
+      // ChatModelDisplayNames.CLAUDE_1_100K,
+      // ChatModelDisplayNames.CLAUDE_INSTANT_1,
+      // ChatModelDisplayNames.CLAUDE_INSTANT_1_100K,
+      "AZURE GPT-3.5" /* AZURE_GPT_35_TURBO */,
+      "AZURE GPT-3.5-16K" /* AZURE_GPT_35_TURBO_16K */,
+      "AZURE GPT-4" /* AZURE_GPT_4 */,
+      "AZURE GPT-4 32K" /* AZURE_GPT_4_32K */
+    ];
+    new import_obsidian10.Setting(containerEl).setName("Default Model").setDesc(
+      createFragment((frag) => {
+        frag.appendText("The default model to use, only takes effect when you ");
+        frag.createEl("strong", { text: "restart the plugin" });
+      })
+    ).addDropdown((dropdown) => {
+      modelDisplayNames.forEach((displayName) => {
+        dropdown.addOption(displayName, displayName);
+      });
+      dropdown.setValue(this.plugin.settings.defaultModelDisplayName).onChange(async (value) => {
+        this.plugin.settings.defaultModelDisplayName = value;
+        this.plugin.settings.defaultModel = DISPLAY_NAME_TO_MODEL[this.plugin.settings.defaultModelDisplayName];
+        await this.plugin.saveSettings();
+      });
+    });
+    containerEl.createEl("h4", { text: "API Settings" });
+    containerEl.createEl("h6", { text: "OpenAI API" });
     new import_obsidian10.Setting(containerEl).setName("Your OpenAI API key").setDesc(
       createFragment((frag) => {
         frag.appendText("You can find your API key at ");
@@ -63241,23 +70381,67 @@ var CopilotSettingTab = class extends import_obsidian10.PluginSettingTab {
       (text4) => {
         text4.inputEl.type = "password";
         text4.inputEl.style.width = "100%";
-        text4.setPlaceholder("OpenAI API key").setValue(this.plugin.settings.openAiApiKey).onChange(async (value) => {
-          this.plugin.settings.openAiApiKey = value;
+        text4.setPlaceholder("OpenAI API key").setValue(this.plugin.settings.openAIApiKey).onChange(async (value) => {
+          this.plugin.settings.openAIApiKey = value;
           await this.plugin.saveSettings();
         });
       }
     );
-    new import_obsidian10.Setting(containerEl).setName("Default Model").setDesc(
+    containerEl.createEl("h6", { text: "Azure OpenAI API" });
+    new import_obsidian10.Setting(containerEl).setName("Your Azure OpenAI API key").setDesc(
       createFragment((frag) => {
-        frag.appendText("The default model to use, only takes effect when you ");
-        frag.createEl("strong", { text: "restart the plugin" });
+        frag.appendText("This is for Azure OpenAI APIs. Sign up on their waitlist if you don't have access.");
       })
-    ).addDropdown((dropdown) => {
-      dropdown.addOption("gpt-3.5-turbo", "GPT-3.5").addOption("gpt-4", "GPT-4").setValue(this.plugin.settings.defaultModel).onChange(async (value) => {
-        this.plugin.settings.defaultModel = value;
-        await this.plugin.saveSettings();
-      });
-    });
+    ).addText(
+      (text4) => {
+        text4.inputEl.type = "password";
+        text4.inputEl.style.width = "100%";
+        text4.setPlaceholder("Azure OpenAI API key").setValue(this.plugin.settings.azureOpenAIApiKey).onChange(async (value) => {
+          this.plugin.settings.azureOpenAIApiKey = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
+    new import_obsidian10.Setting(containerEl).setName("Your Azure OpenAI instance name").addText(
+      (text4) => {
+        text4.inputEl.style.width = "100%";
+        text4.setPlaceholder("Azure OpenAI instance name").setValue(this.plugin.settings.azureOpenAIApiInstanceName).onChange(async (value) => {
+          this.plugin.settings.azureOpenAIApiInstanceName = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
+    new import_obsidian10.Setting(containerEl).setName("Your Azure OpenAI deployment name").addText(
+      (text4) => {
+        text4.inputEl.style.width = "100%";
+        text4.setPlaceholder("Azure OpenAI deployment name").setValue(this.plugin.settings.azureOpenAIApiDeploymentName).onChange(async (value) => {
+          this.plugin.settings.azureOpenAIApiDeploymentName = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
+    new import_obsidian10.Setting(containerEl).setName("Your Azure OpenAI API version").addText(
+      (text4) => {
+        text4.inputEl.style.width = "100%";
+        text4.setPlaceholder("Azure OpenAI API version").setValue(this.plugin.settings.azureOpenAIApiVersion).onChange(async (value) => {
+          this.plugin.settings.azureOpenAIApiVersion = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
+    new import_obsidian10.Setting(containerEl).setName("Your Azure OpenAI embedding model deployment name (Optional)").setDesc(
+      createFragment((frag) => {
+        frag.appendText("Only if you'd like to use Azure as the embedding provider.");
+      })
+    ).addText(
+      (text4) => {
+        text4.inputEl.style.width = "100%";
+        text4.setPlaceholder("Azure OpenAI embedding model deployment name").setValue(this.plugin.settings.azureOpenAIApiEmbeddingDeploymentName).onChange(async (value) => {
+          this.plugin.settings.azureOpenAIApiEmbeddingDeploymentName = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
     containerEl.createEl(
       "h6",
       {
@@ -63317,7 +70501,7 @@ var CopilotSettingTab = class extends import_obsidian10.PluginSettingTab {
     containerEl.createEl(
       "h6",
       {
-        text: "NOTE: OpenAI embeddings are more expensive but give better QA results. Huggingface embeddings are free but the result is not as good, and you may see more API timeout errors."
+        text: "NOTE: OpenAI embeddings are not free but may give better QA results. CohereAI (recommended) offers trial API for FREE and the quality is very good! It is more stable than Huggingface Inference API. Huggingface embeddings are also free but the result is not as good, and you may see more API timeout errors. "
       }
     );
     new import_obsidian10.Setting(containerEl).setName("Embedding Provider").setDesc(
@@ -63326,11 +70510,31 @@ var CopilotSettingTab = class extends import_obsidian10.PluginSettingTab {
         frag.createEl("strong", { text: "restart the plugin" });
       })
     ).addDropdown((dropdown) => {
-      dropdown.addOption(OPENAI, "OpenAI").addOption(HUGGINGFACE, "Huggingface").setValue(this.plugin.settings.embeddingProvider).onChange(async (value) => {
+      dropdown.addOption(OPENAI, "OpenAI").addOption(COHEREAI, "CohereAI").addOption(AZURE_OPENAI, "Azure OpenAI").addOption(HUGGINGFACE, "Huggingface").setValue(this.plugin.settings.embeddingProvider).onChange(async (value) => {
         this.plugin.settings.embeddingProvider = value;
         await this.plugin.saveSettings();
       });
     });
+    new import_obsidian10.Setting(containerEl).setName("Your CohereAI trial API key").setDesc(
+      createFragment((frag) => {
+        frag.appendText("You can sign up at CohereAI and find your API key at ");
+        frag.createEl("a", {
+          text: "https://dashboard.cohere.ai/api-keys",
+          href: "https://dashboard.cohere.ai/api-keys"
+        });
+        frag.createEl("br");
+        frag.appendText("It is used to make requests to CohereAI trial API for free embeddings.");
+      })
+    ).addText(
+      (text4) => {
+        text4.inputEl.type = "password";
+        text4.inputEl.style.width = "80%";
+        text4.setPlaceholder("CohereAI trial API key").setValue(this.plugin.settings.cohereApiKey).onChange(async (value) => {
+          this.plugin.settings.cohereApiKey = value;
+          await this.plugin.saveSettings();
+        });
+      }
+    );
     new import_obsidian10.Setting(containerEl).setName("Your Huggingface Inference API key").setDesc(
       createFragment((frag) => {
         frag.appendText("You can find your API key at ");
@@ -63376,6 +70580,22 @@ var CopilotSettingTab = class extends import_obsidian10.PluginSettingTab {
       text4.inputEl.style.height = "100px";
       text4.setPlaceholder("User system prompt").setValue(this.plugin.settings.userSystemPrompt).onChange(async (value) => {
         this.plugin.settings.userSystemPrompt = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian10.Setting(containerEl).setName("OpenAI Proxy Base URL (3rd-party providers)").setDesc(
+      createFragment((frag) => {
+        frag.createEl(
+          "strong",
+          { text: "CAUTION: This will override the default OpenAI API URL! Use with discretion!" }
+        );
+        frag.createEl("br");
+        frag.appendText("Leave blank to use the official OpenAI API.");
+      })
+    ).addText((text4) => {
+      text4.inputEl.style.width = "100%";
+      text4.setPlaceholder("https://openai.example.com/v1").setValue(this.plugin.settings.openAIProxyBaseUrl).onChange(async (value) => {
+        this.plugin.settings.openAIProxyBaseUrl = value;
         await this.plugin.saveSettings();
       });
     });
@@ -63563,11 +70783,11 @@ function cloneBinaryObject(object) {
     return cloneArrayBuffer(object);
   }
   var size = object.size;
-  var type = object.type;
+  var type2 = object.type;
   if (typeof object.slice === "function") {
-    return object.slice(0, size, type);
+    return object.slice(0, size, type2);
   }
-  return object.webkitSlice(0, size, type);
+  return object.webkitSlice(0, size, type2);
 }
 var funcToString = Function.prototype.toString;
 var objectCtorString = funcToString.call(Object);
@@ -63911,8 +71131,8 @@ function defaultBackOff(min) {
   }
   return randomNumber(min, max);
 }
-function explainError(status, str) {
-  guardedConsole("info", "The above " + status + " is totally normal. " + str);
+function explainError(status, str2) {
+  guardedConsole("info", "The above " + status + " is totally normal. " + str2);
 }
 var assign;
 {
@@ -64087,8 +71307,8 @@ function isRemote(db) {
   }
   return false;
 }
-function listenerCount(ee, type) {
-  return "listenerCount" in ee ? ee.listenerCount(type) : import_events2.default.listenerCount(ee, type);
+function listenerCount(ee, type2) {
+  return "listenerCount" in ee ? ee.listenerCount(type2) : import_events2.default.listenerCount(ee, type2);
 }
 function parseDesignDocFunctionName(s) {
   if (!s) {
@@ -64126,8 +71346,8 @@ var keys2 = [
 var qName = "queryKey";
 var qParser = /(?:^|&)([^&=]*)=?([^&]*)/g;
 var parser = /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
-function parseUri(str) {
-  var m = parser.exec(str);
+function parseUri(str2) {
+  var m = parser.exec(str2);
   var uri = {};
   var i = 14;
   while (i--) {
@@ -64186,11 +71406,11 @@ function tryAndPut(db, doc, diffFun) {
     return upsert(db, doc._id, diffFun);
   });
 }
-var thisAtob = function(str) {
-  return atob(str);
+var thisAtob = function(str2) {
+  return atob(str2);
 };
-var thisBtoa = function(str) {
-  return btoa(str);
+var thisBtoa = function(str2) {
+  return btoa(str2);
 };
 function createBlob(parts, properties) {
   parts = parts || [];
@@ -64218,20 +71438,20 @@ function binaryStringToArrayBuffer(bin) {
   }
   return buf;
 }
-function binStringToBluffer(binString, type) {
-  return createBlob([binaryStringToArrayBuffer(binString)], { type });
+function binStringToBluffer(binString, type2) {
+  return createBlob([binaryStringToArrayBuffer(binString)], { type: type2 });
 }
-function b64ToBluffer(b64, type) {
-  return binStringToBluffer(thisAtob(b64), type);
+function b64ToBluffer(b64, type2) {
+  return binStringToBluffer(thisAtob(b64), type2);
 }
 function arrayBufferToBinaryString(buffer2) {
-  var binary = "";
+  var binary2 = "";
   var bytes = new Uint8Array(buffer2);
   var length = bytes.byteLength;
   for (var i = 0; i < length; i++) {
-    binary += String.fromCharCode(bytes[i]);
+    binary2 += String.fromCharCode(bytes[i]);
   }
-  return binary;
+  return binary2;
 }
 function readAsBinaryString(blob, callback) {
   var reader = new FileReader();
@@ -64501,10 +71721,10 @@ function compareTree(a2, b) {
   return a2[0] < b[0] ? -1 : 1;
 }
 function mergeTree(in_tree1, in_tree2) {
-  var queue2 = [{ tree1: in_tree1, tree2: in_tree2 }];
+  var queue3 = [{ tree1: in_tree1, tree2: in_tree2 }];
   var conflicts = false;
-  while (queue2.length > 0) {
-    var item = queue2.pop();
+  while (queue3.length > 0) {
+    var item = queue3.pop();
     var tree1 = item.tree1;
     var tree2 = item.tree2;
     if (tree1[1].status || tree2[1].status) {
@@ -64519,7 +71739,7 @@ function mergeTree(in_tree1, in_tree2) {
       var merged = false;
       for (var j = 0; j < tree1[2].length; j++) {
         if (tree1[2][j][0] === tree2[2][i][0]) {
-          queue2.push({ tree1: tree1[2][j], tree2: tree2[2][i] });
+          queue3.push({ tree1: tree1[2][j], tree2: tree2[2][i] });
           merged = true;
         }
       }
@@ -64637,7 +71857,7 @@ function stem(tree, depth) {
     revs: stemmedRevs ? Object.keys(stemmedRevs) : []
   };
 }
-function merge3(tree, path2, depth) {
+function merge4(tree, path2, depth) {
   var newTree = doMerge(tree, path2);
   var stemmed = stem(newTree.tree, depth);
   return {
@@ -65069,26 +72289,26 @@ var AbstractPouchDB = class extends import_events2.default {
         opts.new_edits = false;
       }
     }).bind(this);
-    this.putAttachment = adapterFun("putAttachment", function(docId, attachmentId, rev, blob, type) {
+    this.putAttachment = adapterFun("putAttachment", function(docId, attachmentId, rev, blob, type2) {
       var api = this;
-      if (typeof type === "function") {
-        type = blob;
+      if (typeof type2 === "function") {
+        type2 = blob;
         blob = rev;
         rev = null;
       }
-      if (typeof type === "undefined") {
-        type = blob;
+      if (typeof type2 === "undefined") {
+        type2 = blob;
         blob = rev;
         rev = null;
       }
-      if (!type) {
+      if (!type2) {
         guardedConsole("warn", "Attachment", attachmentId, "on document", docId, "is missing content_type");
       }
       function createAttachment(doc) {
         var prevrevpos = "_rev" in doc ? parseInt(doc._rev, 10) : 0;
         doc._attachments = doc._attachments || {};
         doc._attachments[attachmentId] = {
-          content_type: type,
+          content_type: type2,
           data: blob,
           revpos: ++prevrevpos
         };
@@ -66248,17 +73468,17 @@ function normalizeArrayOperators(selector) {
     }
   });
 }
-function pad(str, padWith, upToLength) {
+function pad(str2, padWith, upToLength) {
   var padding = "";
-  var targetLength = upToLength - str.length;
+  var targetLength = upToLength - str2.length;
   while (padding.length < targetLength) {
     padding += padWith;
   }
   return padding;
 }
-function padLeft(str, padWith, upToLength) {
-  var padding = pad(str, padWith, upToLength);
-  return padding + str;
+function padLeft(str2, padWith, upToLength) {
+  var padding = pad(str2, padWith, upToLength);
+  return padding + str2;
 }
 var MIN_MAGNITUDE = -324;
 var MAGNITUDE_DIGITS = 3;
@@ -66352,25 +73572,25 @@ function toIndexableString(key) {
   key = normalizeKey(key);
   return collationIndex(key) + SEP + indexify(key) + zero;
 }
-function parseNumber(str, i) {
+function parseNumber(str2, i) {
   var originalIdx = i;
   var num;
-  var zero = str[i] === "1";
+  var zero = str2[i] === "1";
   if (zero) {
     num = 0;
     i++;
   } else {
-    var neg = str[i] === "0";
+    var neg = str2[i] === "0";
     i++;
     var numAsString = "";
-    var magAsString = str.substring(i, i + MAGNITUDE_DIGITS);
+    var magAsString = str2.substring(i, i + MAGNITUDE_DIGITS);
     var magnitude = parseInt(magAsString, 10) + MIN_MAGNITUDE;
     if (neg) {
       magnitude = -magnitude;
     }
     i += MAGNITUDE_DIGITS;
     while (true) {
-      var ch = str[i];
+      var ch = str2[i];
       if (ch === "\0") {
         break;
       } else {
@@ -66413,12 +73633,12 @@ function pop(stack, metaStack) {
     }
   }
 }
-function parseIndexableString(str) {
+function parseIndexableString(str2) {
   var stack = [];
   var metaStack = [];
   var i = 0;
   while (true) {
-    var collationIndex2 = str[i++];
+    var collationIndex2 = str2[i++];
     if (collationIndex2 === "\0") {
       if (stack.length === 1) {
         return stack.pop();
@@ -66432,18 +73652,18 @@ function parseIndexableString(str) {
         stack.push(null);
         break;
       case "2":
-        stack.push(str[i] === "1");
+        stack.push(str2[i] === "1");
         i++;
         break;
       case "3":
-        var parsedNum = parseNumber(str, i);
+        var parsedNum = parseNumber(str2, i);
         stack.push(parsedNum.num);
         i += parsedNum.length;
         break;
       case "4":
         var parsedStr = "";
         while (true) {
-          var ch = str[i];
+          var ch = str2[i];
           if (ch === "\0") {
             break;
           }
@@ -67131,7 +74351,7 @@ function updateDoc(revLimit, prev, docInfo, results, i, cb, writeDoc, newEdits) 
     newDoc._id = docInfo.metadata.id;
     docInfo = parseDoc(newDoc, newEdits);
   }
-  var merged = merge3(prev.rev_tree, docInfo.metadata.rev_tree[0], revLimit);
+  var merged = merge4(prev.rev_tree, docInfo.metadata.rev_tree[0], revLimit);
   var inConflict = newEdits && (previouslyDeleted && deleted && merged.conflicts !== "new_leaf" || !previouslyDeleted && merged.conflicts !== "new_leaf" || previouslyDeleted && !deleted && merged.conflicts === "new_branch");
   if (inConflict) {
     var err = createError2(REV_CONFLICT);
@@ -67245,7 +74465,7 @@ function processDocs(revLimit, docInfos, api, fetchedDocs, tx, results, writeDoc
           newEdits
         );
       } else {
-        var merged = merge3([], currentDoc.metadata.rev_tree[0], revLimit);
+        var merged = merge4([], currentDoc.metadata.rev_tree[0], revLimit);
         currentDoc.metadata.rev_tree = merged.tree;
         currentDoc.stemmedRevs = merged.stemmedRevs || [];
         insertDoc(currentDoc, resultsIdx, docWritten);
@@ -67262,18 +74482,18 @@ var ATTACH_AND_SEQ_STORE = "attach-seq-store";
 var META_STORE = "meta-store";
 var LOCAL_STORE = "local-store";
 var DETECT_BLOB_SUPPORT_STORE = "detect-blob-support";
-function safeJsonParse(str) {
+function safeJsonParse(str2) {
   try {
-    return JSON.parse(str);
+    return JSON.parse(str2);
   } catch (e) {
-    return import_vuvuzela.default.parse(str);
+    return import_vuvuzela.default.parse(str2);
   }
 }
-function safeJsonStringify(json) {
+function safeJsonStringify(json2) {
   try {
-    return JSON.stringify(json);
+    return JSON.stringify(json2);
   } catch (e) {
-    return import_vuvuzela.default.stringify(json);
+    return import_vuvuzela.default.stringify(json2);
   }
 }
 function idbError(callback) {
@@ -67315,21 +74535,21 @@ function decodeDoc(doc) {
   delete doc._doc_id_rev;
   return doc;
 }
-function readBlobData(body, type, asBlob, callback) {
+function readBlobData(body, type2, asBlob, callback) {
   if (asBlob) {
     if (!body) {
-      callback(createBlob([""], { type }));
+      callback(createBlob([""], { type: type2 }));
     } else if (typeof body !== "string") {
       callback(body);
     } else {
-      callback(b64ToBluffer(body, type));
+      callback(b64ToBluffer(body, type2));
     }
   } else {
     if (!body) {
       callback("");
     } else if (typeof body !== "string") {
-      readAsBinaryString(body, function(binary) {
-        callback(thisBtoa(binary));
+      readAsBinaryString(body, function(binary2) {
+        callback(thisBtoa(binary2));
       });
     } else {
       callback(body);
@@ -67375,9 +74595,9 @@ function postProcessAttachments(results, asBlob) {
           return;
         }
         var body = attObj.body;
-        var type = attObj.content_type;
+        var type2 = attObj.content_type;
         return new Promise(function(resolve) {
-          readBlobData(body, type, asBlob, function(data) {
+          readBlobData(body, type2, asBlob, function(data) {
             row.doc._attachments[att] = $inject_Object_assign(
               pick(attObj, ["digest", "content_type"]),
               { data }
@@ -67426,12 +74646,12 @@ function compactRevs(revs, docId, txn) {
     var index2 = seqStore.index("_doc_id_rev");
     var key = docId + "::" + rev;
     index2.getKey(key).onsuccess = function(e) {
-      var seq = e.target.result;
-      if (typeof seq !== "number") {
+      var seq2 = e.target.result;
+      if (typeof seq2 !== "number") {
         return checkDone();
       }
-      seqStore.delete(seq);
-      var cursor = attAndSeqStore.index("seq").openCursor(IDBKeyRange.only(seq));
+      seqStore.delete(seq2);
+      var cursor = attAndSeqStore.index("seq").openCursor(IDBKeyRange.only(seq2));
       cursor.onsuccess = function(event) {
         var cursor2 = event.target.result;
         if (cursor2) {
@@ -67742,7 +74962,7 @@ function idbBulkDocs(dbOpts, req, opts, api, idb, callback) {
       }
     });
   }
-  function insertAttachmentMappings(docInfo, seq, callback2) {
+  function insertAttachmentMappings(docInfo, seq2, callback2) {
     var attsAdded = 0;
     var attsToAdd = Object.keys(docInfo.data._attachments || {});
     if (!attsToAdd.length) {
@@ -67756,8 +74976,8 @@ function idbBulkDocs(dbOpts, req, opts, api, idb, callback) {
     function add(att) {
       var digest = docInfo.data._attachments[att].digest;
       var req2 = attachAndSeqStore.put({
-        seq,
-        digestSeq: digest + "::" + seq
+        seq: seq2,
+        digestSeq: digest + "::" + seq2
       });
       req2.onsuccess = checkDone;
       req2.onerror = function(e) {
@@ -68101,7 +75321,7 @@ function countDocs(txn, cb) {
   };
 }
 var running = false;
-var queue = [];
+var queue2 = [];
 function tryCode(fun, err, res, PouchDB2) {
   try {
     fun(err, res);
@@ -68110,14 +75330,14 @@ function tryCode(fun, err, res, PouchDB2) {
   }
 }
 function applyNext() {
-  if (running || !queue.length) {
+  if (running || !queue2.length) {
     return;
   }
   running = true;
-  queue.shift()();
+  queue2.shift()();
 }
 function enqueueTask(action, callback, PouchDB2) {
-  queue.push(function runAction() {
+  queue2.push(function runAction() {
     action(function runCallback(err, res) {
       tryCode(callback, err, res, PouchDB2);
       running = false;
@@ -68214,8 +75434,8 @@ function changes(opts, api, dbName, idb) {
     var numDone = 0;
     batchValues.forEach(function(value, i) {
       var doc = decodeDoc(value);
-      var seq = batchKeys[i];
-      fetchWinningDocAndMetadata(doc, seq, function(metadata, winningDoc) {
+      var seq2 = batchKeys[i];
+      fetchWinningDocAndMetadata(doc, seq2, function(metadata, winningDoc) {
         metadatas[i] = metadata;
         winningDocs[i] = winningDoc;
         if (++numDone === batchKeys.length) {
@@ -68224,8 +75444,8 @@ function changes(opts, api, dbName, idb) {
       });
     });
   }
-  function onGetMetadata(doc, seq, metadata, cb) {
-    if (metadata.seq !== seq) {
+  function onGetMetadata(doc, seq2, metadata, cb) {
+    if (metadata.seq !== seq2) {
       return cb();
     }
     if (metadata.winningRev === doc._rev) {
@@ -68237,18 +75457,18 @@ function changes(opts, api, dbName, idb) {
       cb(metadata, decodeDoc(e.target.result));
     };
   }
-  function fetchWinningDocAndMetadata(doc, seq, cb) {
+  function fetchWinningDocAndMetadata(doc, seq2, cb) {
     if (docIds && !docIds.has(doc._id)) {
       return cb();
     }
     var metadata = docIdsToMetadata.get(doc._id);
     if (metadata) {
-      return onGetMetadata(doc, seq, metadata, cb);
+      return onGetMetadata(doc, seq2, metadata, cb);
     }
     docStore.get(doc._id).onsuccess = function(e) {
       metadata = decodeMetadata(e.target.result);
       docIdsToMetadata.set(doc._id, metadata);
-      onGetMetadata(doc, seq, metadata, cb);
+      onGetMetadata(doc, seq2, metadata, cb);
     };
   }
   function finish() {
@@ -68404,7 +75624,7 @@ function init(api, opts, callback) {
           return callback2();
         }
         var doc = cursor.value;
-        var seq = cursor.primaryKey;
+        var seq2 = cursor.primaryKey;
         var atts = Object.keys(doc._attachments || {});
         var digestMap = {};
         for (var j = 0; j < atts.length; j++) {
@@ -68415,8 +75635,8 @@ function init(api, opts, callback) {
         for (j = 0; j < digests.length; j++) {
           var digest = digests[j];
           attAndSeqStore.put({
-            seq,
-            digestSeq: digest + "::" + seq
+            seq: seq2,
+            digestSeq: digest + "::" + seq2
           });
         }
         cursor.continue();
@@ -68454,9 +75674,9 @@ function init(api, opts, callback) {
             metadata.seq = metadataSeq;
             return onGetMetadataSeq();
           }
-          var seq = cursor3.primaryKey;
-          if (seq > metadataSeq) {
-            metadataSeq = seq;
+          var seq2 = cursor3.primaryKey;
+          if (seq2 > metadataSeq) {
+            metadataSeq = seq2;
           }
           cursor3.continue();
         };
@@ -68555,10 +75775,10 @@ function init(api, opts, callback) {
       txn = txnResult.txn;
     }
     var digest = attachment.digest;
-    var type = attachment.content_type;
+    var type2 = attachment.content_type;
     txn.objectStore(ATTACH_STORE).get(digest).onsuccess = function(e) {
       var body = e.target.result.body;
-      readBlobData(body, type, opts2.binary, function(blobData) {
+      readBlobData(body, type2, opts2.binary, function(blobData) {
         callback2(null, blobData);
       });
     };
@@ -69048,8 +76268,8 @@ function HttpPouch(opts, callback) {
     options.credentials = "include";
     if (opts.auth || host.auth) {
       let nAuth = opts.auth || host.auth;
-      let str = nAuth.username + ":" + nAuth.password;
-      let token = thisBtoa(unescape(encodeURIComponent(str)));
+      let str2 = nAuth.username + ":" + nAuth.password;
+      let token = thisBtoa(unescape(encodeURIComponent(str2)));
       options.headers.set("Authorization", "Basic " + token);
     }
     let headers = opts.headers || {};
@@ -69085,8 +76305,8 @@ function HttpPouch(opts, callback) {
     const response = await ourFetch(url, options);
     result.ok = response.ok;
     result.status = response.status;
-    const json = await response.json();
-    result.data = json;
+    const json2 = await response.json();
+    result.data = json2;
     if (!result.ok) {
       result.data.status = result.status;
       let err = generateErrorFromResponse(result.data);
@@ -69419,10 +76639,10 @@ function HttpPouch(opts, callback) {
       callback2(error);
     }
   });
-  api.putAttachment = adapterFun$$1("putAttachment", async function(docId, attachmentId, rev, blob, type, callback2) {
-    if (typeof type === "function") {
-      callback2 = type;
-      type = blob;
+  api.putAttachment = adapterFun$$1("putAttachment", async function(docId, attachmentId, rev, blob, type2, callback2) {
+    if (typeof type2 === "function") {
+      callback2 = type2;
+      type2 = blob;
       blob = rev;
       rev = null;
     }
@@ -69432,20 +76652,20 @@ function HttpPouch(opts, callback) {
       url += "?rev=" + rev;
     }
     if (typeof blob === "string") {
-      let binary;
+      let binary2;
       try {
-        binary = thisAtob(blob);
+        binary2 = thisAtob(blob);
       } catch (err) {
         return callback2(createError2(
           BAD_ARG,
           "Attachment is not a valid base64 string"
         ));
       }
-      blob = binary ? binStringToBluffer(binary, type) : "";
+      blob = binary2 ? binStringToBluffer(binary2, type2) : "";
     }
     try {
       const result = await fetchJSON(url, {
-        headers: new h({ "Content-Type": type }),
+        headers: new h({ "Content-Type": type2 }),
         method: "PUT",
         body: blob
       });
@@ -69734,8 +76954,8 @@ function HttpPouch(opts, callback) {
   };
   api._destroy = async function(options, callback2) {
     try {
-      const json = await fetchJSON(genDBUrl(host, ""), { method: "DELETE" });
-      callback2(null, json);
+      const json2 = await fetchJSON(genDBUrl(host, ""), { method: "DELETE" });
+      callback2(null, json2);
     } catch (error) {
       if (error.status === 404) {
         callback2(null, { ok: true });
@@ -69826,11 +77046,11 @@ function fin(promise, finalPromiseFactory) {
     });
   });
 }
-function sequentialize(queue2, promiseFactory) {
+function sequentialize(queue3, promiseFactory) {
   return function() {
     var args = arguments;
     var that = this;
-    return queue2.add(function() {
+    return queue3.add(function() {
       return promiseFactory.apply(that, args);
     });
   };
@@ -69844,10 +77064,10 @@ function uniq(arr) {
   });
   return result;
 }
-function mapToKeysArray(map) {
-  var result = new Array(map.size);
+function mapToKeysArray(map2) {
+  var result = new Array(map2.size);
   var index2 = -1;
-  map.forEach(function(value, key) {
+  map2.forEach(function(value, key) {
     result[++index2] = key;
   });
   return result;
@@ -70313,7 +77533,7 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
       }
     });
   }
-  function saveKeyValues(view, docIdsToChangesAndEmits, seq) {
+  function saveKeyValues(view, docIdsToChangesAndEmits, seq2) {
     var seqDocId = "_local/lastSeq";
     return view.db.get(seqDocId).catch(defaultsTo({ _id: seqDocId, seq: 0 })).then(function(lastSeqDoc) {
       var docIds = mapToKeysArray(docIdsToChangesAndEmits);
@@ -70321,7 +77541,7 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
         return getDocsToPersist(docId, view, docIdsToChangesAndEmits);
       })).then(function(listOfDocsToPersist) {
         var docsToPersist = flatten(listOfDocsToPersist);
-        lastSeqDoc.seq = seq;
+        lastSeqDoc.seq = seq2;
         docsToPersist.push(lastSeqDoc);
         return view.db.bulkDocs({ docs: docsToPersist });
       }).then(() => updatePurgeSeq(view));
@@ -70329,11 +77549,11 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
   }
   function getQueue(view) {
     const viewName = typeof view === "string" ? view : view.name;
-    let queue2 = persistentQueues[viewName];
-    if (!queue2) {
-      queue2 = persistentQueues[viewName] = new TaskQueue$1();
+    let queue3 = persistentQueues[viewName];
+    if (!queue3) {
+      queue3 = persistentQueues[viewName] = new TaskQueue$1();
     }
-    return queue2;
+    return queue3;
   }
   async function updateView(view, opts) {
     return sequentialize(getQueue(view), function() {
@@ -70361,9 +77581,9 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
         });
       });
     }
-    function processChange2(docIdsToChangesAndEmits, seq) {
+    function processChange2(docIdsToChangesAndEmits, seq2) {
       return function() {
-        return saveKeyValues(view, docIdsToChangesAndEmits, seq);
+        return saveKeyValues(view, docIdsToChangesAndEmits, seq2);
       };
     }
     let indexed_docs = 0;
@@ -70372,7 +77592,7 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
       indexed_docs
     };
     view.sourceDB.emit("indexing", progress);
-    const queue2 = new TaskQueue$1();
+    const queue3 = new TaskQueue$1();
     async function processNextBatch() {
       const response = await view.sourceDB.changes({
         return_docs: true,
@@ -70445,7 +77665,7 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
         }
       }
       var docIdsToChangesAndEmits = createDocIdsToChangesAndEmits(results);
-      queue2.add(processChange2(docIdsToChangesAndEmits, currentSeq));
+      queue3.add(processChange2(docIdsToChangesAndEmits, currentSeq));
       indexed_docs = indexed_docs + results.length;
       const progress2 = {
         view: view.name,
@@ -70498,7 +77718,7 @@ function createAbstractMapReduce(localDocName2, mapper2, reducer2, ddocValidator
     try {
       await createTask();
       await processNextBatch();
-      await queue2.finish();
+      await queue3.finish();
       view.seq = currentSeq;
       view.sourceDB.activeTasks.remove(taskId);
     } catch (error) {
@@ -71889,7 +79109,7 @@ var Sync = class extends import_events2.default {
       }
     };
     let removed = {};
-    const removeAll = (type) => {
+    const removeAll = (type2) => {
       return (event, func) => {
         const isChange = event === "change" && (func === pullChange || func === pushChange);
         const isDenied = event === "denied" && (func === pullDenied || func === pushDenied);
@@ -71899,7 +79119,7 @@ var Sync = class extends import_events2.default {
           if (!(event in removed)) {
             removed[event] = {};
           }
-          removed[event][type] = true;
+          removed[event][type2] = true;
           if (Object.keys(removed[event]).length === 2) {
             this.removeAllListeners(event);
           }
@@ -72038,6 +79258,13 @@ var CopilotPlugin = class extends import_obsidian11.Plugin {
       name: "Toggle Copilot Chat Window",
       callback: () => {
         this.toggleView();
+      }
+    });
+    this.addCommand({
+      id: "chat-toggle-window-note-area",
+      name: "Toggle Copilot Chat Window in Note Area",
+      callback: () => {
+        this.toggleViewNoteArea();
       }
     });
     this.addRibbonIcon("message-square", "Copilot Chat", (evt) => {
@@ -72321,6 +79548,20 @@ var CopilotPlugin = class extends import_obsidian11.Plugin {
     this.app.workspace.detachLeavesOfType(CHAT_VIEWTYPE);
     this.chatIsVisible = false;
   }
+  async toggleViewNoteArea() {
+    const leaves = this.app.workspace.getLeavesOfType(CHAT_VIEWTYPE);
+    leaves.length > 0 ? this.deactivateView() : this.activateViewNoteArea();
+  }
+  async activateViewNoteArea() {
+    this.app.workspace.detachLeavesOfType(CHAT_VIEWTYPE);
+    this.activateViewPromise = this.app.workspace.getLeaf(true).setViewState({
+      type: CHAT_VIEWTYPE,
+      active: true
+    });
+    await this.activateViewPromise;
+    this.app.workspace.revealLeaf(this.app.workspace.getLeavesOfType(CHAT_VIEWTYPE)[0]);
+    this.chatIsVisible = true;
+  }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
   }
@@ -72336,23 +79577,41 @@ var CopilotPlugin = class extends import_obsidian11.Plugin {
   }
   getAIStateParams() {
     const {
-      openAiApiKey,
+      openAIApiKey,
       huggingfaceApiKey,
+      cohereApiKey,
+      anthropicApiKey,
+      azureOpenAIApiKey,
+      azureOpenAIApiInstanceName,
+      azureOpenAIApiDeploymentName,
+      azureOpenAIApiVersion,
+      azureOpenAIApiEmbeddingDeploymentName,
       temperature,
       maxTokens,
       contextTurns,
       embeddingProvider
     } = sanitizeSettings(this.settings);
     return {
-      key: openAiApiKey,
+      openAIApiKey,
       huggingfaceApiKey,
+      cohereApiKey,
+      anthropicApiKey,
+      azureOpenAIApiKey,
+      azureOpenAIApiInstanceName,
+      azureOpenAIApiDeploymentName,
+      azureOpenAIApiVersion,
+      azureOpenAIApiEmbeddingDeploymentName,
       model: this.settings.defaultModel,
+      modelDisplayName: this.settings.defaultModelDisplayName,
       temperature: Number(temperature),
       maxTokens: Number(maxTokens),
-      systemMessage: DEFAULT_SYSTEM_PROMPT || this.settings.userSystemPrompt,
+      systemMessage: this.settings.userSystemPrompt || DEFAULT_SYSTEM_PROMPT,
       chatContextTurns: Number(contextTurns),
       embeddingProvider,
-      chainType: LLM_CHAIN
+      chainType: "llm_chain" /* LLM_CHAIN */,
+      // Set LLM_CHAIN as default ChainType
+      options: { forceNewCreation: true },
+      openAIProxyBaseUrl: this.settings.openAIProxyBaseUrl
     };
   }
 };
@@ -72377,6 +79636,13 @@ crypto-js/mode-ctr-gladman.js:
    * Jan Hruby jhruby.web@gmail.com
    *)
 
+moment/moment.js:
+  (*! moment.js *)
+  (*! version : 2.29.4 *)
+  (*! authors : Tim Wood, Iskren Chernev, Moment.js contributors *)
+  (*! license : MIT *)
+  (*! momentjs.com *)
+
 react/cjs/react.development.js:
   (**
    * @license React
@@ -72387,13 +79653,6 @@ react/cjs/react.development.js:
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
    *)
-
-moment/moment.js:
-  (*! moment.js *)
-  (*! version : 2.29.4 *)
-  (*! authors : Tim Wood, Iskren Chernev, Moment.js contributors *)
-  (*! license : MIT *)
-  (*! momentjs.com *)
 
 is-buffer/index.js:
   (*!
@@ -72465,4 +79724,7 @@ react-dom/cjs/react-dom.development.js:
    * @internal
    * @license Modernizr 3.0.0pre (Custom Build) | MIT
    *)
+
+js-yaml/dist/js-yaml.mjs:
+  (*! js-yaml 4.1.0 https://github.com/nodeca/js-yaml @license MIT *)
 */
