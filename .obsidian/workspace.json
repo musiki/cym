@@ -6,7 +6,6 @@
       {
         "id": "e62fba641b8c2d74",
         "type": "tabs",
-        "dimension": 58.74074074074074,
         "children": [
           {
             "id": "74a40f4a043b811d",
@@ -25,32 +24,12 @@
             "id": "a7262985c67346b5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "5248a7a9f324834b",
-        "type": "tabs",
-        "dimension": 41.25925925925926,
-        "children": [
-          {
-            "id": "58ae4fe0899bbce7",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {}
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -142,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -161,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +154,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,16 +187,18 @@
   },
   "active": "a7262985c67346b5",
   "lastOpenFiles": [
+    "04-ref/topoi/t10-método científico.md",
+    "README.md",
+    "02-mat/python/py-foundations.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "04-ref/topoi/t11-sistemas de universos.md",
     "02-mat/rant.md",
     "01-proj/todo.md",
     "00-in/combinational creativity.md",
     "00-in/meta-aprendizaje.md",
-    "README.md",
     "00-in/prg-23.md",
     "04-ref/topoi/t60-espacio.md",
     "04-ref/topoi/t12-filosofía 21.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
     "03-cla/c-cym03- cohesión audivisual.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/tp/2023-08-30.md",
@@ -236,8 +213,6 @@
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym07-networking.md",
     "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "01-proj/22/lopez",
     "01-proj/22/gutierrez",
     "01-proj/22/cymproj/webgl/3js01/index.html",

@@ -86,7 +86,7 @@
     },
     "04-ref/topoi/t10-método científico.md": {
       "size": 12362,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-ref/topoi/t09-física.md": {
@@ -529,7 +529,7 @@
     "/": {
       "Refactor": 22,
       "Create": 21,
-      "Link": 9,
+      "Link": 10,
       "Expand": 2
     }
   },
@@ -549,7 +549,7 @@
       "11": 6,
       "12": 32,
       "13": 2,
-      "14": 10,
+      "14": 11,
       "15": 0,
       "16": 3,
       "17": 0,
@@ -564,7 +564,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 15,
-      "Tue": 3,
+      "Tue": 4,
       "Wed": 3,
       "Thu": 0,
       "Fri": 0,
@@ -608,7 +608,8 @@
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>"
       ],
       "Refactored": [],
       "Deleted": [
