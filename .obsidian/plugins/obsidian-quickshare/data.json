@@ -4,5 +4,6 @@
   "anonymousUserId": "a49751e5378eea3e",
   "useFrontmatter": true,
   "frontmatterDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "shareFilenameAsTitle": true
+  "shareFilenameAsTitle": true,
+  "useFsCache": true
 }

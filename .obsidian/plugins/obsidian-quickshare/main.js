@@ -5,30 +5,47 @@ if you want to view the source, please visit the github repository of this plugi
 
 var __create = Object.create;
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 var __export = (target, all) => {
-  __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
-var __reExport = (target, module2, desc) => {
-  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
-    for (let key of __getOwnPropNames(module2))
-      if (!__hasOwnProp.call(target, key) && key !== "default")
-        __defProp(target, key, { get: () => module2[key], enumerable: !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable });
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   }
-  return target;
+  return to;
 };
-var __toModule = (module2) => {
-  return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
-};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -271,7 +288,9 @@ var require_moment = __commonJS({
               }
               args.push(arg);
             }
-            warn(msg + "\nArguments: " + Array.prototype.slice.call(args).join("") + "\n" + new Error().stack);
+            warn(
+              msg + "\nArguments: " + Array.prototype.slice.call(args).join("") + "\n" + new Error().stack
+            );
             firstTime = false;
           }
           return fn.apply(this, arguments);
@@ -292,7 +311,7 @@ var require_moment = __commonJS({
       function isFunction(input) {
         return typeof Function !== "undefined" && input instanceof Function || Object.prototype.toString.call(input) === "[object Function]";
       }
-      function set(config) {
+      function set3(config) {
         var prop, i;
         for (i in config) {
           if (hasOwnProp(config, i)) {
@@ -305,7 +324,9 @@ var require_moment = __commonJS({
           }
         }
         this._config = config;
-        this._dayOfMonthOrdinalParseLenient = new RegExp((this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source);
+        this._dayOfMonthOrdinalParseLenient = new RegExp(
+          (this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source
+        );
       }
       function mergeConfigs(parentConfig, childConfig) {
         var res = extend({}, parentConfig), prop;
@@ -382,7 +403,10 @@ var require_moment = __commonJS({
         }
         if (ordinal2) {
           formatTokenFunctions[ordinal2] = function() {
-            return this.localeData().ordinal(func.apply(this, arguments), token2);
+            return this.localeData().ordinal(
+              func.apply(this, arguments),
+              token2
+            );
           };
         }
       }
@@ -424,7 +448,10 @@ var require_moment = __commonJS({
         }
         localFormattingTokens.lastIndex = 0;
         while (i >= 0 && localFormattingTokens.test(format2)) {
-          format2 = format2.replace(localFormattingTokens, replaceLongDateFormatTokens);
+          format2 = format2.replace(
+            localFormattingTokens,
+            replaceLongDateFormatTokens
+          );
           localFormattingTokens.lastIndex = 0;
           i -= 1;
         }
@@ -556,7 +583,11 @@ var require_moment = __commonJS({
         if (mom.isValid() && !isNaN(value)) {
           if (unit === "FullYear" && isLeapYear(mom.year()) && mom.month() === 1 && mom.date() === 29) {
             value = toInt(value);
-            mom._d["set" + (mom._isUTC ? "UTC" : "") + unit](value, mom.month(), daysInMonth(value, mom.month()));
+            mom._d["set" + (mom._isUTC ? "UTC" : "") + unit](
+              value,
+              mom.month(),
+              daysInMonth(value, mom.month())
+            );
           } else {
             mom._d["set" + (mom._isUTC ? "UTC" : "") + unit](value);
           }
@@ -598,9 +629,14 @@ var require_moment = __commonJS({
         return regexes[token2](config._strict, config._locale);
       }
       function unescapeFormat(s) {
-        return regexEscape(s.replace("\\", "").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g, function(matched, p1, p2, p3, p4) {
-          return p1 || p2 || p3 || p4;
-        }));
+        return regexEscape(
+          s.replace("\\", "").replace(
+            /\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,
+            function(matched, p1, p2, p3, p4) {
+              return p1 || p2 || p3 || p4;
+            }
+          )
+        );
       }
       function regexEscape(s) {
         return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
@@ -688,7 +724,9 @@ var require_moment = __commonJS({
           getParsingFlags(config).invalidMonth = input;
         }
       });
-      var defaultLocaleMonths = "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), defaultLocaleMonthsShort = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"), MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/, defaultMonthsShortRegex = matchWord, defaultMonthsRegex = matchWord;
+      var defaultLocaleMonths = "January_February_March_April_May_June_July_August_September_October_November_December".split(
+        "_"
+      ), defaultLocaleMonthsShort = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"), MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/, defaultMonthsShortRegex = matchWord, defaultMonthsRegex = matchWord;
       function localeMonths(m, format2) {
         if (!m) {
           return isArray(this._months) ? this._months : this._months["standalone"];
@@ -709,7 +747,10 @@ var require_moment = __commonJS({
           this._shortMonthsParse = [];
           for (i = 0; i < 12; ++i) {
             mom = createUTC([2e3, i]);
-            this._shortMonthsParse[i] = this.monthsShort(mom, "").toLocaleLowerCase();
+            this._shortMonthsParse[i] = this.monthsShort(
+              mom,
+              ""
+            ).toLocaleLowerCase();
             this._longMonthsParse[i] = this.months(mom, "").toLocaleLowerCase();
           }
         }
@@ -752,8 +793,14 @@ var require_moment = __commonJS({
         for (i = 0; i < 12; i++) {
           mom = createUTC([2e3, i]);
           if (strict && !this._longMonthsParse[i]) {
-            this._longMonthsParse[i] = new RegExp("^" + this.months(mom, "").replace(".", "") + "$", "i");
-            this._shortMonthsParse[i] = new RegExp("^" + this.monthsShort(mom, "").replace(".", "") + "$", "i");
+            this._longMonthsParse[i] = new RegExp(
+              "^" + this.months(mom, "").replace(".", "") + "$",
+              "i"
+            );
+            this._shortMonthsParse[i] = new RegExp(
+              "^" + this.monthsShort(mom, "").replace(".", "") + "$",
+              "i"
+            );
           }
           if (!strict && !this._monthsParse[i]) {
             regex = "^" + this.months(mom, "") + "|^" + this.monthsShort(mom, "");
@@ -857,8 +904,14 @@ var require_moment = __commonJS({
         }
         this._monthsRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._monthsShortRegex = this._monthsRegex;
-        this._monthsStrictRegex = new RegExp("^(" + longPieces.join("|") + ")", "i");
-        this._monthsShortStrictRegex = new RegExp("^(" + shortPieces.join("|") + ")", "i");
+        this._monthsStrictRegex = new RegExp(
+          "^(" + longPieces.join("|") + ")",
+          "i"
+        );
+        this._monthsShortStrictRegex = new RegExp(
+          "^(" + shortPieces.join("|") + ")",
+          "i"
+        );
       }
       addFormatToken("Y", 0, 0, function() {
         var y = this.year();
@@ -975,9 +1028,12 @@ var require_moment = __commonJS({
       addRegexToken("ww", match1to2, match2);
       addRegexToken("W", match1to2);
       addRegexToken("WW", match1to2, match2);
-      addWeekParseToken(["w", "ww", "W", "WW"], function(input, week, config, token2) {
-        week[token2.substr(0, 1)] = toInt(input);
-      });
+      addWeekParseToken(
+        ["w", "ww", "W", "WW"],
+        function(input, week, config, token2) {
+          week[token2.substr(0, 1)] = toInt(input);
+        }
+      );
       function localeWeek(mom) {
         return weekOfYear(mom, this._week.dow, this._week.doy).week;
       }
@@ -1081,8 +1137,14 @@ var require_moment = __commonJS({
           this._minWeekdaysParse = [];
           for (i = 0; i < 7; ++i) {
             mom = createUTC([2e3, 1]).day(i);
-            this._minWeekdaysParse[i] = this.weekdaysMin(mom, "").toLocaleLowerCase();
-            this._shortWeekdaysParse[i] = this.weekdaysShort(mom, "").toLocaleLowerCase();
+            this._minWeekdaysParse[i] = this.weekdaysMin(
+              mom,
+              ""
+            ).toLocaleLowerCase();
+            this._shortWeekdaysParse[i] = this.weekdaysShort(
+              mom,
+              ""
+            ).toLocaleLowerCase();
             this._weekdaysParse[i] = this.weekdays(mom, "").toLocaleLowerCase();
           }
         }
@@ -1148,9 +1210,18 @@ var require_moment = __commonJS({
         for (i = 0; i < 7; i++) {
           mom = createUTC([2e3, 1]).day(i);
           if (strict && !this._fullWeekdaysParse[i]) {
-            this._fullWeekdaysParse[i] = new RegExp("^" + this.weekdays(mom, "").replace(".", "\\.?") + "$", "i");
-            this._shortWeekdaysParse[i] = new RegExp("^" + this.weekdaysShort(mom, "").replace(".", "\\.?") + "$", "i");
-            this._minWeekdaysParse[i] = new RegExp("^" + this.weekdaysMin(mom, "").replace(".", "\\.?") + "$", "i");
+            this._fullWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdays(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
+            this._shortWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdaysShort(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
+            this._minWeekdaysParse[i] = new RegExp(
+              "^" + this.weekdaysMin(mom, "").replace(".", "\\.?") + "$",
+              "i"
+            );
           }
           if (!this._weekdaysParse[i]) {
             regex = "^" + this.weekdays(mom, "") + "|^" + this.weekdaysShort(mom, "") + "|^" + this.weekdaysMin(mom, "");
@@ -1272,9 +1343,18 @@ var require_moment = __commonJS({
         this._weekdaysRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._weekdaysShortRegex = this._weekdaysRegex;
         this._weekdaysMinRegex = this._weekdaysRegex;
-        this._weekdaysStrictRegex = new RegExp("^(" + longPieces.join("|") + ")", "i");
-        this._weekdaysShortStrictRegex = new RegExp("^(" + shortPieces.join("|") + ")", "i");
-        this._weekdaysMinStrictRegex = new RegExp("^(" + minPieces.join("|") + ")", "i");
+        this._weekdaysStrictRegex = new RegExp(
+          "^(" + longPieces.join("|") + ")",
+          "i"
+        );
+        this._weekdaysShortStrictRegex = new RegExp(
+          "^(" + shortPieces.join("|") + ")",
+          "i"
+        );
+        this._weekdaysMinStrictRegex = new RegExp(
+          "^(" + minPieces.join("|") + ")",
+          "i"
+        );
       }
       function hFormat() {
         return this.hours() % 12 || 12;
@@ -1299,7 +1379,11 @@ var require_moment = __commonJS({
       });
       function meridiem(token2, lowercase) {
         addFormatToken(token2, 0, 0, function() {
-          return this.localeData().meridiem(this.hours(), this.minutes(), lowercase);
+          return this.localeData().meridiem(
+            this.hours(),
+            this.minutes(),
+            lowercase
+          );
         });
       }
       meridiem("a", true);
@@ -1447,7 +1531,9 @@ var require_moment = __commonJS({
             globalLocale = data;
           } else {
             if (typeof console !== "undefined" && console.warn) {
-              console.warn("Locale " + key + " not found. Did you forget to load it?");
+              console.warn(
+                "Locale " + key + " not found. Did you forget to load it?"
+              );
             }
           }
         }
@@ -1458,7 +1544,10 @@ var require_moment = __commonJS({
           var locale2, parentConfig = baseConfig;
           config.abbr = name;
           if (locales[name] != null) {
-            deprecateSimple("defineLocaleOverride", "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.");
+            deprecateSimple(
+              "defineLocaleOverride",
+              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."
+            );
             parentConfig = locales[name]._config;
           } else if (config.parentLocale != null) {
             if (locales[config.parentLocale] != null) {
@@ -1666,11 +1755,15 @@ var require_moment = __commonJS({
         return year;
       }
       function preprocessRFC2822(s) {
-        return s.replace(/\([^)]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").replace(/^\s\s*/, "").replace(/\s\s*$/, "");
+        return s.replace(/\([^()]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").replace(/^\s\s*/, "").replace(/\s\s*$/, "");
       }
       function checkWeekday(weekdayStr, parsedInput, config) {
         if (weekdayStr) {
-          var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr), weekdayActual = new Date(parsedInput[0], parsedInput[1], parsedInput[2]).getDay();
+          var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr), weekdayActual = new Date(
+            parsedInput[0],
+            parsedInput[1],
+            parsedInput[2]
+          ).getDay();
           if (weekdayProvided !== weekdayActual) {
             getParsingFlags(config).weekdayMismatch = true;
             config._isValid = false;
@@ -1692,7 +1785,14 @@ var require_moment = __commonJS({
       function configFromRFC2822(config) {
         var match = rfc2822.exec(preprocessRFC2822(config._i)), parsedArray;
         if (match) {
-          parsedArray = extractFromRFC2822Strings(match[4], match[3], match[2], match[5], match[6], match[7]);
+          parsedArray = extractFromRFC2822Strings(
+            match[4],
+            match[3],
+            match[2],
+            match[5],
+            match[6],
+            match[7]
+          );
           if (!checkWeekday(match[1], parsedArray, config)) {
             return;
           }
@@ -1729,9 +1829,12 @@ var require_moment = __commonJS({
           hooks.createFromInputFallback(config);
         }
       }
-      hooks.createFromInputFallback = deprecate("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", function(config) {
-        config._d = new Date(config._i + (config._useUTC ? " UTC" : ""));
-      });
+      hooks.createFromInputFallback = deprecate(
+        "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",
+        function(config) {
+          config._d = new Date(config._i + (config._useUTC ? " UTC" : ""));
+        }
+      );
       function defaults(a, b, c) {
         if (a != null) {
           return a;
@@ -1780,7 +1883,10 @@ var require_moment = __commonJS({
           config._nextDay = true;
           config._a[HOUR] = 0;
         }
-        config._d = (config._useUTC ? createUTCDate : createDate).apply(null, input);
+        config._d = (config._useUTC ? createUTCDate : createDate).apply(
+          null,
+          input
+        );
         expectedWeekday = config._useUTC ? config._d.getUTCDay() : config._d.getDay();
         if (config._tzm != null) {
           config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
@@ -1798,7 +1904,11 @@ var require_moment = __commonJS({
         if (w.GG != null || w.W != null || w.E != null) {
           dow = 1;
           doy = 4;
-          weekYear = defaults(w.GG, config._a[YEAR], weekOfYear(createLocal(), 1, 4).year);
+          weekYear = defaults(
+            w.GG,
+            config._a[YEAR],
+            weekOfYear(createLocal(), 1, 4).year
+          );
           week = defaults(w.W, 1);
           weekday = defaults(w.E, 1);
           if (weekday < 1 || weekday > 7) {
@@ -1860,7 +1970,9 @@ var require_moment = __commonJS({
             if (skipped.length > 0) {
               getParsingFlags(config).unusedInput.push(skipped);
             }
-            string = string.slice(string.indexOf(parsedInput) + parsedInput.length);
+            string = string.slice(
+              string.indexOf(parsedInput) + parsedInput.length
+            );
             totalParsedInputLength += parsedInput.length;
           }
           if (formatTokenFunctions[token2]) {
@@ -1883,7 +1995,11 @@ var require_moment = __commonJS({
         }
         getParsingFlags(config).parsedDateParts = config._a.slice(0);
         getParsingFlags(config).meridiem = config._meridiem;
-        config._a[HOUR] = meridiemFixWrap(config._locale, config._a[HOUR], config._meridiem);
+        config._a[HOUR] = meridiemFixWrap(
+          config._locale,
+          config._a[HOUR],
+          config._meridiem
+        );
         era = getParsingFlags(config).era;
         if (era !== null) {
           config._a[YEAR] = config._locale.erasConvertYear(era, config._a[YEAR]);
@@ -1955,9 +2071,12 @@ var require_moment = __commonJS({
           return;
         }
         var i = normalizeObjectUnits(config._i), dayOrDate = i.day === void 0 ? i.date : i.day;
-        config._a = map([i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond], function(obj) {
-          return obj && parseInt(obj, 10);
-        });
+        config._a = map(
+          [i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond],
+          function(obj) {
+            return obj && parseInt(obj, 10);
+          }
+        );
         configFromArray(config);
       }
       function createFromConfig(config) {
@@ -2038,21 +2157,27 @@ var require_moment = __commonJS({
       function createLocal(input, format2, locale2, strict) {
         return createLocalOrUTC(input, format2, locale2, strict, false);
       }
-      var prototypeMin = deprecate("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
-        var other = createLocal.apply(null, arguments);
-        if (this.isValid() && other.isValid()) {
-          return other < this ? this : other;
-        } else {
-          return createInvalid();
+      var prototypeMin = deprecate(
+        "moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/",
+        function() {
+          var other = createLocal.apply(null, arguments);
+          if (this.isValid() && other.isValid()) {
+            return other < this ? this : other;
+          } else {
+            return createInvalid();
+          }
         }
-      }), prototypeMax = deprecate("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
-        var other = createLocal.apply(null, arguments);
-        if (this.isValid() && other.isValid()) {
-          return other > this ? this : other;
-        } else {
-          return createInvalid();
+      ), prototypeMax = deprecate(
+        "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",
+        function() {
+          var other = createLocal.apply(null, arguments);
+          if (this.isValid() && other.isValid()) {
+            return other > this ? this : other;
+          } else {
+            return createInvalid();
+          }
         }
-      });
+      );
       function pickBy(fn, moments) {
         var res, i;
         if (moments.length === 1 && isArray(moments[0])) {
@@ -2215,7 +2340,12 @@ var require_moment = __commonJS({
           }
           if (offset2 !== input) {
             if (!keepLocalTime || this._changeInProgress) {
-              addSubtract(this, createDuration(input - offset2, "m"), 1, false);
+              addSubtract(
+                this,
+                createDuration(input - offset2, "m"),
+                1,
+                false
+              );
             } else if (!this._changeInProgress) {
               this._changeInProgress = true;
               hooks.updateOffset(this, true);
@@ -2338,7 +2468,10 @@ var require_moment = __commonJS({
         } else if (duration == null) {
           duration = {};
         } else if (typeof duration === "object" && ("from" in duration || "to" in duration)) {
-          diffRes = momentsDifference(createLocal(duration.from), createLocal(duration.to));
+          diffRes = momentsDifference(
+            createLocal(duration.from),
+            createLocal(duration.to)
+          );
           duration = {};
           duration.ms = diffRes.milliseconds;
           duration.M = diffRes.months;
@@ -2386,7 +2519,10 @@ var require_moment = __commonJS({
         return function(val, period) {
           var dur, tmp;
           if (period !== null && !isNaN(+period)) {
-            deprecateSimple(name, "moment()." + name + "(period, number) is deprecated. Please use moment()." + name + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.");
+            deprecateSimple(
+              name,
+              "moment()." + name + "(period, number) is deprecated. Please use moment()." + name + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+            );
             tmp = val;
             val = period;
             period = tmp;
@@ -2497,7 +2633,9 @@ var require_moment = __commonJS({
           }
         }
         var now2 = time || createLocal(), sod = cloneWithOffset(now2, this).startOf("day"), format2 = hooks.calendarFormat(this, sod) || "sameElse", output = formats && (isFunction(formats[format2]) ? formats[format2].call(this, now2) : formats[format2]);
-        return this.format(output || this.localeData().calendar(format2, this, createLocal(now2)));
+        return this.format(
+          output || this.localeData().calendar(format2, this, createLocal(now2))
+        );
       }
       function clone() {
         return new Moment(this);
@@ -2619,7 +2757,10 @@ var require_moment = __commonJS({
         }
         var utc = keepOffset !== true, m = utc ? this.clone().utc() : this;
         if (m.year() < 0 || m.year() > 9999) {
-          return formatMoment(m, utc ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ");
+          return formatMoment(
+            m,
+            utc ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"
+          );
         }
         if (isFunction(Date.prototype.toISOString)) {
           if (utc) {
@@ -2628,7 +2769,10 @@ var require_moment = __commonJS({
             return new Date(this.valueOf() + this.utcOffset() * 60 * 1e3).toISOString().replace("Z", formatMoment(m, "Z"));
           }
         }
-        return formatMoment(m, utc ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ");
+        return formatMoment(
+          m,
+          utc ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ"
+        );
       }
       function inspect() {
         if (!this.isValid()) {
@@ -2684,13 +2828,16 @@ var require_moment = __commonJS({
           return this;
         }
       }
-      var lang = deprecate("moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.", function(key) {
-        if (key === void 0) {
-          return this.localeData();
-        } else {
-          return this.locale(key);
+      var lang = deprecate(
+        "moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",
+        function(key) {
+          if (key === void 0) {
+            return this.localeData();
+          } else {
+            return this.locale(key);
+          }
         }
-      });
+      );
       function localeData() {
         return this._locale;
       }
@@ -2724,16 +2871,28 @@ var require_moment = __commonJS({
             time = startOfDate(this.year(), 0, 1);
             break;
           case "quarter":
-            time = startOfDate(this.year(), this.month() - this.month() % 3, 1);
+            time = startOfDate(
+              this.year(),
+              this.month() - this.month() % 3,
+              1
+            );
             break;
           case "month":
             time = startOfDate(this.year(), this.month(), 1);
             break;
           case "week":
-            time = startOfDate(this.year(), this.month(), this.date() - this.weekday());
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - this.weekday()
+            );
             break;
           case "isoWeek":
-            time = startOfDate(this.year(), this.month(), this.date() - (this.isoWeekday() - 1));
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - (this.isoWeekday() - 1)
+            );
             break;
           case "day":
           case "date":
@@ -2741,7 +2900,10 @@ var require_moment = __commonJS({
             break;
           case "hour":
             time = this._d.valueOf();
-            time -= mod$1(time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE), MS_PER_HOUR);
+            time -= mod$1(
+              time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+              MS_PER_HOUR
+            );
             break;
           case "minute":
             time = this._d.valueOf();
@@ -2768,16 +2930,28 @@ var require_moment = __commonJS({
             time = startOfDate(this.year() + 1, 0, 1) - 1;
             break;
           case "quarter":
-            time = startOfDate(this.year(), this.month() - this.month() % 3 + 3, 1) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month() - this.month() % 3 + 3,
+              1
+            ) - 1;
             break;
           case "month":
             time = startOfDate(this.year(), this.month() + 1, 1) - 1;
             break;
           case "week":
-            time = startOfDate(this.year(), this.month(), this.date() - this.weekday() + 7) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - this.weekday() + 7
+            ) - 1;
             break;
           case "isoWeek":
-            time = startOfDate(this.year(), this.month(), this.date() - (this.isoWeekday() - 1) + 7) - 1;
+            time = startOfDate(
+              this.year(),
+              this.month(),
+              this.date() - (this.isoWeekday() - 1) + 7
+            ) - 1;
             break;
           case "day":
           case "date":
@@ -2785,7 +2959,10 @@ var require_moment = __commonJS({
             break;
           case "hour":
             time = this._d.valueOf();
-            time += MS_PER_HOUR - mod$1(time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE), MS_PER_HOUR) - 1;
+            time += MS_PER_HOUR - mod$1(
+              time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+              MS_PER_HOUR
+            ) - 1;
             break;
           case "minute":
             time = this._d.valueOf();
@@ -2868,14 +3045,17 @@ var require_moment = __commonJS({
       addRegexToken("NNN", matchEraAbbr);
       addRegexToken("NNNN", matchEraName);
       addRegexToken("NNNNN", matchEraNarrow);
-      addParseToken(["N", "NN", "NNN", "NNNN", "NNNNN"], function(input, array, config, token2) {
-        var era = config._locale.erasParse(input, token2, config._strict);
-        if (era) {
-          getParsingFlags(config).era = era;
-        } else {
-          getParsingFlags(config).invalidEra = input;
+      addParseToken(
+        ["N", "NN", "NNN", "NNNN", "NNNNN"],
+        function(input, array, config, token2) {
+          var era = config._locale.erasParse(input, token2, config._strict);
+          if (era) {
+            getParsingFlags(config).era = era;
+          } else {
+            getParsingFlags(config).invalidEra = input;
+          }
         }
-      });
+      );
       addRegexToken("y", matchUnsigned);
       addRegexToken("yy", matchUnsigned);
       addRegexToken("yyy", matchUnsigned);
@@ -3047,7 +3227,10 @@ var require_moment = __commonJS({
         this._erasRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
         this._erasNameRegex = new RegExp("^(" + namePieces.join("|") + ")", "i");
         this._erasAbbrRegex = new RegExp("^(" + abbrPieces.join("|") + ")", "i");
-        this._erasNarrowRegex = new RegExp("^(" + narrowPieces.join("|") + ")", "i");
+        this._erasNarrowRegex = new RegExp(
+          "^(" + narrowPieces.join("|") + ")",
+          "i"
+        );
       }
       addFormatToken(0, ["gg", 2], 0, function() {
         return this.weekYear() % 100;
@@ -3074,17 +3257,34 @@ var require_moment = __commonJS({
       addRegexToken("gggg", match1to4, match4);
       addRegexToken("GGGGG", match1to6, match6);
       addRegexToken("ggggg", match1to6, match6);
-      addWeekParseToken(["gggg", "ggggg", "GGGG", "GGGGG"], function(input, week, config, token2) {
-        week[token2.substr(0, 2)] = toInt(input);
-      });
+      addWeekParseToken(
+        ["gggg", "ggggg", "GGGG", "GGGGG"],
+        function(input, week, config, token2) {
+          week[token2.substr(0, 2)] = toInt(input);
+        }
+      );
       addWeekParseToken(["gg", "GG"], function(input, week, config, token2) {
         week[token2] = hooks.parseTwoDigitYear(input);
       });
       function getSetWeekYear(input) {
-        return getSetWeekYearHelper.call(this, input, this.week(), this.weekday(), this.localeData()._week.dow, this.localeData()._week.doy);
+        return getSetWeekYearHelper.call(
+          this,
+          input,
+          this.week(),
+          this.weekday(),
+          this.localeData()._week.dow,
+          this.localeData()._week.doy
+        );
       }
       function getSetISOWeekYear(input) {
-        return getSetWeekYearHelper.call(this, input, this.isoWeek(), this.isoWeekday(), 1, 4);
+        return getSetWeekYearHelper.call(
+          this,
+          input,
+          this.isoWeek(),
+          this.isoWeekday(),
+          1,
+          4
+        );
       }
       function getISOWeeksInYear() {
         return weeksInYear(this.year(), 1, 4);
@@ -3151,7 +3351,9 @@ var require_moment = __commonJS({
         config._dayOfYear = toInt(input);
       });
       function getSetDayOfYear(input) {
-        var dayOfYear = Math.round((this.clone().startOf("day") - this.clone().startOf("year")) / 864e5) + 1;
+        var dayOfYear = Math.round(
+          (this.clone().startOf("day") - this.clone().startOf("year")) / 864e5
+        ) + 1;
         return input == null ? dayOfYear : this.add(input - dayOfYear, "d");
       }
       addFormatToken("m", ["mm", 2], 0, "minute");
@@ -3299,11 +3501,26 @@ var require_moment = __commonJS({
       proto.isUTC = isUtc;
       proto.zoneAbbr = getZoneAbbr;
       proto.zoneName = getZoneName;
-      proto.dates = deprecate("dates accessor is deprecated. Use date instead.", getSetDayOfMonth);
-      proto.months = deprecate("months accessor is deprecated. Use month instead", getSetMonth);
-      proto.years = deprecate("years accessor is deprecated. Use year instead", getSetYear);
-      proto.zone = deprecate("moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/", getSetZone);
-      proto.isDSTShifted = deprecate("isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information", isDaylightSavingTimeShifted);
+      proto.dates = deprecate(
+        "dates accessor is deprecated. Use date instead.",
+        getSetDayOfMonth
+      );
+      proto.months = deprecate(
+        "months accessor is deprecated. Use month instead",
+        getSetMonth
+      );
+      proto.years = deprecate(
+        "years accessor is deprecated. Use year instead",
+        getSetYear
+      );
+      proto.zone = deprecate(
+        "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",
+        getSetZone
+      );
+      proto.isDSTShifted = deprecate(
+        "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
+        isDaylightSavingTimeShifted
+      );
       function createUnix(input) {
         return createLocal(input * 1e3);
       }
@@ -3322,7 +3539,7 @@ var require_moment = __commonJS({
       proto$1.postformat = preParsePostFormat;
       proto$1.relativeTime = relativeTime;
       proto$1.pastFuture = pastFuture;
-      proto$1.set = set;
+      proto$1.set = set3;
       proto$1.eras = localeEras;
       proto$1.erasParse = localeErasParse;
       proto$1.erasConvertYear = localeErasConvertYear;
@@ -3431,8 +3648,14 @@ var require_moment = __commonJS({
           return number + output;
         }
       });
-      hooks.lang = deprecate("moment.lang is deprecated. Use moment.locale instead.", getSetGlobalLocale);
-      hooks.langData = deprecate("moment.langData is deprecated. Use moment.localeData instead.", getLocale);
+      hooks.lang = deprecate(
+        "moment.lang is deprecated. Use moment.locale instead.",
+        getSetGlobalLocale
+      );
+      hooks.langData = deprecate(
+        "moment.langData is deprecated. Use moment.localeData instead.",
+        getLocale
+      );
       var mathAbs = Math.abs;
       function abs() {
         var data = this._data;
@@ -3467,7 +3690,7 @@ var require_moment = __commonJS({
           return Math.ceil(number);
         }
       }
-      function bubble() {
+      function bubble2() {
         var milliseconds2 = this._milliseconds, days2 = this._days, months2 = this._months, data = this._data, seconds2, minutes2, hours2, years2, monthsFromDays;
         if (!(milliseconds2 >= 0 && days2 >= 0 && months2 >= 0 || milliseconds2 <= 0 && days2 <= 0 && months2 <= 0)) {
           milliseconds2 += absCeil(monthsToDays(months2) + days2) * 864e5;
@@ -3675,7 +3898,7 @@ var require_moment = __commonJS({
       proto$2.asQuarters = asQuarters;
       proto$2.asYears = asYears;
       proto$2.valueOf = valueOf$1;
-      proto$2._bubble = bubble;
+      proto$2._bubble = bubble2;
       proto$2.clone = clone$1;
       proto$2.get = get$2;
       proto$2.milliseconds = milliseconds;
@@ -3692,7 +3915,10 @@ var require_moment = __commonJS({
       proto$2.toJSON = toISOString$1;
       proto$2.locale = locale;
       proto$2.localeData = localeData;
-      proto$2.toIsoString = deprecate("toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)", toISOString$1);
+      proto$2.toIsoString = deprecate(
+        "toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",
+        toISOString$1
+      );
       proto$2.lang = lang;
       addFormatToken("X", 0, 0, "unix");
       addFormatToken("x", 0, 0, "valueOf");
@@ -3704,7 +3930,7 @@ var require_moment = __commonJS({
       addParseToken("x", function(input, array, config) {
         config._d = new Date(toInt(input));
       });
-      hooks.version = "2.29.3";
+      hooks.version = "2.29.4";
       setHookCallback(createLocal);
       hooks.fn = proto;
       hooks.min = min;
@@ -3750,14 +3976,17 @@ var require_moment = __commonJS({
 });
 
 // main.ts
-__export(exports, {
+var main_exports = {};
+__export(main_exports, {
+  PluginStore: () => PluginStore,
   default: () => NoteSharingPlugin
 });
-var import_obsidian4 = __toModule(require("obsidian"));
+module.exports = __toCommonJS(main_exports);
+var import_obsidian7 = require("obsidian");
 
 // src/NoteSharingService.ts
-var import_moment = __toModule(require_moment());
-var import_obsidian = __toModule(require("obsidian"));
+var import_moment = __toESM(require_moment());
+var import_obsidian = require("obsidian");
 
 // src/crypto/crypto.ts
 function generateRandomKey() {
@@ -3768,13 +3997,23 @@ function generateRandomKey() {
 }
 function _generateKey(seed) {
   return __async(this, null, function* () {
-    const keyMaterial = yield window.crypto.subtle.importKey("raw", seed, { name: "PBKDF2" }, false, ["deriveBits"]);
-    const masterKey = yield window.crypto.subtle.deriveBits({
-      name: "PBKDF2",
-      salt: new Uint8Array(16),
-      iterations: 1e5,
-      hash: "SHA-256"
-    }, keyMaterial, 256);
+    const keyMaterial = yield window.crypto.subtle.importKey(
+      "raw",
+      seed,
+      { name: "PBKDF2" },
+      false,
+      ["deriveBits"]
+    );
+    const masterKey = yield window.crypto.subtle.deriveBits(
+      {
+        name: "PBKDF2",
+        salt: new Uint8Array(16),
+        iterations: 1e5,
+        hash: "SHA-256"
+      },
+      keyMaterial,
+      256
+    );
     return new Uint8Array(masterKey);
   });
 }
@@ -3785,7 +4024,11 @@ function encryptString(md, secret) {
   return __async(this, null, function* () {
     const plaintext = new TextEncoder().encode(md);
     const iv = window.crypto.getRandomValues(new Uint8Array(16));
-    const buf_ciphertext = yield window.crypto.subtle.encrypt({ name: "AES-GCM", iv }, yield _getAesGcmKey(secret), plaintext);
+    const buf_ciphertext = yield window.crypto.subtle.encrypt(
+      { name: "AES-GCM", iv },
+      yield _getAesGcmKey(secret),
+      plaintext
+    );
     const ciphertext = arrayBufferToBase64(buf_ciphertext);
     return { ciphertext, iv: arrayBufferToBase64(iv) };
   });
@@ -3794,7 +4037,13 @@ function arrayBufferToBase64(buffer) {
   return window.btoa(String.fromCharCode(...new Uint8Array(buffer)));
 }
 function _getAesGcmKey(secret) {
-  return window.crypto.subtle.importKey("raw", secret, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+  return window.crypto.subtle.importKey(
+    "raw",
+    secret,
+    { name: "AES-GCM", length: 256 },
+    false,
+    ["encrypt", "decrypt"]
+  );
 }
 
 // src/crypto/encryption.ts
@@ -3828,6 +4077,19 @@ var NoteSharingService = class {
       return res;
     });
   }
+  deleteNote(noteId, secretToken) {
+    return __async(this, null, function* () {
+      yield (0, import_obsidian.requestUrl)({
+        url: `${this._url}/api/note/${noteId}`,
+        method: "DELETE",
+        contentType: "application/json",
+        body: JSON.stringify({
+          user_id: this._userId,
+          secret_token: secretToken
+        })
+      });
+    });
+  }
   postNote(ciphertext, iv) {
     return __async(this, null, function* () {
       const res = yield (0, import_obsidian.requestUrl)({
@@ -3847,12 +4109,16 @@ var NoteSharingService = class {
         returnValue.expire_time = (0, import_moment.default)(returnValue.expire_time);
         return returnValue;
       }
-      throw Error(`Error uploading encrypted note (${res.status}): ${res.text}`);
+      throw Error(
+        `Error uploading encrypted note (${res.status}): ${res.text}`
+      );
     });
   }
   sanitizeNote(mdText) {
     mdText = mdText.trim();
-    const match = mdText.match(/^(?:---\s*\n)(?:(?:.*?\n)*?)(?:---)((?:.|\n|\r)*)/);
+    const match = mdText.match(
+      /^(?:---\s*\n)(?:(?:.*?\n)*?)(?:---)((?:.|\n|\r)*)/
+    );
     if (match) {
       mdText = match[1].trim();
     }
@@ -4154,68 +4420,12 @@ var DEFAULT_SETTINGS = {
   anonymousUserId: generateId(),
   useFrontmatter: true,
   frontmatterDateFormat: "YYYY-MM-DD HH:mm:ss",
-  shareFilenameAsTitle: true
+  shareFilenameAsTitle: true,
+  useFsCache: true
 };
 
 // src/obsidian/SettingsTab.ts
-var import_obsidian2 = __toModule(require("obsidian"));
-var SettingsTab = class extends import_obsidian2.PluginSettingTab {
-  constructor(app2, plugin) {
-    super(app2, plugin);
-    this.plugin = plugin;
-    this.hideSelfHosted = !plugin.settings.selfHosted;
-  }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.createEl("h2", { text: "QuickShare" });
-    new import_obsidian2.Setting(containerEl).setName("Use noteshare.space").setDesc("Noteshare.space is the free and official service for sharing your notes with QuickShare. Uncheck if you want to self-host.").addToggle((text2) => text2.setValue(!this.plugin.settings.selfHosted).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.selfHosted = !value;
-      this.showSelfhostedSettings(this.plugin.settings.selfHosted);
-      if (this.plugin.settings.selfHosted === false) {
-        this.plugin.settings.serverUrl = DEFAULT_SETTINGS.serverUrl;
-        this.selfHostedUrl.setValue(this.plugin.settings.serverUrl);
-      }
-      yield this.plugin.saveSettings();
-    })));
-    this.selfHostSettings = containerEl.createDiv();
-    this.selfHostSettings.createEl("h2", { text: "Self-hosting options" });
-    new import_obsidian2.Setting(this.selfHostSettings).setName("Server URL").setDesc("Server URL hosting the encrypted notes. For more information about self-hosting, see https://github.com/mcndt/noteshare.space#deployment").addText((text2) => {
-      this.selfHostedUrl = text2;
-      text2.setPlaceholder("enter URL").setValue(this.plugin.settings.serverUrl).onChange((value) => __async(this, null, function* () {
-        this.plugin.settings.serverUrl = value;
-        yield this.plugin.saveSettings();
-      }));
-    });
-    this.showSelfhostedSettings(this.plugin.settings.selfHosted);
-    containerEl.createEl("h2", { text: "Sharing options" });
-    new import_obsidian2.Setting(containerEl).setName("Share filename as note title").setDesc(`Use the filename as the title of the note (like "Show inline title" in Obsidian's appearance settings). If unchecked, the title will be the first heading in the note.`).addToggle((text2) => text2.setValue(this.plugin.settings.shareFilenameAsTitle).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.shareFilenameAsTitle = value;
-      yield this.plugin.saveSettings();
-    })));
-    containerEl.createEl("h2", { text: "Frontmatter options" });
-    new import_obsidian2.Setting(containerEl).setName("Use frontmatter").setDesc("Use frontmatter to store the QuickShare URL and share date after sharing.").addToggle((text2) => text2.setValue(this.plugin.settings.useFrontmatter).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.useFrontmatter = value;
-      yield this.plugin.saveSettings();
-      this.showFrontmatterSettings(this.plugin.settings.useFrontmatter);
-    })));
-    this.frontmatterSettings = containerEl.createDiv();
-    new import_obsidian2.Setting(this.frontmatterSettings).setName("Frontmatter date format").setDesc("See https://momentjs.com/docs/#/displaying/format/ for formatting options.").addMomentFormat((text2) => text2.setDefaultFormat(DEFAULT_SETTINGS.frontmatterDateFormat).setValue(this.plugin.settings.frontmatterDateFormat).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.frontmatterDateFormat = value;
-      yield this.plugin.saveSettings();
-    })));
-    this.showFrontmatterSettings(this.plugin.settings.useFrontmatter);
-  }
-  showSelfhostedSettings(show) {
-    this.selfHostSettings.hidden = !show;
-  }
-  showFrontmatterSettings(show) {
-    this.frontmatterSettings.hidden = !show;
-  }
-};
-
-// src/ui/SharedNoteSuccessModal.ts
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian2 = require("obsidian");
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -4224,7 +4434,7 @@ function run(fn) {
   return fn();
 }
 function blank_object() {
-  return Object.create(null);
+  return /* @__PURE__ */ Object.create(null);
 }
 function run_all(fns) {
   fns.forEach(run);
@@ -4238,7 +4448,19 @@ function safe_not_equal(a, b) {
 function is_empty(obj) {
   return Object.keys(obj).length === 0;
 }
-var tasks = new Set();
+function subscribe(store, ...callbacks) {
+  if (store == null) {
+    return noop;
+  }
+  const unsub = store.subscribe(...callbacks);
+  return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+}
+function component_subscribe(component, store, callback) {
+  component.$$.on_destroy.push(subscribe(store, callback));
+}
+function action_destroyer(action_result) {
+  return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
+}
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -4276,6 +4498,12 @@ function insert(target, node, anchor) {
 function detach(node) {
   node.parentNode.removeChild(node);
 }
+function destroy_each(iterations, detaching) {
+  for (let i = 0; i < iterations.length; i += 1) {
+    if (iterations[i])
+      iterations[i].d(detaching);
+  }
+}
 function element(name) {
   return document.createElement(name);
 }
@@ -4306,10 +4534,26 @@ function set_data(text2, data) {
 function set_input_value(input, value) {
   input.value = value == null ? "" : value;
 }
-var managed_styles = new Map();
+function toggle_class(element2, name, toggle) {
+  element2.classList[toggle ? "add" : "remove"](name);
+}
 var current_component;
 function set_current_component(component) {
   current_component = component;
+}
+function get_current_component() {
+  if (!current_component)
+    throw new Error("Function called outside component initialization");
+  return current_component;
+}
+function onMount(fn) {
+  get_current_component().$$.on_mount.push(fn);
+}
+function bubble(component, event) {
+  const callbacks = component.$$.callbacks[event.type];
+  if (callbacks) {
+    callbacks.slice().forEach((fn) => fn.call(this, event));
+  }
 }
 var dirty_components = [];
 var binding_callbacks = [];
@@ -4326,7 +4570,7 @@ function schedule_update() {
 function add_render_callback(fn) {
   render_callbacks.push(fn);
 }
-var seen_callbacks = new Set();
+var seen_callbacks = /* @__PURE__ */ new Set();
 var flushidx = 0;
 function flush() {
   const saved_component = current_component;
@@ -4368,40 +4612,49 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
-var outroing = new Set();
+var outroing = /* @__PURE__ */ new Set();
+var outros;
+function group_outros() {
+  outros = {
+    r: 0,
+    c: [],
+    p: outros
+  };
+}
+function check_outros() {
+  if (!outros.r) {
+    run_all(outros.c);
+  }
+  outros = outros.p;
+}
 function transition_in(block, local) {
   if (block && block.i) {
     outroing.delete(block);
     block.i(local);
   }
 }
+function transition_out(block, local, detach2, callback) {
+  if (block && block.o) {
+    if (outroing.has(block))
+      return;
+    outroing.add(block);
+    outros.c.push(() => {
+      outroing.delete(block);
+      if (callback) {
+        if (detach2)
+          block.d(1);
+        callback();
+      }
+    });
+    block.o(local);
+  } else if (callback) {
+    callback();
+  }
+}
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-var boolean_attributes = new Set([
-  "allowfullscreen",
-  "allowpaymentrequest",
-  "async",
-  "autofocus",
-  "autoplay",
-  "checked",
-  "controls",
-  "default",
-  "defer",
-  "disabled",
-  "formnovalidate",
-  "hidden",
-  "ismap",
-  "loop",
-  "multiple",
-  "muted",
-  "nomodule",
-  "novalidate",
-  "open",
-  "playsinline",
-  "readonly",
-  "required",
-  "reversed",
-  "selected"
-]);
+function create_component(block) {
+  block && block.c();
+}
 function mount_component(component, target, anchor, customElement) {
   const { fragment, on_mount, on_destroy, after_update } = component.$$;
   fragment && fragment.m(target, anchor);
@@ -4435,7 +4688,7 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance2, create_fragment2, not_equal, props, append_styles2, dirty = [-1]) {
+function init(component, options, instance4, create_fragment4, not_equal, props, append_styles2, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
@@ -4458,7 +4711,7 @@ function init(component, options, instance2, create_fragment2, not_equal, props,
   };
   append_styles2 && append_styles2($$.root);
   let ready = false;
-  $$.ctx = instance2 ? instance2(component, options.props || {}, (i, ret, ...rest) => {
+  $$.ctx = instance4 ? instance4(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i])
@@ -4471,7 +4724,7 @@ function init(component, options, instance2, create_fragment2, not_equal, props,
   $$.update();
   ready = true;
   run_all($$.before_update);
-  $$.fragment = create_fragment2 ? create_fragment2($$.ctx) : false;
+  $$.fragment = create_fragment4 ? create_fragment4($$.ctx) : false;
   if (options.target) {
     if (options.hydrate) {
       start_hydrating();
@@ -4554,8 +4807,377 @@ var SvelteComponent = class {
   }
 };
 
+// node_modules/svelte/store/index.mjs
+var subscriber_queue = [];
+function readable(value, start) {
+  return {
+    subscribe: writable(value, start).subscribe
+  };
+}
+function writable(value, start = noop) {
+  let stop;
+  const subscribers = /* @__PURE__ */ new Set();
+  function set3(new_value) {
+    if (safe_not_equal(value, new_value)) {
+      value = new_value;
+      if (stop) {
+        const run_queue = !subscriber_queue.length;
+        for (const subscriber of subscribers) {
+          subscriber[1]();
+          subscriber_queue.push(subscriber, value);
+        }
+        if (run_queue) {
+          for (let i = 0; i < subscriber_queue.length; i += 2) {
+            subscriber_queue[i][0](subscriber_queue[i + 1]);
+          }
+          subscriber_queue.length = 0;
+        }
+      }
+    }
+  }
+  function update2(fn) {
+    set3(fn(value));
+  }
+  function subscribe5(run2, invalidate = noop) {
+    const subscriber = [run2, invalidate];
+    subscribers.add(subscriber);
+    if (subscribers.size === 1) {
+      stop = start(set3) || noop;
+    }
+    run2(value);
+    return () => {
+      subscribers.delete(subscriber);
+      if (subscribers.size === 0) {
+        stop();
+        stop = null;
+      }
+    };
+  }
+  return { set: set3, update: update2, subscribe: subscribe5 };
+}
+function derived(stores, fn, initial_value) {
+  const single = !Array.isArray(stores);
+  const stores_array = single ? [stores] : stores;
+  const auto = fn.length < 2;
+  return readable(initial_value, (set3) => {
+    let inited = false;
+    const values = [];
+    let pending = 0;
+    let cleanup = noop;
+    const sync = () => {
+      if (pending) {
+        return;
+      }
+      cleanup();
+      const result = fn(single ? values[0] : values, set3);
+      if (auto) {
+        set3(result);
+      } else {
+        cleanup = is_function(result) ? result : noop;
+      }
+    };
+    const unsubscribers = stores_array.map((store, i) => subscribe(store, (value) => {
+      values[i] = value;
+      pending &= ~(1 << i);
+      if (inited) {
+        sync();
+      }
+    }, () => {
+      pending |= 1 << i;
+    }));
+    inited = true;
+    sync();
+    return function stop() {
+      run_all(unsubscribers);
+      cleanup();
+    };
+  });
+}
+
+// src/lib/stores/CacheStore.ts
+var { subscribe: subscribe2, set } = writable([]);
+function updateReactiveCache(data) {
+  data.sort((a, b) => {
+    var _a, _b;
+    const aDate = new Date((_a = a.updated_datetime) != null ? _a : a.shared_datetime);
+    const bDate = new Date((_b = b.updated_datetime) != null ? _b : b.shared_datetime);
+    return bDate.getTime() - aDate.getTime();
+  });
+  set(data);
+}
+var CacheStore_default = { subscribe: subscribe2 };
+
+// src/lib/cache/AbstractCache.ts
+var AbstractCache = class {
+  get(fileId) {
+    const cache = this._getCache();
+    return cache[fileId];
+  }
+  set(fileId, data) {
+    return __async(this, null, function* () {
+      const cache = yield this._getCache();
+      if (typeof data === "function") {
+        if (cache[fileId] === void 0) {
+          throw new Error("File not found in cache.");
+        }
+        cache[fileId] = data(cache[fileId]);
+      } else {
+        cache[fileId] = data;
+      }
+      this.writeCache(cache);
+    });
+  }
+  has(fileId) {
+    const cache = this._getCache();
+    return cache[fileId] !== void 0;
+  }
+  rename(oldFileId, newFileId, newBasename) {
+    return __async(this, null, function* () {
+      const cache = this._getCache();
+      cache[newFileId] = cache[oldFileId];
+      delete cache[oldFileId];
+      if (newBasename) {
+        cache[newFileId].basename = newBasename;
+      }
+      return this.writeCache(cache);
+    });
+  }
+  list() {
+    return __async(this, null, function* () {
+      const cache = this._getCache();
+      return Object.entries(cache).map(([fileId, data]) => __spreadValues({
+        fileId
+      }, data));
+    });
+  }
+  copy(cache) {
+    return __async(this, null, function* () {
+      const data = yield cache.$getCache();
+      this.writeCache(data);
+    });
+  }
+  $getCache() {
+    return __async(this, null, function* () {
+      return this._getCache();
+    });
+  }
+  writeCache(object) {
+    return __async(this, null, function* () {
+      yield this._writeCache(object);
+      updateReactiveCache(yield this.list());
+    });
+  }
+  init() {
+    return __async(this, null, function* () {
+      const cache = yield this._init();
+      updateReactiveCache(yield this.list());
+      return cache;
+    });
+  }
+};
+
+// src/lib/cache/FsCache.ts
+var FsCache = class extends AbstractCache {
+  constructor(app2) {
+    super();
+    this._app = app2;
+  }
+  _init() {
+    return __async(this, null, function* () {
+      yield this._fetchCache();
+      return this;
+    });
+  }
+  _getCache() {
+    var _a;
+    return (_a = this._cache) != null ? _a : {};
+  }
+  _writeCache(object) {
+    return __async(this, null, function* () {
+      yield this._app.vault.adapter.write(
+        this._cachePath,
+        JSON.stringify(object, null, 2)
+      );
+      this._cache = object;
+    });
+  }
+  _fetchCache() {
+    return __async(this, null, function* () {
+      try {
+        const jsonString = yield app.vault.adapter.read(this._cachePath);
+        this._cache = JSON.parse(jsonString);
+      } catch (e) {
+        this._cache = {};
+      }
+    });
+  }
+  $deleteAllData() {
+    return __async(this, null, function* () {
+      yield this._app.vault.adapter.remove(this._cachePath);
+      this._cache = {};
+    });
+  }
+  get _cachePath() {
+    return `${this._app.vault.configDir}/quickshare.json`;
+  }
+};
+
+// src/lib/cache/LocalStorageCache.ts
+var LocalStorageCache = class extends AbstractCache {
+  constructor(app2) {
+    super();
+    this._app = app2;
+  }
+  _init() {
+    return __async(this, null, function* () {
+      yield this._fetchCache();
+      return this;
+    });
+  }
+  _getCache() {
+    var _a;
+    return (_a = this._cache) != null ? _a : {};
+  }
+  _writeCache(object) {
+    return __async(this, null, function* () {
+      window.localStorage.setItem(
+        this._cacheKey,
+        JSON.stringify(object, null, 2)
+      );
+      this._cache = object;
+    });
+  }
+  _fetchCache() {
+    return __async(this, null, function* () {
+      try {
+        const jsonString = window.localStorage.getItem(this._cacheKey);
+        if (jsonString) {
+          this._cache = JSON.parse(jsonString);
+        } else {
+          this._cache = {};
+        }
+      } catch (e) {
+        this._cache = {};
+      }
+    });
+  }
+  $deleteAllData() {
+    return __async(this, null, function* () {
+      window.localStorage.removeItem(this._cacheKey);
+      this._cache = {};
+    });
+  }
+  get _cacheKey() {
+    return `${this._app.appId}-quickshare`;
+  }
+};
+
+// src/obsidian/SettingsTab.ts
+var SettingsTab = class extends import_obsidian2.PluginSettingTab {
+  constructor(app2, plugin) {
+    super(app2, plugin);
+    this.plugin = plugin;
+    this.hideSelfHosted = !plugin.settings.selfHosted;
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    containerEl.createEl("h2", { text: "QuickShare" });
+    new import_obsidian2.Setting(containerEl).setName("Use noteshare.space").setDesc(
+      "Noteshare.space is the free and official service for sharing your notes with QuickShare. Uncheck if you want to self-host."
+    ).addToggle(
+      (text2) => text2.setValue(!this.plugin.settings.selfHosted).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.selfHosted = !value;
+        this.showSelfhostedSettings(
+          this.plugin.settings.selfHosted
+        );
+        if (this.plugin.settings.selfHosted === false) {
+          this.plugin.settings.serverUrl = DEFAULT_SETTINGS.serverUrl;
+          this.selfHostedUrl.setValue(
+            this.plugin.settings.serverUrl
+          );
+        }
+        yield this.plugin.saveSettings();
+      }))
+    );
+    new import_obsidian2.Setting(containerEl).setName("Sync QuickShare data across devices").setDesc(
+      `By default, QuickShare keeps the access keys for your shared
+				notes in a hidden file in your vault. This enables updating or deleting of QuickShare notes from multiple
+				devices when using Obsidian Sync. If your vault folder is shared or public, it is recommended that you turn this setting off.`
+    ).addToggle(
+      (text2) => text2.setValue(this.plugin.settings.useFsCache).onChange((value) => __async(this, null, function* () {
+        try {
+          const newCache = value ? yield new FsCache(this.app).init() : yield new LocalStorageCache(this.app).init();
+          yield newCache.copy(this.plugin.$cache);
+          yield this.plugin.$cache.$deleteAllData();
+          this.plugin.$cache = newCache;
+        } catch (e) {
+          new import_obsidian2.Notice(
+            "Could not change cache type. Please report a bug."
+          );
+          return;
+        }
+        this.plugin.settings.useFsCache = value;
+        yield this.plugin.saveSettings();
+      }))
+    );
+    this.selfHostSettings = containerEl.createDiv();
+    this.selfHostSettings.createEl("h2", { text: "Self-hosting options" });
+    new import_obsidian2.Setting(this.selfHostSettings).setName("Server URL").setDesc(
+      "Server URL hosting the encrypted notes. For more information about self-hosting, see https://github.com/mcndt/noteshare.space#deployment"
+    ).addText((text2) => {
+      this.selfHostedUrl = text2;
+      text2.setPlaceholder("enter URL").setValue(this.plugin.settings.serverUrl).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.serverUrl = value;
+        yield this.plugin.saveSettings();
+      }));
+    });
+    this.showSelfhostedSettings(this.plugin.settings.selfHosted);
+    containerEl.createEl("h2", { text: "Sharing options" });
+    new import_obsidian2.Setting(containerEl).setName("Share filename as note title").setDesc(
+      `Use the filename as the title of the note (like "Show inline title" in Obsidian's appearance settings). If unchecked, the title will be the first heading in the note.`
+    ).addToggle(
+      (text2) => text2.setValue(this.plugin.settings.shareFilenameAsTitle).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.shareFilenameAsTitle = value;
+        yield this.plugin.saveSettings();
+      }))
+    );
+    containerEl.createEl("h2", { text: "Frontmatter options" });
+    new import_obsidian2.Setting(containerEl).setName("Use frontmatter").setDesc(
+      "Use frontmatter to store the QuickShare URL and share date after sharing."
+    ).addToggle(
+      (text2) => text2.setValue(this.plugin.settings.useFrontmatter).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.useFrontmatter = value;
+        yield this.plugin.saveSettings();
+        this.showFrontmatterSettings(
+          this.plugin.settings.useFrontmatter
+        );
+      }))
+    );
+    this.frontmatterSettings = containerEl.createDiv();
+    new import_obsidian2.Setting(this.frontmatterSettings).setName("Frontmatter date format").setDesc(
+      "See https://momentjs.com/docs/#/displaying/format/ for formatting options."
+    ).addMomentFormat(
+      (text2) => text2.setDefaultFormat(DEFAULT_SETTINGS.frontmatterDateFormat).setValue(this.plugin.settings.frontmatterDateFormat).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.frontmatterDateFormat = value;
+        yield this.plugin.saveSettings();
+      }))
+    );
+    this.showFrontmatterSettings(this.plugin.settings.useFrontmatter);
+  }
+  showSelfhostedSettings(show) {
+    this.selfHostSettings.hidden = !show;
+  }
+  showFrontmatterSettings(show) {
+    this.frontmatterSettings.hidden = !show;
+  }
+};
+
+// src/ui/SharedNoteSuccessModal.ts
+var import_obsidian3 = require("obsidian");
+
 // src/ui/SharedNoteSuccessComponent.svelte
-var import_moment2 = __toModule(require_moment());
+var import_moment2 = __toESM(require_moment());
 function add_css(target) {
   append_styles(target, "svelte-1ihru9b", ".share-plugin-modal-container.svelte-1ihru9b{max-width:560px}#copytext.svelte-1ihru9b{width:100%}#url.svelte-1ihru9b{width:100%;display:flex;gap:0.5em}#url-input.svelte-1ihru9b{flex-grow:1;text-decoration-line:underline;cursor:pointer !important}.url-button.svelte-1ihru9b{margin:0px;width:5em}#subtext.svelte-1ihru9b{margin:0.5em 1px;color:var(--text-muted);font-size:0.9em}");
 }
@@ -4667,11 +5289,14 @@ function instance($$self, $$props, $$invalidate) {
     clearTimeout(buttonTextTimeout);
     navigator.clipboard.writeText(url);
     $$invalidate(2, buttonText = "Copied");
-    buttonTextTimeout = setTimeout(() => {
-      $$invalidate(2, buttonText = "Copy");
-    }, 1500);
+    buttonTextTimeout = setTimeout(
+      () => {
+        $$invalidate(2, buttonText = "Copy");
+      },
+      1500
+    );
   }
-  function onOpen() {
+  function onOpen2() {
     window.open(url, "_blank");
   }
   function input_input_handler() {
@@ -4684,7 +5309,7 @@ function instance($$self, $$props, $$invalidate) {
     if ("expireTime" in $$props2)
       $$invalidate(1, expireTime = $$props2.expireTime);
   };
-  return [url, expireTime, buttonText, onCopy, onOpen, input_input_handler];
+  return [url, expireTime, buttonText, onCopy, onOpen2, input_input_handler];
 }
 var SharedNoteSuccessComponent = class extends SvelteComponent {
   constructor(options) {
@@ -4738,11 +5363,17 @@ function _setFrontmatterKey(file, key, value, content) {
     return;
   }
   if (_getFrontmatterKey(file, key, app) !== void 0) {
-    content = content.replace(new RegExp(`^(${keyTypetoFrontmatterKey[key]}):\\s*(.*)$`, "m"), `${keyTypetoFrontmatterKey[key]}: ${value}`);
+    content = content.replace(
+      new RegExp(`^(${keyTypetoFrontmatterKey[key]}):\\s*(.*)$`, "m"),
+      `${keyTypetoFrontmatterKey[key]}: ${value}`
+    );
   } else {
     if (content.match(/^---/)) {
-      content = content.replace(/^---/, `---
-${keyTypetoFrontmatterKey[key]}: ${value}`);
+      content = content.replace(
+        /^---/,
+        `---
+${keyTypetoFrontmatterKey[key]}: ${value}`
+      );
     } else {
       content = `---
 ${keyTypetoFrontmatterKey[key]}: ${value}
@@ -4757,10 +5388,15 @@ function _setFrontmatterKeys(file, records, app2) {
     let content = yield app2.vault.read(file);
     for (const [key, value] of Object.entries(records)) {
       if (_getFrontmatterKey(file, key, app2) !== value) {
-        content = _setFrontmatterKey(file, key, value, content);
+        content = _setFrontmatterKey(
+          file,
+          key,
+          value,
+          content
+        );
       }
     }
-    app2.vault.modify(file, content);
+    yield app2.vault.modify(file, content);
   });
 }
 function useFrontmatterHelper(app2) {
@@ -4773,23 +5409,1015 @@ function useFrontmatterHelper(app2) {
 }
 
 // main.ts
-var import_moment3 = __toModule(require_moment());
-var NoteSharingPlugin = class extends import_obsidian4.Plugin {
+var import_moment4 = __toESM(require_moment());
+
+// src/ui/QuickShareSideView.ts
+var import_obsidian6 = require("obsidian");
+
+// src/ui/QuickShareSideView.svelte
+var import_moment3 = __toESM(require_moment());
+var import_obsidian5 = require("obsidian");
+
+// src/lib/obsidian-svelte/useIcon.ts
+var import_obsidian4 = require("obsidian");
+function useIcon(node, name) {
+  (0, import_obsidian4.setIcon)(node, name);
+  return {
+    update(name2) {
+      (0, import_obsidian4.setIcon)(node, name2);
+    }
+  };
+}
+
+// src/lib/obsidian-svelte/IconButton.svelte
+function add_css2(target) {
+  append_styles(target, "svelte-r9r5oc", ".nopadding.svelte-r9r5oc{padding:0}.icon-xs.svelte-r9r5oc{--icon-size:var(--icon-xs);--icon-stroke:var(--icon-xs-stroke-width)}.icon-sm.svelte-r9r5oc{--icon-size:var(--icon-s);--icon-stroke:var(--icon-s-stroke-width)}.icon-md.svelte-r9r5oc{--icon-size:var(--icon-m);--icon-stroke:var(--icon-m-stroke-width)}.icon-lg.svelte-r9r5oc{--icon-size:var(--icon-l);--icon-stroke:var(--icon-l-stroke-width)}");
+}
+function create_fragment2(ctx) {
+  let div;
+  let useIcon_action;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "class", "clickable-icon svelte-r9r5oc");
+      attr(div, "aria-label", ctx[3]);
+      attr(div, "disabled", ctx[5]);
+      toggle_class(div, "nopadding", ctx[4]);
+      toggle_class(div, "is-active", ctx[2]);
+      toggle_class(div, "icon-xs", ctx[1] === "xs");
+      toggle_class(div, "icon-sm", ctx[1] === "sm");
+      toggle_class(div, "icon-md", ctx[1] === "md");
+      toggle_class(div, "icon-lg", ctx[1] === "lg");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      if (!mounted) {
+        dispose = [
+          action_destroyer(useIcon_action = useIcon.call(null, div, ctx[0])),
+          listen(div, "click", ctx[6]),
+          listen(div, "keypress", ctx[7])
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & 8) {
+        attr(div, "aria-label", ctx2[3]);
+      }
+      if (dirty & 32) {
+        attr(div, "disabled", ctx2[5]);
+      }
+      if (useIcon_action && is_function(useIcon_action.update) && dirty & 1)
+        useIcon_action.update.call(null, ctx2[0]);
+      if (dirty & 16) {
+        toggle_class(div, "nopadding", ctx2[4]);
+      }
+      if (dirty & 4) {
+        toggle_class(div, "is-active", ctx2[2]);
+      }
+      if (dirty & 2) {
+        toggle_class(div, "icon-xs", ctx2[1] === "xs");
+      }
+      if (dirty & 2) {
+        toggle_class(div, "icon-sm", ctx2[1] === "sm");
+      }
+      if (dirty & 2) {
+        toggle_class(div, "icon-md", ctx2[1] === "md");
+      }
+      if (dirty & 2) {
+        toggle_class(div, "icon-lg", ctx2[1] === "lg");
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function instance2($$self, $$props, $$invalidate) {
+  let { icon } = $$props;
+  let { size = "md" } = $$props;
+  let { active = false } = $$props;
+  let { tooltip = "" } = $$props;
+  let { nopadding = false } = $$props;
+  let { disabled = false } = $$props;
+  function click_handler(event) {
+    bubble.call(this, $$self, event);
+  }
+  function keypress_handler(event) {
+    bubble.call(this, $$self, event);
+  }
+  $$self.$$set = ($$props2) => {
+    if ("icon" in $$props2)
+      $$invalidate(0, icon = $$props2.icon);
+    if ("size" in $$props2)
+      $$invalidate(1, size = $$props2.size);
+    if ("active" in $$props2)
+      $$invalidate(2, active = $$props2.active);
+    if ("tooltip" in $$props2)
+      $$invalidate(3, tooltip = $$props2.tooltip);
+    if ("nopadding" in $$props2)
+      $$invalidate(4, nopadding = $$props2.nopadding);
+    if ("disabled" in $$props2)
+      $$invalidate(5, disabled = $$props2.disabled);
+  };
+  return [
+    icon,
+    size,
+    active,
+    tooltip,
+    nopadding,
+    disabled,
+    click_handler,
+    keypress_handler
+  ];
+}
+var IconButton = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(
+      this,
+      options,
+      instance2,
+      create_fragment2,
+      safe_not_equal,
+      {
+        icon: 0,
+        size: 1,
+        active: 2,
+        tooltip: 3,
+        nopadding: 4,
+        disabled: 5
+      },
+      add_css2
+    );
+  }
+};
+var IconButton_default = IconButton;
+
+// src/lib/stores/ActiveMdFile.ts
+var { subscribe: subscribe3, set: set2 } = writable(null);
+function setActiveMdFile(file) {
+  set2(file);
+}
+var ActiveMdFile_default = { subscribe: subscribe3 };
+
+// src/lib/stores/ActiveCacheFile.ts
+var ActiveCacheFile = derived(
+  [ActiveMdFile_default, CacheStore_default],
+  ([$file, $cache]) => {
+    if (!$file)
+      return null;
+    return {
+      file: $file,
+      cache: $cache.find((o) => o.fileId === $file.path)
+    };
+  }
+);
+var ActiveCacheFile_default = ActiveCacheFile;
+
+// src/ui/QuickShareSideView.svelte
+function add_css3(target) {
+  append_styles(target, "svelte-179mnil", "#current-file.svelte-179mnil.svelte-179mnil{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:4px 8px;column-gap:8px;font-size:var(--nav-item-size)}#current-file.svelte-179mnil .content-left.svelte-179mnil{flex:1;min-width:0}#current-file.svelte-179mnil .share-info.svelte-179mnil{display:flex;flex-direction:column}#current-file.svelte-179mnil .share-info--not-shared.svelte-179mnil{color:var(--text-faint)}#current-file.svelte-179mnil .share-info .share-info-sub.svelte-179mnil{color:var(--text-faint);font-size:85%;word-break:break-all;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:top}.divider.svelte-179mnil.svelte-179mnil{border-width:1px;margin:12px 0px 24px}#history.svelte-179mnil.svelte-179mnil{font-weight:var(--nav-item-weight);font-size:var(--nav-item-size)}#history.svelte-179mnil .history-header.svelte-179mnil{color:var(--text-normal);padding:4px 8px;font-weight:var(--font-medium)}#history.svelte-179mnil .history-list.svelte-179mnil{padding:4px 1px 16px}#history.svelte-179mnil .history-list .history-item.svelte-179mnil{padding:4px 8px;border-radius:var(--radius-s);color:var(--nav-item-color)}#history.svelte-179mnil .history-list .history-item .item-row.svelte-179mnil{display:flex;justify-content:space-between;align-items:flex-start}#history.svelte-179mnil .history-list .history-item .item-row .item-description.svelte-179mnil{flex:1}#history.svelte-179mnil .history-list .history-item .item-name.svelte-179mnil{line-height:var(--line-height-tight)}#history.svelte-179mnil .history-list .history-item .item-sub.svelte-179mnil{font-size:85%;color:var(--text-faint)}#history.svelte-179mnil .history-list .history-item .item-deleted-vault.svelte-179mnil{font-size:85%;color:var(--text-error);margin-top:4px}#history.svelte-179mnil .history-list .history-item.svelte-179mnil:hover{background-color:var(--nav-item-background-hover);font-weight:var(--nav-item-weight-hover);color:var(--nav-item-color-hover)}#history.svelte-179mnil .history-list .history-item--expired .item-name.svelte-179mnil{color:var(--text-faint)}#history.svelte-179mnil .history-list .history-item--deleted-server .item-name.svelte-179mnil{color:var(--text-faint)}#history.svelte-179mnil .history-list .history-item--deleted-vault .item-name.svelte-179mnil{color:var(--text-error)}.item-actions.svelte-179mnil.svelte-179mnil{margin-left:4px;display:flex;align-items:center;column-gap:2px}");
+}
+function get_each_context(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[19] = list[i];
+  return child_ctx;
+}
+function create_if_block_2(ctx) {
+  var _a, _b, _c, _d;
+  let div4;
+  let div2;
+  let div1;
+  let div0;
+  let t0_value = ctx[7](ctx[0] && ((_a = ctx[2]) == null ? void 0 : _a.cache), { long: true }) + "";
+  let t0;
+  let t1;
+  let show_if_1 = ctx[6]((_b = ctx[2]) == null ? void 0 : _b.cache) && ((_d = (_c = ctx[2]) == null ? void 0 : _c.cache) == null ? void 0 : _d.view_url);
+  let div1_class_value;
+  let t2;
+  let div3;
+  let show_if;
+  let current_block_type_index;
+  let if_block1;
+  let t3;
+  let hr;
+  let current;
+  let if_block0 = show_if_1 && create_if_block_4(ctx);
+  const if_block_creators = [create_if_block_3, create_else_block];
+  const if_blocks = [];
+  function select_block_type(ctx2, dirty) {
+    var _a2, _b2;
+    if (dirty & 4)
+      show_if = null;
+    if (show_if == null)
+      show_if = !!(!((_a2 = ctx2[2]) == null ? void 0 : _a2.cache) || !ctx2[6]((_b2 = ctx2[2]) == null ? void 0 : _b2.cache));
+    if (show_if)
+      return 0;
+    return 1;
+  }
+  current_block_type_index = select_block_type(ctx, -1);
+  if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  return {
+    c() {
+      var _a2;
+      div4 = element("div");
+      div2 = element("div");
+      div1 = element("div");
+      div0 = element("div");
+      t0 = text(t0_value);
+      t1 = space();
+      if (if_block0)
+        if_block0.c();
+      t2 = space();
+      div3 = element("div");
+      if_block1.c();
+      t3 = space();
+      hr = element("hr");
+      attr(div0, "class", "share-info-top");
+      attr(div1, "class", div1_class_value = "share-info " + (!ctx[6]((_a2 = ctx[2]) == null ? void 0 : _a2.cache) && "share-info--not-shared") + " svelte-179mnil");
+      attr(div2, "class", "content-left svelte-179mnil");
+      attr(div3, "class", "content-right");
+      attr(div4, "id", "current-file");
+      attr(div4, "class", "svelte-179mnil");
+      attr(hr, "class", "divider svelte-179mnil");
+    },
+    m(target, anchor) {
+      insert(target, div4, anchor);
+      append(div4, div2);
+      append(div2, div1);
+      append(div1, div0);
+      append(div0, t0);
+      append(div1, t1);
+      if (if_block0)
+        if_block0.m(div1, null);
+      append(div4, t2);
+      append(div4, div3);
+      if_blocks[current_block_type_index].m(div3, null);
+      insert(target, t3, anchor);
+      insert(target, hr, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      var _a2, _b2, _c2, _d2, _e;
+      if ((!current || dirty & 5) && t0_value !== (t0_value = ctx2[7](ctx2[0] && ((_a2 = ctx2[2]) == null ? void 0 : _a2.cache), { long: true }) + ""))
+        set_data(t0, t0_value);
+      if (dirty & 4)
+        show_if_1 = ctx2[6]((_b2 = ctx2[2]) == null ? void 0 : _b2.cache) && ((_d2 = (_c2 = ctx2[2]) == null ? void 0 : _c2.cache) == null ? void 0 : _d2.view_url);
+      if (show_if_1) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+        } else {
+          if_block0 = create_if_block_4(ctx2);
+          if_block0.c();
+          if_block0.m(div1, null);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if (!current || dirty & 4 && div1_class_value !== (div1_class_value = "share-info " + (!ctx2[6]((_e = ctx2[2]) == null ? void 0 : _e.cache) && "share-info--not-shared") + " svelte-179mnil")) {
+        attr(div1, "class", div1_class_value);
+      }
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type(ctx2, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if_blocks[current_block_type_index].p(ctx2, dirty);
+      } else {
+        group_outros();
+        transition_out(if_blocks[previous_block_index], 1, 1, () => {
+          if_blocks[previous_block_index] = null;
+        });
+        check_outros();
+        if_block1 = if_blocks[current_block_type_index];
+        if (!if_block1) {
+          if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+          if_block1.c();
+        } else {
+          if_block1.p(ctx2, dirty);
+        }
+        transition_in(if_block1, 1);
+        if_block1.m(div3, null);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block1);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block1);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div4);
+      if (if_block0)
+        if_block0.d();
+      if_blocks[current_block_type_index].d();
+      if (detaching)
+        detach(t3);
+      if (detaching)
+        detach(hr);
+    }
+  };
+}
+function create_if_block_4(ctx) {
+  var _a;
+  let a;
+  let t_value = ((_a = ctx[2]) == null ? void 0 : _a.cache.view_url) + "";
+  let t;
+  let a_href_value;
+  return {
+    c() {
+      var _a2, _b;
+      a = element("a");
+      t = text(t_value);
+      attr(a, "class", "share-info-sub svelte-179mnil");
+      attr(a, "href", a_href_value = (_b = (_a2 = ctx[2]) == null ? void 0 : _a2.cache) == null ? void 0 : _b.view_url);
+      attr(a, "target", "_blank");
+    },
+    m(target, anchor) {
+      insert(target, a, anchor);
+      append(a, t);
+    },
+    p(ctx2, dirty) {
+      var _a2, _b, _c;
+      if (dirty & 4 && t_value !== (t_value = ((_a2 = ctx2[2]) == null ? void 0 : _a2.cache.view_url) + ""))
+        set_data(t, t_value);
+      if (dirty & 4 && a_href_value !== (a_href_value = (_c = (_b = ctx2[2]) == null ? void 0 : _b.cache) == null ? void 0 : _c.view_url)) {
+        attr(a, "href", a_href_value);
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(a);
+    }
+  };
+}
+function create_else_block(ctx) {
+  let div;
+  let iconbutton0;
+  let t;
+  let iconbutton1;
+  let current;
+  iconbutton0 = new IconButton_default({
+    props: {
+      icon: "reset",
+      size: "xs",
+      tooltip: "Share again"
+    }
+  });
+  iconbutton0.$on("click", ctx[13]);
+  iconbutton1 = new IconButton_default({
+    props: {
+      icon: "trash",
+      size: "xs",
+      tooltip: "Remove access"
+    }
+  });
+  iconbutton1.$on("click", ctx[14]);
+  return {
+    c() {
+      div = element("div");
+      create_component(iconbutton0.$$.fragment);
+      t = space();
+      create_component(iconbutton1.$$.fragment);
+      attr(div, "class", "item-actions svelte-179mnil");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(iconbutton0, div, null);
+      append(div, t);
+      mount_component(iconbutton1, div, null);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(iconbutton0.$$.fragment, local);
+      transition_in(iconbutton1.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(iconbutton0.$$.fragment, local);
+      transition_out(iconbutton1.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(iconbutton0);
+      destroy_component(iconbutton1);
+    }
+  };
+}
+function create_if_block_3(ctx) {
+  let button;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      button = element("button");
+      button.textContent = "Share";
+    },
+    m(target, anchor) {
+      insert(target, button, anchor);
+      if (!mounted) {
+        dispose = listen(button, "click", ctx[12]);
+        mounted = true;
+      }
+    },
+    p: noop,
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(button);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_1(ctx) {
+  let span;
+  return {
+    c() {
+      span = element("span");
+      span.textContent = "(Deleted from vault)";
+      attr(span, "class", "deleted-text");
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(span);
+    }
+  };
+}
+function create_if_block(ctx) {
+  let div;
+  let iconbutton0;
+  let t;
+  let iconbutton1;
+  let current;
+  function click_handler_4() {
+    return ctx[16](ctx[19]);
+  }
+  iconbutton0 = new IconButton_default({
+    props: {
+      icon: "open-elsewhere-glyph",
+      size: "xs",
+      tooltip: "Open in browser"
+    }
+  });
+  iconbutton0.$on("click", click_handler_4);
+  function click_handler_5() {
+    return ctx[17](ctx[19]);
+  }
+  iconbutton1 = new IconButton_default({
+    props: {
+      icon: "trash",
+      size: "xs",
+      tooltip: "Remove access"
+    }
+  });
+  iconbutton1.$on("click", click_handler_5);
+  return {
+    c() {
+      div = element("div");
+      create_component(iconbutton0.$$.fragment);
+      t = space();
+      create_component(iconbutton1.$$.fragment);
+      attr(div, "class", "item-actions svelte-179mnil");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(iconbutton0, div, null);
+      append(div, t);
+      mount_component(iconbutton1, div, null);
+      current = true;
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(iconbutton0.$$.fragment, local);
+      transition_in(iconbutton1.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(iconbutton0.$$.fragment, local);
+      transition_out(iconbutton1.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(iconbutton0);
+      destroy_component(iconbutton1);
+    }
+  };
+}
+function create_each_block(ctx) {
+  let div4;
+  let div3;
+  let div2;
+  let div0;
+  let t0_value = ctx[19].basename + "";
+  let t0;
+  let t1;
+  let show_if_1 = ctx[4](ctx[19]);
+  let t2;
+  let div1;
+  let t3_value = ctx[7](ctx[19]) + "";
+  let t3;
+  let t4;
+  let show_if = !ctx[3](ctx[19]) && !ctx[5](ctx[19]);
+  let t5;
+  let div4_aria_label_value;
+  let div4_class_value;
+  let current;
+  let mounted;
+  let dispose;
+  let if_block0 = show_if_1 && create_if_block_1(ctx);
+  function click_handler_3() {
+    return ctx[15](ctx[19]);
+  }
+  let if_block1 = show_if && create_if_block(ctx);
+  return {
+    c() {
+      div4 = element("div");
+      div3 = element("div");
+      div2 = element("div");
+      div0 = element("div");
+      t0 = text(t0_value);
+      t1 = space();
+      if (if_block0)
+        if_block0.c();
+      t2 = space();
+      div1 = element("div");
+      t3 = text(t3_value);
+      t4 = space();
+      if (if_block1)
+        if_block1.c();
+      t5 = space();
+      attr(div0, "class", "item-name svelte-179mnil");
+      attr(div1, "class", "item-sub svelte-179mnil");
+      attr(div2, "class", "item-description svelte-179mnil");
+      attr(div3, "class", "item-row svelte-179mnil");
+      attr(div4, "aria-label", div4_aria_label_value = !ctx[4](ctx[19]) ? `Click to open note` : void 0);
+      attr(div4, "aria-label-position", "left");
+      attr(div4, "class", div4_class_value = "history-item " + (ctx[3](ctx[19]) && "history-item--expired") + " " + (ctx[5](ctx[19]) && "history-item--deleted-server") + " " + (ctx[4](ctx[19]) && "history-item--deleted-vault") + " svelte-179mnil");
+    },
+    m(target, anchor) {
+      insert(target, div4, anchor);
+      append(div4, div3);
+      append(div3, div2);
+      append(div2, div0);
+      append(div0, t0);
+      append(div0, t1);
+      if (if_block0)
+        if_block0.m(div0, null);
+      append(div2, t2);
+      append(div2, div1);
+      append(div1, t3);
+      append(div3, t4);
+      if (if_block1)
+        if_block1.m(div3, null);
+      append(div4, t5);
+      current = true;
+      if (!mounted) {
+        dispose = listen(div2, "click", click_handler_3);
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if ((!current || dirty & 2) && t0_value !== (t0_value = ctx[19].basename + ""))
+        set_data(t0, t0_value);
+      if (dirty & 2)
+        show_if_1 = ctx[4](ctx[19]);
+      if (show_if_1) {
+        if (if_block0) {
+        } else {
+          if_block0 = create_if_block_1(ctx);
+          if_block0.c();
+          if_block0.m(div0, null);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if ((!current || dirty & 2) && t3_value !== (t3_value = ctx[7](ctx[19]) + ""))
+        set_data(t3, t3_value);
+      if (dirty & 2)
+        show_if = !ctx[3](ctx[19]) && !ctx[5](ctx[19]);
+      if (show_if) {
+        if (if_block1) {
+          if_block1.p(ctx, dirty);
+          if (dirty & 2) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block(ctx);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(div3, null);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if (!current || dirty & 2 && div4_aria_label_value !== (div4_aria_label_value = !ctx[4](ctx[19]) ? `Click to open note` : void 0)) {
+        attr(div4, "aria-label", div4_aria_label_value);
+      }
+      if (!current || dirty & 2 && div4_class_value !== (div4_class_value = "history-item " + (ctx[3](ctx[19]) && "history-item--expired") + " " + (ctx[5](ctx[19]) && "history-item--deleted-server") + " " + (ctx[4](ctx[19]) && "history-item--deleted-vault") + " svelte-179mnil")) {
+        attr(div4, "class", div4_class_value);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block1);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block1);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div4);
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d();
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment3(ctx) {
+  var _a;
+  let div3;
+  let t0;
+  let div2;
+  let div0;
+  let t2;
+  let div1;
+  let current;
+  let if_block = ((_a = ctx[2]) == null ? void 0 : _a.file) && create_if_block_2(ctx);
+  let each_value = ctx[1];
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+  }
+  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
+    each_blocks[i] = null;
+  });
+  return {
+    c() {
+      div3 = element("div");
+      if (if_block)
+        if_block.c();
+      t0 = space();
+      div2 = element("div");
+      div0 = element("div");
+      div0.textContent = "Recently shared";
+      t2 = space();
+      div1 = element("div");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div0, "class", "history-header svelte-179mnil");
+      attr(div1, "class", "history-list svelte-179mnil");
+      attr(div2, "id", "history");
+      attr(div2, "class", "svelte-179mnil");
+      attr(div3, "id", "quickshare-pane");
+    },
+    m(target, anchor) {
+      insert(target, div3, anchor);
+      if (if_block)
+        if_block.m(div3, null);
+      append(div3, t0);
+      append(div3, div2);
+      append(div2, div0);
+      append(div2, t2);
+      append(div2, div1);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].m(div1, null);
+      }
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      var _a2;
+      if ((_a2 = ctx2[2]) == null ? void 0 : _a2.file) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+          if (dirty & 4) {
+            transition_in(if_block, 1);
+          }
+        } else {
+          if_block = create_if_block_2(ctx2);
+          if_block.c();
+          transition_in(if_block, 1);
+          if_block.m(div3, t0);
+        }
+      } else if (if_block) {
+        group_outros();
+        transition_out(if_block, 1, 1, () => {
+          if_block = null;
+        });
+        check_outros();
+      }
+      if (dirty & 954) {
+        each_value = ctx2[1];
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+            transition_in(each_blocks[i], 1);
+          } else {
+            each_blocks[i] = create_each_block(child_ctx);
+            each_blocks[i].c();
+            transition_in(each_blocks[i], 1);
+            each_blocks[i].m(div1, null);
+          }
+        }
+        group_outros();
+        for (i = each_value.length; i < each_blocks.length; i += 1) {
+          out(i);
+        }
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block);
+      for (let i = 0; i < each_value.length; i += 1) {
+        transition_in(each_blocks[i]);
+      }
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      each_blocks = each_blocks.filter(Boolean);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        transition_out(each_blocks[i]);
+      }
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div3);
+      if (if_block)
+        if_block.d();
+      destroy_each(each_blocks, detaching);
+    }
+  };
+}
+function onOpen(url) {
+  window.open(url, "_blank");
+}
+function instance3($$self, $$props, $$invalidate) {
+  let $PluginStore;
+  let $CacheStore;
+  let $ActiveCacheFile;
+  component_subscribe($$self, PluginStore, ($$value) => $$invalidate(18, $PluginStore = $$value));
+  component_subscribe($$self, CacheStore_default, ($$value) => $$invalidate(11, $CacheStore = $$value));
+  component_subscribe($$self, ActiveCacheFile_default, ($$value) => $$invalidate(2, $ActiveCacheFile = $$value));
+  let data;
+  let filteredData;
+  function hasExpired(data2) {
+    const expiration = (0, import_moment3.default)(data2.expire_datetime);
+    return (0, import_moment3.default)().isAfter(expiration);
+  }
+  function deletedFromVault(data2) {
+    return data2.deleted_from_vault;
+  }
+  function deletedFromServer(data2) {
+    return data2.deleted_from_server;
+  }
+  function isShared(data2) {
+    return data2 && !hasExpired(data2) && !deletedFromServer(data2);
+  }
+  function getSubText(data2, options) {
+    var _a;
+    if (!data2) {
+      return "Not shared";
+    }
+    if (hasExpired(data2)) {
+      return (options === null || options === void 0 ? void 0 : options.long) ? "Note has expired from server" : "Expired";
+    }
+    if (deletedFromServer(data2)) {
+      return (options === null || options === void 0 ? void 0 : options.long) ? "Removed from server" : "Unshared";
+    }
+    const timeString = (0, import_moment3.default)((_a = data2.updated_datetime) !== null && _a !== void 0 ? _a : data2.shared_datetime).locale("en-US").fromNow(true);
+    return data2.updated_datetime ? `Updated ${timeString} ago` : `Shared ${timeString} ago`;
+  }
+  function onOpenNote(fileId) {
+    let leafFound = false;
+    $PluginStore.app.workspace.iterateRootLeaves((leaf) => {
+      if (leaf.view instanceof import_obsidian5.MarkdownView) {
+        const view = leaf.view;
+        if (view.file.path === fileId) {
+          $PluginStore.app.workspace.setActiveLeaf(leaf);
+          leafFound = true;
+        }
+      }
+    });
+    if (leafFound) {
+      return;
+    }
+    $PluginStore.app.workspace.openLinkText(fileId, fileId, true);
+  }
+  function onUnshare(fileId) {
+    $PluginStore.deleteNote(fileId);
+  }
+  function onShare(file) {
+    $PluginStore.shareNote(file);
+  }
+  onMount(() => {
+    const timer = window.setInterval(
+      () => {
+        $$invalidate(0, data = [...$CacheStore]);
+      },
+      3e4
+    );
+    $PluginStore.registerInterval(timer);
+    return () => {
+      clearInterval(timer);
+    };
+  });
+  const click_handler = () => onShare($ActiveCacheFile.file);
+  const click_handler_1 = () => onShare($ActiveCacheFile.file);
+  const click_handler_2 = () => onUnshare($ActiveCacheFile == null ? void 0 : $ActiveCacheFile.cache.fileId);
+  const click_handler_3 = (item) => !deletedFromVault(item) && onOpenNote(item.fileId);
+  const click_handler_4 = (item) => onOpen(item.view_url);
+  const click_handler_5 = (item) => onUnshare(item.fileId);
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & 2048) {
+      $:
+        $$invalidate(0, data = $CacheStore);
+    }
+    if ($$self.$$.dirty & 1) {
+      $:
+        $$invalidate(1, filteredData = data === null || data === void 0 ? void 0 : data.filter((d) => !deletedFromServer(d) && !(deletedFromVault(d) && hasExpired(d))));
+    }
+  };
+  return [
+    data,
+    filteredData,
+    $ActiveCacheFile,
+    hasExpired,
+    deletedFromVault,
+    deletedFromServer,
+    isShared,
+    getSubText,
+    onOpenNote,
+    onUnshare,
+    onShare,
+    $CacheStore,
+    click_handler,
+    click_handler_1,
+    click_handler_2,
+    click_handler_3,
+    click_handler_4,
+    click_handler_5
+  ];
+}
+var QuickShareSideView = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance3, create_fragment3, safe_not_equal, {}, add_css3);
+  }
+};
+var QuickShareSideView_default = QuickShareSideView;
+
+// src/ui/QuickShareSideView.ts
+var _QuickShareSideView = class extends import_obsidian6.ItemView {
+  constructor(leaf) {
+    super(leaf);
+    this.navigation = false;
+  }
+  onOpen() {
+    return __async(this, null, function* () {
+      this.component = new QuickShareSideView_default({
+        target: this.contentEl
+      });
+    });
+  }
+  onClose() {
+    return __async(this, null, function* () {
+      this.component.$destroy();
+    });
+  }
+  getViewType() {
+    return _QuickShareSideView.viewType;
+  }
+  getDisplayText() {
+    return "QuickShare";
+  }
+  getIcon() {
+    return "cloud";
+  }
+};
+var QuickShareSideView2 = _QuickShareSideView;
+QuickShareSideView2.viewType = "QUICKSHARE_SIDE_VIEW";
+
+// main.ts
+var { subscribe: subscribe4, set: setPluginStore } = writable(null);
+var PluginStore = { subscribe: subscribe4 };
+var NoteSharingPlugin = class extends import_obsidian7.Plugin {
   onload() {
     return __async(this, null, function* () {
+      setPluginStore(this);
       yield this.loadSettings();
-      this.noteSharingService = new NoteSharingService(this.settings.serverUrl, this.settings.anonymousUserId, this.manifest.version);
+      this.cache = this.settings.useFsCache ? yield new FsCache(this.app).init() : yield new LocalStorageCache(this.app).init();
+      this.noteSharingService = new NoteSharingService(
+        this.settings.serverUrl,
+        this.settings.anonymousUserId,
+        this.manifest.version
+      );
       this.addSettingTab(new SettingsTab(this.app, this));
       this.addCommands();
-      this.eventRef = this.app.workspace.on("file-menu", (menu, file, source) => this.onMenuOpenCallback(menu, file, source));
-      this.registerEvent(this.eventRef);
+      this.fileMenuEvent = this.app.workspace.on(
+        "file-menu",
+        (menu, file, source) => this.onMenuOpenCallback(menu, file, source)
+      );
+      this.registerEvent(this.fileMenuEvent);
+      this.registerEvent(
+        this.app.vault.on("rename", (file, oldPath) => {
+          if (!this.cache.has(oldPath)) {
+            return;
+          }
+          this.cache.rename(oldPath, file.path);
+          console.log("renamed", file.path);
+        })
+      );
+      this.registerEvent(
+        this.app.vault.on("delete", (file) => {
+          if (!this.cache.has(file.path)) {
+            return;
+          }
+          this.cache.set(file.path, (data) => __spreadProps(__spreadValues({}, data), {
+            deleted_from_vault: true
+          }));
+          console.log("deleted", file.path);
+        })
+      );
+      this.registerEvent(
+        this.app.workspace.on("active-leaf-change", (leaf) => {
+          if (leaf.view instanceof import_obsidian7.MarkdownView) {
+            setActiveMdFile(leaf.view.file);
+          }
+        })
+      );
+      this.registerView(
+        QuickShareSideView2.viewType,
+        (leaf) => new QuickShareSideView2(leaf)
+      );
+      this.app.workspace.onLayoutReady(this.initLeaf.bind(this));
+    });
+  }
+  initLeaf() {
+    return __async(this, null, function* () {
+      if (this.app.workspace.getLeavesOfType(QuickShareSideView2.viewType).length) {
+        return;
+      }
+      yield this.app.workspace.getRightLeaf(false).setViewState({
+        type: QuickShareSideView2.viewType,
+        active: true
+      });
     });
   }
   onunload() {
   }
   loadSettings() {
     return __async(this, null, function* () {
-      this.settings = Object.assign({}, DEFAULT_SETTINGS, yield this.loadData());
+      this.settings = Object.assign(
+        {},
+        DEFAULT_SETTINGS,
+        yield this.loadData()
+      );
       yield this.saveSettings();
     });
   }
@@ -4806,7 +6434,7 @@ var NoteSharingPlugin = class extends import_obsidian4.Plugin {
       id: "obsidian-quickshare-share-note",
       name: "Create share link",
       checkCallback: (checking) => {
-        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
+        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
         if (!activeView)
           return false;
         if (checking)
@@ -4814,9 +6442,25 @@ var NoteSharingPlugin = class extends import_obsidian4.Plugin {
         this.shareNote(activeView.file);
       }
     });
+    this.addCommand({
+      id: "obsidian-quickshare-delete-note",
+      name: "Unshare note",
+      checkCallback: (checking) => {
+        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
+        if (!activeView)
+          return false;
+        if (checking && !this.cache.has(activeView.file.path) || this.cache.get(activeView.file.path).deleted_from_server) {
+          return false;
+        }
+        if (checking) {
+          return true;
+        }
+        this.deleteNote(activeView.file.path);
+      }
+    });
   }
   onMenuOpenCallback(menu, file, source) {
-    if (file instanceof import_obsidian4.TFile && file.extension === "md") {
+    if (file instanceof import_obsidian7.TFile && file.extension === "md") {
       menu.addItem((item) => {
         item.setIcon("paper-plane-glyph");
         item.setTitle("Create share link");
@@ -4833,22 +6477,68 @@ var NoteSharingPlugin = class extends import_obsidian4.Plugin {
       const title = this.settings.shareFilenameAsTitle ? file.basename : void 0;
       this.noteSharingService.shareNote(body, { title }).then((res) => {
         if (this.settings.useFrontmatter) {
-          const datetime = (0, import_moment3.default)(new Date()).format(this.settings.frontmatterDateFormat || DEFAULT_SETTINGS.frontmatterDateFormat);
+          const datetime = (0, import_moment4.default)().format(
+            this.settings.frontmatterDateFormat || DEFAULT_SETTINGS.frontmatterDateFormat
+          );
           setFrontmatterKeys(file, {
             url: `"${res.view_url}"`,
             datetime
           });
         }
-        new SharedNoteSuccessModal(this, res.view_url, res.expire_time).open();
-      }).catch((err) => {
-        console.error(err);
-        new import_obsidian4.Notice(err.message, 7500);
-      });
+        this.cache.set(file.path, {
+          shared_datetime: (0, import_moment4.default)().toISOString(),
+          updated_datetime: null,
+          expire_datetime: res.expire_time.toISOString(),
+          view_url: res.view_url,
+          secret_token: res.secret_token,
+          note_id: res.note_id,
+          basename: file.basename
+        });
+        new SharedNoteSuccessModal(
+          this,
+          res.view_url,
+          res.expire_time
+        ).open();
+      }).catch(this.handleSharingError);
     });
+  }
+  deleteNote(fileId) {
+    return __async(this, null, function* () {
+      const { setFrontmatterKeys } = useFrontmatterHelper(this.app);
+      const cacheData = this.cache.get(fileId);
+      if (!cacheData) {
+        return;
+      }
+      this.noteSharingService.deleteNote(cacheData.note_id, cacheData.secret_token).then(() => {
+        this.cache.set(fileId, (data) => __spreadProps(__spreadValues({}, data), {
+          deleted_from_server: true
+        }));
+        new import_obsidian7.Notice(`Unshared note: "${cacheData.basename}"`, 7500);
+        console.info("Unshared note: ", fileId);
+        const _file = this.app.vault.getMarkdownFiles().find((f) => f.path === fileId);
+        if (!_file) {
+          return;
+        }
+        setFrontmatterKeys(_file, {
+          url: `"Removed"`,
+          datetime: `"N/A"`
+        });
+      }).catch(this.handleSharingError);
+    });
+  }
+  set $cache(cache) {
+    this.cache = cache;
+  }
+  get $cache() {
+    return this.cache;
+  }
+  handleSharingError(err) {
+    console.error(err);
+    new import_obsidian7.Notice(err.message, 7500);
   }
 };
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
 //! license : MIT
 //! moment.js
 //! momentjs.com
-//! version : 2.29.3
+//! version : 2.29.4
