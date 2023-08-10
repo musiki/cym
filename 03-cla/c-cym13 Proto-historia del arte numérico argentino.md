@@ -1,4 +1,11 @@
 
+---
+type: class
+tags: cym, arte numérico
+unit: 0
+num:  13
+year: 2023
+---
 
 ```mermaid
 flowchart TD

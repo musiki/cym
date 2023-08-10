@@ -446,7 +446,7 @@
     },
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
       "size": 1501,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "Buttons 1.0 is Coming.md": {
@@ -529,7 +529,7 @@
     "/": {
       "Refactor": 36,
       "Create": 33,
-      "Link": 13,
+      "Link": 14,
       "Expand": 12
     }
   },
@@ -558,14 +558,14 @@
       "20": 3,
       "21": 2,
       "22": 0,
-      "23": 4
+      "23": 5
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
       "Tue": 47,
-      "Wed": 4,
+      "Wed": 5,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -640,7 +640,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-networking.md\"> c-cym07-networking </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>"
       ],
       "Refactored": [],
       "Deleted": [
