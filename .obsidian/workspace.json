@@ -59,7 +59,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md",
+                "file": "00-in/combinational creativity.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md",
+                "file": "00-in/combinational creativity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md",
+                "file": "00-in/combinational creativity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md"
+                "file": "00-in/combinational creativity.md"
               }
             }
           },
@@ -264,34 +264,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "ae6a3b18383518db",
   "lastOpenFiles": [
+    "README.md",
+    "04-ref/a-yuda.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "02-mat/tone.js.md",
+    "02-mat/rant.md",
+    "02-mat/que es git.md",
+    "02-mat/html.md",
+    "02-mat/cloud ides.md",
+    "02-mat/python/py-foundations.md",
+    "02-mat/python/pycolors.md",
+    "02-mat/procesos/r-vinculación bidireccional.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/org/i-sackbut.md",
+    "02-mat/org/i-theremin.md",
+    "02-mat/org/mat-partitura.md",
+    "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
     "crisis de la representación.md",
     "04-ref/templater.md",
-    "04-ref/a-yuda.md",
     "04-ref/a-dataview.md",
     "04-ref/templates/t-topoi.md",
     "04-ref/templates/t-movie.md",
     "04-ref/templates/t-liquid.md",
     "04-ref/templates/t-cym-class.md",
-    "04-ref/templates/t-class.md",
-    "04-ref/templates/t-book.md",
-    "04-ref/templates/t-bibliografía.md",
-    "04-ref/personas/Peter Novig.md",
-    "04-ref/personas/Harari Yuval Noah.md",
-    "04-ref/db/referencias.md",
-    "04-ref/db/personas.md",
-    "04-ref/db/obras.md",
-    "04-ref/bibliografía/b-Los condenados de la pantalla.md",
-    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md",
-    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym12-Aframe.md",
-    "03-cla/c-cym10&11-generative&Aframe.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym07-networking.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",
