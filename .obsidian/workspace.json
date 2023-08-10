@@ -59,7 +59,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/2023-08-30.md",
+                "file": "01-proj/todo.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -73,9 +73,22 @@
               "type": "reveal-preview-view",
               "state": {}
             }
+          },
+          {
+            "id": "5aa4ac19cf70fa34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/tp/tp02-aplicación.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -157,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/2023-08-30.md",
+                "file": "01-proj/todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/tp/2023-08-30.md",
+                "file": "01-proj/todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/2023-08-30.md"
+                "file": "01-proj/todo.md"
               }
             }
           },
@@ -254,6 +267,11 @@
   "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
     "crisis de la representación.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/2023-08-30.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/combinational creativity.md",
     "cat.md",
     "Buttons 1.0 is Coming.md",
     "README.md",
@@ -272,13 +290,8 @@
     "03-cla/c-cym12-Aframe.md",
     "03-cla/c-cym03- cohesión audiovisual.md",
     "01-proj/todo.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
     "03-cla/c-cym03- cohesión audivisual.md",
     "02-mat/tone.js.md",
-    "02-mat/rant.md",
-    "02-mat/que es git.md",
-    "02-mat/html.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",
