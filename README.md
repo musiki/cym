@@ -37,8 +37,7 @@ edu:  https://edu.musiki.org
 [github-classroom](https://classroom.github.com/classrooms/46442123-musiki-cym)
 [carpeta púb](https://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
 [repositorio](https://drive.google.com/drive/folders/1EsKeSeZXuxzBEJaqz91ZjhPcRBii8m9v?usp=sharing)
-
----
+[bibliografía general](https://drive.google.com/drive/folders/1QUgYIGUpHFos9RuKcltz6019UJpGZvn8?usp=drive_link)
 
 
 # Plan de Estudios 

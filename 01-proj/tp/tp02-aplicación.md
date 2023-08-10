@@ -1,5 +1,5 @@
 ---
-type: tp
+tags: tp
 project: cym22
 date: 2022-08-30
 ---
