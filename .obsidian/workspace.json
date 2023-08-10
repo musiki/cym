@@ -67,6 +67,32 @@
             }
           },
           {
+            "id": "1ea0c26d926e6ad3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/a-yuda.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5d39311354ac561e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "e3d360844d779e11",
             "type": "leaf",
             "state": {
@@ -88,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +172,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "80820653654ffa07",
@@ -170,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/combinational creativity.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +214,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/combinational creativity.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/combinational creativity.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -264,10 +291,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae6a3b18383518db",
+  "active": "5d39311354ac561e",
   "lastOpenFiles": [
-    "README.md",
     "04-ref/a-yuda.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp01-topoi.md",
+    "00-in/combinational creativity.md",
+    "hd-hydra.md",
+    "README.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/tone.js.md",
@@ -284,14 +315,10 @@
     "02-mat/org/i-theremin.md",
     "02-mat/org/mat-partitura.md",
     "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
     "crisis de la representación.md",
     "04-ref/templater.md",
     "04-ref/a-dataview.md",
     "04-ref/templates/t-topoi.md",
-    "04-ref/templates/t-movie.md",
-    "04-ref/templates/t-liquid.md",
-    "04-ref/templates/t-cym-class.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",

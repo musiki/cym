@@ -523,12 +523,17 @@
       "size": 4120,
       "tags": 0,
       "links": 2
+    },
+    "hd-hydra.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 36,
-      "Create": 33,
+      "Refactor": 38,
+      "Create": 36,
       "Link": 14,
       "Expand": 12
     }
@@ -558,14 +563,14 @@
       "20": 3,
       "21": 2,
       "22": 0,
-      "23": 5
+      "23": 10
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
       "Tue": 47,
-      "Wed": 5,
+      "Wed": 10,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -621,6 +626,9 @@
         "<a class=\"internal-link\" href=\"cat.md\"> cat </a>",
         "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
@@ -672,7 +680,9 @@
         "<a class=\"internal-link\" href=\"00-in/prg-22.md\"> prg-22 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
