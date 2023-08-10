@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
   "accentColor": "",
   "baseFontSize": 22
+=======
+  "accentColor": "#6da3b0",
+  "baseFontSize": 19
+>>>>>>> origin/main
 }

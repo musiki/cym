@@ -10,11 +10,9 @@ year: 2022
 UNTREF | CYM22 | 04
 # integración JS
 
-
 ---
 
 # partes de un código
-
 
 ---
 # variables y array 

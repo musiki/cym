@@ -1,0 +1,13 @@
+{
+  "openAiApiKey": "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",
+  "huggingfaceApiKey": "",
+  "defaultModel": "gpt-4",
+  "temperature": 0.7,
+  "maxTokens": 1000,
+  "contextTurns": 3,
+  "useNotesAsContext": false,
+  "userSystemPrompt": "",
+  "stream": true,
+  "embeddingProvider": "openai",
+  "debug": false
+}

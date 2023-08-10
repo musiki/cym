@@ -3,7 +3,6 @@ title: cym22
 tags: cym, class
 ---
 
-
 # calendario cym 22
 
 ## tp1
@@ -16,5 +15,4 @@ tags: cym, class
 - [ ] proyectual |como hacer un dossier de un proyecto de música expandida ⏫ 📅 2022-11-15
 ## tp final
 - [ ] proyecto cym | proyecto online ⏫ 📅 2022-11-29
-
 

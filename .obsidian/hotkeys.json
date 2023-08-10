@@ -286,14 +286,6 @@
       "key": "9"
     }
   ],
-  "obsidian-note-sharing:obsidian-note-sharing-share-note": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "L"
-    }
-  ],
   "templater-obsidian:insert-templater": [],
   "backlink:open": [
     {
@@ -302,15 +294,6 @@
         "Shift"
       ],
       "key": "2"
-    }
-  ],
-  "tag-pane:open": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "4"
     }
   ],
   "editor:focus-top": [
@@ -365,15 +348,6 @@
         "Shift"
       ],
       "key": "K"
-    }
-  ],
-  "workspace:close-others": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "W"
     }
   ],
   "obsidian-comments:add-comment": [
@@ -551,5 +525,28 @@
       ],
       "key": "Z"
     }
-  ]
+  ],
+  "open-with-default-app:show": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "workspace:close-window": [],
+  "workspace:previous-tab": [],
+  "workspace:next-tab": [],
+  "notion-like-tables:nlt-add-column": [],
+  "obsidian-note-sharing:obsidian-note-sharing-share-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-checklist-status": []
 }

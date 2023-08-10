@@ -1,8 +1,22 @@
+---
+institución: Universidad Nacional de Tres de Febrero
+carrera: Licenciatura en Música
+cátedra: "Ciencia y Música"
+código: 900
+sigla: CYM
+titular: Luciano Azzigotti
+ayudante: Carolina Di Paola
+año: 2023
+aula: Taller de tecnología musical
+horario: Martes de 18:00 a 22:00
+---
+
 ![|100x50](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/UNTREF_Logo_2016.svg/1280px-UNTREF_Logo_2016.svg.png)
+
 # Ciencia  y Música
 este es el repositorio de la cátedra de ciencia y música de la licenciatura en música de la universidad nacional de tres de febrero
 
-[![](https://dcbadge.vercel.app/api/server/4dy2DS4)](https://discord.gg/4dy2DS4)![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)![Wiki.js](https://img.shields.io/badge/wiki.js-%231976D2.svg?style=for-the-badge&logo=wikidotjs&logoColor=white)![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)![p5js Editor](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![](https://dcbadge.vercel.app/api/server/4dy2DS4)![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)![Wiki.js](https://img.shields.io/badge/wiki.js-%231976D2.svg?style=for-the-badge&logo=wikidotjs&logoColor=white)![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)![p5js Editor](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 **docentes**: Luciano Azzigotti y Carolina Di Paola
 **código**: 900
@@ -21,7 +35,7 @@ edu:  https://edu.musiki.org
 canal de discord: https://discord.gg/4dy2DS4
 github-repo: https://github.com/musiki/cym
 github-classroom: https://classroom.github.com/classrooms/46442123-musiki-cym
-[carpeta púb](ttps://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
+[carpeta púb](https://drive.google.com/drive/folders/0B_cN-bz0aPUjfm1mcEt1bHBvamdUUHBUMFlIX0thWmcxWGM3alRtalRMX1o5Sjh3eGNwMlk?resourcekey=0-YqY7ylNayzjGAKA7BFkWsA&usp=sharing)
 [repositorio](https://drive.google.com/open?id=1up44v6FjRk4oujegZqF23ur7MdvH34_l&authuser=lazzigotti%40untref.edu.ar&usp=drive_fs)
 
 ---
@@ -54,6 +68,8 @@ Para acercarnos  al binomio ciencia-música podemos operar de dos modos, por aso
 - semana 12: hydra, p5, mozilla hubs.
 - semana 13: funciones y diseño de patrones.
 - semana 14: entrega proyecto final.
+
+
 # Objetivos del Curso
 
 - pensar y crear el futuro de la música.
@@ -91,7 +107,6 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 ![[topoi#t60-espacio]]
 ![[topoi#técnicos]]
 
-    
 ## Plan de estudios
 el siguiente plan es una guía de contenidos modular de la materia Ciencia y Música. Cada año, en conjunto con los alumnos se deciden los contenidos a abordar dependiendo de los objetivos personales propuestos. El siguiente programa es por lo tanto un compendio de las unidades posibles con contenidos mínimos obligatorios y otros potenciales.
 
@@ -113,6 +128,12 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 *Mapeos
 *Generatividad
 *Diccionarios y traducciones
+
+## Clases
+```query
+tag: #class
+```
+
 
 ## Trabajos Prácticos
 ```dataview

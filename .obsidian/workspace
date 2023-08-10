@@ -1,5 +1,16 @@
 {
   "main": {
+<<<<<<< HEAD
+    "id": "21014af4e9464486",
+    "type": "split",
+    "children": [
+      {
+        "id": "249d89666687bd07",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+=======
     "id": "06155fffeb6c2afa",
     "type": "split",
     "children": [
@@ -14,12 +25,24 @@
             "backlinks": false,
             "source": false
           }
+>>>>>>> origin/main
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
+<<<<<<< HEAD
+    "id": "031470ee8fb1135e",
+    "type": "split",
+    "children": [
+      {
+        "id": "87e6b0a7e57f4604",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e91482535306e58e",
+=======
     "id": "b602c04a731b296c",
     "type": "split",
     "children": [
@@ -29,6 +52,7 @@
         "children": [
           {
             "id": "58a6bf3eeea06c75",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -36,7 +60,11 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "557689b59bfd69dc",
+=======
             "id": "9c932be67380cd5c",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "search",
@@ -51,7 +79,11 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "bc8022fe85e3e935",
+=======
             "id": "d0b6cdf86fad9d2c",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -62,6 +94,20 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
+    "width": 300
+  },
+  "right": {
+    "id": "c8a970a40c645b36",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2184bf680f8adcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "033c3fc42d342373",
+=======
     "width": 370.5
   },
   "right": {
@@ -74,6 +120,7 @@
         "children": [
           {
             "id": "0e7331fdb79d0276",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -81,12 +128,23 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "12aa887a7f694fba",
+=======
             "id": "151280da124cbf79",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                "file": "00-in/prg-22.md",
+>>>>>>> origin/main
+=======
                 "file": "01-proj/lopez/helloworld.md",
+>>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,19 +156,34 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "87f55078bbb95fe1",
+=======
             "id": "ca18ada4e82fb194",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                "file": "00-in/prg-22.md",
+>>>>>>> origin/main
+=======
                 "file": "01-proj/lopez/helloworld.md",
+>>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
+<<<<<<< HEAD
+            "id": "05399686fc26f8fb",
+=======
             "id": "20c732dc2cc0ecaf",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -121,6 +194,17 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "58799109e8a5a4e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "be91cc8dd4ce83be",
+=======
             "id": "8c7ec6495dcddec6",
             "type": "leaf",
             "state": {
@@ -132,6 +216,7 @@
           },
           {
             "id": "ce7c3311228e6e89",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -139,7 +224,11 @@
             }
           },
           {
+<<<<<<< HEAD
+            "id": "aeba09e642f32c10",
+=======
             "id": "2401f8738cf8ce0a",
+>>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -153,7 +242,19 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "active": "249d89666687bd07",
+  "lastOpenFiles": [
+    "03-cla/c-cym07-hydra.md",
+    "01-proj/ancarola/Generador de Melodías Random 2.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/ancarola/Generador de Melodías Random.md"
+=======
+  "active": "58a6bf3eeea06c75",
+=======
   "active": "9be5806cd330d2d4",
+>>>>>>> origin/main
   "lastOpenFiles": [
     "00-in/prg-22.md",
     "02-mat/tone.js.md",
@@ -164,6 +265,12 @@
     "lwe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym05-flex-grid.md",
+<<<<<<< HEAD
+    "03-cla/c-cym04-integración 1.md",
+    "03-cla/c-cym04-integración.md"
+>>>>>>> origin/main
+=======
     "03-cla/c-cym04-integración 1.md"
+>>>>>>> origin/main
   ]
 }
