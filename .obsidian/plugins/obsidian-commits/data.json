@@ -528,12 +528,17 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/tp/prueba.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 38,
-      "Create": 36,
+      "Refactor": 39,
+      "Create": 37,
       "Link": 14,
       "Expand": 12
     }
@@ -541,7 +546,7 @@
   "dailyCommits": {
     "/": {
       "0": 0,
-      "1": 0,
+      "1": 2,
       "2": 13,
       "3": 4,
       "4": 0,
@@ -572,7 +577,7 @@
       "Tue": 47,
       "Wed": 10,
       "Thu": 0,
-      "Fri": 0,
+      "Fri": 2,
       "Sat": 0,
       "Sun": 27
     }
@@ -629,7 +634,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -639,7 +645,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-.md\"> c- </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-c.md\"> c-c </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",
