@@ -1,14 +1,19 @@
 ---
+<<<<<<< HEAD
 tags: tp
 project: cym22
 date: 2022-08-30
+=======
+type: tp
+project: cym23
+date: 2023-08-30
+>>>>>>> origin/main
 ---
 
 # aplicación audiovisual
 
-- [ ] TP2  - Aplicación AV ⏫ 📅 2022-09-14
+- [ ] TP2  - Aplicación AV ⏫ 📅 2023-09-14
 
-> [!INFO] >la lista de topoi puede ser consultada en https://musiki.org.ar/Topoi
 
 ## Objetivos
 

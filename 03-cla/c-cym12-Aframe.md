@@ -3,7 +3,7 @@ type: class
 tags: cym, música visual, armonía expandida,class
 unit: 0
 num:  12
-year: 2022
+year: 2023
 ---
 
 ## Transformation

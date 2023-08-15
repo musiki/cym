@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 tags: tp
 project: cym22
 date: 2022-08-30
@@ -6,6 +7,15 @@ date: 2022-08-30
 
 
 - [ ] TP1  - topoi 📅 2022-08-23⏫
+=======
+type: tp
+project: cym23
+date: 2023-08-30
+---
+
+
+- [ ] TP1  - topoi 📅 2023-08-30⏫
+>>>>>>> origin/main
 
 > [!INFO] >la lista de topoi puede ser consultada en https://musiki.org.ar/Topoi
 

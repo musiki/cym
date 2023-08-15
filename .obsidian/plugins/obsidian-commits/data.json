@@ -266,7 +266,7 @@
     },
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
       "size": 1501,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "03-cla/c-cym12-Aframe.md": {
@@ -416,12 +416,12 @@
     },
     "01-proj/tp/tp02-aplicación.md": {
       "size": 400,
-      "tags": 1,
+      "tags": 0,
       "links": 0
     },
     "01-proj/tp/tp01-topoi.md": {
       "size": 1053,
-      "tags": 1,
+      "tags": 0,
       "links": 0
     },
     "01-proj/todo.md": {
@@ -533,13 +533,23 @@
       "size": 0,
       "tags": 1,
       "links": 0
+    },
+    "Buttons 1.0 is Coming.md": {
+      "size": 1794,
+      "tags": 0,
+      "links": 0
+    },
+    "conflict-files-obsidian-git.md": {
+      "size": 844,
+      "tags": 0,
+      "links": 3
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 29,
-      "Create": 25,
-      "Link": 14,
+      "Refactor": 31,
+      "Create": 27,
+      "Link": 16,
       "Expand": 3
     }
   },
@@ -555,7 +565,7 @@
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 0,
+      "10": 6,
       "11": 6,
       "12": 32,
       "13": 2,
@@ -576,7 +586,7 @@
       "Mon": 15,
       "Tue": 7,
       "Wed": 16,
-      "Thu": 0,
+      "Thu": 6,
       "Fri": 0,
       "Sat": 0,
       "Sun": 33
@@ -614,7 +624,9 @@
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -633,7 +645,8 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -666,9 +679,13 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>",
-        "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>"
+        "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
-      "Removed Tags from": [],
+      "Removed Tags from": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+      ],
       "Removed Links from": []
     }
   },

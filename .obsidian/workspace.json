@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "4332c2278d0d66f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "af3b1814eb583a38",
             "type": "leaf",
             "state": {
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -144,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,10 +207,12 @@
       "copilot:Copilot Chat": false
     }
   },
-  "active": "b0cdfe349a83623e",
+  "active": "4332c2278d0d66f6",
   "lastOpenFiles": [
-    "02-mat/python/py-foundations.md",
     "README.md",
+    "conflict-files-obsidian-git.md",
+    "Buttons 1.0 is Coming.md",
+    "02-mat/python/py-foundations.md",
     "04-ref/topoi/t12-filosofía 21.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp02-aplicación.md",
@@ -220,8 +236,6 @@
     "04-ref/topoi/t21-interfaces.md",
     "04-ref/topoi/t60-espacio.md",
     "04-ref/topoi/t51-arte relacional.md",
-    "04-ref/topoi/t33-sistemas complejos.md",
-    "04-ref/topoi/t34-livecoding.md",
     "01-proj/23/beltrame",
     "01-proj/23",
     "01-proj/22/lopez",
