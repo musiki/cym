@@ -6,6 +6,7 @@
       {
         "id": "c17b55f64f8136ed",
         "type": "tabs",
+        "dimension": 48.643216080402006,
         "children": [
           {
             "id": "b0cdfe349a83623e",
@@ -13,21 +14,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
                 "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4332c2278d0d66f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -46,8 +34,54 @@
               }
             }
           }
+        ]
+      },
+      {
+        "id": "515acd274c86b076",
+        "type": "tabs",
+        "dimension": 51.356783919597994,
+        "children": [
+          {
+            "id": "c747769344d7b114",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/personas/Cecila Arditto.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a63c485f7648bb66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/personas/Carlos Trilnik.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a848791c543bbeed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Buttons 1.0 is Coming.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 347.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -140,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-cla/c-cym10&11-generative&Aframe.md"
               }
             }
           },
@@ -158,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym10&11-generative&Aframe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,38 +238,41 @@
       "dbfolder:Create a new database table": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
-      "copilot:Copilot Chat": false
+      "copilot:Copilot Chat": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4332c2278d0d66f6",
+  "active": "b0cdfe349a83623e",
   "lastOpenFiles": [
-    "README.md",
-    "conflict-files-obsidian-git.md",
     "Buttons 1.0 is Coming.md",
+    "hd-hydra.md",
+    "04-ref/bibliografía/crisis de la representación.md",
+    "04-ref/procedimientos/tipologías de instalación.md",
+    "04-ref/db/obras.md",
+    "04-ref/procedimientos",
+    "04-ref/db/personas.md",
+    "04-ref/db/referencias.md",
+    "04-ref/db/topoi.md",
+    "04-ref/personas/Carlos Trilnik.md",
+    "cat.md",
+    "04-ref/personas/Cecila Arditto.md",
+    "Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md",
+    "README.md",
+    "@today.md",
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
+    "04-ref/procedimientos/extrañamiento.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "03-cla/c-cym01-presentación.md",
+    "Excalidraw",
+    "conflict-files-obsidian-git.md",
     "02-mat/python/py-foundations.md",
     "04-ref/topoi/t12-filosofía 21.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "01-proj/tp/2023-08-30.md",
-    "04-ref/bibliografía/notes/@Padilla2010.md",
-    "04-ref/bibliografía/notes/@Steyerl2014a.md",
-    "04-ref/bibliografía/notes/@XuanThuan1988.md",
-    "04-ref/bibliografía/b-Los condenados de la pantalla.md",
-    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md",
-    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t10-método científico.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym10&11-generative&Aframe.md",
     "image/galanter.jpeg",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/topoi/t09-física.md",
-    "04-ref/topoi/b-Spectromorphology.md",
-    "04-ref/topoi/t21-interfaces.md",
-    "04-ref/topoi/t60-espacio.md",
-    "04-ref/topoi/t51-arte relacional.md",
     "01-proj/23/beltrame",
     "01-proj/23",
     "01-proj/22/lopez",
@@ -244,8 +281,6 @@
     "01-proj/22/cymproj/webgl/3js01",
     "01-proj/22/cymproj/webgl",
     "01-proj/22/cymproj",
-    "01-proj/22/ancarola",
-    "01-proj/22",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
     "Untitled.canvas",

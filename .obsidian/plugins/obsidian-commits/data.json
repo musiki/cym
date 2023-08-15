@@ -514,11 +514,6 @@
       "tags": 0,
       "links": 0
     },
-    "crisis de la representación.md": {
-      "size": 4120,
-      "tags": 0,
-      "links": 2
-    },
     "hd-hydra.md": {
       "size": 0,
       "tags": 0,
@@ -539,24 +534,54 @@
       "tags": 0,
       "links": 0
     },
-    "conflict-files-obsidian-git.md": {
-      "size": 844,
+    "@today.md": {
+      "size": 2353,
       "tags": 0,
-      "links": 3
+      "links": 5
+    },
+    "Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md": {
+      "size": 22484,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/personas/Carlos Trilnik.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Cecila Arditto.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/procedimientos/tipologías de instalación.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/crisis de la representación.md": {
+      "size": 4120,
+      "tags": 0,
+      "links": 2
+    },
+    "04-ref/procedimientos/extrañamiento.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 31,
-      "Create": 27,
-      "Link": 16,
-      "Expand": 3
+      "Refactor": 37,
+      "Create": 33,
+      "Link": 20,
+      "Expand": 8
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 0,
-      "1": 0,
+      "0": 3,
+      "1": 11,
       "2": 0,
       "3": 0,
       "4": 0,
@@ -578,14 +603,14 @@
       "20": 0,
       "21": 0,
       "22": 5,
-      "23": 2
+      "23": 9
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 15,
-      "Tue": 7,
-      "Wed": 16,
+      "Tue": 14,
+      "Wed": 30,
       "Thu": 6,
       "Fri": 0,
       "Sat": 0,
@@ -597,7 +622,12 @@
       "Expanded": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
@@ -626,7 +656,13 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"extrañamiento.md\"> extrañamiento </a>",
+        "<a class=\"internal-link\" href=\"Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -636,7 +672,11 @@
         "<a class=\"internal-link\" href=\"tp04-guía de lectura SADI.md\"> tp04-guía de lectura SADI </a>",
         "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIn.md\"> tp04-guía de lectura SADIn </a>",
         "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -646,7 +686,8 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -670,7 +711,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap 1.md\"> c-cym-mindMap 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -680,13 +722,18 @@
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
       ],
-      "Removed Links from": []
+      "Removed Links from": [
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+      ]
     }
   },
   "ignoreList": [],
