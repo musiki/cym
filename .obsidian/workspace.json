@@ -98,7 +98,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "04-ref/a-yuda.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "04-ref/a-yuda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "04-ref/a-yuda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md"
+                "file": "04-ref/a-yuda.md"
               }
             }
           },
@@ -284,15 +284,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "5d2d54f7bd876055",
   "lastOpenFiles": [
+    "03-cla/c-cym02-arte generativo.md",
     "@today.md",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "03-cla/c-cym10y11-Aframe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym02-arte generativo.md",
     "Excalidraw/sistemas.excalidraw.md",
     "01-proj/tp/prueba tutorial.md",
     "01-proj/tp/tp01-topoi.md",

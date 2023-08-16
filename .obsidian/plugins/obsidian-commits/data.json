@@ -525,9 +525,9 @@
       "links": 0
     },
     "03-cla/c-cym02-arte generativo.md": {
-      "size": 5755,
+      "size": 8377,
       "tags": 6,
-      "links": 2
+      "links": 8
     },
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md": {
       "size": 615,
@@ -579,8 +579,8 @@
     "/": {
       "Refactor": 54,
       "Create": 51,
-      "Link": 23,
-      "Expand": 13
+      "Link": 24,
+      "Expand": 14
     }
   },
   "dailyCommits": {
@@ -597,7 +597,7 @@
       "9": 37,
       "10": 0,
       "11": 0,
-      "12": 28,
+      "12": 30,
       "13": 0,
       "14": 0,
       "15": 2,
@@ -615,7 +615,7 @@
     "/": {
       "Mon": 16,
       "Tue": 62,
-      "Wed": 36,
+      "Wed": 38,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -637,7 +637,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
@@ -777,7 +778,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": []
