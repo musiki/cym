@@ -3,7 +3,7 @@ title: cym23
 tags: cym, class
 ---
 
-# calendario cym 22
+# calendario cym 23
 
 ## tp1
 - [ ] topoi | Monografía basada en textos de cym ⏫ 📅 2023-08-30

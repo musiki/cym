@@ -6,21 +6,8 @@
       {
         "id": "c17b55f64f8136ed",
         "type": "tabs",
-        "dimension": 48.643216080402006,
+        "dimension": 38.869504535938596,
         "children": [
-          {
-            "id": "b0cdfe349a83623e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
           {
             "id": "af3b1814eb583a38",
             "type": "leaf",
@@ -39,36 +26,22 @@
       {
         "id": "515acd274c86b076",
         "type": "tabs",
-        "dimension": 51.356783919597994,
+        "dimension": 61.130495464061404,
         "children": [
           {
-            "id": "c747769344d7b114",
+            "id": "2a45a7fe7db2248d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/personas/Cecila Arditto.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a63c485f7648bb66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "@today.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "@today.md"
+                "file": "03-cla/c-cym02-arte generativo.md"
               }
             }
           },
@@ -179,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "@today.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "@today.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,8 +202,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a63c485f7648bb66",
+  "active": "2a45a7fe7db2248d",
   "lastOpenFiles": [
+    "Excalidraw/sistemas.excalidraw.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "@today.md",
+    "04-ref/personas/Cecila Arditto.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/23/prueba.md",
     "04-ref/a-dataview.md",
     "README.md",
     "cat.md",
@@ -242,22 +226,11 @@
     "hd-hydra.md",
     "03-cla/c-cym10&11-generative&Aframe.md",
     "conflict-files-obsidian-git 2.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/tp/prueba.md",
     "04-ref/bibliografía/crisis de la representación.md",
     "04-ref/procedimientos/tipologías de instalación.md",
     "04-ref/db/obras.md",
     "04-ref/procedimientos",
-    "04-ref/db/personas.md",
-    "04-ref/db/referencias.md",
-    "04-ref/db/topoi.md",
-    "04-ref/personas/Cecila Arditto.md",
-    "Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md",
-    "@today.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "04-ref/procedimientos/extrañamiento.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
     "Excalidraw",
     "image/galanter.jpeg",
     "01-proj/23/beltrame",
