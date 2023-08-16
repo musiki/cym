@@ -14,21 +14,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "file": "README.md",
                 "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ab25b46b2b0059fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -47,8 +34,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "515acd274c86b076",
@@ -74,28 +60,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/personas/Carlos Trilnik.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a848791c543bbeed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Buttons 1.0 is Coming.md",
-                "mode": "source",
+                "file": "@today.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "@today.md"
               }
             }
           },
@@ -206,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "@today.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "@today.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -256,14 +229,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab25b46b2b0059fe",
+  "active": "a63c485f7648bb66",
   "lastOpenFiles": [
+    "04-ref/a-dataview.md",
+    "README.md",
+    "cat.md",
+    "04-ref/topoi/t11-sistemas de universos.md",
+    "04-ref/topoi/t10-método científico.md",
+    "04-ref/a-yuda.md",
+    "04-ref/personas/Carlos Trilnik.md",
     "Buttons 1.0 is Coming.md",
+    "hd-hydra.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
     "conflict-files-obsidian-git 2.md",
     "conflict-files-obsidian-git.md",
-    "03-cla/c-cym10&11-generative&Aframe.md",
     "01-proj/tp/prueba.md",
-    "hd-hydra.md",
     "04-ref/bibliografía/crisis de la representación.md",
     "04-ref/procedimientos/tipologías de instalación.md",
     "04-ref/db/obras.md",
@@ -271,21 +251,14 @@
     "04-ref/db/personas.md",
     "04-ref/db/referencias.md",
     "04-ref/db/topoi.md",
-    "04-ref/personas/Carlos Trilnik.md",
-    "cat.md",
     "04-ref/personas/Cecila Arditto.md",
     "Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md",
-    "README.md",
     "@today.md",
     "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
     "04-ref/procedimientos/extrañamiento.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "03-cla/c-cym01-presentación.md",
     "Excalidraw",
-    "02-mat/python/py-foundations.md",
-    "04-ref/topoi/t12-filosofía 21.md",
-    "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
     "image/galanter.jpeg",
     "01-proj/23/beltrame",
     "01-proj/23",

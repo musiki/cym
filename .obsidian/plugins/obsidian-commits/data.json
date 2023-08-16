@@ -251,7 +251,7 @@
     },
     "04-ref/a-yuda.md": {
       "size": 4782,
-      "tags": 1,
+      "tags": 0,
       "links": 2
     },
     "04-ref/a-dataview.md": {
@@ -529,15 +529,10 @@
       "tags": 1,
       "links": 0
     },
-    "Buttons 1.0 is Coming.md": {
-      "size": 1794,
-      "tags": 0,
-      "links": 0
-    },
     "@today.md": {
       "size": 2353,
       "tags": 0,
-      "links": 5
+      "links": 6
     },
     "Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md": {
       "size": 22484,
@@ -573,18 +568,13 @@
       "size": 200,
       "tags": 1,
       "links": 0
-    },
-    "conflict-files-obsidian-git 2.md": {
-      "size": 844,
-      "tags": 0,
-      "links": 3
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 38,
+      "Refactor": 41,
       "Create": 36,
-      "Link": 23,
+      "Link": 24,
       "Expand": 8
     }
   },
@@ -606,8 +596,8 @@
       "13": 2,
       "14": 12,
       "15": 0,
-      "16": 12,
-      "17": 0,
+      "16": 14,
+      "17": 2,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -620,7 +610,7 @@
     "/": {
       "Mon": 15,
       "Tue": 14,
-      "Wed": 37,
+      "Wed": 41,
       "Thu": 6,
       "Fri": 0,
       "Sat": 0,
@@ -727,7 +717,9 @@
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -742,11 +734,13 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
