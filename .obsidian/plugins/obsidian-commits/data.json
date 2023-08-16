@@ -573,12 +573,17 @@
       "size": 22483,
       "tags": 1,
       "links": 0
+    },
+    "01-proj/23/prueba.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 54,
-      "Create": 51,
+      "Refactor": 55,
+      "Create": 52,
       "Link": 24,
       "Expand": 14
     }
@@ -597,7 +602,7 @@
       "9": 37,
       "10": 0,
       "11": 0,
-      "12": 30,
+      "12": 32,
       "13": 0,
       "14": 0,
       "15": 2,
@@ -615,7 +620,7 @@
     "/": {
       "Mon": 16,
       "Tue": 62,
-      "Wed": 38,
+      "Wed": 40,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -641,6 +646,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
@@ -690,8 +696,7 @@
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/tipologías de instalación.md\"> tipologías de instalación </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -710,7 +715,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",

@@ -104,9 +104,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "5ac267fad295d9d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/tp/prueba tutorial.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -188,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "01-proj/tp/prueba tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "01-proj/tp/prueba tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/a-yuda.md"
+                "file": "01-proj/tp/prueba tutorial.md"
               }
             }
           },
@@ -284,8 +297,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "5ac267fad295d9d6",
   "lastOpenFiles": [
+    "hd-hydra.md",
+    "01-proj/23/prueba.md",
+    "04-ref/a-yuda.md",
     "01-proj/23",
     "03-cla/c-cym02-arte generativo.md",
     "@today.md",
@@ -312,8 +328,6 @@
     "04-ref/procedimientos/tipologías de instalación.md",
     "04-ref/procedimientos/extrañamiento.md",
     "04-ref/procedimientos",
-    "04-ref/personas/Cecila Arditto.md",
-    "04-ref/personas/Carlos Trilnik.md",
     "01-proj/23",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
@@ -326,7 +340,6 @@
     "01-proj/22/cymproj/webgl",
     "01-proj/22/lopez",
     "01-proj/22/gutierrez",
-    "01-proj/22/cymproj",
-    "01-proj/22/ancarola"
+    "01-proj/22/cymproj"
   ]
 }
