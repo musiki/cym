@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:topoi",
@@ -75,9 +75,13 @@
   "linkStrength": 1,
   "linkDistance": 30,
 <<<<<<< HEAD
+  "scale": 0.4302515639452389,
+=======
+<<<<<<< HEAD
   "scale": 0.40312143350949003,
 =======
   "scale": 0.40706557456922526,
+>>>>>>> origin/main
 >>>>>>> origin/main
   "close": true
 }
