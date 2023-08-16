@@ -98,7 +98,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md"
+                "file": "03-cla/c-cym02-arte generativo.md"
               }
             }
           },
@@ -286,13 +286,14 @@
   },
   "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "@today.md",
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "03-cla/c-cym10y11-Aframe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym07-networking.md",
     "03-cla/c-cym02-arte generativo.md",
     "Excalidraw/sistemas.excalidraw.md",
-    "@today.md",
     "01-proj/tp/prueba tutorial.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/tp/tp02-aplicación.md",
@@ -313,7 +314,6 @@
     "04-ref/personas/Cecila Arditto.md",
     "04-ref/personas/Carlos Trilnik.md",
     "04-ref/bibliografía/crisis de la representación.md",
-    "03-cla/c-cym00-presentación.md",
     "01-proj/23",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",

@@ -564,11 +564,6 @@
       "tags": 0,
       "links": 0
     },
-    "@today.md": {
-      "size": 2575,
-      "tags": 0,
-      "links": 5
-    },
     "conflict-files-obsidian-git 2.md": {
       "size": 844,
       "tags": 0,
@@ -582,7 +577,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 53,
+      "Refactor": 54,
       "Create": 51,
       "Link": 23,
       "Expand": 13
@@ -602,7 +597,7 @@
       "9": 37,
       "10": 0,
       "11": 0,
-      "12": 27,
+      "12": 28,
       "13": 0,
       "14": 0,
       "15": 2,
@@ -620,7 +615,7 @@
     "/": {
       "Mon": 16,
       "Tue": 62,
-      "Wed": 35,
+      "Wed": 36,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -769,7 +764,8 @@
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
