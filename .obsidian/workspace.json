@@ -78,9 +78,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "93c69afa310075d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/tp/prueba.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -162,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "file": "01-proj/tp/prueba.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "file": "01-proj/tp/prueba.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +215,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md"
+                "file": "01-proj/tp/prueba.md"
               }
             }
           },
@@ -257,22 +270,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ea0c26d926e6ad3",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/todo.md",
+    "hd-hydra.md",
+    "crisis de la representación.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym12-Aframe.md",
+    "03-cla/c-cym01-presentación.md",
+    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
+    "01-proj/tp/prueba.md",
     "02-mat/que es git.md",
     "04-ref/a-yuda.md",
     "README.md",
     "02-mat/html.md",
     "Buttons 1.0 is Coming.md",
     "cat.md",
-    "crisis de la representación.md",
-    "hd-hydra.md",
     "04-ref/templater.md",
-    "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym01-presentación.md",
     "00-in/combinational creativity.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/tp/tp01-topoi.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/tone.js.md",
@@ -280,11 +298,6 @@
     "02-mat/cloud ides.md",
     "02-mat/python/py-foundations.md",
     "02-mat/python/pycolors.md",
-    "02-mat/procesos/r-vinculación bidireccional.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/org/i-sackbut.md",
-    "02-mat/org/i-theremin.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",

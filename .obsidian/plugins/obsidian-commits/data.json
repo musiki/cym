@@ -528,12 +528,17 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/tp/prueba.md": {
+      "size": 200,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 38,
-      "Create": 36,
+      "Refactor": 39,
+      "Create": 38,
       "Link": 14,
       "Expand": 12
     }
@@ -562,14 +567,14 @@
       "19": 2,
       "20": 3,
       "21": 2,
-      "22": 0,
+      "22": 3,
       "23": 10
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 47,
+      "Tue": 50,
       "Wed": 10,
       "Thu": 0,
       "Fri": 0,
@@ -629,6 +634,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
@@ -681,6 +688,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
