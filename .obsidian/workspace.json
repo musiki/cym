@@ -22,6 +22,19 @@
             }
           },
           {
+            "id": "ab25b46b2b0059fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "af3b1814eb583a38",
             "type": "leaf",
             "state": {
@@ -34,7 +47,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "515acd274c86b076",
@@ -174,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -192,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym10&11-generative&Aframe.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,9 +256,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0cdfe349a83623e",
+  "active": "ab25b46b2b0059fe",
   "lastOpenFiles": [
     "Buttons 1.0 is Coming.md",
+    "conflict-files-obsidian-git 2.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym10&11-generative&Aframe.md",
+    "01-proj/tp/prueba.md",
     "hd-hydra.md",
     "04-ref/bibliografía/crisis de la representación.md",
     "04-ref/procedimientos/tipologías de instalación.md",
@@ -260,18 +278,14 @@
     "README.md",
     "@today.md",
     "03-cla/c-cym02-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym10&11-generative&Aframe.md",
     "04-ref/procedimientos/extrañamiento.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "01-proj/tp/tp04-guía de lectura SADIN.md",
     "03-cla/c-cym01-presentación.md",
     "Excalidraw",
-    "conflict-files-obsidian-git.md",
     "02-mat/python/py-foundations.md",
     "04-ref/topoi/t12-filosofía 21.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
     "image/galanter.jpeg",
     "01-proj/23/beltrame",
     "01-proj/23",

@@ -568,20 +568,30 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/tp/prueba.md": {
+      "size": 200,
+      "tags": 1,
+      "links": 0
+    },
+    "conflict-files-obsidian-git 2.md": {
+      "size": 844,
+      "tags": 0,
+      "links": 3
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 37,
-      "Create": 33,
-      "Link": 20,
+      "Refactor": 38,
+      "Create": 36,
+      "Link": 23,
       "Expand": 8
     }
   },
   "dailyCommits": {
     "/": {
       "0": 3,
-      "1": 11,
+      "1": 15,
       "2": 0,
       "3": 0,
       "4": 0,
@@ -592,11 +602,11 @@
       "9": 0,
       "10": 6,
       "11": 6,
-      "12": 32,
+      "12": 34,
       "13": 2,
       "14": 12,
       "15": 0,
-      "16": 11,
+      "16": 12,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -610,7 +620,7 @@
     "/": {
       "Mon": 15,
       "Tue": 14,
-      "Wed": 30,
+      "Wed": 37,
       "Thu": 6,
       "Fri": 0,
       "Sat": 0,
@@ -662,7 +672,10 @@
         "<a class=\"internal-link\" href=\"extrañamiento.md\"> extrañamiento </a>",
         "<a class=\"internal-link\" href=\"Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -687,7 +700,8 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -712,6 +726,7 @@
         "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
@@ -725,7 +740,9 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
