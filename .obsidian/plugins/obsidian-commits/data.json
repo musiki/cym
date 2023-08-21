@@ -531,15 +531,15 @@
     },
     "01-proj/tp/prueba.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 39,
-      "Create": 37,
-      "Link": 14,
+      "Refactor": 40,
+      "Create": 38,
+      "Link": 15,
       "Expand": 12
     }
   },
@@ -559,10 +559,10 @@
       "11": 0,
       "12": 4,
       "13": 0,
-      "14": 0,
+      "14": 1,
       "15": 2,
-      "16": 2,
-      "17": 4,
+      "16": 3,
+      "17": 5,
       "18": 17,
       "19": 2,
       "20": 3,
@@ -573,9 +573,9 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 16,
+      "Mon": 18,
       "Tue": 47,
-      "Wed": 10,
+      "Wed": 11,
       "Thu": 0,
       "Fri": 2,
       "Sat": 0,
@@ -635,7 +635,8 @@
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Prueba.md\"> Prueba </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -656,7 +657,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -689,7 +691,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Prueba.md\"> Prueba </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
