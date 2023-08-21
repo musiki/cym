@@ -556,7 +556,7 @@
     },
     "03-cla/c-cym02-arte generativo.md": {
       "size": 8377,
-      "tags": 5,
+      "tags": 6,
       "links": 8
     },
     "03-cla/c-cym10y11-Aframe.md": {
@@ -574,27 +574,27 @@
       "tags": 1,
       "links": 0
     },
-    "efimero.md": {
+    "01-proj/23/beltrame.md": {
       "size": 0,
       "tags": 0,
       "links": 0
     },
     "02-mat/partituras/canciones.md": {
-      "size": 0,
+      "size": 520,
       "tags": 0,
       "links": 0
     },
     "02-mat/python/python music.md": {
-      "size": 0,
+      "size": 175,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 51,
-      "Create": 48,
-      "Link": 35,
+      "Refactor": 52,
+      "Create": 49,
+      "Link": 34,
       "Expand": 8
     }
   },
@@ -604,7 +604,7 @@
       "1": 15,
       "2": 0,
       "3": 0,
-      "4": 1,
+      "4": 0,
       "5": 1,
       "6": 0,
       "7": 0,
@@ -613,14 +613,14 @@
       "10": 6,
       "11": 6,
       "12": 34,
-      "13": 3,
-      "14": 12,
+      "13": 4,
+      "14": 16,
       "15": 1,
       "16": 14,
       "17": 2,
-      "18": 29,
+      "18": 27,
       "19": 0,
-      "20": 2,
+      "20": 0,
       "21": 0,
       "22": 5,
       "23": 9
@@ -628,13 +628,13 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 16,
+      "Mon": 19,
       "Tue": 14,
-      "Wed": 71,
-      "Thu": 7,
+      "Wed": 68,
+      "Thu": 6,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 34
+      "Sun": 36
     }
   },
   "recentCommits": {
@@ -695,9 +695,10 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/canciones.md\"> canciones </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python music.md\"> python music </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -768,7 +769,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -787,18 +789,15 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
       ],
       "Removed Links from": [
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ]
     }
   },
