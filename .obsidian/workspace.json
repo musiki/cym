@@ -28,38 +28,20 @@
             }
           },
           {
-            "id": "959cf3014e3f5fba",
+            "id": "092d55e3789581db",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "d08ad637e56e52b9",
+            "id": "84ea3e7d69ad87fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ae6a3b18383518db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/combinational creativity.md",
+                "file": "02-mat/python/py-foundations.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -67,25 +49,12 @@
             }
           },
           {
-            "id": "1ea0c26d926e6ad3",
+            "id": "7e94692f8f638c12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "93c69afa310075d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym03- cohesión audiovisual.md",
+                "file": "02-mat/python/py-foundations.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -93,25 +62,12 @@
             }
           },
           {
-            "id": "5d2d54f7bd876055",
+            "id": "1b343d53b762d422",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/a-yuda.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "5ac267fad295d9d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -119,7 +75,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -201,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/a-yuda.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -297,16 +253,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5ac267fad295d9d6",
+  "active": "1b343d53b762d422",
   "lastOpenFiles": [
-    "01-proj/tp/prueba tutorial.md",
+    "02-mat/python/py-foundations.md",
     "conflict-files-obsidian-git.md",
+    "02-mat/python/pycolors.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "03-cla/c-cym04-integración.md",
+    "README.md",
+    "00-in/combinational creativity.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "04-ref/a-yuda.md",
+    "top10s.csv",
+    "efimero.md",
+    "02-mat/python/ds/songs-top10s.csv",
+    "02-mat/python/ds/music-scales.csv",
+    "02-mat/python/ds/composers.csv",
+    "02-mat/python/ds",
+    "02-mat/partituras/canciones.md",
+    "01-proj/tp/prueba tutorial.md",
     "@today.md",
     "hd-hydra.md",
     "01-proj/23/prueba.md",
-    "04-ref/a-yuda.md",
     "01-proj/23",
-    "03-cla/c-cym02-arte generativo.md",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "03-cla/c-cym10y11-Aframe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
@@ -318,15 +287,7 @@
     "01-proj/tp/tp04-guía de lectura SADIN.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
     "03-cla/c-cym06-un instrumento online colectivo.md",
-    "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym04-integración.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "03-cla/c-cym03- cohesión audivisual.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "conflict-files-obsidian-git 2.md",
     "Excalidraw",
-    "04-ref/procedimientos/tipologías de instalación.md",
-    "04-ref/procedimientos/extrañamiento.md",
     "04-ref/procedimientos",
     "01-proj/23",
     "image/meta-aprendizaje-1660395828475.jpeg",
@@ -335,11 +296,6 @@
     "image/TP1-Topoi-1663103377085.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/galanter.jpeg",
-    "01-proj/22/cymproj/webgl/3js01/index.html",
-    "01-proj/22/cymproj/webgl/3js01",
-    "01-proj/22/cymproj/webgl",
-    "01-proj/22/lopez",
-    "01-proj/22/gutierrez",
-    "01-proj/22/cymproj"
+    "01-proj/22/cymproj/webgl/3js01/index.html"
   ]
 }

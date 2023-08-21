@@ -521,7 +521,7 @@
     },
     "03-cla/c-cym02-arte generativo.md": {
       "size": 8377,
-      "tags": 6,
+      "tags": 5,
       "links": 8
     },
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md": {
@@ -573,13 +573,23 @@
       "size": 2618,
       "tags": 0,
       "links": 6
+    },
+    "02-mat/partituras/canciones.md": {
+      "size": 520,
+      "tags": 0,
+      "links": 0
+    },
+    "efimero.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 59,
-      "Create": 54,
-      "Link": 26,
+      "Refactor": 61,
+      "Create": 57,
+      "Link": 27,
       "Expand": 14
     }
   },
@@ -598,7 +608,7 @@
       "10": 0,
       "11": 0,
       "12": 32,
-      "13": 1,
+      "13": 7,
       "14": 0,
       "15": 6,
       "16": 2,
@@ -613,7 +623,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 17,
+      "Mon": 23,
       "Tue": 62,
       "Wed": 40,
       "Thu": 7,
@@ -641,6 +651,9 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/canciones.md\"> canciones </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
@@ -688,10 +701,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/tipologías de instalación.md\"> tipologías de instalación </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -770,6 +780,7 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
@@ -785,10 +796,12 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Removed Links from": []
     }
