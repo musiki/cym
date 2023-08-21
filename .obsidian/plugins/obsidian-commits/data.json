@@ -573,12 +573,17 @@
       "size": 22483,
       "tags": 1,
       "links": 0
+    },
+    "01-proj/23/beltrame.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 49,
-      "Create": 45,
+      "Refactor": 51,
+      "Create": 46,
       "Link": 34,
       "Expand": 8
     }
@@ -598,9 +603,9 @@
       "10": 6,
       "11": 6,
       "12": 34,
-      "13": 2,
+      "13": 4,
       "14": 12,
-      "15": 0,
+      "15": 1,
       "16": 14,
       "17": 2,
       "18": 27,
@@ -619,7 +624,7 @@
       "Thu": 6,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 33
+      "Sun": 36
     }
   },
   "recentCommits": {
@@ -679,7 +684,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym10y11-Aframe.md\"> c-cym10y11-Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -693,7 +699,9 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>"
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba sabrina.md\"> prueba sabrina </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame.md\"> beltrame </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
