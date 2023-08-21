@@ -1,3 +1,9 @@
+plugins a instalar
+```bash
+pip3 install seaborn matplot lib pandas numpy plotly
+```
+
+
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt

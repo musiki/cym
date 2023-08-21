@@ -583,12 +583,17 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "02-mat/python/python music.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 51,
-      "Create": 47,
+      "Create": 48,
       "Link": 35,
       "Expand": 8
     }
@@ -613,7 +618,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 28,
+      "18": 29,
       "19": 0,
       "20": 2,
       "21": 0,
@@ -623,7 +628,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 15,
+      "Mon": 16,
       "Tue": 14,
       "Wed": 71,
       "Thu": 7,
@@ -691,7 +696,8 @@
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
