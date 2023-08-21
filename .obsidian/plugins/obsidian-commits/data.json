@@ -256,7 +256,7 @@
     },
     "04-ref/a-yuda.md": {
       "size": 4488,
-      "tags": 1,
+      "tags": 0,
       "links": 2
     },
     "04-ref/a-dataview.md": {
@@ -429,11 +429,6 @@
       "tags": 3,
       "links": 0
     },
-    "Buttons 1.0 is Coming.md": {
-      "size": 1794,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/22/ancarola/Final CyM - Metrónomo.md": {
       "size": 322,
       "tags": 0,
@@ -564,11 +559,6 @@
       "tags": 0,
       "links": 0
     },
-    "conflict-files-obsidian-git 2.md": {
-      "size": 844,
-      "tags": 0,
-      "links": 3
-    },
     "Excalidraw/sistemas.excalidraw.md": {
       "size": 22483,
       "tags": 1,
@@ -578,13 +568,18 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "@today.md": {
+      "size": 2618,
+      "tags": 0,
+      "links": 6
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 55,
-      "Create": 52,
-      "Link": 24,
+      "Refactor": 59,
+      "Create": 54,
+      "Link": 26,
       "Expand": 14
     }
   },
@@ -603,13 +598,13 @@
       "10": 0,
       "11": 0,
       "12": 32,
-      "13": 0,
+      "13": 1,
       "14": 0,
-      "15": 2,
+      "15": 6,
       "16": 2,
       "17": 4,
       "18": 17,
-      "19": 2,
+      "19": 5,
       "20": 3,
       "21": 2,
       "22": 4,
@@ -618,10 +613,10 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 16,
+      "Mon": 17,
       "Tue": 62,
       "Wed": 40,
-      "Thu": 0,
+      "Thu": 7,
       "Fri": 0,
       "Sat": 0,
       "Sun": 27
@@ -646,6 +641,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
@@ -694,9 +691,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/tipologías de instalación.md\"> tipologías de instalación </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
@@ -772,7 +767,10 @@
         "<a class=\"internal-link\" href=\"crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
@@ -785,9 +783,13 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
-      "Removed Tags from": [],
+      "Removed Tags from": [
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
+      ],
       "Removed Links from": []
     }
   },

@@ -1,4 +1,4 @@
-- [ ] mapear datos al mouse
+- [x] mapear datos al mouse
 - [ ] mejorar la construcción de interfaces, botones. 
 - [ ] hacer una interface de interpretación de mouse , multitouch y teclado . 
 	- [ ] interpretación como cabezera de un mensaje

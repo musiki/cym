@@ -47,18 +47,25 @@ LIST FROM #topoi
 ```
 
 
-basic field:: hellow
-
-```dataview
-LIST FTOM "#basic field"
-
-```
-
-
-
 # inline fields
 
-videos sobre livecoding por ejemplo 
+- que es un "field"?
+Un campo de metadatos es un par formado por una clave y un valor. El valor de un campo tiene un tipo de datos (más información aquí) que determina cómo se comportará este campo al consultarlo.
+
+Puede añadir cualquier número de campos a una nota, un elemento de lista o una tarea.
+
+---
+alias "cat"
+last-reviewed: 2023-07-03
+thoughts:
+	rating: 9
+	reviewable: false
+---
+
+con esto creamos una metadata llamada alias, last-reviewed y thoughts, cada uno con data-types distintas.
+
+
+
 {{o|toplab|hace esto|https://www.youtube.com/watch?v=jBRqOp5ws58}}
 
 

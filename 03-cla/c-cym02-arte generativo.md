@@ -48,8 +48,8 @@ sistemas autónomos de Pollock.
 **sistemas complejos**
 	teoria de la complejidad.
 		emergencia de comportamientos de agentes discretos simples cuya interacción genera un output complejo, que no puede preveerse a partir de la observación individual del comportamiento de un solo agente. (BOTTOM-UP)
-		
-[[sistemas.excalidraw]]
+	
+![[sistemas.excalidraw|center]]
 
 **sistema**
 		ej: amplificador operacional

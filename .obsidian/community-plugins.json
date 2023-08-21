@@ -66,5 +66,6 @@
   "theme-picker",
   "obsidian-markmind",
   "copilot",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "better-inline-fields"
 ]

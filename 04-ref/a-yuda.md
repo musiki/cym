@@ -279,16 +279,9 @@ border: off
 
 # Column 3
 
-=== end-multi-column
-
-
-	
+=== end-multi-column ===
 
 ![[a-dataview]]
 
 
-a:: #inline
-
-
-`= this.a`
-
+a::#inline
