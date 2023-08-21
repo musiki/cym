@@ -10,7 +10,6 @@
   "obsidian-drag-n-drop-plugin",
   "obsidian-dynamic-embed",
   "obsidian-dynamic-toc",
-  "execute-code",
   "obsidian-frontmatter-tag-suggest",
   "dbfolder",
   "cycle-through-panes",
@@ -53,7 +52,6 @@
   "simple-embeds",
   "obsidian-wordnet-plugin",
   "obsidian42-text-transporter",
-  "obsidian-jupyter",
   "obsidian-kanban",
   "obsidian-link-embed",
   "heatmap-calendar",
@@ -67,5 +65,9 @@
   "obsidian-markmind",
   "copilot",
   "obsidian-excalidraw-plugin",
-  "better-inline-fields"
+  "better-inline-fields",
+  "obsidian-zotero-desktop-connector",
+  "obsidian-pretty-bibtex",
+  "markdown-chords",
+  "execute-code"
 ]
