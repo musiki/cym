@@ -549,9 +549,35 @@
       "tags": 0,
       "links": 0
     },
+<<<<<<< HEAD
     "04-ref/procedimientos/extrañamiento.md": {
       "size": 199,
       "tags": 0,
+=======
+    "01-proj/tp/prueba tutorial.md": {
+      "size": 200,
+      "tags": 1,
+      "links": 0
+    },
+    "03-cla/c-cym00-presentación.md": {
+      "size": 391,
+      "tags": 2,
+      "links": 0
+    },
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
+      "size": 5526,
+      "tags": 2,
+      "links": 9
+    },
+    "03-cla/c-cym02-arte generativo.md": {
+      "size": 8377,
+      "tags": 6,
+      "links": 8
+    },
+    "03-cla/c-cym10y11-Aframe.md": {
+      "size": 1721,
+      "tags": 6,
+>>>>>>> origin/main
       "links": 0
     },
     "04-ref/procedimientos/tipologías de instalación.md": {
@@ -564,7 +590,11 @@
       "tags": 1,
       "links": 0
     },
+<<<<<<< HEAD
     "01-proj/23/prueba.md": {
+=======
+    "01-proj/23/beltrame.md": {
+>>>>>>> origin/main
       "size": 0,
       "tags": 0,
       "links": 0
@@ -576,11 +606,14 @@
     },
     "02-mat/partituras/canciones.md": {
       "size": 520,
+<<<<<<< HEAD
       "tags": 0,
       "links": 0
     },
     "efimero.md": {
       "size": 0,
+=======
+>>>>>>> origin/main
       "tags": 0,
       "links": 0
     },
@@ -597,14 +630,22 @@
   },
   "commitTypes": {
     "/": {
+<<<<<<< HEAD
       "Refactor": 61,
       "Create": 59,
       "Link": 28,
       "Expand": 14
+=======
+      "Refactor": 52,
+      "Create": 49,
+      "Link": 34,
+      "Expand": 8
+>>>>>>> origin/main
     }
   },
   "dailyCommits": {
     "/": {
+<<<<<<< HEAD
       "0": 2,
       "1": 0,
       "2": 13,
@@ -629,10 +670,37 @@
       "21": 2,
       "22": 4,
       "23": 21
+=======
+      "0": 3,
+      "1": 15,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 1,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 6,
+      "11": 6,
+      "12": 34,
+      "13": 4,
+      "14": 16,
+      "15": 1,
+      "16": 14,
+      "17": 2,
+      "18": 27,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 5,
+      "23": 9
+>>>>>>> origin/main
     }
   },
   "weeklyCommits": {
     "/": {
+<<<<<<< HEAD
       "Mon": 26,
       "Tue": 62,
       "Wed": 40,
@@ -640,6 +708,15 @@
       "Fri": 0,
       "Sat": 0,
       "Sun": 27
+=======
+      "Mon": 19,
+      "Tue": 14,
+      "Wed": 68,
+      "Thu": 6,
+      "Fri": 0,
+      "Sat": 0,
+      "Sun": 36
+>>>>>>> origin/main
     }
   },
   "recentCommits": {
@@ -731,7 +808,31 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
+<<<<<<< HEAD
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
+=======
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/canciones.md\"> canciones </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python music.md\"> python music </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
+      ],
+      "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
+        "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
+        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADI.md\"> tp04-guía de lectura SADI </a>",
+        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIn.md\"> tp04-guía de lectura SADIn </a>",
+        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba sabrina.md\"> prueba sabrina </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame.md\"> beltrame </a>"
+>>>>>>> origin/main
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-hydra+tone.js.md\"> c-cym09-hydra+tone.js </a>",
@@ -790,8 +891,20 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
+<<<<<<< HEAD
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+=======
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
+>>>>>>> origin/main
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
@@ -808,6 +921,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+<<<<<<< HEAD
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
@@ -815,6 +929,19 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Removed Links from": []
+=======
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>"
+      ],
+      "Removed Tags from": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
+      ],
+      "Removed Links from": [
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+      ]
+>>>>>>> origin/main
     }
   },
   "ignoreList": [],
