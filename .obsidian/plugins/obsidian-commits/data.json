@@ -489,11 +489,6 @@
       "tags": 0,
       "links": 0
     },
-    "hd-hydra.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md": {
       "size": 0,
       "tags": 2,
@@ -574,17 +569,27 @@
       "tags": 1,
       "links": 0
     },
-    "efimero.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/partituras/canciones.md": {
       "size": 0,
       "tags": 0,
       "links": 0
     },
     "02-mat/python/python music.md": {
+      "size": 10805,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/python/python abjad.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym14 mapas.md": {
+      "size": 3619,
+      "tags": 2,
+      "links": 3
+    },
+    "Donna Haraway.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -592,15 +597,15 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 51,
-      "Create": 48,
-      "Link": 35,
-      "Expand": 8
+      "Refactor": 54,
+      "Create": 51,
+      "Link": 39,
+      "Expand": 11
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 3,
+      "0": 4,
       "1": 15,
       "2": 0,
       "3": 0,
@@ -609,12 +614,12 @@
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 0,
+      "9": 1,
       "10": 6,
       "11": 6,
       "12": 34,
-      "13": 3,
-      "14": 12,
+      "13": 4,
+      "14": 13,
       "15": 0,
       "16": 14,
       "17": 2,
@@ -622,15 +627,15 @@
       "19": 0,
       "20": 2,
       "21": 0,
-      "22": 5,
-      "23": 9
+      "22": 13,
+      "23": 10
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 14,
-      "Wed": 71,
+      "Tue": 26,
+      "Wed": 72,
       "Thu": 7,
       "Fri": 0,
       "Sat": 0,
@@ -647,7 +652,10 @@
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python music.md\"> python music </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
@@ -697,7 +705,10 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
         "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Donna Haraway.md\"> Donna Haraway </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -711,7 +722,8 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>"
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -730,7 +742,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -766,7 +779,9 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
+        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -786,7 +801,10 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",

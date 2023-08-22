@@ -548,5 +548,7 @@
       "key": "L"
     }
   ],
-  "editor:toggle-checklist-status": []
+  "editor:toggle-checklist-status": [],
+  "obsidian-excalidraw-plugin:toggle-lock": [],
+  "obsidian-outliner:system-info": []
 }
