@@ -73,22 +73,9 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "2ebb17c747478beb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "02-mat/python/py-foundations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "02-mat/python/py-foundations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "02-mat/python/py-foundations.md"
               }
             }
           },
@@ -256,10 +243,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ebb17c747478beb",
+  "active": "56d6a16826e12bcc",
   "lastOpenFiles": [
-    "02-mat/python/py-foundations.md",
     "conflict-files-obsidian-git.md",
+    "02-mat/python/py-foundations.md",
     "02-mat/python/python music.md",
     "02-mat/python/pycolors.md",
     "03-cla/c-cym03- cohesión audiovisual.md",
