@@ -60,9 +60,35 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "56d6a16826e12bcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-mat/python/py-foundations.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "2ebb17c747478beb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -144,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/python/py-foundations.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -222,28 +248,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "dbfolder:Create a new database table": false,
-      "notion-like-tables:Create new loom": false,
-      "copilot:Copilot Chat": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-metatable:Metatable": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "7e94692f8f638c12",
+  "active": "2ebb17c747478beb",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "02-mat/python/py-foundations.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/python/python music.md",
     "02-mat/python/pycolors.md",
     "03-cla/c-cym03- cohesión audiovisual.md",
     "03-cla/c-cym04-integración.md",
@@ -273,7 +290,6 @@
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp04-guía de lectura SADIN.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
-    "03-cla/c-cym06-un instrumento online colectivo.md",
     "Excalidraw",
     "04-ref/procedimientos",
     "01-proj/23",
