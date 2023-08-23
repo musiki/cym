@@ -163,7 +163,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/Shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -245,7 +245,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/Shifres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,7 +262,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/Shifres.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -285,7 +285,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/23/Shifres.md"
               }
             }
           },
@@ -350,8 +350,8 @@
   },
   "active": "1701626cb23170d4",
   "lastOpenFiles": [
-    "01-proj/23/Shifres.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/23/Shifres.md",
     "01-proj/23/bassino/bassino.md",
     "01-proj/23/prueba.md",
     "01-proj/23/beltrame.md",
