@@ -533,12 +533,17 @@
       "size": 0,
       "tags": 1,
       "links": 0
+    },
+    "Prueba.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 40,
-      "Create": 38,
+      "Create": 39,
       "Link": 15,
       "Expand": 12
     }
@@ -561,7 +566,7 @@
       "13": 0,
       "14": 1,
       "15": 2,
-      "16": 3,
+      "16": 4,
       "17": 5,
       "18": 17,
       "19": 2,
@@ -573,7 +578,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 18,
+      "Mon": 19,
       "Tue": 47,
       "Wed": 11,
       "Thu": 0,
@@ -636,7 +641,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Prueba.md\"> Prueba </a>"
+        "<a class=\"internal-link\" href=\"Prueba.md\"> Prueba </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym10,11-generative aframe.md\"> c-cym10,11-generative aframe </a>",
