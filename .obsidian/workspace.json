@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 355.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,8 +184,11 @@
   },
   "active": "2373c358f6eddb16",
   "lastOpenFiles": [
-    "03-cla/c-cym03- cohesión audiovisual.md",
+    "01-proj/23/beltrame.md",
+    "01-proj/23/prueba.md",
     "01-proj/23/bassino/bassino.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
     "01-proj/23/bassino",
     "03-cla/c-cym14 mapas.md",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
@@ -210,9 +213,6 @@
     "03-cla/c-cym05-flex-grid.md",
     "03-cla/c-cym12-Aframe2.md",
     "03-cla/c-cym04-integración.md",
-    "02-mat/python/python abjad.md",
-    "02-mat/python/python music.md",
-    "02-mat/python/py-foundations.md",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
