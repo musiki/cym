@@ -11,12 +11,14 @@
             "id": "ecfa88d1ea0545d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "cym-metamap.canvas",
+                "viewState": {
+                  "x": 1527.163370982792,
+                  "y": -148.04660179747015,
+                  "zoom": -0.34862466455959795
+                }
               }
             }
           }
@@ -70,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 376.5
+    "width": 200
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -97,7 +99,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/python/py-foundations.md"
+                "file": "cym-metamap.canvas"
               }
             }
           },
@@ -115,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "cym-metamap.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "cym-metamap.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,13 +187,14 @@
   },
   "active": "ecfa88d1ea0545d2",
   "lastOpenFiles": [
+    "cat.md",
+    "cym-metamap.canvas",
+    "02-mat/python/py-foundations.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/partituras/ave maria palestrina.md",
     "02-mat/tone.js.md",
-    "02-mat/python/py-foundations.md",
     "01-proj/23/bassino/bassino.md",
     "03-cla/c-cym00-presentación.md",
-    "cym-metamap.canvas",
     "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
     "conflict-files-obsidian-git.md",
@@ -215,7 +218,6 @@
     "04-ref/personas/John Barrows.md",
     "04-ref/personas/Stuart Russell.md",
     "04-ref/a-dataview.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
