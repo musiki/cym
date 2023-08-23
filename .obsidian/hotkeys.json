@@ -78,14 +78,6 @@
       "key": "P"
     }
   ],
-  "editor:rename-heading": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
   "templater-obsidian:jump-to-next-cursor-location": [
     {
       "modifiers": [

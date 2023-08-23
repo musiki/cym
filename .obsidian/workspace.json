@@ -4,23 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "94a73c9f60a84c4b",
+        "id": "2d5ba3d552d4afe5",
         "type": "tabs",
         "children": [
           {
-            "id": "2373c358f6eddb16",
+            "id": "ecfa88d1ea0545d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym00-presentación.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
+          },
+          {
+            "id": "005d57acf767cffc",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "cym-metamap.canvas",
+                "viewState": {
+                  "x": -23,
+                  "y": -201,
+                  "zoom": -0.1671334787706534
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 376.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -97,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "cym-metamap.canvas"
               }
             }
           },
@@ -115,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "cym-metamap.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "cym-metamap.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,15 +195,19 @@
       "copilot:Copilot Chat": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "wikipedia-search:Open Article": false
     }
   },
-  "active": "2373c358f6eddb16",
+  "active": "005d57acf767cffc",
   "lastOpenFiles": [
+    "02-mat/procesos/Untitled.loom",
+    "03-cla/c-cym00-presentación.md",
+    "02-mat/ml",
+    "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame.md",
     "01-proj/23/prueba.md",
     "01-proj/23/bassino/bassino.md",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym03- cohesión audiovisual.md",
     "01-proj/23/bassino",
     "03-cla/c-cym14 mapas.md",
@@ -197,7 +217,7 @@
     "02-mat/jasvascript/js-cheatsheet.md",
     "03-cla/c-cym02-arte generativo.md",
     "cym-metamap.canvas",
-    "Donna Haraway.md",
+    "04-ref/personas/Donna Haraway.md",
     "hd-hydra.md",
     "efimero.md",
     "04-ref/a-yuda.md",
@@ -211,8 +231,6 @@
     "04-ref/a-dataview.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym04-integración.md",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
@@ -220,9 +238,7 @@
     "02-mat/python/untitled folder",
     "02-mat/python/ds/top10s.csv",
     "04-ref/procedimientos",
-    "Excalidraw",
     "image/galanter.jpeg",
-    "01-proj/23/beltrame",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
     "03-cla/cym-map.canvas",

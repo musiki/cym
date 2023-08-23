@@ -589,11 +589,6 @@
       "tags": 2,
       "links": 3
     },
-    "Donna Haraway.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/bassino/bassino.md": {
       "size": 2996,
       "tags": 0,
@@ -603,11 +598,16 @@
       "size": 1220,
       "tags": 0,
       "links": 0
+    },
+    "04-ref/personas/Donna Haraway.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 55,
+      "Refactor": 56,
       "Create": 54,
       "Link": 40,
       "Expand": 12
@@ -624,7 +624,7 @@
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 2,
+      "9": 3,
       "10": 6,
       "11": 6,
       "12": 34,
@@ -645,7 +645,7 @@
     "/": {
       "Mon": 16,
       "Tue": 26,
-      "Wed": 78,
+      "Wed": 79,
       "Thu": 7,
       "Fri": 0,
       "Sat": 0,
@@ -734,7 +734,8 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",

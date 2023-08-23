@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FlPolygonalMultipleStars",
+      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
       "IbArrowDownLeft",
       "FabGithubSquare",
-      "IbHugContentVertical",
-      "IbArrowCircleForward",
-      "FlPendantOfSmallPolygonalShape"
+      "IbHugContentVertical"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -53,5 +53,7 @@
     "inheritanceIcon": "IbStackHorizontal"
   },
   "03-cla": "IbArrowCircleForward",
-  "04-ref": "IbArrowDownLeft"
+  "04-ref": "IbArrowDownLeft",
+  "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
+  "02-mat/partituras": "FlPolygonalMultipleStars"
 }
