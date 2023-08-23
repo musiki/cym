@@ -78,14 +78,6 @@
       "key": "P"
     }
   ],
-  "editor:rename-heading": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
   "templater-obsidian:jump-to-next-cursor-location": [
     {
       "modifiers": [
@@ -548,5 +540,7 @@
       "key": "L"
     }
   ],
-  "editor:toggle-checklist-status": []
+  "editor:toggle-checklist-status": [],
+  "obsidian-excalidraw-plugin:toggle-lock": [],
+  "obsidian-outliner:system-info": []
 }

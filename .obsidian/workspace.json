@@ -124,7 +124,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba.md",
+                "file": "01-proj/23/Shifres.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6fa025bbe0d98e2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Shifres.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "f674f626468ed3cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -132,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -206,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prueba.md",
+                "file": "01-proj/23/Shifres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +249,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prueba.md",
+                "file": "01-proj/23/Shifres.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +272,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prueba.md"
+                "file": "01-proj/23/Shifres.md"
               }
             }
           },
@@ -309,47 +335,50 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "1030c2b5d5d48735",
+  "active": "f674f626468ed3cf",
   "lastOpenFiles": [
-    "Prueba.md",
-    "Prueba.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/Shifres.md",
+    "01-proj/23/bassino/bassino.md",
+    "01-proj/23/prueba.md",
+    "01-proj/23/beltrame.md",
+    "01-proj/23/bassino",
+    "01-proj/23",
+    "image/c-cym14 mapas-1692736930784.jpeg",
+    "cym-metamap.canvas",
+    "Excalidraw/sistemas.excalidraw.md",
+    "Excalidraw",
+    "@today.md",
+    "04-ref/procedimientos/tipologías de instalación.md",
+    "04-ref/procedimientos/extrañamiento.md",
+    "04-ref/procedimientos",
+    "04-ref/personas/Donna Haraway.md",
+    "04-ref/personas/Cecila Arditto.md",
+    "04-ref/personas/Carlos Trilnik.md",
+    "04-ref/bibliografía/crisis de la representación.md",
+    "03-cla/c-cym14 mapas.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "02-mat/python/python music.md",
+    "02-mat/python/python abjad.md",
+    "02-mat/python/ds/top10s.csv",
+    "02-mat/python/ds/songs-top10s.csv",
+    "02-mat/python/ds/music-scales.csv",
+    "02-mat/python/ds/composers.csv",
+    "02-mat/python/ds",
+    "02-mat/procesos/Untitled.loom",
     "README.md",
     "01-proj/tp/prueba.md",
     "04-ref/a-yuda.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/tp/tp01-topoi.md",
-    "00-in/combinational creativity.md",
-    "hd-hydra.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/tone.js.md",
-    "02-mat/rant.md",
-    "02-mat/que es git.md",
-    "02-mat/html.md",
-    "02-mat/cloud ides.md",
-    "02-mat/python/py-foundations.md",
-    "02-mat/python/pycolors.md",
-    "02-mat/procesos/r-vinculación bidireccional.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/org/i-sackbut.md",
-    "02-mat/org/i-theremin.md",
-    "02-mat/org/mat-partitura.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "crisis de la representación.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
-    "image/galanter.jpeg",
-    "01-proj/22/cymproj/webgl/3js01/index.html",
-    "01-proj/22/cymproj/webgl/3js01",
-    "01-proj/22/cymproj/webgl",
-    "01-proj/22/lopez",
-    "01-proj/22/gutierrez",
-    "01-proj/22/cymproj",
-    "01-proj/22/ancarola",
-    "01-proj/22"
+    "image/galanter.jpeg"
   ]
 }

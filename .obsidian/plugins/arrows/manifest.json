@@ -1,0 +1,11 @@
+{
+	"id": "arrows",
+	"name": "Arrows",
+	"version": "1.0.2",
+	"minAppVersion": "0.15.0",
+	"description": "Write actual arrow chracters without having to copy-paste them.",
+	"author": "xefyrdev",
+	"authorUrl": "https://github.com/xefyrdev",
+	"fundingUrl": "https://ko-fi.com/xefyrdev",
+	"isDesktopOnly": false
+}

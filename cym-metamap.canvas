@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"text","text":"dOCUMEnTA","id":"906fe585fe0d5566","x":-286,"y":-242,"width":146,"height":50},
+		{"type":"file","file":"04-ref/personas/Donna Haraway.md","id":"299fb254edb2592d","x":-20,"y":-242,"width":260,"height":82}
+	],
+	"edges":[
+		{"id":"433edc4b830291ef","fromNode":"906fe585fe0d5566","fromSide":"right","toNode":"299fb254edb2592d","toSide":"left"}
+	]
+}
