@@ -529,11 +529,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/prueba.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/tp/prueba tutorial.md": {
       "size": 200,
       "tags": 1,
@@ -607,7 +602,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 56,
+      "Refactor": 57,
       "Create": 54,
       "Link": 40,
       "Expand": 12
@@ -638,14 +633,14 @@
       "20": 2,
       "21": 0,
       "22": 13,
-      "23": 10
+      "23": 11
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
       "Tue": 26,
-      "Wed": 79,
+      "Wed": 80,
       "Thu": 7,
       "Fri": 0,
       "Sat": 0,
@@ -794,7 +789,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
