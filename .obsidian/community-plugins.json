@@ -57,7 +57,6 @@
   "buttons",
   "calendar",
   "obsidian-citation-plugin",
-  "obsidian-code-block-enhancer",
   "convert-url-to-iframe",
   "obsidian-contextual-typography",
   "obsidian-commits",
@@ -75,5 +74,6 @@
   "arrows",
   "at-people",
   "various-complements",
-  "wikipedia-search"
+  "wikipedia-search",
+  "code-styler"
 ]

@@ -26,7 +26,7 @@
     
     Gabriel Brncic , Dialexis 1967
     
-    ```lua
+    ```txt
     The materials to build Catalina are listed in an internal memo from August 1968, titled
     ‘Urgent USA purchases’ under the subtitle, ‘New Project’. The materials include a
     closed-circuit TV camera (Ampex Vidicon), three Moog units (oscillator, amplifier, and filter
