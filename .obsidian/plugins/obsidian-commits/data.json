@@ -598,12 +598,17 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Shifres.md": {
+      "size": 21,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 57,
-      "Create": 54,
+      "Refactor": 58,
+      "Create": 56,
       "Link": 40,
       "Expand": 12
     }
@@ -633,14 +638,14 @@
       "20": 2,
       "21": 0,
       "22": 13,
-      "23": 11
+      "23": 14
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
       "Tue": 26,
-      "Wed": 80,
+      "Wed": 83,
       "Thu": 7,
       "Fri": 0,
       "Sat": 0,
@@ -664,6 +669,8 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame.md\"> beltrame </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Untitled.md\"> Untitled </a>",
@@ -712,9 +719,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -790,7 +795,8 @@
         "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
