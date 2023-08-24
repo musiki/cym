@@ -103,15 +103,6 @@
       "key": "T"
     }
   ],
-  "obsidian-collapse-all-plugin:collapse-all-expand": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "T"
-    }
-  ],
   "slides:start": [],
   "app:go-back": [
     {
@@ -542,5 +533,13 @@
   ],
   "editor:toggle-checklist-status": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
-  "obsidian-outliner:system-info": []
+  "obsidian-outliner:system-info": [],
+  "obsidian-collapse-all-plugin:toggle-tag": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ]
 }
