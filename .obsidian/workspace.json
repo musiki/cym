@@ -41,7 +41,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "01-proj/tp/tp01-topoi.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "774b38590f3be892",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-mat/cloud ides.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "49d70b47fcafe9d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -49,7 +75,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -131,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/python/py-foundations.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/python/py-foundations.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -217,19 +243,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84ea3e7d69ad87fc",
+  "active": "49d70b47fcafe9d4",
   "lastOpenFiles": [
-    "02-mat/python/py-foundations.md",
+    "02-mat/cloud ides.md",
+    "02-mat/html.md",
+    "02-mat/tone.js.md",
+    "02-mat/rant.md",
+    "02-mat/que es git.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
+    "@today.md",
+    "cat.md",
+    "hd-hydra.md",
     "01-proj/23/beltrame.md",
+    "04-ref/a-yuda.md",
     "02-mat/python/python music.md",
     "02-mat/python/pycolors.md",
+    "02-mat/python/py-foundations.md",
     "03-cla/c-cym03- cohesión audiovisual.md",
     "03-cla/c-cym04-integración.md",
     "README.md",
     "00-in/combinational creativity.md",
     "03-cla/c-cym02-arte generativo.md",
-    "04-ref/a-yuda.md",
     "top10s.csv",
     "efimero.md",
     "02-mat/python/ds/songs-top10s.csv",
@@ -237,20 +275,8 @@
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
     "02-mat/partituras/canciones.md",
-    "01-proj/tp/prueba tutorial.md",
-    "@today.md",
-    "hd-hydra.md",
     "01-proj/23/prueba.md",
     "01-proj/23",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-networking.md",
-    "Excalidraw/sistemas.excalidraw.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
     "Excalidraw",
     "04-ref/procedimientos",
     "01-proj/23",
