@@ -603,13 +603,23 @@
       "size": 21,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Zaracho.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "2023-08-24.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 58,
-      "Create": 56,
-      "Link": 40,
+      "Refactor": 59,
+      "Create": 59,
+      "Link": 41,
       "Expand": 12
     }
   },
@@ -636,9 +646,9 @@
       "18": 29,
       "19": 0,
       "20": 2,
-      "21": 0,
+      "21": 4,
       "22": 13,
-      "23": 14
+      "23": 15
     }
   },
   "weeklyCommits": {
@@ -646,7 +656,7 @@
       "Mon": 16,
       "Tue": 26,
       "Wed": 83,
-      "Thu": 7,
+      "Thu": 12,
       "Fri": 0,
       "Sat": 0,
       "Sun": 34
@@ -669,6 +679,9 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho.md\"> Zaracho </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -716,10 +729,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10y11-Aframe.md\"> c-cym10y11-Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -796,6 +806,7 @@
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
@@ -820,6 +831,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
