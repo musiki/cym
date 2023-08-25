@@ -4,41 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c17b55f64f8136ed",
+        "id": "29739fcc4dde5403",
         "type": "tabs",
-        "dimension": 38.869504535938596,
         "children": [
           {
-            "id": "af3b1814eb583a38",
+            "id": "ec35efdf6f183972",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/tp/tp04-guía de lectura SADIN.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "515acd274c86b076",
-        "type": "tabs",
-        "dimension": 61.130495464061404,
-        "children": [
-          {
-            "id": "2a45a7fe7db2248d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -133,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "03-cla/c-cym02-arte generativo.md"
-              }
+              "state": {}
             }
           },
           {
@@ -152,7 +124,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +140,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,52 +154,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "dbfolder:Crear una nueva tabla de base de datos": false,
+      "switcher:Abrir quick switcher": false,
+      "graph:Abrir vista de gráfico": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
       "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "dbfolder:Create a new database table": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
       "copilot:Copilot Chat": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2a45a7fe7db2248d",
+  "active": "ec35efdf6f183972",
   "lastOpenFiles": [
-    "Excalidraw/sistemas.excalidraw.md",
-    "03-cla/c-cym02-arte generativo.md",
+    "2023-08-22.md",
+    "2023-08-24.md",
     "@today.md",
+    "01-proj/23/Fragile Territories.md",
+    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
+    "Industria 4.0.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
+    "01-proj/22/lopez/tp-01-topoi.md",
+    "04-ref/topoi/t52-Racionalizacion_(videojuegos).md",
+    "04-ref/a-yuda.md",
+    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
+    "Inteligencia Artificial (IA).md",
+    "01-proj/22/lopez/helloworld.md",
+    "01-proj/22/gutierrez/Generador de melodía.md",
+    "01-proj/tp/..md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "01-proj/tp/tp01-topoi.md",
+    "README.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "Untitled.loom",
+    "Untitled",
+    "image/gallery.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "Excalidraw/sistemas.excalidraw.md",
     "04-ref/personas/Cecila Arditto.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym00-presentación.md",
-    "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/prueba.md",
-    "04-ref/a-dataview.md",
-    "README.md",
-    "cat.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/a-yuda.md",
-    "04-ref/personas/Carlos Trilnik.md",
-    "Buttons 1.0 is Coming.md",
-    "hd-hydra.md",
-    "03-cla/c-cym10&11-generative&Aframe.md",
-    "conflict-files-obsidian-git 2.md",
-    "01-proj/tp/prueba.md",
-    "04-ref/bibliografía/crisis de la representación.md",
-    "04-ref/procedimientos/tipologías de instalación.md",
-    "04-ref/db/obras.md",
     "04-ref/procedimientos",
     "Excalidraw",
     "image/galanter.jpeg",
@@ -239,8 +211,6 @@
     "01-proj/22/gutierrez",
     "01-proj/22/cymproj/webgl/3js01/index.html",
     "01-proj/22/cymproj/webgl/3js01",
-    "01-proj/22/cymproj/webgl",
-    "01-proj/22/cymproj",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
     "Untitled.canvas",
