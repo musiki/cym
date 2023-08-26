@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "04-ref/a-yuda.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "04-ref/a-yuda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+                "file": "04-ref/a-yuda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym13 Proto-historia del arte numérico argentino.md"
+                "file": "04-ref/a-yuda.md"
               }
             }
           },
@@ -230,8 +230,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "774b38590f3be892",
   "lastOpenFiles": [
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "README.md",
     "02-mat/cloud ides.md",
     "conflict-files-obsidian-git.md",
@@ -262,7 +263,6 @@
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
     "02-mat/partituras/canciones.md",
-    "01-proj/23/prueba.md",
     "01-proj/23",
     "Excalidraw",
     "04-ref/procedimientos",
