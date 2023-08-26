@@ -1,7 +1,7 @@
 ---
 title: Los condenados de la pantalla
 subtitle: 
-author: [[Hito Steyerl]]
+author: Hito Steyerl
 authors: 
 category: libros,capitalismo, imagen, crítica cultural , filosofía21
 publisher: 

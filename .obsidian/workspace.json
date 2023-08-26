@@ -45,9 +45,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "b413febc9f8e4223",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -124,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md"
               }
             }
           },
@@ -142,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,9 +224,13 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "b413febc9f8e4223",
   "lastOpenFiles": [
     "04-ref/bibliografía/cym portal bibliográfico.md",
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
+    "README.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
     "00-in/meta-aprendizaje.md",
     "00-in/combinational creativity.md",
     "01-proj/todo.md",
@@ -231,17 +248,13 @@
     "04-ref/espacios/MIT Medialab.md",
     "04-ref/eventos",
     "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "01-proj/22/ancarola/tp-01-topoi.md",
     "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
-    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
     "01-proj/22/ancarola/Hola Sonido.md",
     "01-proj/22/ancarola/Generador de Melodías Random.md",
     "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
     "01-proj/23/bassino/música visual.dev.md",
     "01-proj/23/Shifres.md",
-    "01-proj/23/Zaracho.md",
-    "01-proj/23/Fragile Territories.md",
     "cym-metamap.canvas",
     "Untitled.loom",
     "Untitled.canvas",
