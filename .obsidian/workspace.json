@@ -6,7 +6,6 @@
       {
         "id": "9faee1814ddf6a95",
         "type": "tabs",
-        "dimension": 45.75063613231552,
         "children": [
           {
             "id": "ddcd56a1226c7e00",
@@ -20,28 +19,35 @@
                 "source": true
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "bbabad9f5ac245b9",
-        "type": "tabs",
-        "dimension": 54.24936386768447,
-        "children": [
+          },
           {
-            "id": "03f4a8dd3161d399",
+            "id": "d30ae0e54fa2df28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "file": "00-in/meta-aprendizaje.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4b4fa8eb0d6f33aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md"
+                "file": "README.md"
               }
             }
           },
@@ -136,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,39 +211,41 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "ddcd56a1226c7e00",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "04-ref/bibliografía/cym portal bibliográfico.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/combinational creativity.md",
+    "01-proj/todo.md",
+    "02-mat/rant.md",
+    "02-mat/que es git.md",
+    "02-mat/html.md",
+    "02-mat/cloud ides.md",
+    "02-mat/procesos/Untitled.loom",
+    "@today.md",
+    "cat.md",
+    "04-ref/topoi/Inteligencia Artificial (IA).md",
+    "04-ref/obras/ref música extendida.md",
+    "04-ref/espacios",
+    "04-ref/obras/o-Boid Simulation.md",
+    "04-ref/espacios/MIT Medialab.md",
+    "04-ref/eventos",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
+    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
     "01-proj/22/ancarola/Hola Sonido.md",
     "01-proj/22/ancarola/Generador de Melodías Random.md",
-    "01-proj/22/ancarola/tp-01-topoi.md",
     "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
     "01-proj/23/bassino/música visual.dev.md",
     "01-proj/23/Shifres.md",
     "01-proj/23/Zaracho.md",
     "01-proj/23/Fragile Territories.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "README.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "04-ref/bibliografía/cym portal bibliográfico.md",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
-    "04-ref/templates/t-book.md",
-    "04-ref/bibliografía/Philip Ball_Shapes.md",
-    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
-    "03-cla/c-cym04-integración.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym00-presentación.md",
-    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
-    "04-ref/templates/t-bibliografía.md",
-    "04-ref/templates/t-class.md",
     "cym-metamap.canvas",
     "Untitled.loom",
     "Untitled.canvas",
     "image/c-cym02-arte generativo-1693072612770.jpeg",
-    "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
     "01-proj/23/bassino",
     "image/c-cym14 mapas-1692736930784.jpeg",
@@ -245,8 +253,6 @@
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
-    "02-mat/python/untitled folder",
-    "02-mat/python/ds/top10s.csv",
     "image/galanter.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
