@@ -230,8 +230,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "774b38590f3be892",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "gitignore.txt",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "README.md",
     "02-mat/cloud ides.md",
@@ -262,7 +263,6 @@
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
-    "02-mat/partituras/canciones.md",
     "01-proj/23",
     "Excalidraw",
     "04-ref/procedimientos",
