@@ -1,0 +1,75 @@
+{
+  "model": {
+    "columns": [
+      {
+        "id": "1498d374-c8a2-4fc7-a25a-b38fd422627e",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "140px",
+        "type": "text",
+        "currencyType": "USD",
+        "dateFormat": "mm/dd/yyyy",
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset"
+      }
+    ],
+    "headerRows": [
+      {
+        "id": "c7be7602-586c-4158-8287-ae40e834589c"
+      }
+    ],
+    "bodyRows": [
+      {
+        "id": "abe40af4-5339-4429-8f9f-3d4ec1c2763e",
+        "index": 0,
+        "creationTime": 1692319108946,
+        "lastEditedTime": 1692319108946
+      }
+    ],
+    "footerRows": [
+      {
+        "id": "7e534c94-37c2-4518-869d-fa9ba3f74624"
+      },
+      {
+        "id": "806b8de1-ce03-47ba-97ad-41be89c59578"
+      }
+    ],
+    "headerCells": [
+      {
+        "id": "c25b04c3-f6c2-48b4-b0fe-3b923019e07f",
+        "columnId": "1498d374-c8a2-4fc7-a25a-b38fd422627e",
+        "rowId": "c7be7602-586c-4158-8287-ae40e834589c",
+        "markdown": "New Column"
+      }
+    ],
+    "bodyCells": [
+      {
+        "id": "32259856-3acc-47ed-9f1b-522e2ce07629",
+        "isExternalLink": false,
+        "columnId": "1498d374-c8a2-4fc7-a25a-b38fd422627e",
+        "rowId": "abe40af4-5339-4429-8f9f-3d4ec1c2763e",
+        "dateTime": null,
+        "markdown": "",
+        "tagIds": []
+      }
+    ],
+    "footerCells": [
+      {
+        "id": "20ad6ae1-c62e-4488-aff9-1a6b5aa92650",
+        "columnId": "1498d374-c8a2-4fc7-a25a-b38fd422627e",
+        "rowId": "7e534c94-37c2-4518-869d-fa9ba3f74624"
+      },
+      {
+        "id": "00882411-64b5-47f9-87df-c2213d991b49",
+        "columnId": "1498d374-c8a2-4fc7-a25a-b38fd422627e",
+        "rowId": "806b8de1-ce03-47ba-97ad-41be89c59578"
+      }
+    ],
+    "filterRules": []
+  },
+  "pluginVersion": "8.0.0"
+}

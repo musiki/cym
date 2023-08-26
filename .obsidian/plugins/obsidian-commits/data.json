@@ -613,12 +613,37 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Fragile Territories.md": {
+      "size": 2969,
+      "tags": 0,
+      "links": 0
+    },
+    "2023-08-22.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md": {
+      "size": 362,
+      "tags": 0,
+      "links": 0
+    },
+    "Industria 4.0.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Inteligencia Artificial (IA).md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 59,
-      "Create": 59,
+      "Refactor": 60,
+      "Create": 65,
       "Link": 41,
       "Expand": 12
     }
@@ -644,7 +669,7 @@
       "16": 14,
       "17": 2,
       "18": 29,
-      "19": 0,
+      "19": 7,
       "20": 2,
       "21": 4,
       "22": 13,
@@ -659,7 +684,7 @@
       "Thu": 12,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 34
+      "Sun": 41
     }
   },
   "recentCommits": {
@@ -679,6 +704,12 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
+        "<a class=\"internal-link\" href=\"Industria 4.0.md\"> Industria 4.0 </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"2023-08-22.md\"> 2023-08-22 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho.md\"> Zaracho </a>",
@@ -723,13 +754,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10y11-Aframe.md\"> c-cym10y11-Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -806,6 +831,7 @@
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],

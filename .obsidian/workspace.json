@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "3cdb2fb55142a0ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -129,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,17 +210,24 @@
       "wikipedia-search:Open Article": false
     }
   },
-  "active": "b283e7b2aca01ba8",
+  "active": "3cdb2fb55142a0ed",
   "lastOpenFiles": [
-    "03-cla/c-cym03- cohesión audiovisual.md",
     "03-cla/c-cym02-arte generativo.md",
+    "conflict-files-obsidian-git.md",
+    "image/c-cym02-arte generativo-1693072612770.jpeg",
+    "Untitled.loom",
+    "Inteligencia Artificial (IA).md",
+    "Industria 4.0.md",
+    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
+    "2023-08-22.md",
+    "01-proj/23/Fragile Territories.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "02-mat/partituras/ave maria palestrina.md",
     "04-ref/bibliografía/b-Los condenados de la pantalla.md",
     "04-ref/a-yuda.md",
     "cym-metamap.canvas",
     "01-proj/23/Shifres.md",
-    "conflict-files-obsidian-git.md",
     "Untitled.canvas",
     "2023-08-24.md",
     "01-proj/23/Zaracho.md",
@@ -224,20 +244,13 @@
     "02-mat/ml",
     "01-proj/23/bassino",
     "03-cla/c-cym14 mapas.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "04-ref/personas/Donna Haraway.md",
-    "hd-hydra.md",
-    "efimero.md",
     "image/c-cym14 mapas-1692736930784.jpeg",
-    "03-cla/c-cym07-networking.md",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
     "02-mat/python/untitled folder",
     "02-mat/python/ds/top10s.csv",
-    "04-ref/procedimientos",
     "image/galanter.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
