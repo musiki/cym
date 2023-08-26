@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Shifres.md"
+                "file": "03-cla/c-cym02-arte generativo.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,37 +199,38 @@
   },
   "active": "b283e7b2aca01ba8",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "02-mat/partituras/ave maria palestrina.md",
+    "04-ref/bibliografía/b-Los condenados de la pantalla.md",
+    "04-ref/a-yuda.md",
+    "cym-metamap.canvas",
     "01-proj/23/Shifres.md",
+    "conflict-files-obsidian-git.md",
     "Untitled.canvas",
     "2023-08-24.md",
     "01-proj/23/Zaracho.md",
     "01-proj/23/beltrame.md",
     "00-in/combinational creativity.md",
     "01-proj/23/prueba.md",
-    "cym-metamap.canvas",
     "cat.md",
     "02-mat/python/py-foundations.md",
     "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/partituras/ave maria palestrina.md",
     "02-mat/tone.js.md",
     "01-proj/23/bassino/bassino.md",
     "03-cla/c-cym00-presentación.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
-    "03-cla/c-cym03- cohesión audiovisual.md",
     "01-proj/23/bassino",
     "03-cla/c-cym14 mapas.md",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "03-cla/c-cym02-arte generativo.md",
     "04-ref/personas/Donna Haraway.md",
     "hd-hydra.md",
     "efimero.md",
-    "04-ref/a-yuda.md",
     "image/c-cym14 mapas-1692736930784.jpeg",
     "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
