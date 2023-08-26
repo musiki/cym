@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "a3ad7ae214dd19e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Fragile Territories.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -131,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Fragile Territories.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Fragile Territories.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,12 +195,33 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ec35efdf6f183972",
+  "active": "a3ad7ae214dd19e2",
   "lastOpenFiles": [
+    "01-proj/23/Fragile Territories.md",
+    "conflict-files-obsidian-git.md",
+    "image/Fragile Territories-1693014463177.jpeg",
+    "cym-metamap.canvas",
+    "Untitled.canvas",
+    "04-ref/personas/Donna Haraway.md",
+    "04-ref/bibliografía/cym.bib",
+    "03-cla/c-cym14 mapas.md",
+    "02-mat/python/python music.md",
+    "02-mat/python/python abjad.md",
+    "02-mat/python/ds/top10s.csv",
+    "02-mat/python/ds/songs-top10s.csv",
+    "02-mat/python/ds/music-scales.csv",
+    "02-mat/python/ds/composers.csv",
+    "02-mat/python/ds",
+    "02-mat/procesos/Untitled.loom",
+    "02-mat/partituras/canciones.md",
+    "01-proj/23/beltrame.md",
+    "01-proj/23/bassino/bassino.md",
+    "01-proj/23/bassino",
+    "01-proj/23/Zaracho.md",
+    "01-proj/23/Shifres.md",
     "2023-08-22.md",
     "2023-08-24.md",
     "@today.md",
-    "01-proj/23/Fragile Territories.md",
     "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
     "Industria 4.0.md",
     "01-proj/22/ancarola/tp-01-topoi.md",
@@ -199,30 +234,11 @@
     "01-proj/22/gutierrez/Generador de melodía.md",
     "01-proj/tp/..md",
     "01-proj/tp/prueba tutorial.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "01-proj/tp/tp01-topoi.md",
-    "README.md",
-    "01-proj/tp/tp02-aplicación.md",
     "Untitled.loom",
     "Untitled",
-    "image/gallery.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "Excalidraw/sistemas.excalidraw.md",
-    "04-ref/personas/Cecila Arditto.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "04-ref/procedimientos",
-    "Excalidraw",
     "image/galanter.jpeg",
-    "01-proj/23/beltrame",
-    "01-proj/23",
-    "01-proj/22/lopez",
-    "01-proj/22/gutierrez",
-    "01-proj/22/cymproj/webgl/3js01/index.html",
-    "01-proj/22/cymproj/webgl/3js01",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
-    "Untitled.canvas",
     "03-cla/cym-map.canvas",
     "image/meta-aprendizaje-1660395828475.jpeg"
   ]

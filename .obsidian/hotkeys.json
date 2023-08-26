@@ -78,14 +78,6 @@
       "key": "P"
     }
   ],
-  "editor:rename-heading": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
   "templater-obsidian:jump-to-next-cursor-location": [
     {
       "modifiers": [
@@ -107,15 +99,6 @@
     {
       "modifiers": [
         "Alt"
-      ],
-      "key": "T"
-    }
-  ],
-  "obsidian-collapse-all-plugin:collapse-all-expand": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
       ],
       "key": "T"
     }
@@ -548,5 +531,15 @@
       "key": "L"
     }
   ],
-  "editor:toggle-checklist-status": []
+  "editor:toggle-checklist-status": [],
+  "obsidian-excalidraw-plugin:toggle-lock": [],
+  "obsidian-outliner:system-info": [],
+  "obsidian-collapse-all-plugin:toggle-tag": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ]
 }

@@ -109,11 +109,6 @@
       "tags": 0,
       "links": 0
     },
-    "hd-hydra.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "README.md": {
       "size": 96457,
       "tags": 0,
@@ -603,12 +598,57 @@
       "size": 362,
       "tags": 1,
       "links": 0
+    },
+    "01-proj/23/Shifres.md": {
+      "size": 4,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Zaracho.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/bassino.md": {
+      "size": 3039,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame.md": {
+      "size": 1227,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/partituras/canciones.md": {
+      "size": 533,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/python/python abjad.md": {
+      "size": 600,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/python/python music.md": {
+      "size": 536,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym14 mapas.md": {
+      "size": 3684,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Donna Haraway.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 149,
-      "Create": 147,
+      "Refactor": 151,
+      "Create": 157,
       "Link": 97,
       "Expand": 11
     }
@@ -637,7 +677,7 @@
       "19": 3,
       "20": 0,
       "21": 254,
-      "22": 5,
+      "22": 17,
       "23": 9
     }
   },
@@ -647,7 +687,7 @@
       "Tue": 19,
       "Wed": 68,
       "Thu": 269,
-      "Fri": 0,
+      "Fri": 12,
       "Sat": 0,
       "Sun": 33
     }
@@ -668,6 +708,16 @@
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python music.md\"> python music </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/canciones.md\"> canciones </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame.md\"> beltrame </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho.md\"> Zaracho </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
         "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
         "<a class=\"internal-link\" href=\"Industria 4.0.md\"> Industria 4.0 </a>",
@@ -708,17 +758,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Stuart Russell.md\"> Stuart Russell </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/John Barrows.md\"> John Barrows </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Douglas Barret.md\"> Douglas Barret </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -793,6 +833,8 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/..md\"> . </a>",
         "<a class=\"internal-link\" href=\"README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>",
@@ -841,9 +883,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>"
+        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
