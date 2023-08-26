@@ -120,15 +120,6 @@
       "key": "]"
     }
   ],
-  "convert-url-to-iframe:url-to-iframe": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "I"
-    }
-  ],
   "workspace:split-horizontal": [
     {
       "modifiers": [
@@ -540,6 +531,91 @@
         "Alt"
       ],
       "key": "T"
+    }
+  ],
+  "obsidian-book-search-plugin:open-book-search-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "convert-url-to-iframe:url-to-iframe": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-1": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "shortcuts-extender:shortcut-exclamation-mark": [],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-2": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "shortcuts-extender:shortcut-At": [],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-3": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-4": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "4"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-5": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "5"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-6": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-7": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "7"
+    }
+  ],
+  "obsidian-shortcuts-for-starred-files:open-file-in-new-pane-8": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "8"
     }
   ]
 }

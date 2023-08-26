@@ -4,37 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "2d5ba3d552d4afe5",
+        "id": "9faee1814ddf6a95",
         "type": "tabs",
+        "dimension": 45.75063613231552,
         "children": [
           {
-            "id": "ecfa88d1ea0545d2",
+            "id": "ddcd56a1226c7e00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b283e7b2aca01ba8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "01-proj/22/ancarola/tp-01-topoi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "bbabad9f5ac245b9",
+        "type": "tabs",
+        "dimension": 54.24936386768447,
+        "children": [
+          {
+            "id": "03f4a8dd3161d399",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 351.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -111,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md"
+                "file": "01-proj/22/ancarola/tp-01-topoi.md"
               }
             }
           },
@@ -129,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "01-proj/22/ancarola/tp-01-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "01-proj/22/ancarola/tp-01-topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,43 +201,45 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "templater-obsidian:Templater": false,
-      "wikipedia-search:Open Article": false
+      "wikipedia-search:Open Article": false,
+      "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "b283e7b2aca01ba8",
+  "active": "ddcd56a1226c7e00",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "image/c-cym02-arte generativo-1693072612770.jpeg",
-    "Untitled.loom",
-    "Inteligencia Artificial (IA).md",
-    "Industria 4.0.md",
-    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
-    "2023-08-22.md",
-    "01-proj/23/Fragile Territories.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "02-mat/partituras/ave maria palestrina.md",
-    "04-ref/bibliografía/b-Los condenados de la pantalla.md",
-    "04-ref/a-yuda.md",
-    "cym-metamap.canvas",
+    "01-proj/22/ancarola/Hola Sonido.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
+    "01-proj/23/bassino/música visual.dev.md",
     "01-proj/23/Shifres.md",
-    "Untitled.canvas",
-    "2023-08-24.md",
     "01-proj/23/Zaracho.md",
-    "01-proj/23/beltrame.md",
-    "00-in/combinational creativity.md",
-    "01-proj/23/prueba.md",
-    "cat.md",
-    "02-mat/python/py-foundations.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/tone.js.md",
-    "01-proj/23/bassino/bassino.md",
+    "01-proj/23/Fragile Territories.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "README.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "04-ref/bibliografía/cym portal bibliográfico.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
+    "04-ref/templates/t-book.md",
+    "04-ref/bibliografía/Philip Ball_Shapes.md",
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
+    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+    "03-cla/c-cym04-integración.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym00-presentación.md",
+    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+    "04-ref/templates/t-bibliografía.md",
+    "04-ref/templates/t-class.md",
+    "cym-metamap.canvas",
+    "Untitled.loom",
+    "Untitled.canvas",
+    "image/c-cym02-arte generativo-1693072612770.jpeg",
     "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
     "01-proj/23/bassino",
-    "03-cla/c-cym14 mapas.md",
     "image/c-cym14 mapas-1692736930784.jpeg",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",

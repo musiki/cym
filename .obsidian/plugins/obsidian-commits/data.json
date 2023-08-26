@@ -132,11 +132,6 @@
     "04-ref/templates/t-book.md": {
       "size": 461,
       "tags": 1,
-      "links": 4
-    },
-    "04-ref/templates/t-bibliografía.md": {
-      "size": 87,
-      "tags": 0,
       "links": 0
     },
     "04-ref/templater.md": {
@@ -216,36 +211,6 @@
     },
     "04-ref/db/obras.md": {
       "size": 306,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@XuanThuan1988.md": {
-      "size": 109,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@Steyerl2014a.md": {
-      "size": 85,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@Padilla2010.md": {
-      "size": 105,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/b-Los condenados de la pantalla.md": {
-      "size": 2349,
-      "tags": 5,
-      "links": 0
-    },
-    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
-      "size": 0,
       "tags": 0,
       "links": 0
     },
@@ -441,7 +406,7 @@
     },
     "01-proj/22/ancarola/Generador de Melodías Random.md": {
       "size": 585,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/ancarola/Hola Sonido.md": {
@@ -519,11 +484,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/bibliografía/crisis de la representación.md": {
-      "size": 4120,
-      "tags": 0,
-      "links": 2
-    },
     "04-ref/procedimientos/extrañamiento.md": {
       "size": 0,
       "tags": 0,
@@ -584,16 +544,6 @@
       "tags": 2,
       "links": 3
     },
-    "01-proj/23/bassino/bassino.md": {
-      "size": 2996,
-      "tags": 0,
-      "links": 0
-    },
-    "01-proj/23/beltrame.md": {
-      "size": 1220,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/personas/Donna Haraway.md": {
       "size": 0,
       "tags": 0,
@@ -609,24 +559,14 @@
       "tags": 0,
       "links": 0
     },
-    "2023-08-24.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/Fragile Territories.md": {
       "size": 2969,
       "tags": 0,
       "links": 0
     },
-    "2023-08-22.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md": {
       "size": 362,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "Industria 4.0.md": {
@@ -638,14 +578,74 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "04-ref/bibliografía/cym portal bibliográfico.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md": {
+      "size": 1099,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md": {
+      "size": 6607,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md": {
+      "size": 788,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md": {
+      "size": 505,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md": {
+      "size": 1258,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
+      "size": 429,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md": {
+      "size": 643,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/bibliografía/Philip Ball_Shapes.md": {
+      "size": 1612,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md": {
+      "size": 599,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/bassino/música visual.dev.md": {
+      "size": 2996,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/beltrame.md": {
+      "size": 1220,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 60,
-      "Create": 65,
-      "Link": 41,
-      "Expand": 12
+      "Refactor": 81,
+      "Create": 79,
+      "Link": 50,
+      "Expand": 13
     }
   },
   "dailyCommits": {
@@ -669,9 +669,9 @@
       "16": 14,
       "17": 2,
       "18": 29,
-      "19": 7,
-      "20": 2,
-      "21": 4,
+      "19": 10,
+      "20": 33,
+      "21": 15,
       "22": 13,
       "23": 15
     }
@@ -684,7 +684,7 @@
       "Thu": 12,
       "Fri": 0,
       "Sat": 0,
-      "Sun": 41
+      "Sun": 86
     }
   },
   "recentCommits": {
@@ -701,9 +701,24 @@
         "<a class=\"internal-link\" href=\"02-mat/python/python music.md\"> python music </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md\"> Esteban Castromán_Tecnopoéticas argentinas </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md\"> Xuan Thuan Trinh_The Secret Melody </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md\"> Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla.md\"> _Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla.md\"> _Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
         "<a class=\"internal-link\" href=\"Industria 4.0.md\"> Industria 4.0 </a>",
@@ -740,21 +755,7 @@
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"extrañamiento.md\"> extrañamiento </a>",
-        "<a class=\"internal-link\" href=\"Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -770,7 +771,12 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
         "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada---.md\"> John D Barrow_El libro de la nada--- </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/música visual.dev.md\"> música visual.dev </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/beltrame.md\"> beltrame </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -790,10 +796,22 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Generador de Melodías Random.md\"> Generador de Melodías Random </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada---.md\"> John D Barrow_El libro de la nada--- </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -833,7 +851,15 @@
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
+        "<a class=\"internal-link\" href=\"2023-08-22.md\"> 2023-08-22 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla.md\"> _Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md\"> b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -864,11 +890,13 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
       ]
     }
   },
