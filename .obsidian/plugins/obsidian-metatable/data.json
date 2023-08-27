@@ -8,8 +8,8 @@
     "frontmatter"
   ],
   "filterMode": "ignore",
-  "autolinks": false,
-  "naked": true,
+  "autolinks": true,
+  "naked": false,
   "theme": "light",
   "ignoredKeys": [],
   "vault": null

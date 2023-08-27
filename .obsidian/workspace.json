@@ -4,8 +4,29 @@
     "type": "split",
     "children": [
       {
+        "id": "b3bb5a3a6222e21e",
+        "type": "tabs",
+        "dimension": 60.47812817904374,
+        "children": [
+          {
+            "id": "b413febc9f8e4223",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/Matt Pearson_Generative Art.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "9faee1814ddf6a95",
         "type": "tabs",
+        "dimension": 39.52187182095626,
         "children": [
           {
             "id": "ddcd56a1226c7e00",
@@ -47,12 +68,25 @@
             }
           },
           {
-            "id": "b413febc9f8e4223",
+            "id": "9a073836915b1cc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+                "file": "README.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3a71119965bf1bb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -60,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -137,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md"
+                "file": "04-ref/bibliografía/Matt Pearson_Generative Art.md"
               }
             }
           },
@@ -155,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+                "file": "04-ref/bibliografía/Matt Pearson_Generative Art.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +206,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+                "file": "04-ref/bibliografía/Matt Pearson_Generative Art.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,10 +260,14 @@
   },
   "active": "b413febc9f8e4223",
   "lastOpenFiles": [
-    "04-ref/bibliografía/cym portal bibliográfico.md",
-    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada 2.md",
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
     "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
+    "@today.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/cym portal bibliográfico.md",
     "README.md",
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
     "01-proj/22/ancarola/tp-01-topoi.md",
     "00-in/meta-aprendizaje.md",
     "00-in/combinational creativity.md",
@@ -239,7 +277,6 @@
     "02-mat/html.md",
     "02-mat/cloud ides.md",
     "02-mat/procesos/Untitled.loom",
-    "@today.md",
     "cat.md",
     "04-ref/topoi/Inteligencia Artificial (IA).md",
     "04-ref/obras/ref música extendida.md",
@@ -247,14 +284,11 @@
     "04-ref/obras/o-Boid Simulation.md",
     "04-ref/espacios/MIT Medialab.md",
     "04-ref/eventos",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
     "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
     "01-proj/22/ancarola/Hola Sonido.md",
     "01-proj/22/ancarola/Generador de Melodías Random.md",
     "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "01-proj/23/bassino/música visual.dev.md",
-    "01-proj/23/Shifres.md",
     "cym-metamap.canvas",
     "Untitled.loom",
     "Untitled.canvas",
