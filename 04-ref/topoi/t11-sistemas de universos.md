@@ -1,6 +1,9 @@
 ---
-tags: universo, física, historiadelaciencia , topoi, astronomia
+type: topoi
+tags: universo, física, historiadelaciencia , astronomia
 unit: 0
+publish: 2015
+author: zztt 
 ---
 
 # modelos de universos [14^9]

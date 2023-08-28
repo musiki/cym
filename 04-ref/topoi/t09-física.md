@@ -1,5 +1,6 @@
 ---
-tags: topoi, ciencia
+type : topoi
+tags: ciencia
 unit: 1
 ---
 

@@ -1,4 +1,9 @@
-Hola mundo!
+---
+type: project
+author: Nicolás López 
+tags: code , js ,tonejs
+publish: 2022
+---
 
 # Para hard reset en git:
 git fetch --all

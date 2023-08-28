@@ -1,6 +1,11 @@
 ---
 type: topoi
 tags: azar, generativad, topoi, cym
+unit: 10
+publish: 2021
+author: zztt
+---
+
 unit: 0
 ---
 

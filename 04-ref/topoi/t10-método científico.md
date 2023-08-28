@@ -1,7 +1,9 @@
 ---
 type: topoi
-tags: topoi, ciencia, método científico
+tags: ciencia, método científico
 unit: 10
+publish: 2020
+author: zztt
 ---
 
 

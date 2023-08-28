@@ -1,7 +1,8 @@
 ---
-autor: Juan Martín Ancarola
+type: project
+author: Juan Martín Ancarola
 tags: code , js ,tonejs
-publish: 2023
+publish: 2022
 ---
 
 # **Codepen**:

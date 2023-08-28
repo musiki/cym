@@ -56,42 +56,42 @@
     },
     "04-ref/topoi/t30-vida artificial.md": {
       "size": 471,
-      "tags": 1,
+      "tags": 2,
       "links": 5
     },
     "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md": {
       "size": 5895,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-ref/topoi/t21-interfaces.md": {
       "size": 134,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md": {
       "size": 8264,
-      "tags": 2,
+      "tags": 1,
       "links": 23
     },
     "04-ref/topoi/t12-filosofía 21.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-ref/topoi/t11-sistemas de universos.md": {
       "size": 20383,
-      "tags": 5,
+      "tags": 4,
       "links": 3
     },
     "04-ref/topoi/t10-método científico.md": {
       "size": 12362,
-      "tags": 4,
+      "tags": 3,
       "links": 0
     },
     "04-ref/topoi/t09-física.md": {
       "size": 122,
-      "tags": 2,
+      "tags": 1,
       "links": 1
     },
     "04-ref/topoi/b-Spectromorphology.md": {
@@ -369,11 +369,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/todo.md": {
-      "size": 419,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/meta-aprendizaje.md": {
       "size": 1097,
       "tags": 3,
@@ -401,7 +396,7 @@
     },
     "01-proj/22/ancarola/Final CyM - Metrónomo.md": {
       "size": 322,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/ancarola/Generador de Melodías Random.md": {
@@ -411,7 +406,7 @@
     },
     "01-proj/22/ancarola/Hola Sonido.md": {
       "size": 96,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/ancarola/tp-01-topoi.md": {
@@ -421,27 +416,27 @@
     },
     "01-proj/22/gutierrez/Generador de melodía.md": {
       "size": 532,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/lopez/01-Azar.md": {
       "size": 1188,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/lopez/02-Melodia.md": {
       "size": 503,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/lopez/03-Máquina de ritmos.md": {
       "size": 563,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/lopez/helloworld.md": {
       "size": 798,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/22/lopez/tp-01-topoi.md": {
@@ -574,11 +569,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/bibliografía/cym portal bibliográfico.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md": {
       "size": 1099,
       "tags": 0,
@@ -644,29 +634,44 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo 2.md": {
-      "size": 438,
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md": {
+      "size": 2520,
       "tags": 0,
       "links": 0
     },
-    "04-ref/bibliografía/_Los condenados de la pantalla 2.md": {
-      "size": 2520,
+    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
+      "size": 438,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/bib MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/proyectos MOC.md": {
+      "size": 419,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/topoi MOC.md": {
+      "size": 0,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 85,
-      "Create": 83,
-      "Link": 50,
+      "Refactor": 98,
+      "Create": 85,
+      "Link": 62,
       "Expand": 13
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 8,
-      "1": 20,
+      "0": 18,
+      "1": 37,
       "2": 0,
       "3": 0,
       "4": 1,
@@ -693,7 +698,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 20,
+      "Mon": 47,
       "Tue": 26,
       "Wed": 83,
       "Thu": 12,
@@ -720,6 +725,8 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada 2.md\"> John D Barrow_El libro de la nada 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo 2.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo 2 </a>",
@@ -768,9 +775,7 @@
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de melodía.md\"> Generador de melodía </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/01-Azar.md\"> 01-Azar </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/02-Melodia.md\"> 02-Melodia </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/03-Máquina de ritmos.md\"> 03-Máquina de ritmos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/helloworld.md\"> helloworld </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/tp-01-topoi.md\"> tp-01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/03-Máquina de ritmos.md\"> 03-Máquina de ritmos </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -794,7 +799,15 @@
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/beltrame.md\"> beltrame </a>",
         "<a class=\"internal-link\" href=\"MIT Medialab.md\"> MIT Medialab </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/MIT Medialab.md\"> MIT Medialab </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/cym_bib_MOC.md\"> cym_bib_MOC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/cym Bibliografía MOC.md\"> cym Bibliografía MOC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -823,10 +836,23 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Generador de Melodías Random.md\"> Generador de Melodías Random </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Generador de Melodías Random.md\"> Generador de Melodías Random </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/helloworld.md\"> helloworld </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/03-Máquina de ritmos.md\"> 03-Máquina de ritmos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/02-Melodia.md\"> 02-Melodia </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/01-Azar.md\"> 01-Azar </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de melodía.md\"> Generador de melodía </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Hola Sonido.md\"> Hola Sonido </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md\"> t22.1-La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t21-interfaces.md\"> t21-interfaces </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12-filosofía 21.md\"> t12-filosofía 21 </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada 2.md\"> John D Barrow_El libro de la nada 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
@@ -876,8 +902,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla.md\"> _Los condenados de la pantalla </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md\"> b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -909,7 +934,11 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",

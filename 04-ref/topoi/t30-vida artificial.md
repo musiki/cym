@@ -1,8 +1,11 @@
 ---
-tags: topoi
-status: dev
+type: topoi
+tags: vidaartificial, generative 
+unit: 10
+publish: 2020
 author: zztt
 ---
+
 
 ## Dave Ackley sobre vida artificial 
 https://www.youtube.com/watch?v=YJRRu4dJnTI

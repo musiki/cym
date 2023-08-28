@@ -2,6 +2,7 @@
 type: topoi
 tags: complejidad,cym,topoi
 unit: 20
+author: zztt
 ---
 
 ## [[Craig Reynols]] [[o-Boid Simulation]]
