@@ -2,12 +2,12 @@
 type: class
 tags: cym, música visual, armonía expandida,class
 unit: 0
-num:  4
+num:  5
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 04
+UNTREF | CYM23 | 05
 # integración JS
 
 ---

@@ -22,6 +22,19 @@
             }
           },
           {
+            "id": "c297194082e9876f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "62ba0f4655c37ae9",
             "type": "leaf",
             "state": {
@@ -73,7 +86,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "9faee1814ddf6a95",
@@ -223,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/bib MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -241,7 +255,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -258,7 +272,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -308,11 +322,16 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "12fde74d4467fb5b",
+  "active": "c297194082e9876f",
   "lastOpenFiles": [
+    "00-in/bib MOC.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym04- cohesión audiovisual.md",
+    "03-cla/c-cym03 mapas.md",
     "00-in/proyectos MOC.md",
     "README.md",
-    "00-in/bib MOC.md",
     "04-ref/bibliografía/Matt Pearson_Generative Art.md",
     "03-cla/c-cym05-flex-grid.md",
     "04-ref/templates/t-cym-class.md",
@@ -331,11 +350,6 @@
     "04-ref/topoi/t21-interfaces.md",
     "04-ref/topoi/t12-filosofía 21.md",
     "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/topoi/t09-física.md",
-    "04-ref/topoi/Inteligencia Artificial (IA).md",
-    "04-ref/topoi/b-Spectromorphology.md",
-    "Untitled.md",
     "cym-metamap.canvas",
     "02-mat/procesos/Untitled.loom",
     "04-ref/espacios",

@@ -2,12 +2,12 @@
 type: class
 tags: cym, música visual, armonía expandida,class, diy, imi
 unit: 1
-num:  6
+num:  14
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 06
+UNTREF | CYM23 | 14
 
 
 
