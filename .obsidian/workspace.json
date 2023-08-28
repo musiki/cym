@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md"
+                "file": "README.md"
               }
             }
           },
@@ -258,8 +258,8 @@
   },
   "active": "e580280c2d82c6e3",
   "lastOpenFiles": [
-    "@today.md",
     "03-cla/c-cym02-arte generativo.md",
+    "@today.md",
     "03-cla/c-cym03 mapas.md",
     "03-cla/c-cym14-un instrumento online colectivo.md",
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
