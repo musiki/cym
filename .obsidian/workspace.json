@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym14 mapas.md",
+                "file": "03-cla/c-cym03 mapas.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/bibliografía/cym portal bibliográfico.md"
+                "file": "03-cla/c-cym02-arte generativo.md"
               }
             }
           },
@@ -258,40 +258,40 @@
   },
   "active": "e580280c2d82c6e3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "@today.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym03 mapas.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym04- cohesión audiovisual.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "03-cla/c-cym07-hydra.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
     "04-ref/bibliografía/cym portal bibliográfico.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
     "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
-    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
     "04-ref/bibliografía/Matt Pearson_Generative Art.md",
     "04-ref/a-dataview playground.md",
     "04-ref/a-yuda.md",
     "04-ref/templater.md",
     "image/c-cym02-arte generativo-1693072612770.jpeg",
     "image/galanter.jpeg",
-    "image/gallery.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/vinculación bidireccional-1660394778685.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
-    "03-cla/c-cym10y11-Aframe.md",
-    "@today.md",
-    "cat.md",
     "cym-metamap.canvas",
-    "Industria 4.0.md",
-    "03-cla/c-cym14 mapas.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym04-integración.md",
-    "03-cla/c-cym03- cohesión audiovisual.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "04-ref/topoi/Inteligencia Artificial (IA).md",
-    "04-ref/espacios/MIT Medialab.md",
     "04-ref/espacios",
-    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
-    "04-ref/bibliografía/Philip Ball_Shapes.md",
     "01-proj/23/beltrame",
     "Untitled.canvas",
     "image/Fragile Territories-1693014463177.jpeg",
