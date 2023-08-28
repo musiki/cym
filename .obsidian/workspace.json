@@ -60,9 +60,48 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "7d289e5f1d4852ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym14 mapas.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e580280c2d82c6e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "8e2b2486279efda0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -144,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/a-yuda.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -230,51 +269,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "774b38590f3be892",
+  "active": "8e2b2486279efda0",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "04-ref/bibliografía/cym portal bibliográfico.md",
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
+    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
+    "04-ref/a-dataview playground.md",
     "04-ref/a-yuda.md",
-    "conflict-files-obsidian-git.md",
-    "README.md",
-    "Inteligencia Artificial (IA).md",
-    "cat.md",
-    "cym-metamap.canvas",
+    "04-ref/templater.md",
+    "image/c-cym02-arte generativo-1693072612770.jpeg",
+    "image/galanter.jpeg",
+    "image/gallery.md",
+    "image/meta-aprendizaje-1660395828475.jpeg",
+    "image/vinculación bidireccional-1660394778685.jpeg",
+    "image/TP1-Topoi-1663103377102.jpeg",
+    "image/TP1-Topoi-1663103377085.jpeg",
+    "03-cla/c-cym10y11-Aframe.md",
     "@today.md",
-    "2023-08-24.md",
-    "2023-08-22.md",
+    "cat.md",
+    "conflict-files-obsidian-git.md",
+    "cym-metamap.canvas",
+    "Industria 4.0.md",
+    "03-cla/c-cym14 mapas.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym04-integración.md",
+    "03-cla/c-cym03- cohesión audiovisual.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "04-ref/topoi/Inteligencia Artificial (IA).md",
+    "04-ref/espacios/MIT Medialab.md",
+    "04-ref/espacios",
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+    "04-ref/bibliografía/Philip Ball_Shapes.md",
+    "01-proj/23/beltrame",
+    "Untitled.canvas",
     "image/Fragile Territories-1693014463177.jpeg",
     "Untitled.loom",
-    "Industria 4.0.md",
-    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
-    "04-ref/personas/Donna Haraway.md",
     "04-ref/bibliografía/cym.bib",
-    "03-cla/c-cym14 mapas.md",
-    "02-mat/python/python abjad.md",
     "02-mat/python/ds/top10s.csv",
     "02-mat/procesos/Untitled.loom",
-    "01-proj/23/bassino/bassino.md",
     "01-proj/23/bassino",
-    "01-proj/23/Zaracho.md",
-    "01-proj/23/Shifres.md",
-    "01-proj/23/Fragile Territories.md",
     "01-proj/DS_Store.zip",
     "01-proj/DS_Store",
     "DS_Store",
-    "gitignore.txt",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "02-mat/cloud ides.md",
-    "02-mat/html.md",
-    "02-mat/tone.js.md",
-    "02-mat/rant.md",
-    "02-mat/que es git.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/prueba tutorial.md",
-    "top10s.csv",
-    "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
-    "image/t01-sistemas de universos-1660410536915.jpeg",
-    "image/TP1-Topoi-1663103377085.jpeg",
-    "image/TP1-Topoi-1663103377102.jpeg",
-    "image/galanter.jpeg"
+    "image/t01-sistemas de universos-1660410536915.jpeg"
   ]
 }

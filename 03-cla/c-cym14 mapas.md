@@ -35,7 +35,7 @@ ntroducida en la vida salvaje urbana de Kassel, los tristemente célebres mapach
 [[CERN]]
 
 ---
-[[MIT]]
+[[MIT Medialab]]
 
 ---
 

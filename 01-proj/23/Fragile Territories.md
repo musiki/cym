@@ -1,4 +1,8 @@
-
+---
+autor: Fabián Bassino
+topoi: musica visual
+publish: 2023
+---
 
 Fragile Territories es una obra compuesta por Robert Henke expuesta en los años 2012-2014, 2016 y 2019.
 

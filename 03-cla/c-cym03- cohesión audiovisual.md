@@ -16,7 +16,11 @@ una partitura es muy parecida a un código. no hay sonido , pero si una serie de
 
 ---
 ## reproducción técnica
-Lo que sucedió desde -1920 es que aparece un nuevo tipo de registro, la reproducción técnica del audio, que en la próxima generación comenzaría a transformase en un tipo de memoria y un tipo de escritura. La pregunta es, es un .wav o un .mp3 una representación del acto musical o es un acto en si mismo?, hay una música del daw y otra música del espacio real?,  o bien, puede un registro transformarse en una partitura o en un instrumento? El sampler es el primer instrumento que toca con registros, el siguiente podria ser la síntesis concatenativa. Y también un registro intermedio lo ocupan los procesos. Un delay cuya memoria es lo suficientemente desarrollada da lugar a un looper, lo mismo puede suceder con una reverb espectral selectiva que recomponga fragmentos segun ciertos algorítmos de selección. A nivel social, los grandes repositorios de sonidos, instrumentos virtuales ,vst también generan desde soportes para diversas músicas como músicas en si misma, como el black midi music, el plunderphonics, el mash-up.
+
+- 1920 → reproducción técnica del audio
+- es un registro técnico otra forma de escritura?
+- nuevas escrituras y memorias: sampler, scratch, vst espectrales, síntesis concatenativa. 
+- note: Lo que sucedió desde -1920 es que aparece un nuevo tipo de registro, la reproducción técnica del audio, que en la próxima generación comenzaría a transformase en un tipo de memoria y un tipo de escritura. La pregunta es, es un .wav o un .mp3 una representación del acto musical o es un acto en si mismo?, hay una música del daw y otra música del espacio real?,  o bien, puede un registro transformarse en una partitura o en un instrumento? El sampler es el primer instrumento que toca con registros, el siguiente podria ser la síntesis concatenativa. Y también un registro intermedio lo ocupan los procesos. Un delay cuya memoria es lo suficientemente desarrollada da lugar a un looper, lo mismo puede suceder con una reverb espectral selectiva que recomponga fragmentos segun ciertos algorítmos de selección. A nivel social, los grandes repositorios de sonidos, instrumentos virtuales ,vst también generan desde soportes para diversas músicas como músicas en si misma, como el black midi music, el plunderphonics, el mash-up.
 
 --
 
@@ -36,7 +40,8 @@ graph TD
 
 a1("obra > diccionario [objeto abstracto, forma, relación]")-->a2(" diccionario [objeto abstracto, forma, relación] ")-->a3("obra >- operaciones (rotar, variar, transparentar) - recepción (sincronia con la Gestalt)")
 
-classDef className fill:#8ff,stroke:#fff,stroke-width:2px
+classDef className fill:#200,stroke:#fff,stroke-width:2px;width:100%
+
 class start,a1,a2,a3 className;
 
 ```
@@ -46,33 +51,39 @@ class start,a1,a2,a3 className;
 ## pioneros del arte generativo .
 
 Pueden citarse algunos emergentes incompletos, por el lado de los grupos artístcos los predecesores [[Futurismo]], [[Die Blaue Reute]],  [[Suprematismo]]. 
-En Yugoslavia el [[new Tendencies]] y el francés  [[GRAV]] (el grupo de investigación en artes visuales). Del cual emerge[[Vera Molnár]]
+En Yugoslavia el [[new Tendencies]] y el francés  [[GRAV]] (el grupo de investigación en artes visuales). Del cual emerge [[Vera Molnár]]
+
+---
 
 <iframe width="900" height="529" src="https://www.youtube.com/embed/9ctg_cVYKuQ" title="Vera Molnar exhibition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
---
+---
 
 <iframe src="https://editor.p5js.org/CastaZ/sketches/1Wfe5-nXJ" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
---
+---
 
 <iframe src="https://editor.p5js.org/kjhollen/sketches/BJeN4eTPe" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
-Molnár usa Fortran (el mismo lenguaje que Max Matheew en Music-n ) para interpretar relaciones matemáticas que luego imprimia sobre papel.  En el concepto seriado devenido del grabado, Molnár comienza a guardar versiones de la generatividad del cálculo , y esto le permite generar una distancia entre el acervo y su propia persona como creadora. 
+---
+Molnár usa Fortran (el mismo lenguaje que Max Matheew en Music-n ) para interpretar relaciones matemáticas que luego imprimia sobre papel.  
 
+---
+En el concepto seriado devenido del grabado, Molnár comienza a guardar versiones de la generatividad del cálculo , y esto le permite generar una distancia entre el acervo y su propia persona como creadora. 
+
+---
 Esta noción del abandono o mediación de la voluntad es esencial para seguir un devenir histórico entre el impacto de las herramientas numéricas y la transformación de la noción del sujeto e individuo.
 
+---
 
-https://cagrimmett.com/tutorial/2022/03/08/how-to-create-vera-molnars-structure-de-quadrilateres-in-p5-js/
+<iframe src="https://cagrimmett.com/tutorial/2022/03/08/how-to-create-vera-molnars-structure-de-quadrilateres-in-p5-js/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
-
---
- **estructura del arte generativo **
+---
+## estructura del arte generativo 
 
 1. código
 2. animación o scheduling 
 3. interacción [reactividad, transitividad, transparencia, interactividad, complejidad]
 4. recursivad e iteración(feedback, algorítmos genéticos, evaluación, ml
-
 
 ---
 Iannis Xenakis, Pithoprakta, 1955-56
@@ -81,15 +92,18 @@ Iannis Xenakis, Pithoprakta, 1955-56
 
 note:Pithoprakta (1955-56) es una obra de Iannis Xenakis para dos trombones, 46 instrumentos de cuerda, xilófono y bloque de madera, estrenada por el director Hermann Scherchen en Múnich en marzo de 1957.  
 
---
-El título se traduce como "acciones a través de la probabilidad". En el caso de "Pithoprakta", esto se relaciona con la ley de los grandes números de Jacque Bernoulli, que afirma que, a medida que aumenta el número de ocurrencias de un suceso fortuito, el resultado medio se aproxima más a un fin determinado. La obra se basa en la mecánica estadística de los gases, la ley de Gauss o el movimiento browniano. Cada instrumento se concibe como una molécula que obedece a la ley de distribución de Maxwell-Boltzmann, con una distribución gaussiana de la fluctuación de la temperatura.  
+---
+El título se traduce como "acciones a través de la probabilidad". En el caso de "Pithoprakta", esto se relaciona con la ley de los grandes números de Jacque Bernoulli, que afirma que, a medida que aumenta el número de ocurrencias de un suceso fortuito, el resultado medio se aproxima más a un fin determinado. 
 
---
+---
+La obra se basa en la mecánica estadística de los gases, la ley de Gauss o el movimiento browniano. Cada instrumento se concibe como una molécula que obedece a la ley de distribución de Maxwell-Boltzmann, con una distribución gaussiana de la fluctuación de la temperatura.  
+
+---
 note:Del mismo modo, al mirar una composición hecha en la Técnica de los Doce Tonos, es más fácil identificar y verificar el original, el retrógrado, la inversión, etc., en la partitura que escuchar esas cosas en la realización.
 
 <iframe title="Zwölftonwerbung - Twelve tone commercial" src="https://www.youtube.com/embed/LACCAF04wSs?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
---
+---
 
 <iframe title="Schoenberg: Suite for Piano, Op.25 (Boffard)" src="https://www.youtube.com/embed/bQHR_Z8XVvI?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
@@ -109,16 +123,18 @@ Destilado aún más, la partitura es sólo un conjunto de instrucciones. Podría
  > Yoko Ono
  
 
+---
+[Ligeti - Artikulation]
+<iframe title="Ligeti - Artikulation" src="https://www.youtube.com/embed/71hNl_skTZQ?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
+--
 
-[Ligeti - Artikulation](https://www.youtube.com/watch?v=71hNl_skTZQ)
+Synchromy - Norm McLaren
+<iframe title="Synchromy -  Norman McLaren" src="https://www.youtube.com/embed/UmSzc8mBJCM?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
 --
 
-[Synchromy - Norm McLaren](https://www.youtube.com/watch?v=UmSzc8mBJCM)
-
---
-
-[Dots - Norm McLaren](https://www.youtube.com/watch?v=E3-vsKwQ0Cg)
+Dots - Norm McLaren
+<iframe title="Norman McLaren - Dots (1940)" src="https://www.youtube.com/embed/E3-vsKwQ0Cg?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
 --
 
@@ -151,7 +167,7 @@ Destilado aún más, la partitura es sólo un conjunto de instrucciones. Podría
 # código como partitura
 
 --
-## Max Matthew , Music n
+## Max Matthew , Music N
 
 <iframe src="https://m5live.zztt.org" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
@@ -202,7 +218,6 @@ Tone.Transport.start()
 ## señales 
 
 Las señales son como los AudioParams en el sentido de que puedes utilizarlas para cambiar los valores como una perilla. También te permiten programar eventos automatizados y cambiar suavemente los valores.
-
 
 
 ```js

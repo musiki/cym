@@ -1,3 +1,8 @@
+---
+autor: Sabrina Beltrame
+topoi: 
+publish: 2023
+---
 Brian Eno, "77 Million Paintings"
 https://www.youtube.com/watch?v=D8Nysy5SY2w&ab_channel=BrianEno-Topic
 Brian Eno es un compositor, productor y artista visual. Es reconocido por sus aportes en diferentes géneros musicales como la música ambiental, con su album "Music for Airports", así como la música electrónica y experimental. 
