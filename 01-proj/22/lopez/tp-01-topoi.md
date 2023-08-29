@@ -1,1 +1,1 @@
-[[t52-Racionalizacion_(videojuegos)]]
+[[Racionalizacion_(videojuegos)]]

@@ -1,28 +1,19 @@
 ---
-image: 
-tags: in/books
-aliases:
-  - <% tp.file.title.replace('{ ', '') %>
-cssclass: 
+tag: libro
+title: "{{title}}"
+subtitle: "{{subtitle}}"
+author: {{author}}
+category: {{category}}
+subject: {{subject}}
+publish: {{publishDate}}
+publisher: {{publisher}}
+totalPage: {{totalPage}}
+coverUrl: {{coverUrl}}
+description: {{description}}
+isbn: {{isbn10}} 
+isbn13: {{isbn13}} 
+link: {{link}}
+status: unread
+colabs: {{colabs}}
 ---
 
-# Title: [[<%tp.file.title%>]]
-
-## Metadata
-
-Tags:: 
-Type:: [[{]]
-Author:: {{VALUE:author}}
-Reference::
-Rating:: 
-Reviewed Date:: [[<%tp.date.now("gggg-MM-DD - ddd MMM D")%>]]
-Finished Year:: [[<%tp.date.now("gggg")%>]]
-
-# Thoughts
-
-# Actions Taken / Changes
-
-# Summary of Key Points
-
-# Highlights & Notes
-{{MACRO:Readwise::instaFetchBook}}

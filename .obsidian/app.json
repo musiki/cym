@@ -8,5 +8,8 @@
     "downscalePercent": 100
   },
   "livePreview": false,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "04-ref",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-in"
 }

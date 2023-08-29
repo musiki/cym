@@ -1,0 +1,13 @@
+{
+  "folder": "04-ref/bibliografía",
+  "fileNameFormat": "{{author}}_{{title}}",
+  "frontmatter": "",
+  "content": "",
+  "useDefaultFrontmatter": false,
+  "defaultFrontmatterKeyType": "Camel Case",
+  "templateFile": "04-ref/templates/t-book.md",
+  "serviceProvider": "google",
+  "naverClientId": "",
+  "naverClientSecret": "",
+  "localePreference": "default"
+}
