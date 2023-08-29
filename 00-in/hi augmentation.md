@@ -1,0 +1,4 @@
+
+> The augment is a prefix used in certain Indo-European languages (Indo-Iranian, Greek, Armenian and Phrygian) to indicate past time. The augment is of rather late origin in Proto-Indo-European, and in the oldest attested daughter [[languages]], such as [[Vedic Sanskrit]] and early Greek, it is used optionally. The same verb forms when used without the augment carry an injunctive sense.The augment originally appears to have been a separate word, with the potential meaning of 'there, then', which in time got fused to the verb. The augment is *é- in PIE (é- in Greek, á- in Sanskrit) and always bears the accent.
+>
+> [w](https://en.wikipedia.org/wiki/Augment%20(Indo-European))

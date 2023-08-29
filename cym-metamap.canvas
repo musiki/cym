@@ -1,6 +1,27 @@
 {
 	"nodes":[
-		{"type":"text","text":"<iframe width=\"2000px\" height=\"1000px\" src=\"https://miro.com/app/live-embed/uXjVO89lGbw=/?moveToViewport=-17499,-1859,8352,4549&embedId=158479448268\" frameborder=\"0\" scrolling=\"no\" allow=\"fullscreen; clipboard-read; clipboard-write\" allowfullscreen></iframe>","id":"c126621a5b618f5e","x":500,"y":-660,"width":2060,"height":1060,"color":"6"}
+		{"type":"text","text":"Bell Labs","id":"e033db8d2fd0807e","x":703,"y":-480,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"Institute of Sonology","id":"a2bf3be2efd1216a","x":703,"y":-360,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"ArtLab EPFL","id":"933a34b96bf315de","x":703,"y":-240,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"CERN Artistic residencies","id":"3c69fd132c4b52c2","x":703,"y":-123,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"<iframe width=\"2000px\" height=\"1000px\" src=\"https://miro.com/app/live-embed/uXjVO89lGbw=/?moveToViewport=-17499,-1859,8352,4549&embedId=158479448268\" frameborder=\"0\" scrolling=\"no\" allow=\"fullscreen; clipboard-read; clipboard-write\" allowfullscreen></iframe>","id":"c126621a5b618f5e","x":1420,"y":-546,"width":2060,"height":1060,"color":"6"},
+		{"type":"text","text":"MIT Medialab","id":"a922dbd9cacfc19f","x":703,"y":0,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"ZKM Karsruhe","id":"c398b38a1062a3db","x":703,"y":120,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"ArsElectrónica","id":"cd409a92d6b88fa2","x":703,"y":240,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"Centro CCEBA Cultural de España","id":"93cfac9ed7e27154","x":280,"y":360,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"Proyecto ISIS","id":"c9bb2d7257bc9169","x":280,"y":461,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"UNTREF Artes Electrónicas","id":"865fb7205aed14ba","x":280,"y":560,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"UBADIS","id":"bc4f43504b4120b5","x":280,"y":660,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"Fundación Telefónica","id":"6f920db5ccfe348d","x":280,"y":240,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"Instituto DiTella","id":"17e246241b80fd29","x":280,"y":53,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"LIPM","id":"5686da9d2d3f8178","x":280,"y":147,"width":157,"height":53,"color":"1"},
+		{"id":"a152d7beada44b0f","x":703,"y":-573,"width":157,"height":53,"color":"1","type":"text","text":"ICA London"},
+		{"type":"text","text":"9 evenings","id":"3bcfa319e254f5b1","x":-40,"y":-145,"width":157,"height":53,"color":"#fff700"},
+		{"type":"text","text":"EAT Experiments in arts and technologies","id":"be3b23c797635834","x":-40,"y":-53,"width":157,"height":106,"color":"#fff700"},
+		{"id":"8325cdba6dff9b24","x":-281,"y":-660,"width":640,"height":360,"type":"link","url":"https://www.youtube.com/watch?v=5mH9DysESqo&t=334s"},
+		{"id":"71262f85b53c4c88","x":1020,"y":-431,"width":250,"height":51,"color":"6","type":"text","text":"Jasia Reichardt"},
+		{"type":"text","text":"Bela Julesz","id":"760445b155b9c6f0","x":1020,"y":-307,"width":250,"height":51,"color":"6"},
+		{"type":"text","text":"John Pierce","id":"c5da4a8a5edd6cc1","x":1020,"y":-187,"width":250,"height":51,"color":"6"}
 	],
 	"edges":[]
 }

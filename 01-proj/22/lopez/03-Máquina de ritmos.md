@@ -1,3 +1,10 @@
+---
+type: project
+author: Nicolás López 
+tags: code , js ,tonejs
+publish: 2022
+---
+
 Hice una máquina de ritmos, viene con un pad y un sequencer.
 
 El drumpad tiene una latencia considerable, me gustaría ver si se puede reducir de algún modo.

@@ -8,30 +8,51 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:class",
+      "query": "path:01-proj",
       "color": {
         "a": 1,
-        "rgb": 14377313
+        "rgb": 14048348
       }
     },
     {
-      "query": "",
+      "query": "path:02-mat/jasvascript",
       "color": {
         "a": 1,
         "rgb": 14069084
       }
+    },
+    {
+      "query": "path:04-ref/bibliografía",
+      "color": {
+        "a": 1,
+        "rgb": 2130353
+      }
+    },
+    {
+      "query": "path:02-mat/procesos",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:04-ref/personas",
+      "color": {
+        "a": 1,
+        "rgb": 13776695
+      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": true,
-  "textFadeMultiplier": -1.3,
-  "nodeSizeMultiplier": 0.943782552083333,
-  "lineSizeMultiplier": 0.815380859375,
+  "textFadeMultiplier": -0.8,
+  "nodeSizeMultiplier": 1.07495170637476,
+  "lineSizeMultiplier": 0.916140802747371,
   "collapse-forces": false,
-  "centerStrength": 0.450602213541667,
-  "repelStrength": 9.99186197916667,
-  "linkStrength": 0.78271484375,
-  "linkDistance": 250,
-  "scale": 0.12948115624586531,
+  "centerStrength": 0.429813264649066,
+  "repelStrength": 9.13286112899764,
+  "linkStrength": 1,
+  "linkDistance": 95,
+  "scale": 0.19982946681120461,
   "close": true
 }

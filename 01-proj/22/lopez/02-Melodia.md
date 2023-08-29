@@ -1,3 +1,10 @@
+---
+type: project
+author: Nicolás López 
+tags: code , js ,tonejs
+publish: 2022
+---
+
 # 2 - Melodía
 ## 22.08.27 Generador de melodía a 3 voces
 
