@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-08-24.md",
+                "file": "01-proj/23/Zaracho.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-08-24.md"
+                "file": "01-proj/23/Zaracho.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-08-24.md",
+                "file": "01-proj/23/Zaracho.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-08-24.md",
+                "file": "01-proj/23/Zaracho.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,18 +199,21 @@
   },
   "active": "e34ef26b3e81f11c",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "2023-08-24.md",
-    "01-proj/23/Zaracho.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/23/bassino/bassino.md",
     "01-proj/23/beltrame.md",
+    "01-proj/23/Shifres.md",
+    "01-proj/23/Zaracho.md",
+    "04-ref/topoi/t61-virtualidad y realidad.md",
+    "2023-08-24.md",
+    "Untitled.canvas",
     "04-ref/topoi/t32-azar.md",
     "01-proj/23/Zaracho",
     "04-ref/topoi/t11-sistemas de universos.md",
     "04-ref/topoi/t09-física.md",
     "04-ref/topoi/t10-método científico.md",
     "04-ref/topoi/b-Spectromorphology.md",
-    "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/Shifres.md",
     "conflict-files-obsidian-git.md",
     "01-proj/23/prueba.md",
     "cym-metamap.canvas",
@@ -219,7 +222,6 @@
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/partituras/ave maria palestrina.md",
     "02-mat/tone.js.md",
-    "01-proj/23/bassino/bassino.md",
     "03-cla/c-cym00-presentación.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
@@ -229,7 +231,6 @@
     "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "03-cla/c-cym02-arte generativo.md",
-    "04-ref/personas/Donna Haraway.md",
     "image/c-cym14 mapas-1692736930784.jpeg",
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
