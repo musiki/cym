@@ -124,7 +124,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -137,7 +137,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "37f5a9dbc937d7a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -150,7 +163,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -163,7 +176,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "acca9d1066b1febb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/shifres.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -171,7 +197,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -245,7 +271,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,7 +288,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Shifres.md",
+                "file": "01-proj/23/shifres.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -285,7 +311,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Shifres.md"
+                "file": "01-proj/23/shifres.md"
               }
             }
           },
@@ -331,6 +357,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "wikipedia-search:Open Article": false,
       "templater-obsidian:Templater": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
@@ -348,10 +376,13 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "1701626cb23170d4",
+  "active": "37f5a9dbc937d7a9",
   "lastOpenFiles": [
+    "link.md",
+    "01-proj/23/shifres.md",
+    "01-proj/tp/tp01-topoi.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/Shifres.md",
+    "04-ref/bibliografía/cym.bib",
     "01-proj/23/bassino/bassino.md",
     "01-proj/23/prueba.md",
     "01-proj/23/beltrame.md",
@@ -382,11 +413,9 @@
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
     "02-mat/python/ds",
-    "02-mat/procesos/Untitled.loom",
     "README.md",
     "01-proj/tp/prueba.md",
     "04-ref/a-yuda.md",
-    "01-proj/tp/tp01-topoi.md",
     "image/meta-aprendizaje-1660395828475.jpeg",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg",
