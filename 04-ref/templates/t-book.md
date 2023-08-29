@@ -14,5 +14,6 @@ isbn: {{isbn10}}
 isbn13: {{isbn13}} 
 link: {{link}}
 status: unread
+colabs: {{colabs}}
 ---
 

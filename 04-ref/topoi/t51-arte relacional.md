@@ -1,6 +1,6 @@
 ---
 type: topoi
-status: dev
+status: dev, topoi
 author: lionel borsalino
 year: 2017
 ---

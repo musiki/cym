@@ -10,11 +10,6 @@
     },
     {
       "folder": "04-ref/topoi",
-      "tag": "",
-      "pattern": "t-"
-    },
-    {
-      "folder": "04-ref/topoi",
       "tag": "#topoi",
       "pattern": ""
     },
@@ -39,9 +34,9 @@
       "pattern": ""
     },
     {
-      "folder": "",
+      "folder": "04-ref/templates",
       "tag": "",
-      "pattern": ""
+      "pattern": "t-"
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

@@ -495,7 +495,7 @@
       "links": 0
     },
     "Excalidraw/sistemas.excalidraw.md": {
-      "size": 22483,
+      "size": 26674,
       "tags": 1,
       "links": 0
     },
@@ -647,15 +647,45 @@
     "03-cla/c-cym14-un instrumento online colectivo.md": {
       "size": 11934,
       "tags": 8,
+<<<<<<< HEAD
+=======
+      "links": 0
+    },
+    "Untitled.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Untitled 1.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 1
+    },
+    "Untitled 2.md": {
+      "size": 9136,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md": {
+      "size": 9143,
+      "tags": 0,
+>>>>>>> origin/main
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
+<<<<<<< HEAD
       "Refactor": 105,
       "Create": 90,
       "Link": 68,
       "Expand": 13
+=======
+      "Refactor": 106,
+      "Create": 94,
+      "Link": 69,
+      "Expand": 16
+>>>>>>> origin/main
     }
   },
   "dailyCommits": {
@@ -663,7 +693,7 @@
       "0": 18,
       "1": 37,
       "2": 0,
-      "3": 0,
+      "3": 15,
       "4": 1,
       "5": 1,
       "6": 0,
@@ -688,8 +718,13 @@
   },
   "weeklyCommits": {
     "/": {
+<<<<<<< HEAD
       "Mon": 65,
       "Tue": 26,
+=======
+      "Mon": 59,
+      "Tue": 41,
+>>>>>>> origin/main
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -712,9 +747,16 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
+        "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Untitled 3.md\"> Untitled 3 </a>",
+        "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>",
+        "<a class=\"internal-link\" href=\"Untitled 1.md\"> Untitled 1 </a>",
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14-un instrumento online colectivo.md\"> c-cym14-un instrumento online colectivo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
@@ -761,11 +803,7 @@
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"2023-06-10.md\"> 2023-06-10 </a>",
         "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
-        "<a class=\"internal-link\" href=\"README.md\"> README </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Generador de Melodías Random.md\"> Generador de Melodías Random </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Hola Sonido.md\"> Hola Sonido </a>"
+        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -797,7 +835,8 @@
         "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -922,6 +961,10 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+<<<<<<< HEAD
+=======
+        "<a class=\"internal-link\" href=\"Untitled 1.md\"> Untitled 1 </a>",
+>>>>>>> origin/main
         "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>"
       ],

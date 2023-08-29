@@ -1,7 +1,7 @@
 ---
 type: topoi
-tags: filosofía , posthumanismp
-unit: 0
+tags: filosofía , posthumanismo, topoi
+unit: t12
 publish: 2015
 author: zztt 
 ---

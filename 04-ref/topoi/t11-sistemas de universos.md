@@ -1,7 +1,7 @@
 ---
 type: topoi
-tags: universo, física, historiadelaciencia , astronomia
-unit: 0
+tags: universo, física, historiadelaciencia , astronomia, topoi
+unit: t11
 publish: 2015
 author: zztt 
 ---
