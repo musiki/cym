@@ -1,33 +1,47 @@
 {
   "main": {
-    "id": "06155fffeb6c2afa",
+    "id": "5a18c0d64014344d",
     "type": "split",
     "children": [
       {
-        "id": "b3bb5a3a6222e21e",
+        "id": "dde0344341cb0e2b",
         "type": "tabs",
-        "dimension": 60.47812817904374,
         "children": [
           {
-            "id": "12fde74d4467fb5b",
+            "id": "1a18ca71d2e01b80",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/bib MOC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "juggl_view",
+              "state": {},
+              "pinned": true
             }
           },
           {
-            "id": "c297194082e9876f",
+            "id": "8a4e3ad4e4d71436",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "juggl_view",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "092d55e3789581db",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "84ea3e7d69ad87fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -35,12 +49,12 @@
             }
           },
           {
-            "id": "62ba0f4655c37ae9",
+            "id": "774b38590f3be892",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "04-ref/a-yuda.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -48,38 +62,25 @@
             }
           },
           {
-            "id": "ae3df071df342e0d",
+            "id": "7d289e5f1d4852ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym03 mapas.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e580280c2d82c6e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "3e5669e1f29cfcf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-ref/topoi/b-Spectromorphology.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "559d533abe2aa1ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/proyectos MOC.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -87,94 +88,21 @@
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "9faee1814ddf6a95",
-        "type": "tabs",
-        "dimension": 39.52187182095626,
-        "children": [
-          {
-            "id": "ddcd56a1226c7e00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d30ae0e54fa2df28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/meta-aprendizaje.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4b4fa8eb0d6f33aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "9a073836915b1cc7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "3a71119965bf1bb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
-        ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b602c04a731b296c",
+    "id": "d4718bd7ba3ba504",
     "type": "split",
     "children": [
       {
-        "id": "af95db91370f3ee0",
+        "id": "7c967065551dd8ba",
         "type": "tabs",
         "children": [
           {
-            "id": "58a6bf3eeea06c75",
+            "id": "9d30c2917a0c09e3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -184,7 +112,7 @@
             }
           },
           {
-            "id": "9c932be67380cd5c",
+            "id": "96ec3dbd878d0886",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -199,7 +127,15 @@
             }
           },
           {
-            "id": "74b08449f93c0350",
+            "id": "5f6979fcaa6edb43",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "a3f3d6b8aaa45293",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -210,52 +146,31 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 300
   },
   "right": {
-    "id": "f8c878636ee6998f",
+    "id": "80820653654ffa07",
     "type": "split",
     "children": [
       {
-        "id": "aaca835876e592bb",
+        "id": "00280e8b2037d894",
         "type": "tabs",
         "children": [
           {
-            "id": "20c732dc2cc0ecaf",
+            "id": "d6bb19e283c34886",
             "type": "leaf",
             "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false
-              }
-            }
-          },
-          {
-            "id": "8c7ec6495dcddec6",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "conflict-files-obsidian-git.md"
-              }
-            }
-          },
-          {
-            "id": "055fb9ac87c85faf",
-            "type": "leaf",
-            "state": {
-              "type": "QUICKSHARE_SIDE_VIEW",
+              "type": "calendar",
               "state": {}
             }
           },
           {
-            "id": "144c44b7b3935a93",
+            "id": "3ea2a834c2570976",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,38 +182,69 @@
             }
           },
           {
-            "id": "2ee534ce5bfe466f",
+            "id": "f183a64109c5ba3b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1f09eefe4030109c",
+            "id": "4a15f9484f221c6c",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dc9369bc847a8542",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "e948b467d593cd23",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
               "state": {}
             }
           },
           {
-            "id": "5753b5b54d34c172",
+            "id": "3dad1fcc087884df",
             "type": "leaf",
             "state": {
-              "type": "copilot-chat-view",
+              "type": "juggl_style",
+              "state": {}
+            }
+          },
+          {
+            "id": "bc6cc4bab11c2429",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -307,67 +253,57 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "dbfolder:Create a new database table": false,
-      "obsidian-metatable:Metatable": false,
-      "notion-like-tables:Create new loom": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "copilot:Copilot Chat": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "templater-obsidian:Templater": false,
-      "wikipedia-search:Open Article": false,
-      "obsidian-book-search-plugin:Create new book note": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "c297194082e9876f",
+  "active": "e580280c2d82c6e3",
   "lastOpenFiles": [
-    "00-in/bib MOC.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym05-integración.md",
-    "03-cla/c-cym04- cohesión audiovisual.md",
-    "03-cla/c-cym03 mapas.md",
-    "00-in/proyectos MOC.md",
-    "README.md",
-    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "03-cla/c-cym05-flex-grid.md",
-    "04-ref/templates/t-cym-class.md",
-    "03-cla/c-cym12-Aframe2.md",
+    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
     "00-in/topoi MOC.md",
-    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md",
-    "04-ref/topoi/t52-Racionalizacion_(videojuegos).md",
-    "04-ref/topoi/t60-espacio.md",
-    "04-ref/topoi/t61-virtualidad y realidad.md",
-    "04-ref/topoi/t34-livecoding.md",
-    "04-ref/topoi/t33-sistemas complejos.md",
-    "04-ref/topoi/t32-azar.md",
-    "04-ref/topoi/t31-generatividad.md",
-    "04-ref/topoi/t30-vida artificial.md",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/topoi/t21-interfaces.md",
-    "04-ref/topoi/t12-filosofía 21.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "cym-metamap.canvas",
-    "02-mat/procesos/Untitled.loom",
-    "04-ref/espacios",
-    "04-ref/eventos",
-    "Untitled.loom",
-    "Untitled.canvas",
+    "00-in/proyectos MOC.md",
+    "00-in/bib MOC.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "@today.md",
+    "03-cla/c-cym03 mapas.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym04- cohesión audiovisual.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "03-cla/c-cym07-hydra.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+    "04-ref/bibliografía/cym portal bibliográfico.md",
+    "conflict-files-obsidian-git.md",
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
+    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
     "image/c-cym02-arte generativo-1693072612770.jpeg",
-    "02-mat/ml",
-    "01-proj/23/bassino",
-    "image/c-cym14 mapas-1692736930784.jpeg",
-    "02-mat/python/ds/songs-top10s.csv",
-    "02-mat/python/ds/music-scales.csv",
-    "02-mat/python/ds/composers.csv",
-    "02-mat/python/ds",
     "image/galanter.jpeg",
+    "image/meta-aprendizaje-1660395828475.jpeg",
+    "image/vinculación bidireccional-1660394778685.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
-    "03-cla/cym-map.canvas",
-    "image/meta-aprendizaje-1660395828475.jpeg"
+    "cym-metamap.canvas",
+    "04-ref/espacios",
+    "01-proj/23/beltrame",
+    "Untitled.canvas",
+    "image/Fragile Territories-1693014463177.jpeg",
+    "Untitled.loom",
+    "04-ref/bibliografía/cym.bib",
+    "02-mat/python/ds/top10s.csv",
+    "02-mat/procesos/Untitled.loom",
+    "01-proj/23/bassino",
+    "01-proj/DS_Store.zip",
+    "01-proj/DS_Store",
+    "DS_Store",
+    "image/t01-sistemas de universos-1660410382651.jpeg",
+    "image/t01-sistemas de universos-1660410536915.jpeg"
   ]
 }
