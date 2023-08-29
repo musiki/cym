@@ -631,22 +631,22 @@
     },
     "03-cla/c-cym03 mapas.md": {
       "size": 3691,
-      "tags": 0,
-      "links": 0
+      "tags": 4,
+      "links": 3
     },
     "03-cla/c-cym04- cohesión audiovisual.md": {
       "size": 10646,
-      "tags": 0,
-      "links": 0
+      "tags": 7,
+      "links": 8
     },
     "03-cla/c-cym05-integración.md": {
       "size": 3476,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     },
     "03-cla/c-cym14-un instrumento online colectivo.md": {
       "size": 11934,
-      "tags": 0,
+      "tags": 8,
       "links": 0
     }
   },
@@ -654,7 +654,7 @@
     "/": {
       "Refactor": 105,
       "Create": 90,
-      "Link": 62,
+      "Link": 68,
       "Expand": 13
     }
   },
@@ -670,7 +670,7 @@
       "7": 0,
       "8": 0,
       "9": 3,
-      "10": 18,
+      "10": 24,
       "11": 6,
       "12": 34,
       "13": 4,
@@ -688,7 +688,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 59,
+      "Mon": 65,
       "Tue": 26,
       "Wed": 83,
       "Thu": 12,
@@ -838,7 +838,11 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md\"> t22.1-La instalación como forma del arte contemporáneo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t21-interfaces.md\"> t21-interfaces </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t12-filosofía 21.md\"> t12-filosofía 21 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12-filosofía 21.md\"> t12-filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14-un instrumento online colectivo.md\"> c-cym14-un instrumento online colectivo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -917,7 +921,9 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
