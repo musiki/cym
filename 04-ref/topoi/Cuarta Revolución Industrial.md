@@ -1,7 +1,7 @@
 ---
 type : topoi
 tags:  revoluciónindustrial, topoi
-unit: t12.1
+unit: 12.1
 author: Juan Martín Ancarola
 publish: 2022
 ---
@@ -10,7 +10,7 @@ publish: 2022
 
 ## Origen
 
-El concepto [[t12.1-Cuarta Revolución Industrial]], también llamado [[Industria 4.0]] o Cuarta etapa de la Revolución Industrial, fue instaurado por el economista y empresario alemán [[Klaus Schwab]], fundador y actual presidente del Foro Económico Mundial. El autor sostiene que esta cuarta etapa está marcada por los avances tecnológicos emergentes en los distintos campos de la vida humana. El biológico, laboral, cultural y político-social. Dentro de estos avances podemos encontrar la [[Inteligencia artificial]], la robótica, la nanotecnología, los vehículos autónomos, la impresión 3D, entre otros. Esta Cuarta Etapa impacta directamente en lo que somos, como pensamos, la forma en que vivimos, trabajamos y como nos relacionamos entre nosotros.^[[1]]
+El concepto [[Cuarta Revolución Industrial]], también llamado [[Industria 4.0]] o Cuarta etapa de la Revolución Industrial, fue instaurado por el economista y empresario alemán [[Klaus Schwab]], fundador y actual presidente del Foro Económico Mundial. El autor sostiene que esta cuarta etapa está marcada por los avances tecnológicos emergentes en los distintos campos de la vida humana. El biológico, laboral, cultural y político-social. Dentro de estos avances podemos encontrar la [[Inteligencia artificial]], la robótica, la nanotecnología, los vehículos autónomos, la impresión 3D, entre otros. Esta Cuarta Etapa impacta directamente en lo que somos, como pensamos, la forma en que vivimos, trabajamos y como nos relacionamos entre nosotros.^[[1]]
 
 ## Características y Diferencias con etapas anteriores*
 

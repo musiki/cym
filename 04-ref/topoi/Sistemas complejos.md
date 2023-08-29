@@ -1,11 +1,11 @@
 ---
 type: topoi
 tags: complejidad,cym,topoi
-unit: t33
+unit: 33
 author: zztt
 ---
 
-## [[Craig Reynols]] [[o-Boid Simulation]]
+## [[Craig Reynols]] [[Boid Simulation]]
 
 https://www.youtube.com/watch?v=86iQiV3-3IA
 

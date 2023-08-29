@@ -2,7 +2,7 @@
 
 
 ```dataview
-Table author as author, publish as "año", tags as tags
+Table author as author, publish as "año", tags as tagsm ,unit
 WHERE contains(type,"topoi")
 SORT Status DESC
 ```
@@ -28,9 +28,9 @@ note: electronic music is part of media art, where the artistic subject concentr
 ---
  ### 10 ontológicos
  
-  - [[t10-método científico]]
- - [[t11-sistemas de universos]]
-- [[t12-filosofía 21]]
+  - [[Método científico]]
+ - [[Sistemas de universos]]
+- [[Filosofía 21]]
 - [[t13-filosofía histórica]]
 - [[t14-historia de la tecnología]]
 
@@ -84,7 +84,7 @@ note: electronic music is part of media art, where the artistic subject concentr
 
 --
 
-  ### [[t60-espacio]]
+  ### [[Espacio]]
   
 - arquitectura 
  - arquitectura aural 

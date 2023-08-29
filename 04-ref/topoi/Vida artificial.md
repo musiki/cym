@@ -1,7 +1,7 @@
 ---
 type: topoi
 tags: vidaartificial, generative , topoi
-unit: t30
+unit: 30
 publish: 2020
 author: zztt
 ---

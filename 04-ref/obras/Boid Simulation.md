@@ -1,6 +1,6 @@
 ---
-type: work
-tags: complejidad, cym, sistemas complejos
+type: obra
+tags: complejidad, cym, sistemas complejos, obra
 year: 1983
 person: [[Craig Reynols]]
 ---

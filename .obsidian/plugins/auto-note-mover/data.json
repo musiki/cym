@@ -37,6 +37,11 @@
       "folder": "04-ref/templates",
       "tag": "",
       "pattern": "t-"
+    },
+    {
+      "folder": "04-ref/obras",
+      "tag": "obra",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

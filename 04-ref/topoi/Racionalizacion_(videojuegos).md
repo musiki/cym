@@ -1,7 +1,7 @@
 ---
 type: topoi
 tags: videojuegos, capitalismo, sociologia, topoi
-unit: 50
+unit: 52
 author: Nicolás López
 date: 2022-08-30
 ---

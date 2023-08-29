@@ -129,7 +129,7 @@ https://experiments.withgoogle.com/ai-duet
 
 ## azar
 
-![[t32-azar]]
+![[Azar]]
 
 
 --

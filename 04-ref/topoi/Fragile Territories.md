@@ -1,6 +1,6 @@
 ---
-autor: Fabián Bassino
-topoi: musica visual
+author: Fabián Bassino
+tags: musica visual, topoi
 publish: 2023
 ---
 

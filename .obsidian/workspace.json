@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
+                "file": "01-proj/23/bassino/bassino POC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 414.5124969482422
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/petrocelli POC.md"
+                "file": "01-proj/23/bassino/bassino POC.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
+                "file": "01-proj/23/bassino/bassino POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
+                "file": "01-proj/23/bassino/bassino POC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,32 +205,32 @@
   },
   "active": "1b6c368408acae56",
   "lastOpenFiles": [
-    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "04-ref/topoi/Música Visual.md",
+    "04-ref/topoi/Fragile Territories.md",
     "01-proj/23/Petroccelli/petrocelli POC.md",
-    "00-in/Marianne Amacher.md",
-    "README.md",
-    "04-ref/topoi/t60-espacio.md",
-    "04-ref/topoi/Inteligencia Artificial (IA).md",
-    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md",
-    "04-ref/topoi/t40-humanos.md",
-    "04-ref/topoi/t31-generatividad.md",
-    "04-ref/topoi/t32-azar.md",
-    "04-ref/topoi/t33-sistemas complejos.md",
-    "04-ref/topoi/t34-livecoding.md",
-    "04-ref/topoi/t51-arte relacional.md",
-    "04-ref/topoi/t52-Racionalizacion_(videojuegos).md",
-    "04-ref/topoi/t61-virtualidad y realidad.md",
-    "04-ref/topoi/t30-vida artificial.md",
-    "04-ref/topoi/t21-interfaces.md",
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
-    "04-ref/topoi/t12-filosofía 21.md",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/templates/t-topoi.md",
-    "04-ref/topoi/Física.md",
-    "04-ref/topoi/conflict-files-obsidian-git.md",
+    "04-ref/obras/Boid Simulation.md",
+    "04-ref/templates/t-book.md",
+    "00-in/Música expandida MOC.md",
+    "04-ref/topoi/Arte relacional.md",
+    "04-ref/topoi/Azar.md",
+    "04-ref/topoi/Virtualidad y realidad.md",
+    "04-ref/topoi/Vida artificial.md",
     "04-ref/topoi/Spectromorphology.md",
-    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+    "04-ref/topoi/Sistemas de universos.md",
+    "04-ref/topoi/Sistemas complejos.md",
+    "04-ref/topoi/Racionalizacion_(videojuegos).md",
+    "04-ref/topoi/Método científico.md",
+    "04-ref/topoi/Livecoding.md",
+    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "04-ref/topoi/Interfaces.md",
+    "04-ref/topoi/Inteligencia Artificial (IA).md",
+    "04-ref/topoi/Humanos.md",
+    "04-ref/topoi/Generatividad.md",
+    "04-ref/topoi/Física.md",
+    "04-ref/topoi/Filosofía 21.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "cym-metamap.canvas",
     "01-proj/23/Petroccelli",

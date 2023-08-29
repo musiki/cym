@@ -1,7 +1,7 @@
 ---
-autor:
-topoi: musica visual
-publish:2023
+author: Fabian Bassino
+tags: musica visual, topoi
+publish: 2023
 ---
 
 ### 1930 Eugene Sholpo Leningrad Graphic Sound Laboratory

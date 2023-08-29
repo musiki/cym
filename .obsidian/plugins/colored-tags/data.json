@@ -88,7 +88,10 @@
     "digital": 82,
     "movingimage": 83,
     "innovator": 84,
-    "posthumanismo": 85
+    "posthumanismo": 85,
+    "work": 86,
+    "obra": 87,
+    "musica": 88
   },
   "_version": 2
 }
