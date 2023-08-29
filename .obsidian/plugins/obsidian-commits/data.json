@@ -10,9 +10,9 @@
       "links": 0
     },
     "01-proj/tp/tp01-topoi.md": {
-      "size": 1053,
+      "size": 11922,
       "tags": 0,
-      "links": 0
+      "links": 2
     },
     "01-proj/todo.md": {
       "size": 419,
@@ -171,7 +171,7 @@
     },
     "03-cla/c-cym02-arte generativo.md": {
       "size": 8547,
-      "tags": 6,
+      "tags": 5,
       "links": 8
     },
     "03-cla/c-cym03- cohesión audiovisual.md": {
@@ -636,10 +636,20 @@
     },
     "03-cla/c-cym14 mapas.md": {
       "size": 3684,
+      "tags": 2,
+      "links": 3
+    },
+    "04-ref/personas/Donna Haraway.md": {
+      "size": 0,
       "tags": 0,
       "links": 0
     },
-    "04-ref/personas/Donna Haraway.md": {
+    "Inteligencia artificial.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Harari.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -647,15 +657,15 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 151,
-      "Create": 157,
-      "Link": 97,
-      "Expand": 11
+      "Refactor": 153,
+      "Create": 159,
+      "Link": 101,
+      "Expand": 12
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 3,
+      "0": 4,
       "1": 15,
       "2": 0,
       "3": 0,
@@ -664,11 +674,11 @@
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 0,
-      "10": 6,
-      "11": 6,
+      "9": 1,
+      "10": 7,
+      "11": 7,
       "12": 34,
-      "13": 2,
+      "13": 4,
       "14": 16,
       "15": 0,
       "16": 19,
@@ -677,19 +687,19 @@
       "19": 3,
       "20": 0,
       "21": 254,
-      "22": 17,
+      "22": 20,
       "23": 9
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 15,
-      "Tue": 19,
+      "Mon": 16,
+      "Tue": 23,
       "Wed": 68,
       "Thu": 269,
-      "Fri": 12,
+      "Fri": 15,
       "Sat": 0,
-      "Sun": 33
+      "Sun": 34
     }
   },
   "recentCommits": {
@@ -705,9 +715,12 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Harari.md\"> Harari </a>",
+        "<a class=\"internal-link\" href=\"Inteligencia artificial.md\"> Inteligencia artificial </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
@@ -756,9 +769,7 @@
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/tipologías de instalación.md\"> tipologías de instalación </a>",
         "<a class=\"internal-link\" href=\"04-ref/procedimientos/extrañamiento.md\"> extrañamiento </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Yotam Mann.md\"> Yotam Mann </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Stuart Russell.md\"> Stuart Russell </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Klaus Schwab.md\"> Klaus Schwab </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Stuart Russell.md\"> Stuart Russell </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -779,6 +790,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Fragile Territories.md\"> Fragile Territories </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
         "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>",
         "<a class=\"internal-link\" href=\"02-mat/org/i-theremin.md\"> i-theremin </a>",
@@ -828,8 +840,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
         "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -922,15 +933,20 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>",
         "<a class=\"internal-link\" href=\"02-mat/procesos/r-como hacer un proyectual.md\"> r-como hacer un proyectual </a>",
-        "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>"
+        "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>"
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ],
       "Removed Links from": [
-        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>"
       ]
     }
   },
