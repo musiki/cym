@@ -24,12 +24,9 @@
             "id": "37b67a4116713332",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
+                "file": "04-ref/musica visual_ bassino_topoi.pdf"
               }
             }
           }
@@ -127,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md"
+                "file": "04-ref/musica visual_ bassino_topoi.pdf"
               }
             }
           },
@@ -145,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "04-ref/musica visual_ bassino_topoi.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "04-ref/musica visual_ bassino_topoi.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +174,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "wikipedia-search:Open Article": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "obsidian-book-search-plugin:Create new book note": false,
       "dbfolder:Crear una nueva tabla de base de datos": false,
       "switcher:Abrir quick switcher": false,
       "graph:Abrir vista de gráfico": false,
@@ -186,21 +185,25 @@
       "command-palette:Abrir paleta de comandos": false,
       "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
       "canvas:Create new canvas": false,
-      "templater-obsidian:Templater": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
-      "copilot:Copilot Chat": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "37b67a4116713332",
   "lastOpenFiles": [
-    "01-proj/23/bassino/bassino POC.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/tp/tp01-topoi.md",
+    "04-ref/musica visual_ bassino_topoi.pdf",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/Zaracho.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "04-ref/topoi/Racionalizacion_(videojuegos).md",
+    "01-proj/22/lopez/tp-01-topoi.md",
+    "01-proj/23/Shifres.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/espacios/MIT Medialab.md",
     "04-ref/espacios/Academy of Fine Arts Vienna.md",
     "04-ref/espacios",
@@ -210,7 +213,6 @@
     "03-cla/c-cym03 mapas.md",
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/beltrame",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/Petroccelli",
     "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md",
@@ -218,7 +220,6 @@
     "README.md",
     "cym-metamap.canvas",
     "04-ref/topoi/t52-Racionalizacion_(videojuegos).md",
-    "01-proj/22/lopez/tp-01-topoi.md",
     "01-proj/23/Fragile Territories.md",
     "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md",
     "04-ref/personas/Harari Yuval Noah.md",
@@ -226,10 +227,6 @@
     "Harari.md",
     "Inteligencia Artificial (IA).md",
     "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/beltrame.md",
-    "01-proj/23/bassino/bassino.md",
-    "Inteligencia artificial.md",
-    "04-ref/personas/Klaus Schwab.md",
     "image/Fragile Territories-1693014463177.jpeg",
     "Untitled.canvas",
     "04-ref/bibliografía/cym.bib",
@@ -237,7 +234,6 @@
     "02-mat/python/ds/songs-top10s.csv",
     "02-mat/python/ds/music-scales.csv",
     "02-mat/python/ds/composers.csv",
-    "02-mat/python/ds",
     "image/galanter.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",
