@@ -668,14 +668,19 @@
       "size": 9143,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/beltrame/Topoi Forma Musical.md": {
+      "size": 5230,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 106,
-      "Create": 94,
+      "Refactor": 109,
+      "Create": 95,
       "Link": 69,
-      "Expand": 16
+      "Expand": 22
     }
   },
   "dailyCommits": {
@@ -689,13 +694,13 @@
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 3,
-      "10": 18,
-      "11": 6,
+      "9": 8,
+      "10": 20,
+      "11": 7,
       "12": 34,
       "13": 4,
       "14": 13,
-      "15": 0,
+      "15": 2,
       "16": 14,
       "17": 2,
       "18": 29,
@@ -709,7 +714,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 59,
-      "Tue": 41,
+      "Tue": 51,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -735,9 +740,16 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
-        "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>"
+        "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"Untitled 3.md\"> Untitled 3 </a>",
         "<a class=\"internal-link\" href=\"Untitled 3.md\"> Untitled 3 </a>",
         "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>",
         "<a class=\"internal-link\" href=\"Untitled 1.md\"> Untitled 1 </a>",
@@ -787,8 +799,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"2023-06-10.md\"> 2023-06-10 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
-        "<a class=\"internal-link\" href=\"README.md\"> README </a>"
+        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -821,7 +832,9 @@
         "<a class=\"internal-link\" href=\"01-proj/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
@@ -868,7 +881,9 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>"
       ],
-      "Refactored": [],
+      "Refactored": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
+      ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"Industria 4.0.md\"> Industria 4.0 </a>",
