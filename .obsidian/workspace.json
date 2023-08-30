@@ -19,22 +19,8 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "e34ef26b3e81f11c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 207.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -111,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho.md"
+                "file": "01-proj/23/bassino/bassino.md"
               }
             }
           },
@@ -129,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho.md",
+                "file": "01-proj/23/bassino/bassino.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Zaracho.md",
+                "file": "01-proj/23/bassino/bassino.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,14 +183,14 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "e34ef26b3e81f11c",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/bassino/bassino.md",
     "01-proj/23/beltrame.md",
     "01-proj/23/Shifres.md",
     "01-proj/23/Zaracho.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/23/bassino/bassino.md",
+    "01-proj/tp/tp01-topoi.md",
     "04-ref/topoi/t61-virtualidad y realidad.md",
     "2023-08-24.md",
     "Untitled.canvas",
