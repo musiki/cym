@@ -1,7 +1,8 @@
 ---
-autor: Beltrame Sabrina
-topoi: Forma musical
-publish: 2023
+type: topoi
+tags: universo, física, historiadelaciencia
+unit: 0
+creation date: 2023-08-29 09:27 modification date: martes 29º agosto 2023 19:54:50
 ---
 Para hablar de forma musical,  mencionaremos el texto de György Ligeti, "De la forma musical". Un ensayo escrito en el año 1969, en el cual se plantean ideas sobre la forma musical y cómo ha evolucionado con el paso del tiempo. Según Ligeti, la forma no es un objeto físico en el espacio, sino más bien una configuración de elementos que se van desarrollando en el tiempo. Esto surge, debido a que en nuestra mente el tiempo y el espacio se encuentran conectados, por lo tanto a la hora de escuchar una obra, nuestra imaginación crea relaciones espaciales sobre diferentes planos. Un ejemplo que Ligeti presenta, es el cambio de altura de un sonido en una obra, la sensación que produce es de verticalidad, mientras que la duración del sonido, se presenta en nuestra imaginación de forma horizontal. Elementos como dinámicas, timbres y texturas, son materiales que ayudan a establecer planos dentro de nuestra mente. De ésta forma, organizamos y creamos relaciones entre los materiales de una obra, que nos ayudan a entender cómo es su forma musical. Sin embargo, Ligeti señala que existe otro punto a tener en cuenta a la hora de hablar de forma musical: la historia. A la hora de escuchar una obra, no solo comprendemos y relacionamos elementos sonoros, sino también elementos de obras pasadas que se encuentran presentes en la forma musical. Es decir, no sólo experimentamos el tiempo presente en el cual la obra se desarrolla, sino también el tiempo pasado en el que se fueron creando y transformando formas musicales, construyendo de esta forma una cadena de figuras históricas. Es así, como se produce un tiempo imaginario, es decir, una dimensión del tiempo que se encuentra más allá del tiempo presente, y que surge de nuestra comprensión de los elementos musicales. Ligeti describe este tiempo imaginario como matemático, ya que se eleva a una "potencia", se multiplica o se expande su significado al momento de experimentar la música. Ser conscientes de la historicidad musical que posee la obra, moldea y enriquece nuestra experiencia al otorgarle dimensiones adicionales.
 
@@ -18,9 +19,7 @@ Sin embargo, Ligeti afirma que existe una contradicción en la música contempor
 
 Ésta división es lo que llevó a una desconexión entre el proceso de composición y la interpretación final de la obra, que da como resultado la contradicción ya mencionada entre forma deseada y forma efectiva. Al introducir conceptos abstractos y técnicas como las constelaciones estructurales o el uso del azar en la creación musical, la performación ganó peso y tendió a absorber la fase de composición misma. El enfoque a la hora de componer no se encuentra en la relación de los materiales para generar una estructura, sino más bien en una organización abstracta y conceptual. A medida que la música se comenzó a complejizar, la intencionalidad detrás de la creación musical y su estructura se debilitaron. En este contexto, Ligeti compara la música serial y el uso del azar, como ejemplos de métodos de composición opuestos, pero que generan una resultante similar: una organización abstracta, en lugar de una relación de materiales que producen una estructura.
 
-**
 
-## Referencias
 
 - Ligeti, György, “De la forma musical”, 1969.
     
