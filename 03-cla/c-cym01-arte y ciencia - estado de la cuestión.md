@@ -129,7 +129,7 @@ https://experiments.withgoogle.com/ai-duet
 
 ## azar
 
-![[t32-azar]]
+![[Azar]]
 
 
 --
@@ -151,4 +151,4 @@ https://experiments.withgoogle.com/ai-duet
 - javascript the good parts en español
 https://www.youtube.com/watch?v=lP9-Zx_cCUg
 
->[!note] > leer [[b-Spectromorphology]] de [[Dennis Smalley]]
+>[!note] > leer [[Spectromorphology]] de [[Dennis Smalley]]
