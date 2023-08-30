@@ -762,8 +762,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 24,
-      "Create": 20,
+      "Refactor": 25,
+      "Create": 21,
       "Link": 19,
       "Expand": 3
     }
@@ -791,7 +791,7 @@
       "18": 0,
       "19": 0,
       "20": 0,
-      "21": 0,
+      "21": 2,
       "22": 0,
       "23": 14
     }
@@ -800,7 +800,7 @@
     "/": {
       "Mon": 0,
       "Tue": 14,
-      "Wed": 52,
+      "Wed": 54,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -834,6 +834,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
         "<a class=\"internal-link\" href=\"Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
@@ -874,7 +875,8 @@
         "<a class=\"internal-link\" href=\"2023-08-29.md\"> 2023-08-29 </a>",
         "<a class=\"internal-link\" href=\"00-in/paul.md\"> paul </a>",
         "<a class=\"internal-link\" href=\"00-in/Inteligencia Artificial -Un enfoque moderno.md\"> Inteligencia Artificial -Un enfoque moderno </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
