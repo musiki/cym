@@ -1,3 +1,10 @@
+---
+type: project
+author: Nicolás López 
+tags: code , js ,tonejs
+publish: 2022
+---
+
 # 1 - Azar
 ## 22.08.19 Update
 - Agregué botón **Stop** y coloreé ambos botones

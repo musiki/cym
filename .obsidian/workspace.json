@@ -11,16 +11,25 @@
             "id": "ecfa88d1ea0545d2",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "cd6bf7cc0c150345",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -115,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/bassino/bassino.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,47 +192,47 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "cd6bf7cc0c150345",
   "lastOpenFiles": [
+    "01-proj/23/bassino/bassino.md",
+    "conflict-files-obsidian-git.md",
+    "04-ref/topoi/Física.md",
+    "04-ref/topoi/Fragile Territories.md",
+    "04-ref/topoi/Filosofía 21.md",
+    "04-ref/topoi/Espacio.md",
+    "04-ref/topoi/Cuarta Revolución Industrial.md",
+    "04-ref/topoi/Azar.md",
+    "04-ref/topoi/Arte relacional.md",
+    "04-ref/templates/templater.md",
+    "04-ref/templates/t-persona.md",
+    "04-ref/obras/Boid Simulation.md",
+    "04-ref/musica visual_ bassino_topoi.pdf",
+    "04-ref/espacios/MIT Medialab.md",
+    "04-ref/espacios/Academy of Fine Arts Vienna.md",
+    "04-ref/espacios",
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+    "01-proj/23/beltrame/Topoi Forma Musical.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/beltrame",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/Petroccelli",
     "01-proj/23/beltrame.md",
     "01-proj/23/Shifres.md",
     "01-proj/23/Zaracho.md",
     "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/bassino/bassino.md",
     "01-proj/tp/tp01-topoi.md",
     "04-ref/topoi/t61-virtualidad y realidad.md",
-    "2023-08-24.md",
     "Untitled.canvas",
-    "04-ref/topoi/t32-azar.md",
     "01-proj/23/Zaracho",
-    "04-ref/topoi/t11-sistemas de universos.md",
-    "04-ref/topoi/t09-física.md",
-    "04-ref/topoi/t10-método científico.md",
-    "04-ref/topoi/b-Spectromorphology.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/23/prueba.md",
     "cym-metamap.canvas",
-    "cat.md",
-    "02-mat/python/py-foundations.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/partituras/ave maria palestrina.md",
-    "02-mat/tone.js.md",
-    "03-cla/c-cym00-presentación.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/ml",
-    "03-cla/c-cym03- cohesión audiovisual.md",
     "01-proj/23/bassino",
-    "03-cla/c-cym14 mapas.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "03-cla/c-cym02-arte generativo.md",
     "image/c-cym14 mapas-1692736930784.jpeg",
     "02-mat/python/ds/songs-top10s.csv",
-    "02-mat/python/ds/music-scales.csv",
-    "02-mat/python/ds/composers.csv",
-    "02-mat/python/ds",
-    "02-mat/python/untitled folder",
-    "02-mat/python/ds/top10s.csv",
     "image/galanter.jpeg",
     "image/TP1-Topoi-1663103377102.jpeg",
     "image/TP1-Topoi-1663103377085.jpeg",

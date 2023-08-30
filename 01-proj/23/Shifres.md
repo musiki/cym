@@ -1,5 +1,17 @@
-hola luciano y clase 
+<<<<<<< HEAD
+[[link]]  link
+---
+tags: etiqueta, referencia
+---
 
 
-COMMENT LUCIANO, HELLO>>>>
-Hola a todos! soy gus
+#etiqueta
+
+=======
+---
+autor: Agustín Shifres
+topoi: 
+publish: 2023
+---
+
+>>>>>>> origin/main

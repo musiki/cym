@@ -9,101 +9,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/topoi/t61-virtualidad y realidad.md": {
-      "size": 12397,
-      "tags": 4,
-      "links": 0
-    },
-    "04-ref/topoi/t60-espacio.md": {
-      "size": 74,
-      "tags": 5,
-      "links": 0
-    },
-    "04-ref/topoi/t52-Racionalizacion_(videojuegos).md": {
-      "size": 6697,
-      "tags": 3,
-      "links": 0
-    },
-    "04-ref/topoi/t51-arte relacional.md": {
-      "size": 14264,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/topoi/t40-humanos.md": {
-      "size": 45,
-      "tags": 1,
-      "links": 0
-    },
-    "04-ref/topoi/t34-livecoding.md": {
-      "size": 533,
-      "tags": 4,
-      "links": 0
-    },
-    "04-ref/topoi/t33-sistemas complejos.md": {
-      "size": 2833,
-      "tags": 3,
-      "links": 2
-    },
-    "04-ref/topoi/t32-azar.md": {
-      "size": 1850,
-      "tags": 4,
-      "links": 2
-    },
-    "04-ref/topoi/t31-generatividad.md": {
-      "size": 21,
-      "tags": 1,
-      "links": 0
-    },
-    "04-ref/topoi/t30-vida artificial.md": {
-      "size": 471,
-      "tags": 1,
-      "links": 5
-    },
-    "04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md": {
-      "size": 5895,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/topoi/t21-interfaces.md": {
-      "size": 134,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/topoi/t12.1-Cuarta Revolución Industrial.md": {
-      "size": 8264,
-      "tags": 2,
-      "links": 23
-    },
-    "04-ref/topoi/t12-filosofía 21.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/topoi/t11-sistemas de universos.md": {
-      "size": 20383,
-      "tags": 5,
-      "links": 3
-    },
-    "04-ref/topoi/t10-método científico.md": {
-      "size": 12362,
-      "tags": 4,
-      "links": 0
-    },
-    "04-ref/topoi/t09-física.md": {
-      "size": 122,
-      "tags": 2,
-      "links": 1
-    },
-    "04-ref/topoi/b-Spectromorphology.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/templates/t-topoi.md": {
-      "size": 204,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/templates/t-movie.md": {
       "size": 361,
       "tags": 2,
@@ -132,16 +37,6 @@
     "04-ref/templates/t-book.md": {
       "size": 461,
       "tags": 1,
-      "links": 4
-    },
-    "04-ref/templates/t-bibliografía.md": {
-      "size": 87,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/templater.md": {
-      "size": 117,
-      "tags": 0,
       "links": 0
     },
     "04-ref/personas/Yotam Mann.md": {
@@ -176,8 +71,8 @@
     },
     "04-ref/personas/Hito Steyerl.md": {
       "size": 94,
-      "tags": 1,
-      "links": 0
+      "tags": 3,
+      "links": 1
     },
     "04-ref/personas/Harari Yuval Noah.md": {
       "size": 0,
@@ -190,61 +85,6 @@
       "links": 0
     },
     "04-ref/personas/Dennis Smalley.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/obras/o-Boid Simulation.md": {
-      "size": 150,
-      "tags": 4,
-      "links": 0
-    },
-    "04-ref/db/topoi.md": {
-      "size": 1901,
-      "tags": 0,
-      "links": 15
-    },
-    "04-ref/db/referencias.md": {
-      "size": 271,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/db/personas.md": {
-      "size": 75,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/db/obras.md": {
-      "size": 306,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@XuanThuan1988.md": {
-      "size": 109,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@Steyerl2014a.md": {
-      "size": 85,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/notes/@Padilla2010.md": {
-      "size": 105,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/b-Los condenados de la pantalla.md": {
-      "size": 2349,
-      "tags": 5,
-      "links": 0
-    },
-    "04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/bibliografía/21 Lecciones para el siglo Xxi.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -289,20 +129,10 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym06-un instrumento online colectivo.md": {
-      "size": 12137,
-      "tags": 8,
-      "links": 0
-    },
     "03-cla/c-cym05-flex-grid.md": {
       "size": 598,
       "tags": 6,
       "links": 1
-    },
-    "03-cla/c-cym04-integración.md": {
-      "size": 3631,
-      "tags": 6,
-      "links": 0
     },
     "02-mat/tone.js.md": {
       "size": 859,
@@ -404,11 +234,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/todo.md": {
-      "size": 419,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/meta-aprendizaje.md": {
       "size": 1097,
       "tags": 3,
@@ -416,16 +241,6 @@
     },
     "00-in/combinational creativity.md": {
       "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "03-cla/c-cym03- cohesión audiovisual.md": {
-      "size": 9920,
-      "tags": 7,
-      "links": 8
-    },
-    "04-ref/obras/ref música extendida.md": {
-      "size": 95,
       "tags": 0,
       "links": 0
     },
@@ -484,11 +299,6 @@
       "tags": 0,
       "links": 1
     },
-    "cat.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md": {
       "size": 0,
       "tags": 2,
@@ -498,11 +308,6 @@
       "size": 0,
       "tags": 1,
       "links": 0
-    },
-    "@today.md": {
-      "size": 2715,
-      "tags": 0,
-      "links": 6
     },
     "04-ref/personas/Carlos Trilnik.md": {
       "size": 0,
@@ -518,11 +323,6 @@
       "size": 0,
       "tags": 0,
       "links": 0
-    },
-    "04-ref/bibliografía/crisis de la representación.md": {
-      "size": 4120,
-      "tags": 0,
-      "links": 2
     },
     "04-ref/procedimientos/extrañamiento.md": {
       "size": 0,
@@ -579,21 +379,6 @@
       "tags": 0,
       "links": 0
     },
-    "03-cla/c-cym14 mapas.md": {
-      "size": 3619,
-      "tags": 2,
-      "links": 3
-    },
-    "01-proj/23/bassino/bassino.md": {
-      "size": 2996,
-      "tags": 0,
-      "links": 0
-    },
-    "01-proj/23/beltrame.md": {
-      "size": 1220,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/personas/Donna Haraway.md": {
       "size": 0,
       "tags": 0,
@@ -601,25 +386,110 @@
     },
     "01-proj/23/Shifres.md": {
       "size": 21,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "01-proj/23/Zaracho.md": {
       "size": 0,
       "tags": 0,
       "links": 0
     },
-    "2023-08-24.md": {
+    "01-proj/23/Petroccelli/petrocelli POC.md": {
+      "size": 119,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/bassino POC.md": {
+      "size": 110,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/beltrame.md": {
+      "size": 1286,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Topoi Forma Musical.md": {
+      "size": 5989,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md": {
+      "size": 799,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md": {
+      "size": 2537,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/espacios/Academy of Fine Arts Vienna.md": {
+      "size": 218,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/espacios/MIT Medialab.md": {
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "04-ref/obras/Boid Simulation.md": {
+      "size": 156,
+      "tags": 5,
+      "links": 0
+    },
+    "04-ref/templates/t-persona.md": {
+      "size": 45,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/templater.md": {
+      "size": 117,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Arte relacional.md": {
+      "size": 14282,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Azar.md": {
+      "size": 1896,
+      "tags": 4,
+      "links": 2
+    },
+    "04-ref/topoi/Cuarta Revolución Industrial.md": {
+      "size": 8300,
+      "tags": 2,
+      "links": 23
+    },
+    "04-ref/topoi/Espacio.md": {
+      "size": 75,
+      "tags": 5,
+      "links": 0
+    },
+    "04-ref/topoi/Filosofía 21.md": {
+      "size": 102,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/topoi/Fragile Territories.md": {
+      "size": 3067,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/topoi/Física.md": {
+      "size": 146,
+      "tags": 2,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 59,
-      "Create": 58,
-      "Link": 40,
+      "Refactor": 105,
+      "Create": 77,
+      "Link": 56,
       "Expand": 14
     }
   },
@@ -647,14 +517,14 @@
       "19": 0,
       "20": 2,
       "21": 0,
-      "22": 13,
+      "22": 94,
       "23": 14
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 26,
+      "Tue": 107,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -681,6 +551,25 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte relacional.md\"> Arte relacional </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/templater.md\"> templater </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/Boid Simulation.md\"> Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"04-ref/espacios/MIT Medialab.md\"> MIT Medialab </a>",
+        "<a class=\"internal-link\" href=\"04-ref/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md\"> Xuan Thuan Trinh_The Secret Melody </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/beltrame.md\"> beltrame </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino POC.md\"> bassino POC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petrocelli POC.md\"> petrocelli POC </a>",
         "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
@@ -712,26 +601,7 @@
         "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"extrañamiento.md\"> extrañamiento </a>",
-        "<a class=\"internal-link\" href=\"Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/procedimientos/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10y11-Aframe.md\"> c-cym10y11-Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/sistemas.excalidraw.md\"> sistemas.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -768,10 +638,52 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym00-presentación.md\"> c-cym00-presentación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
+        "<a class=\"internal-link\" href=\"04-ref/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/Boid Simulation.md\"> Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"cat.md\"> cat </a>",
+        "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
+        "<a class=\"internal-link\" href=\"2023-08-24.md\"> 2023-08-24 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t61-virtualidad y realidad.md\"> t61-virtualidad y realidad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t60-espacio.md\"> t60-espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t52-Racionalizacion_(videojuegos).md\"> t52-Racionalizacion_(videojuegos) </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t51-arte relacional.md\"> t51-arte relacional </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t40-humanos.md\"> t40-humanos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t34-livecoding.md\"> t34-livecoding </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t33-sistemas complejos.md\"> t33-sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t32-azar.md\"> t32-azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t31-generatividad.md\"> t31-generatividad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t30-vida artificial.md\"> t30-vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t22.1-La instalación como forma del arte contemporáneo.md\"> t22.1-La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t21-interfaces.md\"> t21-interfaces </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t12-filosofía 21.md\"> t12-filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/b-Spectromorphology.md\"> b-Spectromorphology </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-bibliografía.md\"> t-bibliografía </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templater.md\"> templater </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
+        "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/referencias.md\"> referencias </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>",
+        "<a class=\"internal-link\" href=\"04-ref/db/obras.md\"> obras </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
         "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -790,26 +702,7 @@
         "<a class=\"internal-link\" href=\"01-proj/lopez/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap 1.md\"> c-cym-mindMap 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"Buttons 1.0 is Coming.md\"> Buttons 1.0 is Coming </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym01-presentación.md\"> c-cym01-presentación </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte y ciencia - estado de la cuestión.md\"> c-cym02-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audivisual.md\"> c-cym03- cohesión audivisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym10&11-generative&Aframe.md\"> c-cym10&11-generative&Aframe </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe.md\"> c-cym12-Aframe </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-15 23.26.55.excalidraw.md\"> Drawing 2023-08-15 23.26.55.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"efimero.md\"> efimero </a>",
-        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/prg-23.md\"> prg-23 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -833,7 +726,13 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
@@ -843,7 +742,8 @@
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
       ]
     }
   },

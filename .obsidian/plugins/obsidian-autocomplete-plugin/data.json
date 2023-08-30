@@ -1,7 +1,7 @@
 {
-  "enabled": true,
+  "enabled": false,
   "autoSelect": false,
-  "autoTrigger": true,
+  "autoTrigger": false,
   "autoTriggerMinSize": 3,
   "triggerLikeVim": false,
   "latexProvider": true,

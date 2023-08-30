@@ -98,13 +98,13 @@ Se expondrán diferentes módulos de conocimiento desde un enfoque teórico, y l
 
 ## Topoi: Módulos de conocimiento
 
-![[topoi#10 ontológicos]]
-![[topoi#20 materiales y exo-instrumentales]]
-![[topoi#30 generativos]]
-![[topoi#40 humanos]]
-![[topoi#50 sociales]]
-![[topoi#t60-espacio]]
-![[topoi#técnicos]]
+![[topoi MOC#10 ontológicos]]
+![[topoi MOC#20 materiales y exo-instrumentales]]
+![[topoi MOC#30 generativos]]
+![[topoi MOC#40 humanos]]
+![[topoi MOC#50 sociales]]
+![[topoi MOC#t60-espacio]]
+![[topoi MOC#técnicos]]
 
 ## Plan de estudios
 el siguiente plan es una guía de contenidos modular de la materia Ciencia y Música. Cada año, en conjunto con los alumnos se deciden los contenidos a abordar dependiendo de los objetivos personales propuestos. El siguiente programa es por lo tanto un compendio de las unidades posibles con contenidos mínimos obligatorios y otros potenciales.

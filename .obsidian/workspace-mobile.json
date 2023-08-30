@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js-playground.md",
+                "file": "04-ref/bibliografía/cym portal bibliográfico.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "02-mat/jasvascript/js-playground.md",
+            "file": "04-ref/bibliografía/cym portal bibliográfico.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "02-mat/jasvascript/js-playground.md",
+            "file": "04-ref/bibliografía/cym portal bibliográfico.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -123,7 +123,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "02-mat/jasvascript/js-playground.md"
+            "file": "04-ref/bibliografía/cym portal bibliográfico.md"
           }
         }
       },
@@ -156,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-book-search-plugin:Create new book note": false,
       "wikipedia-search:Open Article": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
@@ -175,6 +176,7 @@
   },
   "active": "26da57e4fa91ba8b",
   "lastOpenFiles": [
+    "02-mat/jasvascript/js-playground.md",
     "cym-metamap.canvas",
     "02-mat/tone.js.md",
     "02-mat/partituras/canciones.md",
