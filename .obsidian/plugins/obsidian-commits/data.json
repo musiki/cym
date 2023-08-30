@@ -24,11 +24,6 @@
       "tags": 1,
       "links": 0
     },
-    "2023-08-29.md": {
-      "size": 39,
-      "tags": 0,
-      "links": 1
-    },
     "04-ref/topoi/Virtualidad y realidad.md": {
       "size": 12347,
       "tags": 5,
@@ -144,14 +139,9 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/templates/t-topoi.md": {
-      "size": 49,
-      "tags": 1,
-      "links": 0
-    },
     "04-ref/templates/t-persona.md": {
       "size": 39,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-ref/templates/t-movie.md": {
@@ -360,9 +350,9 @@
       "links": 0
     },
     "03-cla/c-cym15-vida digital.md": {
-      "size": 2048,
-      "tags": 8,
-      "links": 4
+      "size": 9778,
+      "tags": 9,
+      "links": 16
     },
     "03-cla/c-cym14-un instrumento online colectivo.md": {
       "size": 11934,
@@ -562,7 +552,7 @@
     "01-proj/tp/tp01-topoi.md": {
       "size": 1171,
       "tags": 0,
-      "links": 0
+      "links": 1
     },
     "01-proj/tp/prueba tutorial.md": {
       "size": 200,
@@ -689,11 +679,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/augmented cognition.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Vedic Sanskrit.md": {
       "size": 621,
       "tags": 0,
@@ -708,20 +693,70 @@
       "size": 95,
       "tags": 0,
       "links": 0
+    },
+    "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md": {
+      "size": 351,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/El topoi de Agustin.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/shifres/shifres POC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/t-alumno-POC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Yuval Harari.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/templates/t-topoi.md": {
+      "size": 49,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Augmented Cognition.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Inteligencia artificial.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/slider test.md": {
+      "size": 0,
+      "tags": 3,
+      "links": 0
+    },
+    "00-in/cym MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 4
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 0,
-      "Create": 0,
-      "Link": 0,
-      "Expand": 0
+      "Refactor": 22,
+      "Create": 16,
+      "Link": 16,
+      "Expand": 3
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 0,
-      "1": 0,
+      "0": 16,
+      "1": 3,
       "2": 0,
       "3": 0,
       "4": 0,
@@ -731,9 +766,9 @@
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
+      "11": 16,
+      "12": 5,
+      "13": 3,
       "14": 0,
       "15": 0,
       "16": 0,
@@ -743,14 +778,14 @@
       "20": 0,
       "21": 0,
       "22": 0,
-      "23": 0
+      "23": 14
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 0,
-      "Tue": 0,
-      "Wed": 0,
+      "Tue": 14,
+      "Wed": 43,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -759,15 +794,79 @@
   },
   "recentCommits": {
     "/": {
-      "Expanded": [],
-      "Created": [],
-      "Renamed": [],
-      "Tagged": [],
+      "Expanded": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"00-in/texto 1.md\"> texto 1 </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
+      ],
+      "Created": [
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"Harari.md\"> Harari </a>",
+        "<a class=\"internal-link\" href=\"Inteligencia artificial.md\"> Inteligencia artificial </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/paul.md\"> paul </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
+        "<a class=\"internal-link\" href=\"00-in/Inteligencia Artificial -Un enfoque moderno.md\"> Inteligencia Artificial -Un enfoque moderno </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/de-moc.md\"> de-moc </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>"
+      ],
+      "Renamed": [
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-tp-MOC.md\"> t-tp-MOC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-alumno-POC.md\"> t-alumno-POC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"00-in/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>"
+      ],
+      "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>"
+      ],
       "Refactored": [],
-      "Deleted": [],
-      "Linked": [],
+      "Deleted": [
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"00-in/que pienso de la psicoacústica.md\"> que pienso de la psicoacústica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/texto 1.md\"> texto 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/de-moc.md\"> de-moc </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"2023-08-29.md\"> 2023-08-29 </a>",
+        "<a class=\"internal-link\" href=\"00-in/paul.md\"> paul </a>",
+        "<a class=\"internal-link\" href=\"00-in/Inteligencia Artificial -Un enfoque moderno.md\"> Inteligencia Artificial -Un enfoque moderno </a>"
+      ],
+      "Linked": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+      ],
       "Removed Tags from": [],
-      "Removed Links from": []
+      "Removed Links from": [
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>"
+      ]
     }
   },
   "ignoreList": [],

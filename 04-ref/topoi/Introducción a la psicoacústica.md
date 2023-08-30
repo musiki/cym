@@ -5,6 +5,7 @@ unit: 00
 author: Ezequiel A. Petroccelli
 ---
 
+
 A lo largo del siglo XX, el interés por los ruidos y sonidos comenzó a tomar relevancia en los y las artistas contemporáneos y contemporáneas, cuyo interés generó un nuevo paradigma en la creación musical.
 
 Brindando una breve y apresurada definición, salvando los términos físicos, entendemos como ruido a aquello que escuchamos y no logramos definir, generándonos una falta de comprensión sobre lo que estamos escuchando y hasta a veces, percibimos molestias ante esta falta de interpretación auditiva.  

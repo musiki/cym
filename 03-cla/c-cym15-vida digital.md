@@ -1,10 +1,12 @@
-
 ---
 type: class
 tags: cym, vida digital
 unit: 1
 num:  4
 year: 2023
+theme: consult
+center : true
+margin: 0.1
 ---
 
 <!-- slide bg="#010100" -->
@@ -34,8 +36,10 @@ note: Repasemos algunos hitos de la escritura como fenómeno desde la perspectiv
 4. párrafo (combinación de oraciones en significantes **semánticos**)
 5. contexto (o sustrato)
 
-note: para eso repasemos el concepto de lenguaje natural. El punto inicial de todo lenguaje es el alfabeto, un conjunto de grafos (marcas escritas) sin significado específico. Naturaleza atómica. 
-Las palabras si ya tienen un significado por fuera del contenido fonético. Es decir que los fonemas construyen en su combinación algo que ellos mismos no poseen. Formando dos conjuntos : los intelegibles, pertenecientes al lenguaje y los no-inteligibles (todo lo que está fuera del lenguaje). Finalmente todo se abarca dentro 
+#flashcards
+
+note: alfabeto:::para eso repasemos el concepto de lenguaje natural. El punto inicial de todo lenguaje es el alfabeto, un conjunto de grafos (marcas escritas) sin significado específico. Naturaleza atómica. 
+Las palabras si ya tienen un significado por fuera del contenido fonético. Es decir que los fonemas construyen en su combinación algo que ellos mismos no poseen. Formando dos conjuntos : los intelegibles, pertenecientes al lenguaje y los no-inteligibles (todo lo que está fuera del lenguaje). Finalmente todo se abarca dentro.
 
 ---
 ```mermaid
@@ -87,7 +91,7 @@ arnold schoenberg
 - [[memex]]
 - [[hi augmentation]]
 - [[hypertext]]
-- [[augmented cognition]]
+- [[Augmented Cognition]]
 
 ---
 ### alfabeto
@@ -116,7 +120,7 @@ for (int i = 0; i < 10; i++) {print(i)}
 ---
 ### sintaxis
 
-1. conjunto de reglas que deinen combinaciones de símbolos **permitidos**
+1. conjunto de reglas que definen combinaciones de símbolos **permitidos**
 
 ---
 
@@ -255,8 +259,19 @@ Niklas Luhman
 ![[Pasted image 20230829230243.png]]
 
 ---
-
-https://www.youtube.com/watch?v=4veq2i3teVk
-
+<iframe title="Einblicke in das System der Zettel - Geheimnis um Niklas Luhmanns Zettelkasten" src="https://www.youtube.com/embed/4veq2i3teVk?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 ---
+
+# sumario de herramientas e ideas 
+
+[[a-dataview]] 
+guido 
+exalidraw 
+mermaid
+mnemonis medium
+space repetition
+project-based subject
+executable books
+dynamic music scores
+new papers
 

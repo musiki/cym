@@ -1,6 +1,6 @@
 ---
 type: person
-tags: person
+tags: person 
 born:
 url:
 ---
