@@ -621,8 +621,8 @@
     },
     "01-proj/23/Shifres.md": {
       "size": 55,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "01-proj/23/bassino/bassino POC.md": {
       "size": 106,
@@ -757,14 +757,14 @@
     "04-ref/templates/conflict-files-obsidian-git.md": {
       "size": 888,
       "tags": 0,
-      "links": 0
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 24,
       "Create": 20,
-      "Link": 16,
+      "Link": 19,
       "Expand": 3
     }
   },
@@ -783,7 +783,7 @@
       "10": 0,
       "11": 16,
       "12": 5,
-      "13": 9,
+      "13": 12,
       "14": 0,
       "15": 0,
       "16": 0,
@@ -800,7 +800,7 @@
     "/": {
       "Mon": 0,
       "Tue": 14,
-      "Wed": 49,
+      "Wed": 52,
       "Thu": 0,
       "Fri": 0,
       "Sat": 0,
@@ -860,7 +860,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
-        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>"
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -882,7 +883,9 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": [
