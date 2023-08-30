@@ -1,70 +1,45 @@
 ---
 type: topoi
-tags: espacio púlbico, 
+tags: espacio público, topoi
 unit: 0
-creation date: 2023-08-29 19:28 modification date: Tuesday 29th August 2023 19:55:36
+publish: 2023
 author: Agustín Shifres
 ---
-**
-
-
-
-  
-  
-  
 
 La intervención del espacio público, en el contexto de la creación sonora y artística, se refiere a la práctica de agregar elementos sonoros o artísticos en entornos urbanos o espacios abiertos para transformar la experiencia de las personas que interactúan en estos lugares.
 
 Estas intervenciones pueden variar desde instalaciones temporales hasta proyectos más permanentes que transforman la atmósfera acústica del lugar. 
 
-  
-
-  
-
 Uno de los pioneros en sacar la obra a la calle, puertas afuera de la exhibición de arte, fue Alberto Greco. No solo por el hecho de que estaba excluido de la exhibición, sino también para lograr una ruptura formal con su objeto artístico y el contexto expositivo. En su “Manifiesto Dito dell’ Arte Vivo”, en el año 62, una de las características principales del arte vivo es la ruptura con la función mediada de la galería y la exposición para que el receptor pueda ponerse en contacto directo con elementos vivos de nuestra realidad. Su arte vivo propuso un nuevo continuo entre el arte y la vida. Según Greco, el arte vivo es aque en el que los objetos artisticos son elementos vivos de nuestra realidad (como el movimiento, la gente, conversaciones, olores, rumores, lugares y situaciones). 
 
-  
 
 Los primeros actos del vivo dito se remontan a 1954, cuando Greco pretendía firmar su nombre en paredes, objetos, calles y baños de París. En 1962, sin embargo, cambió su práctica y se centró más de cerca en los aspectos vivos de la vida. En 30 Ratas de la nueva generación de 1962, para la exposición Pablo Curatella Manes et Trente Argentins de la Nouvelle Génération, Greco presentó un laberinto de vidrio transparente que contiene treinta ratas que llevan el nombre de los treinta artistas de la exposición, la más notable de los cuales fueron Gyula Kosice, Julio Le Parc, Martha Boto, Jorge de la Vega y Marta Minujín. Si bien los artistas participantes representaban las tendencias vanguardistas de Argentina, el trabajo de Greco en este contexto realmente confundió la convención artística con un objeto compuesto de sujetos vivos y animados
 
-  
-  
-
 Estas intervenciones pueden tener varios propósitos, como embellecer un área, despertar la conciencia sobre cuestiones sociales o ambientales, mejorar la experiencia de los transeúntes o simplemente añadir un elemento artístico al entorno. Es importante considerar aspectos como la relación con la comunidad local, la autorización de las autoridades pertinentes y la sostenibilidad a largo plazo de las intervenciones en el espacio público.
 
-  
-  
 
 Soundwalk Collective: Este grupo de artistas y compositores crea experiencias auditivas únicas en diversos entornos, desde ciudades hasta áreas naturales. Utilizan grabaciones de campo y música para crear paisajes sonoros inmersivos.  
 [https://soundwalkcollective.com/#](https://soundwalkcollective.com/#)
-
-  
-  
 
 Janet Cardiff y George Bures Miller: Son conocidos por sus instalaciones sonoras interactivas en espacios públicos y galerías. Sus obras a menudo incorporan tecnología de audio para guiar a los visitantes a través de narrativas sonoras inusuales.
 
 [https://www.mutualart.com/Artist/Janet-Cardiff---George-Bures-Miller/038A930B0991F4EC/Exhibitions](https://www.mutualart.com/Artist/Janet-Cardiff---George-Bures-Miller/038A930B0991F4EC/Exhibitions)
 
-  
 
 Bruce Odland: Es un artista de sonido que trabaja en colaboración con la arquitectura y el paisaje. Desarrolló el concepto de "Hearing Perspective", que implica experimentar el entorno desde diferentes perspectivas a través del sonido.
 
 [https://bruceodland.net/](https://bruceodland.net/)
 
-  
 
 Max Neuhaus: Fue un pionero en el campo del arte sonoro y es conocido por sus instalaciones sonoras permanentes en espacios urbanos. Sus obras a menudo invitan a los oyentes a prestar atención a los sonidos que generalmente se pasan por alto.
 
 [https://www.max-neuhaus.estate/](https://www.max-neuhaus.estate/)
 
-  
-  
 
 Bernie Krause: Aunque se enfoca más en la grabación de los sonidos naturales del mundo, sus obras pueden considerarse una forma de intervención sonora en el espacio público. Sus grabaciones resaltan la importancia de los sonidos naturales en nuestro entorno.
 
 [https://proyectoidis.org/bernie-krause/](https://proyectoidis.org/bernie-krause/)
 
-  
 
 Sonic Acts: Es un festival interdisciplinario que explora las relaciones entre el sonido, la música y la tecnología. A menudo presentan instalaciones sonoras y performances en espacios públicos.
 
@@ -115,7 +90,6 @@ Comunicación Ambiental: Utilizar el sonido como medio de comunicación y concie
 En una calle con alta contaminación del aire, se instalan dispositivos que capturan los niveles de contaminantes en tiempo real. Estos datos se traducen en sonidos inquietantes y distorsionados que se reproducen cuando los niveles son altos. La instalación actúa como un recordatorio sonoro de la importancia de abordar la contaminación y fomenta la conciencia ambiental entre los transeúntes.
 
   
+# referencias
 
  MAZADIEGO, ELIZE "Dematerialization and the Social Materiality of Art" Leiden, The Netherlands, 2021
-
-**

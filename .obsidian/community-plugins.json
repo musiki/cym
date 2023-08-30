@@ -83,5 +83,6 @@
   "obsidian-image-toolkit",
   "obsidian-paste-png-to-jpeg",
   "inline-code-highlight",
-  "callout-manager"
+  "callout-manager",
+  "auto-glossary"
 ]

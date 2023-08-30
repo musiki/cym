@@ -8,11 +8,7 @@ SORT Status DESC
 ```
 
 
----
-# lista
-```query
-tag: #topoi
-```
+
 # definition
 
 - mutación del método y del medio.
