@@ -7,9 +7,10 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "livePreview": false,
+  "livePreview": true,
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "image",
   "newFileLocation": "folder",
-  "newFileFolderPath": "00-in"
+  "newFileFolderPath": "00-in",
+  "defaultViewMode": "source"
 }

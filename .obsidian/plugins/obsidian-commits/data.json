@@ -637,7 +637,7 @@
     "00-in/topoi MOC.md": {
       "size": 1909,
       "tags": 0,
-      "links": 15
+      "links": 16
     },
     "00-in/proyectos MOC.md": {
       "size": 546,
@@ -754,17 +754,32 @@
       "tags": 0,
       "links": 1
     },
-    "04-ref/topoi/t-topoi 2.md": {
-      "size": 49,
+    "04-ref/topoi/Filosofía histórica.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Historia de la tecnología.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Internetmusic.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Arte participativo.md": {
+      "size": 0,
       "tags": 1,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 38,
-      "Create": 27,
-      "Link": 24,
+      "Refactor": 46,
+      "Create": 31,
+      "Link": 29,
       "Expand": 3
     }
   },
@@ -786,7 +801,7 @@
       "13": 12,
       "14": 0,
       "15": 0,
-      "16": 0,
+      "16": 17,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -801,7 +816,7 @@
       "Mon": 0,
       "Tue": 14,
       "Wed": 73,
-      "Thu": 5,
+      "Thu": 22,
       "Fri": 0,
       "Sat": 0,
       "Sun": 0
@@ -841,7 +856,11 @@
         "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi 2.md\"> t-topoi 2 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi 2.md\"> t-topoi 2 </a>",
+        "<a class=\"internal-link\" href=\"00-in/t13-filosofía histórica.md\"> t13-filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"00-in/t14-historia de la tecnología.md\"> t14-historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"00-in/t61-internetmusic.md\"> t61-internetmusic </a>",
+        "<a class=\"internal-link\" href=\"00-in/Arte participativo.md\"> Arte participativo </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -863,7 +882,14 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"04-ref/glosario/PaaP.md\"> PaaP </a>",
         "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t13-filosofía histórica.md\"> t13-filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t14-historia de la tecnología.md\"> t14-historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t61-internetmusic.md\"> t61-internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
@@ -879,7 +905,11 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -899,7 +929,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
         "<a class=\"internal-link\" href=\"03-cla/03-cla_Glossary.md\"> 03-cla_Glossary </a>",
-        "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>"
+        "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -911,7 +942,8 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": [
