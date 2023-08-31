@@ -16,7 +16,6 @@
   "better-inline-fields",
   "notion-like-tables",
   "obsidian-activity-history",
-  "at-people",
   "obsidian-autocomplete-plugin",
   "better-word-count",
   "obsidian-book-search-plugin",
@@ -84,5 +83,5 @@
   "obsidian-paste-png-to-jpeg",
   "inline-code-highlight",
   "callout-manager",
-  "auto-glossary"
+  "at-people"
 ]

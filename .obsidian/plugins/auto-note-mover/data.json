@@ -42,6 +42,11 @@
       "folder": "04-ref/obras",
       "tag": "obra",
       "pattern": ""
+    },
+    {
+      "folder": "04-ref/glosario",
+      "tag": "#glosario",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

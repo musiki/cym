@@ -100,7 +100,9 @@
     "person": 94,
     "etiqueta": 95,
     "púlbico": 96,
-    "público": 97
+    "público": 97,
+    "obsidian-auto-glossary": 98,
+    "glosario": 99
   },
   "_version": 2
 }

@@ -743,13 +743,28 @@
       "size": 8214,
       "tags": 3,
       "links": 0
+    },
+    "04-ref/glosario/PaaS.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/templates/conflict-files-obsidian-git 2.md": {
+      "size": 824,
+      "tags": 0,
+      "links": 1
+    },
+    "04-ref/topoi/t-topoi 2.md": {
+      "size": 49,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 33,
-      "Create": 22,
-      "Link": 21,
+      "Refactor": 38,
+      "Create": 27,
+      "Link": 24,
       "Expand": 3
     }
   },
@@ -767,7 +782,7 @@
       "9": 0,
       "10": 0,
       "11": 16,
-      "12": 5,
+      "12": 10,
       "13": 12,
       "14": 0,
       "15": 0,
@@ -777,7 +792,7 @@
       "19": 0,
       "20": 0,
       "21": 6,
-      "22": 7,
+      "22": 15,
       "23": 14
     }
   },
@@ -785,8 +800,8 @@
     "/": {
       "Mon": 0,
       "Tue": 14,
-      "Wed": 65,
-      "Thu": 0,
+      "Wed": 73,
+      "Thu": 5,
       "Fri": 0,
       "Sat": 0,
       "Sun": 0
@@ -821,7 +836,12 @@
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"03-cla/03-cla_Glossary.md\"> 03-cla_Glossary </a>",
+        "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi 2.md\"> t-topoi 2 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -840,7 +860,10 @@
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-ref/glosario/PaaP.md\"> PaaP </a>",
+        "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
@@ -854,7 +877,9 @@
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -872,7 +897,9 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
+        "<a class=\"internal-link\" href=\"03-cla/03-cla_Glossary.md\"> 03-cla_Glossary </a>",
+        "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -883,7 +910,8 @@
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
       ],
       "Removed Tags from": [],
       "Removed Links from": [

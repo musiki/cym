@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "397f7820b261ed5c",
+            "id": "8c3d80b5762d6212",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "04-ref/a-plugins.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/bib MOC.md"
+                "file": "04-ref/a-plugins.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "04-ref/a-plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "04-ref/a-plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,9 +206,22 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "8c3d80b5762d6212",
   "lastOpenFiles": [
+    "00-in/combinational creativity.md",
+    "04-ref/glosario/PaaS.md",
+    "00-in/obras MOC.md",
+    "04-ref/a-plugins.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
     "00-in/cym MOC.md",
+    "00-in/bib MOC.md",
+    "04-ref/topoi/t-topoi 2.md",
+    "04-ref/templates/conflict-files-obsidian-git 2.md",
+    "03-cla/c-cym00-presentación.md",
+    "03-cla/03-cla_Index.md",
+    "03-cla/03-cla_Glossary.md",
+    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
     "00-in/Música expandida MOC.md",
     "00-in/topoi MOC.md",
     "00-in/Vedic Sanskrit.md",
@@ -221,21 +234,8 @@
     "04-ref/topoi/Inteligencia artificial.md",
     "00-in/slider test.md",
     "04-ref/topoi/Arte relacional.md",
-    "04-ref/topoi/El topoi de Agustin.md",
-    "04-ref/topoi/Intervencion del espacio público.md",
-    "04-ref/topoi/Música Visual.md",
     "04-ref/glosario",
-    "01-proj/23/bassino/bassino POC.md",
-    "00-in/bib MOC.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
-    "00-in/languages.md",
-    "00-in/hi augmentation.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "04-ref/topoi/Forma Musical.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "04-ref/templates/conflict-files-obsidian-git.md",
     "image/Pasted image 20230829223230.png",
     "image/Pasted image 20230829223415.png",
     "image/Pasted image 20230829224100.png",
