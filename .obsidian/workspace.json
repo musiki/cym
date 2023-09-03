@@ -4,28 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "dfcc1551c06e561f",
+        "id": "160a2114dc687152",
         "type": "tabs",
         "children": [
           {
-            "id": "952796d6c371fc27",
+            "id": "cb96f9976aa6b55a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "01-proj/23/bassino/codepen/Multi-efecto.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
-            }
-          },
-          {
-            "id": "e4e4d95cc3ad5529",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -121,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md"
+                "file": "01-proj/23/bassino/codepen/Multi-efecto.md"
               }
             }
           },
@@ -139,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "01-proj/23/bassino/codepen/Multi-efecto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,13 +148,22 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "01-proj/23/bassino/codepen/Multi-efecto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "539266283bdef41e",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -171,6 +172,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-spaced-repetition:Revisar Tarjetas": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo canvas": false,
@@ -190,15 +194,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "952796d6c371fc27",
+  "active": "cb96f9976aa6b55a",
   "lastOpenFiles": [
     "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/bassino/codepen/Multi-efecto.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "01-proj/23/bassino/codepen",
+    "04-ref/topoi/Cuarta Revolución Industrial.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
+    "01-proj/22/ancarola/Hola Sonido.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "03-cla/c-cym05-flex-grid.md",
+    "03-cla/c-cym05-integración.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "00-in/musica y arte visual_ bassino_topoi.md",
     "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/Shifres.md",
     "01-proj/23/shifres/shifres POC.md",
     "01-proj/tp/tp01-topoi.md",
-    "00-in/musica y arte visual_ bassino_topoi.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/beltrame/beltrame.md",
     "01-proj/tp/prueba tutorial.md",
     "01-proj/22/lopez/tp-01-topoi.md",
     "image/~$ura McDonnell topoi.docx",
@@ -210,17 +227,8 @@
     "00-in/Sin título 1.md",
     "00-in/Sin título.md",
     "01-proj/22/lopez/02-Melodia.md",
-    "01-proj/22/lopez/helloworld.md",
-    "01-proj/22/ancarola/tp-01-topoi.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "04-ref/musica y arte visual_ bassino_topoi.pdf",
-    "00-in/cym MOC.md",
-    "00-in/bassino POC-169375466166.jpeg.md",
-    "01-proj/22/ancarola/Generador de Melodías Random.md",
-    "04-ref/topoi/Cuarta Revolución Industrial.md",
-    "01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md",
-    "conflict-files-obsidian-git.md",
-    "04-ref/glosario/PaaS.md",
     "04-ref/glosario",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
@@ -233,11 +241,7 @@
     "image/Pasted image 20230829224100.png",
     "image/Pasted image 20230829223415.png",
     "01-proj/23/shifres",
-    "04-ref/a-yuda.md",
-    "00-in/Música y arte visual.md",
-    "01-proj/23/Zaracho.md",
     "01-proj/23/bassino/tp topoi",
-    "04-ref/image",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"

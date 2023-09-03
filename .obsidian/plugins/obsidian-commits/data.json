@@ -559,11 +559,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/templates/t-persona.md": {
-      "size": 45,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/templates/templater.md": {
       "size": 117,
       "tags": 0,
@@ -723,13 +718,103 @@
       "size": 10561,
       "tags": 0,
       "links": 4
+    },
+    "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md": {
+      "size": 528,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/personas/Yuval Harari.md": {
+      "size": 52,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/personas/Marianne Amacher.md": {
+      "size": 62,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/procedimientos/analisis de obras interactivas.md": {
+      "size": 2,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/templates/conflict-files-obsidian-git 2.md": {
+      "size": 843,
+      "tags": 0,
+      "links": 1
+    },
+    "04-ref/templates/conflict-files-obsidian-git.md": {
+      "size": 909,
+      "tags": 0,
+      "links": 1
+    },
+    "04-ref/templates/t-alumno-POC.md": {
+      "size": 113,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Augmented Cognition.md": {
+      "size": 57,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Arte participativo.md": {
+      "size": 919,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Filosofía histórica.md": {
+      "size": 58,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Forma Musical.md": {
+      "size": 5955,
+      "tags": 4,
+      "links": 0
+    },
+    "04-ref/topoi/Historia de la tecnología.md": {
+      "size": 58,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Internetmusic.md": {
+      "size": 63,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/Intervencion del espacio público.md": {
+      "size": 8193,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/topoi/Música Visual.md": {
+      "size": 2833,
+      "tags": 3,
+      "links": 0
+    },
+    "04-ref/personas/t-persona.md": {
+      "size": 45,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/topoi/t-topoi.md": {
+      "size": 57,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/bassino/codepen/Multi-efecto.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 235,
-      "Create": 243,
-      "Link": 175,
+      "Refactor": 242,
+      "Create": 260,
+      "Link": 189,
       "Expand": 15
     }
   },
@@ -755,7 +840,7 @@
       "17": 4,
       "18": 27,
       "19": 3,
-      "20": 0,
+      "20": 38,
       "21": 254,
       "22": 20,
       "23": 9
@@ -769,7 +854,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 102
+      "Sun": 140
     }
   },
   "recentCommits": {
@@ -792,6 +877,23 @@
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Pedalera multiefecto/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-alumno-POC.md\"> t-alumno-POC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/procedimientos/analisis de obras interactivas.md\"> analisis de obras interactivas </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Sin título.md\"> Sin título </a>",
@@ -825,24 +927,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Interfaces.md\"> Interfaces </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Humanos.md\"> Humanos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Generatividad.md\"> Generatividad </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte relacional.md\"> Arte relacional </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/templater.md\"> templater </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md\"> Xuan Thuan Trinh_The Secret Melody </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -868,9 +953,28 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi_bassino.md\"> topoi_bassino </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino POC.md\"> bassino POC </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino POC.md\"> bassino POC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/algunas pruebas.md\"> algunas pruebas </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Pedalera multiefecto.md\"> Pedalera multiefecto </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Pedalera multi-efecto.md\"> Pedalera multi-efecto </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Multi-efecto.md\"> Multi-efecto </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
@@ -909,19 +1013,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Interfaces.md\"> Interfaces </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Método científico.md\"> Método científico </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -978,6 +1070,8 @@
         "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
@@ -1026,9 +1120,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym03- cohesión audiovisual.md\"> c-cym03- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
-        "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>",
-        "<a class=\"internal-link\" href=\"02-mat/procesos/r-como hacer un proyectual.md\"> r-como hacer un proyectual </a>",
-        "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>"
+        "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
