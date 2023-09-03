@@ -679,11 +679,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/bassino POC-169375466166.jpeg.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/topoi/l.md": {
       "size": 2819,
       "tags": 0,
@@ -717,8 +712,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 222,
-      "Create": 232,
+      "Refactor": 227,
+      "Create": 236,
       "Link": 173,
       "Expand": 13
     }
@@ -738,7 +733,7 @@
       "10": 7,
       "11": 7,
       "12": 36,
-      "13": 99,
+      "13": 108,
       "14": 16,
       "15": 115,
       "16": 22,
@@ -759,7 +754,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 74
+      "Sun": 83
     }
   },
   "recentCommits": {
@@ -780,6 +775,10 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -826,11 +825,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md\"> Esteban Castromán_Tecnopoéticas argentinas </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/Boid Simulation.md\"> Boid Simulation </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"00-in/languages.md\"> languages </a>",
-        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"04-ref/obras/Boid Simulation.md\"> Boid Simulation </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -909,6 +904,11 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
+        "<a class=\"internal-link\" href=\"00-in/bassino POC-169375466166.jpeg.md\"> bassino POC-169375466166.jpeg </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md\"> Drawing 2023-09-03 13.16.25.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -954,12 +954,7 @@
         "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/db/referencias.md\"> referencias </a>",
         "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/obras.md\"> obras </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@XuanThuan1988.md\"> @XuanThuan1988 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>"
+        "<a class=\"internal-link\" href=\"04-ref/db/obras.md\"> obras </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
