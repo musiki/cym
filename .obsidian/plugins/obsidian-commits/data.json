@@ -679,11 +679,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/topoi/l.md": {
-      "size": 2819,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Música y arte visual.md": {
       "size": 0,
       "tags": 0,
@@ -712,7 +707,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 227,
+      "Refactor": 228,
       "Create": 236,
       "Link": 173,
       "Expand": 13
@@ -733,7 +728,7 @@
       "10": 7,
       "11": 7,
       "12": 36,
-      "13": 108,
+      "13": 109,
       "14": 16,
       "15": 115,
       "16": 22,
@@ -754,7 +749,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 83
+      "Sun": 84
     }
   },
   "recentCommits": {
@@ -904,6 +899,7 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"04-ref/topoi/l.md\"> l </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
@@ -953,8 +949,7 @@
         "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
         "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/db/referencias.md\"> referencias </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/obras.md\"> obras </a>"
+        "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
