@@ -44,7 +44,7 @@ Según los autores, los sistemas que piensan y actúan como humanos, miden el é
 
 Como menciona [[Harari Yuval Noah]], en su libro [[21 Lecciones para el siglo Xxi]][[5]] los empleos que requieran especialización en una gama de actividades rutinarias se automatizarán. Entre ellos podríamos mencionar determinadas ramas de la medicina, abogacía, periodismo, entre otros[[6]][[7]]. Esto no quiere decir que estos empleos van a ser reemplazados completamente, sino que será necesario que se reinventen adquiriendo o mejorando conocimientos relacionados a los avances tecnológicos emergentes y así combinarlos con sus estudios. Existen empleos más comprometidos como podría ser el caso de los chóferes, quienes se ven amenazados con la llegada inminente de los vehículos autónomos.
 
-Según [[Harari]], será mucho mas difícil sustituir a los humanos por maquinas en tareas menos rutinarias que exijan el uso simultaneo de un amplio espectro de habilidades que impliquen tener que afrontar situaciones imprevistas. Tal es el caso de la industria de los cuidados a personas.
+Según [[Yuval Harari]], será mucho mas difícil sustituir a los humanos por maquinas en tareas menos rutinarias que exijan el uso simultaneo de un amplio espectro de habilidades que impliquen tener que afrontar situaciones imprevistas. Tal es el caso de la industria de los cuidados a personas.
 
 “*Dado que las personas viven mas y tienen menos hijos, el cuidado de los ancianos será probablemente uno de los sectores del mercado de trabajo humano que más deprisa crezcan*”[[8]]
 

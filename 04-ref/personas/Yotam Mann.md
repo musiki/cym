@@ -5,6 +5,6 @@ url: http://jazz.computer/
 year: 1983
 tags: webaudio, internetmusic
 ---
-# Yotam Mann
+
 
 

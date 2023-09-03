@@ -1,5 +1,5 @@
 
-
+## topoi
 
 ```dataview
 Table author as author, publish as "año", tags as tagsm ,unit
@@ -8,11 +8,7 @@ SORT Status DESC
 ```
 
 
----
-# lista
-```query
-tag: #topoi
-```
+
 # definition
 
 - mutación del método y del medio.
@@ -31,8 +27,8 @@ note: electronic music is part of media art, where the artistic subject concentr
   - [[Método científico]]
  - [[Sistemas de universos]]
 - [[Filosofía 21]]
-- [[t13-filosofía histórica]]
-- [[t14-historia de la tecnología]]
+- [[Filosofía histórica]]
+- [[Historia de la tecnología]]
 
 --
 ### 20 materiales y exo-instrumentales
@@ -77,7 +73,7 @@ note: electronic music is part of media art, where the artistic subject concentr
 
 --
   ### 50 sociales
-  - arte participativo 
+  - [[Arte participativo]]
   - exhibiciones históricas  
   - sistemas de creencias
   - hacktivismo 
@@ -93,7 +89,7 @@ note: electronic music is part of media art, where the artistic subject concentr
 - percepción auditica 
 
 --
-###  [[t61-internetmusic]]	  
+###  [[Internetmusic]]	  
 
 --
 

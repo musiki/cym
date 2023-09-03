@@ -1,3 +1,7 @@
+.DS_Store
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-commits/data.json
+.obsidian/workspace.json
 ./cym.bib
 01-proj/.DS_Store
 02-mat/.DS_Store
