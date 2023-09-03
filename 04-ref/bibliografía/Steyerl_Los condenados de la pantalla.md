@@ -52,3 +52,4 @@ Sumada a esta realidad aplastante de la representación visual, el pueblo es cad
 * Imagen Real y Negativa
 * Desaparición del individuo y de su representación
 
+

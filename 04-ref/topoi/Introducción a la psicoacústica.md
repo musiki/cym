@@ -1,4 +1,6 @@
 ---
+quickshare-date: 2023-08-31 20:12:16
+quickshare-url: "https://noteshare.space/note/cllzhgz861758801mwp5ev0i17#qFHdrJyYLHskrPbI2Fe/NdQDJ1twgGIYmRDMgoqyYuo"
 type: topoi
 tags: psicoacústica, topoi
 unit: 00

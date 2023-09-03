@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "00-in/topoi MOC.md",
+      "filename": "topoi MOC"
+    },
+    {
+      "path": "04-ref/topoi/Introducción a la psicoacústica.md",
+      "filename": "Introducción a la psicoacústica"
+    },
+    {
+      "path": "04-ref/meta-aprendizaje.md",
+      "filename": "meta-aprendizaje"
+    },
+    {
+      "path": "04-ref/a-plugins.md",
+      "filename": "a-plugins"
+    },
+    {
+      "path": "cym-metamap.canvas",
+      "filename": "cym-metamap"
+    },
+    {
+      "path": "04-ref/espacios/EAT Experiments in arts and technologies.md",
+      "filename": "EAT Experiments in arts and technologies"
+    },
+    {
+      "path": "04-ref/personas/Dick Raaijmakers.md",
+      "filename": "Dick Raaijmakers"
+    },
+    {
+      "path": "01-proj/tp/tp01-topoi.md",
+      "filename": "tp01-topoi"
+    },
+    {
+      "path": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+      "filename": "Steyerl_Los condenados de la pantalla"
+    }
+  ]
+}
