@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/musica y arte visual_ bassino_topoi.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/musica y arte visual_ bassino_topoi.md"
+                "file": "01-proj/tp/tp01-topoi.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/musica y arte visual_ bassino_topoi.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/musica y arte visual_ bassino_topoi.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,10 +192,14 @@
   },
   "active": "952796d6c371fc27",
   "lastOpenFiles": [
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/shifres/shifres POC.md",
     "01-proj/tp/tp01-topoi.md",
     "00-in/musica y arte visual_ bassino_topoi.md",
     "01-proj/tp/prueba tutorial.md",
-    "01-proj/23/bassino/Música y arte visual.md",
     "01-proj/22/lopez/tp-01-topoi.md",
     "image/~$ura McDonnell topoi.docx",
     "image/Maura McDonnell topoi.docx",
@@ -228,13 +232,10 @@
     "image/Pasted image 20230829224222.png",
     "image/Pasted image 20230829224100.png",
     "image/Pasted image 20230829223415.png",
-    "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/shifres",
-    "01-proj/23/beltrame/beltrame POC.md",
     "04-ref/a-yuda.md",
     "00-in/Música y arte visual.md",
     "01-proj/23/Zaracho.md",
-    "04-ref/topoi/l.md",
     "01-proj/23/bassino/tp topoi",
     "04-ref/image",
     "cym-metamap.canvas",
