@@ -689,11 +689,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md": {
-      "size": 362,
-      "tags": 1,
-      "links": 0
-    },
     "00-in/Música y arte visual.md": {
       "size": 0,
       "tags": 0,
@@ -722,7 +717,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 221,
+      "Refactor": 222,
       "Create": 232,
       "Link": 173,
       "Expand": 13
@@ -743,7 +738,7 @@
       "10": 7,
       "11": 7,
       "12": 36,
-      "13": 98,
+      "13": 99,
       "14": 16,
       "15": 115,
       "16": 22,
@@ -764,7 +759,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 73
+      "Sun": 74
     }
   },
   "recentCommits": {
@@ -914,6 +909,7 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md\"> Drawing 2023-09-03 13.16.25.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -963,8 +959,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Steyerl2014a.md\"> @Steyerl2014a </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/notes/@Padilla2010.md\"> @Padilla2010 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29.md\"> b-Handbook of Bioinspired Algorithms and Applications [Olariu & Zomaya 2005-09-29 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/b-Los condenados de la pantalla.md\"> b-Los condenados de la pantalla </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",

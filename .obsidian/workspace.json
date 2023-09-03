@@ -4,31 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a0b4b95a363f213f",
+        "id": "204801b1721aa0c3",
         "type": "tabs",
         "children": [
           {
-            "id": "9c6ec5e91eede61d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "04-ref/musica y arte visual_ bassino_topoi.pdf"
-              }
-            }
-          },
-          {
-            "id": "c63173a33e60b434",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "04-ref/musica y arte visual_ bassino_topoi.pdf"
-              }
-            }
-          },
-          {
-            "id": "182ef967b207e5ca",
+            "id": "4fb9d0ac48f4221d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,11 +182,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "182ef967b207e5ca",
+  "active": "4fb9d0ac48f4221d",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "04-ref/musica y arte visual_ bassino_topoi.pdf",
     "01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md",
+    "01-proj/tp/tp01-topoi.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/glosario/PaaS.md",
     "04-ref/glosario",
     "image/Pasted image 20230829230243.png",
@@ -224,7 +204,6 @@
     "01-proj/23/shifres",
     "01-proj/23/beltrame/beltrame POC.md",
     "00-in/cym MOC.md",
-    "01-proj/tp/tp01-topoi.md",
     "04-ref/a-yuda.md",
     "00-in/Música y arte visual.md",
     "01-proj/22/lopez/tp-01-topoi.md",
