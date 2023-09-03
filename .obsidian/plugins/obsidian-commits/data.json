@@ -703,12 +703,27 @@
       "size": 407,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Sin título.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Sin título 1.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/Música y arte visual.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 228,
-      "Create": 236,
+      "Refactor": 232,
+      "Create": 241,
       "Link": 173,
       "Expand": 13
     }
@@ -728,7 +743,7 @@
       "10": 7,
       "11": 7,
       "12": 36,
-      "13": 109,
+      "13": 118,
       "14": 16,
       "15": 115,
       "16": 22,
@@ -749,7 +764,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 84
+      "Sun": 93
     }
   },
   "recentCommits": {
@@ -770,6 +785,11 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Untitled database.md\"> Untitled database </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
@@ -815,12 +835,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md\"> Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md\"> Esteban Castromán_Tecnopoéticas argentinas </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
-        "<a class=\"internal-link\" href=\"04-ref/obras/Boid Simulation.md\"> Boid Simulation </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -842,7 +857,9 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/l.md\"> l </a>",
         "<a class=\"internal-link\" href=\"00-in/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>"
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi_bassino.md\"> topoi_bassino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
@@ -899,6 +916,8 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Untitled database.md\"> Untitled database </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/l.md\"> l </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
@@ -947,9 +966,7 @@
         "<a class=\"internal-link\" href=\"04-ref/templater.md\"> templater </a>",
         "<a class=\"internal-link\" href=\"04-ref/obras/ref música extendida.md\"> ref música extendida </a>",
         "<a class=\"internal-link\" href=\"04-ref/obras/o-Boid Simulation.md\"> o-Boid Simulation </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/referencias.md\"> referencias </a>",
-        "<a class=\"internal-link\" href=\"04-ref/db/personas.md\"> personas </a>"
+        "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
