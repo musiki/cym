@@ -419,11 +419,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/bassino/bassino POC.md": {
-      "size": 110,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/beltrame/beltrame.md": {
       "size": 1286,
       "tags": 0,
@@ -674,11 +669,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-ref/topoi/Música Visual.md": {
-      "size": 2819,
-      "tags": 3,
-      "links": 0
-    },
     "04-ref/topoi/Racionalizacion_(videojuegos).md": {
       "size": 6704,
       "tags": 4,
@@ -723,13 +713,38 @@
       "size": 204,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Untitled.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/bassino POC-169375466166.jpeg.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/l.md": {
+      "size": 2819,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md": {
+      "size": 362,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/Música y arte visual.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 204,
-      "Create": 221,
-      "Link": 161,
+      "Refactor": 210,
+      "Create": 225,
+      "Link": 163,
       "Expand": 12
     }
   },
@@ -747,11 +762,11 @@
       "9": 1,
       "10": 7,
       "11": 7,
-      "12": 34,
-      "13": 61,
+      "12": 36,
+      "13": 69,
       "14": 16,
       "15": 115,
-      "16": 20,
+      "16": 22,
       "17": 4,
       "18": 27,
       "19": 3,
@@ -764,12 +779,12 @@
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 196,
+      "Tue": 198,
       "Wed": 68,
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 34
+      "Sun": 44
     }
   },
   "recentCommits": {
@@ -789,6 +804,10 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md\"> Drawing 2023-09-03 13.16.25.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"00-in/bassino POC-169375466166.jpeg.md\"> bassino POC-169375466166.jpeg </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Método científico.md\"> Método científico </a>",
@@ -835,11 +854,7 @@
         "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Música expandida MOC.md\"> Música expandida MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"00-in/hi augmentation.md\"> hi augmentation </a>",
-        "<a class=\"internal-link\" href=\"00-in/augmented cognition.md\"> augmented cognition </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14-un instrumento online colectivo.md\"> c-cym14-un instrumento online colectivo </a>"
+        "<a class=\"internal-link\" href=\"00-in/Marianne Amacher.md\"> Marianne Amacher </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -858,9 +873,13 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/hola chango.md\"> hola chango </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/..md\"> . </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Fragile Territories.md\"> Fragile Territories </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/l.md\"> l </a>",
+        "<a class=\"internal-link\" href=\"00-in/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/tp topoi/Drawing 2023-09-03 13.16.25.excalidraw.md\"> Drawing 2023-09-03 13.16.25.excalidraw </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
@@ -910,11 +929,11 @@
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
         "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>",
         "<a class=\"internal-link\" href=\"02-mat/org/i-theremin.md\"> i-theremin </a>",
-        "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>",
-        "<a class=\"internal-link\" href=\"02-mat/rant.md\"> rant </a>"
+        "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino POC.md\"> bassino POC </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"cat.md\"> cat </a>",
         "<a class=\"internal-link\" href=\"Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
@@ -964,10 +983,10 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino.md\"> bassino </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/..md\"> . </a>"
+        "<a class=\"internal-link\" href=\"hd-hydra.md\"> hd-hydra </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
@@ -1017,19 +1036,20 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/l.md\"> l </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
       ]
     }
