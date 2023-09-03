@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "00-in/musica y arte visual_ bassino_topoi.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md"
+                "file": "00-in/musica y arte visual_ bassino_topoi.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "00-in/musica y arte visual_ bassino_topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "00-in/musica y arte visual_ bassino_topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,10 +192,13 @@
   },
   "active": "952796d6c371fc27",
   "lastOpenFiles": [
+    "01-proj/tp/tp01-topoi.md",
+    "00-in/musica y arte visual_ bassino_topoi.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/22/lopez/tp-01-topoi.md",
     "image/~$ura McDonnell topoi.docx",
     "image/Maura McDonnell topoi.docx",
-    "01-proj/22/lopez/tp-01-topoi.md",
-    "01-proj/23/bassino/Música y arte visual.md",
     "01-proj/23/bassino/topoi/Sin título.md",
     "01-proj/23/bassino/topoi/S Sin título in título Sin título",
     "01-proj/23/bassino/topoi/Untitled database.md",
@@ -204,8 +207,6 @@
     "00-in/Sin título.md",
     "01-proj/22/lopez/02-Melodia.md",
     "01-proj/22/lopez/helloworld.md",
-    "01-proj/tp/tp01-topoi.md",
-    "00-in/musica y arte visual_ bassino_topoi.pdf.md",
     "01-proj/22/ancarola/tp-01-topoi.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "04-ref/musica y arte visual_ bassino_topoi.pdf",
@@ -234,10 +235,8 @@
     "00-in/Música y arte visual.md",
     "01-proj/23/Zaracho.md",
     "04-ref/topoi/l.md",
-    "01-proj/tp/prueba tutorial.md",
     "01-proj/23/bassino/tp topoi",
     "04-ref/image",
-    "04-ref/espacios",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"

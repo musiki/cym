@@ -715,6 +715,11 @@
       "links": 0
     },
     "01-proj/23/bassino/Música y arte visual.md": {
+      "size": 10554,
+      "tags": 0,
+      "links": 4
+    },
+    "00-in/musica y arte visual_ bassino_topoi.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -722,10 +727,10 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 232,
-      "Create": 241,
-      "Link": 173,
-      "Expand": 13
+      "Refactor": 233,
+      "Create": 242,
+      "Link": 174,
+      "Expand": 14
     }
   },
   "dailyCommits": {
@@ -743,8 +748,8 @@
       "10": 7,
       "11": 7,
       "12": 36,
-      "13": 118,
-      "14": 16,
+      "13": 120,
+      "14": 18,
       "15": 115,
       "16": 22,
       "17": 4,
@@ -764,7 +769,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 93
+      "Sun": 97
     }
   },
   "recentCommits": {
@@ -782,9 +787,11 @@
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/prueba.md\"> prueba </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.pdf.md\"> musica y arte visual_ bassino_topoi.pdf </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi/Untitled database.md\"> Untitled database </a>",
@@ -834,8 +841,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md\"> Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md\"> Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -859,7 +865,8 @@
         "<a class=\"internal-link\" href=\"00-in/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/topoi_bassino.md\"> topoi_bassino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
@@ -969,6 +976,7 @@
         "<a class=\"internal-link\" href=\"04-ref/db/topoi.md\"> topoi </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
@@ -1018,8 +1026,7 @@
         "<a class=\"internal-link\" href=\"02-mat/procesos/r-vinculación bidireccional.md\"> r-vinculación bidireccional </a>",
         "<a class=\"internal-link\" href=\"02-mat/procesos/r-como hacer un proyectual.md\"> r-como hacer un proyectual </a>",
         "<a class=\"internal-link\" href=\"02-mat/org/i-sackbut.md\"> i-sackbut </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/tp-01-topoi.md\"> tp-01-topoi </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
