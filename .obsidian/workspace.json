@@ -86,9 +86,35 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "9d1cdcd89dc985bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/bib MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "03763758c206cbde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -170,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -256,34 +282,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e580280c2d82c6e3",
+  "active": "03763758c206cbde",
   "lastOpenFiles": [
-    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "00-in/topoi MOC.md",
-    "00-in/proyectos MOC.md",
     "00-in/bib MOC.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "@today.md",
+    "00-in/topoi MOC.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "04-ref/templates/t-topoi.md",
+    "00-in/languages.md",
+    "00-in/proyectos MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/personas MOC.md",
+    "00-in/obras MOC.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/Música expandida MOC.md",
+    "00-in/augmented cognition.md",
+    "00-in/Vedic Sanskrit.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "00-in/memex.md",
+    "00-in/Marianne Amacher.md",
+    "00-in/hi augmentation.md",
+    "00-in/combinational creativity.md",
+    "04-ref/a-dataview.md",
     "03-cla/c-cym03 mapas.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym05-integración.md",
-    "03-cla/c-cym05-flex-grid.md",
-    "03-cla/c-cym04- cohesión audiovisual.md",
+    "03-cla/c-cym02-arte generativo.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym07-hydra.md",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
-    "04-ref/bibliografía/cym portal bibliográfico.md",
-    "conflict-files-obsidian-git.md",
-    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
-    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+    "03-cla/c-cym04- cohesión audiovisual.md",
+    "03-cla/c-cym15-vida digital.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "image/tp01-topoi-1693328247886.jpeg",
+    "01-proj/23/Petroccelli",
     "image/c-cym02-arte generativo-1693072612770.jpeg",
     "image/galanter.jpeg",
     "image/meta-aprendizaje-1660395828475.jpeg",
@@ -301,8 +330,6 @@
     "02-mat/procesos/Untitled.loom",
     "01-proj/23/bassino",
     "01-proj/DS_Store.zip",
-    "01-proj/DS_Store",
-    "DS_Store",
     "image/t01-sistemas de universos-1660410382651.jpeg",
     "image/t01-sistemas de universos-1660410536915.jpeg"
   ]

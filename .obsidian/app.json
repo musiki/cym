@@ -9,5 +9,7 @@
   },
   "livePreview": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "04-ref"
+  "attachmentFolderPath": "04-ref",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-in"
 }

@@ -1,1 +1,1 @@
-[[t12.1-Cuarta Revolución Industrial]]
+[[Cuarta Revolución Industrial]]
