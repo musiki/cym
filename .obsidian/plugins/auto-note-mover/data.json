@@ -30,7 +30,7 @@
     },
     {
       "folder": "04-ref/personas",
-      "tag": "",
+      "tag": "#person",
       "pattern": ""
     },
     {
@@ -41,6 +41,11 @@
     {
       "folder": "04-ref/obras",
       "tag": "obra",
+      "pattern": ""
+    },
+    {
+      "folder": "04-ref/glosario",
+      "tag": "#glosario",
       "pattern": ""
     }
   ],

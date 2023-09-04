@@ -1,6 +1,6 @@
 ---
 type: person
-tags: #psicoacústica
+tags: #psicoacústica #
 born:
 url:
 ---

@@ -1,7 +1,7 @@
 ---
 type: topoi
 status: dev, topoi
-author: lionel borsalino
+author: Lionel Borsalino
 unit : 51
 year: 2017
 ---

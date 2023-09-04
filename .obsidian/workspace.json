@@ -99,9 +99,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "c29306457292f449",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -183,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/bib MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -269,55 +282,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d1cdcd89dc985bd",
+  "active": "c29306457292f449",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "00-in/bib MOC.md",
-    "00-in/topoi MOC.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "04-ref/templates/t-topoi.md",
-    "00-in/languages.md",
-    "00-in/proyectos MOC.md",
-    "00-in/Proto-Indo-European.md",
-    "00-in/personas MOC.md",
-    "00-in/obras MOC.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/Música expandida MOC.md",
-    "00-in/augmented cognition.md",
-    "00-in/Vedic Sanskrit.md",
-    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
-    "00-in/memex.md",
-    "00-in/Marianne Amacher.md",
-    "00-in/hi augmentation.md",
-    "00-in/combinational creativity.md",
-    "04-ref/a-dataview.md",
-    "03-cla/c-cym03 mapas.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym04- cohesión audiovisual.md",
+    "conflict-files-obsidian-git.md",
+    "image/Pasted image 20230829230243.png",
+    "image/Pasted image 20230829230127.png",
+    "image/Pasted image 20230829230008.png",
+    "image/Pasted image 20230829225649.png",
+    "image/Pasted image 20230829224438.png",
+    "image/Pasted image 20230829224353.png",
+    "image/Pasted image 20230829224242.png",
+    "image/Pasted image 20230829224222.png",
+    "image/Pasted image 20230829224100.png",
+    "image/Pasted image 20230829223415.png",
+    "image/Maura McDonnell topoi.docx",
+    "04-ref/topoi/t-topoi.md",
+    "04-ref/topoi/Intervencion del espacio público.md",
+    "04-ref/topoi/Internetmusic.md",
+    "04-ref/topoi/Historia de la tecnología.md",
+    "04-ref/topoi/Forma Musical.md",
+    "04-ref/topoi/Filosofía histórica.md",
+    "04-ref/topoi/Augmented Cognition.md",
+    "04-ref/topoi/Arte participativo.md",
+    "04-ref/templates/t-alumno-POC.md",
+    "04-ref/templates/conflict-files-obsidian-git.md",
+    "04-ref/templates/conflict-files-obsidian-git 2.md",
+    "04-ref/procedimientos/analisis de obras interactivas.md",
+    "04-ref/personas/t-persona.md",
+    "04-ref/personas/Yuval Harari.md",
+    "04-ref/personas/Marianne Amacher.md",
+    "04-ref/image",
+    "04-ref/glosario/PaaS.md",
+    "04-ref/glosario",
+    "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/shifres",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/bassino/codepen/Multi-efecto.md",
+    "01-proj/23/bassino/codepen",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "00-in/musica y arte visual_ bassino_topoi.md",
+    "00-in/cym MOC.md",
+    "00-in/Untitled.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "image/tp01-topoi-1693328247886.jpeg",
     "01-proj/23/Petroccelli",
-    "image/c-cym02-arte generativo-1693072612770.jpeg",
-    "image/galanter.jpeg",
-    "image/meta-aprendizaje-1660395828475.jpeg",
-    "image/vinculación bidireccional-1660394778685.jpeg",
-    "image/TP1-Topoi-1663103377102.jpeg",
-    "image/TP1-Topoi-1663103377085.jpeg",
     "cym-metamap.canvas",
     "04-ref/espacios",
     "01-proj/23/beltrame",
     "Untitled.canvas",
-    "image/Fragile Territories-1693014463177.jpeg",
-    "Untitled.loom",
-    "04-ref/bibliografía/cym.bib",
-    "02-mat/python/ds/top10s.csv",
-    "02-mat/procesos/Untitled.loom",
-    "01-proj/23/bassino",
-    "01-proj/DS_Store.zip",
-    "image/t01-sistemas de universos-1660410382651.jpeg",
-    "image/t01-sistemas de universos-1660410536915.jpeg"
+    "Untitled.loom"
   ]
 }

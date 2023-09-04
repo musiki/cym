@@ -91,7 +91,20 @@
     "posthumanismo": 85,
     "work": 86,
     "obra": 87,
-    "musica": 88
+    "musica": 88,
+    "in": 89,
+    "in/books": 1,
+    "z": 90,
+    "etiqueta": 91,
+    "internet": 92,
+    "escritura": 93,
+    "formatos": 94,
+    "estilosdigitales": 95,
+    "recepción": 96,
+    "flashcards": 97,
+    "glosario": 98,
+    "person": 99,
+    "público": 100
   },
   "_version": 2
 }

@@ -4,6 +4,7 @@ tags: cym, música visual, armonía-expandida, class
 unit: 0
 num:  2
 year: 2023
+theme: consult
 ---
 
 <!-- slide bg="#010100" -->
