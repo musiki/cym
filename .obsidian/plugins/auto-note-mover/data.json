@@ -1,0 +1,53 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "04-ref",
+      "tag": "",
+      "pattern": "a-"
+    },
+    {
+      "folder": "04-ref/topoi",
+      "tag": "#topoi",
+      "pattern": ""
+    },
+    {
+      "folder": "00-in",
+      "tag": "",
+      "pattern": "MOC"
+    },
+    {
+      "folder": "03-cla",
+      "tag": "",
+      "pattern": "c-cym"
+    },
+    {
+      "folder": "04-ref/espacios",
+      "tag": "#espacio",
+      "pattern": ""
+    },
+    {
+      "folder": "04-ref/personas",
+      "tag": "",
+      "pattern": ""
+    },
+    {
+      "folder": "04-ref/templates",
+      "tag": "",
+      "pattern": "t-"
+    },
+    {
+      "folder": "04-ref/obras",
+      "tag": "obra",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": ""
+    }
+  ]
+}

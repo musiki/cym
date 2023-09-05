@@ -82,7 +82,16 @@
     "to-watch": 76,
     "code": 77,
     "js": 78,
-    "tonejs": 79
+    "tonejs": 79,
+    "languages": 80,
+    "etiqueta": 81,
+    "movingimage": 82,
+    "innovator": 83,
+    "vida": 84,
+    "digital": 85,
+    "obra": 86,
+    "posthumanismo": 87,
+    "musica": 88
   },
   "_version": 2
 }
