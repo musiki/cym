@@ -19,16 +19,6 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "f7f32b54821b06b8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.5"
-              }
-            }
           }
         ]
       }
@@ -195,9 +185,9 @@
   },
   "active": "ecfa88d1ea0545d2",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/Zaracho.md",
     "01-proj/23/beltrame/Topoi Forma Musical.md",
     "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/Zaracho/Zaracho.md",
     "01-proj/23/Shifres.md",
     "04-ref/a-plugins.md",
     "01-proj/23/Zaracho",
