@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
+                "file": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 508.5
   },
   "right": {
     "id": "80820653654ffa07",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
+                "file": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
+                "file": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md"
+                "file": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md"
               }
             }
           },
@@ -269,18 +269,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "9d1cdcd89dc985bd",
   "lastOpenFiles": [
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
     "00-in/bib MOC.md",
-    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
     "04-ref/bibliografía/Philip Ball_Shapes.md",
+    "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
     "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
+    "04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
     "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
     "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
     "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+    "00-in/proyectos MOC.md",
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "00-in/Vedic Sanskrit.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "00-in/cym MOC.md",
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
     "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
     "03-cla/c-cym05-integración.md",
     "03-cla/c-cym06- cohesión audiovisual.md",
@@ -290,13 +297,6 @@
     "00-in/obras MOC.md",
     "00-in/personas MOC.md",
     "00-in/Proto-Indo-European.md",
-    "00-in/proyectos MOC.md",
-    "00-in/Sin título 1.md",
-    "00-in/topoi MOC.md",
-    "00-in/hd-hydra.md",
-    "04-ref/topoi/Intervencion del espacio público.md",
-    "04-ref/topoi/Internetmusic.md",
-    "04-ref/topoi/Forma Musical.md",
     "cym-metamap.canvas",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "image/Pasted image 20230829230243.png",
