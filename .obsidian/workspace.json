@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md"
+                "file": "04-ref/bibliografía/Sadin_La humanidad aumentada.md"
               }
             }
           },
@@ -271,32 +271,33 @@
   },
   "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+    "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
+    "00-in/bib MOC.md",
+    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+    "04-ref/bibliografía/Philip Ball_Shapes.md",
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
+    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
+    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
     "03-cla/c-cym05-integración.md",
-    "03-cla/c-cym06-flex-grid.md",
-    "03-cla/c-cym15- cohesión audiovisual.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym03 mapas.md",
-    "02-mat/tone.js.md",
-    "02-mat/que es git.md",
-    "02-mat/procesos/r-vinculación bidireccional.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "01-proj/tp/prueba tutorial.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
-    "04-ref/topoi/Arte relacional.md",
-    "00-in/topoi MOC.md",
-    "00-in/Untitled.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/Sin título 1.md",
-    "00-in/Proto-Indo-European.md",
+    "03-cla/c-cym06- cohesión audiovisual.md",
+    "00-in/memex.md",
+    "00-in/Música expandida MOC.md",
+    "00-in/musica y arte visual_ bassino_topoi.md",
+    "00-in/obras MOC.md",
     "00-in/personas MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/proyectos MOC.md",
+    "00-in/Sin título 1.md",
+    "00-in/topoi MOC.md",
+    "00-in/hd-hydra.md",
+    "04-ref/topoi/Intervencion del espacio público.md",
+    "04-ref/topoi/Internetmusic.md",
+    "04-ref/topoi/Forma Musical.md",
+    "cym-metamap.canvas",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
@@ -314,7 +315,6 @@
     "01-proj/23/shifres",
     "01-proj/23/bassino/codepen",
     "01-proj/23/Petroccelli",
-    "cym-metamap.canvas",
     "04-ref/espacios",
     "01-proj/23/beltrame",
     "Untitled.canvas",
