@@ -1,4 +1,5 @@
 ---
+type : topoi
 author: Fabian Bassino
 tags: musica visual, topoi
 publish: 2023

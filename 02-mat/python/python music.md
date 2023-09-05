@@ -32,4 +32,23 @@ for i, pitch in enumerate (array_of_notes):
 
 
 
+```bash 
+pip3 install maelzel
 
+```
+
+
+```python
+
+from maelzel.core import *
+from itertools import cycle
+from pitchtools import *
+
+cfg = CoreConfig(active=True)
+cfg['play.verbose'] = False
+cfg['play.pitchInterpolation'] = 'cos'
+cfg['htmlTheme'] = 'light'  # match the jupyter theme
+cfg['fixStringNotenames'] = True
+cfg['jupyterHtmlRepr'] = False
+
+```

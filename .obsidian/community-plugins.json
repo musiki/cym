@@ -16,8 +16,6 @@
   "better-inline-fields",
   "notion-like-tables",
   "obsidian-activity-history",
-  "arrows",
-  "at-people",
   "obsidian-autocomplete-plugin",
   "better-word-count",
   "obsidian-book-search-plugin",
@@ -66,8 +64,6 @@
   "obsidian42-text-transporter",
   "obsidian-outliner",
   "oz-image-plugin",
-  "obsidian-paste-png-to-jpeg",
-  "obsidian-paste-image-rename",
   "obsidian-plotly",
   "obsidian-pretty-bibtex",
   "python-lab-plugin",
@@ -80,5 +76,13 @@
   "obsidian-sortable",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-zotero-desktop-connector",
+  "obsidian-spaced-repetition",
+  "obsidian-image-toolkit",
+  "obsidian-paste-png-to-jpeg",
+  "inline-code-highlight",
+  "callout-manager",
+  "at-people",
+  "better-search-views"
 ]

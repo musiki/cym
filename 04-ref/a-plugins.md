@@ -1,5 +1,5 @@
 
-# esenciales
+## esenciales
 
 - outliner
 	- permite trabajar con fold 
@@ -16,10 +16,12 @@
 
 
 
-# referencias y bibliografía
+## referencias y bibliografía
 
 - book search 
 	- permite crear notas de libros automáticamente.
 - citation 
 	- maneja ref desde zotero
-	- 
+- at people
+	- para citar los nombres de la carpeta de proyectos
+

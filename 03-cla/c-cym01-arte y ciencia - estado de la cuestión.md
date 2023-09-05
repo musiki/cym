@@ -1,7 +1,7 @@
 ---
 title: arte y ciencia estado de la cuestión
 tags: cym , class
-theme: black
+theme: consult
 ---
 
 <!-- slide bg="#010100" -->

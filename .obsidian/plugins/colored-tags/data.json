@@ -91,7 +91,10 @@
     "digital": 85,
     "obra": 86,
     "posthumanismo": 87,
-    "musica": 88
+    "musica": 88,
+    "público": 89,
+    "glosario": 90,
+    "person": 91
   },
   "_version": 2
 }
