@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "b3bb5a3a6222e21e",
+        "id": "62ae73c075fe3640",
         "type": "tabs",
         "children": [
           {
-            "id": "22e83afbc3e0be1d",
+            "id": "7c897b6f19ceac80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Untitled.md",
+                "file": "04-ref/topoi/Introducción a la psicoacústica.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c6c67535b2c77c53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "119b05d5e727e485",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -125,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Untitled.md"
+                "file": "04-ref/topoi/Introducción a la psicoacústica.md"
               }
             }
           },
@@ -143,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Untitled.md",
+                "file": "04-ref/topoi/Introducción a la psicoacústica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/Untitled.md",
+                "file": "04-ref/topoi/Introducción a la psicoacústica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,8 +153,17 @@
               "type": "copilot-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "af00f646ff150006",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -190,6 +171,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-spaced-repetition:Revisar Tarjetas": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "switcher:Abrir selector rápido": false,
@@ -209,10 +193,12 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "22e83afbc3e0be1d",
+  "active": "7c897b6f19ceac80",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
     "00-in/Untitled.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/image/Untitled-1693882066639.jpeg",
     "04-ref/image",
     "04-ref/glosario/PaaS.md",
@@ -247,12 +233,10 @@
     "00-in/Sin título.md",
     "00-in/Sin título 1.md",
     "00-in/Música y arte visual.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/beltrame/Topoi Forma Musical.md",
     "04-ref/templates/conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/Petroccelli",
     "cym-metamap.canvas",
     "02-mat/procesos/Untitled.loom",

@@ -477,7 +477,7 @@
     "00-in/topoi MOC.md": {
       "size": 2018,
       "tags": 0,
-      "links": 15
+      "links": 16
     },
     "03-cla/c-cym03 mapas.md": {
       "size": 3691,
@@ -570,9 +570,9 @@
       "links": 0
     },
     "03-cla/c-cym15-vida digital.md": {
-      "size": 628,
-      "tags": 3,
-      "links": 4
+      "size": 8808,
+      "tags": 9,
+      "links": 16
     },
     "04-ref/a-plugins.md": {
       "size": 547,
@@ -778,14 +778,39 @@
       "size": 51,
       "tags": 1,
       "links": 0
+    },
+    "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md": {
+      "size": 528,
+      "tags": 1,
+      "links": 0
+    },
+    "04-ref/personas/Marianne Amacher.md": {
+      "size": 62,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/personas/Yuval Harari.md": {
+      "size": 52,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/bassino/Música y arte visual.md": {
+      "size": 10634,
+      "tags": 0,
+      "links": 4
+    },
+    "01-proj/23/beltrame/beltrame POC.md": {
+      "size": 116,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 153,
-      "Create": 161,
-      "Link": 127,
-      "Expand": 18
+      "Create": 166,
+      "Link": 133,
+      "Expand": 19
     }
   },
   "dailyCommits": {
@@ -809,7 +834,7 @@
       "16": 14,
       "17": 2,
       "18": 29,
-      "19": 10,
+      "19": 22,
       "20": 33,
       "21": 15,
       "22": 80,
@@ -819,7 +844,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 170,
-      "Tue": 104,
+      "Tue": 116,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -847,9 +872,15 @@
         "<a class=\"internal-link\" href=\"TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
         "<a class=\"internal-link\" href=\"Untitled 2.md\"> Untitled 2 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/beltrame POC.md\"> beltrame POC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/glosario/PaaS.md\"> PaaS </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/shifres POC.md\"> shifres POC </a>",
@@ -895,12 +926,7 @@
         "<a class=\"internal-link\" href=\"04-ref/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
-        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/languages.md\"> languages </a>",
-        "<a class=\"internal-link\" href=\"00-in/hi augmentation.md\"> hi augmentation </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -938,6 +964,9 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
@@ -985,10 +1014,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/prueba tutorial.md\"> prueba tutorial </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -1092,7 +1118,10 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>"
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
