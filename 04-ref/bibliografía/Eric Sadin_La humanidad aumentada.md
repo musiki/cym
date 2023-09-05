@@ -16,3 +16,17 @@ link: https://books.google.com.ar/books/about/La_humanidad_aumentada.html?id=-pL
 isbn10: 9871622538
 isbn13: 9789871622535
 ---
+
+## Conceptos
+- machine learning
+- motor de búsqueda
+- inteligencia artificial
+- trading algorítmico
+- antrobología (universo cerebral artificial paralelo en expansión continua)
+- acomplamiento humano-maquínico
+- cuerpo-interfaz
+
+Como premonición, la figura de Hal, una extrema potencia y rapidez de tratamiento de las informaciones estructura el funcionamiento de esas máquinas, y se ve constantemente ampliada por la verificación, jamás desmentida, de la ley de Moore, que consolida hoy un savoir faire en el almacenamiento y el análisis de masas colosales de flujo. Esta dinámica es en particular sensible, por ejemplo, en el motor de búsqueda de Google, dotado de una miríada de servidores y que se vale de una ciencia refinada de indexación, en adelante ajustada al espacio y al tiempo (como 'hal' diseminado e impalpable)
+
+“El verdadero perfeccionamiento de las máquinas, aquel del cual se puede decir que eleva el grado de tecnicidad, corresponde no a un aumento del automatismo, sino, por el contrario, al hecho de que el funcionamiento de una máquina preserve un cierto margen de indeterminación. Es este margen el que permite a la máquina ser sensible a una información exterior”. Gilbert Simondon, El modo de existencia de los objetos técnicos, Bue- nos Aires, Prometeo, 2007
+
