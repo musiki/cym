@@ -3,7 +3,9 @@ type: topoi
 tags: psicoacústica, topoi
 unit: 00
 author: Ezequiel A. Petroccelli
+publish: 2023
 ---
+
 
 A lo largo del siglo XX, el interés por los ruidos y sonidos comenzó a tomar relevancia en los y las artistas contemporáneos y contemporáneas, cuyo interés generó un nuevo paradigma en la creación musical.
 

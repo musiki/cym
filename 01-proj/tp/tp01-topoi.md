@@ -34,12 +34,9 @@ definir temas para comprender el mundo actual, crear o editar artículos para y 
 
 # entregas
 
-![[musica visual_ bassino_topoi.pdf]]
-
-```
 
 
-```
+![[musica y arte visual_ bassino_topoi]]
 
 
 # Guía de textos 

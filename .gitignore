@@ -1,7 +1,6 @@
 .obsidian/plugins/obsidian-activity-history/data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json
-
 ./cym.bib
 01-proj/.DS_Store
 02-mat/.DS_Store
@@ -19,4 +18,6 @@
 .obsidian/community-plugins.json
 .obsidian/plugins/obsidian-minimal-settings/data.json
 .obsidian/plugins/obsidian-commits/data.json
+.obsidian/workspace.json
+.obsidian/core-plugins.json
 .obsidian/workspace.json

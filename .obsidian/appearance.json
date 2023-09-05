@@ -1,3 +1,9 @@
 {
+<<<<<<< HEAD
   "accentColor": ""
+=======
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 10
+>>>>>>> origin/main
 }
