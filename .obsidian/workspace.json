@@ -93,7 +93,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho.md",
+                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80a498346f6d8536",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho.md",
+                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Zaracho.md",
+                "file": "01-proj/23/Petroccelli/petrocelli POC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho.md"
+                "file": "01-proj/23/Petroccelli/petrocelli POC.md"
               }
             }
           },
@@ -271,6 +284,11 @@
   },
   "active": "9d1cdcd89dc985bd",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/Zaracho.md",
+    "04-ref/templates/t-persona.md",
+    "01-proj/23/Zaracho/Zaracho.md",
+    "01-proj/23/Zaracho",
     "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/bassino/Música y arte visual.md",
@@ -294,10 +312,6 @@
     "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
     "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
     "04-ref/bibliografía/Philip Ball_Shapes.md",
-    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
-    "04-ref/bibliografía/Sadin_La humanidad aumentada.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
@@ -317,7 +331,6 @@
     "01-proj/23/Petroccelli",
     "04-ref/espacios",
     "01-proj/23/beltrame",
-    "Untitled.canvas",
-    "Untitled.loom"
+    "Untitled.canvas"
   ]
 }
