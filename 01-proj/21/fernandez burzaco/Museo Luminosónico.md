@@ -4,6 +4,8 @@ author: Agustín Fernández Burzaco
 tags: proyectual
 publish: 2021
 ---
+## Síntesis
+
 Museo Luminosónico es una aplicación web que recrea un espacio de museo virtual. En él, el espectador observa y escucha diferentes objetos luminosónicos que puede modificar a través de la operación sobre diferentes comandos que afectan al sonido y a la imagen en simultáneo.
 
 ## Objetivos:
