@@ -1,5 +1,5 @@
 ---
-type: project
+type: exercise
 author: Juan Ignacio Gutierrez 
 tags: code , js ,tonejs
 publish: 2022

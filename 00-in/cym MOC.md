@@ -1,4 +1,5 @@
 ![[topoi MOC##topoi]]
 ![[personas MOC]]
 ![[proyectos MOC#proyectos]]
+![[ejercicios MOC]]
 ![[obras MOC]]

@@ -1,7 +1,7 @@
 ---
-type: project
+type: exercise
 author: Nicolás López 
-tags: code , js ,tonejs
+tags: code, js, tonejs
 publish: 2022
 ---
 

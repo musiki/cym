@@ -1,1 +1,0 @@
-![[musica y arte visual_ bassino_topoi]]
