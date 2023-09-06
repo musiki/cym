@@ -106,7 +106,15 @@
     "person": 99,
     "público": 100,
     "i1": 101,
-    "proyectual": 102
+    "proyectual": 102,
+    "circuits": 103,
+    "web": 104,
+    "github": 105,
+    "p5": 106,
+    "hydra": 107,
+    "mousetrap": 108,
+    "flex": 109,
+    "grid": 110
   },
   "_version": 2
 }

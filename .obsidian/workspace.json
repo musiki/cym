@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
-          },
-          {
-            "id": "ed0f836b725cc7c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "04-ref/templates/conflict-files-obsidian-git 2.md"
               }
             }
           },
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,9 +216,10 @@
       "obsidian-review-notes-plugin:View Recent Notes": false
     }
   },
-  "active": "ed0f836b725cc7c1",
+  "active": "1d885101d22dab06",
   "lastOpenFiles": [
     "01-proj/23/bassino/Música y arte visual.md",
+    "image/Pasted image 20230829230127.png",
     "conflict-files-obsidian-git.md",
     "04-ref/topoi/t-topoi.md",
     "04-ref/topoi/La reología del arte.md",
@@ -260,7 +247,6 @@
     "01-proj/22/dure/Sequencer.md",
     "01-proj/22/dure/Resampler.md",
     "01-proj/22/dure",
-    "01-proj/22/cym exoinstrumento.md",
     "01-proj/21/tortorelli",
     "01-proj/21/oliva",
     "01-proj/21/marazzi",
@@ -278,7 +264,6 @@
     "image/Pasted image 20230829224242.png",
     "image/Pasted image 20230829224353.png",
     "image/Pasted image 20230829224438.png",
-    "image/Pasted image 20230829225649.png",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
