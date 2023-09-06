@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "01-proj/21/marazzi/Collage sonoro.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "01-proj/21/marazzi/Collage sonoro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "01-proj/21/marazzi/Collage sonoro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/proyectos MOC.md"
+                "file": "01-proj/21/marazzi/Collage sonoro.md"
               }
             }
           },
@@ -271,8 +271,19 @@
   },
   "active": "d5a094f249292758",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/21/marazzi/Collage sonoro app.md",
+    "00-in/cym MOC.md",
+    "04-ref/topoi/La reología del arte.md",
+    "04-ref/topoi/Generatividad.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+    "01-proj/17/julia/Nukzeiber.md",
+    "01-proj/17/herrera/Superficies sonoras blandas.md",
+    "01-proj/16/juan/Instalación.md",
+    "01-proj/16/ferreyra/Juggling music.md",
+    "01-proj/16/cuenca/Explosision.md",
+    "01-proj/16/albarracin/Sonomaze.md",
     "00-in/proyectos MOC.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/topoi/Música y Política.md",
     "image/sistemas.excalidraw.md",
     "image/gal.md",
@@ -284,26 +295,15 @@
     "01-proj/23/Zaracho/zaracho POC.md",
     "00-in/obras.in MOC.md",
     "00-in/códigos MOC.md",
-    "01-proj/16/juan/Instalación.md",
     "01-proj/16/estrada/Cometa.md",
-    "01-proj/16/cuenca/Explosision.md",
-    "01-proj/16/albarracin/Sonomaze.md",
     "01-proj/16/lopez/Trazo 5.md",
-    "01-proj/16/ferreyra/Juggling music.md",
-    "01-proj/15/porrini/Un día bello.md",
     "01-proj/16/juan",
     "01-proj/16/estrada",
     "01-proj/16/lopez",
     "01-proj/16/cuenca",
     "01-proj/16/albarracin",
-    "01-proj/15/nievas/Drummer.md",
-    "01-proj/15/garcia fernandez/La sombra de lo abstracto.md",
     "01-proj/15/porrini",
-    "01-proj/15/garcia/En progreso.md",
     "01-proj/15/garcia fernandez",
-    "01-proj/15/Untitled.md",
-    "01-proj/15/ferrando/Tautología.md",
-    "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
     "01-proj/15/garcia",
     "01-proj/15/ferrando",
     "01-proj/15/drocchi",
