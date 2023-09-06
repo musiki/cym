@@ -95,7 +95,7 @@
       "links": 0
     },
     "04-ref/topoi/Espacio.md": {
-      "size": 70,
+      "size": 6883,
       "tags": 5,
       "links": 0
     },
@@ -559,11 +559,6 @@
       "tags": 1,
       "links": 0
     },
-    "00-in/topoi MOC.md": {
-      "size": 1909,
-      "tags": 0,
-      "links": 16
-    },
     "00-in/proyectos MOC.md": {
       "size": 546,
       "tags": 0,
@@ -645,7 +640,7 @@
       "links": 0
     },
     "04-ref/topoi/Forma Musical.md": {
-      "size": 5963,
+      "size": 14622,
       "tags": 4,
       "links": 0
     },
@@ -1084,11 +1079,6 @@
       "tags": 3,
       "links": 0
     },
-    "04-ref/topoi/t-topoi.md": {
-      "size": 50,
-      "tags": 1,
-      "links": 0
-    },
     "00-in/obras.in MOC.md": {
       "size": 95,
       "tags": 0,
@@ -1103,14 +1093,24 @@
       "size": 39,
       "tags": 1,
       "links": 0
+    },
+    "04-ref/templates/t-topoi.md": {
+      "size": 50,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/topoi MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 16
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 84,
-      "Create": 121,
-      "Link": 122,
-      "Expand": 6
+      "Refactor": 86,
+      "Create": 122,
+      "Link": 123,
+      "Expand": 8
     }
   },
   "dailyCommits": {
@@ -1128,7 +1128,7 @@
       "10": 5,
       "11": 17,
       "12": 21,
-      "13": 12,
+      "13": 18,
       "14": 3,
       "15": 4,
       "16": 17,
@@ -1145,7 +1145,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 264,
+      "Wed": 270,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1160,9 +1160,12 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1212,8 +1215,7 @@
         "<a class=\"internal-link\" href=\"01-proj/19/gawel/Metáforas.md\"> Metáforas </a>",
         "<a class=\"internal-link\" href=\"01-proj/19/costa/Canoa atemporal.md\"> Canoa atemporal </a>",
         "<a class=\"internal-link\" href=\"01-proj/19/barbaglia/Miradas dirigidas.md\"> Miradas dirigidas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>"
+        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1250,7 +1252,8 @@
         "<a class=\"internal-link\" href=\"00-in/obras.in MOC.md\"> obras.in MOC </a>",
         "<a class=\"internal-link\" href=\"image/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
@@ -1348,7 +1351,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/dramaturgia.md\"> dramaturgia </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>"
+        "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1373,7 +1377,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

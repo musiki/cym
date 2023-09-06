@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "10bc8b0b4b9fafd0",
+        "id": "cc4e46bec8950bfd",
         "type": "tabs",
         "children": [
           {
-            "id": "b065a4f7b098ccc1",
+            "id": "f8247a2b53866b22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/topoi MOC.md",
+                "file": "00-in/cym MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/topoi MOC.md"
+                "file": "00-in/cym MOC.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/topoi MOC.md",
+                "file": "00-in/cym MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/topoi MOC.md",
+                "file": "00-in/cym MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "67c7212f7255321a",
@@ -197,8 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 293.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,34 +224,34 @@
       "obsidian-review-notes-plugin:View Recent Notes": false
     }
   },
-  "active": "b065a4f7b098ccc1",
+  "active": "f8247a2b53866b22",
   "lastOpenFiles": [
-    "04-ref/topoi/Augmented Cognition.md",
     "00-in/topoi MOC.md",
-    "04-ref/topoi/Arte relacional.md",
-    "04-ref/topoi/Arte participativo.md",
     "00-in/cym MOC.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "00-in/códigos MOC.md",
+    "04-ref/topoi/Virtualidad y realidad.md",
+    "04-ref/topoi/Cuarta Revolución Industrial.md",
+    "04-ref/topoi/Forma Musical.md",
+    "04-ref/topoi/Humanos.md",
     "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-ref/topoi/Vida artificial.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "04-ref/topoi/La reología del arte.md",
+    "04-ref/topoi/Livecoding.md",
+    "04-ref/topoi/Método científico.md",
+    "00-in/proyectos MOC.md",
+    "01-proj/16/juan/Instalación.md",
+    "01-proj/17/navarro/Ajedrez.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+    "00-in/Vedic Sanskrit.md",
     "00-in/bib MOC.md",
-    "00-in/combinational creativity.md",
-    "00-in/personas MOC.md",
-    "04-ref/personas/Dick Raaijmakers.md",
-    "04-ref/personas/Yuval Harari.md",
-    "04-ref/personas/Donna Haraway.md",
-    "04-ref/personas/Dennis Smalley.md",
-    "00-in/obras MOC.md",
-    "04-ref/personas/Cecila Arditto.md",
-    "04-ref/templates/t-persona.md",
-    "04-ref/personas/Carlos Trilnik.md",
-    "04-ref/espacios/Academy of Fine Arts Vienna.md",
-    "04-ref/personas/Yotam Mann.md",
-    "04-ref/personas/Marianne Amacher.md",
-    "04-ref/personas/Hito Steyerl.md",
-    "00-in/memex.md",
-    "00-in/obras.in MOC.md",
+    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
     "00-in/languages.md",
-    "00-in/hi augmentation.md",
+    "00-in/memex.md",
+    "00-in/obras MOC.md",
+    "02-mat/org/i-theremin.md",
+    "04-ref/topoi/Historia de la tecnología.md",
+    "04-ref/topoi/Música Visual.md",
     "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
     "image/Pasted image 20230829230127.png",
     "01-proj/23/Zaracho",

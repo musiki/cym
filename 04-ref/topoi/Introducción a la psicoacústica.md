@@ -6,6 +6,7 @@ tags: psicoacústica, topoi
 unit: 00
 author: Ezequiel A. Petroccelli
 publish: 2023
+banner: https://c8.alamy.com/compit/2g7me18/bianco-e-nero-sfondo-illusione-ottica-illustrazione-vettoriale-2g7me18.jpg
 ---
 
 

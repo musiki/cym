@@ -31,7 +31,7 @@
   "useSystemTheme": false,
   "folding": true,
   "lineNumbers": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "devBlockWidth": false,
   "accentHue": 241,
   "accentSat": 35,

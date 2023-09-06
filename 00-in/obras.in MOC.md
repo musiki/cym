@@ -1,12 +1,16 @@
 ## música expandida (mixta, híbrida)
-davidovsky
-stockhausen
-nono
+Mario Davidovsky
+Karlzheins Stockhausen
+Luigi Nono
+Gerard Grisey_Le noir de la etoile
+Ianni Xenakis-UPIC
+Johannes Sebastian Bach
+Raymond Llul-La rueda
 
 ## interactividad
-schubert
-prins
-escudero
+Alexander Schubert
+Stefan Prins-
+Oscar Escudero
 
 ## bioart
 interactive music box

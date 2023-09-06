@@ -545,7 +545,7 @@
       "filename": "Racionalizacion_(videojuegos)"
     },
     {
-      "path": "04-ref/topoi/t-topoi.md",
+      "path": "04-ref/templates/t-topoi.md",
       "filename": "t-topoi"
     },
     {
@@ -615,6 +615,54 @@
     {
       "path": "04-ref/topoi/Augmented Cognition.md",
       "filename": "Augmented Cognition"
+    },
+    {
+      "path": "04-ref/topoi/Cuarta Revolución Industrial.md",
+      "filename": "Cuarta Revolución Industrial"
+    },
+    {
+      "path": "04-ref/topoi/Espacio.md",
+      "filename": "Espacio"
+    },
+    {
+      "path": "04-ref/topoi/Filosofía 21.md",
+      "filename": "Filosofía 21"
+    },
+    {
+      "path": "04-ref/topoi/Filosofía histórica.md",
+      "filename": "Filosofía histórica"
+    },
+    {
+      "path": "04-ref/topoi/Internetmusic.md",
+      "filename": "Internetmusic"
+    },
+    {
+      "path": "04-ref/topoi/Generatividad.md",
+      "filename": "Generatividad"
+    },
+    {
+      "path": "04-ref/topoi/Sistemas de universos.md",
+      "filename": "Sistemas de universos"
+    },
+    {
+      "path": "04-ref/topoi/Spectromorphology.md",
+      "filename": "Spectromorphology"
+    },
+    {
+      "path": "04-ref/topoi/Vida artificial.md",
+      "filename": "Vida artificial"
+    },
+    {
+      "path": "04-ref/topoi/Livecoding.md",
+      "filename": "Livecoding"
+    },
+    {
+      "path": "04-ref/topoi/Humanos.md",
+      "filename": "Humanos"
+    },
+    {
+      "path": "04-ref/topoi/Virtualidad y realidad.md",
+      "filename": "Virtualidad y realidad"
     }
   ]
 }

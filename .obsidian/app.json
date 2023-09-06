@@ -12,5 +12,6 @@
   "attachmentFolderPath": "image",
   "newFileLocation": "folder",
   "newFileFolderPath": "00-in",
-  "defaultViewMode": "source"
+  "defaultViewMode": "preview",
+  "readableLineLength": false
 }
