@@ -1,3 +1,8 @@
+*.DS_Store
+node_modules
+package-lock.json
+*.iml
+data.json
 .obsidian/plugins/obsidian-activity-history/data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json

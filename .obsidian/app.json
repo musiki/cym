@@ -7,7 +7,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "livePreview": true,
+  "livePreview": false,
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "image",
   "newFileLocation": "folder",

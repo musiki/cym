@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "accentColor": "",
-  "theme": "moonstone",
-  "baseFontSize": 15
-=======
-  "baseFontSize": 19
->>>>>>> origin/main
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "accentColor": ""
 }

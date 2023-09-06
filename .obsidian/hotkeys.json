@@ -175,15 +175,6 @@
       "key": "P"
     }
   ],
-  "file-explorer:move-file": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "P"
-    }
-  ],
   "editor:fold-all": [
     {
       "modifiers": [
@@ -627,5 +618,20 @@
       ],
       "key": "W"
     }
-  ]
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "shortcuts-extender:shortcut-circumflex": [],
+  "shortcuts-extender:shortcut-percent": [],
+  "shortcuts-extender:shortcut-hash": [],
+  "shortcuts-extender:shortcut-ampersand": [],
+  "shortcuts-extender:shortcut-dollar": []
 }

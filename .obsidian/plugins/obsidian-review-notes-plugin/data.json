@@ -547,6 +547,26 @@
     {
       "path": "04-ref/topoi/t-topoi.md",
       "filename": "t-topoi"
+    },
+    {
+      "path": "00-in/bib MOC.md",
+      "filename": "bib MOC"
+    },
+    {
+      "path": "00-in/hi augmentation.md",
+      "filename": "hi augmentation"
+    },
+    {
+      "path": "00-in/obras.in MOC.md",
+      "filename": "obras.in MOC"
+    },
+    {
+      "path": "00-in/11.md",
+      "filename": "11"
+    },
+    {
+      "path": "00-in/dramaturgia.md",
+      "filename": "dramaturgia"
     }
   ]
 }

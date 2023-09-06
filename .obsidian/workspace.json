@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
+                "file": "02-mat/org/i-theremin.md",
                 "mode": "preview",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.51103591918945
+    "width": 319.51103591918945
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/templates/conflict-files-obsidian-git 2.md"
+                "file": "02-mat/org/i-theremin.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
+                "file": "02-mat/org/i-theremin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/templates/conflict-files-obsidian-git 2.md",
+                "file": "02-mat/org/i-theremin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,6 +133,14 @@
             "type": "leaf",
             "state": {
               "type": "review-notes",
+              "state": {}
+            }
+          },
+          {
+            "id": "e36f2709c75460b4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
               "state": {}
             }
           }
@@ -218,34 +226,36 @@
   },
   "active": "1d885101d22dab06",
   "lastOpenFiles": [
-    "01-proj/23/bassino/Música y arte visual.md",
+    "02-mat/org/i-sackbut.md",
+    "02-mat/rant.md",
+    "02-mat/que es git.md",
+    "02-mat/html.md",
+    "02-mat/cloud ides.md",
+    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
+    "image/sistemas.excalidraw.md",
+    "00-in/obras.in MOC.md",
+    "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
+    "00-in/dramaturgia.md",
+    "00-in/obras MOC.md",
+    "image/gal.md",
+    "00-in/11.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+    "00-in/proyectos MOC.md",
+    "01-proj/16/juan/Instalación.md",
+    "01-proj/15/bergaglio/Supernova luna llena.md",
+    "01-proj/16/lopez/Trazo 5.md",
+    "04-ref/topoi/Música Visual.md",
+    "00-in/topoi MOC.md",
+    "00-in/cym MOC.md",
+    "00-in/hd-hydra.md",
+    "00-in/languages.md",
+    "00-in/personas MOC.md",
+    "00-in/bib MOC.md",
+    "00-in/Vedic Sanskrit.md",
+    "00-in/Proto-Indo-European.md",
     "image/Pasted image 20230829230127.png",
-    "conflict-files-obsidian-git.md",
-    "04-ref/topoi/t-topoi.md",
-    "04-ref/topoi/La reología del arte.md",
-    "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
-    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
-    "03-cla/c-cym06-flex-grid.md",
-    "03-cla/c-cym06- cohesión audiovisual.md",
-    "03-cla/c-cym04-vida digital.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/Zaracho/Zaracho.md",
     "01-proj/23/Zaracho",
-    "01-proj/22/synth-grid.md",
-    "01-proj/22/synth-flex.md",
-    "01-proj/22/mousetrap.md",
-    "01-proj/22/mico/Dónde está el camino.md",
     "01-proj/22/mico",
-    "01-proj/22/lopez/Máquina de ritmos.md",
-    "01-proj/22/lopez/Melodia.md",
-    "01-proj/22/lopez/Gentics.md",
-    "01-proj/22/lopez/Azar.md",
-    "01-proj/22/hydra.md",
-    "01-proj/22/gutierrez/Trazos.md",
-    "01-proj/22/gutierrez/Generador de líneas.md",
-    "01-proj/22/dure/Sequencer.md",
-    "01-proj/22/dure/Resampler.md",
     "01-proj/22/dure",
     "01-proj/21/tortorelli",
     "01-proj/21/oliva",
@@ -256,7 +266,6 @@
     "01-proj/20/ruiz burtoli",
     "image/galanter.jpeg",
     "image/Pasted image 20230829223415.png",
-    "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
     "cym-metamap.canvas",
     "image/Pasted image 20230829223230.png",
     "image/Pasted image 20230829224100.png",
