@@ -2,7 +2,7 @@
 type: project
 author: Santiago Ferreyra
 tags: proyectual
-publish: 2017
+publish: 2016
 ---
 Guantes de malabarear interactivos Accesorio traductor del gesto corporal al gesto musical
 
