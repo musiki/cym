@@ -4,6 +4,7 @@ tags: universo, física, historiadelaciencia , astronomia, topoi
 unit: 11
 publish: 2015
 author: zztt 
+banner: https://media.tenor.com/2jV0hjUDz6QAAAAM/galaxy-stars.gif
 ---
 
 # modelos de universos [14^9]

@@ -99,9 +99,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "74ba543380a62fc5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -183,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/proyectos MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/proyectos MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -269,8 +282,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d5a094f249292758",
+  "active": "74ba543380a62fc5",
   "lastOpenFiles": [
+    "00-in/proyectos MOC.md",
+    "conflict-files-obsidian-git.md",
+    "04-ref/topoi/Música y Política.md",
+    "image/sistemas.excalidraw.md",
+    "image/gal.md",
+    "04-ref/templates/t-topoi.md",
+    "04-ref/personas/Dick Raaijmakers.md",
+    "04-ref/meta-aprendizaje.md",
+    "04-ref/espacios/EAT Experiments in arts and technologies.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "00-in/obras.in MOC.md",
     "00-in/códigos MOC.md",
     "01-proj/16/juan/Instalación.md",
     "01-proj/16/estrada/Cometa.md",
@@ -292,21 +317,9 @@
     "01-proj/15/Untitled.md",
     "01-proj/15/ferrando/Tautología.md",
     "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
-    "01-proj/15/drocchi/¿Cómo suena el conocimiento?.md",
-    "01-proj/15/bergaglio/Supernova luna llena.md",
-    "01-proj/17/paladino/No music player.md",
     "01-proj/15/garcia",
     "01-proj/15/ferrando",
     "01-proj/15/drocchi",
-    "01-proj/17/navarro/Ajedrez.md",
-    "01-proj/17/moscato/La forma de la identidad real.md",
-    "01-proj/17/lopez/Boreal.md",
-    "01-proj/17/julia/Nukzeiber.md",
-    "01-proj/17/herrera/Superficies sonoras blandas.md",
-    "01-proj/17/borsalino/Condensador de eventos.md",
-    "01-proj/17/arcuri/Sensonorizando.md",
-    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
-    "01-proj/18/vivona/Domo.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",

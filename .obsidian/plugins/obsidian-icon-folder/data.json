@@ -26,7 +26,7 @@
       "bottom": 0,
       "left": 0
     },
-    "iconInTabsEnabled": false
+    "iconInTabsEnabled": true
   },
   "02-mat/python": "FabPython",
   "02-mat/jasvascript": "FabJs",

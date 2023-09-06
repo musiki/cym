@@ -72,7 +72,6 @@
   "obsidian-rant",
   "obsidian-reading-time",
   "shortcuts-extender",
-  "simple-embeds",
   "obsidian-sortable",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
@@ -84,5 +83,13 @@
   "inline-code-highlight",
   "callout-manager",
   "at-people",
-  "better-search-views"
+  "better-search-views",
+  "obsidian-review-notes-plugin",
+  "crumbs-obsidian",
+  "settings-search",
+  "global-search-and-replace",
+  "obsidian-divide-and-conquer",
+  "obsidian-view-mode-by-frontmatter",
+  "obsidian-hider",
+  "obsidian-banners"
 ]

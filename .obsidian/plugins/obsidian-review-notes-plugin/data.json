@@ -1,0 +1,720 @@
+{
+  "files": [
+    {
+      "path": "00-in/topoi MOC.md",
+      "filename": "topoi MOC"
+    },
+    {
+      "path": "04-ref/topoi/Introducción a la psicoacústica.md",
+      "filename": "Introducción a la psicoacústica"
+    },
+    {
+      "path": "04-ref/meta-aprendizaje.md",
+      "filename": "meta-aprendizaje"
+    },
+    {
+      "path": "04-ref/a-plugins.md",
+      "filename": "a-plugins"
+    },
+    {
+      "path": "cym-metamap.canvas",
+      "filename": "cym-metamap"
+    },
+    {
+      "path": "04-ref/espacios/EAT Experiments in arts and technologies.md",
+      "filename": "EAT Experiments in arts and technologies"
+    },
+    {
+      "path": "04-ref/personas/Dick Raaijmakers.md",
+      "filename": "Dick Raaijmakers"
+    },
+    {
+      "path": "01-proj/tp/tp01-topoi.md",
+      "filename": "tp01-topoi"
+    },
+    {
+      "path": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+      "filename": "Steyerl_Los condenados de la pantalla"
+    },
+    {
+      "path": "00-in/Música y arte visual.md",
+      "filename": "Música y arte visual"
+    },
+    {
+      "path": "00-in/Sin título 1.md",
+      "filename": "Sin título 1"
+    },
+    {
+      "path": "00-in/Sin título.md",
+      "filename": "Sin título"
+    },
+    {
+      "path": "00-in/c-i102-Timbre y Materiales.md",
+      "filename": "c-i102-Timbre y Materiales"
+    },
+    {
+      "path": "00-in/musica y arte visual_ bassino_topoi.md",
+      "filename": "musica y arte visual_ bassino_topoi"
+    },
+    {
+      "path": "01-proj/23/bassino/Música y arte visual.md",
+      "filename": "Música y arte visual"
+    },
+    {
+      "path": "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
+      "filename": "Steyerl_Los condenados de la pantalla-1693776235118"
+    },
+    {
+      "path": "image/Maura McDonnell topoi.docx",
+      "filename": "Maura McDonnell topoi"
+    },
+    {
+      "path": "conflict-files-obsidian-git.md",
+      "filename": "conflict-files-obsidian-git"
+    },
+    {
+      "path": "04-ref/topoi/Forma Musical.md",
+      "filename": "Forma Musical"
+    },
+    {
+      "path": "04-ref/templates/t-class.md",
+      "filename": "t-class"
+    },
+    {
+      "path": "image/3-interieur I.tif",
+      "filename": "3-interieur I"
+    },
+    {
+      "path": "image/1-trio fluido.tif",
+      "filename": "1-trio fluido"
+    },
+    {
+      "path": "image/12 diagrama sonido color.tif",
+      "filename": "12 diagrama sonido color"
+    },
+    {
+      "path": "image/4-interieur 17.tif",
+      "filename": "4-interieur 17"
+    },
+    {
+      "path": "image/8-gruppen 9.tif",
+      "filename": "8-gruppen 9"
+    },
+    {
+      "path": "image/6-grafico.tif",
+      "filename": "6-grafico"
+    },
+    {
+      "path": "image/13 9ßsinf beto.tif",
+      "filename": "13 9ßsinf beto"
+    },
+    {
+      "path": "image/10 atmospheres.tif",
+      "filename": "10 atmospheres"
+    },
+    {
+      "path": "image/17 atmoepheres 21.tif",
+      "filename": "17 atmoepheres 21"
+    },
+    {
+      "path": "image/7-interieur I, 13.tif",
+      "filename": "7-interieur I, 13"
+    },
+    {
+      "path": "image/2-jet.tif",
+      "filename": "2-jet"
+    },
+    {
+      "path": "04-ref/9 esquema- color.tif",
+      "filename": "9 esquema- color"
+    },
+    {
+      "path": "04-ref/8a-kontrakadenz.tif",
+      "filename": "8a-kontrakadenz"
+    },
+    {
+      "path": "image/5-trio fluido 183.tif",
+      "filename": "5-trio fluido 183"
+    },
+    {
+      "path": "image/18 diagrama sonido fluctuante.tif",
+      "filename": "18 diagrama sonido fluctuante"
+    },
+    {
+      "path": "image/14 sequ.-Vla.tif",
+      "filename": "14 sequ.-Vla"
+    },
+    {
+      "path": "image/11 lux.tif",
+      "filename": "11 lux"
+    },
+    {
+      "path": "image/19 chopin (1).tif",
+      "filename": "19 chopin (1)"
+    },
+    {
+      "path": "image/19 chopin.tif",
+      "filename": "19 chopin"
+    },
+    {
+      "path": "image/16 Debussy-feux.tif",
+      "filename": "16 Debussy-feux"
+    },
+    {
+      "path": "image/15 chopin op25.tif",
+      "filename": "15 chopin op25"
+    },
+    {
+      "path": "image/20 sequ6b.tif",
+      "filename": "20 sequ6b"
+    },
+    {
+      "path": "image/21 Apparitions.tif",
+      "filename": "21 Apparitions"
+    },
+    {
+      "path": "image/23 diagrama gruppen 17-19.tif",
+      "filename": "23 diagrama gruppen 17-19"
+    },
+    {
+      "path": "04-ref/22 diagrama-sonido-textura.tif",
+      "filename": "22 diagrama-sonido-textura"
+    },
+    {
+      "path": "image/24 stock a.tif",
+      "filename": "24 stock a"
+    },
+    {
+      "path": "image/26 diagrama sonido-estr.tif",
+      "filename": "26 diagrama sonido-estr"
+    },
+    {
+      "path": "image/25 stockhausen b.tif",
+      "filename": "25 stockhausen b"
+    },
+    {
+      "path": "image/27 stockhausen c.tif",
+      "filename": "27 stockhausen c"
+    },
+    {
+      "path": "image/gal.md",
+      "filename": "gal"
+    },
+    {
+      "path": "00-in/cym MOC.md",
+      "filename": "cym MOC"
+    },
+    {
+      "path": "00-in/códigos MOC.md",
+      "filename": "códigos MOC"
+    },
+    {
+      "path": "00-in/hd-hydra.md",
+      "filename": "hd-hydra"
+    },
+    {
+      "path": "00-in/memex.md",
+      "filename": "memex"
+    },
+    {
+      "path": "00-in/proyectos MOC.md",
+      "filename": "proyectos MOC"
+    },
+    {
+      "path": "01-proj/15/bergaglio/Supernova luna llena.md",
+      "filename": "Supernova luna llena"
+    },
+    {
+      "path": "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
+      "filename": "En los intersticios de lo causal. El camino es efecto"
+    },
+    {
+      "path": "01-proj/15/drocchi/¿Cómo suena el conocimiento?.md",
+      "filename": "¿Cómo suena el conocimiento?"
+    },
+    {
+      "path": "01-proj/15/ferrando/Tautología.md",
+      "filename": "Tautología"
+    },
+    {
+      "path": "01-proj/15/garcia/En progreso.md",
+      "filename": "En progreso"
+    },
+    {
+      "path": "01-proj/15/garcia fernandez/La sombra de lo abstracto.md",
+      "filename": "La sombra de lo abstracto"
+    },
+    {
+      "path": "01-proj/15/nievas/Drummer.md",
+      "filename": "Drummer"
+    },
+    {
+      "path": "01-proj/15/porrini/Un día bello.md",
+      "filename": "Un día bello"
+    },
+    {
+      "path": "01-proj/16/cuenca/Explosision.md",
+      "filename": "Explosision"
+    },
+    {
+      "path": "01-proj/16/estrada/Cometa.md",
+      "filename": "Cometa"
+    },
+    {
+      "path": "01-proj/16/albarracin/Sonomaze.md",
+      "filename": "Sonomaze"
+    },
+    {
+      "path": "01-proj/16/ferreyra/Juggling music.md",
+      "filename": "Juggling music"
+    },
+    {
+      "path": "01-proj/16/juan/Instalación.md",
+      "filename": "Instalación"
+    },
+    {
+      "path": "01-proj/16/lopez/Trazo 5.md",
+      "filename": "Trazo 5"
+    },
+    {
+      "path": "01-proj/17/arcuri/Sensonorizando.md",
+      "filename": "Sensonorizando"
+    },
+    {
+      "path": "01-proj/17/borsalino/Condensador de eventos.md",
+      "filename": "Condensador de eventos"
+    },
+    {
+      "path": "01-proj/17/herrera/Superficies sonoras blandas.md",
+      "filename": "Superficies sonoras blandas"
+    },
+    {
+      "path": "01-proj/17/julia/Nukzeiber.md",
+      "filename": "Nukzeiber"
+    },
+    {
+      "path": "01-proj/17/lopez/Boreal.md",
+      "filename": "Boreal"
+    },
+    {
+      "path": "01-proj/17/moscato/La forma de la identidad real.md",
+      "filename": "La forma de la identidad real"
+    },
+    {
+      "path": "01-proj/17/navarro/Ajedrez.md",
+      "filename": "Ajedrez"
+    },
+    {
+      "path": "01-proj/17/paladino/No music player.md",
+      "filename": "No music player"
+    },
+    {
+      "path": "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+      "filename": "Compost sonoro"
+    },
+    {
+      "path": "01-proj/18/galetto/Moving sound.md",
+      "filename": "Moving sound"
+    },
+    {
+      "path": "01-proj/18/garella/Dédalo.md",
+      "filename": "Dédalo"
+    },
+    {
+      "path": "01-proj/18/gueglio/Posdata fluidos.md",
+      "filename": "Posdata fluidos"
+    },
+    {
+      "path": "01-proj/18/vivona/Domo.md",
+      "filename": "Domo"
+    },
+    {
+      "path": "01-proj/19/barbaglia/Miradas dirigidas.md",
+      "filename": "Miradas dirigidas"
+    },
+    {
+      "path": "01-proj/19/costa/Canoa atemporal.md",
+      "filename": "Canoa atemporal"
+    },
+    {
+      "path": "01-proj/19/gawel/Metáforas.md",
+      "filename": "Metáforas"
+    },
+    {
+      "path": "01-proj/19/perez rivas/Reproduciéndonos.md",
+      "filename": "Reproduciéndonos"
+    },
+    {
+      "path": "01-proj/20/amieva/Intensa.md",
+      "filename": "Intensa"
+    },
+    {
+      "path": "01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md",
+      "filename": "Librería de Samples Universidad Tres de Febrero"
+    },
+    {
+      "path": "01-proj/20/belotti/Soundchess proyectual tentativo.md",
+      "filename": "Soundchess proyectual tentativo"
+    },
+    {
+      "path": "01-proj/20/bonetto/La verduleria.md",
+      "filename": "La verduleria"
+    },
+    {
+      "path": "01-proj/20/jaramillo/Unísono virtual.md",
+      "filename": "Unísono virtual"
+    },
+    {
+      "path": "01-proj/20/ruiz burtoli/Conexiones código.md",
+      "filename": "Conexiones código"
+    },
+    {
+      "path": "01-proj/20/bonetto/Oscilador de audio con alimentos.md",
+      "filename": "Oscilador de audio con alimentos"
+    },
+    {
+      "path": "01-proj/20/jaramillo/Unísono virtual código.md",
+      "filename": "Unísono virtual código"
+    },
+    {
+      "path": "01-proj/20/ruiz burtoli/Conexiones.md",
+      "filename": "Conexiones"
+    },
+    {
+      "path": "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
+      "filename": "Museo Luminosónico"
+    },
+    {
+      "path": "01-proj/21/kobayashi/Generador random.md",
+      "filename": "Generador random"
+    },
+    {
+      "path": "01-proj/21/marazzi/Collage sonoro app.md",
+      "filename": "Collage sonoro app"
+    },
+    {
+      "path": "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
+      "filename": "App web para generador de TONE FIELDS"
+    },
+    {
+      "path": "01-proj/21/marazzi/Collage sonoro.md",
+      "filename": "Collage sonoro"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+      "filename": "Generador de poemas sonorizados código"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+      "filename": "Generador de poemas sonorizados"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Simon dice.md",
+      "filename": "Simon dice"
+    },
+    {
+      "path": "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+      "filename": "Final CyM - Metrónomo"
+    },
+    {
+      "path": "01-proj/22/ancarola/Generador de Melodías Random.md",
+      "filename": "Generador de Melodías Random"
+    },
+    {
+      "path": "01-proj/22/ancarola/Hola Sonido.md",
+      "filename": "Hola Sonido"
+    },
+    {
+      "path": "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
+      "filename": "Poema Sinfónico para ∞ Metrónomos"
+    },
+    {
+      "path": "01-proj/22/cym exoinstrumento.md",
+      "filename": "cym exoinstrumento"
+    },
+    {
+      "path": "01-proj/22/dure/Resampler.md",
+      "filename": "Resampler"
+    },
+    {
+      "path": "01-proj/22/dure/Sequencer.md",
+      "filename": "Sequencer"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Generador de líneas.md",
+      "filename": "Generador de líneas"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Generador de melodía.md",
+      "filename": "Generador de melodía"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Trazos.md",
+      "filename": "Trazos"
+    },
+    {
+      "path": "01-proj/22/hydra.md",
+      "filename": "hydra"
+    },
+    {
+      "path": "01-proj/22/lopez/Azar.md",
+      "filename": "Azar"
+    },
+    {
+      "path": "01-proj/22/lopez/Gentics.md",
+      "filename": "Gentics"
+    },
+    {
+      "path": "01-proj/22/lopez/Melodia.md",
+      "filename": "Melodia"
+    },
+    {
+      "path": "01-proj/22/lopez/Máquina de ritmos.md",
+      "filename": "Máquina de ritmos"
+    },
+    {
+      "path": "01-proj/22/mico/Dónde está el camino.md",
+      "filename": "Dónde está el camino"
+    },
+    {
+      "path": "01-proj/22/mousetrap.md",
+      "filename": "mousetrap"
+    },
+    {
+      "path": "01-proj/22/synth-flex.md",
+      "filename": "synth-flex"
+    },
+    {
+      "path": "01-proj/22/synth-grid.md",
+      "filename": "synth-grid"
+    },
+    {
+      "path": "04-ref/topoi/Música y Política.md",
+      "filename": "Música y Política"
+    },
+    {
+      "path": "01-proj/23/bassino/Multi-efecto.md",
+      "filename": "Multi-efecto"
+    },
+    {
+      "path": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+      "filename": "c-cym01-arte y ciencia - estado de la cuestión"
+    },
+    {
+      "path": "03-cla/c-cym04-vida digital.md",
+      "filename": "c-cym04-vida digital"
+    },
+    {
+      "path": "03-cla/c-cym06- cohesión audiovisual.md",
+      "filename": "c-cym06- cohesión audiovisual"
+    },
+    {
+      "path": "03-cla/c-cym06-flex-grid.md",
+      "filename": "c-cym06-flex-grid"
+    },
+    {
+      "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+      "filename": "Boris Groys_Arte y flujo"
+    },
+    {
+      "path": "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+      "filename": "Eduardo Kac_Signs of Life"
+    },
+    {
+      "path": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+      "filename": "Eric Sadin_La humanidad aumentada"
+    },
+    {
+      "path": "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+      "filename": "Myriam Robayo Pedraza_La canción social como expresión de inconformismo"
+    },
+    {
+      "path": "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+      "filename": "La instalación como forma del arte contemporáneo"
+    },
+    {
+      "path": "04-ref/topoi/La reología del arte.md",
+      "filename": "La reología del arte"
+    },
+    {
+      "path": "04-ref/topoi/Música Visual.md",
+      "filename": "Música Visual"
+    },
+    {
+      "path": "04-ref/topoi/Racionalizacion_(videojuegos).md",
+      "filename": "Racionalizacion_(videojuegos)"
+    },
+    {
+      "path": "04-ref/templates/t-topoi.md",
+      "filename": "t-topoi"
+    },
+    {
+      "path": "00-in/bib MOC.md",
+      "filename": "bib MOC"
+    },
+    {
+      "path": "00-in/hi augmentation.md",
+      "filename": "hi augmentation"
+    },
+    {
+      "path": "00-in/obras.in MOC.md",
+      "filename": "obras.in MOC"
+    },
+    {
+      "path": "00-in/11.md",
+      "filename": "11"
+    },
+    {
+      "path": "00-in/dramaturgia.md",
+      "filename": "dramaturgia"
+    },
+    {
+      "path": "00-in/personas MOC.md",
+      "filename": "personas MOC"
+    },
+    {
+      "path": "04-ref/personas/Hito Steyerl.md",
+      "filename": "Hito Steyerl"
+    },
+    {
+      "path": "04-ref/personas/Marianne Amacher.md",
+      "filename": "Marianne Amacher"
+    },
+    {
+      "path": "04-ref/personas/Yotam Mann.md",
+      "filename": "Yotam Mann"
+    },
+    {
+      "path": "04-ref/personas/Yuval Harari.md",
+      "filename": "Yuval Harari"
+    },
+    {
+      "path": "04-ref/personas/Carlos Trilnik.md",
+      "filename": "Carlos Trilnik"
+    },
+    {
+      "path": "04-ref/templates/t-persona.md",
+      "filename": "t-persona"
+    },
+    {
+      "path": "04-ref/personas/Cecila Arditto.md",
+      "filename": "Cecila Arditto"
+    },
+    {
+      "path": "04-ref/personas/Dennis Smalley.md",
+      "filename": "Dennis Smalley"
+    },
+    {
+      "path": "04-ref/topoi/Arte participativo.md",
+      "filename": "Arte participativo"
+    },
+    {
+      "path": "04-ref/topoi/Arte relacional.md",
+      "filename": "Arte relacional"
+    },
+    {
+      "path": "04-ref/topoi/Augmented Cognition.md",
+      "filename": "Augmented Cognition"
+    },
+    {
+      "path": "04-ref/topoi/Cuarta Revolución Industrial.md",
+      "filename": "Cuarta Revolución Industrial"
+    },
+    {
+      "path": "04-ref/topoi/Espacio.md",
+      "filename": "Espacio"
+    },
+    {
+      "path": "04-ref/topoi/Filosofía 21.md",
+      "filename": "Filosofía 21"
+    },
+    {
+      "path": "04-ref/topoi/Filosofía histórica.md",
+      "filename": "Filosofía histórica"
+    },
+    {
+      "path": "04-ref/topoi/Internetmusic.md",
+      "filename": "Internetmusic"
+    },
+    {
+      "path": "04-ref/topoi/Generatividad.md",
+      "filename": "Generatividad"
+    },
+    {
+      "path": "04-ref/topoi/Sistemas de universos.md",
+      "filename": "Sistemas de universos"
+    },
+    {
+      "path": "04-ref/topoi/Spectromorphology.md",
+      "filename": "Spectromorphology"
+    },
+    {
+      "path": "04-ref/topoi/Vida artificial.md",
+      "filename": "Vida artificial"
+    },
+    {
+      "path": "04-ref/topoi/Livecoding.md",
+      "filename": "Livecoding"
+    },
+    {
+      "path": "04-ref/topoi/Humanos.md",
+      "filename": "Humanos"
+    },
+    {
+      "path": "04-ref/topoi/Virtualidad y realidad.md",
+      "filename": "Virtualidad y realidad"
+    },
+    {
+      "path": "01-proj/23/beltrame/beltrame POC.md",
+      "filename": "beltrame POC"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/petrocelli POC.md",
+      "filename": "petrocelli POC"
+    },
+    {
+      "path": "01-proj/23/bassino/bassino POC.md",
+      "filename": "bassino POC"
+    },
+    {
+      "path": "01-proj/23/shifres/shifres POC.md",
+      "filename": "shifres POC"
+    },
+    {
+      "path": "04-ref/topoi/Intervencion del espacio público.md",
+      "filename": "Intervencion del espacio público"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/petroccelli POC.md",
+      "filename": "petroccelli POC"
+    },
+    {
+      "path": "01-proj/23/Zaracho/zaracho POC.md",
+      "filename": "zaracho POC"
+    },
+    {
+      "path": "04-ref/topoi/Sistemas complejos.md",
+      "filename": "Sistemas complejos"
+    },
+    {
+      "path": "04-ref/topoi/Método científico.md",
+      "filename": "Método científico"
+    },
+    {
+      "path": "04-ref/topoi/Interfaces.md",
+      "filename": "Interfaces"
+    },
+    {
+      "path": "04-ref/topoi/Azar.md",
+      "filename": "Azar"
+    },
+    {
+      "path": "04-ref/topoi/Fragile Territories.md",
+      "filename": "Fragile Territories"
+    },
+    {
+      "path": "04-ref/topoi/Física.md",
+      "filename": "Física"
+    }
+  ]
+}

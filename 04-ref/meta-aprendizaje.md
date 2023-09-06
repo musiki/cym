@@ -34,11 +34,3 @@ PKM [personal knowledge managment]
 	- synchronization
 	- cooperative experimentation
 
-
-
-
----
-
-- a
-	- b
-		- c

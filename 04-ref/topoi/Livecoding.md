@@ -4,6 +4,7 @@ tags: coding, live-coding, cym ,topoi
 unit: 34
 publish: 2021
 author: zztt
+banner: https://i0.wp.com/grayarea.org/wp-content/uploads/2022/02/shaderworkshopmove3-1.gif?resize=980%2C551&ssl=1
 ---
 
 

@@ -1,3 +1,5 @@
 {
-  "baseFontSize": 19
+  "cssTheme": "Terminal",
+  "theme": "obsidian",
+  "accentColor": ""
 }
