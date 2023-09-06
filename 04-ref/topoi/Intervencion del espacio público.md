@@ -4,6 +4,7 @@ tags: espacio público, topoi
 unit: 0
 publish: 2023
 author: Agustín Shifres
+banner: "https://obj.shine.cn/files/2020/09/28/108901e5-0e34-4d99-ad3a-3bcfe47c55b1_0.jpg?x-image-process=style/style-watermark"
 ---
 
 La intervención del espacio público, en el contexto de la creación sonora y artística, se refiere a la práctica de agregar elementos sonoros o artísticos en entornos urbanos o espacios abiertos para transformar la experiencia de las personas que interactúan en estos lugares.

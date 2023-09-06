@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/cym MOC.md"
+                "file": "01-proj/23/Zaracho/zaracho POC.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,6 +226,15 @@
   },
   "active": "f8247a2b53866b22",
   "lastOpenFiles": [
+    "04-ref/topoi/Música y Política.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "04-ref/topoi/Intervencion del espacio público.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/beltrame/beltrame POC.md",
     "00-in/topoi MOC.md",
     "00-in/cym MOC.md",
     "00-in/códigos MOC.md",
@@ -235,7 +244,6 @@
     "04-ref/topoi/Humanos.md",
     "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
     "04-ref/topoi/Vida artificial.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
     "04-ref/topoi/La reología del arte.md",
     "04-ref/topoi/Livecoding.md",
     "04-ref/topoi/Método científico.md",
@@ -244,14 +252,6 @@
     "01-proj/17/navarro/Ajedrez.md",
     "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "00-in/Vedic Sanskrit.md",
-    "00-in/bib MOC.md",
-    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "00-in/languages.md",
-    "00-in/memex.md",
-    "00-in/obras MOC.md",
-    "02-mat/org/i-theremin.md",
-    "04-ref/topoi/Historia de la tecnología.md",
-    "04-ref/topoi/Música Visual.md",
     "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
     "image/Pasted image 20230829230127.png",
     "01-proj/23/Zaracho",

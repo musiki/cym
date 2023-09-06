@@ -489,8 +489,8 @@
       "filename": "synth-grid"
     },
     {
-      "path": "01-proj/23/Zaracho/Zaracho.md",
-      "filename": "Zaracho"
+      "path": "04-ref/topoi/Música y Política.md",
+      "filename": "Música y Política"
     },
     {
       "path": "01-proj/23/bassino/Multi-efecto.md",
@@ -663,6 +663,34 @@
     {
       "path": "04-ref/topoi/Virtualidad y realidad.md",
       "filename": "Virtualidad y realidad"
+    },
+    {
+      "path": "01-proj/23/beltrame/beltrame POC.md",
+      "filename": "beltrame POC"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/petrocelli POC.md",
+      "filename": "petrocelli POC"
+    },
+    {
+      "path": "01-proj/23/bassino/bassino POC.md",
+      "filename": "bassino POC"
+    },
+    {
+      "path": "01-proj/23/shifres/shifres POC.md",
+      "filename": "shifres POC"
+    },
+    {
+      "path": "04-ref/topoi/Intervencion del espacio público.md",
+      "filename": "Intervencion del espacio público"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/petroccelli POC.md",
+      "filename": "petroccelli POC"
+    },
+    {
+      "path": "01-proj/23/Zaracho/zaracho POC.md",
+      "filename": "zaracho POC"
     }
   ]
 }
