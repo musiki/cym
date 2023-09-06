@@ -535,7 +535,7 @@
       "links": 0
     },
     "01-proj/21/marazzi/Collage sonoro.md": {
-      "size": 79,
+      "size": 6081,
       "tags": 1,
       "links": 0
     },
@@ -1130,7 +1130,7 @@
       "Refactor": 216,
       "Create": 131,
       "Link": 125,
-      "Expand": 9
+      "Expand": 10
     }
   },
   "dailyCommits": {
@@ -1157,7 +1157,7 @@
       "19": 0,
       "20": 0,
       "21": 6,
-      "22": 21,
+      "22": 22,
       "23": 34
     }
   },
@@ -1165,7 +1165,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 412,
+      "Wed": 413,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1183,7 +1183,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
