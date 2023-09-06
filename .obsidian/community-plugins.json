@@ -88,5 +88,8 @@
   "crumbs-obsidian",
   "settings-search",
   "global-search-and-replace",
-  "obsidian-divide-and-conquer"
+  "obsidian-divide-and-conquer",
+  "obsidian-view-mode-by-frontmatter",
+  "obsidian-hider",
+  "obsidian-banners"
 ]

@@ -1,6 +1,7 @@
 ---
 type: person
 works: [[los condenados de la pantalla]]
+photo: https://www.artnews.com/wp-content/uploads/2019/07/hs14-0019-presspage-e1563470016999.jpg
 year: 1976
 tags: filosofía
 ---

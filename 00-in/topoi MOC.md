@@ -2,11 +2,11 @@
 ## topoi
 
 ```dataview
-Table author as author, publish as "año", tags as tagsm ,unit
+Table  without ID("![|100](" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags as tagsm ,unit
 WHERE contains(type,"topoi")
 SORT Status DESC
+FLATTEN tags
 ```
-
 
 
 # definition

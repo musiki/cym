@@ -324,16 +324,6 @@
       "key": "M"
     }
   ],
-  "insert-template": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "T"
-    }
-  ],
   "shortcuts-extender:heading-1": [
     {
       "modifiers": [
@@ -633,5 +623,23 @@
   "shortcuts-extender:shortcut-percent": [],
   "shortcuts-extender:shortcut-hash": [],
   "shortcuts-extender:shortcut-ampersand": [],
-  "shortcuts-extender:shortcut-dollar": []
+  "shortcuts-extender:shortcut-dollar": [],
+  "obsidian-hider:toggle-tab-containers": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ]
 }

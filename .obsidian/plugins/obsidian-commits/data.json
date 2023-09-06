@@ -119,11 +119,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-ref/templates/t-persona.md": {
-      "size": 39,
-      "tags": 1,
-      "links": 0
-    },
     "04-ref/templates/t-movie.md": {
       "size": 345,
       "tags": 2,
@@ -176,7 +171,7 @@
     },
     "04-ref/personas/Marianne Amacher.md": {
       "size": 56,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-ref/personas/Stuart Russell.md": {
@@ -226,17 +221,17 @@
     },
     "04-ref/personas/Dennis Smalley.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-ref/personas/Cecila Arditto.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-ref/personas/Carlos Trilnik.md": {
       "size": 62,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-ref/obras/Boid Simulation.md": {
@@ -1094,11 +1089,6 @@
       "tags": 1,
       "links": 0
     },
-    "00-in/11.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/obras.in MOC.md": {
       "size": 95,
       "tags": 0,
@@ -1108,13 +1098,18 @@
       "size": 25508,
       "tags": 1,
       "links": 0
+    },
+    "04-ref/templates/t-persona.md": {
+      "size": 39,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 79,
+      "Refactor": 84,
       "Create": 121,
-      "Link": 116,
+      "Link": 122,
       "Expand": 6
     }
   },
@@ -1131,8 +1126,8 @@
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 16,
-      "12": 11,
+      "11": 17,
+      "12": 21,
       "13": 12,
       "14": 3,
       "15": 4,
@@ -1150,7 +1145,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 253,
+      "Wed": 264,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1253,9 +1248,16 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
         "<a class=\"internal-link\" href=\"00-in/obras.in MOC.md\"> obras.in MOC </a>",
-        "<a class=\"internal-link\" href=\"image/sistemas.excalidraw.md\"> sistemas.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"image/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
@@ -1301,12 +1303,7 @@
         "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -1350,7 +1347,8 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/dramaturgia.md\"> dramaturgia </a>",
-        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1374,16 +1372,19 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Removed Tags from": [
-        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ]
     }
   },

@@ -567,6 +567,54 @@
     {
       "path": "00-in/dramaturgia.md",
       "filename": "dramaturgia"
+    },
+    {
+      "path": "00-in/personas MOC.md",
+      "filename": "personas MOC"
+    },
+    {
+      "path": "04-ref/personas/Hito Steyerl.md",
+      "filename": "Hito Steyerl"
+    },
+    {
+      "path": "04-ref/personas/Marianne Amacher.md",
+      "filename": "Marianne Amacher"
+    },
+    {
+      "path": "04-ref/personas/Yotam Mann.md",
+      "filename": "Yotam Mann"
+    },
+    {
+      "path": "04-ref/personas/Yuval Harari.md",
+      "filename": "Yuval Harari"
+    },
+    {
+      "path": "04-ref/personas/Carlos Trilnik.md",
+      "filename": "Carlos Trilnik"
+    },
+    {
+      "path": "04-ref/templates/t-persona.md",
+      "filename": "t-persona"
+    },
+    {
+      "path": "04-ref/personas/Cecila Arditto.md",
+      "filename": "Cecila Arditto"
+    },
+    {
+      "path": "04-ref/personas/Dennis Smalley.md",
+      "filename": "Dennis Smalley"
+    },
+    {
+      "path": "04-ref/topoi/Arte participativo.md",
+      "filename": "Arte participativo"
+    },
+    {
+      "path": "04-ref/topoi/Arte relacional.md",
+      "filename": "Arte relacional"
+    },
+    {
+      "path": "04-ref/topoi/Augmented Cognition.md",
+      "filename": "Augmented Cognition"
     }
   ]
 }

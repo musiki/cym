@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d639ef15a7e7a39",
+        "id": "10bc8b0b4b9fafd0",
         "type": "tabs",
         "children": [
           {
-            "id": "1d885101d22dab06",
+            "id": "b065a4f7b098ccc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/org/i-theremin.md",
+                "file": "00-in/topoi MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/org/i-theremin.md"
+                "file": "00-in/topoi MOC.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/org/i-theremin.md",
+                "file": "00-in/topoi MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-mat/org/i-theremin.md",
+                "file": "00-in/topoi MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 293.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,35 +225,35 @@
       "obsidian-review-notes-plugin:View Recent Notes": false
     }
   },
-  "active": "1d885101d22dab06",
+  "active": "b065a4f7b098ccc1",
   "lastOpenFiles": [
-    "02-mat/org/i-sackbut.md",
-    "02-mat/rant.md",
-    "02-mat/que es git.md",
-    "02-mat/html.md",
-    "02-mat/cloud ides.md",
-    "Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md",
-    "image/sistemas.excalidraw.md",
-    "00-in/obras.in MOC.md",
-    "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
-    "00-in/dramaturgia.md",
-    "00-in/obras MOC.md",
-    "image/gal.md",
-    "00-in/11.md",
-    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
-    "00-in/proyectos MOC.md",
-    "01-proj/16/juan/Instalación.md",
-    "01-proj/15/bergaglio/Supernova luna llena.md",
-    "01-proj/16/lopez/Trazo 5.md",
-    "04-ref/topoi/Música Visual.md",
+    "04-ref/topoi/Augmented Cognition.md",
     "00-in/topoi MOC.md",
+    "04-ref/topoi/Arte relacional.md",
+    "04-ref/topoi/Arte participativo.md",
     "00-in/cym MOC.md",
-    "00-in/hd-hydra.md",
-    "00-in/languages.md",
-    "00-in/personas MOC.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
     "00-in/bib MOC.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/Proto-Indo-European.md",
+    "00-in/combinational creativity.md",
+    "00-in/personas MOC.md",
+    "04-ref/personas/Dick Raaijmakers.md",
+    "04-ref/personas/Yuval Harari.md",
+    "04-ref/personas/Donna Haraway.md",
+    "04-ref/personas/Dennis Smalley.md",
+    "00-in/obras MOC.md",
+    "04-ref/personas/Cecila Arditto.md",
+    "04-ref/templates/t-persona.md",
+    "04-ref/personas/Carlos Trilnik.md",
+    "04-ref/espacios/Academy of Fine Arts Vienna.md",
+    "04-ref/personas/Yotam Mann.md",
+    "04-ref/personas/Marianne Amacher.md",
+    "04-ref/personas/Hito Steyerl.md",
+    "00-in/memex.md",
+    "00-in/obras.in MOC.md",
+    "00-in/languages.md",
+    "00-in/hi augmentation.md",
+    "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
     "image/Pasted image 20230829230127.png",
     "01-proj/23/Zaracho",
     "01-proj/22/mico",
