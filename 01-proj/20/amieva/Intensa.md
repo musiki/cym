@@ -2,7 +2,7 @@
 type: project
 author: Juan Amieva
 tags: proyectual
-publish: 2021
+publish: 2020
 ---
 ## Síntesis:
 

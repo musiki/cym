@@ -2,7 +2,7 @@
 type: project
 author: Luca Belotti
 tags: proyectual
-publish: 2021
+publish: 2020
 ---
 # Descrpción
 Soundchess es un juego que replantea la relación entre interfaz y percepción, al mismo tiempo que entre sentidos y aten- ción.  
