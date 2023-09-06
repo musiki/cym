@@ -30,7 +30,7 @@
       "links": 3
     },
     "04-ref/topoi/Sistemas complejos.md": {
-      "size": 2715,
+      "size": 3871,
       "tags": 3,
       "links": 2
     },
@@ -1111,7 +1111,7 @@
     },
     "04-ref/topoi/Música y Política.md": {
       "size": 6553,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
@@ -1119,8 +1119,8 @@
     "/": {
       "Refactor": 92,
       "Create": 125,
-      "Link": 123,
-      "Expand": 8
+      "Link": 124,
+      "Expand": 9
     }
   },
   "dailyCommits": {
@@ -1139,7 +1139,7 @@
       "11": 17,
       "12": 21,
       "13": 26,
-      "14": 4,
+      "14": 6,
       "15": 4,
       "16": 17,
       "17": 0,
@@ -1155,7 +1155,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 279,
+      "Wed": 281,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1172,7 +1172,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Untitled.md\"> Untitled </a>",
@@ -1271,6 +1272,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música y Política.md\"> Música y Política </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
@@ -1320,8 +1322,7 @@
         "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>",
         "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>"
       ],
       "Refactored": [],
       "Deleted": [

@@ -3,6 +3,7 @@ type: topoi
 tags: complejidad,cym,topoi
 unit: 33
 author: zztt
+banner: https://annex.exploratorium.edu/complexity/CompLexicon/sfi.gif
 ---
 
 ## [[Craig Reynols]] [[Boid Simulation]]
@@ -27,18 +28,18 @@ Ejemplos en la naturaleza:
 
 1.  flocking behaivurs of birds
 
-https://www.youtube.com/watch?v=uV54oa0SyMc
+<iframe title="Starling murmuration 2020 #Geldermalsen" src="https://www.youtube.com/embed/uV54oa0SyMc?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 1.  social behaviour of humans
 
-https://www.youtube.com/watch?v=dR5G5SNI5T4
+<iframe title="Oasys Software - MassMotion, The World's Most Advanced Crowd Simulation Software" src="https://www.youtube.com/embed/dR5G5SNI5T4?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 1.  firefly flashing:
     
-    https://www.youtube.com/watch?v=_pwXKKaSJ58
+<iframe title="Photuris - Synchronous Fireflies of Congaree National Park" src="https://www.youtube.com/embed/_pwXKKaSJ58?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
     
 
-https://www.youtube.com/watch?v=lzkOFJMI5i8
+<iframe title="Steve Reich - Clapping Music (Scrolling)" src="https://www.youtube.com/embed/lzkOFJMI5i8?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 ## m x n^2
 
@@ -48,7 +49,7 @@ https://www.youtube.com/watch?v=lzkOFJMI5i8
     
     1.  R-pentomino de Game of Life
         
-        https://www.youtube.com/watch?v=bTPN3spiq1I
+<iframe title="Game of Life: R-pentomino" src="https://www.youtube.com/embed/bTPN3spiq1I?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
         
 2.  Emergencia como el equilibro entre orden total y caos total (o azar total)
     
