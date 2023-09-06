@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "985ebca7747dd08f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
+                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/23/bassino/Música y arte visual.md"
               }
             }
           },
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/bassino/Música y arte visual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/bassino/Música y arte visual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,8 +216,19 @@
       "obsidian-review-notes-plugin:View Recent Notes": false
     }
   },
-  "active": "985ebca7747dd08f",
+  "active": "1d885101d22dab06",
   "lastOpenFiles": [
+    "00-in/musica y arte visual_ bassino_topoi.md",
+    "00-in/obras MOC.md",
+    "00-in/personas MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/proyectos MOC.md",
+    "00-in/topoi MOC.md",
+    "image/gal.md",
+    "image/galanter.jpeg",
+    "image/gallery.md",
+    "image/Pasted image 20230829223415.png",
+    "00-in/Música expandida MOC.md",
     "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
     "conflict-files-obsidian-git.md",
     "README.md",
@@ -252,8 +249,6 @@
     "04-ref/templates/conflict-files-obsidian-git.md",
     "04-ref/templates/conflict-files-obsidian-git 2.md",
     "04-ref/topoi/Forma Musical.md",
-    "00-in/Música expandida MOC.md",
-    "00-in/topoi MOC.md",
     "04-ref/topoi/Intervencion del espacio público.md",
     "01-proj/23/bassino/Música y arte visual.md",
     "01-proj/23/beltrame/beltrame POC.md",
@@ -261,23 +256,15 @@
     "00-in/Sin título 1.md",
     "00-in/Sin título.md",
     "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
-    "00-in/musica y arte visual_ bassino_topoi.md",
     "00-in/Música y arte visual.md",
-    "00-in/bib MOC.md",
-    "00-in/proyectos MOC.md",
-    "00-in/Proto-Indo-European.md",
-    "00-in/personas MOC.md",
-    "00-in/obras MOC.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829223230.png",
-    "image/Pasted image 20230829223415.png",
     "image/Pasted image 20230829224100.png",
     "image/Pasted image 20230829224222.png",
     "image/Pasted image 20230829224242.png",
     "image/Pasted image 20230829224353.png",
     "image/Pasted image 20230829224438.png",
     "image/Pasted image 20230829225649.png",
-    "image/Pasted image 20230829230008.png",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

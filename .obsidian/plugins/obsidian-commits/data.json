@@ -4,11 +4,6 @@
     "/"
   ],
   "filesCheckpoint": {
-    "image/gallery.md": {
-      "size": 70,
-      "tags": 0,
-      "links": 0
-    },
     "README.md": {
       "size": 94841,
       "tags": 0,
@@ -793,12 +788,17 @@
       "size": 10554,
       "tags": 0,
       "links": 4
+    },
+    "image/gal.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 59,
-      "Create": 41,
+      "Refactor": 60,
+      "Create": 42,
       "Link": 39,
       "Expand": 4
     }
@@ -813,7 +813,7 @@
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 1,
+      "8": 3,
       "9": 0,
       "10": 1,
       "11": 16,
@@ -835,7 +835,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 74,
+      "Wed": 76,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -891,7 +891,8 @@
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"image/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -975,7 +976,8 @@
         "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
