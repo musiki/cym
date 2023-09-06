@@ -506,14 +506,6 @@
   "editor:toggle-checklist-status": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "obsidian-outliner:system-info": [],
-  "obsidian-collapse-all-plugin:toggle-tag": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
-    }
-  ],
   "obsidian-book-search-plugin:open-book-search-modal": [
     {
       "modifiers": [

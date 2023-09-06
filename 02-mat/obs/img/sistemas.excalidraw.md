@@ -126,8 +126,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		},
 		{
 			"type": "arrow",
-			"version": 1222,
-			"versionNonce": 969173075,
+			"version": 1223,
+			"versionNonce": 1753903463,
 			"isDeleted": false,
 			"id": "Y5Oh10H9OAb_GYWSxxA88",
 			"fillStyle": "hachure",
@@ -149,13 +149,13 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692202530115,
+			"updated": 1694010732951,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "t6gLaz82VWCg1DlzEqCSn",
-				"focus": 0.024145018404445655,
-				"gap": 2.357421875
+				"gap": 2.357421875,
+				"focus": 0.024145018404445655
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -207,7 +207,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "S",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "text",
@@ -244,7 +244,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "E",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "arrow",
@@ -330,8 +330,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		},
 		{
 			"type": "text",
-			"version": 826,
-			"versionNonce": 119438813,
+			"version": 827,
+			"versionNonce": 278723721,
 			"isDeleted": false,
 			"id": "KxQH58qN",
 			"fillStyle": "hachure",
@@ -340,8 +340,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1791.9689631011847,
-			"y": -3121.2236907047363,
+			"x": -1791.9689631011845,
+			"y": -3121.223690704737,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 13.55999755859375,
@@ -351,7 +351,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692202529509,
+			"updated": 1694010732954,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -363,7 +363,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": "lOBcJOXdfiHoD19Dub1cS",
 			"originalText": "R",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "rectangle",
@@ -442,8 +442,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		},
 		{
 			"type": "arrow",
-			"version": 1181,
-			"versionNonce": 22231645,
+			"version": 1182,
+			"versionNonce": 287681671,
 			"isDeleted": false,
 			"id": "LT7mOUeSHiULtiuvGRraJ",
 			"fillStyle": "hachure",
@@ -452,11 +452,11 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1723.8720941989181,
+			"x": -1723.8720941989184,
 			"y": -2523.0786792515473,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 117.49218749999997,
+			"width": 117.4921875000002,
 			"height": 1.154313205219779,
 			"seed": 1625279121,
 			"groupIds": [],
@@ -465,13 +465,13 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692202530115,
+			"updated": 1694010732956,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "inkQhLqM2E_uqk6o8WNHh",
-				"focus": 0.024145018404452014,
-				"gap": 2.357421875
+				"gap": 2.357421875,
+				"focus": 0.024145018404452014
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -483,7 +483,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 					0
 				],
 				[
-					117.49218749999997,
+					117.4921875000002,
 					-1.154313205219779
 				]
 			]
@@ -523,7 +523,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "S",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "arrow",
@@ -609,8 +609,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		},
 		{
 			"type": "text",
-			"version": 1016,
-			"versionNonce": 1346774877,
+			"version": 1017,
+			"versionNonce": 1052672873,
 			"isDeleted": false,
 			"id": "URy0j5zz",
 			"fillStyle": "hachure",
@@ -619,8 +619,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1798.6538766308872,
-			"y": -2676.4001102419516,
+			"x": -1798.6538766308875,
+			"y": -2676.400110241952,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 48.59999084472656,
@@ -630,7 +630,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692202529509,
+			"updated": 1694010732958,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -642,7 +642,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": "HrM-TSY6VQkUvEdvnvV2e",
 			"originalText": "+ ^ \nE > 1",
 			"lineHeight": 1.25,
-			"baseline": 43
+			"baseline": 42
 		},
 		{
 			"type": "rectangle",
@@ -725,8 +725,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		},
 		{
 			"type": "arrow",
-			"version": 993,
-			"versionNonce": 1549395443,
+			"version": 994,
+			"versionNonce": 13381193,
 			"isDeleted": false,
 			"id": "f8__cFhj95Ppw0QMeRbU_",
 			"fillStyle": "hachure",
@@ -739,8 +739,8 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"y": -3397.349203394267,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 128.90608701399248,
-			"height": 0.431883299994297,
+			"width": 128.9060870139922,
+			"height": 0.43188329999384223,
 			"seed": 1579051485,
 			"groupIds": [],
 			"frameId": null,
@@ -748,14 +748,14 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692202530115,
+			"updated": 1694010732959,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
 			"endBinding": {
 				"elementId": "euNgRYGJlMi8s-k5_PlW5",
-				"focus": 0.023855271505607883,
-				"gap": 2.624094995210271
+				"gap": 2.624094995210271,
+				"focus": 0.023855271505607883
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -766,15 +766,15 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 					0
 				],
 				[
-					128.90608701399248,
-					0.431883299994297
+					128.9060870139922,
+					0.43188329999384223
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 1168,
-			"versionNonce": 454420157,
+			"version": 1169,
+			"versionNonce": 1961657255,
 			"isDeleted": false,
 			"id": "M7AoFBWqZShhgoYVzG-Pl",
 			"fillStyle": "hachure",
@@ -796,13 +796,13 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692202530116,
+			"updated": 1694010732959,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "euNgRYGJlMi8s-k5_PlW5",
-				"focus": 0.024149074720185047,
-				"gap": 2.5336124454474884
+				"gap": 2.5336124454474884,
+				"focus": 0.024149074720185047
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -854,7 +854,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "S",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "text",
@@ -891,7 +891,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "E",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "text",
@@ -928,7 +928,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "un sistema simple consta de una (E)ntrada, \nuna (T)ransformación y una (S)alida.",
 			"lineHeight": 1.25,
-			"baseline": 43
+			"baseline": 42
 		},
 		{
 			"type": "line",
@@ -1009,7 +1009,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "un primer paso de complejización ocurre con una realimentación\n(R) de la salida a la entrada. Este es el principio de la \nrecursión, aplicada a la vida, el feedback-loop de audio, etc.",
 			"lineHeight": 1.25,
-			"baseline": 68
+			"baseline": 67
 		},
 		{
 			"type": "line",
@@ -1090,7 +1090,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "E",
 			"lineHeight": 1.25,
-			"baseline": 18
+			"baseline": 17
 		},
 		{
 			"type": "text",
@@ -1127,7 +1127,7 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 			"containerId": null,
 			"originalText": "un tercer paso de complejización es cuando la realimentación es\ncondicional, por atributos de histérisis, o lógicos. ",
 			"lineHeight": 1.25,
-			"baseline": 43
+			"baseline": 42
 		}
 	],
 	"appState": {
@@ -1145,10 +1145,10 @@ recursión, aplicada a la vida, el feedback-loop de audio, etc. ^INAWwT3a
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": null,
-		"scrollX": 2238.375250619199,
-		"scrollY": 3817.1431855581827,
+		"scrollX": 2374.240932585345,
+		"scrollY": 3484.9037649852658,
 		"zoom": {
-			"value": 0.1
+			"value": 0.75
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

@@ -3,7 +3,7 @@
 
 ```dataview
 Table  without ID("![|100](" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags as tagsm ,unit
-FROM "04-ref/topoi"
+FROM "04-out/topoi"
 SORT Status DESC
 ```
 
@@ -101,3 +101,4 @@ note: electronic music is part of media art, where the artistic subject concentr
 [[sc-supercollider]]
 [[sib-sibelius manuscript]]
 [[que es git]]
+e

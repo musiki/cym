@@ -5,15 +5,15 @@
       "filename": "topoi MOC"
     },
     {
-      "path": "04-ref/topoi/Introducción a la psicoacústica.md",
+      "path": "04-out/topoi/Introducción a la psicoacústica.md",
       "filename": "Introducción a la psicoacústica"
     },
     {
-      "path": "04-ref/meta-aprendizaje.md",
+      "path": "00-in/meta-aprendizaje.md",
       "filename": "meta-aprendizaje"
     },
     {
-      "path": "04-ref/a-plugins.md",
+      "path": "02-mat/obs/help/a-plugins.md",
       "filename": "a-plugins"
     },
     {
@@ -21,11 +21,11 @@
       "filename": "cym-metamap"
     },
     {
-      "path": "04-ref/espacios/EAT Experiments in arts and technologies.md",
+      "path": "04-out/espacios/EAT Experiments in arts and technologies.md",
       "filename": "EAT Experiments in arts and technologies"
     },
     {
-      "path": "04-ref/personas/Dick Raaijmakers.md",
+      "path": "04-out/personas/Dick Raaijmakers.md",
       "filename": "Dick Raaijmakers"
     },
     {
@@ -33,7 +33,7 @@
       "filename": "tp01-topoi"
     },
     {
-      "path": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
+      "path": "04-out/bibliografía/Steyerl_Los condenados de la pantalla.md",
       "filename": "Steyerl_Los condenados de la pantalla"
     },
     {
@@ -65,7 +65,7 @@
       "filename": "Steyerl_Los condenados de la pantalla-1693776235118"
     },
     {
-      "path": "image/Maura McDonnell topoi.docx",
+      "path": "02-mat/obs/img/Maura McDonnell topoi.docx",
       "filename": "Maura McDonnell topoi"
     },
     {
@@ -73,11 +73,11 @@
       "filename": "conflict-files-obsidian-git"
     },
     {
-      "path": "04-ref/topoi/Forma Musical.md",
+      "path": "04-out/topoi/Forma Musical.md",
       "filename": "Forma Musical"
     },
     {
-      "path": "04-ref/templates/t-class.md",
+      "path": "02-mat/obs/tpl/t-class.md",
       "filename": "t-class"
     },
     {
@@ -197,11 +197,11 @@
       "filename": "27 stockhausen c"
     },
     {
-      "path": "image/gal.md",
+      "path": "02-mat/obs/img/gal.md",
       "filename": "gal"
     },
     {
-      "path": "00-in/cym MOC.md",
+      "path": "04-out/cym MOC.md",
       "filename": "cym MOC"
     },
     {
@@ -489,7 +489,7 @@
       "filename": "synth-grid"
     },
     {
-      "path": "04-ref/topoi/Música y Política.md",
+      "path": "04-out/topoi/Música y Política.md",
       "filename": "Música y Política"
     },
     {
@@ -513,39 +513,39 @@
       "filename": "c-cym06-flex-grid"
     },
     {
-      "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+      "path": "04-out/bibliografía/Boris Groys_Arte y flujo.md",
       "filename": "Boris Groys_Arte y flujo"
     },
     {
-      "path": "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+      "path": "04-out/bibliografía/Eduardo Kac_Signs of Life.md",
       "filename": "Eduardo Kac_Signs of Life"
     },
     {
-      "path": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+      "path": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
       "filename": "Eric Sadin_La humanidad aumentada"
     },
     {
-      "path": "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+      "path": "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
       "filename": "Myriam Robayo Pedraza_La canción social como expresión de inconformismo"
     },
     {
-      "path": "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+      "path": "04-out/topoi/La instalación como forma del arte contemporáneo.md",
       "filename": "La instalación como forma del arte contemporáneo"
     },
     {
-      "path": "04-ref/topoi/La reología del arte.md",
+      "path": "04-out/topoi/La reología del arte.md",
       "filename": "La reología del arte"
     },
     {
-      "path": "04-ref/topoi/Música Visual.md",
+      "path": "04-out/topoi/Música Visual.md",
       "filename": "Música Visual"
     },
     {
-      "path": "04-ref/topoi/Racionalizacion_(videojuegos).md",
+      "path": "04-out/topoi/Racionalizacion_(videojuegos).md",
       "filename": "Racionalizacion_(videojuegos)"
     },
     {
-      "path": "04-ref/templates/t-topoi.md",
+      "path": "02-mat/obs/tpl/t-topoi.md",
       "filename": "t-topoi"
     },
     {
@@ -573,95 +573,95 @@
       "filename": "personas MOC"
     },
     {
-      "path": "04-ref/personas/Hito Steyerl.md",
+      "path": "04-out/personas/Hito Steyerl.md",
       "filename": "Hito Steyerl"
     },
     {
-      "path": "04-ref/personas/Marianne Amacher.md",
+      "path": "04-out/personas/Marianne Amacher.md",
       "filename": "Marianne Amacher"
     },
     {
-      "path": "04-ref/personas/Yotam Mann.md",
+      "path": "04-out/personas/Yotam Mann.md",
       "filename": "Yotam Mann"
     },
     {
-      "path": "04-ref/personas/Yuval Harari.md",
+      "path": "04-out/personas/Yuval Harari.md",
       "filename": "Yuval Harari"
     },
     {
-      "path": "04-ref/personas/Carlos Trilnik.md",
+      "path": "04-out/personas/Carlos Trilnik.md",
       "filename": "Carlos Trilnik"
     },
     {
-      "path": "04-ref/templates/t-persona.md",
+      "path": "02-mat/obs/tpl/t-persona.md",
       "filename": "t-persona"
     },
     {
-      "path": "04-ref/personas/Cecila Arditto.md",
+      "path": "04-out/personas/Cecila Arditto.md",
       "filename": "Cecila Arditto"
     },
     {
-      "path": "04-ref/personas/Dennis Smalley.md",
+      "path": "04-out/personas/Dennis Smalley.md",
       "filename": "Dennis Smalley"
     },
     {
-      "path": "04-ref/topoi/Arte participativo.md",
+      "path": "04-out/topoi/Arte participativo.md",
       "filename": "Arte participativo"
     },
     {
-      "path": "04-ref/topoi/Arte relacional.md",
+      "path": "04-out/topoi/Arte relacional.md",
       "filename": "Arte relacional"
     },
     {
-      "path": "04-ref/topoi/Augmented Cognition.md",
+      "path": "04-out/topoi/Augmented Cognition.md",
       "filename": "Augmented Cognition"
     },
     {
-      "path": "04-ref/topoi/Cuarta Revolución Industrial.md",
+      "path": "04-out/topoi/Cuarta Revolución Industrial.md",
       "filename": "Cuarta Revolución Industrial"
     },
     {
-      "path": "04-ref/topoi/Espacio.md",
+      "path": "04-out/topoi/Espacio.md",
       "filename": "Espacio"
     },
     {
-      "path": "04-ref/topoi/Filosofía 21.md",
+      "path": "04-out/topoi/Filosofía 21.md",
       "filename": "Filosofía 21"
     },
     {
-      "path": "04-ref/topoi/Filosofía histórica.md",
+      "path": "04-out/topoi/Filosofía histórica.md",
       "filename": "Filosofía histórica"
     },
     {
-      "path": "04-ref/topoi/Internetmusic.md",
+      "path": "04-out/topoi/Internetmusic.md",
       "filename": "Internetmusic"
     },
     {
-      "path": "04-ref/topoi/Generatividad.md",
+      "path": "04-out/topoi/Generatividad.md",
       "filename": "Generatividad"
     },
     {
-      "path": "04-ref/topoi/Sistemas de universos.md",
+      "path": "04-out/topoi/Sistemas de universos.md",
       "filename": "Sistemas de universos"
     },
     {
-      "path": "04-ref/topoi/Spectromorphology.md",
+      "path": "04-out/topoi/Spectromorphology.md",
       "filename": "Spectromorphology"
     },
     {
-      "path": "04-ref/topoi/Vida artificial.md",
+      "path": "04-out/topoi/Vida artificial.md",
       "filename": "Vida artificial"
     },
     {
-      "path": "04-ref/topoi/Livecoding.md",
+      "path": "04-out/topoi/Livecoding.md",
       "filename": "Livecoding"
     },
     {
-      "path": "04-ref/topoi/Humanos.md",
+      "path": "04-out/topoi/Humanos.md",
       "filename": "Humanos"
     },
     {
-      "path": "04-ref/topoi/Virtualidad y realidad.md",
+      "path": "04-out/topoi/Virtualidad y realidad.md",
       "filename": "Virtualidad y realidad"
     },
     {
@@ -681,7 +681,7 @@
       "filename": "shifres POC"
     },
     {
-      "path": "04-ref/topoi/Intervencion del espacio público.md",
+      "path": "04-out/topoi/Intervencion del espacio público.md",
       "filename": "Intervencion del espacio público"
     },
     {
@@ -693,28 +693,60 @@
       "filename": "zaracho POC"
     },
     {
-      "path": "04-ref/topoi/Sistemas complejos.md",
+      "path": "04-out/topoi/Sistemas complejos.md",
       "filename": "Sistemas complejos"
     },
     {
-      "path": "04-ref/topoi/Método científico.md",
+      "path": "04-out/topoi/Método científico.md",
       "filename": "Método científico"
     },
     {
-      "path": "04-ref/topoi/Interfaces.md",
+      "path": "04-out/topoi/Interfaces.md",
       "filename": "Interfaces"
     },
     {
-      "path": "04-ref/topoi/Azar.md",
+      "path": "04-out/topoi/Azar.md",
       "filename": "Azar"
     },
     {
-      "path": "04-ref/topoi/Fragile Territories.md",
+      "path": "04-out/topoi/Fragile Territories.md",
       "filename": "Fragile Territories"
     },
     {
-      "path": "04-ref/topoi/Física.md",
+      "path": "04-out/topoi/Física.md",
       "filename": "Física"
+    },
+    {
+      "path": "04-out/personas/Dennis Fabian Peter.md",
+      "filename": "Dennis Fabian Peter"
+    },
+    {
+      "path": "00-in/test.md",
+      "filename": "test"
+    },
+    {
+      "path": "00-in/Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival.md",
+      "filename": "Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival"
+    },
+    {
+      "path": "00-in/cym pub.md",
+      "filename": "cym pub"
+    },
+    {
+      "path": "02-mat/obs/img/sistemas.excalidraw.md",
+      "filename": "sistemas.excalidraw"
+    },
+    {
+      "path": "02-mat/Untitled.md",
+      "filename": "Untitled"
+    },
+    {
+      "path": "02-mat/obs/help/a-dataview playground.md",
+      "filename": "a-dataview playground"
+    },
+    {
+      "path": "02-mat/obs/Untitled.loom",
+      "filename": "Untitled"
     }
   ]
 }

@@ -114,7 +114,11 @@
     "hydra": 107,
     "mousetrap": 108,
     "flex": 109,
-    "grid": 110
+    "grid": 110,
+    "interactivity": 111,
+    "installation": 112,
+    "architecture": 113,
+    "-": 114
   },
   "_version": 2
 }

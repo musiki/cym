@@ -129,7 +129,7 @@ https://experiments.withgoogle.com/ai-duet
 
 ## azar
 
-![[04-ref/topoi/Azar]]
+![[04-out/topoi/Azar]]
 
 
 --
