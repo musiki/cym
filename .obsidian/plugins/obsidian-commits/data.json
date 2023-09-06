@@ -547,7 +547,7 @@
     "01-proj/tp/tp01-topoi.md": {
       "size": 1171,
       "tags": 1,
-      "links": 1
+      "links": 2
     },
     "01-proj/tp/prueba tutorial.md": {
       "size": 200,
@@ -618,11 +618,6 @@
       "size": 55,
       "tags": 1,
       "links": 1
-    },
-    "01-proj/23/bassino/bassino POC.md": {
-      "size": 106,
-      "tags": 0,
-      "links": 0
     },
     "01-proj/23/Petroccelli/petrocelli POC.md": {
       "size": 115,
@@ -783,14 +778,29 @@
       "size": 40,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Música y arte visual.md": {
+      "size": 40,
+      "tags": 0,
+      "links": 1
+    },
+    "00-in/musica y arte visual_ bassino_topoi.md": {
+      "size": 10561,
+      "tags": 0,
+      "links": 4
+    },
+    "01-proj/23/bassino/Música y arte visual.md": {
+      "size": 10554,
+      "tags": 0,
+      "links": 4
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 50,
-      "Create": 33,
-      "Link": 32,
-      "Expand": 3
+      "Refactor": 59,
+      "Create": 41,
+      "Link": 39,
+      "Expand": 4
     }
   },
   "dailyCommits": {
@@ -803,11 +813,11 @@
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 0,
+      "8": 1,
       "9": 0,
       "10": 1,
       "11": 16,
-      "12": 10,
+      "12": 11,
       "13": 12,
       "14": 3,
       "15": 4,
@@ -817,19 +827,19 @@
       "19": 0,
       "20": 0,
       "21": 6,
-      "22": 16,
-      "23": 14
+      "22": 19,
+      "23": 34
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 0,
-      "Tue": 14,
-      "Wed": 73,
+      "Mon": 7,
+      "Tue": 15,
+      "Wed": 74,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
-      "Sun": 3
+      "Sun": 19
     }
   },
   "recentCommits": {
@@ -837,7 +847,8 @@
       "Expanded": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/texto 1.md\"> texto 1 </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
@@ -872,7 +883,15 @@
         "<a class=\"internal-link\" href=\"00-in/t61-internetmusic.md\"> t61-internetmusic </a>",
         "<a class=\"internal-link\" href=\"00-in/Arte participativo.md\"> Arte participativo </a>",
         "<a class=\"internal-link\" href=\"00-in/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
-        "<a class=\"internal-link\" href=\"00-in/John Cage.md\"> John Cage </a>"
+        "<a class=\"internal-link\" href=\"00-in/John Cage.md\"> John Cage </a>",
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -928,7 +947,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -949,7 +969,13 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
         "<a class=\"internal-link\" href=\"03-cla/03-cla_Glossary.md\"> 03-cla_Glossary </a>",
         "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi 2.md\"> t-topoi 2 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/bassino POC.md\"> bassino POC </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -962,11 +988,21 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ],
-      "Removed Tags from": [],
+      "Removed Tags from": [
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
+      ],
       "Removed Links from": [
-        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>"
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ]
     }
   },

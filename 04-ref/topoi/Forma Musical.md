@@ -22,8 +22,7 @@ Sin embargo, Ligeti afirma que existe una contradicción en la música contempor
 Ésta división es lo que llevó a una desconexión entre el proceso de composición y la interpretación final de la obra, que da como resultado la contradicción ya mencionada entre forma deseada y forma efectiva. Al introducir conceptos abstractos y técnicas como las constelaciones estructurales o el uso del azar en la creación musical, la performación ganó peso y tendió a absorber la fase de composición misma. El enfoque a la hora de componer no se encuentra en la relación de los materiales para generar una estructura, sino más bien en una organización abstracta y conceptual. A medida que la música se comenzó a complejizar, la intencionalidad detrás de la creación musical y su estructura se debilitaron. En este contexto, Ligeti compara la música serial y el uso del azar, como ejemplos de métodos de composición opuestos, pero que generan una resultante similar: una organización abstracta, en lugar de una relación de materiales que producen una estructura.
 
 
+# referencias
 
 - Ligeti, György, “De la forma musical”, 1969.
     
-
-**
