@@ -199,6 +199,354 @@
     {
       "path": "image/gal.md",
       "filename": "gal"
+    },
+    {
+      "path": "00-in/cym MOC.md",
+      "filename": "cym MOC"
+    },
+    {
+      "path": "00-in/códigos MOC.md",
+      "filename": "códigos MOC"
+    },
+    {
+      "path": "00-in/hd-hydra.md",
+      "filename": "hd-hydra"
+    },
+    {
+      "path": "00-in/memex.md",
+      "filename": "memex"
+    },
+    {
+      "path": "00-in/proyectos MOC.md",
+      "filename": "proyectos MOC"
+    },
+    {
+      "path": "01-proj/15/bergaglio/Supernova luna llena.md",
+      "filename": "Supernova luna llena"
+    },
+    {
+      "path": "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
+      "filename": "En los intersticios de lo causal. El camino es efecto"
+    },
+    {
+      "path": "01-proj/15/drocchi/¿Cómo suena el conocimiento?.md",
+      "filename": "¿Cómo suena el conocimiento?"
+    },
+    {
+      "path": "01-proj/15/ferrando/Tautología.md",
+      "filename": "Tautología"
+    },
+    {
+      "path": "01-proj/15/garcia/En progreso.md",
+      "filename": "En progreso"
+    },
+    {
+      "path": "01-proj/15/garcia fernandez/La sombra de lo abstracto.md",
+      "filename": "La sombra de lo abstracto"
+    },
+    {
+      "path": "01-proj/15/nievas/Drummer.md",
+      "filename": "Drummer"
+    },
+    {
+      "path": "01-proj/15/porrini/Un día bello.md",
+      "filename": "Un día bello"
+    },
+    {
+      "path": "01-proj/16/cuenca/Explosision.md",
+      "filename": "Explosision"
+    },
+    {
+      "path": "01-proj/16/estrada/Cometa.md",
+      "filename": "Cometa"
+    },
+    {
+      "path": "01-proj/16/albarracin/Sonomaze.md",
+      "filename": "Sonomaze"
+    },
+    {
+      "path": "01-proj/16/ferreyra/Juggling music.md",
+      "filename": "Juggling music"
+    },
+    {
+      "path": "01-proj/16/juan/Instalación.md",
+      "filename": "Instalación"
+    },
+    {
+      "path": "01-proj/16/lopez/Trazo 5.md",
+      "filename": "Trazo 5"
+    },
+    {
+      "path": "01-proj/17/arcuri/Sensonorizando.md",
+      "filename": "Sensonorizando"
+    },
+    {
+      "path": "01-proj/17/borsalino/Condensador de eventos.md",
+      "filename": "Condensador de eventos"
+    },
+    {
+      "path": "01-proj/17/herrera/Superficies sonoras blandas.md",
+      "filename": "Superficies sonoras blandas"
+    },
+    {
+      "path": "01-proj/17/julia/Nukzeiber.md",
+      "filename": "Nukzeiber"
+    },
+    {
+      "path": "01-proj/17/lopez/Boreal.md",
+      "filename": "Boreal"
+    },
+    {
+      "path": "01-proj/17/moscato/La forma de la identidad real.md",
+      "filename": "La forma de la identidad real"
+    },
+    {
+      "path": "01-proj/17/navarro/Ajedrez.md",
+      "filename": "Ajedrez"
+    },
+    {
+      "path": "01-proj/17/paladino/No music player.md",
+      "filename": "No music player"
+    },
+    {
+      "path": "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+      "filename": "Compost sonoro"
+    },
+    {
+      "path": "01-proj/18/galetto/Moving sound.md",
+      "filename": "Moving sound"
+    },
+    {
+      "path": "01-proj/18/garella/Dédalo.md",
+      "filename": "Dédalo"
+    },
+    {
+      "path": "01-proj/18/gueglio/Posdata fluidos.md",
+      "filename": "Posdata fluidos"
+    },
+    {
+      "path": "01-proj/18/vivona/Domo.md",
+      "filename": "Domo"
+    },
+    {
+      "path": "01-proj/19/barbaglia/Miradas dirigidas.md",
+      "filename": "Miradas dirigidas"
+    },
+    {
+      "path": "01-proj/19/costa/Canoa atemporal.md",
+      "filename": "Canoa atemporal"
+    },
+    {
+      "path": "01-proj/19/gawel/Metáforas.md",
+      "filename": "Metáforas"
+    },
+    {
+      "path": "01-proj/19/perez rivas/Reproduciéndonos.md",
+      "filename": "Reproduciéndonos"
+    },
+    {
+      "path": "01-proj/20/amieva/Intensa.md",
+      "filename": "Intensa"
+    },
+    {
+      "path": "01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md",
+      "filename": "Librería de Samples Universidad Tres de Febrero"
+    },
+    {
+      "path": "01-proj/20/belotti/Soundchess proyectual tentativo.md",
+      "filename": "Soundchess proyectual tentativo"
+    },
+    {
+      "path": "01-proj/20/bonetto/La verduleria.md",
+      "filename": "La verduleria"
+    },
+    {
+      "path": "01-proj/20/jaramillo/Unísono virtual.md",
+      "filename": "Unísono virtual"
+    },
+    {
+      "path": "01-proj/20/ruiz burtoli/Conexiones código.md",
+      "filename": "Conexiones código"
+    },
+    {
+      "path": "01-proj/20/bonetto/Oscilador de audio con alimentos.md",
+      "filename": "Oscilador de audio con alimentos"
+    },
+    {
+      "path": "01-proj/20/jaramillo/Unísono virtual código.md",
+      "filename": "Unísono virtual código"
+    },
+    {
+      "path": "01-proj/20/ruiz burtoli/Conexiones.md",
+      "filename": "Conexiones"
+    },
+    {
+      "path": "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
+      "filename": "Museo Luminosónico"
+    },
+    {
+      "path": "01-proj/21/kobayashi/Generador random.md",
+      "filename": "Generador random"
+    },
+    {
+      "path": "01-proj/21/marazzi/Collage sonoro app.md",
+      "filename": "Collage sonoro app"
+    },
+    {
+      "path": "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
+      "filename": "App web para generador de TONE FIELDS"
+    },
+    {
+      "path": "01-proj/21/marazzi/Collage sonoro.md",
+      "filename": "Collage sonoro"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+      "filename": "Generador de poemas sonorizados código"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+      "filename": "Generador de poemas sonorizados"
+    },
+    {
+      "path": "01-proj/21/tortorelli/Simon dice.md",
+      "filename": "Simon dice"
+    },
+    {
+      "path": "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+      "filename": "Final CyM - Metrónomo"
+    },
+    {
+      "path": "01-proj/22/ancarola/Generador de Melodías Random.md",
+      "filename": "Generador de Melodías Random"
+    },
+    {
+      "path": "01-proj/22/ancarola/Hola Sonido.md",
+      "filename": "Hola Sonido"
+    },
+    {
+      "path": "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
+      "filename": "Poema Sinfónico para ∞ Metrónomos"
+    },
+    {
+      "path": "01-proj/22/cym exoinstrumento.md",
+      "filename": "cym exoinstrumento"
+    },
+    {
+      "path": "01-proj/22/dure/Resampler.md",
+      "filename": "Resampler"
+    },
+    {
+      "path": "01-proj/22/dure/Sequencer.md",
+      "filename": "Sequencer"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Generador de líneas.md",
+      "filename": "Generador de líneas"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Generador de melodía.md",
+      "filename": "Generador de melodía"
+    },
+    {
+      "path": "01-proj/22/gutierrez/Trazos.md",
+      "filename": "Trazos"
+    },
+    {
+      "path": "01-proj/22/hydra.md",
+      "filename": "hydra"
+    },
+    {
+      "path": "01-proj/22/lopez/Azar.md",
+      "filename": "Azar"
+    },
+    {
+      "path": "01-proj/22/lopez/Gentics.md",
+      "filename": "Gentics"
+    },
+    {
+      "path": "01-proj/22/lopez/Melodia.md",
+      "filename": "Melodia"
+    },
+    {
+      "path": "01-proj/22/lopez/Máquina de ritmos.md",
+      "filename": "Máquina de ritmos"
+    },
+    {
+      "path": "01-proj/22/mico/Dónde está el camino.md",
+      "filename": "Dónde está el camino"
+    },
+    {
+      "path": "01-proj/22/mousetrap.md",
+      "filename": "mousetrap"
+    },
+    {
+      "path": "01-proj/22/synth-flex.md",
+      "filename": "synth-flex"
+    },
+    {
+      "path": "01-proj/22/synth-grid.md",
+      "filename": "synth-grid"
+    },
+    {
+      "path": "01-proj/23/Zaracho/Zaracho.md",
+      "filename": "Zaracho"
+    },
+    {
+      "path": "01-proj/23/bassino/Multi-efecto.md",
+      "filename": "Multi-efecto"
+    },
+    {
+      "path": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+      "filename": "c-cym01-arte y ciencia - estado de la cuestión"
+    },
+    {
+      "path": "03-cla/c-cym04-vida digital.md",
+      "filename": "c-cym04-vida digital"
+    },
+    {
+      "path": "03-cla/c-cym06- cohesión audiovisual.md",
+      "filename": "c-cym06- cohesión audiovisual"
+    },
+    {
+      "path": "03-cla/c-cym06-flex-grid.md",
+      "filename": "c-cym06-flex-grid"
+    },
+    {
+      "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+      "filename": "Boris Groys_Arte y flujo"
+    },
+    {
+      "path": "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
+      "filename": "Eduardo Kac_Signs of Life"
+    },
+    {
+      "path": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+      "filename": "Eric Sadin_La humanidad aumentada"
+    },
+    {
+      "path": "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+      "filename": "Myriam Robayo Pedraza_La canción social como expresión de inconformismo"
+    },
+    {
+      "path": "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+      "filename": "La instalación como forma del arte contemporáneo"
+    },
+    {
+      "path": "04-ref/topoi/La reología del arte.md",
+      "filename": "La reología del arte"
+    },
+    {
+      "path": "04-ref/topoi/Música Visual.md",
+      "filename": "Música Visual"
+    },
+    {
+      "path": "04-ref/topoi/Racionalizacion_(videojuegos).md",
+      "filename": "Racionalizacion_(videojuegos)"
+    },
+    {
+      "path": "04-ref/topoi/t-topoi.md",
+      "filename": "t-topoi"
     }
   ]
 }

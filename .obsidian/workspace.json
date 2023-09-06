@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed0f836b725cc7c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,47 +230,47 @@
       "obsidian-review-notes-plugin:View Recent Notes": false
     }
   },
-  "active": "1d885101d22dab06",
+  "active": "ed0f836b725cc7c1",
   "lastOpenFiles": [
-    "00-in/musica y arte visual_ bassino_topoi.md",
-    "00-in/obras MOC.md",
-    "00-in/personas MOC.md",
-    "00-in/Proto-Indo-European.md",
-    "00-in/proyectos MOC.md",
-    "00-in/topoi MOC.md",
-    "image/gal.md",
-    "image/galanter.jpeg",
-    "image/gallery.md",
-    "image/Pasted image 20230829223415.png",
-    "00-in/Música expandida MOC.md",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "conflict-files-obsidian-git.md",
-    "README.md",
-    "00-in/c-i102-Timbre y Materiales.md",
-    "image/27 stockhausen c.tif",
-    "image/25 stockhausen b.tif",
-    "image/26 diagrama sonido-estr.tif",
-    "image/24 stock a.tif",
-    "04-ref/22 diagrama-sonido-textura.tif",
-    "image/23 diagrama gruppen 17-19.tif",
-    "image/21 Apparitions.tif",
-    "image/20 sequ6b.tif",
-    "image/15 chopin op25.tif",
-    "image/16 Debussy-feux.tif",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym00-presentación.md",
-    "04-ref/templates/t-class.md",
-    "04-ref/templates/conflict-files-obsidian-git.md",
-    "04-ref/templates/conflict-files-obsidian-git 2.md",
-    "04-ref/topoi/Forma Musical.md",
-    "04-ref/topoi/Intervencion del espacio público.md",
     "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "00-in/Sin título 1.md",
-    "00-in/Sin título.md",
+    "conflict-files-obsidian-git.md",
+    "04-ref/topoi/t-topoi.md",
+    "04-ref/topoi/La reología del arte.md",
+    "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+    "03-cla/c-cym06-flex-grid.md",
+    "03-cla/c-cym06- cohesión audiovisual.md",
+    "03-cla/c-cym04-vida digital.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/Zaracho/Zaracho.md",
+    "01-proj/23/Zaracho",
+    "01-proj/22/synth-grid.md",
+    "01-proj/22/synth-flex.md",
+    "01-proj/22/mousetrap.md",
+    "01-proj/22/mico/Dónde está el camino.md",
+    "01-proj/22/mico",
+    "01-proj/22/lopez/Máquina de ritmos.md",
+    "01-proj/22/lopez/Melodia.md",
+    "01-proj/22/lopez/Gentics.md",
+    "01-proj/22/lopez/Azar.md",
+    "01-proj/22/hydra.md",
+    "01-proj/22/gutierrez/Trazos.md",
+    "01-proj/22/gutierrez/Generador de líneas.md",
+    "01-proj/22/dure/Sequencer.md",
+    "01-proj/22/dure/Resampler.md",
+    "01-proj/22/dure",
+    "01-proj/22/cym exoinstrumento.md",
+    "01-proj/21/tortorelli",
+    "01-proj/21/oliva",
+    "01-proj/21/marazzi",
+    "01-proj/21/kobayashi",
+    "01-proj/21/fernandez burzaco",
+    "01-proj/21",
+    "01-proj/20/ruiz burtoli",
+    "image/galanter.jpeg",
+    "image/Pasted image 20230829223415.png",
     "04-ref/Steyerl_Los condenados de la pantalla-1693776235118.jpeg",
-    "00-in/Música y arte visual.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829223230.png",
     "image/Pasted image 20230829224100.png",

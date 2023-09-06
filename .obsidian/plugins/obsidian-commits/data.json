@@ -254,11 +254,6 @@
       "tags": 5,
       "links": 0
     },
-    "04-ref/bibliografía/_Los condenados de la pantalla 2.md": {
-      "size": 2520,
-      "tags": 0,
-      "links": 0
-    },
     "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md": {
       "size": 784,
       "tags": 0,
@@ -339,11 +334,6 @@
       "tags": 0,
       "links": 0
     },
-    "03-cla/c-cym15-vida digital.md": {
-      "size": 9778,
-      "tags": 9,
-      "links": 16
-    },
     "03-cla/c-cym14-un instrumento online colectivo.md": {
       "size": 11934,
       "tags": 8,
@@ -388,16 +378,6 @@
       "size": 3476,
       "tags": 6,
       "links": 0
-    },
-    "03-cla/c-cym05-flex-grid.md": {
-      "size": 598,
-      "tags": 6,
-      "links": 1
-    },
-    "03-cla/c-cym04- cohesión audiovisual.md": {
-      "size": 10646,
-      "tags": 7,
-      "links": 8
     },
     "03-cla/c-cym03 mapas.md": {
       "size": 3691,
@@ -554,26 +534,6 @@
       "tags": 0,
       "links": 1
     },
-    "01-proj/22/lopez/helloworld.md": {
-      "size": 871,
-      "tags": 3,
-      "links": 0
-    },
-    "01-proj/22/lopez/03-Máquina de ritmos.md": {
-      "size": 649,
-      "tags": 3,
-      "links": 0
-    },
-    "01-proj/22/lopez/02-Melodia.md": {
-      "size": 589,
-      "tags": 3,
-      "links": 0
-    },
-    "01-proj/22/lopez/01-Azar.md": {
-      "size": 1274,
-      "tags": 3,
-      "links": 0
-    },
     "01-proj/22/gutierrez/Generador de melodía.md": {
       "size": 625,
       "tags": 3,
@@ -603,16 +563,6 @@
       "size": 1274,
       "tags": 0,
       "links": 0
-    },
-    "01-proj/23/Zaracho.md": {
-      "size": 51,
-      "tags": 0,
-      "links": 0
-    },
-    "01-proj/23/Shifres.md": {
-      "size": 55,
-      "tags": 1,
-      "links": 1
     },
     "01-proj/23/Petroccelli/petrocelli POC.md": {
       "size": 115,
@@ -694,11 +644,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-ref/templates/t-topoi.md": {
-      "size": 49,
-      "tags": 1,
-      "links": 0
-    },
     "04-ref/topoi/Augmented Cognition.md": {
       "size": 0,
       "tags": 1,
@@ -774,16 +719,6 @@
       "tags": 1,
       "links": 0
     },
-    "00-in/Música y arte visual.md": {
-      "size": 40,
-      "tags": 0,
-      "links": 1
-    },
-    "00-in/musica y arte visual_ bassino_topoi.md": {
-      "size": 10561,
-      "tags": 0,
-      "links": 4
-    },
     "01-proj/23/bassino/Música y arte visual.md": {
       "size": 10554,
       "tags": 0,
@@ -793,12 +728,392 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "00-in/códigos MOC.md": {
+      "size": 545,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/hd-hydra.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/memex.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/bergaglio/Supernova luna llena.md": {
+      "size": 15278,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md": {
+      "size": 3645,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/drocchi/¿Cómo suena el conocimiento?.md": {
+      "size": 9984,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/ferrando/Tautología.md": {
+      "size": 12356,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/garcia/En progreso.md": {
+      "size": 17266,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/garcia fernandez/La sombra de lo abstracto.md": {
+      "size": 14410,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/nievas/Drummer.md": {
+      "size": 4095,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/15/porrini/Un día bello.md": {
+      "size": 15771,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/cuenca/Explosision.md": {
+      "size": 6872,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/estrada/Cometa.md": {
+      "size": 6969,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/albarracin/Sonomaze.md": {
+      "size": 9001,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/ferreyra/Juggling music.md": {
+      "size": 7182,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/juan/Instalación.md": {
+      "size": 4292,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/16/lopez/Trazo 5.md": {
+      "size": 11129,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/arcuri/Sensonorizando.md": {
+      "size": 12067,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/borsalino/Condensador de eventos.md": {
+      "size": 22071,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/herrera/Superficies sonoras blandas.md": {
+      "size": 5495,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/julia/Nukzeiber.md": {
+      "size": 11801,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/lopez/Boreal.md": {
+      "size": 17828,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/moscato/La forma de la identidad real.md": {
+      "size": 8613,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/navarro/Ajedrez.md": {
+      "size": 12116,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/17/paladino/No music player.md": {
+      "size": 8372,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md": {
+      "size": 12522,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/18/galetto/Moving sound.md": {
+      "size": 16525,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/18/garella/Dédalo.md": {
+      "size": 9448,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/18/gueglio/Posdata fluidos.md": {
+      "size": 7178,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/18/vivona/Domo.md": {
+      "size": 7604,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/19/barbaglia/Miradas dirigidas.md": {
+      "size": 11977,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/19/costa/Canoa atemporal.md": {
+      "size": 11129,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/19/gawel/Metáforas.md": {
+      "size": 7416,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/19/perez rivas/Reproduciéndonos.md": {
+      "size": 8799,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/amieva/Intensa.md": {
+      "size": 7726,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md": {
+      "size": 5495,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/belotti/Soundchess proyectual tentativo.md": {
+      "size": 17378,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/bonetto/La verduleria.md": {
+      "size": 5432,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/jaramillo/Unísono virtual.md": {
+      "size": 10321,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/ruiz burtoli/Conexiones código.md": {
+      "size": 283,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/bonetto/Oscilador de audio con alimentos.md": {
+      "size": 340,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/jaramillo/Unísono virtual código.md": {
+      "size": 301,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/20/ruiz burtoli/Conexiones.md": {
+      "size": 10577,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/fernandez burzaco/Museo Luminosónico.md": {
+      "size": 17242,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/kobayashi/Generador random.md": {
+      "size": 295,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/marazzi/Collage sonoro app.md": {
+      "size": 302,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/oliva/App web para generador de TONE FIELDS.md": {
+      "size": 5363,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/marazzi/Collage sonoro.md": {
+      "size": 79,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md": {
+      "size": 288,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md": {
+      "size": 8392,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/21/tortorelli/Simon dice.md": {
+      "size": 290,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md": {
+      "size": 6024,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/cym exoinstrumento.md": {
+      "size": 278,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/dure/Resampler.md": {
+      "size": 7054,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/dure/Sequencer.md": {
+      "size": 266,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/gutierrez/Generador de líneas.md": {
+      "size": 293,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/gutierrez/Trazos.md": {
+      "size": 6880,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/hydra.md": {
+      "size": 271,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/lopez/Azar.md": {
+      "size": 1371,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/lopez/Gentics.md": {
+      "size": 6376,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/lopez/Melodia.md": {
+      "size": 739,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/lopez/Máquina de ritmos.md": {
+      "size": 1099,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/mico/Dónde está el camino.md": {
+      "size": 6709,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/mousetrap.md": {
+      "size": 641,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/synth-flex.md": {
+      "size": 454,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/synth-grid.md": {
+      "size": 262,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Zaracho/Zaracho.md": {
+      "size": 6553,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/Multi-efecto.md": {
+      "size": 278,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym04-vida digital.md": {
+      "size": 8531,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym06- cohesión audiovisual.md": {
+      "size": 10646,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym06-flex-grid.md": {
+      "size": 598,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Boris Groys_Arte y flujo.md": {
+      "size": 2157,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md": {
+      "size": 2727,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md": {
+      "size": 645,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/La reología del arte.md": {
+      "size": 301,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t-topoi.md": {
+      "size": 50,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 60,
-      "Create": 42,
+      "Refactor": 74,
+      "Create": 119,
       "Link": 39,
       "Expand": 4
     }
@@ -814,7 +1129,7 @@
       "6": 0,
       "7": 0,
       "8": 3,
-      "9": 0,
+      "9": 91,
       "10": 1,
       "11": 16,
       "12": 11,
@@ -835,7 +1150,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 76,
+      "Wed": 167,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -851,48 +1166,57 @@
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"Harari.md\"> Harari </a>",
-        "<a class=\"internal-link\" href=\"Inteligencia artificial.md\"> Inteligencia artificial </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/paul.md\"> paul </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
-        "<a class=\"internal-link\" href=\"00-in/Inteligencia Artificial -Un enfoque moderno.md\"> Inteligencia Artificial -Un enfoque moderno </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/de-moc.md\"> de-moc </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"03-cla/03-cla_Glossary.md\"> 03-cla_Glossary </a>",
-        "<a class=\"internal-link\" href=\"03-cla/03-cla_Index.md\"> 03-cla_Index </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi 2.md\"> t-topoi 2 </a>",
-        "<a class=\"internal-link\" href=\"00-in/t13-filosofía histórica.md\"> t13-filosofía histórica </a>",
-        "<a class=\"internal-link\" href=\"00-in/t14-historia de la tecnología.md\"> t14-historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"00-in/t61-internetmusic.md\"> t61-internetmusic </a>",
-        "<a class=\"internal-link\" href=\"00-in/Arte participativo.md\"> Arte participativo </a>",
-        "<a class=\"internal-link\" href=\"00-in/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
-        "<a class=\"internal-link\" href=\"00-in/John Cage.md\"> John Cage </a>",
-        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"image/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/La reología del arte.md\"> La reología del arte </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md\"> Myriam Robayo Pedraza_La canción social como expresión de inconformismo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto.md\"> Multi-efecto </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Zaracho.md\"> Zaracho </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/synth-grid.md\"> synth-grid </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/synth-flex.md\"> synth-flex </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/mousetrap.md\"> mousetrap </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/mico/Dónde está el camino.md\"> Dónde está el camino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Melodia.md\"> Melodia </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Gentics.md\"> Gentics </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/hydra.md\"> hydra </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Simon dice.md\"> Simon dice </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Generador de poemas sonorizados.md\"> Generador de poemas sonorizados </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Generador de poemas sonorizados código.md\"> Generador de poemas sonorizados código </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/oliva/App web para generador de TONE FIELDS.md\"> App web para generador de TONE FIELDS </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro app.md\"> Collage sonoro app </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/kobayashi/Generador random.md\"> Generador random </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/fernandez burzaco/Museo Luminosónico.md\"> Museo Luminosónico </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones.md\"> Conexiones </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual código.md\"> Unísono virtual código </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/bonetto/Oscilador de audio con alimentos.md\"> Oscilador de audio con alimentos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones código.md\"> Conexiones código </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual.md\"> Unísono virtual </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/bonetto/La verduleria.md\"> La verduleria </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/belotti/Soundchess proyectual tentativo.md\"> Soundchess proyectual tentativo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md\"> Librería de Samples Universidad Tres de Febrero </a>",
+        "<a class=\"internal-link\" href=\"01-proj/20/amieva/Intensa.md\"> Intensa </a>",
+        "<a class=\"internal-link\" href=\"01-proj/19/perez rivas/Reproduciéndonos.md\"> Reproduciéndonos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/19/gawel/Metáforas.md\"> Metáforas </a>",
+        "<a class=\"internal-link\" href=\"01-proj/19/costa/Canoa atemporal.md\"> Canoa atemporal </a>",
+        "<a class=\"internal-link\" href=\"01-proj/19/barbaglia/Miradas dirigidas.md\"> Miradas dirigidas </a>",
+        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/18/garella/Dédalo.md\"> Dédalo </a>",
+        "<a class=\"internal-link\" href=\"01-proj/18/galetto/Moving sound.md\"> Moving sound </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -977,7 +1301,21 @@
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>"
+        "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>",
+        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/01-Azar.md\"> 01-Azar </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/02-Melodia.md\"> 02-Melodia </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/03-Máquina de ritmos.md\"> 03-Máquina de ritmos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/helloworld.md\"> helloworld </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho.md\"> Zaracho </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/_Los condenados de la pantalla 2.md\"> _Los condenados de la pantalla 2 </a>",
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
