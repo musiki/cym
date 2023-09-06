@@ -10,8 +10,8 @@ publish: 2022
 - Agregué botón **Stop** y coloreé ambos botones
 - Ajusté la afinación del sintetizador
 - La consola ahora imprime el nombre de las notas que suenan
+<iframe height="360" width="640" src="https://codepen.io/nlpz404/pen/PoRVJjM?editors=1111" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 
-https://codepen.io/nlpz404/pen/PoRVJjM?editors=1111
 
 ---
 
@@ -29,4 +29,3 @@ Posibles desarrollos:
 - Agregar un botón **Stop** (desde aquí, se puede reiniciar presionando **Rerun** en esquina inferior derecha)
 - Modificar algún parámetro del sintetizador en función del tiempo
 
-https://codepen.io/nlpz404/pen/abYQRwQ?editors=1011

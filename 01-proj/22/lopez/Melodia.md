@@ -16,4 +16,4 @@ En el reproductor:
 - Los botones azules permiten operar sobre el tempo (por defecto en 120)
 - Los botones grises permiten activar/desactivar el chorus (por defecto viene ON)
 
-https://codepen.io/nlpz404/pen/poLBmMy
+<iframe height="360" width="640" src="https://codepen.io/nlpz404/pen/poLBmMy" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>

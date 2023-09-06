@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/21/marazzi/Collage sonoro.md",
+                "file": "04-ref/topoi/Intervencion del espacio público.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/21/marazzi/Collage sonoro.md",
+                "file": "04-ref/topoi/Intervencion del espacio público.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/21/marazzi/Collage sonoro.md",
+                "file": "04-ref/topoi/Intervencion del espacio público.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/21/marazzi/Collage sonoro.md"
+                "file": "04-ref/topoi/Intervencion del espacio público.md"
               }
             }
           },
@@ -271,42 +271,42 @@
   },
   "active": "d5a094f249292758",
   "lastOpenFiles": [
-    "01-proj/21/fernandez burzaco/Museo Luminosónico Síntesis.md",
-    "01-proj/21/marazzi/Collage sonoro.md",
-    "01-proj/21/marazzi",
-    "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
-    "01-proj/21/tortorlli/Generador de poemas sonorizados.md",
-    "01-proj/21/fernandez burzaco",
-    "00-in/proyectos MOC.md",
-    "01-proj/21/tortorlli",
+    "01-proj/23/Shifres.md",
+    "00-in/link.md",
+    "04-ref/topoi/Intervencion del espacio público.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/22/lopez/Melodia.md",
     "01-proj/22/mico/Dónde está el camino.md",
+    "01-proj/22/lopez/tp-01-topoi.md",
+    "01-proj/22/lopez/Máquina de ritmos.md",
     "01-proj/22/lopez/Azar.md",
     "01-proj/22/lopez/helloworld.md",
-    "01-proj/22/lopez/Máquina de ritmos.md",
-    "01-proj/22/lopez/Melodia.md",
-    "01-proj/22/lopez/tp-01-topoi.md",
     "01-proj/22/gutierrez/Generador de melodía.md",
     "01-proj/22/dure/Resampler.md",
+    "01-proj/22/ancarola/tp-01-topoi.md",
     "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
+    "01-proj/22/ancarola/Hola Sonido.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "01-proj/21/tortorlli/Generador de poemas sonorizados.md",
+    "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
+    "01-proj/21/marazzi/Collage sonoro app.md",
+    "01-proj/21/marazzi/Collage sonoro.md",
+    "01-proj/21/marazzi",
+    "01-proj/21/fernandez burzaco",
+    "01-proj/21/tortorlli",
     "01-proj/21/oliva",
     "01-proj/15",
     "01-proj/16",
     "01-proj/17",
     "01-proj/18",
     "01-proj/19",
-    "01-proj/20",
-    "01-proj/22/ancarola/tp-01-topoi.md",
-    "01-proj/22/ancarola/Hola Sonido.md",
-    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
-    "01-proj/22/ancarola/Generador de Melodías Random.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/topoi MOC.md",
-    "00-in/Proto-Indo-European.md",
-    "00-in/obras MOC.md",
-    "00-in/Música expandida MOC.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/memex.md",
-    "00-in/hi augmentation.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
