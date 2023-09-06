@@ -1127,8 +1127,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 215,
-      "Create": 130,
+      "Refactor": 216,
+      "Create": 131,
       "Link": 125,
       "Expand": 9
     }
@@ -1157,7 +1157,7 @@
       "19": 0,
       "20": 0,
       "21": 6,
-      "22": 19,
+      "22": 21,
       "23": 34
     }
   },
@@ -1165,7 +1165,7 @@
     "/": {
       "Mon": 7,
       "Tue": 15,
-      "Wed": 410,
+      "Wed": 412,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1186,6 +1186,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival.md\"> Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival </a>",
@@ -1235,8 +1236,7 @@
         "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual código.md\"> Unísono virtual código </a>",
         "<a class=\"internal-link\" href=\"01-proj/20/bonetto/Oscilador de audio con alimentos.md\"> Oscilador de audio con alimentos </a>",
         "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones código.md\"> Conexiones código </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual.md\"> Unísono virtual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/bonetto/La verduleria.md\"> La verduleria </a>"
+        "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual.md\"> Unísono virtual </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-out/cym MOC.md\"> cym MOC </a>",
@@ -1392,7 +1392,8 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
         "<a class=\"internal-link\" href=\"00-in/test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"00-in/Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival.md\"> Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival </a>",
-        "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
