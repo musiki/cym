@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/20/jaramillo/Unísono.md",
+                "file": "01-proj/20/amieva/Intensa.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/20/jaramillo/Unísono.md",
+                "file": "01-proj/20/amieva/Intensa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/20/jaramillo/Unísono.md",
+                "file": "01-proj/20/amieva/Intensa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/20/jaramillo/Unísono.md"
+                "file": "01-proj/20/amieva/Intensa.md"
               }
             }
           },
@@ -271,14 +271,19 @@
   },
   "active": "d5a094f249292758",
   "lastOpenFiles": [
-    "01-proj/20/jaramillo/Unísono virtual.md",
-    "01-proj/20/jaramillo/Unísono.md",
+    "01-proj/20/belotti/Soundchess proyectual tentativo.md",
+    "01-proj/20/amieva/Intensa.md",
+    "01-proj/20/amieva",
+    "01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md",
+    "01-proj/20/bonetto/La verduleria.md",
+    "01-proj/20/belotti",
     "01-proj/20/bonetto/Oscilador de audio con alimentos.md",
+    "01-proj/20/jaramillo/Unísono virtual.md",
+    "01-proj/20/jaramillo/Unísono virtual código.md",
     "01-proj/20/ruiz burtoli/Conexiones.md",
     "01-proj/20/ruiz burtoli/Conexiones código.md",
-    "01-proj/21/belotti/Librería de Samples Universidad Tres de Febrero.md",
     "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
-    "01-proj/21/belotti",
+    "01-proj/20/belotti",
     "01-proj/20/bonetto",
     "01-proj/20/Untitled.md",
     "01-proj/20/jaramillo",
@@ -298,15 +303,10 @@
     "01-proj/22/lopez/tp-01-topoi.md",
     "01-proj/22/lopez/Máquina de ritmos.md",
     "01-proj/22/lopez/Azar.md",
-    "01-proj/22/mico/Dónde está el camino.md",
-    "01-proj/22/gutierrez/Generador de líneas.md",
-    "01-proj/22/gutierrez/Generador de melodía.md",
     "01-proj/21/tortorelli",
     "01-proj/21/kobayashi",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/21/marazzi",
-    "01-proj/21/fernandez burzaco",
-    "01-proj/21/tortorelli",
     "cym-metamap.canvas",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
