@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/16/juan/Instalación.md",
+                "file": "00-in/proyectos MOC.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/16/juan/Instalación.md",
+                "file": "00-in/proyectos MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/16/juan/Instalación.md",
+                "file": "00-in/proyectos MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/16/juan/Instalación.md"
+                "file": "00-in/proyectos MOC.md"
               }
             }
           },
@@ -271,8 +271,9 @@
   },
   "active": "d5a094f249292758",
   "lastOpenFiles": [
-    "01-proj/16/estrada/Cometa.md",
+    "00-in/códigos MOC.md",
     "01-proj/16/juan/Instalación.md",
+    "01-proj/16/estrada/Cometa.md",
     "01-proj/16/cuenca/Explosision.md",
     "01-proj/16/albarracin/Sonomaze.md",
     "01-proj/16/lopez/Trazo 5.md",
@@ -306,7 +307,6 @@
     "01-proj/17/arcuri/Sensonorizando.md",
     "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "01-proj/18/vivona/Domo.md",
-    "01-proj/18/gueglio/Posdata fluidos.md",
     "cym-metamap.canvas",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
