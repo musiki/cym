@@ -5,7 +5,7 @@
   "content": "",
   "useDefaultFrontmatter": false,
   "defaultFrontmatterKeyType": "Camel Case",
-  "templateFile": "04-ref/templates/t-book.md",
+  "templateFile": "02-mat/obs/tpl/t-book.md",
   "serviceProvider": "google",
   "naverClientId": "",
   "naverClientSecret": "",

@@ -1,8 +1,8 @@
 {
   "chroma": 16,
-  "lightness": 87,
-  "palette": 16,
-  "seed": 0,
+  "lightness": 90,
+  "palette": 32,
+  "seed": 7,
   "knownTags": {
     "20": 43,
     "pkm": 1,
@@ -118,7 +118,25 @@
     "interactivity": 111,
     "installation": 112,
     "architecture": 113,
-    "-": 114
+    "-": 114,
+    "videoarte": 115,
+    "UBA": 116,
+    "instalaciones": 117,
+    "composer": 118,
+    "objetualidad": 119,
+    "teatral": 120,
+    "interactividad": 121,
+    "arquitectura": 122,
+    "compositor": 123,
+    "espectromorfología": 124,
+    "electrónica": 125,
+    "amplificación": 126,
+    "sonoro": 127,
+    "mcl": 128,
+    "mcl/list-grid": 1,
+    "mcl/list-column": 2,
+    "mcl/list-card": 3,
+    "mcl/list-card-wide": 4
   },
   "_version": 2
 }

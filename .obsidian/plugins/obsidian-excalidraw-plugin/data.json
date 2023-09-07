@@ -1,8 +1,8 @@
 {
   "folder": "image",
   "embedUseExcalidrawFolder": true,
-  "templateFilePath": "image/Template.excalidraw",
-  "scriptFolderPath": "image/scripts",
+  "templateFilePath": "02-mat/obs/tpl/Template.excalidraw",
+  "scriptFolderPath": "02-mat/obs/img",
   "compress": false,
   "autosave": true,
   "autosaveInterval": 15000,

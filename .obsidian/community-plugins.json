@@ -11,7 +11,6 @@
   "mermaid-themes",
   "music-code-blocks",
   "obsidian-wordnet-plugin",
-  "dbfolder",
   "obsidian-contextual-typography",
   "better-inline-fields",
   "notion-like-tables",
@@ -93,7 +92,5 @@
   "obsidian-hider",
   "obsidian-banners",
   "obsidian-thumbnails",
-  "obsidian-read-it-later",
-  "flowershow",
-  "mixa"
+  "obsidian-read-it-later"
 ]

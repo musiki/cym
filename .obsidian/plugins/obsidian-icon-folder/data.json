@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbArrowDown",
       "FlStarOfSixPointsFormedByTrianglesWithAndHexagonCenter",
       "IbArrowRight",
       "FlPolygonalMultipleStars",
-      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-      "IbArrowDownLeft"
+      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -32,7 +32,7 @@
   "02-mat/jasvascript": "FabJs",
   "00-in": "IbArrowLeft",
   "01-proj": "IbArrowDownLeft",
-  "02-mat": "IbTabLeftCompact",
+  "02-mat": "IbArrowDown",
   "02-mat/org": "IbTriangleRight",
   "02-mat/tone.js.md": "FlTriangleOfTriangles",
   "02-mat/que es git.md": "FabGithubSquare",

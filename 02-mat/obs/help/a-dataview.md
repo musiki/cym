@@ -1,4 +1,5 @@
-# dataview
+
+## tipos de query
 
 hay tres tipos de queries, TABLE (yaml metadata), LIST (páginas) y TASK(checkboxes)
 
