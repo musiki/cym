@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/languages.md",
+                "file": "00-in/proyectos MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/personas MOC.md"
+                "file": "00-in/proyectos MOC.md"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/personas MOC.md",
+                "file": "00-in/proyectos MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/personas MOC.md",
+                "file": "00-in/proyectos MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,33 +266,33 @@
   },
   "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "00-in/combinational creativity.md",
-    "00-in/códigos MOC.md",
-    "00-in/bib MOC.md",
-    "02-mat/obs/help/a-snippets.md",
-    "02-mat/obs/help/a-plugins.md",
-    "02-mat/obs/help/a-yuda.md",
+    "00-in/Vedic Sanskrit.md",
     "00-in/topoi MOC.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "02-mat/obs/help/a-dataview.md",
+    "04-out/topoi/Método científico.md",
+    "04-out/topoi/Humanos.md",
+    "00-in/proyectos MOC.md",
+    "01-proj/17/paladino/No music player.md",
     "00-in/personas MOC.md",
     "00-in/obras.in MOC.md",
     "00-in/obras MOC.md",
-    "04-out/personas/Donna Haraway.md",
-    "04-out/personas/Dick Raaijmakers.md",
-    "04-out/personas/Dennis Smalley.md",
-    "04-out/personas/Dennis Fabian Peter.md",
-    "04-out/personas/Cecila Arditto.md",
-    "04-out/personas/Carlos Trilnik.md",
-    "04-out/cym MOC.md",
-    "04-out/personas/Stuart Russell.md",
-    "04-out/topoi/Método científico.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "conflict-files-obsidian-git.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/memex.md",
+    "00-in/languages.md",
+    "00-in/hi augmentation.md",
+    "00-in/hd-hydra.md",
+    "00-in/combinational creativity.md",
+    "00-in/cym pub.md",
+    "00-in/códigos MOC.md",
+    "00-in/bib MOC.md",
+    "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+    "02-mat/obs/help/a-snippets.md",
+    "02-mat/obs/help/a-plugins.md",
+    "00-in/Proto-Indo-European.md",
+    "README.md",
+    "01-proj/17/herrera/Superficies sonoras blandas.md",
+    "04-out/bibliografía/Eduardo Kac_Signs of Life.md",
     "cym-metamap.canvas",
-    "03-cla/c-cym06-flex-grid.md",
     "02-mat/obs/Untitled.loom",
     "02-mat/obs/help",
     "02-mat/obs",
