@@ -808,13 +808,33 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "00-in/i.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/2023-09-10.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "Excalidraw/Drawing 2023-09-10 16.27.21.excalidraw.md": {
+      "size": 362,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/2023-08-30.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 242,
-      "Create": 260,
-      "Link": 189,
+      "Create": 264,
+      "Link": 190,
       "Expand": 15
     }
   },
@@ -836,7 +856,7 @@
       "13": 120,
       "14": 23,
       "15": 115,
-      "16": 22,
+      "16": 27,
       "17": 4,
       "18": 27,
       "19": 3,
@@ -854,7 +874,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 140
+      "Sun": 145
     }
   },
   "recentCommits": {
@@ -877,6 +897,10 @@
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"00-in/2023-09-10.md\"> 2023-09-10 </a>",
+        "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Pedalera multiefecto/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
@@ -923,11 +947,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Spectromorphology.md\"> Spectromorphology </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -963,6 +983,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Multi-efecto.md\"> Multi-efecto </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>",
@@ -1012,8 +1033,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Humanos.md\"> Humanos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Interfaces.md\"> Interfaces </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
       ],
       "Refactored": [],
       "Deleted": [

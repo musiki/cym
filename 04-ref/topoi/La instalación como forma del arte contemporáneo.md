@@ -8,7 +8,7 @@ author:
 	
 # Resúmen
 
-El presente trabajo se basa en el artículo La topología del arte contemporáneo publicado por Boris Grous en la antología Antinomies of Art and Culture. Modernity, Postmodernity, Contemporaneity
+El presente trabajo se basa en el artículo La topología del arte contemporáneo publicado por Boris Groys en la antología Antinomies of Art and Culture. Modernity, Postmodernity, Contemporaneity
 	
 Este artículo hace un recorrido por las diferentes concepciones artísticas de las épocas moderna y posmoderna y llega a la contemporánea en la cual destaca la instalación como nueva forma de arte.
 
