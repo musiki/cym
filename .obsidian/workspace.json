@@ -73,22 +73,9 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "92e340938159247d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/obras MOC.md",
+                "file": "01-proj/22/ancarola/tp-01-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/obras MOC.md",
+                "file": "01-proj/22/ancarola/tp-01-topoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/obras MOC.md"
+                "file": "01-proj/22/ancarola/tp-01-topoi.md"
               }
             }
           },
@@ -279,8 +266,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88aa2da9c0fa9c83",
+  "active": "faf0df29942544b1",
   "lastOpenFiles": [
+    "00-in/obras MOC.md",
     "conflict-files-obsidian-git.md",
     "00-in/cym MOC-1694393867412.jpeg",
     "00-in/cym MOC-1694393867408.jpeg",
