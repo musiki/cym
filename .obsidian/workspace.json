@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym14-un instrumento online colectivo.md",
+                "file": "00-in/cym MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym14-un instrumento online colectivo.md",
+                "file": "00-in/cym MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym14-un instrumento online colectivo.md",
+                "file": "00-in/cym MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym14-un instrumento online colectivo.md"
+                "file": "00-in/cym MOC.md"
               }
             }
           },
@@ -292,13 +292,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d5a094f249292758",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "00-in/cym MOC.md",
+    "04-ref/topoi/Filosofía 21.md",
+    "02-mat/html.md",
+    "02-mat/cloud ides.md",
+    "02-mat/rant.md",
+    "02-mat/que es git.md",
+    "02-mat/tone.js.md",
+    "cym-metamap.canvas",
+    "02-mat/procesos/Untitled.loom",
+    "02-mat/procesos/r-vinculación bidireccional.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym07-networking.md",
     "03-cla/c-cym12-Aframe2.md",
     "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym04-vida digital.md",
     "03-cla/c-cym03 mapas.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
     "image/galanter.jpeg",
     "image/gal.md",
     "01-proj/18/garella/Dédalo.md",
@@ -307,21 +323,6 @@
     "00-in/proyectos MOC.md",
     "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
     "00-in/personas MOC.md",
-    "00-in/obras.in MOC.md",
-    "00-in/obras MOC.md",
-    "00-in/languages.md",
-    "00-in/hi augmentation.md",
-    "00-in/hd-hydra.md",
-    "00-in/combinational creativity.md",
-    "00-in/cym MOC.md",
-    "cym-metamap.canvas",
-    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
-    "00-in/bib MOC.md",
-    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
-    "00-in/códigos MOC.md",
-    "00-in/topoi MOC.md",
-    "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
-    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
     "01-proj/16/juan",
     "01-proj/16/estrada",
     "01-proj/16/lopez",
@@ -331,7 +332,6 @@
     "01-proj/15/garcia fernandez",
     "01-proj/15/garcia",
     "01-proj/15/ferrando",
-    "01-proj/15/drocchi",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
     "image/Pasted image 20230829230008.png",
