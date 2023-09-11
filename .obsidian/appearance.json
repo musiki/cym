@@ -1,5 +1,12 @@
 {
-  "cssTheme": "Terminal",
-  "theme": "obsidian",
-  "accentColor": ""
+  "cssTheme": "",
+  "theme": "moonstone",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "cards",
+    "MCL Gallery Cards",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "obsidian"
+  ]
 }

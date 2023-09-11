@@ -114,7 +114,22 @@
     "hydra": 107,
     "mousetrap": 108,
     "flex": 109,
-    "grid": 110
+    "grid": 110,
+    "mcl": 111,
+    "mcl/list-card": 1,
+    "videoarte": 112,
+    "UBA": 113,
+    "instalaciones": 114,
+    "composer": 115,
+    "objetualidad": 116,
+    "teatral": 117,
+    "interactividad": 118,
+    "arquitectura": 119,
+    "compositor": 120,
+    "espectromorfología": 121,
+    "electrónica": 122,
+    "amplificación": 123,
+    "sonoro": 124
   },
   "_version": 2
 }
