@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym06- cohesión audiovisual.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym06- cohesión audiovisual.md"
+                "file": "03-cla/c-cym05-integración.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym06- cohesión audiovisual.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym06- cohesión audiovisual.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,6 +210,7 @@
   },
   "active": "b6e034d32f219935",
   "lastOpenFiles": [
+    "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym05-integración.md",
     "03-cla/c-cym04-vida digital.md",
     "01-proj/23/Zaracho/Zaracho.md",
@@ -249,7 +250,6 @@
     "04-ref/personas/Yuval Harari.md",
     "04-ref/personas/Marianne Amacher.md",
     "04-ref/image",
-    "04-ref/glosario/PaaS.md",
     "04-ref/glosario",
     "01-proj/23/Zaracho",
     "04-ref/musica visual_ bassino_topoi.pdf",
