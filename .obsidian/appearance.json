@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "accentColor": "#2e4d00",
+=======
+  "cssTheme": "",
+  "theme": "obsidian",
+  "accentColor": "",
+>>>>>>> origin/main
   "enabledCssSnippets": [
     "cards",
     "MCL Gallery Cards",

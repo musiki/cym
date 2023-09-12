@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabCss3Alt",
+      "FabHtml5",
       "FlPolygonalMultipleStars",
       "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-      "IbArrowDownLeft",
-      "FabGithubSquare",
-      "IbHugContentVertical"
+      "IbArrowDownLeft"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -37,7 +37,7 @@
   "02-mat/tone.js.md": "FlTriangleOfTriangles",
   "02-mat/que es git.md": "FabGithubSquare",
   "02-mat/html.md": {
-    "iconName": null,
+    "iconName": "FabHtml5",
     "inheritanceIcon": "FabHtml5"
   },
   "02-mat/cloud ides.md": {
@@ -54,5 +54,6 @@
   },
   "03-cla": "IbArrowCircleForward",
   "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-  "02-mat/partituras": "FlPolygonalMultipleStars"
+  "02-mat/partituras": "FlPolygonalMultipleStars",
+  "02-mat/css.md": "FabCss3Alt"
 }

@@ -14,11 +14,6 @@
       "tags": 8,
       "links": 0
     },
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
-      "size": 1575,
-      "tags": 3,
-      "links": 0
-    },
     "03-cla/c-cym12-Aframe2.md": {
       "size": 1202,
       "tags": 6,
@@ -53,11 +48,6 @@
       "size": 3476,
       "tags": 6,
       "links": 0
-    },
-    "03-cla/c-cym03 mapas.md": {
-      "size": 3691,
-      "tags": 4,
-      "links": 3
     },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
@@ -634,11 +624,6 @@
       "tags": 9,
       "links": 16
     },
-    "03-cla/c-cym06- cohesión audiovisual.md": {
-      "size": 10646,
-      "tags": 7,
-      "links": 7
-    },
     "03-cla/c-cym06-flex-grid.md": {
       "size": 598,
       "tags": 6,
@@ -1133,19 +1118,39 @@
       "size": 6270,
       "tags": 0,
       "links": 0
+    },
+    "02-mat/css.md": {
+      "size": 661,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym03-mapas.md": {
+      "size": 3706,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym06-cohesión audiovisual.md": {
+      "size": 10545,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md": {
+      "size": 1575,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 237,
-      "Create": 141,
+      "Refactor": 241,
+      "Create": 146,
       "Link": 139,
       "Expand": 11
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 16,
+      "0": 25,
       "1": 3,
       "2": 0,
       "3": 0,
@@ -1175,7 +1180,7 @@
     "/": {
       "Mon": 7,
       "Tue": 49,
-      "Wed": 418,
+      "Wed": 427,
       "Thu": 30,
       "Fri": 5,
       "Sat": 0,
@@ -1198,6 +1203,11 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
+        "<a class=\"internal-link\" href=\"02-mat/css.md\"> css </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1243,12 +1253,7 @@
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Simon dice.md\"> Simon dice </a>",
-        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Generador de poemas sonorizados.md\"> Generador de poemas sonorizados </a>",
-        "<a class=\"internal-link\" href=\"01-proj/21/tortorelli/Generador de poemas sonorizados código.md\"> Generador de poemas sonorizados código </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
@@ -1358,6 +1363,10 @@
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
@@ -1404,11 +1413,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/dramaturgia.md\"> dramaturgia </a>",
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-08-24 19.29.11.excalidraw.md\"> Drawing 2023-08-24 19.29.11.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
-        "<a class=\"internal-link\" href=\"00-in/test.md\"> test </a>",
-        "<a class=\"internal-link\" href=\"00-in/Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival.md\"> Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival </a>"
+        "<a class=\"internal-link\" href=\"00-in/11.md\"> 11 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
