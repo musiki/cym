@@ -19,8 +19,48 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1a5e203ab704f675",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "037e0b74399ca6e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym05-integración.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1ba6350ff7a6e42f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym05-integración.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/topoi/Introducción a la psicoacústica.md"
+                "file": "03-cla/c-cym05-integración.md"
               }
             }
           },
@@ -115,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/topoi/Introducción a la psicoacústica.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/topoi/Introducción a la psicoacústica.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,12 +233,23 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "7c897b6f19ceac80",
+  "active": "1ba6350ff7a6e42f",
   "lastOpenFiles": [
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
-    "00-in/Untitled.md",
+    "03-cla/c-cym04-vida digital.md",
     "conflict-files-obsidian-git.md",
+    "03-cla/c-cym05-integración.md",
+    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
+    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
+    "03-cla/c-cym06-flex-grid.md",
+    "03-cla/c-cym06- cohesión audiovisual.md",
+    "01-proj/23/Zaracho/Zaracho.md",
+    "01-proj/23/Zaracho",
+    "00-in/memex.md",
+    "00-in/hd-hydra.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "00-in/Untitled.md",
     "04-ref/image/Untitled-1693882066639.jpeg",
     "04-ref/image",
     "04-ref/glosario/PaaS.md",
@@ -226,22 +277,11 @@
     "04-ref/topoi/Arte participativo.md",
     "04-ref/templates/t-alumno-POC.md",
     "04-ref/templates/conflict-files-obsidian-git 2.md",
-    "04-ref/procedimientos/analisis de obras interactivas.md",
-    "04-ref/templates/t-persona.md",
-    "00-in/musica y arte visual_ bassino_topoi.md",
-    "00-in/cym MOC.md",
-    "00-in/Sin título.md",
-    "00-in/Sin título 1.md",
-    "00-in/Música y arte visual.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/beltrame/Topoi Forma Musical.md",
-    "04-ref/templates/conflict-files-obsidian-git.md",
-    "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/Petroccelli",
     "cym-metamap.canvas",
     "02-mat/procesos/Untitled.loom",
     "04-ref/espacios",
-    "04-ref/eventos",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

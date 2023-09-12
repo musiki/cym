@@ -7,7 +7,7 @@
 type: topoi
 tags: psicoacústica, topoi
 unit: 00
-author: Ezequiel Petroccelli
+author: Ezequiel A. Petroccelli
 <<<<<<< HEAD
 >>>>>>> origin/main:04-ref/topoi/Introducción a la psicoacústica.md
 =======
