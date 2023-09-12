@@ -1,5 +1,5 @@
 {
-  "cssTheme": "",
+  "cssTheme": "Terminal",
   "theme": "moonstone",
   "accentColor": "",
   "enabledCssSnippets": [
@@ -8,5 +8,6 @@
     "MCL Multi Column",
     "MCL Wide Views",
     "obsidian"
-  ]
+  ],
+  "nativeMenus": false
 }

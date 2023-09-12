@@ -13,5 +13,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "00-in",
   "defaultViewMode": "preview",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "showInlineTitle": true
 }
