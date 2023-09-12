@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
+                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
+                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md",
+                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/22/ancarola/tp-01-topoi.md"
+                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md"
               }
             }
           },
@@ -243,11 +243,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "dbfolder:Create a new database table": false,
       "notion-like-tables:Create new loom": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
@@ -268,40 +268,44 @@
   },
   "active": "faf0df29942544b1",
   "lastOpenFiles": [
-    "00-in/obras MOC.md",
-    "conflict-files-obsidian-git.md",
-    "00-in/cym MOC-1694393867412.jpeg",
-    "00-in/cym MOC-1694393867408.jpeg",
-    "00-in/cym MOC-1694393867398.jpeg",
+    "00-in/bib MOC.md",
+    "04-out/topoi/Arte participativo.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "00-in/cym MOC.md",
+    "04-out/topoi/Azar.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/Racionalizacion_(videojuegos).md",
+    "01-proj/19/gawel/Metáforas.md",
+    "01-proj/19/costa/Canoa atemporal.md",
+    "00-in/topoi MOC.md",
+    "04-out/topoi/Internetmusic.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "00-in/hd-hydra.md",
     "00-in/cym MOC-1694393867395.jpeg",
+    "00-in/cym MOC-1694393867397.jpeg",
+    "00-in/cym MOC-1694393867402.jpeg",
+    "00-in/cym MOC-1694393867410.jpeg",
+    "00-in/cym MOC-1694393867412.jpeg",
+    "00-in/cym MOC-1694393867400.jpeg",
+    "00-in/cym MOC-1694393867404.jpeg",
+    "00-in/cym MOC-1694393867408.jpeg",
+    "00-in/meta-aprendizaje.md",
+    "04-out/topoi/Livecoding.md",
+    "04-out/topoi/Vida artificial.md",
+    "04-out/topoi/Forma Musical.md",
+    "00-in/proyectos MOC.md",
+    "00-in/personas MOC.md",
+    "01-proj/15/bergaglio/Supernova luna llena.md",
+    "00-in/obras.in MOC.md",
+    "00-in/obras MOC.md",
+    "00-in/códigos MOC.md",
+    "04-out/bibliografía/Boris Groys_Arte y flujo.md",
+    "04-out/topoi/Cuarta Revolución Industrial.md",
+    "04-out/topoi/Augmented Cognition.md",
+    "00-in/cym MOC-1694393867398.jpeg",
     "00-in/cym MOC-1694393867407.jpeg",
-    "00-in/cym MOC-1694393867396.jpeg",
-    "01-proj/22/ancarola/tp-01-topoi.md",
     "image/image",
     "image",
-    "00-in/cym MOC.md",
-    "04-out/topoi/Virtualidad y realidad.md",
-    "04-out/topoi/Vida artificial.md",
-    "04-out/topoi/Spectromorphology.md",
-    "04-out/topoi/Sistemas de universos.md",
-    "04-out/topoi/Sistemas complejos.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "04-out/topoi/Música y Política.md",
-    "04-out/topoi/Música Visual.md",
-    "04-out/topoi/Método científico.md",
-    "04-out/topoi/Livecoding.md",
-    "04-out/topoi/La reología del arte.md",
-    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Interfaces.md",
-    "04-out/topoi/Humanos.md",
-    "04-out/topoi/Historia de la tecnología.md",
-    "04-out/topoi/Generatividad.md",
-    "04-out/topoi/Física.md",
-    "04-out/topoi/Fragile Territories.md",
-    "04-out/topoi/Forma Musical.md",
     "04-out/bibliografía/cym.bib",
     "04-out/topoi",
     "04-out/procedimientos",
@@ -310,10 +314,6 @@
     "04-out/espacios",
     "04-out/glosario",
     "04-out/bibliografía",
-    "00-in/cym MOC-1694393867411.jpeg",
-    "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
-    "00-in/cym MOC-1694393867410.jpeg",
-    "00-in/cym MOC-1694393867406.jpeg",
     "cym-metamap.canvas",
     "Untitled.canvas"
   ]

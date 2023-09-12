@@ -530,7 +530,7 @@
       "links": 0
     },
     "01-proj/21/marazzi/Collage sonoro.md": {
-      "size": 79,
+      "size": 6081,
       "tags": 1,
       "links": 0
     },
@@ -671,8 +671,8 @@
     },
     "00-in/meta-aprendizaje.md": {
       "size": 1099,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 2
     },
     "02-mat/obs/help/a-dataview playground.md": {
       "size": 409,
@@ -691,13 +691,13 @@
     },
     "02-mat/obs/help/a-snippets.md": {
       "size": 1272,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "02-mat/obs/help/a-yuda.md": {
       "size": 4477,
       "tags": 0,
-      "links": 0
+      "links": 2
     },
     "02-mat/obs/img/gal.md": {
       "size": 100,
@@ -706,18 +706,18 @@
     },
     "02-mat/obs/img/sistemas.excalidraw.md": {
       "size": 25508,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git 2.md": {
       "size": 824,
       "tags": 0,
-      "links": 0
+      "links": 1
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
       "size": 888,
       "tags": 0,
-      "links": 0
+      "links": 1
     },
     "02-mat/obs/tpl/t-alumno-POC.md": {
       "size": 110,
@@ -726,17 +726,17 @@
     },
     "02-mat/obs/tpl/t-book.md": {
       "size": 341,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/obs/tpl/t-class.md": {
       "size": 74,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "02-mat/obs/tpl/t-cym-class.md": {
       "size": 176,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     },
     "02-mat/obs/tpl/t-cym-init-slide.md": {
@@ -751,17 +751,17 @@
     },
     "02-mat/obs/tpl/t-movie.md": {
       "size": 345,
-      "tags": 0,
-      "links": 0
+      "tags": 2,
+      "links": 1
     },
     "02-mat/obs/tpl/t-topoi.md": {
       "size": 58,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/obs/tpl/t-persona.md": {
       "size": 61,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/obs/tpl/templater.md": {
@@ -771,17 +771,17 @@
     },
     "04-out/bibliografía/Boris Groys_Arte y flujo.md": {
       "size": 2157,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Eduardo Kac_Signs of Life.md": {
       "size": 601,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md": {
       "size": 2727,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md": {
@@ -791,32 +791,32 @@
     },
     "04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
       "size": 432,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
       "size": 435,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/John D Barrow_El libro de la nada.md": {
       "size": 1232,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Matt Pearson_Generative Art.md": {
       "size": 643,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md": {
       "size": 645,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Philip Ball_Shapes.md": {
       "size": 1614,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md": {
@@ -831,7 +831,7 @@
     },
     "04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md": {
       "size": 508,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/Xuan Thuan Trinh_The Secret Melody.md": {
@@ -841,17 +841,17 @@
     },
     "04-out/glosario/PaaS.md": {
       "size": 390,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/espacios/Academy of Fine Arts Vienna.md": {
       "size": 213,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/espacios/EAT Experiments in arts and technologies.md": {
       "size": 12,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/espacios/MIT Medialab.md": {
@@ -861,27 +861,27 @@
     },
     "04-out/personas/Carlos Trilnik.md": {
       "size": 387,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/personas/Cecila Arditto.md": {
       "size": 253,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "04-out/personas/Dennis Fabian Peter.md": {
       "size": 322,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/personas/Dennis Smalley.md": {
       "size": 161,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/personas/Dick Raaijmakers.md": {
       "size": 228,
-      "tags": 0,
+      "tags": 8,
       "links": 0
     },
     "04-out/personas/Donna Haraway.md": {
@@ -901,12 +901,12 @@
     },
     "04-out/personas/Hito Steyerl.md": {
       "size": 734,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 1
     },
     "04-out/personas/Hugh Le Caine.md": {
       "size": 44,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/personas/John Barrows.md": {
@@ -921,7 +921,7 @@
     },
     "04-out/personas/Marianne Amacher.md": {
       "size": 157,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/Peter Novig.md": {
@@ -936,17 +936,17 @@
     },
     "04-out/personas/Yotam Mann.md": {
       "size": 176,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/personas/Yuval Harari.md": {
       "size": 114,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/obras/Boid Simulation.md": {
       "size": 149,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "04-out/procedimientos/analisis de obras interactivas.md": {
@@ -966,7 +966,7 @@
     },
     "04-out/topoi/Arte participativo.md": {
       "size": 981,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Arte relacional.md": {
@@ -976,128 +976,128 @@
     },
     "04-out/topoi/Augmented Cognition.md": {
       "size": 143,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Azar.md": {
       "size": 1907,
-      "tags": 0,
-      "links": 0
+      "tags": 4,
+      "links": 2
     },
     "04-out/topoi/Cuarta Revolución Industrial.md": {
       "size": 8315,
-      "tags": 0,
-      "links": 0
+      "tags": 2,
+      "links": 23
     },
     "04-out/topoi/Espacio.md": {
       "size": 157,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "04-out/topoi/Filosofía 21.md": {
       "size": 198,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Filosofía histórica.md": {
       "size": 152,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Forma Musical.md": {
       "size": 14622,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Fragile Territories.md": {
       "size": 3159,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Física.md": {
       "size": 220,
-      "tags": 0,
-      "links": 0
+      "tags": 2,
+      "links": 1
     },
     "04-out/topoi/Generatividad.md": {
       "size": 124,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/topoi/Historia de la tecnología.md": {
       "size": 51,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Humanos.md": {
       "size": 166,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/topoi/Interfaces.md": {
       "size": 375,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Internetmusic.md": {
       "size": 196,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Intervencion del espacio público.md": {
       "size": 8227,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Introducción a la psicoacústica.md": {
       "size": 9400,
-      "tags": 0,
-      "links": 0
+      "tags": 2,
+      "links": 1
     },
     "04-out/topoi/La instalación como forma del arte contemporáneo.md": {
       "size": 27109,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/La reología del arte.md": {
       "size": 444,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Livecoding.md": {
       "size": 634,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Método científico.md": {
       "size": 12076,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Música Visual.md": {
       "size": 13386,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 4
     },
     "04-out/topoi/Música y Política.md": {
       "size": 6665,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Racionalizacion_(videojuegos).md": {
       "size": 7003,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Sistemas complejos.md": {
       "size": 3871,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 2
     },
     "04-out/topoi/Sistemas de universos.md": {
       "size": 20490,
-      "tags": 0,
-      "links": 0
+      "tags": 5,
+      "links": 3
     },
     "04-out/topoi/Spectromorphology.md": {
       "size": 115,
@@ -1106,26 +1106,26 @@
     },
     "04-out/topoi/Vida artificial.md": {
       "size": 619,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 5
     },
     "04-out/topoi/Virtualidad y realidad.md": {
       "size": 12428,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "00-in/cym MOC.md": {
       "size": 102,
       "tags": 0,
-      "links": 0
+      "links": 5
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 183,
       "Create": 216,
-      "Link": 124,
-      "Expand": 9
+      "Link": 201,
+      "Expand": 10
     }
   },
   "dailyCommits": {
@@ -1152,7 +1152,7 @@
       "19": 0,
       "20": 0,
       "21": 188,
-      "22": 19,
+      "22": 97,
       "23": 34
     }
   },
@@ -1164,7 +1164,7 @@
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
-      "Sun": 201
+      "Sun": 279
     }
   },
   "recentCommits": {
@@ -1178,7 +1178,8 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1278,57 +1279,57 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Tagged": [
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música y Política.md\"> Música y Política </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Gentics.md\"> Gentics </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Melodia.md\"> Melodia </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/hydra.md\"> hydra </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/mico/Dónde está el camino.md\"> Dónde está el camino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/mousetrap.md\"> mousetrap </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/synth-flex.md\"> synth-flex </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/synth-grid.md\"> synth-grid </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto.md\"> Multi-efecto </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/bergaglio/Supernova luna llena.md\"> Supernova luna llena </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md\"> En los intersticios de lo causal. El camino es efecto </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/drocchi/¿Cómo suena el conocimiento?.md\"> ¿Cómo suena el conocimiento? </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/ferrando/Tautología.md\"> Tautología </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/garcia/En progreso.md\"> En progreso </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/garcia fernandez/La sombra de lo abstracto.md\"> La sombra de lo abstracto </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/nievas/Drummer.md\"> Drummer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/porrini/Un día bello.md\"> Un día bello </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/albarracin/Sonomaze.md\"> Sonomaze </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/cuenca/Explosision.md\"> Explosision </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/estrada/Cometa.md\"> Cometa </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/ferreyra/Juggling music.md\"> Juggling music </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/juan/Instalación.md\"> Instalación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/lopez/Trazo 5.md\"> Trazo 5 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/arcuri/Sensonorizando.md\"> Sensonorizando </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/borsalino/Condensador de eventos.md\"> Condensador de eventos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/herrera/Superficies sonoras blandas.md\"> Superficies sonoras blandas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/julia/Nukzeiber.md\"> Nukzeiber </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/lopez/Boreal.md\"> Boreal </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/moscato/La forma de la identidad real.md\"> La forma de la identidad real </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/navarro/Ajedrez.md\"> Ajedrez </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/paladino/No music player.md\"> No music player </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/dipaola-lutteral/Compost sonoro.md\"> Compost sonoro </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/galetto/Moving sound.md\"> Moving sound </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/garella/Dédalo.md\"> Dédalo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>"
+        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md\"> Myriam Robayo Pedraza_La canción social como expresión de inconformismo </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/PaaS.md\"> PaaS </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Yotam Mann.md\"> Yotam Mann </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Arte participativo.md\"> Arte participativo </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Física.md\"> Física </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Generatividad.md\"> Generatividad </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Interfaces.md\"> Interfaces </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -1408,7 +1409,23 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Física.md\"> Física </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-movie.md\"> t-movie </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
