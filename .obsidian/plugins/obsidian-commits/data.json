@@ -788,13 +788,43 @@
       "size": 51,
       "tags": 1,
       "links": 0
+    },
+    "03-cla/c-cym04-vida digital.md": {
+      "size": 8808,
+      "tags": 9,
+      "links": 16
+    },
+    "03-cla/c-cym06- cohesión audiovisual.md": {
+      "size": 10876,
+      "tags": 7,
+      "links": 8
+    },
+    "03-cla/c-cym06-flex-grid.md": {
+      "size": 627,
+      "tags": 6,
+      "links": 1
+    },
+    "04-ref/bibliografía/Boris Groys_Arte y flujo.md": {
+      "size": 2172,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/bassino/Música y arte visual.md": {
+      "size": 10634,
+      "tags": 0,
+      "links": 4
+    },
+    "01-proj/23/beltrame/beltrame POC.md": {
+      "size": 116,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 124,
-      "Create": 155,
-      "Link": 124,
+      "Create": 161,
+      "Link": 132,
       "Expand": 15
     }
   },
@@ -818,7 +848,7 @@
       "15": 0,
       "16": 19,
       "17": 2,
-      "18": 29,
+      "18": 43,
       "19": 65,
       "20": 103,
       "21": 0,
@@ -829,7 +859,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 172,
+      "Tue": 186,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -857,6 +887,12 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Zaracho.md\"> Zaracho </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/beltrame POC.md\"> beltrame POC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/shifres POC.md\"> shifres POC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Multi-efecto.md\"> Multi-efecto </a>",
@@ -901,13 +937,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia Artificial (IA).md\"> Inteligencia Artificial (IA) </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Humanos.md\"> Humanos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Generatividad.md\"> Generatividad </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md\"> Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md\"> Steyerl_Los condenados de la pantalla </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -929,6 +959,10 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-ref/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Yuval Harari.md\"> Yuval Harari </a>",
@@ -975,11 +1009,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -1082,7 +1112,11 @@
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",

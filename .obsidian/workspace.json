@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/Zaracho.md",
-                "mode": "source",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
@@ -84,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 200
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/Zaracho.md"
+                "file": "03-cla/c-cym06- cohesión audiovisual.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/Zaracho.md",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/Zaracho/Zaracho.md",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,8 +210,10 @@
   },
   "active": "b6e034d32f219935",
   "lastOpenFiles": [
-    "01-proj/23/beltrame/beltrame.md",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym04-vida digital.md",
     "01-proj/23/Zaracho/Zaracho.md",
+    "01-proj/23/beltrame/beltrame.md",
     "04-ref/a-dataview.md",
     "04-ref/a-yuda.md",
     "04-ref/topoi/Forma Musical.md",
@@ -249,8 +251,6 @@
     "04-ref/image",
     "04-ref/glosario/PaaS.md",
     "04-ref/glosario",
-    "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md",
-    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
     "01-proj/23/Zaracho",
     "04-ref/musica visual_ bassino_topoi.pdf",
     "04-ref/espacios",
