@@ -51,7 +51,7 @@ Su impacto en la escena socio-política no se ha podido medir pero su nombre y l
 Esta obra ha sido catalogada dentro de la música conceptual, lo que no es para nada inocente a la hora de pensar en estrategias que puedan lograr una comunicación entre fenómenos sociales y una composición musical. Este género ha sido provisto de muchos medios expresivos a la vez que se ha desprovisto de muchos otros que han sido, en parte, responsables de esta imposibilidad de la música de expresar de manera textual las ideas y lecturas que tienen los compositores del contexto en el que viven.
 
 
-**Otros autores**
+## Otros autores**
 
 Hanns Eisler
 

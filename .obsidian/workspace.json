@@ -29,7 +29,7 @@
                 "file": "01-proj/23/Zaracho/Zaracho.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": true
+                "source": false
               }
             }
           }
@@ -167,9 +167,17 @@
               "type": "copilot-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "c4f7c077fea66022",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -178,6 +186,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "obsidian-book-search-plugin:Create new book note": false,
@@ -197,10 +208,16 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "b6e034d32f219935",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/Zaracho/Zaracho.md",
+    "04-ref/a-dataview.md",
+    "04-ref/a-yuda.md",
+    "04-ref/topoi/Forma Musical.md",
+    "04-ref/topoi/Introducción a la psicoacústica.md",
+    "04-ref/topoi/Cuarta Revolución Industrial.md",
+    "conflict-files-obsidian-git.md",
     "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/shifres",
     "01-proj/23/bassino/codepen/Multi-efecto.md",
@@ -219,7 +236,6 @@
     "04-ref/topoi/Intervencion del espacio público.md",
     "04-ref/topoi/Internetmusic.md",
     "04-ref/topoi/Historia de la tecnología.md",
-    "04-ref/topoi/Forma Musical.md",
     "04-ref/topoi/Filosofía histórica.md",
     "04-ref/topoi/Augmented Cognition.md",
     "04-ref/topoi/Arte participativo.md",
@@ -235,11 +251,6 @@
     "04-ref/glosario",
     "04-ref/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md",
     "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "00-in/musica y arte visual_ bassino_topoi.md",
-    "00-in/memex.md",
-    "00-in/hd-hydra.md",
-    "00-in/cym MOC.md",
-    "00-in/Untitled.md",
     "01-proj/23/Zaracho",
     "04-ref/musica visual_ bassino_topoi.pdf",
     "04-ref/espacios",
