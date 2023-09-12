@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "IbArrowDown",
-      "FlStarOfSixPointsFormedByTrianglesWithAndHexagonCenter",
-      "IbArrowRight",
       "FlPolygonalMultipleStars",
-      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles"
+      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
+      "IbArrowDownLeft",
+      "FabGithubSquare",
+      "IbHugContentVertical"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,8 +31,8 @@
   "02-mat/python": "FabPython",
   "02-mat/jasvascript": "FabJs",
   "00-in": "IbArrowLeft",
-  "01-proj": "IbArrowDownLeft",
-  "02-mat": "IbArrowDown",
+  "01-proj": "IbArrowRight",
+  "02-mat": "IbTabLeftCompact",
   "02-mat/org": "IbTriangleRight",
   "02-mat/tone.js.md": "FlTriangleOfTriangles",
   "02-mat/que es git.md": "FabGithubSquare",
@@ -54,10 +54,5 @@
   },
   "03-cla": "IbArrowCircleForward",
   "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-  "02-mat/partituras": "FlPolygonalMultipleStars",
-  "04-out": "IbArrowRight",
-  "02-mat/obs": {
-    "iconName": "FlStarOfSixPointsFormedByTrianglesWithAndHexagonCenter",
-    "inheritanceIcon": "FlStarOfSixPointsFormedByTrianglesWithAndHexagonCenter"
-  }
+  "02-mat/partituras": "FlPolygonalMultipleStars"
 }

@@ -1109,22 +1109,27 @@
       "tags": 3,
       "links": 2
     },
-    "04-out/cym MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 5
-    },
     "02-mat/obs/help/a-snippets.md": {
       "size": 0,
       "tags": 1,
       "links": 1
+    },
+    "00-in/cym MOC.md": {
+      "size": 102,
+      "tags": 0,
+      "links": 5
+    },
+    "04-out/glosario/URI.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 221,
-      "Create": 132,
-      "Link": 131,
+      "Refactor": 224,
+      "Create": 135,
+      "Link": 134,
       "Expand": 10
     }
   },
@@ -1134,7 +1139,7 @@
       "1": 3,
       "2": 0,
       "3": 0,
-      "4": 0,
+      "4": 2,
       "5": 0,
       "6": 0,
       "7": 0,
@@ -1142,7 +1147,7 @@
       "9": 173,
       "10": 5,
       "11": 17,
-      "12": 21,
+      "12": 28,
       "13": 26,
       "14": 13,
       "15": 4,
@@ -1159,7 +1164,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 15,
+      "Tue": 24,
       "Wed": 418,
       "Thu": 30,
       "Fri": 5,
@@ -1182,6 +1187,9 @@
         "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>",
@@ -1229,12 +1237,10 @@
         "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro app.md\"> Collage sonoro app </a>",
         "<a class=\"internal-link\" href=\"01-proj/21/kobayashi/Generador random.md\"> Generador random </a>",
         "<a class=\"internal-link\" href=\"01-proj/21/fernandez burzaco/Museo Luminosónico.md\"> Museo Luminosónico </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones.md\"> Conexiones </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/jaramillo/Unísono virtual código.md\"> Unísono virtual código </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/bonetto/Oscilador de audio con alimentos.md\"> Oscilador de audio con alimentos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones código.md\"> Conexiones código </a>"
+        "<a class=\"internal-link\" href=\"01-proj/20/ruiz burtoli/Conexiones.md\"> Conexiones </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"00-in/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"04-out/cym MOC.md\"> cym MOC </a>",
@@ -1284,10 +1290,10 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Método científico.md\"> Método científico </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Livecoding.md\"> Livecoding </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La reología del arte.md\"> La reología del arte </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
@@ -1337,11 +1343,11 @@
         "<a class=\"internal-link\" href=\"01-proj/17/lopez/Boreal.md\"> Boreal </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/moscato/La forma de la identidad real.md\"> La forma de la identidad real </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/navarro/Ajedrez.md\"> Ajedrez </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/paladino/No music player.md\"> No music player </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/dipaola-lutteral/Compost sonoro.md\"> Compost sonoro </a>"
+        "<a class=\"internal-link\" href=\"01-proj/17/paladino/No music player.md\"> No music player </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/que pienso de la psicoacústica.md\"> que pienso de la psicoacústica </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1418,7 +1424,9 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
