@@ -4,12 +4,12 @@
   "statusBar_trigger_indicator": true,
   "folder_tag_pattern": [
     {
-      "folder": "04-ref",
+      "folder": "02-mat/obs/help",
       "tag": "",
       "pattern": "a-"
     },
     {
-      "folder": "04-ref/topoi",
+      "folder": "04-out/topoi",
       "tag": "#topoi",
       "pattern": ""
     },
@@ -24,23 +24,28 @@
       "pattern": "c-cym"
     },
     {
-      "folder": "04-ref/espacios",
+      "folder": "04-out/espacios",
       "tag": "#espacio",
       "pattern": ""
     },
     {
-      "folder": "04-ref/personas",
-      "tag": "",
+      "folder": "04-out/personas",
+      "tag": "#person",
       "pattern": ""
     },
     {
-      "folder": "04-ref/templates",
+      "folder": "02-mat/obs/tpl",
       "tag": "",
       "pattern": "t-"
     },
     {
-      "folder": "04-ref/obras",
+      "folder": "04-out/obras",
       "tag": "obra",
+      "pattern": ""
+    },
+    {
+      "folder": "04-out/glosario",
+      "tag": "#glosario",
       "pattern": ""
     }
   ],

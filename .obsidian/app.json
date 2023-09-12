@@ -9,7 +9,9 @@
   },
   "livePreview": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "04-ref",
+  "attachmentFolderPath": "image",
   "newFileLocation": "folder",
-  "newFileFolderPath": "00-in"
+  "newFileFolderPath": "00-in",
+  "defaultViewMode": "preview",
+  "readableLineLength": false
 }

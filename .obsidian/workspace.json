@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "543be4a8f7f3247a",
+            "id": "be536e5242f137bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
-                "mode": "source",
+                "file": "03-cla/c-cym05-integración.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md"
+                "file": "03-cla/c-cym05-integración.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,8 +153,17 @@
               "type": "copilot-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "efe27ff263c10b66",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -163,6 +172,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-spaced-repetition:Revisar Tarjetas": false,
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "switcher:Abrir selector rápido": false,
@@ -174,7 +188,6 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "notion-like-tables:Create new loom": false,
-      "dbfolder:Crear una nueva tabla de base de datos": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-metatable:Metatable": false,
@@ -182,53 +195,56 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "543be4a8f7f3247a",
+  "active": "be536e5242f137bf",
   "lastOpenFiles": [
-    "03-cla/c-cym15-vida digital.md",
-    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
-    "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
-    "04-ref/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
-    "04-ref/bibliografía/Philip Ball_Shapes.md",
-    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "04-ref/bibliografía/John D Barrow_El libro de la nada.md",
-    "04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "04-ref/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "04-ref/bibliografía/_Los condenados de la pantalla 2.md",
-    "04-ref/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
-    "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "README.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
-    "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "01-proj/23/beltrame/Topoi Forma Musical.md",
-    "01-proj/23/Shifres.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "04-out/bibliografía/Boris Groys_Arte y flujo.md",
+    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
     "conflict-files-obsidian-git.md",
-    "image/tp01-topoi-1693328247886.jpeg",
-    "analisis de obras interactivas.md",
-    "Intervencion del espacio público.md",
-    "Inteligencia artificial.md",
-    "Harari.md",
-    "04-ref/musica visual_ bassino_topoi.pdf",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/beltrame/Topoi Forma Musical",
-    "01-proj/23/Petroccelli",
+    "01-proj/18/garella/Dédalo.md",
+    "04-ref/image",
+    "04-ref",
+    "04-ref/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+    "04-out/topoi/Virtualidad y realidad.md",
+    "04-out/topoi/Vida artificial.md",
+    "04-out/topoi/Spectromorphology.md",
+    "04-out/topoi/Sistemas de universos.md",
+    "04-out/topoi/Sistemas complejos.md",
+    "04-out/topoi/Racionalizacion_(videojuegos).md",
+    "04-out/topoi/Música y Política.md",
+    "04-out/topoi/Música Visual.md",
+    "04-out/topoi/Método científico.md",
+    "04-out/topoi/Livecoding.md",
+    "04-out/topoi/La reología del arte.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-out/topoi/Introducción a la psicoacústica.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/Internetmusic.md",
+    "04-out/topoi/Interfaces.md",
+    "04-out/topoi/Humanos.md",
+    "04-out/topoi/Historia de la tecnología.md",
+    "04-out/topoi/Generatividad.md",
+    "04-out/bibliografía/cym.bib",
+    "04-out/topoi",
+    "04-out/procedimientos",
+    "04-out/personas",
+    "04-out/obras",
+    "04-out/glosario",
+    "04-out/espacios",
+    "04-out/bibliografía",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756610.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756609.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756606.jpeg",
+    "04-ref/meta-aprendizaje-1660395828475.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756601.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756597.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756595.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
     "cym-metamap.canvas",
-    "02-mat/procesos/Untitled.loom",
-    "04-ref/espacios",
-    "04-ref/eventos",
-    "Untitled.loom",
     "Untitled.canvas",
-    "image/c-cym02-arte generativo-1693072612770.jpeg",
-    "02-mat/ml",
-    "01-proj/23/bassino",
-    "image/c-cym14 mapas-1692736930784.jpeg",
-    "image/galanter.jpeg",
-    "image/TP1-Topoi-1663103377102.jpeg",
-    "image/TP1-Topoi-1663103377085.jpeg",
-    "03-cla/cym-map.canvas",
-    "image/meta-aprendizaje-1660395828475.jpeg"
+    "03-cla/cym-map.canvas"
   ]
 }

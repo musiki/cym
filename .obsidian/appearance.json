@@ -1,4 +1,12 @@
 {
+  "cssTheme": "",
+  "theme": "moonstone",
   "accentColor": "",
-  "theme": "moonstone"
+  "enabledCssSnippets": [
+    "cards",
+    "MCL Gallery Cards",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "obsidian"
+  ]
 }

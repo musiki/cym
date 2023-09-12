@@ -1,0 +1,42 @@
+---
+type: project
+author: Andrés Moscato
+tags: proyectual
+publish: 2017
+---
+
+LA FORMA DE LA IDENTIDAD REAL
+
+“El hombre sabe pensar en tanto tiene esa posibilidad; pero ese posible no nos garantiza aún que seamos capaces de hacerlo”
+
+ Extracción y síntesis de conceptos: Gilles Deleuze, “Diferencia y repetición - Capítulo 3: La imagen del pensamiento”.
+
+El pensamiento en oposición al reconocimiento
+
+Las situaciones posibles que ponen al pensamiento frente a distintas reacciones pueden ser dos: las que dejan al pensamiento tranquilo y las que lo fuerzan a pensar. Aquellas que dejan al pensamiento apacible son objetos de reconocimiento.  
+El pensamiento solo está ocupado por una imagen de sí mismo en la que se reconoce tanto mejor cuanto que reconoce las cosas. Distingue esencialmente entre la certidumbre y la duda, presuponiendo ante todo la buena voluntad del pensador y la buena naturaleza del pensamiento concebidas como ideal de reconocimiento. Esta pretendida afinidad por lo verdadero predetermina a la vez la imagen del pensamiento y el concepto de la filosofía. Todas las verdades de esta naturaleza son hipotéticas, ya que son incapaces de hacer nacer el acto de pensar en el pensamiento, ya que suponen todo lo que está en cuestión. En verdad, los conceptos no designan nunca más que posibilidades.
+
+No se debe contar con el pensamiento para sentar la necesidad relativa de lo que piensa, sino por el contrario con la contingencia de un encuentro con lo que fuerza a pensar, para levantar y erigir la necesidad absoluta de un acto de pensar, de una pasión de pensar. Las condiciones son las mismas: destrucción de la imagen de un pensamiento que se presupone a sí mismo, génesis del acto de pensar en el pensamiento mismo.
+
+Hay algo en el mundo que fuerza a pensar. Ese algo es el objeto de un encuentro fundamental, y no de un reconocimiento. Lo que se encuentra puede ser captado bajo tonalidades afectivas diversas: admiración, amor, odio, dolor. Su primera característica consiste en que solo puede ser sentido, en esto se opone al reconocimiento. En el
+
+reconocimiento, lo sensible no es de ningún modo lo que solo puede ser sentido; sino que se relaciona directamente con los sentidos por medio de un objeto que puede ser recordado, imaginado, concebido. Presupone el ejercicio de los sentidos y el ejercicio de otras facultades en un sentido común.
+
+El objeto del encuentro, por el contrario, realmente hace nacer la sensibilidad en el sentido. No es una cualidad, sino un signo. No es un ser sensible, sino el ser de lo sensible. No es lo dado, sino aquello por lo que lo dado es dado. Por ello, en cierto modo, es lo insensible. Es lo insensible precisamente desde el punto de vista del reconocimiento, es decir, desde el punto de vista de un ejercicio empírico en el que la sensibilidad no capta más que lo que podría ser captado también por otras facultades; y se relaciona bajo un sentido común con un objeto que también debe ser aprehendido por las otras facultades. La sensibilidad, en presencia de lo que solo puede ser sentido (lo insensible al mismo tiempo), se encuentra ante un límite propio – el signo – y se eleva a un ejercicio trascendente, la enésima potencia. El sentido común ya no está allí para limitar el aporte específico de la sensibilidad a las condiciones de un trabajo conjunto; ésta entra entonces en un juego discordante, sus órganos se hacen metafísicos.
+
+Segunda característica: lo que solo puede ser sentido conmueve el alma, la deja perpleja, es decir, la fuerza a plantearse un problema, como si el objeto de encuentro, el signo, fuera portador de problema. Como si fuera en sí mismo problema.  
+Tercera característica: la memoria trascendental fuerza a su vez al pensamiento a captar lo que solo puede ser pensado, la esencia: no lo inteligible, pues este, con todo, no es sino el modo bajo el cual se piensa lo que puede ser no solo pensado; sino el ser de lo inteligible como ultima potencia del pensamiento, lo impensable también.
+
+Platón determina la naturaleza de los límites en cada caso. El texto la Republica define lo que es esencialmente encontrado, lo que debe distinguirse de todo reconocimiento como el objeto de una sensación simultáneamente contraria. Por lo tanto, la coexistencia de los contrarios, la coexistencia del más y del menos en un devenir cualitativo ilimitado, constituye el signo o el punto de partida de lo que fuerza a pensar. El reconocimiento, por el contrario, mide y limita la cualidad relacionándola con algo; se detiene así el devenir loco. Pero, al definir la primera instancia por esa forma de oposición o de contradictoriedad cualitativa, ¿no confunde ya Platón el ser de lo sensible con un simple ser sensible, con un ser cualitativo puro? La sospecha se refuerza desde el momento en que se considera la segunda instancia, la de la reminiscencia. Pues solo en apariencia la reminiscencia rompe con el modelo del reconocimiento. Más bien se contenta con complicar el esquema: mientras que el reconocimiento se ejerce sobre un objeto perceptible o percibido, la reminiscencia lo hace sobre otro objeto que se supone asociado al primero, o más bien envuelto en él, y que requiere ser reconocido por sí mismo independientemente de una percepción distinta.
+
+Luego, la naturaleza de la memoria trascendental de lo que solo puede ser recordado; pues esa segunda instancia solo es concebida bajo la forma de la similitud en la reminiscencia. Hasta el punto que surge la misma objeción: la reminiscencia confunde el ser de pasado con un ser pasado y, como no puede señalar un momento empírico en el que ese pasado fue presente, invoca un presente original o mítico.  
+La grandeza del concepto de reminiscencia consiste en introducir el tiempo, la duración de tiempo en el pensamiento como tal: de ese modo establece una opacidad propia del pensamiento, testimonio tanto de una mal naturaleza como de una mala voluntad que deben ser sacudidas desde afuera por los signos.
+
+En cuanto a la tercera instancia, la del pensamiento puro o de lo que solo puede ser pensado, Platón la determina como lo contrario separado: la pesadez no es sino pesada; la unidad, solamente una; esto es lo que estamos forzados a pensar bajo la presión de la reminiscencia. Por consiguiente, lo que define la esencia según Platón es la forma de la identidad real. Todo culmina con el gran principio: hay, a pesar de todo y ante todo, una afinidad, una filiación o, quizás es mejor decir, una philiationi del pensamiento con lo verdadero; en suma, una buena naturaleza y un buen deseo, fundados en última instancia en la forma de la analogía del bien. Tanto es así como Platón, que escribió el texto de la República, fue también el primero en erigir la imagen dogmática y moralizante del pensamiento que neutraliza ese texto y ya no lo deja funcionar sino como un <<arrepentimiento>>. Al descubrir el ejercicio superior o transcendente de las facultades, Platón lo subordina a las formas de oposición en lo sensible, de similitud en la reminiscencia, de identidad en la esencia, de analogía en el bien; de ese modo, prepara el mundo de la representación, realiza en él una primera distribución de elementos y ya recubre el ejercicio del pensamiento con una imagen dogmática que la presupone y la traiciona.
+
+El pensamiento impulsado por el arte
+
+El arte se manifiesta frente al pensamiento como un objeto que lo fuerza a pensar, sobrepasando al reconocimiento, por el cual, el arte perdería su labor primordial.  
+Una de las tantas situaciones que disponen al pensamiento de manera activa es el arte. El reconocimiento es incapaz de hacer nacer el acto de pensar en el pensamiento, ya que supone las verdades por naturaleza, el arte pone en jaque estas verdades desplazando al reconocimiento hacia el pensamiento, dando lugar al surgimiento del ejercicio de pensar. El arte destruye a la imagen del pensamiento que se presupone a sí mismo. Desde este punto de vista el arte se presenta como un objeto de un encuentro fundamental, que se opone al reconocimiento y logra hacer la nacer la sensibilidad en el sentido. El objeto de encuentro se configura en un signo. Aquello que solo puede ser sentido conmueve al alma, y la fuerza a plantearse un problema concibiendo en esta instancia a la duda, quien dará lugar a la reflexión.
+
+i Hay un juego que resulta de tomar el sentido de filiación, pero haciendo evidente la raíz griega a través del uso de la phi.

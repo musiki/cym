@@ -22,7 +22,7 @@ produce la fecha actual en la variable dv
 
 
 	```dataview 
-	LIST 'File Path: ' + file.path FROM "04-ref"
+	LIST 'File Path: ' + file.path FROM "04-out"
 	```
 
 ```dataview 
