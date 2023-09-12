@@ -9,26 +9,72 @@ year: 2023
 <!-- slide bg="#010100" -->
 UNTREF | CYM23 | 05
 
+# Éric Sadin
+## Conceptos
+- machine learning
+- motor de búsqueda
+- inteligencia artificial
+- trading algorítmico
+- antrobología
+- acomplamiento humano-maquínico
+- cuerpo-interfaz
+- magia
 
-# Sadin
+Con la aparición del smartphone en tanto objeto globalizado (que permite una continuidad de uso espacio-temporal) desemboca en el fin de la *revolución digital* emergiendo así una **antrobología**, una nueva condición humana duplicada por *asistentes inteligentes*, como un universo cerebral paralelo en expansión continua.
+
+Sadin, quien considera a la máquina no como una encarnación doble de la figura humana, con la búsqueda de duplicar nuestra naturaleza, sino por el contrario, un acoplamiento hacia y desde el humano, entiende que esto no significa la erradicación de la figura humana. En todo caso, es *la muerte del Hombre del siglo XXI*, “ciertamente abordado como un ser actante, pero que, para su bien y el de la humanidad entera, debe ahora despojarse de sus prerrogativas históricas para delegárselas a sistemas más aptos de otra manera para ordenar perfectamente el mundo y garantizarle una vida libre de sus imperfecciones.”
+
+Este acoplamiento humano-maquínico, está destinado a penetrar y manipular con facilidad como una duplicación consustancial a nuestra vida cotidiana, citando a Jacques Ellul: “El universo cifrado de la computadora se convierte progresivamente en el universo que tenemos por la realidad y en el cual nos insertamos”. ​La “condición dual” que ha emergido entrelaza espíritus humanos y maquínicos y traza cartografías recompuestas entre organismos biológicos y potencias computacionales.
+
+    
+# Boris Groys
+## Conceptos
+- espacio museo <> museo contemporáneo
+- evento/performance/muestras temporarias
+- objeto de arte <> información sobre acontecimientos de arte
+- concepto aura (museos <> archivo digital)
+- moderno <> postmoderno
+- original vs copia (desterritorialización-dislocación)
+- técnica de la instalación
+- reología
+
+La “pérdida del aura” fue descrita por Benjamin como *la pérdida del contexto fijo, constante y reconfirmable de una obra de arte*. Según este autor, la obra de arte *deja* su contexto original y comienza a circular **anónimamente** en las redes de reproducción y distribución de las comunicaciones de masas. 
+El original posee un aura que le falta a la copia, entendida como un **contexto fijo**, un lugar bien definido en el espacio; y de esta forma inscrito también en la historia como un objeto **singular y original.**
+
+Pero también se puede producir un original a partir de una copia a través de una técnica de **relocalización topológica** de esa copia, o sea, por medio de la técnica de la **instalación**: una forma de arte que incluye todas las demás formas de arte.
+
+Una instalación no puede ser una copia de otra instalación porque una instalación es por definición presente, **contemporánea**. Es una presentación del presente, una decisión que tiene lugar aquí y ahora. *Al mismo tiempo, sin embargo, una instalación no puede ser verdaderamente nueva sencillamente porque no puede ser inmediatamente comparada a otra, anterior o más vieja*.
+
+>[!note] > más en [[Eric Sadin_La humanidad aumentada]] 
+>[[La reología del arte]]
+>[[La instalación como forma del arte contemporáneo]]
+---
+# partes web
+
+## html
+>[!note] > ver [[html]]
+## css
+>[!note] > ver [[css]]
+
+## integración JS
+>[!note] > ver [[js01-fundamentals]]
+
+### toneJS
+https://tonejs.github.io/
 
 ---
 
-# integración JS
+### partes de un código
 
 ---
-
-# partes de un código
-
----
-# variables y array 
+#### variables y array 
 
 Una variable es un contenedor para un valor, que puede o no variar.
 
 
-# tipo de variables
+#### tipo de variables
 
-## String
+###### String
 Secuencia de texto en cadena
 
 ```js
@@ -36,7 +82,7 @@ Secuencia de texto en cadena
 let miVariable = 'myNote';
 ```
 
-## Number
+###### Number
 
 Esto es un número. Los números no tienen comillas.
 
@@ -45,7 +91,7 @@ let miVariable = 440;
 ```
 
 
-## Boolean
+##### Boolean
 
 Tienen valor true/false
 

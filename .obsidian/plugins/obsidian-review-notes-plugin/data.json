@@ -1123,6 +1123,18 @@
     {
       "path": "03-cla/c-cym05-integración.md",
       "filename": "c-cym05-integración"
+    },
+    {
+      "path": "02-mat/tone.js.md",
+      "filename": "tone.js"
+    },
+    {
+      "path": "02-mat/html.md",
+      "filename": "html"
+    },
+    {
+      "path": "02-mat/css.md",
+      "filename": "css"
     }
   ]
 }

@@ -48,3 +48,5 @@ los efectos modifican la señal de entrada y se conectan en serio o en paralelo 
 
 para agregar un efecto a tu cadena de audio debes conectar el efecto entre la fuente y el Destination. 
 
+# tiempo
+https://github.com/Tonejs/Tone.js/wiki/Time

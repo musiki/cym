@@ -45,9 +45,9 @@
       "links": 0
     },
     "03-cla/c-cym05-integración.md": {
-      "size": 3476,
+      "size": 8047,
       "tags": 6,
-      "links": 0
+      "links": 6
     },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
@@ -765,7 +765,7 @@
       "links": 0
     },
     "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md": {
-      "size": 2727,
+      "size": 4227,
       "tags": 1,
       "links": 0
     },
@@ -1123,14 +1123,19 @@
       "size": 1575,
       "tags": 3,
       "links": 0
+    },
+    "02-mat/css.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 187,
-      "Create": 218,
-      "Link": 203,
-      "Expand": 10
+      "Refactor": 189,
+      "Create": 219,
+      "Link": 208,
+      "Expand": 16
     }
   },
   "dailyCommits": {
@@ -1147,12 +1152,12 @@
       "9": 173,
       "10": 5,
       "11": 25,
-      "12": 21,
+      "12": 22,
       "13": 26,
       "14": 6,
-      "15": 4,
-      "16": 17,
-      "17": 0,
+      "15": 10,
+      "16": 23,
+      "17": 1,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -1164,7 +1169,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 23,
+      "Tue": 37,
       "Wed": 281,
       "Thu": 23,
       "Fri": 5,
@@ -1184,9 +1189,16 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>"
+        "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1236,8 +1248,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Douglas Barret.md\"> Douglas Barret </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Donna Haraway.md\"> Donna Haraway </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1339,7 +1350,9 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Interfaces.md\"> Interfaces </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>"
       ],
-      "Refactored": [],
+      "Refactored": [
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>"
+      ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1434,7 +1447,12 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
@@ -1445,7 +1463,8 @@
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ]
     }
   },
