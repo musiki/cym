@@ -505,8 +505,8 @@
       "filename": "c-cym04-vida digital"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual.md",
-      "filename": "c-cym06- cohesión audiovisual"
+      "path": "03-cla/c-cym06-cohesión audiovisual.md",
+      "filename": "c-cym06-cohesión audiovisual"
     },
     {
       "path": "03-cla/c-cym06-flex-grid.md",
@@ -1119,6 +1119,10 @@
     {
       "path": "02-mat/obs/img/cym MOC-1694393867405.jpeg",
       "filename": "cym MOC-1694393867405"
+    },
+    {
+      "path": "03-cla/c-cym05-integración.md",
+      "filename": "c-cym05-integración"
     }
   ]
 }

@@ -67,8 +67,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym05-integración.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -157,6 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-cla/c-cym05-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,6 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03-cla/c-cym05-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-cla/c-cym05-integración.md"
               }
             }
           },
@@ -229,6 +231,16 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {}
+            }
+          },
+          {
+            "id": "f7989bad5c878747",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -264,44 +276,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "faf0df29942544b1",
   "lastOpenFiles": [
-    "00-in/códigos MOC.md",
-    "01-proj/22/synth-flex.md",
-    "00-in/bib MOC.md",
-    "00-in/cym MOC.md",
-    "00-in/hd-hydra.md",
-    "00-in/hi augmentation.md",
-    "00-in/memex.md",
-    "00-in/meta-aprendizaje.md",
-    "00-in/obras MOC.md",
-    "00-in/obras.in MOC.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym06-flex-grid.md",
+    "03-cla/c-cym06-cohesión audiovisual.md",
+    "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
     "00-in/personas MOC.md",
+    "00-in/bib MOC.md",
+    "00-in/obras MOC.md",
+    "00-in/personas MOC-1694487246928.jpeg",
+    "00-in/personas MOC-1694487246927.jpeg",
+    "00-in/personas MOC-1694487246925.jpeg",
+    "00-in/personas MOC-1694487246923.jpeg",
+    "00-in/personas MOC-1694487246921.jpeg",
+    "00-in/personas MOC-1694487246903.jpeg",
+    "04-out/personas/Carlos Trilnik.md",
+    "04-out/personas/Yuval Harari.md",
+    "04-out/personas/Yotam Mann.md",
+    "04-out/personas/Stuart Russell.md",
+    "04-out/personas/Hito Steyerl.md",
+    "04-out/personas/Klaus Schwab.md",
+    "04-out/personas/Harari Yuval Noah.md",
     "00-in/personas MOC-1694487246926.jpeg",
     "00-in/personas MOC-1694487246922.jpeg",
     "00-in/personas MOC-1694487246910.jpeg",
     "00-in/personas MOC-1694487246911.jpeg",
-    "00-in/personas MOC-1694487246903.jpeg",
-    "conflict-files-obsidian-git.md",
-    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "04-out/glosario/URI.md",
-    "00-in/personas MOC-1694487246928.jpeg",
-    "00-in/personas MOC-1694487246927.jpeg",
-    "00-in/personas MOC-1694487246925.jpeg",
-    "00-in/personas MOC-1694487246924.jpeg",
-    "00-in/personas MOC-1694487246923.jpeg",
-    "04-out/topoi/Arte participativo.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
-    "04-out/topoi/Azar.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "01-proj/19/gawel/Metáforas.md",
-    "01-proj/19/costa/Canoa atemporal.md",
-    "00-in/topoi MOC.md",
-    "04-out/topoi/Internetmusic.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "04-out/topoi/Livecoding.md",
-    "04-out/topoi/Vida artificial.md",
     "image/image",
     "image",
     "04-out/bibliografía/cym.bib",

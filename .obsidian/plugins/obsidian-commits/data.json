@@ -14,11 +14,6 @@
       "tags": 8,
       "links": 0
     },
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
-      "size": 1575,
-      "tags": 3,
-      "links": 0
-    },
     "03-cla/c-cym12-Aframe2.md": {
       "size": 1202,
       "tags": 6,
@@ -53,11 +48,6 @@
       "size": 3476,
       "tags": 6,
       "links": 0
-    },
-    "03-cla/c-cym03 mapas.md": {
-      "size": 3691,
-      "tags": 4,
-      "links": 3
     },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
@@ -634,11 +624,6 @@
       "tags": 9,
       "links": 16
     },
-    "03-cla/c-cym06- cohesión audiovisual.md": {
-      "size": 10646,
-      "tags": 7,
-      "links": 8
-    },
     "03-cla/c-cym06-flex-grid.md": {
       "size": 598,
       "tags": 6,
@@ -1123,11 +1108,26 @@
       "size": 1257,
       "tags": 1,
       "links": 0
+    },
+    "03-cla/c-cym03-mapas.md": {
+      "size": 3691,
+      "tags": 4,
+      "links": 3
+    },
+    "03-cla/c-cym06-cohesión audiovisual.md": {
+      "size": 10646,
+      "tags": 7,
+      "links": 8
+    },
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md": {
+      "size": 1575,
+      "tags": 3,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 184,
+      "Refactor": 187,
       "Create": 218,
       "Link": 203,
       "Expand": 10
@@ -1146,7 +1146,7 @@
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 22,
+      "11": 25,
       "12": 21,
       "13": 26,
       "14": 6,
@@ -1164,7 +1164,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 20,
+      "Tue": 23,
       "Wed": 281,
       "Thu": 23,
       "Fri": 5,
@@ -1281,7 +1281,10 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petrocelli POC.md\"> petrocelli POC </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Zaracho.md\"> Zaracho </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música y Política.md\"> Música y Política </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
