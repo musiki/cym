@@ -1118,13 +1118,18 @@
       "size": 102,
       "tags": 0,
       "links": 5
+    },
+    "04-out/glosario/URI.md": {
+      "size": 1257,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 183,
-      "Create": 216,
-      "Link": 201,
+      "Refactor": 184,
+      "Create": 218,
+      "Link": 203,
       "Expand": 10
     }
   },
@@ -1141,7 +1146,7 @@
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 17,
+      "11": 22,
       "12": 21,
       "13": 26,
       "14": 6,
@@ -1159,7 +1164,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 15,
+      "Tue": 20,
       "Wed": 281,
       "Thu": 23,
       "Fri": 5,
@@ -1182,6 +1187,8 @@
         "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
@@ -1230,9 +1237,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Douglas Barret.md\"> Douglas Barret </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Donna Haraway.md\"> Donna Haraway </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1279,6 +1284,7 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/img/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
@@ -1328,11 +1334,11 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Interfaces.md\"> Interfaces </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/languages.md\"> languages </a>",
         "<a class=\"internal-link\" href=\"04-ref/espacios/MIT Medialab.md\"> MIT Medialab </a>",
@@ -1382,8 +1388,7 @@
         "<a class=\"internal-link\" href=\"04-ref/templates/t-liquid.md\"> t-liquid </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-cym-class.md\"> t-cym-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-class.md\"> t-class </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1425,7 +1430,8 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

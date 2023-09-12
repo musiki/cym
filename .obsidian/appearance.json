@@ -1,6 +1,6 @@
 {
-  "cssTheme": "",
-  "theme": "moonstone",
+  "cssTheme": "Terminal",
+  "theme": "obsidian",
   "accentColor": "",
   "enabledCssSnippets": [
     "cards",
@@ -8,5 +8,8 @@
     "MCL Multi Column",
     "MCL Wide Views",
     "obsidian"
-  ]
+  ],
+  "nativeMenus": false,
+  "textFontFamily": "Helvetica,IBM Plex Sans",
+  "interfaceFontFamily": "IBM Plex Mono"
 }

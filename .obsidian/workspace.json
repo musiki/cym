@@ -73,9 +73,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "81395a99334280a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -157,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -266,12 +279,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "faf0df29942544b1",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "00-in/códigos MOC.md",
+    "01-proj/22/synth-flex.md",
     "00-in/bib MOC.md",
+    "00-in/cym MOC.md",
+    "00-in/hd-hydra.md",
+    "00-in/hi augmentation.md",
+    "00-in/memex.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/obras MOC.md",
+    "00-in/obras.in MOC.md",
+    "00-in/personas MOC.md",
+    "00-in/personas MOC-1694487246926.jpeg",
+    "00-in/personas MOC-1694487246922.jpeg",
+    "00-in/personas MOC-1694487246910.jpeg",
+    "00-in/personas MOC-1694487246911.jpeg",
+    "00-in/personas MOC-1694487246903.jpeg",
+    "conflict-files-obsidian-git.md",
+    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+    "04-out/glosario/URI.md",
+    "00-in/personas MOC-1694487246928.jpeg",
+    "00-in/personas MOC-1694487246927.jpeg",
+    "00-in/personas MOC-1694487246925.jpeg",
+    "00-in/personas MOC-1694487246924.jpeg",
+    "00-in/personas MOC-1694487246923.jpeg",
     "04-out/topoi/Arte participativo.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
-    "00-in/cym MOC.md",
     "04-out/topoi/Azar.md",
     "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/Racionalizacion_(videojuegos).md",
@@ -280,30 +315,8 @@
     "00-in/topoi MOC.md",
     "04-out/topoi/Internetmusic.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "00-in/hd-hydra.md",
-    "00-in/cym MOC-1694393867395.jpeg",
-    "00-in/cym MOC-1694393867397.jpeg",
-    "00-in/cym MOC-1694393867402.jpeg",
-    "00-in/cym MOC-1694393867410.jpeg",
-    "00-in/cym MOC-1694393867412.jpeg",
-    "00-in/cym MOC-1694393867400.jpeg",
-    "00-in/cym MOC-1694393867404.jpeg",
-    "00-in/cym MOC-1694393867408.jpeg",
-    "00-in/meta-aprendizaje.md",
     "04-out/topoi/Livecoding.md",
     "04-out/topoi/Vida artificial.md",
-    "04-out/topoi/Forma Musical.md",
-    "00-in/proyectos MOC.md",
-    "00-in/personas MOC.md",
-    "01-proj/15/bergaglio/Supernova luna llena.md",
-    "00-in/obras.in MOC.md",
-    "00-in/obras MOC.md",
-    "00-in/códigos MOC.md",
-    "04-out/bibliografía/Boris Groys_Arte y flujo.md",
-    "04-out/topoi/Cuarta Revolución Industrial.md",
-    "04-out/topoi/Augmented Cognition.md",
-    "00-in/cym MOC-1694393867398.jpeg",
-    "00-in/cym MOC-1694393867407.jpeg",
     "image/image",
     "image",
     "04-out/bibliografía/cym.bib",
