@@ -1,5 +1,5 @@
 ```img-gallery
-path: image
+path: 02-mat/obs/img
 type: vertical
 heiht: 240
 gutter: 0

@@ -1,7 +1,7 @@
 {
-  "cssTheme": "Terminal",
-  "theme": "obsidian",
-  "accentColor": "",
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "accentColor": "#2e4d00",
   "enabledCssSnippets": [
     "cards",
     "MCL Gallery Cards",

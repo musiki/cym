@@ -809,8 +809,8 @@
       "filename": "cym MOC-1694393867405"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246926.jpeg",
-      "filename": "personas MOC-1694487246926"
+      "path": "02-mat/obs/img/yokoono.jpeg",
+      "filename": "yokoono"
     },
     {
       "path": "02-mat/obs/img/cym MOC-1694393867407.jpeg",
@@ -847,6 +847,34 @@
     {
       "path": "04-out/glosario/URI.md",
       "filename": "URI"
+    },
+    {
+      "path": "04-out/personas/Yuval Noah Harari.md",
+      "filename": "Yuval Noah Harari"
+    },
+    {
+      "path": "03-cla/c-cym02-arte generativo.md",
+      "filename": "c-cym02-arte generativo"
+    },
+    {
+      "path": "03-cla/c-cym-05-principios generativos.md",
+      "filename": "c-cym-05-principios generativos"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-cym-class.md",
+      "filename": "t-cym-class"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-lorem.md",
+      "filename": "t-lorem"
+    },
+    {
+      "path": "04-out/glosario/PWA.md",
+      "filename": "PWA"
+    },
+    {
+      "path": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
+      "filename": "c-cym-05b-relaciones sonolumínicas"
     }
   ]
 }

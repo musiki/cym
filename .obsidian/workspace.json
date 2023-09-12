@@ -4,55 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "c8b923fe3834ca42",
+        "id": "24ffdad4e6b7a8a7",
         "type": "tabs",
         "children": [
           {
-            "id": "ee152aef65cad3bb",
+            "id": "56f8e2557f298622",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/personas MOC.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
           },
           {
-            "id": "be1e659e5be2e40a",
+            "id": "e6a3c583c0e9b36a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/personas MOC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ef5f7e6b26b557ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "0cb81cc26dbef30b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -60,7 +34,21 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
+      },
+      {
+        "id": "74ff73e285ea9868",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e32d24dd9f9bf5d",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5306372642517
+    "width": 380.51103591918945
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md"
+                "file": "03-cla/c-cym06- cohesión audiovisual.md"
               }
             }
           },
@@ -145,25 +133,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "03-cla/c-cym06- cohesión audiovisual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "2ee534ce5bfe466f",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -195,7 +171,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "67c7212f7255321a",
@@ -247,7 +223,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5
+    "width": 392.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,49 +248,49 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
-      "obsidian-read-it-later:ReadItLater: Save clipboard": false
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false
     }
   },
-  "active": "0cb81cc26dbef30b",
+  "active": "e6a3c583c0e9b36a",
   "lastOpenFiles": [
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "04-out/glosario/URI.md",
-    "04-out/glosario/PaaS.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym05-integración.md",
-    "03-cla/c-cym07-networking.md",
-    "02-mat/obs/img/personas MOC-1694487246926.jpeg",
-    "02-mat/obs/img/personas MOC-1694487246922.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867412.jpeg",
-    "02-mat/obs/img/personas MOC-1694487246911.jpeg",
-    "02-mat/obs/img/personas MOC-1694487246903.jpeg",
-    "02-mat/obs/img/personas MOC-1694487246927.jpeg",
-    "02-mat/obs/img/personas MOC-1694487246928.jpeg",
-    "00-in/meta-aprendizaje.md",
-    "02-mat/obs/img/cym MOC-1694393867405.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867407.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "00-in/hd-hydra.md",
+    "03-cla/c-cym-05-principios generativos.md",
     "00-in/personas MOC.md",
+    "02-mat/obs/img/personas MOC-1694487246928.jpeg",
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym-05b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06- cohesión audiovisual.md",
+    "02-mat/obs/img/personas MOC-1694487246927.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246925.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246924.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246923.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246922.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246912.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246921.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246910.jpeg",
+    "02-mat/obs/img/personas MOC-1694487246911.jpeg",
+    "00-in/hi augmentation.md",
+    "00-in/meta-aprendizaje.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/combinational creativity.md",
+    "03-cla/c-cym04-vida digital.md",
+    "02-mat/obs/tpl/t-lorem.md",
+    "04-out/glosario/PWA.md",
+    "02-mat/obs/tpl/t-cym-class.md",
+    "02-mat/obs/tpl/t-class.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "04-out/topoi/Generatividad.md",
+    "01-proj/22/lopez/Gentics.md",
+    "02-mat/obs/img/gal.md",
+    "04-out/personas/John Barrows.md",
+    "00-in/proyectos MOC.md",
+    "00-in/bib MOC.md",
+    "00-in/obras.in MOC.md",
+    "00-in/obras MOC.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "04-out/personas/Yuval Noah Harari.md",
     "image/image",
     "image",
-    "00-in/cym MOC.md",
-    "04-out/personas/Hito Steyerl.md",
-    "04-out/personas/Douglas Barret.md",
-    "04-out/personas/Donna Haraway.md",
-    "04-out/personas/Cecila Arditto.md",
-    "04-out/personas/Carlos Trilnik.md",
-    "00-in/topoi MOC.md",
-    "README.md",
-    "02-mat/obs/help/a-plugins.md",
-    "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym07-hydra.md",
-    "00-in/bib MOC.md",
     "cym-metamap.canvas",
     "02-mat/obs/Untitled.loom",
     "02-mat/obs/help",
