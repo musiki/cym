@@ -5,10 +5,8 @@
   "graph",
   "backlink",
   "canvas",
-  "outgoing-link",
   "tag-pane",
   "properties",
-  "page-preview",
   "daily-notes",
   "templates",
   "note-composer",
@@ -19,7 +17,6 @@
   "markdown-importer",
   "outline",
   "word-count",
-  "slides",
   "workspaces",
   "file-recovery"
 ]

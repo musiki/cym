@@ -40,7 +40,7 @@ graph TD
 
 a1("obra > diccionario [objeto abstracto, forma, relación]")-->a2(" diccionario [objeto abstracto, forma, relación] ")-->a3("obra >- operaciones (rotar, variar, transparentar) - recepción (sincronia con la Gestalt)")
 
-classDef className fill:#200,stroke:#fff,stroke-width:2px;width:100%
+classDef className fill:#FFF,stroke:#aaa,stroke-width:2px;width:100%
 
 class start,a1,a2,a3 className;
 
@@ -109,8 +109,6 @@ note:Del mismo modo, al mirar una composición hecha en la Técnica de los Doce 
 
 --
 
-![[c-cym03- cohesión audivisual-1661272795123.jpeg]]
-
 Braxton describe el #108B como "una serie de posibles sonidos de líneas curvas o cambios dinámicos de líneas curvas" (311), lo que implica que las líneas pueden indicar el tono y/o el volumen, y compara la música primero con "un continuo de tensiones y 'susurros'
 > Graham Lock. Lo que yo llamo un sonido
 --
@@ -119,12 +117,12 @@ Braxton describe el #108B como "una serie de posibles sonidos de líneas curvas 
 
 Destilado aún más, la partitura es sólo un conjunto de instrucciones. Podrían estar escritas en cualquier idioma sencillo.
 
-![[c-cym03- cohesión audivisual-1661272779233.jpeg]]
- > Yoko Ono
- 
+
+![[yokoono.jpeg]]
 
 ---
 [Ligeti - Artikulation]
+
 <iframe title="Ligeti - Artikulation" src="https://www.youtube.com/embed/71hNl_skTZQ?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 --
 
@@ -177,6 +175,8 @@ Dots - Norm McLaren
 http://www.csounds.com/manual/html/ScoreTop.html
 
 ---
+
+
 
 # js2
 

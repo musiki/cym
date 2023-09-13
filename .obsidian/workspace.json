@@ -73,9 +73,35 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "99c371953a71aaa6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym05-integración.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7241070b6d566195",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -157,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym05-integración.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -276,11 +302,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "7241070b6d566195",
   "lastOpenFiles": [
+    "03-cla/c-cym05-integración.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym-05-principios generativos.md",
+    "03-cla/c-cym-05b-relaciones sonolumínicas.md",
+    "03-cla/c-cym05-integración-1694571104954.jpeg",
+    "03-cla/c-cym05-integración-1694571105626.jpeg",
+    "03-cla/c-cym05-integración-1694571105804.jpeg",
+    "03-cla/c-cym05-integración-1694571105113.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676431.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
+    "conflict-files-obsidian-git.md",
+    "04-out/personas/Yuval Noah Harari.md",
+    "04-out/glosario/PWA.md",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676433.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676432.jpeg",
+    "02-mat/obs/tpl/t-lorem.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Música y arte visual.md",
-    "03-cla/c-cym05-integración.md",
     "02-mat/tone.js.md",
     "02-mat/html.md",
     "02-mat/jasvascript/js01-fundamentals.md",
@@ -294,27 +338,9 @@
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym06-flex-grid.md",
-    "04-out/bibliografía/Boris Groys_Arte y flujo.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "02-mat/procesos/Untitled.loom",
-    "04-out/procedimientos/extrañamiento.md",
-    "04-out/procedimientos/tipologías de instalación.md",
-    "04-out/procedimientos/analisis de obras interactivas.md",
-    "00-in/personas MOC-1694487246928.jpeg",
-    "00-in/personas MOC-1694487246927.jpeg",
-    "00-in/personas MOC-1694487246925.jpeg",
-    "00-in/personas MOC-1694487246923.jpeg",
-    "00-in/personas MOC-1694487246921.jpeg",
-    "00-in/personas MOC-1694487246903.jpeg",
-    "00-in/personas MOC-1694487246926.jpeg",
-    "00-in/personas MOC-1694487246922.jpeg",
-    "00-in/personas MOC-1694487246910.jpeg",
-    "00-in/personas MOC-1694487246911.jpeg",
     "image/image",
     "image",
     "04-out/bibliografía/cym.bib",
