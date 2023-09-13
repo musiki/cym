@@ -77,15 +77,11 @@ Ordena cada parámetro en una matriz XY donde la dimensión horizontal delinea l
 
 Asi, la **_consonancia audiovisual_ involucra un refuerzo lineal entre los modos mientras quee su disonancia incluye "un desacuerdo entre las naturalezas figurativas.**
 
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%281%29.png)
 
 _fig 3. Superposición de los paradigmas de Coulter y Chión._
 
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%282%29.png)
 
 _fig 4. Paradigma tridimensional_
-
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%283%29.png)
 
 _fig. 5: Isomorfía física y mapeada._
 

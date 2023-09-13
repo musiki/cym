@@ -13,28 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym-05-principios generativos.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "74ff73e285ea9868",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "5e32d24dd9f9bf5d",
+            "id": "5130dac6b33310a8",
             "type": "leaf",
             "state": {
-              "type": "reveal-preview-view",
-              "state": {}
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.51103591918945
+    "width": 458.5026054382324
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -101,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym-05-principios generativos.md"
+                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md"
               }
             }
           },
@@ -119,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym-05-principios generativos.md",
+                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,8 +235,11 @@
       "translate:Open translation view": false
     }
   },
-  "active": "e6a3c583c0e9b36a",
+  "active": "5130dac6b33310a8",
   "lastOpenFiles": [
+    "03-cla/c-cym-05-principios generativos.md",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
     "image/image",
     "image",
     "conflict-files-obsidian-git.md",
@@ -256,9 +256,6 @@
     "03-cla/c-cym06- cohesión audiovisual-1694557676430.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676429.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676423.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
-    "03-cla/c-cym-05-principios generativos.md",
     "00-in/personas MOC.md",
     "03-cla/c-cym05-integración.md",
     "03-cla/c-cym-05b-relaciones sonolumínicas.md",
