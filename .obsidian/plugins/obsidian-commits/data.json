@@ -44,11 +44,6 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym05-integración.md": {
-      "size": 8047,
-      "tags": 6,
-      "links": 6
-    },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
       "tags": 2,
@@ -624,11 +619,6 @@
       "tags": 9,
       "links": 16
     },
-    "03-cla/c-cym06-flex-grid.md": {
-      "size": 598,
-      "tags": 6,
-      "links": 1
-    },
     "00-in/obras.in MOC.md": {
       "size": 95,
       "tags": 0,
@@ -1099,11 +1089,6 @@
       "tags": 4,
       "links": 3
     },
-    "03-cla/c-cym06-cohesión audiovisual.md": {
-      "size": 10646,
-      "tags": 7,
-      "links": 7
-    },
     "03-cla/c-cym13-Proto-historia del arte numérico argentino.md": {
       "size": 1575,
       "tags": 3,
@@ -1119,16 +1104,6 @@
       "tags": 0,
       "links": 0
     },
-    "03-cla/c-cym-05-principios generativos.md": {
-      "size": 608,
-      "tags": 3,
-      "links": 2
-    },
-    "03-cla/c-cym-05b-relaciones sonolumínicas.md": {
-      "size": 6234,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/glosario/PWA.md": {
       "size": 1124,
       "tags": 1,
@@ -1138,12 +1113,37 @@
       "size": 201,
       "tags": 1,
       "links": 0
+    },
+    "03-cla/c-cym06-principios generativos.md": {
+      "size": 608,
+      "tags": 3,
+      "links": 2
+    },
+    "03-cla/c-cym06b-relaciones sonolumínicas.md": {
+      "size": 6234,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym07-cohesión audiovisual.md": {
+      "size": 10646,
+      "tags": 7,
+      "links": 7
+    },
+    "03-cla/c-cym07-flex-grid.md": {
+      "size": 598,
+      "tags": 6,
+      "links": 1
+    },
+    "03-cla/c-cym05.06-integración.md": {
+      "size": 8047,
+      "tags": 6,
+      "links": 6
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 195,
-      "Create": 225,
+      "Refactor": 204,
+      "Create": 226,
       "Link": 213,
       "Expand": 16
     }
@@ -1173,13 +1173,13 @@
       "20": 0,
       "21": 188,
       "22": 97,
-      "23": 51
+      "23": 61
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 54,
+      "Tue": 64,
       "Wed": 281,
       "Thu": 23,
       "Fri": 5,
@@ -1208,6 +1208,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
@@ -1257,10 +1258,11 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/John Barrows.md\"> John Barrows </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Klaus Schwab.md\"> Klaus Schwab </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05y06-integración.md\"> c-cym05y06-integración </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
@@ -1305,7 +1307,11 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06b-relaciones sonolumínicas.md\"> c-cym06b-relaciones sonolumínicas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym067-flex-grid.md\"> c-cym067-flex-grid </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
@@ -1364,6 +1370,7 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
@@ -1413,8 +1420,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/templater.md\"> templater </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-movie.md\"> t-movie </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

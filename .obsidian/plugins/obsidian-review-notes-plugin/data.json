@@ -505,12 +505,12 @@
       "filename": "c-cym04-vida digital"
     },
     {
-      "path": "03-cla/c-cym06-cohesión audiovisual.md",
-      "filename": "c-cym06-cohesión audiovisual"
+      "path": "03-cla/c-cym07-cohesión audiovisual.md",
+      "filename": "c-cym07-cohesión audiovisual"
     },
     {
-      "path": "03-cla/c-cym06-flex-grid.md",
-      "filename": "c-cym06-flex-grid"
+      "path": "03-cla/c-cym07-flex-grid.md",
+      "filename": "c-cym07-flex-grid"
     },
     {
       "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
@@ -1121,8 +1121,8 @@
       "filename": "cym MOC-1694393867405"
     },
     {
-      "path": "03-cla/c-cym05-integración.md",
-      "filename": "c-cym05-integración"
+      "path": "03-cla/c-cym05.06-integración.md",
+      "filename": "c-cym05.06-integración"
     },
     {
       "path": "02-mat/tone.js.md",
@@ -1159,6 +1159,10 @@
     {
       "path": "03-cla/c-cym05-integración-1694571105804.jpeg",
       "filename": "c-cym05-integración-1694571105804"
+    },
+    {
+      "path": "03-cla/c-cym06-principios generativos.md",
+      "filename": "c-cym06-principios generativos"
     }
   ]
 }

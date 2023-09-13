@@ -1,7 +1,7 @@
 
 ```dataview
-TABLE    without ID ("![|200](" + photo + ")") as foto, file.link as name, file.frontmatter.born as "year", tags, file.outlinks as "backlinks"
+TABLE    without ID ("![|100](" + photo + ")") as foto, file.link as name, year as year, tags, backlinks as backlinks
 FROM "04-out/personas" 
+SORT Status DESC
 FLATTEN tags
-GROUP by tags
 ```

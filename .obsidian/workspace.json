@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "03-cla/c-cym05.06-integración.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "03-cla/c-cym03-mapas.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -146,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 429.5
   },
   "right": {
     "id": "80820653654ffa07",
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "03-cla/c-cym03-mapas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym05-integración.md"
+                "file": "03-cla/c-cym03-mapas.md"
               }
             }
           },
@@ -266,6 +266,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "translate:Open translation view": false,
       "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
@@ -289,44 +290,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99c371953a71aaa6",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym05-integración.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym-05-principios generativos.md",
-    "03-cla/c-cym-05b-relaciones sonolumínicas.md",
-    "03-cla/c-cym05-integración-1694571104954.jpeg",
-    "03-cla/c-cym05-integración-1694571105626.jpeg",
-    "03-cla/c-cym05-integración-1694571105804.jpeg",
-    "03-cla/c-cym05-integración-1694571105113.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676431.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
-    "04-out/personas/Yuval Noah Harari.md",
-    "04-out/glosario/PWA.md",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676433.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676432.jpeg",
-    "02-mat/obs/tpl/t-lorem.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "02-mat/tone.js.md",
-    "02-mat/html.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/css.md",
-    "04-out/topoi/La reología del arte.md",
-    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
-    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "03-cla/c-cym06-cohesión audiovisual.md",
-    "03-cla/c-cym04-vida digital.md",
-    "02-mat/que es git.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym00-presentación.md",
+    "03-cla/c-cym05-integración-1694571105494.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676429.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676431.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676432.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676433.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
+    "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym07-flex-grid.md",
     "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym06-flex-grid.md",
+    "03-cla/c-cym07-networking.md",
+    "03-cla/c-cym05-integración-1694571104954.jpeg",
+    "03-cla/c-cym05-integración-1694571105804.jpeg",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym05-integración-1694571105113.jpeg",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym04-vida digital.md",
+    "00-in/topoi MOC.md",
+    "04-out/personas/John Barrows.md",
+    "00-in/cym MOC.md",
+    "04-out/topoi/Historia de la tecnología.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/Filosofía 21.md",
+    "04-out/topoi/Augmented Cognition.md",
+    "00-in/bib MOC.md",
+    "00-in/personas MOC.md",
+    "04-out/personas/Carlos Trilnik.md",
+    "04-out/personas/Dennis Fabian Peter.md",
+    "04-out/topoi/Arte participativo.md",
+    "04-out/personas/Douglas Barret.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "02-mat/procesos/Untitled.loom",
     "image/image",
     "image",
@@ -336,7 +337,6 @@
     "04-out/obras",
     "04-out/personas",
     "04-out/espacios",
-    "04-out/glosario",
     "cym-metamap.canvas",
     "Untitled.canvas"
   ]

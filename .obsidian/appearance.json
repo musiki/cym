@@ -1,21 +1,3 @@
 {
-<<<<<<< HEAD
-  "cssTheme": "Minimal",
-  "theme": "moonstone",
-  "accentColor": "#2e4d00",
-=======
-  "cssTheme": "",
-  "theme": "obsidian",
-  "accentColor": "",
->>>>>>> origin/main
-  "enabledCssSnippets": [
-    "cards",
-    "MCL Gallery Cards",
-    "MCL Multi Column",
-    "MCL Wide Views",
-    "obsidian"
-  ],
-  "nativeMenus": false,
-  "textFontFamily": "Helvetica,IBM Plex Sans",
-  "interfaceFontFamily": "IBM Plex Mono"
+  "accentColor": ""
 }

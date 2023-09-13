@@ -5,14 +5,14 @@ tags:
   - expandida
   - class
 unit: 1
-num: 5
+num: 6
 year: 2023
 author: zztt
 ---
 
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 05
+UNTREF | CYM23 | 6
 # principios generativos
 ---
 
