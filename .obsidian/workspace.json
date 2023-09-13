@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "03-cla/c-cym06c-tonejs.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "03-cla/c-cym06c-tonejs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md"
+                "file": "03-cla/c-cym06c-tonejs.md"
               }
             }
           },
@@ -292,9 +292,14 @@
   },
   "active": "99c371953a71aaa6",
   "lastOpenFiles": [
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym04-vida digital.md",
     "03-cla/c-cym02-arte generativo.md",
     "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym04-vida digital.md",
     "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
     "03-cla/c-cym05-integración-1694571104954.jpeg",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
@@ -306,14 +311,10 @@
     "03-cla/c-cym06- cohesión audiovisual-1694557676433.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
-    "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
     "03-cla/c-cym07-flex-grid.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym07-networking.md",
     "03-cla/c-cym05-integración-1694571105804.jpeg",
-    "03-cla/c-cym05.06-integración.md",
     "00-in/topoi MOC.md",
     "04-out/personas/John Barrows.md",
     "00-in/cym MOC.md",

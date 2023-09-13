@@ -12,7 +12,7 @@ author: zztt
 
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 6
+UNTREF | CYM23 | 06
 # principios generativos
 ---
 

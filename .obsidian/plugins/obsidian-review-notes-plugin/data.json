@@ -1163,6 +1163,10 @@
     {
       "path": "03-cla/c-cym06-principios generativos.md",
       "filename": "c-cym06-principios generativos"
+    },
+    {
+      "path": "03-cla/c-cym06c-tonejs.md",
+      "filename": "c-cym06c-tonejs"
     }
   ]
 }

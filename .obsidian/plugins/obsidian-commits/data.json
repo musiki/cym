@@ -1138,19 +1138,24 @@
       "size": 8047,
       "tags": 6,
       "links": 6
+    },
+    "03-cla/c-cym06c-tonejs.md": {
+      "size": 607,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 204,
-      "Create": 226,
-      "Link": 213,
+      "Refactor": 207,
+      "Create": 227,
+      "Link": 215,
       "Expand": 16
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 16,
+      "0": 22,
       "1": 3,
       "2": 0,
       "3": 0,
@@ -1180,7 +1185,7 @@
     "/": {
       "Mon": 7,
       "Tue": 64,
-      "Wed": 281,
+      "Wed": 287,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1208,6 +1213,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos 1.md\"> c-cym06-principios generativos 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
@@ -1257,10 +1263,10 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Yotam Mann.md\"> Yotam Mann </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Klaus Schwab.md\"> Klaus Schwab </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05y06-integración.md\"> c-cym05y06-integración </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1310,10 +1316,10 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06b-relaciones sonolumínicas.md\"> c-cym06b-relaciones sonolumínicas </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym067-flex-grid.md\"> c-cym067-flex-grid </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
@@ -1363,8 +1369,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Física.md\"> Física </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Generatividad.md\"> Generatividad </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>"
@@ -1470,11 +1475,13 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
@@ -1484,7 +1491,8 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>"
       ]
     }
   },
