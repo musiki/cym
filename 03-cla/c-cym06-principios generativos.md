@@ -41,8 +41,6 @@ UNTREF | CYM23 | 06
 - descontextualización
 - adaptación de la observación
 --- 
----
-
 ## emergencia de procedimientos numéricos 
 
 ---
