@@ -951,6 +951,26 @@
     {
       "path": "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
       "filename": "c-cym13-Proto-historia del arte numérico argentino"
+    },
+    {
+      "path": "03-cla/c-cym05.06-integración.md",
+      "filename": "c-cym05.06-integración"
+    },
+    {
+      "path": "03-cla/c-cym06-principios generativos.md",
+      "filename": "c-cym06-principios generativos"
+    },
+    {
+      "path": "03-cla/c-cym06b-relaciones sonolumínicas.md",
+      "filename": "c-cym06b-relaciones sonolumínicas"
+    },
+    {
+      "path": "03-cla/c-cym07-cohesión audiovisual.md",
+      "filename": "c-cym07-cohesión audiovisual"
+    },
+    {
+      "path": "03-cla/c-cym07-flex-grid.md",
+      "filename": "c-cym07-flex-grid"
     }
   ]
 }

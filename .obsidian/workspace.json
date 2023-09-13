@@ -8,25 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6a3c583c0e9b36a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "5130dac6b33310a8",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
                 "currentVersion": "1.4.12"
+              }
+            }
+          },
+          {
+            "id": "46b675169000f491",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,14 +235,19 @@
       "translate:Open translation view": false
     }
   },
-  "active": "5130dac6b33310a8",
+  "active": "46b675169000f491",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym07-flex-grid.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym05.06-integración.md",
     "03-cla/c-cym-05-principios generativos.md",
     "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
     "image/image",
     "image",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
     "03-cla/c-cym06-cohesión audiovisual.md",
@@ -270,10 +275,6 @@
     "02-mat/obs/tpl/t-class.md",
     "03-cla/c-cym02-arte generativo.md",
     "04-out/topoi/Generatividad.md",
-    "01-proj/22/lopez/Gentics.md",
-    "02-mat/obs/img/gal.md",
-    "04-out/personas/John Barrows.md",
-    "00-in/proyectos MOC.md",
     "cym-metamap.canvas",
     "02-mat/obs/Untitled.loom",
     "02-mat/obs/help",

@@ -102,7 +102,7 @@ acúfenos [distorsiones perceptivas - audición]
 
 ---
 
-![[c-cym-05-principios generativos#procedimientos artísticos relacionados a cym]]
+![[c-cym06-principios generativos#procedimientos artísticos relacionados a cym]]
 
 
 --- 

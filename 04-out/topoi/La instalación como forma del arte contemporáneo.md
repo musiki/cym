@@ -4,7 +4,7 @@ tags: instalación, arte , topoi
 unit: 22.1
 publish: 2020
 author: zztt, agustin fernandez burzaco, cdp
-banner: https://magazine.artland.com/wp-content/uploads/2020/02/15c9f2ac2608c2aa8c592e9ba21f2010-min.jpg
+banner: "https://magazine.artland.com/wp-content/uploads/2020/02/15c9f2ac2608c2aa8c592e9ba21f2010-min.jpg"
 ---
 	
 # Resumen

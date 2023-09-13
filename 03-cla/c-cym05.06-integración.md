@@ -2,12 +2,12 @@
 type: class
 tags: cym, música visual, armonía expandida,class
 unit: 0
-num:  5
+num:  5.6
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 05
+UNTREF | CYM23 | 05.06
 
 # Éric Sadin
 ## Conceptos
@@ -126,22 +126,21 @@ if (condición) {
 }
 ```
 ## operadores de comparación
+```js
+= //Igual a 
+!= //Diferente a 
+=== //Contenido y tipo igual a 
+!== //Contenido o tipo diferente de 
+> //Mayor que 
+>= //Mayor o igual que 
+< //Menor que 
+<= //Menor o igual que
+
+//operadores lógicos
+&& //and
+|| //or
+! //not
 ```
-= Igual a 
-!= Diferente a 
-=== Contenido y tipo igual a 
-!== Contenido o tipo diferente de >`` Mayor que 
->= Mayor o igual que 
-< Menor que 
-<= Menor o igual que
-
-## operadores lógicos
-``&& and
-|| or
-! not
-
-```
-
 ---
 # bucles
 
