@@ -1142,14 +1142,14 @@
     "03-cla/c-cym06c-tonejs.md": {
       "size": 607,
       "tags": 0,
-      "links": 0
+      "links": 3
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 208,
       "Create": 228,
-      "Link": 216,
+      "Link": 217,
       "Expand": 16
     }
   },
@@ -1166,7 +1166,7 @@
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 25,
+      "11": 26,
       "12": 22,
       "13": 26,
       "14": 6,
@@ -1185,7 +1185,7 @@
     "/": {
       "Mon": 7,
       "Tue": 64,
-      "Wed": 290,
+      "Wed": 291,
       "Thu": 23,
       "Fri": 5,
       "Sat": 0,
@@ -1477,7 +1477,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

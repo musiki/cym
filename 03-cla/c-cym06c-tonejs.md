@@ -17,6 +17,11 @@ UNTREF | CYM23 | 06
 # tone.js
 ---
 
+## info útil
+>[!note] > ver [[html]]
+ ver [[css]]
+ ver [[js01-fundamentals]]
+
 ## basic
 
 
