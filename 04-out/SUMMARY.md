@@ -4,4 +4,4 @@
 
 ## personas
   
-*[Philip Ball](Philip Ball_Shapes.md)
+* [Philip Ball](Philip Ball_Shapes.md)
