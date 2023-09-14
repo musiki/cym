@@ -1160,9 +1160,9 @@
       "links": 0
     },
     "04-out/SUMMARY.md": {
-      "size": 47,
+      "size": 3565,
       "tags": 0,
-      "links": 1
+      "links": 42
     },
     "04-out/test.md": {
       "size": 0,
@@ -1174,8 +1174,8 @@
     "/": {
       "Refactor": 252,
       "Create": 161,
-      "Link": 157,
-      "Expand": 14
+      "Link": 158,
+      "Expand": 15
     }
   },
   "dailyCommits": {
@@ -1200,7 +1200,7 @@
       "17": 7,
       "18": 127,
       "19": 0,
-      "20": 0,
+      "20": 2,
       "21": 13,
       "22": 31,
       "23": 35
@@ -1211,7 +1211,7 @@
       "Mon": 7,
       "Tue": 49,
       "Wed": 460,
-      "Thu": 44,
+      "Thu": 46,
       "Fri": 5,
       "Sat": 0,
       "Sun": 19
@@ -1233,7 +1233,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1488,6 +1489,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>"
       ],
       "Removed Tags from": [

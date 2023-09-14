@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/test.md",
+                "file": "04-out/SUMMARY.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/test.md"
+                "file": "04-out/SUMMARY.md"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/test.md",
+                "file": "04-out/SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -264,11 +264,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "c0368da4421e5e90",
   "lastOpenFiles": [
+    "04-out/bibliografía/Philip Ball_Shapes.md",
+    "04-out/test.md",
     "04-out/test",
     "04-out/README.md",
-    "04-out/test.md",
     "04-out/SUMMARY.md",
     "02-mat/obs/check-out de imagenes.md",
     "03-cla/c-cym06c-tonejs.md",
@@ -312,7 +313,6 @@
     "01-proj/22/mico",
     "01-proj/22/dure",
     "01-proj/21/tortorelli",
-    "01-proj/21/oliva",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
