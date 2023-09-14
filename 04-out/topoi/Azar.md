@@ -45,9 +45,7 @@ console.log ("random limitado :", numRandom, "\n", "random limitado entero :", M
 
  >[!TODO] > hacer un generador melódico de solo 3 notas sucesivas de la escala.
  
-https://codepen.io/LucianoAzzigotti/pen/XWExLJv?editors=1111
-
-
+<iframe src="https://codepen.io/LucianoAzzigotti/pen/XWExLJv?editors=1111" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 solución
 
-https://codepen.io/LucianoAzzigotti/pen/abYRgBv
+<iframe src="https://codepen.io/LucianoAzzigotti/pen/abYRgBv" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>

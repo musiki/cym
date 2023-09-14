@@ -768,6 +768,7 @@ var mustache_default = mustache;
 // parser.ts
 var import_obsidian = __toModule(require("obsidian"));
 var import_obsidian2 = __toModule(require("obsidian"));
+var electronPkg = require("electron");
 var Parser = class {
   parseUrl(url) {
     return __async(this, null, function* () {
@@ -833,7 +834,12 @@ var IframelyParser = class extends Parser {
 };
 var LocalParser = class extends Parser {
   process(data) {
-    throw new Error("Method not implemented.");
+    let title = data.title || "";
+    const image = data.image || "";
+    let description = data.description || "";
+    description = description.replace(/\n/g, " ");
+    title = title.replace(/\n/g, " ");
+    return { title, image, description };
   }
   getTitle(doc, url) {
     let element = doc.querySelector('head meta[property="og:title"]');
@@ -846,19 +852,51 @@ var LocalParser = class extends Parser {
     }
     return url.hostname;
   }
+  meetsCriteria(element) {
+    if (/display:\s*none/.test(element.getAttribute("style"))) {
+      return false;
+    }
+    let contains_header = false;
+    element.classList.forEach((val) => {
+      if (val.toLowerCase().contains("header")) {
+        contains_header = true;
+      }
+    });
+    if (element.id.toLowerCase().contains("header") || contains_header) {
+      return false;
+    }
+    if (element.parentElement != null) {
+      return this.meetsCriteria(element.parentElement);
+    }
+    return true;
+  }
   getImage(doc, url) {
     let element = doc.querySelector('head meta[property="og:image"]');
     if (element instanceof HTMLMetaElement) {
       return element.content;
     }
-    element = doc.querySelector("body img");
-    if (element) {
-      let attribute = element.getAttribute("src");
-      if (attribute) {
-        if (attribute.startsWith("/")) {
-          attribute = new URL(attribute, url.origin).href;
+    let selectors = [
+      'div[itemtype$="://schema.org/Product"] noscript img',
+      'div[itemtype$="://schema.org/Product"] img',
+      "#main noscript img",
+      "#main img",
+      "main noscript img",
+      "main img",
+      '*[role="main"] img',
+      "body noscript img",
+      "body img"
+    ];
+    for (const selector of selectors) {
+      let images = doc.querySelectorAll(selector);
+      for (let index = 0; index < images.length; index++) {
+        const element2 = images[index];
+        if (!this.meetsCriteria(element2)) {
+          continue;
         }
-        return attribute;
+        let attribute = element2.getAttribute("src");
+        if (attribute) {
+          return element2.src;
+        }
       }
     }
     return "";
@@ -874,11 +912,49 @@ var LocalParser = class extends Parser {
     }
     return "";
   }
-  parse(url) {
+  getHtmlByRequest(url) {
     return __async(this, null, function* () {
       const html = yield (0, import_obsidian2.requestUrl)({ url }).then((site) => {
         return site.text;
       });
+      return html;
+    });
+  }
+  getHtmlByElectron(url) {
+    return __async(this, null, function* () {
+      try {
+        const { remote } = electronPkg;
+        const { BrowserWindow } = remote;
+        const window = new BrowserWindow({
+          width: 1366,
+          height: 768,
+          webPreferences: {
+            nodeIntegration: false,
+            contextIsolation: true,
+            sandbox: true,
+            images: false
+          },
+          show: false
+        });
+        window.webContents.setAudioMuted(true);
+        yield new Promise((resolve, reject) => {
+          window.webContents.on("did-finish-load", (e) => resolve(e));
+          window.webContents.on("did-fail-load", (e) => reject(e));
+          window.loadURL(url);
+        });
+        let doc = yield window.webContents.executeJavaScript("document.documentElement.outerHTML;");
+        return doc;
+      } catch (ex) {
+        if (this.debug) {
+          console.log("Failed to use electron: ", ex);
+        }
+        return null;
+      }
+    });
+  }
+  parse(url) {
+    return __async(this, null, function* () {
+      let html = (yield this.getHtmlByElectron(url)) || (yield this.getHtmlByRequest(url));
       let parser = new DOMParser();
       const doc = parser.parseFromString(html, "text/html");
       let uRL = new URL(url);
@@ -888,7 +964,7 @@ var LocalParser = class extends Parser {
       let title = this.getTitle(doc, uRL);
       let image = this.getImage(doc, uRL);
       let description = this.getDescription(doc);
-      return { title, image, description, url };
+      return __spreadProps(__spreadValues({}, this.process({ title, image, description })), { url });
     });
   }
 };
@@ -914,7 +990,9 @@ url: "{{{url}}}"
 \`\`\``;
 var HTMLTemplate = `<div
   style="
-    border: 1px solid rgb(222, 222, 222);
+    border: 1px solid var(--background-modifier-border);
+    overflow: hidden;
+    border-radius: var(--radius-s);
     box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
   "
 >

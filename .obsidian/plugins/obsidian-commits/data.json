@@ -840,7 +840,7 @@
       "links": 0
     },
     "04-out/topoi/Azar.md": {
-      "size": 1845,
+      "size": 2141,
       "tags": 4,
       "links": 2
     },
@@ -1009,16 +1009,6 @@
       "tags": 0,
       "links": 0
     },
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md": {
-      "size": 824,
-      "tags": 0,
-      "links": 1
-    },
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
-      "size": 888,
-      "tags": 0,
-      "links": 1
-    },
     "02-mat/obs/tpl/t-alumno-POC.md": {
       "size": 0,
       "tags": 0,
@@ -1116,13 +1106,13 @@
     },
     "03-cla/c-cym05.06-integración.md": {
       "size": 7030,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 6
     },
     "03-cla/c-cym06-principios generativos.md": {
       "size": 602,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 2
     },
     "03-cla/c-cym06b-relaciones sonolumínicas.md": {
       "size": 5963,
@@ -1131,21 +1121,31 @@
     },
     "03-cla/c-cym07-cohesión audiovisual.md": {
       "size": 10545,
-      "tags": 0,
-      "links": 0
+      "tags": 7,
+      "links": 7
     },
     "03-cla/c-cym07-flex-grid.md": {
       "size": 619,
+      "tags": 6,
+      "links": 1
+    },
+    "02-mat/jasvascript/js-02 contextos de ejecución.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/code MOC.md": {
+      "size": 0,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 247,
-      "Create": 152,
-      "Link": 145,
-      "Expand": 13
+      "Refactor": 249,
+      "Create": 154,
+      "Link": 153,
+      "Expand": 14
     }
   },
   "dailyCommits": {
@@ -1155,18 +1155,18 @@
       "2": 0,
       "3": 0,
       "4": 2,
-      "5": 12,
-      "6": 0,
+      "5": 22,
+      "6": 1,
       "7": 0,
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 17,
+      "11": 18,
       "12": 28,
       "13": 32,
       "14": 13,
       "15": 10,
-      "16": 22,
+      "16": 23,
       "17": 3,
       "18": 122,
       "19": 0,
@@ -1180,7 +1180,7 @@
     "/": {
       "Mon": 7,
       "Tue": 49,
-      "Wed": 447,
+      "Wed": 460,
       "Thu": 30,
       "Fri": 5,
       "Sat": 0,
@@ -1202,9 +1202,12 @@
         "<a class=\"internal-link\" href=\"01-proj/21/marazzi/Collage sonoro.md\"> Collage sonoro </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
@@ -1253,9 +1256,7 @@
         "<a class=\"internal-link\" href=\"01-proj/22/synth-flex.md\"> synth-flex </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/mousetrap.md\"> mousetrap </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/mico/Dónde está el camino.md\"> Dónde está el camino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Melodia.md\"> Melodia </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Gentics.md\"> Gentics </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
@@ -1311,6 +1312,10 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
@@ -1357,14 +1362,12 @@
         "<a class=\"internal-link\" href=\"01-proj/16/albarracin/Sonomaze.md\"> Sonomaze </a>",
         "<a class=\"internal-link\" href=\"01-proj/16/cuenca/Explosision.md\"> Explosision </a>",
         "<a class=\"internal-link\" href=\"01-proj/16/estrada/Cometa.md\"> Cometa </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/ferreyra/Juggling music.md\"> Juggling music </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/juan/Instalación.md\"> Instalación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/lopez/Trazo 5.md\"> Trazo 5 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/arcuri/Sensonorizando.md\"> Sensonorizando </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/borsalino/Condensador de eventos.md\"> Condensador de eventos </a>"
+        "<a class=\"internal-link\" href=\"01-proj/16/ferreyra/Juggling music.md\"> Juggling music </a>"
       ],
       "Refactored": [],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
@@ -1413,9 +1416,7 @@
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/helloworld.md\"> helloworld </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho.md\"> Zaracho </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-flex-grid.md\"> c-cym05-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1449,7 +1450,11 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

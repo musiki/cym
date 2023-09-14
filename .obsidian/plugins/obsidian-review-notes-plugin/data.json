@@ -971,6 +971,14 @@
     {
       "path": "03-cla/c-cym07-flex-grid.md",
       "filename": "c-cym07-flex-grid"
+    },
+    {
+      "path": "02-mat/jasvascript/js-02 contextos de ejecución.md",
+      "filename": "js-02 contextos de ejecución"
+    },
+    {
+      "path": "00-in/code MOC.md",
+      "filename": "code MOC"
     }
   ]
 }
