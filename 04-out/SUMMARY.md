@@ -1,6 +1,5 @@
 # Your Book Title
 
-<<<<<<< HEAD
 - bibliografía
   * [Bib MOC](bibliografía/bib%20MOC.md)
   * [Arte Y Flujo](bibliografía/Boris%20Groys_Arte y flujo.md)
