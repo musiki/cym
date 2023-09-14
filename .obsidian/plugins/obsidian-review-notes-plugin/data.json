@@ -69,7 +69,7 @@
       "filename": "Maura McDonnell topoi"
     },
     {
-      "path": "conflict-files-obsidian-git.md",
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git.md",
       "filename": "conflict-files-obsidian-git"
     },
     {
@@ -979,6 +979,14 @@
     {
       "path": "00-in/code MOC.md",
       "filename": "code MOC"
+    },
+    {
+      "path": "03-cla/c-cym06c-tonejs.md",
+      "filename": "c-cym06c-tonejs"
+    },
+    {
+      "path": "conflict-files-obsidian-git.md",
+      "filename": "conflict-files-obsidian-git"
     }
   ]
 }

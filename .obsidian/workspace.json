@@ -32,9 +32,35 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "654a6c68983625bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym06c-tonejs.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "df64a94e2b9cf05e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -84,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 283.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -101,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/personas/Carlos Trilnik.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -119,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/personas/Carlos Trilnik.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,8 +264,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "df64a94e2b9cf05e",
   "lastOpenFiles": [
+    "03-cla/c-cym06c-tonejs.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+    "04-out/personas/Carlos Trilnik.md",
     "04-out/personas/Yuval Noah Harari.md",
     "04-out/personas/Yotam Mann.md",
     "04-out/personas/Stuart Russell.md",
@@ -248,7 +278,6 @@
     "04-out/personas/John Barrows.md",
     "04-out/personas/Harari Yuval Noah.md",
     "04-out/personas/Dennis Smalley.md",
-    "04-out/personas/Carlos Trilnik.md",
     "04-out/personas/Dennis Fabian Peter.md",
     "04-out/personas/Dick Raaijmakers.md",
     "04-out/topoi/Azar.md",
@@ -259,13 +288,11 @@
     "02-mat/obs/img/Pasted image 20230829224242.png",
     "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
     "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
     "02-mat/obs/img/sistemas.excalidraw.md",
     "02-mat/obs/img/cym MOC-1694393867412.jpeg",
     "02-mat/obs/img/cym MOC-1694393867407.jpeg",
     "02-mat/obs/img/cym MOC-1694393867405.jpeg",
     "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym07-flex-grid.md",
     "03-cla/c-cym07-cohesión audiovisual.md",
     "03-cla/c-cym06-principios generativos.md",
@@ -275,7 +302,6 @@
     "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
     "image/image",
     "image",
-    "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
     "cym-metamap.canvas",
