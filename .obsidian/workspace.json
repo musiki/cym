@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym03 mapas.md"
+                "file": "03-cla/c-cym05-integración.md"
               }
             }
           },
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym03 mapas.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym03 mapas.md",
+                "file": "03-cla/c-cym05-integración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,8 +231,9 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "90248e2ecaf595c6",
+  "active": "4139cde9b55ec139",
   "lastOpenFiles": [
+    "03-cla/c-cym03 mapas.md",
     "03-cla/c-cym05-integración.md",
     "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym04-vida digital.md",
@@ -271,7 +272,6 @@
     "04-ref/procedimientos/analisis de obras interactivas.md",
     "04-ref/templates/t-persona.md",
     "04-ref/personas/Yuval Harari.md",
-    "04-ref/personas/Marianne Amacher.md",
     "04-ref/image",
     "04-ref/glosario",
     "01-proj/23/Zaracho",
