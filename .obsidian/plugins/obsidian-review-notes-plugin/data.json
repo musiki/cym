@@ -721,7 +721,7 @@
       "filename": "Dennis Fabian Peter"
     },
     {
-      "path": "00-in/test.md",
+      "path": "04-out/test.md",
       "filename": "test"
     },
     {
@@ -991,6 +991,18 @@
     {
       "path": "02-mat/obs/check-out de imagenes.md",
       "filename": "check-out de imagenes"
+    },
+    {
+      "path": "04-out/README.md",
+      "filename": "README"
+    },
+    {
+      "path": "04-out/SUMMARY.md",
+      "filename": "SUMMARY"
+    },
+    {
+      "path": "00-in/test.md",
+      "filename": "test"
     }
   ]
 }

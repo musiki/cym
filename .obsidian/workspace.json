@@ -39,15 +39,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/obs/check-out de imagenes.md",
-                "mode": "source",
+                "file": "04-out/README.md",
+                "mode": "preview",
                 "backlinks": false,
-                "source": false
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c0368da4421e5e90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-out/test.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/obs/check-out de imagenes.md"
+                "file": "04-out/test.md"
               }
             }
           },
@@ -132,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/obs/check-out de imagenes.md",
+                "file": "04-out/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -251,10 +264,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "654a6c68983625bb",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "03-cla/c-cym06c-tonejs.md",
+    "04-out/test",
+    "04-out/README.md",
+    "04-out/test.md",
+    "04-out/SUMMARY.md",
     "02-mat/obs/check-out de imagenes.md",
+    "03-cla/c-cym06c-tonejs.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/tpl/conflict-files-obsidian-git.md",
     "04-out/personas/Carlos Trilnik.md",
@@ -281,10 +298,6 @@
     "02-mat/obs/img/cym MOC-1694393867407.jpeg",
     "02-mat/obs/img/cym MOC-1694393867405.jpeg",
     "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "03-cla/c-cym07-flex-grid.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym05.06-integración.md",
     "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
     "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
     "image/image",
