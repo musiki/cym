@@ -1003,6 +1003,10 @@
     {
       "path": "00-in/test.md",
       "filename": "test"
+    },
+    {
+      "path": "02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md",
+      "filename": "bibliografia-bibliografia-bib-moc.md"
     }
   ]
 }
