@@ -84,7 +84,7 @@
 
 .mm-node .mm-node-content {
   padding: 2px 4px;
-  max-width: 400px;
+  max-width: 450px;
   word-break: break-word;
   white-space: normal;
   display: flex;
@@ -1900,4 +1900,29 @@ th {
   border: 0;
   padding: 4px 6px;
   width: 100px;
+}
+
+.mm-translate-container{
+  width: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+.mm-translate {
+  width: 100%;
+}
+
+.mm-translate-item{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.mm-translate-item:hover{
+  opacity: 0.9;
+}
+
+.mm-translate-text {
+  margin-bottom: 8px;
+  font-size: 14px;
 }

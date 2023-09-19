@@ -43,7 +43,6 @@
   "obsidian-icon-shortcodes",
   "obsidian-icons-plugin",
   "obsidian-image-gallery",
-  "obsidian-image-uploader",
   "obsidian-imgur-plugin",
   "obsidian-kanban",
   "obsidian-link-embed",
@@ -96,5 +95,6 @@
   "cm-editor-syntax-highlight-obsidian",
   "text-snippets-obsidian",
   "translate",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "arrows"
 ]

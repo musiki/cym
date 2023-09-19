@@ -3,11 +3,9 @@ Please resolve them and commit them using the commands `Obsidian Git: Commit all
 (This file will automatically be deleted before commit)
 [[#Additional Instructions]] available below file list
 
-- Not a file: .DS_Store
-- Not a file: .obsidian/appearance.json
-- Not a file: .obsidian/plugins/colored-tags/data.json
 - Not a file: .obsidian/plugins/obsidian-activity-history/data.json
 - Not a file: .obsidian/plugins/obsidian-commits/data.json
+- Not a file: .obsidian/plugins/obsidian-review-notes-plugin/data.json
 - Not a file: .obsidian/workspace.json
 
 # Additional Instructions
