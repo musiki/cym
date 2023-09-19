@@ -818,12 +818,17 @@
       "size": 2759,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Psicoacústica.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 159,
-      "Create": 175,
+      "Refactor": 160,
+      "Create": 176,
       "Link": 142,
       "Expand": 19
     }
@@ -848,7 +853,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 29,
+      "18": 31,
       "19": 45,
       "20": 34,
       "21": 15,
@@ -859,7 +864,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 170,
-      "Tue": 140,
+      "Tue": 142,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -891,6 +896,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Sin título 2.md\"> Sin título 2 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
@@ -940,8 +946,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -976,7 +981,8 @@
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"00-in/Psicoacústica.md\"> Psicoacústica </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Boris Groys_Arte y flujo.md\"> Boris Groys_Arte y flujo </a>",
