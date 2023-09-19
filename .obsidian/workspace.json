@@ -4,42 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "ff2c497336f4585e",
+        "id": "336540ab6e53c9a8",
         "type": "tabs",
         "children": [
           {
-            "id": "544a768859669332",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "607330fdde7937e5",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-09-12 20.17.31.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "9fde07bfc2f18287",
+            "id": "85617a23d1c13ac1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 513.5
+    "width": 449.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -132,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym05-integración.md"
+                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md"
               }
             }
           },
@@ -150,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,6 +176,16 @@
             "state": {
               "type": "metatable-sidebar-view",
               "state": {}
+            }
+          },
+          {
+            "id": "1ef7717ba79738fe",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -228,16 +219,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9fde07bfc2f18287",
+  "active": "85617a23d1c13ac1",
   "lastOpenFiles": [
+    "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
+    "01-proj/22/Probando botones en codepen.md",
+    "01-proj/23/bassino/codepen/Escala melódica",
+    "01-proj/23/bassino/Sin título",
+    "00-in/2023-08-30.md",
+    "02-mat/que es git.md",
+    "00-in/2023-09-10.md",
     "Excalidraw/Drawing 2023-09-12 20.17.31.excalidraw.md",
     "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
     "README.md",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
-    "00-in/2023-08-30.md",
     "Excalidraw/Drawing 2023-09-10 16.27.21.excalidraw.md",
     "Untitled.loom",
-    "00-in/2023-09-10.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "01-proj/tp/tp01-topoi.md",
@@ -257,16 +253,12 @@
     "02-mat/procesos/r-como hacer un proyectual.md",
     "03-cla/c-cym05-flex-grid.md",
     "03-cla/c-cym05-integración.md",
-    "01-proj/tp/tp04-guía de lectura SADIN.md",
-    "00-in/musica y arte visual_ bassino_topoi.md",
-    "01-proj/23/beltrame/beltrame POC.md",
     "image/~$ura McDonnell topoi.docx",
     "image/Maura McDonnell topoi.docx",
     "01-proj/23/bassino/topoi/S Sin título in título Sin título",
     "01-proj/23/bassino/topoi",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "04-ref/musica y arte visual_ bassino_topoi.pdf",
-    "04-ref/glosario",
     "image/Pasted image 20230829230243.png",
     "image/Pasted image 20230829230127.png",
     "image/Pasted image 20230829230008.png",
@@ -277,7 +269,6 @@
     "image/Pasted image 20230829224222.png",
     "image/Pasted image 20230829224100.png",
     "image/Pasted image 20230829223415.png",
-    "01-proj/23/shifres",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
