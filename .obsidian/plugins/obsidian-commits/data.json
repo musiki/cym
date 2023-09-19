@@ -1147,15 +1147,15 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 208,
-      "Create": 228,
-      "Link": 217,
-      "Expand": 16
+      "Refactor": 211,
+      "Create": 229,
+      "Link": 218,
+      "Expand": 17
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 22,
+      "0": 26,
       "1": 6,
       "2": 0,
       "3": 0,
@@ -1166,7 +1166,7 @@
       "8": 3,
       "9": 173,
       "10": 5,
-      "11": 26,
+      "11": 28,
       "12": 22,
       "13": 26,
       "14": 6,
@@ -1184,9 +1184,9 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 64,
+      "Tue": 65,
       "Wed": 291,
-      "Thu": 23,
+      "Thu": 28,
       "Fri": 5,
       "Sat": 0,
       "Sun": 279
@@ -1210,9 +1210,11 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs 1.md\"> c-cym06c-tonejs 1 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos 1.md\"> c-cym06-principios generativos 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
@@ -1262,10 +1264,11 @@
         "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yotam Mann.md\"> Yotam Mann </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-tonejs 1.md\"> c-cym07-tonejs 1 </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05y06-integración.md\"> c-cym05y06-integración </a>",
@@ -1314,11 +1317,10 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06b-relaciones sonolumínicas.md\"> c-cym06b-relaciones sonolumínicas </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
@@ -1368,13 +1370,13 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Física.md\"> Física </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Generatividad.md\"> Generatividad </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1424,8 +1426,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Arte relacional.md\"> Arte relacional </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/templater.md\"> templater </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/templater.md\"> templater </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
