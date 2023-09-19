@@ -39,15 +39,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
-                "mode": "source",
+                "file": "04-ref/a-yuda.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym05-integración.md"
+                "file": "01-proj/23/Zaracho/Zaracho.md"
               }
             }
           },
@@ -142,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "01-proj/23/Zaracho/Zaracho.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-cla/c-cym05-integración.md",
+                "file": "01-proj/23/Zaracho/Zaracho.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,21 +230,26 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "4139cde9b55ec139",
+  "active": "ecfa88d1ea0545d2",
   "lastOpenFiles": [
-    "01-proj/23/beltrame/beltrame.md",
+    "04-ref/a-yuda.md",
+    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+    "01-proj/tp/tp01-topoi.md",
     "03-cla/c-cym05-integración.md",
+    "01-proj/23/Zaracho/Zaracho.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/beltrame/beltrame POC.md",
     "03-cla/c-cym03 mapas.md",
     "03-cla/c-cym06- cohesión audiovisual.md",
     "03-cla/c-cym04-vida digital.md",
-    "01-proj/23/Zaracho/Zaracho.md",
     "04-ref/a-dataview.md",
-    "04-ref/a-yuda.md",
     "04-ref/topoi/Forma Musical.md",
     "04-ref/topoi/Introducción a la psicoacústica.md",
     "04-ref/topoi/Cuarta Revolución Industrial.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/shifres",
     "01-proj/23/bassino/codepen/Multi-efecto.md",
     "01-proj/23/bassino/codepen",
@@ -268,17 +272,12 @@
     "04-ref/topoi/Arte participativo.md",
     "04-ref/templates/t-alumno-POC.md",
     "04-ref/templates/conflict-files-obsidian-git.md",
-    "04-ref/templates/conflict-files-obsidian-git 2.md",
-    "04-ref/procedimientos/analisis de obras interactivas.md",
-    "04-ref/templates/t-persona.md",
-    "04-ref/personas/Yuval Harari.md",
     "04-ref/image",
     "04-ref/glosario",
     "01-proj/23/Zaracho",
     "04-ref/musica visual_ bassino_topoi.pdf",
     "04-ref/espacios",
     "01-proj/23/beltrame",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "Untitled.canvas",
     "cym-metamap.canvas",
     "03-cla/cym-map.canvas"

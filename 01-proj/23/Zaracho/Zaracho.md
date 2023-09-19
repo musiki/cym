@@ -8,7 +8,7 @@ publish: 2023
 
          
 
-Música Socio-Política
+## Música Socio-Política
 
 La Música Socio-Política es la música que utiliza todos sus medios, y no sólo la letra, para manifestar disconformidad, plantear una problemática, proponer una solución o incluso irrumpir en el escenario social y político intentando activamente lograr cambios fácticos en la vida de las personas. Generalmente se vincula a la _música de protesta_ como la música reaccionaria frente a las realidades e injusticias sociales, pero se la califica a ésta únicamente por su contenido literario, es decir su letra.
 
@@ -16,9 +16,9 @@ Es por lo menos complejo pensar en una música que tenga dentro de sus posibilid
 
 Myriam Ibeth Pedraza piensa en el aspecto utilitario del arte y dice que este satisface y se hace extensivo a la mayoría de las profesiones humanas, además escribe sobre una combinación entre la utilidad y la estética generando así las “artes mixtas”. En “La función del arte” se especifican algunas funciones y podemos rescatar al menos dos para este caso:
 
-·         Persuasiva: se involucra al receptor con las imágenes, buscando convencerlo.
+- Persuasiva: se involucra al receptor con las imágenes, buscando convencerlo.
 
-·         Ideológica: se transmite un pensamiento social o político y por medio de una imagen de poder se expresa una justificación y/o una defensa.
+- Ideológica: se transmite un pensamiento social o político y por medio de una imagen de poder se expresa una justificación y/o una defensa.
 
 Cuando estas dos funciones se involucran mutuamente, se puede cambiar actitudes e influir en las creencias y cogniciones personales de los receptores. Los discursos, las estructuras, estrategias y funciones se utilizan de manera que el usuario termina por reconsiderar postulados o representaciones según el deseo del emisor.
 
@@ -30,7 +30,7 @@ La música parece trascender la mera expresión artística y se convierte en el 
 
 En cuanto a su función política, Alex Comes en su artículo “Música y política, una relación infinita”, y aludiendo a muchos artículos de neurociencia, dice que las razones para votar por una opción u otra van mucho más allá de lo racional o ideológico y es que en esta decisión se llevan a cabo en mayor medida elementos emocionales y conexiones neuronales que tienen muy poco que ver con las propuestas de los candidatos. Dice que sin lugar a dudas, parte de nuestro lenguaje emocional está intrínsecamente relacionado con la música y que es ella, en la mayoría de los casos, la causante de la configuración de un estilo de vida y la construcción de nuestra personalidad.
 
-**Obras**
+## Obras**
 
 **Il canto sospeso – Luigi Nono**
 
@@ -58,4 +58,4 @@ Hanns Eisler
 Nicolaus A. Huber
 
 
-**Referencias**
+## Referencias**
