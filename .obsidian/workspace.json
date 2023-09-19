@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
+                "file": "03-cla/c-cym07-human-book-computer.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
+                "file": "03-cla/c-cym07-human-book-computer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md"
+                "file": "03-cla/c-cym07-human-book-computer.md"
               }
             }
           },
@@ -292,6 +292,17 @@
   },
   "active": "99c371953a71aaa6",
   "lastOpenFiles": [
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym07-human-book-computer.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym08-flex-grid.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
     "conflict-files-obsidian-git.md",
     "02-mat/tone.js.md",
     "02-mat/css.md",
@@ -306,22 +317,11 @@
     "02-mat/obs/img/cym MOC-1694393867412.jpeg",
     "02-mat/obs/img/cym MOC-1694393867410.jpeg",
     "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym07-flex-grid.md",
-    "03-cla/c-cym07-hydra.md",
     "04-out/test.md",
     "bibliografia/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
     "04-out/SUMMARY.md",
     "04-out/README (1).md",
-    "04-out/README.md",
     "bibliografia",
-    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md",
-    "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md",
-    "02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md",
-    "02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md",
-    "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md",
     "04-out/bibliografia",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",

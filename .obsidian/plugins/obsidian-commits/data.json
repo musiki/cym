@@ -34,11 +34,6 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym07-networking.md": {
-      "size": 873,
-      "tags": 7,
-      "links": 0
-    },
     "03-cla/c-cym07-hydra.md": {
       "size": 2724,
       "tags": 6,
@@ -1124,11 +1119,6 @@
       "tags": 7,
       "links": 7
     },
-    "03-cla/c-cym07-flex-grid.md": {
-      "size": 598,
-      "tags": 6,
-      "links": 1
-    },
     "03-cla/c-cym05.06-integración.md": {
       "size": 8047,
       "tags": 6,
@@ -1313,12 +1303,27 @@
       "size": 59,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym07-human-book-computer.md": {
+      "size": 1315,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym09-networking.md": {
+      "size": 873,
+      "tags": 7,
+      "links": 0
+    },
+    "03-cla/c-cym08-flex-grid.md": {
+      "size": 598,
+      "tags": 6,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 229,
-      "Create": 266,
+      "Refactor": 237,
+      "Create": 267,
       "Link": 220,
       "Expand": 17
     }
@@ -1341,7 +1346,7 @@
       "13": 26,
       "14": 6,
       "15": 10,
-      "16": 23,
+      "16": 32,
       "17": 1,
       "18": 0,
       "19": 0,
@@ -1354,7 +1359,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 122,
+      "Tue": 131,
       "Wed": 291,
       "Thu": 28,
       "Fri": 5,
@@ -1384,6 +1389,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs 1.md\"> c-cym06c-tonejs 1 </a>",
         "<a class=\"internal-link\" href=\"bibliografia/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md\"> virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md </a>",
@@ -1433,10 +1439,17 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-lorem.md\"> t-lorem </a>",
         "<a class=\"internal-link\" href=\"02-mat/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
@@ -1479,15 +1492,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t14-historia de la tecnología.md\"> t14-historia de la tecnología </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t61-internetmusic.md\"> t61-internetmusic </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"00-in/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-ref/espacios/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
-        "<a class=\"internal-link\" href=\"00-in/obras.in MOC.md\"> obras.in MOC </a>",
-        "<a class=\"internal-link\" href=\"image/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/t-persona.md\"> t-persona </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",

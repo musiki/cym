@@ -2,12 +2,12 @@
 type: class
 tags: cym, música visual, armonía expandida,class, networking-performance
 unit: 2
-num:  07
+num:  09
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 07
+UNTREF | CYM23 | 09
 performance en red
 ---
 

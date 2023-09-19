@@ -509,8 +509,8 @@
       "filename": "c-cym07-cohesión audiovisual"
     },
     {
-      "path": "03-cla/c-cym07-flex-grid.md",
-      "filename": "c-cym07-flex-grid"
+      "path": "03-cla/c-cym08-flex-grid.md",
+      "filename": "c-cym08-flex-grid"
     },
     {
       "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
@@ -1179,6 +1179,14 @@
     {
       "path": "04-out/SUMMARY.md",
       "filename": "SUMMARY"
+    },
+    {
+      "path": "03-cla/c-cym07-human-book-computer.md",
+      "filename": "c-cym07-human-book-computer"
+    },
+    {
+      "path": "03-cla/c-cym09-networking.md",
+      "filename": "c-cym09-networking"
     }
   ]
 }
