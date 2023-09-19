@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md"
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md"
               }
             }
           },
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,9 +221,9 @@
   },
   "active": "85617a23d1c13ac1",
   "lastOpenFiles": [
-    "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md",
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/22/Probando botones en codepen.md",
-    "01-proj/23/bassino/codepen/Escala melódica",
+    "01-proj/23/bassino/codepen/Probando botones",
     "01-proj/23/bassino/Sin título",
     "00-in/2023-08-30.md",
     "02-mat/que es git.md",

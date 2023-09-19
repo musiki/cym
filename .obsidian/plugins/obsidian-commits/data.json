@@ -839,7 +839,7 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md": {
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -847,7 +847,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 246,
+      "Refactor": 248,
       "Create": 267,
       "Link": 191,
       "Expand": 15
@@ -871,7 +871,7 @@
       "13": 120,
       "14": 23,
       "15": 115,
-      "16": 33,
+      "16": 35,
       "17": 4,
       "18": 27,
       "19": 3,
@@ -884,7 +884,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 206,
+      "Tue": 208,
       "Wed": 68,
       "Thu": 269,
       "Fri": 15,
@@ -999,7 +999,9 @@
         "<a class=\"internal-link\" href=\"00-in/probando botones en codepen.md\"> probando botones en codepen </a>",
         "<a class=\"internal-link\" href=\"00-in/Probando botones en codepen.md\"> Probando botones en codepen </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/Probando botones en codepen.md\"> Probando botones en codepen </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md\"> Probando botones en codepen </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Escala melódica/Probando botones en codepen.md\"> Probando botones en codepen </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Probando botones/Probando botones en codepen.md\"> Probando botones en codepen </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Probando botones/escala melódica.md\"> escala melódica </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"Excalidraw/Drawing 2023-09-12 20.17.31.excalidraw.md\"> Drawing 2023-09-12 20.17.31.excalidraw </a>",
