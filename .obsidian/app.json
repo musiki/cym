@@ -7,10 +7,12 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "livePreview": true,
+  "livePreview": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "image",
+  "attachmentFolderPath": "02-mat/obs/img",
   "newFileLocation": "folder",
   "newFileFolderPath": "00-in",
-  "defaultViewMode": "source"
+  "defaultViewMode": "preview",
+  "readableLineLength": false,
+  "showInlineTitle": true
 }

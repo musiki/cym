@@ -29,7 +29,7 @@ Aquí, atribuye la posibilidad del caos a los sistemas complejos por su dificult
 
 En este sentido, el término _complejidad efectiva_ se encuentra entre sistemas altamente ordenados y altamente desordenados.
 
- ![[galanter.jpeg]]
+![[cym MOC-1694393867407.jpeg]]
 
 Leonardo Soolas, tomando los conceptos de autonomía e impersonalidad de Galanter, expone la definición de _molde interno_ de Georges‐Louis Leclerc como punto de partida para pensar la generatividad. Este término fue una explicación de la generación de los animales por la combinación de dos semillas, que daban origen al embrión mediante la mezcla de sus partes, por la acción de microfuerzas de atracción de Newton. Este molde interno entonces hace referencia al campo de fuerzas organizado que **asimilaban** la materia en el orden indicado para el **desarrollo** del embrión.
 
@@ -76,7 +76,7 @@ def Array color= [blanco, verde, rojo, negro, azul, azulclaro]
 				for (i > n ; lienzo.grosorDelPincel, color[mod(i)], direcciónXY(pollocks,scale(0,caótica,0,100) ; i++)			
 ```
 
-https://www.youtube.com/watch?v=EncR_T0faKM
+<iframe title="How to paint like Jackson Pollock – One: Number 31, 1950 – with Corey D'Augustine | IN THE STUDIO" src="https://www.youtube.com/embed/EncR_T0faKM?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 sistemas caóticos
 	Ecuaciones de Lorenz -> Atmospheres , György Ligeti 
@@ -101,28 +101,15 @@ acúfenos [distorsiones perceptivas - audición]
 
 
 ---
-- [[extrañamiento]]
-- -arte dogmatico
-- astringencia
-- causticidad
-- picos
-- persistencia 
-- fruicion estética
-- ecfrasis
-- [[efimero]]
-- desplazamiento
-- austeridad
-- subversión
-- intervencionismo
-- relacionismo 
-- proposopeyeutica
-- sinectica
-- trans-
-- descontextualización
-- adaptación de la observación
+
+![[c-cym06-principios generativos#procedimientos artísticos relacionados a cym]]
+
+
+--- 
 
 http://actividaddeuso.xyz/
 
+--- 
 
 [[Cecila Arditto]]
 [[Carola Bauckholt]]

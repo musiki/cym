@@ -557,13 +557,1395 @@ var require_pickr_min = __commonJS({
   }
 });
 
+// node_modules/json5/dist/index.js
+var require_dist = __commonJS({
+  "node_modules/json5/dist/index.js"(exports, module2) {
+    (function(global, factory) {
+      typeof exports === "object" && typeof module2 !== "undefined" ? module2.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.JSON5 = factory();
+    })(exports, function() {
+      "use strict";
+      function createCommonjsModule(fn, module3) {
+        return module3 = { exports: {} }, fn(module3, module3.exports), module3.exports;
+      }
+      var _global = createCommonjsModule(function(module3) {
+        var global = module3.exports = typeof window != "undefined" && window.Math == Math ? window : typeof self != "undefined" && self.Math == Math ? self : Function("return this")();
+        if (typeof __g == "number") {
+          __g = global;
+        }
+      });
+      var _core = createCommonjsModule(function(module3) {
+        var core2 = module3.exports = { version: "2.6.5" };
+        if (typeof __e == "number") {
+          __e = core2;
+        }
+      });
+      var _core_1 = _core.version;
+      var _isObject = function(it2) {
+        return typeof it2 === "object" ? it2 !== null : typeof it2 === "function";
+      };
+      var _anObject = function(it2) {
+        if (!_isObject(it2)) {
+          throw TypeError(it2 + " is not an object!");
+        }
+        return it2;
+      };
+      var _fails = function(exec) {
+        try {
+          return !!exec();
+        } catch (e2) {
+          return true;
+        }
+      };
+      var _descriptors = !_fails(function() {
+        return Object.defineProperty({}, "a", { get: function() {
+          return 7;
+        } }).a != 7;
+      });
+      var document2 = _global.document;
+      var is2 = _isObject(document2) && _isObject(document2.createElement);
+      var _domCreate = function(it2) {
+        return is2 ? document2.createElement(it2) : {};
+      };
+      var _ie8DomDefine = !_descriptors && !_fails(function() {
+        return Object.defineProperty(_domCreate("div"), "a", { get: function() {
+          return 7;
+        } }).a != 7;
+      });
+      var _toPrimitive = function(it2, S2) {
+        if (!_isObject(it2)) {
+          return it2;
+        }
+        var fn, val;
+        if (S2 && typeof (fn = it2.toString) == "function" && !_isObject(val = fn.call(it2))) {
+          return val;
+        }
+        if (typeof (fn = it2.valueOf) == "function" && !_isObject(val = fn.call(it2))) {
+          return val;
+        }
+        if (!S2 && typeof (fn = it2.toString) == "function" && !_isObject(val = fn.call(it2))) {
+          return val;
+        }
+        throw TypeError("Can't convert object to primitive value");
+      };
+      var dP = Object.defineProperty;
+      var f2 = _descriptors ? Object.defineProperty : function defineProperty(O2, P2, Attributes) {
+        _anObject(O2);
+        P2 = _toPrimitive(P2, true);
+        _anObject(Attributes);
+        if (_ie8DomDefine) {
+          try {
+            return dP(O2, P2, Attributes);
+          } catch (e2) {
+          }
+        }
+        if ("get" in Attributes || "set" in Attributes) {
+          throw TypeError("Accessors not supported!");
+        }
+        if ("value" in Attributes) {
+          O2[P2] = Attributes.value;
+        }
+        return O2;
+      };
+      var _objectDp = {
+        f: f2
+      };
+      var _propertyDesc = function(bitmap, value) {
+        return {
+          enumerable: !(bitmap & 1),
+          configurable: !(bitmap & 2),
+          writable: !(bitmap & 4),
+          value
+        };
+      };
+      var _hide = _descriptors ? function(object, key3, value) {
+        return _objectDp.f(object, key3, _propertyDesc(1, value));
+      } : function(object, key3, value) {
+        object[key3] = value;
+        return object;
+      };
+      var hasOwnProperty = {}.hasOwnProperty;
+      var _has = function(it2, key3) {
+        return hasOwnProperty.call(it2, key3);
+      };
+      var id = 0;
+      var px = Math.random();
+      var _uid = function(key3) {
+        return "Symbol(".concat(key3 === void 0 ? "" : key3, ")_", (++id + px).toString(36));
+      };
+      var _library = false;
+      var _shared = createCommonjsModule(function(module3) {
+        var SHARED = "__core-js_shared__";
+        var store = _global[SHARED] || (_global[SHARED] = {});
+        (module3.exports = function(key3, value) {
+          return store[key3] || (store[key3] = value !== void 0 ? value : {});
+        })("versions", []).push({
+          version: _core.version,
+          mode: _library ? "pure" : "global",
+          copyright: "\xA9 2019 Denis Pushkarev (zloirock.ru)"
+        });
+      });
+      var _functionToString = _shared("native-function-to-string", Function.toString);
+      var _redefine = createCommonjsModule(function(module3) {
+        var SRC = _uid("src");
+        var TO_STRING = "toString";
+        var TPL = ("" + _functionToString).split(TO_STRING);
+        _core.inspectSource = function(it2) {
+          return _functionToString.call(it2);
+        };
+        (module3.exports = function(O2, key3, val, safe) {
+          var isFunction = typeof val == "function";
+          if (isFunction) {
+            _has(val, "name") || _hide(val, "name", key3);
+          }
+          if (O2[key3] === val) {
+            return;
+          }
+          if (isFunction) {
+            _has(val, SRC) || _hide(val, SRC, O2[key3] ? "" + O2[key3] : TPL.join(String(key3)));
+          }
+          if (O2 === _global) {
+            O2[key3] = val;
+          } else if (!safe) {
+            delete O2[key3];
+            _hide(O2, key3, val);
+          } else if (O2[key3]) {
+            O2[key3] = val;
+          } else {
+            _hide(O2, key3, val);
+          }
+        })(Function.prototype, TO_STRING, function toString() {
+          return typeof this == "function" && this[SRC] || _functionToString.call(this);
+        });
+      });
+      var _aFunction = function(it2) {
+        if (typeof it2 != "function") {
+          throw TypeError(it2 + " is not a function!");
+        }
+        return it2;
+      };
+      var _ctx = function(fn, that, length) {
+        _aFunction(fn);
+        if (that === void 0) {
+          return fn;
+        }
+        switch (length) {
+          case 1:
+            return function(a2) {
+              return fn.call(that, a2);
+            };
+          case 2:
+            return function(a2, b2) {
+              return fn.call(that, a2, b2);
+            };
+          case 3:
+            return function(a2, b2, c3) {
+              return fn.call(that, a2, b2, c3);
+            };
+        }
+        return function() {
+          return fn.apply(that, arguments);
+        };
+      };
+      var PROTOTYPE = "prototype";
+      var $export = function(type, name, source2) {
+        var IS_FORCED = type & $export.F;
+        var IS_GLOBAL = type & $export.G;
+        var IS_STATIC = type & $export.S;
+        var IS_PROTO = type & $export.P;
+        var IS_BIND = type & $export.B;
+        var target = IS_GLOBAL ? _global : IS_STATIC ? _global[name] || (_global[name] = {}) : (_global[name] || {})[PROTOTYPE];
+        var exports2 = IS_GLOBAL ? _core : _core[name] || (_core[name] = {});
+        var expProto = exports2[PROTOTYPE] || (exports2[PROTOTYPE] = {});
+        var key3, own7, out, exp;
+        if (IS_GLOBAL) {
+          source2 = name;
+        }
+        for (key3 in source2) {
+          own7 = !IS_FORCED && target && target[key3] !== void 0;
+          out = (own7 ? target : source2)[key3];
+          exp = IS_BIND && own7 ? _ctx(out, _global) : IS_PROTO && typeof out == "function" ? _ctx(Function.call, out) : out;
+          if (target) {
+            _redefine(target, key3, out, type & $export.U);
+          }
+          if (exports2[key3] != out) {
+            _hide(exports2, key3, exp);
+          }
+          if (IS_PROTO && expProto[key3] != out) {
+            expProto[key3] = out;
+          }
+        }
+      };
+      _global.core = _core;
+      $export.F = 1;
+      $export.G = 2;
+      $export.S = 4;
+      $export.P = 8;
+      $export.B = 16;
+      $export.W = 32;
+      $export.U = 64;
+      $export.R = 128;
+      var _export = $export;
+      var ceil = Math.ceil;
+      var floor = Math.floor;
+      var _toInteger = function(it2) {
+        return isNaN(it2 = +it2) ? 0 : (it2 > 0 ? floor : ceil)(it2);
+      };
+      var _defined = function(it2) {
+        if (it2 == void 0) {
+          throw TypeError("Can't call method on  " + it2);
+        }
+        return it2;
+      };
+      var _stringAt = function(TO_STRING) {
+        return function(that, pos2) {
+          var s3 = String(_defined(that));
+          var i2 = _toInteger(pos2);
+          var l2 = s3.length;
+          var a2, b2;
+          if (i2 < 0 || i2 >= l2) {
+            return TO_STRING ? "" : void 0;
+          }
+          a2 = s3.charCodeAt(i2);
+          return a2 < 55296 || a2 > 56319 || i2 + 1 === l2 || (b2 = s3.charCodeAt(i2 + 1)) < 56320 || b2 > 57343 ? TO_STRING ? s3.charAt(i2) : a2 : TO_STRING ? s3.slice(i2, i2 + 2) : (a2 - 55296 << 10) + (b2 - 56320) + 65536;
+        };
+      };
+      var $at = _stringAt(false);
+      _export(_export.P, "String", {
+        // 21.1.3.3 String.prototype.codePointAt(pos)
+        codePointAt: function codePointAt2(pos2) {
+          return $at(this, pos2);
+        }
+      });
+      var codePointAt = _core.String.codePointAt;
+      var max = Math.max;
+      var min = Math.min;
+      var _toAbsoluteIndex = function(index2, length) {
+        index2 = _toInteger(index2);
+        return index2 < 0 ? max(index2 + length, 0) : min(index2, length);
+      };
+      var fromCharCode = String.fromCharCode;
+      var $fromCodePoint = String.fromCodePoint;
+      _export(_export.S + _export.F * (!!$fromCodePoint && $fromCodePoint.length != 1), "String", {
+        // 21.1.2.2 String.fromCodePoint(...codePoints)
+        fromCodePoint: function fromCodePoint3(x2) {
+          var arguments$1 = arguments;
+          var res = [];
+          var aLen = arguments.length;
+          var i2 = 0;
+          var code;
+          while (aLen > i2) {
+            code = +arguments$1[i2++];
+            if (_toAbsoluteIndex(code, 1114111) !== code) {
+              throw RangeError(code + " is not a valid code point");
+            }
+            res.push(
+              code < 65536 ? fromCharCode(code) : fromCharCode(((code -= 65536) >> 10) + 55296, code % 1024 + 56320)
+            );
+          }
+          return res.join("");
+        }
+      });
+      var fromCodePoint2 = _core.String.fromCodePoint;
+      var Space_Separator = /[\u1680\u2000-\u200A\u202F\u205F\u3000]/;
+      var ID_Start = /[\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312E\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FEA\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC]|\uD800[\uDC00-\uDC0B\uDC0D-\uDC26\uDC28-\uDC3A\uDC3C\uDC3D\uDC3F-\uDC4D\uDC50-\uDC5D\uDC80-\uDCFA\uDD40-\uDD74\uDE80-\uDE9C\uDEA0-\uDED0\uDF00-\uDF1F\uDF2D-\uDF4A\uDF50-\uDF75\uDF80-\uDF9D\uDFA0-\uDFC3\uDFC8-\uDFCF\uDFD1-\uDFD5]|\uD801[\uDC00-\uDC9D\uDCB0-\uDCD3\uDCD8-\uDCFB\uDD00-\uDD27\uDD30-\uDD63\uDE00-\uDF36\uDF40-\uDF55\uDF60-\uDF67]|\uD802[\uDC00-\uDC05\uDC08\uDC0A-\uDC35\uDC37\uDC38\uDC3C\uDC3F-\uDC55\uDC60-\uDC76\uDC80-\uDC9E\uDCE0-\uDCF2\uDCF4\uDCF5\uDD00-\uDD15\uDD20-\uDD39\uDD80-\uDDB7\uDDBE\uDDBF\uDE00\uDE10-\uDE13\uDE15-\uDE17\uDE19-\uDE33\uDE60-\uDE7C\uDE80-\uDE9C\uDEC0-\uDEC7\uDEC9-\uDEE4\uDF00-\uDF35\uDF40-\uDF55\uDF60-\uDF72\uDF80-\uDF91]|\uD803[\uDC00-\uDC48\uDC80-\uDCB2\uDCC0-\uDCF2]|\uD804[\uDC03-\uDC37\uDC83-\uDCAF\uDCD0-\uDCE8\uDD03-\uDD26\uDD50-\uDD72\uDD76\uDD83-\uDDB2\uDDC1-\uDDC4\uDDDA\uDDDC\uDE00-\uDE11\uDE13-\uDE2B\uDE80-\uDE86\uDE88\uDE8A-\uDE8D\uDE8F-\uDE9D\uDE9F-\uDEA8\uDEB0-\uDEDE\uDF05-\uDF0C\uDF0F\uDF10\uDF13-\uDF28\uDF2A-\uDF30\uDF32\uDF33\uDF35-\uDF39\uDF3D\uDF50\uDF5D-\uDF61]|\uD805[\uDC00-\uDC34\uDC47-\uDC4A\uDC80-\uDCAF\uDCC4\uDCC5\uDCC7\uDD80-\uDDAE\uDDD8-\uDDDB\uDE00-\uDE2F\uDE44\uDE80-\uDEAA\uDF00-\uDF19]|\uD806[\uDCA0-\uDCDF\uDCFF\uDE00\uDE0B-\uDE32\uDE3A\uDE50\uDE5C-\uDE83\uDE86-\uDE89\uDEC0-\uDEF8]|\uD807[\uDC00-\uDC08\uDC0A-\uDC2E\uDC40\uDC72-\uDC8F\uDD00-\uDD06\uDD08\uDD09\uDD0B-\uDD30\uDD46]|\uD808[\uDC00-\uDF99]|\uD809[\uDC00-\uDC6E\uDC80-\uDD43]|[\uD80C\uD81C-\uD820\uD840-\uD868\uD86A-\uD86C\uD86F-\uD872\uD874-\uD879][\uDC00-\uDFFF]|\uD80D[\uDC00-\uDC2E]|\uD811[\uDC00-\uDE46]|\uD81A[\uDC00-\uDE38\uDE40-\uDE5E\uDED0-\uDEED\uDF00-\uDF2F\uDF40-\uDF43\uDF63-\uDF77\uDF7D-\uDF8F]|\uD81B[\uDF00-\uDF44\uDF50\uDF93-\uDF9F\uDFE0\uDFE1]|\uD821[\uDC00-\uDFEC]|\uD822[\uDC00-\uDEF2]|\uD82C[\uDC00-\uDD1E\uDD70-\uDEFB]|\uD82F[\uDC00-\uDC6A\uDC70-\uDC7C\uDC80-\uDC88\uDC90-\uDC99]|\uD835[\uDC00-\uDC54\uDC56-\uDC9C\uDC9E\uDC9F\uDCA2\uDCA5\uDCA6\uDCA9-\uDCAC\uDCAE-\uDCB9\uDCBB\uDCBD-\uDCC3\uDCC5-\uDD05\uDD07-\uDD0A\uDD0D-\uDD14\uDD16-\uDD1C\uDD1E-\uDD39\uDD3B-\uDD3E\uDD40-\uDD44\uDD46\uDD4A-\uDD50\uDD52-\uDEA5\uDEA8-\uDEC0\uDEC2-\uDEDA\uDEDC-\uDEFA\uDEFC-\uDF14\uDF16-\uDF34\uDF36-\uDF4E\uDF50-\uDF6E\uDF70-\uDF88\uDF8A-\uDFA8\uDFAA-\uDFC2\uDFC4-\uDFCB]|\uD83A[\uDC00-\uDCC4\uDD00-\uDD43]|\uD83B[\uDE00-\uDE03\uDE05-\uDE1F\uDE21\uDE22\uDE24\uDE27\uDE29-\uDE32\uDE34-\uDE37\uDE39\uDE3B\uDE42\uDE47\uDE49\uDE4B\uDE4D-\uDE4F\uDE51\uDE52\uDE54\uDE57\uDE59\uDE5B\uDE5D\uDE5F\uDE61\uDE62\uDE64\uDE67-\uDE6A\uDE6C-\uDE72\uDE74-\uDE77\uDE79-\uDE7C\uDE7E\uDE80-\uDE89\uDE8B-\uDE9B\uDEA1-\uDEA3\uDEA5-\uDEA9\uDEAB-\uDEBB]|\uD869[\uDC00-\uDED6\uDF00-\uDFFF]|\uD86D[\uDC00-\uDF34\uDF40-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEA1\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0]|\uD87E[\uDC00-\uDE1D]/;
+      var ID_Continue = /[\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0300-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u0483-\u0487\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u05D0-\u05EA\u05F0-\u05F2\u0610-\u061A\u0620-\u0669\u066E-\u06D3\u06D5-\u06DC\u06DF-\u06E8\u06EA-\u06FC\u06FF\u0710-\u074A\u074D-\u07B1\u07C0-\u07F5\u07FA\u0800-\u082D\u0840-\u085B\u0860-\u086A\u08A0-\u08B4\u08B6-\u08BD\u08D4-\u08E1\u08E3-\u0963\u0966-\u096F\u0971-\u0983\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BC-\u09C4\u09C7\u09C8\u09CB-\u09CE\u09D7\u09DC\u09DD\u09DF-\u09E3\u09E6-\u09F1\u09FC\u0A01-\u0A03\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A59-\u0A5C\u0A5E\u0A66-\u0A75\u0A81-\u0A83\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABC-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AD0\u0AE0-\u0AE3\u0AE6-\u0AEF\u0AF9-\u0AFF\u0B01-\u0B03\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3C-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B5C\u0B5D\u0B5F-\u0B63\u0B66-\u0B6F\u0B71\u0B82\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD0\u0BD7\u0BE6-\u0BEF\u0C00-\u0C03\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C58-\u0C5A\u0C60-\u0C63\u0C66-\u0C6F\u0C80-\u0C83\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBC-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CDE\u0CE0-\u0CE3\u0CE6-\u0CEF\u0CF1\u0CF2\u0D00-\u0D03\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D44\u0D46-\u0D48\u0D4A-\u0D4E\u0D54-\u0D57\u0D5F-\u0D63\u0D66-\u0D6F\u0D7A-\u0D7F\u0D82\u0D83\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E01-\u0E3A\u0E40-\u0E4E\u0E50-\u0E59\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB9\u0EBB-\u0EBD\u0EC0-\u0EC4\u0EC6\u0EC8-\u0ECD\u0ED0-\u0ED9\u0EDC-\u0EDF\u0F00\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E-\u0F47\u0F49-\u0F6C\u0F71-\u0F84\u0F86-\u0F97\u0F99-\u0FBC\u0FC6\u1000-\u1049\u1050-\u109D\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u135D-\u135F\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u170C\u170E-\u1714\u1720-\u1734\u1740-\u1753\u1760-\u176C\u176E-\u1770\u1772\u1773\u1780-\u17D3\u17D7\u17DC\u17DD\u17E0-\u17E9\u180B-\u180D\u1810-\u1819\u1820-\u1877\u1880-\u18AA\u18B0-\u18F5\u1900-\u191E\u1920-\u192B\u1930-\u193B\u1946-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u19D0-\u19D9\u1A00-\u1A1B\u1A20-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AA7\u1AB0-\u1ABD\u1B00-\u1B4B\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1BF3\u1C00-\u1C37\u1C40-\u1C49\u1C4D-\u1C7D\u1C80-\u1C88\u1CD0-\u1CD2\u1CD4-\u1CF9\u1D00-\u1DF9\u1DFB-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u203F\u2040\u2054\u2071\u207F\u2090-\u209C\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D7F-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2DE0-\u2DFF\u2E2F\u3005-\u3007\u3021-\u302F\u3031-\u3035\u3038-\u303C\u3041-\u3096\u3099\u309A\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312E\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FEA\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA62B\uA640-\uA66F\uA674-\uA67D\uA67F-\uA6F1\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA827\uA840-\uA873\uA880-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F7\uA8FB\uA8FD\uA900-\uA92D\uA930-\uA953\uA960-\uA97C\uA980-\uA9C0\uA9CF-\uA9D9\uA9E0-\uA9FE\uAA00-\uAA36\uAA40-\uAA4D\uAA50-\uAA59\uAA60-\uAA76\uAA7A-\uAAC2\uAADB-\uAADD\uAAE0-\uAAEF\uAAF2-\uAAF6\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABEA\uABEC\uABED\uABF0-\uABF9\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFE70-\uFE74\uFE76-\uFEFC\uFF10-\uFF19\uFF21-\uFF3A\uFF3F\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC]|\uD800[\uDC00-\uDC0B\uDC0D-\uDC26\uDC28-\uDC3A\uDC3C\uDC3D\uDC3F-\uDC4D\uDC50-\uDC5D\uDC80-\uDCFA\uDD40-\uDD74\uDDFD\uDE80-\uDE9C\uDEA0-\uDED0\uDEE0\uDF00-\uDF1F\uDF2D-\uDF4A\uDF50-\uDF7A\uDF80-\uDF9D\uDFA0-\uDFC3\uDFC8-\uDFCF\uDFD1-\uDFD5]|\uD801[\uDC00-\uDC9D\uDCA0-\uDCA9\uDCB0-\uDCD3\uDCD8-\uDCFB\uDD00-\uDD27\uDD30-\uDD63\uDE00-\uDF36\uDF40-\uDF55\uDF60-\uDF67]|\uD802[\uDC00-\uDC05\uDC08\uDC0A-\uDC35\uDC37\uDC38\uDC3C\uDC3F-\uDC55\uDC60-\uDC76\uDC80-\uDC9E\uDCE0-\uDCF2\uDCF4\uDCF5\uDD00-\uDD15\uDD20-\uDD39\uDD80-\uDDB7\uDDBE\uDDBF\uDE00-\uDE03\uDE05\uDE06\uDE0C-\uDE13\uDE15-\uDE17\uDE19-\uDE33\uDE38-\uDE3A\uDE3F\uDE60-\uDE7C\uDE80-\uDE9C\uDEC0-\uDEC7\uDEC9-\uDEE6\uDF00-\uDF35\uDF40-\uDF55\uDF60-\uDF72\uDF80-\uDF91]|\uD803[\uDC00-\uDC48\uDC80-\uDCB2\uDCC0-\uDCF2]|\uD804[\uDC00-\uDC46\uDC66-\uDC6F\uDC7F-\uDCBA\uDCD0-\uDCE8\uDCF0-\uDCF9\uDD00-\uDD34\uDD36-\uDD3F\uDD50-\uDD73\uDD76\uDD80-\uDDC4\uDDCA-\uDDCC\uDDD0-\uDDDA\uDDDC\uDE00-\uDE11\uDE13-\uDE37\uDE3E\uDE80-\uDE86\uDE88\uDE8A-\uDE8D\uDE8F-\uDE9D\uDE9F-\uDEA8\uDEB0-\uDEEA\uDEF0-\uDEF9\uDF00-\uDF03\uDF05-\uDF0C\uDF0F\uDF10\uDF13-\uDF28\uDF2A-\uDF30\uDF32\uDF33\uDF35-\uDF39\uDF3C-\uDF44\uDF47\uDF48\uDF4B-\uDF4D\uDF50\uDF57\uDF5D-\uDF63\uDF66-\uDF6C\uDF70-\uDF74]|\uD805[\uDC00-\uDC4A\uDC50-\uDC59\uDC80-\uDCC5\uDCC7\uDCD0-\uDCD9\uDD80-\uDDB5\uDDB8-\uDDC0\uDDD8-\uDDDD\uDE00-\uDE40\uDE44\uDE50-\uDE59\uDE80-\uDEB7\uDEC0-\uDEC9\uDF00-\uDF19\uDF1D-\uDF2B\uDF30-\uDF39]|\uD806[\uDCA0-\uDCE9\uDCFF\uDE00-\uDE3E\uDE47\uDE50-\uDE83\uDE86-\uDE99\uDEC0-\uDEF8]|\uD807[\uDC00-\uDC08\uDC0A-\uDC36\uDC38-\uDC40\uDC50-\uDC59\uDC72-\uDC8F\uDC92-\uDCA7\uDCA9-\uDCB6\uDD00-\uDD06\uDD08\uDD09\uDD0B-\uDD36\uDD3A\uDD3C\uDD3D\uDD3F-\uDD47\uDD50-\uDD59]|\uD808[\uDC00-\uDF99]|\uD809[\uDC00-\uDC6E\uDC80-\uDD43]|[\uD80C\uD81C-\uD820\uD840-\uD868\uD86A-\uD86C\uD86F-\uD872\uD874-\uD879][\uDC00-\uDFFF]|\uD80D[\uDC00-\uDC2E]|\uD811[\uDC00-\uDE46]|\uD81A[\uDC00-\uDE38\uDE40-\uDE5E\uDE60-\uDE69\uDED0-\uDEED\uDEF0-\uDEF4\uDF00-\uDF36\uDF40-\uDF43\uDF50-\uDF59\uDF63-\uDF77\uDF7D-\uDF8F]|\uD81B[\uDF00-\uDF44\uDF50-\uDF7E\uDF8F-\uDF9F\uDFE0\uDFE1]|\uD821[\uDC00-\uDFEC]|\uD822[\uDC00-\uDEF2]|\uD82C[\uDC00-\uDD1E\uDD70-\uDEFB]|\uD82F[\uDC00-\uDC6A\uDC70-\uDC7C\uDC80-\uDC88\uDC90-\uDC99\uDC9D\uDC9E]|\uD834[\uDD65-\uDD69\uDD6D-\uDD72\uDD7B-\uDD82\uDD85-\uDD8B\uDDAA-\uDDAD\uDE42-\uDE44]|\uD835[\uDC00-\uDC54\uDC56-\uDC9C\uDC9E\uDC9F\uDCA2\uDCA5\uDCA6\uDCA9-\uDCAC\uDCAE-\uDCB9\uDCBB\uDCBD-\uDCC3\uDCC5-\uDD05\uDD07-\uDD0A\uDD0D-\uDD14\uDD16-\uDD1C\uDD1E-\uDD39\uDD3B-\uDD3E\uDD40-\uDD44\uDD46\uDD4A-\uDD50\uDD52-\uDEA5\uDEA8-\uDEC0\uDEC2-\uDEDA\uDEDC-\uDEFA\uDEFC-\uDF14\uDF16-\uDF34\uDF36-\uDF4E\uDF50-\uDF6E\uDF70-\uDF88\uDF8A-\uDFA8\uDFAA-\uDFC2\uDFC4-\uDFCB\uDFCE-\uDFFF]|\uD836[\uDE00-\uDE36\uDE3B-\uDE6C\uDE75\uDE84\uDE9B-\uDE9F\uDEA1-\uDEAF]|\uD838[\uDC00-\uDC06\uDC08-\uDC18\uDC1B-\uDC21\uDC23\uDC24\uDC26-\uDC2A]|\uD83A[\uDC00-\uDCC4\uDCD0-\uDCD6\uDD00-\uDD4A\uDD50-\uDD59]|\uD83B[\uDE00-\uDE03\uDE05-\uDE1F\uDE21\uDE22\uDE24\uDE27\uDE29-\uDE32\uDE34-\uDE37\uDE39\uDE3B\uDE42\uDE47\uDE49\uDE4B\uDE4D-\uDE4F\uDE51\uDE52\uDE54\uDE57\uDE59\uDE5B\uDE5D\uDE5F\uDE61\uDE62\uDE64\uDE67-\uDE6A\uDE6C-\uDE72\uDE74-\uDE77\uDE79-\uDE7C\uDE7E\uDE80-\uDE89\uDE8B-\uDE9B\uDEA1-\uDEA3\uDEA5-\uDEA9\uDEAB-\uDEBB]|\uD869[\uDC00-\uDED6\uDF00-\uDFFF]|\uD86D[\uDC00-\uDF34\uDF40-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEA1\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0]|\uD87E[\uDC00-\uDE1D]|\uDB40[\uDD00-\uDDEF]/;
+      var unicode = {
+        Space_Separator,
+        ID_Start,
+        ID_Continue
+      };
+      var util = {
+        isSpaceSeparator: function isSpaceSeparator(c3) {
+          return typeof c3 === "string" && unicode.Space_Separator.test(c3);
+        },
+        isIdStartChar: function isIdStartChar(c3) {
+          return typeof c3 === "string" && (c3 >= "a" && c3 <= "z" || c3 >= "A" && c3 <= "Z" || c3 === "$" || c3 === "_" || unicode.ID_Start.test(c3));
+        },
+        isIdContinueChar: function isIdContinueChar(c3) {
+          return typeof c3 === "string" && (c3 >= "a" && c3 <= "z" || c3 >= "A" && c3 <= "Z" || c3 >= "0" && c3 <= "9" || c3 === "$" || c3 === "_" || c3 === "\u200C" || c3 === "\u200D" || unicode.ID_Continue.test(c3));
+        },
+        isDigit: function isDigit(c3) {
+          return typeof c3 === "string" && /[0-9]/.test(c3);
+        },
+        isHexDigit: function isHexDigit(c3) {
+          return typeof c3 === "string" && /[0-9A-Fa-f]/.test(c3);
+        }
+      };
+      var source;
+      var parseState;
+      var stack;
+      var pos;
+      var line;
+      var column;
+      var token;
+      var key2;
+      var root2;
+      var parse5 = function parse6(text2, reviver) {
+        source = String(text2);
+        parseState = "start";
+        stack = [];
+        pos = 0;
+        line = 1;
+        column = 0;
+        token = void 0;
+        key2 = void 0;
+        root2 = void 0;
+        do {
+          token = lex();
+          parseStates[parseState]();
+        } while (token.type !== "eof");
+        if (typeof reviver === "function") {
+          return internalize({ "": root2 }, "", reviver);
+        }
+        return root2;
+      };
+      function internalize(holder, name, reviver) {
+        var value = holder[name];
+        if (value != null && typeof value === "object") {
+          if (Array.isArray(value)) {
+            for (var i2 = 0; i2 < value.length; i2++) {
+              var key3 = String(i2);
+              var replacement = internalize(value, key3, reviver);
+              if (replacement === void 0) {
+                delete value[key3];
+              } else {
+                Object.defineProperty(value, key3, {
+                  value: replacement,
+                  writable: true,
+                  enumerable: true,
+                  configurable: true
+                });
+              }
+            }
+          } else {
+            for (var key$1 in value) {
+              var replacement$1 = internalize(value, key$1, reviver);
+              if (replacement$1 === void 0) {
+                delete value[key$1];
+              } else {
+                Object.defineProperty(value, key$1, {
+                  value: replacement$1,
+                  writable: true,
+                  enumerable: true,
+                  configurable: true
+                });
+              }
+            }
+          }
+        }
+        return reviver.call(holder, name, value);
+      }
+      var lexState;
+      var buffer;
+      var doubleQuote;
+      var sign;
+      var c2;
+      function lex() {
+        lexState = "default";
+        buffer = "";
+        doubleQuote = false;
+        sign = 1;
+        for (; ; ) {
+          c2 = peek();
+          var token2 = lexStates[lexState]();
+          if (token2) {
+            return token2;
+          }
+        }
+      }
+      function peek() {
+        if (source[pos]) {
+          return String.fromCodePoint(source.codePointAt(pos));
+        }
+      }
+      function read() {
+        var c3 = peek();
+        if (c3 === "\n") {
+          line++;
+          column = 0;
+        } else if (c3) {
+          column += c3.length;
+        } else {
+          column++;
+        }
+        if (c3) {
+          pos += c3.length;
+        }
+        return c3;
+      }
+      var lexStates = {
+        default: function default$1() {
+          switch (c2) {
+            case "	":
+            case "\v":
+            case "\f":
+            case " ":
+            case "\xA0":
+            case "\uFEFF":
+            case "\n":
+            case "\r":
+            case "\u2028":
+            case "\u2029":
+              read();
+              return;
+            case "/":
+              read();
+              lexState = "comment";
+              return;
+            case void 0:
+              read();
+              return newToken("eof");
+          }
+          if (util.isSpaceSeparator(c2)) {
+            read();
+            return;
+          }
+          return lexStates[parseState]();
+        },
+        comment: function comment2() {
+          switch (c2) {
+            case "*":
+              read();
+              lexState = "multiLineComment";
+              return;
+            case "/":
+              read();
+              lexState = "singleLineComment";
+              return;
+          }
+          throw invalidChar(read());
+        },
+        multiLineComment: function multiLineComment() {
+          switch (c2) {
+            case "*":
+              read();
+              lexState = "multiLineCommentAsterisk";
+              return;
+            case void 0:
+              throw invalidChar(read());
+          }
+          read();
+        },
+        multiLineCommentAsterisk: function multiLineCommentAsterisk() {
+          switch (c2) {
+            case "*":
+              read();
+              return;
+            case "/":
+              read();
+              lexState = "default";
+              return;
+            case void 0:
+              throw invalidChar(read());
+          }
+          read();
+          lexState = "multiLineComment";
+        },
+        singleLineComment: function singleLineComment() {
+          switch (c2) {
+            case "\n":
+            case "\r":
+            case "\u2028":
+            case "\u2029":
+              read();
+              lexState = "default";
+              return;
+            case void 0:
+              read();
+              return newToken("eof");
+          }
+          read();
+        },
+        value: function value() {
+          switch (c2) {
+            case "{":
+            case "[":
+              return newToken("punctuator", read());
+            case "n":
+              read();
+              literal("ull");
+              return newToken("null", null);
+            case "t":
+              read();
+              literal("rue");
+              return newToken("boolean", true);
+            case "f":
+              read();
+              literal("alse");
+              return newToken("boolean", false);
+            case "-":
+            case "+":
+              if (read() === "-") {
+                sign = -1;
+              }
+              lexState = "sign";
+              return;
+            case ".":
+              buffer = read();
+              lexState = "decimalPointLeading";
+              return;
+            case "0":
+              buffer = read();
+              lexState = "zero";
+              return;
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+            case "6":
+            case "7":
+            case "8":
+            case "9":
+              buffer = read();
+              lexState = "decimalInteger";
+              return;
+            case "I":
+              read();
+              literal("nfinity");
+              return newToken("numeric", Infinity);
+            case "N":
+              read();
+              literal("aN");
+              return newToken("numeric", NaN);
+            case '"':
+            case "'":
+              doubleQuote = read() === '"';
+              buffer = "";
+              lexState = "string";
+              return;
+          }
+          throw invalidChar(read());
+        },
+        identifierNameStartEscape: function identifierNameStartEscape() {
+          if (c2 !== "u") {
+            throw invalidChar(read());
+          }
+          read();
+          var u2 = unicodeEscape();
+          switch (u2) {
+            case "$":
+            case "_":
+              break;
+            default:
+              if (!util.isIdStartChar(u2)) {
+                throw invalidIdentifier();
+              }
+              break;
+          }
+          buffer += u2;
+          lexState = "identifierName";
+        },
+        identifierName: function identifierName() {
+          switch (c2) {
+            case "$":
+            case "_":
+            case "\u200C":
+            case "\u200D":
+              buffer += read();
+              return;
+            case "\\":
+              read();
+              lexState = "identifierNameEscape";
+              return;
+          }
+          if (util.isIdContinueChar(c2)) {
+            buffer += read();
+            return;
+          }
+          return newToken("identifier", buffer);
+        },
+        identifierNameEscape: function identifierNameEscape() {
+          if (c2 !== "u") {
+            throw invalidChar(read());
+          }
+          read();
+          var u2 = unicodeEscape();
+          switch (u2) {
+            case "$":
+            case "_":
+            case "\u200C":
+            case "\u200D":
+              break;
+            default:
+              if (!util.isIdContinueChar(u2)) {
+                throw invalidIdentifier();
+              }
+              break;
+          }
+          buffer += u2;
+          lexState = "identifierName";
+        },
+        sign: function sign$1() {
+          switch (c2) {
+            case ".":
+              buffer = read();
+              lexState = "decimalPointLeading";
+              return;
+            case "0":
+              buffer = read();
+              lexState = "zero";
+              return;
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+            case "6":
+            case "7":
+            case "8":
+            case "9":
+              buffer = read();
+              lexState = "decimalInteger";
+              return;
+            case "I":
+              read();
+              literal("nfinity");
+              return newToken("numeric", sign * Infinity);
+            case "N":
+              read();
+              literal("aN");
+              return newToken("numeric", NaN);
+          }
+          throw invalidChar(read());
+        },
+        zero: function zero() {
+          switch (c2) {
+            case ".":
+              buffer += read();
+              lexState = "decimalPoint";
+              return;
+            case "e":
+            case "E":
+              buffer += read();
+              lexState = "decimalExponent";
+              return;
+            case "x":
+            case "X":
+              buffer += read();
+              lexState = "hexadecimal";
+              return;
+          }
+          return newToken("numeric", sign * 0);
+        },
+        decimalInteger: function decimalInteger() {
+          switch (c2) {
+            case ".":
+              buffer += read();
+              lexState = "decimalPoint";
+              return;
+            case "e":
+            case "E":
+              buffer += read();
+              lexState = "decimalExponent";
+              return;
+          }
+          if (util.isDigit(c2)) {
+            buffer += read();
+            return;
+          }
+          return newToken("numeric", sign * Number(buffer));
+        },
+        decimalPointLeading: function decimalPointLeading() {
+          if (util.isDigit(c2)) {
+            buffer += read();
+            lexState = "decimalFraction";
+            return;
+          }
+          throw invalidChar(read());
+        },
+        decimalPoint: function decimalPoint() {
+          switch (c2) {
+            case "e":
+            case "E":
+              buffer += read();
+              lexState = "decimalExponent";
+              return;
+          }
+          if (util.isDigit(c2)) {
+            buffer += read();
+            lexState = "decimalFraction";
+            return;
+          }
+          return newToken("numeric", sign * Number(buffer));
+        },
+        decimalFraction: function decimalFraction() {
+          switch (c2) {
+            case "e":
+            case "E":
+              buffer += read();
+              lexState = "decimalExponent";
+              return;
+          }
+          if (util.isDigit(c2)) {
+            buffer += read();
+            return;
+          }
+          return newToken("numeric", sign * Number(buffer));
+        },
+        decimalExponent: function decimalExponent() {
+          switch (c2) {
+            case "+":
+            case "-":
+              buffer += read();
+              lexState = "decimalExponentSign";
+              return;
+          }
+          if (util.isDigit(c2)) {
+            buffer += read();
+            lexState = "decimalExponentInteger";
+            return;
+          }
+          throw invalidChar(read());
+        },
+        decimalExponentSign: function decimalExponentSign() {
+          if (util.isDigit(c2)) {
+            buffer += read();
+            lexState = "decimalExponentInteger";
+            return;
+          }
+          throw invalidChar(read());
+        },
+        decimalExponentInteger: function decimalExponentInteger() {
+          if (util.isDigit(c2)) {
+            buffer += read();
+            return;
+          }
+          return newToken("numeric", sign * Number(buffer));
+        },
+        hexadecimal: function hexadecimal() {
+          if (util.isHexDigit(c2)) {
+            buffer += read();
+            lexState = "hexadecimalInteger";
+            return;
+          }
+          throw invalidChar(read());
+        },
+        hexadecimalInteger: function hexadecimalInteger() {
+          if (util.isHexDigit(c2)) {
+            buffer += read();
+            return;
+          }
+          return newToken("numeric", sign * Number(buffer));
+        },
+        string: function string() {
+          switch (c2) {
+            case "\\":
+              read();
+              buffer += escape();
+              return;
+            case '"':
+              if (doubleQuote) {
+                read();
+                return newToken("string", buffer);
+              }
+              buffer += read();
+              return;
+            case "'":
+              if (!doubleQuote) {
+                read();
+                return newToken("string", buffer);
+              }
+              buffer += read();
+              return;
+            case "\n":
+            case "\r":
+              throw invalidChar(read());
+            case "\u2028":
+            case "\u2029":
+              separatorChar(c2);
+              break;
+            case void 0:
+              throw invalidChar(read());
+          }
+          buffer += read();
+        },
+        start: function start() {
+          switch (c2) {
+            case "{":
+            case "[":
+              return newToken("punctuator", read());
+          }
+          lexState = "value";
+        },
+        beforePropertyName: function beforePropertyName() {
+          switch (c2) {
+            case "$":
+            case "_":
+              buffer = read();
+              lexState = "identifierName";
+              return;
+            case "\\":
+              read();
+              lexState = "identifierNameStartEscape";
+              return;
+            case "}":
+              return newToken("punctuator", read());
+            case '"':
+            case "'":
+              doubleQuote = read() === '"';
+              lexState = "string";
+              return;
+          }
+          if (util.isIdStartChar(c2)) {
+            buffer += read();
+            lexState = "identifierName";
+            return;
+          }
+          throw invalidChar(read());
+        },
+        afterPropertyName: function afterPropertyName() {
+          if (c2 === ":") {
+            return newToken("punctuator", read());
+          }
+          throw invalidChar(read());
+        },
+        beforePropertyValue: function beforePropertyValue() {
+          lexState = "value";
+        },
+        afterPropertyValue: function afterPropertyValue() {
+          switch (c2) {
+            case ",":
+            case "}":
+              return newToken("punctuator", read());
+          }
+          throw invalidChar(read());
+        },
+        beforeArrayValue: function beforeArrayValue() {
+          if (c2 === "]") {
+            return newToken("punctuator", read());
+          }
+          lexState = "value";
+        },
+        afterArrayValue: function afterArrayValue() {
+          switch (c2) {
+            case ",":
+            case "]":
+              return newToken("punctuator", read());
+          }
+          throw invalidChar(read());
+        },
+        end: function end() {
+          throw invalidChar(read());
+        }
+      };
+      function newToken(type, value) {
+        return {
+          type,
+          value,
+          line,
+          column
+        };
+      }
+      function literal(s3) {
+        for (var i2 = 0, list = s3; i2 < list.length; i2 += 1) {
+          var c3 = list[i2];
+          var p3 = peek();
+          if (p3 !== c3) {
+            throw invalidChar(read());
+          }
+          read();
+        }
+      }
+      function escape() {
+        var c3 = peek();
+        switch (c3) {
+          case "b":
+            read();
+            return "\b";
+          case "f":
+            read();
+            return "\f";
+          case "n":
+            read();
+            return "\n";
+          case "r":
+            read();
+            return "\r";
+          case "t":
+            read();
+            return "	";
+          case "v":
+            read();
+            return "\v";
+          case "0":
+            read();
+            if (util.isDigit(peek())) {
+              throw invalidChar(read());
+            }
+            return "\0";
+          case "x":
+            read();
+            return hexEscape();
+          case "u":
+            read();
+            return unicodeEscape();
+          case "\n":
+          case "\u2028":
+          case "\u2029":
+            read();
+            return "";
+          case "\r":
+            read();
+            if (peek() === "\n") {
+              read();
+            }
+            return "";
+          case "1":
+          case "2":
+          case "3":
+          case "4":
+          case "5":
+          case "6":
+          case "7":
+          case "8":
+          case "9":
+            throw invalidChar(read());
+          case void 0:
+            throw invalidChar(read());
+        }
+        return read();
+      }
+      function hexEscape() {
+        var buffer2 = "";
+        var c3 = peek();
+        if (!util.isHexDigit(c3)) {
+          throw invalidChar(read());
+        }
+        buffer2 += read();
+        c3 = peek();
+        if (!util.isHexDigit(c3)) {
+          throw invalidChar(read());
+        }
+        buffer2 += read();
+        return String.fromCodePoint(parseInt(buffer2, 16));
+      }
+      function unicodeEscape() {
+        var buffer2 = "";
+        var count = 4;
+        while (count-- > 0) {
+          var c3 = peek();
+          if (!util.isHexDigit(c3)) {
+            throw invalidChar(read());
+          }
+          buffer2 += read();
+        }
+        return String.fromCodePoint(parseInt(buffer2, 16));
+      }
+      var parseStates = {
+        start: function start() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          push();
+        },
+        beforePropertyName: function beforePropertyName() {
+          switch (token.type) {
+            case "identifier":
+            case "string":
+              key2 = token.value;
+              parseState = "afterPropertyName";
+              return;
+            case "punctuator":
+              pop();
+              return;
+            case "eof":
+              throw invalidEOF();
+          }
+        },
+        afterPropertyName: function afterPropertyName() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          parseState = "beforePropertyValue";
+        },
+        beforePropertyValue: function beforePropertyValue() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          push();
+        },
+        beforeArrayValue: function beforeArrayValue() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          if (token.type === "punctuator" && token.value === "]") {
+            pop();
+            return;
+          }
+          push();
+        },
+        afterPropertyValue: function afterPropertyValue() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          switch (token.value) {
+            case ",":
+              parseState = "beforePropertyName";
+              return;
+            case "}":
+              pop();
+          }
+        },
+        afterArrayValue: function afterArrayValue() {
+          if (token.type === "eof") {
+            throw invalidEOF();
+          }
+          switch (token.value) {
+            case ",":
+              parseState = "beforeArrayValue";
+              return;
+            case "]":
+              pop();
+          }
+        },
+        end: function end() {
+        }
+      };
+      function push() {
+        var value;
+        switch (token.type) {
+          case "punctuator":
+            switch (token.value) {
+              case "{":
+                value = {};
+                break;
+              case "[":
+                value = [];
+                break;
+            }
+            break;
+          case "null":
+          case "boolean":
+          case "numeric":
+          case "string":
+            value = token.value;
+            break;
+        }
+        if (root2 === void 0) {
+          root2 = value;
+        } else {
+          var parent = stack[stack.length - 1];
+          if (Array.isArray(parent)) {
+            parent.push(value);
+          } else {
+            Object.defineProperty(parent, key2, {
+              value,
+              writable: true,
+              enumerable: true,
+              configurable: true
+            });
+          }
+        }
+        if (value !== null && typeof value === "object") {
+          stack.push(value);
+          if (Array.isArray(value)) {
+            parseState = "beforeArrayValue";
+          } else {
+            parseState = "beforePropertyName";
+          }
+        } else {
+          var current = stack[stack.length - 1];
+          if (current == null) {
+            parseState = "end";
+          } else if (Array.isArray(current)) {
+            parseState = "afterArrayValue";
+          } else {
+            parseState = "afterPropertyValue";
+          }
+        }
+      }
+      function pop() {
+        stack.pop();
+        var current = stack[stack.length - 1];
+        if (current == null) {
+          parseState = "end";
+        } else if (Array.isArray(current)) {
+          parseState = "afterArrayValue";
+        } else {
+          parseState = "afterPropertyValue";
+        }
+      }
+      function invalidChar(c3) {
+        if (c3 === void 0) {
+          return syntaxError("JSON5: invalid end of input at " + line + ":" + column);
+        }
+        return syntaxError("JSON5: invalid character '" + formatChar(c3) + "' at " + line + ":" + column);
+      }
+      function invalidEOF() {
+        return syntaxError("JSON5: invalid end of input at " + line + ":" + column);
+      }
+      function invalidIdentifier() {
+        column -= 5;
+        return syntaxError("JSON5: invalid identifier character at " + line + ":" + column);
+      }
+      function separatorChar(c3) {
+        console.warn("JSON5: '" + formatChar(c3) + "' in strings is not valid ECMAScript; consider escaping");
+      }
+      function formatChar(c3) {
+        var replacements = {
+          "'": "\\'",
+          '"': '\\"',
+          "\\": "\\\\",
+          "\b": "\\b",
+          "\f": "\\f",
+          "\n": "\\n",
+          "\r": "\\r",
+          "	": "\\t",
+          "\v": "\\v",
+          "\0": "\\0",
+          "\u2028": "\\u2028",
+          "\u2029": "\\u2029"
+        };
+        if (replacements[c3]) {
+          return replacements[c3];
+        }
+        if (c3 < " ") {
+          var hexString = c3.charCodeAt(0).toString(16);
+          return "\\x" + ("00" + hexString).substring(hexString.length);
+        }
+        return c3;
+      }
+      function syntaxError(message) {
+        var err = new SyntaxError(message);
+        err.lineNumber = line;
+        err.columnNumber = column;
+        return err;
+      }
+      var stringify3 = function stringify4(value, replacer, space) {
+        var stack2 = [];
+        var indent = "";
+        var propertyList;
+        var replacerFunc;
+        var gap = "";
+        var quote;
+        if (replacer != null && typeof replacer === "object" && !Array.isArray(replacer)) {
+          space = replacer.space;
+          quote = replacer.quote;
+          replacer = replacer.replacer;
+        }
+        if (typeof replacer === "function") {
+          replacerFunc = replacer;
+        } else if (Array.isArray(replacer)) {
+          propertyList = [];
+          for (var i2 = 0, list = replacer; i2 < list.length; i2 += 1) {
+            var v2 = list[i2];
+            var item = void 0;
+            if (typeof v2 === "string") {
+              item = v2;
+            } else if (typeof v2 === "number" || v2 instanceof String || v2 instanceof Number) {
+              item = String(v2);
+            }
+            if (item !== void 0 && propertyList.indexOf(item) < 0) {
+              propertyList.push(item);
+            }
+          }
+        }
+        if (space instanceof Number) {
+          space = Number(space);
+        } else if (space instanceof String) {
+          space = String(space);
+        }
+        if (typeof space === "number") {
+          if (space > 0) {
+            space = Math.min(10, Math.floor(space));
+            gap = "          ".substr(0, space);
+          }
+        } else if (typeof space === "string") {
+          gap = space.substr(0, 10);
+        }
+        return serializeProperty("", { "": value });
+        function serializeProperty(key3, holder) {
+          var value2 = holder[key3];
+          if (value2 != null) {
+            if (typeof value2.toJSON5 === "function") {
+              value2 = value2.toJSON5(key3);
+            } else if (typeof value2.toJSON === "function") {
+              value2 = value2.toJSON(key3);
+            }
+          }
+          if (replacerFunc) {
+            value2 = replacerFunc.call(holder, key3, value2);
+          }
+          if (value2 instanceof Number) {
+            value2 = Number(value2);
+          } else if (value2 instanceof String) {
+            value2 = String(value2);
+          } else if (value2 instanceof Boolean) {
+            value2 = value2.valueOf();
+          }
+          switch (value2) {
+            case null:
+              return "null";
+            case true:
+              return "true";
+            case false:
+              return "false";
+          }
+          if (typeof value2 === "string") {
+            return quoteString(value2, false);
+          }
+          if (typeof value2 === "number") {
+            return String(value2);
+          }
+          if (typeof value2 === "object") {
+            return Array.isArray(value2) ? serializeArray(value2) : serializeObject(value2);
+          }
+          return void 0;
+        }
+        function quoteString(value2) {
+          var quotes = {
+            "'": 0.1,
+            '"': 0.2
+          };
+          var replacements = {
+            "'": "\\'",
+            '"': '\\"',
+            "\\": "\\\\",
+            "\b": "\\b",
+            "\f": "\\f",
+            "\n": "\\n",
+            "\r": "\\r",
+            "	": "\\t",
+            "\v": "\\v",
+            "\0": "\\0",
+            "\u2028": "\\u2028",
+            "\u2029": "\\u2029"
+          };
+          var product = "";
+          for (var i3 = 0; i3 < value2.length; i3++) {
+            var c3 = value2[i3];
+            switch (c3) {
+              case "'":
+              case '"':
+                quotes[c3]++;
+                product += c3;
+                continue;
+              case "\0":
+                if (util.isDigit(value2[i3 + 1])) {
+                  product += "\\x00";
+                  continue;
+                }
+            }
+            if (replacements[c3]) {
+              product += replacements[c3];
+              continue;
+            }
+            if (c3 < " ") {
+              var hexString = c3.charCodeAt(0).toString(16);
+              product += "\\x" + ("00" + hexString).substring(hexString.length);
+              continue;
+            }
+            product += c3;
+          }
+          var quoteChar = quote || Object.keys(quotes).reduce(function(a2, b2) {
+            return quotes[a2] < quotes[b2] ? a2 : b2;
+          });
+          product = product.replace(new RegExp(quoteChar, "g"), replacements[quoteChar]);
+          return quoteChar + product + quoteChar;
+        }
+        function serializeObject(value2) {
+          if (stack2.indexOf(value2) >= 0) {
+            throw TypeError("Converting circular structure to JSON5");
+          }
+          stack2.push(value2);
+          var stepback = indent;
+          indent = indent + gap;
+          var keys = propertyList || Object.keys(value2);
+          var partial = [];
+          for (var i3 = 0, list2 = keys; i3 < list2.length; i3 += 1) {
+            var key3 = list2[i3];
+            var propertyString = serializeProperty(key3, value2);
+            if (propertyString !== void 0) {
+              var member = serializeKey(key3) + ":";
+              if (gap !== "") {
+                member += " ";
+              }
+              member += propertyString;
+              partial.push(member);
+            }
+          }
+          var final;
+          if (partial.length === 0) {
+            final = "{}";
+          } else {
+            var properties;
+            if (gap === "") {
+              properties = partial.join(",");
+              final = "{" + properties + "}";
+            } else {
+              var separator = ",\n" + indent;
+              properties = partial.join(separator);
+              final = "{\n" + indent + properties + ",\n" + stepback + "}";
+            }
+          }
+          stack2.pop();
+          indent = stepback;
+          return final;
+        }
+        function serializeKey(key3) {
+          if (key3.length === 0) {
+            return quoteString(key3, true);
+          }
+          var firstChar = String.fromCodePoint(key3.codePointAt(0));
+          if (!util.isIdStartChar(firstChar)) {
+            return quoteString(key3, true);
+          }
+          for (var i3 = firstChar.length; i3 < key3.length; i3++) {
+            if (!util.isIdContinueChar(String.fromCodePoint(key3.codePointAt(i3)))) {
+              return quoteString(key3, true);
+            }
+          }
+          return key3;
+        }
+        function serializeArray(value2) {
+          if (stack2.indexOf(value2) >= 0) {
+            throw TypeError("Converting circular structure to JSON5");
+          }
+          stack2.push(value2);
+          var stepback = indent;
+          indent = indent + gap;
+          var partial = [];
+          for (var i3 = 0; i3 < value2.length; i3++) {
+            var propertyString = serializeProperty(String(i3), value2);
+            partial.push(propertyString !== void 0 ? propertyString : "null");
+          }
+          var final;
+          if (partial.length === 0) {
+            final = "[]";
+          } else {
+            if (gap === "") {
+              var properties = partial.join(",");
+              final = "[" + properties + "]";
+            } else {
+              var separator = ",\n" + indent;
+              var properties$1 = partial.join(separator);
+              final = "[\n" + indent + properties$1 + ",\n" + stepback + "]";
+            }
+          }
+          stack2.pop();
+          indent = stepback;
+          return final;
+        }
+      };
+      var JSON52 = {
+        parse: parse5,
+        stringify: stringify3
+      };
+      var lib = JSON52;
+      var es5 = lib;
+      return es5;
+    });
+  }
+});
+
 // src/main.ts
 var main_exports = {};
 __export(main_exports, {
   default: () => CodeStylerPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian4 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // src/Settings.ts
 var THEME_DEFAULT_SETTINGS = {
@@ -594,7 +1976,7 @@ var THEME_DEFAULT_SETTINGS = {
       displayColour: true
     },
     fontSize: 14,
-    collapsePlaceholder: ""
+    foldPlaceholder: ""
   },
   highlights: {
     activeCodeblockLine: false,
@@ -602,6 +1984,7 @@ var THEME_DEFAULT_SETTINGS = {
   },
   inline: {
     syntaxHighlight: true,
+    style: true,
     fontWeight: 4,
     curvature: 6,
     paddingVertical: 5,
@@ -655,6 +2038,24 @@ var THEME_FALLBACK_COLOURS = {
     buttonActiveColour: "--text-normal"
   }
 };
+var SOLARIZED = {
+  "base03": "#002b36",
+  "base02": "#073642",
+  "base01": "#586e75",
+  "base00": "#657b83",
+  "base0": "#839496",
+  "base1": "#93a1a1",
+  "base2": "#eee8d5",
+  "base3": "#fdf6e3",
+  "yellow": "#b58900",
+  "orange": "#cb4b16",
+  "red": "#dc322f",
+  "magenta": "#d33682",
+  "violet": "#6c71c4",
+  "blue": "#268bd2",
+  "cyan": "#2aa198",
+  "green": "#859900"
+};
 var DEFAULT_THEME = {
   settings: THEME_DEFAULT_SETTINGS,
   colours: {
@@ -667,11 +2068,11 @@ var SOLARIZED_THEME = {
   colours: {
     light: {
       codeblock: {
-        backgroundColour: "#FCF6E4",
+        backgroundColour: SOLARIZED.base3,
         textColour: "#bababa"
       },
       gutter: {
-        backgroundColour: "#EDE8D6",
+        backgroundColour: SOLARIZED.base2,
         textColour: "#6c6c6c",
         activeTextColour: "#8c8c8c"
       },
@@ -687,13 +2088,13 @@ var SOLARIZED_THEME = {
         lineColour: "#EDD489"
       },
       highlights: {
-        activeCodeblockLineColour: "#EDE8D6",
+        activeCodeblockLineColour: SOLARIZED.base2,
         activeEditorLineColour: "#60460633",
         defaultColour: "#E9DFBA",
         alternativeHighlights: {}
       },
       inline: {
-        backgroundColour: "#FCF6E4",
+        backgroundColour: SOLARIZED.base3,
         textColour: "#bababa",
         activeTextColour: "#bababa",
         titleTextColour: "#C25F30"
@@ -705,11 +2106,11 @@ var SOLARIZED_THEME = {
     },
     dark: {
       codeblock: {
-        backgroundColour: "#002b36",
+        backgroundColour: SOLARIZED.base03,
         textColour: "#bababa"
       },
       gutter: {
-        backgroundColour: "#073642",
+        backgroundColour: SOLARIZED.base02,
         textColour: "#6c6c6c",
         activeTextColour: "#4c4c4c"
       },
@@ -725,13 +2126,13 @@ var SOLARIZED_THEME = {
         lineColour: "#46cced"
       },
       highlights: {
-        activeCodeblockLineColour: "#073642",
+        activeCodeblockLineColour: SOLARIZED.base02,
         activeEditorLineColour: "#468eeb33",
         defaultColour: "#054b5c",
         alternativeHighlights: {}
       },
       inline: {
-        backgroundColour: "#002b36",
+        backgroundColour: SOLARIZED.base03,
         textColour: "#bababa",
         activeTextColour: "#bababa",
         titleTextColour: "#000000"
@@ -743,23 +2144,88 @@ var SOLARIZED_THEME = {
     }
   }
 };
+var INBUILT_THEMES = {
+  "Default": DEFAULT_THEME,
+  "Solarized": SOLARIZED_THEME
+};
+var EXAMPLE_CODEBLOCK_PARAMETERS = "python title:foo";
+var EXAMPLE_CODEBLOCK_CONTENT = 'print("This line is very long and should be used as an example for how the plugin deals with wrapping and unwrapping very long lines given the choice of codeblock parameters and settings.")\nprint("This line is highlighted.")';
+var EXAMPLE_INLINE_CODE = '{python icon title:foo} print("This is inline code")';
+var EXCLUDED_LANGUAGES = "ad-*";
+var WHITELIST_CODEBLOCKS = "run-*";
 var DEFAULT_SETTINGS = {
-  themes: {
-    "Default": DEFAULT_THEME,
-    "Solarized": SOLARIZED_THEME
-  },
+  themes: structuredClone(INBUILT_THEMES),
   selectedTheme: "Default",
   currentTheme: structuredClone(DEFAULT_THEME),
   newTheme: "",
   newHighlight: "",
+  exampleCodeblockParameters: EXAMPLE_CODEBLOCK_PARAMETERS,
+  exampleCodeblockContent: EXAMPLE_CODEBLOCK_CONTENT,
+  exampleInlineCode: EXAMPLE_INLINE_CODE,
   decoratePrint: true,
-  excludedLanguages: "ad-*",
-  excludedCodeblocks: "dataview, dataviewjs, math",
-  specialLanguages: ["^preview$", "^include$", "^output$", "^run-.+$"],
-  redirectLanguages: {}
+  excludedLanguages: EXCLUDED_LANGUAGES,
+  processedCodeblocksWhitelist: WHITELIST_CODEBLOCKS,
+  redirectLanguages: {},
+  version: "1.0.11"
 };
-var PARAMETERS = ["title", "fold", "ln", "unwrap", "ignore"];
+function convertSettings(settings) {
+  if (typeof (settings == null ? void 0 : settings.version) === "undefined")
+    return settingsClear();
+  while (semverNewer(DEFAULT_SETTINGS.version, settings.version)) {
+    if (settings.version in settingsUpdaters)
+      settings = settingsUpdaters[settings.version](settings);
+    else
+      settings = settingsClear();
+  }
+  return settings;
+}
+function semverNewer(newVersion, oldVersion) {
+  return newVersion.localeCompare(oldVersion, void 0, { numeric: true }) === 1;
+}
+function settingsVersionUpdate(settings, themeUpdater = (theme) => theme, otherSettingsUpdater = (settings2) => settings2, redirectLanguagesUpdater = (redirectLanguages) => redirectLanguages) {
+  var _a2;
+  for (const [name, theme] of Object.entries(settings.themes)) {
+    settings.themes[name] = themeUpdater(theme);
+  }
+  settings.currentTheme = structuredClone(settings.themes[settings.selectedTheme]);
+  settings.redirectLanguages = redirectLanguagesUpdater(settings.redirectLanguages);
+  settings = otherSettingsUpdater(settings);
+  settings.version = (_a2 = Object.keys(settingsUpdaters).find((value, index2, array) => (array == null ? void 0 : array[index2 - 1]) === settings.version)) != null ? _a2 : "1.0.0";
+  return settings;
+}
+function settingsPreserve(settings) {
+  var _a2;
+  settings.version = (_a2 = Object.keys(settingsUpdaters).find((value, index2, array) => (array == null ? void 0 : array[index2 - 1]) === settings.version)) != null ? _a2 : "1.0.0";
+  return settings;
+}
+function settingsClear() {
+  return DEFAULT_SETTINGS;
+}
+var settingsUpdaters = {
+  "1.0.0": settingsClear,
+  "1.0.1": settingsClear,
+  "1.0.2": settingsClear,
+  "1.0.3": settingsClear,
+  "1.0.4": settingsClear,
+  "1.0.5": settingsClear,
+  "1.0.6": settingsClear,
+  "1.0.7": settingsPreserve,
+  "1.0.8": settingsPreserve,
+  "1.0.9": settingsPreserve,
+  "1.0.10": (settings) => settingsVersionUpdate(settings, (theme) => {
+    theme.settings.inline.style = true;
+    return theme;
+  }, (settings2) => {
+    delete settings2.specialLanguages;
+    return settings2;
+  }),
+  "1.0.11": settingsPreserve
+};
+var FOLD_PLACEHOLDER = "Folded Code";
+var PARAMETERS = ["title", "fold", "ln", "wrap", "unwrap", "ignore"];
 var TRANSITION_LENGTH = 240;
+var SPECIAL_LANGUAGES = ["^preview$", "^include$", "^output$", "^run-.+$"];
+var SETTINGS_SOURCEPATH_PREFIX = "@Code-Styler-Settings:";
 var PRISM_LANGUAGES = {
   // Prism Languages: https://prismjs.com/plugins/show-language/
   // "none": "Plain text", // NOTE: Obsidian uses this for codeblocks without language names
@@ -1797,6 +3263,9 @@ var LANGUAGE_COLOURS = {
   "YANG": "#231f20",
   "Zig": "#f7a41d"
 };
+var EXECUTE_CODE_LANGUAGE_ALIASES = ["javascript", "typescript", "bash", "csharp", "wolfram", "nb", "wl", "hs", "py"];
+var EXECUTE_CODE_CANONICAL_LANGUAGES = ["js", "ts", "cs", "lean", "lua", "python", "cpp", "prolog", "shell", "groovy", "r", "go", "rust", "java", "powershell", "kotlin", "mathematica", "haskell", "scala", "racket", "fsharp", "c", "dart", "ruby", "batch", "sql", "octave", "maxima"];
+var EXECUTE_CODE_SUPPORTED_LANGUAGES = [...EXECUTE_CODE_LANGUAGE_ALIASES, ...EXECUTE_CODE_CANONICAL_LANGUAGES];
 
 // src/SettingsTab.ts
 var import_obsidian = require("obsidian");
@@ -2517,6 +3986,20 @@ var Ft = function() {
 }();
 
 // src/SettingsTab.ts
+var SETTINGS_PAGES = {
+  "main": "Core Settings",
+  "codeblock": "Codeblock Styling",
+  "inline": "Inline Code Styling"
+};
+var CODEBLOCK_PAGES = {
+  "body": "Codeblock Body",
+  "gutter": "Codeblock Gutter",
+  "header": "Codeblock Header",
+  "highlight": "Codeblock Highlighting",
+  "languages": "Codeblock Languages",
+  // "plugins": "Plugin Compatibility",
+  "example": "Example Codeblock Content"
+};
 var DISPLAY_OPTIONS = {
   "none": "Never",
   "if_header_shown": "If Header Shown",
@@ -2527,52 +4010,106 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     super(app, plugin);
     this.plugin = plugin;
     this.pickrs = {};
+    this.page = "main";
+    this.codeblockPage = "body";
+    this.hideAdvanced = true;
     this.disableableComponents = {};
   }
   /**
    *  Builds the html page that is showed in the settings.
    */
   display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.createEl("h2", { text: "Settings for the Code Styler Plugin." });
     this.disableableComponents = {
-      "lineNumbers": [],
-      "wrapLines": [],
-      "headerLanguageTags": [],
-      "headerLanguageIcons": [],
       "editorActiveLineHighlight": [],
       "codeblockActiveLineHighlight": [],
       "gradientHighlighting": [],
       "languageBorderColour": []
     };
-    let ignoreTimeout = setTimeout(() => {
-    });
-    new import_obsidian.Setting(containerEl).setName("Ignore Codeblocks").setDesc("Define languages in a comma separated list which the plugin should completely ignore. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.").addText((text2) => text2.setPlaceholder("e.g. dataview, dataviewjs etc.").setValue(this.plugin.settings.excludedCodeblocks).onChange((value) => {
-      this.plugin.settings.excludedCodeblocks = value;
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-      clearTimeout(ignoreTimeout);
-      ignoreTimeout = setTimeout(() => this.plugin.rerenderPreview(), 1e3);
+    this.hideAdvanced = true;
+    this.generateSettings(this.containerEl);
+  }
+  // Create Settings Pages
+  displayMainSettings(containerEl) {
+    this.emptySettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
+    this.generateThemeSettings(containerEl);
+    this.generateCoreSettings(containerEl);
+    this.generateAdvancedHeading(containerEl);
+    this.advancedSettingsContainer = containerEl.createDiv();
+    this.generateAdvancedSettings();
+    this.generateDonationFooter(containerEl);
+  }
+  displayCodeblockSettings(containerEl) {
+    this.emptySettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
+    this.generateThemeSettings(containerEl);
+    containerEl.createEl("hr");
+    this.exampleCodeblockContainer = containerEl.createDiv();
+    this.generateExampleCodeblock();
+    this.generateCodeblockStylingSwitcher(containerEl);
+    this.codeblockSettingEl = containerEl.createDiv();
+    this.generateCodeblockSetting();
+  }
+  displayInlineCodeSettings(containerEl) {
+    this.emptySettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
+    this.generateThemeSettings(containerEl);
+    containerEl.createEl("hr");
+    this.exampleInlineCodeContainer = containerEl.createDiv();
+    this.generateExampleInlineCode();
+    this.generateExampleInlineCodeSettings(containerEl);
+    this.generateInlineCodeSettings(containerEl);
+  }
+  // Create Settings Groups
+  emptySettings(containerEl) {
+    containerEl.empty();
+    containerEl.createEl("h1", { text: "Settings for the Code Styler Plugin." });
+  }
+  generateSettingsSwitcher(containerEl) {
+    new import_obsidian.Setting(containerEl).setName("Choose Settings Page").setDesc("Change dropdown to modify different groups of settings").addDropdown((dropdown) => dropdown.addOptions(SETTINGS_PAGES).setValue(this.page).onChange((value) => {
+      this.page = value;
+      this.generateSettings(containerEl);
     }));
-    let excludeTimeout = setTimeout(() => {
-    });
-    new import_obsidian.Setting(containerEl).setName("Exclude Languages").setDesc("Define languages in a comma separated list which the plugin should not decorate. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.").addText((text2) => text2.setPlaceholder("e.g. ad-*, python etc.").setValue(this.plugin.settings.excludedLanguages).onChange((value) => {
-      this.plugin.settings.excludedLanguages = value;
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-      clearTimeout(excludeTimeout);
-      excludeTimeout = setTimeout(() => this.plugin.rerenderPreview(), 1e3);
+  }
+  generateSettings(containerEl) {
+    if (this.page === "main")
+      this.displayMainSettings(containerEl);
+    else if (this.page === "codeblock")
+      this.displayCodeblockSettings(containerEl);
+    else if (this.page === "inline")
+      this.displayInlineCodeSettings(containerEl);
+  }
+  generateCodeblockStylingSwitcher(containerEl) {
+    new import_obsidian.Setting(containerEl).setName("Choose Codeblock Settings").setDesc("Change dropdown to modify styles and settings of different codeblock sections").addDropdown((dropdown) => dropdown.addOptions(CODEBLOCK_PAGES).setValue(this.codeblockPage).onChange((value) => {
+      this.codeblockPage = value;
+      this.generateCodeblockSetting();
     }));
+  }
+  generateCodeblockSetting() {
+    this.codeblockSettingEl.empty();
+    if (this.codeblockPage === "body")
+      this.generateCodeblockBodySettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "gutter")
+      this.generateCodeblockGutterSettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "header")
+      this.generateCodeblockHeaderSettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "highlight")
+      this.generateCodeblockHighlightSettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "languages")
+      this.generateCodeblockLanguageSettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "plugins")
+      this.generatePluginCompatibilitySettings(this.codeblockSettingEl);
+    else if (this.codeblockPage === "example")
+      this.generateExampleCodeblockSettings(this.codeblockSettingEl);
+  }
+  generateCoreSettings(containerEl) {
     new import_obsidian.Setting(containerEl).setName("Style Code on Export").setDesc("If enabled, styling will be applied when exporting to PDF.").addToggle((toggle) => toggle.setValue(this.plugin.settings.decoratePrint).onChange((value) => {
       this.plugin.settings.decoratePrint = value;
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
+      this.saveSettings();
     }));
-    containerEl.createEl("h3", { text: "Theme Settings" });
+  }
+  generateThemeSettings(containerEl) {
+    containerEl.createEl("h2", { text: "Theme Settings" });
     let themeDropdown;
     new import_obsidian.Setting(containerEl).setName("Select Theme").addDropdown((dropdown) => {
       themeDropdown = dropdown;
@@ -2580,25 +4117,17 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
       themeDropdown.onChange((value) => {
         this.plugin.settings.selectedTheme = value;
         this.plugin.settings.currentTheme = structuredClone(this.plugin.settings.themes[this.plugin.settings.selectedTheme]);
+        this.saveSettings();
         this.display();
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
       });
     }).addExtraButton((button) => {
       button.setTooltip("Update theme");
       button.setIcon("save");
       button.onClick(() => {
-        if (this.plugin.settings.selectedTheme in DEFAULT_SETTINGS.themes)
-          new import_obsidian.Notice("You cannot update the default themes");
-        else {
-          this.plugin.settings.themes[this.plugin.settings.selectedTheme] = structuredClone(this.plugin.settings.currentTheme);
-          this.updateAlternativeHighlights(alternativeHighlightsContainer);
-          new import_obsidian.Notice(`${this.plugin.settings.selectedTheme} theme saved successfully!`);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        }
+        this.plugin.settings.themes[this.plugin.settings.selectedTheme] = structuredClone(this.plugin.settings.currentTheme);
+        this.updateAlternativeHighlights();
+        new import_obsidian.Notice(`${this.plugin.settings.selectedTheme} theme saved successfully!`);
+        this.saveSettings();
       });
     }).addExtraButton((button) => {
       button.setTooltip("Delete theme");
@@ -2614,10 +4143,8 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
           this.plugin.settings.selectedTheme = "Default";
           this.plugin.settings.currentTheme = structuredClone(this.plugin.settings.themes[this.plugin.settings.selectedTheme]);
           this.updateDropdown(themeDropdown, this.plugin.settings);
+          this.saveSettings();
           this.display();
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
         }
       });
     });
@@ -2646,17 +4173,17 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
           }
           this.plugin.settings.selectedTheme = this.plugin.settings.newTheme;
           this.updateDropdown(themeDropdown, this.plugin.settings);
-          this.updateAlternativeHighlights(alternativeHighlightsContainer);
+          this.updateAlternativeHighlights();
           this.plugin.settings.newTheme = "";
           newThemeName.setValue("");
           newThemeDefault.setValue(false);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         }
       });
     });
-    containerEl.createEl("h4", { text: "Codeblock Appearance" });
+  }
+  generateCodeblockBodySettings(containerEl) {
+    containerEl.createEl("h3", { text: "Codeblock Appearance" });
     new import_obsidian.Setting(containerEl).setName("Codeblock Background Colour").then((setting) => {
       this.createPickr(
         this.plugin,
@@ -2681,107 +4208,126 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         }
       );
     });
-    new import_obsidian.Setting(containerEl).setName("Unwrap codeblock lines").setDesc("Choose whether to unwrap lines in reading mode").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.unwrapLines).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.codeblock.unwrapLines = value;
-      if (!value)
-        wrapLinesActiveToggle.setValue(false);
-      this.disableableComponents["wrapLines"].forEach((component) => {
-        component.setDisabled(!value);
-      });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-      this.plugin.rerenderPreview();
-    }));
     new import_obsidian.Setting(containerEl).setName("Codeblock Curvature").setDesc("Determines how rounded the codeblocks appear in pixels.").then((setting) => {
       let resettableSlider;
       setting.addSlider((slider) => {
         resettableSlider = slider.setLimits(0, 25, 1).setValue(this.plugin.settings.currentTheme.settings.codeblock.curvature).setDynamicTooltip().onChange((value) => {
           this.plugin.settings.currentTheme.settings.codeblock.curvature = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
       setting.addExtraButton((button) => {
         button.setIcon("reset").setTooltip("Restore default curvature").onClick(() => {
           this.plugin.settings.currentTheme.settings.codeblock.curvature = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.codeblock.curvature;
           resettableSlider.setValue(this.plugin.settings.currentTheme.settings.codeblock.curvature);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
     });
-    containerEl.createEl("h4", { text: "Gutter Appearance" });
-    new import_obsidian.Setting(containerEl).setName("Enable Line Numbers").setDesc("If disabled, the below settings are disabled too.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.codeblock.lineNumbers = value;
-      this.disableableComponents["lineNumbers"].forEach((component) => {
+    new import_obsidian.Setting(containerEl).setName("Language Coloured Borders").setDesc("If enabled, languages with icons display a left border with the colour of the icon. The slider sets the width of the border.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.advanced.languageBorderColour = value;
+      this.disableableComponents["languageBorderColour"].forEach((component) => {
         component.setDisabled(!value);
       });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
+      this.saveSettings();
+    })).then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 20, 1).setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth).setDisabled(!this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth = value;
+          this.saveSettings();
+        });
+        this.disableableComponents["languageBorderColour"].push(resettableSlider);
+      });
+      let resetButton;
+      setting.addExtraButton((button) => {
+        resetButton = button.setIcon("reset").setDisabled(!this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).setTooltip("Restore default colour stop").onClick(() => {
+          this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.languageBorderWidth;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth);
+          this.saveSettings();
+        });
+        this.disableableComponents["languageBorderColour"].push(resetButton);
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Unwrap codeblock lines").setDesc("Choose whether to unwrap lines in reading mode").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.unwrapLines).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.codeblock.unwrapLines = value;
+      this.generateWrapLineSettings();
+      this.saveSettings(true);
     }));
-    new import_obsidian.Setting(containerEl).setName("Gutter Background Colour").then((setting) => {
+    this.wrapLinesContainer = containerEl.createDiv();
+    this.generateWrapLineSettings();
+  }
+  generateWrapLineSettings() {
+    this.wrapLinesContainer.empty();
+    if (!this.plugin.settings.currentTheme.settings.codeblock.unwrapLines)
+      return;
+    new import_obsidian.Setting(this.wrapLinesContainer).setName("Wrap Lines on Click").setDesc("If enabled, in reading mode, holding click on a codeblock will wrap the lines for better visibility.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.wrapLinesActive).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.unwrapLines).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.codeblock.wrapLinesActive = value;
+      this.saveSettings(true);
+    }));
+  }
+  generateCodeblockGutterSettings(containerEl) {
+    containerEl.createEl("h3", { text: "Gutter Appearance" });
+    new import_obsidian.Setting(containerEl).setName("Enable Line Numbers").setDesc("If disabled, the below settings are disabled too.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.codeblock.lineNumbers = value;
+      this.generateCodeblockLineNumberSettings();
+      this.saveSettings(true);
+    }));
+    this.lineNumbersContainer = containerEl.createDiv();
+    this.generateCodeblockLineNumberSettings();
+  }
+  generateCodeblockLineNumberSettings() {
+    this.lineNumbersContainer.empty();
+    if (!this.plugin.settings.currentTheme.settings.codeblock.lineNumbers)
+      return;
+    new import_obsidian.Setting(this.lineNumbersContainer).setName("Gutter Background Colour").then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
+        this.lineNumbersContainer,
         setting,
         "gutter_background",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].gutter.backgroundColour,
         (relevantThemeColours, saveColour) => {
           relevantThemeColours[getCurrentMode()].gutter.backgroundColour = saveColour;
-        },
-        () => !this.plugin.settings.currentTheme.settings.codeblock.lineNumbers
+        }
       );
     });
-    this.disableableComponents["lineNumbers"].push(this.pickrs["gutter_background"].resetButton);
-    new import_obsidian.Setting(containerEl).setName("Line Number Colour").then((setting) => {
+    new import_obsidian.Setting(this.lineNumbersContainer).setName("Line Number Colour").then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
+        this.lineNumbersContainer,
         setting,
         "line_number",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].gutter.textColour,
         (relevantThemeColours, saveColour) => {
           relevantThemeColours[getCurrentMode()].gutter.textColour = saveColour;
-        },
-        () => !this.plugin.settings.currentTheme.settings.codeblock.lineNumbers
+        }
       );
     });
-    this.disableableComponents["lineNumbers"].push(this.pickrs["line_number"].resetButton);
-    new import_obsidian.Setting(containerEl).setName("Highlight Line Numbers").setDesc("If enabled, highlights will also highlight the line numbers.").addToggle((toggle) => {
-      const highlightLineNumbersToggle = toggle.setValue(this.plugin.settings.currentTheme.settings.gutter.highlight).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
-        this.plugin.settings.currentTheme.settings.gutter.highlight = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["lineNumbers"].push(highlightLineNumbersToggle);
-    });
-    new import_obsidian.Setting(containerEl).setName("Indicate Current Line Number").setDesc("If enabled, the current line number in codeblocks will be indicated with a separate colour.").setClass("code-styler-spaced").addToggle((toggle) => {
-      const indicateCurrentLineNumberToggle = toggle.setValue(this.plugin.settings.currentTheme.settings.gutter.activeLine).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
+    new import_obsidian.Setting(this.lineNumbersContainer).setName("Highlight Line Numbers").setDesc("If enabled, highlights will also highlight the line numbers.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.gutter.highlight).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.gutter.highlight = value;
+      this.saveSettings();
+    }));
+    new import_obsidian.Setting(this.lineNumbersContainer).setName("Indicate Current Line Number").setDesc("If enabled, the current line number in codeblocks will be indicated with a separate colour.").setClass("code-styler-spaced").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.gutter.activeLine).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.lineNumbers).onChange((value) => {
         this.plugin.settings.currentTheme.settings.gutter.activeLine = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["lineNumbers"].push(indicateCurrentLineNumberToggle);
-    }).then((setting) => {
+        this.saveSettings();
+      })
+    ).then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
+        this.lineNumbersContainer,
         setting,
         "active_line_number",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].gutter.activeTextColour,
         (relevantThemeColours, saveColour) => {
           relevantThemeColours[getCurrentMode()].gutter.activeTextColour = saveColour;
-        },
-        () => !this.plugin.settings.currentTheme.settings.codeblock.lineNumbers
+        }
       );
     });
-    containerEl.createEl("h4", { text: "Header Appearance" });
+  }
+  generateCodeblockHeaderSettings(containerEl) {
+    containerEl.createEl("h3", { text: "Header Appearance" });
     new import_obsidian.Setting(containerEl).setName("Header Background Colour").then((setting) => {
       this.createPickr(
         this.plugin,
@@ -2799,41 +4345,31 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
       setting.addSlider((slider) => {
         resettableSlider = slider.setLimits(6, 32, 1).setValue(this.plugin.settings.currentTheme.settings.header.fontSize).setDynamicTooltip().onChange((value) => {
           this.plugin.settings.currentTheme.settings.header.fontSize = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
       setting.addExtraButton((button) => {
         button.setIcon("reset").setTooltip("Restore default font size").onClick(() => {
           this.plugin.settings.currentTheme.settings.header.fontSize = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.header.fontSize;
           resettableSlider.setValue(this.plugin.settings.currentTheme.settings.header.fontSize);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
     });
     new import_obsidian.Setting(containerEl).setName("Header Title Text Styling").setDesc("Style the header title text using bold and italic toggles, by setting a font or by setting a text colour.").addToggle((toggle) => {
       toggle.setTooltip("Toggle bold title text").setValue(this.plugin.settings.currentTheme.settings.header.title.textBold).onChange((value) => {
         this.plugin.settings.currentTheme.settings.header.title.textBold = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
+        this.saveSettings();
       });
     }).addToggle((toggle) => {
       toggle.setTooltip("Toggle italic title text").setValue(this.plugin.settings.currentTheme.settings.header.title.textItalic).onChange((value) => {
         this.plugin.settings.currentTheme.settings.header.title.textItalic = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
+        this.saveSettings();
       });
     }).addText((text2) => {
       text2.setPlaceholder("Font").setValue(this.plugin.settings.currentTheme.settings.header.title.textFont).onChange((value) => {
         this.plugin.settings.currentTheme.settings.header.title.textFont = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
+        this.saveSettings();
       });
     }).then((setting) => {
       this.createPickr(
@@ -2847,15 +4383,13 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         }
       );
     });
-    let collapsePlaceholderTimeout = setTimeout(() => {
+    let foldPlaceholderTimeout = setTimeout(() => {
     });
-    new import_obsidian.Setting(containerEl).setName("Collapse Placeholder Text").setDesc("Title placeholder text for collapsed code when no title parameter is set.").addText((text2) => text2.setPlaceholder("Collapsed Code").setValue(this.plugin.settings.currentTheme.settings.header.collapsePlaceholder).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.header.collapsePlaceholder = value;
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-      clearTimeout(collapsePlaceholderTimeout);
-      collapsePlaceholderTimeout = setTimeout(() => this.plugin.rerenderPreview(), 1e3);
+    new import_obsidian.Setting(containerEl).setName("Fold Placeholder Text").setDesc("Title placeholder text for folded code when no title parameter is set.").addText((text2) => text2.setPlaceholder(FOLD_PLACEHOLDER).setValue(this.plugin.settings.currentTheme.settings.header.foldPlaceholder).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.foldPlaceholder = value;
+      this.saveSettings();
+      clearTimeout(foldPlaceholderTimeout);
+      foldPlaceholderTimeout = setTimeout(() => this.rerender(), 1e3);
     }));
     new import_obsidian.Setting(containerEl).setName("Header Separator Colour").setDesc("Colour of the line separating the codeblock header and the codeblock.").then((setting) => {
       this.createPickr(
@@ -2870,147 +4404,92 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
       );
     });
     containerEl.createEl("h5", { text: "Header Language Tag Appearance" });
-    new import_obsidian.Setting(containerEl).setName("Display Header Language Tags").setDesc('Determine when to show language tags in the header. "Title Only" will only show language tags when the title parameter is set. If set to "None", the below settings are disabled too.').addDropdown((dropdown) => dropdown.addOptions(DISPLAY_OPTIONS).setValue(this.plugin.settings.currentTheme.settings.header.languageTag.display).onChange((value) => {
+    new import_obsidian.Setting(containerEl).setName("Display Header Language Tags").setDesc('Determine when to show language tags in the header. "Title Only" will only show language tags when the title parameter is set.').addDropdown((dropdown) => dropdown.addOptions(DISPLAY_OPTIONS).setValue(this.plugin.settings.currentTheme.settings.header.languageTag.display).onChange((value) => {
       this.plugin.settings.currentTheme.settings.header.languageTag.display = value;
-      this.disableableComponents["headerLanguageTags"].forEach((component) => {
-        component.setDisabled(value === "none");
-      });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
+      this.generateHeaderTagSettings();
+      this.saveSettings(true);
     }));
-    new import_obsidian.Setting(containerEl).setName("Header Language Tag Background Colour").then((setting) => {
+    this.headerTagsContainer = containerEl.createDiv();
+    this.generateHeaderTagSettings();
+    containerEl.createEl("h5", { text: "Header Language Icon Appearance" });
+    new import_obsidian.Setting(containerEl).setName("Display Header Language Icons").setDesc('Determine when to show language icons where available. "Title Only" will only show language tags when the title parameter is set.').addDropdown((dropdown) => dropdown.addOptions(DISPLAY_OPTIONS).setValue(this.plugin.settings.currentTheme.settings.header.languageIcon.display).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.languageIcon.display = value;
+      this.generateHeaderIconSettings();
+      this.saveSettings(true);
+    }));
+    this.headerIconsContainer = containerEl.createDiv();
+    this.generateHeaderIconSettings();
+  }
+  generateHeaderTagSettings() {
+    this.headerTagsContainer.empty();
+    if (this.plugin.settings.currentTheme.settings.header.languageTag.display === "none")
+      return;
+    new import_obsidian.Setting(this.headerTagsContainer).setName("Header Language Tag Background Colour").then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
+        this.headerTagsContainer,
         setting,
         "header_language_tag_background",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].header.languageTag.backgroundColour,
         (relevantThemeColours, saveColour) => {
           relevantThemeColours[getCurrentMode()].header.languageTag.backgroundColour = saveColour;
-        },
-        () => this.plugin.settings.currentTheme.settings.header.languageTag.display === "none"
+        }
       );
     });
-    this.disableableComponents["headerLanguageTags"].push(this.pickrs["header_language_tag_background"].resetButton);
-    let languageTagsBoldToggle;
-    let languageTagsItalicToggle;
-    let languageIconsFontText;
-    new import_obsidian.Setting(containerEl).setName("Header Language Tag Text Styling").setDesc("Style the header language tag text using bold and italic toggles, by setting a font or by setting a text colour.").addToggle((toggle) => {
-      languageTagsBoldToggle = toggle.setTooltip("Toggle bold language tag text").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textBold).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
-        this.plugin.settings.currentTheme.settings.header.languageTag.textBold = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["headerLanguageTags"].push(languageTagsBoldToggle);
-    }).addToggle((toggle) => {
-      languageTagsItalicToggle = toggle.setTooltip("Toggle italic language tag text").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textItalic).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
-        this.plugin.settings.currentTheme.settings.header.languageTag.textItalic = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["headerLanguageTags"].push(languageTagsItalicToggle);
-    }).addText((text2) => {
-      languageIconsFontText = text2.setPlaceholder("Font").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textFont).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
-        this.plugin.settings.currentTheme.settings.header.languageTag.textFont = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["headerLanguageTags"].push(languageIconsFontText);
-    }).then((setting) => {
+    new import_obsidian.Setting(this.headerTagsContainer).setName("Header Language Tag Text Styling").setDesc("Style the header language tag text using bold and italic toggles, by setting a font or by setting a text colour.").addToggle((toggle) => toggle.setTooltip("Toggle bold language tag text").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textBold).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.languageTag.textBold = value;
+      this.saveSettings();
+    })).addToggle((toggle) => toggle.setTooltip("Toggle italic language tag text").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textItalic).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.languageTag.textItalic = value;
+      this.saveSettings();
+    })).addText((text2) => text2.setPlaceholder("Font").setValue(this.plugin.settings.currentTheme.settings.header.languageTag.textFont).setDisabled(this.plugin.settings.currentTheme.settings.header.languageTag.display === "none").onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.languageTag.textFont = value;
+      this.saveSettings();
+    })).then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
+        this.headerTagsContainer,
         setting,
         "header_language_tag_text",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].header.languageTag.textColour,
         (relevantThemeColours, saveColour) => {
           relevantThemeColours[getCurrentMode()].header.languageTag.textColour = saveColour;
-        },
-        () => this.plugin.settings.currentTheme.settings.header.languageTag.display === "none"
+        }
       );
     });
-    this.disableableComponents["headerLanguageTags"].push(this.pickrs["header_language_tag_text"].resetButton);
-    containerEl.createEl("h5", { text: "Header Language Icon Appearance" });
-    new import_obsidian.Setting(containerEl).setName("Display Header Language Icons").setDesc('Determine when to show language icons where available. "Title Only" will only show language tags when the title parameter is set. If set to "None", the below settings are disabled too.').addDropdown((dropdown) => dropdown.addOptions(DISPLAY_OPTIONS).setValue(this.plugin.settings.currentTheme.settings.header.languageIcon.display).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.header.languageIcon.display = value;
-      this.disableableComponents["headerLanguageIcons"].forEach((component) => {
-        component.setDisabled(value === "none");
-      });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
+  }
+  generateHeaderIconSettings() {
+    this.headerIconsContainer.empty();
+    if (this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none")
+      return;
+    new import_obsidian.Setting(this.headerIconsContainer).setName("Language Icons Coloured").setDesc("If disabled, language icons will be black and white.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.header.languageIcon.displayColour).setDisabled(this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none").onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.languageIcon.displayColour = value;
+      this.saveSettings();
     }));
-    let languageIconsColouredToggle;
-    new import_obsidian.Setting(containerEl).setName("Language Icons Coloured").setDesc("If disabled, language icons will be black and white.").addToggle((toggle) => {
-      languageIconsColouredToggle = toggle.setValue(this.plugin.settings.currentTheme.settings.header.languageIcon.displayColour).setDisabled(this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none").onChange((value) => {
-        this.plugin.settings.currentTheme.settings.header.languageIcon.displayColour = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-      this.disableableComponents["headerLanguageIcons"].push(languageIconsColouredToggle);
-    });
-    new import_obsidian.Setting(containerEl).setName("Language Icon Size").setDesc("Set the size of the displayed language icons.").then((setting) => {
+    new import_obsidian.Setting(this.headerIconsContainer).setName("Language Icon Size").setDesc("Set the size of the displayed language icons.").then((setting) => {
       let resettableSlider;
       setting.addSlider((slider) => {
         resettableSlider = slider.setLimits(10, 40, 1).setValue(this.plugin.settings.currentTheme.settings.advanced.iconSize).setDisabled(this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none").setDynamicTooltip().onChange((value) => {
           this.plugin.settings.currentTheme.settings.advanced.iconSize = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
-        this.disableableComponents["headerLanguageIcons"].push(resettableSlider);
       });
-      let resetButton;
-      setting.addExtraButton((button) => {
-        resetButton = button.setIcon("reset").setDisabled(this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none").setTooltip("Restore default icon size").onClick(() => {
-          this.plugin.settings.currentTheme.settings.advanced.iconSize = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.iconSize;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.advanced.iconSize);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-        this.disableableComponents["headerLanguageIcons"].push(resetButton);
-      });
+      setting.addExtraButton((button) => button.setIcon("reset").setDisabled(this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none").setTooltip("Restore default icon size").onClick(() => {
+        this.plugin.settings.currentTheme.settings.advanced.iconSize = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.iconSize;
+        resettableSlider.setValue(this.plugin.settings.currentTheme.settings.advanced.iconSize);
+        this.saveSettings();
+      }));
     });
-    containerEl.createEl("h4", { text: "Highlighting Appearance" });
-    new import_obsidian.Setting(containerEl).setName("Editor Active Line Highlight").setDesc("If enabled, highlights the active line outside codeblocks.").setClass("code-styler-spaced").addToggle((toggle) => {
-      return toggle.setTooltip("Toggle editor active line highlighting").setValue(this.plugin.settings.currentTheme.settings.highlights.activeEditorLine).onChange((value) => {
-        this.plugin.settings.currentTheme.settings.highlights.activeEditorLine = value;
-        this.disableableComponents["editorActiveLineHighlight"].forEach((component) => {
-          component.setDisabled(!value);
-        });
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      });
-    }).then((setting) => {
-      this.createPickr(
-        this.plugin,
-        containerEl,
-        setting,
-        "editor_active_line_highlight",
-        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].highlights.activeEditorLineColour,
-        (relevantThemeColours, saveColour) => {
-          relevantThemeColours[getCurrentMode()].highlights.activeEditorLineColour = saveColour;
-        },
-        () => !this.plugin.settings.currentTheme.settings.highlights.activeEditorLine
-      );
-    });
-    this.disableableComponents["editorActiveLineHighlight"].push(this.pickrs["editor_active_line_highlight"].resetButton);
+  }
+  generateCodeblockHighlightSettings(containerEl) {
+    containerEl.createEl("h3", { text: "Highlighting Appearance" });
     new import_obsidian.Setting(containerEl).setName("Codeblock Active Line Highlight").setDesc("If enabled, highlights the active line inside codeblocks.").setClass("code-styler-spaced").addToggle((toggle) => {
       return toggle.setValue(this.plugin.settings.currentTheme.settings.highlights.activeCodeblockLine).onChange((value) => {
         this.plugin.settings.currentTheme.settings.highlights.activeCodeblockLine = value;
         this.disableableComponents["codeblockActiveLineHighlight"].forEach((component) => {
           component.setDisabled(!value);
         });
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
+        this.saveSettings();
       });
     }).then((setting) => {
       this.createPickr(
@@ -3054,175 +4533,97 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
           new import_obsidian.Notice("Cannot override the default highlight parameter.");
         else if (PARAMETERS.includes(this.plugin.settings.newHighlight.trim().toLowerCase()))
           new import_obsidian.Notice("Cannot use other default parameters.");
+        else if (this.plugin.settings.newHighlight in this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights)
+          new import_obsidian.Notice(`A highlight with the name "${this.plugin.settings.newHighlight}" already exists.`);
         else {
-          if (this.plugin.settings.newHighlight in this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights)
-            new import_obsidian.Notice(`A highlight with the name "${this.plugin.settings.newHighlight}" already exists.`);
-          else {
-            const newColour = getRandomColour();
-            this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights[this.plugin.settings.newHighlight] = newColour;
-            this.plugin.settings.currentTheme.colours.dark.highlights.alternativeHighlights[this.plugin.settings.newHighlight] = newColour;
-            this.updateAlternativeHighlights(alternativeHighlightsContainer);
-            new import_obsidian.Notice(`Added highlight "${this.plugin.settings.newHighlight}".`);
-            this.plugin.settings.newHighlight = "";
-            newHighlightText.setValue("");
-            (async () => {
-              await this.plugin.saveSettings();
-            })();
-            this.plugin.rerenderPreview();
-          }
+          const newColour = getRandomColour();
+          this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights[this.plugin.settings.newHighlight] = newColour;
+          this.plugin.settings.currentTheme.colours.dark.highlights.alternativeHighlights[this.plugin.settings.newHighlight] = newColour;
+          this.updateAlternativeHighlights();
+          new import_obsidian.Notice(`Added highlight "${this.plugin.settings.newHighlight}".`);
+          this.plugin.settings.newHighlight = "";
+          newHighlightText.setValue("");
+          this.saveSettings(true);
         }
       });
     });
-    const alternativeHighlightsContainer = containerEl.createDiv();
-    this.updateAlternativeHighlights(alternativeHighlightsContainer);
-    containerEl.createEl("h4", { text: "Inline Code Appearance" });
+    this.alternativeHighlightsContainer = containerEl.createDiv();
+    this.updateAlternativeHighlights();
+    new import_obsidian.Setting(containerEl).setName("Gradient Highlighting").setDesc("If enabled, highlights fade away to the right. The slider sets the gradient colour stop as a percentage.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.advanced.gradientHighlights = value;
+      this.disableableComponents["gradientHighlighting"].forEach((component) => {
+        component.setDisabled(!value);
+      });
+      this.saveSettings();
+    })).then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 100, 1).setValue(+this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop.slice(0, -1)).setDisabled(!this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop = `${value}%`;
+          this.saveSettings();
+        });
+        this.disableableComponents["gradientHighlighting"].push(resettableSlider);
+      });
+      let resetButton;
+      setting.addExtraButton((button) => {
+        resetButton = button.setIcon("reset").setDisabled(!this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).setTooltip("Restore default colour stop").onClick(() => {
+          this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.gradientHighlightsColourStop;
+          resettableSlider.setValue(+this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop.slice(0, -1));
+          this.saveSettings();
+        });
+        this.disableableComponents["gradientHighlighting"].push(resetButton);
+      });
+    });
+  }
+  generateCodeblockLanguageSettings(containerEl) {
+    let excludeTimeout = setTimeout(() => {
+    });
+    new import_obsidian.Setting(containerEl).setName("Exclude Languages").setDesc("Define languages in a comma separated list which the plugin should not decorate. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.").addText((text2) => text2.setPlaceholder(`e.g. ${EXCLUDED_LANGUAGES} etc.`).setValue(this.plugin.settings.excludedLanguages).onChange((value) => {
+      this.plugin.settings.excludedLanguages = value;
+      this.saveSettings();
+      clearTimeout(excludeTimeout);
+      excludeTimeout = setTimeout(() => this.rerender(), 1e3);
+    }));
+    let whitelistTimeout = setTimeout(() => {
+    });
+    new import_obsidian.Setting(containerEl).setName("Whitelisted Processed Codeblocks").setDesc("Define languages in a comma separated list which the plugin should style despite being processed by another plugin. You can use a wildcard (*) either at the beginning, or at the end. For example: ad-* will exclude codeblocks where the language starts with ad- e.g.: ad-info, ad-error etc.").addText((text2) => text2.setPlaceholder(`e.g. ${WHITELIST_CODEBLOCKS} etc.`).setValue(this.plugin.settings.processedCodeblocksWhitelist).onChange((value) => {
+      this.plugin.settings.processedCodeblocksWhitelist = value;
+      this.saveSettings();
+      clearTimeout(whitelistTimeout);
+      whitelistTimeout = setTimeout(() => this.rerender(), 1e3);
+    }));
+    new import_obsidian.Setting(containerEl).setName("Redirect Language Settings").setDesc("Use this textbox to redirect specific language colours and icons as a JSON with language names as keys and either a colour key, an icon key or both as the value for a given language. Colours should be passed as CSS colours and icons should be passed as a string of the inside of an svg element. This setting is theme independent.").setClass("code-styler-setting-text-area").addTextArea((textArea) => textArea.setValue(JSON.stringify(this.plugin.settings.redirectLanguages) === "{}" ? "" : JSON.stringify(this.plugin.settings.redirectLanguages, null, 4)).setPlaceholder(JSON.stringify({ toml: { colour: "#012345", icon: LANGUAGE_ICONS_DATA["APL"] } }, null, 4)).onChange((value) => {
+      if (value === "") {
+        this.plugin.settings.redirectLanguages = {};
+        this.saveSettings();
+      } else {
+        try {
+          this.plugin.settings.redirectLanguages = JSON.parse(value);
+          this.redirectLanguages();
+          this.saveSettings();
+        } catch (e2) {
+          new import_obsidian.Notice("Invalid JSON");
+        }
+      }
+    }));
+  }
+  generateInlineCodeSettings(containerEl) {
+    containerEl.createEl("h3", { text: "Inline Code Appearance" });
     new import_obsidian.Setting(containerEl).setName("Syntax Highlight Inline Code").setDesc("If enabled, in reading mode, inline code will be syntax highlighted based on a language set with `{language} highlighted_inline_code`. See the README for more information.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.inline.syntaxHighlight).onChange((value) => {
       this.plugin.settings.currentTheme.settings.inline.syntaxHighlight = value;
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-      this.plugin.rerenderPreview();
+      this.saveSettings(true);
     }));
-    new import_obsidian.Setting(containerEl).setName("Inline Code Background Colour").then((setting) => {
+    new import_obsidian.Setting(containerEl).setName("Style Inline Code").setDesc("If enabled, inline code will be styled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.inline.style).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.inline.style = value;
+      this.generateInlineCodeStyleSettings();
+      this.saveSettings();
+    }));
+    this.inlineCodeStylesContainer = containerEl.createDiv();
+    this.generateInlineCodeStyleSettings();
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Title Colour").setDesc("The text colour of inline code titles.").then((setting) => {
       this.createPickr(
         this.plugin,
-        containerEl,
-        setting,
-        "inline_background",
-        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.backgroundColour,
-        (relevantThemeColours, saveColour) => {
-          relevantThemeColours[getCurrentMode()].inline.backgroundColour = saveColour;
-        }
-      );
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Text Colour").then((setting) => {
-      this.createPickr(
-        this.plugin,
-        containerEl,
-        setting,
-        "inline_text",
-        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.textColour,
-        (relevantThemeColours, saveColour) => {
-          relevantThemeColours[getCurrentMode()].inline.textColour = saveColour;
-        }
-      );
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Active Text Colour").setDesc("The text colour when editing inline code.").then((setting) => {
-      this.createPickr(
-        this.plugin,
-        containerEl,
-        setting,
-        "inline_active_text",
-        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.activeTextColour,
-        (relevantThemeColours, saveColour) => {
-          relevantThemeColours[getCurrentMode()].inline.activeTextColour = saveColour;
-        }
-      );
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Font Weight").setDesc("Determines how bold inline code appears.").then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(1, 9, 1).setValue(this.plugin.settings.currentTheme.settings.inline.fontWeight).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.inline.fontWeight = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-      setting.addExtraButton((button) => {
-        button.setIcon("reset").setTooltip("Restore default font weight").onClick(() => {
-          this.plugin.settings.currentTheme.settings.inline.fontWeight = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.fontWeight;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.fontWeight);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Curvature").setDesc("Determines how rounded inline code appear in pixels.").then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 12, 1).setValue(this.plugin.settings.currentTheme.settings.inline.curvature).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.inline.curvature = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-      setting.addExtraButton((button) => {
-        button.setIcon("reset").setTooltip("Restore default curvature").onClick(() => {
-          this.plugin.settings.currentTheme.settings.inline.curvature = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.curvature;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.curvature);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Vertical Padding").setDesc("Determines how much vertical inner padding in pixels inline code has.").then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 10, 1).setValue(this.plugin.settings.currentTheme.settings.inline.paddingVertical).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.inline.paddingVertical = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-      setting.addExtraButton((button) => {
-        button.setIcon("reset").setTooltip("Restore default vertical padding").onClick(() => {
-          this.plugin.settings.currentTheme.settings.inline.paddingVertical = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.paddingVertical;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.paddingVertical);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Horizontal Padding").setDesc("Determines how much horizontal inner padding in pixels inline code has.").then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 10, 1).setValue(this.plugin.settings.currentTheme.settings.inline.paddingHorizontal).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.inline.paddingHorizontal = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-      setting.addExtraButton((button) => {
-        button.setIcon("reset").setTooltip("Restore default horizontal padding").onClick(() => {
-          this.plugin.settings.currentTheme.settings.inline.paddingHorizontal = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.paddingHorizontal;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.paddingHorizontal);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Horizontal Margin").setDesc("Determines how much horizontal outer margin is added to the inline code in pixels.").then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 8, 1).setValue(this.plugin.settings.currentTheme.settings.inline.marginHorizontal).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.inline.marginHorizontal = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-      setting.addExtraButton((button) => {
-        button.setIcon("reset").setTooltip("Restore default horizontal margin").onClick(() => {
-          this.plugin.settings.currentTheme.settings.inline.marginHorizontal = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.marginHorizontal;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.marginHorizontal);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Title Colour").setDesc("The text colour of inline code titles.").then((setting) => {
-      this.createPickr(
-        this.plugin,
-        containerEl,
+        this.inlineCodeStylesContainer,
         setting,
         "title_text",
         (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.titleTextColour,
@@ -3231,38 +4632,185 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         }
       );
     });
-    new import_obsidian.Setting(containerEl).setName("Inline Code Title Font Weight").setDesc("Determines how bold inline code titles appear.").then((setting) => {
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Title Font Weight").setDesc("Determines how bold inline code titles appear.").then((setting) => {
       let resettableSlider;
       setting.addSlider((slider) => {
         resettableSlider = slider.setLimits(1, 9, 1).setValue(this.plugin.settings.currentTheme.settings.inline.titleFontWeight).setDynamicTooltip().onChange((value) => {
           this.plugin.settings.currentTheme.settings.inline.titleFontWeight = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
       setting.addExtraButton((button) => {
         button.setIcon("reset").setTooltip("Restore default font weight").onClick(() => {
           this.plugin.settings.currentTheme.settings.inline.titleFontWeight = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.titleFontWeight;
           resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.titleFontWeight);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
+          this.saveSettings();
         });
       });
     });
-    containerEl.createEl("h3", { text: "Advanced Settings" });
-    let wrapLinesActiveToggle;
-    new import_obsidian.Setting(containerEl).setName("Wrap Lines on Click").setDesc('If enabled, in reading mode, holding click on a codeblock will wrap the lines for better visibility. This can only be used if the "Unwrap Lines" setting is enabled.').addToggle((toggle) => {
-      wrapLinesActiveToggle = toggle.setValue(this.plugin.settings.currentTheme.settings.codeblock.wrapLinesActive).setDisabled(!this.plugin.settings.currentTheme.settings.codeblock.unwrapLines).onChange((value) => {
-        this.plugin.settings.currentTheme.settings.codeblock.wrapLinesActive = value;
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-        this.plugin.rerenderPreview();
-      });
-      this.disableableComponents["wrapLines"].push(wrapLinesActiveToggle);
+  }
+  generateInlineCodeStyleSettings() {
+    this.inlineCodeStylesContainer.empty();
+    if (!this.plugin.settings.currentTheme.settings.inline.style)
+      return;
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Background Colour").then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.inlineCodeStylesContainer,
+        setting,
+        "inline_background",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.backgroundColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].inline.backgroundColour = saveColour;
+        }
+      );
     });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Text Colour").then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.inlineCodeStylesContainer,
+        setting,
+        "inline_text",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.textColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].inline.textColour = saveColour;
+        }
+      );
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Active Text Colour").setDesc("The text colour when editing inline code.").then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.inlineCodeStylesContainer,
+        setting,
+        "inline_active_text",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].inline.activeTextColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].inline.activeTextColour = saveColour;
+        }
+      );
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Font Weight").setDesc("Determines how bold inline code appears.").then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(1, 9, 1).setValue(this.plugin.settings.currentTheme.settings.inline.fontWeight).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.inline.fontWeight = value;
+          this.saveSettings();
+        });
+      });
+      setting.addExtraButton((button) => {
+        button.setIcon("reset").setTooltip("Restore default font weight").onClick(() => {
+          this.plugin.settings.currentTheme.settings.inline.fontWeight = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.fontWeight;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.fontWeight);
+          this.saveSettings();
+        });
+      });
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Curvature").setDesc("Determines how rounded inline code appear in pixels.").then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 12, 1).setValue(this.plugin.settings.currentTheme.settings.inline.curvature).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.inline.curvature = value;
+          this.saveSettings();
+        });
+      });
+      setting.addExtraButton((button) => {
+        button.setIcon("reset").setTooltip("Restore default curvature").onClick(() => {
+          this.plugin.settings.currentTheme.settings.inline.curvature = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.curvature;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.curvature);
+          this.saveSettings();
+        });
+      });
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Vertical Padding").setDesc("Determines how much vertical inner padding in pixels inline code has.").then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 10, 1).setValue(this.plugin.settings.currentTheme.settings.inline.paddingVertical).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.inline.paddingVertical = value;
+          this.saveSettings();
+        });
+      });
+      setting.addExtraButton((button) => {
+        button.setIcon("reset").setTooltip("Restore default vertical padding").onClick(() => {
+          this.plugin.settings.currentTheme.settings.inline.paddingVertical = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.paddingVertical;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.paddingVertical);
+          this.saveSettings();
+        });
+      });
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Horizontal Padding").setDesc("Determines how much horizontal inner padding in pixels inline code has.").then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 10, 1).setValue(this.plugin.settings.currentTheme.settings.inline.paddingHorizontal).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.inline.paddingHorizontal = value;
+          this.saveSettings();
+        });
+      });
+      setting.addExtraButton((button) => {
+        button.setIcon("reset").setTooltip("Restore default horizontal padding").onClick(() => {
+          this.plugin.settings.currentTheme.settings.inline.paddingHorizontal = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.paddingHorizontal;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.paddingHorizontal);
+          this.saveSettings();
+        });
+      });
+    });
+    new import_obsidian.Setting(this.inlineCodeStylesContainer).setName("Inline Code Horizontal Margin").setDesc("Determines how much horizontal outer margin is added to the inline code in pixels.").then((setting) => {
+      let resettableSlider;
+      setting.addSlider((slider) => {
+        resettableSlider = slider.setLimits(0, 8, 1).setValue(this.plugin.settings.currentTheme.settings.inline.marginHorizontal).setDynamicTooltip().onChange((value) => {
+          this.plugin.settings.currentTheme.settings.inline.marginHorizontal = value;
+          this.saveSettings();
+        });
+      });
+      setting.addExtraButton((button) => {
+        button.setIcon("reset").setTooltip("Restore default horizontal margin").onClick(() => {
+          this.plugin.settings.currentTheme.settings.inline.marginHorizontal = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.inline.marginHorizontal;
+          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.inline.marginHorizontal);
+          this.saveSettings();
+        });
+      });
+    });
+  }
+  generateAdvancedHeading(containerEl) {
+    const advancedSettingsHeading = containerEl.createEl("h2", { text: "Advanced Settings", cls: `advanced-settings-header${this.hideAdvanced ? " header-folded" : ""}` });
+    advancedSettingsHeading.addEventListener("click", () => {
+      this.hideAdvanced = !this.hideAdvanced;
+      advancedSettingsHeading.classList.toggle("header-folded", this.hideAdvanced);
+      this.generateAdvancedSettings();
+    });
+  }
+  generateAdvancedSettings() {
+    this.advancedSettingsContainer.empty();
+    if (this.hideAdvanced)
+      return;
+    this.generateInterfaceSettings(this.advancedSettingsContainer);
+    new import_obsidian.Setting(this.advancedSettingsContainer).setName("Editor Active Line Highlight").setDesc("If enabled, highlights the active line outside codeblocks.").setClass("code-styler-spaced").addToggle((toggle) => toggle.setTooltip("Toggle editor active line highlighting").setValue(this.plugin.settings.currentTheme.settings.highlights.activeEditorLine).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.highlights.activeEditorLine = value;
+      this.disableableComponents["editorActiveLineHighlight"].forEach((component) => {
+        component.setDisabled(!value);
+      });
+      this.saveSettings();
+    })).then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.advancedSettingsContainer,
+        setting,
+        "editor_active_line_highlight",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].highlights.activeEditorLineColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].highlights.activeEditorLineColour = saveColour;
+        },
+        () => !this.plugin.settings.currentTheme.settings.highlights.activeEditorLine
+      );
+    });
+    this.disableableComponents["editorActiveLineHighlight"].push(this.pickrs["editor_active_line_highlight"].resetButton);
+    new import_obsidian.Setting(this.advancedSettingsContainer).setName("Reset inbuilt themes").setDesc("This will return all inbuilt themes to the plugin defaults").addButton((button) => button.setButtonText("Reset").onClick(() => {
+      Object.entries(INBUILT_THEMES).forEach(([themeName, theme]) => this.plugin.settings.themes[themeName] = structuredClone(theme));
+      if (this.plugin.settings.selectedTheme in INBUILT_THEMES)
+        this.plugin.settings.currentTheme = structuredClone(this.plugin.settings.themes[this.plugin.settings.selectedTheme]);
+      this.saveSettings(true);
+    }));
+  }
+  generateInterfaceSettings(containerEl) {
     new import_obsidian.Setting(containerEl).setName("Button Colour").setDesc("Used for UI buttons like the copy code button.").then((setting) => {
       this.createPickr(
         this.plugin,
@@ -3287,86 +4835,44 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         }
       );
     });
-    new import_obsidian.Setting(containerEl).setName("Gradient Highlighting").setDesc("If enabled, highlights fade away to the right. The slider sets the gradient colour stop as a percentage.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.advanced.gradientHighlights = value;
-      this.disableableComponents["gradientHighlighting"].forEach((component) => {
-        component.setDisabled(!value);
-      });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-    })).then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 100, 1).setValue(+this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop.slice(0, -1)).setDisabled(!this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop = `${value}%`;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-        this.disableableComponents["gradientHighlighting"].push(resettableSlider);
-      });
-      let resetButton;
-      setting.addExtraButton((button) => {
-        resetButton = button.setIcon("reset").setDisabled(!this.plugin.settings.currentTheme.settings.advanced.gradientHighlights).setTooltip("Restore default colour stop").onClick(() => {
-          this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.gradientHighlightsColourStop;
-          resettableSlider.setValue(+this.plugin.settings.currentTheme.settings.advanced.gradientHighlightsColourStop.slice(0, -1));
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-        this.disableableComponents["gradientHighlighting"].push(resetButton);
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Language Coloured Borders").setDesc("If enabled, languages with icons display a left border with the colour of the icon. The slider sets the width of the border.").addToggle((toggle) => toggle.setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).onChange((value) => {
-      this.plugin.settings.currentTheme.settings.advanced.languageBorderColour = value;
-      this.disableableComponents["languageBorderColour"].forEach((component) => {
-        component.setDisabled(!value);
-      });
-      (async () => {
-        await this.plugin.saveSettings();
-      })();
-    })).then((setting) => {
-      let resettableSlider;
-      setting.addSlider((slider) => {
-        resettableSlider = slider.setLimits(0, 20, 1).setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth).setDisabled(!this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).setDynamicTooltip().onChange((value) => {
-          this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth = value;
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-        this.disableableComponents["languageBorderColour"].push(resettableSlider);
-      });
-      let resetButton;
-      setting.addExtraButton((button) => {
-        resetButton = button.setIcon("reset").setDisabled(!this.plugin.settings.currentTheme.settings.advanced.languageBorderColour).setTooltip("Restore default colour stop").onClick(() => {
-          this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth = this.plugin.settings.themes[this.plugin.settings.selectedTheme].settings.advanced.languageBorderWidth;
-          resettableSlider.setValue(this.plugin.settings.currentTheme.settings.advanced.languageBorderWidth);
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        });
-        this.disableableComponents["languageBorderColour"].push(resetButton);
-      });
-    });
-    new import_obsidian.Setting(containerEl).setName("Redirect Language Settings").setDesc("Use this textbox to redirect specific language colours and icons as a JSON with language names as keys and either a colour key, an icon key or both as the value for a given language. Colours should be passed as CSS colours and icons should be passed as a string of the inside of an svg element. This setting is theme independent.").setClass("code-styler-setting-text-area").addTextArea((textArea) => textArea.setValue(JSON.stringify(this.plugin.settings.redirectLanguages) === "{}" ? "" : JSON.stringify(this.plugin.settings.redirectLanguages, null, 4)).setPlaceholder(JSON.stringify({ toml: { colour: "#012345", icon: LANGUAGE_ICONS_DATA["APL"] } }, null, 4)).onChange((value) => {
-      if (value === "") {
-        this.plugin.settings.redirectLanguages = {};
-        (async () => {
-          await this.plugin.saveSettings();
-        })();
-      } else {
-        try {
-          this.plugin.settings.redirectLanguages = JSON.parse(value);
-          this.redirectLanguages();
-          (async () => {
-            await this.plugin.saveSettings();
-          })();
-        } catch (e2) {
-          new import_obsidian.Notice("Invalid JSON");
-        }
-      }
+  }
+  generatePluginCompatibilitySettings(containerEl) {
+    containerEl.createSpan("Needs completing");
+  }
+  generateExampleCodeblockSettings(containerEl) {
+    new import_obsidian.Setting(containerEl).setName("Example Codeblock Parameter String").setDesc("Parameters and language which would follow codeblock delimiter.").setClass("code-styler-setting-text-wide").addText((text2) => text2.setPlaceholder(EXAMPLE_CODEBLOCK_PARAMETERS).setValue(this.plugin.settings.exampleCodeblockParameters).onChange((value) => {
+      this.plugin.settings.exampleCodeblockParameters = value;
+      this.saveSettings();
+      this.generateExampleCodeblock();
     }));
+    new import_obsidian.Setting(containerEl).setName("Example Codeblock Parameter String").setDesc("Content for example codeblock.").setClass("code-styler-setting-text-area").addTextArea((textArea) => textArea.setValue(this.plugin.settings.exampleCodeblockContent).setPlaceholder(EXAMPLE_CODEBLOCK_CONTENT).onChange((value) => {
+      this.plugin.settings.exampleCodeblockContent = value;
+      this.saveSettings();
+      this.generateExampleCodeblock();
+    }));
+  }
+  generateExampleCodeblock() {
+    var _a2, _b;
+    this.exampleCodeblockContainer.empty();
+    const codeblockString = "```````" + this.plugin.settings.exampleCodeblockParameters + "\n" + this.plugin.settings.exampleCodeblockContent + "\n```````";
+    import_obsidian.MarkdownRenderer.render(this.plugin.app, codeblockString, this.exampleCodeblockContainer, SETTINGS_SOURCEPATH_PREFIX + codeblockString, new import_obsidian.Component());
+    (_b = (_a2 = this.exampleCodeblockContainer.querySelector("pre > button.copy-code-button")) == null ? void 0 : _a2.classList) == null ? void 0 : _b.add("code-styler-settings-button");
+  }
+  generateExampleInlineCodeSettings(containerEl) {
+    new import_obsidian.Setting(containerEl).setName("Inline Code Example").setDesc("Text to render as example inside code delimiters.").setClass("code-styler-setting-text-wide").addText((text2) => text2.setPlaceholder(EXAMPLE_INLINE_CODE).setValue(this.plugin.settings.exampleInlineCode).onChange((value) => {
+      this.plugin.settings.exampleInlineCode = value;
+      this.saveSettings();
+      this.generateExampleInlineCode();
+    }));
+  }
+  generateExampleInlineCode() {
+    var _a2, _b;
+    this.exampleInlineCodeContainer.empty();
+    import_obsidian.MarkdownRenderer.render(this.plugin.app, "`" + this.plugin.settings.exampleInlineCode + "`", this.exampleInlineCodeContainer, SETTINGS_SOURCEPATH_PREFIX, new import_obsidian.Component());
+    (_b = (_a2 = this.exampleInlineCodeContainer.querySelector("code")) == null ? void 0 : _a2.classList) == null ? void 0 : _b.add("code-styler-settings-inline-code");
+  }
+  generateDonationFooter(containerEl) {
+    containerEl.createEl("hr");
     const donationDiv = containerEl.createEl("div", { cls: "code-styler-donation" });
     const donationText = createEl("p", { text: "If you like this plugin, and would like to help support continued development, use the button below!" });
     donationDiv.appendChild(donationText);
@@ -3374,17 +4880,7 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     donationButton.innerHTML = '<img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=mayurankv2&button_colour=e3e7efa0&font_colour=262626&font_family=Inter&outline_colour=262626&coffee_colour=a0522d" height="42px">';
     donationDiv.appendChild(donationButton);
   }
-  // Setting Parsing
-  redirectLanguages() {
-    Object.entries(this.plugin.settings.redirectLanguages).forEach(([languageName, languageSettings]) => {
-      if ("icon" in languageSettings) {
-        if (LANGUAGE_NAMES[languageName] in this.plugin.languageIcons)
-          URL.revokeObjectURL(this.plugin.languageIcons[LANGUAGE_NAMES[languageName]]);
-        this.plugin.languageIcons[LANGUAGE_NAMES[languageName]] = URL.createObjectURL(new Blob([`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">${languageSettings.icon}</svg>`], { type: "image/svg+xml" }));
-      }
-    });
-  }
-  // Setting Creation
+  // Create Settings
   createPickr(plugin, containerEl, setting, id, getRelevantThemeColour, saveRelevantThemeColour, disabled) {
     const pickr = new PickrResettable(plugin, containerEl, setting, getRelevantThemeColour, saveRelevantThemeColour);
     pickr.on("show", (colour, instance) => {
@@ -3405,7 +4901,21 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     });
     this.pickrs[id] = pickr;
   }
-  // Setting Tab Updates
+  // Update Settings
+  saveSettings(rerender = false) {
+    (async () => {
+      await this.plugin.saveSettings();
+    })();
+    if (rerender)
+      this.rerender();
+  }
+  rerender() {
+    this.plugin.renderReadingView();
+    if (this.page === "codeblock")
+      this.generateExampleCodeblock();
+    else if (this.page === "inline")
+      this.generateExampleInlineCode();
+  }
   updateDropdown(dropdown, settings) {
     dropdown.selectEl.empty();
     Object.keys(settings.themes).forEach((theme_name) => {
@@ -3413,13 +4923,15 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     });
     dropdown.setValue(settings.selectedTheme);
   }
-  updateAlternativeHighlights(alternativeHighlightsContainer) {
-    alternativeHighlightsContainer.empty();
+  updateAlternativeHighlights() {
+    if (this.page !== "codeblock")
+      return;
+    this.alternativeHighlightsContainer.empty();
     Object.keys(this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights).forEach((alternativeHighlightName) => {
-      new import_obsidian.Setting(alternativeHighlightsContainer).setName(alternativeHighlightName).setDesc(`To highlight lines with this highlight, use the ${alternativeHighlightName} parameter.`).then((setting) => {
+      new import_obsidian.Setting(this.alternativeHighlightsContainer).setName(alternativeHighlightName).setDesc(`To highlight lines with this highlight, use the ${alternativeHighlightName} parameter.`).then((setting) => {
         this.createPickr(
           this.plugin,
-          alternativeHighlightsContainer,
+          this.alternativeHighlightsContainer,
           setting,
           `alternative_highlight_${alternativeHighlightName}`,
           (relevantThemeColours) => alternativeHighlightName in relevantThemeColours.light.highlights.alternativeHighlights ? relevantThemeColours[getCurrentMode()].highlights.alternativeHighlights[alternativeHighlightName] : this.plugin.settings.currentTheme.colours[getCurrentMode()].highlights.alternativeHighlights[alternativeHighlightName],
@@ -3432,13 +4944,20 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
             delete this.plugin.settings.currentTheme.colours.light.highlights.alternativeHighlights[alternativeHighlightName];
             delete this.plugin.settings.currentTheme.colours.dark.highlights.alternativeHighlights[alternativeHighlightName];
             new import_obsidian.Notice(`Removed highlight "${alternativeHighlightName}".`);
-            this.updateAlternativeHighlights(alternativeHighlightsContainer);
-            (async () => {
-              await this.plugin.saveSettings();
-            })();
+            this.updateAlternativeHighlights();
+            this.saveSettings();
           });
         });
       });
+    });
+  }
+  redirectLanguages() {
+    Object.entries(this.plugin.settings.redirectLanguages).forEach(([languageName, languageSettings]) => {
+      if ("icon" in languageSettings) {
+        if (LANGUAGE_NAMES[languageName] in this.plugin.languageIcons)
+          URL.revokeObjectURL(this.plugin.languageIcons[LANGUAGE_NAMES[languageName]]);
+        this.plugin.languageIcons[LANGUAGE_NAMES[languageName]] = URL.createObjectURL(new Blob([`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">${languageSettings.icon}</svg>`], { type: "image/svg+xml" }));
+      }
     });
   }
 };
@@ -3553,7 +5072,7 @@ var THEME_STYLES = {
   },
   "Minimal": {
     extra: `
-			.markdown-source-view.mod-cm6.is-readable-line-width :not(pre.code-styler-pre) > [class^="code-styler-header-container"] {
+			.markdown-source-view.mod-cm6.is-readable-line-width :not(pre.code-styler-pre) > .code-styler-header-container {
 				box-sizing: border-box;
 			}
 		`
@@ -3622,7 +5141,7 @@ function getThemeColours(themeModeColours) {
 function styleThemeSettings(themeSettings, currentTheme) {
   var _a2, _b, _c;
   return `
-		body.code-styler [class^="code-styler-header-language-tag"] {
+		body.code-styler .code-styler-header-language-tag {
 			--code-styler-header-language-tag-text-bold: ${themeSettings.header.languageTag.textBold ? "bold" : "normal"};
 			--code-styler-header-language-tag-text-italic: ${themeSettings.header.languageTag.textItalic ? "italic" : "normal"};
 			font-family: ${themeSettings.header.languageTag.textFont !== "" ? themeSettings.header.languageTag.textFont : "var(--font-text)"};
@@ -3648,12 +5167,12 @@ function styleThemeSettings(themeSettings, currentTheme) {
 			${themeSettings.header.languageIcon.displayColour ? "" : "--icon-filter: grayscale(1);"}
 		}
 		${((_a2 = THEME_STYLES == null ? void 0 : THEME_STYLES[currentTheme]) == null ? void 0 : _a2.border) ? `
-			.markdown-source-view :not(pre.code-styler-pre) > [class^="code-styler-header-container"] {
+			.markdown-source-view :not(pre.code-styler-pre) > .code-styler-header-container {
 				--code-styler-header-border:` + //@ts-expect-error Does Exist
   THEME_STYLES[currentTheme].border.style + `;
 				--header-separator-width-padding: calc(var(--header-separator-width) - ` + //@ts-expect-error Does Exist
   THEME_STYLES[currentTheme].border.size + `px);
-				--collapsed-bottom-border: var(--code-styler-header-border);
+				--folded-bottom-border: var(--code-styler-header-border);
 			}
 		` : ""}
 		${((_b = THEME_STYLES == null ? void 0 : THEME_STYLES[currentTheme]) == null ? void 0 : _b.scrollbar) ? `
@@ -3679,7 +5198,7 @@ function styleLanguageColours(themeSettings, redirectLanguages, currentTheme) {
 			`;
       if ((_c = THEME_STYLES == null ? void 0 : THEME_STYLES[currentTheme]) == null ? void 0 : _c.border) {
         result += `
-					.markdown-source-view :not(pre.code-styler-pre) > [class^="code-styler-header-container"].language-${languageName}  {
+					.markdown-source-view :not(pre.code-styler-pre) > .code-styler-header-container.language-${languageName}  {
 						--language-border-width: ${//@ts-expect-error Does exist
         themeSettings.advanced.languageBorderColour ? themeSettings.advanced.languageBorderWidth + THEME_STYLES[currentTheme].border.size : 0}px;
 					}`;
@@ -3689,7 +5208,7 @@ function styleLanguageColours(themeSettings, redirectLanguages, currentTheme) {
   }, "");
 }
 function addThemeSettingsClasses(themeSettings) {
-  themeSettings.codeblock.lineNumbers ? document.body.classList.add("code-styler-show-line-numbers") : document.body.classList.remove("code-styler-show-line-numbers");
+  themeSettings.inline.style ? document.body.classList.add("code-styler-style-inline") : document.body.classList.remove("code-styler-style-inline");
   themeSettings.gutter.highlight ? document.body.classList.add("code-styler-gutter-highlight") : document.body.classList.remove("code-styler-gutter-highlight");
   themeSettings.gutter.activeLine ? document.body.classList.add("code-styler-gutter-active-line") : document.body.classList.remove("code-styler-gutter-active-line");
   document.body.classList.remove("code-styler-active-line-highlight", "code-styler-active-line-highlight-codeblock", "code-styler-active-line-highlight-editor");
@@ -3699,16 +5218,6 @@ function addThemeSettingsClasses(themeSettings) {
     document.body.classList.add("code-styler-active-line-highlight-editor");
   else if (!themeSettings.highlights.activeEditorLine && themeSettings.highlights.activeCodeblockLine)
     document.body.classList.add("code-styler-active-line-highlight-codeblock");
-  document.body.classList.remove("code-styler-show-langnames", "code-styler-show-langnames-always");
-  if (themeSettings.header.languageTag.display === "always")
-    document.body.classList.add("code-styler-show-langnames-always");
-  else if (themeSettings.header.languageTag.display === "if_header_shown")
-    document.body.classList.add("code-styler-show-langnames");
-  document.body.classList.remove("code-styler-show-langicons", "code-styler-show-langicons-always");
-  if (themeSettings.header.languageIcon.display === "always")
-    document.body.classList.add("code-styler-show-langicons-always");
-  else if (themeSettings.header.languageIcon.display === "if_header_shown")
-    document.body.classList.add("code-styler-show-langicons");
 }
 function removeStylesAndClasses() {
   var _a2;
@@ -3717,11 +5226,7 @@ function removeStylesAndClasses() {
     "code-styler",
     "code-styler-show-line-numbers",
     "code-styler-gutter-highlight",
-    "code-styler-gutter-active-line",
-    "code-styler-show-langnames",
-    "code-styler-show-langnames-always",
-    "code-styler-show-langicons",
-    "code-styler-show-langicons-always"
+    "code-styler-gutter-active-line"
   );
 }
 function getCurrentTheme(app) {
@@ -3729,17 +5234,54 @@ function getCurrentTheme(app) {
 }
 
 // src/EditingView.ts
-var import_obsidian2 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 var import_view = require("@codemirror/view");
 var import_state = require("@codemirror/state");
 var import_language = require("@codemirror/language");
 
-// src/CodeblockParsing.ts
-async function parseCodeblockSource(codeSection, sourcePath, plugin) {
+// src/Parsing/CodeblockParsing.ts
+var import_obsidian3 = require("obsidian");
+
+// src/External/ExecuteCode/CodeBlockArgs.ts
+var import_obsidian2 = require("obsidian");
+var JSON5 = __toESM(require_dist());
+function getArgs(firstLineOfCode) {
+  if (!firstLineOfCode.contains("{") && !firstLineOfCode.contains("}"))
+    return {};
+  try {
+    let args = firstLineOfCode.substring(firstLineOfCode.indexOf("{") + 1).trim();
+    args = args.replace(/=/g, ":");
+    const exports = [];
+    const handleUnnamedExport = (exportName) => {
+      let i2 = args.indexOf(exportName);
+      while (i2 !== -1) {
+        const nextChar = args[i2 + exportName.length];
+        if (nextChar !== '"' && nextChar !== "'") {
+          args = args.substring(0, i2) + args.substring(i2 + exportName.length + (nextChar === "}" ? 0 : 1));
+          exports.push(exportName);
+        }
+        i2 = args.indexOf(exportName, i2 + 1);
+      }
+    };
+    handleUnnamedExport("pre");
+    handleUnnamedExport("post");
+    args = `{export: ['${exports.join("', '")}'], ${args}`;
+    return JSON5.parse(args);
+  } catch (err) {
+    new import_obsidian2.Notice(`Failed to parse code block arguments from line:
+${firstLineOfCode}
+
+Failed with error:
+${err}`);
+    return {};
+  }
+}
+
+// src/Parsing/CodeblockParsing.ts
+async function parseCodeblockSource(codeSection, plugin, sourcePath) {
   const plugins = plugin.app.plugins.plugins;
   const admonitions = "obsidian-admonition" in plugins;
   const codeblocks = [];
-  const codeblocksParameters = [];
   function parseCodeblockSection(codeSection2) {
     var _a2;
     if (codeSection2.length === 0)
@@ -3759,26 +5301,25 @@ async function parseCodeblockSource(codeSection, sourcePath, plugin) {
     parseCodeblockSection(codeSection2.slice(openDelimiterIndex + 1 + closeDelimiterIndex + 1));
   }
   parseCodeblockSection(codeSection);
-  for (const codeblockLines of codeblocks) {
-    const parameterLine = getParameterLine(codeblockLines);
-    if (!parameterLine)
-      continue;
-    let codeblockParameters = parseCodeblockParameters(parameterLine, plugin.settings.currentTheme);
-    if (isExcluded(codeblockParameters.language, plugin.settings.excludedCodeblocks))
-      continue;
-    codeblockParameters = await pluginAdjustParameters(codeblockParameters, plugins, codeblockLines, sourcePath);
-    codeblocksParameters.push(codeblockParameters);
-  }
-  return { codeblocksParameters, nested: codeblocks[0] ? !arraysEqual(codeSection, codeblocks[0]) : true };
+  return { codeblocksParameters: await (typeof sourcePath !== "undefined" ? parseCodeblocks(codeblocks, plugin, plugins, sourcePath) : parseCodeblocks(codeblocks, plugin, plugins)), nested: codeblocks[0] ? !arraysEqual(codeSection, codeblocks[0]) : true };
 }
-function parseInlineCode(codeText) {
-  const match = /^({} ?)?{([^}]*)} ?(.*)$/.exec(codeText);
-  if (!(match == null ? void 0 : match[1]) && !((match == null ? void 0 : match[2]) && (match == null ? void 0 : match[3])))
-    return { parameters: null, text: "" };
-  else if (match == null ? void 0 : match[1])
-    return { parameters: null, text: match[0].substring(match[1].length) };
-  else
-    return { parameters: parseInlineCodeParameters(match[2]), text: match[3] };
+async function parseCodeblocks(codeblocks, plugin, plugins, sourcePath) {
+  const codeblocksParameters = [];
+  for (const codeblockLines of codeblocks) {
+    const codeblockParameters = await (typeof sourcePath !== "undefined" ? parseCodeblock(codeblockLines, plugin, plugins, sourcePath) : parseCodeblock(codeblockLines, plugin, plugins));
+    if (codeblockParameters !== null)
+      codeblocksParameters.push(codeblockParameters);
+  }
+  return codeblocksParameters;
+}
+async function parseCodeblock(codeblockLines, plugin, plugins, sourcePath) {
+  const parameterLine = getParameterLine(codeblockLines);
+  if (!parameterLine)
+    return null;
+  const codeblockParameters = parseCodeblockParameters(parameterLine, plugin.settings.currentTheme);
+  if (isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist))
+    return null;
+  return await (typeof sourcePath !== "undefined" ? pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) : pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines));
 }
 function parseCodeblockParameters(parameterLine, theme) {
   const codeblockParameters = {
@@ -3808,13 +5349,12 @@ function parseCodeblockParameters(parameterLine, theme) {
     },
     ignore: false
   };
-  if (parameterLine.startsWith("```")) {
+  if (parameterLine.startsWith("```"))
     parameterLine = parameterLine.replace(/^```+(?=[^`]|$)/, "");
-  } else if (parameterLine.startsWith("~~~")) {
+  else if (parameterLine.startsWith("~~~"))
     parameterLine = parameterLine.replace(/^~~~+(?=[^~]|$)/, "");
-  } else {
+  else
     return codeblockParameters;
-  }
   const languageBreak = parameterLine.indexOf(" ");
   codeblockParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
   if (languageBreak === -1)
@@ -3825,52 +5365,77 @@ function parseCodeblockParameters(parameterLine, theme) {
   parameterStrings.forEach((parameterString) => parseCodeblockParameterString(parameterString, codeblockParameters, theme));
   return codeblockParameters;
 }
-async function pluginAdjustParameters(codeblockParameters, plugins, codeblockLines, sourcePath) {
-  var _a2, _b, _c, _d, _e, _f;
-  if (codeblockParameters.language === "preview") {
-    if (((_a2 = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _a2.code) && ((_b = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _b.analyzeHighLightLines)) {
-      const codePreviewParams = await plugins["obsidian-code-preview"].code(codeblockLines.slice(1, -1).join("\n"), sourcePath);
-      if (!codeblockParameters.lineNumbers.alwaysDisabled && !codeblockParameters.lineNumbers.alwaysEnabled) {
-        if (typeof codePreviewParams.start === "number")
-          codeblockParameters.lineNumbers.offset = codePreviewParams.start - 1;
-        codeblockParameters.lineNumbers.alwaysEnabled = Boolean(codePreviewParams.linenumber);
-      }
-      codeblockParameters.highlights.default.lineNumbers = [...new Set(codeblockParameters.highlights.default.lineNumbers.concat(Array.from(plugins["obsidian-code-preview"].analyzeHighLightLines(codePreviewParams.lines, codePreviewParams.highlight), ([num, _2]) => num)))];
-      if (codeblockParameters.title === "")
-        codeblockParameters.title = (_d = (_c = codePreviewParams.filePath.split("\\").pop()) == null ? void 0 : _c.split("/").pop()) != null ? _d : "";
-      codeblockParameters.language = codePreviewParams.language;
+async function pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) {
+  if (codeblockParameters.language === "preview")
+    codeblockParameters = await (typeof sourcePath !== "undefined" ? pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) : pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines));
+  else if (codeblockParameters.language === "include")
+    codeblockParameters = pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines);
+  else if (/run-\w*/.test(codeblockParameters.language))
+    codeblockParameters = pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins);
+  codeblockParameters = pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines);
+  return codeblockParameters;
+}
+async function pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) {
+  var _a2, _b, _c, _d;
+  if (((_a2 = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _a2.code) && ((_b = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _b.analyzeHighLightLines)) {
+    const codePreviewParams = await plugins["obsidian-code-preview"].code(codeblockLines.slice(1, -1).join("\n"), sourcePath);
+    if (!codeblockParameters.lineNumbers.alwaysDisabled && !codeblockParameters.lineNumbers.alwaysEnabled) {
+      if (typeof codePreviewParams.start === "number")
+        codeblockParameters.lineNumbers.offset = codePreviewParams.start - 1;
+      codeblockParameters.lineNumbers.alwaysEnabled = Boolean(codePreviewParams.linenumber);
     }
-  } else if (codeblockParameters.language === "include") {
-    if ("file-include" in plugins) {
-      const fileIncludeLanguage = (_f = (_e = codeblockLines[0].match(/include(?:[:\s]+(?<lang>\w+))?/)) == null ? void 0 : _e.groups) == null ? void 0 : _f.lang;
-      if (typeof fileIncludeLanguage !== "undefined")
-        codeblockParameters.language = fileIncludeLanguage;
-    }
+    codeblockParameters.highlights.default.lineNumbers = [...new Set(codeblockParameters.highlights.default.lineNumbers.concat(Array.from(plugins["obsidian-code-preview"].analyzeHighLightLines(codePreviewParams.lines, codePreviewParams.highlight), (pair) => pair[0])))];
+    if (codeblockParameters.title === "")
+      codeblockParameters.title = (_d = (_c = codePreviewParams.filePath.split("\\").pop()) == null ? void 0 : _c.split("/").pop()) != null ? _d : "";
+    codeblockParameters.language = codePreviewParams.language;
   }
   return codeblockParameters;
 }
-function parseInlineCodeParameters(parameterLine) {
-  const inlineCodeParameters = {
-    language: "",
-    title: "",
-    icon: false
-  };
-  const languageBreak = parameterLine.indexOf(" ");
-  inlineCodeParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
-  if (languageBreak === -1)
-    return inlineCodeParameters;
-  const parameterStrings = parameterLine.slice(languageBreak + 1).match(/(?:[^\s"']+|"[^"]*"|'[^']*')+/g);
-  if (!parameterStrings)
-    return inlineCodeParameters;
-  parameterStrings.forEach((parameterString) => parseInlineCodeParameterString(parameterString, inlineCodeParameters));
-  return inlineCodeParameters;
+function pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines) {
+  var _a2;
+  if ("file-include" in plugins) {
+    const fileIncludeLanguage = (_a2 = /include (\w+)/.exec(codeblockLines[0])) == null ? void 0 : _a2[1];
+    if (typeof fileIncludeLanguage !== "undefined")
+      codeblockParameters.language = fileIncludeLanguage;
+  }
+  return codeblockParameters;
+}
+function pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines) {
+  var _a2, _b;
+  if ("execute-code" in plugins) {
+    const codeblockArgs = getArgs(codeblockLines[0]);
+    codeblockParameters.title = (_b = (_a2 = codeblockParameters.title) != null ? _a2 : codeblockArgs == null ? void 0 : codeblockArgs.label) != null ? _b : "";
+  }
+  return codeblockParameters;
+}
+function pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins) {
+  if ("execute-code" in plugins) {
+    if (EXECUTE_CODE_SUPPORTED_LANGUAGES.includes(codeblockParameters.language.slice(4)) && !isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist))
+      codeblockParameters.language = codeblockParameters.language.slice(4);
+  }
+  return codeblockParameters;
 }
 function parseCodeblockParameterString(parameterString, codeblockParameters, theme) {
-  if (parameterString.startsWith("title:")) {
-    const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
-    if (titleMatch)
-      codeblockParameters.title = titleMatch[2].trim();
-  } else if (parameterString.startsWith("fold:")) {
+  if (parameterString === "ignore")
+    codeblockParameters.ignore = true;
+  else if (parameterString.startsWith("title:"))
+    manageTitle(parameterString, codeblockParameters);
+  else if (parameterString.startsWith("fold:") || parameterString === "fold")
+    manageFolding(parameterString, codeblockParameters);
+  else if (parameterString.startsWith("ln:"))
+    manageLineNumbering(parameterString, codeblockParameters);
+  else if (parameterString === "wrap" || parameterString === "unwrap" || parameterString.startsWith("unwrap:"))
+    manageWrapping(parameterString, codeblockParameters);
+  else
+    addHighlights(parameterString, codeblockParameters, theme);
+}
+function manageTitle(parameterString, codeblockParameters) {
+  const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
+  if (titleMatch)
+    codeblockParameters.title = titleMatch[2].trim();
+}
+function manageFolding(parameterString, codeblockParameters) {
+  if (parameterString.startsWith("fold:")) {
     const foldPlaceholderMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("fold:".length));
     if (foldPlaceholderMatch) {
       codeblockParameters.fold = {
@@ -3883,30 +5448,32 @@ function parseCodeblockParameterString(parameterString, codeblockParameters, the
       enabled: true,
       placeholder: ""
     };
-  } else if (parameterString === "ignore") {
-    codeblockParameters.ignore = true;
-  } else if (parameterString.startsWith("ln:")) {
-    parameterString = parameterString.slice("ln:".length);
-    if (/^\d+$/.test(parameterString)) {
-      codeblockParameters.lineNumbers = {
-        alwaysEnabled: true,
-        alwaysDisabled: false,
-        offset: parseInt(parameterString) - 1
-      };
-    } else if (parameterString.toLowerCase() === "true") {
-      codeblockParameters.lineNumbers = {
-        alwaysEnabled: true,
-        alwaysDisabled: false,
-        offset: 0
-      };
-    } else if (parameterString.toLowerCase() === "false") {
-      codeblockParameters.lineNumbers = {
-        alwaysEnabled: false,
-        alwaysDisabled: true,
-        offset: 0
-      };
-    }
-  } else if (parameterString === "wrap") {
+  }
+}
+function manageLineNumbering(parameterString, codeblockParameters) {
+  parameterString = parameterString.slice("ln:".length);
+  if (/^\d+$/.test(parameterString)) {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: true,
+      alwaysDisabled: false,
+      offset: parseInt(parameterString) - 1
+    };
+  } else if (parameterString.toLowerCase() === "true") {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: true,
+      alwaysDisabled: false,
+      offset: 0
+    };
+  } else if (parameterString.toLowerCase() === "false") {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: false,
+      alwaysDisabled: true,
+      offset: 0
+    };
+  }
+}
+function manageWrapping(parameterString, codeblockParameters) {
+  if (parameterString === "wrap") {
     codeblockParameters.lineUnwrap = {
       alwaysEnabled: false,
       alwaysDisabled: true,
@@ -3939,17 +5506,16 @@ function parseCodeblockParameterString(parameterString, codeblockParameters, the
         activeWrap: false
       };
     }
-  } else {
-    const highlightMatch = /^(\w+):(.+)$/.exec(parameterString);
-    if (highlightMatch) {
-      const highlights = parseHighlightedLines(highlightMatch[2]);
-      if (highlightMatch[1] === "hl")
-        codeblockParameters.highlights.default = highlights;
-      else {
-        if (highlightMatch[1] in theme.colours.light.highlights.alternativeHighlights)
-          codeblockParameters.highlights.alternative[highlightMatch[1]] = highlights;
-      }
-    }
+  }
+}
+function addHighlights(parameterString, codeblockParameters, theme) {
+  const highlightMatch = /^(\w+):(.+)$/.exec(parameterString);
+  if (highlightMatch) {
+    const highlights = parseHighlightedLines(highlightMatch[2]);
+    if (highlightMatch[1] === "hl")
+      codeblockParameters.highlights.default = highlights;
+    else if (highlightMatch[1] in theme.colours.light.highlights.alternativeHighlights)
+      codeblockParameters.highlights.alternative[highlightMatch[1]] = highlights;
   }
 }
 function parseHighlightedLines(highlightedLinesString) {
@@ -3983,19 +5549,14 @@ function parseHighlightedLines(highlightedLinesString) {
     regularExpressions: [...regularExpressions]
   };
 }
-function isExcluded(language, excludedLanguagesString) {
+function isLanguageIgnored(language, excludedLanguagesString) {
   return parseRegexExcludedLanguages(excludedLanguagesString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
+}
+function isCodeblockIgnored(language, whitelistedCodeblocksString) {
+  return language in import_obsidian3.MarkdownPreviewRenderer.codeBlockPostProcessors && !parseRegexExcludedLanguages(whitelistedCodeblocksString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
 }
 function parseRegexExcludedLanguages(excludedLanguagesString) {
   return excludedLanguagesString.split(",").map((regexLanguage) => new RegExp(`^${regexLanguage.trim().replace(/\*/g, ".+")}$`, "i"));
-}
-function parseInlineCodeParameterString(parameterString, inlineCodeParameters) {
-  if (parameterString.startsWith("title:")) {
-    const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
-    if (titleMatch)
-      inlineCodeParameters.title = titleMatch[2].trim();
-  } else if (parameterString === "icon" || parameterString.startsWith("icon:") && parameterString.toLowerCase() === "icon:true")
-    inlineCodeParameters.icon = true;
 }
 function getParameterLine(codeblockLines) {
   let openingCodeblockLine = getOpeningLine(codeblockLines);
@@ -4038,31 +5599,64 @@ function arraysEqual(array1, array2) {
   return array1.length === array2.length && array1.every((el) => array2.includes(el));
 }
 
+// src/Parsing/InlineCodeParsing.ts
+function parseInlineCode(codeText) {
+  const match = /^{( *?(?:\w+(?: *?(?:icon|title:(?:\w+|"[^"\n]+"|'[^'\n]+')))*)? *?)} *?([^ ].*?)$/.exec(codeText);
+  if (typeof (match == null ? void 0 : match[1]) !== "undefined" && typeof (match == null ? void 0 : match[2]) !== "undefined") {
+    if (match[1] === "")
+      return { parameters: null, text: match[2] };
+    else
+      return { parameters: parseInlineCodeParameters(match[1]), text: match[2] };
+  } else
+    return { parameters: null, text: codeText };
+}
+function parseInlineCodeParameters(parameterLine) {
+  const inlineCodeParameters = {
+    language: "",
+    title: "",
+    icon: false
+  };
+  const languageBreak = parameterLine.indexOf(" ");
+  inlineCodeParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
+  if (languageBreak === -1)
+    return inlineCodeParameters;
+  const parameterStrings = parameterLine.slice(languageBreak + 1).match(/(?:[^\s"']+|"[^"]*"|'[^']*')+/g);
+  if (!parameterStrings)
+    return inlineCodeParameters;
+  parameterStrings.forEach((parameterString) => parseInlineCodeParameterString(parameterString, inlineCodeParameters));
+  return inlineCodeParameters;
+}
+function parseInlineCodeParameterString(parameterString, inlineCodeParameters) {
+  if (parameterString.startsWith("title:")) {
+    const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
+    if (titleMatch)
+      inlineCodeParameters.title = titleMatch[2].trim();
+  } else if (parameterString === "icon" || parameterString.startsWith("icon:") && parameterString.toLowerCase() === "icon:true")
+    inlineCodeParameters.icon = true;
+}
+
 // src/CodeblockDecorating.ts
 function createHeader(codeblockParameters, themeSettings, languageIcons) {
-  const headerContainer = createDiv({ cls: `code-styler-header-container${codeblockParameters.fold.enabled || codeblockParameters.title !== "" ? "-specific" : ""}` });
-  if (codeblockParameters.language !== "") {
-    const iconURL = getLanguageIcon(codeblockParameters.language, languageIcons);
-    if (iconURL !== null)
-      headerContainer.appendChild(createImageWrapper(iconURL, createDiv()));
-    headerContainer.appendChild(createDiv({ cls: `code-styler-header-language-tag-${codeblockParameters.language}`, text: getLanguageTag(codeblockParameters.language) }));
-  }
-  let headerText = "";
-  if (codeblockParameters.title !== "")
-    headerText = codeblockParameters.title;
-  else if (codeblockParameters.fold.enabled)
-    if (codeblockParameters.fold.placeholder !== "")
-      headerText = codeblockParameters.fold.placeholder;
-    else
-      headerText = themeSettings.header.collapsePlaceholder !== "" ? themeSettings.header.collapsePlaceholder : "Collapsed Code";
-  headerContainer.appendChild(createDiv({ cls: "code-styler-header-text", text: headerText }));
+  const headerContainer = createDiv();
+  const iconURL = codeblockParameters.language ? getLanguageIcon(codeblockParameters.language, languageIcons) : void 0;
+  if (!isHeaderHidden(codeblockParameters, themeSettings, iconURL)) {
+    headerContainer.classList.add("code-styler-header-container");
+    if (codeblockParameters.language !== "") {
+      if (isLanguageIconShown(codeblockParameters, themeSettings, iconURL))
+        headerContainer.appendChild(createImageWrapper(iconURL, createDiv()));
+      if (isLanguageTagShown(codeblockParameters, themeSettings))
+        headerContainer.appendChild(createDiv({ cls: "code-styler-header-language-tag", text: getLanguageTag(codeblockParameters.language) }));
+    }
+    headerContainer.appendChild(createDiv({ cls: "code-styler-header-text", text: codeblockParameters.title || (codeblockParameters.fold.enabled ? codeblockParameters.fold.placeholder || themeSettings.header.foldPlaceholder || FOLD_PLACEHOLDER : "") }));
+  } else
+    headerContainer.classList.add("code-styler-header-container-hidden");
   return headerContainer;
 }
 function createInlineOpener(inlineCodeParameters, languageIcons, containerClasses = ["code-styler-inline-opener"]) {
   const openerContainer = createSpan({ cls: containerClasses.join(" ") });
   if (inlineCodeParameters.icon) {
     const iconURL = getLanguageIcon(inlineCodeParameters.language, languageIcons);
-    if (iconURL !== null)
+    if (typeof iconURL !== "undefined")
       openerContainer.appendChild(createImageWrapper(iconURL, createSpan(), "code-styler-inline-icon"));
   }
   if (inlineCodeParameters.title)
@@ -4077,17 +5671,23 @@ function createImageWrapper(iconURL, imageWrapper, imgClass = "code-styler-icon"
   return imageWrapper;
 }
 function getLanguageIcon(language, languageIcons) {
-  language = getLanguageTag(language);
-  if (language in languageIcons)
-    return languageIcons[language];
-  return null;
+  return languageIcons == null ? void 0 : languageIcons[getLanguageTag(language)];
 }
 function getLanguageTag(language) {
-  if (language in LANGUAGE_NAMES)
-    return LANGUAGE_NAMES[language];
-  else if (language !== "")
-    return language.charAt(0).toUpperCase() + language.slice(1);
-  return "";
+  var _a2, _b;
+  return (_b = (_a2 = LANGUAGE_NAMES) == null ? void 0 : _a2[language]) != null ? _b : language.charAt(0).toUpperCase() + language.slice(1) || "";
+}
+function isHeaderHidden(codeblockParameters, themeSettings, iconURL) {
+  return !isHeaderRequired(codeblockParameters) && (codeblockParameters.language === "" || themeSettings.header.languageTag.display !== "always" && (themeSettings.header.languageIcon.display !== "always" || typeof iconURL == "undefined"));
+}
+function isLanguageIconShown(codeblockParameters, themeSettings, iconURL) {
+  return typeof iconURL !== "undefined" && (themeSettings.header.languageIcon.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageIcon.display === "if_header_shown");
+}
+function isLanguageTagShown(codeblockParameters, themeSettings) {
+  return themeSettings.header.languageTag.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageTag.display === "if_header_shown";
+}
+function isHeaderRequired(codeblockParameters) {
+  return codeblockParameters.fold.enabled || codeblockParameters.title !== "";
 }
 function getLineClass(codeblockParameters, lineNumber, line) {
   let classList = [];
@@ -4101,337 +5701,187 @@ function getLineClass(codeblockParameters, lineNumber, line) {
     classList = ["code-styler-line"];
   return classList;
 }
-function getLineNumberDisplay(codeblockParameters) {
-  let lineNumberDisplay = "";
-  if (!codeblockParameters.lineNumbers.alwaysEnabled && codeblockParameters.lineNumbers.alwaysDisabled)
-    lineNumberDisplay = "-hide";
-  else if (codeblockParameters.lineNumbers.alwaysEnabled && !codeblockParameters.lineNumbers.alwaysDisabled)
-    lineNumberDisplay = "-specific";
-  return lineNumberDisplay;
-}
 
 // src/EditingView.ts
 function createCodeblockCodeMirrorExtensions(settings, languageIcons) {
-  const codeblockLineNumberCharWidth = import_state.StateField.define({
+  const livePreviewCompartment = new import_state.Compartment();
+  const ignoreCompartment = new import_state.Compartment();
+  const ignoreListener = import_view.EditorView.updateListener.of((update) => {
+    const livePreviewExtensions = livePreviewCompartment.get(update.state);
+    const toIgnore = isSourceMode(update.state);
+    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
+    const fileUnignore = !toIgnore && !isFileIgnored(update.state) && (Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
+    if (isSourceMode(update.startState) !== toIgnore || fileIgnore || fileUnignore) {
+      update.view.dispatch({ effects: livePreviewCompartment.reconfigure(toIgnore || fileIgnore ? [] : [headerDecorations, lineDecorations, foldDecorations, hiddenDecorations]) });
+      if (!toIgnore && !fileIgnore)
+        update.view.dispatch({ effects: foldAll.of({}) });
+    }
+  });
+  const ignoreFileListener = import_view.EditorView.updateListener.of((update) => {
+    const ignoreExtensions = ignoreCompartment.get(update.state);
+    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
+    const fileUnignore = !isFileIgnored(update.state) && (Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
+    if (fileIgnore || fileUnignore)
+      update.view.dispatch({ effects: ignoreCompartment.reconfigure(fileIgnore ? [] : inlineDecorations) });
+  });
+  const settingsState = import_state.StateField.define({
+    create() {
+      return {
+        excludedLanguages: settings.excludedLanguages,
+        processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
+      };
+    },
+    update(value) {
+      if (value.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist || value.excludedLanguages !== settings.excludedLanguages)
+        return {
+          excludedLanguages: settings.excludedLanguages,
+          processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
+        };
+      return value;
+    }
+  });
+  const charWidthState = import_state.StateField.define({
+    //TODO (@mayurankv) Improve implementation
     create(state) {
-      return getCharWidth(state, state.field(import_obsidian2.editorEditorField).defaultCharacterWidth);
+      return getCharWidth(state, state.field(import_obsidian4.editorEditorField).defaultCharacterWidth);
     },
     update(value, transaction) {
       return getCharWidth(transaction.state, value);
     }
   });
-  const codeblockLines = import_view.ViewPlugin.fromClass(
-    class CodeblockLines {
-      constructor(view) {
-        this.settings = settings;
-        this.currentSettings = {
-          excludedCodeblocks: settings.excludedCodeblocks,
-          excludedLanguages: settings.excludedLanguages,
-          collapsePlaceholder: "",
-          alternativeHighlights: []
-        };
-        this.decorations = import_view.Decoration.none;
-        this.buildDecorations(view);
-        this.mutationObserver = new MutationObserver((mutations) => {
-          mutations.forEach((mutation) => {
-            if (mutation.type === "attributes" && mutation.attributeName === "class" && (mutation.target.classList.contains("HyperMD-codeblock-begin") || mutation.target.classList.contains("HyperMD-codeblock_HyperMD-codeblock-bg") || mutation.target.classList.contains("HyperMD-codeblock-end"))) {
-              this.forceUpdate(view);
-            }
-          });
-        });
-        this.mutationObserver.observe(view.contentDOM, {
-          attributes: true,
-          childList: true,
-          subtree: true,
-          attributeFilter: ["class"]
-          // Only observe changes to the 'class' attribute
-        });
-      }
-      forceUpdate(view) {
-        this.buildDecorations(view);
-        view.requestMeasure();
-      }
-      update(update) {
-        if (update.docChanged || update.viewportChanged || update.state.field(import_obsidian2.editorLivePreviewField) !== update.startState.field(import_obsidian2.editorLivePreviewField) || this.settings.excludedCodeblocks !== this.currentSettings.excludedCodeblocks || this.settings.excludedLanguages !== this.currentSettings.excludedLanguages || this.settings.currentTheme.settings.header.collapsePlaceholder !== this.currentSettings.collapsePlaceholder || !arraysEqual(Object.keys(this.settings.currentTheme.colours.light.highlights.alternativeHighlights), this.currentSettings.alternativeHighlights)) {
-          this.currentSettings = structuredClone({
-            excludedCodeblocks: this.settings.excludedCodeblocks,
-            excludedLanguages: this.settings.excludedLanguages,
-            collapsePlaceholder: this.settings.currentTheme.settings.header.collapsePlaceholder,
-            alternativeHighlights: Object.keys(this.settings.currentTheme.colours.light.highlights.alternativeHighlights)
-          });
-          this.buildDecorations(update.view);
-        }
-      }
-      buildDecorations(view) {
-        var _a2;
-        if (!((_a2 = view == null ? void 0 : view.visibleRanges) == null ? void 0 : _a2.length) || editingViewIgnore(view.state)) {
-          this.decorations = import_view.Decoration.none;
-          return;
-        }
-        const builder = new import_state.RangeSetBuilder();
-        const codeblocks = findUnduplicatedCodeblocks(view);
-        for (const codeblock of codeblocks) {
-          let codeblockParameters;
-          let excludedCodeblock = false;
-          let lineNumber = 0;
-          let maxLineNum = 0;
-          let lineNumberMargin = 0;
-          (0, import_language.syntaxTree)(view.state).iterate({
-            from: codeblock.from,
-            to: codeblock.to,
-            enter: (syntaxNode) => {
-              const line = view.state.doc.lineAt(syntaxNode.from);
-              const lineText = view.state.sliceDoc(line.from, line.to);
-              const startLine = syntaxNode.type.name.includes("HyperMD-codeblock-begin");
-              const endLine = syntaxNode.type.name.includes("HyperMD-codeblock-end");
-              if (startLine) {
-                codeblockParameters = parseCodeblockParameters(trimParameterLine(lineText), this.settings.currentTheme);
-                excludedCodeblock = isExcluded(codeblockParameters.language, [this.settings.excludedCodeblocks, this.settings.excludedLanguages].join(",")) || codeblockParameters.ignore;
-                lineNumber = 0;
-                let lineNumberCount = line.number + 1;
-                const startDelimiter = testOpeningLine(lineText);
-                while (startDelimiter !== testOpeningLine(view.state.doc.line(lineNumberCount).text)) {
-                  lineNumberCount += 1;
-                }
-                maxLineNum = lineNumberCount - line.number - 1 + codeblockParameters.lineNumbers.offset;
-                if (maxLineNum.toString().length > 2)
-                  lineNumberMargin = maxLineNum.toString().length * view.state.field(codeblockLineNumberCharWidth);
-                else
-                  lineNumberMargin = void 0;
-              }
-              if (excludedCodeblock)
-                return;
-              if (syntaxNode.type.name.includes("HyperMD-codeblock")) {
-                builder.add(syntaxNode.from, syntaxNode.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"}`, class: (this.settings.specialLanguages.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) || startLine || endLine ? "code-styler-line" : getLineClass(codeblockParameters, lineNumber, line.text).join(" ")) + (["^$"].concat(this.settings.specialLanguages).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
-                builder.add(syntaxNode.from, syntaxNode.from, import_view.Decoration.line({}));
-                builder.add(syntaxNode.from, syntaxNode.from, import_view.Decoration.widget({ widget: new LineNumberWidget(lineNumber, codeblockParameters, maxLineNum, startLine || endLine) }));
-                lineNumber++;
-              }
-            }
-          });
-        }
-        this.decorations = builder.finish();
-      }
-      destroy() {
-        this.mutationObserver.disconnect();
-      }
-    },
-    {
-      decorations: (value) => value.decorations,
-      provide: (plugin) => import_view.EditorView.atomicRanges.of((view) => view.state.field(codeblockCollapse) || import_view.Decoration.none)
-      // eslint-disable-line @typescript-eslint/no-unused-vars
-    }
-  );
-  const codeblockHeader = import_state.StateField.define({
+  const headerDecorations = import_state.StateField.define({
+    //TODO (@mayurankv) Update (does this need to be updated in this manner?)
     create(state) {
-      return import_view.Decoration.none;
+      return buildHeaderDecorations(state);
     },
     update(value, transaction) {
-      if (editingViewIgnore(transaction.state))
-        return import_view.Decoration.none;
-      const builder = new import_state.RangeSetBuilder();
-      let codeblockParameters;
-      let startLine = true;
-      let startDelimiter = "```";
-      for (let i2 = 1; i2 < transaction.state.doc.lines; i2++) {
-        const line = transaction.state.doc.line(i2);
-        const lineText = line.text.toString();
-        const currentDelimiter = testOpeningLine(lineText);
-        if (currentDelimiter) {
-          if (startLine) {
-            startLine = false;
-            startDelimiter = currentDelimiter;
-            codeblockParameters = parseCodeblockParameters(trimParameterLine(lineText), settings.currentTheme);
-            if (!isExcluded(codeblockParameters.language, [settings.excludedCodeblocks, settings.excludedLanguages].join(",")) && !codeblockParameters.ignore)
-              if (!settings.specialLanguages.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)))
-                builder.add(line.from, line.from, import_view.Decoration.widget({ widget: new HeaderWidget(codeblockParameters, settings.currentTheme.settings, languageIcons), block: true, side: -1 }));
-              else
-                continue;
-          } else {
-            if (currentDelimiter === startDelimiter)
-              startLine = true;
-          }
-        }
-      }
-      return builder.finish();
+      return buildHeaderDecorations(transaction.state, (position3) => isFolded(transaction.state, position3));
     },
     provide(field) {
       return import_view.EditorView.decorations.from(field);
     }
   });
-  const codeblockCollapse = import_state.StateField.define({
+  const lineDecorations = import_state.StateField.define({
+    //TODO (@mayurankv) Deal with source mode - make apply styling in source mode
     create(state) {
-      if (editingViewIgnore(state))
-        return import_view.Decoration.none;
+      return buildLineDecorations(state);
+    },
+    update(value, transaction) {
+      return buildLineDecorations(transaction.state);
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
+    }
+  });
+  const foldDecorations = import_state.StateField.define({
+    create(state) {
+      var _a2;
       const builder = new import_state.RangeSetBuilder();
-      let codeblockParameters;
-      let collapseStart = null;
-      let collapseEnd = null;
-      let startLine = true;
-      let startDelimiter = "```";
-      for (let i2 = 1; i2 < state.doc.lines; i2++) {
-        const line = state.doc.line(i2);
-        const lineText = line.text.toString();
-        const currentDelimiter = testOpeningLine(lineText);
-        if (currentDelimiter) {
-          if (startLine) {
-            startLine = false;
-            startDelimiter = currentDelimiter;
-            codeblockParameters = parseCodeblockParameters(trimParameterLine(lineText), settings.currentTheme);
-            if (!isExcluded(codeblockParameters.language, [settings.excludedCodeblocks, settings.excludedLanguages].join(",")) && !codeblockParameters.ignore && codeblockParameters.fold.enabled)
-              if (!settings.specialLanguages.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)))
-                collapseStart = line;
-              else
-                continue;
-          } else {
-            if (currentDelimiter === startDelimiter) {
-              startLine = true;
-              if (collapseStart)
-                collapseEnd = line;
-            }
-          }
-        }
-        if (collapseStart && collapseEnd) {
-          builder.add(collapseStart.from, collapseEnd.to, import_view.Decoration.replace({ effect: collapse.of(import_view.Decoration.replace({ block: true }).range(collapseStart.from, collapseEnd.to)), block: true, inclusive: true }));
-          collapseStart = null;
-          collapseEnd = null;
-        }
+      for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+        if (!iter.value.spec.widget.codeblockParameters.fold.enabled)
+          continue;
+        codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
+          builder.add(foldStart.from, foldEnd.to, foldDecoration(iter.value.spec.widget.codeblockParameters.language));
+        });
       }
       return builder.finish();
     },
     update(value, transaction) {
-      value = value.map(transaction.changes);
-      for (const effect of transaction.effects) {
-        if (effect.is(collapse))
-          value = value.update({ add: [effect.value], sort: true });
-        else if (effect.is(uncollapse))
-          value = value.update({ filterFrom: effect.value.filterFrom, filterTo: effect.value.filterTo, filter: effect.value.filter });
-      }
+      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
+      value = value.update({ add: transaction.effects.filter((effect) => effect.is(fold) || effect.is(unhideFold)).map((effect) => foldRegion(effect.value)) });
+      transaction.effects.filter((effect) => effect.is(unfold) || effect.is(hideFold)).forEach((effect) => value = value.update(unfoldRegion(effect.value)));
+      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
       return value;
     },
     provide(field) {
       return import_view.EditorView.decorations.from(field);
     }
   });
-  const temporarilyUncollapsed = import_state.StateField.define({
-    create(state) {
+  const hiddenDecorations = import_state.StateField.define({
+    create() {
       return import_view.Decoration.none;
     },
     update(value, transaction) {
-      value = value.map(transaction.changes);
-      const uncollapseAnnotation = transaction.annotation(temporaryUncollapseAnnotation);
-      if (uncollapseAnnotation) {
-        if (uncollapseAnnotation.uncollapse)
-          value = value.update({ add: [uncollapseAnnotation.decorationRange], sort: true });
-        else
-          value = value.update({ filterFrom: uncollapseAnnotation.decorationRange.from, filterTo: uncollapseAnnotation.decorationRange.to, filter: (from, to, value2) => !(from === uncollapseAnnotation.decorationRange.from && to === uncollapseAnnotation.decorationRange.to) });
-      }
+      if (transaction.effects.some((effect) => effect.is(foldAll)))
+        return import_view.Decoration.none;
+      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
+      value = value.update({ add: transaction.effects.filter((effect) => effect.is(hideFold)).map((effect) => effect.value) });
+      transaction.effects.filter((effect) => effect.is(unhideFold)).forEach((effect) => value = value.update(unhideFoldUpdate(effect.value)));
+      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
       return value;
     }
   });
-  const inlineCodeDecorator = import_view.ViewPlugin.fromClass(
-    class InlineCodeDecoration {
-      //NOSONAR
-      // loadedLanguages: Record<string,LanguageSupport>; //NOTE: For future CM6 Compatibility
-      constructor(view) {
-        this.decorations = import_view.Decoration.none;
-        this.settings = settings;
-        this.syntaxHighlight = settings.currentTheme.settings.inline.syntaxHighlight;
-        this.buildDecorations(view);
-      }
-      update(update) {
-        if (update.docChanged || update.viewportChanged || update.selectionSet || update.state.field(import_obsidian2.editorLivePreviewField) !== update.startState.field(import_obsidian2.editorLivePreviewField) || this.settings.currentTheme.settings.inline.syntaxHighlight !== this.syntaxHighlight) {
-          this.syntaxHighlight = this.settings.currentTheme.settings.inline.syntaxHighlight;
-          if (update.docChanged)
-            this.decorations = this.decorations.map(update.changes);
-          this.buildDecorations(update.view);
-        }
-      }
-      buildDecorations(view) {
-        var _a2;
-        if (!((_a2 = view == null ? void 0 : view.visibleRanges) == null ? void 0 : _a2.length)) {
-          this.decorations = import_view.Decoration.none;
-          return;
-        }
-        for (const { from, to } of view.visibleRanges) {
-          (0, import_language.syntaxTree)(view.state).iterate({
-            from,
-            to,
-            enter: (syntaxNode) => {
-              var _a3;
-              const properties = new Set((_a3 = syntaxNode.node.type.prop(import_language.tokenClassNodeProp)) == null ? void 0 : _a3.split(" "));
-              if (!(properties.has("inline-code") && !properties.has("formatting")))
-                return;
-              const previousSibling = syntaxNode.node.prevSibling;
-              if (!previousSibling)
-                return;
-              const delimiterSize = previousSibling.to - previousSibling.from;
-              const inlineCodeText = view.state.doc.sliceString(syntaxNode.from, syntaxNode.to);
-              const { parameters, text: text2 } = parseInlineCode(inlineCodeText);
-              const endOfParameters = inlineCodeText.lastIndexOf(text2);
-              if (!parameters) {
-                if (text2) {
-                  if (view.state.selection.ranges.some((range) => range.to >= syntaxNode.from - delimiterSize && range.from <= syntaxNode.to + delimiterSize) || editingViewIgnore(view.state))
-                    this.decorations = this.decorations.update({ filterFrom: syntaxNode.from, filterTo: syntaxNode.from, filter: () => false });
-                  else
-                    this.decorations = this.decorations.update({ add: [{ from: syntaxNode.from, to: syntaxNode.from + endOfParameters, value: import_view.Decoration.replace({}) }] });
-                }
-              } else {
-                if (view.state.selection.ranges.some((range) => range.to >= syntaxNode.from - delimiterSize && range.from <= syntaxNode.to + delimiterSize)) {
-                  this.decorations.between(syntaxNode.from, syntaxNode.from, (from2, to2) => {
-                    this.decorations = this.decorations.update({ filterFrom: from2, filterTo: to2, filter: () => false });
-                  });
-                  this.decorations = this.decorations.update({ add: [{ from: syntaxNode.from, to: syntaxNode.from + endOfParameters, value: import_view.Decoration.mark({ class: "code-styler-inline-parameters" }) }] });
-                } else {
-                  let decorated = false;
-                  this.decorations.between(syntaxNode.from, syntaxNode.from, (from2, to2, decorationValue) => {
-                    var _a4;
-                    if (!((_a4 = decorationValue.spec) == null ? void 0 : _a4.class))
-                      decorated = true;
-                  });
-                  if (!decorated && !editingViewIgnore(view.state)) {
-                    this.decorations = this.decorations.update({ add: [{ from: syntaxNode.from, to: syntaxNode.from + endOfParameters, value: import_view.Decoration.replace({}) }] });
-                    if ((parameters == null ? void 0 : parameters.title) || (parameters == null ? void 0 : parameters.icon) && getLanguageIcon(parameters.language, languageIcons))
-                      this.decorations = this.decorations.update({ add: [{ from: syntaxNode.from, to: syntaxNode.from, value: import_view.Decoration.replace({ widget: new OpenerWidget(parameters, languageIcons) }) }] });
-                  }
-                }
-                this.decorations = this.decorations.update({ filterFrom: syntaxNode.from + (editingViewIgnore(view.state) ? 0 : endOfParameters + 1), filterTo: syntaxNode.to, filter: () => false });
-                if (!settings.currentTheme.settings.inline.syntaxHighlight)
-                  return;
-                this.decorations = this.decorations.update({ add: modeHighlight({ start: syntaxNode.from + endOfParameters, text: text2, language: parameters.language }) });
-              }
-            }
-          });
-        }
-      }
+  const inlineDecorations = import_state.StateField.define({
+    create(state) {
+      return buildInlineDecorations(state);
     },
-    {
-      decorations: (value) => value.decorations
+    update(value, transaction) {
+      return buildInlineDecorations(transaction.state);
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
     }
-  );
-  function cursorIntoCollapsedTransactionFilter() {
-    return import_state.EditorState.transactionFilter.of((transaction) => {
+  });
+  function settingsChangeExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
+      let addEffects = [];
+      const initialSettings = transaction.startState.field(settingsState);
+      let readdFoldLanguages = [];
+      let removeFoldLanguages2 = [];
+      if (initialSettings.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist) {
+        const codeblockProcessors = Object.keys(MarkdownPreviewRenderer.codeBlockPostProcessors);
+        const initialExcludedCodeblocks = codeblockProcessors.filter((lang) => !initialSettings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
+        const currentExcludedCodeblocks = codeblockProcessors.filter((lang) => !settings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
+        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedCodeblocks, initialExcludedCodeblocks));
+        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedCodeblocks, currentExcludedCodeblocks));
+      }
+      if (initialSettings.excludedLanguages !== settings.excludedLanguages) {
+        const initialExcludedLanguages = initialSettings.excludedLanguages.split(",").map((lang) => lang.trim());
+        const currentExcludedLanguages = settings.excludedLanguages.split(",").map((lang) => lang.trim());
+        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedLanguages, initialExcludedLanguages));
+        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedLanguages, currentExcludedLanguages));
+      }
+      if (removeFoldLanguages2.length !== 0)
+        addEffects.push(removeFold.of(removeFoldLanguages2));
+      if (readdFoldLanguages.length !== 0)
+        addEffects = addEffects.concat(convertReaddFold(transaction, readdFoldLanguages));
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
+    });
+  }
+  function cursorFoldExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
       var _a2, _b, _c, _d;
-      const extraTransactions = [];
-      const collapsedRangeSet = (_b = (_a2 = transaction.startState.field(codeblockCollapse, false)) == null ? void 0 : _a2.map(transaction.changes)) != null ? _b : import_view.Decoration.none;
-      const temporarilyUncollapsedRangeSet = (_d = (_c = transaction.startState.field(temporarilyUncollapsed, false)) == null ? void 0 : _c.map(transaction.changes)) != null ? _d : import_view.Decoration.none;
+      const addEffects = [];
+      const foldDecorationsState = (_b = (_a2 = transaction.startState.field(foldDecorations, false)) == null ? void 0 : _a2.map(transaction.changes)) != null ? _b : import_view.Decoration.none;
+      const hiddenDecorationsState = (_d = (_c = transaction.startState.field(hiddenDecorations, false)) == null ? void 0 : _c.map(transaction.changes)) != null ? _d : import_view.Decoration.none;
       transaction.newSelection.ranges.forEach((range) => {
-        collapsedRangeSet.between(range.from, range.to, (collapseStartFrom, collapseEndTo, decorationValue) => {
-          if (collapseStartFrom <= range.head && range.head <= collapseEndTo)
-            extraTransactions.push({ effects: uncollapse.of({ filter: (from, to) => to <= collapseStartFrom || from >= collapseEndTo, filterFrom: collapseStartFrom, filterTo: collapseEndTo }), annotations: temporaryUncollapseAnnotation.of({ decorationRange: { from: collapseStartFrom, to: collapseEndTo, value: decorationValue }, uncollapse: true }) });
+        foldDecorationsState.between(range.from, range.to, (foldFrom, foldTo, decorationValue) => {
+          if (rangeInteraction(foldFrom, foldTo, range))
+            addEffects.push(hideFold.of({ from: foldFrom, to: foldTo, value: decorationValue }));
         });
-        for (let iter = temporarilyUncollapsedRangeSet.iter(); iter.value !== null; iter.next()) {
-          if (!(iter.from <= range.head && range.head <= iter.to))
-            extraTransactions.push({ effects: collapse.of(import_view.Decoration.replace({ block: true }).range(iter.from, iter.to)), annotations: temporaryUncollapseAnnotation.of({ decorationRange: { from: iter.from, to: iter.to, value: iter.value }, uncollapse: false }) });
+        for (let iter = hiddenDecorationsState.iter(); iter.value !== null; iter.next()) {
+          if (!rangeInteraction(iter.from, iter.to, range))
+            addEffects.push(unhideFold.of({ from: iter.from, to: iter.to, value: iter.value }));
         }
       });
-      if (extraTransactions.length !== 0)
-        return [transaction, ...extraTransactions];
-      return transaction;
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
+    });
+  }
+  function documentFoldExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
+      let addEffects = [];
+      transaction.effects.filter((effect) => effect.is(foldAll)).forEach((effect) => {
+        var _a2;
+        if (typeof ((_a2 = effect.value) == null ? void 0 : _a2.toFold) !== "undefined")
+          addEffects = addEffects.concat(documentFold(transaction.startState, effect.value.toFold));
+        else
+          addEffects = addEffects.concat(documentFold(transaction.startState));
+      });
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
     });
   }
   class LineNumberWidget extends import_view.WidgetType {
-    constructor(lineNumber, codeblockParameters, maxLineNum, empty3) {
+    constructor(lineNumber, codeblockParameters, maxLineNum, empty3 = false) {
       super();
       this.lineNumber = lineNumber;
       this.codeblockParameters = codeblockParameters;
@@ -4441,44 +5891,33 @@ function createCodeblockCodeMirrorExtensions(settings, languageIcons) {
     eq(other) {
       return this.lineNumber === other.lineNumber && this.codeblockParameters.lineNumbers.alwaysEnabled === other.codeblockParameters.lineNumbers.alwaysEnabled && this.codeblockParameters.lineNumbers.alwaysDisabled === other.codeblockParameters.lineNumbers.alwaysDisabled && this.codeblockParameters.lineNumbers.offset === other.codeblockParameters.lineNumbers.offset && this.maxLineNum === other.maxLineNum && this.empty === other.empty;
     }
-    toDOM(view) {
-      return createSpan({ attr: { style: this.maxLineNum.toString().length > (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString().length ? "width: var(--line-number-gutter-width);" : "" }, cls: `code-styler-line-number${getLineNumberDisplay(this.codeblockParameters)}`, text: this.empty ? "" : (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString() });
+    toDOM() {
+      return createSpan({ attr: { style: this.maxLineNum.toString().length > (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString().length ? "width: var(--line-number-gutter-width);" : "" }, cls: "code-styler-line-number", text: this.empty ? "" : (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString() });
     }
   }
   class HeaderWidget extends import_view.WidgetType {
-    constructor(codeblockParameters, themeSettings, languageIcons2) {
+    constructor(codeblockParameters, folded, themeSettings, languageIcons2) {
       super();
-      this.codeblockParameters = codeblockParameters;
-      this.themeSettings = themeSettings;
+      this.codeblockParameters = structuredClone(codeblockParameters);
+      this.themeSettings = structuredClone(themeSettings);
       this.languageIcons = languageIcons2;
-      this.mutationObserver = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.target.hasAttribute("data-clicked"))
-            collapseOnClick(this.view, mutation.target);
-        });
-      });
+      this.iconURL = getLanguageIcon(this.codeblockParameters.language, languageIcons2);
+      this.folded = folded;
+      this.hidden = isHeaderHidden(this.codeblockParameters, this.themeSettings, this.iconURL);
     }
     eq(other) {
-      return this.codeblockParameters.language == other.codeblockParameters.language && this.codeblockParameters.title == other.codeblockParameters.title && this.codeblockParameters.fold.enabled == other.codeblockParameters.fold.enabled && this.codeblockParameters.fold.placeholder == other.codeblockParameters.fold.placeholder && this.themeSettings.header.collapsePlaceholder == other.themeSettings.header.collapsePlaceholder && getLanguageIcon(this.codeblockParameters.language, this.languageIcons) == getLanguageIcon(other.codeblockParameters.language, other.languageIcons);
+      return this.codeblockParameters.language === other.codeblockParameters.language && this.codeblockParameters.title === other.codeblockParameters.title && this.codeblockParameters.fold.enabled === other.codeblockParameters.fold.enabled && this.codeblockParameters.fold.placeholder === other.codeblockParameters.fold.placeholder && this.themeSettings.header.foldPlaceholder === other.themeSettings.header.foldPlaceholder && this.themeSettings.header.languageIcon.display === other.themeSettings.header.languageIcon.display && this.themeSettings.header.languageTag.display === other.themeSettings.header.languageTag.display && this.folded === other.folded && this.iconURL === other.iconURL;
     }
     toDOM(view) {
-      this.view = view;
       const headerContainer = createHeader(this.codeblockParameters, this.themeSettings, this.languageIcons);
       if (this.codeblockParameters.language !== "")
         headerContainer.classList.add(`language-${this.codeblockParameters.language}`);
-      headerContainer.addEventListener("mousedown", handleMouseDown);
-      this.mutationObserver.observe(headerContainer, {
-        attributes: true
-      });
+      if (this.folded)
+        headerContainer.classList.add("code-styler-header-folded");
+      headerContainer.onclick = () => {
+        foldOnClick(view, headerContainer, this.folded, this.codeblockParameters.language);
+      };
       return headerContainer;
-    }
-    destroy(dom) {
-      dom.removeAttribute("data-clicked");
-      dom.removeEventListener("mousedown", handleMouseDown);
-      this.mutationObserver.disconnect();
-    }
-    ignoreEvent() {
-      return false;
     }
   }
   class OpenerWidget extends import_view.WidgetType {
@@ -4490,92 +5929,251 @@ function createCodeblockCodeMirrorExtensions(settings, languageIcons) {
     eq(other) {
       return this.inlineCodeParameters.language == other.inlineCodeParameters.language && this.inlineCodeParameters.title == other.inlineCodeParameters.title && this.inlineCodeParameters.icon == other.inlineCodeParameters.icon && getLanguageIcon(this.inlineCodeParameters.language, this.languageIcons) == getLanguageIcon(other.inlineCodeParameters.language, other.languageIcons);
     }
-    toDOM(view) {
+    toDOM() {
       return createInlineOpener(this.inlineCodeParameters, this.languageIcons, ["code-styler-inline-opener", "cm-inline-code"]);
     }
   }
-  function collapseOnClick(view, target) {
+  function buildHeaderDecorations(state, foldValue = (position3, defaultFold) => defaultFold) {
+    const builder = new import_state.RangeSetBuilder();
+    let codeblockParameters;
+    (0, import_language.syntaxTree)(state).iterate({
+      enter: (syntaxNode) => {
+        if (syntaxNode.type.name.includes("HyperMD-codeblock-begin")) {
+          const startLine = state.doc.lineAt(syntaxNode.from);
+          codeblockParameters = parseCodeblockParameters(trimParameterLine(startLine.text.toString()), settings.currentTheme);
+          if (!isLanguageIgnored(codeblockParameters.language, settings.excludedLanguages) && !isCodeblockIgnored(codeblockParameters.language, settings.processedCodeblocksWhitelist) && !codeblockParameters.ignore) {
+            if (!SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)))
+              builder.add(startLine.from, startLine.from, import_view.Decoration.widget({ widget: new HeaderWidget(codeblockParameters, foldValue(startLine.from, codeblockParameters.fold.enabled), settings.currentTheme.settings, languageIcons), block: true, side: -1 }));
+          }
+        }
+      }
+    });
+    return builder.finish();
+  }
+  function buildLineDecorations(state) {
+    var _a2, _b;
+    const builder = new import_state.RangeSetBuilder();
+    for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      const foldStart = state.doc.lineAt(iter.from);
+      const startDelimiter = testOpeningLine(foldStart.text.toString());
+      const codeblockParameters = iter.value.spec.widget.codeblockParameters;
+      const showLineNumbers = settings.currentTheme.settings.codeblock.lineNumbers && !codeblockParameters.lineNumbers.alwaysDisabled || codeblockParameters.lineNumbers.alwaysEnabled;
+      let foldEnd = null;
+      let maxLineNum = 0;
+      codeblockFoldCallback(iter.from, state, (foldStart2, foldEnd2) => {
+        maxLineNum = foldEnd2.to - foldStart2.from - 1 + codeblockParameters.lineNumbers.offset;
+      });
+      const lineNumberMargin = maxLineNum.toString().length > 2 ? maxLineNum.toString().length * state.field(charWidthState) : void 0;
+      builder.add(foldStart.from, foldStart.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+      if (showLineNumbers)
+        builder.add(foldStart.from, foldStart.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
+      for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
+        const line = (_b = state.doc) == null ? void 0 : _b.line(i2);
+        if (!line)
+          break;
+        const lineText = line.text.toString();
+        if (testOpeningLine(lineText) === startDelimiter) {
+          foldEnd = line;
+          break;
+        }
+        builder.add(line.from, line.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: (SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(iter.value.spec.widget.codeblockParameters.language)) ? "code-styler-line" : getLineClass(codeblockParameters, i2 - foldStart.number, line.text).join(" ")) + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+        if (showLineNumbers)
+          builder.add(line.from, line.from, import_view.Decoration.widget({ widget: new LineNumberWidget(i2 - foldStart.number, codeblockParameters, maxLineNum) }));
+      }
+      if (foldEnd !== null) {
+        builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+        if (showLineNumbers)
+          builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
+      }
+    }
+    return builder.finish();
+  }
+  function buildInlineDecorations(state) {
+    if (!settings.currentTheme.settings.inline.syntaxHighlight)
+      return import_view.Decoration.none;
+    const builder = new import_state.RangeSetBuilder();
+    const sourceMode = isSourceMode(state);
+    (0, import_language.syntaxTree)(state).iterate({
+      enter: (syntaxNode) => {
+        const ranges = getInlineCodeRanges(state, syntaxNode);
+        if (ranges === null)
+          return;
+        const { parameters, text: text2, section } = ranges;
+        if (parameters.value === null)
+          addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
+        else
+          addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
+      }
+    });
+    return builder.finish();
+  }
+  function addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
+    var _a2, _b;
+    if (sourceMode || state.selection.ranges.some((range) => range.to >= section.from && range.from <= section.to))
+      builder.add(parameters.from, parameters.to, import_view.Decoration.mark({ class: "code-styler-inline-parameters" }));
+    else {
+      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
+      if (((_a2 = parameters.value) == null ? void 0 : _a2.title) || ((_b = parameters.value) == null ? void 0 : _b.icon) && getLanguageIcon(parameters.value.language, languageIcons))
+        builder.add(parameters.from, parameters.from, import_view.Decoration.replace({ widget: new OpenerWidget(parameters.value, languageIcons) }));
+    }
+    modeHighlight({ start: parameters.to, text: text2.value, language: parameters.value.language }, builder);
+  }
+  function convertReaddFold(transaction, readdLanguages) {
     var _a2;
-    const position3 = view.posAtDOM(target);
+    const addEffects = [];
+    for (let iter = ((_a2 = transaction.state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      if (!iter.value.spec.widget.codeblockParameters.fold.enabled || !readdLanguages.includes(iter.value.spec.widget.codeblockParameters.language))
+        continue;
+      codeblockFoldCallback(iter.from, transaction.state, (foldStart, foldEnd) => {
+        addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
+      });
+    }
+    return addEffects;
+  }
+  function isFolded(state, position3) {
+    var _a2;
     let folded = false;
-    (_a2 = view.state.field(codeblockCollapse, false)) == null ? void 0 : _a2.between(position3, position3, () => {
+    (_a2 = state.field(foldDecorations, false)) == null ? void 0 : _a2.between(position3, position3, () => {
       folded = true;
     });
-    let collapseStart = null;
-    let collapseEnd = null;
-    let startLine = true;
-    let startDelimiter = "```";
-    for (let i2 = 1; i2 < view.state.doc.lines; i2++) {
-      const line = view.state.doc.line(i2);
-      const lineText = line.text.toString();
-      const currentDelimiter = testOpeningLine(lineText);
-      if (currentDelimiter) {
-        if (startLine) {
-          startLine = false;
-          startDelimiter = currentDelimiter;
-          if (position3 === line.from)
-            collapseStart = line;
-        } else {
-          if (currentDelimiter === startDelimiter) {
-            startLine = true;
-            if (collapseStart)
-              collapseEnd = line;
-          }
-        }
-      }
-      if (collapseStart && collapseEnd) {
-        if (folded)
-          view.dispatch({ effects: uncollapse.of({ filter: (from, to) => to <= collapseStart.from || from >= collapseEnd.to, filterFrom: collapseEnd.from, filterTo: collapseEnd.to }) });
-        else
-          view.dispatch({ effects: collapse.of(import_view.Decoration.replace({ block: true }).range(collapseStart.from, collapseEnd.to)) });
-        view.requestMeasure();
-        collapseStart = null;
-        collapseEnd = null;
-      }
+    return folded;
+  }
+  function documentFold(state, toFold) {
+    var _a2;
+    const addEffects = [];
+    const reset = typeof toFold === "undefined";
+    for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      if (iter.value.spec.widget.hidden)
+        continue;
+      const folded = iter.value.spec.widget.folded;
+      const defaultFold = iter.value.spec.widget.codeblockParameters.fold.enabled;
+      codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
+        if (!reset && toFold && !folded || reset && !folded && defaultFold)
+          addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
+        else if (!reset && !toFold && folded || reset && folded && !defaultFold)
+          addEffects.push(unfold.of({ from: foldStart.from, to: foldEnd.to }));
+      });
+    }
+    return addEffects;
+  }
+  return [
+    ignoreListener,
+    ignoreFileListener,
+    cursorFoldExtender(),
+    documentFoldExtender(),
+    settingsChangeExtender(),
+    settingsState,
+    charWidthState,
+    livePreviewCompartment.of([]),
+    ignoreCompartment.of([])
+  ];
+}
+var fold = import_state.StateEffect.define();
+var unfold = import_state.StateEffect.define();
+var hideFold = import_state.StateEffect.define();
+var unhideFold = import_state.StateEffect.define();
+var removeFold = import_state.StateEffect.define();
+var foldAll = import_state.StateEffect.define();
+function codeblockFoldCallback(startPosition, state, foldCallback) {
+  const foldStart = state.doc.lineAt(startPosition);
+  const startDelimiter = testOpeningLine(foldStart.text.toString());
+  let foldEnd = null;
+  for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
+    const line = state.doc.line(i2);
+    const lineText = line.text.toString();
+    if (testOpeningLine(lineText) === startDelimiter) {
+      foldEnd = line;
+      break;
     }
   }
-  function handleMouseDown(event) {
-    this.setAttribute("data-clicked", "true");
+  if (foldEnd !== null)
+    foldCallback(foldStart, foldEnd);
+}
+function getInlineCodeRanges(state, syntaxNode) {
+  const delimiterSize = getInlineDelimiterSize(syntaxNode);
+  if (delimiterSize === null)
+    return null;
+  const inlineCodeText = state.doc.sliceString(syntaxNode.from, syntaxNode.to);
+  const { parameters, text: text2 } = parseInlineCode(inlineCodeText);
+  const parametersLength = inlineCodeText.lastIndexOf(text2);
+  return { parameters: { from: syntaxNode.from, to: syntaxNode.from + parametersLength, value: parameters }, text: { from: syntaxNode.from + parametersLength + 1, to: syntaxNode.to, value: text2 }, section: { from: syntaxNode.from - delimiterSize, to: syntaxNode.to + delimiterSize } };
+}
+function getInlineDelimiterSize(syntaxNode) {
+  var _a2;
+  const properties = new Set((_a2 = syntaxNode.node.type.prop(import_language.tokenClassNodeProp)) == null ? void 0 : _a2.split(" "));
+  if (!(properties.has("inline-code") && !properties.has("formatting")))
+    return null;
+  const previousSibling = syntaxNode.node.prevSibling;
+  if (!previousSibling)
+    return null;
+  return previousSibling.to - previousSibling.from;
+}
+function addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
+  if (text2.value) {
+    if (!state.selection.ranges.some((range) => range.to >= section.from && range.from <= section.to) && !sourceMode)
+      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
   }
-  function runOnDelimiters(state, startLineCallback, collapseCallback) {
-    const determineCollapse = typeof collapseCallback !== "undefined";
-    let collapseStart = null;
-    let collapseEnd = null;
-    let startLine = true;
-    let startDelimiter = "```";
-    for (let i2 = 1; i2 < state.doc.lines; i2++) {
-      const line = state.doc.line(i2);
-      const lineText = line.text.toString();
-      const currentDelimiter = testOpeningLine(lineText);
-      if (currentDelimiter) {
-        if (startLine) {
-          startLine = false;
-          startDelimiter = currentDelimiter;
-          const callbackResult = startLineCallback(line, lineText);
-          if (determineCollapse && callbackResult === true)
-            continue;
-        } else {
-          if (currentDelimiter === startDelimiter) {
-            startLine = true;
-            if (determineCollapse && collapseStart)
-              collapseEnd = line;
-          }
-        }
-      }
-      if (determineCollapse && collapseStart && collapseEnd) {
-        collapseCallback(collapseStart, collapseEnd);
-        collapseStart = null;
-        collapseEnd = null;
-      }
+}
+function modeHighlight({ start, text: text2, language }, builder) {
+  var _a2;
+  const mode = window.CodeMirror.getMode(window.CodeMirror.defaults, (_a2 = window.CodeMirror.findModeByName(language)) == null ? void 0 : _a2.mime);
+  const state = window.CodeMirror.startState(mode);
+  if (mode == null ? void 0 : mode.token) {
+    const stream = new window.CodeMirror.StringStream(text2);
+    while (!stream.eol()) {
+      const style2 = mode.token(stream, state);
+      if (style2)
+        builder.add(start + stream.start, start + stream.pos, import_view.Decoration.mark({ class: `cm-${style2}` }));
+      stream.start = stream.pos;
     }
   }
-  const collapse = import_state.StateEffect.define();
-  const uncollapse = import_state.StateEffect.define();
-  const temporaryUncollapseAnnotation = import_state.Annotation.define();
-  return [codeblockLineNumberCharWidth, codeblockLines, codeblockHeader, codeblockCollapse, temporarilyUncollapsed, inlineCodeDecorator, cursorIntoCollapsedTransactionFilter()];
+}
+function editingDocumentFold(view, toFold) {
+  view.dispatch({ effects: foldAll.of(typeof toFold !== "undefined" ? { toFold } : {}) });
+  view.requestMeasure();
+}
+function foldOnClick(view, target, folded, language) {
+  codeblockFoldCallback(view.posAtDOM(target), view.state, (foldStart, foldEnd) => {
+    view.dispatch({ effects: foldLines(!folded, { from: foldStart.from, to: foldEnd.to, value: { spec: { language } } }) });
+    view.requestMeasure();
+  });
+}
+function foldLines(toFold, foldInfo) {
+  return toFold ? fold.of(foldInfo) : unfold.of({ from: foldInfo.from, to: foldInfo.to });
+}
+function foldRegion({ from: foldFrom, to: foldTo, value: { spec: { language } } }) {
+  return foldDecoration(language).range(foldFrom, foldTo);
+}
+function unfoldRegion({ from: foldFrom, to: foldTo }) {
+  return { filter: (from, to) => to <= foldFrom || from >= foldTo, filterFrom: foldFrom, filterTo: foldTo };
+}
+function removeFoldLanguages(languages) {
+  return { filter: (from, to, value) => {
+    var _a2;
+    return !languages.includes((_a2 = value == null ? void 0 : value.spec) == null ? void 0 : _a2.language);
+  } };
+}
+function unhideFoldUpdate(range) {
+  return { filterFrom: range.from, filterTo: range.to, filter: (from, to) => !(from === range.from && to === range.to) };
+}
+function foldDecoration(language) {
+  return import_view.Decoration.replace({ block: true, language });
+}
+function rangeInteraction(from, to, range) {
+  return from <= range.head && range.head <= to || from <= range.anchor && range.anchor <= to;
+}
+function isFileIgnored(state) {
+  var _a2, _b, _c, _d, _e;
+  const filePath = (_b = (_a2 = state.field(import_obsidian4.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path;
+  if (typeof filePath !== "undefined")
+    return ((_e = (_d = (_c = this.app.metadataCache.getCache(filePath)) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["code-styler-ignore"]) == null ? void 0 : _e.toString()) === "true";
+  return false;
+}
+function isSourceMode(state) {
+  return !state.field(import_obsidian4.editorLivePreviewField);
 }
 function getCharWidth(state, default_value) {
-  const charWidths = Array.from(state.field(import_obsidian2.editorEditorField).contentDOM.querySelectorAll(".HyperMD-codeblock-end")).reduce((result, beginningElement) => {
+  const charWidths = Array.from(state.field(import_obsidian4.editorEditorField).contentDOM.querySelectorAll(".HyperMD-codeblock-end")).reduce((result, beginningElement) => {
     const nextElement = beginningElement.previousElementSibling;
     if (!nextElement)
       return result;
@@ -4590,57 +6188,12 @@ function getCharWidth(state, default_value) {
     return default_value;
   return charWidths.reduce((result, value) => result + value, 0) / charWidths.length;
 }
-function findUnduplicatedCodeblocks(view) {
-  const codeblocks = findVisibleCodeblocks(view);
-  const unduplicatedCodeblocks = [];
-  for (let i2 = 0; i2 < codeblocks.length; i2++)
-    if (i2 === 0 || codeblocks[i2].from !== codeblocks[i2 - 1].from)
-      unduplicatedCodeblocks.push(codeblocks[i2]);
-  return unduplicatedCodeblocks;
-}
-function findVisibleCodeblocks(view) {
-  return findCodeblocks(view).filter((codeblock) => {
-    return view.visibleRanges.some((visibleRange) => codeblock.from < visibleRange.to && codeblock.to > visibleRange.from);
-  });
-}
-function findCodeblocks(view) {
-  const codeblocks = [];
-  (0, import_language.syntaxTree)(view.state).iterate({
-    enter: (syntaxNode) => {
-      if (syntaxNode.type.name.includes("HyperMD-codeblock-begin") || syntaxNode.type.name === "HyperMD-codeblock_HyperMD-codeblock-bg" || syntaxNode.type.name.includes("HyperMD-codeblock-end"))
-        codeblocks.push(syntaxNode);
-    }
-  });
-  return codeblocks;
-}
-function modeHighlight({ start, text: text2, language }) {
-  var _a2;
-  const markDecorations = [];
-  const mode = window.CodeMirror.getMode(window.CodeMirror.defaults, (_a2 = window.CodeMirror.findModeByName(language)) == null ? void 0 : _a2.mime);
-  const state = window.CodeMirror.startState(mode);
-  if (mode == null ? void 0 : mode.token) {
-    const stream = new window.CodeMirror.StringStream(text2);
-    while (!stream.eol()) {
-      const style2 = mode.token(stream, state);
-      if (style2)
-        markDecorations.push({ from: start + stream.start, to: start + stream.pos, value: import_view.Decoration.mark({ class: `cm-${style2}` }) });
-      stream.start = stream.pos;
-    }
-  }
-  return markDecorations;
-}
-function editingViewIgnore(state) {
-  var _a2, _b, _c, _d;
-  if (!state.field(import_obsidian2.editorLivePreviewField))
-    return true;
-  const filePath = (_b = (_a2 = state.field(import_obsidian2.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path;
-  if (typeof filePath !== "undefined")
-    return ((_d = (_c = this.app.metadataCache.getCache(filePath)) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["code-styler-ignore"]) === true;
-  return false;
+function setDifference(array1, array2) {
+  return array1.filter((element3) => !array2.includes(element3));
 }
 
 // src/ReadingView.ts
-var import_obsidian3 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
 // node_modules/unist-util-is/lib/index.js
 var convert = (
@@ -6016,7 +7569,7 @@ var html2 = merge([xml, xlink, xmlns, aria, html], "html");
 var svg2 = merge([xml, xlink, xmlns, aria, svg], "svg");
 
 // node_modules/comma-separated-tokens/index.js
-function parse(value) {
+function parse2(value) {
   const tokens = [];
   const input = String(value || "");
   let index2 = input.indexOf(",");
@@ -6083,7 +7636,7 @@ function parseSelector(selector, defaultTagName) {
 }
 
 // node_modules/space-separated-tokens/index.js
-function parse2(value) {
+function parse3(value) {
   const input = String(value || "").trim();
   return input ? input.split(/[ \t\n\r\f]+/g) : [];
 }
@@ -6163,11 +7716,11 @@ function addProperty(schema, properties, key2, value) {
     result = value;
   } else if (typeof value === "string") {
     if (info.spaceSeparated) {
-      result = parse2(value);
+      result = parse3(value);
     } else if (info.commaSeparated) {
-      result = parse(value);
+      result = parse2(value);
     } else if (info.commaOrSpaceSeparated) {
-      result = parse2(parse(value).join(" "));
+      result = parse3(parse2(value).join(" "));
     } else {
       result = parsePrimitive(info, info.property, value);
     }
@@ -14570,7 +16123,7 @@ var VOID_ELEMENTS = /* @__PURE__ */ new Set([
 ]);
 
 // node_modules/parse5/dist/index.js
-function parse3(html5, options) {
+function parse4(html5, options) {
   return Parser.parse(html5, options);
 }
 function parseFragment(fragmentContext, html5, options) {
@@ -15798,7 +17351,7 @@ function fromHtml(value, options) {
   const settings = options || emptyOptions;
   const onerror = settings.onerror;
   const file = value instanceof VFile ? value : new VFile(value);
-  const fn = settings.fragment ? parseFragment : parse3;
+  const fn = settings.fragment ? parseFragment : parse4;
   const doc = String(file);
   const p5doc = fn(doc, {
     sourceCodeLocationInfo: true,
@@ -16848,6 +18401,8 @@ async function readingViewCodeblockDecoratingPostProcessor(element3, { sourcePat
   const codeblockSectionInfo = getSectionInfo(codeblockPreElements[0]);
   if (codeblockSectionInfo && specific && !editingEmbeds)
     await renderSpecificReadingSection(codeblockPreElements, sourcePath, codeblockSectionInfo, plugin);
+  else if (specific && sourcePath.startsWith(SETTINGS_SOURCEPATH_PREFIX))
+    await renderSettings(codeblockPreElements, sourcePath, plugin);
   else if (specific && !printing)
     await retriggerProcessor(element3, { sourcePath, getSectionInfo, frontmatter }, plugin, editingEmbeds);
   else
@@ -16871,7 +18426,7 @@ function destroyReadingModeElements() {
   ].forEach((element3) => element3.remove());
   document.querySelectorAll("pre.code-styler-pre").forEach((codeblockPreElement) => {
     codeblockPreElement.classList.remove("code-styler-pre");
-    codeblockPreElement.classList.remove("code-styler-collapsed");
+    codeblockPreElement.classList.remove("code-styler-folded");
     codeblockPreElement.style.removeProperty("--true-height");
     codeblockPreElement.style.removeProperty("--line-number-margin");
     codeblockPreElement.style.removeProperty("max-height");
@@ -16902,10 +18457,33 @@ function destroyReadingModeElements() {
   });
 }
 async function renderSpecificReadingSection(codeblockPreElements, sourcePath, codeblockSectionInfo, plugin) {
-  const codeblocksParameters = (await parseCodeblockSource(Array.from({ length: codeblockSectionInfo.lineEnd - codeblockSectionInfo.lineStart + 1 }, (_2, num) => num + codeblockSectionInfo.lineStart).map((lineNumber) => codeblockSectionInfo.text.split("\n")[lineNumber]), sourcePath, plugin)).codeblocksParameters;
+  const codeblocksParameters = (await parseCodeblockSource(Array.from({ length: codeblockSectionInfo.lineEnd - codeblockSectionInfo.lineStart + 1 }, (_2, num) => num + codeblockSectionInfo.lineStart).map((lineNumber) => codeblockSectionInfo.text.split("\n")[lineNumber]), plugin, sourcePath)).codeblocksParameters;
+  await remakeCodeblocks(codeblockPreElements, codeblocksParameters, true, false, plugin);
+}
+async function renderSettings(codeblockPreElements, sourcePath, plugin) {
+  const codeblocksParameters = (await parseCodeblockSource(sourcePath.substring(SETTINGS_SOURCEPATH_PREFIX.length).split("\n"), plugin)).codeblocksParameters;
+  await remakeCodeblocks(codeblockPreElements, codeblocksParameters, true, false, plugin);
+}
+async function renderDocument(codeblockPreElements, sourcePath, cache, editingEmbeds, printing, plugin) {
+  const codeblocksParameters = await getCodeblocksParameters(sourcePath, cache, plugin, editingEmbeds);
+  await remakeCodeblocks(codeblockPreElements, codeblocksParameters, !printing, true, plugin);
+}
+async function retriggerProcessor(element3, context, plugin, editingEmbeds) {
+  var _a2;
+  if (element3.matchParent("div.block-language-dataviewjs") && isCodeblockIgnored("dataviewjs", plugin.settings.processedCodeblocksWhitelist))
+    return;
+  await sleep(50);
+  editingEmbeds = editingEmbeds || Boolean(element3.matchParent(".cm-embed-block"));
+  if (editingEmbeds || !element3.classList.contains("admonition-content")) {
+    const contentEl = (_a2 = element3.matchParent(".view-content")) != null ? _a2 : element3.matchParent("div.print");
+    if (contentEl !== null)
+      await readingViewCodeblockDecoratingPostProcessor(contentEl, context, plugin, editingEmbeds);
+  }
+}
+async function remakeCodeblocks(codeblockPreElements, codeblocksParameters, dynamic, skipStyled, plugin) {
   if (codeblockPreElements.length !== codeblocksParameters.length)
     return;
-  for (const [key2, codeblockPreElement] of codeblockPreElements.entries()) {
+  for (const [key2, codeblockPreElement] of Array.from(codeblockPreElements).entries()) {
     const codeblockParameters = codeblocksParameters[key2];
     const codeblockCodeElement = codeblockPreElement.querySelector("pre > code");
     if (!codeblockCodeElement)
@@ -16913,43 +18491,11 @@ async function renderSpecificReadingSection(codeblockPreElements, sourcePath, co
     if (Array.from(codeblockCodeElement.classList).some((className) => /^language-\S+/.test(className)))
       while (!codeblockCodeElement.classList.contains("is-loaded"))
         await sleep(2);
-    if (isExcluded(codeblockParameters.language, plugin.settings.excludedLanguages) || codeblockParameters.ignore)
+    if (skipStyled && codeblockCodeElement.querySelector("code [class*='code-styler-line']"))
       continue;
-    await remakeCodeblock(codeblockCodeElement, codeblockPreElement, codeblockParameters, true, plugin);
-  }
-}
-async function retriggerProcessor(element3, context, plugin, editingEmbeds) {
-  if (element3.matchParent("div.block-language-dataviewjs") && /dataviewjs(?= |,|$)/.test(plugin.settings.excludedCodeblocks))
-    return;
-  await sleep(50);
-  editingEmbeds = editingEmbeds || Boolean(element3.matchParent(".cm-embed-block"));
-  if (editingEmbeds || !element3.classList.contains("admonition-content")) {
-    const contentEl = element3.matchParent(".view-content");
-    await readingViewCodeblockDecoratingPostProcessor(contentEl || element3.matchParent("div.print"), context, plugin, editingEmbeds);
-  }
-}
-async function renderDocument(codeblockPreElements, sourcePath, cache, editingEmbeds, printing, plugin) {
-  const codeblocksParameters = await getCodeblocksParameters(sourcePath, cache, plugin, editingEmbeds);
-  if (codeblocksParameters.length !== codeblockPreElements.length)
-    return;
-  try {
-    for (const [key2, codeblockPreElement] of Array.from(codeblockPreElements).entries()) {
-      const codeblockParameters = codeblocksParameters[key2];
-      const codeblockCodeElement = codeblockPreElement.querySelector("pre > code");
-      if (!codeblockCodeElement)
-        return;
-      if (Array.from(codeblockCodeElement.classList).some((className) => /^language-\S+/.test(className)))
-        while (!codeblockCodeElement.classList.contains("is-loaded"))
-          await sleep(2);
-      if (codeblockCodeElement.querySelector("code [class*='code-styler-line']"))
-        continue;
-      if (isExcluded(codeblockParameters.language, plugin.settings.excludedLanguages) || codeblockParameters.ignore)
-        continue;
-      await remakeCodeblock(codeblockCodeElement, codeblockPreElement, codeblockParameters, !printing, plugin);
-    }
-  } catch (error) {
-    console.error(`Error rendering document: ${error.message}`);
-    return;
+    if (isLanguageIgnored(codeblockParameters.language, plugin.settings.excludedLanguages) || codeblockParameters.ignore)
+      continue;
+    await remakeCodeblock(codeblockCodeElement, codeblockPreElement, codeblockParameters, dynamic, plugin);
   }
 }
 async function remakeCodeblock(codeblockCodeElement, codeblockPreElement, codeblockParameters, dynamic, plugin) {
@@ -16961,25 +18507,23 @@ async function remakeCodeblock(codeblockCodeElement, codeblockPreElement, codebl
   if (codeblockPreElement.parentElement)
     codeblockPreElement.parentElement.classList.add("code-styler-pre-parent");
   if (!codeblockCodeElement.querySelector("code [class*='code-styler-line']"))
-    decorateCodeblockLines(codeblockCodeElement, codeblockParameters);
+    decorateCodeblockLines(codeblockCodeElement, codeblockParameters, plugin.settings.currentTheme.settings.codeblock.lineNumbers);
 }
 async function remakeInlineCode(inlineCodeElement, plugin) {
-  if (inlineCodeElement.classList.contains("code-styler-inline"))
+  if (!plugin.settings.currentTheme.settings.inline.syntaxHighlight || inlineCodeElement.classList.contains("code-styler-inline"))
     return;
   const inlineCodeText = inlineCodeElement.innerText;
   const { parameters, text: text2 } = parseInlineCode(inlineCodeText);
-  if (parameters && plugin.settings.currentTheme.settings.inline.syntaxHighlight)
-    inlineCodeElement.innerHTML = await getHighlightedHTML(parameters, text2, plugin);
-  else if (!parameters && text2 || parameters && !plugin.settings.currentTheme.settings.inline.syntaxHighlight)
-    inlineCodeElement.innerHTML = text2;
-  else
-    return;
-  inlineCodeElement.classList.add("code-styler-inline");
   if (parameters) {
+    inlineCodeElement.innerHTML = await getHighlightedHTML(parameters, text2, plugin);
+    inlineCodeElement.classList.add("code-styler-inline");
     const parameterString = inlineCodeText.substring(0, inlineCodeText.lastIndexOf(text2));
     inlineCodeElement.setAttribute("parameters", parameterString);
     if (parameters.icon || parameters.title)
       inlineCodeElement.insertBefore(createInlineOpener(parameters, plugin.languageIcons), inlineCodeElement.childNodes[0]);
+  } else if (!parameters && text2) {
+    inlineCodeElement.innerText = text2;
+    inlineCodeElement.classList.add("code-styler-inline");
   }
 }
 async function getCodeblockPreElements(element3, specific, editingEmbeds) {
@@ -17008,7 +18552,7 @@ async function getCodeblocksParameters(sourcePath, cache, plugin, editingEmbeds)
   if (typeof (cache == null ? void 0 : cache.sections) !== "undefined") {
     for (const section of cache.sections) {
       if (!editingEmbeds || section.type === "code" || section.type === "callout") {
-        const parsedCodeblocksParameters = await parseCodeblockSource(fileContentLines.slice(section.position.start.line, section.position.end.line + 1), sourcePath, plugin);
+        const parsedCodeblocksParameters = await parseCodeblockSource(fileContentLines.slice(section.position.start.line, section.position.end.line + 1), plugin, sourcePath);
         if (!editingEmbeds || parsedCodeblocksParameters.nested)
           codeblocksParameters = codeblocksParameters.concat(parsedCodeblocksParameters.codeblocksParameters);
       }
@@ -17016,28 +18560,6 @@ async function getCodeblocksParameters(sourcePath, cache, plugin, editingEmbeds)
   } else
     console.error(`Metadata cache not found for file: ${sourcePath}`);
   return codeblocksParameters;
-}
-async function documentFold(contentEl, fold) {
-  const codeblockPreElements = document.querySelectorAll("pre.code-styler-pre");
-  if (typeof fold === "undefined")
-    codeblockPreElements.forEach((codeblockPreElement) => {
-      var _a2;
-      return toggleFold(codeblockPreElement, ((_a2 = codeblockPreElement.getAttribute("defaultFold")) != null ? _a2 : "false") === "true");
-    });
-  else
-    codeblockPreElements.forEach((codeblockPreElement) => toggleFold(codeblockPreElement, fold));
-}
-async function toggleFold(codeblockPreElement, fold) {
-  codeblockPreElement.querySelectorAll("pre > code").forEach((codeblockCodeElement) => codeblockCodeElement.style.setProperty("max-height", `calc(${Math.ceil(codeblockCodeElement.scrollHeight + 0.01)}px + var(--code-padding) * ${codeblockCodeElement.classList.contains("execute-code-output") ? "3.5 + var(--header-separator-width)" : "2"})`));
-  codeblockPreElement.classList.add("hide-scroll");
-  await sleep(1);
-  if (typeof fold === "undefined")
-    codeblockPreElement.classList.toggle("code-styler-collapsed");
-  else
-    fold ? codeblockPreElement.classList.add("code-styler-collapsed") : codeblockPreElement.classList.remove("code-styler-collapsed");
-  await sleep(TRANSITION_LENGTH);
-  codeblockPreElement.querySelectorAll("pre > code").forEach((codeblockCodeElement) => codeblockCodeElement.style.removeProperty("max-height"));
-  codeblockPreElement.classList.remove("hide-scroll");
 }
 function insertHeader(codeblockPreElement, codeblockParameters, plugin, dynamic) {
   const headerContainer = createHeader(codeblockParameters, plugin.settings.currentTheme.settings, plugin.languageIcons);
@@ -17047,13 +18569,40 @@ function insertHeader(codeblockPreElement, codeblockParameters, plugin, dynamic)
     });
   codeblockPreElement.insertBefore(headerContainer, codeblockPreElement.childNodes[0]);
 }
+function readingDocumentFold(contentEl, fold2) {
+  const codeblockPreElements = contentEl.querySelectorAll("pre.code-styler-pre");
+  if (typeof fold2 === "undefined")
+    codeblockPreElements.forEach((codeblockPreElement) => {
+      var _a2;
+      toggleFold(codeblockPreElement, ((_a2 = codeblockPreElement.getAttribute("defaultFold")) != null ? _a2 : "false") === "true");
+    });
+  else
+    codeblockPreElements.forEach((codeblockPreElement) => {
+      toggleFold(codeblockPreElement, fold2);
+    });
+}
+async function toggleFold(codeblockPreElement, fold2) {
+  var _a2, _b;
+  if ((_b = (_a2 = codeblockPreElement.firstElementChild) == null ? void 0 : _a2.classList) == null ? void 0 : _b.contains("code-styler-header-container-hidden"))
+    return;
+  codeblockPreElement.querySelectorAll("pre > code").forEach((codeblockCodeElement) => codeblockCodeElement.style.setProperty("max-height", `calc(${Math.ceil(codeblockCodeElement.scrollHeight + 0.01)}px + var(--code-padding) * ${codeblockCodeElement.classList.contains("execute-code-output") ? "3.5 + var(--header-separator-width)" : "2"})`));
+  codeblockPreElement.classList.add("hide-scroll");
+  await sleep(1);
+  if (typeof fold2 === "undefined")
+    codeblockPreElement.classList.toggle("code-styler-folded");
+  else
+    fold2 ? codeblockPreElement.classList.add("code-styler-folded") : codeblockPreElement.classList.remove("code-styler-folded");
+  await sleep(TRANSITION_LENGTH);
+  codeblockPreElement.querySelectorAll("pre > code").forEach((codeblockCodeElement) => codeblockCodeElement.style.removeProperty("max-height"));
+  codeblockPreElement.classList.remove("hide-scroll");
+}
 function getPreClasses(codeblockParameters, dynamic) {
   const preClassList = ["code-styler-pre"];
   if (codeblockParameters.language)
     preClassList.push(`language-${codeblockParameters.language}`);
   if (dynamic) {
     if (codeblockParameters.fold.enabled)
-      preClassList.push("code-styler-collapsed");
+      preClassList.push("code-styler-folded");
     if (codeblockParameters.lineUnwrap.alwaysEnabled)
       preClassList.push(codeblockParameters.lineUnwrap.activeWrap ? "unwrapped-inactive" : "unwrapped");
     else if (codeblockParameters.lineUnwrap.alwaysDisabled)
@@ -17061,10 +18610,10 @@ function getPreClasses(codeblockParameters, dynamic) {
   }
   return preClassList;
 }
-function decorateCodeblockLines(codeblockCodeElement, codeblockParameters) {
+function decorateCodeblockLines(codeblockCodeElement, codeblockParameters, showLineNumbers) {
   getCodeblockLines(codeblockCodeElement).forEach((line, index2, codeblockLines) => {
     if (index2 !== codeblockLines.length - 1)
-      insertLineWrapper(codeblockCodeElement, codeblockParameters, index2 + 1, line);
+      insertLineWrapper(codeblockCodeElement, codeblockParameters, index2 + 1, line, showLineNumbers);
   });
 }
 function getCodeblockLines(codeblockCodeElement) {
@@ -17089,16 +18638,17 @@ function getCodeblockLines(codeblockCodeElement) {
   codeblockCodeElement.innerHTML = "";
   return codeblockLines;
 }
-function insertLineWrapper(codeblockCodeElement, codeblockParameters, lineNumber, line) {
+function insertLineWrapper(codeblockCodeElement, codeblockParameters, lineNumber, line, showLineNumbers) {
   const lineWrapper = document.createElement("div");
   codeblockCodeElement.appendChild(lineWrapper);
   getLineClass(codeblockParameters, lineNumber, line).forEach((lineClass) => lineWrapper.classList.add(lineClass));
-  lineWrapper.appendChild(createDiv({ cls: `code-styler-line-number${getLineNumberDisplay(codeblockParameters)}`, text: (lineNumber + codeblockParameters.lineNumbers.offset).toString() }));
-  lineWrapper.appendChild(createDiv({ cls: "code-styler-line-text", text: (0, import_obsidian3.sanitizeHTMLToDom)(line !== "" ? line : "<br>") }));
+  if (showLineNumbers && !codeblockParameters.lineNumbers.alwaysDisabled || codeblockParameters.lineNumbers.alwaysEnabled)
+    lineWrapper.appendChild(createDiv({ cls: "code-styler-line-number", text: (lineNumber + codeblockParameters.lineNumbers.offset).toString() }));
+  lineWrapper.appendChild(createDiv({ cls: "code-styler-line-text", text: (0, import_obsidian5.sanitizeHTMLToDom)(line !== "" ? line : "<br>") }));
 }
 async function getHighlightedHTML(parameters, text2, plugin) {
   const temporaryRenderingContainer = createDiv();
-  import_obsidian3.MarkdownRenderer.render(plugin.app, ["```", parameters.language, "\n", text2, "\n", "```"].join(""), temporaryRenderingContainer, "", new import_obsidian3.Component());
+  import_obsidian5.MarkdownRenderer.render(plugin.app, ["```", parameters.language, "\n", text2, "\n", "```"].join(""), temporaryRenderingContainer, "", new import_obsidian5.Component());
   const renderedCodeElement = temporaryRenderingContainer.querySelector("code");
   if (!renderedCodeElement)
     return "ERROR: Could not render highlighted code";
@@ -17117,7 +18667,7 @@ var executeCodeMutationObserver = new MutationObserver((mutations) => {
 });
 
 // src/main.ts
-var CodeStylerPlugin = class extends import_obsidian4.Plugin {
+var CodeStylerPlugin = class extends import_obsidian6.Plugin {
   async onload() {
     await this.loadSettings();
     const settingsTab = new SettingsTab(this.app, this);
@@ -17149,7 +18699,7 @@ var CodeStylerPlugin = class extends import_obsidian4.Plugin {
         this.sizes.font = currentFontSize;
         clearTimeout(zoomTimeout);
         zoomTimeout = setTimeout(() => {
-          this.rerenderPreview();
+          this.renderReadingView();
         }, 1e3);
       }
     }, this));
@@ -17159,39 +18709,39 @@ var CodeStylerPlugin = class extends import_obsidian4.Plugin {
         this.sizes.zoom = currentZoomSize;
         clearTimeout(zoomTimeout);
         zoomTimeout = setTimeout(() => {
-          this.rerenderPreview();
+          this.renderReadingView();
         }, 1e3);
       }
     }, this));
     this.addCommand({ id: "fold-all", name: "Fold all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
-          documentFold(activeView.contentEl, true);
+          readingDocumentFold(activeView.contentEl, true);
         else if (activeView.getMode() === "source")
-          console.debug("Command does not exist yet");
+          editingDocumentFold(activeView.editor.cm.docView.view, true);
       }
     } });
     this.addCommand({ id: "unfold-all", name: "Unfold all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
-          documentFold(activeView.contentEl, false);
+          readingDocumentFold(activeView.contentEl, false);
         else if (activeView.getMode() === "source")
-          console.debug("Command does not exist yet");
+          editingDocumentFold(activeView.editor.cm.docView.view, false);
       }
     } });
     this.addCommand({ id: "reset-all", name: "Reset fold state for all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
-          documentFold(activeView.contentEl);
+          readingDocumentFold(activeView.contentEl);
         else if (activeView.getMode() === "source")
-          console.debug("Command does not exist yet");
+          editingDocumentFold(activeView.editor.cm.docView.view);
       }
     } });
     this.app.workspace.onLayoutReady(() => {
-      this.rerenderPreview();
+      this.renderReadingView();
     });
     console.log("Loaded plugin: Code Styler");
   }
@@ -17204,16 +18754,16 @@ var CodeStylerPlugin = class extends import_obsidian4.Plugin {
     console.log("Unloaded plugin: Code Styler");
   }
   async loadSettings() {
-    this.settings = Object.assign({}, structuredClone(DEFAULT_SETTINGS), await this.loadData());
+    this.settings = Object.assign({}, structuredClone(DEFAULT_SETTINGS), convertSettings(await this.loadData()));
   }
   async saveSettings() {
     await this.saveData(this.settings);
     this.app.workspace.updateOptions();
     updateStyling(this.settings, this.app);
   }
-  rerenderPreview() {
+  renderReadingView() {
     this.app.workspace.iterateRootLeaves((leaf) => {
-      if (leaf.view instanceof import_obsidian4.MarkdownView && leaf.view.getMode() === "preview")
+      if (leaf.view instanceof import_obsidian6.MarkdownView && leaf.view.getMode() === "preview")
         leaf.view.previewMode.rerender(true);
     });
   }

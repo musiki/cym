@@ -175,15 +175,6 @@
       "key": "P"
     }
   ],
-  "file-explorer:move-file": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "P"
-    }
-  ],
   "editor:fold-all": [
     {
       "modifiers": [
@@ -331,16 +322,6 @@
         "Shift"
       ],
       "key": "M"
-    }
-  ],
-  "insert-template": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "T"
     }
   ],
   "shortcuts-extender:heading-1": [
@@ -525,14 +506,6 @@
   "editor:toggle-checklist-status": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "obsidian-outliner:system-info": [],
-  "obsidian-collapse-all-plugin:toggle-tag": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
-    }
-  ],
   "obsidian-book-search-plugin:open-book-search-modal": [
     {
       "modifiers": [
@@ -626,6 +599,48 @@
         "Shift"
       ],
       "key": "W"
+    }
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "shortcuts-extender:shortcut-circumflex": [],
+  "shortcuts-extender:shortcut-percent": [],
+  "shortcuts-extender:shortcut-hash": [],
+  "shortcuts-extender:shortcut-ampersand": [],
+  "shortcuts-extender:shortcut-dollar": [],
+  "obsidian-hider:toggle-tab-containers": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "translate:translator-selection-default": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "."
     }
   ]
 }

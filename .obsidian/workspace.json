@@ -13,38 +13,11 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "image/Pasted image 20230829224353.png"
-              }
-            }
-          },
-          {
-            "id": "b6e034d32f219935",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym05-integración.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4139cde9b55ec139",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-ref/a-yuda.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
+                "file": "image/Pasted image 20230829225649.png"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/a-yuda.md"
+                "file": "image/Pasted image 20230829225649.png"
               }
             }
           },
@@ -139,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "image/Pasted image 20230829225649.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-ref/a-yuda.md",
+                "file": "image/Pasted image 20230829225649.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,53 +201,53 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "4139cde9b55ec139",
+  "active": "ecfa88d1ea0545d2",
   "lastOpenFiles": [
-    "03-cla/c-cym05-integración.md",
-    "image/Pasted image 20230829224353.png",
-    "image/Pasted image 20230829225649.png",
-    "image/Pasted image 20230829224242.png",
-    "image/Pasted image 20230829224222.png",
-    "image/Pasted image 20230829224100.png",
-    "image/Pasted image 20230829223415.png",
-    "image/Pasted image 20230829223230.png",
-    "image/meta-aprendizaje-1660395828475.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual.md",
-    "03-cla/c-cym06-flex-grid.md",
-    "01-proj/23/Zaracho/Zaracho.md",
-    "04-ref/a-yuda.md",
-    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "03-cla/c-cym03 mapas.md",
-    "03-cla/c-cym04-vida digital.md",
-    "04-ref/a-dataview.md",
-    "04-ref/topoi/Forma Musical.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
-    "04-ref/topoi/Cuarta Revolución Industrial.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/shifres",
-    "01-proj/23/bassino/codepen/Multi-efecto.md",
-    "01-proj/23/bassino/codepen",
-    "image/Pasted image 20230829230243.png",
-    "image/Pasted image 20230829230127.png",
-    "image/Maura McDonnell topoi.docx",
-    "04-ref/topoi/Intervencion del espacio público.md",
-    "04-ref/topoi/Internetmusic.md",
-    "04-ref/topoi/Historia de la tecnología.md",
-    "04-ref/topoi/Filosofía histórica.md",
-    "04-ref/topoi/Augmented Cognition.md",
-    "04-ref/topoi/Arte participativo.md",
-    "04-ref/image",
-    "04-ref/glosario",
-    "01-proj/23/Zaracho",
-    "04-ref/musica visual_ bassino_topoi.pdf",
-    "04-ref/espacios",
-    "01-proj/23/beltrame",
+    "image/Pasted image 20230829225649.png",
+    "01-proj/21/tortorelli/Simon dice.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
+    "01-proj/21/marazzi/Collage sonoro.md",
+    "01-proj/21/marazzi/Collage sonoro app.md",
+    "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
+    "01-proj/21/kobayashi/Generador random.md",
+    "01-proj/21/tortorelli",
+    "01-proj/21/oliva",
+    "01-proj/21/marazzi",
+    "01-proj/21/fernandez burzaco",
+    "01-proj/21/kobayashi",
+    "01-proj/21",
+    "01-proj/18/vivona/Domo.md",
+    "01-proj/18/gueglio/Posdata fluidos.md",
+    "01-proj/18/garella/Dédalo.md",
+    "01-proj/18/galetto/Moving sound.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+    "01-proj/18/vivona",
+    "01-proj/18/gueglio",
+    "01-proj/18/garella",
+    "01-proj/18/galetto",
+    "01-proj/17/paladino/No music player.md",
+    "01-proj/17/navarro/Ajedrez.md",
+    "01-proj/17/moscato/La forma de la identidad real.md",
+    "01-proj/17/lopez/Boreal.md",
+    "01-proj/17/herrera/Superficies sonoras blandas.md",
+    "01-proj/17/julia/Nukzeiber.md",
+    "01-proj/17/borsalino/Condensador de eventos.md",
+    "01-proj/17/arcuri/Sensonorizando.md",
+    "01-proj/16/lopez/Trazo 5.md",
+    "01-proj/16/juan/Instalación.md",
+    "01-proj/16/ferreyra/Juggling music.md",
+    "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
+    "02-mat/obs/img/Pasted image 20230829224242.png",
+    "00-in/cym MOC-1694393867412.jpeg",
+    "00-in/cym MOC-1694393867410.jpeg",
+    "00-in/cym MOC-1694393867407.jpeg",
+    "00-in/cym MOC-1694393867405.jpeg",
+    "00-in/cym MOC-1694393867397.jpeg",
+    "image/Pasted image 20230829224353.png",
+    "image/Pasted image 20230829224242.png",
     "Untitled.canvas",
     "cym-metamap.canvas",
     "03-cla/cym-map.canvas"

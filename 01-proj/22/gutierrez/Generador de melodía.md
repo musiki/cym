@@ -1,5 +1,5 @@
 ---
-type: project
+type: exercise
 author: Juan Ignacio Gutierrez 
 tags: code , js ,tonejs
 publish: 2022
@@ -9,7 +9,8 @@ publish: 2022
 
 Dejo el código con el que estoy trabajando, consiste en un loop que utiliza tres tipos de sintetizadores de JS (PolySynth, FMSynth y AMSynth). Se trata de un código existente al cual le agregué unas modificaciones y botones de Play/Stop. 
 
-https://codepen.io/juanignaciog99/pen/ExEzMWw
+<iframe height="360" width="640" src="https://codepen.io/juanignaciog99/pen/ExEzMWw" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
+
 
 ----------------------------------
 

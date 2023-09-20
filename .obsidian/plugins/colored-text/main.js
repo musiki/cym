@@ -23561,7 +23561,7 @@ __export(main_exports, {
 module.exports = __toCommonJS(main_exports);
 var import_obsidian3 = require("obsidian");
 
-// src/ColorBar.ts
+// src/colorBar.ts
 var ColorBar = class {
   constructor(plugin) {
     this.onClick = (index) => (e) => {
@@ -23597,7 +23597,7 @@ var ColorBar = class {
   }
 };
 
-// src/ColorModal.tsx
+// src/colorModal.tsx
 var import_obsidian = require("obsidian");
 var import_react3 = __toESM(require_react());
 var import_client = __toESM(require_client());
@@ -24955,7 +24955,7 @@ var ColorPalette = ({
 };
 var ColorPalette_default = ColorPalette;
 
-// src/ColorModal.tsx
+// src/colorModal.tsx
 var ColorModal = class extends import_obsidian.Modal {
   constructor(app2, plugin, prevColor, onSubmit) {
     super(app2);
@@ -25008,8 +25008,8 @@ var ColorModal = class extends import_obsidian.Modal {
   }
 };
 
-// src/RGBConverter.ts
-var RGBConverter = class {
+// src/rgbConverter.ts
+var RgbConverter = class {
   componentToHex(c2) {
     let hex = c2.toString(16);
     return hex.length == 1 ? "0" + hex : hex;
@@ -25045,6 +25045,60 @@ var DEFAULT_SETTINGS = {
   colorCellCount: "5"
 };
 
+// src/colorRemover.ts
+function removeColor(editor) {
+  const fromCursor = editor.getCursor("from");
+  const toCursor = editor.getCursor("to");
+  const spanRegex = /<span style=".*?">(.*?)<\/span>(.*?)/;
+  const spanRegexG = /<span style=".*?">(.*?)<\/span>(.*?)/g;
+  const beginRegex = /<span style=".*?">/;
+  const endString = "</span>";
+  if (fromCursor.ch == toCursor.ch && fromCursor.line == toCursor.line) {
+    const cursor = fromCursor;
+    const line2 = editor.getLine(cursor.line);
+    let d = 0;
+    let sub = line2.substring(d);
+    let found = false;
+    while (!found && sub.search(spanRegex) != -1) {
+      const pos = sub.search(spanRegex);
+      d += pos;
+      const close = sub.substring(pos).search(endString);
+      if (cursor.ch >= d && cursor.ch < d + close + endString.length) {
+        const newLine = line2.substring(0, d) + line2.substring(d).replace(spanRegex, "$1$2");
+        editor.setLine(cursor.line, newLine);
+        editor.setCursor({ line: cursor.line, ch: d });
+        found = true;
+      } else {
+        sub = sub.substring(pos + 1);
+      }
+    }
+  } else {
+    const lines = [...Array(toCursor.line - fromCursor.line + 1)].map((x2, i2) => editor.getLine(fromCursor.line + i2));
+    const lastInd = lines.length - 1;
+    lines[lastInd] = lines[lastInd].substring(0, toCursor.ch);
+    lines[0] = lines[0].substring(fromCursor.ch);
+    let unendedBeginIndex = null;
+    for (const [i2, l2] of lines.entries()) {
+      let newLine = l2;
+      newLine = newLine.replaceAll(spanRegexG, "$1$2");
+      lines[i2] = newLine;
+      if (newLine.search(endString) != -1 && unendedBeginIndex) {
+        const j2 = unendedBeginIndex.line;
+        const ch = unendedBeginIndex.ch;
+        lines[j2] = lines[j2].substring(0, ch) + lines[j2].substring(ch).replace(beginRegex, "");
+        lines[i2] = lines[i2].replace(endString, "");
+      }
+      if (newLine.search(beginRegex) != -1) {
+        unendedBeginIndex = { line: i2, ch: newLine.search(beginRegex) };
+      }
+    }
+    lines[0] = editor.getLine(fromCursor.line).substring(0, fromCursor.ch) + lines[0];
+    lines[lastInd] = lines[lastInd] + editor.getLine(toCursor.line).substring(toCursor.ch);
+    lines.map((l2, i2) => editor.setLine(fromCursor.line + i2, l2));
+    editor.setCursor(fromCursor);
+  }
+}
+
 // src/contextMenu.ts
 function contextMenu(app2, menu, editor, plugin, curColor) {
   const selection = editor.getSelection();
@@ -25056,6 +25110,11 @@ function contextMenu(app2, menu, editor, plugin, curColor) {
           const cursorEnd = editor.getCursor("to");
           editor.setCursor(cursorEnd.line, cursorEnd.ch + 1);
         }
+      });
+    });
+    menu.addItem((item) => {
+      item.setTitle("Remove Color").onClick((e) => {
+        removeColor(editor);
       });
     });
   }
@@ -25112,7 +25171,7 @@ var ColoredFont = class extends import_obsidian3.Plugin {
   constructor() {
     super(...arguments);
     this.colorDivs = [];
-    this.rgbConverter = new RGBConverter();
+    this.rgbConverter = new RgbConverter();
     this.handleColorChangeInContextMenu = (menu, editor) => {
       contextMenu(app, menu, editor, this, this.curColor);
     };
@@ -25133,7 +25192,7 @@ var ColoredFont = class extends import_obsidian3.Plugin {
       name: "Color Text",
       hotkeys: [],
       editorCallback: (editor, view) => {
-        let selection = editor.getSelection();
+        const selection = editor.getSelection();
         editor.replaceSelection(`<span style="color:${this.curColor}">${selection}</span>`);
         const cursorEnd = editor.getCursor("to");
         cursorEnd.ch -= 7;
@@ -25159,6 +25218,14 @@ var ColoredFont = class extends import_obsidian3.Plugin {
       name: "Change the Color Backwards",
       hotkeys: [],
       callback: () => this.selectColor(this.curIndex == 0 ? this.cellCount - 1 : this.curIndex - 1)
+    });
+    this.addCommand({
+      id: "remove-color",
+      name: "Remove Color From Selection / Under Cursor",
+      hotkeys: [],
+      editorCallback: (editor, view) => {
+        removeColor(editor);
+      }
     });
   }
   openColorModal() {

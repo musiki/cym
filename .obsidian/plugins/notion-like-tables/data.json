@@ -2,12 +2,16 @@
   "shouldDebug": false,
   "createAtObsidianAttachmentFolder": false,
   "customFolderForNewFiles": "",
-  "exportRenderMarkdown": true,
+  "removeMarkdownOnExport": true,
   "defaultEmbedWidth": "100%",
   "defaultEmbedHeight": "340px",
   "hasMigratedTo800": true,
   "showWelcomeModal": false,
-  "pluginVersion": "8.0.0",
+  "showDonationModal": true,
+  "showWhatsNewModal": true,
+  "defaultFrozenColumnCount": 1,
+  "pluginVersion": "8.4.1",
+  "exportRenderMarkdown": true,
   "appData": {},
   "state": {
     "04-ref/a-yuda.md": {
