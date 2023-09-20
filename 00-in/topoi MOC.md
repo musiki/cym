@@ -1,12 +1,14 @@
 
-## topoi
+---
+cssClasses: cards
+--- 
+
 
 ```dataview
-Table author as author, publish as "año", tags as tagsm ,unit
-WHERE contains(type,"topoi")
+Table  without ID("![|100](" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags
+FROM "04-out/topoi"
 SORT Status DESC
 ```
-
 
 
 # definition
@@ -21,8 +23,7 @@ SORT Status DESC
 note: electronic music is part of media art, where the artistic subject concentrantes on the medium and its diffusion (?).  its possiblity of dealing with media allowed to create a suynesthesic and expanded-perceptive art.
 
 
----
- ### 10 ontológicos
+### 10 ontológicos
  
   - [[Método científico]]
  - [[Sistemas de universos]]
@@ -30,15 +31,13 @@ note: electronic music is part of media art, where the artistic subject concentr
 - [[Filosofía histórica]]
 - [[Historia de la tecnología]]
 
---
 ### 20 materiales y exo-instrumentales
 - impresión 3d
 - amplificación
-	- música electrónica
-	- realimentación
-	- instrumentos aumentados
-	- microsonido
---
+- música electrónica
+- realimentación
+- instrumentos aumentados
+- microsonido
 - música visual
 - artes visuales
 - literatura generativa
@@ -48,10 +47,7 @@ note: electronic music is part of media art, where the artistic subject concentr
 - química y elementos
 - biomúsica
 
---
-  
 ###  30 generativos
-  
   - complejidad 
   - vida artificial 
   - composición algorítimica 
@@ -61,37 +57,27 @@ note: electronic music is part of media art, where the artistic subject concentr
   - matemática y  algorítmica 
   - literatura generativa
   
---
-
-
- ### 40 humanos
+### 40 humanos
  -  post-humanismo 
   - feminismo cyborg queer 
  -  humanos y neurociencias 
   - alteraciones perceptivas 
 -  arte de performance
 
---
-  ### 50 sociales
+###  50 sociales
   - [[Arte participativo]]
   - exhibiciones históricas  
   - sistemas de creencias
   - hacktivismo 
 
---
-
-  ### [[Espacio]]
-  
+### [[Espacio]]
 - arquitectura 
  - arquitectura aural 
 -  tiempo 
 -  soundscape 
 - percepción auditica 
 
---
 ###  [[Internetmusic]]	  
-
---
 
 ### técnicos
 [[js01-fundamentals]]
@@ -102,4 +88,3 @@ note: electronic music is part of media art, where the artistic subject concentr
 [[sc-supercollider]]
 [[sib-sibelius manuscript]]
 [[que es git]]
-

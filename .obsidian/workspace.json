@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "62ae73c075fe3640",
+        "id": "d20bda0a78797617",
         "type": "tabs",
         "children": [
           {
-            "id": "252904837f9f7344",
+            "id": "feceb8137dec6c95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Psicoacústica.md",
-                "mode": "source",
+                "file": "01-proj/23/Petroccelli/Psicoacústica.md",
+                "mode": "preview",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Psicoacústica.md"
+                "file": "01-proj/23/Petroccelli/Psicoacústica.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Psicoacústica.md",
+                "file": "01-proj/23/Petroccelli/Psicoacústica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-in/Psicoacústica.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,6 +181,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
       "obsidian-spaced-repetition:Revisar Tarjetas": false,
       "markdown-importer:Abrir el importador de Markdown": false,
       "workspaces:Gestionar disposiciones de espacio de trabajo": false,
@@ -195,7 +198,6 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "notion-like-tables:Create new loom": false,
-      "dbfolder:Crear una nueva tabla de base de datos": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-metatable:Metatable": false,
@@ -203,54 +205,55 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "252904837f9f7344",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "03-cla/c-cym05-integración.md",
-    "00-in/Psicoacústica.md",
-    "image/PSICOACÚSTICA.pdf",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-networking.md",
-    "03-cla/c-cym06-flex-grid.md",
-    "04-ref/topoi/Introducción a la psicoacústica.md",
-    "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "03-cla/c-cym04-vida digital.md",
+    "00-in/Sin título.md",
+    "01-proj/23/Petroccelli/Psicoacústica.md",
     "conflict-files-obsidian-git.md",
-    "04-ref/bibliografía/Matt Pearson_Generative Art.md",
-    "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
-    "03-cla/c-cym06- cohesión audiovisual.md",
-    "01-proj/23/Zaracho/Zaracho.md",
-    "01-proj/23/Zaracho",
-    "00-in/memex.md",
-    "00-in/hd-hydra.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "00-in/Untitled.md",
+    "image/image",
+    "image",
+    "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "01-proj/21/tortorelli/Simon dice.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/marazzi/Collage sonoro.md",
+    "01-proj/21/marazzi/Collage sonoro app.md",
+    "01-proj/21/kobayashi/Generador random.md",
+    "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
+    "01-proj/21/oliva",
+    "01-proj/21/tortorelli",
+    "01-proj/21/marazzi",
+    "01-proj/21/kobayashi",
+    "01-proj/21/fernandez burzaco",
+    "01-proj/21",
+    "01-proj/20/jaramillo/Unísono virtual.md",
+    "01-proj/20/jaramillo/Unísono virtual código.md",
+    "01-proj/20/ruiz burtoli/Conexiones.md",
+    "01-proj/20/ruiz burtoli/Conexiones código.md",
+    "01-proj/20/belotti/Soundchess proyectual tentativo.md",
+    "01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md",
+    "01-proj/20/bonetto/La verduleria.md",
+    "01-proj/20/bonetto/Oscilador de audio con alimentos.md",
+    "01-proj/20/amieva/Intensa.md",
+    "01-proj/20/jaramillo",
+    "01-proj/20/ruiz burtoli",
+    "01-proj/19/gawel/Metáforas.md",
+    "01-proj/19/perez rivas/Reproduciéndonos.md",
+    "01-proj/19/costa/Canoa atemporal.md",
+    "01-proj/19/barbaglia/Miradas dirigidas.md",
+    "01-proj/15/porrini/Un día bello.md",
+    "01-proj/15/garcia fernandez/La sombra de lo abstracto.md",
+    "04-ref/Psicoacústica-1695169193637.jpeg",
+    "04-ref/Psicoacústica-1695169193633.jpeg",
+    "00-in/cym MOC-1694393867412.jpeg",
+    "00-in/cym MOC-1694393867410.jpeg",
+    "04-ref/Psicoacústica-1695169193632.jpeg",
+    "00-in/cym MOC-1694393867405.jpeg",
+    "04-ref/Psicoacústica-1695169193631.jpeg",
     "04-ref/image/Untitled-1693882066639.jpeg",
-    "04-ref/image",
-    "04-ref/glosario/PaaS.md",
-    "04-ref/glosario",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/shifres",
-    "01-proj/23/bassino/codepen/Multi-efecto.md",
-    "01-proj/23/bassino/codepen",
     "04-ref/image/Untitled-1693882066447.jpeg",
     "04-ref/image/Untitled-1693882066443.jpeg",
-    "04-ref/image/Untitled-1693882066429.jpeg",
-    "04-ref/image/Untitled-1693882066425.jpeg",
-    "04-ref/image/Untitled-1693882066419.jpeg",
-    "04-ref/image/Untitled-1693882066413.jpeg",
-    "04-ref/image/Untitled-1693882066245.jpeg",
-    "04-ref/image/Untitled-1693882066240.jpeg",
-    "04-ref/image/Untitled-1693882066232.jpeg",
-    "image/Maura McDonnell topoi.docx",
-    "04-ref/topoi/Intervencion del espacio público.md",
-    "04-ref/topoi/Internetmusic.md",
-    "04-ref/topoi/Historia de la tecnología.md",
-    "04-ref/topoi/Forma Musical.md",
-    "04-ref/topoi/Filosofía histórica.md",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/Petroccelli",
     "cym-metamap.canvas",
-    "02-mat/procesos/Untitled.loom",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

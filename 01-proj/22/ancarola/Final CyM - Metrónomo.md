@@ -1,16 +1,10 @@
 
 ---
-type: project
+type: exercise
 author: Juan Martín Ancarola
-tags: code , js ,tonejs
+tags: code, js, tonejs
 publish: 2022
 ---
-Proyectual y un link a codepen sobre lo que estuve trabajando.
+<iframe height="360" width="640" src="https://codepen.io/jmancarola/pen/dyKQBGE" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 
-Tomé el metrónomo que había mostrado en clase y le agregué audio. Botones play, stop y un slider que regula los bpm junto a la animación del metrónomo.
-
-Saludos!
-
-
-https://codepen.io/jmancarola/pen/dyKQBGE
 

@@ -1,3 +1,11 @@
+*.DS_Store
+node_modules
+package-lock.json
+*.iml
+data.json
+.obsidian/themes
+.obsidian/appearance.json
+.obsidian/workspace.json
 .obsidian/plugins/obsidian-activity-history/data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json
@@ -20,5 +28,22 @@
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json
 .obsidian/core-plugins.json
+<<<<<<< HEAD
 .obsidian/workspace.json.obsidian/plugins/obsidian-commits/data.json
 .obsidian/plugins/obsidian-activity-history/data.json
+=======
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
+
+
+>>>>>>> origin/main
