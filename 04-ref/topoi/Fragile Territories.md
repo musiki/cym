@@ -2,11 +2,15 @@
 author: Fabián Bassino
 tags: musica visual, topoi
 publish: 2023
+banner: >-
+  https://roberthenke.com/files_images/installations/fragile-territories/FragileTerritoriesRennesPreOpening.jpg
 ---
+
+# Fragile Territories
 
 Fragile Territories es una obra compuesta por Robert Henke expuesta en los años 2012-2014, 2016 y 2019.
 
-Robert Henke, es un artista musical alemán que trabaja en los campos de la instalación audiovisual, la música y la interpretación.  Desarrollar sus propios instrumentos y algoritmos es una parte integral de su proceso creativo. Sus materiales son sonido e imágenes generados por computadora, grabaciones de campo, fotografía y luz; transformado, reorganizado y modulado por reglas matemáticas, interacción en tiempo real y operaciones aleatorias controladas. Durante los últimos años, ha estado explorando el uso artístico de láseres de alta potencia en sus instalaciones y actuaciones.
+Robert Henke, es un artista musical alemán que trabaja en los campos de la instalación audiovisual, la música y la interpretación.  Desarrollar sus propios instrumentos y algoritmos es una parte integral de su proceso creativo. Sus materiales son sonido e imágenes generados por computadora, grabaciones de campo, fotografía y luz; transformado, reorganizado y modulado por reglas matemáticas, interacción en tiempo real y operaciones aleatorias controladas. Durante los últimos años, ha estado explorando el uso artístico de láseres de alta potencia en sus instalaciones y actuaciones.
 
 Henke fue co-desarrollador de lo que hoy conocemos como Ableton Live, uno de los DAWs más reconocidos de la historia de la música por computadora.
 
@@ -22,6 +26,6 @@ Los componentes de audio e imagen se componen a partir de algoritmos estocástic
 
 Tras la instalación Fragile Territories, el artista se aventuró en 2013 a un proyecto llamado Lumière en donde establece un sistema que le permitiese expresarse en tiempo real mediante la improvisación, tanto desde el aspecto visual como desde el sonoro. Básicamente utiliza Live para disparar clips tanto musicales como de patrones MIDI que leen los emisores de laser y se sincronizan desde la aplicación misma, gracias a patches de Max creados enteramente por el artista.
 
-**Fragile Territories**  [**https://roberthenke.com/installations/fragile_territories.html**](https://roberthenke.com/installations/fragile_territories.html
+**Fragile Territories**  \[**https://roberthenke.com/installations/fragile\_territories.html**]\(https://roberthenke.com/installations/fragile\_territories.html
 
-**Lumière** [**https://www.youtube.com/watch?v=ZFr0n2q0BaQ&ab_channel=CONCERTera**](https://www.youtube.com/watch?v=ZFr0n2q0BaQ&ab_channel=CONCERTera)
+**Lumière** [**https://www.youtube.com/watch?v=ZFr0n2q0BaQ\&ab\_channel=CONCERTera**](https://www.youtube.com/watch?v=ZFr0n2q0BaQ\&ab\_channel=CONCERTera)

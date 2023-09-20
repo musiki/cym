@@ -1,9 +1,12 @@
 ---
+quickshare-date: 2023-08-31 20:12:16
+quickshare-url: "https://noteshare.space/note/cllzhgz861758801mwp5ev0i17#qFHdrJyYLHskrPbI2Fe/NdQDJ1twgGIYmRDMgoqyYuo"
 type: topoi
 tags: psicoacústica, topoi
 unit: 00
 author: Ezequiel A. Petroccelli
 publish: 2023
+banner: "https://c8.alamy.com/compit/2g7me18/bianco-e-nero-sfondo-illusione-ottica-illustrazione-vettoriale-2g7me18.jpg"
 ---
 
 

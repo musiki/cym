@@ -4,7 +4,10 @@ tags: videojuegos, capitalismo, sociologia, topoi
 unit: 52
 author: Nicolás López
 date: 2022-08-30
+banner: "https://d3i71xaburhd42.cloudfront.net/a250d1234a74d0679f4504bf8bc96da50c924014/3-Figure2-1.png"
 ---
+
+<iframe height="360" width="640" src="https://padlet.com/marcosnicolaslopez/racionalizaci-n-en-videojuegos-k4gktoles1yb68nx" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 
 # Racionalización (Videojuegos)
 La **racionalización de los videojuegos** es el proceso por el cual los videojuegos y el *gaming*, mediante el avance de su tecnificación y comercialización, devienen en sistemas legales-racionales. Este concepto fue propuesto por Sara Grimes y Andrew Feenberg en el marco de lo que han denominado *teoría de la ludificación*[^1]. Se trata de un estudio que interpreta a los videojuegos y su práctica a partir de la [teoría crítica](https://es.wikipedia.org/wiki/Teor%C3%ADa_cr%C3%ADtica), adoptando el concepto weberiano de [racionalización](https://es.wikipedia.org/wiki/Racionalizaci%C3%B3n_(sociolog%C3%ADa)) de las sociedad capitalistas modernas.

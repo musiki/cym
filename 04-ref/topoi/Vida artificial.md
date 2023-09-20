@@ -4,6 +4,7 @@ tags: vidaartificial, generative , topoi
 unit: 30
 publish: 2020
 author: zztt
+banner: "https://upload.wikimedia.org/wikipedia/commons/6/64/Trefoil_knot_conways_game_of_life.gif?20200305165956"
 ---
 
 

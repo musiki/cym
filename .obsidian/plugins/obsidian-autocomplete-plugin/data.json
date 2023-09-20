@@ -1,13 +1,13 @@
 {
-  "enabled": false,
-  "autoSelect": false,
+  "enabled": true,
+  "autoSelect": true,
   "autoTrigger": false,
   "autoTriggerMinSize": 3,
   "triggerLikeVim": false,
   "latexProvider": true,
   "flowProvider": true,
   "flowProviderScanCurrent": true,
-  "flowProviderTokenizeStrategy": "japanese",
+  "flowProviderTokenizeStrategy": "default",
   "flowWordSeparators": {
     "default": "~?!@#$%^&*()-=+[{]}|;:' \",.<>/",
     "arabic": "~?!@#$%^&*()-=+[{]}|;:' \",.<>/،؛",
