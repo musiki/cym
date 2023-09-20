@@ -35,4 +35,13 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 ![Pasted image 20230914125032.png](app://e0d972600592816cf4284075d3a656236fe0/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125032.png?1694706632337)
 
 ### the Scandroid
-![Pasted image 20230914125117.png](app://e0d972600592816cf4284075d3a656236fe0/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125117.png?1694706677506)
+<iframe width="560" height="315" src="http://charlesohartman.com/verse/metrics/tutorials/interactive.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Bibliografía
+
+MONTFORT, N. (2016). _Exploratory Programming for the Arts and Humanities._ MIT Press
+
+MONTFORT, N. (2017). _The future_. MIT Press
+
+Connected Code: Why Children Need to Learn Programming de Yasmin B. Kafai y Quinn Burke
