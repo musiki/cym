@@ -816,7 +816,7 @@
     },
     "04-out/personas/Dick Raaijmakers.md": {
       "size": 228,
-      "tags": 8,
+      "tags": 7,
       "links": 0
     },
     "04-out/personas/Donna Haraway.md": {
@@ -902,7 +902,7 @@
     "04-out/topoi/Azar.md": {
       "size": 1907,
       "tags": 4,
-      "links": 2
+      "links": 0
     },
     "04-out/topoi/Cuarta Revolución Industrial.md": {
       "size": 8315,
@@ -1010,9 +1010,9 @@
       "links": 0
     },
     "04-out/topoi/Sistemas complejos.md": {
-      "size": 3871,
+      "size": 2485,
       "tags": 3,
-      "links": 2
+      "links": 0
     },
     "04-out/topoi/Sistemas de universos.md": {
       "size": 20490,
@@ -1186,13 +1186,13 @@
     },
     "03-cla/c-cym05.06-integración.md": {
       "size": 7030,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 6
     },
     "03-cla/c-cym06-principios generativos.md": {
       "size": 603,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 2
     },
     "03-cla/c-cym06b-relaciones sonolumínicas.md": {
       "size": 6069,
@@ -1202,12 +1202,12 @@
     "03-cla/c-cym06c-tonejs.md": {
       "size": 1315,
       "tags": 0,
-      "links": 0
+      "links": 3
     },
     "03-cla/c-cym07-cohesión audiovisual.md": {
       "size": 10545,
-      "tags": 0,
-      "links": 0
+      "tags": 7,
+      "links": 7
     },
     "03-cla/c-cym07-human-book-computer.md": {
       "size": 0,
@@ -1216,12 +1216,12 @@
     },
     "03-cla/c-cym08-flex-grid.md": {
       "size": 619,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 1
     },
     "03-cla/c-cym09-networking.md": {
       "size": 873,
-      "tags": 0,
+      "tags": 7,
       "links": 0
     },
     "04-out/README (1).md": {
@@ -1237,7 +1237,7 @@
     "04-out/SUMMARY.md": {
       "size": 6373,
       "tags": 0,
-      "links": 0
+      "links": 72
     },
     "04-out/bibliografia/page.md": {
       "size": 8,
@@ -1261,12 +1261,12 @@
     },
     "04-out/personas/Enno Poppe.md": {
       "size": 192,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/personas/Mario Bunge.md": {
       "size": 164,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "04-out/personas/README.md": {
@@ -1392,9 +1392,9 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 265,
+      "Refactor": 269,
       "Create": 374,
-      "Link": 275,
+      "Link": 288,
       "Expand": 24
     }
   },
@@ -1421,7 +1421,7 @@
       "18": 29,
       "19": 10,
       "20": 66,
-      "21": 94,
+      "21": 111,
       "22": 139,
       "23": 15
     }
@@ -1429,7 +1429,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 59,
-      "Tue": 285,
+      "Tue": 302,
       "Wed": 83,
       "Thu": 12,
       "Fri": 1,
@@ -1572,6 +1572,13 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
@@ -1615,17 +1622,11 @@
         "<a class=\"internal-link\" href=\"01-proj/17/herrera/Superficies sonoras blandas.md\"> Superficies sonoras blandas </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/julia/Nukzeiber.md\"> Nukzeiber </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/lopez/Boreal.md\"> Boreal </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/moscato/La forma de la identidad real.md\"> La forma de la identidad real </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/navarro/Ajedrez.md\"> Ajedrez </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/paladino/No music player.md\"> No music player </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/dipaola-lutteral/Compost sonoro.md\"> Compost sonoro </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/galetto/Moving sound.md\"> Moving sound </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/garella/Dédalo.md\"> Dédalo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>"
+        "<a class=\"internal-link\" href=\"01-proj/17/moscato/La forma de la identidad real.md\"> La forma de la identidad real </a>"
       ],
       "Refactored": [
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1681,6 +1682,12 @@
         "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
@@ -1725,13 +1732,7 @@
         "<a class=\"internal-link\" href=\"Untitled 1.md\"> Untitled 1 </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04- cohesión audiovisual.md\"> c-cym04- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"2023-08-29.md\"> 2023-08-29 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
@@ -1742,13 +1743,16 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t12.1-Cuarta Revolución Industrial.md\"> t12.1-Cuarta Revolución Industrial </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t11-sistemas de universos.md\"> t11-sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t10-método científico.md\"> t10-método científico </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t09-física.md\"> t09-física </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>"
       ]
     }
   },
