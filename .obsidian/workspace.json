@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "383066b4478b75dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/cym MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -119,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,55 +251,55 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "5893dcbf31eced15",
+  "active": "383066b4478b75dc",
   "lastOpenFiles": [
+    "02-mat/obs/img/image",
+    "00-in/cym MOC.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym07-creative computing.md",
+    "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md",
+    "02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
+    "02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
+    "02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
+    "02-mat/obs/help/meta-aprendizaje.md",
+    "02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md",
+    "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md",
+    "02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md",
+    "02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md",
+    "02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
+    "02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md",
+    "02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md",
+    "02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
+    "00-in/cym MOC-1695202224263.jpeg",
+    "00-in/cym MOC-1695202224261.jpeg",
+    "00-in/cym MOC-1695202224258.jpeg",
+    "00-in/cym MOC-1695202224257.jpeg",
+    "00-in/cym MOC-1695202224256.jpeg",
+    "00-in/cym MOC-1695202224255.jpeg",
+    "00-in/cym MOC-1695202224253.jpeg",
+    "00-in/cym MOC-1695202224252.jpeg",
+    "00-in/cym MOC-1695202224251.jpeg",
+    "00-in/cym MOC-1695202224250.jpeg",
+    "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
+    "01-proj/15/drocchi/Cómo suena el conocimiento.md",
+    "00-in/Untitled.md",
+    "00-in/Pasted image 20230829224100.png.md",
     "04-out/personas/Carlos Trilnik.md",
     "03-cla/c-cym07-hydra.md",
     "03-cla/c-cym14-un instrumento online colectivo.md",
     "04-out/README.md",
     "04-out/bibliografia/page.md",
     "04-out/SUMMARY.md",
-    "04-out/test.md",
-    "00-in/cym MOC.md",
-    "conflict-files-obsidian-git.md",
-    "04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md",
-    "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md",
-    "04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md",
-    "04-out/topoi/README.md",
-    "04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md",
-    "04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md",
-    "04-out/procedimientos/README.md",
-    "04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md",
-    "04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md",
-    "04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md",
-    "04-out/personas/README.md",
-    "04-out/obras/README.md",
-    "04-out/glosario/README.md",
-    "04-out/espacios/README.md",
     "04-out/bibliografia",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym08-flex-grid.md",
-    "03-cla/c-cym07-human-book-computer.md",
     "04-out/test",
-    "02-mat/obs/img/Pasted image 20230829224242.png",
-    "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867412.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867407.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867405.jpeg",
-    "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
     "image/image",
     "image",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
     "cym-metamap.canvas",
     "02-mat/obs/Untitled.loom",
     "02-mat/obs/help",
     "02-mat/obs",
     "01-proj/23/Zaracho",
     "01-proj/22/mico",
-    "01-proj/22/dure",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

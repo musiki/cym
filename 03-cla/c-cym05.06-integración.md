@@ -115,38 +115,7 @@ miVariable[0]`, `miVariable[1]
 etc.
 
 ---
-# estructuras de decisión
 
-## condicionales
-```js
-if (condición) {
-  código a ejecutar si la condición es verdadera
-} else {
-  ejecuta este otro código si la condición es falsa
-}
-```
-## operadores de comparación
-```js
-= //Igual a 
-!= //Diferente a 
-=== //Contenido y tipo igual a 
-!== //Contenido o tipo diferente de 
-> //Mayor que 
->= //Mayor o igual que 
-< //Menor que 
-<= //Menor o igual que
-
-//operadores lógicos
-&& //and
-|| //or
-! //not
-```
----
-# bucles
-
-
-
----
 # tonejs - generación
 
 generadores de señales
