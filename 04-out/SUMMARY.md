@@ -70,7 +70,7 @@
   * [Vida Artificial](<topoi/Vida artificial.md>)
   * [\[Virtualidad Y Realidad\](topoi/Virtualidad%20y realidad.md)](topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md)
 * [Test](test.md)
-* [Bienvenidx](<README (1).md>)
+* [Bienvenidx](04-out/README.md (1).md>)
 
 ## personas
 

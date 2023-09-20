@@ -766,7 +766,7 @@
     },
     "04-out/personas/Dick Raaijmakers.md": {
       "size": 9,
-      "tags": 8,
+      "tags": 7,
       "links": 0
     },
     "04-out/personas/Donna Haraway.md": {
@@ -837,7 +837,7 @@
     "04-out/topoi/Azar.md": {
       "size": 2141,
       "tags": 4,
-      "links": 2
+      "links": 0
     },
     "04-out/topoi/Cuarta Revolución Industrial.md": {
       "size": 8211,
@@ -940,9 +940,9 @@
       "links": 0
     },
     "04-out/topoi/Sistemas complejos.md": {
-      "size": 3871,
+      "size": 2485,
       "tags": 3,
-      "links": 2
+      "links": 0
     },
     "04-out/topoi/Sistemas de universos.md": {
       "size": 20424,
@@ -1144,16 +1144,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-out/README.md": {
-      "size": 638,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/test.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md": {
       "size": 47,
       "tags": 0,
@@ -1166,7 +1156,7 @@
     },
     "04-out/personas/Enno Poppe.md": {
       "size": 192,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md": {
@@ -1236,28 +1226,18 @@
     },
     "03-cla/c-cym08-flex-grid.md": {
       "size": 619,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 1
     },
     "03-cla/c-cym09-networking.md": {
       "size": 873,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/README (1).md": {
-      "size": 638,
-      "tags": 0,
+      "tags": 7,
       "links": 0
     },
     "04-out/SUMMARY.md": {
       "size": 6096,
       "tags": 0,
-      "links": 0
-    },
-    "04-out/bibliografia/page.md": {
-      "size": 8,
-      "tags": 0,
-      "links": 0
+      "links": 71
     },
     "04-out/espacios/README.md": {
       "size": 12,
@@ -1328,13 +1308,18 @@
       "size": 65,
       "tags": 0,
       "links": 0
+    },
+    "04-out/README.md": {
+      "size": 638,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 258,
+      "Refactor": 266,
       "Create": 198,
-      "Link": 160,
+      "Link": 165,
       "Expand": 15
     }
   },
@@ -1342,7 +1327,7 @@
     "/": {
       "0": 33,
       "1": 3,
-      "2": 37,
+      "2": 50,
       "3": 0,
       "4": 2,
       "5": 22,
@@ -1370,7 +1355,7 @@
     "/": {
       "Mon": 7,
       "Tue": 49,
-      "Wed": 497,
+      "Wed": 510,
       "Thu": 54,
       "Fri": 5,
       "Sat": 0,
@@ -1450,6 +1435,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
         "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1499,10 +1485,12 @@
         "<a class=\"internal-link\" href=\"img/gal.md\"> gal </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
-        "<a class=\"internal-link\" href=\"04-out/templates/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>"
+        "<a class=\"internal-link\" href=\"04-out/templates/t-topoi.md\"> t-topoi </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
@@ -1550,13 +1538,15 @@
         "<a class=\"internal-link\" href=\"01-proj/15/garcia/En progreso.md\"> En progreso </a>",
         "<a class=\"internal-link\" href=\"01-proj/15/garcia fernandez/La sombra de lo abstracto.md\"> La sombra de lo abstracto </a>",
         "<a class=\"internal-link\" href=\"01-proj/15/nievas/Drummer.md\"> Drummer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/porrini/Un día bello.md\"> Un día bello </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/albarracin/Sonomaze.md\"> Sonomaze </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/cuenca/Explosision.md\"> Explosision </a>",
-        "<a class=\"internal-link\" href=\"01-proj/16/estrada/Cometa.md\"> Cometa </a>"
+        "<a class=\"internal-link\" href=\"01-proj/15/porrini/Un día bello.md\"> Un día bello </a>"
       ],
-      "Refactored": [],
+      "Refactored": [
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
+      ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>",
+        "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
+        "<a class=\"internal-link\" href=\"04-out/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-networking.md\"> c-cym07-networking </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>",
@@ -1604,10 +1594,7 @@
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>",
-        "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/01-Azar.md\"> 01-Azar </a>"
+        "<a class=\"internal-link\" href=\"image/gallery.md\"> gallery </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1651,12 +1638,15 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>"
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
@@ -1665,7 +1655,9 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>"
       ]
     }
   },
