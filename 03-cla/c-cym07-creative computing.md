@@ -16,6 +16,7 @@ Nick Montfort (poeta, artista y profesor de digital Media) trabaja en diversos p
 Centrado en la poesía digital y en la generatividad Montfort analiza como ésta desafía y redefine no sólo el concepto de autoría, sino también los medios de publicación y presentación posdigital en diversos contextos y formatos.
 
 *"Exploratory Programming for the Arts and Humanities"* muestra a la computación e informática dentro de la cultura (no como algo periférico), en relación a procesos de distintos proyectos artísticos. El autor toma a este libro como un sistema *human-book-computer*; una herramienta a-la-mano.
+
 ### Exploración vs/y explotación
 
 ```mermaid
@@ -29,3 +30,9 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 - abstracción
 - cálculos
 - utilización de datos
+
+### Prose - Charles Hartman
+![Pasted image 20230914125032.png](app://e0d972600592816cf4284075d3a656236fe0/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125032.png?1694706632337)
+
+### the Scandroid
+![Pasted image 20230914125117.png](app://e0d972600592816cf4284075d3a656236fe0/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125117.png?1694706677506)

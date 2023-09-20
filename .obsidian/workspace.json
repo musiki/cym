@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/topoi/Introducción a la psicoacústica.md",
+                "file": "03-cla/c-cym07-creative computing.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Introducción a la psicoacústica.md",
+                "file": "03-cla/c-cym07-creative computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/topoi/Introducción a la psicoacústica.md"
+                "file": "03-cla/c-cym07-creative computing.md"
               }
             }
           },
@@ -279,8 +279,8 @@
   },
   "active": "faf0df29942544b1",
   "lastOpenFiles": [
-    "00-in/topoi MOC.md",
     "04-out/topoi/Introducción a la psicoacústica.md",
+    "00-in/topoi MOC.md",
     "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/La instalación como forma del arte contemporáneo.md",
     "04-out/topoi/Azar.md",
