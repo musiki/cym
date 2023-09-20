@@ -52,20 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/SUMMARY.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "96906ea74c64d651",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/cym MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -73,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -123,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 532.5
+    "width": 249.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -140,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/cym MOC.md"
               }
             }
           },
@@ -158,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/cym MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -277,15 +264,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "96906ea74c64d651",
+  "active": "c0368da4421e5e90",
   "lastOpenFiles": [
+    "04-out/personas/Mario Bunge.md",
+    "00-in/combinational creativity.md",
+    "00-in/códigos MOC.md",
+    "00-in/code MOC.md",
+    "00-in/bib MOC.md",
+    "04-out/README.md",
+    "04-out/bibliografía/Philip Ball_Shapes.md",
     "04-out/SUMMARY.md",
+    "04-out/espacios/EAT Experiments in arts and technologies.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md",
-    "04-out/bibliografía/Philip Ball_Shapes.md",
     "04-out/test.md",
     "04-out/test",
-    "04-out/README.md",
     "02-mat/obs/check-out de imagenes.md",
     "03-cla/c-cym06c-tonejs.md",
     "02-mat/obs/tpl/conflict-files-obsidian-git.md",
@@ -300,14 +293,8 @@
     "04-out/personas/Dennis Smalley.md",
     "04-out/personas/Dennis Fabian Peter.md",
     "04-out/personas/Dick Raaijmakers.md",
-    "04-out/topoi/Azar.md",
-    "00-in/cym MOC.md",
-    "00-in/code MOC.md",
-    "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
     "02-mat/obs/img/Pasted image 20230829224242.png",
     "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
     "02-mat/obs/img/cym MOC-1694393867412.jpeg",
     "02-mat/obs/img/cym MOC-1694393867407.jpeg",
     "02-mat/obs/img/cym MOC-1694393867405.jpeg",

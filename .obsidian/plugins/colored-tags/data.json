@@ -130,7 +130,11 @@
     "electrónica": 122,
     "amplificación": 123,
     "sonoro": 124,
-    "historiador": 125
+    "historiador": 125,
+    "artesonoro": 126,
+    "philosopher": 127,
+    "de": 128,
+    "la": 129
   },
   "_version": 2
 }
