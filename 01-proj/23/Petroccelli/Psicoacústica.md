@@ -1,1 +1,0 @@
-![[PSICOACÚSTICA.pdf]]
