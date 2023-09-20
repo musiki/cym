@@ -38,6 +38,76 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 <iframe width="560" height="315" src="http://charlesohartman.com/verse/metrics/tutorials/interactive.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+# Código
+
+## control de flujos
+
+### condicionales
+```js
+if (condición) {
+  código a ejecutar si la condición es verdadera
+} else {
+  ejecuta este otro código si la condición es falsa
+}
+```
+### operadores de comparación
+```js
+= //Igual a
+!= //Diferente a 
+=== //Contenido y tipo igual a 
+!== //Contenido o tipo diferente de 
+> //Mayor que 
+>= //Mayor o igual que 
+< //Menor que 
+⇐ //Menor o igual que
+
+//operadores lógicos
+&& //and
+|| //or
+! //not
+```
+## ciclos
+Los ciclos, también bucles o iteraciones son un medio rápido y sencillo para hacer algo repetidamente.
+
+### CICLOS POR CONTEO
+Repiten un bloque de código un número de veces específica. Estructura **for**. 
+
+```js
+for(desde; hasta; actualización) {
+ //lo que se escriba acá se ejecutará mientras dure el ciclo
+}
+```
+
+```js 
+for (let i = 0; i < 10; i++) {
+    alert(i);
+}
+```
+
+### CICLOS CONDICIONALES
+Repiten un bloque de código mientras la condición evaluada es verdadera. Estructuras **while** y **do...while**.
+
+```js
+while (algo, operador lógico, otro) {
+	función();
+}
+```
+
+```js
+let entrada = prompt("Ingresar un dato");
+//Repetimos con While hasta que el usuario ingresa "ESC"
+
+while(entrada != "ESC" ){
+
+    alert("El usuario ingresó "+ entrada);
+
+    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+
+    entrada = prompt("Ingresar otro dato");
+}
+```
+
+
 ## Bibliografía
 
 MONTFORT, N. (2016). _Exploratory Programming for the Arts and Humanities._ MIT Press
