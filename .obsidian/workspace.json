@@ -67,20 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym05.06-integración.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "99c371953a71aaa6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym07-creative computing.md",
+                "file": "04-out/topoi/Introducción a la psicoacústica.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -88,7 +75,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym07-creative computing.md",
+                "file": "04-out/topoi/Introducción a la psicoacústica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym07-creative computing.md"
+                "file": "04-out/topoi/Introducción a la psicoacústica.md"
               }
             }
           },
@@ -290,21 +277,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99c371953a71aaa6",
+  "active": "faf0df29942544b1",
   "lastOpenFiles": [
-    "03-cla/c-cym07-cohesión audiovisual.md",
+    "00-in/topoi MOC.md",
+    "04-out/topoi/Introducción a la psicoacústica.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-out/topoi/Azar.md",
+    "04-out/topoi/Cuarta Revolución Industrial.md",
+    "04-out/topoi/Filosofía 21.md",
+    "04-out/topoi/Física.md",
+    "04-out/topoi/Forma Musical.md",
+    "04-out/topoi/Generatividad.md",
+    "04-out/topoi/Historia de la tecnología.md",
+    "04-out/topoi/Interfaces.md",
+    "04-out/topoi/Humanos.md",
+    "04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md",
+    "03-cla/c-cym05.06-integración.md",
+    "04-ref/image/Untitled-1693882066429.jpeg",
+    "04-ref/image/Untitled-1693882066240.jpeg",
     "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-    "04-out/topoi/Introducción a la psicoacústica.md",
     "04-out/topoi/Método científico.md",
     "04-out/topoi/Racionalizacion_(videojuegos).md",
     "conflict-files-obsidian-git.md",
-    "04-out/topoi/Interfaces.md",
-    "04-out/topoi/Cuarta Revolución Industrial.md",
-    "04-out/topoi/Forma Musical.md",
-    "04-ref/image/Untitled-1693882066240.jpeg",
-    "04-ref/image/Untitled-1693882066429.jpeg",
     "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/beltrame/beltrame POC.md",
@@ -320,17 +318,6 @@
     "02-mat/obs/help/a-yuda-1695176202199.jpeg",
     "02-mat/obs/help/a-yuda-1695176202198.jpeg",
     "02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
-    "02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
-    "02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
-    "02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
-    "02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md",
-    "02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
-    "02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md",
-    "02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md",
-    "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md",
-    "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md",
-    "02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md",
-    "02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
     "04-ref/image",
     "04-ref",
     "04-out/readme",

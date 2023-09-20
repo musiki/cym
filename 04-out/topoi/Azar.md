@@ -4,7 +4,7 @@ tags: azar, generativad, topoi, cym
 unit: 32
 publish: 2021
 author: zztt
-banner: https://noosphere.princeton.edu/images/movie256_b.gif
+banner: "https://noosphere.princeton.edu/images/movie256_b.gif"
 ---
 
 # Azar
