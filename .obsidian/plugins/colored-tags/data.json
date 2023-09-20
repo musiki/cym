@@ -131,7 +131,11 @@
     "amplificación": 123,
     "sonoro": 124,
     "historiador": 125,
-    "programming": 126
+    "programming": 126,
+    "artesonoro": 127,
+    "philosopher": 128,
+    "de": 129,
+    "la": 130
   },
   "_version": 2
 }
