@@ -38,6 +38,7 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 <iframe width="560" height="315" src="http://charlesohartman.com/verse/metrics/tutorials/interactive.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+---
 # Código
 
 ## control de flujos
@@ -50,7 +51,7 @@ if (condición) {
   ejecuta este otro código si la condición es falsa
 }
 ```
-### operadores de comparación
+### operadores lógicos
 ```js
 = //Igual a
 != //Diferente a 
@@ -106,6 +107,37 @@ while(entrada != "ESC" ){
     entrada = prompt("Ingresar otro dato");
 }
 ```
+
+## switch
+Maneja múltiples condiciones sobre la misma variable (técnicamente se podría resolver con un if, pero el uso de switch es más ordenado)
+
+```js
+switch(numero) {
+ case 5:
+   ...
+   break;
+ case 8:
+   ...
+   break;
+ case 20:
+   ...
+   break;
+ default:
+   ...
+   break;
+} //cada condición se evalúa y, si se cumple, se ejecuta lo que esté indicado dentro de cada case, después de las instrucciones de cada case se incluye la sentencia break para terminar la ejecución del switch
+```
+
+## objetos
+
+Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
+
+## Tone.Transport
+<iframe width="560" height="315" src="https://codepen.io/carodip/pen/eYbeMEV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Random
+
+<iframe width="560" height="315" src="https://codepen.io/carodip/pen/mdaqxON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Bibliografía
