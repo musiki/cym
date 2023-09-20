@@ -92,5 +92,8 @@
   "obsidian-hider",
   "obsidian-banners",
   "obsidian-thumbnails",
-  "obsidian-read-it-later"
+  "obsidian-read-it-later",
+  "cm-editor-syntax-highlight-obsidian",
+  "text-snippets-obsidian",
+  "translate"
 ]

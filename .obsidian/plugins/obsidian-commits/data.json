@@ -4,11 +4,6 @@
     "/"
   ],
   "filesCheckpoint": {
-    "03-cla/c-cym13 Proto-historia del arte numérico argentino.md": {
-      "size": 1501,
-      "tags": 3,
-      "links": 0
-    },
     "03-cla/c-cym09-hydra+tone.js.md": {
       "size": 829,
       "tags": 6,
@@ -197,7 +192,7 @@
     "03-cla/c-cym02-arte generativo.md": {
       "size": 8377,
       "tags": 5,
-      "links": 8
+      "links": 7
     },
     "03-cla/c-cym10y11-Aframe.md": {
       "size": 1721,
@@ -244,15 +239,10 @@
       "tags": 0,
       "links": 16
     },
-    "03-cla/c-cym03 mapas.md": {
-      "size": 3691,
-      "tags": 4,
-      "links": 3
-    },
     "03-cla/c-cym05-integración.md": {
-      "size": 3476,
+      "size": 7007,
       "tags": 6,
-      "links": 0
+      "links": 6
     },
     "03-cla/c-cym14-un instrumento online colectivo.md": {
       "size": 11934,
@@ -674,11 +664,6 @@
       "tags": 1,
       "links": 0
     },
-    "02-mat/obs/tpl/t-class.md": {
-      "size": 74,
-      "tags": 3,
-      "links": 0
-    },
     "02-mat/obs/tpl/t-cym-class.md": {
       "size": 176,
       "tags": 6,
@@ -729,11 +714,6 @@
       "tags": 9,
       "links": 16
     },
-    "03-cla/c-cym06- cohesión audiovisual.md": {
-      "size": 10646,
-      "tags": 7,
-      "links": 8
-    },
     "03-cla/c-cym06-flex-grid.md": {
       "size": 598,
       "tags": 6,
@@ -750,7 +730,7 @@
       "links": 0
     },
     "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md": {
-      "size": 2727,
+      "size": 4227,
       "tags": 1,
       "links": 0
     },
@@ -879,11 +859,6 @@
       "tags": 3,
       "links": 1
     },
-    "04-out/personas/Hugh Le Caine.md": {
-      "size": 44,
-      "tags": 3,
-      "links": 0
-    },
     "04-out/personas/John Barrows.md": {
       "size": 0,
       "tags": 0,
@@ -912,11 +887,6 @@
     "04-out/personas/Yotam Mann.md": {
       "size": 176,
       "tags": 2,
-      "links": 0
-    },
-    "04-out/personas/Yuval Harari.md": {
-      "size": 114,
-      "tags": 1,
       "links": 0
     },
     "04-out/procedimientos/analisis de obras interactivas.md": {
@@ -1118,14 +1088,64 @@
       "size": 102,
       "tags": 0,
       "links": 5
+    },
+    "02-mat/css.md": {
+      "size": 661,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-lorem.md": {
+      "size": 1505,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym-05-principios generativos.md": {
+      "size": 608,
+      "tags": 3,
+      "links": 2
+    },
+    "03-cla/c-cym-05b-relaciones sonolumínicas.md": {
+      "size": 6234,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym03-mapas.md": {
+      "size": 3706,
+      "tags": 4,
+      "links": 3
+    },
+    "03-cla/c-cym06-cohesión audiovisual.md": {
+      "size": 10545,
+      "tags": 7,
+      "links": 7
+    },
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md": {
+      "size": 1575,
+      "tags": 3,
+      "links": 0
+    },
+    "04-out/glosario/PWA.md": {
+      "size": 1124,
+      "tags": 1,
+      "links": 0
+    },
+    "04-out/glosario/URI.md": {
+      "size": 1257,
+      "tags": 1,
+      "links": 0
+    },
+    "04-out/personas/Yuval Noah Harari.md": {
+      "size": 201,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 237,
-      "Create": 305,
-      "Link": 262,
-      "Expand": 22
+      "Refactor": 245,
+      "Create": 316,
+      "Link": 275,
+      "Expand": 24
     }
   },
   "dailyCommits": {
@@ -1139,7 +1159,7 @@
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 8,
+      "9": 9,
       "10": 20,
       "11": 7,
       "12": 34,
@@ -1150,8 +1170,8 @@
       "17": 151,
       "18": 29,
       "19": 10,
-      "20": 34,
-      "21": 15,
+      "20": 66,
+      "21": 16,
       "22": 139,
       "23": 15
     }
@@ -1159,10 +1179,10 @@
   "weeklyCommits": {
     "/": {
       "Mon": 59,
-      "Tue": 174,
+      "Tue": 207,
       "Wed": 83,
       "Thu": 12,
-      "Fri": 0,
+      "Fri": 1,
       "Sat": 0,
       "Sun": 498
     }
@@ -1191,9 +1211,22 @@
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-lorem.md\"> t-lorem </a>",
+        "<a class=\"internal-link\" href=\"02-mat/css.md\"> css </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
@@ -1233,18 +1266,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Klaus Schwab.md\"> Klaus Schwab </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/John Barrows.md\"> John Barrows </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Harari Yuval Noah.md\"> Harari Yuval Noah </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Douglas Barret.md\"> Douglas Barret </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Donna Haraway.md\"> Donna Haraway </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Klaus Schwab.md\"> Klaus Schwab </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -1289,6 +1311,13 @@
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
@@ -1332,19 +1361,19 @@
         "<a class=\"internal-link\" href=\"01-proj/18/galetto/Moving sound.md\"> Moving sound </a>",
         "<a class=\"internal-link\" href=\"01-proj/18/garella/Dédalo.md\"> Dédalo </a>",
         "<a class=\"internal-link\" href=\"01-proj/18/gueglio/Posdata fluidos.md\"> Posdata fluidos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/19/barbaglia/Miradas dirigidas.md\"> Miradas dirigidas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/19/costa/Canoa atemporal.md\"> Canoa atemporal </a>",
-        "<a class=\"internal-link\" href=\"01-proj/19/gawel/Metáforas.md\"> Metáforas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/19/perez rivas/Reproduciéndonos.md\"> Reproduciéndonos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/amieva/Intensa.md\"> Intensa </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/belotti/Librería de Samples Universidad Tres de Febrero.md\"> Librería de Samples Universidad Tres de Febrero </a>",
-        "<a class=\"internal-link\" href=\"01-proj/20/belotti/Soundchess proyectual tentativo.md\"> Soundchess proyectual tentativo </a>"
+        "<a class=\"internal-link\" href=\"01-proj/18/vivona/Domo.md\"> Domo </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13 Proto-historia del arte numérico argentino.md\"> c-cym13 Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03 mapas.md\"> c-cym03 mapas </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Marianne Amacher.md\"> Marianne Amacher </a>",
         "<a class=\"internal-link\" href=\"00-in/Música expandida MOC.md\"> Música expandida MOC </a>",
@@ -1388,16 +1417,15 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Virtualidad y realidad.md\"> Virtualidad y realidad </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Método científico.md\"> Método científico </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Generatividad.md\"> Generatividad </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
@@ -1442,13 +1470,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
@@ -1464,7 +1486,8 @@
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
         "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-book.md\"> t-book </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>"
       ]
     }
   },
