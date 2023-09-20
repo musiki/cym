@@ -1181,12 +1181,16 @@
       "filename": "SUMMARY"
     },
     {
-      "path": "03-cla/c-cym07-human-book-computer.md",
-      "filename": "c-cym07-human-book-computer"
+      "path": "03-cla/c-cym07-creative computing.md",
+      "filename": "c-cym07-creative computing"
     },
     {
       "path": "03-cla/c-cym09-networking.md",
       "filename": "c-cym09-networking"
+    },
+    {
+      "path": "02-mat/jasvascript/js01-fundamentals.md",
+      "filename": "js01-fundamentals"
     }
   ]
 }

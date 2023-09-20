@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym07-human-book-computer.md",
+                "file": "03-cla/c-cym07-creative computing.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -146,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 429.5
+    "width": 200
   },
   "right": {
     "id": "80820653654ffa07",
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym07-human-book-computer.md",
+                "file": "03-cla/c-cym07-creative computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym07-human-book-computer.md"
+                "file": "03-cla/c-cym07-creative computing.md"
               }
             }
           },
@@ -290,40 +290,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99c371953a71aaa6",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
     "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-human-book-computer.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym08-flex-grid.md",
     "03-cla/c-cym06c-tonejs.md",
+    "02-mat/css.md",
+    "02-mat/html.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "README.md",
+    "04-out/README.md",
+    "04-out/README (1).md",
+    "03-cla/c-cym08-flex-grid.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-cla/c-cym07-creative computing.md",
     "03-cla/c-cym06b-relaciones sonolumínicas.md",
     "03-cla/c-cym06-principios generativos.md",
     "03-cla/c-cym05.06-integración.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym09-networking.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
     "conflict-files-obsidian-git.md",
     "02-mat/tone.js.md",
-    "02-mat/css.md",
-    "02-mat/html.md",
     "02-mat/que es git.md",
-    "02-mat/obs/help/a-yuda.md",
-    "02-mat/obs/help/a-dataview.md",
-    "02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
-    "02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md",
-    "02-mat/obs/img/sistemas.excalidraw.md",
-    "02-mat/obs/img/gal.md",
     "02-mat/obs/img/cym MOC-1694393867412.jpeg",
     "02-mat/obs/img/cym MOC-1694393867410.jpeg",
     "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-    "04-out/test.md",
-    "bibliografia/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
-    "04-out/SUMMARY.md",
-    "04-out/README (1).md",
     "bibliografia",
     "04-out/bibliografia",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
     "03-cla/c-cym05-integración-1694571104954.jpeg",
     "03-cla/c-cym05-integración-1694571105494.jpeg",

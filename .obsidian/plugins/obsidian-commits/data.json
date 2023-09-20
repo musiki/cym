@@ -1304,11 +1304,6 @@
       "tags": 0,
       "links": 0
     },
-    "03-cla/c-cym07-human-book-computer.md": {
-      "size": 1315,
-      "tags": 0,
-      "links": 0
-    },
     "03-cla/c-cym09-networking.md": {
       "size": 873,
       "tags": 7,
@@ -1318,11 +1313,16 @@
       "size": 598,
       "tags": 6,
       "links": 1
+    },
+    "03-cla/c-cym07-creative computing.md": {
+      "size": 1315,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 237,
+      "Refactor": 239,
       "Create": 267,
       "Link": 220,
       "Expand": 17
@@ -1346,7 +1346,7 @@
       "13": 26,
       "14": 6,
       "15": 10,
-      "16": 32,
+      "16": 34,
       "17": 1,
       "18": 0,
       "19": 0,
@@ -1359,7 +1359,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 131,
+      "Tue": 133,
       "Wed": 291,
       "Thu": 28,
       "Fri": 5,
@@ -1442,6 +1442,8 @@
         "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>",
@@ -1490,9 +1492,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/t13-filosofía histórica.md\"> t13-filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t14-historia de la tecnología.md\"> t14-historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t61-internetmusic.md\"> t61-internetmusic </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
