@@ -1215,7 +1215,7 @@
       "links": 1
     },
     "03-cla/c-cym07-creative computing.md": {
-      "size": 3933,
+      "size": 4946,
       "tags": 4,
       "links": 0
     },
@@ -1400,12 +1400,12 @@
       "Refactor": 317,
       "Create": 315,
       "Link": 230,
-      "Expand": 22
+      "Expand": 23
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 32,
+      "0": 33,
       "1": 6,
       "2": 0,
       "3": 0,
@@ -1435,7 +1435,7 @@
     "/": {
       "Mon": 7,
       "Tue": 268,
-      "Wed": 297,
+      "Wed": 298,
       "Thu": 28,
       "Fri": 5,
       "Sat": 0,
@@ -1464,6 +1464,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>"
