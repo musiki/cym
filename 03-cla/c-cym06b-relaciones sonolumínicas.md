@@ -1,40 +1,53 @@
 
-
----
 <iframe title="forest 2 - installation (ZKM 2009)" src="https://www.youtube.com/embed/i0dusCACA9Q?start=1&amp;feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
- 
+Chris Zeigler’s Forest II (2009)
 
-_fig1. Chris Zeigler’s Forest II (2009)_
+---
+
+# relación imagen-sonido
+(Chión 1994. Coulter 2009)
 
 note: Los siguientes conceptos están basados en diferentes contextos teóricos acerca de la 
----
-relación imagen-sonido. (Chion 1994. Coulter 2009)
+Estos conceptos brindan herramientas básicas de clasificación y que luego podrán ser transferidas a la composicion de obras audiovisuales.Los medios numéricos (*entendidos como la tradición ya centenaria de los medios de reproducción técnica de audio-imagen-palabra que en nuestra era se basan en memorias digitales) 
 
 ---
 
-note:.Estos conceptos brindan herrmientas básicas de clasificación y que luego podrán ser transferidas a la composicion de obras audiovisuales.Los 
+objeto → medios → realidad
 
 ---
-medios numéricos (*entendidos como la tradición ya centenaria de los medios de reproducción técnica de audio-imagen-palabra que en nuestra era se basan en memorias digitales) 
 
 ---
 note:mutaron para siempre nuestra percepción de lo real. Como perceptores, los vínculos establecidos entre las fuentes emisoras y sus causas aparecen disociados. Todo objeto es sospechable de ser compuesto siguiendo su propia lógica. En particular, a una forma sonora dada no necesariamente corresponde un instrumento específico o unan causa específica.
-A partir de esta afirmación la música aborda un nuevo problema: como construir un recorrido estético que obtenga una 'recompensa' en la experiencia compartida de una comunidad de 
+A partir de esta afirmación la música aborda un nuevo problema: 
+
 ---
-auditores-interactores. (Smalley, 1997).
+como construir un recorrido estético que obtenga una 'recompensa' en la experiencia compartida de una comunidad de 
+auditores-interactores. (Smalley, 1997)
+
+---
 
 note: Intentaremos delinear entonces a un 
 
 ---
-objeto **luminisónico:** un objeto que simula emitir tanto sonido como luz de un modo integrado.
+## objeto **luminisónico** 
+un objeto que simula emitir tanto sonido como luz de un modo integrado.
 
 ---
 
 note: Este prototipo podrá ser aplicado tanto a objetos sonoros del discurso musical lineal, al medio instalativo, o al medio de la animación gráfica o música visual.
-Toma como base el concepto composicional de la armonicidad vertical y el contrapunto horizontal (Chion, 1993), del lazo crosmodal (Whitelaw, 2008), esto es la vinculación de la dinámica composicional a efectos y afectos perceptivos, por medio de los cuales se genera la ilusión de lo real.
+Toma como base el concepto composicional de la 
 
 ---
+
+armonicidad vertical y el contrapunto horizontal (Chión, 1993)
+
+--- 
+
+lazo crosmodal (Whitelaw, 2008), esto es la vinculación de la dinámica composicional a efectos y afectos perceptivos, por medio de los cuales se genera la ilusión de lo real.
+
+---
+
 Un objeto luminosónico es aquel que funciona **autoiluminado** y con sonido **espacializado.**
 
 ---
@@ -52,7 +65,7 @@ En este constructo teórico visitaremos tres momentos de la dinámica composicio
 2. Los cambios dinámicos del comportamiento audiovisual, tanto como herramienta analítica como de práctica creativa.
 3. Relacionar las estrategias compositivas con los resultados perceptivos, en términos refuerzo, recompensa y climax.
 
-
+![](https://i.imgur.com/lbTddTS.png)
 
 _fig. 2. representación  gráfica del paradigma audiovisual de Chión.  
   
@@ -77,15 +90,13 @@ Ordena cada parámetro en una matriz XY donde la dimensión horizontal delinea l
 
 Asi, la **_consonancia audiovisual_ involucra un refuerzo lineal entre los modos mientras quee su disonancia incluye "un desacuerdo entre las naturalezas figurativas.**
 
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%281%29.png)
+
+![](https://i.imgur.com/mCwL7AE.png)
 
 _fig 3. Superposición de los paradigmas de Coulter y Chión._
 
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%282%29.png)
 
 _fig 4. Paradigma tridimensional_
-
-![](https://edu.musiki.org.ar/pluginfile.php/1356/mod_page/content/5/image%20%283%29.png)
 
 _fig. 5: Isomorfía física y mapeada._
 

@@ -125,7 +125,11 @@
     "público": 119,
     "mcl": 120,
     "mcl/list-card": 1,
-    "historiador": 121
+    "historiador": 121,
+    "artesonoro": 122,
+    "philosopher": 123,
+    "de": 124,
+    "la": 125
   },
   "_version": 2
 }

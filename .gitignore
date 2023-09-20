@@ -30,8 +30,23 @@ data.json
 .obsidian/core-plugins.json
 .obsidian/workspace.json
 .obsidian/plugins/obsidian-activity-history/data.json
+<<<<<<< HEAD
 .obsidian/plugins/colored-tags/data.json
 .obsidian/plugins/obsidian-activity-history/data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/plugins/obsidian-icon-folder/data.json
 .obsidian/workspace.json
+=======
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
+
+
+>>>>>>> origin/main
