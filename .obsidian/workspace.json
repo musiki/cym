@@ -32,22 +32,9 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "383066b4478b75dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/cym MOC.md"
               }
             }
           },
@@ -132,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/cym MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -251,11 +238,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "383066b4478b75dc",
+  "active": "5893dcbf31eced15",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image",
     "00-in/cym MOC.md",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym07-creative computing.md",
     "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md",
     "02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
@@ -299,7 +286,6 @@
     "02-mat/obs/help",
     "02-mat/obs",
     "01-proj/23/Zaracho",
-    "01-proj/22/mico",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
