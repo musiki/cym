@@ -822,14 +822,14 @@
     "00-in/Psicoacústica.md": {
       "size": 0,
       "tags": 0,
-      "links": 0
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 160,
       "Create": 176,
-      "Link": 142,
+      "Link": 143,
       "Expand": 19
     }
   },
@@ -853,7 +853,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 31,
+      "18": 32,
       "19": 45,
       "20": 34,
       "21": 15,
@@ -864,7 +864,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 170,
-      "Tue": 142,
+      "Tue": 143,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1092,6 +1092,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Fragile Territories.md\"> Fragile Territories </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"00-in/Psicoacústica.md\"> Psicoacústica </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
@@ -1141,8 +1142,7 @@
         "<a class=\"internal-link\" href=\"00-in/hi augmentation.md\"> hi augmentation </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",

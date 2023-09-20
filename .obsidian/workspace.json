@@ -21,14 +21,6 @@
             }
           },
           {
-            "id": "18cca4cc2f9e87da",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "252904837f9f7344",
             "type": "leaf",
             "state": {
@@ -40,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f238270887e334b7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,7 +227,7 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "252904837f9f7344",
+  "active": "af00f646ff150006",
   "lastOpenFiles": [
     "image/PSICOACÚSTICA.pdf",
     "00-in/Psicoacústica.md",
