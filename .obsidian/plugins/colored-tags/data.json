@@ -131,10 +131,14 @@
     "amplificación": 123,
     "sonoro": 124,
     "historiador": 125,
+<<<<<<< HEAD
     "artesonoro": 126,
     "philosopher": 127,
     "de": 128,
     "la": 129
+=======
+    "programming": 126
+>>>>>>> origin/main
   },
   "_version": 2
 }
