@@ -37,6 +37,12 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 ### the Scandroid
 <iframe width="560" height="315" src="http://charlesohartman.com/verse/metrics/tutorials/interactive.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### A House of Dust
+<iframe width="560" height="315" src="https://nickm.com/memslam/a_house_of_dust.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Upstart
+<iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ---
 # Código
