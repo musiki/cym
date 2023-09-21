@@ -1,17 +1,11 @@
 ---
-tags: tp
-project: cym22
-date: 2022-08-30
----
-- [ ] TP1  - topoi 📅 2022-08-23⏫
-=======
-type: tp
+tags:
+  - tp
 project: cym23
-date: 2023-08-30
+date: 2023-08-29
 ---
 
-- [ ] TP1  - topoi 📅 2023-08-30⏫
->>>>>>> origin/main
+- [x] TP1  - topoi ⏫ 📅 2023-08-29 ✅ 2023-09-21
 
 > [!INFO] >la lista de topoi puede ser consultada en https://musiki.org.ar/Topoi
 
@@ -30,14 +24,19 @@ definir temas para comprender el mundo actual, crear o editar artículos para y 
 
 # entregas
 
-<<<<<<< HEAD
-![[musica visual_ bassino_topoi.pdf]]
-=======
 
-
-![[musica y arte visual_ bassino_topoi]]
->>>>>>> origin/main
+```dataview
+Table  without ID("![|100](" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags
+FROM "04-out/topoi"
+WHERE contains(publish,2023)
+SORT publish DESC
+```
 
 
 # Guía de textos 
 
+```dataview
+Table author as Author, ("![|100](" + coverUrl + ")") as Cover, publish as "año", category as category, colabs
+From "04-out/bibliografía"
+SORT Status DESC
+```

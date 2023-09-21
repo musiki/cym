@@ -1,8 +1,8 @@
 {
-  "chroma": 32,
-  "lightness": 32,
-  "palette": 24,
-  "seed": 7,
+  "chroma": 16,
+  "lightness": 87,
+  "palette": 16,
+  "seed": 0,
   "knownTags": {
     "languages": 1,
     "pkm": 2,
@@ -125,7 +125,9 @@
     "vr": 118,
     "realidad": 119,
     "machine": 120,
-    "ia": 121
+    "ia": 121,
+    "forma": 122,
+    "musical": 123
   },
   "_version": 2
 }
