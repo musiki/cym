@@ -22,7 +22,7 @@ Realizar un instrumento con botones / faders, distintas formas de onda modulable
 
 
 ```dataview
-Table  without ID("![|100](" + banner + ")") as foto, file.link as name, file.ctime as creación, tags,  publish as "año", unit
+Table  without ID("![|200](" + banner + ")") as foto, file.link as name, file.ctime as creación, tags,  publish as "año", unit
 WHERE contains(type,"exercise")
 WHERE contains(publish,2023)
 SORT Status DESC
