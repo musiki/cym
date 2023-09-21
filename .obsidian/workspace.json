@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/topoi MOC.md",
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/topoi MOC.md",
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/topoi MOC.md"
+                "file": "01-proj/tp/tp02-aplicación.md"
               }
             }
           },
@@ -266,15 +266,18 @@
   },
   "active": "7d289e5f1d4852ae",
   "lastOpenFiles": [
+    "cym-metamap.canvas",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
+    "01-proj/tp/tp04-guía de lectura SADIN.md",
+    "00-in/topoi MOC.md",
     "01-proj/tp/tp01-topoi.md",
     "00-in/bib MOC.md",
-    "01-proj/tp/tp02-aplicación.md",
     "04-out/topoi/Forma Musical.md",
     "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/Internetmusic.md",
     "04-out/topoi/Historia de la tecnología.md",
     "01-proj/23/beltrame/beltrame POC.md",
-    "00-in/topoi MOC.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/Petroccelli/petrocelli POC.md",
@@ -289,9 +292,6 @@
     "02-mat/obs/tpl/t-alumno-POC.md",
     "02-mat/obs/tpl/t-book.md",
     "01-proj/22/lopez/tp-01-topoi.md",
-    "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md",
-    "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md",
-    "02-mat/obs/img/sistemas.excalidraw.md",
     "00-in/cym MOC-1695202224239.jpeg",
     "02-mat/obs/img/image/tone.js-1695318779484.jpeg",
     "00-in/cym MOC-1695202224263.jpeg",
@@ -302,7 +302,6 @@
     "00-in/cym MOC-1695202224255.jpeg",
     "00-in/cym MOC-1695202224253.jpeg",
     "00-in/cym MOC-1695202224252.jpeg",
-    "cym-metamap.canvas",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "02-mat/obs/img/image",

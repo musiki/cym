@@ -1,18 +1,13 @@
 ---
-<<<<<<< HEAD
 tags: tp
-project: cym22
-date: 2022-08-30
-=======
 type: tp
 project: cym23
-date: 2023-08-30
->>>>>>> origin/main
+date: 2023-08-19
 ---
 
 # aplicación audiovisual
 
-- [ ] TP2  - Aplicación AV ⏫ 📅 2023-09-14
+- [x] TP2  - Aplicación AV ⏫ 📅 2023-09-19 ✅ 2023-09-21
 
 
 ## Objetivos
