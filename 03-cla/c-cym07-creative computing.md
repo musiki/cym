@@ -60,8 +60,8 @@ if (condición) {
 }
 ```
 ### operadores lógicos
-```js
-= //Igual a
+```javascript
+'=' //Igual a
 != //Diferente a 
 === //Contenido y tipo igual a 
 !== //Contenido o tipo diferente de 
@@ -75,6 +75,8 @@ if (condición) {
 || //or
 ! //not
 ```
+
+
 ## ciclos
 Los ciclos, también bucles o iteraciones son un medio rápido y sencillo para hacer algo repetidamente.
 
@@ -155,3 +157,4 @@ MONTFORT, N. (2016). _Exploratory Programming for the Arts and Humanities._ MIT
 MONTFORT, N. (2017). _The future_. MIT Press
 
 Connected Code: Why Children Need to Learn Programming de Yasmin B. Kafai y Quinn Burke
+

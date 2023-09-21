@@ -6,7 +6,7 @@ category: Art and science
 publish: 2023-08-26
 publisher: 
 totalPage: 128
-coverUrl: 
+coverUrl: https://contentv2.tap-commerce.com/cover/large/9789871274147_1.jpg?id_com=1113
 publish: 2010
 description: 
 isbn: 9871274149 9789871274147 

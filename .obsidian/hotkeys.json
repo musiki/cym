@@ -506,16 +506,6 @@
   "editor:toggle-checklist-status": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "obsidian-outliner:system-info": [],
-  "obsidian-book-search-plugin:open-book-search-modal": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "B"
-    }
-  ],
   "convert-url-to-iframe:url-to-iframe": [
     {
       "modifiers": [
@@ -641,6 +631,15 @@
         "Shift"
       ],
       "key": "."
+    }
+  ],
+  "obsidian-book-search-plugin:open-book-search-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "B"
     }
   ]
 }

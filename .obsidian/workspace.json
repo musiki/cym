@@ -73,9 +73,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "113d1878221386af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym07-creative computing.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -157,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/tone.js.md",
+                "file": "03-cla/c-cym07-creative computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/tone.js.md"
+                "file": "03-cla/c-cym07-creative computing.md"
               }
             }
           },
@@ -277,8 +290,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "113d1878221386af",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "00-in/cym MOC-1695202224239.jpeg",
+    "02-mat/tone.js.md",
+    "home.md",
+    "04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md",
+    "04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-out/bibliografía/Nick Montfort_The Future.md",
+    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
+    "02-mat/obs/img/image/tone.js-1695318779484.jpeg",
+    "00-in/cym MOC-1695202224263.jpeg",
+    "00-in/cym MOC-1695202224261.jpeg",
+    "00-in/cym MOC-1695202224258.jpeg",
+    "00-in/cym MOC-1695202224257.jpeg",
+    "00-in/cym MOC-1695202224256.jpeg",
+    "00-in/cym MOC-1695202224255.jpeg",
+    "00-in/cym MOC-1695202224253.jpeg",
+    "00-in/cym MOC-1695202224252.jpeg",
+    "00-in/Introducción a la Psicoacústica.md",
     "02-mat/css.md",
     "02-mat/que es git.md",
     "02-mat/html.md",
@@ -296,26 +327,7 @@
     "02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md",
     "02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md",
     "02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
-    "02-mat/obs/help/a-yuda.md",
-    "02-mat/obs/help/a-plugins.md",
-    "02-mat/obs/help/a-snippets.md",
-    "02-mat/obs/help/a-dataview playground.md",
-    "02-mat/obs/help/a-dataview.md",
-    "00-in/obras.in MOC.md",
-    "00-in/cym MOC.md",
-    "00-in/hd-hydra.md",
-    "00-in/hi augmentation.md",
     "cym-metamap.canvas",
-    "03-cla/c-cym07-creative computing-1695220069150.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069161.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069184.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069198.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069203.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069229.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069217.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069213.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069201.jpeg",
-    "03-cla/c-cym07-creative computing-1695220069193.jpeg",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "02-mat/obs/img/image",

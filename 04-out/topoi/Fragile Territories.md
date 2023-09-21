@@ -2,7 +2,7 @@
 author: Fabián Bassino
 tags: musica visual, topoi
 publish: 2023
-banner: >-
+banner: "https://roberthenke.com/files_images/installations/fragile-territories/FragileTerritoriesRennesPreOpening.jpg"
   https://roberthenke.com/files_images/installations/fragile-territories/FragileTerritoriesRennesPreOpening.jpg
 ---
 

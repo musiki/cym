@@ -714,11 +714,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
-      "size": 432,
-      "tags": 1,
-      "links": 0
-    },
     "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md": {
       "size": 435,
       "tags": 1,
@@ -1094,11 +1089,6 @@
       "tags": 0,
       "links": 3
     },
-    "00-in/code MOC.md": {
-      "size": 1,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/jasvascript/js-02 contextos de ejecución.md": {
       "size": 198,
       "tags": 0,
@@ -1136,21 +1126,6 @@
     },
     "04-out/personas/README.md": {
       "size": 12,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md": {
-      "size": 62,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md": {
-      "size": 58,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md": {
-      "size": 58,
       "tags": 0,
       "links": 0
     },
@@ -1222,11 +1197,6 @@
     "01-proj/15/drocchi/Cómo suena el conocimiento.md": {
       "size": 9984,
       "tags": 1,
-      "links": 0
-    },
-    "00-in/Untitled.md": {
-      "size": 7900,
-      "tags": 0,
       "links": 0
     },
     "02-mat/obs/help/meta-aprendizaje.md": {
@@ -1374,16 +1344,41 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/Pasted image 20230829224100.png.md": {
-      "size": 0,
+    "00-in/Introducción a la Psicoacústica.md": {
+      "size": 7864,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md": {
+      "size": 1912,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/Nick Montfort_The Future.md": {
+      "size": 2119,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md": {
+      "size": 510,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md": {
+      "size": 1827,
+      "tags": 0,
+      "links": 0
+    },
+    "home.md": {
+      "size": 433,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 321,
-      "Create": 315,
+      "Refactor": 329,
+      "Create": 322,
       "Link": 230,
       "Expand": 23
     }
@@ -1404,7 +1399,7 @@
       "11": 88,
       "12": 22,
       "13": 26,
-      "14": 6,
+      "14": 21,
       "15": 10,
       "16": 34,
       "17": 1,
@@ -1421,7 +1416,7 @@
       "Mon": 7,
       "Tue": 268,
       "Wed": 302,
-      "Thu": 28,
+      "Thu": 43,
       "Fri": 5,
       "Sat": 0,
       "Sun": 279
@@ -1455,6 +1450,13 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"home.md\"> home </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md\"> Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
+        "<a class=\"internal-link\" href=\"00-in/Introducción a la Psicoacústica.md\"> Introducción a la Psicoacústica </a>",
         "<a class=\"internal-link\" href=\"00-in/Pasted image 20230829224100.png.md\"> Pasted image 20230829224100.png </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1498,14 +1500,7 @@
         "<a class=\"internal-link\" href=\"04-out/readme/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
         "<a class=\"internal-link\" href=\"04-out/readme/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
         "<a class=\"internal-link\" href=\"04-out/readme/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/readme/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md\"> eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs 1.md\"> c-cym06c-tonejs 1 </a>",
-        "<a class=\"internal-link\" href=\"bibliografia/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"04-out/readme/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
@@ -1619,6 +1614,14 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/Pasted image 20230829224100.png.md\"> Pasted image 20230829224100.png </a>",
+        "<a class=\"internal-link\" href=\"00-in/code MOC.md\"> code MOC </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md\"> dennis-fabian-peter-personas-dennis-20fabian-peter.md </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md\"> harari-yuval-noah-personas-harari-20yuval-noah.md </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md\"> yuval-noah-harari-personas-yuval-20noah-harari.md </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>",
         "<a class=\"internal-link\" href=\"04-out/README (1).md\"> README (1) </a>",
@@ -1661,15 +1664,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje-1660395828475.jpeg.md\"> meta-aprendizaje-1660395828475.jpeg </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/languages.md\"> languages </a>",
-        "<a class=\"internal-link\" href=\"04-ref/espacios/MIT Medialab.md\"> MIT Medialab </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Donna Haraway.md\"> Donna Haraway </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
