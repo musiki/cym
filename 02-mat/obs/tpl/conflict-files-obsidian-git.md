@@ -7,7 +7,7 @@ Please resolve them and commit them using the commands `Obsidian Git: Commit all
 <<<<<<< HEAD
 - Not a file: .obsidian/plugins/obsidian-activity-history/data.json
 - Not a file: .obsidian/workspace.json
-- [[Introducción a la psicoacústica]]
+- [[04-out/topoi/Introducción a la psicoacústica]]
 =======
 - Not a file: .DS_Store
 - Not a file: .obsidian/appearance.json

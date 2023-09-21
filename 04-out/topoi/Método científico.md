@@ -5,6 +5,7 @@ unit: 10
 publish: 2020
 author: zztt
 banner: "https://plato.stanford.edu/entries/descartes-method/fg-tennis.png"
+dg-publish: true
 ---
 
 # Método científico

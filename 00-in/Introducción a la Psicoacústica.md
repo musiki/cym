@@ -1,4 +1,4 @@
-## Introducción a la Psicoacústica
+
 A lo largo del siglo XX, el interés por los ruidos y sonidos comenzó a tomar
 relevancia en los y las artistas contemporáneos y contemporáneas, cuyo interés generó un
 nuevo paradigma en la creación musical.

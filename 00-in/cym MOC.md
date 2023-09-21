@@ -1,6 +1,6 @@
 ```dataview
 table file.ctime as Created, file.mtime as "últimas ediciones"
-where file.name != this.file.name and contains(file.path, this.file.folder)
+where file.name != this.file.name and contains(file.path, this.file.folder) and !contains(file.name, "MOC")
 sort file.mtime descending
 limit 10
 ```
