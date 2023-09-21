@@ -159,16 +159,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/tp/tp04-guía de lectura SADIN.md": {
-      "size": 589,
-      "tags": 1,
-      "links": 0
-    },
-    "01-proj/tp/tp03-guía de lectura 1 GROYS.md": {
-      "size": 615,
-      "tags": 2,
-      "links": 0
-    },
     "01-proj/tp/tp02-aplicación.md": {
       "size": 381,
       "tags": 2,
@@ -1243,12 +1233,27 @@
       "size": 368,
       "tags": 3,
       "links": 0
+    },
+    "01-proj/tp/tp05-guía de lectura 1 GROYS.md": {
+      "size": 615,
+      "tags": 2,
+      "links": 0
+    },
+    "01-proj/tp/tp06-guía de lectura SADIN.md": {
+      "size": 589,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/tp/tp03-guía de lectura MONTFORT.md": {
+      "size": 773,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 363,
-      "Create": 323,
+      "Refactor": 366,
+      "Create": 324,
       "Link": 240,
       "Expand": 24
     }
@@ -1270,7 +1275,7 @@
       "12": 22,
       "13": 26,
       "14": 28,
-      "15": 49,
+      "15": 53,
       "16": 34,
       "17": 1,
       "18": 0,
@@ -1286,7 +1291,7 @@
       "Mon": 7,
       "Tue": 268,
       "Wed": 302,
-      "Thu": 89,
+      "Thu": 93,
       "Fri": 5,
       "Sat": 0,
       "Sun": 279
@@ -1321,6 +1326,7 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación 1.md\"> tp02-aplicación 1 </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto 1.md\"> Multi-efecto 1 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"home.md\"> home </a>",
@@ -1370,10 +1376,12 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
         "<a class=\"internal-link\" href=\"04-out/readme/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"04-out/readme/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/readme/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>"
+        "<a class=\"internal-link\" href=\"04-out/readme/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Multi-efecto 1.md\"> Multi-efecto 1 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
@@ -1421,10 +1429,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
