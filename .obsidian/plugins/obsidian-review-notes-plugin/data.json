@@ -5,11 +5,11 @@
       "filename": "topoi MOC"
     },
     {
-      "path": "04-out/topoi/Introducción a la psicoacústica.md",
+      "path": "04-ref/topoi/Introducción a la psicoacústica.md",
       "filename": "Introducción a la psicoacústica"
     },
     {
-      "path": "00-in/meta-aprendizaje.md",
+      "path": "04-ref/meta-aprendizaje.md",
       "filename": "meta-aprendizaje"
     },
     {
@@ -21,11 +21,11 @@
       "filename": "cym-metamap"
     },
     {
-      "path": "04-out/espacios/EAT Experiments in arts and technologies.md",
+      "path": "04-ref/espacios/EAT Experiments in arts and technologies.md",
       "filename": "EAT Experiments in arts and technologies"
     },
     {
-      "path": "04-out/personas/Dick Raaijmakers.md",
+      "path": "04-ref/personas/Dick Raaijmakers.md",
       "filename": "Dick Raaijmakers"
     },
     {
@@ -33,7 +33,7 @@
       "filename": "tp01-topoi"
     },
     {
-      "path": "04-out/bibliografía/Steyerl_Los condenados de la pantalla.md",
+      "path": "04-ref/bibliografía/Steyerl_Los condenados de la pantalla.md",
       "filename": "Steyerl_Los condenados de la pantalla"
     },
     {
@@ -65,19 +65,19 @@
       "filename": "Steyerl_Los condenados de la pantalla-1693776235118"
     },
     {
-      "path": "02-mat/obs/img/Maura McDonnell topoi.docx",
+      "path": "image/Maura McDonnell topoi.docx",
       "filename": "Maura McDonnell topoi"
     },
     {
-      "path": "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+      "path": "conflict-files-obsidian-git.md",
       "filename": "conflict-files-obsidian-git"
     },
     {
-      "path": "04-out/topoi/Forma Musical.md",
+      "path": "04-ref/topoi/Forma Musical.md",
       "filename": "Forma Musical"
     },
     {
-      "path": "02-mat/obs/tpl/t-class.md",
+      "path": "04-ref/templates/t-class.md",
       "filename": "t-class"
     },
     {
@@ -197,11 +197,11 @@
       "filename": "27 stockhausen c"
     },
     {
-      "path": "02-mat/obs/img/gal.md",
+      "path": "image/gal.md",
       "filename": "gal"
     },
     {
-      "path": "04-out/cym MOC.md",
+      "path": "00-in/cym MOC.md",
       "filename": "cym MOC"
     },
     {
@@ -229,8 +229,8 @@
       "filename": "En los intersticios de lo causal. El camino es efecto"
     },
     {
-      "path": "01-proj/15/drocchi/¿Cómo suena el conocimiento?.md",
-      "filename": "¿Cómo suena el conocimiento?"
+      "path": "01-proj/15/drocchi/Cómo suena el conocimiento.md",
+      "filename": "Cómo suena el conocimiento"
     },
     {
       "path": "01-proj/15/ferrando/Tautología.md",
@@ -489,7 +489,7 @@
       "filename": "synth-grid"
     },
     {
-      "path": "04-out/topoi/Música y Política.md",
+      "path": "04-ref/topoi/Música y Política.md",
       "filename": "Música y Política"
     },
     {
@@ -505,47 +505,47 @@
       "filename": "c-cym04-vida digital"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual.md",
-      "filename": "c-cym06- cohesión audiovisual"
+      "path": "03-cla/c-cym07-cohesión audiovisual.md",
+      "filename": "c-cym07-cohesión audiovisual"
     },
     {
-      "path": "03-cla/c-cym06-flex-grid.md",
-      "filename": "c-cym06-flex-grid"
+      "path": "03-cla/c-cym08-flex-grid.md",
+      "filename": "c-cym08-flex-grid"
     },
     {
-      "path": "04-out/bibliografía/Boris Groys_Arte y flujo.md",
+      "path": "04-ref/bibliografía/Boris Groys_Arte y flujo.md",
       "filename": "Boris Groys_Arte y flujo"
     },
     {
-      "path": "04-out/bibliografía/Eduardo Kac_Signs of Life.md",
+      "path": "04-ref/bibliografía/Eduardo Kac_Signs of Life.md",
       "filename": "Eduardo Kac_Signs of Life"
     },
     {
-      "path": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+      "path": "04-ref/bibliografía/Eric Sadin_La humanidad aumentada.md",
       "filename": "Eric Sadin_La humanidad aumentada"
     },
     {
-      "path": "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+      "path": "04-ref/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
       "filename": "Myriam Robayo Pedraza_La canción social como expresión de inconformismo"
     },
     {
-      "path": "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+      "path": "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
       "filename": "La instalación como forma del arte contemporáneo"
     },
     {
-      "path": "04-out/topoi/La reología del arte.md",
+      "path": "04-ref/topoi/La reología del arte.md",
       "filename": "La reología del arte"
     },
     {
-      "path": "04-out/topoi/Música Visual.md",
+      "path": "04-ref/topoi/Música Visual.md",
       "filename": "Música Visual"
     },
     {
-      "path": "04-out/topoi/Racionalizacion_(videojuegos).md",
+      "path": "04-ref/topoi/Racionalizacion_(videojuegos).md",
       "filename": "Racionalizacion_(videojuegos)"
     },
     {
-      "path": "02-mat/obs/tpl/t-topoi.md",
+      "path": "04-ref/templates/t-topoi.md",
       "filename": "t-topoi"
     },
     {
@@ -573,95 +573,95 @@
       "filename": "personas MOC"
     },
     {
-      "path": "04-out/personas/Hito Steyerl.md",
+      "path": "04-ref/personas/Hito Steyerl.md",
       "filename": "Hito Steyerl"
     },
     {
-      "path": "04-out/personas/Marianne Amacher.md",
+      "path": "04-ref/personas/Marianne Amacher.md",
       "filename": "Marianne Amacher"
     },
     {
-      "path": "04-out/personas/Yotam Mann.md",
+      "path": "04-ref/personas/Yotam Mann.md",
       "filename": "Yotam Mann"
     },
     {
-      "path": "04-out/personas/Yuval Harari.md",
+      "path": "04-ref/personas/Yuval Harari.md",
       "filename": "Yuval Harari"
     },
     {
-      "path": "04-out/personas/Carlos Trilnik.md",
+      "path": "04-ref/personas/Carlos Trilnik.md",
       "filename": "Carlos Trilnik"
     },
     {
-      "path": "02-mat/obs/tpl/t-persona.md",
+      "path": "04-ref/templates/t-persona.md",
       "filename": "t-persona"
     },
     {
-      "path": "04-out/personas/Cecila Arditto.md",
+      "path": "04-ref/personas/Cecila Arditto.md",
       "filename": "Cecila Arditto"
     },
     {
-      "path": "04-out/personas/Dennis Smalley.md",
+      "path": "04-ref/personas/Dennis Smalley.md",
       "filename": "Dennis Smalley"
     },
     {
-      "path": "04-out/topoi/Arte participativo.md",
+      "path": "04-ref/topoi/Arte participativo.md",
       "filename": "Arte participativo"
     },
     {
-      "path": "04-out/topoi/Arte relacional.md",
+      "path": "04-ref/topoi/Arte relacional.md",
       "filename": "Arte relacional"
     },
     {
-      "path": "04-out/topoi/Augmented Cognition.md",
+      "path": "04-ref/topoi/Augmented Cognition.md",
       "filename": "Augmented Cognition"
     },
     {
-      "path": "04-out/topoi/Cuarta Revolución Industrial.md",
+      "path": "04-ref/topoi/Cuarta Revolución Industrial.md",
       "filename": "Cuarta Revolución Industrial"
     },
     {
-      "path": "04-out/topoi/Espacio.md",
+      "path": "04-ref/topoi/Espacio.md",
       "filename": "Espacio"
     },
     {
-      "path": "04-out/topoi/Filosofía 21.md",
+      "path": "04-ref/topoi/Filosofía 21.md",
       "filename": "Filosofía 21"
     },
     {
-      "path": "04-out/topoi/Filosofía histórica.md",
+      "path": "04-ref/topoi/Filosofía histórica.md",
       "filename": "Filosofía histórica"
     },
     {
-      "path": "04-out/topoi/Internetmusic.md",
+      "path": "04-ref/topoi/Internetmusic.md",
       "filename": "Internetmusic"
     },
     {
-      "path": "04-out/topoi/Generatividad.md",
+      "path": "04-ref/topoi/Generatividad.md",
       "filename": "Generatividad"
     },
     {
-      "path": "04-out/topoi/Sistemas de universos.md",
+      "path": "04-ref/topoi/Sistemas de universos.md",
       "filename": "Sistemas de universos"
     },
     {
-      "path": "04-out/topoi/Spectromorphology.md",
+      "path": "04-ref/topoi/Spectromorphology.md",
       "filename": "Spectromorphology"
     },
     {
-      "path": "04-out/topoi/Vida artificial.md",
+      "path": "04-ref/topoi/Vida artificial.md",
       "filename": "Vida artificial"
     },
     {
-      "path": "04-out/topoi/Livecoding.md",
+      "path": "04-ref/topoi/Livecoding.md",
       "filename": "Livecoding"
     },
     {
-      "path": "04-out/topoi/Humanos.md",
+      "path": "04-ref/topoi/Humanos.md",
       "filename": "Humanos"
     },
     {
-      "path": "04-out/topoi/Virtualidad y realidad.md",
+      "path": "04-ref/topoi/Virtualidad y realidad.md",
       "filename": "Virtualidad y realidad"
     },
     {
@@ -681,7 +681,7 @@
       "filename": "shifres POC"
     },
     {
-      "path": "04-out/topoi/Intervencion del espacio público.md",
+      "path": "04-ref/topoi/Intervencion del espacio público.md",
       "filename": "Intervencion del espacio público"
     },
     {
@@ -693,20 +693,192 @@
       "filename": "zaracho POC"
     },
     {
-      "path": "04-out/topoi/Sistemas complejos.md",
+      "path": "04-ref/topoi/Sistemas complejos.md",
       "filename": "Sistemas complejos"
     },
     {
-      "path": "04-out/topoi/Método científico.md",
+      "path": "04-ref/topoi/Método científico.md",
       "filename": "Método científico"
     },
     {
-      "path": "04-out/topoi/Interfaces.md",
+      "path": "04-ref/topoi/Interfaces.md",
       "filename": "Interfaces"
+    },
+    {
+      "path": "04-ref/topoi/Azar.md",
+      "filename": "Azar"
+    },
+    {
+      "path": "04-ref/topoi/Fragile Territories.md",
+      "filename": "Fragile Territories"
+    },
+    {
+      "path": "04-ref/topoi/Física.md",
+      "filename": "Física"
+    },
+    {
+      "path": "04-out/bibliografía/Boris Groys_Arte y flujo.md",
+      "filename": "Boris Groys_Arte y flujo"
+    },
+    {
+      "path": "04-out/bibliografía/Eduardo Kac_Signs of Life.md",
+      "filename": "Eduardo Kac_Signs of Life"
+    },
+    {
+      "path": "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+      "filename": "Eric Sadin_La humanidad aumentada"
+    },
+    {
+      "path": "04-out/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+      "filename": "Esteban Castromán_Tecnopoéticas argentinas"
+    },
+    {
+      "path": "04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+      "filename": "Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo"
+    },
+    {
+      "path": "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+      "filename": "Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo"
+    },
+    {
+      "path": "04-out/bibliografía/John D Barrow_El libro de la nada.md",
+      "filename": "John D Barrow_El libro de la nada"
+    },
+    {
+      "path": "04-out/bibliografía/Matt Pearson_Generative Art.md",
+      "filename": "Matt Pearson_Generative Art"
+    },
+    {
+      "path": "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+      "filename": "Myriam Robayo Pedraza_La canción social como expresión de inconformismo"
+    },
+    {
+      "path": "04-out/bibliografía/Philip Ball_Shapes.md",
+      "filename": "Philip Ball_Shapes"
+    },
+    {
+      "path": "04-out/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+      "filename": "Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications"
+    },
+    {
+      "path": "04-out/bibliografía/Steyerl_Los condenados de la pantalla.md",
+      "filename": "Steyerl_Los condenados de la pantalla"
+    },
+    {
+      "path": "04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md",
+      "filename": "Tim Ingold_Eine kurze Geschichte der Linien"
+    },
+    {
+      "path": "04-out/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+      "filename": "Xuan Thuan Trinh_The Secret Melody"
+    },
+    {
+      "path": "04-out/bibliografía/cym.bib",
+      "filename": "cym"
+    },
+    {
+      "path": "00-in/cym MOC.md",
+      "filename": "cym MOC"
+    },
+    {
+      "path": "04-out/espacios/Academy of Fine Arts Vienna.md",
+      "filename": "Academy of Fine Arts Vienna"
+    },
+    {
+      "path": "04-out/espacios/EAT Experiments in arts and technologies.md",
+      "filename": "EAT Experiments in arts and technologies"
+    },
+    {
+      "path": "04-out/glosario/PaaS.md",
+      "filename": "PaaS"
+    },
+    {
+      "path": "04-out/obras/Boid Simulation.md",
+      "filename": "Boid Simulation"
+    },
+    {
+      "path": "04-out/personas/Carlos Trilnik.md",
+      "filename": "Carlos Trilnik"
+    },
+    {
+      "path": "04-out/personas/Cecila Arditto.md",
+      "filename": "Cecila Arditto"
+    },
+    {
+      "path": "04-out/personas/Dennis Smalley.md",
+      "filename": "Dennis Smalley"
+    },
+    {
+      "path": "04-out/personas/Dick Raaijmakers.md",
+      "filename": "Dick Raaijmakers"
+    },
+    {
+      "path": "04-out/personas/Hito Steyerl.md",
+      "filename": "Hito Steyerl"
+    },
+    {
+      "path": "04-out/personas/Hugh Le Caine.md",
+      "filename": "Hugh Le Caine"
+    },
+    {
+      "path": "04-out/personas/Marianne Amacher.md",
+      "filename": "Marianne Amacher"
+    },
+    {
+      "path": "04-out/personas/Yotam Mann.md",
+      "filename": "Yotam Mann"
+    },
+    {
+      "path": "04-out/personas/Yuval Harari.md",
+      "filename": "Yuval Harari"
+    },
+    {
+      "path": "04-out/procedimientos/analisis de obras interactivas.md",
+      "filename": "analisis de obras interactivas"
+    },
+    {
+      "path": "04-out/procedimientos/extrañamiento.md",
+      "filename": "extrañamiento"
+    },
+    {
+      "path": "04-out/procedimientos/tipologías de instalación.md",
+      "filename": "tipologías de instalación"
+    },
+    {
+      "path": "04-out/topoi/Arte participativo.md",
+      "filename": "Arte participativo"
+    },
+    {
+      "path": "04-out/topoi/Arte relacional.md",
+      "filename": "Arte relacional"
+    },
+    {
+      "path": "04-out/topoi/Augmented Cognition.md",
+      "filename": "Augmented Cognition"
     },
     {
       "path": "04-out/topoi/Azar.md",
       "filename": "Azar"
+    },
+    {
+      "path": "04-out/topoi/Cuarta Revolución Industrial.md",
+      "filename": "Cuarta Revolución Industrial"
+    },
+    {
+      "path": "04-out/topoi/Espacio.md",
+      "filename": "Espacio"
+    },
+    {
+      "path": "04-out/topoi/Filosofía 21.md",
+      "filename": "Filosofía 21"
+    },
+    {
+      "path": "04-out/topoi/Filosofía histórica.md",
+      "filename": "Filosofía histórica"
+    },
+    {
+      "path": "04-out/topoi/Forma Musical.md",
+      "filename": "Forma Musical"
     },
     {
       "path": "04-out/topoi/Fragile Territories.md",
@@ -717,576 +889,452 @@
       "filename": "Física"
     },
     {
-      "path": "04-out/personas/Dennis Fabian Peter.md",
-      "filename": "Dennis Fabian Peter"
+      "path": "04-out/topoi/Generatividad.md",
+      "filename": "Generatividad"
     },
     {
-      "path": "04-out/test.md",
-      "filename": "test"
+      "path": "04-out/topoi/Historia de la tecnología.md",
+      "filename": "Historia de la tecnología"
     },
     {
-      "path": "00-in/Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival.md",
-      "filename": "Youtube - FLOW.0  Dennis Fabian Peter  Mumbai Urban Art Festival"
+      "path": "04-out/topoi/Interfaces.md",
+      "filename": "Interfaces"
     },
     {
-      "path": "00-in/cym pub.md",
-      "filename": "cym pub"
+      "path": "04-out/topoi/Internetmusic.md",
+      "filename": "Internetmusic"
     },
     {
-      "path": "02-mat/obs/img/sistemas.excalidraw.md",
-      "filename": "sistemas.excalidraw"
+      "path": "04-out/topoi/Intervencion del espacio público.md",
+      "filename": "Intervencion del espacio público"
     },
     {
-      "path": "02-mat/Untitled.md",
-      "filename": "Untitled"
+      "path": "04-out/topoi/Introducción a la psicoacústica.md",
+      "filename": "Introducción a la psicoacústica"
     },
     {
-      "path": "02-mat/obs/help/a-dataview playground.md",
-      "filename": "a-dataview playground"
+      "path": "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+      "filename": "La instalación como forma del arte contemporáneo"
     },
     {
-      "path": "02-mat/obs/Untitled.loom",
-      "filename": "Untitled"
+      "path": "04-out/topoi/La reología del arte.md",
+      "filename": "La reología del arte"
     },
     {
-      "path": "04-out/personas/Donna Haraway.md",
-      "filename": "Donna Haraway"
+      "path": "04-out/topoi/Livecoding.md",
+      "filename": "Livecoding"
     },
     {
-      "path": "02-mat/obs/help/a-dataview.md",
-      "filename": "a-dataview"
+      "path": "04-out/topoi/Método científico.md",
+      "filename": "Método científico"
     },
     {
-      "path": "02-mat/obs/help/a-yuda.md",
-      "filename": "a-yuda"
+      "path": "04-out/topoi/Música Visual.md",
+      "filename": "Música Visual"
     },
     {
-      "path": "02-mat/obs/help/a-snippets.md",
-      "filename": "a-snippets"
+      "path": "04-out/topoi/Música y Política.md",
+      "filename": "Música y Política"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246903.jpeg",
-      "filename": "personas MOC-1694487246903"
+      "path": "04-out/topoi/Racionalizacion_(videojuegos).md",
+      "filename": "Racionalizacion_(videojuegos)"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246910.jpeg",
-      "filename": "personas MOC-1694487246910"
+      "path": "04-out/topoi/Sistemas complejos.md",
+      "filename": "Sistemas complejos"
     },
     {
-      "path": "02-mat/obs/img/cym MOC-1694393867397.jpeg",
-      "filename": "cym MOC-1694393867397"
+      "path": "04-out/topoi/Sistemas de universos.md",
+      "filename": "Sistemas de universos"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246911.jpeg",
-      "filename": "personas MOC-1694487246911"
+      "path": "04-out/topoi/Spectromorphology.md",
+      "filename": "Spectromorphology"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246912.jpeg",
-      "filename": "personas MOC-1694487246912"
+      "path": "04-out/topoi/Vida artificial.md",
+      "filename": "Vida artificial"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246921.jpeg",
-      "filename": "personas MOC-1694487246921"
+      "path": "04-out/topoi/Virtualidad y realidad.md",
+      "filename": "Virtualidad y realidad"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246922.jpeg",
-      "filename": "personas MOC-1694487246922"
+      "path": "02-mat/obs/tpl/templater.md",
+      "filename": "templater"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246923.jpeg",
-      "filename": "personas MOC-1694487246923"
+      "path": "02-mat/obs/tpl/t-topoi.md",
+      "filename": "t-topoi"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246924.jpeg",
-      "filename": "personas MOC-1694487246924"
+      "path": "02-mat/obs/tpl/t-persona.md",
+      "filename": "t-persona"
     },
     {
-      "path": "02-mat/obs/img/personas MOC-1694487246925.jpeg",
-      "filename": "personas MOC-1694487246925"
+      "path": "02-mat/obs/tpl/t-movie.md",
+      "filename": "t-movie"
     },
     {
-      "path": "02-mat/obs/img/cym MOC-1694393867405.jpeg",
-      "filename": "cym MOC-1694393867405"
+      "path": "02-mat/obs/tpl/t-liquid.md",
+      "filename": "t-liquid"
     },
     {
-      "path": "02-mat/obs/img/yokoono.jpeg",
-      "filename": "yokoono"
-    },
-    {
-      "path": "02-mat/obs/img/cym MOC-1694393867407.jpeg",
-      "filename": "cym MOC-1694393867407"
-    },
-    {
-      "path": "02-mat/obs/img/personas MOC-1694487246927.jpeg",
-      "filename": "personas MOC-1694487246927"
-    },
-    {
-      "path": "02-mat/obs/img/cym MOC-1694393867410.jpeg",
-      "filename": "cym MOC-1694393867410"
-    },
-    {
-      "path": "02-mat/obs/img/personas MOC-1694487246928.jpeg",
-      "filename": "personas MOC-1694487246928"
-    },
-    {
-      "path": "02-mat/obs/img/cym MOC-1694393867412.jpeg",
-      "filename": "cym MOC-1694393867412"
-    },
-    {
-      "path": "00-in/cym MOC.md",
-      "filename": "cym MOC"
-    },
-    {
-      "path": "02-mat/obs/img/Pasted image 20230829224242.png",
-      "filename": "Pasted image 20230829224242"
-    },
-    {
-      "path": "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
-      "filename": "t01-sistemas de universos-1660410536915"
-    },
-    {
-      "path": "04-out/glosario/URI.md",
-      "filename": "URI"
-    },
-    {
-      "path": "04-out/personas/Yuval Noah Harari.md",
-      "filename": "Yuval Noah Harari"
-    },
-    {
-      "path": "03-cla/c-cym02-arte generativo.md",
-      "filename": "c-cym02-arte generativo"
-    },
-    {
-      "path": "03-cla/c-cym-05-principios generativos.md",
-      "filename": "c-cym-05-principios generativos"
+      "path": "02-mat/obs/tpl/t-cym-init-slide.md",
+      "filename": "t-cym-init-slide"
     },
     {
       "path": "02-mat/obs/tpl/t-cym-class.md",
       "filename": "t-cym-class"
     },
     {
-      "path": "02-mat/obs/tpl/t-lorem.md",
-      "filename": "t-lorem"
+      "path": "02-mat/obs/tpl/t-class.md",
+      "filename": "t-class"
     },
     {
-      "path": "04-out/glosario/PWA.md",
-      "filename": "PWA"
+      "path": "02-mat/obs/tpl/t-book.md",
+      "filename": "t-book"
     },
     {
-      "path": "03-cla/c-cym-05b-relaciones sonolumínicas.md",
-      "filename": "c-cym-05b-relaciones sonolumínicas"
+      "path": "02-mat/obs/tpl/t-alumno-POC.md",
+      "filename": "t-alumno-POC"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676420.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676420"
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+      "filename": "conflict-files-obsidian-git"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676421.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676421"
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
+      "filename": "conflict-files-obsidian-git 2"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676422"
+      "path": "02-mat/obs/help/a-yuda-1695176202050.jpeg",
+      "filename": "a-yuda-1695176202050"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676423.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676423"
+      "path": "00-in/cym MOC-1694393867411.jpeg",
+      "filename": "cym MOC-1694393867411"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676427"
+      "path": "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
+      "filename": "t01-sistemas de universos-1660410536915"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676429.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676429"
+      "path": "02-mat/obs/help/a-yuda-1695176202043.jpeg",
+      "filename": "a-yuda-1695176202043"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676430.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676430"
+      "path": "02-mat/obs/img/sistemas.excalidraw.md",
+      "filename": "sistemas.excalidraw"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676431.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676431"
+      "path": "00-in/cym MOC-1694393867408.jpeg",
+      "filename": "cym MOC-1694393867408"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676432.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676432"
+      "path": "00-in/cym MOC-1694393867407.jpeg",
+      "filename": "cym MOC-1694393867407"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676433.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676433"
+      "path": "02-mat/obs/img/gal.md",
+      "filename": "gal"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676434"
+      "path": "00-in/cym MOC-1694393867406.jpeg",
+      "filename": "cym MOC-1694393867406"
     },
     {
-      "path": "03-cla/c-cym06- cohesión audiovisual-1694557676435.jpeg",
-      "filename": "c-cym06- cohesión audiovisual-1694557676435"
+      "path": "02-mat/obs/help/a-yuda-1695176202038.jpeg",
+      "filename": "a-yuda-1695176202038"
     },
     {
-      "path": "02-mat/css.md",
-      "filename": "css"
+      "path": "00-in/cym MOC-1694393867404.jpeg",
+      "filename": "cym MOC-1694393867404"
     },
     {
-      "path": "02-mat/html.md",
-      "filename": "html"
+      "path": "00-in/cym MOC-1694393867403.jpeg",
+      "filename": "cym MOC-1694393867403"
     },
     {
-      "path": "02-mat/tone.js.md",
-      "filename": "tone.js"
+      "path": "00-in/cym MOC-1694393867402.jpeg",
+      "filename": "cym MOC-1694393867402"
     },
     {
-      "path": "03-cla/c-cym03-mapas.md",
-      "filename": "c-cym03-mapas"
+      "path": "00-in/cym MOC-1694393867401.jpeg",
+      "filename": "cym MOC-1694393867401"
     },
     {
-      "path": "03-cla/c-cym05-integración.md",
-      "filename": "c-cym05-integración"
+      "path": "00-in/cym MOC-1694393867399.jpeg",
+      "filename": "cym MOC-1694393867399"
     },
     {
-      "path": "03-cla/c-cym06-cohesión audiovisual.md",
-      "filename": "c-cym06-cohesión audiovisual"
+      "path": "00-in/cym MOC-1694393867400.jpeg",
+      "filename": "cym MOC-1694393867400"
     },
     {
-      "path": "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
-      "filename": "c-cym13-Proto-historia del arte numérico argentino"
+      "path": "02-mat/obs/img/Pasted image 20230829224242.png",
+      "filename": "Pasted image 20230829224242"
+    },
+    {
+      "path": "00-in/cym MOC-1694393867398.jpeg",
+      "filename": "cym MOC-1694393867398"
+    },
+    {
+      "path": "00-in/cym MOC-1694393867397.jpeg",
+      "filename": "cym MOC-1694393867397"
+    },
+    {
+      "path": "00-in/cym MOC-1694393867396.jpeg",
+      "filename": "cym MOC-1694393867396"
+    },
+    {
+      "path": "00-in/cym MOC-1694393867395.jpeg",
+      "filename": "cym MOC-1694393867395"
+    },
+    {
+      "path": "02-mat/obs/img/Maura McDonnell topoi.docx",
+      "filename": "Maura McDonnell topoi"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda.md",
+      "filename": "a-yuda"
+    },
+    {
+      "path": "02-mat/obs/help/a-plugins.md",
+      "filename": "a-plugins"
+    },
+    {
+      "path": "02-mat/obs/help/a-dataview.md",
+      "filename": "a-dataview"
+    },
+    {
+      "path": "02-mat/obs/help/a-dataview playground.md",
+      "filename": "a-dataview playground"
+    },
+    {
+      "path": "00-in/meta-aprendizaje.md",
+      "filename": "meta-aprendizaje"
+    },
+    {
+      "path": "02-mat/obs/img/cym MOC-1694393867405.jpeg",
+      "filename": "cym MOC-1694393867405"
     },
     {
       "path": "03-cla/c-cym05.06-integración.md",
       "filename": "c-cym05.06-integración"
     },
     {
+      "path": "02-mat/tone.js.md",
+      "filename": "tone.js"
+    },
+    {
+      "path": "02-mat/html.md",
+      "filename": "html"
+    },
+    {
+      "path": "02-mat/css.md",
+      "filename": "css"
+    },
+    {
+      "path": "03-cla/c-cym02-arte generativo.md",
+      "filename": "c-cym02-arte generativo"
+    },
+    {
+      "path": "03-cla/c-cym05-integración-1694571104954.jpeg",
+      "filename": "c-cym05-integración-1694571104954"
+    },
+    {
+      "path": "03-cla/c-cym05-integración-1694571105113.jpeg",
+      "filename": "c-cym05-integración-1694571105113"
+    },
+    {
+      "path": "03-cla/c-cym05-integración-1694571105494.jpeg",
+      "filename": "c-cym05-integración-1694571105494"
+    },
+    {
+      "path": "03-cla/c-cym05-integración-1694571105626.jpeg",
+      "filename": "c-cym05-integración-1694571105626"
+    },
+    {
+      "path": "03-cla/c-cym05-integración-1694571105804.jpeg",
+      "filename": "c-cym05-integración-1694571105804"
+    },
+    {
       "path": "03-cla/c-cym06-principios generativos.md",
       "filename": "c-cym06-principios generativos"
-    },
-    {
-      "path": "03-cla/c-cym06b-relaciones sonolumínicas.md",
-      "filename": "c-cym06b-relaciones sonolumínicas"
-    },
-    {
-      "path": "03-cla/c-cym07-cohesión audiovisual.md",
-      "filename": "c-cym07-cohesión audiovisual"
-    },
-    {
-      "path": "03-cla/c-cym07-flex-grid.md",
-      "filename": "c-cym07-flex-grid"
-    },
-    {
-      "path": "02-mat/jasvascript/js-02 contextos de ejecución.md",
-      "filename": "js-02 contextos de ejecución"
-    },
-    {
-      "path": "00-in/code MOC.md",
-      "filename": "code MOC"
     },
     {
       "path": "03-cla/c-cym06c-tonejs.md",
       "filename": "c-cym06c-tonejs"
     },
     {
-      "path": "conflict-files-obsidian-git.md",
-      "filename": "conflict-files-obsidian-git"
+      "path": "03-cla/c-cym06b-relaciones sonolumínicas.md",
+      "filename": "c-cym06b-relaciones sonolumínicas"
     },
     {
-      "path": "02-mat/obs/check-out de imagenes.md",
-      "filename": "check-out de imagenes"
-    },
-    {
-      "path": "04-out/README.md",
-      "filename": "README"
+      "path": "03-cla/c-cym07-.md",
+      "filename": "c-cym07-"
     },
     {
       "path": "04-out/SUMMARY.md",
       "filename": "SUMMARY"
     },
     {
-      "path": "00-in/test.md",
-      "filename": "test"
-    },
-    {
-      "path": "02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md",
-      "filename": "bibliografia-bibliografia-bib-moc.md"
-    },
-    {
-      "path": "04-out/personas/Mario Bunge.md",
-      "filename": "Mario Bunge"
-    },
-    {
-      "path": "02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md",
-      "filename": "academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md"
-    },
-    {
-      "path": "02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md",
-      "filename": "arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md"
-    },
-    {
-      "path": "02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md",
-      "filename": "cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md"
-    },
-    {
-      "path": "02-mat/obs/help/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md",
-      "filename": "historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md"
-    },
-    {
-      "path": "02-mat/obs/help/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md",
-      "filename": "introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md"
-    },
-    {
-      "path": "02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
-      "filename": "la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md"
-    },
-    {
-      "path": "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md",
-      "filename": "la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo"
-    },
-    {
-      "path": "02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md",
-      "filename": "la-reologia-del-arte-topoi-la-20reologia-del-arte.md"
-    },
-    {
-      "path": "02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md",
-      "filename": "musica-y-politica-topoi-musica-20y-politica.md"
-    },
-    {
-      "path": "02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
-      "filename": "signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md"
-    },
-    {
-      "path": "02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
-      "filename": "tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md"
-    },
-    {
-      "path": "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md",
-      "filename": "eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md"
-    },
-    {
-      "path": "03-cla/c-cym07-human-book-computer.md",
-      "filename": "c-cym07-human-book-computer"
-    },
-    {
-      "path": "03-cla/c-cym08-flex-grid.md",
-      "filename": "c-cym08-flex-grid"
+      "path": "03-cla/c-cym07-creative computing.md",
+      "filename": "c-cym07-creative computing"
     },
     {
       "path": "03-cla/c-cym09-networking.md",
       "filename": "c-cym09-networking"
     },
     {
-      "path": "04-out/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/bibliografia/page.md",
-      "filename": "page"
-    },
-    {
-      "path": "04-out/bibliografía/Philip Ball_Shapes.md",
-      "filename": "Philip Ball_Shapes"
-    },
-    {
-      "path": "04-out/espacios/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/glosario/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/obras/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/personas/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md",
-      "filename": "dennis-fabian-peter-personas-dennis-20fabian-peter.md"
-    },
-    {
-      "path": "04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md",
-      "filename": "harari-yuval-noah-personas-harari-20yuval-noah.md"
-    },
-    {
-      "path": "04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md",
-      "filename": "yuval-noah-harari-personas-yuval-20noah-harari.md"
-    },
-    {
-      "path": "04-out/procedimientos/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md",
-      "filename": "analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md"
-    },
-    {
-      "path": "04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md",
-      "filename": "tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md"
-    },
-    {
-      "path": "04-out/topoi/README.md",
-      "filename": "README"
-    },
-    {
-      "path": "04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md",
-      "filename": "intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md"
-    },
-    {
-      "path": "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md",
-      "filename": "sistemas-de-universos-topoi-sistemas-20de-universos.md"
-    },
-    {
-      "path": "04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md",
-      "filename": "virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md"
-    },
-    {
-      "path": "00-in/Pasted image 20230829224100.png.md",
-      "filename": "Pasted image 20230829224100.png"
-    },
-    {
-      "path": "00-in/Untitled.md",
-      "filename": "Untitled"
-    },
-    {
-      "path": "01-proj/15/drocchi/Cómo suena el conocimiento.md",
-      "filename": "Cómo suena el conocimiento"
-    },
-    {
-      "path": "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-      "filename": "PSICOACÚSTICA"
-    },
-    {
       "path": "02-mat/jasvascript/js01-fundamentals.md",
       "filename": "js01-fundamentals"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224239.jpeg",
-      "filename": "cym MOC-1695202224239"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224240.jpeg",
-      "filename": "cym MOC-1695202224240"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224242.jpeg",
-      "filename": "cym MOC-1695202224242"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224245.jpeg",
-      "filename": "cym MOC-1695202224245"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224246.jpeg",
-      "filename": "cym MOC-1695202224246"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224247.jpeg",
-      "filename": "cym MOC-1695202224247"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224248.jpeg",
-      "filename": "cym MOC-1695202224248"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224250.jpeg",
-      "filename": "cym MOC-1695202224250"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224251.jpeg",
-      "filename": "cym MOC-1695202224251"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224252.jpeg",
-      "filename": "cym MOC-1695202224252"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224253.jpeg",
-      "filename": "cym MOC-1695202224253"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224255.jpeg",
-      "filename": "cym MOC-1695202224255"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224256.jpeg",
-      "filename": "cym MOC-1695202224256"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224257.jpeg",
-      "filename": "cym MOC-1695202224257"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224258.jpeg",
-      "filename": "cym MOC-1695202224258"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224261.jpeg",
-      "filename": "cym MOC-1695202224261"
-    },
-    {
-      "path": "00-in/cym MOC-1695202224263.jpeg",
-      "filename": "cym MOC-1695202224263"
-    },
-    {
-      "path": "02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
-      "filename": "academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md"
-    },
-    {
-      "path": "02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md",
-      "filename": "arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md"
-    },
-    {
-      "path": "02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md",
-      "filename": "cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md"
-    },
-    {
-      "path": "02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
-      "filename": "historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno"
-    },
-    {
-      "path": "02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md",
-      "filename": "introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust"
-    },
-    {
-      "path": "02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md",
-      "filename": "la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md"
-    },
-    {
-      "path": "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md",
-      "filename": "la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to"
-    },
-    {
-      "path": "02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md",
-      "filename": "la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md"
     },
     {
       "path": "02-mat/obs/help/meta-aprendizaje.md",
       "filename": "meta-aprendizaje"
     },
     {
-      "path": "02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
-      "filename": "musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md"
+      "path": "02-mat/obs/help/a-yuda-1695176202078.jpeg",
+      "filename": "a-yuda-1695176202078"
     },
     {
-      "path": "02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
-      "filename": "signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md"
+      "path": "02-mat/obs/help/a-yuda-1695176202079.jpeg",
+      "filename": "a-yuda-1695176202079"
     },
     {
-      "path": "02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
-      "filename": "tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg"
+      "path": "02-mat/obs/help/a-yuda-1695176202080.jpeg",
+      "filename": "a-yuda-1695176202080"
     },
     {
-      "path": "02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md",
-      "filename": "eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp"
+      "path": "02-mat/obs/help/a-yuda-1695176202081.jpeg",
+      "filename": "a-yuda-1695176202081"
     },
     {
-      "path": "03-cla/c-cym07-creative computing.md",
-      "filename": "c-cym07-creative computing"
+      "path": "02-mat/obs/help/a-yuda-1695176202196.jpeg",
+      "filename": "a-yuda-1695176202196"
     },
     {
-      "path": "04-out/bibliografía/Matt Pearson_Generative Art.md",
-      "filename": "Matt Pearson_Generative Art"
+      "path": "02-mat/obs/help/a-yuda-1695176202197.jpeg",
+      "filename": "a-yuda-1695176202197"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202198.jpeg",
+      "filename": "a-yuda-1695176202198"
+    },
+    {
+      "path": "04-ref/image/Untitled-1693882066240.jpeg",
+      "filename": "Untitled-1693882066240"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202199.jpeg",
+      "filename": "a-yuda-1695176202199"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202200.jpeg",
+      "filename": "a-yuda-1695176202200"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202201.jpeg",
+      "filename": "a-yuda-1695176202201"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202202.jpeg",
+      "filename": "a-yuda-1695176202202"
+    },
+    {
+      "path": "04-ref/image/Untitled-1693882066429.jpeg",
+      "filename": "Untitled-1693882066429"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202203.jpeg",
+      "filename": "a-yuda-1695176202203"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202204.jpeg",
+      "filename": "a-yuda-1695176202204"
+    },
+    {
+      "path": "02-mat/obs/help/a-yuda-1695176202205.jpeg",
+      "filename": "a-yuda-1695176202205"
+    },
+    {
+      "path": "04-out/README.md",
+      "filename": "README"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069150.jpeg",
+      "filename": "c-cym07-creative computing-1695220069150"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069153.jpeg",
+      "filename": "c-cym07-creative computing-1695220069153"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069158.jpeg",
+      "filename": "c-cym07-creative computing-1695220069158"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069160.jpeg",
+      "filename": "c-cym07-creative computing-1695220069160"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069161.jpeg",
+      "filename": "c-cym07-creative computing-1695220069161"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069162.jpeg",
+      "filename": "c-cym07-creative computing-1695220069162"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069166.jpeg",
+      "filename": "c-cym07-creative computing-1695220069166"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069168.jpeg",
+      "filename": "c-cym07-creative computing-1695220069168"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069175.jpeg",
+      "filename": "c-cym07-creative computing-1695220069175"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069184.jpeg",
+      "filename": "c-cym07-creative computing-1695220069184"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069193.jpeg",
+      "filename": "c-cym07-creative computing-1695220069193"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069198.jpeg",
+      "filename": "c-cym07-creative computing-1695220069198"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069201.jpeg",
+      "filename": "c-cym07-creative computing-1695220069201"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069203.jpeg",
+      "filename": "c-cym07-creative computing-1695220069203"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069213.jpeg",
+      "filename": "c-cym07-creative computing-1695220069213"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069217.jpeg",
+      "filename": "c-cym07-creative computing-1695220069217"
+    },
+    {
+      "path": "03-cla/c-cym07-creative computing-1695220069229.jpeg",
+      "filename": "c-cym07-creative computing-1695220069229"
+    },
+    {
+      "path": "README.md",
+      "filename": "README"
     }
   ]
 }
