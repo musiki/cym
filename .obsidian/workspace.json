@@ -54,8 +54,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Multi-efecto.md",
-                "mode": "source",
+                "file": "01-proj/tp/tp02-aplicación.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Multi-efecto.md",
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Multi-efecto.md"
+                "file": "01-proj/tp/tp02-aplicación.md"
               }
             }
           },
@@ -266,18 +266,20 @@
   },
   "active": "7d289e5f1d4852ae",
   "lastOpenFiles": [
+    "04-out/topoi/Forma Musical.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/prueba tutorial.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/bassino/bassino.jpg",
-    "01-proj/tp/tp02-aplicación.md",
     "00-in/topoi MOC.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/beltrame/beltrame.md",
-    "04-out/topoi/Forma Musical.md",
     "04-out/topoi/Música Visual.md",
-    "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Música y arte visual.md",
     "02-mat/obs/img/image/bassino POC-1695321580962.jpeg",
     "02-mat/obs/img/image/bassino POC-1695321576129.jpeg",
@@ -287,7 +289,6 @@
     "02-mat/obs/img/image/Música Visual-1695321218573.jpeg",
     "01-proj/22/cym exoinstrumento.md",
     "00-in/códigos MOC.md",
-    "01-proj/tp/tp01-topoi.md",
     "cym-metamap.canvas",
     "01-proj/tp/tp03-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp04-guía de lectura SADIN.md",
@@ -295,7 +296,6 @@
     "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/Internetmusic.md",
     "04-out/topoi/Historia de la tecnología.md",
-    "01-proj/tp/prueba tutorial.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
     "02-mat/procesos/r-vinculación bidireccional.md",
     "00-in/cym MOC-1695202224239.jpeg",
