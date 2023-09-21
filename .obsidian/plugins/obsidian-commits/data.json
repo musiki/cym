@@ -171,7 +171,7 @@
     },
     "01-proj/tp/tp02-aplicación.md": {
       "size": 381,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/tp/tp01-topoi.md": {
@@ -1244,7 +1244,7 @@
     "/": {
       "Refactor": 360,
       "Create": 322,
-      "Link": 236,
+      "Link": 237,
       "Expand": 24
     }
   },
@@ -1265,7 +1265,7 @@
       "12": 22,
       "13": 26,
       "14": 28,
-      "15": 41,
+      "15": 42,
       "16": 34,
       "17": 1,
       "18": 0,
@@ -1281,7 +1281,7 @@
       "Mon": 7,
       "Tue": 268,
       "Wed": 302,
-      "Thu": 81,
+      "Thu": 82,
       "Fri": 5,
       "Sat": 0,
       "Sun": 279
@@ -1422,6 +1422,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07a-human-book-computer.md\"> c-cym07a-human-book-computer </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
@@ -1471,8 +1472,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Marianne Amacher.md\"> Marianne Amacher </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yotam Mann.md\"> Yotam Mann </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Yotam Mann.md\"> Yotam Mann </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
