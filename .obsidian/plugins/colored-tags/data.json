@@ -125,7 +125,14 @@
     "vr": 118,
     "realidad": 119,
     "machine": 120,
-    "ia": 121
+    "ia": 121,
+    "artículos": 122,
+    "eventos": 123,
+    "sistemascomplejos": 124,
+    "análisis": 125,
+    "performance": 126,
+    "entrevistas": 127,
+    "teatroexpandido": 128
   },
   "_version": 2
 }

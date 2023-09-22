@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7504f9b702e86447",
+        "id": "06d687c8a9bdbf8d",
         "type": "tabs",
         "children": [
           {
-            "id": "a9d5f06fdfdb4043",
+            "id": "a82a4ffbfe105dc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js-02 contextos de ejecución.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "5893dcbf31eced15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
+                "file": "00-in/La conciencia social del arte generativo..md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:sistemas",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "00-in/La conciencia social del arte generativo..md"
               }
             }
           },
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "00-in/La conciencia social del arte generativo..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -239,34 +225,35 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "5893dcbf31eced15",
+  "active": "a82a4ffbfe105dc3",
   "lastOpenFiles": [
-    "home.md",
-    "04-out/personas/Peter Novig.md",
-    "00-in/personas MOC.md",
-    "04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md",
-    "04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md",
-    "04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md",
-    "04-out/topoi/Método científico.md",
-    "00-in/topoi MOC.md",
-    "00-in/proyectos MOC.md",
-    "02-mat/obs/img/logo-musiki-only.png",
-    "04-out/topoi/Livecoding.md",
-    "04-out/topoi/La reología del arte.md",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Interfaces.md",
-    "04-out/topoi/Humanos.md",
-    "04-out/topoi/Historia de la tecnología.md",
-    "04-out/topoi/Generatividad.md",
-    "04-out/topoi/Filosofía 21.md",
-    "04-out/topoi/Filosofía histórica.md",
+    "00-in/En conversación con Susanne Kennedy.md",
+    "00-in/En conversación con Susanne Kennedy.md",
+    "02-mat/jasvascript/js-02 contextos de ejecución.md",
+    "00-in/hi augmentation.md",
+    "04-out/personas/Dennis Fabian Peter.md",
+    "04-out/procedimientos/analisis de obras interactivas.md",
+    "02-mat/python/python abjad.md",
+    "04-out/personas/Harari Yuval Noah.md",
+    "04-out/obras/Boid Simulation.md",
     "04-out/topoi/Arte participativo.md",
+    "04-out/topoi/Sistemas complejos.md",
+    "04-out/personas/Dick Raaijmakers.md",
+    "00-in/obras.in MOC.md",
+    "02-mat/obs/tpl/t-evento.md",
+    "00-in/proyectos MOC.md",
+    "00-in/eventos.md",
+    "00-in/espacios MOC.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/personas MOC.md",
+    "00-in/Cybernetic Serendipity.md",
+    "04-out/topoi/README 1.md",
+    "home.md",
+    "04-out/SUMMARY.md",
     "README.md",
-    "02-mat/partituras/bianco dolce signo.md",
-    "02-mat/partituras/canciones.md",
-    "02-mat/partituras/unendilech freude.md",
+    "04-out/topoi/Generatividad.md",
+    "04-out/espacios/Bell Labs.md",
+    "02-mat/obs/img/logo-musiki-only.png",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "02-mat/obs/img/cym MOC-1695202224263.jpeg",
     "02-mat/obs/img/cym MOC-1695202224257.jpeg",

@@ -76,7 +76,7 @@
     },
     "02-mat/python/python abjad.md": {
       "size": 576,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/python/pycolors.md": {
@@ -721,12 +721,12 @@
     },
     "04-out/obras/Boid Simulation.md": {
       "size": 149,
-      "tags": 5,
+      "tags": 4,
       "links": 0
     },
     "04-out/procedimientos/analisis de obras interactivas.md": {
       "size": 1,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/procedimientos/extrañamiento.md": {
@@ -754,16 +754,6 @@
       "tags": 4,
       "links": 0
     },
-    "04-out/personas/Dick Raaijmakers.md": {
-      "size": 9,
-      "tags": 7,
-      "links": 0
-    },
-    "04-out/personas/Donna Haraway.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/personas/Douglas Barret.md": {
       "size": 0,
       "tags": 0,
@@ -779,11 +769,6 @@
       "tags": 3,
       "links": 1
     },
-    "04-out/personas/John Barrows.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/personas/Klaus Schwab.md": {
       "size": 0,
       "tags": 0,
@@ -792,11 +777,6 @@
     "04-out/personas/Marianne Amacher.md": {
       "size": 56,
       "tags": 1,
-      "links": 0
-    },
-    "04-out/personas/Stuart Russell.md": {
-      "size": 0,
-      "tags": 0,
       "links": 0
     },
     "04-out/personas/Yotam Mann.md": {
@@ -954,11 +934,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-out/personas/Dennis Fabian Peter.md": {
-      "size": 0,
-      "tags": 4,
-      "links": 0
-    },
     "02-mat/obs/img/gal.md": {
       "size": 0,
       "tags": 0,
@@ -1027,11 +1002,6 @@
     "02-mat/obs/tpl/templater.md": {
       "size": 112,
       "tags": 0,
-      "links": 0
-    },
-    "02-mat/obs/tpl/t-topoi.md": {
-      "size": 50,
-      "tags": 1,
       "links": 0
     },
     "02-mat/obs/help/a-snippets.md": {
@@ -1204,16 +1174,6 @@
       "tags": 7,
       "links": 0
     },
-    "04-out/SUMMARY.md": {
-      "size": 6096,
-      "tags": 0,
-      "links": 71
-    },
-    "04-out/espacios/README.md": {
-      "size": 12,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/glosario/README.md": {
       "size": 12,
       "tags": 0,
@@ -1251,16 +1211,6 @@
     },
     "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md": {
       "size": 63,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md": {
-      "size": 65,
-      "tags": 0,
-      "links": 0
-    },
-    "04-out/README.md": {
-      "size": 638,
       "tags": 0,
       "links": 0
     },
@@ -1369,18 +1319,68 @@
       "tags": 0,
       "links": 0
     },
-    "04-out/personas/Peter Novig.md": {
+    "00-in/La conciencia social del arte generativo..md": {
+      "size": 30434,
+      "tags": 2,
+      "links": 7
+    },
+    "02-mat/obs/tpl/t-espacios.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/espacios MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/espacios/Bell Labs.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "04-out/topoi/t-topoi.md": {
+      "size": 50,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/topoi/README 1.md": {
+      "size": 638,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-evento.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Cybernetic Serendipity.md": {
       "size": 0,
       "tags": 2,
+      "links": 0
+    },
+    "00-in/eventos.md": {
+      "size": 3110,
+      "tags": 1,
+      "links": 1
+    },
+    "00-in/En conversación con Susanne Kennedy.md": {
+      "size": 37511,
+      "tags": 4,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 282,
-      "Create": 221,
-      "Link": 174,
-      "Expand": 16
+      "Refactor": 308,
+      "Create": 234,
+      "Link": 187,
+      "Expand": 19
     }
   },
   "dailyCommits": {
@@ -1401,11 +1401,11 @@
       "13": 32,
       "14": 13,
       "15": 10,
-      "16": 23,
-      "17": 7,
+      "16": 30,
+      "17": 28,
       "18": 127,
-      "19": 2,
-      "20": 8,
+      "19": 16,
+      "20": 21,
       "21": 13,
       "22": 39,
       "23": 36
@@ -1416,7 +1416,7 @@
       "Mon": 7,
       "Tue": 49,
       "Wed": 559,
-      "Thu": 54,
+      "Thu": 109,
       "Fri": 5,
       "Sat": 0,
       "Sun": 19
@@ -1440,9 +1440,25 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/[es] Susanne Kennedy.md\"> [es] Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/\"Cybernetic Serendipity\".md\"> \"Cybernetic Serendipity\" </a>",
+        "<a class=\"internal-link\" href=\"00-in/[es] exhibiciones históricas.md\"> [es] exhibiciones históricas </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik.md\"> Projekte generativer Ästhetik </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Bell Labs.md\"> Bell Labs </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
@@ -1480,22 +1496,21 @@
         "<a class=\"internal-link\" href=\"04-out/personas/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"04-out/obras/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/README.md\"> README </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/README.md\"> README </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/README (1).md\"> README (1) </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md\"> eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>"
+        "<a class=\"internal-link\" href=\"04-out/espacios/README.md\"> README </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
+        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"00-in/exhibiciones históricas.md\"> exhibiciones históricas </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-evento.md\"> t-evento </a>",
+        "<a class=\"internal-link\" href=\"00-in/exhibiciones históricas.md\"> exhibiciones históricas </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-espacios.md\"> t-espacios </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"home.md\"> home </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md\"> Usos de la ciencia en el arte argentino contemporáneo </a>",
@@ -1534,21 +1549,17 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-liquid.md\"> t-liquid </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-cym-init-slide.md\"> t-cym-init-slide </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-cym-class.md\"> t-cym-class </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-class.md\"> t-class </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-book.md\"> t-book </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-alumno-POC.md\"> t-alumno-POC </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview playground.md\"> a-dataview playground </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview.md\"> a-dataview </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/gal.md\"> gal </a>",
-        "<a class=\"internal-link\" href=\"img/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"img/gal.md\"> gal </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-class.md\"> t-class </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"00-in/[es] Susanne Kennedy.md\"> [es] Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
+        "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis de obras interactivas.md\"> analisis de obras interactivas </a>",
+        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"00-in/exhibiciones históricas.md\"> exhibiciones históricas </a>",
+        "<a class=\"internal-link\" href=\"00-in/\"Cybernetic Serendipity\".md\"> \"Cybernetic Serendipity\" </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
@@ -1591,20 +1602,25 @@
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/Melodia.md\"> Melodia </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/hydra.md\"> hydra </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/mico/Dónde está el camino.md\"> Dónde está el camino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/mousetrap.md\"> mousetrap </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/synth-flex.md\"> synth-flex </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/synth-grid.md\"> synth-grid </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto.md\"> Multi-efecto </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/bergaglio/Supernova luna llena.md\"> Supernova luna llena </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"00-in/exhibiciones históricas.md\"> exhibiciones históricas </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik.md\"> Projekte generativer Ästhetik </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/README.md\"> README </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Donna Haraway.md\"> Donna Haraway </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/John Barrows.md\"> John Barrows </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md\"> virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md\"> dennis-fabian-peter-personas-dennis-20fabian-peter.md </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md\"> harari-yuval-noah-personas-harari-20yuval-noah.md </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md\"> yuval-noah-harari-personas-yuval-20noah-harari.md </a>",
@@ -1642,20 +1658,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Harari.md\"> Yuval Harari </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Hugh Le Caine.md\"> Hugh Le Caine </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"00-in/que pienso de la psicoacústica.md\"> que pienso de la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/texto 1.md\"> texto 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/de-moc.md\"> de-moc </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"2023-08-29.md\"> 2023-08-29 </a>",
-        "<a class=\"internal-link\" href=\"00-in/paul.md\"> paul </a>",
-        "<a class=\"internal-link\" href=\"00-in/Inteligencia Artificial -Un enfoque moderno.md\"> Inteligencia Artificial -Un enfoque moderno </a>",
-        "<a class=\"internal-link\" href=\"Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/El topoi de Agustin.md\"> El topoi de Agustin </a>",
-        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Inteligencia artificial.md\"> Inteligencia artificial </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/t-topoi.md\"> t-topoi </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1703,7 +1706,12 @@
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/exhibiciones históricas.md\"> exhibiciones históricas </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
@@ -1711,7 +1719,8 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",

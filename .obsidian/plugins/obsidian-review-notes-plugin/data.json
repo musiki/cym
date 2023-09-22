@@ -45,8 +45,8 @@
       "filename": "Sin título 1"
     },
     {
-      "path": "00-in/Sin título.md",
-      "filename": "Sin título"
+      "path": "00-in/La conciencia social del arte generativo..md",
+      "filename": "La conciencia social del arte generativo."
     },
     {
       "path": "00-in/c-i102-Timbre y Materiales.md",
@@ -545,7 +545,7 @@
       "filename": "Racionalizacion_(videojuegos)"
     },
     {
-      "path": "02-mat/obs/tpl/t-topoi.md",
+      "path": "04-out/topoi/t-topoi.md",
       "filename": "t-topoi"
     },
     {
@@ -993,8 +993,8 @@
       "filename": "check-out de imagenes"
     },
     {
-      "path": "04-out/README.md",
-      "filename": "README"
+      "path": "04-out/topoi/README 1.md",
+      "filename": "README 1"
     },
     {
       "path": "04-out/SUMMARY.md",
@@ -1319,6 +1319,66 @@
     {
       "path": "04-out/personas/Peter Novig.md",
       "filename": "Peter Novig"
+    },
+    {
+      "path": "00-in/eventos.md",
+      "filename": "eventos"
+    },
+    {
+      "path": "04-out/espacios/Bell Labs.md",
+      "filename": "Bell Labs"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-espacios.md",
+      "filename": "t-espacios"
+    },
+    {
+      "path": "04-out/personas/John Barrows.md",
+      "filename": "John Barrows"
+    },
+    {
+      "path": "00-in/espacios MOC.md",
+      "filename": "espacios MOC"
+    },
+    {
+      "path": "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
+      "filename": "Projekte generativer Ästhetik. (The projects of generative aesthetics"
+    },
+    {
+      "path": "00-in/Projekte generativer Ästhetik.md",
+      "filename": "Projekte generativer Ästhetik"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-evento.md",
+      "filename": "t-evento"
+    },
+    {
+      "path": "00-in/exhibiciones históricas.md",
+      "filename": "exhibiciones históricas"
+    },
+    {
+      "path": "00-in/Cybernetic Serendipity.md",
+      "filename": "Cybernetic Serendipity"
+    },
+    {
+      "path": "04-out/obras/Boid Simulation.md",
+      "filename": "Boid Simulation"
+    },
+    {
+      "path": "02-mat/python/python abjad.md",
+      "filename": "python abjad"
+    },
+    {
+      "path": "04-out/procedimientos/analisis de obras interactivas.md",
+      "filename": "analisis de obras interactivas"
+    },
+    {
+      "path": "00-in/En conversación con Susanne Kennedy.md",
+      "filename": "En conversación con Susanne Kennedy"
+    },
+    {
+      "path": "00-in/Susanne Kennedy.md",
+      "filename": "Susanne Kennedy"
     }
   ]
 }
