@@ -1,8 +1,8 @@
 {
-  "chroma": 32,
-  "lightness": 32,
-  "palette": 24,
-  "seed": 7,
+  "chroma": 16,
+  "lightness": 87,
+  "palette": 16,
+  "seed": 0,
   "knownTags": {
     "languages": 1,
     "pkm": 2,
@@ -126,6 +126,7 @@
     "realidad": 119,
     "machine": 120,
     "ia": 121,
+<<<<<<< HEAD
     "artículos": 122,
     "eventos": 123,
     "sistemascomplejos": 124,
@@ -133,6 +134,10 @@
     "performance": 126,
     "entrevistas": 127,
     "teatroexpandido": 128
+=======
+    "forma": 122,
+    "musical": 123
+>>>>>>> origin/main
   },
   "_version": 2
 }
