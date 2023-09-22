@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp03-guía de lectura MONTFORT.md",
+                "file": "01-proj/tp/tp06-guía de lectura SADIN.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp03-guía de lectura MONTFORT.md",
+                "file": "01-proj/tp/tp06-guía de lectura SADIN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp03-guía de lectura MONTFORT.md"
+                "file": "01-proj/tp/tp06-guía de lectura SADIN.md"
               }
             }
           },
@@ -264,12 +264,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d289e5f1d4852ae",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
     "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp03-guía de lectura MONTFORT.md",
-    "03-cla/c-cym07-creative computing.md",
     "01-proj/tp/tp02-aplicación.md",
+    "conflict-files-obsidian-git.md",
+    "04-out/topoi/README 1.md",
+    "04-out/topoi/t-topoi.md",
+    "04-out/espacios/Bell Labs.md",
+    "02-mat/obs/tpl/t-evento.md",
+    "02-mat/obs/tpl/t-espacios.md",
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603452.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603451.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603450.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603449.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603445.jpeg",
+    "00-in/eventos.md",
+    "00-in/espacios MOC.md",
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/En conversación con Susanne Kennedy.md",
+    "00-in/Cybernetic Serendipity.md",
+    "03-cla/c-cym07-creative computing.md",
     "01-proj/tp/tp06-guía de lectura SADIN.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/23/shifres/do-tonera.md",
@@ -281,28 +300,9 @@
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/bassino/bassino.jpg",
-    "00-in/topoi MOC.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "04-out/topoi/Música Visual.md",
-    "01-proj/23/bassino/Música y arte visual.md",
     "02-mat/obs/img/image/bassino POC-1695321580962.jpeg",
     "02-mat/obs/img/image/bassino POC-1695321576129.jpeg",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "02-mat/obs/help/Introducción a la psicoacústica-1695321561481.jpeg",
-    "01-proj/23/bassino/bassino.png",
-    "02-mat/obs/img/image/Música Visual-1695321218573.jpeg",
-    "01-proj/22/cym exoinstrumento.md",
-    "00-in/códigos MOC.md",
     "cym-metamap.canvas",
-    "00-in/bib MOC.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Historia de la tecnología.md",
-    "00-in/cym MOC-1695202224239.jpeg",
-    "02-mat/obs/img/image/tone.js-1695318779484.jpeg",
-    "00-in/cym MOC-1695202224263.jpeg",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "02-mat/obs/img/image",

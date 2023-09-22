@@ -2,7 +2,7 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
@@ -11,7 +11,7 @@
       "query": "path:01-proj",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 9699387
       }
     },
     {
@@ -39,12 +39,51 @@
       "query": "path:04-ref/personas",
       "color": {
         "a": 1,
-        "rgb": 13776695
+        "rgb": 16743168
+      }
+    },
+    {
+      "query": "path:04-out/topoi  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711842
+      }
+    },
+    {
+      "query": "path:04-out  path:01-proj  ",
+      "color": {
+        "a": 1,
+        "rgb": 423026
+      }
+    },
+    {
+      "query": "file: MOC",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
       }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
+<<<<<<< HEAD
+  "textFadeMultiplier": -1.9,
+  "nodeSizeMultiplier": 1.43992148368756,
+  "lineSizeMultiplier": 1.94268391927083,
+  "collapse-forces": false,
+  "centerStrength": 0.60051441721944,
+  "repelStrength": 10.9828076350345,
+  "linkStrength": 1,
+  "linkDistance": 216,
+  "scale": 0.0078125,
+=======
   "textFadeMultiplier": -1.3,
   "nodeSizeMultiplier": 0.763272727272727,
   "lineSizeMultiplier": 1.93818181818182,
@@ -54,5 +93,6 @@
   "linkStrength": 1,
   "linkDistance": 54,
   "scale": 0.16602930173740707,
+>>>>>>> origin/main
   "close": true
 }

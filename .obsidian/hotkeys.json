@@ -148,16 +148,6 @@
       "key": "O"
     }
   ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
   "editor:unfold-all": [
     {
       "modifiers": [
@@ -510,7 +500,7 @@
     {
       "modifiers": [
         "Alt",
-        "Shift"
+        "Mod"
       ],
       "key": "E"
     }
@@ -641,5 +631,15 @@
       ],
       "key": "B"
     }
-  ]
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "notion-like-tables:add-column": []
 }

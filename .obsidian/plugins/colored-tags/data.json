@@ -127,7 +127,14 @@
     "machine": 120,
     "ia": 121,
     "forma": 122,
-    "musical": 123
+    "musical": 123,
+    "eventos": 124,
+    "performance": 125,
+    "entrevistas": 126,
+    "teatroexpandido": 127,
+    "artículos": 128,
+    "sistemascomplejos": 129,
+    "análisis": 130
   },
   "_version": 2
 }

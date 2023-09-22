@@ -9,7 +9,7 @@ bienvenidxs al repositorio público de información musical de la cátedra de Ci
 ## topoi
 
 ```dataview
-List  without ID("![|100](" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags
+List  without ID ("![|(" + banner + ")") as foto, file.link as name, author as author, publish as "año", tags
 FROM "04-out/topoi"
 WHERE contains(dg-publish,true)
 SORT publish DESC
