@@ -1246,7 +1246,7 @@
     },
     "01-proj/tp/tp03-guía de lectura MONTFORT.md": {
       "size": 773,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
@@ -1254,7 +1254,7 @@
     "/": {
       "Refactor": 366,
       "Create": 324,
-      "Link": 240,
+      "Link": 241,
       "Expand": 24
     }
   },
@@ -1276,7 +1276,7 @@
       "13": 26,
       "14": 28,
       "15": 53,
-      "16": 34,
+      "16": 35,
       "17": 1,
       "18": 0,
       "19": 0,
@@ -1291,7 +1291,7 @@
       "Mon": 7,
       "Tue": 268,
       "Wed": 302,
-      "Thu": 93,
+      "Thu": 94,
       "Fri": 5,
       "Sat": 0,
       "Sun": 279
@@ -1432,6 +1432,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
@@ -1481,8 +1482,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
