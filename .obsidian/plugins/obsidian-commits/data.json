@@ -76,7 +76,7 @@
     },
     "02-mat/python/python abjad.md": {
       "size": 576,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/python/pycolors.md": {
@@ -806,12 +806,12 @@
     },
     "04-out/obras/Boid Simulation.md": {
       "size": 149,
-      "tags": 5,
+      "tags": 4,
       "links": 0
     },
     "04-out/procedimientos/analisis de obras interactivas.md": {
       "size": 1,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/procedimientos/extrañamiento.md": {
@@ -1196,18 +1196,18 @@
     },
     "00-in/Cybernetic Serendipity.md": {
       "size": 84,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "00-in/En conversación con Susanne Kennedy.md": {
       "size": 37623,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "00-in/La conciencia social del arte generativo..md": {
       "size": 26721,
-      "tags": 0,
-      "links": 0
+      "tags": 2,
+      "links": 7
     },
     "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
       "size": 67,
@@ -1221,13 +1221,13 @@
     },
     "00-in/eventos.md": {
       "size": 3219,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
       "size": 970,
       "tags": 0,
-      "links": 0
+      "links": 1
     },
     "02-mat/obs/tpl/t-espacios.md": {
       "size": 51,
@@ -1241,12 +1241,12 @@
     },
     "04-out/espacios/Bell Labs.md": {
       "size": 67,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/t-topoi.md": {
       "size": 185,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/README 1.md": {
@@ -1257,9 +1257,9 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 378,
+      "Refactor": 379,
       "Create": 337,
-      "Link": 241,
+      "Link": 252,
       "Expand": 24
     }
   },
@@ -1273,7 +1273,7 @@
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 28,
+      "8": 40,
       "9": 173,
       "10": 5,
       "11": 88,
@@ -1297,7 +1297,7 @@
       "Tue": 268,
       "Wed": 302,
       "Thu": 94,
-      "Fri": 30,
+      "Fri": 42,
       "Sat": 0,
       "Sun": 279
     }
@@ -1437,6 +1437,14 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
+        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>",
+        "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis de obras interactivas.md\"> analisis de obras interactivas </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
@@ -1479,15 +1487,7 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md\"> Myriam Robayo Pedraza_La canción social como expresión de inconformismo </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/EAT Experiments in arts and technologies.md\"> EAT Experiments in arts and technologies </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/PaaS.md\"> PaaS </a>",
-        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
+        "<a class=\"internal-link\" href=\"04-out/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1549,6 +1549,9 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md\"> intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
@@ -1596,9 +1599,6 @@
         "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
       ],
       "Removed Tags from": [
@@ -1609,7 +1609,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
