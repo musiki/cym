@@ -1479,6 +1479,22 @@
     {
       "path": "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
       "filename": "tp03-guía de lectura MONTFORT-1695381603457"
+    },
+    {
+      "path": "00-in/Cybernetic Serendipity.md",
+      "filename": "Cybernetic Serendipity"
+    },
+    {
+      "path": "00-in/La conciencia social del arte generativo..md",
+      "filename": "La conciencia social del arte generativo."
+    },
+    {
+      "path": "00-in/obras MOC.md",
+      "filename": "obras MOC"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-evento.md",
+      "filename": "t-evento"
     }
   ]
 }

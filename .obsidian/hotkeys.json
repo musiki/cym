@@ -641,5 +641,14 @@
       "key": "E"
     }
   ],
-  "notion-like-tables:add-column": []
+  "notion-like-tables:add-column": [],
+  "obsidian-markmind:Toggle to markdown or mindmap": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ]
 }

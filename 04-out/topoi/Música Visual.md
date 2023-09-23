@@ -76,9 +76,10 @@ Composer Arseny Avrahamov, designer Evgeny Sholpo, and animation director Mikhai
 
 The laboratories soon established were the world’s first prototypes of future computer music research centers. Mostly, applied film music was created, the result of the work was the dubbing of films. The most famous works are those of Evgeny Sholpo, the inventor of the Variofon instrument, composer and researcher Arseny Avrahamov, who worked on the problems of ultra-chromatic music, and Nikolai Voinov, who created the Nivoton. In the home-recording era, within the framework of the technique of drawn sound, these researchers attempted to create a technology that is traditionally considered the highest achievement of computer music technology of the 1990s.
 
-```
-![https://guruitsource.com/wp-content/uploads/03aa92b1ea6d11bad4d8878e0ae90db5-1.png](https://guruitsource.com/wp-content/uploads/03aa92b1ea6d11bad4d8878e0ae90db5-1.png)
-```
+
+![](https://guruitsource.com/wp-content/uploads/03aa92b1ea6d11bad4d8878e0ae90db5-1.png)
+
+
 
 * 1958, Rotolock, Daphne Oram
 *   1968 Catalina, Fernando Von Reichenbad
@@ -93,12 +94,11 @@ The laboratories soon established were the world’s first prototypes of future 
 
     Gabriel Brncic , Dialexis 1967
 
-    ```txt
-    The materials to build Catalina are listed in an internal memo from August 1968, titled
+    >The materials to build Catalina are listed in an internal memo from August 1968, titled
     ‘Urgent USA purchases’ under the subtitle, ‘New Project’. The materials include a
     closed-circuit TV camera (Ampex Vidicon), three Moog units (oscillator, amplifier, and filter
     controlled by voltage), and two sets of Dixon field-effect transistors
-    ```
+
 * 1969 Oramics to Electronica, Daphne Oram
 
 https://www.youtube.com/embed/7cyHFT2abXE

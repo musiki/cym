@@ -134,7 +134,10 @@
     "teatroexpandido": 127,
     "artículos": 128,
     "sistemascomplejos": 129,
-    "análisis": 130
+    "análisis": 130,
+    "exhibiciones": 131,
+    "históricas": 132,
+    "patrones": 133
   },
   "_version": 2
 }

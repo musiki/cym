@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FlPolygonalSymmetricOrnamentLikeButterflyWings",
       "FabCss3Alt",
       "FabHtml5",
       "FlPolygonalMultipleStars",
-      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-      "IbArrowDownLeft"
+      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -56,5 +56,6 @@
   "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
   "02-mat/partituras": "FlPolygonalMultipleStars",
   "02-mat/css.md": "FabCss3Alt",
-  "04-out": "IbArrowDownLeft"
+  "04-out": "IbArrowDownLeft",
+  "02-mat/coloquial": "FlPolygonalSymmetricOrnamentLikeButterflyWings"
 }

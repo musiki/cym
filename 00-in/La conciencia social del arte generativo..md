@@ -83,3 +83,12 @@ Bense y Metzger comprendieron que la tecnología no era neutral ni unilateral. A
 **12** Gustav Metzger, "Sculpture with Power" en Higgins y Kahn, eds., _Mainframe Experimentalism_, p. 217.
 
 _Este artículo aparece bajo el título "La conciencia social del arte generativo__" en el número de enero de 2020, pp. 50-57_.
+
+
+# otras referencias sobre el tema
+
+[Early beginnings of digital computer art ](http://www.computerkunst.org/)
+
+[[Patrones de Turing]]
+
+

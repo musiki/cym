@@ -599,11 +599,6 @@
       "tags": 9,
       "links": 16
     },
-    "00-in/obras.in MOC.md": {
-      "size": 95,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/topoi MOC.md": {
       "size": 0,
       "tags": 0,
@@ -1199,30 +1194,15 @@
       "tags": 2,
       "links": 0
     },
-    "00-in/En conversación con Susanne Kennedy.md": {
-      "size": 37623,
-      "tags": 4,
-      "links": 0
-    },
     "00-in/La conciencia social del arte generativo..md": {
       "size": 26721,
       "tags": 2,
       "links": 7
     },
-    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
-      "size": 67,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/espacios MOC.md": {
       "size": 189,
       "tags": 0,
       "links": 0
-    },
-    "00-in/eventos.md": {
-      "size": 3219,
-      "tags": 1,
-      "links": 1
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
       "size": 970,
@@ -1253,12 +1233,47 @@
       "size": 638,
       "tags": 0,
       "links": 0
+    },
+    "00-in/Agregación limitada por difusión.md": {
+      "size": 2367,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Patrones de Turing.md": {
+      "size": 2349,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/coloquial MOC.md": {
+      "size": 400,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/eventos MOC.md": {
+      "size": 3262,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/coloquial/En conversación con Susanne Kennedy.md": {
+      "size": 37843,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md": {
+      "size": 15828,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md": {
+      "size": 1295,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 379,
-      "Create": 337,
+      "Refactor": 384,
+      "Create": 345,
       "Link": 252,
       "Expand": 24
     }
@@ -1288,7 +1303,7 @@
       "20": 0,
       "21": 221,
       "22": 97,
-      "23": 164
+      "23": 177
     }
   },
   "weeklyCommits": {
@@ -1297,7 +1312,7 @@
       "Tue": 268,
       "Wed": 302,
       "Thu": 94,
-      "Fri": 42,
+      "Fri": 55,
       "Sat": 0,
       "Sun": 279
     }
@@ -1331,6 +1346,14 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
+        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
@@ -1373,15 +1396,7 @@
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
         "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>"
+        "<a class=\"internal-link\" href=\"04-ref/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
@@ -1497,6 +1512,11 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
+        "<a class=\"internal-link\" href=\"00-in/obras.in MOC.md\"> obras.in MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
+        "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/espacios/README.md\"> README </a>",
@@ -1541,12 +1561,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md\"> dennis-fabian-peter-personas-dennis-20fabian-peter.md </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md\"> harari-yuval-noah-personas-harari-20yuval-noah.md </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md\"> yuval-noah-harari-personas-yuval-20noah-harari.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>",
-        "<a class=\"internal-link\" href=\"04-out/README (1).md\"> README (1) </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md\"> intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md </a>"
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
