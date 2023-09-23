@@ -1321,8 +1321,8 @@
       "filename": "Peter Novig"
     },
     {
-      "path": "00-in/eventos.md",
-      "filename": "eventos"
+      "path": "00-in/eventos MOC.md",
+      "filename": "eventos MOC"
     },
     {
       "path": "04-out/espacios/Bell Labs.md",
@@ -1373,7 +1373,7 @@
       "filename": "analisis de obras interactivas"
     },
     {
-      "path": "00-in/En conversación con Susanne Kennedy.md",
+      "path": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
       "filename": "En conversación con Susanne Kennedy"
     },
     {
@@ -1431,6 +1431,34 @@
     {
       "path": "README.md",
       "filename": "README"
+    },
+    {
+      "path": "00-in/coloquial MOC.md",
+      "filename": "coloquial MOC"
+    },
+    {
+      "path": "00-in/En conversación con Susanne Kennedy.md",
+      "filename": "En conversación con Susanne Kennedy"
+    },
+    {
+      "path": "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
+      "filename": "Simon Steen-Andersen écouter, observer, hacker..ed"
+    },
+    {
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
+      "filename": "conflict-files-obsidian-git 2"
+    },
+    {
+      "path": "00-in/Patrones de Turing.md",
+      "filename": "Patrones de Turing"
+    },
+    {
+      "path": "00-in/Agregación limitada por difusión.md",
+      "filename": "Agregación limitada por difusión"
+    },
+    {
+      "path": "00-in/cym-map.md",
+      "filename": "cym-map"
     }
   ]
 }

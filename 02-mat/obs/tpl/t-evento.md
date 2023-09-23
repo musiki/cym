@@ -1,8 +1,8 @@
 ---
-tags:
-place:
-date:
-connections:
-url:
-photo:
+tags: 
+place: 
+connections: 
+url: 
+photo: 
+year:
 ---

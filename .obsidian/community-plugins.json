@@ -56,7 +56,6 @@
   "multi-column-markdown",
   "note-refactor-obsidian",
   "obsidian-functionplot",
-  "obsidian-markmind",
   "obsidian-note-sharing",
   "obsidian42-brat",
   "obsidian42-text-transporter",
@@ -96,5 +95,7 @@
   "translate",
   "obsidian-paste-image-rename",
   "arrows",
-  "digitalgarden"
+  "digitalgarden",
+  "obsidian-markmind",
+  "smart-connections"
 ]
