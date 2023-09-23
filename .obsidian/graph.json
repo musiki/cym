@@ -1,22 +1,58 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": true,
+  "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [],
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:04-out/topoi  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:04-out/personas  ",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:03-cla  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:01-proj  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "tag:#generativad  ",
+      "color": {
+        "a": 1,
+        "rgb": 5750527
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": -1.3,
+  "nodeSizeMultiplier": 1.31013561741613,
+  "lineSizeMultiplier": 0.642112776588151,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.533190578158458,
+  "repelStrength": 10.2141327623126,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.31064917390836644,
+  "linkDistance": 70,
+  "scale": 0.1325801661798367,
   "close": true
 }

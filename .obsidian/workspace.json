@@ -26,23 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/hi augmentation.md",
+                "file": "00-in/obras MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
-          },
-          {
-            "id": "77c5d16ee80f0daa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +100,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "00-in/obras MOC.md"
+              }
             }
           },
           {
@@ -125,6 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-in/obras MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -260,18 +255,21 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "77c5d16ee80f0daa",
+  "active": "3c5e2f7db2441523",
   "lastOpenFiles": [
+    "00-in/obras.in MOC.md",
+    "00-in/obras MOC.md",
+    "00-in/obras.md",
+    "00-in/hi augmentation.md",
+    "00-in/cym MOC.md",
     "00-in/eventos MOC.md",
     "00-in/espacios MOC.md",
-    "00-in/cym MOC.md",
     "00-in/Cybernetic Serendipity.md",
     "00-in/combinational creativity.md",
     "00-in/bib MOC.md",
     "00-in/Agregación limitada por difusión.md",
     "home.md",
     "cym-metamap.canvas",
-    "00-in/hi augmentation.md",
     "00-in/hd-hydra.md",
     "00-in/proyectos MOC.md",
     "00-in/cym-map.md",
@@ -286,9 +284,6 @@
     "03-cla/c-cym07-cohesión audiovisual.md",
     "03-cla/c-cym12-Aframe2.md",
     "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
     "02-mat/coloquial",
     "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778165.jpeg",
     "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778159.jpeg",

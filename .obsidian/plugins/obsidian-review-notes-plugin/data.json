@@ -1459,6 +1459,14 @@
     {
       "path": "00-in/cym-map.md",
       "filename": "cym-map"
+    },
+    {
+      "path": "00-in/obras.md",
+      "filename": "obras"
+    },
+    {
+      "path": "00-in/obras MOC.md",
+      "filename": "obras MOC"
     }
   ]
 }
