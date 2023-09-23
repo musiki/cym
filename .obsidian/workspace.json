@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/eventos MOC.md",
+                "file": "04-out/topoi/Virtualidad y realidad.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5fbffb4744222318",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/El metaverso es un territorio disputado.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -26,8 +39,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/obras MOC.md",
-                "mode": "preview",
+                "file": "04-out/topoi/Azar.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -84,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -101,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/obras MOC.md"
+                "file": "04-out/topoi/Virtualidad y realidad.md"
               }
             }
           },
@@ -119,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/obras MOC.md",
+                "file": "04-out/topoi/Virtualidad y realidad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +171,7 @@
             }
           },
           {
-            "id": "09c3dc4d704c95ad",
+            "id": "4b084fd8fc251ea5",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -165,7 +179,7 @@
             }
           },
           {
-            "id": "c6c40cced74fe3df",
+            "id": "0b772b338e031b5d",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -255,14 +269,21 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "3c5e2f7db2441523",
+  "active": "0b772b338e031b5d",
   "lastOpenFiles": [
-    "00-in/obras.in MOC.md",
+    "04-out/topoi/Virtualidad y realidad.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/topoi MOC.md",
+    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+    "00-in/eventos MOC.md",
+    "04-out/topoi/Azar.md",
+    "04-out/bibliografía/El Azar y la Necesidad.md",
+    "00-in/b-Azar y necesidad.md",
     "00-in/obras MOC.md",
+    "00-in/obras.in MOC.md",
     "00-in/obras.md",
     "00-in/hi augmentation.md",
     "00-in/cym MOC.md",
-    "00-in/eventos MOC.md",
     "00-in/espacios MOC.md",
     "00-in/Cybernetic Serendipity.md",
     "00-in/combinational creativity.md",
@@ -277,13 +298,6 @@
     "00-in/La conciencia social del arte generativo..md",
     "00-in/memex.md",
     "02-mat/obs/tpl/t-evento.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
-    "00-in/coloquial MOC.md",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
     "02-mat/coloquial",
     "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778165.jpeg",
     "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778159.jpeg",

@@ -787,7 +787,7 @@
     "04-out/topoi/Azar.md": {
       "size": 2141,
       "tags": 4,
-      "links": 0
+      "links": 2
     },
     "04-out/topoi/Cuarta Revolución Industrial.md": {
       "size": 8211,
@@ -1268,14 +1268,29 @@
       "size": 3110,
       "tags": 1,
       "links": 1
+    },
+    "00-in/b-Azar y necesidad.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/El Azar y la Necesidad.md": {
+      "size": 511,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/El metaverso es un territorio disputado.md": {
+      "size": 22771,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 349,
-      "Create": 248,
-      "Link": 201,
-      "Expand": 23
+      "Refactor": 350,
+      "Create": 251,
+      "Link": 203,
+      "Expand": 24
     }
   },
   "dailyCommits": {
@@ -1295,8 +1310,8 @@
       "12": 39,
       "13": 32,
       "14": 15,
-      "15": 10,
-      "16": 30,
+      "15": 16,
+      "16": 31,
       "17": 28,
       "18": 127,
       "19": 16,
@@ -1314,7 +1329,7 @@
       "Thu": 109,
       "Fri": 73,
       "Sat": 0,
-      "Sun": 24
+      "Sun": 31
     }
   },
   "recentCommits": {
@@ -1342,9 +1357,13 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
         "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
-        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>"
+        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
+        "<a class=\"internal-link\" href=\"00-in/El metaverso es un territorio disputado.md\"> El metaverso es un territorio disputado </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>",
+        "<a class=\"internal-link\" href=\"00-in/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
         "<a class=\"internal-link\" href=\"00-in/obras.md\"> obras </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1392,12 +1411,10 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/drocchi/Cómo suena el conocimiento.md\"> Cómo suena el conocimiento </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Pasted image 20230829224100.png.md\"> Pasted image 20230829224100.png </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"01-proj/15/drocchi/Cómo suena el conocimiento.md\"> Cómo suena el conocimiento </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad.md\"> El Azar y la Necesidad </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
@@ -1447,10 +1464,10 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/templates/templater.md\"> templater </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-movie.md\"> t-movie </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/templates/t-persona.md\"> t-persona </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad.md\"> El Azar y la Necesidad </a>",
         "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
         "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
@@ -1500,8 +1517,7 @@
         "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1561,6 +1577,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md\"> yuval-noah-harari-personas-yuval-20noah-harari.md </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1610,7 +1627,6 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>"
       ],
       "Removed Tags from": [
