@@ -1191,13 +1191,13 @@
     },
     "00-in/Cybernetic Serendipity.md": {
       "size": 84,
-      "tags": 2,
+      "tags": 4,
       "links": 0
     },
     "00-in/La conciencia social del arte generativo..md": {
       "size": 26721,
       "tags": 2,
-      "links": 7
+      "links": 8
     },
     "00-in/espacios MOC.md": {
       "size": 189,
@@ -1236,12 +1236,12 @@
     },
     "00-in/Agregación limitada por difusión.md": {
       "size": 2367,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "00-in/Patrones de Turing.md": {
       "size": 2349,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "00-in/coloquial MOC.md": {
@@ -1251,30 +1251,30 @@
     },
     "00-in/eventos MOC.md": {
       "size": 3262,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "02-mat/coloquial/En conversación con Susanne Kennedy.md": {
       "size": 37843,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md": {
       "size": 15828,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git 2.md": {
       "size": 1295,
       "tags": 0,
-      "links": 0
+      "links": 2
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 384,
       "Create": 345,
-      "Link": 252,
+      "Link": 261,
       "Expand": 24
     }
   },
@@ -1303,7 +1303,7 @@
       "20": 0,
       "21": 221,
       "22": 97,
-      "23": 177
+      "23": 186
     }
   },
   "weeklyCommits": {
@@ -1312,7 +1312,7 @@
       "Tue": 268,
       "Wed": 302,
       "Thu": 94,
-      "Fri": 55,
+      "Fri": 64,
       "Sat": 0,
       "Sun": 279
     }
@@ -1453,6 +1453,12 @@
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
+        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
+        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
         "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
@@ -1496,13 +1502,7 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eduardo Kac_Signs of Life.md\"> Eduardo Kac_Signs of Life </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/John D Barrow_El libro de la nada.md\"> John D Barrow_El libro de la nada </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Matt Pearson_Generative Art.md\"> Matt Pearson_Generative Art </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md\"> Myriam Robayo Pedraza_La canción social como expresión de inconformismo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Philip Ball_Shapes.md\"> Philip Ball_Shapes </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md\"> Tim Ingold_Eine kurze Geschichte der Linien </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/Academy of Fine Arts Vienna.md\"> Academy of Fine Arts Vienna </a>"
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1565,6 +1565,9 @@
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
@@ -1611,10 +1614,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>"
+        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

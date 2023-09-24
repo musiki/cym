@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "00-in/Agregación limitada por difusión.md"
               }
             }
           },
@@ -266,33 +266,33 @@
   },
   "active": "7d289e5f1d4852ae",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "00-in/Patrones de Turing.md",
+    "00-in/combinational creativity.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "04-out/topoi/Vida artificial.md",
+    "00-in/cym MOC.md",
+    "00-in/espacios MOC.md",
+    "00-in/Agregación limitada por difusión.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
     "02-mat/jasvascript/js01-fundamentals.md",
+    "conflict-files-obsidian-git.md",
     "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "02-mat/coloquial/En conversación con Susanne Kennedy.md",
     "02-mat/coloquial",
     "00-in/eventos MOC.md",
     "00-in/coloquial MOC.md",
-    "00-in/Patrones de Turing.md",
-    "00-in/Agregación limitada por difusión.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "02-mat/tone.js.md",
     "00-in/eventos.md",
-    "00-in/Cybernetic Serendipity.md",
     "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/shifres/do-tonera.md",
     "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
-    "00-in/bib MOC.md",
-    "00-in/códigos MOC.md",
-    "00-in/combinational creativity.md",
-    "00-in/En conversación con Susanne Kennedy.md",
-    "00-in/hd-hydra.md",
     "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
     "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603452.jpeg",
     "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603451.jpeg",
