@@ -1294,11 +1294,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/Piano.md": {
-      "size": 0,
-      "tags": 3,
-      "links": 0
-    },
     "00-in/Sin título.md": {
       "size": 0,
       "tags": 0,
@@ -1308,11 +1303,16 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/beltrame/Piano.md": {
+      "size": 0,
+      "tags": 3,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 328,
+      "Refactor": 329,
       "Create": 411,
       "Link": 319,
       "Expand": 26
@@ -1337,7 +1337,7 @@
       "14": 13,
       "15": 2,
       "16": 273,
-      "17": 274,
+      "17": 275,
       "18": 31,
       "19": 10,
       "20": 66,
@@ -1348,7 +1348,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 182,
+      "Mon": 183,
       "Tue": 306,
       "Wed": 83,
       "Thu": 14,
@@ -1442,6 +1442,7 @@
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"00-in/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -1490,8 +1491,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"00-in/Piano.md\"> Piano </a>",

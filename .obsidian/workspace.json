@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Piano.md",
+                "file": "01-proj/23/beltrame/Piano.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Piano.md"
+                "file": "01-proj/23/beltrame/Piano.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Piano.md",
+                "file": "01-proj/23/beltrame/Piano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +219,7 @@
   "active": "d330e0745e970ea7",
   "lastOpenFiles": [
     "01-proj/23/shifres/do-tonera.md",
-    "00-in/Piano.md",
+    "01-proj/23/beltrame/Piano.md",
     "01-proj/23/Petroccelli/petrocelli POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/beltrame/beltrame POC.md",
