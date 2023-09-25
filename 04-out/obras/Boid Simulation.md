@@ -6,8 +6,11 @@ tags:
   - obra
   - sistemascomplejos
 year: 1983
-person:
-  - - Craig Reynols
+person: "[[Craig Reynolds]]"
 ---
 
-https://www.youtube.com/watch?v=86iQiV3-3IA
+
+
+<iframe title="Craig Reynolds - Original 1986 Boids simulation" src="https://www.youtube.com/embed/86iQiV3-3IA?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
+
+

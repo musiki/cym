@@ -1377,7 +1377,7 @@
       "filename": "En conversación con Susanne Kennedy"
     },
     {
-      "path": "00-in/Susanne Kennedy.md",
+      "path": "04-out/personas/Susanne Kennedy.md",
       "filename": "Susanne Kennedy"
     },
     {
@@ -1479,6 +1479,22 @@
     {
       "path": "00-in/El metaverso es un territorio disputado.md",
       "filename": "El metaverso es un territorio disputado"
+    },
+    {
+      "path": "02-mat/rant.md",
+      "filename": "rant"
+    },
+    {
+      "path": "04-out/personas/Craig Reynolds.md",
+      "filename": "Craig Reynolds"
+    },
+    {
+      "path": "04-out/personas/Craig Reynols.md",
+      "filename": "Craig Reynols"
+    },
+    {
+      "path": "04-out/personas/Craig Reynolds.md",
+      "filename": "Craig Reynolds"
     }
   ]
 }

@@ -125,40 +125,40 @@ En _Ready Player One_, el protagonista Wade Watts, tras convertirse en uno de lo
 
 La artista y educadora Melanie Hoff se pregunta: si somos capaces de construir un nuevo mundo, una nueva forma de conectar con los demás, ¿por qué nos limitaríamos a reproducir lo que hemos visto antes? Lo que empuja a la gente a imaginar es la _necesidad_ de imaginar: un mecanismo de supervivencia para liberarse de las presiones de su realidad actual. Figuras como Zuckerberg y Cline requieren menos imaginación para el cambio porque el statu quo les beneficia.
 
-### “Sex is the world our desires produce.”  
-—Melanie Hoff
+### "El sexo es el mundo que producen nuestros deseos".  
+-Melanie Hoff
 
-Clip from _Demolition Man_, HT Luiza Dale
+Clip de _Demolition Man_, HT Luiza Dale
 
-“All sex is physical and all sex is virtual,” Hoff describes. In our conversation, they explain how virtual sex engages in physical processes, like bodily arousal. Even when in physical contact with another, those sensations can be transformed in the mind, creating virtuality since they are not present in the physical.
+"Todo el sexo es físico y todo el sexo es virtual", describe Hoff. En nuestra conversación, explican cómo el sexo virtual participa en procesos físicos, como la excitación corporal. Incluso cuando se está en contacto físico con otro, esas sensaciones pueden transformarse en la mente, creando virtualidad ya que no están presentes en lo físico.
 
-Virtual sex and physical sex exists on a spectrum. Digital mediation, then, also does not have a distinct border. While a conventional example of a remote-access sex toy is a teledildonic, this could also include the iPhone or any screen-based device. Sex is an imagination game.
+El sexo virtual y el sexo físico existen en un espectro. La mediación digital, por tanto, tampoco tiene una frontera definida. Aunque un ejemplo convencional de juguete sexual de acceso remoto es un teledildonic, también podría incluirse el iPhone o cualquier dispositivo basado en una pantalla. El sexo es un juego de imaginación.
 
-Critics claim that the metaverse is an old dream that will never achieve the ubiquity that its evangelists predict. “VR is a bit like a rich white kid with famous parents: It never stops failing upward, forever graded on a generous curve, always judged based on its ‘potential’ rather than its results,” writes David Karpf in _Wired_.
+Los críticos afirman que el metaverso es un viejo sueño que nunca alcanzará la ubicuidad que predicen sus evangelistas. "La RV es un poco como un niño blanco rico con padres famosos: Nunca deja de fracasar hacia arriba, siempre calificada en una curva generosa, siempre juzgada en función de su 'potencial' más que de sus resultados", escribe David Karpf en _Wired_.
 
-There are a couple reasons that this time, in 2022, might be different. Notably, the technology has improved dramatically. Even if avatars still do not have legs in Horizon, the hardware is light and fast, and likely to advance with over $18.5 billion a year spent on VR/AR R&D by Meta alone. And, as Tarnoff notes, with remote and hybrid structures finding permanence as the pandemic wanes, people (both employers and employees) are seeking new ways of connecting and working online.
+Hay un par de razones por las que esta vez, en 2022, podría ser diferente. En particular, la tecnología ha mejorado espectacularmente. Incluso si los avatares todavía no tienen patas en Horizon, el hardware es ligero y rápido, y es probable que avance con más de 18.500 millones de dólares al año gastados en I+D de RV/AR sólo por Meta. Y, como señala Tarnoff, con las estructuras remotas e híbridas encontrando permanencia a medida que la pandemia disminuye, la gente (tanto empleadores como empleados) está buscando nuevas formas de conectarse y trabajar en línea.
 
-Assuming the metaverse will only grow in prominence moving forward, let’s begin to shift our focus from the “hard” technologies of VR towards the “soft,” re-envisioning social structures.
+Asumiendo que el metaverso no hará más que crecer en importancia de cara al futuro, empecemos a desplazar nuestra atención de las tecnologías "duras" de la RV hacia las "blandas", replanteándonos las estructuras sociales.
 
-### “VR helps to shift our powerful cultural attachments to particular notions of individual and social group boundaries through experiences that ... reveal the flexibility of the human itself in relation to (its) others.”  
-—Deborah Levitt
+### "La RV ayuda a cambiar nuestros poderosos apegos culturales a nociones particulares de límites individuales y de grupos sociales a través de experiencias que ... revelan la flexibilidad de lo humano en sí mismo en relación con (sus) otros".  
+-Deborah Levitt
 
-This shift returns to the origins of the phrase “virtual reality” itself, as described by Artaud in his proposition of theater. Theater and storytelling allowed for metamorphosis, a new potential for representation.
+Este cambio vuelve a los orígenes de la propia expresión "realidad virtual", descrita por Artaud en su propuesta del teatro. El teatro y la narración permitían la metamorfosis, un nuevo potencial para la representación.
 
-We don’t need new technologies, describes James Bridle, but “new metaphors: a metalanguage for describing the world that complex systems have wrought.” The fictions we share ultimately shape future pathways. The focus, therefore, is not on the new or different, but on how these lead to the potential for change.
+No necesitamos nuevas tecnologías, describe James Bridle, sino "nuevas metáforas: un metalenguaje para describir el mundo que han forjado los sistemas complejos". Las ficciones que compartimos configuran, en última instancia, los caminos futuros. Por tanto, la atención no se centra en lo nuevo o lo diferente, sino en cómo éstos conducen al potencial de cambio.
 
-In the final pages of _Ready Player One_, Halliday laments, “As terrifying and painful as reality can be, it’s also the only place where you can find true happiness. Because reality is real.”
+En las páginas finales de _Ready Player One_, Halliday se lamenta: "Por aterradora y dolorosa que pueda ser la realidad, también es el único lugar donde se puede encontrar la verdadera felicidad. Porque la realidad es real".
 
-Perhaps this is the biggest myth spread by the novel. Reality and virtual reality is not an either/or binary. Virtual experiences are informed and shaped by physical experiences, and vice versa. As our digital technologies continue to enhance, driven by nostalgia and platform capitalism alike, what we need are new perceptual structures and soft approaches to worlding.
+Quizá éste sea el mayor mito que difunde la novela. La realidad y la realidad virtual no son un binario de lo uno o lo otro. Las experiencias virtuales están informadas y moldeadas por las experiencias físicas, y viceversa. A medida que nuestras tecnologías digitales siguen mejorando, impulsadas tanto por la nostalgia como por el capitalismo de plataforma, lo que necesitamos son nuevas estructuras perceptivas y enfoques suaves de la mundanización.
 
-Many thanks to Sarah Rothberg, Luiza Dale, Xinran Yuan, and Melanie Hoff for their generous references and fruitful conversation during the research phase of this essay.  
+Muchas gracias a Sarah Rothberg, Luiza Dale, Xinran Yuan y Melanie Hoff por sus generosas referencias y fructíferas conversaciones durante la fase de investigación de este ensayo.  
   
 
-For all citations, please view the eponymous essay in  
+Para todas las citas, consulte el ensayo homónimo en
 _[Software for Artists 002: Untethering the Web](https://pioneerworks.org/store/software-for-artists-book-untethering-the-web)_  
   
 
-Image Sources:
+Fuentes de las imágenes:
 
 - [_Ready Player One_ cover](https://books.apple.com/us/book/ready-player-one/id422540053)
 - [_Snow Crash_ cover](https://www.pinterest.com/pin/400890804324998179/)

@@ -2,6 +2,7 @@
   "accentColor": "",
   "theme": "moonstone",
   "enabledCssSnippets": [
+    "obsidian",
     "s1"
   ]
 }
