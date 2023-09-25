@@ -28,6 +28,10 @@ data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json
 .obsidian/core-plugins.json
+<<<<<<< HEAD
+.obsidian/workspace.json.obsidian/plugins/obsidian-commits/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+=======
 .obsidian/workspace.json
 .obsidian/plugins/obsidian-activity-history/data.json
 <<<<<<< HEAD
@@ -49,4 +53,11 @@ data.json
 .obsidian/workspace.json
 
 
+>>>>>>> origin/main
+<<<<<<< HEAD
+=======
+
+
+# Ignore Smart Connections folder because embeddings file is large and updated frequently
+.smart-connections
 >>>>>>> origin/main

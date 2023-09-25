@@ -11,8 +11,13 @@
             "id": "1521269d75f3da6d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "04-out/topoi/Interfaces.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -89,6 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "04-out/topoi/Interfaces.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +121,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "04-out/topoi/Interfaces.md"
+          }
         }
       },
       {
@@ -141,12 +149,28 @@
           "type": "QUICKSHARE_SIDE_VIEW",
           "state": {}
         }
+      },
+      {
+        "id": "7ce830546113c07b",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
@@ -159,12 +183,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "dbfolder:Create a new database table": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "1521269d75f3da6d",
+  "active": "dd2a452db0f43d5c",
   "lastOpenFiles": [
+    "04-out/topoi/Vida artificial.md",
+    "00-in/cym MOC.md",
+    "00-in/bib MOC.md",
+    "02-mat/coloquial",
     "02-mat/jasvascript/js-playground.md",
     "cym-metamap.canvas",
     "02-mat/tone.js.md",

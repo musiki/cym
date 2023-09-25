@@ -56,7 +56,6 @@
   "multi-column-markdown",
   "note-refactor-obsidian",
   "obsidian-functionplot",
-  "obsidian-markmind",
   "obsidian-note-sharing",
   "obsidian42-brat",
   "obsidian42-text-transporter",
@@ -89,12 +88,18 @@
   "obsidian-divide-and-conquer",
   "obsidian-view-mode-by-frontmatter",
   "obsidian-hider",
-  "obsidian-banners",
   "obsidian-thumbnails",
   "obsidian-read-it-later",
   "cm-editor-syntax-highlight-obsidian",
   "text-snippets-obsidian",
   "translate",
   "obsidian-paste-image-rename",
-  "arrows"
+  "arrows",
+  "digitalgarden",
+  "obsidian-markmind",
+  "smart-connections",
+  "obsidian-enhancing-export",
+  "wikipedia-search",
+  "metadata-menu",
+  "templater-obsidian"
 ]

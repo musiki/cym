@@ -5,6 +5,7 @@ unit: 12.1
 author: Juan Martín Ancarola
 publish: 2022
 banner: "https://www.telefonica.com/es/wp-content/uploads/sites/4/2022/10/industria-4.jpg?w=1200"
+banner_y: 0.5
 ---
 
 #  Cuarta Revolución Industrial

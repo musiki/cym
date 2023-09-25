@@ -2,57 +2,57 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:01-proj",
+      "query": "path:04-out/topoi  ",
       "color": {
         "a": 1,
         "rgb": 14048348
       }
     },
     {
-      "query": "path:02-mat/jasvascript",
+      "query": "path:04-out/personas  ",
       "color": {
         "a": 1,
         "rgb": 14069084
       }
     },
     {
-      "query": "path:04-ref/bibliografía",
+      "query": "path:03-cla  ",
       "color": {
         "a": 1,
-        "rgb": 2130353
+        "rgb": 11392604
       }
     },
     {
-      "query": "path:02-mat/procesos",
+      "query": "path:01-proj  ",
       "color": {
         "a": 1,
         "rgb": 6084188
       }
     },
     {
-      "query": "path:04-ref/personas",
+      "query": "tag:#generativad  ",
       "color": {
         "a": 1,
-        "rgb": 13776695
+        "rgb": 5750527
       }
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": -1.3,
-  "nodeSizeMultiplier": 0.763272727272727,
-  "lineSizeMultiplier": 1.93818181818182,
+  "nodeSizeMultiplier": 1.31013561741613,
+  "lineSizeMultiplier": 0.642112776588151,
   "collapse-forces": false,
-  "centerStrength": 0.398441558441558,
-  "repelStrength": 9.39814471243043,
+  "centerStrength": 0.533190578158458,
+  "repelStrength": 10.2141327623126,
   "linkStrength": 1,
-  "linkDistance": 54,
-  "scale": 0.21965823520213518,
+  "linkDistance": 70,
+  "scale": 0.1325801661798367,
   "close": true
 }

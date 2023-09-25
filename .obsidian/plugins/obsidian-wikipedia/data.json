@@ -1,5 +1,5 @@
 {
-  "template": "{{text}}\n> [w]({{url}})",
+  "template": "{{text}}",
   "shouldUseParagraphTemplate": true,
   "shouldBoldSearchTerm": true,
   "paragraphTemplate": "> {{paragraphText}}\n>\n",

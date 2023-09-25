@@ -4,45 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "15abef06ad2cf92f",
+        "id": "e789791b76fd032d",
         "type": "tabs",
         "children": [
           {
-            "id": "2e3810044f0e1a30",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e413eab7b4fc5860",
+            "id": "d330e0745e970ea7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/beltrame POC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "fadc2a8f6bf3953c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/shifres/shifres POC.md",
+                "file": "00-in/Piano.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/shifres/shifres POC.md"
+                "file": "00-in/Piano.md"
               }
             }
           },
@@ -137,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/shifres/shifres POC.md",
+                "file": "00-in/Piano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,17 +171,27 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "eee1780cdd50e909",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "digitalgarden:Digital Garden Publication Center": false,
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "translate:Open translation view": false,
       "obsidian-spaced-repetition:Revisar Tarjetas": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
@@ -228,53 +216,54 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "fadc2a8f6bf3953c",
+  "active": "d330e0745e970ea7",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "00-in/Piano.md",
     "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "00-in/Sin título 1.md",
+    "01-proj/23/beltrame/Piano.md",
+    "conflict-files-obsidian-git.md",
+    "00-in/Sin título.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "home.md",
+    "04-out/topoi/t-topoi.md",
+    "04-out/topoi/README 1.md",
+    "04-out/personas/Craig Reynolds.md",
+    "04-out/espacios/Bell Labs.md",
+    "04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md",
+    "04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-out/bibliografía/Nick Montfort_The Future.md",
+    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
+    "04-out/bibliografía/El Azar y la Necesidad.md",
+    "02-mat/obs/tpl/t-evento.md",
+    "02-mat/obs/tpl/t-espacios.md",
+    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
+    "02-mat/obs/img/image/shifres POC-1695672370265.jpeg",
+    "02-mat/obs/img/image/shifres POC-1695672370261.jpeg",
+    "02-mat/obs/img/image/shifres POC-1695672370259.jpeg",
+    "02-mat/obs/img/image/shifres POC-1695672370257.jpeg",
+    "02-mat/obs/img/image/shifres POC-1695672370254.jpeg",
+    "02-mat/obs/img/image/shifres POC-1695672370252.jpeg",
+    "02-mat/obs/img/image",
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
+    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+    "02-mat/coloquial",
+    "01-proj/23/shifres/shifres.gif",
+    "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "04-out/topoi/Forma Musical.md",
-    "00-in/topoi MOC.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym07-human-book-computer.md",
-    "04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md",
-    "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md",
-    "02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
-    "02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md",
-    "02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md",
-    "02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md",
-    "04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md",
-    "02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
-    "02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md",
-    "04-out/topoi/README.md",
-    "04-out/test.md",
-    "02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
-    "02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
-    "02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md",
-    "02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md",
     "04-out/readme",
-    "04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md",
-    "04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md",
     "04-out/bibliografia",
     "03-cla/c-cym06- cohesión audiovisual-1694557676421.jpeg",
     "03-cla/c-cym05-integración-1694560491701.jpeg",
     "03-cla/c-cym05-integración-1694560491272.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676422.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
-    "03-cla/c-cym05-integración-1694560491681.jpeg",
-    "03-cla/c-cym05-integración-1694560491667.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676423.jpeg",
-    "03-cla/c-cym06- cohesión audiovisual-1694557676427.jpeg",
     "image/image",
     "image",
-    "02-mat/obs/img/Pasted image 20230829224242.png",
     "04-ref/image",
     "04-ref",
-    "04-out/bibliografía/cym.bib",
-    "04-out/topoi",
-    "04-out/procedimientos",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
