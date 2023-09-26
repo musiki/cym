@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "file": "03-cla/c-cym09-flex-grid.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "file": "03-cla/c-cym09-flex-grid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md"
+                "file": "03-cla/c-cym09-flex-grid.md"
               }
             }
           },
@@ -280,7 +280,11 @@
   "active": "82d0d63593759471",
   "lastOpenFiles": [
     "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
     "02-mat/jasvascript/js01-fundamentals.md",
+    "03-cla/c-cym08-github pages+hydra.md",
     "02-mat/jasvascript/js-playground.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/js01-fundamentals-1695764204362.jpeg",
@@ -293,10 +297,7 @@
     "02-mat/obs/img/image/js01-fundamentals-1695764204308.jpeg",
     "02-mat/obs/img/image/js01-fundamentals-1695764204307.jpeg",
     "02-mat/obs/img/image/js01-fundamentals-1695764204305.jpeg",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
     "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym05.06-integración.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "01-proj/tp/tp03-guía de lectura MONTFORT.md",
@@ -314,7 +315,6 @@
     "03-cla/c-cym00-presentación.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
