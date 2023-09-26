@@ -145,15 +145,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym06c-tonejs.md",
+                "file": "01-proj/17/navarro/Ajedrez.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
+          },
+          {
+            "id": "ec28577a1e9250ce",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -227,6 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/17/navarro/Ajedrez.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -266,7 +277,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/17/navarro/Ajedrez.md"
               }
             }
           },
@@ -344,10 +355,13 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "ec28577a1e9250ce",
   "lastOpenFiles": [
-    "03-cla/c-cym06c-tonejs.md",
+    "01-proj/17/borsalino/Condensador de eventos.md",
+    "01-proj/17/moscato/La forma de la identidad real.md",
+    "01-proj/18/garella/Dédalo.md",
     "conflict-files-obsidian-git.md",
+    "03-cla/c-cym06c-tonejs.md",
     "03-cla/c-cym06-principios generativos.md",
     "03-cla/c-cym04-vida digital.md",
     "02-mat/jasvascript/js-playground.md",
@@ -357,7 +371,6 @@
     "02-mat/html.md",
     "03-cla/c-cym07-cohesión audiovisual.md",
     "03-cla/c-cym07-creative computing.md",
-    "01-proj/17/moscato/La forma de la identidad real.md",
     "04-out/topoi/Intervencion del espacio público.md",
     "01-proj/23/shifres/shifres POC.md",
     "04-out/topoi/Música Visual.md",
@@ -370,8 +383,6 @@
     "04-out/topoi/Vida artificial.md",
     "04-out/topoi/Spectromorphology.md",
     "04-out/topoi/sistemas-de-universos-topoi-sistemas-20de-universos.md.md",
-    "04-out/topoi/Sistemas de universos.md",
-    "04-out/topoi/Sistemas complejos.md",
     "04-out/bibliografía/cym.bib",
     "04-out/topoi",
     "04-out/procedimientos",
