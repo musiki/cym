@@ -1,11 +1,3 @@
-<<<<<<< HEAD
----
-banner: "https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png"
----
-
-
-=======
->>>>>>> origin/main
 ---
 author: Gustavo Zaracho
 tags: topoi 

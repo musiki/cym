@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/bassino POC.md",
+                "file": "04-out/topoi/Intervencion del espacio público.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/bassino POC.md",
+                "file": "04-out/topoi/Intervencion del espacio público.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/bassino POC.md"
+                "file": "04-out/topoi/Intervencion del espacio público.md"
               }
             }
           },
@@ -198,7 +198,17 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "04-out/topoi/Música y Política.md",
+    "04-out/topoi/Forma Musical.md",
+    "04-out/topoi/Internetmusic.md",
+    "04-out/topoi/Racionalizacion_(videojuegos).md",
+    "04-out/topoi/Introducción a la psicoacústica.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/tp/tp02-aplicación.md",
     "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/bassino/bassinopedalera.jpg",
     "02-mat/obs/img/image/Multi-efecto-1695771569274.jpeg",
     "02-mat/obs/img/image/Multi-efecto-1695771567220.jpeg",
@@ -212,12 +222,10 @@
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/shifres/do-tonera.md",
-    "01-proj/tp/tp02-aplicación.md",
     "01-proj/23/beltrame/Piano.md",
     "conflict-files-obsidian-git.md",
     "04-out/personas/t-persona.md",
     "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/Petroccelli/petrocelli POC.md",
     "02-mat/html.md",
