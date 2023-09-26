@@ -80,8 +80,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym07-hydra.md",
-                "mode": "preview",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -170,6 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -289,37 +290,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "a3a893fb5dbf7996",
   "lastOpenFiles": [
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym00-presentación.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "04-out/glosario/URI.md",
+    "04-out/glosario/README.md",
+    "04-out/glosario/PWA.md",
+    "04-out/glosario/PaaS.md",
+    "04-ref/a-dataview.md",
+    "04-ref/a-dataview playground.md",
+    "04-ref/a-plugins.md",
+    "04-ref/a-snippets.md",
+    "04-ref/a-yuda.md",
+    "home.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-creative computing.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym08-flex-grid.md",
-    "04-ref/meta-aprendizaje.md",
-    "04-ref/a-yuda.md",
-    "04-ref/a-snippets.md",
-    "04-ref/a-dataview playground.md",
-    "04-ref/a-dataview.md",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
-    "04-out/bibliografía/Nick Montfort_The Future.md",
-    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
-    "01-proj/tp/tp06-guía de lectura SADIN.md",
-    "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
-    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
     "00-in/coloquial MOC-1695687207656.jpeg",
     "00-in/coloquial MOC-1695687207655.jpeg",
     "00-in/coloquial MOC-1695687207654.jpeg",
