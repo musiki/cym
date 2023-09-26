@@ -1,3 +1,6 @@
+---
+banner: "https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png"
+---
 
 
 ---
@@ -35,7 +38,7 @@ La música parece trascender la mera expresión artística y se convierte en el 
 
 En cuanto a su función política, Alex Comes en su artículo “Música y política, una relación infinita”, y aludiendo a muchos artículos de neurociencia, dice que las razones para votar por una opción u otra van mucho más allá de lo racional o ideológico y es que en esta decisión se llevan a cabo en mayor medida elementos emocionales y conexiones neuronales que tienen muy poco que ver con las propuestas de los candidatos. Dice que sin lugar a dudas, parte de nuestro lenguaje emocional está intrínsecamente relacionado con la música y que es ella, en la mayoría de los casos, la causante de la configuración de un estilo de vida y la construcción de nuestra personalidad.
 
-## Obras**
+## Obras
 
 **Il canto sospeso – Luigi Nono**
 
@@ -56,11 +59,11 @@ Su impacto en la escena socio-política no se ha podido medir pero su nombre y l
 Esta obra ha sido catalogada dentro de la música conceptual, lo que no es para nada inocente a la hora de pensar en estrategias que puedan lograr una comunicación entre fenómenos sociales y una composición musical. Este género ha sido provisto de muchos medios expresivos a la vez que se ha desprovisto de muchos otros que han sido, en parte, responsables de esta imposibilidad de la música de expresar de manera textual las ideas y lecturas que tienen los compositores del contexto en el que viven.
 
 
-## Otros autores**
+## Otros autores
 
 Hanns Eisler
 
 Nicolaus A. Huber
 
 
-## Referencias**
+## Referencias

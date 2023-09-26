@@ -11,13 +11,25 @@
             "id": "ecfa88d1ea0545d2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5fdf73706e73de03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
               "state": {
-                "file": "image/Pasted image 20230829225649.png"
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "image/Pasted image 20230829225649.png"
+                "file": "01-proj/23/Zaracho/zaracho POC.md"
               }
             }
           },
@@ -112,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "image/Pasted image 20230829225649.png",
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,6 +191,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
@@ -191,7 +206,6 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "dbfolder:Create a new database table": false,
       "obsidian-metatable:Metatable": false,
       "notion-like-tables:Create new loom": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
@@ -201,8 +215,18 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "ecfa88d1ea0545d2",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "02-mat/html.md",
+    "04-out/topoi/Música y Política.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym07-creative computing.md",
     "conflict-files-obsidian-git.md",
     "image/Pasted image 20230829225649.png",
     "01-proj/21/tortorelli/Simon dice.md",
@@ -230,15 +254,6 @@
     "01-proj/18/galetto",
     "01-proj/17/paladino/No music player.md",
     "01-proj/17/navarro/Ajedrez.md",
-    "01-proj/17/moscato/La forma de la identidad real.md",
-    "01-proj/17/lopez/Boreal.md",
-    "01-proj/17/herrera/Superficies sonoras blandas.md",
-    "01-proj/17/julia/Nukzeiber.md",
-    "01-proj/17/borsalino/Condensador de eventos.md",
-    "01-proj/17/arcuri/Sensonorizando.md",
-    "01-proj/16/lopez/Trazo 5.md",
-    "01-proj/16/juan/Instalación.md",
-    "01-proj/16/ferreyra/Juggling music.md",
     "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
     "02-mat/obs/img/Pasted image 20230829224242.png",
     "00-in/cym MOC-1694393867412.jpeg",
