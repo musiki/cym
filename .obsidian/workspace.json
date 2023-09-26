@@ -60,7 +60,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md",
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md"
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md"
               }
             }
           },
@@ -176,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md",
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -279,8 +279,8 @@
   },
   "active": "e279d09e5c4c4074",
   "lastOpenFiles": [
-    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-github pages+hydra.md",
