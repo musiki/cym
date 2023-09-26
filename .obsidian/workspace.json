@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "a7ab94b8ca0bc52a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Petroccelli/petroccelli POC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/Guitarrax.md"
+                "file": "01-proj/23/Petroccelli/petroccelli POC.md"
               }
             }
           },
@@ -129,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/Guitarrax.md",
+                "file": "01-proj/23/Petroccelli/petroccelli POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,26 +243,28 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "c9e991198fc5dc3f",
+  "active": "a7ab94b8ca0bc52a",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
-    "cym-metamap.canvas",
     "01-proj/23/Petroccelli/Guitarrax.md",
+    "04-out/personas/t-persona.md",
+    "02-mat/obs/img/image/Guitarrax-1695770329825.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329824.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329823.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329821.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329819.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329818.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329817.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329816.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329814.jpeg",
+    "02-mat/obs/img/image/Guitarrax-1695770329813.jpeg",
+    "01-proj/23/shifres/Shifres.md",
+    "cym-metamap.canvas",
     "home.md",
     "04-ref/meta-aprendizaje.md",
     "04-out/topoi/t-topoi.md",
     "04-out/topoi/README 1.md",
     "04-out/personas/Craig Reynolds.md",
-    "02-mat/obs/img/image/Botonera rítmica-1695769793014.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769793023.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769793018.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769793006.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769793002.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769792998.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769792996.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769792989.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769792984.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1695769792979.jpeg",
     "02-mat/obs/img/image",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "02-mat/coloquial/En conversación con Susanne Kennedy.md",
@@ -265,7 +280,7 @@
     "02-mat/obs/img/PSICOACÚSTICA 1.pdf",
     "01-proj/23/Petroccelli/Sin título 1.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/Sin título.md",
     "01-proj/23/Petroccelli/Psicoacústica.md",
     "image/image",
@@ -274,7 +289,6 @@
     "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/21/tortorelli/Simon dice.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
-    "01-proj/21/marazzi/Collage sonoro.md",
     "01-proj/21/oliva",
     "01-proj/21/tortorelli",
     "01-proj/21/marazzi",
