@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/topoi/Intervencion del espacio público.md",
+                "file": "04-out/topoi/Música Visual.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Intervencion del espacio público.md",
+                "file": "04-out/topoi/Música Visual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/topoi/Intervencion del espacio público.md"
+                "file": "04-out/topoi/Música Visual.md"
               }
             }
           },
@@ -198,6 +198,9 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp01-topoi.md",
+    "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/Música y Política.md",
     "04-out/topoi/Forma Musical.md",
     "04-out/topoi/Internetmusic.md",
@@ -206,7 +209,6 @@
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/tp/tp02-aplicación.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/bassino/bassinopedalera.jpg",
