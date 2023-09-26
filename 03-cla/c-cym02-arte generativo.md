@@ -29,7 +29,7 @@ Aquí, atribuye la posibilidad del caos a los sistemas complejos por su dificult
 
 En este sentido, el término _complejidad efectiva_ se encuentra entre sistemas altamente ordenados y altamente desordenados.
 
-![[cym MOC-1694393867407.jpeg]]
+![[c-cym05-integración-1694560491361.jpeg]]
 
 Leonardo Soolas, tomando los conceptos de autonomía e impersonalidad de Galanter, expone la definición de _molde interno_ de Georges‐Louis Leclerc como punto de partida para pensar la generatividad. Este término fue una explicación de la generación de los animales por la combinación de dos semillas, que daban origen al embrión mediante la mezcla de sus partes, por la acción de microfuerzas de atracción de Newton. Este molde interno entonces hace referencia al campo de fuerzas organizado que **asimilaban** la materia en el orden indicado para el **desarrollo** del embrión.
 

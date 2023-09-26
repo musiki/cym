@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "e73258e5bd08086f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/cym MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,8 +256,31 @@
       "wikipedia-search:Open Article": false
     }
   },
-  "active": "f74cba6ed39e5007",
+  "active": "e73258e5bd08086f",
   "lastOpenFiles": [
+    "00-in/cym MOC.md",
+    "conflict-files-obsidian-git.md",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756610.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756573.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756609.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756606.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756601.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756597.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756595.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
+    "04-ref/meta-aprendizaje.md",
+    "04-ref/image",
+    "04-ref/a-yuda.md",
+    "04-ref/a-snippets.md",
+    "04-ref/a-plugins.md",
+    "04-ref/a-dataview.md",
+    "04-ref/a-dataview playground.md",
+    "04-ref",
+    "01-proj/23/beltrame/Piano.md",
+    "00-in/Sin título.md",
+    "00-in/Sin título 1.md",
     "04-out/personas/Carlos Trilnik.md",
     "00-in/personas MOC.md",
     "04-out/personas/Cecila Arditto.md",
@@ -259,38 +296,15 @@
     "00-in/eventos MOC.md",
     "00-in/Cybernetic Serendipity.md",
     "00-in/combinational creativity.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "04-out/personas/Susanne Kennedy.md",
-    "04-out/topoi/Azar.md",
-    "04-out/topoi/Virtualidad y realidad.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "00-in/topoi MOC.md",
-    "04-out/bibliografía/El Azar y la Necesidad.md",
-    "00-in/b-Azar y necesidad.md",
-    "00-in/obras.in MOC.md",
-    "00-in/obras.md",
     "cym-metamap.canvas",
     "02-mat/coloquial",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778165.jpeg",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778159.jpeg",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778153.jpeg",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778149.jpeg",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778148.jpeg",
-    "01-proj/23/shifres/shifres.gif",
-    "02-mat/obs/img/image/La conciencia social del arte generativo.-1695375778114.jpeg",
-    "02-mat/obs/img/logo-musiki-only.png",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "02-mat/obs/img/cym MOC-1695202224263.jpeg",
-    "02-mat/obs/img/cym MOC-1695202224257.jpeg",
     "02-mat/obs/img/image",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "04-out/bibliografia",
     "04-out/test",
     "image/image",
     "image",
-    "02-mat/obs/Untitled.loom",
-    "02-mat/obs/help",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
