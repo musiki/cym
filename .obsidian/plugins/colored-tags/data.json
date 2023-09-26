@@ -127,7 +127,20 @@
     "web": 121,
     "github": 122,
     "mcl": 123,
-    "mcl/list-card": 1
+    "mcl/list-card": 1,
+    "sistemascomplejos": 124,
+    "análisis": 125,
+    "performance": 126,
+    "entrevistas": 127,
+    "teatroexpandido": 128,
+    "generativeliterature": 129,
+    "machine": 130,
+    "ia": 131,
+    "patrones": 132,
+    "eventos": 133,
+    "exhibiciones": 134,
+    "históricas": 135,
+    "artículos": 136
   },
   "_version": 2
 }

@@ -1,24 +1,10 @@
-<<<<<<< HEAD:01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md
-
- **INTRODUCCIÓN A LA PSICOACÚSTICA**
-
-=======
 ---
-quickshare-date: 2023-08-31 20:12:16
-quickshare-url: "https://noteshare.space/note/cllzhgz861758801mwp5ev0i17#qFHdrJyYLHskrPbI2Fe/NdQDJ1twgGIYmRDMgoqyYuo"
 type: topoi
 tags: psicoacústica, topoi
 unit: 00
 author: Ezequiel A. Petroccelli
-<<<<<<< HEAD
->>>>>>> origin/main:04-ref/topoi/Introducción a la psicoacústica.md
-=======
 publish: 2023
-<<<<<<< HEAD:04-ref/topoi/Introducción a la psicoacústica.md
->>>>>>> origin/main
-=======
 banner: "https://c8.alamy.com/compit/2g7me18/bianco-e-nero-sfondo-illusione-ottica-illustrazione-vettoriale-2g7me18.jpg"
->>>>>>> origin/main:04-out/topoi/Introducción a la psicoacústica.md
 ---
 
 

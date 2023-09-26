@@ -110,7 +110,7 @@ hello world
 # checkbox raros (css agregado)
 
 - [  ] sin chequear
-- [x]  chequeado
+- [x] chequeado ✅ 2023-09-14
 - [>] diferido
 - [-]  cancelado
 - [?] need more info
