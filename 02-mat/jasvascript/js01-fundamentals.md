@@ -395,3 +395,17 @@ const sonido2 = new Sonido(880, "piano", "violin");
 
 #### this
 Refiere al elemento actual en el que se está escribiendo el código. Cuando se emplea un función constructora para crear un objeto (con la palabra clave new), this está enlazado al nuevo objeto instanciado.
+
+### métodos
+(de los objetos) también son técnicamente funciones, sólo que se limitan a poder ser ejecutados solo desde el mismo objeto.
+
+JavaScript cuenta con sus propios objetos (por ej, al crear un string se crea automáticamente como una instancia del objeto String y, por lo tanto, tiene varios métodos/propiedades comunes disponibles)
+```js
+let string = "hola mundo";
+//Propiedad de objeto String: Largo de la cadena.
+console.log(cadena.length);
+//Método de objeto String: Pasar a minúscula.
+console.log(cadena.toLowerCase());
+//Método de objeto String: Pasar a mayúscula.
+console.log(cadena.toUpperCase());
+```
