@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-ref/meta-aprendizaje.md",
+                "file": "03-cla/c-cym07-hydra.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-ref/meta-aprendizaje.md",
+                "file": "03-cla/c-cym07-hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-ref/meta-aprendizaje.md"
+                "file": "03-cla/c-cym07-hydra.md"
               }
             }
           },
@@ -290,10 +290,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3a893fb5dbf7996",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-flex-grid.md",
     "04-ref/meta-aprendizaje.md",
+    "conflict-files-obsidian-git.md",
     "04-ref/a-yuda.md",
     "04-ref/a-snippets.md",
     "04-ref/a-dataview playground.md",
@@ -316,8 +321,6 @@
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/tone.js.md",
-    "00-in/coloquial MOC.md",
     "00-in/coloquial MOC-1695687207656.jpeg",
     "00-in/coloquial MOC-1695687207655.jpeg",
     "00-in/coloquial MOC-1695687207654.jpeg",
@@ -326,9 +329,7 @@
     "00-in/coloquial MOC-1695687207651.jpeg",
     "00-in/coloquial MOC-1695687207650.jpeg",
     "04-ref/image",
-    "04-ref/a-plugins.md",
     "04-ref",
-    "04-out/personas/Craig Reynolds.md",
     "02-mat/coloquial",
     "cym-metamap.canvas",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
