@@ -7,6 +7,7 @@ data.json
 .obsidian/appearance.json
 .obsidian/workspace.json
 .obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
 .obsidian/plugins/obsidian-commits/data.json
 .obsidian/workspace.json
 ./cym.bib
@@ -33,6 +34,11 @@ data.json
 .obsidian/plugins/obsidian-activity-history/data.json
 =======
 .obsidian/workspace.json
+<<<<<<< HEAD
+.obsidian/plugins/obsidian-commits/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/workspace.json
+=======
 .obsidian/plugins/obsidian-activity-history/data.json
 <<<<<<< HEAD
 .obsidian/plugins/colored-tags/data.json
@@ -56,8 +62,11 @@ data.json
 >>>>>>> origin/main
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
 
 # Ignore Smart Connections folder because embeddings file is large and updated frequently
 .smart-connections
+>>>>>>> origin/main
 >>>>>>> origin/main

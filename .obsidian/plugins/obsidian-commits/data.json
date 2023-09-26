@@ -1302,8 +1302,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 397,
-      "Create": 363,
+      "Refactor": 398,
+      "Create": 364,
       "Link": 271,
       "Expand": 32
     }
@@ -1328,7 +1328,7 @@
       "15": 53,
       "16": 35,
       "17": 3,
-      "18": 1,
+      "18": 3,
       "19": 0,
       "20": 9,
       "21": 249,
@@ -1339,7 +1339,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 280,
+      "Tue": 282,
       "Wed": 302,
       "Thu": 94,
       "Fri": 64,
@@ -1384,6 +1384,7 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1433,7 +1434,6 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
         "<a class=\"internal-link\" href=\"00-in/Introducción a la Psicoacústica.md\"> Introducción a la Psicoacústica </a>",
         "<a class=\"internal-link\" href=\"00-in/Pasted image 20230829224100.png.md\"> Pasted image 20230829224100.png </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
@@ -1551,6 +1551,7 @@
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1598,8 +1599,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
