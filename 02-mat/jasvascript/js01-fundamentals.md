@@ -318,6 +318,28 @@ let acorde = “RE”
     console.log(acorde) //RE
 ```
 
+### funciones anónimas
+Se define sin nombre y se utiliza para ser pasada como parámetro o asignada a una variable. En el caso de asignarla a una variable, se puede llamar usando el identificador de la variable declarada.
+
+```js
+//Generalmente, las funciones anónimas se asignan a variables declaradas como constantes
+const suma  = function (a, b) { return a + b }
+const resta = function (a, b) { return a - b }
+
+console.log( suma(15,20) )
+console.log( resta(15,5) )
+```
+### funciones flecha
+Funciones anónimas de sintaxis simplificada. Están disponibles desde la versión ES6 de JavaScript, no usan la palabra function pero usa ⇒ (flecha) entre los parámetros y el bloque.
+
+```js
+const suma  = (a, b) ⇒ { return a + b }
+//Si es una función de una sola línea con retorno podemos evitar escribir el cuerpo.
+const resta = (a, b) ⇒  a - b ;
+console.log( suma(15,20) )
+console.log( resta(20,5) )
+```
+
 ## scope
 Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
 ```js
@@ -334,4 +356,18 @@ console.log(nota)   // RE
 
 //Accede a nombre local
 escala() // DO
+```
+
+## objetos
+
+Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
+```js
+let freq = 440;
+let dinamica   = "pp";
+let instrumento  = "flauta2";
+
+const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
+
+//para obtener el valor de una propiedad del objeto
+console.log(sonido1.dinamica)
 ```
