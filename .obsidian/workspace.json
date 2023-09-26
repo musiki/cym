@@ -67,28 +67,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/coloquial MOC.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a3a893fb5dbf7996",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "00-in/Agregación limitada por difusión.md"
               }
             }
           },
@@ -290,8 +277,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3a893fb5dbf7996",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/hi augmentation.md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/Vedic Sanskrit.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/Patrones de Turing.md",
+    "00-in/memex.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/hd-hydra.md",
+    "00-in/espacios MOC.md",
+    "00-in/b-Azar y necesidad.md",
+    "00-in/Agregación limitada por difusión.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/combinational creativity.md",
+    "00-in/coloquial MOC.md",
+    "00-in/coloquial MOC-1695687207545.jpeg",
+    "00-in/coloquial MOC-1695687207544.jpeg",
+    "00-in/coloquial MOC-1695687207538.jpeg",
+    "02-mat/jasvascript/js01-fundamentals.md",
     "03-cla/c-cym07-creative computing.md",
     "03-cla/c-cym07-cohesión audiovisual.md",
     "03-cla/c-cym06c-tonejs.md",
@@ -302,22 +308,6 @@
     "03-cla/c-cym03-mapas.md",
     "03-cla/c-cym00-presentación.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "04-out/glosario/URI.md",
-    "04-out/glosario/README.md",
-    "04-out/glosario/PWA.md",
-    "04-out/glosario/PaaS.md",
-    "04-ref/a-dataview.md",
-    "04-ref/a-dataview playground.md",
-    "04-ref/a-plugins.md",
-    "04-ref/a-snippets.md",
-    "04-ref/a-yuda.md",
-    "home.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
@@ -325,9 +315,6 @@
     "00-in/coloquial MOC-1695687207655.jpeg",
     "00-in/coloquial MOC-1695687207654.jpeg",
     "00-in/coloquial MOC-1695687207653.jpeg",
-    "00-in/coloquial MOC-1695687207652.jpeg",
-    "00-in/coloquial MOC-1695687207651.jpeg",
-    "00-in/coloquial MOC-1695687207650.jpeg",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
