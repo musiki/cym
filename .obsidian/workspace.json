@@ -157,7 +157,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -287,11 +286,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82d0d63593759471",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
-    "01-proj/23/beltrame/pianobeltrame.jpg",
-    "02-mat/obs/img/image/Piano-1695769920853.jpeg",
-    "02-mat/obs/img/image/Piano-1695769914919.jpeg",
+    "01-proj/23/beltrame/Piano.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/Piano-1695770018018.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017992.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017974.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017956.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017941.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017924.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017884.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017870.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017812.jpeg",
+    "02-mat/obs/img/image/Piano-1695770017764.jpeg",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "00-in/Untitled.md",
+    "00-in/Untitled 1.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
@@ -313,18 +324,6 @@
     "03-cla/c-cym06c-tonejs.md",
     "03-cla/c-cym05.06-integración.md",
     "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "02-mat/jasvascript/js-playground.md",
-    "conflict-files-obsidian-git.md",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204362.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204342.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204334.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204324.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204322.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204320.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204319.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204308.jpeg",
-    "03-cla/c-cym06-principios generativos.md",
-    "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
