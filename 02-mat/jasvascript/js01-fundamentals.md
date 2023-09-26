@@ -457,6 +457,9 @@ class Sonido {
 	    this.dinamica = dinamica;
 	    this.instrumento  = instrumento;
 	}
+	    console() {
+		    console.log("la frecuencia es " + this.freq)
+		}
 }
 
 const sonido1 = new Sonido(440, "forte", "violoncello");
