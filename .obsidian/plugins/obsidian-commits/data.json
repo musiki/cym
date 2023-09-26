@@ -855,8 +855,8 @@
       "links": 0
     },
     "04-out/topoi/Forma Musical.md": {
-      "size": 23306,
-      "tags": 0,
+      "size": 14587,
+      "tags": 2,
       "links": 0
     },
     "04-out/topoi/Fragile Territories.md": {
@@ -931,7 +931,7 @@
     },
     "04-out/topoi/Música y Política.md": {
       "size": 6665,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Racionalizacion_(videojuegos).md": {
@@ -1302,9 +1302,9 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 402,
+      "Refactor": 403,
       "Create": 364,
-      "Link": 271,
+      "Link": 273,
       "Expand": 35
     }
   },
@@ -1330,7 +1330,7 @@
       "17": 3,
       "18": 8,
       "19": 2,
-      "20": 9,
+      "20": 12,
       "21": 249,
       "22": 97,
       "23": 186
@@ -1339,7 +1339,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 289,
+      "Tue": 292,
       "Wed": 302,
       "Thu": 94,
       "Fri": 64,
@@ -1493,6 +1493,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Craig Reynolds.md\"> Craig Reynolds </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
@@ -1541,14 +1543,13 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-book.md\"> t-book </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-movie.md\"> t-movie </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-movie.md\"> t-movie </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [

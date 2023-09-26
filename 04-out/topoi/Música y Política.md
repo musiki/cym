@@ -1,9 +1,4 @@
 ---
-banner: "https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png"
----
-
-
----
 author: Gustavo Zaracho
 tags: topoi 
 type: topoi
@@ -11,13 +6,9 @@ publish: 2023
 banner: "https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png"
 ---
 
-<<<<<<< HEAD:01-proj/23/Zaracho/Zaracho.md
-         
 
 ## Música Socio-Política
 
-=======
->>>>>>> origin/main:04-out/topoi/Música y Política.md
 La Música Socio-Política es la música que utiliza todos sus medios, y no sólo la letra, para manifestar disconformidad, plantear una problemática, proponer una solución o incluso irrumpir en el escenario social y político intentando activamente lograr cambios fácticos en la vida de las personas. Generalmente se vincula a la _música de protesta_ como la música reaccionaria frente a las realidades e injusticias sociales, pero se la califica a ésta únicamente por su contenido literario, es decir su letra.
 
 Es por lo menos complejo pensar en una música que tenga dentro de sus posibilidades, la de cambiar aspectos del tejido social o político. Aun así no podemos imaginar un mundo donde no hayan existido manifestaciones artísticas siendo ellas las causantes de muchas aperturas del pensamiento frente a cuestiones filosóficas y hasta existenciales. Llegado este punto sería al menos imprudente pensar en un arte que en su afán por ser superadora, innovadora o revolucionaria no haya causado directa o indirectamente fluctuaciones en el mundo que nos rodea.

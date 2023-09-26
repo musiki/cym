@@ -67,8 +67,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "source",
+                "file": "01-proj/23/beltrame/Piano.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -133,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300.50390243530273
   },
   "right": {
     "id": "80820653654ffa07",
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/23/beltrame/Piano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "01-proj/23/beltrame/Piano.md"
               }
             }
           },
@@ -242,17 +242,27 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "0f89b409c3e43d75",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "digitalgarden:Digital Garden Publication Center": false,
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "translate:Open translation view": false,
       "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
@@ -279,8 +289,22 @@
   },
   "active": "82d0d63593759471",
   "lastOpenFiles": [
-    "README.md",
+    "01-proj/23/beltrame/pianobeltrame.jpg",
+    "02-mat/obs/img/image/Piano-1695769920853.jpeg",
+    "02-mat/obs/img/image/Piano-1695769914919.jpeg",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "04-out/topoi/Forma Musical.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "04-out/topoi/Música y Política.md",
+    "03-cla/c-cym00-presentación.md",
+    "01-proj/tp/prueba tutorial.md",
     "02-mat/jasvascript/js01-fundamentals.md",
+    "README.md",
     "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym07-creative computing.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
@@ -299,22 +323,8 @@
     "02-mat/obs/img/image/js01-fundamentals-1695764204320.jpeg",
     "02-mat/obs/img/image/js01-fundamentals-1695764204319.jpeg",
     "02-mat/obs/img/image/js01-fundamentals-1695764204308.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204307.jpeg",
-    "02-mat/obs/img/image/js01-fundamentals-1695764204305.jpeg",
     "03-cla/c-cym06-principios generativos.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
-    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "home.md",
-    "02-mat/obs/tpl/t-liquid.md",
-    "02-mat/obs/tpl/t-cym-class.md",
-    "02-mat/obs/tpl/t-evento.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
-    "02-mat/obs/check-out de imagenes.md",
-    "02-mat/tone.js.md",
-    "03-cla/c-cym04-vida digital.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
