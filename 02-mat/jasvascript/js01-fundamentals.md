@@ -427,3 +427,37 @@ const sonido2 = new Sonido(880, "piano", "violin");
 sonido1.console();
 sonido2.console();
 ```
+
+### operador IN y FOR...IN
+**in** devuelve true si la propiedad especificada existe en el objeto. 
+
+El bucle **for...in** permite acceder a todas las propiedades del objeto, obteniendo una propiedad por cada iteración.
+
+```js
+const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
+
+console.log( "freq" in sonido1); //devuelve true
+
+console.log ("duracion" in sonido1); //devuelve false
+
+//recorre todas las propidades del objeto sonido1
+for (const propiedad in sonido1) {
+	console.log(sonido1{propiedad});
+}
+```
+
+### clases
+
+Son una equivalencia al empleo de función constructora y permite definir distintos tipos de métodos.
+
+```js
+class Sonido {
+	constructor(freq, dinamica, instrumento){
+	    this.freq = freq;
+	    this.dinamica = dinamica;
+	    this.instrumento  = instrumento;
+	}
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+```
