@@ -49,7 +49,7 @@ class c c3;
 ```
 
 
-# breve intro
+## breve intro
 
 La primera aparición pública de Javascript la encontramos en el año 1995 cuando se utiliza como herramienta del navegador Netscape Navigator, con el objetivo de agregar programas a páginas web.
 
@@ -100,6 +100,16 @@ Tienen valor true/false
 let miVariable = true;
 ```
 
+#### operaciones básicas
+
+```js
+	let  textoA = "acorde";
+    let   textoB = "RE";
+    const BLANCO = " ";
+
+    let resultadoA = textoA + textoB; //acordeRE
+```
+
 ## arrays
 
 Permite almacenar varios valores en una sola referencia.
@@ -134,3 +144,21 @@ Para llamar a cada valor del array: 
 miVariable[0]`, `miVariable[1]
 ```
 etc.
+
+## condicionales/control de flujos
+
+El control de flujos es marcar puntos donde, a partir de alguna evaluación, el devenir del código pueda tomar varios caminos posibles de acción.
+![](https://i.imgur.com/1y11ydg.png)
+Para ello se utilizan los valores booleanos (true or false)
+
+## funciones
+
+### console.log() 
+La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.
+
+```js
+console.log("el audioCtx está inicializado");
+
+let acorde = “RE”
+    console.log(acorde) //RE
+```
