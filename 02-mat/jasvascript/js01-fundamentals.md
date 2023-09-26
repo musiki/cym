@@ -46,6 +46,7 @@ b11 --> b111 & b112
 
 
 
+
 classDef default stroke-width:1px;
 classDef c1 stroke:#DFFF00;
 classDef c2 stroke:#FFBF00;
@@ -161,6 +162,7 @@ Para llamar a cada valor del array: 
 notas[0], notas[1]
 ```
 etc.
+
 
 ## control de flujos
 

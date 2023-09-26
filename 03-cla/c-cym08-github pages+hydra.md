@@ -29,7 +29,8 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 
 ## ingeniería inversa
 
-**view source** Ctrl+U (Windows PC) or Command+Option+U (Mac)
+**view source** Ctrl+U (Windows PC) o Command+Option+U (Mac)
+**inspect elements** F12 (Windows) o Command+SHIFT+C (Mac)
 
 ### Upstart
 <iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

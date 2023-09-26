@@ -68,7 +68,7 @@
               "type": "markdown",
               "state": {
                 "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -279,15 +279,16 @@
   },
   "active": "82d0d63593759471",
   "lastOpenFiles": [
+    "README.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym07-creative computing.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
     "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym06c-tonejs.md",
     "03-cla/c-cym05.06-integración.md",
     "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-playground.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/js01-fundamentals-1695764204362.jpeg",
@@ -314,7 +315,6 @@
     "02-mat/obs/check-out de imagenes.md",
     "02-mat/tone.js.md",
     "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym03-mapas.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
