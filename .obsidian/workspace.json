@@ -157,6 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-in/coloquial MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/coloquial MOC.md"
               }
             }
           },
@@ -276,10 +277,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "82d0d63593759471",
   "lastOpenFiles": [
-    "00-in/coloquial MOC.md",
     "conflict-files-obsidian-git.md",
+    "00-in/coloquial MOC.md",
     "00-in/b-Azar y necesidad.md",
     "00-in/Agregación limitada por difusión.md",
     "00-in/La conciencia social del arte generativo..md",
