@@ -128,7 +128,12 @@
     "philosopher": 121,
     "de": 122,
     "la": 123,
-    "historiador": 124
+    "historiador": 124,
+    "sistemascomplejos": 125,
+    "análisis": 126,
+    "performance": 127,
+    "entrevistas": 128,
+    "teatroexpandido": 129
   },
   "_version": 2
 }

@@ -1,18 +1,13 @@
 ---
-<<<<<<< HEAD
 tags: tp
-project: cym22
-date: 2022-08-30
-=======
 type: tp
 project: cym23
-date: 2023-08-30
->>>>>>> origin/main
+date: 2023-08-19
 ---
 
 # aplicación audiovisual
 
-- [ ] TP2  - Aplicación AV ⏫ 📅 2023-09-14
+- [x] TP2  - Aplicación AV ⏫ 📅 2023-09-19 ✅ 2023-09-21
 
 
 ## Objetivos
@@ -20,6 +15,15 @@ date: 2023-08-30
 Generar una obra o instrumento online, aplicando los principios de generatividad, interfaces y organización temporal descriptos.
 
 ## Consignas
-**
-- tone.js
+#tonejs
+Realizar un instrumento con botones / faders, distintas formas de onda modulables en algún parámetro con un form, list o similar como los ejemplos vistos en las clases. Opcional pero recomendable: incorporar efectos.
 
+## entregas
+
+
+```dataview
+Table  without ID("![|200](" + banner + ")") as foto, file.link as name, file.ctime as creación, tags,  publish as "año", unit
+WHERE contains(type,"exercise")
+WHERE contains(publish,2023)
+SORT Status DESC
+```

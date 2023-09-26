@@ -130,7 +130,7 @@ el siguiente plan es una guía de contenidos modular de la materia Ciencia y Mú
 
 ## Clases
 ```query
-tag: #class
+tag: class
 ```
 
 

@@ -4,14 +4,12 @@ tags: azar, generativad, topoi, cym
 unit: 32
 publish: 2021
 author: zztt
-banner: https://noosphere.princeton.edu/images/movie256_b.gif
+banner: "https://noosphere.princeton.edu/images/movie256_b.gif"
 ---
-
-# Azar
 
 ### unit: 0
 
-Según \[\[Jacques Monod]] en \[\[b-Azar y necesidad]] la vida es una cuestión de azar puro: la consecuencia de elementos químicos convergentes mas condiciones apropiadas para la transformación. En otras palabras la sopa primigenia. Una vez que se forman los primeros aminoácidos, la evolución de las formas de la vida depende de un grado de complejización necesaria.
+Según [[Jacques Monod]] en [[El Azar y la Necesidad]] la vida es una cuestión de azar puro: la consecuencia de elementos químicos convergentes mas condiciones apropiadas para la transformación. En otras palabras la sopa primigenia. Una vez que se forman los primeros aminoácidos, la evolución de las formas de la vida depende de un grado de complejización necesaria.
 
 El azar es una de las primeras acciones posibles de realizar en una computadora. Esto es conocido como RGn (random number generation).
 
@@ -43,6 +41,9 @@ console.log ("random limitado :", numRandom, "\n", "random limitado entero :", M
 
 ```
 
-> \[!TODO] > hacer un generador melódico de solo 3 notas sucesivas de la escala.
+> [!TODO] > hacer un generador melódico de solo 3 notas sucesivas de la escala.
 
-&#x20;solución&#x20;
+
+## Solución
+
+
