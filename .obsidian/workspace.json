@@ -8,25 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff7dc3e3cfbfb04b",
+            "id": "2c264f2bb30fc540",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "db880e63de83066d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf"
+                "file": "00-in/Sin título.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf"
+                "file": "00-in/Sin título.md"
               }
             }
           },
@@ -121,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
+                "file": "00-in/Sin título.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,14 +205,16 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "2c264f2bb30fc540",
   "lastOpenFiles": [
-    "02-mat/obs/img/PSICOACÚSTICA 1.pdf",
+    "00-in/Sin título.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "02-mat/html.md",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
+    "02-mat/obs/img/PSICOACÚSTICA 1.pdf",
     "01-proj/23/Petroccelli/Sin título 1.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/petrocelli POC.md",
-    "00-in/Sin título.md",
     "01-proj/23/Petroccelli/Sin título.md",
     "01-proj/23/Petroccelli/Psicoacústica.md",
     "conflict-files-obsidian-git.md",
@@ -237,7 +233,6 @@
     "01-proj/21/marazzi",
     "01-proj/21/kobayashi",
     "01-proj/21/fernandez burzaco",
-    "01-proj/21",
     "01-proj/20/jaramillo/Unísono virtual.md",
     "01-proj/20/jaramillo/Unísono virtual código.md",
     "01-proj/20/ruiz burtoli/Conexiones.md",
@@ -248,7 +243,6 @@
     "01-proj/20/bonetto/Oscilador de audio con alimentos.md",
     "01-proj/20/amieva/Intensa.md",
     "01-proj/19/gawel/Metáforas.md",
-    "01-proj/19/perez rivas/Reproduciéndonos.md",
     "04-ref/Psicoacústica-1695169193637.jpeg",
     "04-ref/Psicoacústica-1695169193633.jpeg",
     "00-in/cym MOC-1694393867412.jpeg",
