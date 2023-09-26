@@ -6,6 +6,7 @@
       {
         "id": "06d687c8a9bdbf8d",
         "type": "tabs",
+        "dimension": 74.74747474747475,
         "children": [
           {
             "id": "3c5e2f7db2441523",
@@ -13,11 +14,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0a25588b04c55e67",
+        "type": "tabs",
+        "dimension": 25.252525252525253,
+        "children": [
+          {
+            "id": "21cd6c65d2fef0fa",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
             }
           }
         ]
@@ -70,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 231.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -87,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/cym MOC.md"
+                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md"
               }
             }
           },
@@ -105,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/cym MOC.md",
+                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +159,7 @@
             }
           },
           {
-            "id": "4bee2a6c328353cb",
+            "id": "2496ebbb629069fc",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -151,7 +167,7 @@
             }
           },
           {
-            "id": "f74cba6ed39e5007",
+            "id": "0d4a68d271e2c3d4",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -244,10 +260,32 @@
   },
   "active": "3c5e2f7db2441523",
   "lastOpenFiles": [
-    "00-in/Sin título.md",
-    "00-in/cym MOC.md",
-    "00-in/Sin título 1.md",
-    "conflict-files-obsidian-git.md",
+    "00-in/coloquial MOC.md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/Agregación limitada por difusión.md",
+    "00-in/b-Azar y necesidad.md",
+    "04-out/topoi/Música Visual.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym08-flex-grid.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym15-interactividad.md",
+    "00-in/Hans Haake.md",
+    "02-mat/obs/tpl/t-cym-class.md",
+    "04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym04-vida digital.md",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756610.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756573.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756609.jpeg",
@@ -258,30 +296,8 @@
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756597.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756595.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
-    "04-ref/meta-aprendizaje.md",
     "04-ref/image",
-    "04-ref/a-yuda.md",
-    "04-ref/a-snippets.md",
-    "04-ref/a-plugins.md",
-    "04-ref/a-dataview.md",
-    "04-ref/a-dataview playground.md",
     "04-ref",
-    "01-proj/23/beltrame/Piano.md",
-    "04-out/personas/Carlos Trilnik.md",
-    "00-in/personas MOC.md",
-    "04-out/personas/Cecila Arditto.md",
-    "04-out/personas/Dennis Smalley.md",
-    "04-out/personas/Yuval Noah Harari.md",
-    "04-out/personas/Craig Reynolds.md",
-    "04-out/obras/Boid Simulation.md",
-    "00-in/obras MOC.md",
-    "02-mat/rant.md",
-    "02-mat/html.md",
-    "00-in/hi augmentation.md",
-    "00-in/hd-hydra.md",
-    "00-in/eventos MOC.md",
-    "00-in/Cybernetic Serendipity.md",
-    "00-in/combinational creativity.md",
     "cym-metamap.canvas",
     "02-mat/coloquial",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",

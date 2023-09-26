@@ -1369,8 +1369,8 @@
       "filename": "python abjad"
     },
     {
-      "path": "04-out/procedimientos/analisis de obras interactivas.md",
-      "filename": "analisis de obras interactivas"
+      "path": "03-cla/c-cym15-interactividad.md",
+      "filename": "c-cym15-interactividad"
     },
     {
       "path": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
@@ -1631,6 +1631,10 @@
     {
       "path": "conflict-files-obsidian-git.md",
       "filename": "conflict-files-obsidian-git"
+    },
+    {
+      "path": "00-in/Hans Haake.md",
+      "filename": "Hans Haake"
     }
   ]
 }
