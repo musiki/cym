@@ -8,8 +8,14 @@ a[internet music]
 b[js]
 b0[variables]
 b01[types]
+b011[string]
+b012[number]
+b013[boolean]
+b014[null]
+b015[undefined]
 b02[arrays]
 b03[scope]
+b04[objects]
 b1[make decisions]
 b11[conditionals]
 b111[if...else]
@@ -18,13 +24,18 @@ b12[comparision operators]
 b13[logical operators]
 b14[switch statements]
 b2[make loops]
+b21[for]
+b22[while]
+b23[do while]
 b4[reusable blocks]
 
 
 a --> b 
 b --> b0 & b1 & b2 & b3 & b4
-b0 --> b01 & b02 & b03
+b0 --> b01 & b02 & b03 & b04
+b01 --> b011 & b012 & b013 & b014 & b015
 b1 --> b11 & b12
+b2 --> b21 & b22 & b23
 b11 --> b111 & b112 
 
 
@@ -141,7 +152,7 @@ console.log ("listar toda la escala", notas)
 
 Para llamar a cada valor del array: 
 ```js
-miVariable[0]`, `miVariable[1]
+notas[0], notas[1]
 ```
 etc.
 
@@ -149,7 +160,7 @@ etc.
 
 El control de flujos es marcar puntos donde, a partir de alguna evaluación, el devenir del código pueda tomar varios caminos posibles de acción.
 ![](https://i.imgur.com/1y11ydg.png)
-Para ello se utilizan los valores booleanos (true or false)
+Para ello se utilizan los valores **booleanos** (true or false)
 
 ### condicionales
 ```js
@@ -176,6 +187,25 @@ if (condición) {
 ! //not
 ```
 
+```js
+let freq = 440; //podría ser modificable mediante otra función, por ejemplo, un valor de un form accediendo al DOM
+
+if (freq < 440) {
+    funcion(1);
+}
+
+else if (precio < 440) {
+    funcion(2);
+}
+
+else if (precio = 440) {
+    funcion(3);
+}
+
+else {
+    funcion(4);
+}
+```
 ## ciclos
 Los ciclos, también bucles o iteraciones son un medio rápido y sencillo para hacer algo repetidamente.
 
@@ -242,7 +272,20 @@ switch(numero) {
 Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
 
 ## funciones
+Conjunto de instrucciones que se agrupan para realizar una tarea concreta
 
+```js
+const synth = new Tone.Synth().toDestination();
+
+//declaración
+function tone () {
+  synth.triggerAttackRelease("C4", "1"); //en segundos
+  synth.volume.value = -30;
+}
+
+//llamado
+tone();
+```
 ### console.log() 
 La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.
 
