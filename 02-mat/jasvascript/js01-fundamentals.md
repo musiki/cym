@@ -49,7 +49,18 @@ class c c3;
 ```
 
 
-# variables
+# breve intro
+
+La primera aparición pública de Javascript la encontramos en el año 1995 cuando se utiliza como herramienta del navegador Netscape Navigator, con el objetivo de agregar programas a páginas web.
+
+## palabras reservadas
+```js
+break, case, catch, continue, default, let
+delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with
+```
+
+
+## variables
 un espacio de memoria asignable mediante un nombre y un valor. Tres aspectos fundamentales de las variable en js son: los tipos (enteros, reales, cadenas de texto, boleanos, null y undefined),  el scope y el uso de variables como objetos. 
 
 ```javascript
@@ -63,7 +74,35 @@ var  f = true;
 ```
 Una variable **let** puede recibir múltiples asignaciones en el transcurso de la aplicación, es decir que puede cambiar de valor varias veces. Una constante **const** recibe una única asignación al momento de su declaración, impidiendo que su valor se modifique luego.
 
-# arrays
+### String
+Secuencia de texto en cadena
+
+```js
+
+let miVariable = 'myNote';
+```
+
+### Number
+
+Esto es un número. Los números no tienen comillas.
+
+```js
+let miVariable = 440;
+```
+
+
+### Boolean
+
+Tienen valor true/false
+
+```js
+
+let miVariable = true;
+```
+
+## arrays
+
+Permite almacenar varios valores en una sola referencia.
 ```javascript
 var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
 
@@ -88,53 +127,6 @@ var notas=["C","C#","D","E","F","G","A","B"]
 
 console.log ("listar toda la escala", notas)
 
-```
-#
-```
-# librerias
-## tone.js
-
-
-
-#### variables y array 
-
-Una variable es un contenedor para un valor, que puede o no variar.
-
-
-#### tipo de variables
-
-###### String
-Secuencia de texto en cadena
-
-```js
-
-let miVariable = 'myNote';
-```
-
-###### Number
-
-Esto es un número. Los números no tienen comillas.
-
-```js
-let miVariable = 440;
-```
-
-
-##### Boolean
-
-Tienen valor true/false
-
-```js
-
-let miVariable = true;
-```
-
-## Array
-
-Permite almacenar varios valores en una sola referencia.
-
-```js
-let miVariable = [1,'myNote','C4',440];
 ```
 
 Para llamar a cada valor del array: 

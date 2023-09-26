@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -277,8 +277,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "82d0d63593759471",
   "lastOpenFiles": [
+    "00-in/Agregación limitada por difusión.md",
     "00-in/El metaverso es un territorio disputado.md",
     "00-in/hi augmentation.md",
     "00-in/Introducción a la Psicoacústica.md",
@@ -290,7 +291,6 @@
     "00-in/hd-hydra.md",
     "00-in/espacios MOC.md",
     "00-in/b-Azar y necesidad.md",
-    "00-in/Agregación limitada por difusión.md",
     "00-in/Cybernetic Serendipity.md",
     "00-in/combinational creativity.md",
     "00-in/coloquial MOC.md",
