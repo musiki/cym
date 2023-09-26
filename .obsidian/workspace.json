@@ -153,7 +153,7 @@
             }
           },
           {
-            "id": "81bf2bbec4c69cb7",
+            "id": "48b3cb4952442e79",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,8 +196,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "48b3cb4952442e79",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/pianobeltrame.jpg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770980665.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770978237.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770975730.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770972974.jpeg",
     "conflict-files-obsidian-git.md",
     "01-proj/tp/tp02-aplicación.md",
     "04-out/personas/t-persona.md",
@@ -208,10 +212,6 @@
     "02-mat/obs/img/image/tp02-aplicación-1695770908840.jpeg",
     "02-mat/obs/img/image/tp02-aplicación-1695770908838.jpeg",
     "02-mat/obs/img/image/tp02-aplicación-1695770908836.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908835.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908827.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908821.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908819.jpeg",
     "01-proj/23/shifres/Shifres.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
