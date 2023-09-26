@@ -409,3 +409,21 @@ console.log(cadena.toLowerCase());
 //Método de objeto String: Pasar a mayúscula.
 console.log(cadena.toUpperCase());
 ```
+
+#### métodos personalizados
+Llamar a un método es similar a acceder a una propiedad, pero se agrega () al final del nombre del método, posiblemente con argumentos.
+
+```js
+function Sonido(freq, dinamica, timbre) {
+    this.freq = freq;
+    this.dinamica = dinamica;
+    this.instrumento  = instrumento;
+    this.console = function() { console.log("la frecuencia es " + this.freq)}
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+const sonido2 = new Sonido(880, "piano", "violin");
+
+sonido1.console();
+sonido2.console();
+```
