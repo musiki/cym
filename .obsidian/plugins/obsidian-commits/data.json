@@ -34,11 +34,6 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym07-hydra.md": {
-      "size": 2724,
-      "tags": 6,
-      "links": 0
-    },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
       "tags": 2,
@@ -1298,11 +1293,16 @@
       "size": 1099,
       "tags": 3,
       "links": 2
+    },
+    "03-cla/c-cym08-github pages+hydra.md": {
+      "size": 2724,
+      "tags": 6,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 399,
+      "Refactor": 401,
       "Create": 364,
       "Link": 271,
       "Expand": 33
@@ -1328,7 +1328,7 @@
       "15": 53,
       "16": 35,
       "17": 3,
-      "18": 5,
+      "18": 7,
       "19": 0,
       "20": 9,
       "21": 249,
@@ -1339,7 +1339,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 284,
+      "Tue": 286,
       "Wed": 302,
       "Thu": 94,
       "Fri": 64,
@@ -1438,6 +1438,8 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-hydra.md\"> c-cym08-hydra </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
@@ -1486,9 +1488,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-human-book-computer.md\"> c-cym07-human-book-computer </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
