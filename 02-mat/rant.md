@@ -1,12 +1,9 @@
-
 ---
 type: code
 url: 
 year:
-tags: generative, generative literature, cym, process, generative tools
+tags: generative, generativeliterature, cym, process, generative tools
 ---
-
-
 
 ```rant
 
@@ -71,3 +68,5 @@ Your lucky number is `[rand:1;100].
 
 
 ```
+
+

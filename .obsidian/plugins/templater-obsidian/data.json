@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "04-ref/templates",
+  "templates_folder": "02-mat/obs/tpl",
   "templates_pairs": [
     [
       "",
@@ -21,7 +21,7 @@
   ],
   "syntax_highlighting": true,
   "enabled_templates_hotkeys": [
-    "04-ref/templates/t-topoi.md"
+    "02-mat/obs/tpl/t-persona.md"
   ],
   "startup_templates": [
     ""

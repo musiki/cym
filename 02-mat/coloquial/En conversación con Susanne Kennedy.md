@@ -238,3 +238,36 @@ J:** Creo que eso es muy sano, creo que nos enseñan a perder eso. Creo que es u
 **J:** Sí, te mandaré un mensaje. Adiós, gracias.  
   
 **Sí, nos vemos.
+
+
+
+---
+
+Susanne Kennedy es una directora sin igual. Habiéndose hecho un nombre en Holanda, son sus asombrosas piezas, el volteo de obras famosas y la caza de la esencia de un guión lo que sin duda lo confirma. Inspirándose en lo abstracto y en las profundidades de la psique humana, Susanne explora la conciencia más allá de las expectativas del público. Hace poco hablamos con la directora sobre su viaje creativo y sus creencias filosóficas, y nos contó en profundidad la inspiración de su último proyecto para el Holland Festival. Desde que Corona tomó las riendas, el festival se ha apresurado a conjurar nuevas formas de asistir al festival para que no tengamos que perdérnoslo. Ahora se puede ver la representación en línea de forma gratuita, así como ofrecer un donativo donde y cuando se pueda.  
+  
+  
+Tres hermanas es una obra muy emblemática; ¿en qué medida se inspira creativamente en los clásicos y es aquí donde comenzó su amor por el teatro, o más bien su viaje?   
+  
+Aunque Tres hermanas es un clásico, no diría que me inspiran demasiado. En los últimos años he empezado a escribir textos yo misma; es lo que siempre he anhelado, pero nunca supe cómo llegar a ello. La mayoría de las piezas que he hecho en el pasado han sido piezas que he escrito yo mismo, pero hice muchas obras clásicas cuando empezaba mi andadura como joven director. Tres hermanas es una excepción para mí en este momento; hay tantos temas en ella, que sabía que podía utilizarla para mi visión, aunque no sea mi propia escritura.   
+  
+Su obra suele estar distorsionada, ¿qué le llevó a ver el teatro a través de esta lente abstracta?   
+  
+Al principio, hacía una obra e intentaba llevarla a alguna parte y ver hasta dónde podía llegar. Siempre tuve la sensación de que no se sabe cómo debe ser una obra de teatro. En el escenario tenemos convenciones que todo el mundo utiliza, pero eso no significa que una obra sólo pueda representarse dentro de esa convención. En general, pienso: ¿qué es el teatro? ¿Hasta dónde puedo llevarlo? ¿Cómo puedo investigar hasta dónde puede llevarme el teatro? Busco más una experiencia personal para el público y eso es muy intenso. Siempre he intentado encontrar obras que partieran de esa idea, y luego empecé a escribir mis propias obras, porque sentía que podía ir más allá con esta idea. Almacenar y manipular el original, para mí, era una forma de cavar mi propio camino para llegar allí.   
+  
+Usted tiende a evitar lo que se supone que es "realismo psicológico", persiguiendo por tanto lo abstracto. ¿Cree que esta disonancia entre lo que se considera "realidad" y "arte" es, de hecho, más reveladora?  
+  
+Realismo psicológico" es un término que utilizamos, pero ¿qué significa? Cuestiono este significado porque creo que damos estas cosas por sentadas, la gente actúa en el escenario de una determinada manera a la que estamos acostumbrados, y si no lo hacen lo llamamos "abstracto". Cuando veía teatro, siempre tenía la sensación de que nunca me parecía lo correcto. No podía conectar con la experiencia, no podía conectar con lo que hacían los actores en el escenario (hablar en voz alta, gritar, correr, hacer cosas raras). Como no era algo que me hablara, tuve que encontrar mi propio camino. Reflejar el mundo real, ¡eso es lo que intenta hacer siempre el arte! Intento encontrar una forma que refleje la realidad, esa parte de mí que me impulsó a no limitarme a aceptar las viejas convenciones, sino a buscarme a mí mismo.   
+  
+
+Para el Holland Festival, ha reimaginado Tres hermanas de Chéjov; ¿qué le atrajo inicialmente de esta obra?  
+  
+Lo que me atrajo inicialmente fue la idea del bucle. En el teatro podemos ver clásicos una y otra vez, como Tres hermanas, que se ha representado en todo el mundo desde que Chéjov escribió la obra. Para mí, era interesante adoptar la perspectiva no sólo de las Tres Hermanas, sino también del público, porque sabemos que vamos a verlas no llegar a Moscú, y lo que vemos es a ellas atrapadas en un bucle eterno. Esto me fascinó por Nietzsche, y su idea del eterno retorno (el concepto de que si un demonio viene a ti por la noche y te dice que tienes que vivir tu vida una y otra vez, ¿es una pesadilla o la aceptas?) Pensé en utilizar esta pregunta fundamental que todos tenemos que hacernos y utilizarla como punto de partida para las tres hermanas.   
+  
+¿Cree que la obra es una reflexión directa sobre el mundo digital y la repetición sin fin de los momentos de la vida que se suceden?  
+  
+Vivimos en un mundo digital y creo que el arte que se hace ahora no puede ignorarlo. Este mundo digital es ahora de donde viene mi arte. Por supuesto, ha cambiado la realidad, pero forma parte de lo que somos en este momento. Creo que ya no es posible hacer algo que no refleje el mundo digital de hoy en día. Mi equipo y yo hemos creado estas experiencias (en Three Sister) que tienen una sensación casi de realidad virtual, dando la sensación de que te absorben... Creo que podemos aprender sobre nosotros mismos utilizando herramientas digitales.   
+  
+En la obra, las hermanas se liberan de su "finitud"; ¿cómo creemos que podemos liberarnos de nuestra "finitud"?  
+  
+Aún no estoy segura de que se hayan liberado. Tengo la sensación de que en Tres Hermanas son conscientes, pero aún no libres. Creo que esta libertad es posible en la realidad, pero requiere mucho trabajo, mucha conciencia y la voluntad de llegar a ella. Este es otro tema, ¡pero de eso se trata! De descubrir que, en cierto sentido, las fronteras que hemos creado en nuestra cabeza y los obstáculos son sólo eso: obstáculos en nuestra cabeza y que en realidad no están ahí. La idea de que la realidad puede ser mucho más amplia y extensa de lo que pensamos. Es difícil de manejar, así que no nos atrevemos a ir allí. En términos de finitud, sí existe la muerte, pero ¿quizás no? Esa es la gran pregunta que todavía me explico.  
+  

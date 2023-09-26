@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/bib MOC.md",
+                "file": "04-out/topoi/Interfaces.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "00-in/bib MOC.md",
+            "file": "04-out/topoi/Interfaces.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "00-in/bib MOC.md"
+            "file": "04-out/topoi/Interfaces.md"
           }
         }
       },
@@ -186,8 +186,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1521269d75f3da6d",
+  "active": "dd2a452db0f43d5c",
   "lastOpenFiles": [
+    "04-out/topoi/Vida artificial.md",
+    "00-in/cym MOC.md",
+    "00-in/bib MOC.md",
     "02-mat/coloquial",
     "02-mat/jasvascript/js-playground.md",
     "cym-metamap.canvas",

@@ -7,8 +7,6 @@ author: zztt
 banner: "https://noosphere.princeton.edu/images/movie256_b.gif"
 ---
 
-# Azar
-
 ### unit: 0
 
 Según [[Jacques Monod]] en [[El Azar y la Necesidad]] la vida es una cuestión de azar puro: la consecuencia de elementos químicos convergentes mas condiciones apropiadas para la transformación. En otras palabras la sopa primigenia. Una vez que se forman los primeros aminoácidos, la evolución de las formas de la vida depende de un grado de complejización necesaria.

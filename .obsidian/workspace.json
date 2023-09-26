@@ -73,9 +73,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "a3a893fb5dbf7996",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-ref/meta-aprendizaje.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -157,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/coloquial MOC.md",
+                "file": "04-ref/meta-aprendizaje.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/coloquial MOC.md"
+                "file": "04-ref/meta-aprendizaje.md"
               }
             }
           },
@@ -277,51 +290,50 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82d0d63593759471",
+  "active": "a3a893fb5dbf7996",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
-    "00-in/coloquial MOC.md",
-    "00-in/b-Azar y necesidad.md",
-    "00-in/Agregación limitada por difusión.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/personas MOC.md",
-    "00-in/proyectos MOC.md",
-    "00-in/Cybernetic Serendipity.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "04-out/bibliografía/El Azar y la Necesidad.md",
-    "00-in/Patrones de Turing.md",
-    "00-in/combinational creativity.md",
-    "04-out/topoi/Vida artificial.md",
-    "00-in/cym MOC.md",
-    "00-in/espacios MOC.md",
+    "04-ref/meta-aprendizaje.md",
+    "04-ref/a-yuda.md",
+    "04-ref/a-snippets.md",
+    "04-ref/a-dataview playground.md",
+    "04-ref/a-dataview.md",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
+    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
+    "04-out/bibliografía/Nick Montfort_The Future.md",
+    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
+    "01-proj/tp/tp06-guía de lectura SADIN.md",
+    "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
+    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
+    "01-proj/tp/tp02-aplicación.md",
     "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/beltrame/beltrame.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "02-mat/coloquial",
-    "00-in/eventos MOC.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603452.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603451.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603450.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603449.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603445.jpeg",
-    "01-proj/23/shifres/shifres.gif",
-    "01-proj/23/bassino/bassino.jpg",
-    "02-mat/obs/img/image/bassino POC-1695321580962.jpeg",
-    "02-mat/obs/img/image/bassino POC-1695321576129.jpeg",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/tone.js.md",
+    "00-in/coloquial MOC.md",
+    "00-in/coloquial MOC-1695687207656.jpeg",
+    "00-in/coloquial MOC-1695687207655.jpeg",
+    "00-in/coloquial MOC-1695687207654.jpeg",
+    "00-in/coloquial MOC-1695687207653.jpeg",
+    "00-in/coloquial MOC-1695687207652.jpeg",
+    "00-in/coloquial MOC-1695687207651.jpeg",
+    "00-in/coloquial MOC-1695687207650.jpeg",
+    "04-ref/image",
+    "04-ref/a-plugins.md",
+    "04-ref",
+    "04-out/personas/Craig Reynolds.md",
+    "02-mat/coloquial",
     "cym-metamap.canvas",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "02-mat/obs/img/image",
-    "04-ref/image",
-    "04-ref",
     "04-out/readme",
     "bibliografia",
     "04-out/bibliografia",
