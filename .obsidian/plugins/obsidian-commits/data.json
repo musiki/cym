@@ -604,11 +604,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/Petroccelli/petrocelli POC.md": {
-      "size": 115,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/Zaracho/zaracho POC.md": {
       "size": 0,
       "tags": 0,
@@ -653,11 +648,6 @@
       "size": 345,
       "tags": 2,
       "links": 1
-    },
-    "02-mat/obs/tpl/t-persona.md": {
-      "size": 61,
-      "tags": 1,
-      "links": 0
     },
     "02-mat/obs/tpl/templater.md": {
       "size": 112,
@@ -1313,12 +1303,32 @@
       "size": 38,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Petroccelli/Guitarrax.md": {
+      "size": 374,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/petroccelli POC.md": {
+      "size": 209,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/shifres/Shifres.md": {
+      "size": 51,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/t-persona.md": {
+      "size": 61,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 404,
-      "Create": 368,
+      "Refactor": 407,
+      "Create": 373,
       "Link": 273,
       "Expand": 35
     }
@@ -1345,7 +1355,7 @@
       "17": 3,
       "18": 8,
       "19": 2,
-      "20": 17,
+      "20": 25,
       "21": 249,
       "22": 97,
       "23": 186
@@ -1354,7 +1364,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 297,
+      "Tue": 305,
       "Wed": 302,
       "Thu": 94,
       "Fri": 64,
@@ -1403,6 +1413,11 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
@@ -1447,12 +1462,7 @@
         "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación 1.md\"> tp02-aplicación 1 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto 1.md\"> Multi-efecto 1 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"home.md\"> home </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md\"> Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto 1.md\"> Multi-efecto 1 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
@@ -1569,6 +1579,9 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petrocelli POC.md\"> petrocelli POC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1615,10 +1628,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",

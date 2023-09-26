@@ -1,4 +1,7 @@
 ---
+banner: "https://obj.shine.cn/files/2020/09/28/108901e5-0e34-4d99-ad3a-3bcfe47c55b1_0.jpg?x-image-process=style/style-watermark"
+---
+---
 type: topoi
 tags: espacio público, topoi
 unit: 0
