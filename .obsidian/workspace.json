@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
+                "file": "01-proj/23/Petroccelli/Guitarrax.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
+                "file": "01-proj/23/Petroccelli/Guitarrax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md"
+                "file": "01-proj/23/Petroccelli/Guitarrax.md"
               }
             }
           },
@@ -198,8 +198,9 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "01-proj/tp/tp02-aplicación.md",
     "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/tp/tp02-aplicación.md",
     "01-proj/23/beltrame/pianobeltrame.jpg",
     "02-mat/obs/img/image/tp02-aplicación-1695770980665.jpeg",
     "02-mat/obs/img/image/tp02-aplicación-1695770978237.jpeg",
@@ -220,7 +221,6 @@
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/shifres/do-tonera.md",
     "02-mat/html.md",
-    "01-proj/23/bassino/Multi-efecto.md",
     "00-in/Untitled 1.md",
     "00-in/Untitled.md"
   ]
