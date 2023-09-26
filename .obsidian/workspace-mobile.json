@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/topoi/Interfaces.md",
+                "file": "04-out/bibliografía/Nick Montfort_The Future.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "04-out/topoi/Interfaces.md",
+            "file": "04-out/bibliografía/Nick Montfort_The Future.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "04-out/topoi/Interfaces.md"
+            "file": "04-out/bibliografía/Nick Montfort_The Future.md"
           }
         }
       },
@@ -163,6 +163,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
@@ -186,8 +188,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd2a452db0f43d5c",
+  "active": "1521269d75f3da6d",
   "lastOpenFiles": [
+    "04-out/personas/Enno Poppe.md",
+    "04-out/topoi/Interfaces.md",
     "04-out/topoi/Vida artificial.md",
     "00-in/cym MOC.md",
     "00-in/bib MOC.md",
