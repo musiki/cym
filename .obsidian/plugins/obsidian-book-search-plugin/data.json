@@ -1,6 +1,6 @@
 {
-  "folder": "04-ref/bibliografía",
-  "fileNameFormat": "{{author}}_{{title}}",
+  "folder": "04-out/bibliografía",
+  "fileNameFormat": "{title}}",
   "frontmatter": "",
   "content": "",
   "useDefaultFrontmatter": false,

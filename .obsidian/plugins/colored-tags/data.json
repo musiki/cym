@@ -124,7 +124,16 @@
     "excalidraw": 117,
     "movies": 118,
     "to-watch": 119,
-    "person": 120
+    "person": 120,
+    "patrones": 121,
+    "eventos": 122,
+    "exhibiciones": 123,
+    "históricas": 124,
+    "sistemascomplejos": 125,
+    "artículos": 126,
+    "entrevistas": 127,
+    "performance": 128,
+    "teatroexpandido": 129
   },
   "_version": 2
 }

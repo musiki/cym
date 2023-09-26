@@ -3,7 +3,7 @@ type: topoi
 tags: virtualidad, vr, humanos, realidad,topoi
 author: Juan Ignacio Gutierrez
 unit: 61
-banner: https://www.viar360.com/wp-content/uploads/2019/04/tiltbrush-VRart-2.png
+banner: "https://www.viar360.com/wp-content/uploads/2019/04/tiltbrush-VRart-2.png"
 ---
 # Virtualidad y Realidad
 

@@ -3,7 +3,9 @@
     "migrated": 2,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
+    "emojiStyle": "none",
     "iconColor": null,
+<<<<<<< HEAD
     "recentlyUsedIcons": [
       "FlPolygonalMultipleStars",
       "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
@@ -11,15 +13,11 @@
       "FabGithubSquare",
       "IbHugContentVertical"
     ],
+=======
+    "recentlyUsedIcons": [],
+>>>>>>> origin/main
     "recentlyUsedIconsSize": 5,
     "rules": [],
-    "extraPadding": {
-      "top": 2,
-      "right": 2,
-      "bottom": 2,
-      "left": 2
-    },
-    "emojiStyle": "none",
     "extraMargin": {
       "top": 0,
       "right": 4,
@@ -27,6 +25,7 @@
       "left": 0
     },
     "iconInTabsEnabled": false
+<<<<<<< HEAD
   },
   "02-mat/python": "FabPython",
   "02-mat/jasvascript": "FabJs",
@@ -55,4 +54,7 @@
   "03-cla": "IbArrowCircleForward",
   "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
   "02-mat/partituras": "FlPolygonalMultipleStars"
+=======
+  }
+>>>>>>> origin/main
 }
