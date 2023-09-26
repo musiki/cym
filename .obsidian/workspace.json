@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/personas/Carlos Trilnik.md",
+                "file": "00-in/cym MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/personas/Carlos Trilnik.md"
+                "file": "00-in/cym MOC.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/personas/Carlos Trilnik.md",
+                "file": "00-in/cym MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             }
           },
           {
-            "id": "7d9a30abc2597d7e",
+            "id": "4bee2a6c328353cb",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -151,7 +151,7 @@
             }
           },
           {
-            "id": "1fc50b35a3f5cfd4",
+            "id": "f74cba6ed39e5007",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -242,10 +242,10 @@
       "wikipedia-search:Open Article": false
     }
   },
-  "active": "1fc50b35a3f5cfd4",
+  "active": "f74cba6ed39e5007",
   "lastOpenFiles": [
-    "00-in/personas MOC.md",
     "04-out/personas/Carlos Trilnik.md",
+    "00-in/personas MOC.md",
     "04-out/personas/Cecila Arditto.md",
     "04-out/personas/Dennis Smalley.md",
     "04-out/personas/Yuval Noah Harari.md",
