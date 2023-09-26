@@ -1,6 +1,7 @@
 > [!important] > Atención! para correr los snippets de javascript es necesario ir a configuración del plugin Executc de node.js. (ademas de tener instalado node.js) En windows la ruta es C:\Program Files\nodejs\node.exe
 
 
+
 ```mermaid
 graph LR
 
@@ -15,6 +16,8 @@ b014[null]
 b015[undefined]
 b02[arrays]
 b03[scope]
+b031[global]
+b032[local]
 b04[objects]
 b1[make decisions]
 b11[conditionals]
@@ -37,6 +40,9 @@ b01 --> b011 & b012 & b013 & b014 & b015
 b1 --> b11 & b12
 b2 --> b21 & b22 & b23
 b11 --> b111 & b112 
+
+
+
 
 
 
@@ -286,6 +292,22 @@ function tone () {
 //llamado
 tone();
 ```
+
+### parámetros
+
+Son variables que se declaran dentro de la función, entre sus paréntesis. Los valores de éstos se definen luego en el llamado.
+
+```js
+function conParametros(parametro1, parametro2) {
+    console.log(parametro1 + " " + parametro2);
+}
+```
+
+El valor que toman estos parámetros se definen en el **llamado**. 
+```js
+conParametros("generative", "art"); // → “generative art”
+```
+
 ### console.log() 
 La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.
 
@@ -294,4 +316,22 @@ console.log("el audioCtx está inicializado");
 
 let acorde = “RE”
     console.log(acorde) //RE
+```
+
+## scope
+Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
+```js
+let nota = “RE” // variable global
+
+function escala() {
+    let nota = “DO” // variable local
+    console.log(nota)
+}
+
+//Accede a nombre global
+console.log(nota)   // RE
+  
+
+//Accede a nombre local
+escala() // DO
 ```
