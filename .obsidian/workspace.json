@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Sin título.md",
+                "file": "01-proj/23/Petroccelli/Guitarrax.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Sin título.md"
+                "file": "01-proj/23/Petroccelli/Guitarrax.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Sin título.md",
+                "file": "01-proj/23/Petroccelli/Guitarrax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,9 +205,9 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "2c264f2bb30fc540",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "00-in/Sin título.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
     "03-cla/c-cym06c-tonejs.md",
     "02-mat/html.md",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
