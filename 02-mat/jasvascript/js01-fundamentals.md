@@ -392,3 +392,6 @@ function Sonido(freq, dinamica, timbre) {
 const sonido1 = new Sonido(440, "forte", "violoncello");
 const sonido2 = new Sonido(880, "piano", "violin");
 ```
+
+#### this
+Refiere al elemento actual en el que se está escribiendo el código. Cuando se emplea un función constructora para crear un objeto (con la palabra clave new), this está enlazado al nuevo objeto instanciado.
