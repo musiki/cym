@@ -145,11 +145,101 @@ miVariable[0]`, `miVariable[1]
 ```
 etc.
 
-## condicionales/control de flujos
+## control de flujos
 
 El control de flujos es marcar puntos donde, a partir de alguna evaluación, el devenir del código pueda tomar varios caminos posibles de acción.
 ![](https://i.imgur.com/1y11ydg.png)
 Para ello se utilizan los valores booleanos (true or false)
+
+### condicionales
+```js
+if (condición) {
+  código a ejecutar si la condición es verdadera
+} else {
+  ejecuta este otro código si la condición es falsa
+}
+```
+### operadores lógicos
+```javascript
+'=' //Igual a
+!= //Diferente a 
+=== //Contenido y tipo igual a 
+!== //Contenido o tipo diferente de 
+> //Mayor que 
+>= //Mayor o igual que 
+< //Menor que 
+⇐ //Menor o igual que
+
+//operadores lógicos
+&& //and
+|| //or
+! //not
+```
+
+## ciclos
+Los ciclos, también bucles o iteraciones son un medio rápido y sencillo para hacer algo repetidamente.
+
+### ciclos por conteo
+Repiten un bloque de código un número de veces específica. Estructura **for**. 
+
+```js
+for(desde; hasta; actualización) {
+ //lo que se escriba acá se ejecutará mientras dure el ciclo
+}
+```
+
+```js 
+for (let i = 0; i < 10; i++) {
+    alert(i);
+}
+```
+
+### ciclos condicionales
+Repiten un bloque de código mientras la condición evaluada es verdadera. Estructuras **while** y **do...while**.
+
+```js
+while (algo, operador lógico, otro) {
+	función();
+}
+```
+
+```js
+let entrada = prompt("Ingresar un dato");
+//Repetimos con While hasta que el usuario ingresa "ESC"
+
+while(entrada != "ESC" ){
+
+    alert("El usuario ingresó "+ entrada);
+
+    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+
+    entrada = prompt("Ingresar otro dato");
+}
+```
+
+## switch
+Maneja múltiples condiciones sobre la misma variable (técnicamente se podría resolver con un if, pero el uso de switch es más ordenado)
+
+```js
+switch(numero) {
+ case 5:
+   ...
+   break;
+ case 8:
+   ...
+   break;
+ case 20:
+   ...
+   break;
+ default:
+   ...
+   break;
+} //cada condición se evalúa y, si se cumple, se ejecuta lo que esté indicado dentro de cada case, después de las instrucciones de cada case se incluye la sentencia break para terminar la ejecución del switch
+```
+
+## objetos
+
+Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
 
 ## funciones
 
