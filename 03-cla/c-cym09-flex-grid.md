@@ -8,12 +8,12 @@ tags:
   - expandida
   - class
 unit: 0
-num: 8
+num: 9
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 08
+UNTREF | CYM23 | 09
 
 - [ ] # [[r-como hacer un proyectual]]
 

@@ -1,13 +1,19 @@
 ---
 type: class
-tags: cym, música visual, armonía expandida,class
+tags:
+  - cym
+  - música
+  - visual
+  - armonía
+  - expandida
+  - class
 unit: 0
-num:  7
+num: 8
 year: 2023
 ---
 
 <!-- slide bg="#010100" -->
-UNTREF | CYM23 | 07
+UNTREF | CYM23 | 08
 
 # Github pages
 
@@ -19,6 +25,15 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 2. Inicializá un README o cargá tu html/css/js
 3. Luego, en Settings, en la sección Code and automation, ir a Pages.
 4. Seleccioná el source y el branch y guardá. Allí, debería crearte un link con el acceso a la página.
+
+
+## ingeniería inversa
+
+**view source** Ctrl+U (Windows PC) o Command+Option+U (Mac)
+**inspect elements** F12 (Windows) o Command+SHIFT+C (Mac)
+
+### Upstart
+<iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 # hydra
