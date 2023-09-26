@@ -886,7 +886,7 @@
     },
     "04-out/topoi/Intervencion del espacio público.md": {
       "size": 8227,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Introducción a la psicoacústica.md": {
@@ -916,12 +916,12 @@
     },
     "04-out/topoi/Música Visual.md": {
       "size": 13386,
-      "tags": 0,
+      "tags": 3,
       "links": 4
     },
     "04-out/topoi/Música y Política.md": {
       "size": 6665,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Racionalizacion_(videojuegos).md": {
@@ -1329,7 +1329,7 @@
     "/": {
       "Refactor": 410,
       "Create": 373,
-      "Link": 277,
+      "Link": 280,
       "Expand": 35
     }
   },
@@ -1355,7 +1355,7 @@
       "17": 3,
       "18": 8,
       "19": 2,
-      "20": 32,
+      "20": 35,
       "21": 249,
       "22": 97,
       "23": 186
@@ -1364,7 +1364,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 312,
+      "Tue": 315,
       "Wed": 302,
       "Thu": 94,
       "Fri": 64,
@@ -1518,6 +1518,9 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
@@ -1565,10 +1568,7 @@
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
-        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/sistemas.excalidraw.md\"> sistemas.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-book.md\"> t-book </a>"
+        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",

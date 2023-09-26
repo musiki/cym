@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/topoi/Música Visual.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Música Visual.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/topoi/Música Visual.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -165,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,6 +199,7 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "04-out/topoi/Música Visual.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
     "04-out/topoi/Intervencion del espacio público.md",
