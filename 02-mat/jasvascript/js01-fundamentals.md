@@ -378,3 +378,17 @@ sonido1["instrumento"] = "piano"
 //otra forma
 sonido1.freq = 880
 ```
+
+### constructores
+Es una función que usamos para crear un nuevo objeto cada vez que sea necesario. Con esta “función constructora” podemos inicializar las propiedades del objeto al momento de ser instanciado con new.
+
+```js
+function Sonido(freq, dinamica, timbre) {
+    this.freq = freq;
+    this.dinamica = dinamica;
+    this.instrumento  = instrumento;
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+const sonido2 = new Sonido(880, "piano", "violin");
+```
