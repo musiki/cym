@@ -477,6 +477,7 @@ const sonido1 = new Sonido(440, "forte", "violoncello");
 |`Math.PI`|[Número PI](https://es.wikipedia.org/wiki/N%C3%BAmero_%CF%80) o `Π`|`3.141592653589793`|
 |`Math.SQRT1_2`|Equivalente a `Math.sqrt(1/2)`.|`0.7071067811865476`|
 |`Math.SQRT2`|Equivalente a `Math.sqrt(2)`.|`1.4142135623730951`|
+
 ### funciones y métodos
 |Método|Descripción|Ejemplo|
 |---|---|---|
@@ -491,3 +492,30 @@ const sonido1 = new Sonido(440, "forte", "violoncello");
 |`Math.cbrt(x)`|Devuelve la [raíz cúbica](https://es.wikipedia.org/wiki/Ra%C3%ADz_c%C3%BAbica) de `x`.|`√``3``x`|
 |`Math.imul(a, b)`|Equivalente a `a * b`, pero a nivel de bits.||
 |`Math.clz32(x)`|Devuelve el número de ceros a la izquierda de `x` en binario (32 bits).|
+
+#### método Math.random()
+Devuelve un número al azar entre 0 y 1 con 16 decimales.
+
+#### métodos de redondeo
+```js
+// Redondeo natural, el más cercano
+Math.round(3.75);           // 4
+Math.round(3.25);           // 3
+
+// Redondeo superior (el más alto)
+Math.ceil(3.75);            // 4
+Math.ceil(3.25);            // 4
+
+// Redondeo inferior (el más bajo)
+Math.floor(3.75);           // 3
+Math.floor(3.25);           // 3
+
+// Redondeo con precisión
+Math.round(3.123456789);    // 3
+Math.fround(3.123456789);   // 3.1234567165374756
+
+// Truncado (sólo parte entera)
+Math.trunc(3.75);           // 3
+Math.round(-3.75);          // -4
+Math.trunc(-3.75);          // -3
+```
