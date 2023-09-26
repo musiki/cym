@@ -1,9 +1,9 @@
 {
   "choices": [],
   "macros": [],
-  "inputPrompt": "single-line",
+  "inputPrompt": "multi-line",
   "devMode": false,
-  "templateFolderPath": "",
+  "templateFolderPath": "04-ref/templates",
   "announceUpdates": true,
   "version": "1.2.1",
   "disableOnlineFeatures": true,

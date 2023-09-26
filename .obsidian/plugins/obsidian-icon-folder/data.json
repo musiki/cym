@@ -1,6 +1,6 @@
 {
   "settings": {
-    "migrated": true,
+    "migrated": 2,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
     "iconColor": null,
@@ -53,7 +53,6 @@
     "inheritanceIcon": "IbStackHorizontal"
   },
   "03-cla": "IbArrowCircleForward",
-  "04-ref": "IbArrowDownLeft",
   "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
   "02-mat/partituras": "FlPolygonalMultipleStars"
 }

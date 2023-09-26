@@ -61,7 +61,7 @@ console.log (a + b)
 var  f = true;
 
 ```
-
+Una variable **let** puede recibir múltiples asignaciones en el transcurso de la aplicación, es decir que puede cambiar de valor varias veces. Una constante **const** recibe una única asignación al momento de su declaración, impidiendo que su valor se modifique luego.
 
 # arrays
 ```javascript

@@ -9,7 +9,10 @@
   },
   "livePreview": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "04-ref",
+  "attachmentFolderPath": "02-mat/obs/img",
   "newFileLocation": "folder",
-  "newFileFolderPath": "00-in"
+  "newFileFolderPath": "00-in",
+  "defaultViewMode": "preview",
+  "readableLineLength": false,
+  "showInlineTitle": true
 }
