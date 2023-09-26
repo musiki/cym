@@ -370,4 +370,11 @@ const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
 
 //para obtener el valor de una propiedad del objeto
 console.log(sonido1.dinamica)
+//otra forma
+console.log(sonido1["dinamica"])
+
+//para asignar nuevos valores
+sonido1["instrumento"] = "piano"
+//otra forma
+sonido1.freq = 880
 ```
