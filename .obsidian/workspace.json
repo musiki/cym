@@ -1,95 +1,40 @@
 {
   "main": {
-    "id": "5a18c0d64014344d",
+    "id": "6d5ad45ab2fa4057",
     "type": "split",
     "children": [
       {
-        "id": "dde0344341cb0e2b",
+        "id": "3b43974834539115",
         "type": "tabs",
         "children": [
           {
-            "id": "1a18ca71d2e01b80",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "juggl_view",
-              "state": {},
-              "pinned": true
-            }
-          },
-          {
-            "id": "8a4e3ad4e4d71436",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "juggl_view",
-              "state": {},
-              "pinned": true
-            }
-          },
-          {
-            "id": "092d55e3789581db",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "84ea3e7d69ad87fc",
+            "id": "34b386926eabb429",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "7d289e5f1d4852ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/Agregación limitada por difusión.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "82d0d63593759471",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d4718bd7ba3ba504",
+    "id": "7b72b6e633658761",
     "type": "split",
     "children": [
       {
-        "id": "7c967065551dd8ba",
+        "id": "aa81e05a93e1f3b7",
         "type": "tabs",
         "children": [
           {
-            "id": "9d30c2917a0c09e3",
+            "id": "dd1acde2c75a4600",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -99,12 +44,12 @@
             }
           },
           {
-            "id": "96ec3dbd878d0886",
+            "id": "a6fc3c908590302f",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "proyectual",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,15 +59,7 @@
             }
           },
           {
-            "id": "5f6979fcaa6edb43",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "a3f3d6b8aaa45293",
+            "id": "e70db39f67d2e2a7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -133,18 +70,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.50390243530273
+    "width": 300
   },
   "right": {
-    "id": "80820653654ffa07",
+    "id": "1b4d810c45a86442",
     "type": "split",
     "children": [
       {
-        "id": "00280e8b2037d894",
+        "id": "abf50bafd100c21b",
         "type": "tabs",
         "children": [
           {
-            "id": "d6bb19e283c34886",
+            "id": "187795aa940abde3",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -152,11 +89,12 @@
             }
           },
           {
-            "id": "3ea2a834c2570976",
+            "id": "c45796f39414d797",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,19 +106,7 @@
             }
           },
           {
-            "id": "f183a64109c5ba3b",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "03-cla/c-cym06- cohesión audiovisual-1694557676434.jpeg",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "4a15f9484f221c6c",
+            "id": "8fb58ad72ddf111c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -191,49 +117,7 @@
             }
           },
           {
-            "id": "dc9369bc847a8542",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "conflict-files-obsidian-git.md"
-              }
-            }
-          },
-          {
-            "id": "e948b467d593cd23",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {}
-            }
-          },
-          {
-            "id": "3dad1fcc087884df",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {}
-            }
-          },
-          {
-            "id": "bc6cc4bab11c2429",
-            "type": "leaf",
-            "state": {
-              "type": "QUICKSHARE_SIDE_VIEW",
-              "state": {}
-            }
-          },
-          {
-            "id": "3405820a1cd89693",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "f7989bad5c878747",
+            "id": "d8305907f103c00c",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -243,7 +127,33 @@
             }
           },
           {
-            "id": "0f89b409c3e43d75",
+            "id": "872b0dec30b2797f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01-proj/tp/tp02-aplicación.md"
+              }
+            }
+          },
+          {
+            "id": "c416048f139cfb27",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {}
+            }
+          },
+          {
+            "id": "d1aaae4c7b9cd41d",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "81bf2bbec4c69cb7",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -251,19 +161,15 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "digitalgarden:Digital Garden Publication Center": false,
-      "wikipedia-search:Open Article": false,
-      "templater-obsidian:Templater": false,
-      "translate:Open translation view": false,
-      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
@@ -276,65 +182,32 @@
       "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
-      "markdown-importer:Open format converter": false,
-      "workspaces:Manage workspace layouts": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "34b386926eabb429",
   "lastOpenFiles": [
     "01-proj/23/beltrame/Piano.md",
-    "conflict-files-obsidian-git.md",
-    "02-mat/obs/img/image/Piano-1695770018018.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017992.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017974.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017956.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017941.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017924.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017884.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017870.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017812.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017764.jpeg",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "00-in/Untitled.md",
-    "00-in/Untitled 1.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/beltrame/beltrame.md",
-    "04-out/topoi/Forma Musical.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "04-out/topoi/Música y Política.md",
-    "03-cla/c-cym00-presentación.md",
-    "01-proj/tp/prueba tutorial.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "README.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym07-creative computing.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym05.06-integración.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "04-ref/image",
-    "04-ref",
-    "02-mat/coloquial",
-    "cym-metamap.canvas",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-    "02-mat/obs/img/image",
-    "04-out/readme",
-    "bibliografia",
-    "04-out/bibliografia",
-    "02-mat/procesos/Untitled.loom",
-    "Untitled.canvas"
+    "01-proj/23/Petroccelli/petrocelli POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "02-mat/html.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "00-in/Untitled 1.md",
+    "00-in/Untitled.md"
   ]
 }
