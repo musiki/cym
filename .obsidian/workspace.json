@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
-                "mode": "source",
+                "file": "01-proj/tp/tp02-aplicación.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1b4d810c45a86442",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "file": "01-proj/tp/tp02-aplicación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md"
+                "file": "01-proj/tp/tp02-aplicación.md"
               }
             }
           },
@@ -199,18 +199,18 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym07-creative computing.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
     "01-proj/20/ruiz burtoli/Conexiones código.md",
     "01-proj/20/ruiz burtoli/Conexiones.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "03-cla/c-cym08-github pages+hydra.md",
     "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
     "04-out/topoi/Música Visual.md",
