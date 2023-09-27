@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md",
+                "file": "04-out/topoi/Sistemas de universos.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md",
+                "file": "04-out/topoi/Sistemas de universos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp02-aplicación.md"
+                "file": "04-out/topoi/Sistemas de universos.md"
               }
             }
           },
@@ -199,9 +199,32 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "04-out/topoi/README 1.md",
+    "04-out/topoi/Música Visual.md",
+    "04-out/topoi/La reología del arte.md",
+    "04-out/topoi/Introducción a la psicoacústica.md",
+    "04-out/topoi/Forma Musical.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "00-in/proyectos MOC.md",
+    "00-in/memex.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/hd-hydra.md",
+    "00-in/códigos MOC.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069183.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069180.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069170.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069151.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069146.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069134.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069129.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069119.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069112.jpeg",
+    "02-mat/obs/img/image/Botonera rítmica-1695770069103.jpeg",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "02-mat/jasvascript/js01-fundamentals.md",
-    "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym07-creative computing.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
     "01-proj/20/ruiz burtoli/Conexiones código.md",
@@ -211,29 +234,6 @@
     "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/shifres/do-tonera.md",
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp01-topoi.md",
-    "04-out/topoi/Música Visual.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Música y Política.md",
-    "04-out/topoi/Forma Musical.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/bassino/bassinopedalera.jpg",
-    "02-mat/obs/img/image/Multi-efecto-1695771569274.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771567220.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771564563.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771562592.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771559729.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771557220.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771554796.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771551573.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771548075.jpeg"
+    "01-proj/tp/tp01-topoi.md"
   ]
 }
