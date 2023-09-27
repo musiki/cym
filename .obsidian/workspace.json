@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "03-cla/c-cym08-github pages+hydra.md"
               }
             }
           },
@@ -199,9 +199,21 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "04-out/topoi/Música Visual.md",
+    "03-cla/c-cym07-creative computing.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/20/ruiz burtoli/Conexiones código.md",
+    "01-proj/20/ruiz burtoli/Conexiones.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
+    "04-out/topoi/Música Visual.md",
     "04-out/topoi/Intervencion del espacio público.md",
     "04-out/topoi/Música y Política.md",
     "04-out/topoi/Forma Musical.md",
@@ -222,18 +234,6 @@
     "02-mat/obs/img/image/Multi-efecto-1695771557220.jpeg",
     "02-mat/obs/img/image/Multi-efecto-1695771554796.jpeg",
     "02-mat/obs/img/image/Multi-efecto-1695771551573.jpeg",
-    "02-mat/obs/img/image/Multi-efecto-1695771548075.jpeg",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/beltrame/Piano.md",
-    "conflict-files-obsidian-git.md",
-    "04-out/personas/t-persona.md",
-    "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/Petroccelli/petrocelli POC.md",
-    "02-mat/html.md",
-    "00-in/Untitled 1.md",
-    "00-in/Untitled.md"
+    "02-mat/obs/img/image/Multi-efecto-1695771548075.jpeg"
   ]
 }
