@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "558992fe279bf9fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,10 +256,28 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "3c5e2f7db2441523",
+  "active": "558992fe279bf9fd",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688653.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770978237.jpeg",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688652.jpeg",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688651.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770908851.jpeg",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688650.jpeg",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688648.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770908840.jpeg",
+    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688647.jpeg",
+    "02-mat/obs/img/image/tp02-aplicación-1695770908836.jpeg",
+    "01-proj/23/shifres/Shifres.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "00-in/Untitled.md",
+    "00-in/Untitled 1.md",
     "00-in/teatro MOC.md",
     "01-proj/17/navarro/Ajedrez.md",
     "01-proj/17/borsalino/Condensador de eventos.md",
@@ -262,24 +294,6 @@
     "03-cla/c-cym06-principios generativos.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym06c-tonejs.md",
-    "02-mat/rant.md",
-    "02-mat/python/py-foundations.md",
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym05.06-integración.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym07-hydra.md",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603452.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603451.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603450.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603449.jpeg",
-    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603445.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756610.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756573.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756609.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
     "04-ref/image",
     "04-ref",
     "cym-metamap.canvas",

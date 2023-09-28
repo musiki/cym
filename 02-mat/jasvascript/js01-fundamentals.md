@@ -46,6 +46,7 @@ b11 --> b111 & b112
 
 
 
+
 classDef default stroke-width:1px;
 classDef c1 stroke:#DFFF00;
 classDef c2 stroke:#FFBF00;
@@ -161,6 +162,7 @@ Para llamar a cada valor del array: 
 notas[0], notas[1]
 ```
 etc.
+
 
 ## control de flujos
 
@@ -318,6 +320,28 @@ let acorde = “RE”
     console.log(acorde) //RE
 ```
 
+### funciones anónimas
+Se define sin nombre y se utiliza para ser pasada como parámetro o asignada a una variable. En el caso de asignarla a una variable, se puede llamar usando el identificador de la variable declarada.
+
+```js
+//Generalmente, las funciones anónimas se asignan a variables declaradas como constantes
+const suma  = function (a, b) { return a + b }
+const resta = function (a, b) { return a - b }
+
+console.log( suma(15,20) )
+console.log( resta(15,5) )
+```
+### funciones flecha
+Funciones anónimas de sintaxis simplificada. Están disponibles desde la versión ES6 de JavaScript, no usan la palabra function pero usa ⇒ (flecha) entre los parámetros y el bloque.
+
+```js
+const suma  = (a, b) ⇒ { return a + b }
+//Si es una función de una sola línea con retorno podemos evitar escribir el cuerpo.
+const resta = (a, b) ⇒  a - b ;
+console.log( suma(15,20) )
+console.log( resta(20,5) )
+```
+
 ## scope
 Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
 ```js
@@ -334,4 +358,166 @@ console.log(nota)   // RE
 
 //Accede a nombre local
 escala() // DO
+```
+
+## objetos
+
+Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
+```js
+let freq = 440;
+let dinamica   = "pp";
+let instrumento  = "flauta2";
+
+const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
+
+//para obtener el valor de una propiedad del objeto
+console.log(sonido1.dinamica)
+//otra forma
+console.log(sonido1["dinamica"])
+
+//para asignar nuevos valores
+sonido1["instrumento"] = "piano"
+//otra forma
+sonido1.freq = 880
+```
+
+### constructores
+Es una función que usamos para crear un nuevo objeto cada vez que sea necesario. Con esta “función constructora” podemos inicializar las propiedades del objeto al momento de ser instanciado con new.
+
+```js
+function Sonido(freq, dinamica, timbre) {
+    this.freq = freq;
+    this.dinamica = dinamica;
+    this.instrumento  = instrumento;
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+const sonido2 = new Sonido(880, "piano", "violin");
+```
+
+#### this
+Refiere al elemento actual en el que se está escribiendo el código. Cuando se emplea un función constructora para crear un objeto (con la palabra clave new), this está enlazado al nuevo objeto instanciado.
+
+### métodos
+(de los objetos) también son técnicamente funciones, sólo que se limitan a poder ser ejecutados solo desde el mismo objeto.
+
+JavaScript cuenta con sus propios objetos (por ej, al crear un string se crea automáticamente como una instancia del objeto String y, por lo tanto, tiene varios métodos/propiedades comunes disponibles)
+```js
+let string = "hola mundo";
+//Propiedad de objeto String: Largo de la cadena.
+console.log(cadena.length);
+//Método de objeto String: Pasar a minúscula.
+console.log(cadena.toLowerCase());
+//Método de objeto String: Pasar a mayúscula.
+console.log(cadena.toUpperCase());
+```
+
+#### métodos personalizados
+Llamar a un método es similar a acceder a una propiedad, pero se agrega () al final del nombre del método, posiblemente con argumentos.
+
+```js
+function Sonido(freq, dinamica, timbre) {
+    this.freq = freq;
+    this.dinamica = dinamica;
+    this.instrumento  = instrumento;
+    this.console = function() { console.log("la frecuencia es " + this.freq)}
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+const sonido2 = new Sonido(880, "piano", "violin");
+
+sonido1.console();
+sonido2.console();
+```
+
+### operador IN y FOR...IN
+**in** devuelve true si la propiedad especificada existe en el objeto. 
+
+El bucle **for...in** permite acceder a todas las propiedades del objeto, obteniendo una propiedad por cada iteración.
+
+```js
+const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
+
+console.log( "freq" in sonido1); //devuelve true
+
+console.log ("duracion" in sonido1); //devuelve false
+
+//recorre todas las propidades del objeto sonido1
+for (const propiedad in sonido1) {
+	console.log(sonido1{propiedad});
+}
+```
+
+### clases
+
+Son una equivalencia al empleo de función constructora y permite definir distintos tipos de métodos.
+
+```js
+class Sonido {
+	constructor(freq, dinamica, instrumento){
+	    this.freq = freq;
+	    this.dinamica = dinamica;
+	    this.instrumento  = instrumento;
+	}
+	    console() {
+		    console.log("la frecuencia es " + this.freq)
+		}
+}
+
+const sonido1 = new Sonido(440, "forte", "violoncello");
+```
+
+## objeto Math
+### constantes
+|Constante|Descripción|Valor|
+|---|---|---|
+|`Math.E`|[Número de Euler](https://es.wikipedia.org/wiki/N%C3%BAmero_e)|`2.718281828459045`|
+|`Math.LN2`|Equivalente a `Math.log(2)`|`0.6931471805599453`|
+|`Math.LN10`|Equivalente a `Math.log(10)`|`2.302585092994046`|
+|`Math.LOG2E`|Equivalente a `Math.log2(Math.E)`|`1.4426950408889634`|
+|`Math.LOG10E`|Equivalente a `Math.log10(Math.E)`|`0.4342944819032518`|
+|`Math.PI`|[Número PI](https://es.wikipedia.org/wiki/N%C3%BAmero_%CF%80) o `Π`|`3.141592653589793`|
+|`Math.SQRT1_2`|Equivalente a `Math.sqrt(1/2)`.|`0.7071067811865476`|
+|`Math.SQRT2`|Equivalente a `Math.sqrt(2)`.|`1.4142135623730951`|
+
+### funciones y métodos
+|Método|Descripción|Ejemplo|
+|---|---|---|
+|`Math.abs(x)`|Devuelve el [valor absoluto](https://es.wikipedia.org/wiki/Valor_absoluto) de `x`.|`\|x\|`|
+|`Math.sign(x)`|Devuelve el signo del número: `1` positivo, `-1` negativo|   |
+|`Math.exp(x)`|[Exponenciación](https://es.wikipedia.org/wiki/Exponenciaci%C3%B3n). Devuelve el número `e` elevado a `x`.|`e``x`|
+|`Math.expm1(x)`|Equivalente a `Math.exp(x) - 1`.|`e``x``-1`|
+|`Math.max(a, b, c...)`|Devuelve el número más grande de los indicados por parámetro.||
+|`Math.min(a, b, c...)`|Devuelve el número más pequeño de los indicados por parámetro.||
+|`Math.pow(base, exp)`|[Potenciación](https://es.wikipedia.org/wiki/Potenciaci%C3%B3n). Devuelve el número `base` elevado a `exp`.|`base``exp`|
+|`Math.sqrt(x)`|Devuelve la [raíz cuadrada](https://es.wikipedia.org/wiki/Ra%C3%ADz_cuadrada) de `x`.|`√x`|
+|`Math.cbrt(x)`|Devuelve la [raíz cúbica](https://es.wikipedia.org/wiki/Ra%C3%ADz_c%C3%BAbica) de `x`.|`√``3``x`|
+|`Math.imul(a, b)`|Equivalente a `a * b`, pero a nivel de bits.||
+|`Math.clz32(x)`|Devuelve el número de ceros a la izquierda de `x` en binario (32 bits).|
+
+#### método Math.random()
+Devuelve un número al azar entre 0 y 1 con 16 decimales.
+
+#### métodos de redondeo
+```js
+// Redondeo natural, el más cercano
+Math.round(3.75);           // 4
+Math.round(3.25);           // 3
+
+// Redondeo superior (el más alto)
+Math.ceil(3.75);            // 4
+Math.ceil(3.25);            // 4
+
+// Redondeo inferior (el más bajo)
+Math.floor(3.75);           // 3
+Math.floor(3.25);           // 3
+
+// Redondeo con precisión
+Math.round(3.123456789);    // 3
+Math.fround(3.123456789);   // 3.1234567165374756
+
+// Truncado (sólo parte entera)
+Math.trunc(3.75);           // 3
+Math.round(-3.75);          // -4
+Math.trunc(-3.75);          // -3
 ```

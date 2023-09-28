@@ -34,11 +34,6 @@
       "tags": 6,
       "links": 0
     },
-    "03-cla/c-cym07-hydra.md": {
-      "size": 2724,
-      "tags": 6,
-      "links": 0
-    },
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md": {
       "size": 5520,
       "tags": 2,
@@ -609,11 +604,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/Petroccelli/petrocelli POC.md": {
-      "size": 115,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/Zaracho/zaracho POC.md": {
       "size": 0,
       "tags": 0,
@@ -954,11 +944,6 @@
       "tags": 2,
       "links": 1
     },
-    "02-mat/obs/tpl/t-persona.md": {
-      "size": 39,
-      "tags": 1,
-      "links": 0
-    },
     "02-mat/obs/tpl/templater.md": {
       "size": 112,
       "tags": 0,
@@ -1048,11 +1033,6 @@
       "size": 192,
       "tags": 2,
       "links": 0
-    },
-    "03-cla/c-cym08-flex-grid.md": {
-      "size": 619,
-      "tags": 6,
-      "links": 1
     },
     "03-cla/c-cym09-networking.md": {
       "size": 873,
@@ -1313,12 +1293,52 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "00-in/Untitled 1.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Untitled.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Guitarrax.md": {
+      "size": 378,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/petroccelli POC.md": {
+      "size": 209,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Zaracho/Botonera rítmica.md": {
+      "size": 38,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/shifres/Shifres.md": {
+      "size": 51,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym08-github pages+hydra.md": {
+      "size": 3393,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym09-flex-grid.md": {
+      "size": 619,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 373,
-      "Create": 271,
+      "Refactor": 378,
+      "Create": 280,
       "Link": 212,
       "Expand": 27
     }
@@ -1326,7 +1346,7 @@
   "dailyCommits": {
     "/": {
       "0": 38,
-      "1": 5,
+      "1": 19,
       "2": 52,
       "3": 3,
       "4": 2,
@@ -1357,7 +1377,7 @@
       "Tue": 85,
       "Wed": 560,
       "Thu": 109,
-      "Fri": 75,
+      "Fri": 89,
       "Sat": 0,
       "Sun": 47
     }
@@ -1394,6 +1414,15 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
         "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1435,16 +1464,7 @@
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/\"Cybernetic Serendipity\".md\"> \"Cybernetic Serendipity\" </a>",
         "<a class=\"internal-link\" href=\"00-in/[es] exhibiciones históricas.md\"> [es] exhibiciones históricas </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik.md\"> Projekte generativer Ästhetik </a>",
-        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Bell Labs.md\"> Bell Labs </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Peter Novig.md\"> Peter Novig </a>"
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
@@ -1558,6 +1578,11 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petrocelli POC.md\"> petrocelli POC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md\"> analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
@@ -1602,12 +1627,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
-        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
