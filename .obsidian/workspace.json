@@ -6,7 +6,6 @@
       {
         "id": "06d687c8a9bdbf8d",
         "type": "tabs",
-        "dimension": 74.74747474747475,
         "children": [
           {
             "id": "3c5e2f7db2441523",
@@ -20,23 +19,22 @@
                 "source": true
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "0a25588b04c55e67",
-        "type": "tabs",
-        "dimension": 25.252525252525253,
-        "children": [
+          },
           {
-            "id": "21cd6c65d2fef0fa",
+            "id": "4f5b0a02d7375264",
             "type": "leaf",
             "state": {
-              "type": "reveal-preview-view",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 350.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -103,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -121,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,18 +157,18 @@
             }
           },
           {
-            "id": "2496ebbb629069fc",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
             "id": "0d4a68d271e2c3d4",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "75bda18ba97a0e1d",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
               "state": {}
             }
           }
@@ -227,7 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 403.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,7 +237,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
@@ -255,47 +252,48 @@
       "notion-like-tables:Create new loom": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "digitalgarden:Digital Garden Publication Center": false,
-      "wikipedia-search:Open Article": false
+      "wikipedia-search:Open Article": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "3c5e2f7db2441523",
+  "active": "4f5b0a02d7375264",
   "lastOpenFiles": [
-    "00-in/coloquial MOC.md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/Agregación limitada por difusión.md",
-    "00-in/b-Azar y necesidad.md",
-    "04-out/topoi/Música Visual.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym08-flex-grid.md",
-    "03-cla/c-cym07-hydra.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+    "00-in/teatro MOC.md",
+    "01-proj/17/navarro/Ajedrez.md",
+    "01-proj/17/borsalino/Condensador de eventos.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "00-in/eventos MOC.md",
+    "2023-09-27.md",
+    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/Sun Thinking.md",
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "03-cla/c-cym15-interactividad.md",
-    "00-in/Hans Haake.md",
-    "02-mat/obs/tpl/t-cym-class.md",
-    "04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym12-Aframe2.md",
     "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "02-mat/rant.md",
+    "02-mat/python/py-foundations.md",
     "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-hydra.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603457.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603452.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603451.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603450.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603449.jpeg",
+    "02-mat/obs/img/image/tp03-guía de lectura MONTFORT-1695381603445.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756610.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756573.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756609.jpeg",
     "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756607.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756606.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756601.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756599.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756597.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756595.jpeg",
-    "04-ref/image/Xuan Thuan Trinh_The Secret Melody-1694375756582.jpeg",
     "04-ref/image",
     "04-ref",
     "cym-metamap.canvas",

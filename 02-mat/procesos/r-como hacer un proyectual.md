@@ -1,7 +1,8 @@
 
 # titulo
 - restringe la polisemia.
-- es un puento entre la abstracción y el mundo real. 
+- es un puente entre la abstracción y el mundo real. 
+- clickbait
 ## subtitulo
 - nunca es redundante.
 - es un espacio de complicidad entre la creación y la recepción. 
@@ -13,7 +14,7 @@
 ![[Pasted image 20220906234521.png]]
 
 # síntesis
-- - está formada por 1 a 3 oraciones. 
+- está formada por 1 a 3 oraciones. 
 # objetivos  
 - entre 3 y 5. 
 -  marcar un interés principal y otros secundarios. 
@@ -29,10 +30,25 @@
 # desarrollo del trabajo.
 # cronograma
 - etapas  
+
+
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section abril 
+        diseño de algoritmos         :a1, 2023-09-27, 30d
+        rider de audio    :after a1, 20d
+    section mayo 
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+    
+```
 # materiales
 - rider
 - planos
 - lista de materiales
 - presupuesto
+	- 
 # referencias
 - bibliografia

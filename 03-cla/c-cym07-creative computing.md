@@ -34,7 +34,7 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 - utilización de datos
 
 ### Prose - Charles Hartman
-![Pasted image 20230914125032.png](app://e0d972600592816cf4284075d3a656236fe0/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125032.png?1694706632337)
+![Pasted image 20230914125032.png](app://b0efcec5c8a14933ae250120644749fd0a34/Users/caro/Desktop/cym%20ayudanti%CC%81a/cym%202022/Pasted%20image%2020230914125032.png?1694706632337)
 
 ### the Scandroid
 <iframe width="560" height="315" src="http://charlesohartman.com/verse/metrics/tutorials/interactive.php" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -45,6 +45,9 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 ### Upstart
 <iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+#### ingeniería inversa
+
+**view source** Ctrl+U (Windows PC) or Command+Option+U (Mac)
 
 ---
 # Código

@@ -135,7 +135,7 @@
       "links": 2
     },
     "02-mat/jasvascript/js01-fundamentals.md": {
-      "size": 1906,
+      "size": 7427,
       "tags": 0,
       "links": 0
     },
@@ -1298,20 +1298,35 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "00-in/Sun Thinking.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "2023-09-27.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/teatro MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 372,
-      "Create": 267,
-      "Link": 211,
-      "Expand": 26
+      "Refactor": 373,
+      "Create": 271,
+      "Link": 212,
+      "Expand": 27
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 37,
-      "1": 3,
+      "0": 38,
+      "1": 5,
       "2": 52,
       "3": 3,
       "4": 2,
@@ -1333,16 +1348,16 @@
       "20": 21,
       "21": 15,
       "22": 46,
-      "23": 37
+      "23": 41
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 7,
-      "Tue": 81,
-      "Wed": 559,
+      "Tue": 85,
+      "Wed": 560,
       "Thu": 109,
-      "Fri": 73,
+      "Fri": 75,
       "Sat": 0,
       "Sun": 47
     }
@@ -1375,9 +1390,14 @@
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
         "<a class=\"internal-link\" href=\"00-in/El metaverso es un territorio disputado.md\"> El metaverso es un territorio disputado </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
@@ -1424,11 +1444,7 @@
         "<a class=\"internal-link\" href=\"00-in/Bell Labs.md\"> Bell Labs </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>"
+        "<a class=\"internal-link\" href=\"00-in/Peter Novig.md\"> Peter Novig </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
@@ -1541,6 +1557,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md\"> analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
@@ -1590,10 +1607,10 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
@@ -1643,8 +1660,7 @@
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>"
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

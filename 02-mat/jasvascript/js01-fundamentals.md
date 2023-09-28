@@ -1,6 +1,7 @@
 > [!important] > Atención! para correr los snippets de javascript es necesario ir a configuración del plugin Executc de node.js. (ademas de tener instalado node.js) En windows la ruta es C:\Program Files\nodejs\node.exe
 
 
+
 ```mermaid
 graph LR
 
@@ -8,8 +9,16 @@ a[internet music]
 b[js]
 b0[variables]
 b01[types]
+b011[string]
+b012[number]
+b013[boolean]
+b014[null]
+b015[undefined]
 b02[arrays]
 b03[scope]
+b031[global]
+b032[local]
+b04[objects]
 b1[make decisions]
 b11[conditionals]
 b111[if...else]
@@ -18,14 +27,22 @@ b12[comparision operators]
 b13[logical operators]
 b14[switch statements]
 b2[make loops]
+b21[for]
+b22[while]
+b23[do while]
 b4[reusable blocks]
 
 
 a --> b 
 b --> b0 & b1 & b2 & b3 & b4
-b0 --> b01 & b02 & b03
+b0 --> b01 & b02 & b03 & b04
+b01 --> b011 & b012 & b013 & b014 & b015
 b1 --> b11 & b12
+b2 --> b21 & b22 & b23
 b11 --> b111 & b112 
+
+
+
 
 
 
@@ -49,7 +66,18 @@ class c c3;
 ```
 
 
-# variables
+## breve intro
+
+La primera aparición pública de Javascript la encontramos en el año 1995 cuando se utiliza como herramienta del navegador Netscape Navigator, con el objetivo de agregar programas a páginas web.
+
+## palabras reservadas
+```js
+break, case, catch, continue, default, let
+delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with
+```
+
+
+## variables
 un espacio de memoria asignable mediante un nombre y un valor. Tres aspectos fundamentales de las variable en js son: los tipos (enteros, reales, cadenas de texto, boleanos, null y undefined),  el scope y el uso de variables como objetos. 
 
 ```javascript
@@ -63,7 +91,45 @@ var  f = true;
 ```
 Una variable **let** puede recibir múltiples asignaciones en el transcurso de la aplicación, es decir que puede cambiar de valor varias veces. Una constante **const** recibe una única asignación al momento de su declaración, impidiendo que su valor se modifique luego.
 
-# arrays
+### String
+Secuencia de texto en cadena
+
+```js
+
+let miVariable = 'myNote';
+```
+
+### Number
+
+Esto es un número. Los números no tienen comillas.
+
+```js
+let miVariable = 440;
+```
+
+
+### Boolean
+
+Tienen valor true/false
+
+```js
+
+let miVariable = true;
+```
+
+#### operaciones básicas
+
+```js
+	let  textoA = "acorde";
+    let   textoB = "RE";
+    const BLANCO = " ";
+
+    let resultadoA = textoA + textoB; //acordeRE
+```
+
+## arrays
+
+Permite almacenar varios valores en una sola referencia.
 ```javascript
 var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
 
@@ -89,8 +155,183 @@ var notas=["C","C#","D","E","F","G","A","B"]
 console.log ("listar toda la escala", notas)
 
 ```
-#
-```
-# librerias
-## tone.js
 
+Para llamar a cada valor del array: 
+```js
+notas[0], notas[1]
+```
+etc.
+
+## control de flujos
+
+El control de flujos es marcar puntos donde, a partir de alguna evaluación, el devenir del código pueda tomar varios caminos posibles de acción.
+![](https://i.imgur.com/1y11ydg.png)
+Para ello se utilizan los valores **booleanos** (true or false)
+
+### condicionales
+```js
+if (condición) {
+  código a ejecutar si la condición es verdadera
+} else {
+  ejecuta este otro código si la condición es falsa
+}
+```
+### operadores lógicos
+```javascript
+'=' //Igual a
+!= //Diferente a 
+=== //Contenido y tipo igual a 
+!== //Contenido o tipo diferente de 
+> //Mayor que 
+>= //Mayor o igual que 
+< //Menor que 
+⇐ //Menor o igual que
+
+//operadores lógicos
+&& //and
+|| //or
+! //not
+```
+
+```js
+let freq = 440; //podría ser modificable mediante otra función, por ejemplo, un valor de un form accediendo al DOM
+
+if (freq < 440) {
+    funcion(1);
+}
+
+else if (precio < 440) {
+    funcion(2);
+}
+
+else if (precio = 440) {
+    funcion(3);
+}
+
+else {
+    funcion(4);
+}
+```
+## ciclos
+Los ciclos, también bucles o iteraciones son un medio rápido y sencillo para hacer algo repetidamente.
+
+### ciclos por conteo
+Repiten un bloque de código un número de veces específica. Estructura **for**. 
+
+```js
+for(desde; hasta; actualización) {
+ //lo que se escriba acá se ejecutará mientras dure el ciclo
+}
+```
+
+```js 
+for (let i = 0; i < 10; i++) {
+    alert(i);
+}
+```
+
+### ciclos condicionales
+Repiten un bloque de código mientras la condición evaluada es verdadera. Estructuras **while** y **do...while**.
+
+```js
+while (algo, operador lógico, otro) {
+	función();
+}
+```
+
+```js
+let entrada = prompt("Ingresar un dato");
+//Repetimos con While hasta que el usuario ingresa "ESC"
+
+while(entrada != "ESC" ){
+
+    alert("El usuario ingresó "+ entrada);
+
+    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+
+    entrada = prompt("Ingresar otro dato");
+}
+```
+
+## switch
+Maneja múltiples condiciones sobre la misma variable (técnicamente se podría resolver con un if, pero el uso de switch es más ordenado)
+
+```js
+switch(numero) {
+ case 5:
+   ...
+   break;
+ case 8:
+   ...
+   break;
+ case 20:
+   ...
+   break;
+ default:
+   ...
+   break;
+} //cada condición se evalúa y, si se cumple, se ejecuta lo que esté indicado dentro de cada case, después de las instrucciones de cada case se incluye la sentencia break para terminar la ejecución del switch
+```
+
+## objetos
+
+Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
+
+## funciones
+Conjunto de instrucciones que se agrupan para realizar una tarea concreta
+
+```js
+const synth = new Tone.Synth().toDestination();
+
+//declaración
+function tone () {
+  synth.triggerAttackRelease("C4", "1"); //en segundos
+  synth.volume.value = -30;
+}
+
+//llamado
+tone();
+```
+
+### parámetros
+
+Son variables que se declaran dentro de la función, entre sus paréntesis. Los valores de éstos se definen luego en el llamado.
+
+```js
+function conParametros(parametro1, parametro2) {
+    console.log(parametro1 + " " + parametro2);
+}
+```
+
+El valor que toman estos parámetros se definen en el **llamado**. 
+```js
+conParametros("generative", "art"); // → “generative art”
+```
+
+### console.log() 
+La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.
+
+```js
+console.log("el audioCtx está inicializado");
+
+let acorde = “RE”
+    console.log(acorde) //RE
+```
+
+## scope
+Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
+```js
+let nota = “RE” // variable global
+
+function escala() {
+    let nota = “DO” // variable local
+    console.log(nota)
+}
+
+//Accede a nombre global
+console.log(nota)   // RE
+  
+
+//Accede a nombre local
+escala() // DO
+```
