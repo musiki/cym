@@ -153,7 +153,7 @@
             }
           },
           {
-            "id": "48b3cb4952442e79",
+            "id": "18fd27ff667994e3",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,7 +196,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "18fd27ff667994e3",
   "lastOpenFiles": [
     "04-out/topoi/README 1.md",
     "04-out/topoi/Música Visual.md",

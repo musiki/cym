@@ -920,7 +920,7 @@
       "links": 4
     },
     "04-out/topoi/Música y Política.md": {
-      "size": 6665,
+      "size": 10044,
       "tags": 1,
       "links": 0
     },
@@ -1330,7 +1330,7 @@
       "Refactor": 411,
       "Create": 374,
       "Link": 280,
-      "Expand": 35
+      "Expand": 36
     }
   },
   "dailyCommits": {
@@ -1348,7 +1348,7 @@
       "10": 12,
       "11": 90,
       "12": 22,
-      "13": 28,
+      "13": 29,
       "14": 28,
       "15": 53,
       "16": 35,
@@ -1365,7 +1365,7 @@
     "/": {
       "Mon": 35,
       "Tue": 315,
-      "Wed": 304,
+      "Wed": 305,
       "Thu": 94,
       "Fri": 64,
       "Sat": 0,
@@ -1409,7 +1409,8 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
