@@ -1271,18 +1271,18 @@
     },
     "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md": {
       "size": 362,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md": {
       "size": 362,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/SUMMARY.md": {
       "size": 6700,
       "tags": 0,
-      "links": 0
+      "links": 62
     },
     "04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md": {
       "size": 129,
@@ -1401,7 +1401,7 @@
     },
     "04-ref/topoi/Forma Musical.md": {
       "size": 14587,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-ref/topoi/Fragile Territories.md": {
@@ -1411,101 +1411,101 @@
     },
     "04-ref/topoi/La instalación como forma del arte contemporáneo.md": {
       "size": 5934,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-ref/topoi/Música Visual.md": {
       "size": 13030,
       "tags": 0,
-      "links": 0
+      "links": 4
     },
     "04-ref/topoi/t-topoi.md": {
       "size": 58,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Arte participativo.md": {
       "size": 981,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Augmented Cognition.md": {
       "size": 145,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Espacio.md": {
       "size": 157,
-      "tags": 0,
+      "tags": 5,
       "links": 0
     },
     "04-out/topoi/Filosofía 21.md": {
       "size": 200,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Filosofía histórica.md": {
       "size": 154,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Historia de la tecnología.md": {
       "size": 51,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Humanos.md": {
       "size": 166,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/topoi/Internetmusic.md": {
       "size": 198,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Intervencion del espacio público.md": {
       "size": 8227,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Livecoding.md": {
       "size": 636,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Racionalizacion_(videojuegos).md": {
       "size": 7005,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/topoi/Sistemas complejos.md": {
       "size": 2485,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Sistemas de universos.md": {
       "size": 20490,
-      "tags": 0,
-      "links": 0
+      "tags": 5,
+      "links": 3
     },
     "04-out/topoi/Vida artificial.md": {
       "size": 619,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 5
     },
-    "01-proj/23/bassino/proyectual bassino.md": {
-      "size": 716,
-      "tags": 0,
-      "links": 0
+    "01-proj/23/bassino/Clorolaser.md": {
+      "size": 2063,
+      "tags": 1,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 458,
+      "Refactor": 459,
       "Create": 440,
-      "Link": 283,
-      "Expand": 41
+      "Link": 308,
+      "Expand": 42
     }
   },
   "dailyCommits": {
@@ -1528,7 +1528,7 @@
       "15": 64,
       "16": 35,
       "17": 3,
-      "18": 96,
+      "18": 123,
       "19": 2,
       "20": 35,
       "21": 249,
@@ -1539,7 +1539,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 425,
+      "Tue": 452,
       "Wed": 305,
       "Thu": 94,
       "Fri": 75,
@@ -1590,7 +1590,8 @@
         "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
         "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>"
+        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1646,6 +1647,7 @@
         "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino.md\"> proyectual bassino </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
@@ -1695,10 +1697,29 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview.md\"> a-dataview </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview playground.md\"> a-dataview playground </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview.md\"> a-dataview </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md\"> Drawing 2023-09-12 20.17.31.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Arte participativo.md\"> Arte participativo </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Livecoding.md\"> Livecoding </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
@@ -1729,27 +1750,7 @@
         "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis de obras interactivas.md\"> analisis de obras interactivas </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md\"> Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-.md\"> c-cym07- </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1812,6 +1813,11 @@
         "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
@@ -1857,12 +1863,7 @@
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Introducción a la psicoacústica.md\"> Introducción a la psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Física.md\"> Física </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
