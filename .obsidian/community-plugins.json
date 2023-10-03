@@ -7,7 +7,6 @@
   "mermaid-tools",
   "canvas-presentation",
   "obsidian-advanced-slides",
-  "obsidian-statusbar-pomo",
   "mermaid-themes",
   "music-code-blocks",
   "obsidian-wordnet-plugin",
@@ -101,5 +100,6 @@
   "obsidian-enhancing-export",
   "wikipedia-search",
   "metadata-menu",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-statusbar-pomo"
 ]

@@ -33,9 +33,34 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 **inspect elements** F12 (Windows) o Command+SHIFT+C (Mac)
 
 ### Upstart
+
+1) abrir Upstart
 <iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+2) **view source** Ctrl+U (Windows PC) o Command+Option+U (Mac) y seleccionar todo (control o command A) y luego copiar (control o command C)
+3) abrir codepen.io y pegar (control o command V) en la sección de html
 
+### visualStudioCode
+
+1) copiar y pegar el código en VisualStudioCode
+2) hay dos formas de cargar los archivos a github:
+	1) subiendo el archivo ![](https://i.imgur.com/yyzB4a4.png)
+	2) desde la terminal del visualStudio 
+> [!INFO] > …or push an existing repository from the command line
+git remote add origin https://github.com/dipaola-c/pruebacym2023.git
+git branch -M main
+git push -u origin main
+
+
+- **En la terminal del visualStudio (dentro de nuestro folder), hacer git add . , luego git commit, i (insert) sobre data del commit, esc :wq , git push al repo remoto**
+para más info ver: 
+![[que es git#comandos básicos git]]
+
+3) agregar archivos css y js en el html
+```html
+<link rel="stylesheet" href="./estilo.css">
+<link rel="javascript" href="./main.js">
+```
 # hydra
 [https://hydra.ojack.xyz/](https://hydra.ojack.xyz/)
 

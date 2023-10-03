@@ -164,9 +164,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "78eea0bd5cbd75d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/shifres/Dotonera.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -240,7 +253,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "01-proj/23/shifres/Dotonera.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -280,7 +293,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md"
+                "file": "01-proj/23/shifres/Dotonera.md"
               }
             }
           },
@@ -368,10 +381,41 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "044d8d6fc6793d5b",
+  "active": "78eea0bd5cbd75d1",
   "lastOpenFiles": [
-    "01-proj/tp/tp02-aplicación.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+    "01-proj/23/bassino/codepen/Probando botones",
+    "01-proj/23/bassino/codepen",
+    "Untitled.loom",
+    "Sin título.canvas",
+    "Sin título 1.canvas",
+    "04-ref/topoi/t-topoi.md",
+    "04-ref/topoi/Música Visual.md",
+    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-ref/topoi/Fragile Territories.md",
+    "04-ref/topoi/Forma Musical.md",
+    "04-ref/topoi",
+    "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
+    "04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
+    "04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
+    "04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
+    "04-ref/musica-y-politica-topoi-musica-20y-politica.md.md",
+    "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983728.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983688.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983673.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983649.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983608.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983597.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983574.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983553.jpeg",
+    "00-in/Pasted image 20220906234521.png.md",
+    "00-in/Hans Haake.md",
+    "01-proj/tp/tp02-aplicación.md",
     "04-ref/meta-aprendizaje.md",
     "04-ref/a-yuda.md",
     "04-ref/a-snippets.md",
@@ -379,43 +423,14 @@
     "04-ref/a-dataview.md",
     "04-ref/a-dataview playground.md",
     "04-ref",
-    "02-mat/obs/img/image/Piano-1695770018018.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017992.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017974.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017956.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017941.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017924.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017884.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017870.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017812.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017620.jpeg",
     "02-mat/obs/img/image",
     "02-mat/coloquial/En conversación con Susanne Kennedy.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "02-mat/coloquial",
     "04-out/personas/Craig Reynolds.md",
-    "00-in/eventos MOC.md",
-    "00-in/espacios MOC.md",
-    "00-in/coloquial MOC.md",
-    "00-in/b-Azar y necesidad.md",
-    "00-in/Untitled.md",
-    "00-in/Untitled 1.md",
-    "00-in/Patrones de Turing.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "00-in/Cybernetic Serendipity.md",
-    "00-in/Agregación limitada por difusión.md",
-    "01-proj/17/borsalino/Condensador de eventos.md",
-    "01-proj/17/moscato/La forma de la identidad real.md",
-    "01-proj/18/garella/Dédalo.md",
     "04-out/bibliografía/cym.bib",
     "04-out/topoi",
     "04-out/procedimientos",
-    "04-out/personas",
-    "04-out/obras",
-    "04-out/glosario",
-    "04-out/espacios",
     "cym-metamap.canvas"
   ]
 }

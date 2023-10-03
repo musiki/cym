@@ -275,9 +275,6 @@ switch(numero) {
 } //cada condición se evalúa y, si se cumple, se ejecuta lo que esté indicado dentro de cada case, después de las instrucciones de cada case se incluye la sentencia break para terminar la ejecución del switch
 ```
 
-## objetos
-
-Son estructuras que podemos definir para agrupar valores bajo un mismo criterio. Es una colección de datos relacionados como una entidad. Se componen de un listado de pares clave-valor, es decir, contienen propiedades y valores agrupados.
 
 ## funciones
 Conjunto de instrucciones que se agrupan para realizar una tarea concreta
@@ -343,7 +340,7 @@ console.log( resta(20,5) )
 ```
 
 ## scope
-Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
+Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser **global** o **local**.
 ```js
 let nota = “RE” // variable global
 
