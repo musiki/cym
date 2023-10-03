@@ -56,7 +56,11 @@ git push -u origin main
 para más info ver: 
 ![[que es git#comandos básicos git]]
 
-
+3) agregar archivos css y js en el html
+```html
+<link rel="stylesheet" href="./estilo.css">
+<link rel="javascript" href="./main.js">
+```
 # hydra
 [https://hydra.ojack.xyz/](https://hydra.ojack.xyz/)
 
