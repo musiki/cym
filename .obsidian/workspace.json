@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "file": "04-out/topoi/Sistemas de universos.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md",
+                "file": "04-out/topoi/Sistemas de universos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym08-github pages+hydra.md"
+                "file": "04-out/topoi/Sistemas de universos.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             }
           },
           {
-            "id": "c8b998b1e5b720eb",
+            "id": "8bf47c5895af3a55",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,20 +198,34 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/shifres/shifres POC.md",
+    "04-out/topoi/Forma Musical.md",
     "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "00-in/topoi MOC.md",
-    "home.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "04-out/topoi/Cuarta Revolución Industrial.md",
+    "04-out/topoi/Filosofía histórica.md",
+    "04-out/topoi/Humanos.md",
+    "04-out/topoi/Internetmusic.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/Introducción a la psicoacústica.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-out/topoi/La reología del arte.md",
+    "04-out/topoi/Livecoding.md",
+    "04-out/topoi/Método científico.md",
+    "04-out/topoi/Música y Política.md",
+    "04-out/topoi/Racionalizacion_(videojuegos).md",
+    "04-out/topoi/README 1.md",
+    "04-out/topoi/t-topoi.md",
+    "04-out/topoi/Virtualidad y realidad.md",
+    "04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md",
+    "04-ref/bibliografia-bibliografia-bib-moc.md.md",
+    "04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
+    "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
+    "04-out/topoi/Historia de la tecnología.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "01-proj/23/shifres/Dotonera.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "conflict-files-obsidian-git.md",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643463.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643461.jpeg",
@@ -223,20 +236,6 @@
     "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
     "02-mat/obs/img/image/c-cym08-github pages+hydra-1696371853314.jpeg",
     "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
-    "01-proj/17/herrera/Superficies sonoras blandas.md",
-    "00-in/códigos MOC.md",
-    "00-in/proyectos MOC.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/23/beltrame/Prueba Proyectual.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
-    "00-in/proyectual.md",
     "Untitled.loom",
     "04-ref/topoi",
     "01-proj/23/bassino/codepen/Probando botones",
