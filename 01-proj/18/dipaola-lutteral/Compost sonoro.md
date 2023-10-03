@@ -14,15 +14,13 @@ Compost sonoro es una instalación que permite generar sonido a través del pr
 
 ! Generar formas sonoras a través de un proceso autónomo: múltiples potenciales resultados pueden ser producidos usando este sistema generativo.
 
-- !  Crear un lazo entre la ciencia ecológica y el arte.
+!  Crear un lazo entre la ciencia ecológica y el arte.
     
-- !  Permitir que el público entre en contacto con acciones ecológicas y, a su
-    
-    vez, que su aporte tenga impacto en la obra.
+!  Permitir que el público entre en contacto con acciones ecológicas y, a su vez, que su aporte tenga impacto en la obra.
     
    ## Justificación
     
-    Tomando como punto de partida la situación ambiental actual, donde cada vez es mayor el desarrollo y el implemento de recursos renovables y energías alternativas, nos cuestionamos como artistas cuál sería nuestro aporte creativo.
+Tomando como punto de partida la situación ambiental actual, donde cada vez es mayor el desarrollo y el implemento de recursos renovables y energías alternativas, nos cuestionamos como artistas cuál sería nuestro aporte creativo.
     
 
 Considerando que dichas medidas ecológicas están direccionadas hacia el menor impacto y la reducción de residuos, observamos en el arte la dirección opuesta históricamente: la búsqueda continua del mayor impacto [social/estético].

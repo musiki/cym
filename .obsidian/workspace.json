@@ -21,8 +21,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/proyectual bassino.md",
-                "mode": "source",
+                "file": "01-proj/15/drocchi/proyectual bassino.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/proyectual bassino.md"
+                "file": "01-proj/15/drocchi/proyectual bassino.md"
               }
             }
           },
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/proyectual bassino.md",
+                "file": "01-proj/15/drocchi/proyectual bassino.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,10 +238,30 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "48155ff12b2b964a",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "01-proj/15/drocchi/proyectual bassino.md",
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
+    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
+    "02-mat/coloquial",
+    "home.md",
+    "04-ref/meta-aprendizaje.md",
+    "04-out/topoi/t-topoi.md",
+    "04-out/topoi/README 1.md",
+    "04-out/personas/Craig Reynolds.md",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065371.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065368.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065364.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065341.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065339.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065337.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065333.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065324.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065319.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065316.jpeg",
+    "02-mat/obs/img/image",
     "00-in/meta-aprendizaje.md",
-    "00-in/proyectual bassino.md",
     "01-proj/23/bassino/proyectual bassino",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Música y arte visual.md",
@@ -260,34 +280,14 @@
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/tp/tp01-topoi.md",
-    "01-proj/20/jaramillo/Unísono virtual.md",
-    "00-in/proyectos MOC.md",
-    "00-in/topoi MOC.md",
-    "04-ref/topoi/Música Visual.md",
-    "00-in/cym MOC-1694393867405.jpeg",
-    "00-in/cym MOC-1694393867407.jpeg",
-    "00-in/cym MOC-1694393867412.jpeg",
-    "00-in/cym MOC-1694393867410.jpeg",
-    "00-in/cym MOC-1694393867397.jpeg",
-    "conflict-files-obsidian-git.md",
     "01-proj/23/Zaracho",
-    "01-proj/22/mico/Dónde está el camino.md",
     "01-proj/22/mico",
-    "01-proj/22/dure/Sequencer.md",
-    "01-proj/22/dure/Resampler.md",
     "01-proj/22/dure",
     "01-proj/21/tortorelli",
     "01-proj/21/oliva",
     "01-proj/21/marazzi",
-    "01-proj/21/kobayashi",
-    "01-proj/21/fernandez burzaco",
-    "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
-    "02-mat/obs/img/Pasted image 20230829224242.png",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "image/Pasted image 20230829230243.png",
-    "image/Pasted image 20230829230127.png",
-    "image/Pasted image 20230829230008.png",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"

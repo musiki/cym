@@ -148,16 +148,6 @@
       "key": "O"
     }
   ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
   "editor:unfold-all": [
     {
       "modifiers": [
@@ -506,21 +496,11 @@
   "editor:toggle-checklist-status": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "obsidian-outliner:system-info": [],
-  "obsidian-book-search-plugin:open-book-search-modal": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "B"
-    }
-  ],
   "convert-url-to-iframe:url-to-iframe": [
     {
       "modifiers": [
         "Alt",
-        "Shift"
+        "Mod"
       ],
       "key": "E"
     }
@@ -641,6 +621,34 @@
         "Shift"
       ],
       "key": "."
+    }
+  ],
+  "obsidian-book-search-plugin:open-book-search-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "notion-like-tables:add-column": [],
+  "obsidian-markmind:Toggle to markdown or mindmap": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
     }
   ]
 }

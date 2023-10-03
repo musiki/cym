@@ -42,7 +42,7 @@
   * [Arte Participativo](Arte%20participativo.md participativo.md>)
   * [Arte Relacional](<topoi/Arte relacional.md>)
   * [Augmented Cognition](Augmented%20Cognition.md Cognition.md>)
-  * [Azar](Azar.md)
+  * [Azar](04-out/topoi/Azar.md)
   * [\[Cuarta Revolución Industrial\](cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md Industrial.md)](topoi/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md)
   * [Espacio](Espacio.md)
   * [Filosofía 21](Filosofía%2021.md 21.md>)
