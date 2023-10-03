@@ -128,7 +128,12 @@
     "philosopher": 120,
     "de": 121,
     "la": 122,
-    "historiador": 123
+    "historiador": 123,
+    "hydra": 124,
+    "mousetrap": 125,
+    "flex": 126,
+    "grid": 127,
+    "clorolaser": 128
   },
   "_version": 2
 }

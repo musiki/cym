@@ -4,23 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "336540ab6e53c9a8",
+        "id": "68ab71db6b689e38",
         "type": "tabs",
         "children": [
           {
-            "id": "85617a23d1c13ac1",
+            "id": "a4c694ae9abf0c56",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "48155ff12b2b964a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+                "file": "00-in/proyectual bassino.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -78,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5
+    "width": 276.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -113,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/proyectual bassino.md"
               }
             }
           },
@@ -131,6 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-in/proyectual bassino.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,16 +196,27 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "bfbde07b79592a82",
+            "type": "leaf",
+            "state": {
+              "type": "review-notes",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
       "obsidian-spaced-repetition:Revisar Tarjetas": false,
       "markdown-importer:Abrir el importador de Markdown": false,
       "workspaces:Gestionar disposiciones de espacio de trabajo": false,
@@ -204,7 +226,6 @@
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "dbfolder:Crear una nueva tabla de base de datos": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
@@ -217,51 +238,51 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "93fbcc7662190177",
+  "active": "48155ff12b2b964a",
   "lastOpenFiles": [
+    "00-in/meta-aprendizaje.md",
+    "00-in/proyectual bassino.md",
+    "01-proj/23/bassino/proyectual bassino",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "00-in/proyectual.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
-    "conflict-files-obsidian-git.md",
+    "01-proj/23/bassino/proyectual",
+    "01-proj/16/juan/Instalación.md",
+    "01-proj/16/albarracin/Sonomaze.md",
+    "01-proj/15/garcia/En progreso.md",
+    "01-proj/15/porrini/Un día bello.md",
+    "01-proj/22/ancarola/Hola Sonido.md",
+    "02-mat/tone.js.md",
     "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/tp/tp01-topoi.md",
+    "01-proj/20/jaramillo/Unísono virtual.md",
+    "00-in/proyectos MOC.md",
+    "00-in/topoi MOC.md",
+    "04-ref/topoi/Música Visual.md",
+    "00-in/cym MOC-1694393867405.jpeg",
+    "00-in/cym MOC-1694393867407.jpeg",
+    "00-in/cym MOC-1694393867412.jpeg",
+    "00-in/cym MOC-1694393867410.jpeg",
+    "00-in/cym MOC-1694393867397.jpeg",
+    "conflict-files-obsidian-git.md",
     "01-proj/23/Zaracho",
     "01-proj/22/mico/Dónde está el camino.md",
     "01-proj/22/mico",
     "01-proj/22/dure/Sequencer.md",
     "01-proj/22/dure/Resampler.md",
     "01-proj/22/dure",
-    "01-proj/21/tortorelli/Simon dice.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
-    "01-proj/21/oliva/App web para generador de TONE FIELDS.md",
-    "01-proj/21/marazzi/Collage sonoro.md",
-    "01-proj/21/marazzi/Collage sonoro app.md",
-    "01-proj/21/kobayashi/Generador random.md",
-    "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
     "01-proj/21/tortorelli",
     "01-proj/21/oliva",
     "01-proj/21/marazzi",
     "01-proj/21/kobayashi",
     "01-proj/21/fernandez burzaco",
-    "01-proj/21",
-    "01-proj/18/vivona/Domo.md",
-    "01-proj/18/gueglio/Posdata fluidos.md",
-    "01-proj/18/garella/Dédalo.md",
-    "01-proj/18/galetto/Moving sound.md",
-    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
-    "01-proj/18/vivona",
-    "01-proj/17/paladino/No music player.md",
-    "01-proj/17/navarro/Ajedrez.md",
-    "01-proj/17/moscato/La forma de la identidad real.md",
-    "01-proj/17/lopez/Boreal.md",
-    "01-proj/17/julia/Nukzeiber.md",
-    "01-proj/17/herrera/Superficies sonoras blandas.md",
-    "01-proj/17/borsalino/Condensador de eventos.md",
     "02-mat/obs/img/t01-sistemas de universos-1660410536915.jpeg",
     "02-mat/obs/img/Pasted image 20230829224242.png",
-    "00-in/cym MOC-1694393867412.jpeg",
-    "00-in/cym MOC-1694393867410.jpeg",
-    "00-in/cym MOC-1694393867407.jpeg",
-    "00-in/cym MOC-1694393867405.jpeg",
-    "00-in/cym MOC-1694393867397.jpeg",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "image/Pasted image 20230829230243.png",
