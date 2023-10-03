@@ -16,5 +16,5 @@
   "logText": "[🍅]YYMMDDHHMM",
   "logActiveNote": true,
   "fancyStatusBar": false,
-  "whiteNoise": true
+  "whiteNoise": false
 }

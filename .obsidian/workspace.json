@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "30dd638db8b9be27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Prueba Proyectual.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -115,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Prueba Proyectual.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +187,7 @@
             }
           },
           {
-            "id": "2a28a2e733a42ab9",
+            "id": "945fc4933aa365d3",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -216,10 +230,29 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "02f03301fa34a2c4",
+  "active": "30dd638db8b9be27",
   "lastOpenFiles": [
-    "01-proj/15/bergaglio/Supernova luna llena.md",
     "01-proj/23/beltrame/Prueba Proyectual.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym15-interactividad.md",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065371.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065368.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065364.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065341.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065339.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065337.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065333.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065324.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065319.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065316.jpeg",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "00-in/teatro MOC.md",
+    "00-in/Sun Thinking.md",
+    "00-in/Pasted image 20220906234521.png.md",
+    "00-in/Hans Haake.md",
+    "01-proj/15/bergaglio/Supernova luna llena.md",
     "01-proj/15/porrini/Un día bello.md",
     "README.md",
     "04-out/procedimientos/extrañamiento.md",
@@ -235,25 +268,6 @@
     "02-mat/obs/tpl/t-lorem.md",
     "02-mat/obs/tpl/t-evento.md",
     "02-mat/obs/tpl/t-espacios.md",
-    "02-mat/obs/tpl/t-cym-init-slide.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "01-proj/15/nievas/Drummer.md",
-    "01-proj/21/fernandez burzaco/Museo Luminosónico.md",
-    "01-proj/21/kobayashi/Generador random.md",
-    "01-proj/23/beltrame/Piano.md",
-    "00-in/proyectos MOC.md",
-    "01-proj/15/dinapoli/En los intersticios de lo causal. El camino es efecto.md",
-    "04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md",
-    "01-proj/23/beltrame/pianobeltrame.jpg",
-    "02-mat/obs/img/image/Piano-1695770018018.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017992.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017974.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017956.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017941.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017924.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017884.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017870.jpeg",
-    "02-mat/obs/img/image/Piano-1695770017812.jpeg",
     "02-mat/obs/img/image",
     "02-mat/coloquial",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
