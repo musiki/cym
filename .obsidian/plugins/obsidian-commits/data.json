@@ -1314,11 +1314,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/Petroccelli/Dopplermanían´t.md": {
-      "size": 0,
-      "tags": 1,
-      "links": 0
-    },
     "00-in/Hans Haake.md": {
       "size": 0,
       "tags": 0,
@@ -1338,11 +1333,16 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 386,
+      "Refactor": 387,
       "Create": 457,
       "Link": 342,
       "Expand": 23
@@ -1351,7 +1351,7 @@
   "dailyCommits": {
     "/": {
       "0": 19,
-      "1": 68,
+      "1": 69,
       "2": 0,
       "3": 15,
       "4": 1,
@@ -1379,7 +1379,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 172,
-      "Tue": 851,
+      "Tue": 852,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1468,6 +1468,7 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t.md\"> Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían't.md\"> Dopplermanían't </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
@@ -1517,8 +1518,7 @@
         "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
