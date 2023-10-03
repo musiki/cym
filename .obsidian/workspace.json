@@ -11,13 +11,8 @@
             "id": "34b386926eabb429",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-out/topoi/Sistemas de universos.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -94,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Sistemas de universos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,9 +125,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "04-out/topoi/Sistemas de universos.md"
-              }
+              "state": {}
             }
           },
           {
@@ -198,6 +190,18 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
+    "04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
+    "04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
+    "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
+    "04-ref/musica-y-politica-topoi-musica-20y-politica.md.md",
+    "04-ref/meta-aprendizaje.md",
+    "04-ref/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md",
+    "04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
+    "04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md",
+    "04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md",
+    "04-ref/a-dataview playground.md",
+    "04-out/topoi/Sistemas de universos.md",
     "04-out/topoi/Forma Musical.md",
     "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
@@ -212,18 +216,6 @@
     "04-out/topoi/Introducción a la psicoacústica.md",
     "04-out/topoi/La instalación como forma del arte contemporáneo.md",
     "04-out/topoi/La reología del arte.md",
-    "04-out/topoi/Livecoding.md",
-    "04-out/topoi/Método científico.md",
-    "04-out/topoi/Música y Política.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "04-out/topoi/README 1.md",
-    "04-out/topoi/t-topoi.md",
-    "04-out/topoi/Virtualidad y realidad.md",
-    "04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md",
-    "04-ref/bibliografia-bibliografia-bib-moc.md.md",
-    "04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
-    "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
-    "04-out/topoi/Historia de la tecnología.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
