@@ -754,16 +754,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-out/topoi/Forma Musical.md": {
-      "size": 14612,
-      "tags": 2,
-      "links": 0
-    },
-    "04-out/topoi/Fragile Territories.md": {
-      "size": 3225,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/topoi/Física.md": {
       "size": 232,
       "tags": 2,
@@ -818,11 +808,6 @@
       "size": 12272,
       "tags": 4,
       "links": 0
-    },
-    "04-out/topoi/Música Visual.md": {
-      "size": 13016,
-      "tags": 3,
-      "links": 4
     },
     "04-out/topoi/La reología del arte.md": {
       "size": 452,
@@ -1309,11 +1294,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/2023-09-03.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Hans Haake.md": {
       "size": 0,
       "tags": 0,
@@ -1329,21 +1309,96 @@
       "tags": 0,
       "links": 0
     },
-    "2023-09-27.md": {
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
+      "size": 2237,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/i.md": {
       "size": 0,
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
-      "size": 2237,
-      "tags": 1,
+    "00-in/proyectual.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/22/Probando botones en codepen.md": {
+      "size": 42,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md": {
+      "size": 42,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/proyectual bassino.md": {
+      "size": 726,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Prueba Proyectual.md": {
+      "size": 1500,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md": {
+      "size": 376,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md": {
+      "size": 376,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md": {
+      "size": 143,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md": {
+      "size": 89,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md": {
+      "size": 87,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Forma Musical.md": {
+      "size": 14612,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Fragile Territories.md": {
+      "size": 3334,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/La instalación como forma del arte contemporáneo.md": {
+      "size": 5987,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/t-topoi.md": {
+      "size": 66,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/topoi/Música Visual.md": {
+      "size": 13153,
+      "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 388,
-      "Create": 457,
+      "Refactor": 395,
+      "Create": 475,
       "Link": 342,
       "Expand": 24
     }
@@ -1368,7 +1423,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 33,
+      "18": 58,
       "19": 45,
       "20": 189,
       "21": 536,
@@ -1379,7 +1434,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 172,
-      "Tue": 854,
+      "Tue": 879,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1418,6 +1473,24 @@
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md\"> Drawing 2023-09-12 20.17.31.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino.md\"> proyectual bassino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Probando botones/escala melódica.md\"> escala melódica </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/Probando botones en codepen.md\"> Probando botones en codepen </a>",
+        "<a class=\"internal-link\" href=\"00-in/proyectual.md\"> proyectual </a>",
+        "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
         "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Sun Thinking.md\"> Sun Thinking </a>",
@@ -1448,25 +1521,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
-        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
-        "<a class=\"internal-link\" href=\"00-in/Introducción a la Psicoacústica.md\"> Introducción a la Psicoacústica </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/El metaverso es un territorio disputado.md\"> El metaverso es un territorio disputado </a>",
-        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
-        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
-        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"home.md\"> home </a>",
-        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Craig Reynolds.md\"> Craig Reynolds </a>",
-        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
-        "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>"
+        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
@@ -1581,6 +1636,13 @@
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"00-in/2023-09-03.md\"> 2023-09-03 </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md.md\"> analisis-de-obras-interactivas-procedimientos-analisis-20de-obras-interactivas.md </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/analisis de obras interactivas.md\"> analisis de obras interactivas </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
@@ -1622,14 +1684,7 @@
         "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md\"> virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md\"> intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/yuval-noah-harari-personas-yuval-20noah-harari.md.md\"> yuval-noah-harari-personas-yuval-20noah-harari.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/harari-yuval-noah-personas-harari-20yuval-noah.md.md\"> harari-yuval-noah-personas-harari-20yuval-noah.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/dennis-fabian-peter-personas-dennis-20fabian-peter.md.md\"> dennis-fabian-peter-personas-dennis-20fabian-peter.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Stuart Russell.md\"> Stuart Russell </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Peter Novig.md\"> Peter Novig </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/John Barrows.md\"> John Barrows </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Donna Haraway.md\"> Donna Haraway </a>"
+        "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
