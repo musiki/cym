@@ -50,7 +50,7 @@
       "links": 0
     },
     "02-mat/que es git.md": {
-      "size": 1490,
+      "size": 2789,
       "tags": 0,
       "links": 0
     },
@@ -1340,7 +1340,7 @@
       "Refactor": 423,
       "Create": 387,
       "Link": 282,
-      "Expand": 36
+      "Expand": 38
     }
   },
   "dailyCommits": {
@@ -1360,7 +1360,7 @@
       "12": 27,
       "13": 29,
       "14": 28,
-      "15": 58,
+      "15": 60,
       "16": 35,
       "17": 3,
       "18": 8,
@@ -1374,7 +1374,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 331,
+      "Tue": 333,
       "Wed": 305,
       "Thu": 94,
       "Fri": 75,
@@ -1420,7 +1420,9 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
+        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
