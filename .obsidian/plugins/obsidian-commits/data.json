@@ -234,11 +234,6 @@
       "tags": 0,
       "links": 1
     },
-    "00-in/Untitled.md": {
-      "size": 7894,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/hi augmentation.md": {
       "size": 690,
       "tags": 0,
@@ -1249,11 +1244,6 @@
       "tags": 3,
       "links": 0
     },
-    "00-in/Untitled 1.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "03-cla/c-cym08-github pages+hydra.md": {
       "size": 3249,
       "tags": 6,
@@ -1328,20 +1318,35 @@
       "size": 119,
       "tags": 0,
       "links": 0
+    },
+    "00-in/Pasted image 20220906234521.png.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/2023-09-03.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Dopplermanían´t.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 372,
-      "Create": 443,
-      "Link": 337,
+      "Refactor": 381,
+      "Create": 451,
+      "Link": 338,
       "Expand": 22
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 18,
-      "1": 37,
+      "0": 19,
+      "1": 52,
       "2": 0,
       "3": 15,
       "4": 1,
@@ -1363,13 +1368,13 @@
       "20": 189,
       "21": 536,
       "22": 80,
-      "23": 126
+      "23": 128
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 170,
-      "Tue": 819,
+      "Mon": 172,
+      "Tue": 835,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1404,6 +1409,14 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 3.md\"> Sin título 3 </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 2.md\"> Sin título 2 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/2023-09-03.md\"> 2023-09-03 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
@@ -1446,17 +1459,11 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/zaracho POC.md\"> zaracho POC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto.md\"> Multi-efecto </a>"
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t.md\"> Dopplermanían´t </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían't.md\"> Dopplermanían't </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
         "<a class=\"internal-link\" href=\"00-in/Guitarrax.md\"> Guitarrax </a>",
@@ -1505,11 +1512,10 @@
         "<a class=\"internal-link\" href=\"01-proj/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/t-persona.md\"> t-persona </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/TP 1 TOPOI - Ezequiel A. Petroccelli.md\"> TP 1 TOPOI - Ezequiel A. Petroccelli </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t.md\"> Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
         "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
@@ -1559,13 +1565,19 @@
         "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/dure/Resampler.md\"> Resampler </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/hydra.md\"> hydra </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/dure/Sequencer.md\"> Sequencer </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían't.md\"> Dopplermanían't </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 2.md\"> Sin título 2 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título 3.md\"> Sin título 3 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-persona.md\"> t-persona </a>",
@@ -1609,14 +1621,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Fabian Peter.md\"> Dennis Fabian Peter </a>",
         "<a class=\"internal-link\" href=\"04-out/espacios/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Florencia Suárez Guerrini Berenice Gustavino Florencia Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/README.md\"> README </a>",
-        "<a class=\"internal-link\" href=\"04-out/README (1).md\"> README (1) </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md\"> eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md </a>"
+        "<a class=\"internal-link\" href=\"04-out/bibliografia/page.md\"> page </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
