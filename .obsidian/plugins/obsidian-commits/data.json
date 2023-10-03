@@ -631,7 +631,7 @@
     },
     "02-mat/obs/tpl/t-cym-class.md": {
       "size": 176,
-      "tags": 6,
+      "tags": 2,
       "links": 0
     },
     "02-mat/obs/tpl/t-cym-init-slide.md": {
@@ -1316,7 +1316,7 @@
     },
     "03-cla/c-cym15-interactividad.md": {
       "size": 416,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "00-in/Pasted image 20220906234521.png.md": {
@@ -1326,15 +1326,15 @@
     },
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
       "size": 1707,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 420,
+      "Refactor": 421,
       "Create": 384,
-      "Link": 280,
+      "Link": 282,
       "Expand": 36
     }
   },
@@ -1352,7 +1352,7 @@
       "9": 173,
       "10": 23,
       "11": 96,
-      "12": 24,
+      "12": 27,
       "13": 29,
       "14": 28,
       "15": 53,
@@ -1369,7 +1369,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 323,
+      "Tue": 326,
       "Wed": 305,
       "Thu": 94,
       "Fri": 75,
@@ -1524,6 +1524,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computting.md\"> c-cym07-creative computting </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
@@ -1572,9 +1574,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
-        "<a class=\"internal-link\" href=\"00-in/meta-aprendizaje.md\"> meta-aprendizaje </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1703,7 +1703,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",

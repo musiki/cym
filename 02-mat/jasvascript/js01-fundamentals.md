@@ -343,7 +343,7 @@ console.log( resta(20,5) )
 ```
 
 ## scope
-Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser global o local.
+Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser **global** o **local**.
 ```js
 let nota = “RE” // variable global
 

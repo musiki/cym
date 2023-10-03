@@ -12,27 +12,8 @@
   "checkpointList": [
     {
       "path": "/",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "date": "2023-09-27",
-      "size": 1077849
-=======
-<<<<<<< HEAD
-      "date": "2023-09-29",
-      "size": 1075672
-=======
-      "date": "2023-09-26",
-<<<<<<< HEAD
-      "size": 1094740
-=======
-      "size": 1074402
->>>>>>> origin/main
->>>>>>> origin/main
->>>>>>> origin/main
-=======
       "date": "2023-10-03",
-      "size": 1096983
->>>>>>> origin/main
+      "size": 1080234
     }
   ],
   "activityHistory": [
@@ -40,49 +21,8 @@
       "path": "/",
       "size": [
         {
-          "date": "2023-09-19",
-          "value": 73
-        },
-        {
-          "date": "2023-09-26",
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "value": 630
-        },
-        {
-          "date": "2023-09-27",
-          "value": 3389
-=======
-<<<<<<< HEAD
-          "value": 6418
-=======
-          "value": 141807
->>>>>>> origin/main
-        },
-        {
-          "date": "2023-09-27",
-          "value": 0
-        },
-        {
-          "date": "2023-10-02",
-          "value": 38
-        },
-        {
-<<<<<<< HEAD
-          "date": "2023-09-29",
-          "value": 840
-=======
-<<<<<<< HEAD
-          "value": 12173
-=======
-          "value": 572
->>>>>>> origin/main
->>>>>>> origin/main
->>>>>>> origin/main
-=======
           "date": "2023-10-03",
-          "value": 5059
->>>>>>> origin/main
+          "value": 0
         }
       ]
     }

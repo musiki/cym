@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md",
-                "mode": "preview",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md",
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Agregación limitada por difusión.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -179,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,34 +211,35 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "7375b9c7295993f4",
   "lastOpenFiles": [
+    "03-cla/c-cym15-interactividad.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "04-out/espacios/Academy of Fine Arts Vienna.md",
+    "04-out/espacios/Bell Labs.md",
+    "04-out/espacios/MIT Medialab.md",
+    "04-ref/a-dataview.md",
+    "04-ref/a-dataview playground.md",
+    "04-ref/a-plugins.md",
+    "04-ref/a-snippets.md",
+    "cym-metamap.canvas",
+    "00-in/Agregación limitada por difusión.md",
     "00-in/b-Azar y necesidad.md",
     "00-in/2023-09-03.md",
-    "00-in/Agregación limitada por difusión.md",
     "00-in/códigos MOC.md",
     "00-in/bib MOC.md",
     "00-in/coloquial MOC.md",
-    "00-in/combinational creativity.md",
-    "00-in/cym MOC.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "00-in/eventos MOC.md",
-    "00-in/espacios MOC.md",
-    "00-in/Hans Haake.md",
-    "00-in/hi augmentation.md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "00-in/personas MOC.md",
-    "00-in/Proto-Indo-European.md",
-    "00-in/proyectos MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/Sun Thinking.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/topoi MOC.md",
-    "00-in/Patrones de Turing.md",
-    "00-in/Pasted image 20220906234521.png.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/tp/tp01-topoi.md",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680324.jpeg",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680323.jpeg",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680318.jpeg",
