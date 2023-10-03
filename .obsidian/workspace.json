@@ -14,20 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "01-proj/23/Petroccelli/Dopplermanían´t.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d03813ebb490cb55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -46,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/23/Petroccelli/Dopplermanían´t.md"
               }
             }
           },
@@ -142,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/Petroccelli/Dopplermanían´t.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,8 +229,9 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "d03813ebb490cb55",
+  "active": "6618f6518751ff44",
   "lastOpenFiles": [
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/23/Petroccelli/Dopplermanían´t.md",
     "conflict-files-obsidian-git.md",
     "2023-09-27.md",
@@ -262,7 +249,6 @@
     "00-in/Sun Thinking.md",
     "00-in/Hans Haake.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
     "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
     "01-proj/23/Petroccelli/Guitarrax.md",

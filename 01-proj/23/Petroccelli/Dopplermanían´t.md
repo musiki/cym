@@ -3,6 +3,10 @@ author: Ezequiel Petroccelli
 tags: #proyectual  
 publish: 2023
 
+# DOPPLERMANÍAN´T
+
+### Moviendo al sonido
+
 ## SÍNTESIS
 
 Dopplermanian´t trata sobre una app web en donde podemos aplicarle distintas velocidades y frecuencias a un sonido a través de un color.
