@@ -11,8 +11,13 @@
             "id": "34b386926eabb429",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/bassino/Música y arte visual.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/23/bassino/Música y arte visual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +131,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/23/bassino/Música y arte visual.md"
+              }
             }
           },
           {
@@ -188,8 +196,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
+    "04-out/topoi/Música Visual.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "00-in/topoi MOC.md",
+    "00-in/eventos MOC.md",
+    "00-in/espacios MOC.md",
+    "00-in/coloquial MOC.md",
+    "00-in/códigos MOC.md",
+    "00-in/bib MOC.md",
     "04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
     "04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
     "04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
@@ -206,16 +224,6 @@
     "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/beltrame/Prueba Proyectual.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "04-out/topoi/Cuarta Revolución Industrial.md",
-    "04-out/topoi/Filosofía histórica.md",
-    "04-out/topoi/Humanos.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
-    "04-out/topoi/La reología del arte.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
