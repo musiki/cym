@@ -1334,11 +1334,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/bassino/proyectual bassino.md": {
-      "size": 726,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/beltrame/Prueba Proyectual.md": {
       "size": 1500,
       "tags": 0,
@@ -1393,12 +1388,127 @@
       "size": 13153,
       "tags": 0,
       "links": 0
+    },
+    "03-cla/c-cym15-interactividad.md": {
+      "size": 438,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/SUMMARY.md": {
+      "size": 6777,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md": {
+      "size": 131,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md": {
+      "size": 80,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md": {
+      "size": 94,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md": {
+      "size": 68,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/bibliografia-bibliografia-bib-moc.md.md": {
+      "size": 49,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md": {
+      "size": 81,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md": {
+      "size": 121,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md": {
+      "size": 75,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md": {
+      "size": 126,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md": {
+      "size": 135,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md": {
+      "size": 203,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md": {
+      "size": 123,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md": {
+      "size": 100,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md": {
+      "size": 65,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md": {
+      "size": 93,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/musica-y-politica-topoi-musica-20y-politica.md.md": {
+      "size": 61,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md": {
+      "size": 70,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md": {
+      "size": 97,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md": {
+      "size": 101,
+      "tags": 0,
+      "links": 0
+    },
+    "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md": {
+      "size": 140,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/bassino/Clorolaser.md": {
+      "size": 2134,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 395,
-      "Create": 475,
+      "Refactor": 397,
+      "Create": 499,
       "Link": 342,
       "Expand": 24
     }
@@ -1423,7 +1533,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 58,
+      "18": 84,
       "19": 45,
       "20": 189,
       "21": 536,
@@ -1434,7 +1544,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 172,
-      "Tue": 879,
+      "Tue": 905,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1472,6 +1582,30 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
+        "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
+        "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>",
+        "<a class=\"internal-link\" href=\"04-ref/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
+        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
+        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
+        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
@@ -1497,31 +1631,7 @@
         "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título 3.md\"> Sin título 3 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título 2.md\"> Sin título 2 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/2023-09-03.md\"> 2023-09-03 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-evento.md\"> t-evento </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-espacios.md\"> t-espacios </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Yasmin B Kafai Quinn Burke_Connected Code.md\"> Yasmin B Kafai Quinn Burke_Connected Code </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md\"> Usos de la ciencia en el arte argentino contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_The Future.md\"> Nick Montfort_The Future </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/Nick Montfort_Exploratory Programming for the Arts and Humanities.md\"> Nick Montfort_Exploratory Programming for the Arts and Humanities </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad.md\"> El Azar y la Necesidad </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Sin título.md\"> Sin título </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
@@ -1635,6 +1745,8 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino.md\"> proyectual bassino </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
@@ -1682,9 +1794,7 @@
         "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md\"> virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md.md\"> intervencion-del-espacio-publico-topoi-intervencion-20del-espacio-publico.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md.md\"> virtualidad-y-realidad-topoi-virtualidad-20y-realidad.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

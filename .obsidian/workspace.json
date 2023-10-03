@@ -19,8 +19,35 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "78b19d4f63a2d646",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e38a8454bdbcff07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -115,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +200,7 @@
             }
           },
           {
-            "id": "d3b1c6291523cad6",
+            "id": "83ea9643e71c9df9",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -216,12 +243,13 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "6618f6518751ff44",
+  "active": "e38a8454bdbcff07",
   "lastOpenFiles": [
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "Untitled.loom",
     "Sin título.canvas",
     "Sin título 1.canvas",
