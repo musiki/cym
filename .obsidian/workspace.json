@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/que es git.md",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/que es git.md",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/que es git.md"
+                "file": "03-cla/c-cym08-github pages+hydra.md"
               }
             }
           },
@@ -213,6 +213,7 @@
   },
   "active": "7375b9c7295993f4",
   "lastOpenFiles": [
+    "02-mat/que es git.md",
     "04-ref/a-yuda.md",
     "04-ref/a-plugins.md",
     "04-ref/a-dataview playground.md",
@@ -228,7 +229,6 @@
     "02-mat/obs/tpl/t-cym-class.md",
     "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
     "02-mat/obs/check-out de imagenes.md",
-    "02-mat/que es git.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "02-mat/tone.js.md",

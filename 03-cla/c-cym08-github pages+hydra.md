@@ -40,6 +40,10 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 2) **view source** Ctrl+U (Windows PC) o Command+Option+U (Mac) y seleccionar todo (control o command A) y luego copiar (control o command C)
 3) abrir codepen.io y pegar (control o command V) en la sección de html
 
+### visualStudioCode
+
+> [!INFO] > **completar**
+
 
 # hydra
 [https://hydra.ojack.xyz/](https://hydra.ojack.xyz/)
