@@ -5,17 +5,7 @@
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
-<<<<<<< HEAD
-    "recentlyUsedIcons": [
-      "FlPolygonalMultipleStars",
-      "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-      "IbArrowDownLeft",
-      "FabGithubSquare",
-      "IbHugContentVertical"
-    ],
-=======
     "recentlyUsedIcons": [],
->>>>>>> origin/main
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -25,36 +15,5 @@
       "left": 0
     },
     "iconInTabsEnabled": false
-<<<<<<< HEAD
-  },
-  "02-mat/python": "FabPython",
-  "02-mat/jasvascript": "FabJs",
-  "00-in": "IbArrowLeft",
-  "01-proj": "IbArrowRight",
-  "02-mat": "IbTabLeftCompact",
-  "02-mat/org": "IbTriangleRight",
-  "02-mat/tone.js.md": "FlTriangleOfTriangles",
-  "02-mat/que es git.md": "FabGithubSquare",
-  "02-mat/html.md": {
-    "iconName": null,
-    "inheritanceIcon": "FabHtml5"
-  },
-  "02-mat/cloud ides.md": {
-    "iconName": null,
-    "inheritanceIcon": "IbCloud"
-  },
-  "02-mat/rant.md": {
-    "iconName": null,
-    "inheritanceIcon": "FlPolygonalOrnamentalShapeOfTriangles"
-  },
-  "03-ref/clases": {
-    "iconName": null,
-    "inheritanceIcon": "IbStackHorizontal"
-  },
-  "03-cla": "IbArrowCircleForward",
-  "02-mat/ml": "FlOrnamentalRotatingPolygonalShapeWithThreeLinesAroundAnHexagonOfSmallTriangles",
-  "02-mat/partituras": "FlPolygonalMultipleStars"
-=======
   }
->>>>>>> origin/main
 }
