@@ -16,45 +16,6 @@
             }
           },
           {
-            "id": "64f4614a65757bce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "bc966abe66d7cfc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "76e6486867b78128",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "e279d09e5c4c4074",
             "type": "leaf",
             "state": {
@@ -73,20 +34,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/topoi/Música y Política.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e34d61583df340c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md",
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +42,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/topoi/Música y Política.md"
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md"
               }
             }
           },
@@ -189,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Música y Política.md",
+                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +195,7 @@
             }
           },
           {
-            "id": "6e0c50966b40f887",
+            "id": "7c2ad99b3d6486c7",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -292,8 +240,11 @@
   },
   "active": "fc13854deb75024f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/23/shifres/do-tonera.md",
     "04-out/topoi/Música y Política.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/tp02-aplicación-1695770908769.jpeg",
     "02-mat/obs/img/image/Multi-efecto-1695771569274.jpeg",
     "02-mat/obs/img/image/Multi-efecto-1695771567220.jpeg",
@@ -307,15 +258,12 @@
     "01-proj/23/shifres/Shifres.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/beltrame/Piano.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-github pages+hydra.md",
     "00-in/Untitled 1.md",
     "Untitled 1",
     "Untitled",
-    "01-proj/23/shifres/do-tonera.md",
     "00-in/Untitled.md",
     "01-proj/23/shifres/shifres POC.md",
     "home.md",

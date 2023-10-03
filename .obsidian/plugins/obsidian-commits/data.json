@@ -1311,7 +1311,7 @@
     },
     "01-proj/23/Petroccelli/Guitarrax.md": {
       "size": 385,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/23/Petroccelli/petroccelli POC.md": {
@@ -1321,15 +1321,20 @@
     },
     "01-proj/23/shifres/Shifres.md": {
       "size": 59,
-      "tags": 0,
+      "tags": 1,
+      "links": 1
+    },
+    "04-out/personas/t-persona.md": {
+      "size": 69,
+      "tags": 1,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 298,
-      "Create": 428,
-      "Link": 324,
+      "Create": 429,
+      "Link": 328,
       "Expand": 20
     }
   },
@@ -1353,18 +1358,18 @@
       "15": 0,
       "16": 19,
       "17": 2,
-      "18": 175,
+      "18": 177,
       "19": 65,
       "20": 124,
       "21": 476,
-      "22": 103,
+      "22": 106,
       "23": 14
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 824,
+      "Tue": 829,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1397,6 +1402,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
@@ -1446,8 +1452,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/zaracho POC.md\"> zaracho POC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Multi-efecto.md\"> Multi-efecto </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/zaracho POC.md\"> zaracho POC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
@@ -1470,6 +1475,9 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
@@ -1517,10 +1525,7 @@
         "<a class=\"internal-link\" href=\"01-proj/17/arcuri/Sensonorizando.md\"> Sensonorizando </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/borsalino/Condensador de eventos.md\"> Condensador de eventos </a>",
         "<a class=\"internal-link\" href=\"01-proj/17/herrera/Superficies sonoras blandas.md\"> Superficies sonoras blandas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/julia/Nukzeiber.md\"> Nukzeiber </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/lopez/Boreal.md\"> Boreal </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/navarro/Ajedrez.md\"> Ajedrez </a>",
-        "<a class=\"internal-link\" href=\"01-proj/17/moscato/La forma de la identidad real.md\"> La forma de la identidad real </a>"
+        "<a class=\"internal-link\" href=\"01-proj/17/julia/Nukzeiber.md\"> Nukzeiber </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
@@ -1579,6 +1584,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
@@ -1628,8 +1634,7 @@
         "<a class=\"internal-link\" href=\"02-mat/python/py-foundations.md\"> py-foundations </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym14 mapas.md\"> c-cym14 mapas </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
