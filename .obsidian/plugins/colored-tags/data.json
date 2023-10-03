@@ -133,7 +133,13 @@
     "artículos": 126,
     "entrevistas": 127,
     "performance": 128,
-    "teatroexpandido": 129
+    "teatroexpandido": 129,
+    "generativeliterature": 130,
+    "machine": 131,
+    "ia": 132,
+    "análisis": 133,
+    "forma": 134,
+    "musical": 135
   },
   "_version": 2
 }

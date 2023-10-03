@@ -156,9 +156,12 @@
             "id": "ec28577a1e9250ce",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.14"
+                "file": "01-proj/tp/tp01-topoi.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
@@ -237,6 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/tp/tp01-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -275,7 +279,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/tp/tp01-topoi.md"
+              }
             }
           },
           {
@@ -317,17 +323,27 @@
               "type": "review-queue-list-view",
               "state": {}
             }
+          },
+          {
+            "id": "044d8d6fc6793d5b",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "digitalgarden:Digital Garden Publication Center": false,
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
       "obsidian-read-it-later:ReadItLater: Save clipboard": false,
@@ -352,8 +368,9 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "ec28577a1e9250ce",
+  "active": "044d8d6fc6793d5b",
   "lastOpenFiles": [
+    "01-proj/tp/tp02-aplicación.md",
     "conflict-files-obsidian-git.md",
     "04-ref/meta-aprendizaje.md",
     "04-ref/a-yuda.md",
@@ -392,7 +409,6 @@
     "01-proj/17/borsalino/Condensador de eventos.md",
     "01-proj/17/moscato/La forma de la identidad real.md",
     "01-proj/18/garella/Dédalo.md",
-    "03-cla/c-cym06c-tonejs.md",
     "04-out/bibliografía/cym.bib",
     "04-out/topoi",
     "04-out/procedimientos",
