@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "7375b9c7295993f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/Agregación limitada por difusión.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp01-topoi.md"
+                "file": "00-in/Agregación limitada por difusión.md"
               }
             }
           },
@@ -196,43 +210,43 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
-    "01-proj/tp/tp02-aplicación.md",
-    "01-proj/tp/tp06-guía de lectura SADIN.md",
-    "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
-    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/tone.js.md",
-    "00-in/espacios MOC.md",
     "00-in/b-Azar y necesidad.md",
+    "00-in/2023-09-03.md",
     "00-in/Agregación limitada por difusión.md",
-    "00-in/topoi MOC.md",
-    "00-in/Untitled.md",
-    "00-in/Untitled 1.md",
-    "04-out/topoi/Forma Musical.md",
-    "conflict-files-obsidian-git.md",
-    "2023-09-27.md",
-    "04-out/topoi/Sistemas de universos.md",
-    "03-cla/c-cym15-interactividad.md",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688653.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688652.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688651.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688650.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688648.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688647.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688646.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688644.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688643.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688642.jpeg",
+    "00-in/códigos MOC.md",
+    "00-in/bib MOC.md",
+    "00-in/coloquial MOC.md",
+    "00-in/combinational creativity.md",
+    "00-in/cym MOC.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/eventos MOC.md",
+    "00-in/espacios MOC.md",
+    "00-in/Hans Haake.md",
+    "00-in/hi augmentation.md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/personas MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/proyectos MOC.md",
     "00-in/teatro MOC.md",
     "00-in/Sun Thinking.md",
-    "00-in/Hans Haake.md",
-    "04-out/topoi/README 1.md",
-    "04-out/topoi/Música Visual.md",
-    "04-out/topoi/La reología del arte.md",
-    "04-out/topoi/Introducción a la psicoacústica.md",
-    "03-cla/c-cym08-github pages+hydra.md"
+    "00-in/Vedic Sanskrit.md",
+    "00-in/topoi MOC.md",
+    "00-in/Patrones de Turing.md",
+    "00-in/Pasted image 20220906234521.png.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp01-topoi.md",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680324.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680323.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680318.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680317.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680316.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680315.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680314.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680312.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680311.jpeg",
+    "02-mat/obs/tpl/Dopplermanían´t-1696307680310.jpeg"
   ]
 }
