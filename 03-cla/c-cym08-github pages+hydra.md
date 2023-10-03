@@ -64,8 +64,11 @@ para más info ver:
 
 
 
-## Mousetracker
+## ejemplos código
 <iframe height="600" width="800" src="https://codepen.io/isoden/pen/xRpQMO?editors=0110" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+
+<iframe height="600" width="800" src="https://ojack.xyz/PIXELSYNTH/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+
 
 
 # hydra
