@@ -51,6 +51,8 @@ git remote add origin https://github.com/dipaola-c/pruebacym2023.git
 git branch -M main
 git push -u origin main
 
+
+- **En la terminal del visualStudio (dentro de nuestro folder), hacer git add . , luego git commit, i (insert) sobre data del commit, esc :wq , git push al repo remoto**
 para más info ver: 
 ![[que es git#comandos básicos git]]
 
