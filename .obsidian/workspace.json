@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "03-cla/c-cym08-github pages+hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md"
+                "file": "03-cla/c-cym08-github pages+hydra.md"
               }
             }
           },
@@ -199,10 +199,20 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "02-mat/procesos/r-como hacer un proyectual.md",
     "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/17/herrera/Superficies sonoras blandas.md",
+    "00-in/códigos MOC.md",
     "00-in/proyectos MOC.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "01-proj/23/bassino/Música y arte visual.md",
     "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
     "00-in/proyectual.md",
     "00-in/Pasted image 20220906234521.png.md",
@@ -218,16 +228,6 @@
     "04-ref/topoi/t-topoi.md",
     "04-out/topoi/Vida artificial.md",
     "04-out/topoi/Sistemas de universos.md",
-    "04-out/topoi/Sistemas complejos.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "04-ref/topoi/Música Visual.md",
-    "04-out/topoi/Livecoding.md",
-    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Humanos.md",
-    "04-out/topoi/Historia de la tecnología.md",
-    "04-ref/topoi/Fragile Territories.md",
     "04-ref/topoi",
     "01-proj/23/bassino/codepen/Probando botones",
     "01-proj/23/bassino/codepen",
