@@ -1,7 +1,7 @@
 ---
 type: proyecto
 author: Ezequiel Petroccelli  
-tags: #proyectual  
+tags: proyectual 
 publish: 2023
 ---
 
