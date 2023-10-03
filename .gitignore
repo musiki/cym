@@ -19,7 +19,9 @@ data.json
 .obsidian/workspace
 .obsidian/plugins/execute-code/data.json
 .obsidian/app.json
-.obsidian/workspace/
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
 .obsidian/plugins/execute-code/data.json
 .obsidian/graph.json
 .obsidian/core-plugins.json

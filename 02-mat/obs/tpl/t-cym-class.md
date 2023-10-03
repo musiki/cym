@@ -1,6 +1,6 @@
 ---
 type: class
-tags: cym, música visual, armonía expandida,class
+tags: cym,class
 unit: 1
 num:  4
 year: 2023

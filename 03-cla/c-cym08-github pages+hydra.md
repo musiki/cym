@@ -33,7 +33,12 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 **inspect elements** F12 (Windows) o Command+SHIFT+C (Mac)
 
 ### Upstart
+
+1) abrir Upstart
 <iframe width="560" height="315" src="https://nickm.com/poems/upstart.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+2) **view source** Ctrl+U (Windows PC) o Command+Option+U (Mac) y seleccionar todo (control o command A) y luego copiar (control o command C)
+3) abrir codepen.io y pegar (control o command V) en la sección de html
 
 
 # hydra

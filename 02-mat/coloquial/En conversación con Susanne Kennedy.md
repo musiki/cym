@@ -88,8 +88,7 @@ J:** Lo que para un actor puede ser muy difícil.
 **S:** ¡Sí! Y entonces ocurre algo, se abre algo más, cuando realmente van a por ello. Una especie de libertad interior, que sientes que la máscara te permite actuar de una forma en la que no habías actuado antes. Y hace posible un tipo de experiencia que antes no era posible. Y en cierto sentido se abre un espacio que está entre el individuo y... lo que sería el otro lado, que no eres más que una máscara. Así que los actores en los ensayos no sienten que tienen que demostrarme nada. Así que entras en otro tipo de espacio y, en cierto sentido, la individualidad no se pierde. Siempre reconoces a esa persona, lo que hace con su cuerpo, con sus gestos, sigue siendo esa persona. Tengo que decir que los actores con los que trabajo a menudo lo describen como una experiencia muy liberadora. La gente que no experimentaría eso no estaría interesada en trabajar conmigo. Y hay una alegría de dejarse llevar. Eso está absolutamente ahí. Pero no significa que tengas que desaparecer al mismo tiempo. Supongo que es un acto de equilibrio. Y en términos políticos, sí, no sé, supongo que preferiría pensarlo en términos espirituales. Cuando experimentamos verdadera alegría y verdadera fluidez, es el momento en el que nos olvidamos de nosotros mismos, no piensas en ti en ese momento, simplemente lo haces. Y, por supuesto, un actor conoce este espacio en el escenario, donde fluyes y te olvidas de ti mismo, y no te preocupa tu aspecto ni lo que haces. También fuera del teatro, cuando esto ocurre, cuando realmente haces algo que amas, entonces _tú_ ya no importas y ese es un estado de alegría. Pero, por supuesto, la gente suele reaccionar... Quiero decir, las máscaras se ven como algo... como si yo impusiera algo a los actores y ellos tuvieran que sufrir debajo de las máscaras. Así que creo que nunca se ve el potencial que tiene. Pero también es curioso porque, por supuesto, la tradición teatral occidental proviene de las máscaras.   
 
 
-> [!check]
-> UNA ESPECIE DE LIBERTAD INTERIOR, QUE SIENTES QUE LA MÁSCARA TE PERMITE ACTUAR DE UNA MANERA QUE NO HABÍAS ACTUADO ANTES. Y HACE POSIBLE UN TIPO DE EXPERIENCIA QUE ANTES NO ERA POSIBLE
+> [!check] UNA ESPECIE DE LIBERTAD INTERIOR, QUE SIENTES QUE LA MÁSCARA TE PERMITE ACTUAR DE UNA MANERA QUE NO HABÍAS ACTUADO ANTES. Y HACE POSIBLE UN TIPO DE EXPERIENCIA QUE ANTES NO ERA POSIBLE
 
 **
 J:** Me preguntaba sobre la cuestión política, porque obviamente también trabajas con muchos temas feministas y la representación de las mujeres, así que me preguntaba cómo las máscaras y las voces externas están quitando la agencia de la voz del actor. Sé que no es necesariamente intencionado... También he leído que cuando estrenó Mujeres en apuros, coincidió exactamente con el caso Harvey Weinstein... Parece que mucha gente lo relacionó con eso. Me preguntaba qué pensó realmente al respecto.  
@@ -105,8 +104,7 @@ J:** Me preguntaba sobre la cuestión política, porque obviamente también trab
 **S:** Sí, pero me niego a ser capturada por ello. Es como si _tuviéramos_ que tratar estos temas... y de lo contrario nada es... ya sabes, es como si estuvieras en Facebook, estos son los temas y eso es lo que impulsa... hay mucho más... Quiero decir, por supuesto que es importante... la cuestión básica es cómo llegar a ser plenamente humanos. Y tenemos tantas cualidades femeninas y masculinas dentro de nosotros. Siento que tengo mucho de ambos al mismo tiempo y que no luchan entre sí. Soy madre y me encanta ser madre, me encanta pasar tiempo con mi hija, hornear, hacer manualidades y llevarla a la cama todas las noches. Y en medio, me encanta mi trabajo y realmente entrar en él y profundizar. Y he descubierto que una cosa no tiene por qué estar reñida con la otra. Hay espacio para muchas cosas diferentes dentro de nosotros, y para que eso sea posible, creo que es algo por lo que deberíamos luchar.  
 
 
-> [!check]
-> LA CUESTIÓN BÁSICA ES CÓMO LLEGAR A SER PLENAMENTE HUMANO
+> [!check] LA CUESTIÓN BÁSICA ES CÓMO LLEGAR A SER PLENAMENTE HUMANO
 
 **
 J:** Es curioso que digas eso. Hablan de la redefinición del humanismo... repensar qué significa realmente humanismo, fuera de hombres y mujeres. Cuando vi _The Virgin Suicides_, me quedé como "ah, toda la tecnología y todas las representaciones de la figura de la mujer"... se habla mucho del cíborg, de que ahora somos cíborgs.  
@@ -130,7 +128,8 @@ J:** Es curioso que digas eso. Hablan de la redefinición del humanismo... repen
 **S:** Sí, si traduces unheimlich al inglés, es "uncanny", pero la palabra alemana es muy interesante porque "heim" es como hogar, así que es "not-homelike". Sientes que reconoces algo, que lo conoces, pero al mismo tiempo no. Así que esta combinación de una situación conocida y luego haces algo con ella. Y eso es interesante en cierto sentido, sobre todo al principio de mi trabajo, cuando trabajaba al principio era algo en lo que me concentraba mucho. Ya no me interesa tanto este sentimiento de extrañeza.   
 
 
-## < SIENTES QUE RECONOCES ALGO, PARECE QUE LO SABES, PERO AL MISMO TIEMPO NO >
+
+> [!check] SIENTES QUE RECONOCES ALGO, PARECE QUE LO SABES, PERO AL MISMO TIEMPO NO >
 
 **
 J:** Oh, vale. Pero esto es como una cosa nueva o...  
@@ -152,8 +151,7 @@ J:** Oh, vale. Pero esto es como una cosa nueva o...
 **J:** Sí, es verdad, así que en lugar de coger el contenido real, vas renderizando tras renderizar tras renderizar, ya sabes a qué me refiero, el contenido, un vídeo de YouTube, un comentario sobre el vídeo de YouTube...
 
 
-> [!check]
->GENTE COMENTANDO LA ESCENA QUE SE ESTÁ REPRODUCIENDO Y HABLANDO DE LA ESCENA EN LOS COMENTARIOS DE YOUTUBE QUE HAY DEBAJO
+> [!tip] GENTE COMENTANDO LA ESCENA QUE SE ESTÁ REPRODUCIENDO Y HABLANDO DE LA ESCENA EN LOS COMENTARIOS DE YOUTUBE QUE HAY DEBAJO
 
 **
 S:** Sí, así que... y luego también es interesante por el lenguaje que utiliza la gente para escribir estos comentarios, abreviaturas y faltas de ortografía, y yo lo uso todo. Así que, claro, la gente viene al estudio a grabar los comentarios y dicen: "Oh, hay un error aquí". Y nosotros decimos: "No, úsalo, lo usamos". También utilizamos los errores que la gente comete en las grabaciones. Así que lo que pasa es que piensas que está todo pregrabado, que es playback, pero entonces oyes un error y parece que lo hace real. Pero es aún más artificial. Incluso lo que acabamos de hacer con _Three Sisters_ en el M**ü**nchner Kammerspiele, tenemos al técnico que hace comentarios sobre la lectura en el estudio, también lo pusimos, así que es como una sala de control exterior que dice a la gente en el escenario los errores que han cometido, y ellos reaccionan a ello. Así que estás en ese estado en el que piensas "Esta es la realidad, oh no, es la realidad que hay detrás". Así que siempre estoy muy interesado en esta pregunta sobre, ¿cuál es esta realidad que percibimos como realidad?  
@@ -183,8 +181,7 @@ S:** Sí, así que... y luego también es interesante por el lenguaje que utiliz
 **S:** Pero _The Matrix_ va sólo hasta aquí, hay una realidad horrible, las máquinas están tomando el control, y esta es la matriz en la que te mantuvieron dentro, pero lo alucinante es que tú mismo estás haciendo la matriz. No es tanto la gente, el sistema, sino que lo estás haciendo tú mismo. Es también lo que... el velo, la ilusión, en todas las religiones encuentras un concepto similar a ese, en cierto sentido.  
 
 
-> [!check]
->ESTABA INTERESADO EN ESTE BUCLE, Y LA PREGUNTA, ¿PUEDE CAMBIAR DENTRO DE ESTE BUCLE? >
+> [!check] ESTABA INTERESADO EN ESTE BUCLE, Y LA PREGUNTA, ¿PUEDE CAMBIAR DENTRO DE ESTE BUCLE?
 
 **J:** Quiero decir, el problema posiblemente, o una teoría o explicación, es que hemos interiorizado muchas de esas cosas como la única opción que tenemos, como una creencia, que estamos atrapados en eso y seguimos haciendo la matriz. Hay una cita de Passolini sobre el capitalismo, justo antes de morir, dijo "Creo que esta es una versión mucho peor del fascismo - el fascismo era totalitario, pero esto es totalizante..."
   
@@ -219,8 +216,7 @@ J: Yo tampoco. No pienso en ello.
 **S:** Vale, pero creo que entonces... pero entonces tienes que emprender un viaje. Quiero decir que no tiene que ser increíble todo el tiempo, pero sólo beber una taza de té, hay tanto en eso. Pero es como si tuvieras que aprenderlo. Pero los niños pueden hacerlo. Lo veo con mi hija. Puede haber alegría en estas cosas, y entonces piensas, ¿cuándo empieza a desvanecerse, cuál es el momento en el que empiezas a perderlo? Y entonces tienes que volver a aprenderlo. Es una locura. Venimos al mundo ya capacitados con una especie de sabiduría en cierto sentido también... Quiero decir que los niños también están locos al mismo tiempo. No es que sean todos santos, no estoy diciendo eso en absoluto. Acabo de tener una gran pelea con ella esta mañana. Pero entonces ella entra de lleno en la emoción, completamente, y al momento siguiente se acaba, y entonces entra de lleno en la siguiente emoción.  
 
 
-> [!check]
-> QUIERO DECIR QUE NO TIENE QUE SER INCREIBLE TODO EL TIEMPO, PERO SOLO BEBER UNA TAZA DE TE, HAY TANTO EN ESO
+> [!danger] QUIERO DECIR QUE NO TIENE QUE SER INCREIBLE TODO EL TIEMPO, PERO SOLO BEBER UNA TAZA DE TE, HAY TANTO EN ESO
 
 **
 J:** Creo que eso es muy sano, creo que nos enseñan a perder eso. Creo que es una especie de adoctrinamiento, con la escuela... La meta siempre es llegar... resolver tu adultez... nunca estás en ella. La idea es que todas estas cosas que no son productivas...
