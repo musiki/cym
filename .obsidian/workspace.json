@@ -171,8 +171,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/shifres/Dotonera.md",
-                "mode": "source",
+                "file": "01-proj/23/bassino/Clorolaser.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -253,7 +253,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/shifres/Dotonera.md",
+                "file": "01-proj/23/bassino/Clorolaser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +293,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/shifres/Dotonera.md"
+                "file": "01-proj/23/bassino/Clorolaser.md"
               }
             }
           },
@@ -338,7 +338,17 @@
             }
           },
           {
-            "id": "044d8d6fc6793d5b",
+            "id": "70ebe18066ec3f12",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "6b84d3d9c050ac98",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -346,7 +356,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -381,10 +391,10 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "78eea0bd5cbd75d1",
+  "active": "9d30c2917a0c09e3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "01-proj/23/shifres/Dotonera.md",
+    "conflict-files-obsidian-git.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/Probando botones",
