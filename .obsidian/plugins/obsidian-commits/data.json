@@ -1249,16 +1249,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/2023-08-30.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/2023-09-10.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/i.md": {
       "size": 0,
       "tags": 0,
@@ -1266,11 +1256,6 @@
     },
     "00-in/proyectual.md": {
       "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "01-proj/15/drocchi/proyectual bassino.md": {
-      "size": 716,
       "tags": 0,
       "links": 0
     },
@@ -1508,11 +1493,16 @@
       "size": 619,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/bassino/proyectual bassino.md": {
+      "size": 716,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 455,
+      "Refactor": 458,
       "Create": 440,
       "Link": 283,
       "Expand": 41
@@ -1538,7 +1528,7 @@
       "15": 64,
       "16": 35,
       "17": 3,
-      "18": 93,
+      "18": 96,
       "19": 2,
       "20": 35,
       "21": 249,
@@ -1549,7 +1539,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 422,
+      "Tue": 425,
       "Wed": 305,
       "Thu": 94,
       "Fri": 75,
@@ -1656,6 +1646,7 @@
         "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino.md\"> proyectual bassino </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1705,8 +1696,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-plugins.md\"> a-plugins </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview.md\"> a-dataview </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview playground.md\"> a-dataview playground </a>",
-        "<a class=\"internal-link\" href=\"01-proj/15/drocchi/Cómo suena el conocimiento.md\"> Cómo suena el conocimiento </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview playground.md\"> a-dataview playground </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
@@ -1769,6 +1759,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>",
+        "<a class=\"internal-link\" href=\"00-in/2023-09-10.md\"> 2023-09-10 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
@@ -1817,9 +1809,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
-        "<a class=\"internal-link\" href=\"00-in/obras.in MOC.md\"> obras.in MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>"
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
