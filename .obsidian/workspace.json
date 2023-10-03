@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "source",
+                "file": "02-mat/que es git.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "02-mat/que es git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "02-mat/que es git.md"
               }
             }
           },
@@ -167,7 +167,7 @@
             }
           },
           {
-            "id": "8a437fa2cbf1f6fb",
+            "id": "c8b998b1e5b720eb",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -179,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,8 +210,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7375b9c7295993f4",
+  "active": "c8b998b1e5b720eb",
   "lastOpenFiles": [
+    "02-mat/jasvascript/js01-fundamentals.md",
     "03-cla/c-cym15-interactividad.md",
     "03-cla/c-cym14-un instrumento online colectivo.md",
     "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
@@ -239,7 +239,6 @@
     "00-in/2023-09-03.md",
     "00-in/códigos MOC.md",
     "00-in/bib MOC.md",
-    "00-in/coloquial MOC.md",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680324.jpeg",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680323.jpeg",
     "02-mat/obs/tpl/Dopplermanían´t-1696307680318.jpeg",
