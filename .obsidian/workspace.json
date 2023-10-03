@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "01-proj/tp/tp01-topoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "01-proj/tp/tp01-topoi.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             }
           },
           {
-            "id": "18fd27ff667994e3",
+            "id": "8a437fa2cbf1f6fb",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -198,6 +198,12 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/tp/tp06-guía de lectura SADIN.md",
+    "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
+    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/tone.js.md",
     "00-in/espacios MOC.md",
     "00-in/b-Azar y necesidad.md",
@@ -227,12 +233,6 @@
     "04-out/topoi/Música Visual.md",
     "04-out/topoi/La reología del arte.md",
     "04-out/topoi/Introducción a la psicoacústica.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "00-in/proyectos MOC.md",
-    "00-in/memex.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "00-in/hd-hydra.md",
-    "00-in/códigos MOC.md",
-    "03-cla/c-cym12-Aframe2.md"
+    "03-cla/c-cym08-github pages+hydra.md"
   ]
 }
