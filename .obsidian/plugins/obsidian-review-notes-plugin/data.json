@@ -541,7 +541,7 @@
       "filename": "Música Visual"
     },
     {
-      "path": "04-ref/topoi/Racionalizacion_(videojuegos).md",
+      "path": "04-out/topoi/Racionalizacion_(videojuegos).md",
       "filename": "Racionalizacion_(videojuegos)"
     },
     {
@@ -605,7 +605,7 @@
       "filename": "Dennis Smalley"
     },
     {
-      "path": "04-ref/topoi/Arte participativo.md",
+      "path": "04-out/topoi/Arte participativo.md",
       "filename": "Arte participativo"
     },
     {
@@ -613,7 +613,7 @@
       "filename": "Arte relacional"
     },
     {
-      "path": "04-ref/topoi/Augmented Cognition.md",
+      "path": "04-out/topoi/Augmented Cognition.md",
       "filename": "Augmented Cognition"
     },
     {
@@ -621,19 +621,19 @@
       "filename": "Cuarta Revolución Industrial"
     },
     {
-      "path": "04-ref/topoi/Espacio.md",
+      "path": "04-out/topoi/Espacio.md",
       "filename": "Espacio"
     },
     {
-      "path": "04-ref/topoi/Filosofía 21.md",
+      "path": "04-out/topoi/Filosofía 21.md",
       "filename": "Filosofía 21"
     },
     {
-      "path": "04-ref/topoi/Filosofía histórica.md",
+      "path": "04-out/topoi/Filosofía histórica.md",
       "filename": "Filosofía histórica"
     },
     {
-      "path": "04-ref/topoi/Internetmusic.md",
+      "path": "04-out/topoi/Internetmusic.md",
       "filename": "Internetmusic"
     },
     {
@@ -641,7 +641,7 @@
       "filename": "Generatividad"
     },
     {
-      "path": "04-ref/topoi/Sistemas de universos.md",
+      "path": "04-out/topoi/Sistemas de universos.md",
       "filename": "Sistemas de universos"
     },
     {
@@ -649,15 +649,15 @@
       "filename": "Spectromorphology"
     },
     {
-      "path": "04-ref/topoi/Vida artificial.md",
+      "path": "04-out/topoi/Vida artificial.md",
       "filename": "Vida artificial"
     },
     {
-      "path": "04-ref/topoi/Livecoding.md",
+      "path": "04-out/topoi/Livecoding.md",
       "filename": "Livecoding"
     },
     {
-      "path": "04-ref/topoi/Humanos.md",
+      "path": "04-out/topoi/Humanos.md",
       "filename": "Humanos"
     },
     {
@@ -681,7 +681,7 @@
       "filename": "shifres POC"
     },
     {
-      "path": "04-ref/topoi/Intervencion del espacio público.md",
+      "path": "04-out/topoi/Intervencion del espacio público.md",
       "filename": "Intervencion del espacio público"
     },
     {
@@ -693,7 +693,7 @@
       "filename": "zaracho POC"
     },
     {
-      "path": "04-ref/topoi/Sistemas complejos.md",
+      "path": "04-out/topoi/Sistemas complejos.md",
       "filename": "Sistemas complejos"
     },
     {
@@ -1987,6 +1987,146 @@
     {
       "path": "02-mat/que es git.md",
       "filename": "que es git"
+    },
+    {
+      "path": "02-mat/obs/img/image/c-cym08-github pages+hydra-1696369033975.jpeg",
+      "filename": "c-cym08-github pages+hydra-1696369033975"
+    },
+    {
+      "path": "02-mat/obs/img/image/c-cym08-github pages+hydra-1696369033985.jpeg",
+      "filename": "c-cym08-github pages+hydra-1696369033985"
+    },
+    {
+      "path": "02-mat/obs/img/image/c-cym08-github pages+hydra-1696369033992.jpeg",
+      "filename": "c-cym08-github pages+hydra-1696369033992"
+    },
+    {
+      "path": "02-mat/obs/img/image/c-cym08-github pages+hydra-1696369033999.jpeg",
+      "filename": "c-cym08-github pages+hydra-1696369033999"
+    },
+    {
+      "path": "02-mat/obs/img/image/c-cym08-github pages+hydra-1696369034004.jpeg",
+      "filename": "c-cym08-github pages+hydra-1696369034004"
+    },
+    {
+      "path": "01-proj/15/drocchi/proyectual bassino.md",
+      "filename": "proyectual bassino"
+    },
+    {
+      "path": "01-proj/22/Probando botones en codepen.md",
+      "filename": "Probando botones en codepen"
+    },
+    {
+      "path": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+      "filename": "escala melódica"
+    },
+    {
+      "path": "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
+      "filename": "Drawing 2023-09-10 16.27.21.excalidraw"
+    },
+    {
+      "path": "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
+      "filename": "Drawing 2023-09-12 20.17.31.excalidraw"
+    },
+    {
+      "path": "04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md",
+      "filename": "academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md"
+    },
+    {
+      "path": "04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md",
+      "filename": "academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md"
+    },
+    {
+      "path": "04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md",
+      "filename": "arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md"
+    },
+    {
+      "path": "04-ref/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md",
+      "filename": "arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md"
+    },
+    {
+      "path": "04-ref/bibliografia-bibliografia-bib-moc.md.md",
+      "filename": "bibliografia-bibliografia-bib-moc.md"
+    },
+    {
+      "path": "04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md",
+      "filename": "cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md"
+    },
+    {
+      "path": "04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md",
+      "filename": "cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md"
+    },
+    {
+      "path": "04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md",
+      "filename": "historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno"
+    },
+    {
+      "path": "04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md",
+      "filename": "historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md"
+    },
+    {
+      "path": "04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md",
+      "filename": "introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust"
+    },
+    {
+      "path": "04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md",
+      "filename": "introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md"
+    },
+    {
+      "path": "04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md",
+      "filename": "la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md"
+    },
+    {
+      "path": "04-ref/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md",
+      "filename": "la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md"
+    },
+    {
+      "path": "04-ref/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md",
+      "filename": "la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to"
+    },
+    {
+      "path": "04-ref/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md",
+      "filename": "la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo"
+    },
+    {
+      "path": "04-ref/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md",
+      "filename": "la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md"
+    },
+    {
+      "path": "04-ref/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md",
+      "filename": "la-reologia-del-arte-topoi-la-20reologia-del-arte.md"
+    },
+    {
+      "path": "04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md",
+      "filename": "musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md"
+    },
+    {
+      "path": "04-ref/musica-y-politica-topoi-musica-20y-politica.md.md",
+      "filename": "musica-y-politica-topoi-musica-20y-politica.md"
+    },
+    {
+      "path": "04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
+      "filename": "signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md"
+    },
+    {
+      "path": "04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
+      "filename": "signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md"
+    },
+    {
+      "path": "04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md",
+      "filename": "tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md"
+    },
+    {
+      "path": "04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md",
+      "filename": "tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg"
+    },
+    {
+      "path": "04-out/topoi/Historia de la tecnología.md",
+      "filename": "Historia de la tecnología"
+    },
+    {
+      "path": "04-ref/topoi/t-topoi.md",
+      "filename": "t-topoi"
     }
   ]
 }
