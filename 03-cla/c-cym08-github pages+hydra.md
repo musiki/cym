@@ -51,6 +51,9 @@ git remote add origin https://github.com/dipaola-c/pruebacym2023.git
 git branch -M main
 git push -u origin main
 
+para más info ver: 
+![[que es git#comandos básicos git]]
+
 
 # hydra
 [https://hydra.ojack.xyz/](https://hydra.ojack.xyz/)
