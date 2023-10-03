@@ -1328,12 +1328,17 @@
       "size": 1707,
       "tags": 1,
       "links": 0
+    },
+    "01-proj/23/beltrame/Prueba Proyectual.md": {
+      "size": 1470,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 421,
-      "Create": 384,
+      "Refactor": 423,
+      "Create": 387,
       "Link": 282,
       "Expand": 36
     }
@@ -1355,7 +1360,7 @@
       "12": 27,
       "13": 29,
       "14": 28,
-      "15": 53,
+      "15": 58,
       "16": 35,
       "17": 3,
       "18": 8,
@@ -1369,7 +1374,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 35,
-      "Tue": 326,
+      "Tue": 331,
       "Wed": 305,
       "Thu": 94,
       "Fri": 75,
@@ -1419,6 +1424,9 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
         "<a class=\"internal-link\" href=\"00-in/2023-09-03.md\"> 2023-09-03 </a>",
@@ -1465,10 +1473,7 @@
         "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
@@ -1585,6 +1590,8 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/2023-09-03.md\"> 2023-09-03 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1632,9 +1639,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md\"> eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",

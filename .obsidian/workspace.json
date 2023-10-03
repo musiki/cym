@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/que es git.md",
+                "file": "00-in/Pasted image 20220906234521.png.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/que es git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/que es git.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -210,8 +209,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c8b998b1e5b720eb",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
+    "00-in/Pasted image 20220906234521.png.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/que es git.md",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065371.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065368.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065364.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065341.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065339.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065337.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065333.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065324.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065319.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065316.jpeg",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "03-cla/c-cym15-interactividad.md",
     "03-cla/c-cym14-un instrumento online colectivo.md",
@@ -234,20 +247,6 @@
     "04-ref/a-plugins.md",
     "04-ref/a-snippets.md",
     "cym-metamap.canvas",
-    "00-in/Agregación limitada por difusión.md",
-    "00-in/b-Azar y necesidad.md",
-    "00-in/2023-09-03.md",
-    "00-in/códigos MOC.md",
-    "00-in/bib MOC.md",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680324.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680323.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680318.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680317.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680316.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680315.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680314.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680312.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680311.jpeg",
-    "02-mat/obs/tpl/Dopplermanían´t-1696307680310.jpeg"
+    "00-in/Agregación limitada por difusión.md"
   ]
 }
