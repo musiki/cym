@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "path": "00-in/topoi MOC.md",
+      "path": "00-moc/topoi MOC.md",
       "filename": "topoi MOC"
     },
     {
@@ -205,7 +205,7 @@
       "filename": "cym MOC"
     },
     {
-      "path": "00-in/códigos MOC.md",
+      "path": "00-moc/códigos MOC.md",
       "filename": "códigos MOC"
     },
     {
@@ -217,7 +217,7 @@
       "filename": "memex"
     },
     {
-      "path": "00-in/proyectos MOC.md",
+      "path": "00-moc/proyectos MOC.md",
       "filename": "proyectos MOC"
     },
     {
@@ -549,7 +549,7 @@
       "filename": "t-topoi"
     },
     {
-      "path": "00-in/bib MOC.md",
+      "path": "00-moc/bib MOC.md",
       "filename": "bib MOC"
     },
     {
@@ -569,7 +569,7 @@
       "filename": "dramaturgia"
     },
     {
-      "path": "00-in/personas MOC.md",
+      "path": "00-moc/personas MOC.md",
       "filename": "personas MOC"
     },
     {
@@ -833,7 +833,7 @@
       "filename": "cym MOC-1694393867412"
     },
     {
-      "path": "00-in/cym MOC.md",
+      "path": "00-moc/cym MOC.md",
       "filename": "cym MOC"
     },
     {
@@ -1321,7 +1321,7 @@
       "filename": "Peter Novig"
     },
     {
-      "path": "00-in/eventos MOC.md",
+      "path": "00-moc/eventos MOC.md",
       "filename": "eventos MOC"
     },
     {
@@ -1337,7 +1337,7 @@
       "filename": "John Barrows"
     },
     {
-      "path": "00-in/espacios MOC.md",
+      "path": "00-moc/espacios MOC.md",
       "filename": "espacios MOC"
     },
     {
@@ -1433,7 +1433,7 @@
       "filename": "README"
     },
     {
-      "path": "00-in/coloquial MOC.md",
+      "path": "00-moc/coloquial MOC.md",
       "filename": "coloquial MOC"
     },
     {
@@ -1465,7 +1465,7 @@
       "filename": "obras"
     },
     {
-      "path": "00-in/obras MOC.md",
+      "path": "00-moc/obras MOC.md",
       "filename": "obras MOC"
     },
     {
@@ -1677,7 +1677,7 @@
       "filename": "2023-09-27"
     },
     {
-      "path": "00-in/teatro MOC.md",
+      "path": "00-moc/teatro MOC.md",
       "filename": "teatro MOC"
     },
     {
@@ -2113,56 +2113,56 @@
       "filename": "home-1696446053115"
     },
     {
-      "path": "02-mat/obs/img/image/tp01-topoi-1696369983608.jpeg",
-      "filename": "tp01-topoi-1696369983608"
+      "path": "02-mat/obs/img/image/home-1696446053117.jpeg",
+      "filename": "home-1696446053117"
     },
     {
-      "path": "02-mat/obs/img/image/tp01-topoi-1696369983649.jpeg",
-      "filename": "tp01-topoi-1696369983649"
+      "path": "02-mat/obs/img/image/home-1696446053118.jpeg",
+      "filename": "home-1696446053118"
     },
     {
-      "path": "02-mat/obs/img/image/tp01-topoi-1696369983673.jpeg",
-      "filename": "tp01-topoi-1696369983673"
+      "path": "02-mat/obs/img/image/home-1696446053119.jpeg",
+      "filename": "home-1696446053119"
     },
     {
-      "path": "02-mat/obs/img/image/tp01-topoi-1696369983688.jpeg",
-      "filename": "tp01-topoi-1696369983688"
+      "path": "02-mat/obs/img/image/home-1696446053120.jpeg",
+      "filename": "home-1696446053120"
     },
     {
-      "path": "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
-      "filename": "tp01-topoi-1696369983700"
+      "path": "02-mat/obs/img/image/home-1696446053121.jpeg",
+      "filename": "home-1696446053121"
     },
     {
       "path": "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
       "filename": "tp01-topoi-1696369983761"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643456.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643456"
+      "path": "02-mat/obs/img/image/home-1696446053123.jpeg",
+      "filename": "home-1696446053123"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643457.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643457"
+      "path": "02-mat/obs/img/image/home-1696446053126.jpeg",
+      "filename": "home-1696446053126"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643458.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643458"
+      "path": "02-mat/obs/img/image/home-1696446053127.jpeg",
+      "filename": "home-1696446053127"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643459.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643459"
+      "path": "02-mat/obs/img/image/home-1696446053128.jpeg",
+      "filename": "home-1696446053128"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643461.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643461"
+      "path": "02-mat/obs/img/image/home-1696446053129.jpeg",
+      "filename": "home-1696446053129"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643463.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643463"
+      "path": "02-mat/obs/img/image/home-1696446053131.jpeg",
+      "filename": "home-1696446053131"
     },
     {
-      "path": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
-      "filename": "Proyectual - Dopplermanían´t-1696369643464"
+      "path": "02-mat/obs/img/image/home-1696446053132.jpeg",
+      "filename": "home-1696446053132"
     },
     {
       "path": "02-mat/que es git.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home.md",
+                "file": "00-moc/cym MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -21,12 +21,51 @@
             }
           },
           {
-            "id": "256cf4b81cba572e",
+            "id": "7244bd3cfdc81abb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-moc/espacios MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6be483db6ee985fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/eventos MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "bd1b05fe3d369bf0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/espacios MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ae43633abed23d52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/Agregación limitada por difusión.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -34,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -101,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/Agregación limitada por difusión.md"
               }
             }
           },
@@ -119,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/Agregación limitada por difusión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,9 +296,28 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "256cf4b81cba572e",
+  "active": "ae43633abed23d52",
   "lastOpenFiles": [
+    "00-in/b-Azar y necesidad.md",
+    "00-in/combinational creativity.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/Hans Haake.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/hd-hydra.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/Vedic Sanskrit.md",
+    "00-in/proyectual.md",
+    "00-in/Sun Thinking.md",
+    "00-moc/cym MOC.md",
+    "00-moc/espacios MOC.md",
+    "00-moc/eventos MOC.md",
+    "00-moc/bib MOC.md",
+    "00-moc/códigos MOC.md",
+    "00-moc",
+    "00-in/i.md",
+    "00-in/Patrones de Turing.md",
     "home.md",
+    "00-in/Pasted image 20220906234521.png.md",
     "conflict-files-obsidian-git.md",
     "Untitled.loom",
     "Sin título.canvas",
@@ -267,47 +325,28 @@
     "04-out/topoi/t-topoi 1.md",
     "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
     "04-out/SUMMARY.md",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643463.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643461.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643459.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643458.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643457.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643456.jpeg",
+    "02-mat/obs/img/image/home-1696446053132.jpeg",
+    "02-mat/obs/img/image/home-1696446053131.jpeg",
+    "02-mat/obs/img/image/home-1696446053129.jpeg",
+    "02-mat/obs/img/image/home-1696446053128.jpeg",
+    "02-mat/obs/img/image/home-1696446053127.jpeg",
+    "02-mat/obs/img/image/home-1696446053126.jpeg",
+    "02-mat/obs/img/image/home-1696446053123.jpeg",
     "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983688.jpeg",
+    "02-mat/obs/img/image/home-1696446053121.jpeg",
+    "02-mat/obs/img/image/home-1696446053120.jpeg",
     "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
     "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
     "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/beltrame/Prueba Proyectual.md",
-    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/Probando botones",
     "01-proj/23/bassino/codepen",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/22/Probando botones en codepen.md",
-    "00-in/proyectual.md",
-    "00-in/i.md",
-    "00-in/Pasted image 20220906234521.png.md",
-    "00-in/Untitled.md",
-    "00-in/Untitled 1.md",
-    "00-in/topoi MOC.md",
-    "00-in/cym MOC.md",
     "cym-metamap.canvas",
-    "04-ref/a-dataview playground.md",
-    "2023-09-27.md",
-    "04-ref/a-dataview.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "02-mat/obs/img/image",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-    "04-out/bibliografia",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
