@@ -130,7 +130,7 @@
       "links": 2
     },
     "02-mat/jasvascript/js01-fundamentals.md": {
-      "size": 7427,
+      "size": 14384,
       "tags": 0,
       "links": 0
     },
@@ -795,8 +795,8 @@
       "links": 0
     },
     "04-out/topoi/Forma Musical.md": {
-      "size": 23306,
-      "tags": 0,
+      "size": 14587,
+      "tags": 2,
       "links": 0
     },
     "04-out/topoi/Fragile Territories.md": {
@@ -900,7 +900,7 @@
       "links": 0
     },
     "04-out/topoi/Música y Política.md": {
-      "size": 6553,
+      "size": 10044,
       "tags": 1,
       "links": 0
     },
@@ -1284,29 +1284,14 @@
       "tags": 0,
       "links": 0
     },
-    "2023-09-27.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/teatro MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Untitled 1.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Untitled.md": {
       "size": 0,
       "tags": 0,
       "links": 0
     },
     "01-proj/23/Petroccelli/Guitarrax.md": {
       "size": 378,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/23/Petroccelli/petroccelli POC.md": {
@@ -1321,32 +1306,32 @@
     },
     "01-proj/23/shifres/Shifres.md": {
       "size": 51,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "03-cla/c-cym08-github pages+hydra.md": {
       "size": 3393,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     },
     "03-cla/c-cym09-flex-grid.md": {
       "size": 619,
-      "tags": 0,
-      "links": 0
+      "tags": 6,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 378,
+      "Refactor": 382,
       "Create": 280,
-      "Link": 212,
-      "Expand": 27
+      "Link": 219,
+      "Expand": 29
     }
   },
   "dailyCommits": {
     "/": {
       "0": 38,
-      "1": 19,
+      "1": 29,
       "2": 52,
       "3": 3,
       "4": 2,
@@ -1365,8 +1350,8 @@
       "17": 29,
       "18": 139,
       "19": 16,
-      "20": 21,
-      "21": 15,
+      "20": 22,
+      "21": 17,
       "22": 46,
       "23": 41
     }
@@ -1375,9 +1360,9 @@
     "/": {
       "Mon": 7,
       "Tue": 85,
-      "Wed": 560,
+      "Wed": 563,
       "Thu": 109,
-      "Fri": 89,
+      "Fri": 99,
       "Sat": 0,
       "Sun": 47
     }
@@ -1411,6 +1396,8 @@
         "<a class=\"internal-link\" href=\"00-in/El metaverso es un territorio disputado.md\"> El metaverso es un territorio disputado </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
@@ -1520,6 +1507,11 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-class.md\"> t-class </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
@@ -1565,18 +1557,17 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
+        "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-hydra.md\"> c-cym07-hydra </a>",
@@ -1624,12 +1615,11 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
@@ -1677,8 +1667,6 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>"
       ],

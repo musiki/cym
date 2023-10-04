@@ -1,9 +1,4 @@
 {
   "accentColor": "",
-<<<<<<< HEAD
-  "baseFontSize": 14,
-  "theme": "moonstone"
-=======
-  "baseFontSize": 15
->>>>>>> origin/main
+  "baseFontSize": 16
 }
