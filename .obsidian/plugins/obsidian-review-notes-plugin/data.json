@@ -933,8 +933,8 @@
       "filename": "html"
     },
     {
-      "path": "02-mat/tone.js.md",
-      "filename": "tone.js"
+      "path": "02-mat/tonejs/01-tone.js.md",
+      "filename": "01-tone.js"
     },
     {
       "path": "03-cla/c-cym03-mapas.md",
