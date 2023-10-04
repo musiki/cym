@@ -45,7 +45,7 @@ Github pages permite hospedar un sitio web directamente desde un repositorio en 
 1) copiar y pegar el código en VisualStudioCode
 2) hay dos formas de cargar los archivos a github:
 	1) subiendo el archivo ![](https://i.imgur.com/yyzB4a4.png)
-	2) desde la terminal del visualStudio 
+	2) desde la terminal del visualStudio **(SÓLO LA PRIMERA VEZ!)**
 > [!INFO] > …or push an existing repository from the command line
 git remote add origin https://github.com/dipaola-c/pruebacym2023.git
 git branch -M main
@@ -63,6 +63,13 @@ para más info ver:
 ```
 
 
+==Luego, en **VisualStudioCode**, para agregar cambios al repo remoto sobre los archivos ya existentes, guardarlos (control o command S) y en la terminal:==
+
+>[!example] > git add .
+git commit -m "mensaje sobre el commit"
+git push
+
+En github, en la sección 'Settings', ir a 'Pages' y acceder a la url de nuestra web.
 
 ## ejemplos código
 <iframe height="600" width="800" src="https://codepen.io/isoden/pen/xRpQMO?editors=0110" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
