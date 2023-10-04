@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "256cf4b81cba572e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,10 +257,40 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "3c5e2f7db2441523",
+  "active": "256cf4b81cba572e",
   "lastOpenFiles": [
-    "00-in/Untitled.md",
     "home.md",
+    "conflict-files-obsidian-git.md",
+    "Untitled.loom",
+    "Sin título.canvas",
+    "Sin título 1.canvas",
+    "04-out/topoi/t-topoi 1.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
+    "04-out/SUMMARY.md",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643463.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643461.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643459.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643458.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643457.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643456.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
+    "02-mat/obs/img/image/tp01-topoi-1696369983688.jpeg",
+    "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
+    "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+    "01-proj/23/bassino/codepen/Probando botones",
+    "01-proj/23/bassino/codepen",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/22/Probando botones en codepen.md",
+    "00-in/proyectual.md",
+    "00-in/i.md",
+    "00-in/Pasted image 20220906234521.png.md",
+    "00-in/Untitled.md",
     "00-in/Untitled 1.md",
     "00-in/topoi MOC.md",
     "00-in/cym MOC.md",
@@ -257,31 +301,6 @@
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/jasvascript/js-playground.md",
-    "01-proj/21/kobayashi/Generador random.md",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688653.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770978237.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688652.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688651.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908851.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688650.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688648.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908840.jpeg",
-    "02-mat/obs/img/image/En conversación con Susanne Kennedy-1695944688647.jpeg",
-    "02-mat/obs/img/image/tp02-aplicación-1695770908836.jpeg",
-    "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "00-in/teatro MOC.md",
-    "01-proj/17/navarro/Ajedrez.md",
-    "01-proj/17/borsalino/Condensador de eventos.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "00-in/eventos MOC.md",
     "04-ref/image",
     "04-ref",
     "02-mat/coloquial",
@@ -289,9 +308,6 @@
     "02-mat/obs/img/image",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "04-out/bibliografia",
-    "04-out/test",
-    "image/image",
-    "image",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
