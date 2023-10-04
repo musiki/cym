@@ -171,7 +171,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "01-proj/23/shifres/Dotonera.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -253,7 +253,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "01-proj/23/shifres/Dotonera.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +293,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md"
+                "file": "01-proj/23/shifres/Dotonera.md"
               }
             }
           },
@@ -348,7 +348,7 @@
             }
           },
           {
-            "id": "6b84d3d9c050ac98",
+            "id": "58bf6252f6765b93",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -391,10 +391,29 @@
       "notion-like-tables:Create new loom": false
     }
   },
-  "active": "9d30c2917a0c09e3",
+  "active": "78eea0bd5cbd75d1",
   "lastOpenFiles": [
-    "01-proj/23/shifres/Dotonera.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "04-out/topoi/t-topoi 1.md",
+    "04-out/topoi/Música Visual.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
+    "04-out/topoi/Fragile Territories.md",
+    "04-out/topoi/Forma Musical.md",
+    "02-mat/obs/img/image/c-cym08-github pages+hydra-1696371853314.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665761.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665732.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665696.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665603.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665553.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665490.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665442.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665409.jpeg",
+    "02-mat/obs/img/image/Dotonera-1696438665347.jpeg",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "01-proj/23/bassino/bassino POC.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/Probando botones",
@@ -413,31 +432,12 @@
     "04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md",
     "04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md",
     "04-ref/musica-y-politica-topoi-musica-20y-politica.md.md",
-    "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983728.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983700.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983688.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983673.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983649.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983608.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983597.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983574.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983553.jpeg",
     "00-in/Pasted image 20220906234521.png.md",
     "00-in/Hans Haake.md",
     "01-proj/tp/tp02-aplicación.md",
-    "04-ref/meta-aprendizaje.md",
-    "04-ref/a-yuda.md",
-    "04-ref/a-snippets.md",
-    "04-ref/a-plugins.md",
-    "04-ref/a-dataview.md",
-    "04-ref/a-dataview playground.md",
     "04-ref",
     "02-mat/obs/img/image",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
     "02-mat/coloquial",
-    "04-out/personas/Craig Reynolds.md",
     "04-out/bibliografía/cym.bib",
     "04-out/topoi",
     "04-out/procedimientos",
