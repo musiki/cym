@@ -8,3 +8,4 @@ Table author as Author, ("![|100](" + coverUrl + ")") as Cover, publish as "año
 From "04-out/bibliografía"
 SORT Status DESC
 ```
+
