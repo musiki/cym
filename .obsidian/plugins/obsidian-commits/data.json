@@ -125,7 +125,7 @@
       "links": 2
     },
     "02-mat/jasvascript/js01-fundamentals.md": {
-      "size": 13698,
+      "size": 8664,
       "tags": 0,
       "links": 0
     },
@@ -1367,10 +1367,10 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 518,
+      "Refactor": 519,
       "Create": 456,
       "Link": 314,
-      "Expand": 44
+      "Expand": 45
     }
   },
   "dailyCommits": {
@@ -1393,7 +1393,7 @@
       "15": 64,
       "16": 35,
       "17": 3,
-      "18": 172,
+      "18": 174,
       "19": 7,
       "20": 64,
       "21": 249,
@@ -1407,7 +1407,7 @@
       "Tue": 486,
       "Wed": 305,
       "Thu": 94,
-      "Fri": 124,
+      "Fri": 126,
       "Sat": 0,
       "Sun": 288
     }
@@ -1458,7 +1458,8 @@
         "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1624,7 +1625,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

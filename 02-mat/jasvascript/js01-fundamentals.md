@@ -128,43 +128,6 @@ let miVariable = true;
     let resultadoA = textoA + textoB; //acordeRE
 ```
 
-## arrays
-
-Permite almacenar varios valores en una sola referencia.
-Cada posición del array (==índice==) tiene un número, que abarca desde el 0 hasta toda la longitud. A su vez, se pueden sacar y agregar elementos.
-```javascript
-var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
-
-var total = notas.length;
-
-console.log ("listar toda la escala :", notas, "\n" , 
-			'la cantidad de notas es :', total, "\n",
-			'la tercera nota es : ', notas[3], "\n", 
-			'la posición de la nota F es : ', notas.lastIndexOf('F'), "\n",
-			'las tres últimas notas som : ',notas.slice(total-3,total), "\n",
-			'la escala retrógrada es : ', notas.reverse(), '\n',
-
-			'la escala contiene un Bb : ', notas.includes('Bb'), "\n",
-		    'la escala contiene un G# : ', notas.includes('G#')
-)
-
-
-```
-
-```javascript
-var notas=["C","C#","D","E","F","G","A","B"]
-
-console.log ("listar toda la escala", notas)
-
-```
-
-Para llamar a cada valor del array: 
-```js
-notas[0], notas[1]
-```
-etc.
-
-==length== es un método de un array: su longitud
 
 ## control de flujos
 
@@ -558,4 +521,110 @@ Math.fround(3.123456789);   // 3.1234567165374756
 Math.trunc(3.75);           // 3
 Math.round(-3.75);          // -4
 Math.trunc(-3.75);          // -3
+```
+
+## arrays
+
+Permite almacenar varios valores en una sola referencia.
+Cada posición del array (==índice==) tiene un número, que abarca desde el 0 hasta toda la longitud. A su vez, se pueden sacar y agregar elementos.
+```javascript
+var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
+
+var total = notas.length;
+
+console.log ("listar toda la escala :", notas, "\n" , 
+			'la cantidad de notas es :', total, "\n",
+			'la tercera nota es : ', notas[3], "\n", 
+			'la posición de la nota F es : ', notas.lastIndexOf('F'), "\n",
+			'las tres últimas notas som : ',notas.slice(total-3,total), "\n",
+			'la escala retrógrada es : ', notas.reverse(), '\n',
+
+			'la escala contiene un Bb : ', notas.includes('Bb'), "\n",
+		    'la escala contiene un G# : ', notas.includes('G#')
+)
+
+
+```
+
+```javascript
+var notas=["C","C#","D","E","F","G","A","B"]
+
+console.log ("listar toda la escala", notas)
+
+```
+
+Para llamar a cada valor del array: 
+```js
+notas[0], notas[1]
+```
+etc.
+
+==length== es un método de un array: su longitud
+
+### Recorrido de un array
+```js
+const freq = [1,2,3,4,5];
+for (let i = 0; i < 5; i++) {
+console.log (freq[i]); 
+} 
+
+const freq = [1,2,3,4,5];
+for (let i = 0; i < freq.length; i++) { //para recorrer todos sus elementos pongo i < freq.length
+console.log (freq[i]);
+} 
+```
+
+### Agregar/quitar otro elemento
+```js
+freq.push(440); //agrega al final del array
+
+freq.unShift(3456434); //al comienzo, por ende 'empuja' el resto de los valores
+
+freq.shift(); //quita al primero
+
+freq.pop(); //quita el último
+
+freq.splice(1, 2); //funciona con dos parámetros, el primero es el índice donde se ubica el método a trabajar, y el segundo la cantidad de elementos a eliminar
+
+console.log( freq.join (", ")); //une los parámetros del array, y su parámtro es a través de qué elemento se joinea
+	console.log( freq.join (" * "));
+```
+
+```js
+const altura = ['pupi', 'ronnie'];
+const freq = ['mishi', 'garfield'];
+const sonido = altura.concat(freq);
+console.log(sonido);//concatena 2 arrays en 1
+
+const instrumentos = ['flauta', 'oboe'];
+const sonido2 = instrumentos.slice(1, 3);//sus parámetros son el inicio y el final
+//slice devuelve una copia de una parte del array dentro de un nuevo array, empezando por el inicio hasta el fin (no incluido)
+
+console.log( sonido2.indexOf('piano')) //0
+//obtiene el índice de un elemento del array; si el elemento no existe, devuelve -1
+
+console.log( sonido2.includes('oboe')) //true
+//valor booleano respecto si existe o no ese elemento en el array
+
+sonido2.reverse() //cambia el array original e invierte su orden (no es copia!)
+console.log(sonido2)
+```
+
+### Array de objetos
+
+Los array pueden usarse para almacenar objetos personalizados. Podemos asignar objetos literales o previamente instanciados en la declaración del array o agregar nuevos objetos usando el método push y el constructor.
+
+```js
+const sonido1 = { freq: 440, dinamica: "pp", instrumento: "flauta" }
+const array = [sonido1, { freq: 880, dinamica: "f", instrumento: "oboe" }];
+
+array.push({ freq: 1320, dinamica: "p", instrumento: "piano", estado { descripcion: "disponible" }});
+```
+
+### For... of
+Permite recorrer un array ejecutando un bloque de código por cada elemento del objeto.
+```js
+for (const sonido of array){//por cada objeto del array
+console.log(sonido); //palabra lo mas relacionado posible
+}
 ```
