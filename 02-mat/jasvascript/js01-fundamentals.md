@@ -131,6 +131,7 @@ let miVariable = true;
 ## arrays
 
 Permite almacenar varios valores en una sola referencia.
+Cada posición del array (==índice==) tiene un número, que abarca desde el 0 hasta toda la longitud. A su vez, se pueden sacar y agregar elementos.
 ```javascript
 var notas=["C","C#","D","D#", "E","F","G","G#","A","A#","B"]
 
@@ -163,6 +164,7 @@ notas[0], notas[1]
 ```
 etc.
 
+==length== es un método de un array: su longitud
 
 ## control de flujos
 
@@ -230,7 +232,26 @@ for(desde; hasta; actualización) {
 for (let i = 0; i < 10; i++) {
     alert(i);
 }
+//Ejecuta el bucle y da el resultado y va actualizando
+//1 = 0
+//luego,
+//1 = 1
+//luego... 
+//1 = 2
 ```
+
+Para que bajo cierta condición, el ciclo se interrumpa como si hubiese finalizado se utiliza la sentencia **break**
+```js
+
+for (let i=0; i <= 10; i++) {
+if(i ==5){
+break;
+}
+
+alert (i);
+}```
+
+Por el contrario, la sentencia **continue**, pero en vez de interrumpir, la saltea y continúa
 
 ### ciclos condicionales
 Repiten un bloque de código mientras la condición evaluada es verdadera. Estructuras **while** y **do...while**.
@@ -307,6 +328,9 @@ El valor que toman estos parámetros se definen en el **llamado**.
 conParametros("generative", "art"); // → “generative art”
 ```
 
+### return
+Retorna un valor que se puede guardar en una variable. Por ej el prompt devuelve algo y solemos guardarlo en una variable. En cambio, el console.log, no. La sentencia **return** finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la función.
+
 ### console.log() 
 La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.
 
@@ -339,6 +363,7 @@ console.log( suma(15,20) )
 console.log( resta(20,5) )
 ```
 
+> [!info] No puedo ejecutar una función sin antes declararla (tipo flecha/arrow function o anónima), pero sí en la forma clásica, ya que el programa ubica a todas las funciones con la palabra reservada '**function**' y las coloca por encima de todo.
 ## scope
 Zona del programa en la cual se define, el contexto al que pertenece la misma dentro de un algoritmo, restringiendo su uso y alcance. Puede ser **global** o **local**.
 ```js
@@ -377,9 +402,24 @@ sonido1["instrumento"] = "piano"
 //otra forma
 sonido1.freq = 880
 ```
-
+Para crear un objeto adentro de otro:
+```js
+const sonido1 = {
+	freq: 440, //los VALORES en cada ATRIBUTO puede ser string, booleano, numérico, etc.
+	dinamica: "pp", 
+	instrumento: "flauta",
+	efecto: { //creo otro objeto dentro de AUTO con sus propios atributos
+		reverb: 20,
+		delay: 150,
+	},
+};
+```
+Y para acceder a sus atributos, también separados con puntos:
+```js
+console.log(sonido1.efecto.delay);
+```
 ### constructores
-Es una función que usamos para crear un nuevo objeto cada vez que sea necesario. Con esta “función constructora” podemos inicializar las propiedades del objeto al momento de ser instanciado con new.
+Es una función que usamos para crear un nuevo objeto cada vez que sea necesario. Con esta “función constructora” podemos inicializar las propiedades del objeto al momento de ser **instanciado** con new.
 
 ```js
 function Sonido(freq, dinamica, timbre) {
@@ -388,12 +428,13 @@ function Sonido(freq, dinamica, timbre) {
     this.instrumento  = instrumento;
 }
 
-const sonido1 = new Sonido(440, "forte", "violoncello");
-const sonido2 = new Sonido(880, "piano", "violin");
+const sonido1 = new Sonido(440, "forte", "violoncello"); //aquí, sonido1 es una instancia del objeto Sonido
+const sonido2 = new Sonido(880, "piano", "violin"); //aquí, sonido2 es otra instancia del objeto Sonido
 ```
+> [!warning] ¡¡NO con las ARROW FUNCTIONS porque NO tiene el contexto de this!!
 
 #### this
-Refiere al elemento actual en el que se está escribiendo el código. Cuando se emplea un función constructora para crear un objeto (con la palabra clave new), this está enlazado al nuevo objeto instanciado.
+Refiere al elemento actual en el que se está escribiendo el código. Cuando se emplea un función constructora para crear un objeto (con la palabra clave new), **this** está enlazado al nuevo objeto instanciado.
 
 ### métodos
 (de los objetos) también son técnicamente funciones, sólo que se limitan a poder ser ejecutados solo desde el mismo objeto.
@@ -447,7 +488,7 @@ for (const propiedad in sonido1) {
 
 ### clases
 
-Son una equivalencia al empleo de función constructora y permite definir distintos tipos de métodos.
+Son una equivalencia al empleo de función constructora y permite definir distintos tipos de métodos. 
 
 ```js
 class Sonido {
@@ -456,12 +497,12 @@ class Sonido {
 	    this.dinamica = dinamica;
 	    this.instrumento  = instrumento;
 	}
-	    console() {
+	    escribir() { //es un método de la función y puede tener su return
 		    console.log("la frecuencia es " + this.freq)
 		}
 }
 
-const sonido1 = new Sonido(440, "forte", "violoncello");
+const sonido1 = new Sonido(440, "forte", "violoncello");// y aquí instanciamos
 ```
 
 ## objeto Math
