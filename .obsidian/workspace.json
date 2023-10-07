@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -159,9 +159,17 @@
               "type": "smart-connections-view",
               "state": {}
             }
+          },
+          {
+            "id": "e613445849e97392",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",

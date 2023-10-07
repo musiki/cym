@@ -983,3 +983,129 @@ export const sonidos = [];
 import {sonidos} from "./funciones.js"
 ```
 > [!danger] Al pasar funciones a otros archivos, pueden surgir problemas de *Scope*. Para ello, podemos pasar por parámetro las variables a las funciones (darle contexto).
+
+## Eventos
+Interacción del usuario dentro de una web, y generalmente eso define un comportamiento en la página cuando se produce dicha interacción. JavaScript permite asignar una función a cada uno de los eventos que reciben el nombre de *event handlers*
+
+### EventListener
+Permite 'escuchar' cuando sucede x evento y responder con x reacción en js
+
+#### addEventListener()
+Recibe 2 parámetros: el nombre del evento y la función de respuesta
+```js
+ let boton = document.getElementById("btnPrincipal")
+
+      boton.addEventListener("click", respuestaClick)
+
+      function respuestaClick(){
+        console.log("Respuesta evento");
+      }
+```
+
+### NODO
+Empleando una propiedad del nodo con el nombre del evento y el prefijo on.
+```js
+let boton = document.getElementById("btnPrincipal")
+
+      boton.onclick = () =>{console.log("Respuesta 2")}
+```
+
+### Sintaxis html
+(NO recomendada) Incorporada la función en el html
+```html
+ <input type="button" value="CLICK2" onclick="alert('Respuesta 3');" />.
+ ```
+ 
+### Tipos de eventos
+
+#### Mouse
+##### mousedown/up
+Oprime o suelta el botón del mouse sobre un elemento
+
+##### mouseover/mouseout
+El puntero del mouse pasa/sale del elemento
+
+##### mousemove
+El movimiento del mouse sobre el elemento activa el evento
+
+##### click
+Se activa después de mousedown/up sobre un elemento válido
+```html
+<button id="btnMain">CLICK</button>
+```
+```js
+let boton = document.getElementById("btnMain")
+
+boton.onclick = () => {console.log("Click")}
+
+boton.onmousemove = () => {console.log("Move")}
+```
+### Teclado
+
+##### keydown
+Cuando se presiona una tecla
+
+##### keyup
+Cuando se suelta una tecla
+
+```html
+<input id = "instrumento" type="text">
+<input id = "freq"   type="number">
+```
+```js
+let input1 = document.getElementById("instrumento");
+let input2 = document.getElementById("freq");
+
+input1.onkeyup = () ⇒ {console.log("keyUp")};
+input2.onkeydown = () ⇒ {console.log("keyDown")};
+```
+### Change
+Se activa cuando se detecta un cambio en el valor del elemento (por ejemplo, mientras se escribe en un input de tipo texto no hay evento change, pero cuando se pasa a otra sección de la aplicación entonces sí ocurre)
+```html
+<input id = "instrumento" type="text">
+<input id = "freq"   type="number">
+```
+```js
+let input1 = document.getElementById("instrumento");
+let input2 = document.getElementById("freq");
+
+input1.onchange = () => {console.log("valor1")};
+input2.onchange = () => {console.log("valor2")};
+```
+### Input
+Se imprime en este caso mientras se va escribiendo
+```html
+<input id = "instrumento" type="text">
+```
+```js
+let input1  = document.getElementById("instrumento")
+
+input1.addEventListener(‘input’, () => {
+     console.log(input1.value)
+})
+```
+### Focus
+```js
+boton3.addEventListener('focus', () =>{
+console.log('focus en el elemento');
+})
+```
+### Submit
+Se activa cuando el formulario es enviado
+```html
+<form id="formulario">
+      <input type="text">
+      <input type="number">
+      <input type="submit" value="Enviar">
+ </form>
+```
+```js
+let miFormulario = document.getElementById("formulario");
+
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+    e.preventDefault();
+    console.log("Formulario Enviado");    
+}
+```
