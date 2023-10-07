@@ -469,6 +469,49 @@ const sonido1 = new Sonido(440, "forte", "violoncello");// y aquí instanciamos
 ```
 
 ## objeto Math
+Contenedor de herramientas y métodos para realizar operaciones matemáticas
+```js
+console.log('Math de E' + Math.E ) // 2.718281828459045
+//otra forma template string, `string ${codigo javascript}`
+console.log( `Math de PI con template string ${Math.PI} ` ) // 3.141592653589793
+```
+
+### Math.min() y Math.max()
+```js
+console.log( Math.max(55, 13, 0, -25, 93, 4) );//93
+console.log( Math.min(55, 13, 0, -25, 93, 4) );//-25
+//también existe Infinity o -Infinity
+```
+
+### Math.ceil(), Math.floor(), Math.round()
+```js
+console.log( Math.ceil(pi)) //4 el entero mayor o igual más próximo
+console.log( Math.floor(pi)) //3 el entero más cercano redondeado hacia abajo
+console.log( Math.round(pi)) //3 al entero más cercano
+```
+### Math.sqrt()
+Retorna la raíz cuadrada de un número
+```js
+Math.sqrt(9); //3
+```
+### Math.random()
+```js
+Math.random(); //número aleatorio
+console.log(Math.random() * 10); //entre 0 y 10
+console.log(Math.random() * 30 + 20); //entre 20 y 50
+```
+```js
+console.log(Math.round(Math.random() * 30 + 20)); //redondea el Math.random() de entre 20 y 50
+
+//o bien en una función
+const generadorNumero = () => {
+	return Math.round (Math.random() * 100*)
+}
+console.log(generadorNumero() );
+
+//o bien con toFixed
+console.log((Math.random() * 30 + 20).toFixed(2)); //con 2 decimales
+```
 ### constantes
 |Constante|Descripción|Valor|
 |---|---|---|
@@ -627,4 +670,165 @@ Permite recorrer un array ejecutando un bloque de código por cada elemento del 
 for (const sonido of array){//por cada objeto del array
 console.log(sonido); //palabra lo mas relacionado posible
 }
+```
+
+## Higher order functions
+Retorna una función o recibe una función por parámetro.
+```js
+function mayorQue(n) {
+    return (m) ⇒ m > n
+}
+
+let mayorQueDiez = mayorQue(10)
+
+console.log( mayorQueDiez(12) )  //  true
+console.log( mayorQueDiez(8) )  //  false
+//mayorQue(n) retorna una función que compara un valor contra n y retorna true o false (porque es el resultado de la comparación).
+```
+
+### Recibir funciones por parámetros
+
+```js
+function porCadaUno(arr, functionAEjecutar) { //fn=console.log()
+    for (const el of arr) {//va a recorrer todos los elementos del array
+        funcionAEejecutar(el); //console.log(1), la prox 2, luego 3, hasta 4
+    }
+}
+
+const numeros= [1,2,3,4];
+porCadaUno(numeros, console.log); //Podemos enviar funciones diferentes en distintos llamados y ejecutar distintas acciones sobre los elementos del array, todo con una misma función.
+
+let total = 0
+
+function acumular(num) {
+    total += num
+}
+
+porCadaUno(numeros, acumular)
+console.log(total) // 10
+```
+
+También en las arrow function
+```js
+const duplicado = []
+
+porCadaUno(numeros, (el)⇒ {
+    duplicado.push(el * 2)
+})
+
+console.log(duplicado) // [2, 4, 6, 8]
+```
+
+#### Métodos de búsqueda y transformación
+
+##### forEach()
+Recorre todos los elementos de un array, recibe una función anónima y ésta recibe cada elemento del array.
+```js
+const numeros = [1, 2, 3, 4, 5]
+
+numeros.forEach( (num)=> {
+	console.log(num+1); //a cada elemento le va a sumar 1 y lo imprime
+});
+```
+##### find()
+Recibe una función de comparación por parámetro (devuelve true o false y retorna el primer elemento que cumpla con esa condición)
+```js
+const sonidos = [
+	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'oboe', freq: 880},
+				]
+const resultado = sonidos.find((el) ⇒ el.instrumento == "flauta")
+const resultado2 = sonidos.find ((el) ⇒ el.instrumento == "piano")
+
+console.log(resultado) //{nombre: 'flauta', precio: 440}
+console.log(resultado2) //undefined
+```
+##### filter()
+Recibe una función de comparación por parámetro y retorna un nuevo array todos los elementos que cumplan esa condición (sino devuelve un array vacio)
+```js
+const sonidos = [
+	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'oboe', freq: 880},
+	{instrumento: 'vln', freq: 350},
+				]
+const resultado = sonidos.filter((el) ⇒ el.instrumento.includes == "vln") //includes es un método de un string
+const resultado2 = sonidos.filter((el) ⇒ el.freq == 440)
+
+
+console.log(resultado)
+console.log(resultado2)
+```
+##### some()
+Igual que find() pero retorna un true o false
+```js
+const sonidos = [
+	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'oboe', freq: 880},
+	{instrumento: 'vln', freq: 350},
+				]
+const respuesta = sonidos.some((el) ⇒ el.instrumento == "vln");
+console.log(respuesta); //retorna un true
+```
+##### map()
+Crea un nuevo array con todos los elementos del orifinal transformados según las operaciones de la función enviada por parámetro.
+```js
+const sonidos = [
+	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'oboe', freq: 880},
+	{instrumento: 'vln', freq: 350},
+				]
+
+const res = sonidos.map((el) ⇒ el.instrumento);
+console.log(instrumento); //['flauta', 'oboe', 'vln']
+```
+
+```js
+const res = sonidos.map((el) ⇒ {
+	if (el.freq>600){
+		return {
+			 instrument: el.instrumento,
+			 altura: el.freq * 1.50,
+		 };
+	} else {
+		return {
+			instrumnt: el.instrumento,
+			altura: el.freq,
+		};
+	}
+console.log(res); //imprime y modifica a quienes cumplen la condición en un nuevo array
+```
+##### reduce()
+Nos permite obtener un único valor tras iterar sobre el array (resume al array a un único valor de retorno). Recibe 2 parámetros:
+1) la función anónima que recibe un parámetro que funciona como *acumulador* y el *elemento del array* que iteramos.
+2) el valor inicial del acumulador
+```js
+const numeros = [1, 2, 3, 4, 5, 6];
+const total = numeros.reduce(
+	(acumulador, elemento) => acumulador + elemento,
+	0
+);
+
+console.log(total); //21
+```
+##### sort()
+Nos permite reordenar un array según un criterio que definamos. Recibe una función de comparación por parámetro que a la vez recibe dos elementos del array. La función retorna un valor numérico (1, -2, 0), que indica que elemento se posiciona antes o después (modifica el array original)
+```js
+const numeros = [1, 2, 3, 4, 5, 6];
+numeros.sort((a, b) => a - b); //de menor a mayor
+numeros.sort((a, b) => b - a); //de mayor a menor
+```
+- Si `compareFunction(a, b)` es menor que 0, se sitúa `a` en un indice menor que `b`. Es decir, `a` viene primero.
+-  Si `compareFunction(a, b)` retorna 0, se deja `a` y `b` sin cambios entre ellos, pero ordenados con respecto a todos los elementos diferentes.
+-  Si `compareFunction(a, b)` es mayor que 0, se sitúa `b` en un indice menor que `a`.*
+
+Lo mismo pero con atributos puntuales de un objeto:
+```js
+const numeros = [
+{ tipo: "par", numero: 20 },
+{ tipo: "par", numero: 24 },
+{ tipo: "par", numero: 2500 },
+{ tipo: "par", numero: 2 },
+];
+numeros.sort((a, b) => a.numero - b.numero);// [2, 20, 24, 2500]
+numeros.sort((a, b) => b.numero - a.numero)); // [2500, 24, 20, 2]
 ```
