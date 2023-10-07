@@ -661,7 +661,7 @@
     },
     "04-out/obras/Boid Simulation.md": {
       "size": 149,
-      "tags": 4,
+      "tags": 2,
       "links": 0
     },
     "04-out/procedimientos/extrañamiento.md": {
@@ -986,7 +986,7 @@
     },
     "04-out/personas/Mario Bunge.md": {
       "size": 164,
-      "tags": 5,
+      "tags": 2,
       "links": 0
     },
     "04-out/personas/Enno Poppe.md": {
@@ -1084,11 +1084,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-out/topoi/README 1.md": {
-      "size": 638,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/obs/tpl/t-evento.md": {
       "size": 0,
       "tags": 0,
@@ -1119,11 +1114,6 @@
       "tags": 1,
       "links": 0
     },
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
-      "size": 970,
-      "tags": 0,
-      "links": 1
-    },
     "02-mat/coloquial/En conversación con Susanne Kennedy.md": {
       "size": 43855,
       "tags": 4,
@@ -1133,11 +1123,6 @@
       "size": 15832,
       "tags": 2,
       "links": 0
-    },
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md": {
-      "size": 1295,
-      "tags": 0,
-      "links": 2
     },
     "00-in/Patrones de Turing.md": {
       "size": 2304,
@@ -1363,13 +1348,28 @@
       "size": 809,
       "tags": 1,
       "links": 0
+    },
+    "02-mat/obs/tpl/t-person.md": {
+      "size": 101,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/whoosh.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-obra.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 401,
-      "Create": 295,
-      "Link": 228,
+      "Refactor": 412,
+      "Create": 300,
+      "Link": 230,
       "Expand": 31
     }
   },
@@ -1389,13 +1389,13 @@
       "11": 103,
       "12": 52,
       "13": 32,
-      "14": 15,
+      "14": 16,
       "15": 16,
       "16": 31,
       "17": 29,
       "18": 139,
       "19": 16,
-      "20": 22,
+      "20": 39,
       "21": 62,
       "22": 46,
       "23": 41
@@ -1409,7 +1409,7 @@
       "Thu": 109,
       "Fri": 99,
       "Sat": 0,
-      "Sun": 47
+      "Sun": 65
     }
   },
   "recentCommits": {
@@ -1448,6 +1448,11 @@
         "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
+        "<a class=\"internal-link\" href=\"t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
@@ -1493,14 +1498,12 @@
         "<a class=\"internal-link\" href=\"00-in/Craig Reynols.md\"> Craig Reynols </a>",
         "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>",
-        "<a class=\"internal-link\" href=\"00-in/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
-        "<a class=\"internal-link\" href=\"00-in/obras.md\"> obras </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>"
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/personas/Kay Churcher.md\"> Kay Churcher </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
         "<a class=\"internal-link\" href=\"02-mat/tonejs/01-tone.js.md\"> 01-tone.js </a>",
         "<a class=\"internal-link\" href=\"02-mat/01-tone.js.md\"> 01-tone.js </a>",
         "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
@@ -1548,12 +1551,11 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
         "<a class=\"internal-link\" href=\"00-in/PWA.md\"> PWA </a>",
-        "<a class=\"internal-link\" href=\"00-in/Progressive Web App.md\"> Progressive Web App </a>",
-        "<a class=\"internal-link\" href=\"00-in/PWA Progressive Web App.md\"> PWA Progressive Web App </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-lorem.md\"> t-lorem </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym-05-principios generativos.md\"> c-cym-05-principios generativos </a>"
+        "<a class=\"internal-link\" href=\"00-in/Progressive Web App.md\"> Progressive Web App </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
@@ -1602,9 +1604,7 @@
         "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1612,6 +1612,11 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"04-out/personas/Kay Churcher.md\"> Kay Churcher </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md\"> tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md </a>",
         "<a class=\"internal-link\" href=\"04-out/procedimientos/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
@@ -1657,12 +1662,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
@@ -1726,7 +1726,10 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",

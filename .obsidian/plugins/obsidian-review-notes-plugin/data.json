@@ -1685,8 +1685,8 @@
       "filename": "Untitled 1"
     },
     {
-      "path": "00-in/Untitled.md",
-      "filename": "Untitled"
+      "path": "04-out/personas/Kay Churcher.md",
+      "filename": "Kay Churcher"
     },
     {
       "path": "01-proj/23/Petroccelli/Guitarrax.md",
@@ -2187,6 +2187,22 @@
     {
       "path": "Untitled.loom",
       "filename": "Untitled"
+    },
+    {
+      "path": "04-out/personas/t-persona.md",
+      "filename": "t-persona"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-person.md",
+      "filename": "t-person"
+    },
+    {
+      "path": "00-in/whoosh.md",
+      "filename": "whoosh"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-obra.md",
+      "filename": "t-obra"
     }
   ]
 }
