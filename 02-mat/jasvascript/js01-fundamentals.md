@@ -944,3 +944,42 @@ También aplica a pseudo-clases
 let radioChecked = document.querySelector(".radio:checked")
 ```
 > [!info] Ej. Suponiendo que tengo elementos html radio button y quiero seleccionar sólo aquel que esté en checked, ésto lo puedo lograr muy fácil con querySelector y la pseudo-clase :checked de CSS.
+
+
+
+## Utilizar funciones de otro archivo js
+```js
+//archivo A
+export default sonar; //sólo hay un default
+
+//archivo B
+import sonar from './funciones.js'
+```
+
+En el archivo html
+```html
+<script src = "js/index.js" type= "module"> </script>
+```
+
+```js
+//archivo A
+export const audio = () ⇒ {
+	console.log ("El audioCtx está habilitado")
+	};
+//archivo B
+import {sonar, audio} from "./funciones.js"
+```
+
+## Utilizar variables de otro archivo js
+En el archivo html
+```html
+<script src = "js/index.js" type= "module"> </script>
+```
+
+```js
+//archivo A
+export const sonidos = [];
+//archivo B
+import {sonidos} from "./funciones.js"
+```
+> [!danger] Al pasar funciones a otros archivos, pueden surgir problemas de *Scope*. Para ello, podemos pasar por parámetro las variables a las funciones (darle contexto).
