@@ -734,7 +734,7 @@ numeros.forEach( (num)=> {
 Recibe una función de comparación por parámetro (devuelve true o false y retorna el primer elemento que cumpla con esa condición)
 ```js
 const sonidos = [
-	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'flauta', freq: 440},
 	{instrumento: 'oboe', freq: 880},
 				]
 const resultado = sonidos.find((el) ⇒ el.instrumento == "flauta")
@@ -747,7 +747,7 @@ console.log(resultado2) //undefined
 Recibe una función de comparación por parámetro y retorna un nuevo array todos los elementos que cumplan esa condición (sino devuelve un array vacio)
 ```js
 const sonidos = [
-	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'flauta', freq: 440},
 	{instrumento: 'oboe', freq: 880},
 	{instrumento: 'vln', freq: 350},
 				]
@@ -762,7 +762,7 @@ console.log(resultado2)
 Igual que find() pero retorna un true o false
 ```js
 const sonidos = [
-	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'flauta', freq: 440},
 	{instrumento: 'oboe', freq: 880},
 	{instrumento: 'vln', freq: 350},
 				]
@@ -773,7 +773,7 @@ console.log(respuesta); //retorna un true
 Crea un nuevo array con todos los elementos del orifinal transformados según las operaciones de la función enviada por parámetro.
 ```js
 const sonidos = [
-	{instrumnto: 'flauta', freq: 440},
+	{instrumento: 'flauta', freq: 440},
 	{instrumento: 'oboe', freq: 880},
 	{instrumento: 'vln', freq: 350},
 				]
@@ -832,3 +832,115 @@ const numeros = [
 numeros.sort((a, b) => a.numero - b.numero);// [2, 20, 24, 2500]
 numeros.sort((a, b) => b.numero - a.numero)); // [2500, 24, 20, 2]
 ```
+
+## DOM (Document object model)
+Representación como un árbol de nodos dentro de js, sobre html y css. En el DOM, cada etiqueta html es un objeto llamadas *nodo* (nodo padre e hijo) de tipo *ELEMENTO*, que se divide generalmente en *Nodo elemento* (h1, h2, etc) y el *Nodo texto* (el texto particular de esa etiqueta).
+Se acceden a ellos en js mediante el objeto global `document`.
+```js
+document.body //nodo que representa a la etiqueta body del html
+```
+
+```js
+console.dir(document); //me muestra la estructura de nodos del html en la consola
+//nodo raíz del que derivan todos los demás del árbol
+```
+Puedo acceder mediante las etiquetas, las clases y el tipo
+```js
+console.dir(document.head);
+console.dir(document.body); //para acceder hay que colocar el script al final del <body> en el html
+```
+
+Para acceder a los nodos:
+```js
+console.log(document.getElementById('TITULO'));//por id, devuelve un solo valor
+
+console.log(document.getElementsByClassName('Titulos mayuscula')); //por class, devuelve un array
+
+console.log(document.getElementsByClassName('Titulos mayuscula')[0]); //por class y entre [] accedo al índice que quiera (devuelve un array justamente por ser clase y poder tener varias etiquetas)
+
+console.log(document.getElementsByTagName("h1")); //por nombre de etiqueta, devuelve también un array
+```
+
+### Modificar nodos
+
+#### innerText
+Modifica el texto del nodo
+
+#### innerHTML
+Edita el código html interno del elemento seleccionado
+
+#### className
+Accede al atributo class del nodo y define cuáles son sus clases
+
+### Agregar o quitar nodos
+Con createElement
+
+#### propiedad value
+Para obtener o modificar datos de un formulario HTML desde JS, podemos hacerlo mediante el DOM. Accediendo a la propiedad value de cada input seleccionado.
+
+#### append
+Añade dentro de un elemento padre (un div, un párrafo, etc) otro nuevo elemento o una cadena de texto
+- append agrega al principio
+- appendChild agrega al final
+
+### Crear opciones desde un array
+```js
+//Obtenemos el nodo donde vamos a agregar los nuevos elementos
+let sonidos = document.getElementById("instrumentos");
+
+//Array con la información a agregar
+let instrumentos = ["piano","vln", "flauta", "oboe","clBb"];
+
+//Iteramos el array con for...of
+for (const instrumento of instrumentos) {
+    //Creamos un nodo <li> y agregamos al padre (sonidos) en cada ciclo
+    let li = document.createElement("li");
+    li.innerHTML = instrumento
+    sonidos.appendChild(li);
+}
+```
+
+## Template strings
+Concatena strings con código js
+```js
+let sonidos = {instrumento: 'flauta', freq: 440},		
+
+let concatenado = "instrument : " + sonidos.instrumento +" - Frecuencia: " + sonidos.freq;
+
+let plantilla   = `instrument: ${sonidos.instrumento} - Frecuancia ${sonidos.freq}`;
+
+//El valor es idéntico pero la construcción de la plantilla es màs sencilla
+console.log(concatenado);
+console.log(plantilla);
+```
+Ejemplo con plantilla e innerHTML
+```js
+let sonidos = {instrumento: 'flauta', freq: 440},
+
+let contenedor = document.createElement("div");
+
+//Definimos el innerHTML del elemento con una plantilla de texto
+contenedor.innerHTML = `<h3> Instrument: ${sonidos.instrumento}</h3>
+                        <p>  Frecuencia: ${sonidos.freq}</p>
+                        `;
+                        
+//Agregamos el contenedor creado al body
+document.body.appendChild(contenedor);
+```
+
+## QuerySelector
+Selecciona nodos en la misma sintaxis de css
+
+```js
+const padre = document.querySelector('#divpadre');//devuelve 1 solo
+```
+
+```js
+const padre = document.querySelectorAll('.divpadre');
+console.log(padre); //imprime TODOS los valores del array de la clase divpadre
+```
+También aplica a pseudo-clases
+```js
+let radioChecked = document.querySelector(".radio:checked")
+```
+> [!info] Ej. Suponiendo que tengo elementos html radio button y quiero seleccionar sólo aquel que esté en checked, ésto lo puedo lograr muy fácil con querySelector y la pseudo-clase :checked de CSS.
