@@ -139,7 +139,15 @@
     "musical": 131,
     "performance": 132,
     "entrevistas": 133,
-    "teatroexpandido": 134
+    "teatroexpandido": 134,
+    "generativeliterature": 135,
+    "machine": 136,
+    "ia": 137,
+    "patrones": 138,
+    "artículos": 139,
+    "eventos": 140,
+    "exhibiciones": 141,
+    "históricas": 142
   },
   "_version": 2
 }

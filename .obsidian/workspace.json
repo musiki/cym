@@ -11,8 +11,13 @@
             "id": "a4c694ae9abf0c56",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           },
           {
@@ -29,7 +34,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -123,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/15/drocchi/proyectual bassino.md"
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md"
               }
             }
           },
@@ -141,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/15/drocchi/proyectual bassino.md",
+                "file": "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,9 +208,17 @@
               "type": "review-notes",
               "state": {}
             }
+          },
+          {
+            "id": "caa09da399ed0ce6",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -214,6 +226,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "digitalgarden:Digital Garden Publication Center": false,
+      "wikipedia-search:Open Article": false,
+      "templater-obsidian:Templater": false,
       "obsidian-review-notes-plugin:View Recent Notes": false,
       "obsidian-read-it-later:ReadItLater: Save clipboard": false,
       "translate:Open translation view": false,
@@ -238,8 +253,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "a4c694ae9abf0c56",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "00-in/proyectual.md",
     "conflict-files-obsidian-git.md",
     "01-proj/15/drocchi/proyectual bassino.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
@@ -263,10 +283,6 @@
     "02-mat/obs/img/image",
     "00-in/meta-aprendizaje.md",
     "01-proj/23/bassino/proyectual bassino",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "00-in/proyectual.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/proyectual",
     "01-proj/16/juan/Instalación.md",
@@ -279,7 +295,6 @@
     "01-proj/23/shifres/shifres POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/tp/tp01-topoi.md",
     "01-proj/23/Zaracho",
     "01-proj/22/mico",
     "01-proj/22/dure",
