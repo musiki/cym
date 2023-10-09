@@ -212,7 +212,8 @@ break;
 }
 
 alert (i);
-}```
+}
+```
 
 Por el contrario, la sentencia **continue**, pero en vez de interrumpir, la saltea y continúa
 

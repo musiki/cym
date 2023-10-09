@@ -153,18 +153,18 @@
             }
           },
           {
-            "id": "6850e1bbb98caf24",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
             "id": "e613445849e97392",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "f7915fb8fdd69c19",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
               "state": {}
             }
           }
@@ -207,9 +207,32 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym00-presentación.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+    "00-in/bib MOC.md",
+    "00-in/b-Azar y necesidad.md",
+    "00-in/Agregación limitada por difusión.md",
+    "00-in/coloquial MOC.md",
+    "00-in/cym MOC.md",
+    "00-in/topoi MOC.md",
+    "01-proj/22/synth-flex.md",
+    "01-proj/22/synth-grid.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/html.md",
+    "02-mat/css.md",
+    "02-mat/que es git.md",
     "02-mat/tonejs/01-tone.js.md",
+    "02-mat/partituras/ave maria palestrina.md",
+    "02-mat/partituras/bianco dolce signo.md",
+    "02-mat/partituras/canciones.md",
+    "02-mat/partituras/unendilech freude.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym15-interactividad.md",
+    "00-in/códigos MOC.md",
     "02-mat/tonejs",
     "02-mat/obs/img/image/home-1696446053132.jpeg",
     "02-mat/obs/img/image/home-1696446053131.jpeg",
@@ -221,30 +244,7 @@
     "02-mat/obs/img/image/home-1696446053121.jpeg",
     "02-mat/obs/img/image/home-1696446053120.jpeg",
     "02-mat/obs/img/image/home-1696446053119.jpeg",
-    "00-in/coloquial MOC.md",
-    "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectos MOC.md",
-    "00-in/personas MOC.md",
-    "00-in/obras MOC.md",
-    "00-in/eventos MOC.md",
-    "00-in/espacios MOC.md",
-    "00-in/códigos MOC.md",
-    "00-in/cym MOC.md",
-    "00-in/bib MOC.md",
     "00-moc",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
-    "01-proj/tp/tp01-topoi.md",
-    "01-proj/tp/prueba tutorial.md",
-    "00-in/cym MOC.md",
-    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "04-out/bibliografía/Boris Groys_Arte y flujo.md",
-    "04-out/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
-    "04-out/bibliografía/John D Barrow_El libro de la nada.md",
-    "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "Sin título 1.canvas",
