@@ -165,7 +165,7 @@
       "links": 0
     },
     "02-mat/jasvascript/js01-fundamentals.md": {
-      "size": 14660,
+      "size": 41852,
       "tags": 0,
       "links": 0
     },
@@ -1150,7 +1150,7 @@
       "links": 0
     },
     "03-cla/c-cym08-github pages+hydra.md": {
-      "size": 4279,
+      "size": 5032,
       "tags": 6,
       "links": 1
     },
@@ -1393,14 +1393,39 @@
       "size": 0,
       "tags": 0,
       "links": 1
+    },
+    "04-out/topoi/Arte participativo.md": {
+      "size": 1017,
+      "tags": 1,
+      "links": 0
+    },
+    "04-out/topoi/Augmented Cognition.md": {
+      "size": 153,
+      "tags": 1,
+      "links": 0
+    },
+    "04-out/topoi/Espacio.md": {
+      "size": 168,
+      "tags": 5,
+      "links": 0
+    },
+    "04-out/topoi/Filosofía 21.md": {
+      "size": 207,
+      "tags": 3,
+      "links": 0
+    },
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
+      "size": 0,
+      "tags": 5,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 543,
-      "Create": 582,
-      "Link": 411,
-      "Expand": 20
+      "Refactor": 545,
+      "Create": 587,
+      "Link": 417,
+      "Expand": 22
     }
   },
   "dailyCommits": {
@@ -1426,7 +1451,7 @@
       "18": 252,
       "19": 3,
       "20": 56,
-      "21": 801,
+      "21": 816,
       "22": 20,
       "23": 9
     }
@@ -1439,7 +1464,7 @@
       "Thu": 269,
       "Fri": 15,
       "Sat": 0,
-      "Sun": 286
+      "Sun": 301
     }
   },
   "recentCommits": {
@@ -1464,9 +1489,16 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Arte participativo.md\"> Arte participativo </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
         "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.pptx.md\"> Presentación para coloquio de Música visual.pptx </a>",
@@ -1512,14 +1544,11 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/La conciencia o el destino a morir.md\"> La conciencia o el destino a morir </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentacion del coloquio de musica visusl.md\"> Presentacion del coloquio de musica visusl </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación para el  coloquio de música visual.md\"> Presentación para el  coloquio de música visual </a>",
@@ -1568,11 +1597,15 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Arte participativo.md\"> Arte participativo </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Espacio.md\"> Espacio </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
         "<a class=\"internal-link\" href=\"02-mat/tonejs/01-tone.js.md\"> 01-tone.js </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
@@ -1617,13 +1650,7 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Craig Reynolds.md\"> Craig Reynolds </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"00-in/proyectual bassino.md\"> proyectual bassino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/cym exoinstrumento.md\"> cym exoinstrumento </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi.md\"> t-topoi </a>"
       ],
       "Refactored": [],
       "Deleted": [
