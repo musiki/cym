@@ -13,3 +13,6 @@ mesas
 auriculares
 sillones
 luces
+plano
+
+![[proyectual CLOROLASER 1.pdf]]

@@ -197,7 +197,7 @@
             }
           },
           {
-            "id": "8e1b0f037675dee4",
+            "id": "8bbb3595c0085006",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -242,6 +242,8 @@
   },
   "active": "8dac97e0dda0006d",
   "lastOpenFiles": [
+    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
+    "02-mat/obs/img/proyectual CLOROLASER.pdf",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
@@ -272,7 +274,6 @@
     "04-out/topoi/Humanos.md",
     "04-out/topoi/Historia de la tecnología.md",
     "04-out/topoi/Fragile Territories.md",
-    "04-out/topoi/Forma Musical.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
@@ -290,7 +291,6 @@
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
