@@ -1111,7 +1111,7 @@ function validarFormulario(e){
 }
 ```
 
-## Asincronía y promesas
+## Asincronía
 
 ### setTimeout
 Una función de callback y un valor numérico que representa milisegundos

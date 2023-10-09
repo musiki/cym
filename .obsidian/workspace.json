@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02-mat/jasvascript/js01-fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "02-mat/jasvascript/js01-fundamentals.md"
               }
             }
           },
@@ -204,10 +205,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "02-mat/jasvascript/js01-fundamentals.md",
+    "00-in/coloquial MOC.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/Ingeniería invertida.md",
+    "00-in/INGENIERIA INVERTIDA.md",
+    "00-in/hd-hydra.md",
+    "00-in/HSHSH.md",
+    "00-in/Sun Thinking.md",
+    "00-in/Sin título.md",
     "conflict-files-obsidian-git.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
@@ -230,26 +240,17 @@
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/Coloquio",
     "00-in/bassino.md",
-    "00-in/Sin título.md",
     "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/Ingeniería invertida.md",
-    "00-in/INGENIERIA INVERTIDA.md",
-    "00-in/HSHSH.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
     "00-in/bib MOC.md",
     "00-in/b-Azar y necesidad.md",
     "00-in/Agregación limitada por difusión.md",
-    "00-in/coloquial MOC.md",
     "00-in/cym MOC.md",
     "00-in/topoi MOC.md",
     "01-proj/22/synth-flex.md",
     "01-proj/22/synth-grid.md",
-    "02-mat/html.md",
-    "02-mat/css.md",
-    "02-mat/que es git.md",
-    "02-mat/tonejs/01-tone.js.md",
     "02-mat/tonejs",
     "00-moc",
     "Sin título 1.canvas",
