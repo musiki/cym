@@ -621,7 +621,7 @@
     },
     "02-mat/obs/tpl/t-cym-class.md": {
       "size": 176,
-      "tags": 6,
+      "tags": 2,
       "links": 0
     },
     "02-mat/obs/tpl/t-cym-init-slide.md": {
@@ -886,7 +886,7 @@
     },
     "04-out/topoi/Intervencion del espacio público.md": {
       "size": 8227,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/topoi/Introducción a la psicoacústica.md": {
@@ -916,12 +916,12 @@
     },
     "04-out/topoi/Música Visual.md": {
       "size": 13386,
-      "tags": 0,
+      "tags": 3,
       "links": 4
     },
     "04-out/topoi/Música y Política.md": {
-      "size": 6665,
-      "tags": 0,
+      "size": 10044,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Racionalizacion_(videojuegos).md": {
@@ -1289,11 +1289,6 @@
       "tags": 6,
       "links": 1
     },
-    "01-proj/23/beltrame/Prueba Proyectual.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Hans Haake.md": {
       "size": 0,
       "tags": 0,
@@ -1316,12 +1311,12 @@
     },
     "01-proj/23/Petroccelli/Guitarrax.md": {
       "size": 378,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
       "size": 1707,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/23/Petroccelli/petroccelli POC.md": {
@@ -1331,16 +1326,21 @@
     },
     "03-cla/c-cym15-interactividad.md": {
       "size": 416,
+      "tags": 3,
+      "links": 0
+    },
+    "01-proj/23/beltrame/\"Una mirada profunda\".md": {
+      "size": 0,
       "tags": 0,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 347,
+      "Refactor": 349,
       "Create": 429,
-      "Link": 326,
-      "Expand": 27
+      "Link": 332,
+      "Expand": 28
     }
   },
   "dailyCommits": {
@@ -1359,9 +1359,9 @@
       "11": 9,
       "12": 34,
       "13": 4,
-      "14": 31,
+      "14": 39,
       "15": 2,
-      "16": 273,
+      "16": 274,
       "17": 275,
       "18": 31,
       "19": 10,
@@ -1374,7 +1374,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 185,
-      "Tue": 348,
+      "Tue": 357,
       "Wed": 83,
       "Thu": 14,
       "Fri": 1,
@@ -1411,7 +1411,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
-        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1467,6 +1468,7 @@
         "<a class=\"internal-link\" href=\"00-in/El metaverso es un territorio disputado.md\"> El metaverso es un territorio disputado </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
@@ -1516,10 +1518,15 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md\"> eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
@@ -1564,13 +1571,7 @@
         "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
         "<a class=\"internal-link\" href=\"04-out/glosario/URI.md\"> URI </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Yuval Noah Harari.md\"> Yuval Noah Harari </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Generador de líneas.md\"> Generador de líneas </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/gutierrez/Trazos.md\"> Trazos </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Azar.md\"> Azar </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Gentics.md\"> Gentics </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Melodia.md\"> Melodia </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/lopez/Máquina de ritmos.md\"> Máquina de ritmos </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md\"> Poema Sinfónico para ∞ Metrónomos </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Topoi Forma Musical.md\"> Topoi Forma Musical </a>",
@@ -1699,7 +1700,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"@today.md\"> @today </a>",
