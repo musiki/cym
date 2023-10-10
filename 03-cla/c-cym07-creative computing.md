@@ -45,11 +45,6 @@ Exploración como punto de partida en lo cotidiano, no sólo en lo artístico - 
 ### sound C
 <iframe width="560" height="315" src="http://wurstcaptures.untergrund.net/music/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## cohesión audiovisual
-<iframe width="650" height="500" src="https://tonejs.github.io/examples/shiny" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="650" height="500" src="https://enchanting-zabaione-9abf89.netlify.app/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="650" height="500" src="https://shimmering-gumdrop-0fc816.netlify.app/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ---
 # Código
 
