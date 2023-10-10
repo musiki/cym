@@ -1412,14 +1412,14 @@
     "03-cla/c-cym09-visual.md": {
       "size": 0,
       "tags": 6,
-      "links": 0
+      "links": 2
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 521,
       "Create": 467,
-      "Link": 318,
+      "Link": 319,
       "Expand": 50
     }
   },
@@ -1440,7 +1440,7 @@
       "12": 27,
       "13": 29,
       "14": 28,
-      "15": 66,
+      "15": 67,
       "16": 36,
       "17": 3,
       "18": 174,
@@ -1454,7 +1454,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 490,
+      "Tue": 491,
       "Wed": 305,
       "Thu": 94,
       "Fri": 127,
@@ -1737,6 +1737,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
@@ -1786,8 +1787,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym06- cohesión audiovisual.md\"> c-cym06- cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym04-vida digital.md\"> c-cym04-vida digital </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
