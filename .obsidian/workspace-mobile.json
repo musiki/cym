@@ -14,13 +14,27 @@
               "type": "markdown",
               "state": {
                 "file": "04-out/bibliografía/Nick Montfort_The Future.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9a1b25ae169d7992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/Hans Haake.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +108,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "04-out/bibliografía/Nick Montfort_The Future.md",
+            "file": "00-in/Hans Haake.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +136,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "04-out/bibliografía/Nick Montfort_The Future.md"
+            "file": "00-in/Hans Haake.md"
           }
         }
       },
@@ -188,8 +202,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1521269d75f3da6d",
+  "active": "9a1b25ae169d7992",
   "lastOpenFiles": [
+    "04-out/bibliografía/Nick Montfort_The Future.md",
+    "00-in/Hans Haake.md",
     "04-out/personas/Enno Poppe.md",
     "04-out/topoi/Interfaces.md",
     "04-out/topoi/Vida artificial.md",
