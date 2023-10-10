@@ -4,30 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d1d20cd62a9b1728",
+        "id": "95d77bc94467e18d",
         "type": "tabs",
         "children": [
           {
-            "id": "a489029158f5674d",
+            "id": "27ae13d1da91d064",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-moc/personas MOC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "228650a137a6ea7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-moc/obras MOC.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym02-fundamentales de js.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -83,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 623.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -100,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-moc/personas MOC.md"
+                "file": "03-cla/c-cym02-fundamentales de js.md"
               }
             }
           },
@@ -118,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-moc/personas MOC.md",
+                "file": "03-cla/c-cym02-fundamentales de js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,23 +143,22 @@
             }
           },
           {
-            "id": "6e668fe71394056c",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
             "id": "a95becd0c9fd239c",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "b33bd2641b2fba83",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 7
+        ]
       },
       {
         "id": "67c7212f7255321a",
@@ -224,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5
+    "width": 403.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,36 +242,36 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "a489029158f5674d",
+  "active": "27ae13d1da91d064",
   "lastOpenFiles": [
-    "00-moc/obras MOC.md",
-    "02-mat/obs/tpl/t-obra.md",
-    "04-out/obras/Boid Simulation.md",
-    "00-in/whoosh.md",
-    "00-moc/personas MOC.md",
-    "04-out/personas/Kay Churcher.md",
-    "02-mat/obs/tpl/t-person.md",
-    "04-out/personas/t-persona.md",
-    "02-mat/obs/tpl/t-evento.md",
-    "00-moc/eventos MOC.md",
-    "00-moc/espacios MOC.md",
-    "00-moc/cym MOC.md",
-    "04-out/topoi/README 1.md",
-    "README.md",
-    "00-moc/coloquial MOC.md",
-    "02-mat/coloquial/En conversación con Susanne Kennedy.md",
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md",
-    "00-moc/códigos MOC.md",
-    "00-moc/bib MOC.md",
-    "00-moc/topoi MOC.md",
-    "02-mat/que es git.md",
-    "02-mat/html.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "03-cla/c-cym02-fundamentales de js.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym15-interactividad.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-github pages+hydra.md",
     "02-mat/css.md",
     "02-mat/cloud ides.md",
-    "02-mat/tonejs/01-tone.js.md",
-    "02-mat/tonejs",
-    "02-mat/rant.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+    "03-cla/c-cym-mindMap.md",
     "cym-metamap.canvas",
+    "home.md",
+    "conflict-files-obsidian-git.md",
+    "00-in/que hace atractivo al arte interactivo?.md",
+    "04-out/obras/Boid Simulation.md",
+    "00-moc/personas MOC.md",
+    "00-in/topoi MOC.md",
+    "00-in/teatro MOC.md",
+    "00-in/proyectos MOC.md",
+    "02-mat/tonejs",
     "Untitled.loom",
     "Sin título 1.canvas",
     "Sin título.canvas",

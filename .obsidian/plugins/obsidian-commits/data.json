@@ -125,7 +125,7 @@
       "links": 2
     },
     "02-mat/jasvascript/js01-fundamentals.md": {
-      "size": 14384,
+      "size": 28766,
       "tags": 0,
       "links": 0
     },
@@ -1289,61 +1289,6 @@
       "tags": 1,
       "links": 0
     },
-    "00-moc/códigos MOC.md": {
-      "size": 545,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/bib MOC.md": {
-      "size": 174,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/topoi MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 16
-    },
-    "00-moc/teatro MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/personas MOC.md": {
-      "size": 72,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/proyectos MOC.md": {
-      "size": 546,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/obras MOC.md": {
-      "size": 160,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/cym MOC.md": {
-      "size": 102,
-      "tags": 0,
-      "links": 5
-    },
-    "00-moc/eventos MOC.md": {
-      "size": 3110,
-      "tags": 1,
-      "links": 1
-    },
-    "00-moc/espacios MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/coloquial MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/tonejs/01-tone.js.md": {
       "size": 809,
       "tags": 1,
@@ -1363,20 +1308,100 @@
       "size": 0,
       "tags": 1,
       "links": 0
+    },
+    "00-in/bib MOC.md": {
+      "size": 202,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/coloquial MOC.md": {
+      "size": 400,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/cym MOC.md": {
+      "size": 310,
+      "tags": 0,
+      "links": 5
+    },
+    "00-in/códigos MOC.md": {
+      "size": 123,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/espacios MOC.md": {
+      "size": 189,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/eventos MOC.md": {
+      "size": 3262,
+      "tags": 1,
+      "links": 1
+    },
+    "00-in/obras MOC.md": {
+      "size": 847,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/personas MOC.md": {
+      "size": 176,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/proyectos MOC.md": {
+      "size": 125,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/teatro MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/topoi MOC.md": {
+      "size": 1882,
+      "tags": 0,
+      "links": 16
+    },
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
+      "size": 840,
+      "tags": 0,
+      "links": 1
+    },
+    "conflict-files-obsidian-git.md": {
+      "size": 840,
+      "tags": 0,
+      "links": 1
+    },
+    "00-in/que hace atractivo al arte interactivo?.md": {
+      "size": 31130,
+      "tags": 1,
+      "links": 0
+    },
+    "03-cla/c-cym-mindMap.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "03-cla/c-cym02-fundamentales de js.md": {
+      "size": 12296,
+      "tags": 3,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 412,
-      "Create": 300,
-      "Link": 230,
-      "Expand": 31
+      "Refactor": 425,
+      "Create": 316,
+      "Link": 238,
+      "Expand": 34
     }
   },
   "dailyCommits": {
     "/": {
-      "0": 38,
-      "1": 29,
+      "0": 40,
+      "1": 30,
       "2": 52,
       "3": 3,
       "4": 2,
@@ -1395,21 +1420,21 @@
       "17": 29,
       "18": 139,
       "19": 16,
-      "20": 39,
+      "20": 73,
       "21": 62,
       "22": 46,
-      "23": 41
+      "23": 44
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 7,
-      "Tue": 85,
-      "Wed": 608,
+      "Mon": 17,
+      "Tue": 88,
+      "Wed": 611,
       "Thu": 109,
       "Fri": 99,
       "Sat": 0,
-      "Sun": 65
+      "Sun": 89
     }
   },
   "recentCommits": {
@@ -1445,9 +1470,28 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>"
+        "<a class=\"internal-link\" href=\"02-mat/que es git.md\"> que es git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
+        "<a class=\"internal-link\" href=\"00-in/que hace atractivo al arte interactivo?.md\"> que hace atractivo al arte interactivo? </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-fundamentales de js.md\"> c-cym02-fundamentales de js </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/c-cym-mindMap.md\"> c-cym-mindMap </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
@@ -1482,25 +1526,11 @@
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-dataview.md\"> a-dataview </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Craig Reynolds.md\"> Craig Reynolds </a>",
-        "<a class=\"internal-link\" href=\"00-in/Craig Reynols.md\"> Craig Reynols </a>",
-        "<a class=\"internal-link\" href=\"00-in/Craig Reynols.md\"> Craig Reynols </a>",
-        "<a class=\"internal-link\" href=\"00-in/Craig Reynols.md\"> Craig Reynols </a>",
-        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Kay Churcher.md\"> Kay Churcher </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
@@ -1549,11 +1579,12 @@
         "<a class=\"internal-link\" href=\"04-out/test.md\"> test </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym-05b-relaciones sonolumínicas.md\"> c-cym-05b-relaciones sonolumínicas </a>",
-        "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>",
-        "<a class=\"internal-link\" href=\"00-in/PWA.md\"> PWA </a>",
-        "<a class=\"internal-link\" href=\"00-in/Progressive Web App.md\"> Progressive Web App </a>"
+        "<a class=\"internal-link\" href=\"04-out/glosario/PWA.md\"> PWA </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym02-fundamentales de js.md\"> c-cym02-fundamentales de js </a>",
+        "<a class=\"internal-link\" href=\"00-in/que hace atractivo al arte interactivo?.md\"> que hace atractivo al arte interactivo? </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
@@ -1601,10 +1632,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-flex-grid.md\"> c-cym08-flex-grid </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-networking.md\"> c-cym09-networking </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>"
+        "<a class=\"internal-link\" href=\"04-out/personas/Enno Poppe.md\"> Enno Poppe </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1612,6 +1640,17 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Kay Churcher.md\"> Kay Churcher </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1651,20 +1690,14 @@
         "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md\"> eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md\"> eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md.md\"> eat-experiments-in-arts-and-technologies-espacios-eat-20experiments-in-arts-and-technologies.md </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
@@ -1710,12 +1743,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym06-cohesión audiovisual.md\"> c-cym06-cohesión audiovisual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym03-mapas.md\"> c-cym03-mapas </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym05-integración.md\"> c-cym05-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-cohesión audiovisual.md\"> c-cym07-cohesión audiovisual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06-principios generativos.md\"> c-cym06-principios generativos </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym05.06-integración.md\"> c-cym05.06-integración </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06c-tonejs.md\"> c-cym06c-tonejs </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-flex-grid.md\"> c-cym07-flex-grid </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
