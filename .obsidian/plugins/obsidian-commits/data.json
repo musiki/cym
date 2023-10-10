@@ -1411,7 +1411,7 @@
     },
     "03-cla/c-cym09-visual.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 6,
       "links": 0
     }
   },
@@ -1419,7 +1419,7 @@
     "/": {
       "Refactor": 521,
       "Create": 467,
-      "Link": 317,
+      "Link": 318,
       "Expand": 50
     }
   },
@@ -1433,7 +1433,7 @@
       "5": 0,
       "6": 0,
       "7": 14,
-      "8": 43,
+      "8": 44,
       "9": 173,
       "10": 23,
       "11": 96,
@@ -1454,7 +1454,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 489,
+      "Tue": 490,
       "Wed": 305,
       "Thu": 94,
       "Fri": 127,
@@ -1623,6 +1623,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"02-mat/tonejs/01-tone.js.md\"> 01-tone.js </a>",
@@ -1672,8 +1673,7 @@
         "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos.md\"> eventos </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>",
-        "<a class=\"internal-link\" href=\"04-out/espacios/Bell Labs.md\"> Bell Labs </a>"
+        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
