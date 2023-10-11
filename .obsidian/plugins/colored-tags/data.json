@@ -141,13 +141,13 @@
     "forma": 134,
     "musical": 135,
     "Título": 136,
-    "subtítulo": 137,
-    "sintesis": 138,
-    "objetivos": 139,
-    "desarrollo": 140,
-    "materiales": 141,
-    "philo": 142,
-    "philo/science": 1
+    "philo": 137,
+    "philo/science": 1,
+    "subtítulo": 138,
+    "sintesis": 139,
+    "objetivos": 140,
+    "desarrollo": 141,
+    "materiales": 142
   },
   "_version": 2
 }

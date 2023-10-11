@@ -1403,13 +1403,18 @@
       "size": 984,
       "tags": 0,
       "links": 1
+    },
+    "02-mat/jasvascript/02-setup/02-setup.md": {
+      "size": 12609,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 532,
-      "Create": 471,
-      "Link": 324,
+      "Refactor": 533,
+      "Create": 473,
+      "Link": 325,
       "Expand": 50
     }
   },
@@ -1424,7 +1429,7 @@
       "6": 0,
       "7": 14,
       "8": 44,
-      "9": 173,
+      "9": 177,
       "10": 23,
       "11": 96,
       "12": 27,
@@ -1445,7 +1450,7 @@
     "/": {
       "Mon": 49,
       "Tue": 511,
-      "Wed": 305,
+      "Wed": 309,
       "Thu": 94,
       "Fri": 127,
       "Sat": 0,
@@ -1508,6 +1513,8 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
@@ -1555,9 +1562,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Arte participativo.md\"> Arte participativo </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1613,6 +1618,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
         "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
@@ -1662,8 +1668,7 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
         "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
-        "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>"
+        "<a class=\"internal-link\" href=\"00-in/En conversación con Susanne Kennedy.md\"> En conversación con Susanne Kennedy </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1674,6 +1679,7 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/bassino.md\"> bassino </a>",
         "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
@@ -1723,8 +1729,7 @@
         "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
