@@ -33,3 +33,7 @@ Atributo dentro de la etiqueta html
 ```html
 <button onclick="oscillator()" accesskey="h">holaMundo</button> <!--al presionar la tecla e [ver combinaciones según browser y sistema operativo, se activa la función correspondiente, en este caso, oscillator()]
 ```
+
+## mouse
+
+![[c-cym14-un instrumento online colectivo#Mousetrap]]

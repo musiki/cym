@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/b-Azar y necesidad.md",
+                "file": "03-cla/c-cym09-visual.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/b-Azar y necesidad.md",
+                "file": "03-cla/c-cym09-visual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/b-Azar y necesidad.md"
+                "file": "03-cla/c-cym09-visual.md"
               }
             }
           },
@@ -221,33 +221,33 @@
   },
   "active": "cff0430a3c32dc5a",
   "lastOpenFiles": [
-    "00-in/bassino.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym09-visual.md",
     "00-in/b-Azar y necesidad.md",
+    "00-in/bassino.md",
     "00-in/Agregación limitada por difusión.md",
     "00-in/INGENIERIA INVERTIDA.md",
     "00-in/HSHSH.md",
     "02-mat/obs/tpl/conflict-files-obsidian-git.md",
     "00-in/Sin título.md",
-    "03-cla/c-cym09-visual.md",
     "02-mat/obs/tpl/t-person.md",
     "02-mat/obs/tpl/t-obra.md",
     "00-in/whoosh.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
-    "03-cla/c-cym06c-tonejs.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/beltrame/Prueba Proyectual.md",
-    "01-proj/23/beltrame/Piano.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
