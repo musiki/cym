@@ -1377,7 +1377,7 @@
     "03-cla/c-cym09-visual.md": {
       "size": 0,
       "tags": 6,
-      "links": 4
+      "links": 5
     },
     "00-in/whoosh.md": {
       "size": 1118,
@@ -1409,7 +1409,7 @@
     "/": {
       "Refactor": 532,
       "Create": 471,
-      "Link": 323,
+      "Link": 324,
       "Expand": 50
     }
   },
@@ -1437,14 +1437,14 @@
       "19": 8,
       "20": 65,
       "21": 250,
-      "22": 114,
+      "22": 115,
       "23": 186
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 510,
+      "Tue": 511,
       "Wed": 305,
       "Thu": 94,
       "Fri": 127,
@@ -1727,6 +1727,7 @@
         "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
@@ -1776,8 +1777,7 @@
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym06-flex-grid.md\"> c-cym06-flex-grid </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

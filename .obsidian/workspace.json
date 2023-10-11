@@ -175,7 +175,7 @@
             }
           },
           {
-            "id": "2c5a514cbd1bcfe2",
+            "id": "0aa55afe23d087f6",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -187,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,7 +218,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cff0430a3c32dc5a",
+  "active": "0aa55afe23d087f6",
   "lastOpenFiles": [
     "03-cla/c-cym14-un instrumento online colectivo.md",
     "03-cla/c-cym07-cohesión audiovisual.md",
