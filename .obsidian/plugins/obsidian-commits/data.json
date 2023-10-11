@@ -1412,12 +1412,12 @@
     "03-cla/c-cym09-visual.md": {
       "size": 0,
       "tags": 6,
-      "links": 6
+      "links": 4
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 521,
+      "Refactor": 522,
       "Create": 467,
       "Link": 320,
       "Expand": 50
@@ -1446,7 +1446,7 @@
       "18": 174,
       "19": 8,
       "20": 65,
-      "21": 249,
+      "21": 250,
       "22": 97,
       "23": 186
     }
@@ -1454,7 +1454,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 492,
+      "Tue": 493,
       "Wed": 305,
       "Thu": 94,
       "Fri": 127,
@@ -1820,7 +1820,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>"
       ]
     }
   },

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
-                "mode": "preview",
+                "file": "03-cla/c-cym09-visual.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "03-cla/c-cym09-visual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "03-cla/c-cym09-visual.md"
               }
             }
           },
@@ -207,13 +207,15 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "03-cla/c-cym08-github pages+hydra.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
     "03-cla/c-cym09-visual.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-flex-grid.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
@@ -230,8 +232,6 @@
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
     "02-mat/css.md",
     "02-mat/html.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
