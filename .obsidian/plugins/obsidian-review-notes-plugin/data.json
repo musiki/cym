@@ -1635,6 +1635,26 @@
     {
       "path": "04-out/topoi/t-topoi 1.md",
       "filename": "t-topoi 1"
+    },
+    {
+      "path": "03-cla/c-cym14-un instrumento online colectivo.md",
+      "filename": "c-cym14-un instrumento online colectivo"
+    },
+    {
+      "path": "04-out/personas/Mario Bunge.md",
+      "filename": "Mario Bunge"
+    },
+    {
+      "path": "00-in/whoosh.md",
+      "filename": "whoosh"
+    },
+    {
+      "path": "00-moc/obras MOC.md",
+      "filename": "obras MOC"
+    },
+    {
+      "path": "02-mat/jasvascript/02-setup/02-setup.md",
+      "filename": "02-setup"
     }
   ]
 }

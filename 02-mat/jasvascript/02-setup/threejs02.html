@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluorescent Wireframe Space with Orbiting Camera and Bloom</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="module">
+        import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.120.0/build/three.module.js";
+        import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/controls/OrbitControls.js";
+        import { EffectComposer } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/EffectComposer.js";
+        import { RenderPass } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/RenderPass.js";
+        import { UnrealBloomPass } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/UnrealBloomPass.js";
+
+        // Create a Three.js scene
+        const scene = new THREE.Scene();
+
+        // Create a camera
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 5); // Set the initial camera position
+
+        // Create a renderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('container').appendChild(renderer.domElement);
+
+        // Create an OrbitControls instance to control the camera
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Add damping effect for smoother camera movement
+
+        // Create a cube at the center of the scene
+        const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+        const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Red color
+        const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+        scene.add(cube);
+
+        // Create a wireframe material with a fluorescent color
+        const wireframeMaterial = new THREE.MeshBasicMaterial({
+            wireframe: true,
+            color: 0x00ff00, // Fluorescent green color
+            transparent: true,
+            opacity: 0.5,
+        });
+
+        // Create a wireframe sphere as the fluorescent space
+        const spaceGeometry = new THREE.SphereGeometry(5, 64, 64);
+        const space = new THREE.Mesh(spaceGeometry, wireframeMaterial);
+        scene.add(space);
+
+        // Create a bloom effect pass
+        const composer = new EffectComposer(renderer);
+        const renderPass = new RenderPass(scene, camera);
+        composer.addPass(renderPass);
+
+        const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
+        composer.addPass(bloomPass);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
+            camera.aspect = newWidth / newHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(newWidth, newHeight);
+            composer.setSize(newWidth, newHeight);
+        });
+
+        // Render loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+            controls.update(); // Update camera controls
+            composer.render();
+        };
+
+        // Start the animation loop
+        animate();
+    </script>
+</body>
+</html>

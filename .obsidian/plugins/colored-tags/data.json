@@ -145,7 +145,9 @@
     "sintesis": 138,
     "objetivos": 139,
     "desarrollo": 140,
-    "materiales": 141
+    "materiales": 141,
+    "philo": 142,
+    "philo/science": 1
   },
   "_version": 2
 }
