@@ -1344,11 +1344,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/HSHSH.md": {
-      "size": 1,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/INGENIERIA INVERTIDA.md": {
       "size": 43,
       "tags": 0,
@@ -1360,16 +1355,6 @@
       "links": 0
     },
     "00-in/Presentación para coloquio de Música visual.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Sin título.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/bassino.md": {
       "size": 0,
       "tags": 0,
       "links": 0
@@ -1422,7 +1407,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 527,
+      "Refactor": 530,
       "Create": 471,
       "Link": 320,
       "Expand": 50
@@ -1452,14 +1437,14 @@
       "19": 8,
       "20": 65,
       "21": 250,
-      "22": 106,
+      "22": 109,
       "23": 186
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 502,
+      "Tue": 505,
       "Wed": 305,
       "Thu": 94,
       "Fri": 127,
@@ -1689,6 +1674,9 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/bassino.md\"> bassino </a>",
+        "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
+        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
@@ -1736,10 +1724,7 @@
         "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>",
-        "<a class=\"internal-link\" href=\"00-in/2023-09-10.md\"> 2023-09-10 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>"
+        "<a class=\"internal-link\" href=\"00-in/2023-08-30.md\"> 2023-08-30 </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
