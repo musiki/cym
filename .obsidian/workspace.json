@@ -11,17 +11,9 @@
             "id": "ecfa88d1ea0545d2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e279d09e5c4c4074",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -29,46 +21,16 @@
             }
           },
           {
-            "id": "fc13854deb75024f",
+            "id": "537daabf244f8803",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b8ece832f616d4ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c2acd4560d9ca26a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 494.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -145,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -163,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +183,7 @@
             }
           },
           {
-            "id": "879fb4a8186ca4f4",
+            "id": "9ce2aa45503165e7",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -233,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,53 +226,54 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c2acd4560d9ca26a",
+  "active": "ecfa88d1ea0545d2",
   "lastOpenFiles": [
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852403.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852560.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059567.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059573.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059577.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059596.jpeg",
+    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+    "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pptx",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/beltrame/Prueba Proyectual.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/shifres/shifres.gif",
-    "04-ref/topoi/t-topoi.md",
-    "04-ref/topoi/Música Visual.md",
-    "04-ref/topoi/La instalación como forma del arte contemporáneo.md",
-    "04-ref/topoi/Fragile Territories.md",
-    "04-ref/topoi/Forma Musical.md",
-    "04-ref/topoi",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807936.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807926.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807923.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807919.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807913.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807883.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807876.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807874.jpeg",
-    "02-mat/obs/img/image/Botonera rítmica-1696371807868.jpeg",
-    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
-    "01-proj/23/bassino/codepen/Probando botones",
-    "01-proj/23/bassino/codepen",
-    "01-proj/22/Probando botones en codepen.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectual.md",
-    "00-in/i.md",
-    "00-in/Sun Thinking.md",
-    "00-in/Pasted image 20220906234521.png.md",
-    "00-in/Hans Haake.md",
-    "04-out/topoi/Música y Política.md",
+    "00-in/Botonera rítmica-1696371807756.jpeg.md",
+    "00-in/Botonera rítmica-1696371807919.jpeg.md",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065204.jpeg",
+    "02-mat/obs/img/image/Prueba Proyectual-1696355065235.jpeg",
+    "02-mat/obs/img/image/home-1696446053132.jpeg",
     "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "Untitled 1",
-    "Untitled",
-    "04-ref/image",
-    "04-ref",
-    "02-mat/obs/img/image",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "04-out/topoi/t-topoi 1.md",
+    "04-out/topoi/Música Visual.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
+    "04-out/topoi/Fragile Territories.md",
+    "04-out/topoi/Forma Musical.md",
+    "03-cla/c-cym09-visual.md",
+    "02-mat/tonejs/01-tone.js.md",
+    "02-mat/tonejs",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pdf",
+    "02-mat/obs/img/Presentación del coloquio de Música visual 1.pdf",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "01-proj/23/bassino/proyectual bassino",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA",
+    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
+    "01-proj/23/bassino/Coloquio",
+    "00-in/bassino.md",
+    "00-in/Sin título.md",
+    "00-in/Presentación para coloquio de Música visual.md",
+    "00-in/Ingeniería invertida.md",
+    "00-in/INGENIERIA INVERTIDA.md",
+    "00-in/HSHSH.md",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pptx",
+    "01-proj/23/bassino/Clorolaser.md",
+    "04-ref/topoi",
     "Untitled.canvas",
     "cym-metamap.canvas",
     "03-cla/cym-map.canvas"

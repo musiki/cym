@@ -140,7 +140,12 @@
     "análisis": 133,
     "forma": 134,
     "musical": 135,
-    "Título": 136
+    "Título": 136,
+    "subtítulo": 137,
+    "sintesis": 138,
+    "objetivos": 139,
+    "desarrollo": 140,
+    "materiales": 141
   },
   "_version": 2
 }
