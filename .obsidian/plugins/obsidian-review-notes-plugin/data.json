@@ -69,7 +69,7 @@
       "filename": "Maura McDonnell topoi"
     },
     {
-      "path": "conflict-files-obsidian-git.md",
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git.md",
       "filename": "conflict-files-obsidian-git"
     },
     {
@@ -1489,7 +1489,7 @@
       "filename": "La conciencia social del arte generativo."
     },
     {
-      "path": "00-in/obras MOC.md",
+      "path": "00-moc/obras MOC.md",
       "filename": "obras MOC"
     },
     {
@@ -2367,6 +2367,14 @@
     {
       "path": "03-cla/c-cym09-visual.md",
       "filename": "c-cym09-visual"
+    },
+    {
+      "path": "04-out/personas/Mario Bunge.md",
+      "filename": "Mario Bunge"
+    },
+    {
+      "path": "00-in/whoosh.md",
+      "filename": "whoosh"
     }
   ]
 }
