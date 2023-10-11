@@ -161,14 +161,11 @@ https://replit.com/@jsmusic/audio-chat-streaming#index.js
 
 <iframe height="600" width="800" src="https://replit.com/@jsmusic/generators05-simple?embed=true#index.html" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 
-<<<<<<< HEAD:03-cla/c-cym06-un instrumento online colectivo.md
 
-# mouse
 
-=======
----
+## mouse
 
-# Mousetrap
+### Mousetrap
 
 Mousetrap es una librería que utiliza shortcuts del teclado con JavaScript.
 
@@ -195,7 +192,7 @@ Mousetrap.bind("command+k", function(e) {        //haz lo que quieras
 <iframe height="600" width="800" src="https://codepen.io/carodip/pen/xxjEPJX" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 ---
-### mouseTrap - grid
+#### mouseTrap - grid
 
 <iframe height="600" width="800" src="https://codepen.io/carodip/pen/LYmRQWV" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
->>>>>>> origin/main:03-ref/clases/c-cym06-un instrumento online colectivo.md
+

@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "3dd6f9023cdb7e43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,9 +256,8 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "27ae13d1da91d064",
+  "active": "3dd6f9023cdb7e43",
   "lastOpenFiles": [
-    "03-cla/c-cym02-fundamentales de js.md",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
@@ -256,7 +269,29 @@
     "02-mat/jasvascript/02-setup/threejs01.html",
     "02-mat/jasvascript/02-setup/C6.mp3",
     "02-mat/jasvascript/02-setup/C7.mp3",
+    "02-mat/jasvascript/02-setup/threejs-youtube.html",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym09-visual.md",
+    "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852617.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852610.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852606.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852602.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852592.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852588.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
+    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
+    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
+    "00-moc/obras MOC.md",
+    "00-in/Presentación para coloquio de Música visual.md",
+    "00-in/Ingeniería invertida.md",
+    "00-in/INGENIERIA INVERTIDA.md",
+    "03-cla/c-cym02-fundamentales de js.md",
     "03-cla/c-cym00-presentación.md",
     "03-cla/c-cym02-arte generativo.md",
     "03-cla/c-cym06-principios generativos.md",
@@ -269,29 +304,9 @@
     "03-cla/c-cym08-github pages+hydra.md",
     "02-mat/css.md",
     "02-mat/cloud ides.md",
-    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
-    "03-cla/c-cym-mindMap.md",
     "cym-metamap.canvas",
-    "home.md",
-    "conflict-files-obsidian-git.md",
-    "00-in/que hace atractivo al arte interactivo?.md",
-    "04-out/obras/Boid Simulation.md",
-    "00-moc/personas MOC.md",
-    "00-in/topoi MOC.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "02-mat/obs/img/image/home-1696446053132.jpeg",
-    "02-mat/obs/img/image/home-1696446053131.jpeg",
-    "02-mat/obs/img/image/home-1696446053129.jpeg",
-    "02-mat/obs/img/image/home-1696446053128.jpeg",
-    "02-mat/obs/img/image/home-1696446053127.jpeg",
-    "02-mat/obs/img/image/home-1696446053126.jpeg",
-    "02-mat/obs/img/image/home-1696446053123.jpeg",
-    "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
-    "02-mat/obs/img/image/home-1696446053121.jpeg",
-    "02-mat/obs/img/image/home-1696446053120.jpeg",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

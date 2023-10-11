@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Wireframe Space with Orbiting Planet and Tone.js Synth</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js' integrity='sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ==' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <div id="container"></div>
+    <script type="module">
+        import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.120.0/build/three.module.js";
+        // import Tone from "https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js";
+        import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/controls/OrbitControls.js";
+        import { EffectComposer } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/EffectComposer.js";
+        import { RenderPass } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/RenderPass.js";
+        import { ShaderPass } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/ShaderPass.js";
+        import { UnrealBloomPass } from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/UnrealBloomPass.js";
+
+        // Initialize Three.js
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('container').appendChild(renderer.domElement);
+
+        // Create wireframe space
+        const spaceGeometry = new THREE.SphereGeometry(100, 32, 32);
+        const spaceMaterial = new THREE.MeshBasicMaterial({
+            wireframe: true,
+            color: 0xffffff,
+            side: THREE.DoubleSide,
+        });
+        const space = new THREE.Mesh(spaceGeometry, spaceMaterial);
+        scene.add(space);
+
+        // Create an orbiting planet
+        const planetGeometry = new THREE.SphereGeometry(5, 32, 32);
+        const planetMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+        const planet = new THREE.Mesh(planetGeometry, planetMaterial);
+        planet.position.set(15, 0, 0);
+        scene.add(planet);
+
+        // Create Tone.js synth with positional audio
+        const synth = new Tone.Synth().toDestination();
+        const listener = new THREE.AudioListener();
+        camera.add(listener);
+        const audioLoader = new THREE.AudioLoader();
+        const sound = new THREE.PositionalAudio(listener);
+
+        // Load an audio file (replace with your own)
+        audioLoader.load('C8.mp3', (buffer) => {
+            sound.setBuffer(buffer);
+            sound.setRefDistance(20);
+            sound.setLoop(true);
+            sound.setVolume(0.5);
+            sound.play();
+        });
+
+        planet.add(sound);
+
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
+            camera.aspect = newWidth / newHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(newWidth, newHeight);
+        });
+        
+        // Create camera controls
+        const controls = new OrbitControls(camera, renderer.domElement);
+        // Animation loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+            controls.update();
+             camera.updateMatrixWorld();
+            renderer.render(scene, camera);
+        };
+
+        // Start the animation loop
+        animate();
+    </script>
+</body>
+</html>
