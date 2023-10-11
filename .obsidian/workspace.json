@@ -19,22 +19,8 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "3dd6f9023cdb7e43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md"
               }
             }
           },
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,8 +242,9 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "3dd6f9023cdb7e43",
+  "active": "27ae13d1da91d064",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
@@ -269,9 +256,7 @@
     "02-mat/jasvascript/02-setup/threejs01.html",
     "02-mat/jasvascript/02-setup/C6.mp3",
     "02-mat/jasvascript/02-setup/C7.mp3",
-    "02-mat/jasvascript/02-setup/threejs-youtube.html",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym09-visual.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
