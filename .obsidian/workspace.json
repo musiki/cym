@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym02-fundamentales de js.md",
-                "mode": "source",
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 623.5
+    "width": 354.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym02-fundamentales de js.md"
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym02-fundamentales de js.md",
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -244,10 +244,21 @@
   },
   "active": "27ae13d1da91d064",
   "lastOpenFiles": [
+    "03-cla/c-cym02-fundamentales de js.md",
+    "02-mat/jasvascript/02-setup/C8.mp3",
+    "02-mat/jasvascript/02-setup/t1.html",
+    "02-mat/jasvascript/02-setup/hover-synth-vis.html",
+    "02-mat/jasvascript/02-setup/02-setup.md",
+    "02-mat/jasvascript/02-setup/threejs03.html",
+    "02-mat/jasvascript/02-setup/threejs02.html",
+    "02-mat/jasvascript/02-setup/hover-synth-vis-poly.html",
+    "02-mat/jasvascript/02-setup/three-pos-synth.html",
+    "02-mat/jasvascript/02-setup/threejs01.html",
+    "02-mat/jasvascript/02-setup/C6.mp3",
+    "02-mat/jasvascript/02-setup/C7.mp3",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym00-presentación.md",
     "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym02-fundamentales de js.md",
     "03-cla/c-cym06-principios generativos.md",
     "03-cla/c-cym03-mapas.md",
     "03-cla/c-cym05.06-integración.md",
@@ -269,13 +280,8 @@
     "04-out/obras/Boid Simulation.md",
     "00-moc/personas MOC.md",
     "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectos MOC.md",
-    "02-mat/tonejs",
-    "Untitled.loom",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "00-moc",
     "02-mat/obs/img/image/home-1696446053132.jpeg",
     "02-mat/obs/img/image/home-1696446053131.jpeg",
     "02-mat/obs/img/image/home-1696446053129.jpeg",
@@ -286,13 +292,6 @@
     "02-mat/obs/img/image/tp01-topoi-1696369983761.jpeg",
     "02-mat/obs/img/image/home-1696446053121.jpeg",
     "02-mat/obs/img/image/home-1696446053120.jpeg",
-    "01-proj/23/bassino/codepen/Probando botones",
-    "01-proj/23/bassino/codepen",
-    "04-ref/image",
-    "04-ref",
-    "02-mat/coloquial",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "02-mat/obs/img/image",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
