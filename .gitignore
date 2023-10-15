@@ -77,3 +77,9 @@ data.json
 .smart-connections
 >>>>>>> origin/main
 >>>>>>> origin/main
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-commits/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/colored-tags/data.json
+.obsidian/plugins/.DS_Store
+.obsidian/.DS_Store

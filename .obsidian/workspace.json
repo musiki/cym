@@ -13,14 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "00-moc/códigos MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "211e737893626d49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/eventos MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "053fd8bc51188306",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/proyectos MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e874c7d1d54bceb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/códigos MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -49,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:sistemas",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 272.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -87,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md"
+                "file": "00-moc/códigos MOC.md"
               }
             }
           },
@@ -105,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "00-moc/códigos MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,14 +191,15 @@
             }
           },
           {
-            "id": "b33bd2641b2fba83",
+            "id": "3a363678628350bc",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 7
       },
       {
         "id": "67c7212f7255321a",
@@ -210,11 +251,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5,
-    "collapsed": true
+    "width": 403.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -223,7 +264,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
@@ -242,13 +282,37 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "27ae13d1da91d064",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "00-moc/proyectos MOC.md",
+    "00-moc/personas MOC.md",
+    "00-moc/topoi MOC.md",
+    "00-moc/cym MOC.md",
+    "00-moc/espacios MOC.md",
+    "00-moc/eventos MOC.md",
+    "00-in/hd-hydra.md",
+    "00-moc/coloquial MOC.md",
+    "00-moc/códigos MOC.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "02-mat/html.md",
+    "00-in/Presentación para coloquio de Música visual.md",
+    "00-in/memex.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/Ingeniería invertida.md",
+    "00-in/INGENIERIA INVERTIDA.md",
+    "00-in/hi augmentation.md",
+    "00-in/Hans Haake.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/combinational creativity.md",
+    "00-moc/bib MOC.md",
+    "00-in/b-Azar y necesidad.md",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
-    "02-mat/jasvascript/02-setup/02-setup.md",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis-poly.html",
@@ -256,8 +320,6 @@
     "02-mat/jasvascript/02-setup/threejs01.html",
     "02-mat/jasvascript/02-setup/C6.mp3",
     "02-mat/jasvascript/02-setup/C7.mp3",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym09-visual.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
@@ -268,27 +330,6 @@
     "02-mat/obs/tpl/probando Upstart-1696798852592.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852588.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
-    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
-    "00-moc/obras MOC.md",
-    "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/Ingeniería invertida.md",
-    "00-in/INGENIERIA INVERTIDA.md",
-    "03-cla/c-cym02-fundamentales de js.md",
-    "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym05.06-integración.md",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym15-interactividad.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "02-mat/css.md",
-    "02-mat/cloud ides.md",
     "cym-metamap.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",
