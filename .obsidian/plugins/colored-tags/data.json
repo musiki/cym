@@ -151,7 +151,12 @@
     "dss": 143,
     "digitalmusicology": 144,
     "musicology": 145,
-    "systematicmusicology": 146
+    "systematicmusicology": 146,
+    "artesvisuales": 147,
+    "argentina": 148,
+    "colaboratividad": 149,
+    "artejuego": 150,
+    "dataart": 151
   },
   "_version": 2
 }

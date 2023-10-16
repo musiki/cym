@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-moc/códigos MOC.md",
+                "file": "README.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-moc/eventos MOC.md",
+                "file": "00-moc/topoi MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -52,7 +52,46 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-moc/códigos MOC.md",
+                "file": "04-out/topoi/Intervencion del espacio público.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "785fcfe9d74028f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-out/topoi/arte de datos.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "52aa56aa17be6e75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym09-networking.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "8d357327336b6e09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -60,7 +99,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -110,7 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 446.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -119,7 +158,7 @@
       {
         "id": "aaca835876e592bb",
         "type": "tabs",
-        "dimension": 33.205619412515965,
+        "dimension": 42.690677966101696,
         "children": [
           {
             "id": "8c7ec6495dcddec6",
@@ -127,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-moc/códigos MOC.md"
+                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md"
               }
             }
           },
@@ -145,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-moc/códigos MOC.md",
+                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,43 +222,28 @@
             }
           },
           {
-            "id": "a95becd0c9fd239c",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-chat-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "3a363678628350bc",
+            "id": "f6b58b03af02381d",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
               "state": {}
             }
-          }
-        ],
-        "currentTab": 7
-      },
-      {
-        "id": "67c7212f7255321a",
-        "type": "tabs",
-        "dimension": 12.771392081736911,
-        "children": [
+          },
           {
-            "id": "7caa213441494e7f",
+            "id": "9754fce686df1dea",
             "type": "leaf",
             "state": {
-              "type": "review-queue-list-view",
+              "type": "smart-connections-chat-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "b33cb9828f682814",
         "type": "tabs",
-        "dimension": 12.771392081736911,
+        "dimension": 21.1864406779661,
         "children": [
           {
             "id": "20c732dc2cc0ecaf",
@@ -237,7 +261,7 @@
       {
         "id": "0b21d0481a2a08a7",
         "type": "tabs",
-        "dimension": 41.251596424010216,
+        "dimension": 36.1228813559322,
         "children": [
           {
             "id": "d666d2187372564f",
@@ -251,7 +275,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5
+    "width": 298.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -282,34 +306,46 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "8d357327336b6e09",
   "lastOpenFiles": [
-    "00-moc/proyectos MOC.md",
-    "00-moc/personas MOC.md",
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
+    "00-moc/coloquial MOC.md",
+    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
+    "03-cla/c-cym09-networking.md",
+    "cym-metamap.canvas",
+    "conflict-files-obsidian-git.md",
+    "04-out/topoi/arte de datos.md",
     "00-moc/topoi MOC.md",
+    "00-moc/eventos MOC.md",
+    "02-mat/obs/tpl/t-topoi.md",
+    "04-out/topoi/Intervencion del espacio público.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/Juan Sorrentino.md",
+    "00-in/La memoria de los materiales.md",
+    "00-in/Andrés Aizicovich.md",
+    "README.md",
+    "00-moc/códigos MOC.md",
+    "00-moc/proyectos MOC.md",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059628.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059624.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059619.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059616.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059613.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059602.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059599.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059596.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059593.jpeg",
+    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059583.jpeg",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "00-moc/personas MOC.md",
     "00-moc/cym MOC.md",
     "00-moc/espacios MOC.md",
-    "00-moc/eventos MOC.md",
     "00-in/hd-hydra.md",
-    "00-moc/coloquial MOC.md",
-    "00-moc/códigos MOC.md",
     "03-cla/c-cym03-mapas.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym06c-tonejs.md",
-    "02-mat/html.md",
-    "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/memex.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/Ingeniería invertida.md",
-    "00-in/INGENIERIA INVERTIDA.md",
-    "00-in/hi augmentation.md",
-    "00-in/Hans Haake.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "00-in/Cybernetic Serendipity.md",
-    "00-in/combinational creativity.md",
-    "00-moc/bib MOC.md",
-    "00-in/b-Azar y necesidad.md",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
@@ -319,18 +355,6 @@
     "02-mat/jasvascript/02-setup/three-pos-synth.html",
     "02-mat/jasvascript/02-setup/threejs01.html",
     "02-mat/jasvascript/02-setup/C6.mp3",
-    "02-mat/jasvascript/02-setup/C7.mp3",
-    "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852617.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852610.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852606.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852602.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852592.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852588.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
-    "cym-metamap.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",
