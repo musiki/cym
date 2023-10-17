@@ -4,7 +4,8 @@ tags:
   - instalación
   - argentina
   - eventos
-place: arthouse
+place: arthaus
+curators: María Teresa Constantín y Gabriela Vicente Irrazabal
 connections: 
 url: https://arthaus.ar/visuales/muestras-activas/
 photo: https://arthaus.ar/wp-content/uploads/2023/10/slider_02.png
@@ -17,8 +18,11 @@ Donjo León
 Hernán Soriano
 [[Juan Sorrentino]]
 
+**Cazadores-recolectores**
+*¿Qué sucede si desde el presente el artista va hacia el pasado para hacer propios saberes técnicos y materiales de otros tiempos? ¿qué se puede construir desde una arqueología de lo desechado por obsoleto o viejo? ¿qué cambios o hallazgos genera el arte al permitir conexiones perceptivas y conceptuales de algo olvidado o desaparecido?* 
+
 Evocando saberes decimonónicos o la imaginación técnica de la euforia modernista de la argentina del siglo pasado, las obras reunidas en esta exposición dan cuenta de una zona singular de la producción artística contemporánea.  
-Los artistas convocados ponen especial atención en la recuperación de saberes transmitidos o redescubiertos, por asalto, en zonas descuidadas del conocimiento. Así se mezclan los estudios de Muybridge y las ciencias físicas con los fenómenosalquímicos. Y, si el recurso de apelar a las producciones artísticas del pasado lejano para interpelar a sus inmediatos antecesores ha sido una herramienta recurrente en la historia del arte, estas obras aparecen escapando a esa práctica para afirmarse en el pasado y adoptar como propios aquellos saberes. Hacen suyo y adoptan coletazos emergentes de lo viejo, lo raro, como escape de la norma. La rugosidad áspera o la caricia pulida del material están en las obras señalando la presencia constructiva de la mano. La curiosidad científica puede devenir en poéticos objetos inservibles. La presencia pétrea de un material y la seducción de la máquina se entrelazan así con un sonido, el lirismo poético de un pentagrama, la tosquedad de un fragmento o la levedad de una burbuja atestada de sentidos.
+Los artistas convocados ponen especial atención en la recuperación de saberes transmitidos o redescubiertos, por asalto, en zonas descuidadas del conocimiento. Así se mezclan los estudios de Muybridge y las ciencias físicas con los fenómenos alquímicos. Y, si el recurso de apelar a las producciones artísticas del pasado lejano para interpelar a sus inmediatos antecesores ha sido una herramienta recurrente en la historia del arte, estas obras aparecen escapando a esa práctica para afirmarse en el pasado y adoptar como propios aquellos saberes. Hacen suyo y adoptan coletazos emergentes de lo viejo, lo raro, como escape de la norma. La rugosidad áspera o la caricia pulida del material están en las obras señalando la presencia constructiva de la mano. La curiosidad científica puede devenir en poéticos objetos inservibles. La presencia pétrea de un material y la seducción de la máquina se entrelazan así con un sonido, el lirismo poético de un pentagrama, la tosquedad de un fragmento o la levedad de una burbuja atestada de sentidos.
 
 Inventores, arqueólogos, paraingenieros, alquimistas, científicos, músicos/performers (quizás todo a la vez), en la época de las imágenes y el estallido de la IA, las obras de  
 estos artistas parecen manipular un tiempo que necesita ser prensado para ser pensado.
