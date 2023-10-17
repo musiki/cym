@@ -1360,7 +1360,7 @@
       "links": 0
     },
     "00-in/La memoria de los materiales.md": {
-      "size": 3012,
+      "size": 5652,
       "tags": 4,
       "links": 2
     },
@@ -1450,7 +1450,7 @@
       "Refactor": 546,
       "Create": 493,
       "Link": 340,
-      "Expand": 50
+      "Expand": 51
     }
   },
   "dailyCommits": {
@@ -1472,7 +1472,7 @@
       "14": 28,
       "15": 67,
       "16": 84,
-      "17": 3,
+      "17": 4,
       "18": 174,
       "19": 8,
       "20": 65,
@@ -1484,7 +1484,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 559,
+      "Tue": 560,
       "Wed": 309,
       "Thu": 94,
       "Fri": 127,
@@ -1544,7 +1544,8 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>",
+        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
