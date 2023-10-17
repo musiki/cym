@@ -114,9 +114,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md"
-              }
+              "state": {}
             }
           },
           {
@@ -133,7 +131,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,18 +187,18 @@
             }
           },
           {
-            "id": "bfbde07b79592a82",
-            "type": "leaf",
-            "state": {
-              "type": "review-notes",
-              "state": {}
-            }
-          },
-          {
             "id": "705ac53528e9d872",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "7bbe0f7494bbdcb5",
+            "type": "leaf",
+            "state": {
+              "type": "review-notes",
               "state": {}
             }
           }
@@ -241,10 +238,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c932be67380cd5c",
+  "active": "7bbe0f7494bbdcb5",
   "lastOpenFiles": [
-    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
     "02-mat/obs/img/proyectual CLOROLASER.pdf",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
