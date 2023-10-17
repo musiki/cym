@@ -56,6 +56,16 @@ una posible guía de apreciación puede ser:
 
 en los inicios del cine , la técnica estaba orientada al estudio de la cinética (el estudio de los cuerpos en movimiento), con intereses mas cercanos a la fisiología , la medicina o la veterinaria que la ficción. Edward Muggeridge experimentó con pigmentos como el colodión, con "chromas blancos" hechos de sábanas. Luego inventó el zoopraxiscopio, y junto a Etienne Jules Marey y sus cronofotografías , son los precursores del cine. Phillip Glass le hizo una ópera.
 
+## obras
 
+### Estalactiflador (2023) - Donjo León
+Sutiles sonidos de gotas cayendo son parte de _Play 2_ de Donjo León. Un aparato construido con mangueras, elementos de cocina y otros, que conforman una “batería”. El visitante puede sentarse para manejar un **joystick** confeccionado de finas mangueras para modificar la caída del agua sobre los metales y, así, componer distintas sonoridades. Estas acciones requieren demora y agudización de la percepción. También el artista presenta el _Estalactiflador_, que al ser accionado manualmente hace subir agua hasta la estalactita posibilitando su crecimiento.
 
+### Hernán Soriano
+La instalación _Suspensión_, está integrada por mesas sobre las cuales se encuentran elementos cotidianos y desechados de distintos metales. Al hacerlos sonar mediante baquetas descubren posibilidades percusivas amplificadas por el telgopor donde se apoyan. El artista trabaja con una “lógica de recolector” organizando los elementos que junta. Colgadas, poéticas partituras presentan a manera de notas musicales fragmentos tallados de carozo de palta remitiendo –contó Soriano– a una *“arqueología íntima de los propios residuos”*. En tanto, la obra “Cordófono de muro” forma parte de sus obras de luthería, en este caso, con aires de arpa.
 
+### Sergio Lamanna
+_Fuga_, vincula las alas con la acción de huida generando metáforas sobre el deseo, la libertad, la opresión, el movimiento, la fuerza, el conocimiento.
+
+### Diego Dubatti
+Diego Dubatti conceptualiza su trabajo en términos de observar que en lo obsoleto y descartado hay un material útil. “Pienso en la fragilidad del mundo donde consumimos tecnología, pero no la manejamos, en la autogestión, en retroceder en el saber tecnológico para asegurarse la supervivencia, en la espiritualidad de la materia”, expresó. Sus propuestas tienen carácter escultórico. Las columnas en vidrio con agua y una boya de hierro describen el **principio de Arquímedes**. En tanto, la pequeña instalación de instrumentos musicales propone ejecutarlos para descubrir una inusual y atractiva sonoridad, a partir de la combinación de elementos desechados y modificados.
