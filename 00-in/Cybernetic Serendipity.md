@@ -14,4 +14,4 @@ Primera exposición de arte cibernético, Jasia Reichardt, ICA, Londres 1968.
 
 - algoritmos y dispositivos para generar música. (Peter Zinovieff, Gustav Metzger, Bruce Lacey, Nam June Paik, Jean Tinguely, Edwrd Ihnatowicz, John Billingsley). Wen-Ying Tsai, Rowland Emett.
 - La permutación de John Whitney, Laboratorios Bell.
-- 
+

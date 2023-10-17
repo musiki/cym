@@ -25,6 +25,19 @@ mas ejemplos
 
 
 
+
+# chain composition 
+
+simuló un modelo compositivo multiparticipativo que se desarrolló para un proceso de creación musical colaborativo basado en blockchain. Se adoptaron diez seudónimos, cinco femeninos y cinco masculinos que hacían referencia a personajes históricos destacados, para crear composiciones en miniatura diversificadas y de múltiples ramas.
+
+https://www.youtube.com/watch?v=wBewxzfxYX8
+
+
+Kosmas Giannoutakis
+Juan Carlos Vasquez
+
+
+
 # socket.io
 
 #
@@ -32,3 +45,8 @@ mas ejemplos
 # referencias 
 
 Vera, B., Holland, D., & Arts, S. (2013). netMUSE: Networked Multi-user Sonic Environment.
+
+
+
+Carceri d'Invenzione
+Piranesi - Ferneyhough

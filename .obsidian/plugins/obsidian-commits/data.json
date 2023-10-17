@@ -1044,11 +1044,6 @@
       "tags": 4,
       "links": 0
     },
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md": {
-      "size": 15828,
-      "tags": 2,
-      "links": 0
-    },
     "00-in/El metaverso es un territorio disputado.md": {
       "size": 22771,
       "tags": 0,
@@ -1279,11 +1274,6 @@
       "tags": 0,
       "links": 0
     },
-    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md": {
-      "size": 5934,
-      "tags": 3,
-      "links": 0
-    },
     "04-out/topoi/t-topoi 1.md": {
       "size": 58,
       "tags": 1,
@@ -1292,56 +1282,6 @@
     "02-mat/tonejs/01-tone.js.md": {
       "size": 861,
       "tags": 1,
-      "links": 0
-    },
-    "00-in/códigos MOC.md": {
-      "size": 123,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/espacios MOC.md": {
-      "size": 189,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/eventos MOC.md": {
-      "size": 3262,
-      "tags": 1,
-      "links": 1
-    },
-    "00-in/personas MOC.md": {
-      "size": 176,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/proyectos MOC.md": {
-      "size": 125,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/teatro MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/topoi MOC.md": {
-      "size": 1882,
-      "tags": 0,
-      "links": 16
-    },
-    "00-in/coloquial MOC.md": {
-      "size": 400,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/cym MOC.md": {
-      "size": 310,
-      "tags": 0,
-      "links": 5
-    },
-    "00-in/bib MOC.md": {
-      "size": 202,
-      "tags": 0,
       "links": 0
     },
     "00-in/INGENIERIA INVERTIDA.md": {
@@ -1408,12 +1348,107 @@
       "size": 12609,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Andrés Aizicovich.md": {
+      "size": 18942,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Juan Sorrentino.md": {
+      "size": 2399,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/La memoria de los materiales.md": {
+      "size": 3012,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/bib MOC.md": {
+      "size": 202,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/coloquial MOC.md": {
+      "size": 400,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/cym MOC.md": {
+      "size": 310,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/códigos MOC.md": {
+      "size": 123,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/espacios MOC.md": {
+      "size": 189,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/eventos MOC.md": {
+      "size": 3262,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/personas MOC.md": {
+      "size": 176,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/proyectos MOC.md": {
+      "size": 125,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/teatro MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-moc/topoi MOC.md": {
+      "size": 1882,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
+      "size": 1377,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md": {
+      "size": 15828,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md": {
+      "size": 14069,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-topoi.md": {
+      "size": 71,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Martin Rohrmeier.md": {
+      "size": 342,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/topoi/arte de datos.md": {
+      "size": 571,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 533,
-      "Create": 473,
+      "Refactor": 546,
+      "Create": 493,
       "Link": 325,
       "Expand": 50
     }
@@ -1436,7 +1471,7 @@
       "13": 29,
       "14": 28,
       "15": 67,
-      "16": 36,
+      "16": 69,
       "17": 3,
       "18": 174,
       "19": 8,
@@ -1449,7 +1484,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 511,
+      "Tue": 544,
       "Wed": 309,
       "Thu": 94,
       "Fri": 127,
@@ -1513,6 +1548,26 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Martin Rohrmeier.md\"> Martin Rohrmeier </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md\"> Simon Steen-Andersen écouter, observer, hacker-ed </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
+        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"00-in/Juan Sorrentino.md\"> Juan Sorrentino </a>",
+        "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
@@ -1542,27 +1597,7 @@
         "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Dotonera.md\"> Dotonera </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Humanos.md\"> Humanos </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
+        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1680,6 +1715,19 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/bassino.md\"> bassino </a>",
         "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
@@ -1716,20 +1764,7 @@
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
         "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
