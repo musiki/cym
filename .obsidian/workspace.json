@@ -4,16 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "38745acf325caa15",
+        "id": "22e56bd98aac367e",
         "type": "tabs",
         "children": [
           {
-            "id": "8dac97e0dda0006d",
+            "id": "22c77f808190e88e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "82898092388f403a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -21,6 +29,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -75,8 +84,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
             }
           },
           {
@@ -131,6 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,40 +249,44 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7bbe0f7494bbdcb5",
+  "active": "82898092388f403a",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "02-mat/jasvascript/02-setup/threejs03.html",
+    "02-mat/jasvascript/02-setup/threejs02.html",
+    "02-mat/jasvascript/02-setup/threejs01.html",
+    "02-mat/jasvascript/02-setup/threejs-youtube.html",
+    "02-mat/jasvascript/02-setup/three-pos-synth.html",
+    "02-mat/jasvascript/02-setup/t2.html",
+    "02-mat/jasvascript/02-setup/t1.html",
+    "02-mat/jasvascript/02-setup/hover.html",
+    "02-mat/jasvascript/02-setup/hover-synth.html",
+    "02-mat/jasvascript/02-setup/hover-synth-vis.html",
+    "02-mat/jasvascript/02-setup/02-setup.md",
+    "04-out/topoi/arte de datos.md",
+    "04-out/personas/Martin Rohrmeier.md",
+    "00-moc/topoi MOC.md",
+    "00-moc/teatro MOC.md",
+    "00-moc/proyectos MOC.md",
+    "00-moc/personas MOC.md",
+    "00-moc/obras MOC.md",
+    "00-moc/eventos MOC.md",
+    "00-moc/espacios MOC.md",
+    "00-moc/códigos MOC.md",
+    "00-moc/cym MOC.md",
+    "00-moc/coloquial MOC.md",
+    "00-moc/bib MOC.md",
+    "00-in/whoosh.md",
+    "00-in/La memoria de los materiales.md",
+    "00-in/Juan Sorrentino.md",
+    "00-in/Andrés Aizicovich.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
-    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
-    "02-mat/obs/img/proyectual CLOROLASER.pdf",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
     "03-cla/c-cym08-github pages+hydra.md",
-    "02-mat/obs/img/Presentación del coloquio de Música visual 1.pdf",
     "01-proj/23/bassino/Coloquio/Presentación para el  coloquio de música visual.md",
     "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/Presentación para coloquio de Música visual.pptx.md",
-    "02-mat/obs/img/Presentación del coloquio de Música visual.pdf",
-    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/Coloquio",
-    "04-out/topoi/Música Visual.md",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "conflict-files-obsidian-git.md",
-    "02-mat/tonejs/01-tone.js.md",
-    "02-mat/tonejs",
-    "04-out/topoi/t-topoi 1.md",
-    "04-out/topoi/Vida artificial.md",
-    "04-out/topoi/Sistemas de universos.md",
-    "04-out/topoi/Sistemas complejos.md",
-    "04-out/topoi/Racionalizacion_(videojuegos).md",
-    "04-out/topoi/Livecoding.md",
-    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
-    "04-out/topoi/Intervencion del espacio público.md",
-    "04-out/topoi/Internetmusic.md",
-    "04-out/topoi/Humanos.md",
-    "04-out/topoi/Historia de la tecnología.md",
-    "04-out/topoi/Fragile Territories.md",
     "02-mat/obs/tpl/probando Upstart-1696798852636.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852629.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
@@ -282,9 +297,6 @@
     "02-mat/obs/tpl/probando Upstart-1696798852592.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852588.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/Sin título",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios en Upstart",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/Sin Sin título título",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",

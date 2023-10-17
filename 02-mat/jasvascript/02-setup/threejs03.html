@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>threejs3</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js' integrity='sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ==' crossorigin='anonymous'></script>
+
+        <script type="x-shader/x-vertex" id="vertexshader">
+        
+            
+    varying vec2 vUv;
+
+    void main() {
+
+      vUv = uv;
+
+      gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+    }
+
+  </script>
+
+  <script type="x-shader/x-fragment" id="fragmentshader">
+
+    uniform sampler2D baseTexture;
+    uniform sampler2D bloomTexture;
+
+    varying vec2 vUv;
+
+    void main() {
+
+      gl_FragColor = ( texture2D( baseTexture, vUv ) + vec4( 1.0 ) * texture2D( bloomTexture, vUv ) );
+
+    }
+  </script>
+
+
+</head>
+
+<div class="world" id="world">  
+
+
+
+<body>
+
+
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.120.0/build/three.module.js";
+import {
+  OrbitControls
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/controls/OrbitControls.js";
+import {
+  EffectComposer
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/EffectComposer.js";
+import {
+  RenderPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/RenderPass.js";
+import {
+  ShaderPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/ShaderPass.js";
+import {
+  UnrealBloomPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/UnrealBloomPass.js";
+
+
+import Stats from 'https://unpkg.com/three@0.125.2/examples/jsm/libs/stats.module'
+//postprocessing
+let materials, bloom_pass, bloom_composer, render_scene, final_pass, bloom_layer, dark_material, final_composer;
+
+var enemy = [];
+var floor;
+const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  alpha: true,
+});
+renderer.setClearColor(0x01010d, 1);
+
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+// const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 4, 1, 0.1);
+
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0x020C26, 0, 250);
+
+const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 2000);
+camera.position.set(0, 0, 20);
+camera.lookAt(0, 0, 0);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+// controls.maxPolarAngle = Math.PI * 0.5;
+controls.minDistance = 1;
+controls.maxDistance = 100000;
+// controls.addEventListener('change', render);
+// camera.addEventListener('change', render);
+
+var stats = new Stats();
+stats.domElement.style.left = '12px';
+// stats.domElement.style.position = 'relative';
+// stats.domElement.style.top = '50px';
+stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+document.body.appendChild(stats.domElement);
+
+scene.add(new THREE.AmbientLight(0xffffff));
+
+const gridHelper = new THREE.GridHelper(300, 100);
+scene.add(gridHelper);
+// crée les axes 
+const axesHelper = new THREE.AxesHelper(50);
+scene.add(axesHelper);
+
+
+init();
+animate()
+
+window.onresize = function () {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  camera.aspect = width / height;
+  renderer.setSize(width, height);
+  bloom_composer.setSize(width, height);
+  final_composer.setSize(width, height);
+};
+
+function init() {
+  //css declarations
+
+  Post_processing();
+  create_enemy();
+  create_floor();
+}
+
+function render() {
+  render_with_bloom();
+  // render the entire scene, then render bloom scene on top
+  final_composer.render();
+}
+
+
+
+function animate() {
+  render()
+  stats.update()
+  enemy.forEach((i) => {
+    i.rotation.y += 0.1
+  })
+  camera.updateMatrixWorld();
+  requestAnimationFrame(animate);
+}
+
+function create_floor() {
+  floor = new THREE.Mesh(new THREE.BoxGeometry(300, 1, 300), new THREE.MeshBasicMaterial({
+    color: "#fff",
+    wireframe: false,
+    transparent: false,
+    opacity: 1,
+  }));
+  scene.add(floor)
+  floor.position.y = -1 - 2
+  floor.layers.set(0);
+};
+
+function create_enemy() {
+  for (let i = 0; i < 50; i++) {
+    enemy[i] = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 5), new THREE.MeshLambertMaterial({
+      color: "black",
+      wireframe: false
+    }));
+
+    enemy[i].position.z = 0;
+    scene.add(enemy[i]);
+
+    var objBack = new THREE.Mesh(new THREE.BoxGeometry(5, 5, .1), new THREE.MeshBasicMaterial({
+      color: "white",
+      wireframe: false,
+      transparent: false,
+      opacity: 1,
+    }));
+    objBack.position.z = -2.51;
+    objBack.layers.enable(1);
+    enemy[i].add(objBack);
+
+    let pos = random(-100, 100)
+    let pos2 = random(-100, 100)
+    enemy[i].position.set(pos, random(0, 100), pos2)
+    enemy[i].rotation.y = random(0, 2);
+  };
+};
+
+
+///////////////////////////////////////////////////////////////////////////////
+// POST PROCESSS
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+function Post_processing() {
+  ///////////////////////////////////////////////////////////////////////////////
+  // postprocessing
+  ///////////////////////////////////////////////////////////////////////////////
+  /*
+  bloom_pass
+  bloom_composer
+  render_scene
+  final_pass
+  bloom_layer
+  dark_material
+
+  */
+
+  bloom_layer = new THREE.Layers();
+  bloom_layer.set(1);
+
+  dark_material = new THREE.MeshBasicMaterial({
+    color: 'black'
+  });
+  materials = {};
+
+  bloom_pass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 4, 1, 0.1);
+  // bloom_pass.threshold = params.bloomThreshold;
+  // bloom_pass.strength = params.bloomStrength;
+  // bloom_pass.radius = params.bloomRadius;
+
+  bloom_composer = new EffectComposer(renderer);
+  bloom_composer.renderToScreen = false;
+  render_scene = new RenderPass(scene, camera);
+  bloom_composer.addPass(render_scene);
+  bloom_composer.addPass(bloom_pass);
+
+  final_pass = new ShaderPass(
+    new THREE.ShaderMaterial({
+      uniforms: {
+        baseTexture: {
+          value: null
+        },
+        bloomTexture: {
+          value: bloom_composer.renderTarget2.texture
+        }
+      },
+      vertexShader: document.getElementById('vertexshader').textContent,
+      fragmentShader: document.getElementById('fragmentshader').textContent,
+      defines: {}
+    }), 'baseTexture'
+  );
+  final_pass.needsSwap = true;
+
+  final_composer = new EffectComposer(renderer);
+  final_composer.addPass(render_scene);
+  final_composer.addPass(final_pass);
+  ///////////////////////////////////////////////////////////////////////////////
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// pour que les objets restent opaques sinon on voit à travers
+///////////////////////////////////////////////////////////////////////////////
+function render_with_bloom() {
+
+  scene.traverse(darken_non_bloomed);
+  bloom_composer.render();
+  scene.traverse(restore_material);
+}
+///////////////////////////////////////////////////////////////////////////////
+
+function darken_non_bloomed(obj) {
+  if (obj.isMesh && bloom_layer.test(obj.layers) === false) {
+    materials[obj.uuid] = obj.material;
+    obj.material = dark_material;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// pour restaurer les matériaux sinon tout noir
+///////////////////////////////////////////////////////////////////////////////
+
+function restore_material(obj) {
+  if (materials[obj.uuid]) {
+
+    obj.material = materials[obj.uuid];
+    delete materials[obj.uuid];
+
+  }
+}
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+        // SOUND
+  
+        // Initialize Tone.js after a user gesture
+        document.addEventListener('mousemove', () => {
+            Tone.start().then(() => {
+                // Create FM synth with slow attack
+                const fmSynth = new Tone.FMSynth({
+                    envelope: {
+                        attack: 2, // Adjust attack time (in seconds) for a slow attack
+                        decay: 0.2,
+                        sustain: 1,
+                        release: 1
+                    }
+                }).toDestination();
+
+                // Create Sawtooth synth with slow attack
+                const sawSynth = new Tone.Synth({
+                    oscillator: {
+                        type: "sawtooth",
+                    },
+                    envelope: {
+                        attack: 2, // Adjust attack time (in seconds) for a slow attack
+                        decay: 0.2,
+                        sustain: 1,
+                        release: 1
+                    }
+                }).toDestination();
+
+                // Create a low-pass filter
+                const filter = new Tone.Filter(200, "lowpass").toDestination();
+
+                // Create a reverb effect
+                const reverb = new Tone.Reverb(0.5).toDestination();
+
+                // Connect the synths to the filter and reverb
+                fmSynth.connect(filter);
+                sawSynth.connect(filter);
+                filter.connect(reverb);
+
+                // Crossfade value (initially at the center)
+                let crossfadeValue = 0.5;
+
+                // Mouse hover event listener
+                document.addEventListener('mousemove', (e) => {
+                    // Calculate crossfade value based on mouse X position
+                    crossfadeValue = e.clientX / window.innerWidth;
+                    // Ensure the crossfadeValue is within the range [0, 1]
+                    crossfadeValue = Math.min(Math.max(crossfadeValue, 0), 1);
+
+                    // Set synth volumes based on crossfadeValue
+                    fmSynth.volume.value = -20 * Math.log10(crossfadeValue);
+                    sawSynth.volume.value = -20 * Math.log10(1 - crossfadeValue);
+
+                    // Update the info element with mouse coordinates
+                    const infoElement = document.getElementById('info');
+                    infoElement.textContent = `Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`;
+
+                    // Adjust the filter frequency based on the Y-axis position
+                    const filterFreq = Tone.Midi(36 + (e.clientY / window.innerHeight) * 60).toFrequency();
+                    filter.frequency.value = filterFreq;
+
+                    // Update the hue variable based on the X-axis position
+                    const hue = (e.clientX / window.innerWidth) * 360;
+                    document.body.style.setProperty('--hue', hue);
+                });
+
+                // Keyboard input event listener
+                const activeNotes = {}; // Track active notes
+                document.addEventListener('keydown', (e) => {
+                    // Map keys to synth frequency and color class
+                    const keyMap = {
+                        'a': { note: 'C4', colorClass: 'color-c4' },
+                        'w': { note: 'D4', colorClass: 'color-d4' },
+                        's': { note: 'E4', colorClass: 'color-e4' },
+                        'e': { note: 'F4', colorClass: 'color-f4' },
+                        'd': { note: 'G4', colorClass: 'color-g4' },
+                        'f': { note: 'A4', colorClass: 'color-a4' },
+                        't': { note: 'B4', colorClass: 'color-b4' },
+                    };
+                            console.log(heyMap)
+                    const keyInfo = keyMap[e.key];
+                    if (keyInfo && !activeNotes[keyInfo.note]) {
+                        // Trigger the synth attack with a delay of 0.1 seconds
+                        fmSynth.triggerAttack(keyInfo.note, "+0.1");
+                        sawSynth.triggerAttack(keyInfo.note, "+0.1");
+                        activeNotes[keyInfo.note] = true;
+
+                        // Add color class to body based on key pressed
+                        document.body.classList.add(keyInfo.colorClass);
+                    }
+                });
+
+                // Keyboard release event listener
+                document.addEventListener('keyup', (e) => {
+                    // Map keys to synth frequency and color class
+                    const keyMap = {
+                        'a': { note: 'C4', colorClass: 'color-c4' },
+                        'w': { note: 'D4', colorClass: 'color-d4' },
+                        's': { note: 'E4', colorClass: 'color-e4' },
+                        'e': { note: 'F4', colorClass: 'color-f4' },
+                        'd': { note: 'G4', colorClass: 'color-g4' },
+                        'f': { note: 'A4', colorClass: 'color-a4' },
+                        't': { note: 'B4', colorClass: 'color-b4' },
+                    };
+
+                    const keyInfo = keyMap[e.key];
+                    if (keyInfo) {
+                        // Release the note on both synths
+                        fmSynth.triggerRelease();
+                        sawSynth.triggerRelease();
+                        activeNotes[keyInfo.note] = false;
+
+                        // Remove color class from body based on key released
+                        document.body.classList.remove(keyInfo.colorClass);
+
+                        // Delay background color change to black
+                        setTimeout(() => {
+                            document.body.style.transition = 'background-color 5s';
+                            document.body.style.backgroundColor = 'black';
+                        }, 0);
+
+                        // Reset background color after the delay
+                        setTimeout(() => {
+                            document.body.style.transition = '';
+                            document.body.style.backgroundColor = `hsl(var(--hue), 70%, 50%)`;
+                        }, 5 * 1000); // 5 seconds
+                    }
+                });
+            });
+        }, { passive: true });
+    </script>
+</body>
+</html>

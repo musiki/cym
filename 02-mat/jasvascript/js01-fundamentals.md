@@ -212,7 +212,8 @@ break;
 }
 
 alert (i);
-}```
+}
+```
 
 Por el contrario, la sentencia **continue**, pero en vez de interrumpir, la saltea y continúa
 
@@ -1014,8 +1015,8 @@ let boton = document.getElementById("btnPrincipal")
 (NO recomendada) Incorporada la función en el html
 ```html
  <input type="button" value="CLICK2" onclick="alert('Respuesta 3');" />.
- ```
- 
+```
+
 ### Tipos de eventos
 
 #### Mouse
@@ -1040,6 +1041,7 @@ boton.onclick = () => {console.log("Click")}
 
 boton.onmousemove = () => {console.log("Move")}
 ```
+
 ### Teclado
 
 ##### keydown
@@ -1110,7 +1112,7 @@ function validarFormulario(e){
 }
 ```
 
-## Asincronía y promesas
+## Asincronía
 
 ### setTimeout
 Una función de callback y un valor numérico que representa milisegundos

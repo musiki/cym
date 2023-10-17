@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfade Synths with Mouse and Keyboard</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            animation: backgroundAnimation 5s infinite alternate; /* CSS animation */
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #007acc; /* Blue */
+            }
+            100% {
+                background-color: #ff6347; /* Tomato Red */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Mouse X: 0, Mouse Y: 0</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.27/Tone.js"></script>
+    <script>
+        // Initialize Tone.js after a user gesture
+        document.addEventListener('mousedown', () => {
+            Tone.start().then(() => {
+                // Create FM synth
+                const fmSynth = new Tone.FMSynth().toDestination();
+
+                // Create Sawtooth synth
+                const sawSynth = new Tone.Synth({
+                    oscillator: {
+                        type: "sawtooth",
+                    },
+                }).toDestination();
+
+                // Create a low-pass filter
+                const filter = new Tone.Filter(200, "lowpass").toDestination();
+
+                // Create a reverb effect
+                const reverb = new Tone.Reverb(5).toDestination();
+
+                // Connect the synths to the filter and reverb
+                fmSynth.connect(filter);
+                sawSynth.connect(filter);
+                filter.connect(reverb);
+
+                // Crossfade value (initially at the center)
+                let crossfadeValue = 0.5;
+
+                // Mouse hover event listener
+                document.addEventListener('mousemove', (e) => {
+                    // Calculate crossfade value based on mouse X position
+                    crossfadeValue = e.clientX / window.innerWidth;
+                    // Ensure the crossfadeValue is within the range [0, 1]
+                    crossfadeValue = Math.min(Math.max(crossfadeValue, 0), 1);
+
+                    // Set synth volumes based on crossfadeValue
+                    fmSynth.volume.value = -20 * Math.log10(crossfadeValue);
+                    sawSynth.volume.value = -20 * Math.log10(1 - crossfadeValue);
+
+                    // Update the info element with mouse coordinates
+                    const infoElement = document.getElementById('info');
+                    infoElement.textContent = `Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`;
+
+                    // Adjust the filter frequency based on the Y-axis position
+                    const filterFreq = Tone.Midi(36 + (e.clientY / window.innerHeight) * 60).toFrequency();
+                    filter.frequency.value = filterFreq;
+                });
+
+                // Keyboard input event listener
+                const activeNotes = {}; // Track active notes
+                document.addEventListener('keydown', (e) => {
+                    // Map keys to synth frequency
+                    const keyMap = {
+                        'a': 'C4',
+                        'w': 'D4',
+                        's': 'E4',
+                        'e': 'F4',
+                        'd': 'G4',
+                        'f': 'A4',
+                        't': 'B4',
+                    };
+
+                    const note = keyMap[e.key];
+                    if (note && !activeNotes[note]) {
+                        // Trigger the note on both synths
+                        fmSynth.triggerAttack(note);
+                        sawSynth.triggerAttack(note);
+                        activeNotes[note] = true;
+                    }
+                });
+
+                // Keyboard release event listener
+                document.addEventListener('keyup', (e) => {
+                    // Map keys to synth frequency
+                    const keyMap = {
+                        'a': 'C4',
+                        'w': 'D4',
+                        's': 'E4',
+                        'e': 'F4',
+                        'd': 'G4',
+                        'f': 'A4',
+                        't': 'B4',
+                    };
+
+                    const note = keyMap[e.key];
+                    if (note) {
+                        // Release the note on both synths
+                        fmSynth.triggerRelease();
+                        sawSynth.triggerRelease();
+                        activeNotes[note] = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

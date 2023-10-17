@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple piano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .audio-button {
+            width: 100px;
+            height: 40px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>piano</h1>
+    <p>press ctrl+option+ the key before each notename</p>
+    <div class="grid-container">
+        <button  class="audio-button" accesskey="a" onclick="playAudio('audio1')">a:C1</button>
+        <button  class="audio-button" accesskey="s" onclick="playAudio('audio2')">s:C2</button>
+        <button  class="audio-button" accesskey="d" onclick="playAudio('audio3')">d:C3</button>
+        <button  class="audio-button" accesskey="f" onclick="playAudio('audio4')">f:C5</button>
+        <button  class="audio-button" accesskey="g" onclick="playAudio('audio5')">g:C6</button>
+        <button  class="audio-button" accesskey="h" onclick="playAudio('audio6')">h:C7</button>
+        <button  class="audio-button" accesskey="j" onclick="playAudio('audio7')">j:C8</button>         
+    </div>
+    
+    <audio id="audio1" src="C1.mp3"></audio>
+    <audio id="audio2" src="C2.mp3"></audio>
+    <audio id="audio3" src="C3.mp3"></audio>
+    <audio id="audio4" src="C5.mp3"></audio>
+     <audio id="audio5" src="C6.mp3"></audio>
+    <audio id="audio6" src="C7.mp3"></audio>
+    <audio id="audio7" src="C8.mp3"></audio>
+
+    <script>
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>
