@@ -16,8 +16,22 @@
                 "file": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg"
               }
             }
+          },
+          {
+            "id": "b042f344cab8cf66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "art",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -113,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             }
           },
           {
-            "id": "bf00db3b612e2613",
+            "id": "1161e9d6771ad4b5",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -214,23 +227,37 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "9c932be67380cd5c",
+  "active": "1161e9d6771ad4b5",
   "lastOpenFiles": [
-    "01-proj/23/beltrame/Piano.md",
+    "cym-metamap.canvas",
+    "conflict-files-obsidian-git.md",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg",
+    "04-out/topoi/arte de datos.md",
+    "04-out/personas/Martin Rohrmeier.md",
+    "02-mat/obs/tpl/t-topoi.md",
+    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
+    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
+    "00-moc/topoi MOC.md",
+    "00-moc/teatro MOC.md",
+    "00-moc/proyectos MOC.md",
+    "00-moc/personas MOC.md",
+    "00-moc/eventos MOC.md",
+    "00-moc/espacios MOC.md",
+    "00-moc/códigos MOC.md",
+    "00-moc/cym MOC.md",
+    "00-moc/coloquial MOC.md",
+    "00-moc/bib MOC.md",
+    "00-in/La memoria de los materiales.md",
+    "00-in/Juan Sorrentino.md",
+    "00-in/Andrés Aizicovich.md",
+    "01-proj/23/beltrame/Piano.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/shifres/do-tonera.md",
     "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
-    "04-out/topoi/Música y Política.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059616.jpeg",
-    "conflict-files-obsidian-git.md",
-    "02-mat/obs/tpl/t-person.md",
-    "02-mat/obs/tpl/t-obra.md",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
     "02-mat/jasvascript/02-setup/threejs01.html",
@@ -240,29 +267,15 @@
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
-    "02-mat/jasvascript/02-setup/02-setup.md",
-    "00-moc/obras MOC.md",
-    "00-in/whoosh.md",
     "02-mat/obs/tpl/probando Upstart-1696798852403.jpeg",
     "02-mat/obs/tpl/probando Upstart-1696798852560.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059567.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059573.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059577.jpeg",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059596.jpeg",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
     "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
-    "00-in/Botonera rítmica-1696371807756.jpeg.md",
-    "00-in/Botonera rítmica-1696371807919.jpeg.md",
     "02-mat/obs/img/image/Prueba Proyectual-1696355065204.jpeg",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "04-out/topoi/t-topoi 1.md",
-    "04-out/topoi/Música Visual.md",
-    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
-    "04-out/topoi/Fragile Territories.md",
-    "04-out/topoi/Forma Musical.md",
     "Untitled.canvas",
-    "cym-metamap.canvas",
     "03-cla/cym-map.canvas"
   ]
 }

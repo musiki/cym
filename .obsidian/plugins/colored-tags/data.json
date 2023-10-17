@@ -147,7 +147,16 @@
     "desarrollo": 140,
     "materiales": 141,
     "philo": 142,
-    "philo/science": 1
+    "philo/science": 1,
+    "artesvisuales": 143,
+    "colaboratividad": 144,
+    "artejuego": 145,
+    "argentina": 146,
+    "dss": 147,
+    "digitalmusicology": 148,
+    "musicology": 149,
+    "systematicmusicology": 150,
+    "dataart": 151
   },
   "_version": 2
 }

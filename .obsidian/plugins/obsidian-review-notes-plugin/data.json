@@ -1655,6 +1655,74 @@
     {
       "path": "02-mat/jasvascript/02-setup/02-setup.md",
       "filename": "02-setup"
+    },
+    {
+      "path": "00-in/Cybernetic Serendipity.md",
+      "filename": "Cybernetic Serendipity"
+    },
+    {
+      "path": "00-in/Andrés Aizicovich.md",
+      "filename": "Andrés Aizicovich"
+    },
+    {
+      "path": "00-in/Juan Sorrentino.md",
+      "filename": "Juan Sorrentino"
+    },
+    {
+      "path": "00-in/La memoria de los materiales.md",
+      "filename": "La memoria de los materiales"
+    },
+    {
+      "path": "00-moc/bib MOC.md",
+      "filename": "bib MOC"
+    },
+    {
+      "path": "00-moc/coloquial MOC.md",
+      "filename": "coloquial MOC"
+    },
+    {
+      "path": "00-moc/cym MOC.md",
+      "filename": "cym MOC"
+    },
+    {
+      "path": "00-moc/códigos MOC.md",
+      "filename": "códigos MOC"
+    },
+    {
+      "path": "00-moc/espacios MOC.md",
+      "filename": "espacios MOC"
+    },
+    {
+      "path": "00-moc/eventos MOC.md",
+      "filename": "eventos MOC"
+    },
+    {
+      "path": "00-moc/personas MOC.md",
+      "filename": "personas MOC"
+    },
+    {
+      "path": "00-moc/proyectos MOC.md",
+      "filename": "proyectos MOC"
+    },
+    {
+      "path": "00-moc/topoi MOC.md",
+      "filename": "topoi MOC"
+    },
+    {
+      "path": "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
+      "filename": "Simon Steen-Andersen écouter, observer, hacker-ed"
+    },
+    {
+      "path": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
+      "filename": "Tecnología digital, cibernética y capitalismo, Yuk Hui"
+    },
+    {
+      "path": "04-out/personas/Martin Rohrmeier.md",
+      "filename": "Martin Rohrmeier"
+    },
+    {
+      "path": "04-out/topoi/arte de datos.md",
+      "filename": "arte de datos"
     }
   ]
 }
