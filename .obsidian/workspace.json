@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "INGENIERIA INVERSA",
+                "query": "Arthouse",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -197,7 +198,7 @@
             }
           },
           {
-            "id": "8bbb3595c0085006",
+            "id": "705ac53528e9d872",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -240,12 +241,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8dac97e0dda0006d",
+  "active": "9c932be67380cd5c",
   "lastOpenFiles": [
-    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
-    "02-mat/obs/img/proyectual CLOROLASER.pdf",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
+    "02-mat/obs/img/proyectual CLOROLASER.pdf",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
     "03-cla/c-cym08-github pages+hydra.md",
@@ -288,7 +289,6 @@
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios en Upstart",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/Sin Sin título título",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "cym-metamap.canvas",
