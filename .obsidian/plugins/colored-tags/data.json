@@ -148,17 +148,17 @@
     "objetivos": 140,
     "desarrollo": 141,
     "materiales": 142,
-    "artesvisuales": 143,
-    "colaboratividad": 144,
-    "artejuego": 145,
-    "argentina": 146,
-    "John": 147,
-    "Cage": 148,
-    "dss": 149,
-    "digitalmusicology": 150,
-    "musicology": 151,
-    "systematicmusicology": 152,
-    "dataart": 153
+    "dss": 143,
+    "digitalmusicology": 144,
+    "musicology": 145,
+    "systematicmusicology": 146,
+    "artesvisuales": 147,
+    "argentina": 148,
+    "colaboratividad": 149,
+    "artejuego": 150,
+    "dataart": 151,
+    "John": 152,
+    "Cage": 153
   },
   "_version": 2
 }
