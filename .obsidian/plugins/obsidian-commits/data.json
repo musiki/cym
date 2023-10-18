@@ -1438,12 +1438,17 @@
       "size": 14099,
       "tags": 1,
       "links": 1
+    },
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
+      "size": 1377,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 454,
-      "Create": 338,
+      "Refactor": 455,
+      "Create": 340,
       "Link": 260,
       "Expand": 40
     }
@@ -1460,7 +1465,7 @@
       "7": 19,
       "8": 16,
       "9": 180,
-      "10": 23,
+      "10": 26,
       "11": 111,
       "12": 52,
       "13": 32,
@@ -1480,7 +1485,7 @@
     "/": {
       "Mon": 25,
       "Tue": 88,
-      "Wed": 641,
+      "Wed": 644,
       "Thu": 109,
       "Fri": 101,
       "Sat": 0,
@@ -1532,6 +1537,8 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1580,9 +1587,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md\"> Drawing 2023-09-12 20.17.31.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Dotonera.md\"> Dotonera </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
@@ -1697,6 +1702,7 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Juan Sorrentino.md\"> Juan Sorrentino </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1745,8 +1751,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-dataview.md\"> a-dataview </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/a-plugins.md\"> a-plugins </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",

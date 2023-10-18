@@ -97,9 +97,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "7b7e2e2bd83a5c45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -166,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/obs/tpl/t-obra.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -184,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/obs/tpl/t-obra.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -306,14 +319,27 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "8d357327336b6e09",
+  "active": "7b7e2e2bd83a5c45",
   "lastOpenFiles": [
+    "02-mat/obs/img/image",
+    "02-mat/obs/tpl/t-obra.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/t-obra-1697636099978.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099976.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099974.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099972.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099970.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099966.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099964.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099961.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099960.jpeg",
+    "02-mat/obs/img/image/t-obra-1697636099958.jpeg",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
     "00-moc/coloquial MOC.md",
     "03-cla/c-cym09-networking.md",
     "cym-metamap.canvas",
-    "conflict-files-obsidian-git.md",
     "04-out/topoi/arte de datos.md",
     "00-moc/topoi MOC.md",
     "00-moc/eventos MOC.md",
@@ -328,24 +354,11 @@
     "README.md",
     "00-moc/códigos MOC.md",
     "00-moc/proyectos MOC.md",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059628.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059624.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059619.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059616.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059613.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059602.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059599.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059596.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059593.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059583.jpeg",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "00-moc/personas MOC.md",
     "00-moc/cym MOC.md",
     "00-moc/espacios MOC.md",
     "00-in/hd-hydra.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym06c-tonejs.md",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
