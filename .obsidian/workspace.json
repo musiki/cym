@@ -91,8 +91,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
-                "mode": "preview",
+                "file": "02-mat/obs/tpl/t-obra.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -149,7 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 446.5
+    "width": 202.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md"
+                "file": "02-mat/obs/tpl/t-obra.md"
               }
             }
           },
@@ -184,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
+                "file": "02-mat/obs/tpl/t-obra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,9 +308,9 @@
   },
   "active": "8d357327336b6e09",
   "lastOpenFiles": [
+    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
     "00-moc/coloquial MOC.md",
-    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
     "03-cla/c-cym09-networking.md",
     "cym-metamap.canvas",
     "conflict-files-obsidian-git.md",
