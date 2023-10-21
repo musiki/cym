@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "93b116e58fbf25b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -129,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,8 +243,20 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "819936528fa288da",
+  "active": "93b116e58fbf25b6",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751637.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751631.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751619.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751613.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751599.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751587.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751581.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751570.jpeg",
     "03-cla/c-cym09-flex-grid.md",
     "01-proj/23/shifres/do-tonera.md",
     "01-proj/23/shifres/Dotonera.md",
@@ -239,12 +264,9 @@
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/beltrame/Piano.md",
     "00-in/La memoria de los materiales.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "README.md",
     "home.md",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059550.jpeg",
-    "conflict-files-obsidian-git.md",
     "cym-metamap.canvas",
     "04-out/topoi/arte de datos.md",
     "04-out/personas/Martin Rohrmeier.md",
@@ -259,9 +281,7 @@
     "00-moc/espacios MOC.md",
     "00-moc/códigos MOC.md",
     "00-moc/cym MOC.md",
-    "00-moc/coloquial MOC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059616.jpeg",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
     "02-mat/jasvascript/02-setup/threejs01.html",
@@ -271,14 +291,6 @@
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
-    "02-mat/obs/tpl/probando Upstart-1696798852403.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852560.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059567.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059573.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059577.jpeg",
-    "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059596.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852580.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065204.jpeg",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
