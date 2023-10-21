@@ -187,7 +187,7 @@
             }
           },
           {
-            "id": "1161e9d6771ad4b5",
+            "id": "1185234b4a8816dd",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -232,7 +232,13 @@
   },
   "active": "819936528fa288da",
   "lastOpenFiles": [
+    "03-cla/c-cym09-flex-grid.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/beltrame/Piano.md",
+    "00-in/La memoria de los materiales.md",
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "README.md",
@@ -254,12 +260,6 @@
     "00-moc/códigos MOC.md",
     "00-moc/cym MOC.md",
     "00-moc/coloquial MOC.md",
-    "00-moc/bib MOC.md",
-    "00-in/La memoria de los materiales.md",
-    "00-in/Juan Sorrentino.md",
-    "00-in/Andrés Aizicovich.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696949059616.jpeg",
     "02-mat/jasvascript/02-setup/threejs03.html",
