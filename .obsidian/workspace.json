@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dbd5f7403cb48a72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/Guitarrax.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "7484b8a8e907177a",
             "type": "leaf",
             "state": {
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +173,7 @@
             }
           },
           {
-            "id": "980040e8d3532f8b",
+            "id": "c7ab402c1eef1ebf",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -232,8 +218,10 @@
   },
   "active": "7484b8a8e907177a",
   "lastOpenFiles": [
-    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "01-proj/23/Petroccelli/Cajita Musical.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
     "conflict-files-obsidian-git.md",
     "00-in/topoi MOC.md",
     "00-in/proyectos MOC.md",
@@ -258,7 +246,6 @@
     "02-mat/tonejs",
     "02-mat/obs/tpl/t-topoi.md",
     "02-mat/obs/tpl/t-person.md",
-    "02-mat/obs/tpl/t-obra.md",
     "02-mat/obs/img/image/Cajita Musical-1698142596786.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596785.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596784.jpeg",
@@ -275,7 +262,6 @@
     "02-mat/jasvascript/02-setup/three-pos-synth.html",
     "02-mat/jasvascript/02-setup/t2.html",
     "02-mat/jasvascript/02-setup/t1.html",
-    "02-mat/jasvascript/02-setup/02-setup.md",
     "Sin título.canvas",
     "Sin título 1.canvas",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
