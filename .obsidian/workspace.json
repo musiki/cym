@@ -11,8 +11,13 @@
             "id": "5ea03f3405ae73c0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -91,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md"
+              }
             }
           },
           {
@@ -108,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,15 +173,23 @@
             }
           },
           {
-            "id": "7199bb620f4771bd",
+            "id": "444520d934f91aff",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
               "state": {}
             }
+          },
+          {
+            "id": "c9dc812baad8c531",
+            "type": "leaf",
+            "state": {
+              "type": "review-notes",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -208,11 +224,13 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "5ea03f3405ae73c0",
+  "active": "c9dc812baad8c531",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/beltrame.md",
+    "README.md",
     "01-proj/23/beltrame/Reseña.md",
-    "home.md",
     "01-proj/23/beltrame/Piano.md",
+    "home.md",
     "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "02-mat/jasvascript/js01-fundamentals.md",
@@ -254,8 +272,6 @@
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/22/Probando botones en codepen.md",
     "00-in/proyectual.md",
-    "00-in/bassino.md",
-    "00-in/Sin título.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
