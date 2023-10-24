@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md"
+                "file": "01-proj/23/beltrame/Reseña.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Piano.md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,8 +230,9 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "5ea03f3405ae73c0",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Piano.md",
     "01-proj/23/beltrame/Reseña.md",
     "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
@@ -277,7 +278,6 @@
     "00-in/bassino.md",
     "00-in/Sin título.md",
     "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/Ingeniería invertida.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
