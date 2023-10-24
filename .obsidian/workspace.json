@@ -14,13 +14,27 @@
               "type": "markdown",
               "state": {
                 "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
-                "mode": "source",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5ea03f3405ae73c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/beltrame/Piano.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md"
+                "file": "01-proj/23/beltrame/Piano.md"
               }
             }
           },
@@ -115,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
+                "file": "01-proj/23/beltrame/Piano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +187,7 @@
             }
           },
           {
-            "id": "2e187fe6554e1746",
+            "id": "d6c14ecdf4eb6db6",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -216,54 +230,54 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "02f03301fa34a2c4",
+  "active": "5ea03f3405ae73c0",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Reseña.md",
     "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
-    "03-cla/c-cym15-interactividad.md",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065371.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065368.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065364.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065341.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065339.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065337.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065333.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065324.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065319.jpeg",
-    "02-mat/obs/img/image/Prueba Proyectual-1696355065316.jpeg",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "00-in/teatro MOC.md",
-    "00-in/Sun Thinking.md",
-    "00-in/Pasted image 20220906234521.png.md",
-    "00-in/Hans Haake.md",
-    "01-proj/15/bergaglio/Supernova luna llena.md",
-    "01-proj/15/porrini/Un día bello.md",
-    "README.md",
-    "04-out/procedimientos/extrañamiento.md",
-    "04-out/procedimientos/README.md",
-    "04-out/procedimientos/tipologías de instalación.md",
-    "04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git.md",
-    "02-mat/obs/tpl/conflict-files-obsidian-git 2.md",
-    "02-mat/obs/tpl/t-alumno-POC.md",
-    "02-mat/obs/tpl/t-book.md",
-    "02-mat/obs/tpl/templater.md",
-    "02-mat/obs/tpl/t-movie.md",
-    "02-mat/obs/tpl/t-lorem.md",
-    "02-mat/obs/tpl/t-evento.md",
-    "02-mat/obs/tpl/t-espacios.md",
-    "02-mat/obs/img/image",
-    "02-mat/coloquial",
-    "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "04-out/readme",
-    "04-out/bibliografia",
-    "image/image",
-    "image",
-    "04-ref/image",
-    "04-ref",
+    "02-mat/jasvascript/js01-fundamentals.md",
+    "02-mat/jasvascript/js-cheatsheet.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/jasvascript/js-02 contextos de ejecución.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "04-out/topoi/t-topoi 1.md",
+    "04-out/topoi/La instalación como forma del arte contemporáneo 1.md",
+    "03-cla/c-cym09-visual.md",
+    "02-mat/tonejs/01-tone.js.md",
+    "02-mat/tonejs",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359535.jpeg",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359528.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852621.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852617.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852610.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852606.jpeg",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359508.jpeg",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359443.jpeg",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359440.jpeg",
+    "02-mat/obs/img/image/\"Una mirada profunda\"-1696967359424.jpeg",
+    "02-mat/obs/img/proyectual CLOROLASER.pdf",
+    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pdf",
+    "02-mat/obs/img/Presentación del coloquio de Música visual 1.pdf",
+    "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
+    "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
+    "01-proj/23/bassino/proyectual bassino",
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
+    "01-proj/23/bassino/codepen/Probando botones",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA",
+    "01-proj/23/bassino/codepen",
+    "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/22/Probando botones en codepen.md",
+    "00-in/proyectual.md",
+    "00-in/bassino.md",
+    "00-in/Sin título.md",
+    "00-in/Presentación para coloquio de Música visual.md",
+    "00-in/Ingeniería invertida.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"

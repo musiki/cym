@@ -132,7 +132,12 @@
     "mcl/list-card": 1,
     "pkm": 126,
     "knowledge": 127,
-    "education": 128
+    "education": 128,
+    "subtítulo": 129,
+    "sintesis": 130,
+    "objetivos": 131,
+    "desarrollo": 132,
+    "materiales": 133
   },
   "_version": 2
 }
