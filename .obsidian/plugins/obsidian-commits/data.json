@@ -1334,11 +1334,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-moc/obras MOC.md": {
-      "size": 729,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
       "size": 984,
       "tags": 0,
@@ -1363,56 +1358,6 @@
       "size": 5652,
       "tags": 4,
       "links": 2
-    },
-    "00-moc/bib MOC.md": {
-      "size": 202,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/coloquial MOC.md": {
-      "size": 400,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/cym MOC.md": {
-      "size": 310,
-      "tags": 0,
-      "links": 5
-    },
-    "00-moc/códigos MOC.md": {
-      "size": 123,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/espacios MOC.md": {
-      "size": 189,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/eventos MOC.md": {
-      "size": 3262,
-      "tags": 1,
-      "links": 1
-    },
-    "00-moc/personas MOC.md": {
-      "size": 176,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/proyectos MOC.md": {
-      "size": 125,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/teatro MOC.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-moc/topoi MOC.md": {
-      "size": 1882,
-      "tags": 0,
-      "links": 16
     },
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
       "size": 1377,
@@ -1443,12 +1388,77 @@
       "size": 571,
       "tags": 2,
       "links": 0
+    },
+    "00-in/01-tone.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/bib MOC.md": {
+      "size": 202,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/coloquial MOC.md": {
+      "size": 400,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/cym MOC.md": {
+      "size": 310,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/códigos MOC.md": {
+      "size": 123,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/espacios MOC.md": {
+      "size": 189,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/eventos MOC.md": {
+      "size": 3262,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/obras MOC.md": {
+      "size": 847,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/personas MOC.md": {
+      "size": 176,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/proyectos MOC.md": {
+      "size": 125,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/teatro MOC.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/topoi MOC.md": {
+      "size": 1882,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Cajita Musical.md": {
+      "size": 323,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 547,
-      "Create": 494,
+      "Refactor": 559,
+      "Create": 508,
       "Link": 340,
       "Expand": 51
     }
@@ -1465,7 +1475,7 @@
       "7": 14,
       "8": 44,
       "9": 177,
-      "10": 23,
+      "10": 49,
       "11": 96,
       "12": 27,
       "13": 29,
@@ -1484,7 +1494,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 560,
+      "Tue": 586,
       "Wed": 311,
       "Thu": 94,
       "Fri": 127,
@@ -1549,6 +1559,20 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Martin Rohrmeier.md\"> Martin Rohrmeier </a>",
@@ -1584,21 +1608,7 @@
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
         "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
-        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
-        "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/tonejs/01-tone.js.md\"> 01-tone.js </a>",
-        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1716,6 +1726,18 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/personas MOC.md\"> personas MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
+        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
@@ -1753,19 +1775,7 @@
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
-        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
-        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
