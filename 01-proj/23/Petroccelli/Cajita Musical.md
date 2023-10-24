@@ -1,5 +1,5 @@
 ---
-type: proyecto
+type: exercise
 author: Ezequiel Petroccelli
 tags:
   - proyectual
