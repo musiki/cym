@@ -36,8 +36,9 @@ Subir con el formato de ‘exercise’.
 
 
 ```dataview
-Table  without ID("![|200](" + banner + ")") as foto, file.link as name, file.ctime as creación, tags,  publish as "año", unit
+Table  without ID("![|200](" + banner + ")") as foto, file.link as name, file.ctime as creación, tags,  publish as "año", unit, author
 WHERE contains(type,"exercise")
 WHERE contains(publish,2023)
+WHERE contains(tp,04)
 SORT Status DESC
 ```
