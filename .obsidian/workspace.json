@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/Reseña.md",
+                "file": "01-proj/23/beltrame/Exercise.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Reseña.md"
+                "file": "01-proj/23/beltrame/Exercise.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Reseña.md",
+                "file": "01-proj/23/beltrame/Exercise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,11 +226,14 @@
   },
   "active": "5ea03f3405ae73c0",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/beltrame/Exercise.md",
+    "01-proj/23/beltrame/Reseña.md",
+    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
+    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "01-proj/23/beltrame/beltrame.md",
     "README.md",
-    "01-proj/23/beltrame/Reseña.md",
-    "01-proj/23/beltrame/Piano.md",
     "home.md",
     "conflict-files-obsidian-git.md",
     "02-mat/jasvascript/js01-fundamentals.md",
@@ -263,15 +266,12 @@
     "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
     "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
     "01-proj/23/bassino/proyectual bassino",
-    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
     "01-proj/23/bassino/codepen/Probando botones",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA",
     "01-proj/23/bassino/codepen",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/22/Probando botones en codepen.md",
-    "00-in/proyectual.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
