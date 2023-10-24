@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md",
+                "file": "01-proj/23/bassino/TP código.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md",
+                "file": "01-proj/23/bassino/TP código.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md"
+                "file": "01-proj/23/bassino/TP código.md"
               }
             }
           },
@@ -206,8 +206,8 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "01-proj/23/bassino/TP código.md",
     "01-proj/tp/tp04-aplicación js fundamentals.md",
+    "01-proj/23/bassino/TP código.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/bassino/bassino POC.md",
