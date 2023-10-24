@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md",
+                "file": "01-proj/tp/tp06-aplicación js fundamentals.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/tp/tp06-aplicación js fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/tp/tp06-aplicación js fundamentals.md"
               }
             }
           },
@@ -203,11 +204,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "34b386926eabb429",
   "lastOpenFiles": [
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "conflict-files-obsidian-git.md",
     "01-proj/23/bassino/TP código.md",
+    "01-proj/tp/tp06-aplicación js fundamentals.md",
+    "00-in/01-tone.md",
+    "00-in/whoosh.md",
+    "conflict-files-obsidian-git.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym08-github pages+hydra.md",
@@ -240,9 +244,6 @@
     "00-in/eventos MOC.md",
     "00-in/espacios MOC.md",
     "00-in/códigos MOC.md",
-    "00-in/cym MOC.md",
-    "00-in/coloquial MOC.md",
-    "00-in/bib MOC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
