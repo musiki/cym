@@ -95,6 +95,26 @@
     {
       "path": "00-in/01-tone.md",
       "filename": "01-tone"
+    },
+    {
+      "path": "00-in/bib MOC.md",
+      "filename": "bib MOC"
+    },
+    {
+      "path": "00-in/coloquial MOC.md",
+      "filename": "coloquial MOC"
+    },
+    {
+      "path": "00-in/cym MOC.md",
+      "filename": "cym MOC"
+    },
+    {
+      "path": "00-in/códigos MOC.md",
+      "filename": "códigos MOC"
+    },
+    {
+      "path": "00-in/espacios MOC.md",
+      "filename": "espacios MOC"
     }
   ]
 }

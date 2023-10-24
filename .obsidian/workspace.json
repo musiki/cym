@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "586b6df857faff4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -114,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym09-flex-grid.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -132,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym09-flex-grid.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -240,14 +254,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bb66f8b280257f5f",
+  "active": "586b6df857faff4f",
   "lastOpenFiles": [
+    "03-cla/c-cym09-flex-grid.md",
+    "conflict-files-obsidian-git.md",
+    "00-in/espacios MOC.md",
+    "00-in/códigos MOC.md",
+    "00-in/cym MOC.md",
+    "00-in/coloquial MOC.md",
+    "00-in/bib MOC.md",
     "03-cla/c-cym09-visual.md",
     "03-cla/c-cym09-networking.md",
     "03-cla/c-cym06c-tonejs.md",
     "02-mat/tonejs/01-tone.js.md",
     "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym09-flex-grid.md",
     "02-mat/jasvascript/02-setup/02-setup.md",
     "03-cla/c-cym10y11-Aframe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
@@ -257,7 +277,6 @@
     "cym-metamap.canvas",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "00-in/La memoria de los materiales.md",
-    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751637.jpeg",
@@ -284,11 +303,6 @@
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover.html",
     "02-mat/jasvascript/02-setup/hover-synth.html",
-    "04-out/personas/Martin Rohrmeier.md",
-    "00-moc/topoi MOC.md",
-    "00-moc/teatro MOC.md",
-    "00-moc/proyectos MOC.md",
-    "00-moc/personas MOC.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",
