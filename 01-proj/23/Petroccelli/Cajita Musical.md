@@ -2,7 +2,10 @@
 type: exercise
 author: Ezequiel Petroccelli
 tags:
-  - proyectual
+  - code
+ - js
+ - tonejs
+ - 
 publish: 2023
 
 ---
