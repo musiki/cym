@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym09-hydra+tone.js.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -204,12 +203,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/bassino/TP código.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-hydra+p5.js.md",
     "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
     "03-cla/c-cym09-networking.md",
     "03-cla/c-cym09-visual.md",
     "00-in/La memoria de los materiales.md",
@@ -218,7 +219,6 @@
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-02 contextos de ejecución.md",
     "00-in/Sun Thinking.md",
-    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/Cajita Musical-1698142596786.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596785.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596784.jpeg",
@@ -243,7 +243,6 @@
     "00-in/cym MOC.md",
     "00-in/coloquial MOC.md",
     "00-in/bib MOC.md",
-    "00-in/01-tone.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
