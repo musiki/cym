@@ -1,11 +1,7 @@
 ---
 type: exercise
 author: Ezequiel Petroccelli
-tags:
-  - code
- - js
- - tonejs
- - 
+tags: code js tonejs 
 publish: 2023
 
 ---
