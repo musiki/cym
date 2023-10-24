@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/Exercise.md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Exercise.md"
+                "file": "01-proj/23/beltrame/Reseña.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Exercise.md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,8 +226,8 @@
   },
   "active": "5ea03f3405ae73c0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/Exercise.md",
+    "conflict-files-obsidian-git.md",
     "04-out/topoi/arte de datos.md",
     "04-out/personas/Martin Rohrmeier.md",
     "02-mat/obs/tpl/t-topoi.md",
