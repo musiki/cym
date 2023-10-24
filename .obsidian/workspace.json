@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md"
+                "file": "01-proj/23/beltrame/Reseña.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/\"Una mirada profunda\".md",
+                "file": "01-proj/23/beltrame/Reseña.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,15 +224,15 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "c9dc812baad8c531",
+  "active": "5ea03f3405ae73c0",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "01-proj/23/beltrame/beltrame.md",
     "README.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/beltrame/Piano.md",
     "home.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/jasvascript/js-playground.md",
