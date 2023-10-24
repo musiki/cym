@@ -1463,13 +1463,18 @@
       "size": 333,
       "tags": 3,
       "links": 0
+    },
+    "01-proj/23/bassino/TP código.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 583,
-      "Create": 632,
-      "Link": 444,
+      "Refactor": 587,
+      "Create": 636,
+      "Link": 445,
       "Expand": 23
     }
   },
@@ -1491,7 +1496,7 @@
       "13": 120,
       "14": 78,
       "15": 132,
-      "16": 49,
+      "16": 58,
       "17": 30,
       "18": 252,
       "19": 3,
@@ -1504,7 +1509,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 989,
+      "Tue": 998,
       "Wed": 68,
       "Thu": 269,
       "Fri": 15,
@@ -1540,6 +1545,10 @@
         "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Sin título.md\"> Sin título </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
@@ -1586,13 +1595,10 @@
         "<a class=\"internal-link\" href=\"00-in/Juan Sorrentino.md\"> Juan Sorrentino </a>",
         "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Augmented Cognition.md\"> Augmented Cognition </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Arte participativo.md\"> Arte participativo </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Sin título.md\"> Sin título </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/La conciencia o el destino a morir.md\"> La conciencia o el destino a morir </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
@@ -1642,8 +1648,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Cuarta Revolución Industrial.md\"> Cuarta Revolución Industrial </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
@@ -1702,6 +1707,9 @@
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
@@ -1747,12 +1755,10 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Internetmusic.md\"> Internetmusic </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
@@ -1802,8 +1808,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>"
+        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cc07d8489e0ae283",
+        "id": "36001402fcfec940",
         "type": "tabs",
         "children": [
           {
-            "id": "4566912d5497ff64",
+            "id": "bd198634126fa249",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
-                "mode": "preview",
+                "file": "01-proj/23/bassino/TP código.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -75,8 +75,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp05-guía de lectura 1 GROYS.md"
+                "file": "01-proj/23/bassino/TP código.md"
               }
             }
           },
@@ -133,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
+                "file": "01-proj/23/bassino/TP código.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,15 +240,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "65325b7f6fb07590",
+  "active": "bd198634126fa249",
   "lastOpenFiles": [
+    "01-proj/23/bassino/TP código.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp03-guía de lectura MONTFORT.md",
     "01-proj/tp/tp02-aplicación.md",
     "01-proj/tp/tp01-topoi.md",
     "01-proj/tp/prueba tutorial.md",
     "03-cla/c-cym09-visual.md",
     "03-cla/c-cym09-flex-grid.md",
-    "conflict-files-obsidian-git.md",
     "00-in/espacios MOC.md",
     "00-in/códigos MOC.md",
     "00-in/cym MOC.md",
@@ -279,8 +280,6 @@
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751581.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751570.jpeg",
     "02-mat/obs/img/image",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "00-in/Juan Sorrentino.md",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
     "02-mat/jasvascript/02-setup/threejs01.html",
