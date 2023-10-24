@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6618f6518751ff44",
+            "id": "dbd5f7403cb48a72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "file": "01-proj/23/Petroccelli/Guitarrax.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -21,13 +21,13 @@
             }
           },
           {
-            "id": "78b19d4f63a2d646",
+            "id": "7484b8a8e907177a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-                "mode": "source",
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md"
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             }
           },
           {
-            "id": "83ea9643e71c9df9",
+            "id": "980040e8d3532f8b",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -230,13 +230,22 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "78b19d4f63a2d646",
+  "active": "7484b8a8e907177a",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Clorolaser.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
+    "02-mat/obs/img/Cajita Musical 1.html",
+    "02-mat/obs/img/Cajita Musical.html",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/21/tortorelli/Simon dice.md",
     "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
     "Untitled.loom",
     "Sin título.canvas",
     "Sin título 1.canvas",
@@ -267,20 +276,11 @@
     "01-proj/23/bassino/codepen/Probando botones",
     "01-proj/23/bassino/codepen",
     "01-proj/22/Probando botones en codepen.md",
-    "00-in/proyectual.md",
-    "00-in/i.md",
-    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "2023-09-27.md",
-    "00-in/teatro MOC.md",
-    "00-in/Sun Thinking.md",
     "02-mat/procesos/Untitled.loom",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "cym-metamap.canvas",
     "02-mat/obs/img/image",
-    "02-mat/coloquial",
-    "02-mat/obs/img/PSICOACÚSTICA 1.pdf",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
