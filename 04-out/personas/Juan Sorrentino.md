@@ -1,3 +1,17 @@
+---
+type: person
+photo: https://resizer.glanacion.com/resizer/v2/juan-sorrentino-originario-de-chaco-se-formo-como-QIKZBDTQ4JFRRISOE2IZKJZAOQ.JPG
+tags: artesvisuales , argentina 
+born in city: Resistencia
+born year: 
+dead year: 
+city: Buenos Aires
+country: 
+connect: 
+url:
+---
+
+
 Mi trabajo se basa en interacciones inquisitivas con objetos y materiales a través del sonido. Los objetos sonoros funcionan como instrumentos de <mark style="background: #ABF7F7A6;">ensamblaje</mark> que se montan y desmontan para cada actuación. La autonomía de cada obra se articula con un complejo montaje musical de instrumentos recurrentes que se enlazan en cada dispositivo expositivo como una actualización espacial que alberga un reflejo sonoro único.  
   
 La composición y el estudio de los paisajes sonoros y las experimentaciones visuales-auditivas implican un enfoque singular en cada territorio. Me interesa la sensación de<mark style="background: #ABF7F7A6;"> presencia del espacio</mark>. Mis dispositivos vinculan la capacidad<mark style="background: #ABF7F7A6;"> perceptiva humana con la experiencia material </mark>de la artesanía (hierro, madera, electrónica) a la manera de un culto experimental que busca ampliar la conciencia de la escucha.  

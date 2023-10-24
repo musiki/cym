@@ -1357,7 +1357,7 @@
       "filename": "exhibiciones históricas"
     },
     {
-      "path": "00-in/Cybernetic Serendipity.md",
+      "path": "04-out/eventos/Cybernetic Serendipity.md",
       "filename": "Cybernetic Serendipity"
     },
     {
@@ -1469,7 +1469,7 @@
       "filename": "obras MOC"
     },
     {
-      "path": "00-in/b-Azar y necesidad.md",
+      "path": "04-out/bibliografía/b-Azar y necesidad.md",
       "filename": "b-Azar y necesidad"
     },
     {
@@ -1633,7 +1633,7 @@
       "filename": "conflict-files-obsidian-git"
     },
     {
-      "path": "00-in/Hans Haake.md",
+      "path": "04-out/personas/Hans Haake.md",
       "filename": "Hans Haake"
     },
     {
@@ -2197,7 +2197,7 @@
       "filename": "t-person"
     },
     {
-      "path": "00-in/whoosh.md",
+      "path": "04-out/obras/whoosh.md",
       "filename": "whoosh"
     },
     {
@@ -2349,8 +2349,8 @@
       "filename": "C8"
     },
     {
-      "path": "00-in/INGENIERIA INVERTIDA.md",
-      "filename": "INGENIERIA INVERTIDA"
+      "path": "00-in/Ingenieria invertida.md",
+      "filename": "Ingenieria invertida"
     },
     {
       "path": "00-in/Ingeniería invertida.md",
@@ -2537,15 +2537,15 @@
       "filename": "Proyectual - Dopplermanían´t-1696949059628"
     },
     {
-      "path": "00-in/La memoria de los materiales.md",
+      "path": "04-out/eventos/La memoria de los materiales.md",
       "filename": "La memoria de los materiales"
     },
     {
-      "path": "00-in/Andrés Aizicovich.md",
+      "path": "04-out/personas/Andrés Aizicovich.md",
       "filename": "Andrés Aizicovich"
     },
     {
-      "path": "00-in/Juan Sorrentino.md",
+      "path": "04-out/personas/Juan Sorrentino.md",
       "filename": "Juan Sorrentino"
     },
     {
@@ -2643,6 +2643,10 @@
     {
       "path": "02-mat/obs/img/image/t-obra-1697636099978.jpeg",
       "filename": "t-obra-1697636099978"
+    },
+    {
+      "path": "00-in/Golan Levin.md",
+      "filename": "Golan Levin"
     }
   ]
 }
