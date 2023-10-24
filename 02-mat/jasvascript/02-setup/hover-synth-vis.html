@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfade Synths with Mouse and Keyboard</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            animation: backgroundAnimation 5s infinite alternate;
+            --hue: 200; /* Initial hue value */
+            background-color: hsl(var(--hue), 70%, 50%);
+            transition: background-color 5s; /* CSS transition for background color */
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+        }
+
+        .color-c4 { --hue: 200; } /* Assign specific hue values for each note */
+        .color-d4 { --hue: 160; }
+        .color-e4 { --hue: 120; }
+        .color-f4 { --hue: 80; }
+        .color-g4 { --hue: 40; }
+        .color-a4 { --hue: 0; }
+        .color-b4 { --hue: 320; }
+    </style>
+</head>
+<body>
+    <div id="info">Mouse X: 0, Mouse Y: 0</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.27/Tone.js"></script>
+    <script>
+        // Initialize Tone.js after a user gesture
+        document.addEventListener('mousemove', () => {
+            Tone.start().then(() => {
+                // Create FM synth with slow attack
+                const fmSynth = new Tone.FMSynth({
+                    envelope: {
+                        attack: 2, // Adjust attack time (in seconds) for a slow attack
+                        decay: 0.2,
+                        sustain: 1,
+                        release: 1
+                    }
+                }).toDestination();
+
+                // Create Sawtooth synth with slow attack
+                const sawSynth = new Tone.Synth({
+                    oscillator: {
+                        type: "sawtooth",
+                    },
+                    envelope: {
+                        attack: 2, // Adjust attack time (in seconds) for a slow attack
+                        decay: 0.2,
+                        sustain: 1,
+                        release: 1
+                    }
+                }).toDestination();
+
+                // Create a low-pass filter
+                const filter = new Tone.Filter(200, "lowpass").toDestination();
+
+                // Create a reverb effect
+                const reverb = new Tone.Reverb(0.5).toDestination();
+
+                // Connect the synths to the filter and reverb
+                fmSynth.connect(filter);
+                sawSynth.connect(filter);
+                filter.connect(reverb);
+
+                // Crossfade value (initially at the center)
+                let crossfadeValue = 0.5;
+
+                // Mouse hover event listener
+                document.addEventListener('mousemove', (e) => {
+                    // Calculate crossfade value based on mouse X position
+                    crossfadeValue = e.clientX / window.innerWidth;
+                    // Ensure the crossfadeValue is within the range [0, 1]
+                    crossfadeValue = Math.min(Math.max(crossfadeValue, 0), 1);
+
+                    // Set synth volumes based on crossfadeValue
+                    fmSynth.volume.value = -20 * Math.log10(crossfadeValue);
+                    sawSynth.volume.value = -20 * Math.log10(1 - crossfadeValue);
+
+                    // Update the info element with mouse coordinates
+                    const infoElement = document.getElementById('info');
+                    infoElement.textContent = `Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`;
+
+                    // Adjust the filter frequency based on the Y-axis position
+                    const filterFreq = Tone.Midi(36 + (e.clientY / window.innerHeight) * 60).toFrequency();
+                    filter.frequency.value = filterFreq;
+
+                    // Update the hue variable based on the X-axis position
+                    const hue = (e.clientX / window.innerWidth) * 360;
+                    document.body.style.setProperty('--hue', hue);
+                });
+
+                // Keyboard input event listener
+                const activeNotes = {}; // Track active notes
+                document.addEventListener('keydown', (e) => {
+                    // Map keys to synth frequency and color class
+                    const keyMap = {
+                        'a': { note: 'C4', colorClass: 'color-c4' },
+                        'w': { note: 'D4', colorClass: 'color-d4' },
+                        's': { note: 'E4', colorClass: 'color-e4' },
+                        'e': { note: 'F4', colorClass: 'color-f4' },
+                        'd': { note: 'G4', colorClass: 'color-g4' },
+                        'f': { note: 'A4', colorClass: 'color-a4' },
+                        't': { note: 'B4', colorClass: 'color-b4' },
+                    };
+
+                    const keyInfo = keyMap[e.key];
+                    if (keyInfo && !activeNotes[keyInfo.note]) {
+                        // Trigger the synth attack with a delay of 0.1 seconds
+                        fmSynth.triggerAttack(keyInfo.note, "+0.1");
+                        sawSynth.triggerAttack(keyInfo.note, "+0.1");
+                        activeNotes[keyInfo.note] = true;
+
+                        // Add color class to body based on key pressed
+                        document.body.classList.add(keyInfo.colorClass);
+                    }
+                });
+
+                // Keyboard release event listener
+                document.addEventListener('keyup', (e) => {
+                    // Map keys to synth frequency and color class
+                    const keyMap = {
+                        'a': { note: 'C4', colorClass: 'color-c4' },
+                        'w': { note: 'D4', colorClass: 'color-d4' },
+                        's': { note: 'E4', colorClass: 'color-e4' },
+                        'e': { note: 'F4', colorClass: 'color-f4' },
+                        'd': { note: 'G4', colorClass: 'color-g4' },
+                        'f': { note: 'A4', colorClass: 'color-a4' },
+                        't': { note: 'B4', colorClass: 'color-b4' },
+                    };
+
+                    const keyInfo = keyMap[e.key];
+                    if (keyInfo) {
+                        // Release the note on both synths
+                        fmSynth.triggerRelease();
+                        sawSynth.triggerRelease();
+                        activeNotes[keyInfo.note] = false;
+
+                        // Remove color class from body based on key released
+                        document.body.classList.remove(keyInfo.colorClass);
+
+                        // Delay background color change to black
+                        setTimeout(() => {
+                            document.body.style.transition = 'background-color 5s';
+                            document.body.style.backgroundColor = 'black';
+                        }, 0);
+
+                        // Reset background color after the delay
+                        setTimeout(() => {
+                            document.body.style.transition = '';
+                            document.body.style.backgroundColor = `hsl(var(--hue), 70%, 50%)`;
+                        }, 5 * 1000); // 5 seconds
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

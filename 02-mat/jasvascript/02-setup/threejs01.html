@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Today's Date</title>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+        <script type="x-shader/x-vertex" id="vertexshader">
+            
+    varying vec2 vUv;
+
+    void main() {
+
+      vUv = uv;
+
+      gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+    }
+
+  </script>
+
+  <script type="x-shader/x-fragment" id="fragmentshader">
+
+    uniform sampler2D baseTexture;
+    uniform sampler2D bloomTexture;
+
+    varying vec2 vUv;
+
+    void main() {
+
+      gl_FragColor = ( texture2D( baseTexture, vUv ) + vec4( 1.0 ) * texture2D( bloomTexture, vUv ) );
+
+    }
+  </script>
+
+
+</head>
+
+<div class="world" id="world">  
+
+
+
+<body>
+
+
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.120.0/build/three.module.js";
+import {
+  OrbitControls
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/controls/OrbitControls.js";
+import {
+  EffectComposer
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/EffectComposer.js";
+import {
+  RenderPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/RenderPass.js";
+import {
+  ShaderPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/ShaderPass.js";
+import {
+  UnrealBloomPass
+} from "https://cdn.jsdelivr.net/npm/three@0.120.0/examples/jsm/postprocessing/UnrealBloomPass.js";
+
+
+import Stats from 'https://unpkg.com/three@0.125.2/examples/jsm/libs/stats.module'
+//postprocessing
+let materials, bloom_pass, bloom_composer, render_scene, final_pass, bloom_layer, dark_material, final_composer;
+
+var enemy = [];
+var floor;
+const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  alpha: true,
+});
+renderer.setClearColor(0x01010d, 1);
+
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+// const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 4, 1, 0.1);
+
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0x020C26, 0, 250);
+
+const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 2000);
+camera.position.set(0, 0, 20);
+camera.lookAt(0, 0, 0);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+// controls.maxPolarAngle = Math.PI * 0.5;
+controls.minDistance = 1;
+controls.maxDistance = 100000;
+controls.addEventListener('change', render);
+camera.addEventListener('change', render);
+
+var stats = new Stats();
+stats.domElement.style.left = '12px';
+// stats.domElement.style.position = 'relative';
+// stats.domElement.style.top = '50px';
+stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+document.body.appendChild(stats.domElement);
+
+scene.add(new THREE.AmbientLight(0xffffff));
+
+const gridHelper = new THREE.GridHelper(300, 100);
+scene.add(gridHelper);
+// crée les axes 
+const axesHelper = new THREE.AxesHelper(50);
+scene.add(axesHelper);
+
+
+init();
+animate()
+
+window.onresize = function () {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  camera.aspect = width / height;
+  renderer.setSize(width, height);
+  bloom_composer.setSize(width, height);
+  final_composer.setSize(width, height);
+};
+
+function init() {
+  //css declarations
+
+  Post_processing();
+  create_enemy();
+  create_floor();
+}
+
+function render() {
+  render_with_bloom();
+  // render the entire scene, then render bloom scene on top
+  final_composer.render();
+}
+
+// Arrow key navigation
+        const targetPosition = new THREE.Vector3();
+        const targetRotation = new THREE.Euler();
+        const movementSpeed = 1;
+        const rotationSpeed = 2;
+        const smoothFactor = 5;
+
+
+        const handleKeyDown = (event) => {
+            switch (event.key) {
+                case 'ArrowUp':
+                    camera.position.z -= movementSpeed;
+                    break;
+                case 'ArrowDown':
+                    camera.position.z += movementSpeed;
+                    break;
+                case 'ArrowLeft':
+                    camera.rotation.y += rotationSpeed;
+                    break;
+                case 'ArrowRight':
+                    camera.rotation.y -= rotationSpeed;
+                    break;
+            }
+        };
+
+                window.addEventListener('keydown', handleKeyDown);
+
+
+
+function animate() {
+  render()
+  stats.update()
+  enemy.forEach((i) => {
+    i.rotation.y += 0.1
+  })
+  camera.updateMatrixWorld();
+  requestAnimationFrame(animate);
+
+       // Smoothly interpolate camera position and rotation
+            camera.position.lerp(targetPosition, smoothFactor);
+            camera.rotation.y = THREE.MathUtils.lerp(camera.rotation.y, targetRotation.y, smoothFactor);
+
+}
+
+function create_floor() {
+  floor = new THREE.Mesh(new THREE.BoxGeometry(300, 1, 300), new THREE.MeshBasicMaterial({
+    color: "#fff",
+    wireframe: false,
+    transparent: false,
+    opacity: 1,
+  }));
+  scene.add(floor)
+  floor.position.y = -1 - 2
+  floor.layers.set(0);
+};
+
+function create_enemy() {
+  for (let i = 0; i < 50; i++) {
+    enemy[i] = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 5), new THREE.MeshLambertMaterial({
+      color: "black",
+      wireframe: false
+    }));
+
+    enemy[i].position.z = 0;
+    scene.add(enemy[i]);
+
+    var objBack = new THREE.Mesh(new THREE.BoxGeometry(5, 5, .1), new THREE.MeshBasicMaterial({
+      color: "white",
+      wireframe: false,
+      transparent: false,
+      opacity: 1,
+    }));
+    objBack.position.z = -2.51;
+    objBack.layers.enable(1);
+    enemy[i].add(objBack);
+
+    let pos = random(-100, 100)
+    let pos2 = random(-100, 100)
+    enemy[i].position.set(pos, random(0, 100), pos2)
+    enemy[i].rotation.y = random(0, 2);
+  };
+};
+
+
+///////////////////////////////////////////////////////////////////////////////
+// POST PROCESSS
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+function Post_processing() {
+  ///////////////////////////////////////////////////////////////////////////////
+  // postprocessing
+  ///////////////////////////////////////////////////////////////////////////////
+  /*
+  bloom_pass
+  bloom_composer
+  render_scene
+  final_pass
+  bloom_layer
+  dark_material
+
+  */
+
+  bloom_layer = new THREE.Layers();
+  bloom_layer.set(1);
+
+  dark_material = new THREE.MeshBasicMaterial({
+    color: 'black'
+  });
+  materials = {};
+
+  bloom_pass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 4, 1, 0.1);
+  // bloom_pass.threshold = params.bloomThreshold;
+  // bloom_pass.strength = params.bloomStrength;
+  // bloom_pass.radius = params.bloomRadius;
+
+  bloom_composer = new EffectComposer(renderer);
+  bloom_composer.renderToScreen = false;
+  render_scene = new RenderPass(scene, camera);
+  bloom_composer.addPass(render_scene);
+  bloom_composer.addPass(bloom_pass);
+
+  final_pass = new ShaderPass(
+    new THREE.ShaderMaterial({
+      uniforms: {
+        baseTexture: {
+          value: null
+        },
+        bloomTexture: {
+          value: bloom_composer.renderTarget2.texture
+        }
+      },
+      vertexShader: document.getElementById('vertexshader').textContent,
+      fragmentShader: document.getElementById('fragmentshader').textContent,
+      defines: {}
+    }), 'baseTexture'
+  );
+  final_pass.needsSwap = true;
+
+  final_composer = new EffectComposer(renderer);
+  final_composer.addPass(render_scene);
+  final_composer.addPass(final_pass);
+  ///////////////////////////////////////////////////////////////////////////////
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// pour que les objets restent opaques sinon on voit à travers
+///////////////////////////////////////////////////////////////////////////////
+function render_with_bloom() {
+
+  scene.traverse(darken_non_bloomed);
+  bloom_composer.render();
+  scene.traverse(restore_material);
+}
+///////////////////////////////////////////////////////////////////////////////
+
+function darken_non_bloomed(obj) {
+  if (obj.isMesh && bloom_layer.test(obj.layers) === false) {
+    materials[obj.uuid] = obj.material;
+    obj.material = dark_material;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// pour restaurer les matériaux sinon tout noir
+///////////////////////////////////////////////////////////////////////////////
+
+function restore_material(obj) {
+  if (materials[obj.uuid]) {
+
+    obj.material = materials[obj.uuid];
+    delete materials[obj.uuid];
+
+  }
+}
+///////////////////////////////////////////////////////////////////////////////
+</script>
+</body>
+</html>
