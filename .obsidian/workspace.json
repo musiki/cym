@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "88ae4ad271518b03",
+        "id": "15509f30d42a6fb4",
         "type": "tabs",
         "children": [
           {
-            "id": "f3861439984dca42",
+            "id": "dbf8dbe2950b0df8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "03-cla/c-cym09-flex-grid.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 403.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md"
+                "file": "03-cla/c-cym09-flex-grid.md"
               }
             }
           },
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/jasvascript/js01-fundamentals.md",
+                "file": "03-cla/c-cym09-flex-grid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             }
           },
           {
-            "id": "b994ec66dca1e66c",
+            "id": "bb66f8b280257f5f",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -240,13 +240,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b994ec66dca1e66c",
+  "active": "bb66f8b280257f5f",
   "lastOpenFiles": [
+    "03-cla/c-cym09-visual.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym06c-tonejs.md",
     "02-mat/tonejs/01-tone.js.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "02-mat/jasvascript/02-setup/02-setup.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/html.md",
     "00-in/01-tone.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-flex-grid.md",
     "cym-metamap.canvas",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "00-in/La memoria de los materiales.md",
@@ -277,18 +284,11 @@
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover.html",
     "02-mat/jasvascript/02-setup/hover-synth.html",
-    "02-mat/jasvascript/02-setup/02-setup.md",
     "04-out/personas/Martin Rohrmeier.md",
     "00-moc/topoi MOC.md",
     "00-moc/teatro MOC.md",
     "00-moc/proyectos MOC.md",
     "00-moc/personas MOC.md",
-    "00-moc/obras MOC.md",
-    "00-moc/eventos MOC.md",
-    "00-moc/espacios MOC.md",
-    "00-moc/códigos MOC.md",
-    "00-moc/cym MOC.md",
-    "00-moc/coloquial MOC.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",
