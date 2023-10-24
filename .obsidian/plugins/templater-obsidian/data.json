@@ -11,7 +11,7 @@
   "auto_jump_to_cursor": false,
   "enable_system_commands": true,
   "shell_path": "",
-  "user_scripts_folder": "04-ref/templates",
+  "user_scripts_folder": "02-mat/obs/templates",
   "enable_folder_templates": true,
   "folder_templates": [
     {

@@ -148,7 +148,22 @@
     "generativeliterature": 140,
     "machine": 141,
     "ia": 142,
-    "botonera": 143
+    "botonera": 143,
+    "artesvisuales": 144,
+    "colaboratividad": 145,
+    "artejuego": 146,
+    "philo": 147,
+    "philo/science": 1,
+    "subtítulo": 148,
+    "sintesis": 149,
+    "objetivos": 150,
+    "desarrollo": 151,
+    "materiales": 152,
+    "dss": 153,
+    "digitalmusicology": 154,
+    "musicology": 155,
+    "systematicmusicology": 156,
+    "dataart": 157
   },
   "_version": 2
 }
