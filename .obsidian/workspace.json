@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md",
+                "file": "01-proj/23/bassino/TP código.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md",
+                "file": "01-proj/23/bassino/TP código.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/tp/tp04-aplicación js fundamentals.md"
+                "file": "01-proj/23/bassino/TP código.md"
               }
             }
           },
@@ -206,6 +206,9 @@
   },
   "active": "34b386926eabb429",
   "lastOpenFiles": [
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/bassino/TP código.md",
     "01-proj/tp/tp04-aplicación js fundamentals.md",
     "00-in/01-tone.md",
@@ -241,9 +244,6 @@
     "00-in/proyectos MOC.md",
     "00-in/personas MOC.md",
     "00-in/obras MOC.md",
-    "00-in/eventos MOC.md",
-    "00-in/espacios MOC.md",
-    "00-in/códigos MOC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",

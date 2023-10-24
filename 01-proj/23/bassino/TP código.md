@@ -1,7 +1,15 @@
+---
+type: exercise
+author: Fabián Bassino
+tags:
+  - code
+  - js
+  - tonejs
+publish: 2023
+tp: 04
+---
+
 https://codepen.io/bassino2023/pen/rNPNKpW
-
-
-
 
 
 #Tp código
