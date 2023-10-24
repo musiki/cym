@@ -1266,7 +1266,7 @@
     },
     "01-proj/23/Petroccelli/Cajita Musical.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "00-in/01-tone.md": {
@@ -1434,7 +1434,7 @@
     "/": {
       "Refactor": 465,
       "Create": 534,
-      "Link": 379,
+      "Link": 380,
       "Expand": 27
     }
   },
@@ -1447,7 +1447,7 @@
       "4": 1,
       "5": 1,
       "6": 0,
-      "7": 128,
+      "7": 129,
       "8": 0,
       "9": 3,
       "10": 18,
@@ -1469,7 +1469,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 172,
-      "Tue": 1048,
+      "Tue": 1049,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1615,6 +1615,7 @@
         "<a class=\"internal-link\" href=\"04-ref/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md\"> Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
         "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
@@ -1664,8 +1665,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
