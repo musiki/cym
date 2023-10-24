@@ -7,7 +7,7 @@ date: 2023-10-24
 
 # aplicación audiovisual
 
-- [x] TP6  - Aplicación JS fundamentals ⏫ 📅 2023-10-24
+- [x] TP4  - Aplicación JS fundamentals ⏫ 📅 2023-10-24
 
 
 ## Objetivos

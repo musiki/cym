@@ -1459,7 +1459,7 @@
       "tags": 1,
       "links": 0
     },
-    "01-proj/tp/tp06-aplicación js fundamentals.md": {
+    "01-proj/tp/tp04-aplicación js fundamentals.md": {
       "size": 773,
       "tags": 2,
       "links": 0
@@ -1467,7 +1467,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 561,
+      "Refactor": 562,
       "Create": 511,
       "Link": 347,
       "Expand": 52
@@ -1493,7 +1493,7 @@
       "15": 69,
       "16": 84,
       "17": 9,
-      "18": 176,
+      "18": 177,
       "19": 8,
       "20": 65,
       "21": 250,
@@ -1504,7 +1504,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 49,
-      "Tue": 599,
+      "Tue": 600,
       "Wed": 311,
       "Thu": 94,
       "Fri": 127,
@@ -1621,6 +1621,7 @@
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp06-aplicación js fundamentals.md\"> tp06-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
@@ -1670,8 +1671,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
