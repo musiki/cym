@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/TP código.md",
+                "file": "01-proj/23/beltrame/Exercise.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7a0659e804f99fd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-cla/c-cym04-vida digital.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/TP código.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/TP código.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -161,7 +174,7 @@
             }
           },
           {
-            "id": "66ae9ae58bb0c9d9",
+            "id": "06ccf206f5a35254",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -204,46 +217,46 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "34b386926eabb429",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
-    "01-proj/tp/tp04-aplicación js fundamentals.md",
+    "03-cla/c-cym04-vida digital.md",
+    "01-proj/23/beltrame/Exercise.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/beltrame/\"Una mirada profunda\".md",
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/bassino/TP código.md",
+    "02-mat/obs/img/image/Exercise-1698188342191.jpeg",
+    "02-mat/obs/img/image/Exercise-1698188342152.jpeg",
+    "02-mat/obs/img/image/Exercise-1698188342146.jpeg",
+    "02-mat/obs/img/image/Exercise-1698188342130.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820140.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820134.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820125.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820112.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820106.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820103.jpeg",
+    "01-proj/23/beltrame/Reseña.md",
+    "01-proj/tp/tp04-aplicación js fundamentals.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/bassino/bassino POC.md",
     "00-in/01-tone.md",
     "00-in/whoosh.md",
-    "conflict-files-obsidian-git.md",
     "03-cla/c-cym09-hydra+tone.js.md",
     "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym08-github pages+hydra.md",
     "03-cla/c-cym09-networking.md",
     "03-cla/c-cym09-visual.md",
     "00-in/La memoria de los materiales.md",
     "02-mat/jasvascript/js01-fundamentals.md",
     "02-mat/jasvascript/js-playground.md",
     "02-mat/jasvascript/js-cheatsheet.md",
-    "02-mat/jasvascript/js-02 contextos de ejecución.md",
-    "00-in/Sun Thinking.md",
-    "02-mat/obs/img/image/Cajita Musical-1698142596786.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596785.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596784.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596783.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596782.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596774.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596771.jpeg",
-    "02-mat/obs/img/image/Cajita Musical-1698142596770.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
-    "01-proj/23/Petroccelli/Cajita Musical.md",
-    "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectos MOC.md",
-    "00-in/personas MOC.md",
-    "00-in/obras MOC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
