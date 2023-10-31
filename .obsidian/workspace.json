@@ -4,45 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b7d4cf106b1b5f9f",
+        "id": "d2f5cb3e3f8c98a4",
         "type": "tabs",
         "children": [
           {
-            "id": "7484b8a8e907177a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b51a88c6c48ca33a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/Dibujo Sonoro.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4df2b26c87c661e7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "1e5d1a11f9f1c8c3",
+            "id": "bb111f91673e5e76",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,7 +173,7 @@
             }
           },
           {
-            "id": "49e4d955c405fdf6",
+            "id": "a046b7d8f049a7c8",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -251,10 +216,10 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "b51a88c6c48ca33a",
+  "active": "bb111f91673e5e76",
   "lastOpenFiles": [
-    "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/Dibujo Sonoro.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
