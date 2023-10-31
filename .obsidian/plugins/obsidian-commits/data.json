@@ -1239,11 +1239,6 @@
       "tags": 0,
       "links": 0
     },
-    "01-proj/23/beltrame/Prueba Proyectual.md": {
-      "size": 1470,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/shifres/Dotonera.md": {
       "size": 1884,
       "tags": 0,
@@ -1461,20 +1456,40 @@
     },
     "01-proj/23/bassino/TP código.md": {
       "size": 265,
-      "tags": 1,
+      "tags": 4,
       "links": 0
     },
     "00-in/Susanne Kennedy.md": {
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/beltrame/\"Una mirada profunda\".md": {
+      "size": 1847,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Exercise.md": {
+      "size": 354,
+      "tags": 3,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Reseña.md": {
+      "size": 1730,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/tp/tp04-aplicación js fundamentals.md": {
+      "size": 991,
+      "tags": 2,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 476,
-      "Create": 357,
-      "Link": 269,
+      "Refactor": 478,
+      "Create": 362,
+      "Link": 273,
       "Expand": 44
     }
   },
@@ -1498,7 +1513,7 @@
       "15": 16,
       "16": 31,
       "17": 32,
-      "18": 177,
+      "18": 188,
       "19": 16,
       "20": 73,
       "21": 62,
@@ -1509,7 +1524,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 25,
-      "Tue": 127,
+      "Tue": 138,
       "Wed": 656,
       "Thu": 109,
       "Fri": 101,
@@ -1566,6 +1581,11 @@
         "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Reseña.md\"> Reseña </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
         "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
@@ -1611,12 +1631,7 @@
         "<a class=\"internal-link\" href=\"00-in/c-cym-mindMap.md\"> c-cym-mindMap </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-out/obras/whoosh.md\"> whoosh </a>",
@@ -1672,6 +1687,9 @@
         "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad.md\"> El Azar y la Necesidad </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
@@ -1719,10 +1737,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"00-in/[es] Susanne Kennedy.md\"> [es] Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"02-mat/python/python abjad.md\"> python abjad </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1730,6 +1745,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
@@ -1778,11 +1795,10 @@
         "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>",
-        "<a class=\"internal-link\" href=\"2023-09-27.md\"> 2023-09-27 </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
@@ -1832,8 +1848,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
         "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>",
         "<a class=\"internal-link\" href=\"00-in/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>"
+        "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
