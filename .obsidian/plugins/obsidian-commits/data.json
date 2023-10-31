@@ -1327,7 +1327,7 @@
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
       "size": 0,
       "tags": 5,
-      "links": 1
+      "links": 3
     },
     "00-in/Andrés Aizicovich.md": {
       "size": 18966,
@@ -1474,7 +1474,7 @@
     "/": {
       "Refactor": 587,
       "Create": 636,
-      "Link": 446,
+      "Link": 447,
       "Expand": 23
     }
   },
@@ -1496,7 +1496,7 @@
       "13": 120,
       "14": 78,
       "15": 132,
-      "16": 59,
+      "16": 60,
       "17": 30,
       "18": 252,
       "19": 3,
@@ -1509,7 +1509,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 16,
-      "Tue": 999,
+      "Tue": 1000,
       "Wed": 68,
       "Thu": 269,
       "Fri": 15,
@@ -1758,6 +1758,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Livecoding.md\"> Livecoding </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
@@ -1807,8 +1808,7 @@
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/musica y arte visual_ bassino_topoi.md\"> musica y arte visual_ bassino_topoi </a>"
+        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
