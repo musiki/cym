@@ -10,10 +10,25 @@
           {
             "id": "bd198634126fa249",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+                "file": "01-proj/23/bassino/TP código.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "7f754071e29060b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/bassino/Clorolaser.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -21,6 +36,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -79,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307.5
+    "width": 303.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -114,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md"
+                "file": "01-proj/23/bassino/Clorolaser.md"
               }
             }
           },
@@ -132,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+                "file": "01-proj/23/bassino/Clorolaser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +213,7 @@
             }
           },
           {
-            "id": "264e5bd568a75835",
+            "id": "fb0d7aa2c5bc01ec",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -240,9 +256,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bd198634126fa249",
+  "active": "7f754071e29060b7",
   "lastOpenFiles": [
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "02-mat/obs/img/sensor de distancia (1) 3.pdf",
+    "02-mat/obs/img/sensor de distancia 2 2.pdf",
     "01-proj/23/bassino/TP código.md",
+    "02-mat/obs/img/sensor de distancia 2 1.pdf",
+    "02-mat/obs/img/sensor de distancia 3.pdf",
+    "02-mat/obs/img/sensor de distancia (1) 2.pdf",
+    "02-mat/obs/img/sensor de distancia 2.pdf",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "02-mat/obs/img/sensor de distancia (1) 1.pdf",
+    "02-mat/obs/img/sensor de distancia 1.pdf",
+    "02-mat/obs/img/sensor de distancia.pdf",
+    "02-mat/obs/img/sensor de distancia (1).pdf",
     "conflict-files-obsidian-git.md",
     "01-proj/tp/tp05-guía de lectura 1 GROYS.md",
     "01-proj/tp/tp03-guía de lectura MONTFORT.md",
@@ -263,12 +293,7 @@
     "02-mat/jasvascript/02-setup/02-setup.md",
     "03-cla/c-cym10y11-Aframe.md",
     "03-cla/c-cym08-hydra+p5.js.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/html.md",
-    "00-in/01-tone.md",
     "cym-metamap.canvas",
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-    "00-in/La memoria de los materiales.md",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751637.jpeg",
@@ -279,16 +304,6 @@
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751587.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751581.jpeg",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751570.jpeg",
-    "02-mat/obs/img/image",
-    "02-mat/jasvascript/02-setup/threejs03.html",
-    "02-mat/jasvascript/02-setup/threejs02.html",
-    "02-mat/jasvascript/02-setup/threejs01.html",
-    "02-mat/jasvascript/02-setup/threejs-youtube.html",
-    "02-mat/jasvascript/02-setup/three-pos-synth.html",
-    "02-mat/jasvascript/02-setup/t2.html",
-    "02-mat/jasvascript/02-setup/t1.html",
-    "02-mat/jasvascript/02-setup/hover.html",
-    "02-mat/jasvascript/02-setup/hover-synth.html",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
     "Sin título 1.canvas",
     "Sin título.canvas",
