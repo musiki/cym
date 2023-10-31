@@ -1561,7 +1561,7 @@
       "filename": "02-setup"
     },
     {
-      "path": "02-mat/tonejs/01-tone.js.md",
+      "path": "02-mat/partituras/tonejs/01-tone.js.md",
       "filename": "01-tone.js"
     },
     {
@@ -1619,6 +1619,10 @@
     {
       "path": "00-in/topoi MOC.md",
       "filename": "topoi MOC"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/Dibujo Sonoro.md",
+      "filename": "Dibujo Sonoro"
     }
   ]
 }

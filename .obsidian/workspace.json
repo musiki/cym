@@ -19,8 +19,43 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "b51a88c6c48ca33a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4df2b26c87c661e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "1e5d1a11f9f1c8c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/Petroccelli/Dibujo Sonoro.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Petroccelli/Cajita Musical.md"
+                "file": "01-proj/23/Petroccelli/Dibujo Sonoro.md"
               }
             }
           },
@@ -115,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
+                "file": "01-proj/23/Petroccelli/Dibujo Sonoro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +208,7 @@
             }
           },
           {
-            "id": "85421ce362ac8335",
+            "id": "49e4d955c405fdf6",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -216,12 +251,18 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "85421ce362ac8335",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
-    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
+    "01-proj/23/Petroccelli/Dibujo Sonoro.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "00-in/Sin título.md",
+    "02-mat/tonejs/01-tone.js.md",
+    "02-mat/tonejs",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados código.md",
+    "01-proj/21/tortorelli/Generador de poemas sonorizados.md",
     "conflict-files-obsidian-git.md",
     "00-in/topoi MOC.md",
     "00-in/proyectos MOC.md",
@@ -240,12 +281,7 @@
     "04-out/topoi/Música Visual.md",
     "04-out/topoi/Fragile Territories.md",
     "04-out/topoi/Forma Musical.md",
-    "04-out/personas/Martin Rohrmeier.md",
-    "03-cla/c-cym09-visual.md",
-    "02-mat/tonejs/01-tone.js.md",
-    "02-mat/tonejs",
-    "02-mat/obs/tpl/t-topoi.md",
-    "02-mat/obs/tpl/t-person.md",
+    "02-mat/partituras/tonejs",
     "02-mat/obs/img/image/Cajita Musical-1698142596786.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596785.jpeg",
     "02-mat/obs/img/image/Cajita Musical-1698142596784.jpeg",
@@ -261,7 +297,6 @@
     "02-mat/jasvascript/02-setup/threejs-youtube.html",
     "02-mat/jasvascript/02-setup/three-pos-synth.html",
     "02-mat/jasvascript/02-setup/t2.html",
-    "02-mat/jasvascript/02-setup/t1.html",
     "Sin título.canvas",
     "Sin título 1.canvas",
     "02-mat/obs/tpl/Proyectual - Dopplermanían´t-1696369643464.jpeg",
