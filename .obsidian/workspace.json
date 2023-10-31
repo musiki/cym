@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym04-vida digital.md",
+                "file": "03-cla/c-cym08-hydra+p5.js.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03-cla/c-cym08-hydra+p5.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "03-cla/c-cym08-hydra+p5.js.md"
               }
             }
           },
@@ -174,7 +175,7 @@
             }
           },
           {
-            "id": "06ccf206f5a35254",
+            "id": "1407a52fe55ffd79",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -217,18 +218,34 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "03-cla/c-cym04-vida digital.md",
-    "01-proj/23/beltrame/Exercise.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "00-in/Cybernetic Serendipity.md",
+    "00-in/eventos MOC.md",
+    "04-out/topoi/Generatividad.md",
+    "04-out/glosario/URI.md",
+    "04-out/glosario/README.md",
+    "04-out/glosario/PaaS.md",
+    "04-out/glosario/PWA.md",
+    "04-out/procedimientos/extrañamiento.md",
+    "04-out/procedimientos/tipologías de instalación.md",
+    "00-in/01-tone.md",
+    "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+    "04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md",
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
+    "04-out/bibliografía/Matt Pearson_Generative Art.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "03-cla/c-cym02-arte generativo.md",
+    "00-in/Presentación para coloquio de Música visual.md",
+    "00-in/La memoria de los materiales.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym07-creative computing.md",
     "03-cla/c-cym08-github pages+hydra.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/beltrame/\"Una mirada profunda\".md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/bassino/TP código.md",
     "02-mat/obs/img/image/Exercise-1698188342191.jpeg",
     "02-mat/obs/img/image/Exercise-1698188342152.jpeg",
     "02-mat/obs/img/image/Exercise-1698188342146.jpeg",
@@ -239,22 +256,6 @@
     "02-mat/obs/img/image/TP código-1698190820112.jpeg",
     "02-mat/obs/img/image/TP código-1698190820106.jpeg",
     "02-mat/obs/img/image/TP código-1698190820103.jpeg",
-    "01-proj/23/beltrame/Reseña.md",
-    "01-proj/tp/tp04-aplicación js fundamentals.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "00-in/01-tone.md",
-    "00-in/whoosh.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym09-visual.md",
-    "00-in/La memoria de los materiales.md",
-    "02-mat/jasvascript/js01-fundamentals.md",
-    "02-mat/jasvascript/js-playground.md",
-    "02-mat/jasvascript/js-cheatsheet.md",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
