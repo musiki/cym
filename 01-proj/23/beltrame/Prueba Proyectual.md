@@ -28,3 +28,8 @@ Materiales
 - Un cubre cama de dos plazas. 
 - Un ropero antiguo.
 
+# PROPS || Assests <
+
+
+
+

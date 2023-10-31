@@ -20,4 +20,36 @@ Levin se licenció y se graduó en el Laboratorio de Medios de Comunicación del
 https://www.ted.com/talks/golan_levin_art_that_looks_back_at_you?language=es
 
 
+# condicion inicial [ preludio, obertura, declaración, ]
+
+
+# ESTADOS
+
+function sombra (contornos[Japp, Joan] {
+getCam {
+   contorno1 = contorno1*Japp.Voice.Volume 
+}
+
+return contornoFinal 
+})
+
+ if { }
+## intervalo de entrada = condición de activación
+
+
+function principioDeFuncion...{ }
+while loop
+
+switch ; break
+
+## principio de comportamiento
+
+
+if { }
+
+## intervalo de salida. 
+
+[ GAME OVER →] RETURN CI , CONDICION INICIAL 
+
+
 

@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-out/personas/Yuval Noah Harari.md",
+                "file": "01-proj/23/bassino/Clorolaser.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "853b2500ca97a6a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/personas/Yuval Noah Harari.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/personas/Yuval Noah Harari.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,18 +165,18 @@
             }
           },
           {
-            "id": "5ac05341e7618e37",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
             "id": "ddfc0100d1e0f696",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "eb665c6e7e2bef93",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
               "state": {}
             }
           }
@@ -204,8 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,45 +249,47 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "c31bc932fe50a34c",
+  "active": "eb665c6e7e2bef93",
   "lastOpenFiles": [
-    "04-out/personas/Andrés Aizicovich.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/bassino POC.md",
     "00-in/Golan Levin.md",
+    "01-proj/23/beltrame/Prueba Proyectual.md",
+    "00-in/Susanne Kennedy.md",
+    "04-out/personas/Yuval Noah Harari.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/Cajita Musical-1698142596786.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596785.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596784.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596783.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596782.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596774.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596771.jpeg",
+    "02-mat/obs/img/image/Cajita Musical-1698142596770.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
+    "02-mat/obs/img/Cajita Musical.html",
+    "02-mat/obs/img/Cajita Musical 1.html",
+    "01-proj/23/bassino/TP código.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
+    "00-in/topoi MOC.md",
+    "00-in/teatro MOC.md",
+    "00-in/proyectos MOC.md",
+    "00-in/personas MOC.md",
+    "00-in/obras MOC.md",
+    "00-in/eventos MOC.md",
+    "00-in/espacios MOC.md",
+    "00-in/códigos MOC.md",
+    "00-in/cym MOC.md",
+    "00-in/coloquial MOC.md",
+    "00-in/bib MOC.md",
+    "00-in/01-tone.md",
+    "04-out/personas/Andrés Aizicovich.md",
     "04-out/topoi/arte de datos.md",
     "00-moc/topoi MOC.md",
     "04-out/eventos/La memoria de los materiales.md",
     "00-moc/eventos MOC.md",
-    "00-moc/espacios MOC.md",
-    "04-out/obras/whoosh.md",
-    "00-in/proyectual.md",
-    "00-in/Sun Thinking.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/Presentación para coloquio de Música visual.md",
-    "00-in/Patrones de Turing.md",
-    "00-in/memex.md",
-    "00-in/La conciencia social del arte generativo..md",
-    "04-out/personas/Juan Sorrentino.md",
-    "00-in/Ingenieria invertida.md",
-    "04-out/personas/Hans Haake.md",
-    "00-in/El metaverso es un territorio disputado.md",
-    "04-out/eventos/Cybernetic Serendipity.md",
-    "00-in/combinational creativity.md",
-    "04-out/bibliografía/b-Azar y necesidad.md",
-    "00-in/Agregación limitada por difusión.md",
-    "README.md",
-    "00-moc/proyectos MOC.md",
-    "04-out/topoi/Intervencion del espacio público.md",
     "02-mat/obs/img/image",
-    "02-mat/obs/img/image/t-obra-1697636099978.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099976.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099974.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099972.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099970.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099966.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099964.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099961.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099960.jpeg",
-    "02-mat/obs/img/image/t-obra-1697636099958.jpeg",
     "cym-metamap.canvas",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/C8.mp3",
@@ -283,8 +298,6 @@
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis-poly.html",
-    "02-mat/jasvascript/02-setup/three-pos-synth.html",
-    "02-mat/jasvascript/02-setup/threejs01.html",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",
