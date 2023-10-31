@@ -30,3 +30,8 @@ La obra tendrá lugar en un espacio cerrado que recrea una habitación antigua, 
 - Un cubre cama de dos plazas. 
 - Un ropero antiguo.
 
+# PROPS || Assests <
+
+
+
+
