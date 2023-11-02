@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md",
+                "file": "04-out/topoi/Forma Musical.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md",
+                "file": "04-out/topoi/Forma Musical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-cla/c-cym08-hydra+p5.js.md"
+                "file": "04-out/topoi/Forma Musical.md"
               }
             }
           },
@@ -175,7 +175,7 @@
             }
           },
           {
-            "id": "1407a52fe55ffd79",
+            "id": "6a6dd7f7648a12e6",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -220,16 +220,35 @@
   },
   "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "04-out/personas/Juan Sorrentino.md",
-    "04-out/personas/Hans Haake.md",
-    "04-out/personas/Andrés Aizicovich.md",
-    "04-out/obras/whoosh.md",
-    "04-out/eventos/La memoria de los materiales.md",
-    "04-out/eventos/Cybernetic Serendipity.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/shifres/do-tonera.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/beltrame/Exercise.md",
+    "01-proj/23/beltrame/Piano.md",
+    "01-proj/23/beltrame/Reseña.md",
+    "01-proj/23/bassino/TP código.md",
+    "01-proj/23/bassino/Multi-efecto.md",
+    "01-proj/tp/tp04-aplicación js fundamentals.md",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "01-proj/23/beltrame/\"Una mirada profunda\".md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "01-proj/23/shifres/Shifres.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "00-in/proyectos MOC.md",
+    "00-in/teatro MOC.md",
+    "00-in/Vedic Sanskrit.md",
     "04-out/eventos",
-    "04-out/bibliografía/b-Azar y necesidad.md",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226568.jpeg",
@@ -244,28 +263,9 @@
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
     "02-mat/obs/img/231017-arthouse",
-    "00-in/Susanne Kennedy.md",
-    "00-in/Golan Levin.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "00-in/Cybernetic Serendipity.md",
-    "00-in/eventos MOC.md",
-    "04-out/topoi/Generatividad.md",
-    "04-out/glosario/URI.md",
-    "04-out/glosario/README.md",
-    "04-out/glosario/PaaS.md",
-    "04-out/glosario/PWA.md",
-    "04-out/procedimientos/extrañamiento.md",
-    "04-out/procedimientos/tipologías de instalación.md",
-    "00-in/01-tone.md",
-    "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
-    "04-out/bibliografía/Usos de la ciencia en el arte argentino contemporáneo.md",
-    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "02-mat/jasvascript/02-setup/threejs03.html",
-    "02-mat/jasvascript/02-setup/threejs02.html",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "cym-metamap.canvas"

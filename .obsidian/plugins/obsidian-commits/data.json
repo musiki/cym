@@ -1059,36 +1059,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-ref/a-dataview playground.md": {
-      "size": 409,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-dataview.md": {
-      "size": 1283,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-plugins.md": {
-      "size": 853,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-snippets.md": {
-      "size": 1272,
-      "tags": 1,
-      "links": 1
-    },
-    "04-ref/a-yuda.md": {
-      "size": 4477,
-      "tags": 0,
-      "links": 2
-    },
-    "04-ref/meta-aprendizaje.md": {
-      "size": 1099,
-      "tags": 3,
-      "links": 2
-    },
     "03-cla/c-cym08-github pages+hydra.md": {
       "size": 4555,
       "tags": 6,
@@ -1269,16 +1239,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/Ingeniería invertida.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Presentación para coloquio de Música visual.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md": {
       "size": 55,
       "tags": 0,
@@ -1347,11 +1307,6 @@
     "04-out/topoi/arte de datos.md": {
       "size": 571,
       "tags": 2,
-      "links": 0
-    },
-    "00-in/01-tone.md": {
-      "size": 0,
-      "tags": 0,
       "links": 0
     },
     "00-in/bib MOC.md": {
@@ -1488,11 +1443,41 @@
       "size": 2678,
       "tags": 0,
       "links": 0
+    },
+    "05-ref/a-dataview playground.md": {
+      "size": 409,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-dataview.md": {
+      "size": 1283,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-plugins.md": {
+      "size": 853,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/meta-aprendizaje.md": {
+      "size": 1099,
+      "tags": 3,
+      "links": 2
+    },
+    "05-ref/a-snippets.md": {
+      "size": 1272,
+      "tags": 1,
+      "links": 1
+    },
+    "05-ref/a-yuda.md": {
+      "size": 4477,
+      "tags": 0,
+      "links": 2
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 574,
+      "Refactor": 583,
       "Create": 528,
       "Link": 349,
       "Expand": 52
@@ -1512,7 +1497,7 @@
       "9": 177,
       "10": 55,
       "11": 96,
-      "12": 27,
+      "12": 36,
       "13": 29,
       "14": 28,
       "15": 69,
@@ -1531,7 +1516,7 @@
       "Mon": 51,
       "Tue": 629,
       "Wed": 311,
-      "Thu": 94,
+      "Thu": 103,
       "Fri": 127,
       "Sat": 0,
       "Sun": 291
@@ -1646,6 +1631,12 @@
         "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-plugins.md\"> a-plugins </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview playground.md\"> a-dataview playground </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp06-aplicación js fundamentals.md\"> tp06-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1690,13 +1681,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/do-tonera.md\"> do-tonera </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Multi-efecto 1.md\"> Multi-efecto 1 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg.md\"> tecnopoeticas-argentinas-tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-arg </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md.md\"> tecnopoeticas-argentinas-bibliografia-esteban-20castroman_tecnopoeticas-argentinas.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Multi-efecto 1.md\"> Multi-efecto 1 </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
@@ -1760,6 +1745,9 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
+        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>",
         "<a class=\"internal-link\" href=\"00-in/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
@@ -1807,10 +1795,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
-        "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",

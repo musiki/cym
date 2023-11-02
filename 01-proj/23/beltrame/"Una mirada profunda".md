@@ -1,3 +1,9 @@
+---
+type: project
+author: Sabrina Beltrame
+tags: proyectual
+publish: 2023
+---
 
 
 ## Síntesis
