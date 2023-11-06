@@ -17,7 +17,8 @@
 ## Justificación 
 
 "Una mirada profunda" representa una nueva herramienta de interpretación que posibilita la creación de conexiones entre la música, el teatro y la literatura, siendo de esta forma una obra de teatro expandido, en la que los espectadores se adentrarán en los oscuros y misteriosos rincones de un cuento gótico.
-La narrativa que se ve enriquecida por la música y la escenografía, lo que permite al oyente establecer una mayor conexión con los personajes y la historia. Además, brinda la posibilidad de participar activamente en una experiencia multisensorial, en la que los elementos de cada disciplina se combinan y desarrollan la trama del cuento, revelando de ésta forma, la riqueza y la potencialidad de las artes, cuando se exploran y fusionan sus diferentes herramientas.
+La narrativa que se ve enriquecida por la música y la escenografía, lo que permite al oyente establecer una mayor conexión con los personajes y la historia. Además, brinda la posibilidad de participar activamente en una experiencia multisensorial, en la que los elementos de cada disciplina se combinan y desarrollan la trama del cuento, revelando de ésta forma, la riqueza y la potencialidad de las artes, cuando se exploran y fusionan sus diferentes herramientas.   
+
 
 
 ## Estado del arte
