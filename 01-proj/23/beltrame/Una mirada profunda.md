@@ -41,12 +41,13 @@ Opcional: Cada instrumentista puede llevar un lente de contacto gris o azul en u
 
 #### Procedimiento
 
-La obra comenzará con el escenario solamente ocupado por los y las instrumentistas, las luces apagadas y el clarinete sonando, que podrá escucharse desde afuera del espacio. Luego de esto se dará entrada a la gente, que podrá recorrer y caminar entre los y las instrumentistas, como así también interactuar con los objetos que se encuentran en el espacio. Alguno de ellos, como por ejemplo la apertura de uno de los cajones del ropero, el encendido de una lampara, la lectura de un libro, sentarse en la silla mecedora, entre otros;  serán disparadores de materiales sonoros para los interpretes, pero sólo durante los primeros minutos, luego la obra seguirá su curso. 
+La obra comenzará con el escenario solamente ocupado por los y las instrumentistas, las luces apagadas y el clarinete sonando, el cual podrá escucharse desde afuera del espacio. Luego de esto se dará entrada a la gente, que podrá recorrer y caminar entre los y las instrumentistas, como así también interactuar con los objetos que se encuentran en el espacio. Alguno de ellos, como por ejemplo la apertura de uno de los cajones del ropero, el encendido de una lampara, la lectura de un libro, sentarse en la silla mecedora, entre otros;  serán disparadores de materiales sonoros para los interpretes, pero sólo durante los primeros minutos, luego la obra seguirá su curso. 
+La obra finalizara cuando los relojes despertadores, los cuales se encontrarán debajo de la plataforma, suenen cuando hayan transcurrido veinte minutos, momento en el cual quedaran sonando los timbales, y poco a poco junto con las luces vayan desapareciendo. Una vez que la gente se haya retirado, la obra volverá a comenzar.
 
 
 ## Materiales 
 
-- Plataforma que simula ser un piso de madera, de 1,5m de alto
+- Plataforma que simula ser un piso de madera, de 1,5m de alto. También se podría utilizar una pileta que se encuentre vacía y colocar la plataforma sobre ella. 
 - 120 relojes de diferentes tamaños y colores, de los cuales 12 deben ser relojes despertadores.
 - Una cama antigua de dos plazas hecha de madera.
 - Una silla mecedora.
@@ -57,7 +58,10 @@ La obra comenzará con el escenario solamente ocupado por los y las instrumentis
 - Dos almohadas.
 - Un cubre cama de dos plazas. 
 - Un ropero antiguo.
+- Una alfombra
 
+Opcional: 1- Todos los elementos, exceptuando los relojes despertadores, pueden ser reemplazados por otros materiales de mayor acceso.
+2- Todos los elementos, exceptuando los relojes despertadores, pueden ser reemplazados por replicas hechas en inflables.
 
 ## Bibliografía
 

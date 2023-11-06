@@ -1470,7 +1470,7 @@
       "links": 0
     },
     "01-proj/23/beltrame/Una mirada profunda.md": {
-      "size": 4044,
+      "size": 4685,
       "tags": 0,
       "links": 0
     }
@@ -1480,7 +1480,7 @@
       "Refactor": 367,
       "Create": 470,
       "Link": 365,
-      "Expand": 37
+      "Expand": 38
     }
   },
   "dailyCommits": {
@@ -1504,7 +1504,7 @@
       "16": 317,
       "17": 281,
       "18": 31,
-      "19": 35,
+      "19": 36,
       "20": 113,
       "21": 115,
       "22": 139,
@@ -1513,7 +1513,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 191,
+      "Mon": 192,
       "Tue": 452,
       "Wed": 83,
       "Thu": 14,
@@ -1559,6 +1559,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>"
