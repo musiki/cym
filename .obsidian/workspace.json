@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md"
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
               }
             }
           },
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/Clorolaser.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,18 +151,18 @@
             }
           },
           {
-            "id": "ddfc0100d1e0f696",
+            "id": "5a5b551fb87f73ba",
             "type": "leaf",
             "state": {
-              "type": "smart-connections-chat-view",
+              "type": "smart-connections-view",
               "state": {}
             }
           },
           {
-            "id": "eb665c6e7e2bef93",
+            "id": "88a455aca9bc6790",
             "type": "leaf",
             "state": {
-              "type": "smart-connections-view",
+              "type": "smart-connections-chat-view",
               "state": {}
             }
           }
@@ -235,12 +235,21 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "c31bc932fe50a34c",
+  "active": "88a455aca9bc6790",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/Petroccelli/Guitarrax.md",
+    "01-proj/23/Petroccelli/petroccelli POC.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
+    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "01-proj/23/shifres/Dotonera.md",
     "01-proj/23/shifres/Shifres.md",
     "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/bassino/Clorolaser.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
@@ -264,26 +273,17 @@
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
     "01-proj/23/bassino/TP código.md",
-    "01-proj/23/Petroccelli/Cajita Musical.md",
     "00-in/topoi MOC.md",
     "00-in/teatro MOC.md",
     "00-in/proyectos MOC.md",
     "00-in/personas MOC.md",
-    "00-in/obras MOC.md",
-    "00-in/eventos MOC.md",
-    "00-in/espacios MOC.md",
-    "00-in/códigos MOC.md",
-    "00-in/cym MOC.md",
-    "00-in/coloquial MOC.md",
     "02-mat/obs/img/image",
     "cym-metamap.canvas",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
-    "02-mat/jasvascript/02-setup/hover-synth-vis-poly.html",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",
