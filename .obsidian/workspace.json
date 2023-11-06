@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "0274596aac249bd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -105,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,8 +249,28 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "88a455aca9bc6790",
+  "active": "0274596aac249bd5",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "conflict-files-obsidian-git.md",
+    "05-ref/meta-aprendizaje.md",
+    "05-ref/a-yuda.md",
+    "05-ref/a-snippets.md",
+    "05-ref/a-plugins.md",
+    "05-ref/a-dataview.md",
+    "05-ref/a-dataview playground.md",
+    "05-ref",
+    "02-mat/obs/img/image/TP código-1698190820140.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820134.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820125.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820112.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820106.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820103.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820089.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820080.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820074.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820072.jpeg",
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
     "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "01-proj/23/Zaracho/Botonera rítmica.md",
@@ -250,40 +284,20 @@
     "01-proj/23/shifres/Dotonera.md",
     "01-proj/23/shifres/Shifres.md",
     "01-proj/23/shifres/do-tonera.md",
-    "conflict-files-obsidian-git.md",
-    "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226568.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226567.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226566.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226565.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226561.jpeg",
-    "02-mat/obs/img/image/Exercise-1698188342096.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226560.jpeg",
-    "02-mat/obs/img/image/Clorolaser-1698787226558.jpeg",
     "01-proj/tp/tp04-aplicación js fundamentals.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/beltrame/Exercise.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "01-proj/23/bassino/bassino POC.md",
     "00-in/Golan Levin.md",
-    "01-proj/23/beltrame/Prueba Proyectual.md",
-    "00-in/Susanne Kennedy.md",
-    "04-out/personas/Yuval Noah Harari.md",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
-    "01-proj/23/bassino/TP código.md",
-    "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectos MOC.md",
-    "00-in/personas MOC.md",
     "02-mat/obs/img/image",
     "cym-metamap.canvas",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "02-mat/jasvascript/02-setup/t1.html",
     "02-mat/jasvascript/02-setup/hover-synth-vis.html",
     "02-mat/jasvascript/02-setup/threejs03.html",
-    "02-mat/jasvascript/02-setup/threejs02.html",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",

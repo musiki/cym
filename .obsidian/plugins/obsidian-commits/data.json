@@ -1144,36 +1144,6 @@
       "tags": 3,
       "links": 0
     },
-    "04-ref/a-dataview playground.md": {
-      "size": 409,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-dataview.md": {
-      "size": 1283,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-plugins.md": {
-      "size": 853,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-snippets.md": {
-      "size": 1272,
-      "tags": 1,
-      "links": 1
-    },
-    "04-ref/a-yuda.md": {
-      "size": 4477,
-      "tags": 0,
-      "links": 2
-    },
-    "04-ref/meta-aprendizaje.md": {
-      "size": 1099,
-      "tags": 3,
-      "links": 2
-    },
     "03-cla/c-cym15-interactividad.md": {
       "size": 1,
       "tags": 3,
@@ -1272,16 +1242,6 @@
     "02-mat/obs/tpl/t-obra.md": {
       "size": 0,
       "tags": 1,
-      "links": 0
-    },
-    "00-in/Ingeniería invertida.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Presentación para coloquio de Música visual.md": {
-      "size": 0,
-      "tags": 0,
       "links": 0
     },
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md": {
@@ -1389,11 +1349,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/01-tone.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/bib MOC.md": {
       "size": 202,
       "tags": 0,
@@ -1483,12 +1438,47 @@
       "size": 991,
       "tags": 2,
       "links": 0
+    },
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-dataview playground.md": {
+      "size": 409,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-dataview.md": {
+      "size": 1283,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-plugins.md": {
+      "size": 853,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-snippets.md": {
+      "size": 1272,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-yuda.md": {
+      "size": 4491,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/meta-aprendizaje.md": {
+      "size": 1099,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 478,
-      "Create": 362,
+      "Refactor": 488,
+      "Create": 370,
       "Link": 273,
       "Expand": 44
     }
@@ -1497,7 +1487,7 @@
     "/": {
       "0": 40,
       "1": 30,
-      "2": 60,
+      "2": 78,
       "3": 3,
       "4": 24,
       "5": 22,
@@ -1523,7 +1513,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 25,
+      "Mon": 43,
       "Tue": 138,
       "Wed": 656,
       "Thu": 109,
@@ -1582,6 +1572,14 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-plugins.md\"> a-plugins </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview playground.md\"> a-dataview playground </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Reseña.md\"> Reseña </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
@@ -1623,15 +1621,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md\"> probando Upstart </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
         "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
-        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
-        "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
-        "<a class=\"internal-link\" href=\"03-cla/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/c-cym-mindMap.md\"> c-cym-mindMap </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-out/obras/whoosh.md\"> whoosh </a>",
@@ -1746,6 +1736,16 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
+        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
+        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
@@ -1785,17 +1785,7 @@
         "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Kay Churcher.md\"> Kay Churcher </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/t-persona.md\"> t-persona </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
-        "<a class=\"internal-link\" href=\"04-out/procedimientos/tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md.md\"> tipologias-de-instalacion-procedimientos-tipologias-20de-instalacion.md </a>",
-        "<a class=\"internal-link\" href=\"04-out/procedimientos/README.md\"> README </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"00-in/i.md\"> i </a>",
-        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled 1.md\"> Untitled 1 </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

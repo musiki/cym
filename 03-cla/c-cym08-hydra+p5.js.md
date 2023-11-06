@@ -92,3 +92,7 @@ osc(10).layer(src(s0).modulate(noise(2))).out()
 ```
 
 <iframe src="https://hydra.ojack.xyz/?sketch_id=ZPzH7g6tB38IqwEp" name="myFrame" align="center" scrolling="no" style="width: 600px; height: 250px; border: solid 0px #000000;"></iframe>
+
+
+## Sources
+<iframe src="https://codepen.io/carodip/pen/ExryNBJ" name="myFrame" align="center" scrolling="no" style="width: 600px; height: 250px; border: solid 0px #000000;"></iframe>
