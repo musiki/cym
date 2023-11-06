@@ -8,58 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f698faf6dd5f4cf2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/18/dipaola-lutteral/Compost sonoro.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "f8793b97d7379ae5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/18/garella/Dédalo.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4301d97a8752c3d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/18/galetto/Moving sound.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c89a265e96d61fa3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/18/vivona/Domo.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "72af8abf8736f10f",
             "type": "leaf",
             "state": {
@@ -72,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -234,7 +181,7 @@
             }
           },
           {
-            "id": "4d7ad829350cef2e",
+            "id": "10493047ccf63bea",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -279,8 +226,12 @@
   },
   "active": "72af8abf8736f10f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/18/vivona/Domo.md",
+    "01-proj/18/galetto/Moving sound.md",
+    "01-proj/18/garella/Dédalo.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "01-proj/23/beltrame/Una mirada profunda.md",
+    "conflict-files-obsidian-git.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-yuda.md",
@@ -314,10 +265,6 @@
     "00-in/Susanne Kennedy.md",
     "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
     "00-in/Golan Levin.md",
-    "01-proj/18/galetto/Moving sound.md",
-    "01-proj/18/vivona/Domo.md",
-    "01-proj/18/garella/Dédalo.md",
-    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "01-proj/22/ancarola/Final CyM - Metrónomo.md",
     "01-proj/22/ancarola/Generador de Melodías Random.md",
     "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
