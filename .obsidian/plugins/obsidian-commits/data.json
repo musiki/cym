@@ -1294,11 +1294,6 @@
       "tags": 3,
       "links": 0
     },
-    "01-proj/23/beltrame/\"Una mirada profunda\".md": {
-      "size": 2460,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/INGENIERIA INVERTIDA.md": {
       "size": 43,
       "tags": 0,
@@ -1473,14 +1468,19 @@
       "size": 571,
       "tags": 2,
       "links": 0
+    },
+    "01-proj/23/beltrame/Una mirada profunda.md": {
+      "size": 4044,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 366,
+      "Refactor": 367,
       "Create": 470,
       "Link": 365,
-      "Expand": 34
+      "Expand": 37
     }
   },
   "dailyCommits": {
@@ -1495,11 +1495,11 @@
       "7": 0,
       "8": 0,
       "9": 9,
-      "10": 20,
-      "11": 9,
-      "12": 34,
+      "10": 21,
+      "11": 10,
+      "12": 35,
       "13": 4,
-      "14": 39,
+      "14": 40,
       "15": 2,
       "16": 317,
       "17": 281,
@@ -1513,7 +1513,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 187,
+      "Mon": 191,
       "Tue": 452,
       "Wed": 83,
       "Thu": 14,
@@ -1558,7 +1558,10 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1614,6 +1617,7 @@
         "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Reseña.md\"> Reseña </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
@@ -1663,8 +1667,7 @@
         "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md\"> eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp.md\"> eat-experiments-in-arts-and-technologies-eat-experiments-in-arts-and-technologies-espacios-eat-20exp </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",

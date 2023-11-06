@@ -11,11 +11,69 @@
             "id": "f698faf6dd5f4cf2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "f8793b97d7379ae5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/18/garella/Dédalo.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4301d97a8752c3d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/18/galetto/Moving sound.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c89a265e96d61fa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/18/vivona/Domo.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "72af8abf8736f10f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proj/23/beltrame/Una mirada profunda.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -65,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 200
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -91,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "01-proj/23/beltrame/Una mirada profunda.md"
+              }
             }
           },
           {
@@ -108,6 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-proj/23/beltrame/Una mirada profunda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,10 +277,16 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "f698faf6dd5f4cf2",
+  "active": "72af8abf8736f10f",
   "lastOpenFiles": [
+    "01-proj/18/galetto/Moving sound.md",
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "01-proj/18/vivona/Domo.md",
+    "01-proj/18/garella/Dédalo.md",
     "01-proj/18/dipaola-lutteral/Compost sonoro.md",
-    "01-proj/23/beltrame/\"Una mirada profunda\".md",
+    "01-proj/22/ancarola/Final CyM - Metrónomo.md",
+    "01-proj/22/ancarola/Generador de Melodías Random.md",
+    "01-proj/22/ancarola/Poema Sinfónico para ∞ Metrónomos.md",
     "00-in/proyectos MOC.md",
     "01-proj/23/beltrame/Exercise.md",
     "01-proj/23/beltrame/Reseña.md",
@@ -258,12 +325,6 @@
     "01-proj/23/Petroccelli/Cajita Musical.md",
     "00-in/whoosh.md",
     "00-in/La memoria de los materiales.md",
-    "00-in/Juan Sorrentino.md",
-    "00-in/Andrés Aizicovich.md",
-    "00-in/01-tone.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
-    "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
