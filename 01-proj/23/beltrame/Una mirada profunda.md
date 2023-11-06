@@ -1,3 +1,9 @@
+---
+type: project
+author: Sabrina Beltrame
+tags: proyectual
+publish: 2023
+---
 
 
 ## Síntesis
@@ -68,3 +74,9 @@ Opcional: 1- Todos los elementos, exceptuando los relojes despertadores, pueden 
 
 - https://en.wikipedia.org/wiki/Sleep_No_More_(2011_play)
 - https://mckittrickhotel.com/events/sleep-no-more/#/
+
+# PROPS || Assests <
+
+
+
+
