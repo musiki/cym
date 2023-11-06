@@ -14,6 +14,12 @@
 
 "Una mirada profunda" es una nueva herramienta de interpretación. La música, y por sobre todas las cosas, la música de cine, ayuda a reforzar y crear atmósferas que enriquecen determinadas escenas y situaciones. ¿Qué sería de las películas de Harry Potter sin la música de John Williams? ¿Qué sería de Star Wars? ¿El señor de los anillos? 
 
+## Estado del arte
+
+- "Sleep no more", New York (2011). Es una obra teatral inmersiva, basada en la tragedia de William Schakespeare   "Macbeth", creada por Punchdrunk, una compañia británica creada en el año 2000 por Felix Barret. 
+- "The masque of the red death"(play), Londres (2007). Es una obra teatral inmersiva, basada en el cuento de Edgar Allan Poe, creada por Punchdrunk.
+- "Meet Vincent Van Gogh", Amsterdam. Es una instalación de arte inmersivo que recrea obras del pintor Vincent Van Gogh.
+
 ## Desarrollo
 La obra tendrá lugar en un espacio cerrado que recrea una habitación antigua, con una plataforma accesible a través de escalones. En diferentes puntos del espacio, se distribuirán los ciento veinte relojes. Debajo de esta plataforma, se encontrarán los ocho cantantes, y sobre ella, los demás intérpretes, todos posicionados del mismo lado. La obra finalizará a los doce minutos, momento en el cual los relojes despertadores sonarán.
 
@@ -30,3 +36,8 @@ La obra tendrá lugar en un espacio cerrado que recrea una habitación antigua, 
 - Un cubre cama de dos plazas. 
 - Un ropero antiguo.
 
+
+## Bibliografía
+
+- https://en.wikipedia.org/wiki/Sleep_No_More_(2011_play)
+- https://mckittrickhotel.com/events/sleep-no-more/#/

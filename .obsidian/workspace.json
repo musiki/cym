@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e789791b76fd032d",
+        "id": "6f288a0a3f0f2aae",
         "type": "tabs",
         "children": [
           {
-            "id": "5ea03f3405ae73c0",
+            "id": "f698faf6dd5f4cf2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/beltrame/Reseña.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -96,9 +91,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "01-proj/23/beltrame/Reseña.md"
-              }
+              "state": {}
             }
           },
           {
@@ -115,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Reseña.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +173,7 @@
             }
           },
           {
-            "id": "95e74cc19d208192",
+            "id": "4d7ad829350cef2e",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -224,9 +216,13 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "5ea03f3405ae73c0",
+  "active": "f698faf6dd5f4cf2",
   "lastOpenFiles": [
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
+    "01-proj/23/beltrame/\"Una mirada profunda\".md",
+    "00-in/proyectos MOC.md",
     "01-proj/23/beltrame/Exercise.md",
+    "01-proj/23/beltrame/Reseña.md",
     "conflict-files-obsidian-git.md",
     "04-out/topoi/arte de datos.md",
     "04-out/personas/Martin Rohrmeier.md",
@@ -266,12 +262,8 @@
     "00-in/Andrés Aizicovich.md",
     "00-in/01-tone.md",
     "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md",
     "01-proj/23/bassino/codepen/Probando botones/escala melódica.md",
-    "01-proj/23/beltrame/\"Una mirada profunda\".md",
-    "01-proj/23/beltrame/beltrame.md",
-    "README.md",
     "cym-metamap.canvas",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
