@@ -949,36 +949,6 @@
       "tags": 5,
       "links": 0
     },
-    "04-ref/meta-aprendizaje.md": {
-      "size": 1097,
-      "tags": 3,
-      "links": 2
-    },
-    "04-ref/a-dataview playground.md": {
-      "size": 409,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-dataview.md": {
-      "size": 1283,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-plugins.md": {
-      "size": 853,
-      "tags": 0,
-      "links": 0
-    },
-    "04-ref/a-snippets.md": {
-      "size": 1272,
-      "tags": 1,
-      "links": 1
-    },
-    "04-ref/a-yuda.md": {
-      "size": 4477,
-      "tags": 0,
-      "links": 2
-    },
     "00-in/cym MOC.md": {
       "size": 102,
       "tags": 0,
@@ -1104,11 +1074,6 @@
       "tags": 1,
       "links": 0
     },
-    "00-in/Cybernetic Serendipity.md": {
-      "size": 582,
-      "tags": 4,
-      "links": 0
-    },
     "00-in/El metaverso es un territorio disputado.md": {
       "size": 23224,
       "tags": 0,
@@ -1127,11 +1092,6 @@
     "00-in/Patrones de Turing.md": {
       "size": 2349,
       "tags": 3,
-      "links": 0
-    },
-    "00-in/b-Azar y necesidad.md": {
-      "size": 0,
-      "tags": 0,
       "links": 0
     },
     "00-in/coloquial MOC.md": {
@@ -1259,11 +1219,6 @@
       "tags": 6,
       "links": 1
     },
-    "00-in/Hans Haake.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Sun Thinking.md": {
       "size": 163,
       "tags": 0,
@@ -1296,16 +1251,6 @@
     },
     "00-in/INGENIERIA INVERTIDA.md": {
       "size": 43,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Ingeniería invertida.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Presentación para coloquio de Música visual.md": {
-      "size": 0,
       "tags": 0,
       "links": 0
     },
@@ -1384,31 +1329,6 @@
       "tags": 3,
       "links": 0
     },
-    "00-in/01-tone.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Andrés Aizicovich.md": {
-      "size": 18942,
-      "tags": 3,
-      "links": 0
-    },
-    "00-in/Juan Sorrentino.md": {
-      "size": 2399,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/La memoria de los materiales.md": {
-      "size": 5652,
-      "tags": 4,
-      "links": 2
-    },
-    "00-in/whoosh.md": {
-      "size": 1118,
-      "tags": 1,
-      "links": 0
-    },
     "01-proj/23/Petroccelli/Cajita Musical.md": {
       "size": 323,
       "tags": 3,
@@ -1473,12 +1393,97 @@
       "size": 4685,
       "tags": 0,
       "links": 0
+    },
+    "00-in/Golan Levin.md": {
+      "size": 2372,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Susanne Kennedy.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/b-Azar y necesidad.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/eventos/Cybernetic Serendipity.md": {
+      "size": 581,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/eventos/La memoria de los materiales.md": {
+      "size": 5652,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/obras/whoosh.md": {
+      "size": 1118,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Andrés Aizicovich.md": {
+      "size": 18942,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Hans Haake.md": {
+      "size": 108,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Juan Sorrentino.md": {
+      "size": 2678,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-dataview playground.md": {
+      "size": 409,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-dataview.md": {
+      "size": 1283,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-plugins.md": {
+      "size": 853,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-snippets.md": {
+      "size": 1272,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/a-yuda.md": {
+      "size": 4491,
+      "tags": 0,
+      "links": 0
+    },
+    "05-ref/meta-aprendizaje.md": {
+      "size": 1099,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/\"Una mirada profunda\".md": {
+      "size": 1925,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 367,
-      "Create": 470,
+      "Refactor": 384,
+      "Create": 488,
       "Link": 365,
       "Expand": 38
     }
@@ -1505,7 +1510,7 @@
       "17": 281,
       "18": 31,
       "19": 36,
-      "20": 113,
+      "20": 148,
       "21": 115,
       "22": 139,
       "23": 15
@@ -1513,7 +1518,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 192,
+      "Mon": 227,
       "Tue": 452,
       "Wed": 83,
       "Thu": 14,
@@ -1566,6 +1571,24 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
+        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-plugins.md\"> a-plugins </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-dataview playground.md\"> a-dataview playground </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Hans Haake.md\"> Hans Haake </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
+        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
+        "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Martin Rohrmeier.md\"> Martin Rohrmeier </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
@@ -1597,25 +1620,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/Probando botones/escala melódica.md\"> escala melódica </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando Upstart.md\"> probando Upstart </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/Probando botones en codepen.md\"> Probando botones en codepen </a>",
-        "<a class=\"internal-link\" href=\"00-in/proyectual.md\"> proyectual </a>",
-        "<a class=\"internal-link\" href=\"00-in/bassino.md\"> bassino </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
-        "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
-        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
-        "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/petroccelli POC.md\"> petroccelli POC </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
-        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sun Thinking.md\"> Sun Thinking </a>",
-        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
-        "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
@@ -1730,6 +1735,23 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
+        "<a class=\"internal-link\" href=\"00-in/Hans Haake.md\"> Hans Haake </a>",
+        "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
+        "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
+        "<a class=\"internal-link\" href=\"00-in/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
+        "<a class=\"internal-link\" href=\"04-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-plugins.md\"> a-plugins </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview.md\"> a-dataview </a>",
+        "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
+        "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"00-in/Juan Sorrentino.md\"> Juan Sorrentino </a>",
+        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/HSHSH.md\"> HSHSH </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/bassino.md\"> bassino </a>",
@@ -1762,24 +1784,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md.md\"> academy-of-fine-arts-vienna-academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md.md\"> academy-of-fine-arts-vienna-espacios-academy-20of-fine-arts-vienna.md </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md.md\"> arte-y-flujo-arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/bibliografia-bibliografia-bib-moc.md.md\"> bibliografia-bibliografia-bib-moc.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md.md\"> cuarta-revolucion-industrial-cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md.md\"> la-humanidad-aumentada-la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to.md\"> la-instalacion-como-forma-del-arte-contemporaneo-la-instalacion-como-forma-del-arte-contemporaneo-to </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo.md\"> la-instalacion-como-forma-del-arte-contemporaneo-topoi-la-20instalacion-como-forma-del-arte-contempo </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md.md\"> la-reologia-del-arte-la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/la-reologia-del-arte-topoi-la-20reologia-del-arte.md.md\"> la-reologia-del-arte-topoi-la-20reologia-del-arte.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md.md\"> musica-y-politica-musica-y-politica-topoi-musica-20y-politica.md.md-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/musica-y-politica-topoi-musica-20y-politica.md.md\"> musica-y-politica-topoi-musica-20y-politica.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md\"> signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/help/signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md.md\"> signs-of-life-signs-of-life-bibliografia-eduardo-20kac_signs-of-life.md.md-of-life.md </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/help/arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md.md\"> arte-y-flujo-bibliografia-boris-20groys_arte-y-flujo.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
