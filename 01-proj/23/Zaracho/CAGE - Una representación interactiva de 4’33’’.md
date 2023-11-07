@@ -17,6 +17,11 @@ Experiencia inmersiva e interactiva basada en la obra _4’33’’_ de _John Ca
 - Acercar este tipo de pensamientos al resto de la comunidad
 
 ## Justificación/memoria conceptual
+
+El 29 de agosto de 1952 en Woodstock, Nueva York, se presentó por primera vez una de las obras más controversiales de la historia del arte en general y de la música en particular. En ella, luego de varios acercamientos al concepto del silencio, John Cage imaginó una pieza hecha íntegramente con este material y puso a toda la comunidad que en algún momento se tomó el tiempo de disfrutar y reflexionar con el arte a un pensamiento profundo acerca de la definición del arte, de la música, de la existencia y la forma del silencio, de la forma musical, de los límites de una obra, de su sintaxis entre otros temas.
+
+## Desarrollo
+
 La actividad va comprender dos grandes instancias. En la primera la audiciencia (visitantes) van a poder auspiciar de “intérpretes” tan sólo interactuando con los diferentes stands que se les ofrece, en los cuales además van a tener algunas recomendaciones de uso pero estarán libres de utilizarlos como quisieran. Aquí el listado de los stands:
 
 - **Stand 1 Micrófono condenser** donde se van a poder acercar y hablar de cerca, cantar o incluso tocarlo con cuidado. Algunas recomendaciones de uso:
@@ -41,18 +46,19 @@ La actividad va comprender dos grandes instancias. En la primera la audiciencia 
 
 La segunda instancia por la cual podrán pasar lxs visitantes será la _Sala de Concierto_. Será un espacio físico situado al lado de la primera sala y en ella se dispondrá, al mismo estilo que una sala de concierto real, un pasillo, bancos y un escenario en frente donde comenzará el concierto.
 
-Una vez acomodado el público en sus asientos el show empezará abriendo el telón y mostrando tras él un piano, un asiento y un cuaderno con una partituras en el atril. Al minuto ingresará el músico aplaudido por la audiencia y se sentará en el piano, abrirá el cuaderno y de dispondrá a “tocar” 4’33’’ de John Cage.
-
-## Desarrollo
-
-La idea sería poner micrófonos por toda la sala, el concierto va ser en un cubículo, un piano adelante con la partitura de 4’33’’.
-
-La gente va poder pasar por toda la sala tocando los objetos que van a estar preparados para ellxs y el micrófono irá tomando esos sonidos.
-
-Estos sonidos iran a la sala de concierto semiprocesados. Procesos que únicamente enriquecerán la acústica o la mezcla, que intentarán que la experiencia seas lo más estética posible, pero intentaran mediar con la idea de que sea lo más naturales posibles.
+Una vez acomodado el público en sus asientos el show empezará abriendo el telón y mostrando tras él un piano, un asiento y un cuaderno con una partituras en el atril. Al minuto ingresará el músico aplaudido por la audiencia y se sentará en el piano, abrirá el cuaderno y de dispondrá a “tocar” 4’33’’ de John Cage
 
 ## Desarrollo del trabajo
 
 ## Cronograma
 
 ## Materiales
+
+- 2 salas
+- 20 sillas
+- 6 mesas
+- Micrófonos:
+	- 1x Condenser (para stand único)
+	- 2x 58 (para conversatorio)
+
+1 piano acústico

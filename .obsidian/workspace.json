@@ -19,22 +19,8 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "5a281593e352fa50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
               }
             }
           },
@@ -129,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,10 +216,10 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "5a281593e352fa50",
+  "active": "d4a600e189be36a3",
   "lastOpenFiles": [
-    "02-mat/obs/img/image/Una mirada profunda-1699314168936.jpeg",
     "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/image/Una mirada profunda-1699314168936.jpeg",
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-yuda.md",
