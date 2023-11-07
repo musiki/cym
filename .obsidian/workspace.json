@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d5ba3d552d4afe5",
+        "id": "78da14f23a813105",
         "type": "tabs",
         "children": [
           {
-            "id": "537daabf244f8803",
+            "id": "d4a600e189be36a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/beltrame POC.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "una mirada profunda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/beltrame POC.md"
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
               }
             }
           },
@@ -116,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/beltrame POC.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +173,7 @@
             }
           },
           {
-            "id": "c62806d07a5a808e",
+            "id": "0b681f45fbea94ce",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -217,8 +216,16 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "9c932be67380cd5c",
+  "active": "d4a600e189be36a3",
   "lastOpenFiles": [
+    "02-mat/obs/check-out de imagenes.md",
+    "02-mat/obs/img/sistemas.excalidraw.md",
+    "02-mat/obs/img/~$Presentación del coloquio de Música visual.pptx",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pdf",
+    "02-mat/obs/img/gal.md",
+    "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
+    "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
+    "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "home.md",
     "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
@@ -251,12 +258,6 @@
     "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
     "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
     "00-moc/topoi MOC.md",
-    "00-moc/teatro MOC.md",
-    "00-moc/proyectos MOC.md",
-    "00-moc/personas MOC.md",
-    "00-moc/eventos MOC.md",
-    "00-moc/espacios MOC.md",
-    "00-moc/códigos MOC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "02-mat/jasvascript/02-setup/threejs03.html",
     "02-mat/jasvascript/02-setup/threejs02.html",
@@ -264,8 +265,6 @@
     "02-mat/jasvascript/02-setup/threejs-youtube.html",
     "02-mat/jasvascript/02-setup/three-pos-synth.html",
     "02-mat/jasvascript/02-setup/t2.html",
-    "02-mat/jasvascript/02-setup/t1.html",
-    "02-mat/jasvascript/02-setup/hover.html",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]
