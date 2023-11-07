@@ -1493,12 +1493,17 @@
       "size": 3308,
       "tags": 0,
       "links": 1
+    },
+    "00-in/Cajita Musical.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 494,
-      "Create": 568,
+      "Refactor": 495,
+      "Create": 569,
       "Link": 406,
       "Expand": 30
     }
@@ -1527,13 +1532,13 @@
       "19": 67,
       "20": 189,
       "21": 536,
-      "22": 148,
+      "22": 150,
       "23": 128
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 240,
+      "Mon": 242,
       "Tue": 1073,
       "Wed": 83,
       "Thu": 12,
@@ -1577,6 +1582,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Sin título 1.md\"> Sin título 1 </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
@@ -1626,10 +1632,10 @@
         "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Fragile Territories.md\"> Fragile Territories </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"00-in/Cajita Musical.md\"> Cajita Musical </a>",
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
         "<a class=\"internal-link\" href=\"00-in/Trazo Sonoro.md\"> Trazo Sonoro </a>",
@@ -1679,8 +1685,7 @@
         "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
         "<a class=\"internal-link\" href=\"04-ref/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
-        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
-        "<a class=\"internal-link\" href=\"04-ref/bibliografía/crisis de la representación.md\"> crisis de la representación </a>"
+        "<a class=\"internal-link\" href=\"04-ref/personas/Cecila Arditto.md\"> Cecila Arditto </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
