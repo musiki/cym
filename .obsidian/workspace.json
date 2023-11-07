@@ -175,7 +175,7 @@
             }
           },
           {
-            "id": "6a6dd7f7648a12e6",
+            "id": "b82860d7a1a4303d",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -218,7 +218,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7a0659e804f99fd7",
+  "active": "b82860d7a1a4303d",
   "lastOpenFiles": [
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
