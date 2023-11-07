@@ -108,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-out/topoi/Forma Musical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-out/topoi/Forma Musical.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -218,8 +217,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b82860d7a1a4303d",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
+    "04-out/topoi/Forma Musical.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/partituras/tonejs/01-tone.js.md",
+    "02-mat/partituras/tonejs",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "01-proj/23/Petroccelli/Trazo Sonoro.md",
+    "01-proj/23/Petroccelli/Dibujo Sonoro.md",
+    "00-moc/eventos MOC.md",
+    "00-moc",
+    "00-in/Sin título.md",
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
@@ -240,14 +250,6 @@
     "01-proj/tp/tp04-aplicación js fundamentals.md",
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "01-proj/23/beltrame/\"Una mirada profunda\".md",
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-    "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "00-in/proyectos MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/Vedic Sanskrit.md",
     "04-out/eventos",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
@@ -263,9 +265,6 @@
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
     "02-mat/obs/img/231017-arthouse",
-    "02-mat/obs/img/Cajita Musical.html",
-    "02-mat/obs/img/Cajita Musical 1.html",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "cym-metamap.canvas"

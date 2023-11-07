@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "04-out/bibliografía/Nick Montfort_The Future.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -24,17 +24,11 @@
             "id": "9a1b25ae169d7992",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-in/Hans Haake.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,6 +80,16 @@
           "type": "bookmarks",
           "state": {}
         }
+      },
+      {
+        "id": "e0c6cbe12e89bafd",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency"
+          }
+        }
       }
     ],
     "currentTab": 0
@@ -108,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "00-in/Hans Haake.md",
+            "file": "04-out/bibliografía/Nick Montfort_The Future.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -136,7 +140,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "00-in/Hans Haake.md"
+            "file": "04-out/bibliografía/Nick Montfort_The Future.md"
           }
         }
       },
@@ -202,7 +206,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a1b25ae169d7992",
+  "active": "1521269d75f3da6d",
   "lastOpenFiles": [
     "04-out/bibliografía/Nick Montfort_The Future.md",
     "00-in/Hans Haake.md",
