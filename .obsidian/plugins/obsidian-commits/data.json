@@ -1310,7 +1310,7 @@
       "links": 0
     },
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
-      "size": 3643,
+      "size": 6256,
       "tags": 3,
       "links": 0
     },
@@ -1390,13 +1390,13 @@
       "Refactor": 398,
       "Create": 536,
       "Link": 386,
-      "Expand": 26
+      "Expand": 27
     }
   },
   "dailyCommits": {
     "/": {
       "0": 4,
-      "1": 20,
+      "1": 21,
       "2": 0,
       "3": 0,
       "4": 1,
@@ -1424,7 +1424,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 74,
-      "Tue": 1015,
+      "Tue": 1016,
       "Wed": 107,
       "Thu": 12,
       "Fri": 0,
@@ -1460,7 +1460,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
-        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>"
+        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",

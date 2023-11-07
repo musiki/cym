@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5
+    "width": 267.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -218,9 +218,10 @@
   },
   "active": "d4a600e189be36a3",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "conflict-files-obsidian-git.md",
     "02-mat/obs/img/image/Una mirada profunda-1699314168936.jpeg",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-yuda.md",
     "05-ref/a-snippets.md",
@@ -250,7 +251,6 @@
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
     "02-mat/obs/img/231017-arthouse",
     "01-proj/tp/tp04-aplicación js fundamentals.md",
-    "01-proj/23/beltrame/Una mirada profunda.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/beltrame/Exercise.md",
     "01-proj/23/bassino/TP código.md",
