@@ -29,7 +29,7 @@ Trazo Sonoro consiste en un sistema donde las personas de todas las edades puede
 Trazo Sonoro se crea a partir del interés personal por la conjunción entre sonido y color.
 Esta relación está atravesada por años de investigación siendo un tema muy amplio para desarrollar, por lo cual se toma como punto de partida un factor relacionado con el compositor ruso destacado de finales del siglo XIX y principios del siglo XX, Alexander Scriabin (1872-1915, Rusia) y un software llamado láser tag que produce un dibujo sobre una superficies través de un láser, con miras a la interacción entre la música y la tecnología. Con respecto al factor de Scriabin, nos referimos al fenómeno de la sinestesia, el cual es generado en este sistema con el fin de que las personas puedan experimentar este enlace de percepciones tanto sonoras como visuales.
 
-## Alexander Scriabin
+### Alexander Scriabin
 
 A modo de una breve presentación del compositor que nos acerca al concepto tratado en este proyecto, Scriabin es un compositor ruso que nace el 6 de Enero del 1872 y muere el 27 de Abril de 1915. Es pianista y se lo considera uno de los mayores exponentes postromanticistas y atonalistas.
 Su incursión al piano comienza desde las lecciones recibidas a través de su tía Liubov Skriábina, quién presenta a Scriabian al pianista y compositor Antón Rubinstein. 
@@ -42,14 +42,14 @@ Un ejemplo entre sus composiciones es la Sinfonía N°5, Op. 60 Prometeo: el poe
 En esta obra realiza un acorde al que llaman Prometeo en referencia a la introducción de esa misma sinfonía. Se trata de un acorde formado por un hexacordo de cuartas (la, re#, sol, do#, fa#, si) que pueden reproducirse de diversas maneras. Trasladará esto a la composición de sus obras al desarrollar armonías basadas en las relaciones de cuarta, saliéndose de las armonías de terceras tradicionales de la época, convirtiéndose en el elemento esencial con el que construye su música.
 Por esto, las obras del último período del compositor se caracterizan por el acercamiento al atonalismo, ya que comenzaba a romper con el sistema jerárquico de funciones armónicas derivadas de las escalas diatónicas.
 
-## Sinestesia
+### Sinestesia
 
 Según la Real Academia Española de la Lengua, el término sinestesia procede del griego syn, unión, y aísthēsis, sensación. Sullivan (1986) define esta condición como la unión de los sentidos, describiendo que la experiencia simbólica de la unidad de los sentidos o sinestesia, médicamente hablando, es una muy rara condición en la que la estimulación de una modalidad sensorial se acompaña de una percepción en una o más de otras modalidades. Por lo tanto, los sinestésicos reportan colores al hecho de oír, olor de una melodía, ver los sonidos o degustarlos y hacer un juego simultáneo de los sentimientos.
 En lo que respecta al mundo musical, las obras se caracterizan por la variación tonal y el empleo de una amplia gama de acordes. Alexander Scriabin es uno de los ejemplos más recurridos al hablar de compositores sinestésicos debido al sistema que propuso para organizar los sonidos y colores.
 Más allá de que se cuestiona si Scriabin poseía como influencia del fenómeno de la percepción sinestésica, su paradigma con respecto a la relación entre la gama de colores y sonidos abarcan el concepto de la sinestesia. Además esta relación lo llevó a otras formas de ver la música y a otras formas de composición, sumándole a este binomio de notas y colores un tercer elemento (relacionado con su incursión en la teosofía) al que él llamaba estados del alma o emociones.
 La idea de trazo sonoro es emular ese concepto desde el sentido artístico, donde la persona que pase por este sistema pueda vivir la experiencia de componer a través de una relación binómica de percepciones.
 
-## Láser Tag
+### Láser Tag
 
 Es un sistema de visión por computadora que incluye un proyector por el cual se envía la señal captada por el láser permitiendo escribir sobre las paredes. El software en cuestión fue creado por Graffiti Research Lab, organización artística dedicada a grupos de escritores de graffitis y artistas que utilizan tecnologías de código abierto para la comunicación urbana.
 
