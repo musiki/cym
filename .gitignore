@@ -31,4 +31,13 @@ data.json
 .obsidian/appearance.json
 .obsidian/app.json
 .obsidian/.DS_Store
+.obsidian/plugins/colored-tags/data.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-commits/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-activity-history/data.json
+.obsidian/plugins/obsidian-commits/data.json
+.obsidian/plugins/obsidian-review-notes-plugin/data.json
+.obsidian/workspace.json
 ./cym.bib
