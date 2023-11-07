@@ -21,33 +21,12 @@
             }
           },
           {
-            "id": "3511221cc55324ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/Petroccelli/Guitarrax.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4f5b0293a11ebccf",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "69d29401782ab331",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Cajita Musical.md",
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -55,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -132,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Cajita Musical.md"
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md"
               }
             }
           },
@@ -150,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Cajita Musical.md",
+                "file": "01-proj/23/Petroccelli/Cajita Musical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +232,8 @@
   },
   "active": "69d29401782ab331",
   "lastOpenFiles": [
-    "00-in/Cajita Musical.md",
+    "01-proj/23/Petroccelli/Cajita Musical 1.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
     "01-proj/23/Petroccelli/Trazo Sonoro.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
@@ -294,7 +274,6 @@
     "01-proj/23/bassino/TP código.md",
     "00-in/Susanne Kennedy.md",
     "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
-    "00-in/Golan Levin.md",
     "02-mat/tonejs",
     "00-moc",
     "02-mat/partituras/tonejs",
