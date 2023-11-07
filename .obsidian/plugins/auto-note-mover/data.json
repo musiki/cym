@@ -52,6 +52,11 @@
       "folder": "02-mat/coloquial",
       "tag": "#entrevistas",
       "pattern": ""
+    },
+    {
+      "folder": "04-out/eventos",
+      "tag": "#eventos",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

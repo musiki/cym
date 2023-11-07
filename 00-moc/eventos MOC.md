@@ -1,12 +1,3 @@
----
-tags: generatividad 
-lugar:
-fecha:
-conexiones:
-url:
-foto:
----
-
 ```dataview
 TABLE without ID  ("![|100](" + photo + ")") as foto, file.link as evento , tags, year
 FROM #eventos

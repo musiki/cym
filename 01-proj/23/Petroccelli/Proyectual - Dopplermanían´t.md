@@ -1,7 +1,8 @@
 ---
-type: proyecto
-author: Ezequiel Petroccelli  
-tags: proyectual 
+type: exercise
+author: Ezequiel Petroccelli
+tags:
+  - proyectual
 publish: 2023
 ---
 
@@ -30,7 +31,6 @@ Un efecto que se busca dar a conocer al público ajeno al mundo de la música, e
 
 ### Efecto Doppler
 
-A partir del siglo XX, el interés por la manipulación de las características del sonido (sean tono, intensidad, timbre y duración) comenzó a tomar relevancia, lo cual llevó al entendimiento de la percepción sonora.  Varios y varias artistas comenzaron a trabajar con esta percepción en las personas, uniendo sonido, tecnología y ciencia, experimentando y jugando con las percepciones del sonido, basándose en conceptos o creando conceptos nuevos.
 
 
 

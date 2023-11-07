@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "5a281593e352fa50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -115,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,55 +230,54 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "d4a600e189be36a3",
+  "active": "5a281593e352fa50",
   "lastOpenFiles": [
+    "02-mat/obs/img/image/Una mirada profunda-1699314168936.jpeg",
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "05-ref/meta-aprendizaje.md",
+    "05-ref/a-yuda.md",
+    "05-ref/a-snippets.md",
+    "05-ref/a-plugins.md",
+    "05-ref/a-dataview.md",
+    "05-ref/a-dataview playground.md",
+    "05-ref",
+    "04-out/eventos/La memoria de los materiales.md",
+    "04-out/eventos/Cybernetic Serendipity.md",
+    "04-out/eventos",
+    "02-mat/partituras/tonejs/01-tone.js.md",
+    "02-mat/partituras/tonejs",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347880.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347879.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347878.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347877.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347876.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347875.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347874.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347873.jpeg",
+    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1699322347872.jpeg",
+    "02-mat/obs/img/image",
+    "02-mat/obs/img/Cajita Musical.html",
+    "02-mat/obs/img/Cajita Musical 1.html",
+    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
+    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
+    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
+    "02-mat/obs/img/231017-arthouse",
+    "01-proj/tp/tp04-aplicación js fundamentals.md",
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "01-proj/23/beltrame/Reseña.md",
+    "01-proj/23/beltrame/Exercise.md",
+    "01-proj/23/bassino/TP código.md",
     "02-mat/obs/check-out de imagenes.md",
     "02-mat/obs/img/sistemas.excalidraw.md",
-    "02-mat/obs/img/~$Presentación del coloquio de Música visual.pptx",
-    "02-mat/obs/img/Presentación del coloquio de Música visual.pdf",
     "02-mat/obs/img/gal.md",
     "02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md",
     "02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md",
     "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/beltrame/beltrame.md",
     "home.md",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751637.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751631.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751619.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751613.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751599.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751587.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751581.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751570.jpeg",
-    "02-mat/obs/img/image",
     "README.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "02-mat/tonejs/01-tone.js.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "00-in/La memoria de los materiales.md",
     "cym-metamap.canvas",
-    "04-out/topoi/arte de datos.md",
-    "04-out/personas/Martin Rohrmeier.md",
-    "02-mat/obs/tpl/t-topoi.md",
-    "02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md",
-    "02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md",
-    "00-moc/topoi MOC.md",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "02-mat/jasvascript/02-setup/threejs03.html",
-    "02-mat/jasvascript/02-setup/threejs02.html",
-    "02-mat/jasvascript/02-setup/threejs01.html",
-    "02-mat/jasvascript/02-setup/threejs-youtube.html",
-    "02-mat/jasvascript/02-setup/three-pos-synth.html",
-    "02-mat/jasvascript/02-setup/t2.html",
     "Untitled.canvas",
     "03-cla/cym-map.canvas"
   ]

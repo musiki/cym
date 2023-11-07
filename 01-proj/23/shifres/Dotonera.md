@@ -1,9 +1,10 @@
-**
-
-
+---
+type: project
+author: Agustín Shifres
+tags: proyectual
+publish: 2023
+---
   
-  
-
 ## Subtítulo  
 Tablero interactivo para exploración musical con la escala de Do mayor.
 
