@@ -11,12 +11,9 @@
             "id": "c31bc932fe50a34c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf"
               }
             }
           }
@@ -87,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md"
+                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf"
               }
             }
           },
@@ -105,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/Botonera rítmica.md",
+                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,12 +233,17 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "c31bc932fe50a34c",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "image/23110619.excalidraw.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "image",
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/bassino/TP código.md",
+    "01-proj/23/bassino/Música y arte visual.md",
+    "01-proj/23/shifres/shifres POC.md",
+    "01-proj/23/shifres/Shifres.md",
+    "01-proj/23/shifres/Dotonera.md",
+    "image/23110619.excalidraw.md",
+    "image",
     "conflict-files-obsidian-git.md",
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-yuda.md",
@@ -270,14 +272,9 @@
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/shifres/Shifres.md",
     "01-proj/23/shifres/do-tonera.md",
     "01-proj/tp/tp04-aplicación js fundamentals.md",
     "01-proj/23/beltrame/Reseña.md",
-    "01-proj/23/beltrame/Exercise.md",
-    "01-proj/23/beltrame/\"Una mirada profunda\".md",
-    "01-proj/23/bassino/bassino POC.md",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
     "02-mat/obs/img/image",
