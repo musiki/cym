@@ -32,6 +32,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "975bee9f26cecfd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -232,16 +245,17 @@
   },
   "active": "69d29401782ab331",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "01-proj/23/Petroccelli/Trazo Sonoro.md",
+    "04-out/personas/Susanne Kennedy.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "01-proj/23/Petroccelli/Dibujo Sonoro.md",
     "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro.md",
     "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/Cajita Musical 1.md",
-    "conflict-files-obsidian-git.md",
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-snippets.md",
     "05-ref/a-yuda.md",
@@ -275,7 +289,6 @@
     "01-proj/23/beltrame/Una mirada profunda.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/beltrame/Exercise.md",
-    "01-proj/23/bassino/TP código.md",
     "02-mat/tonejs",
     "00-moc",
     "Sin título.canvas",
