@@ -4,8 +4,6 @@
 		{"id":"71262f85b53c4c88","type":"text","text":"Jasia Reichardt","x":1020,"y":-431,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"Bela Julesz","id":"760445b155b9c6f0","x":1020,"y":-307,"width":250,"height":51,"color":"6"},
 		{"id":"8325cdba6dff9b24","type":"link","url":"https://www.youtube.com/watch?v=5mH9DysESqo&t=334s","x":-600,"y":-840,"width":640,"height":360},
-		{"type":"text","text":"John Pierce","id":"c5da4a8a5edd6cc1","x":1020,"y":-187,"width":250,"height":51,"color":"6"},
-		{"type":"text","text":"Bell Labs","id":"e033db8d2fd0807e","x":703,"y":-102,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"ArtLab EPFL","id":"933a34b96bf315de","x":703,"y":138,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"CERN Artistic residencies","id":"3c69fd132c4b52c2","x":703,"y":255,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"MIT Medialab","id":"a922dbd9cacfc19f","x":703,"y":378,"width":157,"height":53,"color":"1"},
@@ -13,9 +11,7 @@
 		{"type":"text","text":"ArsElectrónica","id":"cd409a92d6b88fa2","x":703,"y":618,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"Institute of Sonology","id":"a2bf3be2efd1216a","x":703,"y":18,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"<iframe width=\"2000px\" height=\"1000px\" src=\"https://miro.com/app/live-embed/uXjVO89lGbw=/?moveToViewport=-17499,-1859,8352,4549&embedId=158479448268\" frameborder=\"0\" scrolling=\"no\" allow=\"fullscreen; clipboard-read; clipboard-write\" allowfullscreen></iframe>","id":"c126621a5b618f5e","x":2640,"y":-459,"width":2060,"height":1060,"color":"6"},
-		{"type":"text","text":"max mathews","id":"3a6bb4260b1fcf91","x":1020,"y":-102,"width":250,"height":51,"color":"6"},
 		{"id":"77958b2696a7e970","type":"file","file":"04-out/personas/Dick Raaijmakers.md","x":1380,"y":475,"width":250,"height":50,"color":"6"},
-		{"type":"text","text":"\nDavid Tudor","id":"f7c32750d3288c8c","x":1020,"y":45,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"Henry Cowell\n","id":"a7a8a308e84f5255","x":1380,"y":-74,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"Charles Ives","id":"429bb574be740671","x":1380,"y":-546,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"Henry David Thoreau","id":"710cd8fae6f7e108","x":1380,"y":-680,"width":250,"height":51,"color":"6"},
@@ -32,7 +28,11 @@
 		{"type":"text","text":"Instituto DiTella","id":"17e246241b80fd29","x":480,"y":11,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"Cybernetic Serendipity","id":"3f5b179c2c47e4c9","x":200,"y":-573,"width":157,"height":53,"color":"#fff700"},
 		{"type":"text","text":"9 evenings","id":"3bcfa319e254f5b1","x":200,"y":-307,"width":157,"height":53,"color":"#fff700"},
-		{"id":"c871e3cf70d51538","type":"file","file":"04-out/espacios/EAT Experiments in arts and technologies.md","x":118,"y":-156,"width":239,"height":81,"color":"#fff71a"}
+		{"id":"c871e3cf70d51538","type":"file","file":"04-out/espacios/EAT Experiments in arts and technologies.md","x":118,"y":-156,"width":239,"height":220,"color":"#fff71a"},
+		{"type":"text","text":"John Pierce","id":"c5da4a8a5edd6cc1","x":1020,"y":-240,"width":250,"height":51,"color":"6"},
+		{"type":"text","text":"max mathews","id":"3a6bb4260b1fcf91","x":1020,"y":-49,"width":250,"height":51,"color":"6"},
+		{"type":"text","text":"Bell Labs","id":"e033db8d2fd0807e","x":703,"y":-49,"width":157,"height":53,"color":"1"},
+		{"type":"text","text":"\nDavid Tudor","id":"f7c32750d3288c8c","x":1020,"y":-156,"width":250,"height":51,"color":"6"}
 	],
 	"edges":[
 		{"id":"b1428d4e06303eea","fromNode":"3f5b179c2c47e4c9","fromSide":"right","toNode":"a152d7beada44b0f","toSide":"left"},
@@ -43,6 +43,7 @@
 		{"id":"23e0cc4aa8071f3e","fromNode":"a2bf3be2efd1216a","fromSide":"right","toNode":"77958b2696a7e970","toSide":"left"},
 		{"id":"311dcf241e4b6ab2","fromNode":"710cd8fae6f7e108","fromSide":"bottom","toNode":"429bb574be740671","toSide":"top"},
 		{"id":"02c0b9d6466f982a","fromNode":"429bb574be740671","fromSide":"bottom","toNode":"a7a8a308e84f5255","toSide":"top"},
-		{"id":"d205f4e396a8d576","fromNode":"a7a8a308e84f5255","fromSide":"bottom","toNode":"3bb718d2a5184373","toSide":"top"}
+		{"id":"d205f4e396a8d576","fromNode":"a7a8a308e84f5255","fromSide":"bottom","toNode":"3bb718d2a5184373","toSide":"top"},
+		{"id":"277dd4f94bd9bec4","fromNode":"c871e3cf70d51538","fromSide":"top","toNode":"3bcfa319e254f5b1","toSide":"bottom"}
 	]
 }

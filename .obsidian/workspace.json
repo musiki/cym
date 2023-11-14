@@ -4,16 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7e615ff9fa09b9a7",
+        "id": "f319604a69c347e1",
         "type": "tabs",
         "children": [
           {
-            "id": "c31bc932fe50a34c",
+            "id": "88530fd3c41f2a07",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "canvas",
               "state": {
-                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf"
+                "file": "cym-metamap.canvas",
+                "viewState": {
+                  "x": -12.081618942597364,
+                  "y": -453.6651688508477,
+                  "zoom": -0.16992269567872256
+                }
               }
             }
           }
@@ -84,7 +89,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf"
+                "file": "cym-metamap.canvas"
               }
             }
           },
@@ -102,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+                "file": "cym-metamap.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +153,7 @@
             }
           },
           {
-            "id": "5a5b551fb87f73ba",
+            "id": "dd908313ee50cf18",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -156,7 +161,7 @@
             }
           },
           {
-            "id": "88a455aca9bc6790",
+            "id": "721a9a10491ce5ee",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -233,33 +238,38 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "c31bc932fe50a34c",
+  "active": "88530fd3c41f2a07",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "00-moc/eventos MOC.md",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "04-out/eventos/La memoria de los materiales.md",
+    "00-in/Sun Thinking.md",
+    "00-in/Vedic Sanskrit.md",
+    "00-in/topoi MOC.md",
+    "00-in/teatro MOC.md",
+    "04-out/topoi/Forma Musical.md",
+    "04-out/personas/Susanne Kennedy.md",
+    "02-mat/obs/tpl/t-person.md",
+    "00-in/bib MOC.md",
+    "04-out/personas/Golan Levin.md",
+    "00-in/códigos MOC.md",
+    "00-in/coloquial MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/proyectual.md",
+    "00-in/Sin título.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "conflict-files-obsidian-git.md",
     "02-mat/partituras/tonejs/01-tone.js.md",
     "02-mat/partituras/tonejs",
     "01-proj/23/beltrame/Una mirada profunda.md",
     "01-proj/23/Petroccelli/Trazo Sonoro.md",
     "01-proj/23/Petroccelli/Dibujo Sonoro.md",
-    "00-moc/eventos MOC.md",
     "00-moc",
-    "00-in/Sin título.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/bassino/TP código.md",
     "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/shifres/Shifres.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "image/23110619.excalidraw.md",
     "image",
-    "05-ref/meta-aprendizaje.md",
-    "05-ref/a-yuda.md",
-    "05-ref/a-snippets.md",
-    "05-ref/a-plugins.md",
-    "05-ref/a-dataview.md",
-    "05-ref/a-dataview playground.md",
     "05-ref",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
     "02-mat/obs/img/image/TP código-1698190820134.jpeg",
@@ -271,10 +281,6 @@
     "02-mat/obs/img/image/TP código-1698190820080.jpeg",
     "02-mat/obs/img/image/TP código-1698190820074.jpeg",
     "02-mat/obs/img/image/TP código-1698190820072.jpeg",
-    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
