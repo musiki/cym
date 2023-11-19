@@ -108,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -218,14 +217,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7a0659e804f99fd7",
+  "active": "dd1acde2c75a4600",
   "lastOpenFiles": [
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "conflict-files-obsidian-git.md",
+    "04-out/personas/t-person.md",
+    "04-out/personas/Susanne Kennedy.md",
     "01-proj/23/beltrame/Exercise.md",
     "01-proj/23/beltrame/Una mirada profunda.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
     "01-proj/23/bassino/Clorolaser.md",
-    "conflict-files-obsidian-git.md",
     "04-out/topoi/Forma Musical.md",
     "02-mat/partituras/tonejs/01-tone.js.md",
     "02-mat/partituras/tonejs",
@@ -249,8 +250,6 @@
     "01-proj/23/beltrame/Piano.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/bassino/TP código.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/tp/tp04-aplicación js fundamentals.md",
     "04-out/eventos",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
