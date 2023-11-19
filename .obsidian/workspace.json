@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Max Bense.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Max Bense.md",
+                "file": "03-cla/c-cym02-arte generativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Max Bense.md"
+                "file": "03-cla/c-cym02-arte generativo.md"
               }
             }
           },
@@ -220,9 +220,15 @@
   },
   "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "00-in/Gustav Metzger.md",
+    "04-out/glosario/URI.md",
+    "04-out/glosario/README.md",
+    "04-out/glosario/PWA.md",
+    "04-out/glosario/PaaS.md",
+    "04-out/topoi/Generatividad.md",
     "00-in/La conciencia social del arte generativo..md",
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
     "00-in/Max Bense.md",
+    "00-in/Gustav Metzger.md",
     "00-in/Patrones de Turing.md",
     "00-in/INGENIERIA INVERTIDA.md",
     "00-in/combinational creativity.md",
@@ -238,14 +244,8 @@
     "00-in/teatro MOC.md",
     "00-in/proyectos MOC.md",
     "00-in/Proto-Indo-European.md",
-    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
-    "04-out/topoi/Generatividad.md",
     "04-out/topoi/Arte participativo.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "04-out/personas/t-person.md",
-    "04-out/personas/Susanne Kennedy.md",
-    "01-proj/23/beltrame/Exercise.md",
     "02-mat/partituras/tonejs",
     "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
     "00-moc",
