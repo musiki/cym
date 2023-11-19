@@ -1206,7 +1206,7 @@
     },
     "01-proj/23/shifres/Dotonera.md": {
       "size": 1884,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Música Visual.md": {
@@ -1275,7 +1275,7 @@
       "links": 0
     },
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
-      "size": 3643,
+      "size": 7078,
       "tags": 3,
       "links": 0
     },
@@ -1302,7 +1302,7 @@
     "04-out/topoi/arte de datos.md": {
       "size": 571,
       "tags": 2,
-      "links": 0
+      "links": 1
     },
     "00-in/bib MOC.md": {
       "size": 202,
@@ -1401,22 +1401,22 @@
     },
     "04-out/eventos/Cybernetic Serendipity.md": {
       "size": 581,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/eventos/La memoria de los materiales.md": {
       "size": 5652,
-      "tags": 0,
-      "links": 0
+      "tags": 4,
+      "links": 2
     },
     "04-out/obras/whoosh.md": {
       "size": 1118,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/Andrés Aizicovich.md": {
       "size": 18942,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/personas/Hans Haake.md": {
@@ -1426,7 +1426,7 @@
     },
     "04-out/personas/Juan Sorrentino.md": {
       "size": 2678,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "05-ref/a-dataview playground.md": {
@@ -1467,26 +1467,26 @@
     "00-moc/eventos MOC.md": {
       "size": 3195,
       "tags": 0,
-      "links": 0
+      "links": 1
     },
     "01-proj/23/Petroccelli/Dibujo Sonoro.md": {
       "size": 872,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/23/Petroccelli/Trazo Sonoro.md": {
       "size": 12143,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/23/beltrame/Una mirada profunda.md": {
       "size": 5247,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "02-mat/partituras/tonejs/01-tone.js.md": {
       "size": 861,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
@@ -1494,8 +1494,8 @@
     "/": {
       "Refactor": 587,
       "Create": 535,
-      "Link": 349,
-      "Expand": 52
+      "Link": 362,
+      "Expand": 53
     }
   },
   "dailyCommits": {
@@ -1515,7 +1515,7 @@
       "12": 36,
       "13": 29,
       "14": 28,
-      "15": 80,
+      "15": 94,
       "16": 84,
       "17": 9,
       "18": 178,
@@ -1529,7 +1529,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 51,
-      "Tue": 640,
+      "Tue": 654,
       "Wed": 311,
       "Thu": 103,
       "Fri": 127,
@@ -1540,6 +1540,7 @@
   "recentCommits": {
     "/": {
       "Expanded": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/texto 1.md\"> texto 1 </a>",
@@ -1589,8 +1590,7 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
-        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym07-creative computing.md\"> c-cym07-creative computing </a>"
+        "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1699,6 +1699,16 @@
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Multi-efecto 1.md\"> Multi-efecto 1 </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Dotonera.md\"> Dotonera </a>",
+        "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
@@ -1739,17 +1749,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/La instalación como forma del arte contemporáneo.md\"> La instalación como forma del arte contemporáneo </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música y Política.md\"> Música y Política </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1813,6 +1813,9 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
+        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
@@ -1860,10 +1863,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>"
+        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
