@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "file": "00-in/Max Bense.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-in/Max Bense.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/Max Bense.md"
               }
             }
           },
@@ -217,39 +218,39 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "00-in/Gustav Metzger.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "00-in/Max Bense.md",
+    "00-in/Patrones de Turing.md",
+    "00-in/INGENIERIA INVERTIDA.md",
+    "00-in/combinational creativity.md",
+    "00-in/Agregación limitada por difusión.md",
+    "00-in/El metaverso es un territorio disputado.md",
+    "00-in/espacios MOC.md",
+    "00-in/hi augmentation.md",
+    "00-in/Introducción a la Psicoacústica.md",
+    "00-in/memex.md",
+    "00-in/obras MOC.md",
+    "04-out/topoi/arte de datos.md",
+    "00-in/topoi MOC.md",
+    "00-in/teatro MOC.md",
+    "00-in/proyectos MOC.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
+    "04-out/topoi/Generatividad.md",
+    "04-out/topoi/Arte participativo.md",
     "conflict-files-obsidian-git.md",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
     "04-out/personas/t-person.md",
     "04-out/personas/Susanne Kennedy.md",
     "01-proj/23/beltrame/Exercise.md",
-    "01-proj/23/beltrame/Una mirada profunda.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "04-out/topoi/Forma Musical.md",
-    "02-mat/partituras/tonejs/01-tone.js.md",
     "02-mat/partituras/tonejs",
     "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
-    "01-proj/23/Petroccelli/Trazo Sonoro.md",
-    "01-proj/23/Petroccelli/Dibujo Sonoro.md",
-    "00-moc/eventos MOC.md",
     "00-moc",
-    "00-in/Sin título.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "01-proj/23/Petroccelli/PSICOACÚSTICA.pdf",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/shifres/shifres POC.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "01-proj/23/shifres/do-tonera.md",
-    "01-proj/23/shifres/Dotonera.md",
-    "01-proj/23/Petroccelli/Cajita Musical.md",
-    "01-proj/23/Petroccelli/Guitarrax.md",
-    "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/beltrame/Reseña.md",
-    "01-proj/23/bassino/TP código.md",
     "04-out/eventos",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",

@@ -2899,6 +2899,10 @@
     {
       "path": "04-out/personas/t-person.md",
       "filename": "t-person"
+    },
+    {
+      "path": "00-in/Max Bense.md",
+      "filename": "Max Bense"
     }
   ]
 }
