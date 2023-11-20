@@ -1,7 +1,8 @@
 ---
-type: proyecto
-author: Ezequiel Petroccelli  
-tags: proyectual 
+type: exercise
+author: Ezequiel Petroccelli
+tags:
+  - proyectual
 publish: 2023
 ---
 

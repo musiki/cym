@@ -167,6 +167,98 @@
     {
       "path": "02-mat/obs/img/sensor de distancia (1) 3.pdf",
       "filename": "sensor de distancia (1) 3"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
+      "filename": "VID-20231017-WA0093"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
+      "filename": "VID-20231017-WA0096"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
+      "filename": "VID-20231017-WA0099"
+    },
+    {
+      "path": "02-mat/partituras/tonejs/01-tone.js.md",
+      "filename": "01-tone.js"
+    },
+    {
+      "path": "03-cla/c-cym08-hydra+p5.js.md",
+      "filename": "c-cym08-hydra+p5.js"
+    },
+    {
+      "path": "04-out/bibliografía/b-Azar y necesidad.md",
+      "filename": "b-Azar y necesidad"
+    },
+    {
+      "path": "04-out/eventos/Cybernetic Serendipity.md",
+      "filename": "Cybernetic Serendipity"
+    },
+    {
+      "path": "04-out/eventos/La memoria de los materiales.md",
+      "filename": "La memoria de los materiales"
+    },
+    {
+      "path": "04-out/obras/whoosh.md",
+      "filename": "whoosh"
+    },
+    {
+      "path": "04-out/personas/Andrés Aizicovich.md",
+      "filename": "Andrés Aizicovich"
+    },
+    {
+      "path": "04-out/personas/Hans Haake.md",
+      "filename": "Hans Haake"
+    },
+    {
+      "path": "04-out/personas/Juan Sorrentino.md",
+      "filename": "Juan Sorrentino"
+    },
+    {
+      "path": "04-out/personas/Susanne Kennedy.md",
+      "filename": "Susanne Kennedy"
+    },
+    {
+      "path": "04-out/personas/t-person.md",
+      "filename": "t-person"
+    },
+    {
+      "path": "04-out/topoi/Forma Musical.md",
+      "filename": "Forma Musical"
+    },
+    {
+      "path": "04-out/topoi/arte de datos.md",
+      "filename": "arte de datos"
+    },
+    {
+      "path": "05-ref/a-dataview playground.md",
+      "filename": "a-dataview playground"
+    },
+    {
+      "path": "05-ref/a-dataview.md",
+      "filename": "a-dataview"
+    },
+    {
+      "path": "05-ref/a-plugins.md",
+      "filename": "a-plugins"
+    },
+    {
+      "path": "05-ref/a-snippets.md",
+      "filename": "a-snippets"
+    },
+    {
+      "path": "05-ref/a-yuda.md",
+      "filename": "a-yuda"
+    },
+    {
+      "path": "05-ref/meta-aprendizaje.md",
+      "filename": "meta-aprendizaje"
+    },
+    {
+      "path": "00-moc/eventos MOC.md",
+      "filename": "eventos MOC"
     }
   ]
 }
