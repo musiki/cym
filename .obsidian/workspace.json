@@ -11,14 +11,12 @@
             "id": "88530fd3c41f2a07",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "cym-metamap.canvas",
-                "viewState": {
-                  "x": -12.081618942597364,
-                  "y": -453.6651688508477,
-                  "zoom": -0.16992269567872256
-                }
+                "file": "01-proj/23/Petroccelli/Trazo Sonoro.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               }
             }
           }
@@ -72,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 349.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -89,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cym-metamap.canvas"
+                "file": "01-proj/23/Petroccelli/Trazo Sonoro.md"
               }
             }
           },
@@ -107,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cym-metamap.canvas",
+                "file": "01-proj/23/Petroccelli/Trazo Sonoro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +151,7 @@
             }
           },
           {
-            "id": "dd908313ee50cf18",
+            "id": "d4ea0aaaa729ce0b",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -161,7 +159,7 @@
             }
           },
           {
-            "id": "721a9a10491ce5ee",
+            "id": "c804977942e2899a",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -206,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,12 +235,20 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "88530fd3c41f2a07",
+  "active": "c804977942e2899a",
   "lastOpenFiles": [
-    "00-moc/eventos MOC.md",
+    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "01-proj/23/beltrame/beltrame POC.md",
+    "01-proj/23/beltrame/beltrame.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/bassino POC.md",
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "cym-metamap.canvas",
+    "00-moc/eventos MOC.md",
     "04-out/eventos/La memoria de los materiales.md",
     "00-in/Sun Thinking.md",
     "00-in/Vedic Sanskrit.md",
@@ -259,16 +264,9 @@
     "00-in/Proto-Indo-European.md",
     "00-in/proyectual.md",
     "00-in/Sin título.md",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "conflict-files-obsidian-git.md",
-    "02-mat/partituras/tonejs/01-tone.js.md",
     "02-mat/partituras/tonejs",
-    "01-proj/23/beltrame/Una mirada profunda.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro.md",
-    "01-proj/23/Petroccelli/Dibujo Sonoro.md",
     "00-moc",
-    "01-proj/23/bassino/TP código.md",
-    "01-proj/23/bassino/Música y arte visual.md",
     "image",
     "05-ref",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
@@ -285,7 +283,6 @@
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
     "02-mat/obs/img/image",
-    "cym-metamap.canvas",
     "02-mat/jasvascript/02-setup/C8.mp3",
     "Sin título 1.canvas",
     "Sin título.canvas",

@@ -3,7 +3,10 @@ type: project
 author: Fabián Bassino
 tags: proyectual
 publish: 2023
+banner: https://sdxl-h-p-1.stablediffusionweb.com/file=/tmp/gradio/709630ab5a0dc11796594ab4d6bc3f838acaa479/image.png
 ---
+
+<iframe src="https://sdxl-h-p-1.stablediffusionweb.com/file=/tmp/gradio/709630ab5a0dc11796594ab4d6bc3f838acaa479/image.png" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 ## La conciencia o el destino a morir
 # Síntesis

@@ -1200,7 +1200,7 @@
       "links": 0
     },
     "01-proj/23/bassino/Clorolaser.md": {
-      "size": 2063,
+      "size": 2422,
       "tags": 1,
       "links": 1
     },
@@ -1485,7 +1485,7 @@
       "Refactor": 499,
       "Create": 378,
       "Link": 288,
-      "Expand": 47
+      "Expand": 48
     }
   },
   "dailyCommits": {
@@ -1509,7 +1509,7 @@
       "16": 31,
       "17": 32,
       "18": 188,
-      "19": 20,
+      "19": 21,
       "20": 74,
       "21": 62,
       "22": 46,
@@ -1519,7 +1519,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 54,
-      "Tue": 139,
+      "Tue": 140,
       "Wed": 656,
       "Thu": 134,
       "Fri": 101,
@@ -1576,7 +1576,8 @@
         "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
         "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>",
         "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>"
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
