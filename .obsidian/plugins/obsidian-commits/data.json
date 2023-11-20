@@ -1272,7 +1272,7 @@
     "04-out/topoi/arte de datos.md": {
       "size": 592,
       "tags": 2,
-      "links": 0
+      "links": 1
     },
     "02-mat/jasvascript/02-setup/02-setup.md": {
       "size": 13430,
@@ -1371,7 +1371,7 @@
     },
     "02-mat/partituras/tonejs/01-tone.js.md": {
       "size": 912,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/bibliografía/b-Azar y necesidad.md": {
@@ -1381,22 +1381,22 @@
     },
     "04-out/eventos/Cybernetic Serendipity.md": {
       "size": 598,
-      "tags": 0,
+      "tags": 4,
       "links": 0
     },
     "04-out/eventos/La memoria de los materiales.md": {
       "size": 5722,
-      "tags": 0,
-      "links": 0
+      "tags": 4,
+      "links": 2
     },
     "04-out/obras/whoosh.md": {
       "size": 1131,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/Andrés Aizicovich.md": {
       "size": 18966,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "04-out/personas/Hans Haake.md": {
@@ -1406,17 +1406,17 @@
     },
     "04-out/personas/Juan Sorrentino.md": {
       "size": 2700,
-      "tags": 0,
+      "tags": 2,
       "links": 0
     },
     "04-out/personas/Susanne Kennedy.md": {
       "size": 126,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/t-person.md": {
       "size": 130,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "05-ref/a-dataview playground.md": {
@@ -1436,30 +1436,30 @@
     },
     "05-ref/a-snippets.md": {
       "size": 1318,
-      "tags": 0,
-      "links": 0
+      "tags": 1,
+      "links": 1
     },
     "05-ref/a-yuda.md": {
       "size": 4779,
       "tags": 0,
-      "links": 0
+      "links": 2
     },
     "05-ref/meta-aprendizaje.md": {
       "size": 1135,
-      "tags": 0,
-      "links": 0
+      "tags": 3,
+      "links": 2
     },
     "00-moc/eventos MOC.md": {
       "size": 3232,
       "tags": 0,
-      "links": 0
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 608,
       "Create": 654,
-      "Link": 447,
+      "Link": 463,
       "Expand": 23
     }
   },
@@ -1474,7 +1474,7 @@
       "6": 2,
       "7": 0,
       "8": 0,
-      "9": 61,
+      "9": 77,
       "10": 7,
       "11": 30,
       "12": 36,
@@ -1493,7 +1493,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 55,
+      "Mon": 71,
       "Tue": 1000,
       "Wed": 68,
       "Thu": 269,
@@ -1636,6 +1636,16 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Susanne Kennedy.md\"> Susanne Kennedy </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/whoosh.md\"> whoosh </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
@@ -1676,17 +1686,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/La conciencia social del arte generativo..md\"> La conciencia social del arte generativo. </a>",
-        "<a class=\"internal-link\" href=\"00-in/Patrones de Turing.md\"> Patrones de Turing </a>",
-        "<a class=\"internal-link\" href=\"00-in/Cybernetic Serendipity.md\"> Cybernetic Serendipity </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp05-guía de lectura 1 GROYS.md\"> tp05-guía de lectura 1 GROYS </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura MONTFORT.md\"> tp03-guía de lectura MONTFORT </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp06-guía de lectura SADIN.md\"> tp06-guía de lectura SADIN </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Guitarrax.md\"> Guitarrax </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>"
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>"
       ],
       "Refactored": [],
       "Deleted": [
@@ -1743,6 +1743,12 @@
         "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
+        "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
+        "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
+        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
+        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
@@ -1787,13 +1793,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Música Visual.md\"> Música Visual </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"04-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Hito Steyerl.md\"> Hito Steyerl </a>",
-        "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"04-ref/a-snippets.md\"> a-snippets </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
