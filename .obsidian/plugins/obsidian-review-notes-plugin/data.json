@@ -3299,6 +3299,18 @@
     {
       "path": "02-mat/partituras/tonejs/01-tone.js.md",
       "filename": "01-tone.js"
+    },
+    {
+      "path": "00-in/Gustav Metzger.md",
+      "filename": "Gustav Metzger"
+    },
+    {
+      "path": "00-in/Max Bense.md",
+      "filename": "Max Bense"
+    },
+    {
+      "path": "04-out/personas/t-person.md",
+      "filename": "t-person"
     }
   ]
 }
