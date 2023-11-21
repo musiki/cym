@@ -1483,12 +1483,22 @@
       "size": 113,
       "tags": 1,
       "links": 0
+    },
+    "00-in/Gustav Metzger.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Max Bense.md": {
+      "size": 2497,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 503,
-      "Create": 572,
+      "Refactor": 504,
+      "Create": 575,
       "Link": 408,
       "Expand": 31
     }
@@ -1513,7 +1523,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 99,
+      "18": 103,
       "19": 79,
       "20": 189,
       "21": 536,
@@ -1524,7 +1534,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 244,
-      "Tue": 1085,
+      "Tue": 1089,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1568,6 +1578,9 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>",
+        "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Susanne Kennedy.md\"> Susanne Kennedy </a>",
@@ -1615,10 +1628,7 @@
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>"
+        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
@@ -1733,6 +1743,7 @@
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
@@ -1780,8 +1791,7 @@
         "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>",
-        "<a class=\"internal-link\" href=\"04-ref/cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md.md\"> cuarta-revolucion-industrial-topoi-cuarta-20revolucion-industrial.md </a>"
+        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
