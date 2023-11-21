@@ -91,8 +91,8 @@ A medida que la persona vaya trazando líneas dentro del rango delimitado en la 
 
 ![](https://lh7-us.googleusercontent.com/jdBInv1kwetaqylktHwJRkgYv1KIHdT3kiVkRhfkdnIEW0gJ6j6tBF7S-qdXPCKIzuvRhdw1DbGNPdItTQmlLesHUQiUKZJDjz7msakXLHcGNwJhBtSz9oWvzWeMy9UJY0eZ3RViZNDhOBCWW_ctbww)                           
 figura 3
-![](https://lh7-us.googleusercontent.com/niLuy2CbA9nCZxoUsReKETnYhXW0X35bGTTmH1b_U79G2greGP_rxGcnlgguuFI4V-qDES_looguJnS6z6okPj7E74S0zNfRas00Op7-qPy1UD2WGMHJa_qN_EpINY-Xd4KPLEGuT-OIW3IQENsnfLA)
 
+![](https://lh7-us.googleusercontent.com/niLuy2CbA9nCZxoUsReKETnYhXW0X35bGTTmH1b_U79G2greGP_rxGcnlgguuFI4V-qDES_looguJnS6z6okPj7E74S0zNfRas00Op7-qPy1UD2WGMHJa_qN_EpINY-Xd4KPLEGuT-OIW3IQENsnfLA)
 figura 4
 
   
@@ -100,10 +100,9 @@ figura 4
  La escala musical que se utilizará para este proyecto es la dodecafónica, siendo las notas
 
   
+La escala musical que se utilizará para este proyecto es la dodecafónica, siendo las notas
 
 C - C# - D - D# - E - F - F# - G - G# - A - A# - B
-
-  
 
 Para establecer un orden y disminuir la dificultad, no se utilizará el orden del círculo de quintas establecido por Scriabin, ya que se contempla que no todas las personas espectadoras tengan conocimientos sobre teoría musical. El orden de la gama de colores será dispuesto como aparece en la figura 2, y las notas irán en orden ascendente, siendo el C (primer nota) el color rojo de la esquina inferior izquierda de la pared.
 

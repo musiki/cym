@@ -1232,7 +1232,7 @@
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
       "size": 813,
       "tags": 5,
-      "links": 1
+      "links": 3
     },
     "01-proj/23/shifres/Dotonera.md": {
       "size": 1918,
@@ -1499,7 +1499,7 @@
     "/": {
       "Refactor": 504,
       "Create": 575,
-      "Link": 408,
+      "Link": 409,
       "Expand": 31
     }
   },
@@ -1523,7 +1523,7 @@
       "15": 0,
       "16": 14,
       "17": 2,
-      "18": 103,
+      "18": 104,
       "19": 79,
       "20": 189,
       "21": 536,
@@ -1534,7 +1534,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 244,
-      "Tue": 1089,
+      "Tue": 1090,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1794,6 +1794,7 @@
         "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
         "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
         "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
@@ -1843,8 +1844,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
         "<a class=\"internal-link\" href=\"04-out/SUMMARY.md\"> SUMMARY </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/Psicoacústica.md\"> Psicoacústica </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"01-proj/tp/tp02-aplicación.md\"> tp02-aplicación </a>",
