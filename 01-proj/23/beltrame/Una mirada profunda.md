@@ -46,7 +46,7 @@ Los y las instrumentistas que se encuentren sobre el escenario estarán vestidos
 En cuanto a la performance, podrán moverse en un lugar reducido del espacio, y cambiar posiciones con los y las demás instrumentistas. Una vez colocados en sus lugares deberán adoptar un papel de estatuas vivientes, es decir, no podrán hablar, ni interactuar con el público a través de gestos o miradas.
 Opcional: Cada instrumentista puede llevar un lente de contacto gris o azul en uno de sus ojos. 
 
-#### Procedimiento
+#### Procedimiento <<< 
 
 La obra comenzará con el escenario solamente ocupado por los y las instrumentistas, las luces apagadas y el clarinete sonando, el cual podrá escucharse desde afuera del espacio. Luego de esto se dará entrada a la gente, que podrá recorrer y caminar entre los y las instrumentistas, como así también interactuar con los objetos que se encuentran en el espacio. Alguno de ellos, como por ejemplo la apertura de uno de los cajones del ropero, el encendido de una lampara, la lectura de un libro, sentarse en la silla mecedora, entre otros;  serán disparadores de materiales sonoros para los interpretes, pero sólo durante los primeros minutos, luego la obra seguirá su curso. 
 La obra finalizara cuando los relojes despertadores, los cuales se encontrarán debajo de la plataforma, suenen cuando hayan transcurrido veinte minutos, momento en el cual quedaran sonando los timbales, y poco a poco junto con las luces vayan desapareciendo. Una vez que la gente se haya retirado, la obra volverá a comenzar.
