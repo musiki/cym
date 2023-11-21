@@ -86,19 +86,18 @@ figura 2
   
 
 A medida que la persona vaya trazando líneas dentro del rango delimitado en la pared blanca, formando figuras, letras, o un dibujo particular, irán apareciendo los colores y los sonidos (figura 3 y 4).
-
   
 
-![](https://lh7-us.googleusercontent.com/jdBInv1kwetaqylktHwJRkgYv1KIHdT3kiVkRhfkdnIEW0gJ6j6tBF7S-qdXPCKIzuvRhdw1DbGNPdItTQmlLesHUQiUKZJDjz7msakXLHcGNwJhBtSz9oWvzWeMy9UJY0eZ3RViZNDhOBCWW_ctbww)                           
+![](https://lh7-us.googleusercontent.com/jdBInv1kwetaqylktHwJRkgYv1KIHdT3kiVkRhfkdnIEW0gJ6j6tBF7S-qdXPCKIzuvRhdw1DbGNPdItTQmlLesHUQiUKZJDjz7msakXLHcGNwJhBtSz9oWvzWeMy9UJY0eZ3RViZNDhOBCWW_ctbww)        
+
 figura 3
 
+
 ![](https://lh7-us.googleusercontent.com/niLuy2CbA9nCZxoUsReKETnYhXW0X35bGTTmH1b_U79G2greGP_rxGcnlgguuFI4V-qDES_looguJnS6z6okPj7E74S0zNfRas00Op7-qPy1UD2WGMHJa_qN_EpINY-Xd4KPLEGuT-OIW3IQENsnfLA)
+
 figura 4
 
   
-
- La escala musical que se utilizará para este proyecto es la dodecafónica, siendo las notas
-
   
 La escala musical que se utilizará para este proyecto es la dodecafónica, siendo las notas
 
