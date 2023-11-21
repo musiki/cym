@@ -175,7 +175,7 @@
             }
           },
           {
-            "id": "4bab4bf2dbf11090",
+            "id": "f4949edf1deabcba",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -220,6 +220,7 @@
   },
   "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Exercise.md",
     "04-out/glosario/URI.md",
     "04-out/glosario/README.md",
     "04-out/glosario/PWA.md",
@@ -245,7 +246,6 @@
     "00-in/proyectos MOC.md",
     "00-in/Proto-Indo-European.md",
     "04-out/topoi/Arte participativo.md",
-    "conflict-files-obsidian-git.md",
     "02-mat/partituras/tonejs",
     "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
     "00-moc",
