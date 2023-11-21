@@ -10,11 +10,11 @@ publish: 2023
 
 ## Síntesis
 
-**
+
 
 Trazo Sonoro consiste en un sistema basado en el fenómeno de sinestesia, donde las personas de todas las edades pueden interactuar con la tecnología y la música creando sus propias obras a través de un láser.
 
-**
+
 
 ## Objetivos
 
