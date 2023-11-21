@@ -1247,7 +1247,7 @@
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
       "size": 796,
       "tags": 5,
-      "links": 1
+      "links": 3
     },
     "03-cla/c-cym09-visual.md": {
       "size": 0,
@@ -1494,7 +1494,7 @@
     "/": {
       "Refactor": 595,
       "Create": 543,
-      "Link": 364,
+      "Link": 365,
       "Expand": 54
     }
   },
@@ -1512,7 +1512,7 @@
       "9": 177,
       "10": 55,
       "11": 96,
-      "12": 42,
+      "12": 43,
       "13": 29,
       "14": 38,
       "15": 97,
@@ -1529,7 +1529,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 51,
-      "Tue": 660,
+      "Tue": 661,
       "Wed": 311,
       "Thu": 103,
       "Fri": 127,
@@ -1813,6 +1813,7 @@
         "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"04-out/eventos/La memoria de los materiales.md\"> La memoria de los materiales </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
@@ -1862,8 +1863,7 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym15-vida digital.md\"> c-cym15-vida digital </a>",
-        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

@@ -26,20 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym02-arte generativo.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b58ed03cc5272dfd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/beltrame/Exercise.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -47,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "01-proj/23/beltrame/Exercise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "01-proj/23/beltrame/Exercise.md"
               }
             }
           },
@@ -231,10 +218,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b58ed03cc5272dfd",
+  "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "01-proj/tp/tp04-aplicación js fundamentals.md",
+    "01-proj/23/bassino/TP código.md",
+    "01-proj/23/Zaracho/Botonera rítmica.md",
+    "01-proj/tp/tp03-guía de lectura MONTFORT.md",
+    "01-proj/tp/tp02-aplicación.md",
+    "01-proj/23/Petroccelli/Cajita Musical.md",
+    "01-proj/tp/tp01-topoi.md",
+    "04-out/topoi/arte de datos.md",
     "03-cla/c-cym02-arte generativo.md",
+    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/sensor de distancia 3.pdf",
     "02-mat/obs/img/sensor de distancia 2.pdf",
@@ -261,14 +256,6 @@
     "00-in/Agregación limitada por difusión.md",
     "00-in/El metaverso es un territorio disputado.md",
     "00-in/espacios MOC.md",
-    "00-in/hi augmentation.md",
-    "00-in/Introducción a la Psicoacústica.md",
-    "00-in/memex.md",
-    "00-in/obras MOC.md",
-    "04-out/topoi/arte de datos.md",
-    "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "00-in/proyectos MOC.md",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226568.jpeg",
