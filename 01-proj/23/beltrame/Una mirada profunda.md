@@ -90,6 +90,4 @@ Código del reloj (los tiempos están más cortos para que se pueda escuchar cua
 
 <iframe height="360" width="640" src="https://codepen.io/Sabrina-Beltrame/pen/xxMXezW?editors=1010" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>
 
-
-
 Me faltaría agregar un presupuesto y las imágenes creadas con IA para mayor representación de la parte escenográfica 
