@@ -1359,24 +1359,9 @@
       "tags": 1,
       "links": 0
     },
-    "01-proj/23/Petroccelli/Dibujo Sonoro.md": {
-      "size": 0,
-      "tags": 1,
-      "links": 0
-    },
-    "01-proj/23/Petroccelli/Trazo Sonoro.md": {
-      "size": 12407,
-      "tags": 1,
-      "links": 0
-    },
     "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
       "size": 0,
       "tags": 0,
-      "links": 0
-    },
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
-      "size": 1821,
-      "tags": 1,
       "links": 0
     },
     "01-proj/23/bassino/TP código.md": {
@@ -1493,11 +1478,21 @@
       "size": 2497,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md": {
+      "size": 1821,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md": {
+      "size": 12407,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 504,
+      "Refactor": 507,
       "Create": 575,
       "Link": 409,
       "Expand": 31
@@ -1525,7 +1520,7 @@
       "17": 2,
       "18": 104,
       "19": 79,
-      "20": 189,
+      "20": 192,
       "21": 536,
       "22": 152,
       "23": 128
@@ -1534,7 +1529,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 244,
-      "Tue": 1090,
+      "Tue": 1093,
       "Wed": 83,
       "Thu": 12,
       "Fri": 0,
@@ -1631,6 +1626,8 @@
         "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical 1.md\"> Cajita Musical 1 </a>",
         "<a class=\"internal-link\" href=\"00-in/Cajita Musical.md\"> Cajita Musical </a>",
@@ -1679,9 +1676,7 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/2023-08-30.md\"> 2023-08-30 </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp03-guía de lectura 1 GROYS.md\"> tp03-guía de lectura 1 GROYS </a>",
         "<a class=\"internal-link\" href=\"tp04-guía de lectura SADI.md\"> tp04-guía de lectura SADI </a>",
-        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIn.md\"> tp04-guía de lectura SADIn </a>",
-        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-guía de lectura SADIN.md\"> tp04-guía de lectura SADIN </a>"
+        "<a class=\"internal-link\" href=\"tp04-guía de lectura SADIn.md\"> tp04-guía de lectura SADIn </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"04-out/personas/Susanne Kennedy.md\"> Susanne Kennedy </a>",
@@ -1741,6 +1736,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1790,8 +1786,7 @@
         "<a class=\"internal-link\" href=\"04-ref/la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md.md\"> la-humanidad-aumentada-bibliografia-eric-20sadin_la-humanidad-aumentada.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md.md\"> introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacustica.md </a>",
         "<a class=\"internal-link\" href=\"04-ref/introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust.md\"> introduccion-a-la-psicoacustica-introduccion-a-la-psicoacustica-topoi-introduccion-20a-la-psicoacust </a>",
-        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>",
-        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno.md\"> historia-de-la-tecnologia-historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md-la-tecno </a>"
+        "<a class=\"internal-link\" href=\"04-ref/historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md.md\"> historia-de-la-tecnologia-topoi-historia-20de-la-tecnologia.md </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
