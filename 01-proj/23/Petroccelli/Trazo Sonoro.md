@@ -157,4 +157,3 @@ Para realizar este proyecto se necesita
   - Sullivan, Lawrence E. (1986). Sound and Senses: toward a hermeneutics of performance, History of Religions 26 (1): 1-33.
     
 
-**
