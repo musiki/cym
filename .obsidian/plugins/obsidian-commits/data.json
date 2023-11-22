@@ -1492,8 +1492,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 595,
-      "Create": 543,
+      "Refactor": 596,
+      "Create": 544,
       "Link": 365,
       "Expand": 54
     }
@@ -1518,7 +1518,7 @@
       "15": 97,
       "16": 84,
       "17": 9,
-      "18": 178,
+      "18": 180,
       "19": 10,
       "20": 93,
       "21": 250,
@@ -1529,7 +1529,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 51,
-      "Tue": 661,
+      "Tue": 663,
       "Wed": 311,
       "Thu": 103,
       "Fri": 127,
@@ -1596,6 +1596,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
         "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1642,7 +1643,6 @@
         "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
@@ -1764,6 +1764,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
         "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
         "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
@@ -1809,8 +1810,7 @@
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",

@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/beltrame/Una mirada profunda.md",
-                "mode": "source",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/beltrame/Una mirada profunda.md",
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/beltrame/Una mirada profunda.md"
+                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md"
               }
             }
           },
@@ -187,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,6 +221,8 @@
   },
   "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
+    "01-proj/23/beltrame/Una mirada profunda.md",
+    "conflict-files-obsidian-git.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
     "03-cla/c-cym00-presentación.md",
     "03-cla/c-cym03-mapas.md",
@@ -244,8 +247,6 @@
     "01-proj/23/Petroccelli/Trazo Sonoro.md",
     "01-proj/23/beltrame/Reseña.md",
     "01-proj/23/beltrame/Piano.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/beltrame/Una mirada profunda.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/sensor de distancia 3.pdf",
