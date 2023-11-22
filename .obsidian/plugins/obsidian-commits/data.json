@@ -1099,11 +1099,6 @@
       "tags": 3,
       "links": 0
     },
-    "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md": {
-      "size": 2244,
-      "tags": 1,
-      "links": 0
-    },
     "00-in/proyectual.md": {
       "size": 0,
       "tags": 0,
@@ -1449,16 +1444,6 @@
       "tags": 0,
       "links": 1
     },
-    "01-proj/23/Petroccelli/Dibujo Sonoro.md": {
-      "size": 872,
-      "tags": 1,
-      "links": 0
-    },
-    "01-proj/23/Petroccelli/Trazo Sonoro.md": {
-      "size": 12143,
-      "tags": 1,
-      "links": 0
-    },
     "01-proj/23/beltrame/Una mirada profunda.md": {
       "size": 5247,
       "tags": 1,
@@ -1488,12 +1473,22 @@
       "size": 0,
       "tags": 0,
       "links": 0
+    },
+    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md": {
+      "size": 1788,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md": {
+      "size": 11796,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 596,
-      "Create": 544,
+      "Refactor": 600,
+      "Create": 547,
       "Link": 365,
       "Expand": 54
     }
@@ -1522,14 +1517,14 @@
       "19": 10,
       "20": 93,
       "21": 250,
-      "22": 115,
+      "22": 122,
       "23": 186
     }
   },
   "weeklyCommits": {
     "/": {
       "Mon": 51,
-      "Tue": 663,
+      "Tue": 670,
       "Wed": 311,
       "Thu": 103,
       "Fri": 127,
@@ -1594,6 +1589,9 @@
       ],
       "Created": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1640,10 +1638,7 @@
         "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
@@ -1761,6 +1756,10 @@
       ],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1806,11 +1805,7 @@
         "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",

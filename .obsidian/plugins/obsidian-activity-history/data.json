@@ -13,7 +13,11 @@
     {
       "path": "/",
       "date": "2023-11-21",
+<<<<<<< HEAD
       "size": 1209224
+=======
+      "size": 1228647
+>>>>>>> origin/main
     }
   ],
   "activityHistory": [
@@ -38,7 +42,11 @@
         },
         {
           "date": "2023-11-21",
+<<<<<<< HEAD
           "value": 1159
+=======
+          "value": 4640
+>>>>>>> origin/main
         }
       ]
     }
