@@ -1161,7 +1161,7 @@
     },
     "01-proj/23/shifres/Dotonera.md": {
       "size": 1918,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/Filosofía histórica.md": {
@@ -1305,7 +1305,7 @@
       "links": 0
     },
     "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md": {
-      "size": 3700,
+      "size": 7168,
       "tags": 3,
       "links": 0
     },
@@ -1366,7 +1366,7 @@
     },
     "01-proj/23/bassino/TP código.md": {
       "size": 0,
-      "tags": 1,
+      "tags": 4,
       "links": 0
     },
     "02-mat/partituras/tonejs/01-tone.js.md": {
@@ -1453,14 +1453,59 @@
       "size": 3232,
       "tags": 0,
       "links": 1
+    },
+    "00-in/Gustav Metzger.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Max Bense.md": {
+      "size": 2497,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/tp/tp04-aplicación js fundamentals.md": {
+      "size": 1034,
+      "tags": 2,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Exercise.md": {
+      "size": 377,
+      "tags": 3,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Reseña.md": {
+      "size": 1736,
+      "tags": 0,
+      "links": 0
+    },
+    "01-proj/23/beltrame/Una mirada profunda.md": {
+      "size": 5334,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Dibujo Sonoro.md": {
+      "size": 889,
+      "tags": 1,
+      "links": 0
+    },
+    "01-proj/23/Petroccelli/Trazo Sonoro.md": {
+      "size": 12238,
+      "tags": 1,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 608,
-      "Create": 654,
-      "Link": 463,
-      "Expand": 23
+      "Create": 663,
+      "Link": 470,
+      "Expand": 24
     }
   },
   "dailyCommits": {
@@ -1477,12 +1522,12 @@
       "9": 77,
       "10": 7,
       "11": 30,
-      "12": 36,
+      "12": 37,
       "13": 120,
       "14": 78,
       "15": 132,
       "16": 60,
-      "17": 30,
+      "17": 46,
       "18": 252,
       "19": 3,
       "20": 56,
@@ -1493,10 +1538,10 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 71,
+      "Mon": 72,
       "Tue": 1000,
       "Wed": 68,
-      "Thu": 269,
+      "Thu": 285,
       "Fri": 15,
       "Sat": 0,
       "Sun": 325
@@ -1527,9 +1572,19 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/js01-fundamentals.md\"> js01-fundamentals </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>"
+        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Reseña.md\"> Reseña </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
+        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
+        "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>",
+        "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
@@ -1571,16 +1626,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
-        "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
-        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md\"> Simon Steen-Andersen écouter, observer, hacker-ed </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>"
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
@@ -1636,6 +1682,13 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/shifres/Dotonera.md\"> Dotonera </a>",
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
@@ -1679,14 +1732,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas de universos.md\"> Sistemas de universos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Vida artificial.md\"> Vida artificial </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>",
-        "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Música Visual.md\"> Música Visual </a>"
       ],
       "Refactored": [],
       "Deleted": [

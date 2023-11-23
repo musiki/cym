@@ -8,21 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bd198634126fa249",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/23/bassino/TP código.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "eb0622415b9aa570",
             "type": "leaf",
             "state": {
@@ -36,7 +21,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -66,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cym.biblio",
+                "query": "tag:proyectual",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -214,7 +198,7 @@
             }
           },
           {
-            "id": "b6d2e80eb1ea6729",
+            "id": "7749bf7955961a21",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -257,10 +241,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c932be67380cd5c",
+  "active": "7749bf7955961a21",
   "lastOpenFiles": [
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "01-proj/23/bassino/TP código.md",
+    "01-proj/23/bassino/Clorolaser.md",
+    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
     "conflict-files-obsidian-git.md",
     "00-moc/eventos MOC.md",
     "00-moc",
@@ -288,7 +273,6 @@
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
     "02-mat/obs/img/231017-arthouse",
     "00-in/Andrés Aizicovich.md",
-    "01-proj/23/bassino/Clorolaser.md",
     "02-mat/obs/img/sensor de distancia (1) 3.pdf",
     "02-mat/obs/img/sensor de distancia 2 2.pdf",
     "01-proj/23/bassino/Multi-efecto.md",
