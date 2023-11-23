@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Petroccelli/Trazo Sonoro.md",
+                "file": "01-proj/15/nievas/Drummer.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -21,12 +21,38 @@
             }
           },
           {
-            "id": "b145ab4b122035ad",
+            "id": "8852ed998a8eeb99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7a49e938ef0a34e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/Nicolas Schöffer.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "507fc085200b60bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-in/teatro MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -34,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-in/Nicolas Schöffer.md"
               }
             }
           },
@@ -119,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "00-in/Nicolas Schöffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,36 +275,38 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "b145ab4b122035ad",
+  "active": "7a49e938ef0a34e8",
   "lastOpenFiles": [
+    "00-in/teatro MOC.md",
+    "00-in/topoi MOC.md",
+    "00-in/Nicolas Schöffer.md",
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+    "01-proj/15/nievas/Drummer.md",
+    "04-out/topoi/aroma.md",
+    "04-out/topoi/t-topoi.md",
+    "04-out/topoi/t-topoi 1.md",
+    "00-in/bib MOC.md",
+    "04-out/bibliografía/Together in Music.md",
+    "00-in/Clemens Wöllner.md",
+    "02-mat/obs/tpl/t-person.md",
+    "04-out/personas/t-person.md",
+    "02-mat/obs/tpl/probando Upstart-1696798852409.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852406.jpeg",
+    "04-out/personas/Andrés Aizicovich.md",
+    "04-out/personas/README.md",
+    "01-proj/18/garella/Dédalo.md",
+    "01-proj/18/galetto/Moving sound.md",
+    "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "01-proj/23/Petroccelli/Trazo Sonoro.md",
     "conflict-files-obsidian-git.md",
-    "04-out/personas/t-person.md",
     "00-in/Max Bense.md",
     "00-in/Gustav Metzger.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
     "01-proj/23/beltrame/Una mirada profunda.md",
     "01-proj/23/beltrame/beltrame POC.md",
     "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "01-proj/23/Zaracho/Botonera rítmica.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "cym-metamap.canvas",
-    "00-moc/eventos MOC.md",
-    "04-out/eventos/La memoria de los materiales.md",
-    "00-in/Sun Thinking.md",
-    "00-in/Vedic Sanskrit.md",
-    "00-in/topoi MOC.md",
-    "00-in/teatro MOC.md",
-    "04-out/topoi/Forma Musical.md",
-    "04-out/personas/Susanne Kennedy.md",
-    "02-mat/obs/tpl/t-person.md",
-    "00-in/bib MOC.md",
-    "04-out/personas/Golan Levin.md",
-    "00-in/códigos MOC.md",
     "02-mat/partituras/tonejs",
     "00-moc",
     "image",
@@ -291,8 +319,6 @@
     "02-mat/obs/img/image/TP código-1698190820103.jpeg",
     "02-mat/obs/img/image/TP código-1698190820089.jpeg",
     "02-mat/obs/img/image/TP código-1698190820080.jpeg",
-    "02-mat/obs/img/image/TP código-1698190820074.jpeg",
-    "02-mat/obs/img/image/TP código-1698190820072.jpeg",
     "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
     "02-mat/obs/img/Cajita Musical.html",
     "02-mat/obs/img/Cajita Musical 1.html",
