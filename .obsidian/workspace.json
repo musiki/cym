@@ -47,6 +47,19 @@
             }
           },
           {
+            "id": "5bbad312f2d37779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "507fc085200b60bf",
             "type": "leaf",
             "state": {
@@ -60,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -127,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Nicolas Schöffer.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -145,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Nicolas Schöffer.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -275,11 +288,24 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "7a49e938ef0a34e8",
+  "active": "5bbad312f2d37779",
   "lastOpenFiles": [
+    "00-in/Nicolas Schöffer.md",
+    "conflict-files-obsidian-git.md",
+    "02-mat/obs/img/sensor de distancia.pdf",
+    "02-mat/obs/img/sensor de distancia 3.pdf",
+    "02-mat/obs/img/sensor de distancia 2.pdf",
+    "02-mat/obs/img/sensor de distancia 2 2.pdf",
+    "02-mat/obs/img/sensor de distancia 2 1.pdf",
+    "02-mat/obs/img/sensor de distancia 1.pdf",
+    "02-mat/obs/img/sensor de distancia (1).pdf",
+    "02-mat/obs/img/sensor de distancia (1) 3.pdf",
+    "02-mat/obs/img/sensor de distancia (1) 2.pdf",
+    "02-mat/obs/img/sensor de distancia (1) 1.pdf",
+    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
+    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
     "00-in/teatro MOC.md",
     "00-in/topoi MOC.md",
-    "00-in/Nicolas Schöffer.md",
     "00-in/Jean-Robert Sedano et Solveig de Ory.md",
     "01-proj/15/nievas/Drummer.md",
     "04-out/topoi/aroma.md",
@@ -298,19 +324,10 @@
     "01-proj/18/galetto/Moving sound.md",
     "01-proj/18/dipaola-lutteral/Compost sonoro.md",
     "01-proj/23/Petroccelli/Trazo Sonoro.md",
-    "conflict-files-obsidian-git.md",
     "00-in/Max Bense.md",
     "00-in/Gustav Metzger.md",
     "01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md",
-    "01-proj/23/beltrame/Una mirada profunda.md",
-    "01-proj/23/beltrame/beltrame POC.md",
-    "01-proj/23/beltrame/beltrame.md",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
     "cym-metamap.canvas",
-    "02-mat/partituras/tonejs",
-    "00-moc",
-    "image",
-    "05-ref",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
     "02-mat/obs/img/image/TP código-1698190820134.jpeg",
     "02-mat/obs/img/image/TP código-1698190820125.jpeg",
@@ -319,11 +336,6 @@
     "02-mat/obs/img/image/TP código-1698190820103.jpeg",
     "02-mat/obs/img/image/TP código-1698190820089.jpeg",
     "02-mat/obs/img/image/TP código-1698190820080.jpeg",
-    "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
-    "02-mat/obs/img/Cajita Musical.html",
-    "02-mat/obs/img/Cajita Musical 1.html",
-    "02-mat/obs/img/image",
-    "02-mat/jasvascript/02-setup/C8.mp3",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",
