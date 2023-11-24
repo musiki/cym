@@ -549,11 +549,6 @@
       "tags": 2,
       "links": 0
     },
-    "04-out/personas/README.md": {
-      "size": 14,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/personas/Yotam Mann.md": {
       "size": 187,
       "tags": 2,
@@ -1224,11 +1219,6 @@
       "tags": 3,
       "links": 5
     },
-    "04-out/topoi/t-topoi 1.md": {
-      "size": 66,
-      "tags": 1,
-      "links": 0
-    },
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md": {
       "size": 0,
       "tags": 0,
@@ -1404,11 +1394,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-out/personas/t-person.md": {
-      "size": 130,
-      "tags": 1,
-      "links": 0
-    },
     "05-ref/a-dataview playground.md": {
       "size": 441,
       "tags": 0,
@@ -1493,12 +1478,42 @@
       "size": 0,
       "tags": 5,
       "links": 1
+    },
+    "00-in/Clemens Wöllner.md": {
+      "size": 5001,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md": {
+      "size": 283,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Nicolas Schöffer.md": {
+      "size": 176,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-person.md": {
+      "size": 145,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/Together in Music.md": {
+      "size": 2327,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/topoi/aroma.md": {
+      "size": 299,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 614,
-      "Create": 666,
+      "Refactor": 621,
+      "Create": 676,
       "Link": 473,
       "Expand": 24
     }
@@ -1522,7 +1537,7 @@
       "14": 78,
       "15": 132,
       "16": 62,
-      "17": 56,
+      "17": 73,
       "18": 252,
       "19": 3,
       "20": 56,
@@ -1537,7 +1552,7 @@
       "Tue": 1000,
       "Wed": 68,
       "Thu": 295,
-      "Fri": 17,
+      "Fri": 34,
       "Sat": 0,
       "Sun": 325
     }
@@ -1571,6 +1586,16 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/aroma.md\"> aroma </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Together in Music.md\"> Together in Music </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-person.md\"> t-person </a>",
+        "<a class=\"internal-link\" href=\"00-in/Nicolas Schöffer.md\"> Nicolas Schöffer </a>",
+        "<a class=\"internal-link\" href=\"00-in/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
+        "<a class=\"internal-link\" href=\"00-in/Clemens Wöllner.md\"> Clemens Wöllner </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
@@ -1611,17 +1636,7 @@
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/personas MOC.md\"> personas MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/obras MOC.md\"> obras MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>",
@@ -1732,6 +1747,13 @@
       "Refactored": [],
       "Deleted": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/README.md\"> README </a>",
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
@@ -1774,14 +1796,7 @@
         "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/README 1.md\"> README 1 </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker..ed.md\"> Simon Steen-Andersen écouter, observer, hacker..ed </a>",
-        "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
