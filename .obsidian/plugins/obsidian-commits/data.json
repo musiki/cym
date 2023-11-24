@@ -1254,11 +1254,6 @@
       "tags": 3,
       "links": 0
     },
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
-      "size": 0,
-      "tags": 5,
-      "links": 3
-    },
     "04-out/personas/Martin Rohrmeier.md": {
       "size": 361,
       "tags": 4,
@@ -1493,11 +1488,16 @@
       "size": 11953,
       "tags": 1,
       "links": 0
+    },
+    "01-proj/23/bassino/proyectual bassino/FITON-ART.md": {
+      "size": 0,
+      "tags": 5,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 612,
+      "Refactor": 614,
       "Create": 666,
       "Link": 473,
       "Expand": 24
@@ -1521,7 +1521,7 @@
       "13": 120,
       "14": 78,
       "15": 132,
-      "16": 60,
+      "16": 62,
       "17": 56,
       "18": 252,
       "19": 3,
@@ -1537,7 +1537,7 @@
       "Tue": 1000,
       "Wed": 68,
       "Thu": 295,
-      "Fri": 15,
+      "Fri": 17,
       "Sat": 0,
       "Sun": 325
     }
@@ -1624,6 +1624,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/La conciencia o el destino a morir.md\"> La conciencia o el destino a morir </a>",
@@ -1673,8 +1674,7 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Espacio.md\"> Espacio </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
@@ -1859,7 +1859,8 @@
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-arte generativo.md\"> c-cym02-arte generativo </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Música y arte visual.md\"> Música y arte visual </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>"
       ]
     }
   },
