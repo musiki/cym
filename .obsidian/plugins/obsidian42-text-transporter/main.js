@@ -4,26 +4,30 @@ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
 var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 var __export = (target, all) => {
-  __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
-var __reExport = (target, module2, desc) => {
-  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
-    for (let key of __getOwnPropNames(module2))
-      if (!__hasOwnProp.call(target, key) && key !== "default")
-        __defProp(target, key, { get: () => module2[key], enumerable: !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable });
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   }
-  return target;
+  return to;
 };
-var __toModule = (module2) => {
-  return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
-};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // node_modules/obsidian-daily-notes-interface/dist/main.js
 var require_main = __commonJS({
@@ -34,64 +38,98 @@ var require_main = __commonJS({
     var DEFAULT_DAILY_NOTE_FORMAT = "YYYY-MM-DD";
     var DEFAULT_WEEKLY_NOTE_FORMAT = "gggg-[W]ww";
     var DEFAULT_MONTHLY_NOTE_FORMAT = "YYYY-MM";
+    var DEFAULT_QUARTERLY_NOTE_FORMAT = "YYYY-[Q]Q";
+    var DEFAULT_YEARLY_NOTE_FORMAT = "YYYY";
     function shouldUsePeriodicNotesSettings(periodicity) {
+      var _a, _b;
       const periodicNotes = window.app.plugins.getPlugin("periodic-notes");
-      return periodicNotes && periodicNotes.settings?.[periodicity]?.enabled;
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a[periodicity]) == null ? void 0 : _b.enabled);
     }
     function getDailyNoteSettings() {
+      var _a, _b, _c, _d;
       try {
         const { internalPlugins, plugins } = window.app;
         if (shouldUsePeriodicNotesSettings("daily")) {
-          const { format: format4, folder: folder2, template: template2 } = plugins.getPlugin("periodic-notes")?.settings?.daily || {};
+          const { format: format3, folder: folder2, template: template2 } = ((_b = (_a = plugins.getPlugin("periodic-notes")) == null ? void 0 : _a.settings) == null ? void 0 : _b.daily) || {};
           return {
-            format: format4 || DEFAULT_DAILY_NOTE_FORMAT,
-            folder: folder2?.trim() || "",
-            template: template2?.trim() || ""
+            format: format3 || DEFAULT_DAILY_NOTE_FORMAT,
+            folder: (folder2 == null ? void 0 : folder2.trim()) || "",
+            template: (template2 == null ? void 0 : template2.trim()) || ""
           };
         }
-        const { folder, format: format3, template } = internalPlugins.getPluginById("daily-notes")?.instance?.options || {};
+        const { folder, format: format2, template } = ((_d = (_c = internalPlugins.getPluginById("daily-notes")) == null ? void 0 : _c.instance) == null ? void 0 : _d.options) || {};
         return {
-          format: format3 || DEFAULT_DAILY_NOTE_FORMAT,
-          folder: folder?.trim() || "",
-          template: template?.trim() || ""
+          format: format2 || DEFAULT_DAILY_NOTE_FORMAT,
+          folder: (folder == null ? void 0 : folder.trim()) || "",
+          template: (template == null ? void 0 : template.trim()) || ""
         };
       } catch (err) {
         console.info("No custom daily note settings found!", err);
       }
     }
     function getWeeklyNoteSettings() {
+      var _a, _b, _c, _d, _e, _f, _g;
       try {
         const pluginManager = window.app.plugins;
-        const calendarSettings = pluginManager.getPlugin("calendar")?.options;
-        const periodicNotesSettings = pluginManager.getPlugin("periodic-notes")?.settings?.weekly;
+        const calendarSettings = (_a = pluginManager.getPlugin("calendar")) == null ? void 0 : _a.options;
+        const periodicNotesSettings = (_c = (_b = pluginManager.getPlugin("periodic-notes")) == null ? void 0 : _b.settings) == null ? void 0 : _c.weekly;
         if (shouldUsePeriodicNotesSettings("weekly")) {
           return {
             format: periodicNotesSettings.format || DEFAULT_WEEKLY_NOTE_FORMAT,
-            folder: periodicNotesSettings.folder?.trim() || "",
-            template: periodicNotesSettings.template?.trim() || ""
+            folder: ((_d = periodicNotesSettings.folder) == null ? void 0 : _d.trim()) || "",
+            template: ((_e = periodicNotesSettings.template) == null ? void 0 : _e.trim()) || ""
           };
         }
         const settings = calendarSettings || {};
         return {
           format: settings.weeklyNoteFormat || DEFAULT_WEEKLY_NOTE_FORMAT,
-          folder: settings.weeklyNoteFolder?.trim() || "",
-          template: settings.weeklyNoteTemplate?.trim() || ""
+          folder: ((_f = settings.weeklyNoteFolder) == null ? void 0 : _f.trim()) || "",
+          template: ((_g = settings.weeklyNoteTemplate) == null ? void 0 : _g.trim()) || ""
         };
       } catch (err) {
         console.info("No custom weekly note settings found!", err);
       }
     }
     function getMonthlyNoteSettings() {
+      var _a, _b, _c, _d;
       const pluginManager = window.app.plugins;
       try {
-        const settings = shouldUsePeriodicNotesSettings("monthly") && pluginManager.getPlugin("periodic-notes")?.settings?.monthly || {};
+        const settings = shouldUsePeriodicNotesSettings("monthly") && ((_b = (_a = pluginManager.getPlugin("periodic-notes")) == null ? void 0 : _a.settings) == null ? void 0 : _b.monthly) || {};
         return {
           format: settings.format || DEFAULT_MONTHLY_NOTE_FORMAT,
-          folder: settings.folder?.trim() || "",
-          template: settings.template?.trim() || ""
+          folder: ((_c = settings.folder) == null ? void 0 : _c.trim()) || "",
+          template: ((_d = settings.template) == null ? void 0 : _d.trim()) || ""
         };
       } catch (err) {
         console.info("No custom monthly note settings found!", err);
+      }
+    }
+    function getQuarterlyNoteSettings() {
+      var _a, _b, _c, _d;
+      const pluginManager = window.app.plugins;
+      try {
+        const settings = shouldUsePeriodicNotesSettings("quarterly") && ((_b = (_a = pluginManager.getPlugin("periodic-notes")) == null ? void 0 : _a.settings) == null ? void 0 : _b.quarterly) || {};
+        return {
+          format: settings.format || DEFAULT_QUARTERLY_NOTE_FORMAT,
+          folder: ((_c = settings.folder) == null ? void 0 : _c.trim()) || "",
+          template: ((_d = settings.template) == null ? void 0 : _d.trim()) || ""
+        };
+      } catch (err) {
+        console.info("No custom quarterly note settings found!", err);
+      }
+    }
+    function getYearlyNoteSettings() {
+      var _a, _b, _c, _d;
+      const pluginManager = window.app.plugins;
+      try {
+        const settings = shouldUsePeriodicNotesSettings("yearly") && ((_b = (_a = pluginManager.getPlugin("periodic-notes")) == null ? void 0 : _a.settings) == null ? void 0 : _b.yearly) || {};
+        return {
+          format: settings.format || DEFAULT_YEARLY_NOTE_FORMAT,
+          folder: ((_c = settings.folder) == null ? void 0 : _c.trim()) || "",
+          template: ((_d = settings.template) == null ? void 0 : _d.trim()) || ""
+        };
+      } catch (err) {
+        console.info("No custom yearly note settings found!", err);
       }
     }
     function join(...partSegments) {
@@ -156,12 +194,12 @@ var require_main = __commonJS({
       const ts = date.clone().startOf(granularity).format();
       return `${granularity}-${ts}`;
     }
-    function removeEscapedCharacters(format3) {
-      return format3.replace(/\[[^\]]*\]/g, "");
+    function removeEscapedCharacters(format2) {
+      return format2.replace(/\[[^\]]*\]/g, "");
     }
-    function isFormatAmbiguous(format3, granularity) {
+    function isFormatAmbiguous(format2, granularity) {
       if (granularity === "week") {
-        const cleanFormat = removeEscapedCharacters(format3);
+        const cleanFormat = removeEscapedCharacters(format2);
         return /w{1,2}/i.test(cleanFormat) && (/M{1,4}/.test(cleanFormat) || /D{1,4}/.test(cleanFormat));
       }
       return false;
@@ -176,18 +214,25 @@ var require_main = __commonJS({
       const getSettings = {
         day: getDailyNoteSettings,
         week: getWeeklyNoteSettings,
-        month: getMonthlyNoteSettings
+        month: getMonthlyNoteSettings,
+        quarter: getQuarterlyNoteSettings,
+        year: getYearlyNoteSettings
       };
-      const format3 = getSettings[granularity]().format.split("/").pop();
-      const noteDate = window.moment(filename, format3, true);
+      const format2 = getSettings[granularity]().format.split("/").pop();
+      const noteDate = window.moment(filename, format2, true);
       if (!noteDate.isValid()) {
         return null;
       }
-      if (isFormatAmbiguous(format3, granularity)) {
+      if (isFormatAmbiguous(format2, granularity)) {
         if (granularity === "week") {
-          const cleanFormat = removeEscapedCharacters(format3);
+          const cleanFormat = removeEscapedCharacters(format2);
           if (/w{1,2}/i.test(cleanFormat)) {
-            return window.moment(filename, format3.replace(/M{1,4}/g, "").replace(/D{1,4}/g, ""), false);
+            return window.moment(
+              filename,
+              // If format contains week, remove day & month formatting
+              format2.replace(/M{1,4}/g, "").replace(/D{1,4}/g, ""),
+              false
+            );
           }
         }
       }
@@ -199,9 +244,9 @@ var require_main = __commonJS({
       const app2 = window.app;
       const { vault } = app2;
       const moment2 = window.moment;
-      const { template, format: format3, folder } = getDailyNoteSettings();
+      const { template, format: format2, folder } = getDailyNoteSettings();
       const [templateContents, IFoldInfo] = await getTemplateInfo(template);
-      const filename = date.format(format3);
+      const filename = date.format(format2);
       const normalizedPath = await getNotePath(folder, filename);
       try {
         const createdFile = await vault.create(normalizedPath, templateContents.replace(/{{\s*date\s*}}/gi, filename).replace(/{{\s*time\s*}}/gi, moment2().format("HH:mm")).replace(/{{\s*title\s*}}/gi, filename).replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
@@ -217,8 +262,8 @@ var require_main = __commonJS({
           if (momentFormat) {
             return currentDate.format(momentFormat.substring(1).trim());
           }
-          return currentDate.format(format3);
-        }).replace(/{{\s*yesterday\s*}}/gi, date.clone().subtract(1, "day").format(format3)).replace(/{{\s*tomorrow\s*}}/gi, date.clone().add(1, "d").format(format3)));
+          return currentDate.format(format2);
+        }).replace(/{{\s*yesterday\s*}}/gi, date.clone().subtract(1, "day").format(format2)).replace(/{{\s*tomorrow\s*}}/gi, date.clone().add(1, "d").format(format2)));
         app2.foldManager.save(createdFile, IFoldInfo);
         return createdFile;
       } catch (err) {
@@ -227,7 +272,8 @@ var require_main = __commonJS({
       }
     }
     function getDailyNote2(date, dailyNotes) {
-      return dailyNotes[getDateUID(date, "day")] ?? null;
+      var _a;
+      return (_a = dailyNotes[getDateUID(date, "day")]) != null ? _a : null;
     }
     function getAllDailyNotes2() {
       const { vault } = window.app;
@@ -273,9 +319,9 @@ var require_main = __commonJS({
     }
     async function createWeeklyNote(date) {
       const { vault } = window.app;
-      const { template, format: format3, folder } = getWeeklyNoteSettings();
+      const { template, format: format2, folder } = getWeeklyNoteSettings();
       const [templateContents, IFoldInfo] = await getTemplateInfo(template);
-      const filename = date.format(format3);
+      const filename = date.format(format2);
       const normalizedPath = await getNotePath(folder, filename);
       try {
         const createdFile = await vault.create(normalizedPath, templateContents.replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
@@ -291,7 +337,7 @@ var require_main = __commonJS({
           if (momentFormat) {
             return currentDate.format(momentFormat.substring(1).trim());
           }
-          return currentDate.format(format3);
+          return currentDate.format(format2);
         }).replace(/{{\s*title\s*}}/gi, filename).replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm")).replace(/{{\s*(sunday|monday|tuesday|wednesday|thursday|friday|saturday)\s*:(.*?)}}/gi, (_, dayOfWeek, momentFormat) => {
           const day = getDayOfWeekNumericalValue(dayOfWeek);
           return date.weekday(day).format(momentFormat.trim());
@@ -304,7 +350,8 @@ var require_main = __commonJS({
       }
     }
     function getWeeklyNote(date, weeklyNotes) {
-      return weeklyNotes[getDateUID(date, "week")] ?? null;
+      var _a;
+      return (_a = weeklyNotes[getDateUID(date, "week")]) != null ? _a : null;
     }
     function getAllWeeklyNotes() {
       const weeklyNotes = {};
@@ -332,9 +379,9 @@ var require_main = __commonJS({
     };
     async function createMonthlyNote(date) {
       const { vault } = window.app;
-      const { template, format: format3, folder } = getMonthlyNoteSettings();
+      const { template, format: format2, folder } = getMonthlyNoteSettings();
       const [templateContents, IFoldInfo] = await getTemplateInfo(template);
-      const filename = date.format(format3);
+      const filename = date.format(format2);
       const normalizedPath = await getNotePath(folder, filename);
       try {
         const createdFile = await vault.create(normalizedPath, templateContents.replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
@@ -350,7 +397,7 @@ var require_main = __commonJS({
           if (momentFormat) {
             return currentDate.format(momentFormat.substring(1).trim());
           }
-          return currentDate.format(format3);
+          return currentDate.format(format2);
         }).replace(/{{\s*date\s*}}/gi, filename).replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm")).replace(/{{\s*title\s*}}/gi, filename));
         window.app.foldManager.save(createdFile, IFoldInfo);
         return createdFile;
@@ -360,7 +407,8 @@ var require_main = __commonJS({
       }
     }
     function getMonthlyNote(date, monthlyNotes) {
-      return monthlyNotes[getDateUID(date, "month")] ?? null;
+      var _a;
+      return (_a = monthlyNotes[getDateUID(date, "month")]) != null ? _a : null;
     }
     function getAllMonthlyNotes() {
       const monthlyNotes = {};
@@ -384,33 +432,164 @@ var require_main = __commonJS({
       });
       return monthlyNotes;
     }
+    var QuarterlyNotesFolderMissingError = class extends Error {
+    };
+    async function createQuarterlyNote(date) {
+      const { vault } = window.app;
+      const { template, format: format2, folder } = getQuarterlyNoteSettings();
+      const [templateContents, IFoldInfo] = await getTemplateInfo(template);
+      const filename = date.format(format2);
+      const normalizedPath = await getNotePath(folder, filename);
+      try {
+        const createdFile = await vault.create(normalizedPath, templateContents.replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+          const now = window.moment();
+          const currentDate = date.clone().set({
+            hour: now.get("hour"),
+            minute: now.get("minute"),
+            second: now.get("second")
+          });
+          if (calc) {
+            currentDate.add(parseInt(timeDelta, 10), unit);
+          }
+          if (momentFormat) {
+            return currentDate.format(momentFormat.substring(1).trim());
+          }
+          return currentDate.format(format2);
+        }).replace(/{{\s*date\s*}}/gi, filename).replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm")).replace(/{{\s*title\s*}}/gi, filename));
+        window.app.foldManager.save(createdFile, IFoldInfo);
+        return createdFile;
+      } catch (err) {
+        console.error(`Failed to create file: '${normalizedPath}'`, err);
+        new obsidian.Notice("Unable to create new file.");
+      }
+    }
+    function getQuarterlyNote(date, quarterly) {
+      var _a;
+      return (_a = quarterly[getDateUID(date, "quarter")]) != null ? _a : null;
+    }
+    function getAllQuarterlyNotes() {
+      const quarterly = {};
+      if (!appHasQuarterlyNotesPluginLoaded()) {
+        return quarterly;
+      }
+      const { vault } = window.app;
+      const { folder } = getQuarterlyNoteSettings();
+      const quarterlyFolder = vault.getAbstractFileByPath(obsidian.normalizePath(folder));
+      if (!quarterlyFolder) {
+        throw new QuarterlyNotesFolderMissingError("Failed to find quarterly notes folder");
+      }
+      obsidian.Vault.recurseChildren(quarterlyFolder, (note) => {
+        if (note instanceof obsidian.TFile) {
+          const date = getDateFromFile(note, "quarter");
+          if (date) {
+            const dateString = getDateUID(date, "quarter");
+            quarterly[dateString] = note;
+          }
+        }
+      });
+      return quarterly;
+    }
+    var YearlyNotesFolderMissingError = class extends Error {
+    };
+    async function createYearlyNote(date) {
+      const { vault } = window.app;
+      const { template, format: format2, folder } = getYearlyNoteSettings();
+      const [templateContents, IFoldInfo] = await getTemplateInfo(template);
+      const filename = date.format(format2);
+      const normalizedPath = await getNotePath(folder, filename);
+      try {
+        const createdFile = await vault.create(normalizedPath, templateContents.replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+          const now = window.moment();
+          const currentDate = date.clone().set({
+            hour: now.get("hour"),
+            minute: now.get("minute"),
+            second: now.get("second")
+          });
+          if (calc) {
+            currentDate.add(parseInt(timeDelta, 10), unit);
+          }
+          if (momentFormat) {
+            return currentDate.format(momentFormat.substring(1).trim());
+          }
+          return currentDate.format(format2);
+        }).replace(/{{\s*date\s*}}/gi, filename).replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm")).replace(/{{\s*title\s*}}/gi, filename));
+        window.app.foldManager.save(createdFile, IFoldInfo);
+        return createdFile;
+      } catch (err) {
+        console.error(`Failed to create file: '${normalizedPath}'`, err);
+        new obsidian.Notice("Unable to create new file.");
+      }
+    }
+    function getYearlyNote(date, yearlyNotes) {
+      var _a;
+      return (_a = yearlyNotes[getDateUID(date, "year")]) != null ? _a : null;
+    }
+    function getAllYearlyNotes() {
+      const yearlyNotes = {};
+      if (!appHasYearlyNotesPluginLoaded()) {
+        return yearlyNotes;
+      }
+      const { vault } = window.app;
+      const { folder } = getYearlyNoteSettings();
+      const yearlyNotesFolder = vault.getAbstractFileByPath(obsidian.normalizePath(folder));
+      if (!yearlyNotesFolder) {
+        throw new YearlyNotesFolderMissingError("Failed to find yearly notes folder");
+      }
+      obsidian.Vault.recurseChildren(yearlyNotesFolder, (note) => {
+        if (note instanceof obsidian.TFile) {
+          const date = getDateFromFile(note, "year");
+          if (date) {
+            const dateString = getDateUID(date, "year");
+            yearlyNotes[dateString] = note;
+          }
+        }
+      });
+      return yearlyNotes;
+    }
     function appHasDailyNotesPluginLoaded() {
+      var _a, _b;
       const { app: app2 } = window;
       const dailyNotesPlugin = app2.internalPlugins.plugins["daily-notes"];
       if (dailyNotesPlugin && dailyNotesPlugin.enabled) {
         return true;
       }
       const periodicNotes = app2.plugins.getPlugin("periodic-notes");
-      return periodicNotes && periodicNotes.settings?.daily?.enabled;
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a.daily) == null ? void 0 : _b.enabled);
     }
     function appHasWeeklyNotesPluginLoaded() {
+      var _a, _b;
       const { app: app2 } = window;
       if (app2.plugins.getPlugin("calendar")) {
         return true;
       }
       const periodicNotes = app2.plugins.getPlugin("periodic-notes");
-      return periodicNotes && periodicNotes.settings?.weekly?.enabled;
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a.weekly) == null ? void 0 : _b.enabled);
     }
     function appHasMonthlyNotesPluginLoaded() {
+      var _a, _b;
       const { app: app2 } = window;
       const periodicNotes = app2.plugins.getPlugin("periodic-notes");
-      return periodicNotes && periodicNotes.settings?.monthly?.enabled;
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a.monthly) == null ? void 0 : _b.enabled);
+    }
+    function appHasQuarterlyNotesPluginLoaded() {
+      var _a, _b;
+      const { app: app2 } = window;
+      const periodicNotes = app2.plugins.getPlugin("periodic-notes");
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a.quarterly) == null ? void 0 : _b.enabled);
+    }
+    function appHasYearlyNotesPluginLoaded() {
+      var _a, _b;
+      const { app: app2 } = window;
+      const periodicNotes = app2.plugins.getPlugin("periodic-notes");
+      return periodicNotes && ((_b = (_a = periodicNotes.settings) == null ? void 0 : _a.yearly) == null ? void 0 : _b.enabled);
     }
     function getPeriodicNoteSettings(granularity) {
       const getSettings = {
         day: getDailyNoteSettings,
         week: getWeeklyNoteSettings,
-        month: getMonthlyNoteSettings
+        month: getMonthlyNoteSettings,
+        quarter: getQuarterlyNoteSettings,
+        year: getYearlyNoteSettings
       }[granularity];
       return getSettings();
     }
@@ -424,17 +603,25 @@ var require_main = __commonJS({
     }
     exports.DEFAULT_DAILY_NOTE_FORMAT = DEFAULT_DAILY_NOTE_FORMAT;
     exports.DEFAULT_MONTHLY_NOTE_FORMAT = DEFAULT_MONTHLY_NOTE_FORMAT;
+    exports.DEFAULT_QUARTERLY_NOTE_FORMAT = DEFAULT_QUARTERLY_NOTE_FORMAT;
     exports.DEFAULT_WEEKLY_NOTE_FORMAT = DEFAULT_WEEKLY_NOTE_FORMAT;
+    exports.DEFAULT_YEARLY_NOTE_FORMAT = DEFAULT_YEARLY_NOTE_FORMAT;
     exports.appHasDailyNotesPluginLoaded = appHasDailyNotesPluginLoaded;
     exports.appHasMonthlyNotesPluginLoaded = appHasMonthlyNotesPluginLoaded;
+    exports.appHasQuarterlyNotesPluginLoaded = appHasQuarterlyNotesPluginLoaded;
     exports.appHasWeeklyNotesPluginLoaded = appHasWeeklyNotesPluginLoaded;
+    exports.appHasYearlyNotesPluginLoaded = appHasYearlyNotesPluginLoaded;
     exports.createDailyNote = createDailyNote2;
     exports.createMonthlyNote = createMonthlyNote;
     exports.createPeriodicNote = createPeriodicNote;
+    exports.createQuarterlyNote = createQuarterlyNote;
     exports.createWeeklyNote = createWeeklyNote;
+    exports.createYearlyNote = createYearlyNote;
     exports.getAllDailyNotes = getAllDailyNotes2;
     exports.getAllMonthlyNotes = getAllMonthlyNotes;
+    exports.getAllQuarterlyNotes = getAllQuarterlyNotes;
     exports.getAllWeeklyNotes = getAllWeeklyNotes;
+    exports.getAllYearlyNotes = getAllYearlyNotes;
     exports.getDailyNote = getDailyNote2;
     exports.getDailyNoteSettings = getDailyNoteSettings;
     exports.getDateFromFile = getDateFromFile;
@@ -443,26 +630,26 @@ var require_main = __commonJS({
     exports.getMonthlyNote = getMonthlyNote;
     exports.getMonthlyNoteSettings = getMonthlyNoteSettings;
     exports.getPeriodicNoteSettings = getPeriodicNoteSettings;
+    exports.getQuarterlyNote = getQuarterlyNote;
+    exports.getQuarterlyNoteSettings = getQuarterlyNoteSettings;
     exports.getTemplateInfo = getTemplateInfo;
     exports.getWeeklyNote = getWeeklyNote;
     exports.getWeeklyNoteSettings = getWeeklyNoteSettings;
+    exports.getYearlyNote = getYearlyNote;
+    exports.getYearlyNoteSettings = getYearlyNoteSettings;
   }
 });
 
 // src/main.ts
-__export(exports, {
+var main_exports = {};
+__export(main_exports, {
   default: () => ThePlugin
 });
-var import_obsidian14 = __toModule(require("obsidian"));
+module.exports = __toCommonJS(main_exports);
+var import_obsidian14 = require("obsidian");
 
 // src/utils/FileSystem.ts
-var import_obsidian = __toModule(require("obsidian"));
-var FileSystemReturnType;
-(function(FileSystemReturnType2) {
-  FileSystemReturnType2[FileSystemReturnType2["foldersOnly"] = 1] = "foldersOnly";
-  FileSystemReturnType2[FileSystemReturnType2["filesOnly"] = 2] = "filesOnly";
-  FileSystemReturnType2[FileSystemReturnType2["filesAndFolders"] = 3] = "filesAndFolders";
-})(FileSystemReturnType || (FileSystemReturnType = {}));
+var import_obsidian = require("obsidian");
 function testFolderExclusion(folder, exclusionFolders) {
   for (const eFolder of exclusionFolders)
     if (folder.startsWith(eFolder + "/"))
@@ -470,12 +657,12 @@ function testFolderExclusion(folder, exclusionFolders) {
   return false;
 }
 async function getFiles(app2, returnType, responseArray, exclusionFolders) {
-  if (returnType === 2 || returnType === 3) {
+  if (returnType === 2 /* filesOnly */ || returnType === 3 /* filesAndFolders */) {
     for (const file of app2.vault.getMarkdownFiles())
       if (!testFolderExclusion(file.path, exclusionFolders))
         responseArray.push({ display: file.path, info: file.path });
   }
-  if (returnType === 1 || returnType === 3) {
+  if (returnType === 1 /* foldersOnly */ || returnType === 3 /* filesAndFolders */) {
     import_obsidian.Vault.recurseChildren(app2.vault.getRoot(), (abstractFile) => {
       if (abstractFile instanceof import_obsidian.TFolder) {
         const path = abstractFile.path === "/" ? abstractFile.path : abstractFile.path + "/";
@@ -513,25 +700,25 @@ var FileSystem = class {
   }
   async getAllFolders() {
     const results = [];
-    await getFiles(this.plugin.app, 1, results, this.exclusionFolders);
+    await getFiles(this.plugin.app, 1 /* foldersOnly */, results, this.exclusionFolders);
     return results;
   }
   async getAllFiles() {
     const results = [];
-    await getFiles(this.plugin.app, 2, results, this.exclusionFolders);
+    await getFiles(this.plugin.app, 2 /* filesOnly */, results, this.exclusionFolders);
     await addLastOpenFiles(this.plugin.app, results);
     return results;
   }
   async getAllFoldersAndFiles() {
     const results = [];
-    await getFiles(this.plugin.app, 3, results, this.exclusionFolders);
+    await getFiles(this.plugin.app, 3 /* filesAndFolders */, results, this.exclusionFolders);
     await addLastOpenFiles(this.plugin.app, results);
     return results;
   }
 };
 
 // src/ui/GenericFuzzySuggester.ts
-var import_obsidian2 = __toModule(require("obsidian"));
+var import_obsidian2 = require("obsidian");
 var GenericFuzzySuggester = class extends import_obsidian2.FuzzySuggestModal {
   constructor(plugin) {
     super(plugin.app);
@@ -554,6 +741,7 @@ var GenericFuzzySuggester = class extends import_obsidian2.FuzzySuggestModal {
   onChooseItem() {
     return;
   }
+  // required by TS, but not using
   renderSuggestion(item, el) {
     el.createEl("div", { text: item.item.display });
   }
@@ -574,7 +762,7 @@ var GenericFuzzySuggester = class extends import_obsidian2.FuzzySuggestModal {
 };
 
 // src/features/transporterFunctions.ts
-var import_obsidian6 = __toModule(require("obsidian"));
+var import_obsidian6 = require("obsidian");
 
 // src/utils/FileCacheAnalyzer.ts
 var FileCacheAnalyzer = class {
@@ -658,6 +846,7 @@ var FileCacheAnalyzer = class {
     }
     return startLine === null ? null : { start: startLine, end: endLine };
   }
+  //debugging function: creats a doc with information
   async createDocumentWithInfo() {
     let output = `# ${this.fileFullPath}
 
@@ -703,21 +892,28 @@ var FileCacheAnalyzer = class {
       }
     }
   }
+  // compares to Pos objects to see if they are in the same range
   positionOfItemWithinSameRange(firstPosition, secondPosition) {
     return firstPosition.start.line >= secondPosition.start.line && firstPosition.end.line <= secondPosition.end.line;
   }
 };
 
 // src/utils/fileNavigatior.ts
-var import_obsidian5 = __toModule(require("obsidian"));
+var import_obsidian5 = require("obsidian");
 
 // src/utils/dailyNotesPages.ts
-var import_obsidian_daily_notes_interface = __toModule(require_main());
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian_daily_notes_interface = __toESM(require_main());
+var import_obsidian3 = require("obsidian");
 async function getDnpForToday() {
   let dnp = (0, import_obsidian_daily_notes_interface.getDailyNote)((0, import_obsidian3.moment)(), (0, import_obsidian_daily_notes_interface.getAllDailyNotes)());
   if (dnp === null)
     dnp = await (0, import_obsidian_daily_notes_interface.createDailyNote)((0, import_obsidian3.moment)());
+  return dnp.path;
+}
+async function getDnpForTomorrow() {
+  let dnp = (0, import_obsidian_daily_notes_interface.getDailyNote)((0, import_obsidian3.moment)().add(1, "days"), (0, import_obsidian_daily_notes_interface.getAllDailyNotes)());
+  if (dnp === null)
+    dnp = await (0, import_obsidian_daily_notes_interface.createDailyNote)((0, import_obsidian3.moment)().add(1, "days"));
   return dnp.path;
 }
 
@@ -762,24 +958,18 @@ async function blocksWhereTagIsUsed(plugin, findTag) {
 }
 
 // src/utils/views.ts
-var import_obsidian4 = __toModule(require("obsidian"));
-var ViewType;
-(function(ViewType2) {
-  ViewType2[ViewType2["source"] = 0] = "source";
-  ViewType2[ViewType2["preview"] = 1] = "preview";
-  ViewType2[ViewType2["none"] = 2] = "none";
-})(ViewType || (ViewType = {}));
+var import_obsidian4 = require("obsidian");
 function getActiveView(plugin) {
   return plugin.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
 }
 function getActiveViewType(plugin) {
   const currentView = getActiveView(plugin);
   if (!currentView)
-    return 2;
+    return 2 /* none */;
   else if (currentView.getMode() == "source")
-    return 0;
+    return 0 /* source */;
   else if (currentView.getMode() == "preview")
-    return 1;
+    return 1 /* preview */;
 }
 
 // src/utils/fileNavigatior.ts
@@ -806,7 +996,7 @@ async function createFileChooser(plugin, excludeFileFromList) {
       if (filePath.search(";") > 0)
         filePath = filePath.substr(0, filePath.search(";"));
       filePath = filePath.replace("*", "");
-      if (filePath === "DNPTODAY" || await plugin.app.vault.adapter.exists(filePath))
+      if (filePath === "DNPTODAY" || filePath === "DNPTOMORROW" || await plugin.app.vault.adapter.exists(filePath))
         fileList.unshift({ display: "Bookmark: " + bookmarks[i], info: bookmarks[i] });
     }
   }
@@ -827,7 +1017,10 @@ async function openFileInObsidian(plugin, filePath, gotoStartLineNumber = 0, lin
   await newLeaf.openFile(file, { active: true });
   setTimeout(async () => {
     const editor = getActiveView(plugin).editor;
-    editor.setSelection({ line: gotoStartLineNumber, ch: 0 }, { line: gotoStartLineNumber + lineCount, ch: editor.getLine(gotoStartLineNumber + lineCount).length });
+    editor.setSelection(
+      { line: gotoStartLineNumber, ch: 0 },
+      { line: gotoStartLineNumber + lineCount, ch: editor.getLine(gotoStartLineNumber + lineCount).length }
+    );
     editor.scrollIntoView({
       from: { line: gotoStartLineNumber + lineCount, ch: 0 },
       to: { line: gotoStartLineNumber + lineCount, ch: 0 }
@@ -846,6 +1039,8 @@ async function parseBookmarkForItsElements(plugin, bookmarkCommandString, pullTy
   try {
     if (filePath === "DNPTODAY")
       filePath = await getDnpForToday();
+    if (filePath === "DNPTOMORROW")
+      filePath = await getDnpForTomorrow();
     let lineNumber = -1;
     let fileBkmrkContentsArray = null;
     if (await plugin.app.vault.adapter.exists(filePath)) {
@@ -932,7 +1127,7 @@ async function createTagBlockListChooser(plugin, returnEndPoint, showTop, callba
   });
 }
 async function displayFileLineSuggester(plugin, returnEndPoint, showTop, pullTypeRequest, callback) {
-  const chooser = getActiveViewType(plugin) === ViewType.none ? await createFileChooser(plugin) : await createFileChooser(plugin, getActiveView(plugin).file.path);
+  const chooser = getActiveViewType(plugin) === 2 /* none */ ? await createFileChooser(plugin) : await createFileChooser(plugin, getActiveView(plugin).file.path);
   await chooser.display(async (fileSelected, evtFileSelected) => {
     const shiftKeyUsed = evtFileSelected.shiftKey;
     let fileContentsStartingLine = 0;
@@ -963,10 +1158,14 @@ async function displayFileLineSuggester(plugin, returnEndPoint, showTop, pullTyp
 async function displayFileLineSuggesterFromFileList(plugin, returnEndPoint, showTop, targetFileName, fileContentsArray, fileContentsStartingLine, evtFileSelected, callback) {
   const firstLinechooser = new GenericFuzzySuggester(plugin);
   firstLinechooser.setPlaceholder("Select the line from file");
+  const lineCountArray = fileContentsArray.map((item) => {
+    const lineNumber = Number(item.info) + 1;
+    return { display: (lineNumber > 0 ? lineNumber + " " : "") + item.display, info: item.info };
+  });
   if (fileContentsStartingLine > 0)
-    firstLinechooser.setSuggesterData(fileContentsArray.slice(fileContentsStartingLine));
+    firstLinechooser.setSuggesterData(lineCountArray.slice(fileContentsStartingLine));
   else
-    firstLinechooser.setSuggesterData(fileContentsArray);
+    firstLinechooser.setSuggesterData(lineCountArray);
   await firstLinechooser.display(async (iFileLocation, evtFirstLine) => {
     let startFilePosition = Number(iFileLocation.info);
     const endFilePosition = startFilePosition;
@@ -991,23 +1190,12 @@ async function displayFileLineSuggesterFromFileList(plugin, returnEndPoint, show
   });
 }
 
-// node_modules/nanoid/index.prod.js
-if (false) {
-  if (typeof navigator !== "undefined" && navigator.product === "ReactNative" && typeof crypto === "undefined") {
-    throw new Error("React Native does not have a built-in secure random generator. If you don\u2019t need unpredictable IDs use `nanoid/non-secure`. For secure IDs, import `react-native-get-random-values` before Nano ID.");
-  }
-  if (typeof msCrypto !== "undefined" && typeof crypto === "undefined") {
-    throw new Error("Import file with `if (!window.crypto) window.crypto = window.msCrypto` before importing Nano ID to fix IE 11 support");
-  }
-  if (typeof crypto === "undefined") {
-    throw new Error("Your browser does not have secure random generator. If you don\u2019t need unpredictable IDs, you can use nanoid/non-secure.");
-  }
-}
+// node_modules/nanoid/index.browser.js
 var random = (bytes) => crypto.getRandomValues(new Uint8Array(bytes));
-var customRandom = (alphabet, size, getRandom) => {
+var customRandom = (alphabet, defaultSize, getRandom) => {
   let mask = (2 << Math.log(alphabet.length - 1) / Math.LN2) - 1;
-  let step = -~(1.6 * mask * size / alphabet.length);
-  return () => {
+  let step = -~(1.6 * mask * defaultSize / alphabet.length);
+  return (size = defaultSize) => {
     let id = "";
     while (true) {
       let bytes = getRandom(step);
@@ -1020,7 +1208,7 @@ var customRandom = (alphabet, size, getRandom) => {
     }
   };
 };
-var customAlphabet = (alphabet, size) => customRandom(alphabet, size, random);
+var customAlphabet = (alphabet, size = 21) => customRandom(alphabet, size, random);
 
 // src/utils/blockId.ts
 var generateBlockId = customAlphabet("abcdefghijklmnopqrstuvwz0123456789", 6);
@@ -1377,7 +1565,10 @@ function selectCurrentSection(plugin, directionUP = true) {
           proceedingBlock = f.details[i];
       }
       if (proceedingBlock && directionUP) {
-        activeEditor.setSelection({ line: proceedingBlock.position.start.line, ch: 0 }, { line: currentBlock.position.end.line, ch: activeEditor.getLine(currentBlock.position.end.line).length });
+        activeEditor.setSelection(
+          { line: proceedingBlock.position.start.line, ch: 0 },
+          { line: currentBlock.position.end.line, ch: activeEditor.getLine(currentBlock.position.end.line).length }
+        );
         activeEditor.scrollIntoView({ from: proceedingBlock.position.start, to: proceedingBlock.position.start });
       } else if (directionUP) {
         activeEditor.setSelection({ line: 0, ch: 0 }, { line: lastSelectedLine, ch: activeEditor.getLine(lastSelectedLine).length });
@@ -1391,13 +1582,13 @@ function selectCurrentSection(plugin, directionUP = true) {
 }
 
 // src/ui/PluginCommands.ts
-var import_obsidian11 = __toModule(require("obsidian"));
+var import_obsidian11 = require("obsidian");
 
 // src/ui/QuickCapture.ts
-var import_obsidian9 = __toModule(require("obsidian"));
+var import_obsidian9 = require("obsidian");
 
 // src/ui/SilentFileAndTagSuggesterSuggest.ts
-var import_obsidian7 = __toModule(require("obsidian"));
+var import_obsidian7 = require("obsidian");
 
 // node_modules/@popperjs/core/lib/enums.js
 var top = "top";
@@ -1536,34 +1727,57 @@ function getBasePlacement(placement) {
   return placement.split("-")[0];
 }
 
-// node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
+// node_modules/@popperjs/core/lib/utils/math.js
+var max = Math.max;
+var min = Math.min;
 var round = Math.round;
-function getBoundingClientRect(element, includeScale) {
+
+// node_modules/@popperjs/core/lib/utils/userAgent.js
+function getUAString() {
+  var uaData = navigator.userAgentData;
+  if (uaData != null && uaData.brands && Array.isArray(uaData.brands)) {
+    return uaData.brands.map(function(item) {
+      return item.brand + "/" + item.version;
+    }).join(" ");
+  }
+  return navigator.userAgent;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js
+function isLayoutViewport() {
+  return !/^((?!chrome|android).)*safari/i.test(getUAString());
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
+function getBoundingClientRect(element, includeScale, isFixedStrategy) {
   if (includeScale === void 0) {
     includeScale = false;
   }
-  var rect = element.getBoundingClientRect();
+  if (isFixedStrategy === void 0) {
+    isFixedStrategy = false;
+  }
+  var clientRect = element.getBoundingClientRect();
   var scaleX = 1;
   var scaleY = 1;
-  if (isHTMLElement(element) && includeScale) {
-    var offsetHeight = element.offsetHeight;
-    var offsetWidth = element.offsetWidth;
-    if (offsetWidth > 0) {
-      scaleX = rect.width / offsetWidth || 1;
-    }
-    if (offsetHeight > 0) {
-      scaleY = rect.height / offsetHeight || 1;
-    }
+  if (includeScale && isHTMLElement(element)) {
+    scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
+    scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
   }
+  var _ref = isElement(element) ? getWindow(element) : window, visualViewport = _ref.visualViewport;
+  var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
+  var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+  var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+  var width = clientRect.width / scaleX;
+  var height = clientRect.height / scaleY;
   return {
-    width: round(rect.width / scaleX),
-    height: round(rect.height / scaleY),
-    top: round(rect.top / scaleY),
-    right: round(rect.right / scaleX),
-    bottom: round(rect.bottom / scaleY),
-    left: round(rect.left / scaleX),
-    x: round(rect.left / scaleX),
-    y: round(rect.top / scaleY)
+    width,
+    height,
+    top: y,
+    right: x + width,
+    bottom: y + height,
+    left: x,
+    x,
+    y
   };
 }
 
@@ -1615,7 +1829,10 @@ function isTableElement(element) {
 
 // node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js
 function getDocumentElement(element) {
-  return ((isElement(element) ? element.ownerDocument : element.document) || window.document).documentElement;
+  return ((isElement(element) ? element.ownerDocument : (
+    // $FlowFixMe[prop-missing]
+    element.document
+  )) || window.document).documentElement;
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getParentNode.js
@@ -1623,19 +1840,29 @@ function getParentNode(element) {
   if (getNodeName(element) === "html") {
     return element;
   }
-  return element.assignedSlot || element.parentNode || (isShadowRoot(element) ? element.host : null) || getDocumentElement(element);
+  return (
+    // this is a quicker (but less type safe) way to save quite some bytes from the bundle
+    // $FlowFixMe[incompatible-return]
+    // $FlowFixMe[prop-missing]
+    element.assignedSlot || // step into the shadow DOM of the parent of a slotted node
+    element.parentNode || // DOM Element detected
+    (isShadowRoot(element) ? element.host : null) || // ShadowRoot detected
+    // $FlowFixMe[incompatible-call]: HTMLElement is a Node
+    getDocumentElement(element)
+  );
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js
 function getTrueOffsetParent(element) {
-  if (!isHTMLElement(element) || getComputedStyle(element).position === "fixed") {
+  if (!isHTMLElement(element) || // https://github.com/popperjs/popper-core/issues/837
+  getComputedStyle(element).position === "fixed") {
     return null;
   }
   return element.offsetParent;
 }
 function getContainingBlock(element) {
-  var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1;
-  var isIE = navigator.userAgent.indexOf("Trident") !== -1;
+  var isFirefox = /firefox/i.test(getUAString());
+  var isIE = /Trident/i.test(getUAString());
   if (isIE && isHTMLElement(element)) {
     var elementCss = getComputedStyle(element);
     if (elementCss.position === "fixed") {
@@ -1643,6 +1870,9 @@ function getContainingBlock(element) {
     }
   }
   var currentNode = getParentNode(element);
+  if (isShadowRoot(currentNode)) {
+    currentNode = currentNode.host;
+  }
   while (isHTMLElement(currentNode) && ["html", "body"].indexOf(getNodeName(currentNode)) < 0) {
     var css = getComputedStyle(currentNode);
     if (css.transform !== "none" || css.perspective !== "none" || css.contain === "paint" || ["transform", "perspective"].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === "filter" || isFirefox && css.filter && css.filter !== "none") {
@@ -1670,14 +1900,13 @@ function getMainAxisFromPlacement(placement) {
   return ["top", "bottom"].indexOf(placement) >= 0 ? "x" : "y";
 }
 
-// node_modules/@popperjs/core/lib/utils/math.js
-var max = Math.max;
-var min = Math.min;
-var round2 = Math.round;
-
 // node_modules/@popperjs/core/lib/utils/within.js
 function within(min2, value, max2) {
   return max(min2, min(value, max2));
+}
+function withinMaxClamp(min2, value, max2) {
+  var v = within(min2, value, max2);
+  return v > max2 ? max2 : v;
 }
 
 // node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
@@ -1750,15 +1979,7 @@ function effect2(_ref2) {
       return;
     }
   }
-  if (true) {
-    if (!isHTMLElement(arrowElement)) {
-      console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "));
-    }
-  }
   if (!contains(state.elements.popper, arrowElement)) {
-    if (true) {
-      console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', "element."].join(" "));
-    }
     return;
   }
   state.elements.arrow = arrowElement;
@@ -1785,19 +2006,27 @@ var unsetSides = {
   bottom: "auto",
   left: "auto"
 };
-function roundOffsetsByDPR(_ref) {
+function roundOffsetsByDPR(_ref, win) {
   var x = _ref.x, y = _ref.y;
-  var win = window;
   var dpr = win.devicePixelRatio || 1;
   return {
-    x: round2(round2(x * dpr) / dpr) || 0,
-    y: round2(round2(y * dpr) / dpr) || 0
+    x: round(x * dpr) / dpr || 0,
+    y: round(y * dpr) / dpr || 0
   };
 }
 function mapToStyles(_ref2) {
   var _Object$assign2;
-  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets;
-  var _ref3 = roundOffsets === true ? roundOffsetsByDPR(offsets) : typeof roundOffsets === "function" ? roundOffsets(offsets) : offsets, _ref3$x = _ref3.x, x = _ref3$x === void 0 ? 0 : _ref3$x, _ref3$y = _ref3.y, y = _ref3$y === void 0 ? 0 : _ref3$y;
+  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
+  var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
+  var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref3.x;
+  y = _ref3.y;
   var hasX = offsets.hasOwnProperty("x");
   var hasY = offsets.hasOwnProperty("y");
   var sideX = left;
@@ -1817,41 +2046,51 @@ function mapToStyles(_ref2) {
     offsetParent = offsetParent;
     if (placement === top || (placement === left || placement === right) && variation === end) {
       sideY = bottom;
-      y -= offsetParent[heightProp] - popperRect.height;
+      var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : (
+        // $FlowFixMe[prop-missing]
+        offsetParent[heightProp]
+      );
+      y -= offsetY - popperRect.height;
       y *= gpuAcceleration ? 1 : -1;
     }
     if (placement === left || (placement === top || placement === bottom) && variation === end) {
       sideX = right;
-      x -= offsetParent[widthProp] - popperRect.width;
+      var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : (
+        // $FlowFixMe[prop-missing]
+        offsetParent[widthProp]
+      );
+      x -= offsetX - popperRect.width;
       x *= gpuAcceleration ? 1 : -1;
     }
   }
   var commonStyles = Object.assign({
     position
   }, adaptive && unsetSides);
+  var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    x,
+    y
+  }, getWindow(popper2)) : {
+    x,
+    y
+  };
+  x = _ref4.x;
+  y = _ref4.y;
   if (gpuAcceleration) {
     var _Object$assign;
     return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
   }
   return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
 }
-function computeStyles(_ref4) {
-  var state = _ref4.state, options = _ref4.options;
+function computeStyles(_ref5) {
+  var state = _ref5.state, options = _ref5.options;
   var _options$gpuAccelerat = options.gpuAcceleration, gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat, _options$adaptive = options.adaptive, adaptive = _options$adaptive === void 0 ? true : _options$adaptive, _options$roundOffsets = options.roundOffsets, roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
-  if (true) {
-    var transitionProperty = getComputedStyle(state.elements.popper).transitionProperty || "";
-    if (adaptive && ["transform", "top", "right", "bottom", "left"].some(function(property) {
-      return transitionProperty.indexOf(property) >= 0;
-    })) {
-      console.warn(["Popper: Detected CSS transitions on at least one of the following", 'CSS properties: "transform", "top", "right", "bottom", "left".', "\n\n", 'Disable the "computeStyles" modifier\'s `adaptive` option to allow', "for smooth transitions, or remove these properties from the CSS", "transition declaration on the popper element if only transitioning", "opacity or background-color for example.", "\n\n", "We recommend using the popper element as a wrapper around an inner", "element that can have any CSS property transitioned for animations."].join(" "));
-    }
-  }
   var commonStyles = {
     placement: getBasePlacement(state.placement),
     variation: getVariation(state.placement),
     popper: state.elements.popper,
     popperRect: state.rects.popper,
-    gpuAcceleration
+    gpuAcceleration,
+    isFixed: state.options.strategy === "fixed"
   };
   if (state.modifiersData.popperOffsets != null) {
     state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
@@ -1960,7 +2199,7 @@ function getWindowScrollBarX(element) {
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js
-function getViewportRect(element) {
+function getViewportRect(element, strategy) {
   var win = getWindow(element);
   var html = getDocumentElement(element);
   var visualViewport = win.visualViewport;
@@ -1971,7 +2210,8 @@ function getViewportRect(element) {
   if (visualViewport) {
     width = visualViewport.width;
     height = visualViewport.height;
-    if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    var layoutViewport = isLayoutViewport();
+    if (layoutViewport || !layoutViewport && strategy === "fixed") {
       x = visualViewport.offsetLeft;
       y = visualViewport.offsetTop;
     }
@@ -2033,7 +2273,10 @@ function listScrollParents(element, list) {
   var win = getWindow(scrollParent);
   var target = isBody ? [win].concat(win.visualViewport || [], isScrollParent(scrollParent) ? scrollParent : []) : scrollParent;
   var updatedList = list.concat(target);
-  return isBody ? updatedList : updatedList.concat(listScrollParents(getParentNode(target)));
+  return isBody ? updatedList : (
+    // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
+    updatedList.concat(listScrollParents(getParentNode(target)))
+  );
 }
 
 // node_modules/@popperjs/core/lib/utils/rectToClientRect.js
@@ -2047,8 +2290,8 @@ function rectToClientRect(rect) {
 }
 
 // node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js
-function getInnerBoundingClientRect(element) {
-  var rect = getBoundingClientRect(element);
+function getInnerBoundingClientRect(element, strategy) {
+  var rect = getBoundingClientRect(element, false, strategy === "fixed");
   rect.top = rect.top + element.clientTop;
   rect.left = rect.left + element.clientLeft;
   rect.bottom = rect.top + element.clientHeight;
@@ -2059,8 +2302,8 @@ function getInnerBoundingClientRect(element) {
   rect.y = rect.top;
   return rect;
 }
-function getClientRectFromMixedType(element, clippingParent) {
-  return clippingParent === viewport ? rectToClientRect(getViewportRect(element)) : isHTMLElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+function getClientRectFromMixedType(element, clippingParent, strategy) {
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
 }
 function getClippingParents(element) {
   var clippingParents2 = listScrollParents(getParentNode(element));
@@ -2073,18 +2316,18 @@ function getClippingParents(element) {
     return isElement(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== "body";
   });
 }
-function getClippingRect(element, boundary, rootBoundary) {
+function getClippingRect(element, boundary, rootBoundary, strategy) {
   var mainClippingParents = boundary === "clippingParents" ? getClippingParents(element) : [].concat(boundary);
   var clippingParents2 = [].concat(mainClippingParents, [rootBoundary]);
   var firstClippingParent = clippingParents2[0];
   var clippingRect = clippingParents2.reduce(function(accRect, clippingParent) {
-    var rect = getClientRectFromMixedType(element, clippingParent);
+    var rect = getClientRectFromMixedType(element, clippingParent, strategy);
     accRect.top = max(rect.top, accRect.top);
     accRect.right = min(rect.right, accRect.right);
     accRect.bottom = min(rect.bottom, accRect.bottom);
     accRect.left = max(rect.left, accRect.left);
     return accRect;
-  }, getClientRectFromMixedType(element, firstClippingParent));
+  }, getClientRectFromMixedType(element, firstClippingParent, strategy));
   clippingRect.width = clippingRect.right - clippingRect.left;
   clippingRect.height = clippingRect.bottom - clippingRect.top;
   clippingRect.x = clippingRect.left;
@@ -2152,12 +2395,12 @@ function detectOverflow(state, options) {
   if (options === void 0) {
     options = {};
   }
-  var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
+  var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$strategy = _options.strategy, strategy = _options$strategy === void 0 ? state.strategy : _options$strategy, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
   var paddingObject = mergePaddingObject(typeof padding !== "number" ? padding : expandToHashMap(padding, basePlacements));
   var altContext = elementContext === popper ? reference : popper;
   var popperRect = state.rects.popper;
   var element = state.elements[altBoundary ? altContext : elementContext];
-  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary);
+  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary, strategy);
   var referenceClientRect = getBoundingClientRect(state.elements.reference);
   var popperOffsets2 = computeOffsets({
     reference: referenceClientRect,
@@ -2200,9 +2443,6 @@ function computeAutoPlacement(state, options) {
   });
   if (allowedPlacements.length === 0) {
     allowedPlacements = placements2;
-    if (true) {
-      console.error(["Popper: The `allowedAutoPlacements` option did not allow any", "placements. Ensure the `placement` option matches the variation", "of the allowed placements.", 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(" "));
-    }
   }
   var overflows = allowedPlacements.reduce(function(acc, placement2) {
     acc[placement2] = detectOverflow(state, {
@@ -2248,7 +2488,7 @@ function flip(_ref) {
   }, []);
   var referenceRect = state.rects.reference;
   var popperRect = state.rects.popper;
-  var checksMap = new Map();
+  var checksMap = /* @__PURE__ */ new Map();
   var makeFallbackChecks = true;
   var firstFittingPlacement = placements2[0];
   for (var i = 0; i < placements2.length; i++) {
@@ -2461,6 +2701,14 @@ function preventOverflow(_ref) {
   var tetherOffsetValue = typeof tetherOffset === "function" ? tetherOffset(Object.assign({}, state.rects, {
     placement: state.placement
   })) : tetherOffset;
+  var normalizedTetherOffsetValue = typeof tetherOffsetValue === "number" ? {
+    mainAxis: tetherOffsetValue,
+    altAxis: tetherOffsetValue
+  } : Object.assign({
+    mainAxis: 0,
+    altAxis: 0
+  }, tetherOffsetValue);
+  var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
   var data = {
     x: 0,
     y: 0
@@ -2468,13 +2716,14 @@ function preventOverflow(_ref) {
   if (!popperOffsets2) {
     return;
   }
-  if (checkMainAxis || checkAltAxis) {
+  if (checkMainAxis) {
+    var _offsetModifierState$;
     var mainSide = mainAxis === "y" ? top : left;
     var altSide = mainAxis === "y" ? bottom : right;
     var len = mainAxis === "y" ? "height" : "width";
     var offset2 = popperOffsets2[mainAxis];
-    var min2 = popperOffsets2[mainAxis] + overflow[mainSide];
-    var max2 = popperOffsets2[mainAxis] - overflow[altSide];
+    var min2 = offset2 + overflow[mainSide];
+    var max2 = offset2 - overflow[altSide];
     var additive = tether ? -popperRect[len] / 2 : 0;
     var minLen = variation === start ? referenceRect[len] : popperRect[len];
     var maxLen = variation === start ? -popperRect[len] : -referenceRect[len];
@@ -2487,28 +2736,32 @@ function preventOverflow(_ref) {
     var arrowPaddingMin = arrowPaddingObject[mainSide];
     var arrowPaddingMax = arrowPaddingObject[altSide];
     var arrowLen = within(0, referenceRect[len], arrowRect[len]);
-    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - tetherOffsetValue : minLen - arrowLen - arrowPaddingMin - tetherOffsetValue;
-    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + tetherOffsetValue : maxLen + arrowLen + arrowPaddingMax + tetherOffsetValue;
+    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
     var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
     var clientOffset = arrowOffsetParent ? mainAxis === "y" ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
-    var offsetModifierValue = state.modifiersData.offset ? state.modifiersData.offset[state.placement][mainAxis] : 0;
-    var tetherMin = popperOffsets2[mainAxis] + minOffset - offsetModifierValue - clientOffset;
-    var tetherMax = popperOffsets2[mainAxis] + maxOffset - offsetModifierValue;
-    if (checkMainAxis) {
-      var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
-      popperOffsets2[mainAxis] = preventedOffset;
-      data[mainAxis] = preventedOffset - offset2;
-    }
-    if (checkAltAxis) {
-      var _mainSide = mainAxis === "x" ? top : left;
-      var _altSide = mainAxis === "x" ? bottom : right;
-      var _offset = popperOffsets2[altAxis];
-      var _min = _offset + overflow[_mainSide];
-      var _max = _offset - overflow[_altSide];
-      var _preventedOffset = within(tether ? min(_min, tetherMin) : _min, _offset, tether ? max(_max, tetherMax) : _max);
-      popperOffsets2[altAxis] = _preventedOffset;
-      data[altAxis] = _preventedOffset - _offset;
-    }
+    var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+    var tetherMin = offset2 + minOffset - offsetModifierValue - clientOffset;
+    var tetherMax = offset2 + maxOffset - offsetModifierValue;
+    var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
+    popperOffsets2[mainAxis] = preventedOffset;
+    data[mainAxis] = preventedOffset - offset2;
+  }
+  if (checkAltAxis) {
+    var _offsetModifierState$2;
+    var _mainSide = mainAxis === "x" ? top : left;
+    var _altSide = mainAxis === "x" ? bottom : right;
+    var _offset = popperOffsets2[altAxis];
+    var _len = altAxis === "y" ? "height" : "width";
+    var _min = _offset + overflow[_mainSide];
+    var _max = _offset - overflow[_altSide];
+    var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
+    var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+    var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
+    var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
+    var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+    popperOffsets2[altAxis] = _preventedOffset;
+    data[altAxis] = _preventedOffset - _offset;
   }
   state.modifiersData[name] = data;
 }
@@ -2540,8 +2793,8 @@ function getNodeScroll(node) {
 // node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
 function isElementScaled(element) {
   var rect = element.getBoundingClientRect();
-  var scaleX = rect.width / element.offsetWidth || 1;
-  var scaleY = rect.height / element.offsetHeight || 1;
+  var scaleX = round(rect.width) / element.offsetWidth || 1;
+  var scaleY = round(rect.height) / element.offsetHeight || 1;
   return scaleX !== 1 || scaleY !== 1;
 }
 function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
@@ -2551,7 +2804,7 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
   var isOffsetParentAnElement = isHTMLElement(offsetParent);
   var offsetParentIsScaled = isHTMLElement(offsetParent) && isElementScaled(offsetParent);
   var documentElement = getDocumentElement(offsetParent);
-  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled);
+  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled, isFixed);
   var scroll = {
     scrollLeft: 0,
     scrollTop: 0
@@ -2561,7 +2814,8 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
     y: 0
   };
   if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
-    if (getNodeName(offsetParent) !== "body" || isScrollParent(documentElement)) {
+    if (getNodeName(offsetParent) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
+    isScrollParent(documentElement)) {
       scroll = getNodeScroll(offsetParent);
     }
     if (isHTMLElement(offsetParent)) {
@@ -2582,8 +2836,8 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 
 // node_modules/@popperjs/core/lib/utils/orderModifiers.js
 function order(modifiers) {
-  var map = new Map();
-  var visited = new Set();
+  var map = /* @__PURE__ */ new Map();
+  var visited = /* @__PURE__ */ new Set();
   var result = [];
   modifiers.forEach(function(modifier) {
     map.set(modifier.name, modifier);
@@ -2633,92 +2887,6 @@ function debounce(fn2) {
   };
 }
 
-// node_modules/@popperjs/core/lib/utils/format.js
-function format(str) {
-  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    args[_key - 1] = arguments[_key];
-  }
-  return [].concat(args).reduce(function(p, c) {
-    return p.replace(/%s/, c);
-  }, str);
-}
-
-// node_modules/@popperjs/core/lib/utils/validateModifiers.js
-var INVALID_MODIFIER_ERROR = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s';
-var MISSING_DEPENDENCY_ERROR = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available';
-var VALID_PROPERTIES = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function validateModifiers(modifiers) {
-  modifiers.forEach(function(modifier) {
-    [].concat(Object.keys(modifier), VALID_PROPERTIES).filter(function(value, index, self) {
-      return self.indexOf(value) === index;
-    }).forEach(function(key) {
-      switch (key) {
-        case "name":
-          if (typeof modifier.name !== "string") {
-            console.error(format(INVALID_MODIFIER_ERROR, String(modifier.name), '"name"', '"string"', '"' + String(modifier.name) + '"'));
-          }
-          break;
-        case "enabled":
-          if (typeof modifier.enabled !== "boolean") {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"enabled"', '"boolean"', '"' + String(modifier.enabled) + '"'));
-          }
-          break;
-        case "phase":
-          if (modifierPhases.indexOf(modifier.phase) < 0) {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"phase"', "either " + modifierPhases.join(", "), '"' + String(modifier.phase) + '"'));
-          }
-          break;
-        case "fn":
-          if (typeof modifier.fn !== "function") {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"fn"', '"function"', '"' + String(modifier.fn) + '"'));
-          }
-          break;
-        case "effect":
-          if (modifier.effect != null && typeof modifier.effect !== "function") {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"effect"', '"function"', '"' + String(modifier.fn) + '"'));
-          }
-          break;
-        case "requires":
-          if (modifier.requires != null && !Array.isArray(modifier.requires)) {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requires"', '"array"', '"' + String(modifier.requires) + '"'));
-          }
-          break;
-        case "requiresIfExists":
-          if (!Array.isArray(modifier.requiresIfExists)) {
-            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requiresIfExists"', '"array"', '"' + String(modifier.requiresIfExists) + '"'));
-          }
-          break;
-        case "options":
-        case "data":
-          break;
-        default:
-          console.error('PopperJS: an invalid property has been provided to the "' + modifier.name + '" modifier, valid properties are ' + VALID_PROPERTIES.map(function(s) {
-            return '"' + s + '"';
-          }).join(", ") + '; but "' + key + '" was provided.');
-      }
-      modifier.requires && modifier.requires.forEach(function(requirement) {
-        if (modifiers.find(function(mod) {
-          return mod.name === requirement;
-        }) == null) {
-          console.error(format(MISSING_DEPENDENCY_ERROR, String(modifier.name), requirement, requirement));
-        }
-      });
-    });
-  });
-}
-
-// node_modules/@popperjs/core/lib/utils/uniqueBy.js
-function uniqueBy(arr, fn2) {
-  var identifiers = new Set();
-  return arr.filter(function(item) {
-    var identifier = fn2(item);
-    if (!identifiers.has(identifier)) {
-      identifiers.add(identifier);
-      return true;
-    }
-  });
-}
-
 // node_modules/@popperjs/core/lib/utils/mergeByName.js
 function mergeByName(modifiers) {
   var merged = modifiers.reduce(function(merged2, current) {
@@ -2735,8 +2903,6 @@ function mergeByName(modifiers) {
 }
 
 // node_modules/@popperjs/core/lib/createPopper.js
-var INVALID_ELEMENT_ERROR = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.";
-var INFINITE_LOOP_ERROR = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.";
 var DEFAULT_OPTIONS = {
   placement: "bottom",
   modifiers: [],
@@ -2787,40 +2953,20 @@ function popperGenerator(generatorOptions) {
         state.orderedModifiers = orderedModifiers.filter(function(m) {
           return m.enabled;
         });
-        if (true) {
-          var modifiers = uniqueBy([].concat(orderedModifiers, state.options.modifiers), function(_ref) {
-            var name = _ref.name;
-            return name;
-          });
-          validateModifiers(modifiers);
-          if (getBasePlacement(state.options.placement) === auto) {
-            var flipModifier = state.orderedModifiers.find(function(_ref2) {
-              var name = _ref2.name;
-              return name === "flip";
-            });
-            if (!flipModifier) {
-              console.error(['Popper: "auto" placements require the "flip" modifier be', "present and enabled to work."].join(" "));
-            }
-          }
-          var _getComputedStyle = getComputedStyle(popper2), marginTop = _getComputedStyle.marginTop, marginRight = _getComputedStyle.marginRight, marginBottom = _getComputedStyle.marginBottom, marginLeft = _getComputedStyle.marginLeft;
-          if ([marginTop, marginRight, marginBottom, marginLeft].some(function(margin) {
-            return parseFloat(margin);
-          })) {
-            console.warn(['Popper: CSS "margin" styles cannot be used to apply padding', "between the popper and its reference element or boundary.", "To replicate margin, use the `offset` modifier, as well as", "the `padding` option in the `preventOverflow` and `flip`", "modifiers."].join(" "));
-          }
-        }
         runModifierEffects();
         return instance.update();
       },
+      // Sync update – it will always be executed, even if not necessary. This
+      // is useful for low frequency updates where sync behavior simplifies the
+      // logic.
+      // For high frequency updates (e.g. `resize` and `scroll` events), always
+      // prefer the async Popper#update method
       forceUpdate: function forceUpdate() {
         if (isDestroyed) {
           return;
         }
         var _state$elements = state.elements, reference3 = _state$elements.reference, popper3 = _state$elements.popper;
         if (!areValidElements(reference3, popper3)) {
-          if (true) {
-            console.error(INVALID_ELEMENT_ERROR);
-          }
           return;
         }
         state.rects = {
@@ -2832,15 +2978,7 @@ function popperGenerator(generatorOptions) {
         state.orderedModifiers.forEach(function(modifier) {
           return state.modifiersData[modifier.name] = Object.assign({}, modifier.data);
         });
-        var __debug_loops__ = 0;
         for (var index = 0; index < state.orderedModifiers.length; index++) {
-          if (true) {
-            __debug_loops__ += 1;
-            if (__debug_loops__ > 100) {
-              console.error(INFINITE_LOOP_ERROR);
-              break;
-            }
-          }
           if (state.reset === true) {
             state.reset = false;
             index = -1;
@@ -2857,6 +2995,8 @@ function popperGenerator(generatorOptions) {
           }
         }
       },
+      // Async and optimistically optimized update – it will not be executed if
+      // not necessary (debounced to run at most once-per-tick)
       update: debounce(function() {
         return new Promise(function(resolve) {
           instance.forceUpdate();
@@ -2869,9 +3009,6 @@ function popperGenerator(generatorOptions) {
       }
     };
     if (!areValidElements(reference2, popper2)) {
-      if (true) {
-        console.error(INVALID_ELEMENT_ERROR);
-      }
       return instance;
     }
     instance.setOptions(options).then(function(state2) {
@@ -2880,8 +3017,8 @@ function popperGenerator(generatorOptions) {
       }
     });
     function runModifierEffects() {
-      state.orderedModifiers.forEach(function(_ref3) {
-        var name = _ref3.name, _ref3$options = _ref3.options, options2 = _ref3$options === void 0 ? {} : _ref3$options, effect4 = _ref3.effect;
+      state.orderedModifiers.forEach(function(_ref) {
+        var name = _ref.name, _ref$options = _ref.options, options2 = _ref$options === void 0 ? {} : _ref$options, effect4 = _ref.effect;
         if (typeof effect4 === "function") {
           var cleanupFn = effect4({
             state,
@@ -2919,8 +3056,16 @@ var Suggest = class {
   constructor(owner, containerEl, scope) {
     this.owner = owner;
     this.containerEl = containerEl;
-    containerEl.on("click", ".suggestion-item", this.onSuggestionClick.bind(this));
-    containerEl.on("mousemove", ".suggestion-item", this.onSuggestionMouseover.bind(this));
+    containerEl.on(
+      "click",
+      ".suggestion-item",
+      this.onSuggestionClick.bind(this)
+    );
+    containerEl.on(
+      "mousemove",
+      ".suggestion-item",
+      this.onSuggestionMouseover.bind(this)
+    );
     scope.register([], "ArrowUp", (event) => {
       if (!event.isComposing) {
         this.setSelectedItem(this.selectedItem - 1, true);
@@ -2972,8 +3117,8 @@ var Suggest = class {
     const normalizedIndex = wrapAround(selectedIndex, this.suggestions.length);
     const prevSelectedSuggestion = this.suggestions[this.selectedItem];
     const selectedSuggestion = this.suggestions[normalizedIndex];
-    prevSelectedSuggestion?.removeClass("is-selected");
-    selectedSuggestion?.addClass("is-selected");
+    prevSelectedSuggestion == null ? void 0 : prevSelectedSuggestion.removeClass("is-selected");
+    selectedSuggestion == null ? void 0 : selectedSuggestion.addClass("is-selected");
     this.selectedItem = normalizedIndex;
     if (scrollIntoView) {
       selectedSuggestion.scrollIntoView(false);
@@ -2992,9 +3137,13 @@ var TextInputSuggest = class {
     this.inputEl.addEventListener("input", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("focus", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("blur", this.close.bind(this));
-    this.suggestEl.on("mousedown", ".suggestion-container", (event) => {
-      event.preventDefault();
-    });
+    this.suggestEl.on(
+      "mousedown",
+      ".suggestion-container",
+      (event) => {
+        event.preventDefault();
+      }
+    );
   }
   onInputChanged() {
     const inputStr = this.inputEl.value;
@@ -3043,7 +3192,7 @@ var TextInputSuggest = class {
 };
 
 // src/ui/SilentFileAndTagSuggester.ts
-var import_obsidian8 = __toModule(require("obsidian"));
+var import_obsidian8 = require("obsidian");
 
 // node_modules/fuse.js/dist/fuse.esm.js
 function isArray(value) {
@@ -3179,26 +3328,55 @@ function get(obj, path) {
   return arr ? list : list[0];
 }
 var MatchOptions = {
+  // Whether the matches should be included in the result set. When `true`, each record in the result
+  // set will include the indices of the matched characters.
+  // These can consequently be used for highlighting purposes.
   includeMatches: false,
+  // When `true`, the matching function will continue to the end of a search pattern even if
+  // a perfect match has already been located in the string.
   findAllMatches: false,
+  // Minimum number of characters that must be matched before a result is considered a match
   minMatchCharLength: 1
 };
 var BasicOptions = {
+  // When `true`, the algorithm continues searching to the end of the input even if a perfect
+  // match is found before the end of the same input.
   isCaseSensitive: false,
+  // When true, the matching function will continue to the end of a search pattern even if
   includeScore: false,
+  // List of properties that will be searched. This also supports nested properties.
   keys: [],
+  // Whether to sort the result list, by score
   shouldSort: true,
+  // Default sort function: sort by ascending score, ascending index
   sortFn: (a, b) => a.score === b.score ? a.idx < b.idx ? -1 : 1 : a.score < b.score ? -1 : 1
 };
 var FuzzyOptions = {
+  // Approximately where in the text is the pattern expected to be found?
   location: 0,
+  // At what point does the match algorithm give up. A threshold of '0.0' requires a perfect match
+  // (of both letters and location), a threshold of '1.0' would match anything.
   threshold: 0.6,
+  // Determines how close the match must be to the fuzzy location (specified above).
+  // An exact letter match which is 'distance' characters away from the fuzzy location
+  // would score as a complete mismatch. A distance of '0' requires the match be at
+  // the exact location specified, a threshold of '1000' would require a perfect match
+  // to be within 800 characters of the fuzzy location to be found using a 0.8 threshold.
   distance: 100
 };
 var AdvancedOptions = {
+  // When `true`, it enables the use of unix-like search commands
   useExtendedSearch: false,
+  // The get function to use when fetching an object's properties.
+  // The default will search nested paths *ie foo.bar.baz*
   getFn: get,
+  // When `true`, search will ignore `location` and `distance`, so it won't matter
+  // where in the string the pattern appears.
+  // More info: https://fusejs.io/concepts/scoring-theory.html#fuzziness-score
   ignoreLocation: false,
+  // When `true`, the calculation for the relevance score (used for sorting) will
+  // ignore the field-length norm.
+  // More info: https://fusejs.io/concepts/scoring-theory.html#field-length-norm
   ignoreFieldNorm: false
 };
 var Config = {
@@ -3209,7 +3387,7 @@ var Config = {
 };
 var SPACE = /[^ ]+/g;
 function norm(mantissa = 3) {
-  const cache = new Map();
+  const cache = /* @__PURE__ */ new Map();
   const m = Math.pow(10, mantissa);
   return {
     get(value) {
@@ -3263,6 +3441,7 @@ var FuseIndex = class {
     }
     this.norm.clear();
   }
+  // Adds a doc to the end of the index
   add(doc) {
     const idx = this.size();
     if (isString(doc)) {
@@ -3271,6 +3450,7 @@ var FuseIndex = class {
       this._addObject(doc, idx);
     }
   }
+  // Removes the doc at the specified index of the index
   removeAt(idx) {
     this.records.splice(idx, 1);
     for (let i = idx, len = this.size(); i < len; i += 1) {
@@ -3504,6 +3684,7 @@ function search(text, pattern, patternAlphabet, {
   }
   const result = {
     isMatch: bestLocation >= 0,
+    // Count exact matches (those with a score of 0) to be "almost" exact
     score: Math.max(1e-3, finalScore)
   };
   if (computeMatches) {
@@ -3889,7 +4070,7 @@ function parseQuery(pattern, options = {}) {
     return results;
   });
 }
-var MultiMatchSet = new Set([FuzzyMatch2.type, IncludeMatch.type]);
+var MultiMatchSet = /* @__PURE__ */ new Set([FuzzyMatch2.type, IncludeMatch.type]);
 var ExtendedSearch = class {
   constructor(pattern, {
     isCaseSensitive = Config.isCaseSensitive,
@@ -4048,7 +4229,10 @@ function computeScore$1(results, { ignoreFieldNorm = Config.ignoreFieldNorm }) {
     let totalScore = 1;
     result.matches.forEach(({ key, norm: norm2, score }) => {
       const weight = key ? key.weight : null;
-      totalScore *= Math.pow(score === 0 && weight ? Number.EPSILON : score, (weight || 1) * (ignoreFieldNorm ? 1 : norm2));
+      totalScore *= Math.pow(
+        score === 0 && weight ? Number.EPSILON : score,
+        (weight || 1) * (ignoreFieldNorm ? 1 : norm2)
+      );
     });
     result.score = totalScore;
   });
@@ -4080,7 +4264,7 @@ function transformMatches(result, data) {
 function transformScore(result, data) {
   data.score = result.score;
 }
-function format2(results, docs, {
+function format(results, docs, {
   includeMatches = Config.includeMatches,
   includeScore = Config.includeScore
 } = {}) {
@@ -4164,7 +4348,7 @@ var Fuse = class {
     if (isNumber(limit) && limit > -1) {
       results = results.slice(0, limit);
     }
-    return format2(results, this._docs, {
+    return format(results, this._docs, {
       includeMatches,
       includeScore
     });
@@ -4266,11 +4450,13 @@ var Fuse = class {
       }
       let matches = [];
       keys.forEach((key, keyIndex) => {
-        matches.push(...this._findMatches({
-          key,
-          value: item[keyIndex],
-          searcher
-        }));
+        matches.push(
+          ...this._findMatches({
+            key,
+            value: item[keyIndex],
+            searcher
+          })
+        );
       });
       if (matches.length) {
         results.push({
@@ -4327,14 +4513,10 @@ Fuse.config = Config;
 var fuse_esm_default = Fuse;
 
 // src/ui/SilentFileAndTagSuggester.ts
-var TagOrFile;
-(function(TagOrFile2) {
-  TagOrFile2[TagOrFile2["Tag"] = 0] = "Tag";
-  TagOrFile2[TagOrFile2["File"] = 1] = "File";
-})(TagOrFile || (TagOrFile = {}));
 var FILE_LINK_REGEX = new RegExp(/\[\[([^\]]*)$/);
 var TAG_REGEX = new RegExp(/#([^ ]*)$/);
 var SilentFileAndTagSuggester = class extends TextInputSuggest {
+  // constructor(public app: App, public inputEl: HTMLInputElement) {
   constructor(app2, inputEl) {
     super(app2, inputEl);
     this.app = app2;
@@ -4353,13 +4535,13 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
     if (tagMatch) {
       const tagInput = tagMatch[1];
       this.lastInput = tagInput;
-      this.lastInputType = 0;
+      this.lastInputType = 0 /* Tag */;
       suggestions = this.tags.filter((tag) => tag.toLowerCase().contains(tagInput.toLowerCase()));
     }
     if (fileLinkMatch) {
       const fileNameInput = fileLinkMatch[1];
       this.lastInput = fileNameInput;
-      this.lastInputType = 1;
+      this.lastInputType = 1 /* File */;
       suggestions = this.files.filter((file) => file.path.toLowerCase().contains(fileNameInput.toLowerCase())).map((file) => file.path);
       suggestions.push(...this.unresolvedLinkNames.filter((name) => name.toLowerCase().contains(fileNameInput.toLowerCase())));
     }
@@ -4375,7 +4557,7 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
     const lastInputLength = this.lastInput.length;
     const currentInputValue = this.inputEl.value;
     let insertedEndPosition = 0;
-    if (this.lastInputType === 1) {
+    if (this.lastInputType === 1 /* File */) {
       const linkFile = this.app.vault.getAbstractFileByPath(item);
       if (linkFile instanceof import_obsidian8.TFile) {
         insertedEndPosition = this.makeLinkObsidianMethod(linkFile, currentInputValue, cursorPosition, lastInputLength);
@@ -4383,7 +4565,7 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
         insertedEndPosition = this.makeLinkManually(currentInputValue, item.replace(/.md$/, ""), cursorPosition, lastInputLength);
       }
     }
-    if (this.lastInputType === 0) {
+    if (this.lastInputType === 0 /* Tag */) {
       this.inputEl.value = this.getNewInputValueForTag(currentInputValue, item, cursorPosition, lastInputLength);
       insertedEndPosition = cursorPosition - lastInputLength + item.length - 1;
     }
@@ -4411,7 +4593,7 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
   }
   getUnresolvedLinkNames(app2) {
     const unresolvedLinks = app2.metadataCache.unresolvedLinks;
-    const unresolvedLinkNames = new Set();
+    const unresolvedLinkNames = /* @__PURE__ */ new Set();
     for (const sourceFileName in unresolvedLinks) {
       for (const unresolvedLink in unresolvedLinks[sourceFileName]) {
         unresolvedLinkNames.add(unresolvedLink);
@@ -4466,7 +4648,7 @@ var QuickCaptureModal = class extends import_obsidian9.Modal {
 };
 
 // src/utils/bookmarks.ts
-var import_obsidian10 = __toModule(require("obsidian"));
+var import_obsidian10 = require("obsidian");
 async function addBookmarkFromCurrentView(plugin) {
   const currentView = plugin.app.workspace.getActiveViewOfType(import_obsidian10.MarkdownView);
   if (!currentView || currentView.getMode() !== "source") {
@@ -4542,6 +4724,10 @@ async function openBookmark(plugin) {
 // src/ui/PluginCommands.ts
 var PluginCommands = class {
   constructor(plugin) {
+    // commands notes
+    // shortcut - MUST be unique, used as part of the Command Palette ID
+    // isContextMenuItem - this is a context menu item or not
+    // cmItemEnabled - is the context menu item enabled 
     this.commands = [
       {
         caption: "Quick Capture",
@@ -4779,39 +4965,41 @@ var PluginCommands = class {
     for (let i = 0; i < this.commands.length; i++)
       if (this.plugin.settings["cMenuEnabled-" + this.commands[i].shortcut] !== void 0)
         this.commands[i].cmItemEnabled = this.plugin.settings["cMenuEnabled-" + this.commands[i].shortcut];
-    this.plugin.registerEvent(this.plugin.app.workspace.on("editor-menu", (menu) => {
-      menu.addSeparator();
-      for (const value of this.commands) {
-        let addCommand = false;
-        if (value.cmItemEnabled === true && value.group !== "replace")
-          addCommand = true;
-        else if (value.cmItemEnabled === true && value.group === "replace" && testIfCursorIsOnALink(this.plugin))
-          addCommand = true;
-        if (addCommand) {
-          menu.addItem((item) => {
-            item.setTitle(value.caption).setIcon(value.icon).onClick(async () => {
-              await value.command();
-            });
-          });
-        }
-      }
-      const bookmarks = plugin.settings.bookmarks.split("\n");
-      if (bookmarks.length > 0) {
+    this.plugin.registerEvent(
+      this.plugin.app.workspace.on("editor-menu", (menu) => {
         menu.addSeparator();
-        for (const bookmark of bookmarks) {
-          if (bookmark.substr(0, 1) === "*") {
-            const bookmarkText = (bookmark.length >= 40 ? bookmark.substr(0, 40) + "..." : bookmark).replace("*", "");
+        for (const value of this.commands) {
+          let addCommand = false;
+          if (value.cmItemEnabled === true && value.group !== "replace")
+            addCommand = true;
+          else if (value.cmItemEnabled === true && value.group === "replace" && testIfCursorIsOnALink(this.plugin))
+            addCommand = true;
+          if (addCommand) {
             menu.addItem((item) => {
-              item.setTitle("Copy to: " + bookmarkText).setIcon("star-list").onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, true, bookmark, e));
-            });
-            menu.addItem((item) => {
-              item.setTitle("Push to: " + bookmarkText).onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, false, bookmark, e));
+              item.setTitle(value.caption).setIcon(value.icon).onClick(async () => {
+                await value.command();
+              });
             });
           }
         }
-      }
-      menu.addSeparator();
-    }));
+        const bookmarks = plugin.settings.bookmarks.split("\n");
+        if (bookmarks.length > 0) {
+          menu.addSeparator();
+          for (const bookmark of bookmarks) {
+            if (bookmark.substr(0, 1) === "*") {
+              const bookmarkText = (bookmark.length >= 40 ? bookmark.substr(0, 40) + "..." : bookmark).replace("*", "");
+              menu.addItem((item) => {
+                item.setTitle("Copy to: " + bookmarkText).setIcon("star-list").onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, true, bookmark, e));
+              });
+              menu.addItem((item) => {
+                item.setTitle("Push to: " + bookmarkText).onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, false, bookmark, e));
+              });
+            }
+          }
+        }
+        menu.addSeparator();
+      })
+    );
     for (const value of Object.values(this.commands)) {
       if (value.editModeOnly) {
         this.plugin.addCommand({
@@ -4835,6 +5023,7 @@ var PluginCommands = class {
     await app.plugins.disablePlugin("obsidian42-text-transporter");
     await app.plugins.enablePlugin("obsidian42-text-transporter");
   }
+  // list of all commands available in Command  Pallet format
   async masterControlProgram(plugin) {
     const currentView = this.plugin.app.workspace.getActiveViewOfType(import_obsidian11.MarkdownView);
     let editMode = true;
@@ -4845,11 +5034,11 @@ var PluginCommands = class {
     for (const cmd of this.commands) {
       const activeView = getActiveViewType(plugin);
       let addCommand = false;
-      if (cmd.group === "replace" && activeView === ViewType.source && testIfCursorIsOnALink(this.plugin))
+      if (cmd.group === "replace" && activeView === 0 /* source */ && testIfCursorIsOnALink(this.plugin))
         addCommand = true;
       else if (cmd.group !== "replace" && (cmd.editModeOnly === false || editMode && cmd.editModeOnly))
         addCommand = true;
-      else if ((cmd.shortcut === "SLF" || cmd.shortcut === "SLC") && activeView != ViewType.none) {
+      else if ((cmd.shortcut === "SLF" || cmd.shortcut === "SLC") && activeView != 2 /* none */) {
         addCommand = true;
       }
       if (addCommand)
@@ -4875,7 +5064,7 @@ var PluginCommands = class {
 };
 
 // src/ui/SettingsTab.ts
-var import_obsidian12 = __toModule(require("obsidian"));
+var import_obsidian12 = require("obsidian");
 var DEFAULT_SETTINGS = {
   enableRibbon: true,
   enableDebugMode: false,
@@ -4902,13 +5091,15 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Alias Placeholder").setDesc("Placeholder text used for an aliased block reference.").addText((text) => text.setValue(this.plugin.settings.blockRefAliasIndicator).onChange(async (value) => {
-      if (value.trim() === "")
-        this.plugin.settings.blockRefAliasIndicator = "*";
-      else
-        this.plugin.settings.blockRefAliasIndicator = value;
-      await this.plugin.saveSettings();
-    }));
+    new import_obsidian12.Setting(containerEl).setName("Alias Placeholder").setDesc("Placeholder text used for an aliased block reference.").addText(
+      (text) => text.setValue(this.plugin.settings.blockRefAliasIndicator).onChange(async (value) => {
+        if (value.trim() === "")
+          this.plugin.settings.blockRefAliasIndicator = "*";
+        else
+          this.plugin.settings.blockRefAliasIndicator = value;
+        await this.plugin.saveSettings();
+      })
+    );
     containerEl.createEl("h2", { text: "Bookmarks" });
     new import_obsidian12.Setting(containerEl).setName("Bookmarks").setDesc(`Predefined destinations within files that appear at the top of the file selector. 
 						Each line represents one bookmark. The line starts with the path to the file (ex: directory1/subdirectory/filename.md) 
@@ -4916,7 +5107,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
 						If after the file name there is a semicolon followed by either: TOP BOTTOM or text to find in the document as an insertion point. Example:
 
 						directory1/subdirectory/filename1.md;TOP  directory1/subdirectory/filename2.md;BOTTOM  directory1/subdirectory/filename3.md;# Inbox
-						Optionally DNPTODAY can be used in the place of a file name to default to today's Daily Notes Page.
+						Optionally DNPTODAY or DNPTOMORROW can be used in the place of a file name to default to today's or tomorrows Daily Notes Page.
 						`).addTextArea((textEl) => {
       textEl.setPlaceholder(" directory1/subdirectory/filename1.md;\n directory1/subdirectory/filename2.md;TOP\n directory1/subdirectory/filename3.md;BOTTOM\n directory1/subdirectory/filename4.md;# Inbox").setValue(this.plugin.settings.bookmarks || "").onChange((value) => {
         this.plugin.settings.bookmarks = value;
@@ -4931,10 +5122,12 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       }
     });
     const desc = document.createDocumentFragment();
-    desc.append(desc.createEl("a", {
-      href: "https://github.com/TfTHacker/obsidian42-text-transporter/blob/main/README-Bookmarks.md",
-      text: "Additional documentation  for bookmarks."
-    }));
+    desc.append(
+      desc.createEl("a", {
+        href: "https://github.com/TfTHacker/obsidian42-text-transporter/blob/main/README-Bookmarks.md",
+        text: "Additional documentation  for bookmarks."
+      })
+    );
     containerEl.createEl("div", { text: "" }).append(desc);
     containerEl.createEl("h2", { text: "Context Menu Commands: Enable/Disable" });
     for (const command of this.plugin.commands.commands) {
@@ -4959,12 +5152,15 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
 };
 
 // src/ui/icons.ts
-var import_obsidian13 = __toModule(require("obsidian"));
+var import_obsidian13 = require("obsidian");
 function addIcons() {
-  (0, import_obsidian13.addIcon)("TextTransporter", `<path fill="currentColor" stroke="currentColor"  d="M 28.324219 21.484375 C 28.324219 25.257812 25.261719 28.320312 21.488281 28.320312 C 17.714844 28.320312 14.652344 25.257812 14.652344 21.484375 C 14.652344 17.707031 17.714844 14.648438 21.488281 14.648438 C 25.261719 14.648438 28.324219 17.707031 28.324219 21.484375 Z M 28.324219 21.484375 "/>
+  (0, import_obsidian13.addIcon)(
+    "TextTransporter",
+    `<path fill="currentColor" stroke="currentColor"  d="M 28.324219 21.484375 C 28.324219 25.257812 25.261719 28.320312 21.488281 28.320312 C 17.714844 28.320312 14.652344 25.257812 14.652344 21.484375 C 14.652344 17.707031 17.714844 14.648438 21.488281 14.648438 C 25.261719 14.648438 28.324219 17.707031 28.324219 21.484375 Z M 28.324219 21.484375 "/>
          <path fill="currentColor" stroke="currentColor"  d="M 36.679688 36.671875 C 40.738281 32.617188 42.972656 27.222656 42.972656 21.484375 C 42.972656 9.636719 33.335938 0 21.488281 0 C 9.644531 0 0.00390625 9.636719 0.00390625 21.484375 C 0.00390625 27.222656 2.242188 32.617188 6.296875 36.671875 L 21.488281 51.863281 Z M 8.792969 21.484375 C 8.792969 14.484375 14.488281 8.789062 21.488281 8.789062 C 28.488281 8.789062 34.183594 14.484375 34.183594 21.484375 C 34.183594 28.484375 28.488281 34.175781 21.488281 34.175781 C 14.488281 34.175781 8.792969 28.484375 8.792969 21.484375 Z M 8.792969 21.484375 "/>
          <path fill="currentColor" stroke="currentColor"  d="M 84.371094 62.28125 C 75.753906 62.28125 68.746094 69.289062 68.746094 77.902344 C 68.746094 82.078125 70.371094 86 73.320312 88.953125 L 84.371094 100 L 95.417969 88.953125 C 98.367188 86 99.992188 82.078125 99.992188 77.902344 C 99.992188 69.289062 92.984375 62.28125 84.371094 62.28125 Z M 84.371094 62.28125 "/>
-         <path fill="currentColor" stroke="currentColor"  d="M 24.417969 81.132812 C 24.417969 73.96875 30.246094 68.140625 37.414062 68.140625 L 48.285156 68.140625 C 54.71875 68.140625 59.957031 62.902344 59.957031 56.464844 C 59.957031 50.027344 54.71875 44.792969 48.285156 44.792969 L 36.917969 44.792969 L 36.917969 50.652344 L 48.285156 50.652344 C 51.488281 50.652344 54.097656 53.257812 54.097656 56.464844 C 54.097656 59.671875 51.488281 62.28125 48.285156 62.28125 L 37.414062 62.28125 C 27.015625 62.28125 18.558594 70.738281 18.558594 81.132812 C 18.558594 91.53125 27.015625 99.988281 37.414062 99.988281 L 70.113281 99.988281 L 70.113281 94.128906 L 37.414062 94.128906 C 30.246094 94.128906 24.417969 88.300781 24.417969 81.132812 Z M 24.417969 81.132812 "/>`);
+         <path fill="currentColor" stroke="currentColor"  d="M 24.417969 81.132812 C 24.417969 73.96875 30.246094 68.140625 37.414062 68.140625 L 48.285156 68.140625 C 54.71875 68.140625 59.957031 62.902344 59.957031 56.464844 C 59.957031 50.027344 54.71875 44.792969 48.285156 44.792969 L 36.917969 44.792969 L 36.917969 50.652344 L 48.285156 50.652344 C 51.488281 50.652344 54.097656 53.257812 54.097656 56.464844 C 54.097656 59.671875 51.488281 62.28125 48.285156 62.28125 L 37.414062 62.28125 C 27.015625 62.28125 18.558594 70.738281 18.558594 81.132812 C 18.558594 91.53125 27.015625 99.988281 37.414062 99.988281 L 70.113281 99.988281 L 70.113281 94.128906 L 37.414062 94.128906 C 30.246094 94.128906 24.417969 88.300781 24.417969 81.132812 Z M 24.417969 81.132812 "/>`
+  );
 }
 
 // src/main.ts

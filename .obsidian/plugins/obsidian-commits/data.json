@@ -1232,7 +1232,7 @@
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md": {
       "size": 796,
       "tags": 5,
-      "links": 1
+      "links": 3
     },
     "02-mat/obs/tpl/conflict-files-obsidian-git.md": {
       "size": 984,
@@ -1491,12 +1491,12 @@
     },
     "01-proj/23/Petroccelli/Dopplermanían´t (idea).md": {
       "size": 1788,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md": {
       "size": 11796,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
@@ -1504,7 +1504,7 @@
     "/": {
       "Refactor": 512,
       "Create": 391,
-      "Link": 291,
+      "Link": 294,
       "Expand": 49
     }
   },
@@ -1532,7 +1532,7 @@
       "19": 21,
       "20": 74,
       "21": 62,
-      "22": 53,
+      "22": 56,
       "23": 44
     }
   },
@@ -1541,7 +1541,7 @@
       "Mon": 73,
       "Tue": 144,
       "Wed": 656,
-      "Thu": 141,
+      "Thu": 144,
       "Fri": 101,
       "Sat": 0,
       "Sun": 128
@@ -1707,6 +1707,8 @@
         "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/aroma.md\"> aroma </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Together in Music.md\"> Together in Music </a>",
         "<a class=\"internal-link\" href=\"00-in/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
@@ -1755,9 +1757,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym08-github pages+hydra.md\"> c-cym08-github pages+hydra </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Piano.md\"> Piano </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym15-interactividad.md\"> c-cym15-interactividad </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym09-flex-grid.md\"> c-cym09-flex-grid </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1818,6 +1818,7 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
         "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
@@ -1867,8 +1868,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Shifres.md\"> Shifres </a>",
         "<a class=\"internal-link\" href=\"04-ref/templates/conflict-files-obsidian-git 2.md\"> conflict-files-obsidian-git 2 </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",

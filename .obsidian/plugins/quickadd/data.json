@@ -5,7 +5,7 @@
   "devMode": false,
   "templateFolderPath": "04-ref/templates",
   "announceUpdates": true,
-  "version": "1.2.1",
+  "version": "1.6.0",
   "disableOnlineFeatures": true,
   "ai": {
     "OpenAIApiKey": "",
