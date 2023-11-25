@@ -23575,13 +23575,17 @@ var ColorBar = class {
   }
   addColorBar() {
     for (let i2 = 0; i2 < this.plugin.cellCount; i2++) {
-      let statusBarColor = this.plugin.addStatusBarItem();
+      const statusBarColor = this.plugin.addStatusBarItem();
       statusBarColor.style.paddingLeft = "0";
       statusBarColor.style.paddingRight = "0";
       statusBarColor.style.order = `${i2 + 1}`;
+      if (this.plugin.hidePlugin) {
+        statusBarColor.style.height = "0";
+        statusBarColor.style.width = "0";
+      }
       statusBarColor.addClasses(["mod-clickable"]);
       statusBarColor.addEventListener("click", this.onClick(i2));
-      let colorIcon = statusBarColor.createDiv(
+      const colorIcon = statusBarColor.createDiv(
         {
           cls: "status-color"
         }
@@ -23593,7 +23597,8 @@ var ColorBar = class {
       }
       this.plugin.colorDivs.push(colorIcon);
     }
-    this.plugin.colorDivs[0].style.borderStyle = "solid";
+    if (!this.plugin.hidePlugin)
+      this.plugin.colorDivs[0].style.borderStyle = "solid";
   }
 };
 
@@ -25011,12 +25016,12 @@ var ColorModal = class extends import_obsidian.Modal {
 // src/rgbConverter.ts
 var RgbConverter = class {
   componentToHex(c2) {
-    let hex = c2.toString(16);
+    const hex = c2.toString(16);
     return hex.length == 1 ? "0" + hex : hex;
   }
   rgbToHex(rgb) {
-    let substr2 = rgb.substring(4, rgb.length - 1);
-    let rgbArr = substr2.split(",");
+    const substr2 = rgb.substring(4, rgb.length - 1);
+    const rgbArr = substr2.split(",");
     let hexStr = "#";
     for (let i2 = 0; i2 < 3; i2++) {
       hexStr += this.componentToHex(parseInt(rgbArr[i2]));
@@ -25042,7 +25047,8 @@ var DEFAULT_SETTINGS = {
     "#7030a0"
   ],
   colorArr: Array(5).fill(DEFAULT_COLOR),
-  colorCellCount: "5"
+  colorCellCount: "5",
+  hidePlugin: false
 };
 
 // src/colorRemover.ts
@@ -25128,7 +25134,7 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
     this.plugin = plugin;
   }
   display() {
-    let { containerEl } = this;
+    const { containerEl } = this;
     containerEl.empty();
     new import_obsidian2.Setting(containerEl).setName("Number of Color Cells").setDesc("Change number of color cells (You need to reload Obsidian for changes to occur)").addText(
       (text) => text.setPlaceholder("5").setValue(this.plugin.colorsData.colorCellCount).onChange(async (value) => {
@@ -25136,6 +25142,12 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
         await this.plugin.saveColorData();
       })
     );
+    new import_obsidian2.Setting(containerEl).setName("Hide Plugin in the Status Bar").setDesc("(You need to reload Obsidian for changes to occur)").addToggle((toggle) => {
+      toggle.setValue(this.plugin.colorsData.hidePlugin).onChange(async (value) => {
+        this.plugin.colorsData.hidePlugin = value;
+        await this.plugin.saveColorData();
+      });
+    });
     this.favoriteColorsSetting = new import_obsidian2.Setting(containerEl).setName("Favorite Colors").setDesc("Set your favorite colors to pick from");
     this.plugin.colorsData.favoriteColors.forEach((c2, i2) => {
       this.favoriteColorsSetting.addColorPicker(
@@ -25166,6 +25178,49 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
   }
 };
 
+// src/textFormatting.ts
+var import_view = require("@codemirror/view");
+var TextFormatting = class {
+  constructor(view) {
+    this.editorView = view;
+  }
+  update(update) {
+    let shouldInsert = "none";
+    let posAfterAsterisk = 0;
+    for (const tr of update.transactions) {
+      tr.changes.iterChanges((fromA, toA, fromB, toB, inserted) => {
+        console.log(tr.startState);
+        if (toB - fromA > 0) {
+          const insertedCharText = this.editorView.state.doc.slice(fromA, toB);
+          const insertedChar = insertedCharText.sliceString(0, insertedCharText.length);
+          if (insertedChar.contains("*")) {
+            const nextCharText = this.editorView.state.doc.slice(toB, toB + 4);
+            const nextChar = nextCharText.sliceString(0, nextCharText.length);
+            if (nextChar.contains("<s")) {
+              shouldInsert = insertedChar.length === 1 ? "italic" : "bold";
+              posAfterAsterisk = toB + nextChar.indexOf("<") + 13;
+            }
+          }
+        }
+      });
+      if (shouldInsert)
+        break;
+    }
+    if (shouldInsert != "none") {
+      setTimeout(() => {
+        const insertStyle = shouldInsert === "bold" ? "font-weight:bold; " : "font-style:italic; ";
+        this.editorView.dispatch({
+          changes: { from: posAfterAsterisk, insert: insertStyle }
+          // Insert '+' or whatever you want
+        });
+      }, 0);
+    }
+  }
+  destroy() {
+  }
+};
+var textFormattingPlugin = import_view.ViewPlugin.fromClass(TextFormatting);
+
 // src/main.ts
 var ColoredFont = class extends import_obsidian3.Plugin {
   constructor() {
@@ -25181,7 +25236,9 @@ var ColoredFont = class extends import_obsidian3.Plugin {
     this.curIndex = 0;
     await this.loadColorData();
     this.cellCount = +this.colorsData.colorCellCount > MAX_CELL_COUNT ? MAX_CELL_COUNT : +this.colorsData.colorCellCount;
+    this.hidePlugin = this.colorsData.hidePlugin;
     this.addSettingTab(new SettingsTab(this.app, this));
+    this.registerEditorExtension(textFormattingPlugin);
     this.registerEvent(
       this.app.workspace.on("editor-menu", this.handleColorChangeInContextMenu)
     );
@@ -25239,8 +25296,10 @@ var ColoredFont = class extends import_obsidian3.Plugin {
   selectColor(newIndex) {
     this.prevIndex = this.curIndex;
     this.curIndex = newIndex;
-    this.colorDivs[this.prevIndex].style.borderStyle = "none";
-    this.colorDivs[this.curIndex].style.borderStyle = "solid";
+    if (!this.hidePlugin) {
+      this.colorDivs[this.prevIndex].style.borderStyle = "none";
+      this.colorDivs[this.curIndex].style.borderStyle = "solid";
+    }
     this.curColor = this.rgbConverter.rgbToHex(this.colorDivs[this.curIndex].style.backgroundColor);
   }
   async loadColorData() {
@@ -25253,6 +25312,7 @@ var ColoredFont = class extends import_obsidian3.Plugin {
       },
       await this.loadData()
     );
+    console.log(this.colorsData);
     this.curColor = this.colorsData.colorArr[0];
   }
   async saveColorData() {

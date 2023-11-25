@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "c00ad7fd123dd1cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -115,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITON-ART.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -133,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,10 +255,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "780024da3c099c12",
+  "active": "c00ad7fd123dd1cf",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
+    "conflict-files-obsidian-git.md",
     "04-out/topoi/aroma.md",
     "04-out/bibliografía/Together in Music.md",
     "02-mat/obs/tpl/t-person.md",
