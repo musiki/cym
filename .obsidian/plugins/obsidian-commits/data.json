@@ -1474,11 +1474,6 @@
       "tags": 1,
       "links": 0
     },
-    "01-proj/23/bassino/proyectual bassino/FITON-ART.md": {
-      "size": 0,
-      "tags": 5,
-      "links": 1
-    },
     "00-in/Clemens Wöllner.md": {
       "size": 5001,
       "tags": 0,
@@ -1486,7 +1481,7 @@
     },
     "00-in/Jean-Robert Sedano et Solveig de Ory.md": {
       "size": 283,
-      "tags": 0,
+      "tags": 3,
       "links": 0
     },
     "00-in/Nicolas Schöffer.md": {
@@ -1501,20 +1496,25 @@
     },
     "04-out/bibliografía/Together in Music.md": {
       "size": 2327,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/topoi/aroma.md": {
       "size": 299,
-      "tags": 0,
+      "tags": 2,
       "links": 0
+    },
+    "01-proj/23/bassino/proyectual bassino/FITOn.md": {
+      "size": 0,
+      "tags": 5,
+      "links": 1
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 624,
+      "Refactor": 625,
       "Create": 679,
-      "Link": 473,
+      "Link": 476,
       "Expand": 24
     }
   },
@@ -1532,8 +1532,8 @@
       "9": 77,
       "10": 7,
       "11": 30,
-      "12": 43,
-      "13": 120,
+      "12": 46,
+      "13": 121,
       "14": 78,
       "15": 132,
       "16": 62,
@@ -1554,7 +1554,7 @@
       "Thu": 295,
       "Fri": 34,
       "Sat": 0,
-      "Sun": 331
+      "Sun": 335
     }
   },
   "recentCommits": {
@@ -1639,6 +1639,7 @@
         "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITOn.md\"> FITOn </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
@@ -1688,10 +1689,12 @@
         "<a class=\"internal-link\" href=\"04-ref/topoi/Física.md\"> Física </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Fragile Territories.md\"> Fragile Territories </a>",
         "<a class=\"internal-link\" href=\"04-ref/topoi/Forma Musical.md\"> Forma Musical </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
-        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía 21.md\"> Filosofía 21 </a>"
+        "<a class=\"internal-link\" href=\"04-ref/topoi/Filosofía histórica.md\"> Filosofía histórica </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"00-in/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/Together in Music.md\"> Together in Music </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/aroma.md\"> aroma </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
@@ -1739,10 +1742,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía histórica.md\"> Filosofía histórica </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Forma Musical.md\"> Forma Musical </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Historia de la tecnología.md\"> Historia de la tecnología </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>"
       ],
       "Refactored": [],
       "Deleted": [
