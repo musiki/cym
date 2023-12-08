@@ -1508,12 +1508,17 @@
       "size": 0,
       "tags": 5,
       "links": 1
+    },
+    "00-in/Pasted image 20220906234521.png.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 625,
-      "Create": 679,
+      "Create": 680,
       "Link": 476,
       "Expand": 24
     }
@@ -1540,7 +1545,7 @@
       "17": 73,
       "18": 252,
       "19": 3,
-      "20": 56,
+      "20": 57,
       "21": 816,
       "22": 20,
       "23": 9
@@ -1550,7 +1555,7 @@
     "/": {
       "Mon": 72,
       "Tue": 1000,
-      "Wed": 68,
+      "Wed": 69,
       "Thu": 295,
       "Fri": 34,
       "Sat": 0,
@@ -1586,6 +1591,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
@@ -1635,8 +1641,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Cajita Musical.md\"> Cajita Musical </a>",
         "<a class=\"internal-link\" href=\"00-in/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/proyectos MOC.md\"> proyectos MOC </a>"
+        "<a class=\"internal-link\" href=\"00-in/teatro MOC.md\"> teatro MOC </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITOn.md\"> FITOn </a>",

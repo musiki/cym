@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITOn.md",
+                "file": "02-mat/python/python music.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "proyectual",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 658.5
+    "width": 294.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITOn.md"
+                "file": "02-mat/python/python music.md"
               }
             }
           },
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITOn.md",
+                "file": "02-mat/python/python music.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +197,7 @@
             }
           },
           {
-            "id": "a57bc4c7c53445dd",
+            "id": "91f06f5e06bedd5f",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -240,12 +240,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a57bc4c7c53445dd",
+  "active": "eb0622415b9aa570",
   "lastOpenFiles": [
+    "01-proj/16/juan/Instalación.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "00-in/Pasted image 20220906234521.png.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym00-presentación.md",
+    "01-proj/23/bassino/proyectual bassino/FITOn.md",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/bassino/bassino POC.md",
-    "01-proj/23/bassino/proyectual bassino/FITOn.md",
     "01-proj/20/belotti/Soundchess proyectual tentativo.md",
     "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
     "02-mat/que es git.md",
@@ -258,7 +263,6 @@
     "00-in/Jean-Robert Sedano et Solveig de Ory.md",
     "00-in/Clemens Wöllner.md",
     "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
-    "03-cla/c-cym00-presentación.md",
     "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
     "01-proj/23/bassino/TP código.md",
     "00-moc/eventos MOC.md",
@@ -266,11 +270,7 @@
     "05-ref/meta-aprendizaje.md",
     "05-ref/a-yuda.md",
     "05-ref/a-snippets.md",
-    "05-ref/a-plugins.md",
-    "05-ref/a-dataview.md",
-    "05-ref/a-dataview playground.md",
     "05-ref",
-    "04-out/personas/t-person.md",
     "04-out/eventos",
     "02-mat/partituras/tonejs",
     "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
