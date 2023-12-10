@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "36001402fcfec940",
+        "id": "7fa576616a3d251a",
         "type": "tabs",
         "children": [
           {
-            "id": "eb0622415b9aa570",
+            "id": "fd8704962c3d983a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/python/python music.md",
+                "file": "02-mat/procesos/r-como hacer un proyectual.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "proyectual",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-mat/python/python music.md"
+                "file": "02-mat/procesos/r-como hacer un proyectual.md"
               }
             }
           },
@@ -132,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-mat/python/python music.md",
+                "file": "02-mat/procesos/r-como hacer un proyectual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +198,7 @@
             }
           },
           {
-            "id": "91f06f5e06bedd5f",
+            "id": "6a82b284798162b9",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -240,19 +241,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "eb0622415b9aa570",
+  "active": "6a82b284798162b9",
   "lastOpenFiles": [
+    "03-cla/c-cym09-flex-grid.md",
+    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
+    "02-mat/jasvascript/js-playground.md",
+    "02-mat/python/py-foundations.md",
+    "02-mat/python/pycolors.md",
+    "02-mat/python/python abjad.md",
+    "02-mat/python/python music.md",
     "01-proj/16/juan/Instalación.md",
     "02-mat/procesos/r-como hacer un proyectual.md",
     "00-in/Pasted image 20220906234521.png.md",
-    "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym00-presentación.md",
     "01-proj/23/bassino/proyectual bassino/FITOn.md",
     "01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md",
     "01-proj/23/bassino/Clorolaser.md",
     "01-proj/23/bassino/bassino POC.md",
     "01-proj/20/belotti/Soundchess proyectual tentativo.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
     "02-mat/que es git.md",
     "04-out/bibliografía/bib MOC.md",
     "conflict-files-obsidian-git.md",
@@ -264,12 +270,7 @@
     "00-in/Clemens Wöllner.md",
     "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
     "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
-    "01-proj/23/bassino/TP código.md",
-    "00-moc/eventos MOC.md",
     "00-moc",
-    "05-ref/meta-aprendizaje.md",
-    "05-ref/a-yuda.md",
-    "05-ref/a-snippets.md",
     "05-ref",
     "04-out/eventos",
     "02-mat/partituras/tonejs",
