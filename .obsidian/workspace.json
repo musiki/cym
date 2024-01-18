@@ -4,33 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "36001402fcfec940",
+        "id": "f319604a69c347e1",
         "type": "tabs",
         "children": [
           {
-            "id": "eb0622415b9aa570",
+            "id": "88530fd3c41f2a07",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "cym-metamap.canvas",
+                "viewState": {
+                  "x": 842.7763503656669,
+                  "y": -297.73398239323643,
+                  "zoom": 0.007071881672881598
+                }
               }
             }
           },
           {
-<<<<<<< HEAD
             "id": "8852ed998a8eeb99",
-=======
-            "id": "35fa5d671f73824f",
->>>>>>> origin/main
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
                 "file": "00-in/Jean-Robert Sedano et Solveig de Ory.md",
                 "mode": "preview",
                 "backlinks": false,
@@ -39,28 +36,32 @@
             }
           },
           {
-            "id": "7a49e938ef0a34e8",
+            "id": "35c46ce1aad3821f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-=======
-                "file": "conflict-files-obsidian-git.md",
->>>>>>> origin/main
+                "file": "01-proj/23/Zaracho/zaracho POC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "507fc085200b60bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/teatro MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ],
-<<<<<<< HEAD
-        "currentTab": 2
-=======
-        "currentTab": 1,
-        "stacked": true
->>>>>>> origin/main
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,21 +90,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#subtítulo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "d0b6cdf86fad9d2c",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
             }
           },
           {
@@ -114,12 +107,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 316.5,
+    "collapsed": true
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -128,33 +121,15 @@
       {
         "id": "aaca835876e592bb",
         "type": "tabs",
+        "dimension": 19.474196689386563,
         "children": [
-          {
-            "id": "20c732dc2cc0ecaf",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false
-              }
-            }
-          },
-          {
-            "id": "0e7331fdb79d0276",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
           {
             "id": "8c7ec6495dcddec6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md"
+                "file": "cym-metamap.canvas"
               }
             }
           },
@@ -172,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+                "file": "cym-metamap.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,56 +159,7 @@
             }
           },
           {
-            "id": "2ee534ce5bfe466f",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "539266283bdef41e",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "d03088a54fe416c2",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "93fbcc7662190177",
-            "type": "leaf",
-            "state": {
-              "type": "metatable-sidebar-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "1ef7717ba79738fe",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency"
-              }
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "1b8014d83199ee25",
-=======
-            "id": "7bbe0f7494bbdcb5",
->>>>>>> origin/main
+            "id": "a6f58b88c2ffd708",
             "type": "leaf",
             "state": {
               "type": "review-notes",
@@ -241,25 +167,56 @@
             }
           },
           {
-<<<<<<< HEAD
-            "id": "c9c528ca06d84865",
-=======
-            "id": "7749bf7955961a21",
->>>>>>> origin/main
+            "id": "e36f2709c75460b4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "52f74587519419f6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "1b8014d83199ee25",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "04b7e98c99842c3f",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
               "state": {}
             }
+          },
+          {
+            "id": "388c858d0bb15da2",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-chat-view",
+              "state": {}
+            }
           }
         ],
-<<<<<<< HEAD
-        "currentTab": 7
+        "currentTab": 8
       },
       {
         "id": "b33cb9828f682814",
         "type": "tabs",
-        "dimension": 21.186440677966104,
+        "dimension": 44.40116845180137,
         "children": [
           {
             "id": "20c732dc2cc0ecaf",
@@ -277,7 +234,7 @@
       {
         "id": "0b21d0481a2a08a7",
         "type": "tabs",
-        "dimension": 36.1228813559322,
+        "dimension": 36.12463485881207,
         "children": [
           {
             "id": "d666d2187372564f",
@@ -288,17 +245,14 @@
             }
           }
         ]
-=======
-        "currentTab": 11
->>>>>>> origin/main
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 354.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-<<<<<<< HEAD
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -310,14 +264,8 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
-=======
-      "digitalgarden:Digital Garden Publication Center": false,
-      "wikipedia-search:Open Article": false,
-      "templater-obsidian:Templater": false,
->>>>>>> origin/main
       "obsidian-review-notes-plugin:View Recent Notes": false,
       "translate:Open translation view": false,
-<<<<<<< HEAD
       "obsidian-metatable:Metatable": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "wikipedia-search:Open Article": false,
@@ -332,118 +280,55 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "7a49e938ef0a34e8",
+  "active": "88530fd3c41f2a07",
   "lastOpenFiles": [
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "01-proj/15/nievas/Drummer.md",
+    "01-proj/23/Zaracho/zaracho POC.md",
+    "00-moc/teatro MOC.md",
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+    "01-proj/23/bassino/TP código.md",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+    "image/23112422.excalidraw.md",
+    "02-mat/obs/img/Pasted Image 20231124224904_052.png",
+    "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
+    "01-proj/23/bassino/bassino POC.md",
+    "image",
+    "01-proj/23/bassino/Música y arte visual.md",
     "01-proj/23/bassino/Multi-efecto.md",
     "01-proj/23/bassino/Clorolaser.md",
+    "02-mat/obs/check-out de imagenes.md",
+    "conflict-files-obsidian-git.md",
     "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
-    "01-proj/23/bassino/TP código.md",
-    "01-proj/23/bassino/Música y arte visual.md",
+    "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
     "02-mat/obs/img/sensor de distancia (1) 1.pdf",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
-    "00-in/códigos MOC.md",
-    "01-proj/15/nievas/Drummer.md",
+    "00-moc/códigos MOC.md",
     "01-proj/23/Petroccelli/Cajita Musical.md",
     "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
     "01-proj/23/Petroccelli/petroccelli POC.md",
     "00-in/Nicolas Schöffer.md",
-    "conflict-files-obsidian-git.md",
     "02-mat/obs/img/sensor de distancia 3.pdf",
     "02-mat/obs/img/sensor de distancia 2.pdf",
     "02-mat/obs/img/sensor de distancia 2 2.pdf",
     "02-mat/obs/img/sensor de distancia 2 1.pdf",
-    "02-mat/obs/img/sensor de distancia 1.pdf",
-    "02-mat/obs/img/sensor de distancia (1).pdf",
-    "02-mat/obs/img/sensor de distancia (1) 3.pdf",
     "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
-    "00-in/teatro MOC.md",
-    "00-in/topoi MOC.md",
-    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+    "00-moc/topoi MOC.md",
     "04-out/topoi/aroma.md",
     "04-out/topoi/t-topoi.md",
     "04-out/topoi/t-topoi 1.md",
-    "00-in/bib MOC.md",
-    "04-out/bibliografía/Together in Music.md",
-    "00-in/Clemens Wöllner.md",
-    "02-mat/obs/tpl/t-person.md",
-=======
-      "obsidian-spaced-repetition:Revisar Tarjetas": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
-      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo canvas": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
-      "obsidian-book-search-plugin:Create new book note": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-metatable:Metatable": false,
-      "notion-like-tables:Create new loom": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
-    }
-  },
-  "active": "35fa5d671f73824f",
-  "lastOpenFiles": [
-    "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
-    "conflict-files-obsidian-git.md",
-    "04-out/topoi/aroma.md",
-    "04-out/bibliografía/Together in Music.md",
-    "02-mat/obs/tpl/t-person.md",
-    "00-in/Nicolas Schöffer.md",
-    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
-    "00-in/Clemens Wöllner.md",
-    "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
-    "03-cla/c-cym00-presentación.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
-    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
-    "01-proj/23/bassino/TP código.md",
-    "00-moc/eventos MOC.md",
-    "00-moc",
-    "05-ref/meta-aprendizaje.md",
-    "05-ref/a-yuda.md",
-    "05-ref/a-snippets.md",
-    "05-ref/a-plugins.md",
-    "05-ref/a-dataview.md",
-    "05-ref/a-dataview playground.md",
-    "05-ref",
->>>>>>> origin/main
-    "04-out/personas/t-person.md",
-    "04-out/personas/Susanne Kennedy.md",
-    "04-out/personas/Juan Sorrentino.md",
-    "04-out/personas/Hans Haake.md",
-    "04-out/personas/Andrés Aizicovich.md",
-<<<<<<< HEAD
-    "04-out/personas/README.md",
-=======
-    "04-out/obras/whoosh.md",
-    "04-out/eventos",
-    "02-mat/partituras/tonejs",
-    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
-    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
-    "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
-    "02-mat/obs/img/231017-arthouse",
-    "02-mat/obs/img/sensor de distancia (1) 3.pdf",
->>>>>>> origin/main
+    "02-mat/obs/tpl/probando Upstart-1696798852409.jpeg",
+    "02-mat/obs/tpl/probando Upstart-1696798852406.jpeg",
     "cym-metamap.canvas",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751655.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751649.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751637.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751631.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751619.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751613.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751599.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751587.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751581.jpeg",
-    "02-mat/obs/img/image/CAGE - Una representación interactiva de 4’33’’-1697927751570.jpeg",
-    "01-proj/23/bassino/codepen/INGENIERIA INVERSA/probando cambios/Sin título.canvas",
+    "02-mat/obs/img/image/TP código-1698190820140.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820134.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820125.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820112.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820106.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820103.jpeg",
+    "02-mat/obs/img/image/TP código-1698190820089.jpeg",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",
