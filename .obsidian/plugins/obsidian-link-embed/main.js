@@ -1416,15 +1416,10 @@ var ObsidianLinkEmbedPlugin = class extends import_obsidian5.Plugin {
       });
       this.registerMarkdownCodeBlockProcessor("embed", (source, el, ctx) => {
         const info = (0, import_obsidian5.parseYaml)(source.trim());
-        const html = mustache_default.render(HTMLTemplate, {
-          title: info.title,
-          image: info.image,
-          description: info.description,
-          url: info.url
-        });
+        const html = HTMLTemplate.replace(/{{title}}/gm, info.title).replace(/{{{image}}}/gm, info.image).replace(/{{description}}/gm, info.description).replace(/{{{url}}}/gm, info.url);
         let parser = new DOMParser();
         var doc = parser.parseFromString(html, "text/html");
-        el.replaceWith(doc.body);
+        el.replaceWith(doc.body.firstChild);
       });
       this.addSettingTab(new ObsidianLinkEmbedSettingTab(this.app, this));
     });

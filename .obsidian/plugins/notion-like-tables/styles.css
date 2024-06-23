@@ -217,7 +217,6 @@ svg.dataloom-svg--xl {
   align-items: center;
   width: max-content !important;
   height: max-content;
-  padding: 6px !important;
   white-space: nowrap;
   color: var(--text-normal);
   font-size: var(--font-size-normal);
@@ -238,8 +237,14 @@ svg.dataloom-svg--xl {
 .dataloom-button--link:hover {
   box-shadow: var(--input-shadow) !important;
 }
-.dataloom-button--small {
+.dataloom-button--sm {
   padding: 2px !important;
+}
+.dataloom-button--md {
+  padding: 6px !important;
+}
+.dataloom-button--lg {
+  padding: 10px !important;
 }
 .dataloom-button--full-width {
   display: flex;
@@ -532,25 +537,15 @@ svg.dataloom-svg--xl {
   text-align: left;
 }
 
-/* src/react/loom-app/embed-cell/embed/styles.css */
-.dataloom-embed {
-  width: 100%;
-}
-.dataloom-embed iframe {
-  width: 100%;
-  height: 100%;
-}
-.dataloom-embed p {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-}
-
 /* src/react/loom-app/embed-cell/styles.css */
 .dataloom-embed-cell {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.dataloom-embed-cell p {
+  margin: 0;
+  text-align: left;
 }
 
 /* src/react/loom-app/source-file-cell/styles.css */
@@ -589,12 +584,20 @@ svg.dataloom-svg--xl {
   cursor: pointer;
   color: var(--text-normal);
 }
+.dataloom-cell--body__container--no-padding {
+  padding: 0;
+}
 .dataloom-cell--uneditable {
   cursor: default;
 }
-.dataloom-cell--disabled {
-  cursor: default;
+
+/* src/react/loom-app/disabled-cell/styles.css */
+.dataloom-disabled-cell {
+  width: 100%;
+  height: 100%;
   background-color: var(--background-secondary);
+  cursor: default;
+  padding: var(--dataloom-cell-spacing-x) var(--dataloom-cell-spacing-y);
 }
 
 /* src/react/loom-app/table/styles.css */
@@ -826,15 +829,21 @@ svg.dataloom-svg--xl {
   padding: 2px 6px;
 }
 
-/* src/react/loom-app/option-bar/sources-menu/dataloom-source/styles.css */
-.dataloom-source {
-  width: 100%;
-  height: 2.2em;
-}
-
 /* src/react/loom-app/option-bar/sources-menu/base-content/styles.css */
 .dataloom-source-container {
   width: 100%;
+}
+
+/* src/react/loom-app/option-bar/sources-menu/source-item/styles.css */
+.dataloom-source-item {
+  width: 100%;
+  height: 2.2em;
+}
+.dataloom-source-item input {
+  width: 150px;
+}
+.dataloom-source-item select {
+  max-width: 150px;
 }
 
 /* src/react/loom-app/option-bar/styles.css */
@@ -847,6 +856,9 @@ svg.dataloom-svg--xl {
 .dataloom-bottom-bar {
   position: relative;
   height: 60px;
+}
+.dataloom-bottom-bar--mobile {
+  height: 100px;
 }
 .dataloom-bottom-bar > div {
   border-top: 1px solid var(--table-border-color);

@@ -643,12 +643,13 @@ var require_main = __commonJS({
 // src/main.ts
 var main_exports = {};
 __export(main_exports, {
-  default: () => ThePlugin
+  addIcons: () => addIcons,
+  default: () => TextTransporterPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian14 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 
-// src/utils/FileSystem.ts
+// src/utils/fileSystem.ts
 var import_obsidian = require("obsidian");
 function testFolderExclusion(folder, exclusionFolders) {
   for (const eFolder of exclusionFolders)
@@ -717,7 +718,7 @@ var FileSystem = class {
   }
 };
 
-// src/ui/GenericFuzzySuggester.ts
+// src/ui/GenericFuzzySuggester2.ts
 var import_obsidian2 = require("obsidian");
 var GenericFuzzySuggester = class extends import_obsidian2.FuzzySuggestModal {
   constructor(plugin) {
@@ -764,7 +765,7 @@ var GenericFuzzySuggester = class extends import_obsidian2.FuzzySuggestModal {
 // src/features/transporterFunctions.ts
 var import_obsidian6 = require("obsidian");
 
-// src/utils/FileCacheAnalyzer.ts
+// src/utils/fileCacheAnalyzer.ts
 var FileCacheAnalyzer = class {
   constructor(plugin, fileFullPath) {
     this.details = [];
@@ -996,8 +997,9 @@ async function createFileChooser(plugin, excludeFileFromList) {
       if (filePath.search(";") > 0)
         filePath = filePath.substr(0, filePath.search(";"));
       filePath = filePath.replace("*", "");
-      if (filePath === "DNPTODAY" || filePath === "DNPTOMORROW" || await plugin.app.vault.adapter.exists(filePath))
+      if (filePath === "DNPTODAY" || filePath === "DNPTOMORROW" || await plugin.app.vault.adapter.exists(filePath)) {
         fileList.unshift({ display: "Bookmark: " + bookmarks[i], info: bookmarks[i] });
+      }
     }
   }
   const chooser = new GenericFuzzySuggester(plugin);
@@ -1097,7 +1099,16 @@ async function createTagFileListChooser(plugin, returnEndPoint, showTop, callbac
       const fileContentsArray = await convertFileIntoArray(plugin, fieleChosen.info);
       if (showTop)
         fileContentsArray.unshift({ display: "-- Top of file --", info: -1 });
-      await displayFileLineSuggesterFromFileList(plugin, returnEndPoint, showTop, fieleChosen.info, fileContentsArray, 0, evtFile, callback);
+      await displayFileLineSuggesterFromFileList(
+        plugin,
+        returnEndPoint,
+        showTop,
+        fieleChosen.info,
+        fileContentsArray,
+        0,
+        evtFile,
+        callback
+      );
     });
   });
 }
@@ -1122,7 +1133,13 @@ async function createTagBlockListChooser(plugin, returnEndPoint, showTop, callba
     tagBlockChooser.setSuggesterData(tagFileListArray);
     tagBlockChooser.setPlaceholder("Select a block");
     await tagBlockChooser.display(async (tagBlock, evt) => {
-      callback(tagBlock.info.file, await convertFileIntoArray(plugin, tagBlock.info.file), tagBlock.info.position.start.line, tagBlock.info.position.end.line, evt);
+      callback(
+        tagBlock.info.file,
+        await convertFileIntoArray(plugin, tagBlock.info.file),
+        tagBlock.info.position.start.line,
+        tagBlock.info.position.end.line,
+        evt
+      );
     });
   });
 }
@@ -1132,13 +1149,15 @@ async function displayFileLineSuggester(plugin, returnEndPoint, showTop, pullTyp
     const shiftKeyUsed = evtFileSelected.shiftKey;
     let fileContentsStartingLine = 0;
     let targetFileName = fileSelected.info;
+    console.log(targetFileName);
     if (targetFileName === TAG_FILE_SEARCH) {
       await createTagFileListChooser(plugin, returnEndPoint, showTop, callback);
       return;
     } else if (targetFileName === TAG_BLOCK_SEARCH) {
       await createTagBlockListChooser(plugin, returnEndPoint, showTop, callback);
       return;
-    } else if (targetFileName.search(";") > 0) {
+    } else if (targetFileName.includes("DNPTODAY") || targetFileName.includes("DNPTOMORROW") || targetFileName.includes(".md;")) {
+      console.log("xxxx");
       const bkmkInfo = await parseBookmarkForItsElements(plugin, targetFileName, pullTypeRequest);
       if (shiftKeyUsed === false) {
         callback(bkmkInfo.fileName, bkmkInfo.fileBookmarkContentsArray, bkmkInfo.fileLineNumber, bkmkInfo.fileLineNumber, evtFileSelected);
@@ -1152,7 +1171,16 @@ async function displayFileLineSuggester(plugin, returnEndPoint, showTop, pullTyp
     const fileContentsArray = await convertFileIntoArray(plugin, targetFileName);
     if (showTop)
       fileContentsArray.unshift({ display: "-- Top of file --", info: -1 });
-    await displayFileLineSuggesterFromFileList(plugin, returnEndPoint, showTop, targetFileName, fileContentsArray, fileContentsStartingLine, evtFileSelected, callback);
+    await displayFileLineSuggesterFromFileList(
+      plugin,
+      returnEndPoint,
+      showTop,
+      targetFileName,
+      fileContentsArray,
+      fileContentsStartingLine,
+      evtFileSelected,
+      callback
+    );
   });
 }
 async function displayFileLineSuggesterFromFileList(plugin, returnEndPoint, showTop, targetFileName, fileContentsArray, fileContentsStartingLine, evtFileSelected, callback) {
@@ -1181,7 +1209,15 @@ async function displayFileLineSuggesterFromFileList(plugin, returnEndPoint, show
         lastLineChooser.setSuggesterData(endPointArray);
         lastLineChooser.setPlaceholder("Select the last line for the selection");
         await lastLineChooser.display(async (iFileLocationEndPoint, evetLastLine) => {
-          callback(targetFileName, fileContentsArray, startFilePosition, Number(iFileLocationEndPoint.info), evtFileSelected, evtFirstLine, evetLastLine);
+          callback(
+            targetFileName,
+            fileContentsArray,
+            startFilePosition,
+            Number(iFileLocationEndPoint.info),
+            evtFileSelected,
+            evtFirstLine,
+            evetLastLine
+          );
         });
       }
     } else {
@@ -1230,9 +1266,13 @@ async function addBlockRefsToSelection(plugin, copyToClipbard, copyAsAlias = fal
       for (let sectionCounter = 0; sectionCounter < f.details.length; sectionCounter++) {
         const section = f.details[sectionCounter];
         if (selectedLineInEditor >= section.position.start.line && selectedLineInEditor <= section.position.end.line) {
-          if ((section.type === "paragraph" || section.type === "list" || section.type === "blockquote") && !section.blockId) {
+          if ((section.type === "paragraph" || section.type === "list" || section.type === "blockquote" || section.type === "callout") && !section.blockId) {
             const newId = generateBlockId();
-            activeEditor.replaceRange(` ^${newId}`, { line: Number(section.position.end.line), ch: section.position.end.col }, { line: Number(section.position.end.line), ch: section.position.end.col });
+            activeEditor.replaceRange(
+              ` ^${newId}`,
+              { line: Number(section.position.end.line), ch: section.position.end.col },
+              { line: Number(section.position.end.line), ch: section.position.end.col }
+            );
             blockRefs.push("#^" + newId);
             selectedLineInEditor = section.position.end.line;
             break;
@@ -1287,14 +1327,20 @@ async function copyOrPushLineOrSelectionToNewLocationWithFileLineSuggester(plugi
   let selectedText = defaultSelectionText === "" ? activeEditor.getSelection() : defaultSelectionText;
   if (selectedText === "")
     selectedText = activeEditor.getLine(activeEditor.getCursor().line);
-  await displayFileLineSuggester(plugin, false, true, false, async (targetFileName, fileContentsArray, lineNumber, endLineNumber, evtFileSelected, evtFirstLine) => {
-    await copyOrPushLineOrSelectionToNewLocation(plugin, copySelection, selectedText, targetFileName, lineNumber, fileContentsArray);
-    if (evtFileSelected && (evtFileSelected.ctrlKey || evtFileSelected.metaKey) || evtFirstLine && (evtFirstLine.ctrlKey || evtFirstLine.metaKey)) {
-      const linesSelected = selectedText.split("\n").length;
-      const lineCount = linesSelected > 1 ? linesSelected - 1 : 0;
-      openFileInObsidian(plugin, targetFileName, lineNumber + 1, lineCount);
+  await displayFileLineSuggester(
+    plugin,
+    false,
+    true,
+    false,
+    async (targetFileName, fileContentsArray, lineNumber, endLineNumber, evtFileSelected, evtFirstLine) => {
+      await copyOrPushLineOrSelectionToNewLocation(plugin, copySelection, selectedText, targetFileName, lineNumber, fileContentsArray);
+      if (evtFileSelected && (evtFileSelected.ctrlKey || evtFileSelected.metaKey) || evtFirstLine && (evtFirstLine.ctrlKey || evtFirstLine.metaKey)) {
+        const linesSelected = selectedText.split("\n").length;
+        const lineCount = linesSelected > 1 ? linesSelected - 1 : 0;
+        openFileInObsidian(plugin, targetFileName, lineNumber + 1, lineCount);
+      }
     }
-  });
+  );
 }
 async function copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, copySelection, bookmarkText, evt) {
   const bookmarkInfo = await parseBookmarkForItsElements(plugin, bookmarkText, false);
@@ -1308,7 +1354,14 @@ async function copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationA
     let textSelection = activeEditor.getSelection();
     if (textSelection === "")
       textSelection = activeEditor.getLine(currentLine);
-    copyOrPushLineOrSelectionToNewLocation(plugin, copySelection, textSelection, bookmarkInfo.fileName, bookmarkInfo.fileLineNumber, bookmarkInfo.fileBookmarkContentsArray);
+    copyOrPushLineOrSelectionToNewLocation(
+      plugin,
+      copySelection,
+      textSelection,
+      bookmarkInfo.fileName,
+      bookmarkInfo.fileLineNumber,
+      bookmarkInfo.fileBookmarkContentsArray
+    );
     if (evt && (evt.ctrlKey || evt.metaKey)) {
       const linesSelected = textSelection.split("\n").length;
       const lineCount = linesSelected > 1 ? linesSelected - 1 : 0;
@@ -1327,106 +1380,124 @@ async function copyCurrentFileNameAsLinkToNewLocation(plugin, copyToCliboard) {
     copyOrPushLineOrSelectionToNewLocationWithFileLineSuggester(plugin, true, fileLink);
 }
 async function pushBlockReferenceToAnotherFile(plugin) {
-  await displayFileLineSuggester(plugin, false, true, false, async (targetFileName, fileContentsArray, startLine, endLineNumber, evtFileSelected, evtFirstLine) => {
-    if (startLine === -1) {
-      const f = new FileCacheAnalyzer(plugin, targetFileName);
-      if (f.details.length > 0 && f.details[0].type === "yaml")
-        startLine = f.details[0].lineEnd;
-    }
-    const results = await addBlockRefsToSelection(plugin, false);
-    let blockRefs = "";
-    const fileName = getActiveView(plugin).file.path;
-    if (results.length > 0) {
-      for (const ref of results)
-        blockRefs += `![[${fileName}${ref}]]
-`;
-      blockRefs = blockRefs.substring(0, blockRefs.length - 1);
-      fileContentsArray.splice(Number(startLine) + 1, 0, { display: blockRefs, info: "" });
-      let newContents = "";
-      for (const line of fileContentsArray)
-        newContents += line.display + "\n";
-      newContents = newContents.substring(0, newContents.length - 1);
-      plugin.app.vault.adapter.write(targetFileName, newContents);
-      if (evtFileSelected && (evtFileSelected.ctrlKey || evtFileSelected.metaKey) || evtFirstLine && (evtFirstLine.ctrlKey || evtFirstLine.metaKey)) {
-        openFileInObsidian(plugin, targetFileName, startLine + 1);
+  await displayFileLineSuggester(
+    plugin,
+    false,
+    true,
+    false,
+    async (targetFileName, fileContentsArray, startLine, endLineNumber, evtFileSelected, evtFirstLine) => {
+      if (startLine === -1) {
+        const f = new FileCacheAnalyzer(plugin, targetFileName);
+        if (f.details.length > 0 && f.details[0].type === "yaml")
+          startLine = f.details[0].lineEnd;
       }
-    }
-  });
-}
-async function copyOrPulLineOrSelectionFromAnotherLocation(plugin, copySelection) {
-  await displayFileLineSuggester(plugin, true, false, true, async (targetFileName, fileContentsArray, startLine, endLine, evtFileSelected, evtFirstLine, evetLastLine) => {
-    const ctrlKey = evtFileSelected && evtFileSelected.ctrlKey || evtFirstLine && evtFirstLine.ctrlKey || evetLastLine && evetLastLine.ctrlKey;
-    startLine = startLine === -1 ? startLine = 0 : startLine;
-    endLine = endLine === -1 ? endLine = 0 : endLine;
-    let stringToInsertIntoSelection = "";
-    for (const element of fileContentsArray.slice(startLine, endLine + 1))
-      stringToInsertIntoSelection += element.display + "\n";
-    stringToInsertIntoSelection = stringToInsertIntoSelection.substring(0, stringToInsertIntoSelection.length - 1);
-    getActiveView(plugin).editor.replaceSelection(stringToInsertIntoSelection);
-    if (copySelection === false) {
-      fileContentsArray.splice(startLine, endLine + 1 - startLine);
-      let newContents = "";
-      for (const line of fileContentsArray)
-        newContents += line.display + "\n";
-      newContents = newContents.substring(0, newContents.length - 1);
-      await plugin.app.vault.adapter.write(targetFileName, newContents);
-      if (ctrlKey)
-        await openFileInObsidian(plugin, targetFileName, startLine);
-    } else if (ctrlKey)
-      await openFileInObsidian(plugin, targetFileName, startLine, endLine - startLine);
-  });
-}
-async function pullBlockReferenceFromAnotherFile(plugin) {
-  await displayFileLineSuggester(plugin, true, false, true, async (targetFileName, fileContentsArray, startLine, endLine, evtFileSelected, evtFirstLine, evetLastLine) => {
-    startLine = startLine === -1 ? startLine = 0 : startLine;
-    endLine = endLine === -1 ? endLine = 0 : endLine;
-    const f = new FileCacheAnalyzer(plugin, targetFileName);
-    const fileContents = (await plugin.app.vault.adapter.read(targetFileName)).split("\n");
-    let fileChanged = false;
-    const blockRefs = [];
-    for (let lineNumber = startLine; lineNumber <= endLine; lineNumber++) {
-      for (let sectionCounter = 0; sectionCounter < f.details.length; sectionCounter++) {
-        const section = f.details[sectionCounter];
-        if (lineNumber >= section.position.start.line && lineNumber <= section.position.end.line) {
-          if ((section.type === "paragraph" || section.type === "list") && !section.blockId) {
-            const newId = generateBlockId();
-            fileContents.splice(section.position.end.line, 1, fileContents[section.position.end.line] + " ^" + newId);
-            blockRefs.push("#^" + newId);
-            fileChanged = true;
-            lineNumber = section.position.end.line;
-            break;
-          } else if (section.type === "paragraph" || section.type === "list") {
-            blockRefs.push("#^" + section.blockId);
-            lineNumber = section.position.end.line;
-            break;
-          } else if (section.type === "heading") {
-            const heading = cleanupHeaderNameForBlockReference(section.headingText);
-            blockRefs.push("#" + heading);
-            lineNumber = section.position.end.line;
-            break;
-          }
+      const results = await addBlockRefsToSelection(plugin, false);
+      let blockRefs = "";
+      const fileName = getActiveView(plugin).file.path;
+      if (results.length > 0) {
+        for (const ref of results)
+          blockRefs += `![[${fileName}${ref}]]
+`;
+        blockRefs = blockRefs.substring(0, blockRefs.length - 1);
+        fileContentsArray.splice(Number(startLine) + 1, 0, { display: blockRefs, info: "" });
+        let newContents = "";
+        for (const line of fileContentsArray)
+          newContents += line.display + "\n";
+        newContents = newContents.substring(0, newContents.length - 1);
+        plugin.app.vault.adapter.write(targetFileName, newContents);
+        if (evtFileSelected && (evtFileSelected.ctrlKey || evtFileSelected.metaKey) || evtFirstLine && (evtFirstLine.ctrlKey || evtFirstLine.metaKey)) {
+          openFileInObsidian(plugin, targetFileName, startLine + 1);
         }
       }
     }
-    if (fileChanged === true) {
-      let newContents = "";
-      for (const line of fileContents)
-        newContents += line + "\n";
-      newContents = newContents.substring(0, newContents.length - 1);
-      await plugin.app.vault.adapter.write(targetFileName, newContents);
+  );
+}
+async function copyOrPulLineOrSelectionFromAnotherLocation(plugin, copySelection) {
+  await displayFileLineSuggester(
+    plugin,
+    true,
+    false,
+    true,
+    async (targetFileName, fileContentsArray, startLine, endLine, evtFileSelected, evtFirstLine, evetLastLine) => {
+      const ctrlKey = evtFileSelected && evtFileSelected.ctrlKey || evtFirstLine && evtFirstLine.ctrlKey || evetLastLine && evetLastLine.ctrlKey;
+      startLine = startLine === -1 ? startLine = 0 : startLine;
+      endLine = endLine === -1 ? endLine = 0 : endLine;
+      let stringToInsertIntoSelection = "";
+      for (const element of fileContentsArray.slice(startLine, endLine + 1))
+        stringToInsertIntoSelection += element.display + "\n";
+      stringToInsertIntoSelection = stringToInsertIntoSelection.substring(0, stringToInsertIntoSelection.length - 1);
+      getActiveView(plugin).editor.replaceSelection(stringToInsertIntoSelection);
+      if (copySelection === false) {
+        fileContentsArray.splice(startLine, endLine + 1 - startLine);
+        let newContents = "";
+        for (const line of fileContentsArray)
+          newContents += line.display + "\n";
+        newContents = newContents.substring(0, newContents.length - 1);
+        await plugin.app.vault.adapter.write(targetFileName, newContents);
+        if (ctrlKey)
+          await openFileInObsidian(plugin, targetFileName, startLine);
+      } else if (ctrlKey)
+        await openFileInObsidian(plugin, targetFileName, startLine, endLine - startLine);
     }
-    if (blockRefs.length > 0) {
-      let blockRefTextToInsert = "";
-      for (const ref of blockRefs)
-        blockRefTextToInsert += `![[${targetFileName}${ref}]]
+  );
+}
+async function pullBlockReferenceFromAnotherFile(plugin) {
+  await displayFileLineSuggester(
+    plugin,
+    true,
+    false,
+    true,
+    async (targetFileName, fileContentsArray, startLine, endLine, evtFileSelected, evtFirstLine, evetLastLine) => {
+      startLine = startLine === -1 ? startLine = 0 : startLine;
+      endLine = endLine === -1 ? endLine = 0 : endLine;
+      const f = new FileCacheAnalyzer(plugin, targetFileName);
+      const fileContents = (await plugin.app.vault.adapter.read(targetFileName)).split("\n");
+      let fileChanged = false;
+      const blockRefs = [];
+      for (let lineNumber = startLine; lineNumber <= endLine; lineNumber++) {
+        for (let sectionCounter = 0; sectionCounter < f.details.length; sectionCounter++) {
+          const section = f.details[sectionCounter];
+          if (lineNumber >= section.position.start.line && lineNumber <= section.position.end.line) {
+            if ((section.type === "paragraph" || section.type === "list") && !section.blockId) {
+              const newId = generateBlockId();
+              fileContents.splice(section.position.end.line, 1, fileContents[section.position.end.line] + " ^" + newId);
+              blockRefs.push("#^" + newId);
+              fileChanged = true;
+              lineNumber = section.position.end.line;
+              break;
+            } else if (section.type === "paragraph" || section.type === "list") {
+              blockRefs.push("#^" + section.blockId);
+              lineNumber = section.position.end.line;
+              break;
+            } else if (section.type === "heading") {
+              const heading = cleanupHeaderNameForBlockReference(section.headingText);
+              blockRefs.push("#" + heading);
+              lineNumber = section.position.end.line;
+              break;
+            }
+          }
+        }
+      }
+      if (fileChanged === true) {
+        let newContents = "";
+        for (const line of fileContents)
+          newContents += line + "\n";
+        newContents = newContents.substring(0, newContents.length - 1);
+        await plugin.app.vault.adapter.write(targetFileName, newContents);
+      }
+      if (blockRefs.length > 0) {
+        let blockRefTextToInsert = "";
+        for (const ref of blockRefs)
+          blockRefTextToInsert += `![[${targetFileName}${ref}]]
 `;
-      blockRefTextToInsert = blockRefTextToInsert.substring(0, blockRefTextToInsert.length - 1);
-      getActiveView(plugin).editor.replaceSelection(blockRefTextToInsert);
+        blockRefTextToInsert = blockRefTextToInsert.substring(0, blockRefTextToInsert.length - 1);
+        getActiveView(plugin).editor.replaceSelection(blockRefTextToInsert);
+      }
+      if (evtFileSelected.ctrlKey || evtFirstLine.ctrlKey || evetLastLine.ctrlKey) {
+        openFileInObsidian(plugin, targetFileName, startLine, endLine - startLine);
+      }
     }
-    if (evtFileSelected.ctrlKey || evtFirstLine.ctrlKey || evetLastLine.ctrlKey) {
-      openFileInObsidian(plugin, targetFileName, startLine, endLine - startLine);
-    }
-  });
+  );
 }
 function testIfCursorIsOnALink(plugin) {
   const activeView = getActiveView(plugin);
@@ -1437,9 +1508,13 @@ function testIfCursorIsOnALink(plugin) {
     const ch = activeEditor.getCursor().ch;
     let linkInfo = null;
     if (cache.links)
-      linkInfo = cache.links.find((l) => l.position.start.line === currentLine && (ch >= l.position.start.col && ch <= l.position.end.col));
+      linkInfo = cache.links.find(
+        (l) => l.position.start.line === currentLine && ch >= l.position.start.col && ch <= l.position.end.col
+      );
     if (!linkInfo && cache.embeds)
-      linkInfo = cache.embeds.find((l) => l.position.start.line === currentLine && (ch >= l.position.start.col && ch <= l.position.end.col));
+      linkInfo = cache.embeds.find(
+        (l) => l.position.start.line === currentLine && ch >= l.position.start.col && ch <= l.position.end.col
+      );
     return linkInfo ? linkInfo : null;
   } else
     return null;
@@ -1459,8 +1534,12 @@ async function copyBlockReferenceToCurrentCusorLocation(plugin, linkInfo, leaveA
     fileContents = fileContents.split("\n").slice(pos.start.line, pos.end.line + 1).join("\n");
   }
   if (leaveAliasToFile)
-    fileContents += " [[" + linkInfo.link + "|*]]";
-  getActiveView(plugin).editor.replaceRange(fileContents, { line: linkInfo.position.start.line, ch: linkInfo.position.start.col }, { line: linkInfo.position.end.line, ch: linkInfo.position.end.col });
+    fileContents += " [[" + linkInfo.link + "|" + plugin.settings.blockRefAliasIndicator + "]]";
+  getActiveView(plugin).editor.replaceRange(
+    fileContents,
+    { line: linkInfo.position.start.line, ch: linkInfo.position.start.col },
+    { line: linkInfo.position.end.line, ch: linkInfo.position.end.col }
+  );
 }
 
 // src/features/selectionFunctions.ts
@@ -1532,13 +1611,19 @@ function selectCurrentSection(plugin, directionUP = true) {
       if (nearestBlock === null && currentLine === 0 && f.details.length > 0)
         nearestBlock = cache.sections[0];
       if (nearestBlock !== null) {
-        activeEditor.setSelection({ line: nearestBlock.position.start.line, ch: 0 }, { line: nearestBlock.position.end.line, ch: nearestBlock.position.end.col });
+        activeEditor.setSelection(
+          { line: nearestBlock.position.start.line, ch: 0 },
+          { line: nearestBlock.position.end.line, ch: nearestBlock.position.end.col }
+        );
         return;
       }
     }
     const curSels = activeEditor.listSelections();
-    if (lastLineOfBlock && lastLineOfBlock.type === "paragraph" && curSels.length === 1 && (curSels[0].anchor.line !== lastLineOfBlock.position.start.line && curSels[0].head.line !== lastLineOfBlock.position.end.line)) {
-      activeEditor.setSelection({ line: lastLineOfBlock.position.start.line, ch: 0 }, { line: lastLineOfBlock.position.end.line, ch: lastLineOfBlock.position.end.col });
+    if (lastLineOfBlock && lastLineOfBlock.type === "paragraph" && curSels.length === 1 && curSels[0].anchor.line !== lastLineOfBlock.position.start.line && curSels[0].head.line !== lastLineOfBlock.position.end.line) {
+      activeEditor.setSelection(
+        { line: lastLineOfBlock.position.start.line, ch: 0 },
+        { line: lastLineOfBlock.position.end.line, ch: lastLineOfBlock.position.end.col }
+      );
     } else {
       let firstSelectedLine = 0;
       let lastSelectedLine = 0;
@@ -1574,7 +1659,10 @@ function selectCurrentSection(plugin, directionUP = true) {
         activeEditor.setSelection({ line: 0, ch: 0 }, { line: lastSelectedLine, ch: activeEditor.getLine(lastSelectedLine).length });
         activeEditor.scrollIntoView({ from: { line: 0, ch: 0 }, to: { line: firstSelectedLine, ch: 0 } });
       } else if (nextBlock && directionUP === false) {
-        activeEditor.setSelection({ line: firstSelectedLine, ch: 0 }, { line: nextBlock.position.end.line, ch: activeEditor.getLine(nextBlock.position.end.line).length });
+        activeEditor.setSelection(
+          { line: firstSelectedLine, ch: 0 },
+          { line: nextBlock.position.end.line, ch: activeEditor.getLine(nextBlock.position.end.line).length }
+        );
         activeEditor.scrollIntoView({ from: nextBlock.position.start, to: nextBlock.position.start });
       }
     }
@@ -1584,10 +1672,10 @@ function selectCurrentSection(plugin, directionUP = true) {
 // src/ui/PluginCommands.ts
 var import_obsidian11 = require("obsidian");
 
-// src/ui/QuickCapture.ts
+// src/ui/QuickCaptureModal.ts
 var import_obsidian9 = require("obsidian");
 
-// src/ui/SilentFileAndTagSuggesterSuggest.ts
+// src/ui/silentFileAndTagSuggesterSuggest1.ts
 var import_obsidian7 = require("obsidian");
 
 // node_modules/@popperjs/core/lib/enums.js
@@ -3048,7 +3136,7 @@ var createPopper = /* @__PURE__ */ popperGenerator({
   defaultModifiers
 });
 
-// src/ui/SilentFileAndTagSuggesterSuggest.ts
+// src/ui/silentFileAndTagSuggesterSuggest1.ts
 var wrapAround = (value, size) => {
   return (value % size + size) % size;
 };
@@ -3056,16 +3144,8 @@ var Suggest = class {
   constructor(owner, containerEl, scope) {
     this.owner = owner;
     this.containerEl = containerEl;
-    containerEl.on(
-      "click",
-      ".suggestion-item",
-      this.onSuggestionClick.bind(this)
-    );
-    containerEl.on(
-      "mousemove",
-      ".suggestion-item",
-      this.onSuggestionMouseover.bind(this)
-    );
+    containerEl.on("click", ".suggestion-item", this.onSuggestionClick.bind(this));
+    containerEl.on("mousemove", ".suggestion-item", this.onSuggestionMouseover.bind(this));
     scope.register([], "ArrowUp", (event) => {
       if (!event.isComposing) {
         this.setSelectedItem(this.selectedItem - 1, true);
@@ -3137,13 +3217,9 @@ var TextInputSuggest = class {
     this.inputEl.addEventListener("input", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("focus", this.onInputChanged.bind(this));
     this.inputEl.addEventListener("blur", this.close.bind(this));
-    this.suggestEl.on(
-      "mousedown",
-      ".suggestion-container",
-      (event) => {
-        event.preventDefault();
-      }
-    );
+    this.suggestEl.on("mousedown", ".suggestion-container", (event) => {
+      event.preventDefault();
+    });
   }
   onInputChanged() {
     const inputStr = this.inputEl.value;
@@ -3191,10 +3267,10 @@ var TextInputSuggest = class {
   }
 };
 
-// src/ui/SilentFileAndTagSuggester.ts
+// src/ui/SilentFileAndTagSuggester2.ts
 var import_obsidian8 = require("obsidian");
 
-// node_modules/fuse.js/dist/fuse.esm.js
+// node_modules/fuse.js/dist/fuse.mjs
 function isArray(value) {
   return !Array.isArray ? getTag(value) === "[object Array]" : Array.isArray(value);
 }
@@ -3246,7 +3322,6 @@ var KeyStore = class {
     let totalWeight = 0;
     keys.forEach((key) => {
       let obj = createKey(key);
-      totalWeight += obj.weight;
       this._keys.push(obj);
       this._keyMap[obj.id] = obj;
       totalWeight += obj.weight;
@@ -3270,6 +3345,7 @@ function createKey(key) {
   let id = null;
   let src = null;
   let weight = 1;
+  let getFn = null;
   if (isString(key) || isArray(key)) {
     src = key;
     path = createKeyPath(key);
@@ -3288,8 +3364,9 @@ function createKey(key) {
     }
     path = createKeyPath(name);
     id = createKeyId(name);
+    getFn = key.getFn;
   }
-  return { path, id, weight, src };
+  return { path, id, weight, src, getFn };
 }
 function createKeyPath(key) {
   return isArray(key) ? key : key.split(".");
@@ -3377,7 +3454,9 @@ var AdvancedOptions = {
   // When `true`, the calculation for the relevance score (used for sorting) will
   // ignore the field-length norm.
   // More info: https://fusejs.io/concepts/scoring-theory.html#field-length-norm
-  ignoreFieldNorm: false
+  ignoreFieldNorm: false,
+  // The weight to determine how much field length norm effects scoring.
+  fieldNormWeight: 1
 };
 var Config = {
   ...BasicOptions,
@@ -3386,7 +3465,7 @@ var Config = {
   ...AdvancedOptions
 };
 var SPACE = /[^ ]+/g;
-function norm(mantissa = 3) {
+function norm(weight = 1, mantissa = 3) {
   const cache = /* @__PURE__ */ new Map();
   const m = Math.pow(10, mantissa);
   return {
@@ -3395,7 +3474,7 @@ function norm(mantissa = 3) {
       if (cache.has(numTokens)) {
         return cache.get(numTokens);
       }
-      const norm2 = 1 / Math.sqrt(numTokens);
+      const norm2 = 1 / Math.pow(numTokens, 0.5 * weight);
       const n = parseFloat(Math.round(norm2 * m) / m);
       cache.set(numTokens, n);
       return n;
@@ -3406,8 +3485,11 @@ function norm(mantissa = 3) {
   };
 }
 var FuseIndex = class {
-  constructor({ getFn = Config.getFn } = {}) {
-    this.norm = norm(3);
+  constructor({
+    getFn = Config.getFn,
+    fieldNormWeight = Config.fieldNormWeight
+  } = {}) {
+    this.norm = norm(fieldNormWeight, 3);
     this.getFn = getFn;
     this.isCreated = false;
     this.setIndexRecords();
@@ -3477,7 +3559,7 @@ var FuseIndex = class {
   _addObject(doc, docIndex) {
     let record = { i: docIndex, $: {} };
     this.keys.forEach((key, keyIndex) => {
-      let value = this.getFn(doc, key.path);
+      let value = key.getFn ? key.getFn(doc) : this.getFn(doc, key.path);
       if (!isDefined(value)) {
         return;
       }
@@ -3503,10 +3585,11 @@ var FuseIndex = class {
                 value: item
               });
             });
-          }
+          } else
+            ;
         }
         record.$[keyIndex] = subRecords;
-      } else if (!isBlank(value)) {
+      } else if (isString(value) && !isBlank(value)) {
         let subRecord = {
           v: value,
           n: this.norm.get(value)
@@ -3523,21 +3606,21 @@ var FuseIndex = class {
     };
   }
 };
-function createIndex(keys, docs, { getFn = Config.getFn } = {}) {
-  const myIndex = new FuseIndex({ getFn });
+function createIndex(keys, docs, { getFn = Config.getFn, fieldNormWeight = Config.fieldNormWeight } = {}) {
+  const myIndex = new FuseIndex({ getFn, fieldNormWeight });
   myIndex.setKeys(keys.map(createKey));
   myIndex.setSources(docs);
   myIndex.create();
   return myIndex;
 }
-function parseIndex(data, { getFn = Config.getFn } = {}) {
+function parseIndex(data, { getFn = Config.getFn, fieldNormWeight = Config.fieldNormWeight } = {}) {
   const { keys, records } = data;
-  const myIndex = new FuseIndex({ getFn });
+  const myIndex = new FuseIndex({ getFn, fieldNormWeight });
   myIndex.setKeys(keys);
   myIndex.setIndexRecords(records);
   return myIndex;
 }
-function computeScore(pattern, {
+function computeScore$1(pattern, {
   errors = 0,
   currentLocation = 0,
   expectedLocation = 0,
@@ -3598,7 +3681,7 @@ function search(text, pattern, patternAlphabet, {
   const matchMask = computeMatches ? Array(textLen) : [];
   let index;
   while ((index = text.indexOf(pattern, bestLocation)) > -1) {
-    let score = computeScore(pattern, {
+    let score = computeScore$1(pattern, {
       currentLocation: index,
       expectedLocation,
       distance,
@@ -3623,7 +3706,7 @@ function search(text, pattern, patternAlphabet, {
     let binMin = 0;
     let binMid = binMax;
     while (binMin < binMid) {
-      const score2 = computeScore(pattern, {
+      const score2 = computeScore$1(pattern, {
         errors: i,
         currentLocation: expectedLocation + binMid,
         expectedLocation,
@@ -3653,7 +3736,7 @@ function search(text, pattern, patternAlphabet, {
         bitArr[j] |= (lastBitArr[j + 1] | lastBitArr[j]) << 1 | 1 | lastBitArr[j + 1];
       }
       if (bitArr[j] & mask) {
-        finalScore = computeScore(pattern, {
+        finalScore = computeScore$1(pattern, {
           errors: i,
           currentLocation,
           expectedLocation,
@@ -3670,7 +3753,7 @@ function search(text, pattern, patternAlphabet, {
         }
       }
     }
-    const score = computeScore(pattern, {
+    const score = computeScore$1(pattern, {
       errors: i + 1,
       currentLocation: expectedLocation,
       expectedLocation,
@@ -4036,7 +4119,7 @@ var searchers = [
   FuzzyMatch2
 ];
 var searchersLen = searchers.length;
-var SPACE_RE = / +(?=([^\"]*\"[^\"]*\")*[^\"]*$)/;
+var SPACE_RE = / +(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)/;
 var OR_TOKEN = "|";
 function parseQuery(pattern, options = {}) {
   return pattern.split(OR_TOKEN).map((item) => {
@@ -4224,7 +4307,7 @@ function parse(query, options, { auto: auto2 = true } = {}) {
   }
   return next(query);
 }
-function computeScore$1(results, { ignoreFieldNorm = Config.ignoreFieldNorm }) {
+function computeScore(results, { ignoreFieldNorm = Config.ignoreFieldNorm }) {
   results.forEach((result) => {
     let totalScore = 1;
     result.matches.forEach(({ key, norm: norm2, score }) => {
@@ -4302,7 +4385,8 @@ var Fuse = class {
       throw new Error(INCORRECT_INDEX_TYPE);
     }
     this._myIndex = index || createIndex(this.options.keys, this._docs, {
-      getFn: this.options.getFn
+      getFn: this.options.getFn,
+      fieldNormWeight: this.options.fieldNormWeight
     });
   }
   add(doc) {
@@ -4341,7 +4425,7 @@ var Fuse = class {
       ignoreFieldNorm
     } = this.options;
     let results = isString(query) ? isString(this._docs[0]) ? this._searchStringList(query) : this._searchObjectList(query) : this._searchLogical(query);
-    computeScore$1(results, { ignoreFieldNorm });
+    computeScore(results, { ignoreFieldNorm });
     if (shouldSort) {
       results.sort(sortFn);
     }
@@ -4393,33 +4477,17 @@ var Fuse = class {
         }
         return [];
       }
-      switch (node.operator) {
-        case LogicalOperator.AND: {
-          const res = [];
-          for (let i = 0, len = node.children.length; i < len; i += 1) {
-            const child = node.children[i];
-            const result = evaluate(child, item, idx);
-            if (result.length) {
-              res.push(...result);
-            } else {
-              return [];
-            }
-          }
-          return res;
-        }
-        case LogicalOperator.OR: {
-          const res = [];
-          for (let i = 0, len = node.children.length; i < len; i += 1) {
-            const child = node.children[i];
-            const result = evaluate(child, item, idx);
-            if (result.length) {
-              res.push(...result);
-              break;
-            }
-          }
-          return res;
+      const res = [];
+      for (let i = 0, len = node.children.length; i < len; i += 1) {
+        const child = node.children[i];
+        const result = evaluate(child, item, idx);
+        if (result.length) {
+          res.push(...result);
+        } else if (node.operator === LogicalOperator.AND) {
+          return [];
         }
       }
+      return res;
     };
     const records = this._myIndex.records;
     const resultMap = {};
@@ -4500,7 +4568,7 @@ var Fuse = class {
     return matches;
   }
 };
-Fuse.version = "6.4.6";
+Fuse.version = "7.0.0";
 Fuse.createIndex = createIndex;
 Fuse.parseIndex = parseIndex;
 Fuse.config = Config;
@@ -4510,9 +4578,8 @@ Fuse.config = Config;
 {
   register(ExtendedSearch);
 }
-var fuse_esm_default = Fuse;
 
-// src/ui/SilentFileAndTagSuggester.ts
+// src/ui/SilentFileAndTagSuggester2.ts
 var FILE_LINK_REGEX = new RegExp(/\[\[([^\]]*)$/);
 var TAG_REGEX = new RegExp(/#([^ ]*)$/);
 var SilentFileAndTagSuggester = class extends TextInputSuggest {
@@ -4545,7 +4612,7 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
       suggestions = this.files.filter((file) => file.path.toLowerCase().contains(fileNameInput.toLowerCase())).map((file) => file.path);
       suggestions.push(...this.unresolvedLinkNames.filter((name) => name.toLowerCase().contains(fileNameInput.toLowerCase())));
     }
-    const fuse = new fuse_esm_default(suggestions, { findAllMatches: true, threshold: 0.8 });
+    const fuse = new Fuse(suggestions, { findAllMatches: true, threshold: 0.8 });
     return fuse.search(this.lastInput).map((value) => value.item);
   }
   renderSuggestion(item, el) {
@@ -4583,13 +4650,19 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
     return cursorPosition - lastInputLength + item.length + 2;
   }
   getNewInputValueForFileLink(currentInputElValue, selectedItem, cursorPosition, lastInputLength) {
-    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength - 2)}${selectedItem}${currentInputElValue.substr(cursorPosition)}`;
+    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength - 2)}${selectedItem}${currentInputElValue.substr(
+      cursorPosition
+    )}`;
   }
   getNewInputValueForFileName(currentInputElValue, selectedItem, cursorPosition, lastInputLength) {
-    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength)}${selectedItem}]]${currentInputElValue.substr(cursorPosition)}`;
+    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength)}${selectedItem}]]${currentInputElValue.substr(
+      cursorPosition
+    )}`;
   }
   getNewInputValueForTag(currentInputElValue, selectedItem, cursorPosition, lastInputLength) {
-    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength - 1)}${selectedItem}${currentInputElValue.substr(cursorPosition)}`;
+    return `${currentInputElValue.substr(0, cursorPosition - lastInputLength - 1)}${selectedItem}${currentInputElValue.substr(
+      cursorPosition
+    )}`;
   }
   getUnresolvedLinkNames(app2) {
     const unresolvedLinks = app2.metadataCache.unresolvedLinks;
@@ -4603,7 +4676,7 @@ var SilentFileAndTagSuggester = class extends TextInputSuggest {
   }
 };
 
-// src/ui/QuickCapture.ts
+// src/ui/QuickCaptureModal.ts
 var QuickCaptureModal = class extends import_obsidian9.Modal {
   constructor(plugin) {
     super(plugin.app);
@@ -4664,7 +4737,10 @@ async function addBookmarkFromCurrentView(plugin) {
   data.push({ display: "BOTTOM: Bookmark the bottom of the file and mark as a context menu location", info: "BOTTOM*" });
   if (currentLineText.length > 0) {
     data.push({ display: `Location: of selected text "${currentLineText}"`, info: currentLineText });
-    data.push({ display: `Location: of selected text and mark as a context menu location "${currentLineText}"`, info: currentLineText + "*" });
+    data.push({
+      display: `Location: of selected text and mark as a context menu location "${currentLineText}"`,
+      info: currentLineText + "*"
+    });
   }
   locationChooser.setSuggesterData(data);
   locationChooser.display((location) => {
@@ -4727,7 +4803,7 @@ var PluginCommands = class {
     // commands notes
     // shortcut - MUST be unique, used as part of the Command Palette ID
     // isContextMenuItem - this is a context menu item or not
-    // cmItemEnabled - is the context menu item enabled 
+    // cmItemEnabled - is the context menu item enabled
     this.commands = [
       {
         caption: "Quick Capture",
@@ -4839,7 +4915,7 @@ var PluginCommands = class {
         isContextMenuItem: true,
         cmItemEnabled: true,
         icon: "blocks",
-        command: async () => addBlockRefsToSelection(this.plugin, true, true, this.plugin.settings.blockRefAliasIndicator)
+        command: async () => await addBlockRefsToSelection(this.plugin, true, true, this.plugin.settings.blockRefAliasIndicator)
       },
       {
         caption: "Copy line/selection to another file",
@@ -4954,7 +5030,7 @@ var PluginCommands = class {
     ];
     this.plugin = plugin;
     this.plugin.addCommand({
-      id: this.plugin.appID + "-combinedCommands",
+      id: this.plugin.APP_ID + "-combinedCommands",
       name: "All Commands List",
       icon: "TextTransporter",
       callback: async () => {
@@ -4989,10 +5065,24 @@ var PluginCommands = class {
             if (bookmark.substr(0, 1) === "*") {
               const bookmarkText = (bookmark.length >= 40 ? bookmark.substr(0, 40) + "..." : bookmark).replace("*", "");
               menu.addItem((item) => {
-                item.setTitle("Copy to: " + bookmarkText).setIcon("star-list").onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, true, bookmark, e));
+                item.setTitle("Copy to: " + bookmarkText).setIcon("star-list").onClick(
+                  async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(
+                    plugin,
+                    true,
+                    bookmark,
+                    e
+                  )
+                );
               });
               menu.addItem((item) => {
-                item.setTitle("Push to: " + bookmarkText).onClick(async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, false, bookmark, e));
+                item.setTitle("Push to: " + bookmarkText).onClick(
+                  async (e) => await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(
+                    plugin,
+                    false,
+                    bookmark,
+                    e
+                  )
+                );
               });
             }
           }
@@ -5003,14 +5093,14 @@ var PluginCommands = class {
     for (const value of Object.values(this.commands)) {
       if (value.editModeOnly) {
         this.plugin.addCommand({
-          id: this.plugin.appID + "-" + value.shortcut,
+          id: this.plugin.APP_ID + "-" + value.shortcut,
           icon: value.icon,
           name: `${value.caption} (${value.shortcut})`,
           editorCallback: value.command
         });
       } else {
         this.plugin.addCommand({
-          id: this.plugin.appID + "-" + value.shortcut,
+          id: this.plugin.APP_ID + "-" + value.shortcut,
           icon: value.icon,
           name: `${value.caption} (${value.shortcut})`,
           callback: value.command
@@ -5019,7 +5109,7 @@ var PluginCommands = class {
     }
   }
   async reloadPlugin() {
-    new import_obsidian11.Notice("Reloading plugin: " + this.plugin.appName);
+    new import_obsidian11.Notice("Reloading plugin: " + this.plugin.APP_NAME);
     await app.plugins.disablePlugin("obsidian42-text-transporter");
     await app.plugins.enablePlugin("obsidian42-text-transporter");
   }
@@ -5047,17 +5137,21 @@ var PluginCommands = class {
     if (editMode) {
       for (const bookmark of plugin.settings.bookmarks.split("\n")) {
         if (bookmark.substr(0, 1) === "*") {
-          cpCommands.push({ display: `Copy to: ${bookmark}`, info: async (e) => {
-            await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, true, bookmark, e);
-          } });
-          cpCommands.push({ display: `   Push: ${bookmark}`, info: async (e) => {
-            await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, false, bookmark, e);
-          } });
+          cpCommands.push({
+            display: `Copy to: ${bookmark}`,
+            info: async (e) => {
+              await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, true, bookmark, e);
+            }
+          });
+          cpCommands.push({
+            display: `   Push: ${bookmark}`,
+            info: async (e) => {
+              await copyOrPushLineOrSelectionToNewLocationUsingCurrentCursorLocationAndBoomark(plugin, false, bookmark, e);
+            }
+          });
         }
       }
     }
-    if (this.plugin.settings.enableDebugMode)
-      cpCommands.push({ display: "Reload plugin (Debugging)", info: async () => this.reloadPlugin() });
     gfs.setSuggesterData(cpCommands);
     gfs.display(async (i, evt) => i.info(evt));
   }
@@ -5065,12 +5159,6 @@ var PluginCommands = class {
 
 // src/ui/SettingsTab.ts
 var import_obsidian12 = require("obsidian");
-var DEFAULT_SETTINGS = {
-  enableRibbon: true,
-  enableDebugMode: false,
-  blockRefAliasIndicator: "*",
-  bookmarks: ""
-};
 var SettingsTab = class extends import_obsidian12.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
@@ -5079,18 +5167,6 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: this.plugin.appName });
-    new import_obsidian12.Setting(containerEl).setName("Enable Ribbon Support").setDesc("Toggle on and off the plugin button in the ribbon.").addToggle((cb) => {
-      cb.setValue(this.plugin.settings.enableRibbon);
-      cb.onChange(async (value) => {
-        this.plugin.settings.enableRibbon = value;
-        if (this.plugin.settings.enableRibbon === false)
-          this.plugin.ribbonIcon.remove();
-        else
-          this.plugin.configureRibbonCommand();
-        await this.plugin.saveSettings();
-      });
-    });
     new import_obsidian12.Setting(containerEl).setName("Alias Placeholder").setDesc("Placeholder text used for an aliased block reference.").addText(
       (text) => text.setValue(this.plugin.settings.blockRefAliasIndicator).onChange(async (value) => {
         if (value.trim() === "")
@@ -5101,15 +5177,19 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       })
     );
     containerEl.createEl("h2", { text: "Bookmarks" });
-    new import_obsidian12.Setting(containerEl).setName("Bookmarks").setDesc(`Predefined destinations within files that appear at the top of the file selector. 
+    new import_obsidian12.Setting(containerEl).setName("Bookmarks").setDesc(
+      `Predefined destinations within files that appear at the top of the file selector. 
 						Each line represents one bookmark. The line starts with the path to the file (ex: directory1/subdirectory/filename.md) 
 						If just the file path is provided, the file contents will be shown for insertion.
 						If after the file name there is a semicolon followed by either: TOP BOTTOM or text to find in the document as an insertion point. Example:
 
 						directory1/subdirectory/filename1.md;TOP  directory1/subdirectory/filename2.md;BOTTOM  directory1/subdirectory/filename3.md;# Inbox
 						Optionally DNPTODAY or DNPTOMORROW can be used in the place of a file name to default to today's or tomorrows Daily Notes Page.
-						`).addTextArea((textEl) => {
-      textEl.setPlaceholder(" directory1/subdirectory/filename1.md;\n directory1/subdirectory/filename2.md;TOP\n directory1/subdirectory/filename3.md;BOTTOM\n directory1/subdirectory/filename4.md;# Inbox").setValue(this.plugin.settings.bookmarks || "").onChange((value) => {
+						`
+    ).addTextArea((textEl) => {
+      textEl.setPlaceholder(
+        " directory1/subdirectory/filename1.md;\n directory1/subdirectory/filename2.md;TOP\n directory1/subdirectory/filename3.md;BOTTOM\n directory1/subdirectory/filename4.md;# Inbox"
+      ).setValue(this.plugin.settings.bookmarks || "").onChange((value) => {
         this.plugin.settings.bookmarks = value;
         this.plugin.saveData(this.plugin.settings);
       });
@@ -5124,12 +5204,14 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
     const desc = document.createDocumentFragment();
     desc.append(
       desc.createEl("a", {
-        href: "https://github.com/TfTHacker/obsidian42-text-transporter/blob/main/README-Bookmarks.md",
+        href: "https://tfthacker.com/Obsidian+Plugins+by+TfTHacker/Text+Transporter/Bookmarks+in+Text+Transporter",
         text: "Additional documentation  for bookmarks."
       })
     );
     containerEl.createEl("div", { text: "" }).append(desc);
-    containerEl.createEl("h2", { text: "Context Menu Commands: Enable/Disable" });
+    containerEl.createEl("h2", {
+      text: "Context Menu Commands: Enable/Disable"
+    });
     for (const command of this.plugin.commands.commands) {
       new import_obsidian12.Setting(containerEl).setName(command.caption).addToggle((cb) => {
         cb.setValue(command.cmItemEnabled);
@@ -5140,19 +5222,41 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         });
       });
     }
-    containerEl.createEl("h2", { text: "Debugging support" });
-    new import_obsidian12.Setting(containerEl).setName("Debugging support").setDesc("Toggle on and off debugging support for troubleshooting problems. This may require restarting Obsidian. Also a blackhole may open in your neigborhood.").addToggle((cb) => {
-      cb.setValue(this.plugin.settings.enableDebugMode);
-      cb.onChange(async (value) => {
-        this.plugin.settings.enableDebugMode = value;
-        await this.plugin.saveSettings();
-      });
-    });
   }
 };
 
-// src/ui/icons.ts
-var import_obsidian13 = require("obsidian");
+// src/settings.ts
+var DEFAULT_SETTINGS = {
+  blockRefAliasIndicator: "*",
+  bookmarks: ""
+};
+
+// src/main.ts
+var TextTransporterPlugin = class extends import_obsidian13.Plugin {
+  constructor() {
+    super(...arguments);
+    this.APP_NAME = this.manifest.name;
+    this.APP_ID = this.manifest.id;
+  }
+  async onload() {
+    console.log("loading " + this.APP_NAME);
+    this.fs = new FileSystem(this);
+    await this.loadSettings();
+    this.commands = new PluginCommands(this);
+    addIcons();
+    this.ribbonIcon = this.addRibbonIcon("TextTransporter", this.APP_NAME, async () => this.commands.masterControlProgram(this));
+    this.addSettingTab(new SettingsTab(this.app, this));
+  }
+  onunload() {
+    console.log("unloading " + this.APP_NAME);
+  }
+  async loadSettings() {
+    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+  }
+  async saveSettings() {
+    await this.saveData(this.settings);
+  }
+};
 function addIcons() {
   (0, import_obsidian13.addIcon)(
     "TextTransporter",
@@ -5162,34 +5266,3 @@ function addIcons() {
          <path fill="currentColor" stroke="currentColor"  d="M 24.417969 81.132812 C 24.417969 73.96875 30.246094 68.140625 37.414062 68.140625 L 48.285156 68.140625 C 54.71875 68.140625 59.957031 62.902344 59.957031 56.464844 C 59.957031 50.027344 54.71875 44.792969 48.285156 44.792969 L 36.917969 44.792969 L 36.917969 50.652344 L 48.285156 50.652344 C 51.488281 50.652344 54.097656 53.257812 54.097656 56.464844 C 54.097656 59.671875 51.488281 62.28125 48.285156 62.28125 L 37.414062 62.28125 C 27.015625 62.28125 18.558594 70.738281 18.558594 81.132812 C 18.558594 91.53125 27.015625 99.988281 37.414062 99.988281 L 70.113281 99.988281 L 70.113281 94.128906 L 37.414062 94.128906 C 30.246094 94.128906 24.417969 88.300781 24.417969 81.132812 Z M 24.417969 81.132812 "/>`
   );
 }
-
-// src/main.ts
-var ThePlugin = class extends import_obsidian14.Plugin {
-  constructor() {
-    super(...arguments);
-    this.appName = "Obsidian42 - Text Transporter";
-    this.appID = "obsidian42-text-transporter";
-  }
-  async onload() {
-    console.log("loading " + this.appName);
-    this.fs = new FileSystem(this);
-    await this.loadSettings();
-    this.commands = new PluginCommands(this);
-    addIcons();
-    if (this.settings.enableRibbon)
-      this.configureRibbonCommand();
-    this.addSettingTab(new SettingsTab(this.app, this));
-  }
-  onunload() {
-    console.log("unloading " + this.appName);
-  }
-  configureRibbonCommand() {
-    this.ribbonIcon = this.addRibbonIcon("TextTransporter", this.appName, async () => this.commands.masterControlProgram(this));
-  }
-  async loadSettings() {
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
-  }
-  async saveSettings() {
-    await this.saveData(this.settings);
-  }
-};

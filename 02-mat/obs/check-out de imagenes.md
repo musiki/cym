@@ -12,3 +12,7 @@ Imgur Plugin
 		posibles dos modos anónimo y registrad. 
 Paste image rename
 	renombra las imagenes pegadas desde el clipboard  (para imágenes locales)
+
+### propiedades
+en inglés
+

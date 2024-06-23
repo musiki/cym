@@ -32,7 +32,7 @@ __export(main_exports, {
   default: () => ColoredTagsPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian = require("obsidian");
+var import_obsidian2 = require("obsidian");
 
 // node_modules/colorjs.io/dist/color.js
 function multiplyMatrices(A, B) {
@@ -3127,16 +3127,171 @@ var coloredClassApplyerPlugin = import_view.ViewPlugin.fromClass(class {
   }
 });
 
-// main.ts
+// ColoredTagsPluginSettingTab.ts
+var import_obsidian = require("obsidian");
+
+// defaultSettings.ts
 var DEFAULT_SETTINGS = {
-  chroma: 16,
-  lightness: 87,
-  palette: 16,
-  seed: 0,
+  palette: {
+    seed: 0,
+    selected: "adaptive-soft" /* ADAPTIVE_SOFT */,
+    custom: "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  mixColors: true,
+  transition: true,
+  accessibility: {
+    highTextContrast: false
+  },
   knownTags: {},
-  _version: 2
+  _version: 3
 };
-var ColoredTagsPlugin = class extends import_obsidian.Plugin {
+
+// ColoredTagsPluginSettingTab.ts
+var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin);
+    this.showExperimental = false;
+    this.showAccessibility = false;
+    this.plugin = plugin;
+  }
+  renderPalette(paletteEl) {
+    paletteEl.empty();
+    let palette = this.plugin.palettes.light;
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      palette = this.plugin.palettes.dark;
+    }
+    palette.forEach((paletteColor, index) => {
+      const firstElementStyles = "border-radius: var(--radius-m) 0 0 var(--radius-m)";
+      const lastElementStyles = "border-radius: 0 var(--radius-m) var(--radius-m) 0";
+      const styles = [index === 0 && firstElementStyles, "flex: 1", "height: 2em", `background-color: ${paletteColor}`, index === palette.length - 1 && lastElementStyles];
+      paletteEl.createEl("div", { attr: { style: styles.filter(Boolean).join(";") } });
+    });
+  }
+  renderTags(containerEl) {
+    const tagsObject = this.app.metadataCache.getTags();
+    const tagsArray = Object.keys(tagsObject);
+    if (!tagsArray.length) {
+      return;
+    }
+    const tagEl = containerEl.createEl("div", {
+      cls: "tagsExample",
+      attr: { style: `display: flex; gap: 0.5em; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 1em 0 2em;` }
+    });
+    tagsArray.sort((a2, b2) => {
+      return tagsObject[b2] - tagsObject[a2];
+    });
+    const mostPopularTags = tagsArray.splice(0, 2);
+    const mostPopularNestedTags = Object.values(tagsArray.reduce((acc, tag) => {
+      const nestingLevel = tag.split("/").length;
+      if (!acc[nestingLevel]) {
+        acc[nestingLevel] = tag;
+      }
+      return acc;
+    }, {}));
+    [...mostPopularTags, ...mostPopularNestedTags].forEach((tag) => {
+      const link = tagEl.createEl("a", { attr: { href: tag } });
+      link.classList.add("tag");
+      link.innerText = tag;
+    });
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    this.renderTags(containerEl);
+    const paletteEl = containerEl.createEl("div", {
+      cls: "palette",
+      attr: { style: `display: flex; align-items: stretch` }
+    });
+    this.renderPalette(paletteEl);
+    new import_obsidian.Setting(containerEl).setHeading().setName("Palette").setDesc("Select palette").addDropdown(
+      (dropdown) => dropdown.addOptions({
+        ["adaptive-soft" /* ADAPTIVE_SOFT */]: "\u{1F338} Adaptive soft",
+        ["adaptive-bright" /* ADAPTIVE_BRIGHT */]: "\u{1F33A} Adaptive bright",
+        ["custom" /* CUSTOM */]: "Custom"
+      }).setValue(String(this.plugin.settings.palette.selected)).onChange(async (value) => {
+        this.plugin.settings.palette.selected = value;
+        await this.plugin.saveSettings();
+        this.display();
+      })
+    );
+    if (this.plugin.settings.palette.selected === "custom") {
+      const customPaletteField = new import_obsidian.Setting(containerEl).setName("Custom palette").setDesc("").addText((text) => {
+        text.inputEl.style.minWidth = "100%";
+        text.setValue(this.plugin.settings.palette.custom).setPlaceholder("Paste palette");
+        text.onChange(async (value) => {
+          if (/^([A-Fa-f0-9]{6}(-|$))+$/i.test(value)) {
+            this.plugin.settings.palette.custom = value;
+            await this.plugin.saveSettings();
+            this.renderPalette(paletteEl);
+          }
+        });
+      });
+      customPaletteField.descEl.innerHTML = `
+				The format is <code>XXXXXX-XXXXXX-XXXXXX</code> for each RGB color.<br/>
+				You can share the best color palettes or get one <a href="https://github.com/pfrankov/obsidian-colored-tags/discussions/18">from the community</a>.
+			`.trim();
+    }
+    new import_obsidian.Setting(containerEl).setName("Palette shift").setDesc("If the colors of some tags don't fit, you can shift the palette.").addSlider(
+      (slider) => slider.setLimits(0, this.plugin.palettes.light.length - 1, 1).setValue(this.plugin.settings.palette.seed).onChange(async (value) => {
+        slider.showTooltip();
+        this.plugin.settings.palette.seed = value;
+        await this.plugin.saveSettings();
+        this.renderPalette(paletteEl);
+      })
+    );
+    new import_obsidian.Setting(containerEl).setHeading().setName("\u{1F9BE} Accessibility").setDesc("Show accessibility options").addToggle(
+      (toggle) => toggle.setValue(this.showAccessibility).onChange(async (value) => {
+        this.showAccessibility = value;
+        this.display();
+      })
+    );
+    if (this.showAccessibility) {
+      new import_obsidian.Setting(containerEl).setName("High text contrast").setDesc("Use only white and black colors for texts").addToggle(
+        (toggle) => toggle.setValue(this.plugin.settings.accessibility.highTextContrast).onChange(async (value) => {
+          this.plugin.settings.accessibility.highTextContrast = value;
+          await this.plugin.saveSettings();
+          this.display();
+        })
+      );
+    }
+    new import_obsidian.Setting(containerEl).setHeading().setName("\u{1F9EA} Experimental").setDesc("Dangerous actions or insanely unstable options that could be changed or removed in any time").addToggle(
+      (toggle) => toggle.setValue(this.showExperimental).onChange(async (value) => {
+        this.showExperimental = value;
+        this.display();
+      })
+    );
+    if (this.showExperimental) {
+      new import_obsidian.Setting(containerEl).setName("Mix colors").setDesc("It helps to make text readable").addToggle(
+        (toggle) => toggle.setValue(this.plugin.settings.mixColors).onChange(async (value) => {
+          this.plugin.settings.mixColors = value;
+          await this.plugin.saveSettings();
+          this.display();
+        })
+      );
+      new import_obsidian.Setting(containerEl).setName("Gradient transition").addToggle(
+        (toggle) => toggle.setValue(this.plugin.settings.transition).onChange(async (value) => {
+          this.plugin.settings.transition = value;
+          await this.plugin.saveSettings();
+          this.display();
+        })
+      );
+      new import_obsidian.Setting(containerEl).setName("Reset config").setDesc("\u{1F6A8} All colors of all tags will be recalculated as if it was the first launch of the plugin. Requires restart of Obsidian.").addButton(
+        (button) => button.setButtonText("Reset").setClass("mod-warning").onClick(async () => {
+          new import_obsidian.Notice(`\u2705 Reset is done
+Please restart Obsidian`, 1e4);
+          button.setDisabled(true);
+          button.buttonEl.setAttribute("disabled", "true");
+          button.buttonEl.classList.remove("mod-warning");
+          this.plugin.settings = Object.assign({}, DEFAULT_SETTINGS);
+          await this.plugin.saveData(this.plugin.settings);
+        })
+      );
+    }
+  }
+};
+
+// main.ts
+var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
     this.renderedTagsSet = /* @__PURE__ */ new Set();
@@ -3152,13 +3307,13 @@ var ColoredTagsPlugin = class extends import_obsidian.Plugin {
       await this.saveKnownTags();
       this.reload();
       this.registerEvent(
-        this.app.workspace.on("editor-change", (0, import_obsidian.debounce)(async () => {
+        this.app.workspace.on("editor-change", (0, import_obsidian2.debounce)(async () => {
           await this.saveKnownTags();
           this.update();
         }, 3e3, true))
       );
       this.registerEvent(
-        this.app.workspace.on("active-leaf-change", (0, import_obsidian.debounce)(async () => {
+        this.app.workspace.on("active-leaf-change", (0, import_obsidian2.debounce)(async () => {
           await this.saveKnownTags();
           this.update();
         }, 300, true))
@@ -3223,32 +3378,76 @@ var ColoredTagsPlugin = class extends import_obsidian.Plugin {
     await this.saveData(this.settings);
     this.reload();
   }
-  getColors(input, palette) {
+  getColors(input, palette, isMixing, isTransition, highTextContrast) {
     const chunks = input.split("/");
     let combinedTag = "";
-    const background = chunks.reduce((acc, chunk, i) => {
+    const gradientStops = [];
+    let backgroundColor;
+    let lastColor = "";
+    chunks.forEach((chunk) => {
       const key = [combinedTag, chunk].filter(Boolean).join("/");
       const order = this.tagsMap.get(key) || 1;
-      const colorFromPalette = palette[(order - 1) % palette.length];
-      if (acc) {
-        return acc.mix(
-          colorFromPalette,
-          0.4,
-          { space: "lch" }
-        );
+      const filteredPalette = palette.filter((colorString) => colorString !== lastColor);
+      const colorFromPalette = filteredPalette[(order - 1) % filteredPalette.length];
+      lastColor = colorFromPalette;
+      let newColor;
+      if (backgroundColor) {
+        if (isMixing) {
+          const mixingLevel = isTransition ? 0.5 : 0.4;
+          newColor = backgroundColor.mix(
+            colorFromPalette,
+            mixingLevel,
+            { space: "lch" }
+          );
+          if (newColor.deltaE2000(backgroundColor) < 10) {
+            newColor = backgroundColor.mix(
+              colorFromPalette,
+              mixingLevel + 0.1,
+              { space: "lch" }
+            );
+          }
+        } else {
+          newColor = new Color(colorFromPalette).to("lch");
+        }
       }
-      combinedTag = key;
-      return new Color(colorFromPalette).to("lch");
-    }, null).toString({ format: "lch" });
-    const color = darkenColorForContrast(background);
-    return { background, color };
+      if (!backgroundColor) {
+        backgroundColor = new Color(colorFromPalette).to("lch");
+        combinedTag = key;
+        newColor = backgroundColor;
+      }
+      gradientStops.push({
+        color: newColor.toString({ format: "lch" }),
+        chunk
+      });
+    });
+    const background = backgroundColor.toString({ format: "lch" });
+    const defaultGap = isTransition ? 50 : 0;
+    const gap = defaultGap / gradientStops.length * 2;
+    const sumOfGaps = gap * (gradientStops.length - 1);
+    const elementSize = (100 - sumOfGaps) / gradientStops.length;
+    const linearGradient = gradientStops.map((item, index) => {
+      const start = index * (elementSize + gap);
+      const end = start + elementSize;
+      return `${item.color} ${start}% max(2em, ${end}%)`;
+    });
+    let color;
+    if (highTextContrast) {
+      const whiteColor = new Color("white");
+      const blackColor = new Color("black");
+      const onWhite = Math.abs(backgroundColor.contrast(whiteColor, "APCA"));
+      const onBlack = Math.abs(backgroundColor.contrast(blackColor, "APCA"));
+      color = onWhite > onBlack ? whiteColor : blackColor;
+    } else {
+      color = darkenColorForContrast(backgroundColor);
+    }
+    return { background, color, linearGradient };
   }
   colorizeTag(tagName) {
     tagName = tagName.replace(/#/g, "");
     const tagHref = "#" + tagName.replace(/\//g, "\\/");
     const tagFlat = tagName.replace(/[^0-9a-z-]/ig, "");
-    const { background: backgroundLight, color: colorLight } = this.getColors(tagName, this.palettes.light);
-    const { background: backgroundDark, color: colorDark } = this.getColors(tagName, this.palettes.dark);
+    const { background: backgroundLight, color: colorLight, linearGradient: linearGradientLight } = this.getColors(tagName, this.palettes.light, this.settings.mixColors, this.settings.transition, this.settings.accessibility.highTextContrast);
+    const { background: backgroundDark, color: colorDark, linearGradient: linearGradientDark } = this.getColors(tagName, this.palettes.dark, this.settings.mixColors, this.settings.transition, this.settings.accessibility.highTextContrast);
     const selectors = [
       `a.tag[href="${tagHref}"]`,
       `.cm-s-obsidian .cm-line span.cm-hashtag.colored-tag-${tagName.toLowerCase().replace(/\//g, "\\/")}`
@@ -3259,65 +3458,61 @@ var ColoredTagsPlugin = class extends import_obsidian.Plugin {
     }
     const lightThemeSelectors = selectors.map((selector) => "body " + selector);
     const darkThemeSelectors = selectors.map((selector) => "body.theme-dark " + selector);
+    const linearGradientRotation = "108deg";
     appendCSS(`
 			${lightThemeSelectors.join(", ")} {
 				background-color: ${backgroundLight};
 				color: ${colorLight};
+				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientLight.join(", ")});
 			}
 			${darkThemeSelectors.join(", ")} {
 				background-color: ${backgroundDark};
 				color: ${colorDark};
+				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientDark.join(", ")});
 			}
 		`);
   }
-  findPaletteOffset(paletteConfig) {
-    function scoreOffset(value) {
-      const testingPalette = generateColorPalette({
-        ...paletteConfig,
-        constantOffset: value
-      });
-      let prevColor = null;
-      return testingPalette.reduce((acc, col) => {
-        let score = 0;
-        if (prevColor) {
-          score = acc + new Color(col).contrast(prevColor, "weber");
-        }
-        prevColor = col;
-        return score;
-      }, 0);
-    }
-    let offset = 0;
-    let maxScore = 0;
-    for (let i = 0; i < 180; i++) {
-      const res = scoreOffset(i);
-      if (res >= maxScore) {
-        maxScore = res;
-        offset = i;
+  generatePalettes() {
+    if (this.settings.palette.selected === "custom" /* CUSTOM */) {
+      const paletteString = this.settings.palette.custom;
+      const palette = paletteString.split("-").filter(Boolean).map((str) => `#${str}`);
+      if (palette) {
+        this.palettes = {
+          light: processColorPalette({
+            isDarkTheme: false,
+            palette,
+            seed: this.settings.palette.seed
+          }),
+          dark: processColorPalette({
+            isDarkTheme: true,
+            palette,
+            seed: this.settings.palette.seed
+          })
+        };
+        return;
       }
     }
-    return offset;
-  }
-  generatePalettes() {
+    let baseChroma = 16;
+    let baseLightness = 87;
+    let offset = 35;
+    if (this.settings.palette.selected === "adaptive-bright" /* ADAPTIVE_BRIGHT */) {
+      baseChroma = 85;
+      baseLightness = 75;
+    }
     const commonPaletteConfig = {
-      paletteSize: this.settings.palette,
-      baseChroma: this.settings.chroma,
-      baseLightness: this.settings.lightness,
-      seed: this.settings.seed,
-      isShuffling: true
+      paletteSize: 8,
+      seed: this.settings.palette.seed,
+      isShuffling: true,
+      baseChroma,
+      baseLightness
     };
-    const offset = this.findPaletteOffset({
-      ...commonPaletteConfig,
-      isDarkTheme: false,
-      seed: 0,
-      isShuffling: false
-    });
     this.palettes = {
-      light: generateColorPalette({
+      light: generateAdaptiveColorPalette({
         isDarkTheme: false,
         ...commonPaletteConfig,
         constantOffset: offset
       }),
-      dark: generateColorPalette({
+      dark: generateAdaptiveColorPalette({
         isDarkTheme: true,
         ...commonPaletteConfig,
         constantOffset: offset
@@ -3331,6 +3526,21 @@ var ColoredTagsPlugin = class extends import_obsidian.Plugin {
       needToSave = true;
       loadedData.palette = 16;
       loadedData._version = 2;
+    }
+    if (loadedData && loadedData._version < 3) {
+      needToSave = true;
+      delete loadedData.palette;
+      loadedData.palette = {
+        ...DEFAULT_SETTINGS.palette,
+        seed: loadedData.seed
+      };
+      if (loadedData.chroma > 16 || loadedData.lightness > 87) {
+        loadedData.palette.selected = "adaptive-bright" /* ADAPTIVE_BRIGHT */;
+      }
+      delete loadedData.chroma;
+      delete loadedData.lightness;
+      delete loadedData.seed;
+      loadedData._version = 3;
     }
     this.settings = Object.assign({}, DEFAULT_SETTINGS, loadedData);
     if (needToSave) {
@@ -3353,13 +3563,19 @@ function darkenColorForContrast(baseColor) {
   const colorDark = new Color(baseColor).to("lch");
   colorLight.c += 3;
   colorDark.c += 20;
+  if (colorLight.c > 100) {
+    colorLight.c = 100;
+  }
+  if (colorDark.c > 100) {
+    colorDark.c = 100;
+  }
   let result = "#fff";
   for (let i = 0; i < 100; i++) {
-    if (colorLight.contrastAPCA(baseColor) >= 60 && colorLight.contrastWCAG21(baseColor) >= CONTRAST) {
+    if (baseColor.contrastAPCA(colorLight) <= -60 && colorLight.contrastWCAG21(baseColor) >= CONTRAST) {
       result = colorLight.toString();
       break;
     }
-    if (colorDark.contrastAPCA(baseColor) <= -60 && colorDark.contrastWCAG21(baseColor) >= CONTRAST) {
+    if (baseColor.contrastAPCA(colorDark) >= 60 && colorDark.contrastWCAG21(baseColor) >= CONTRAST) {
       result = colorDark.toString();
       break;
     }
@@ -3369,7 +3585,7 @@ function darkenColorForContrast(baseColor) {
   darkenMemoization.set(memoizationKey, result);
   return result;
 }
-function generateColorPalette({ isDarkTheme, paletteSize, baseChroma, baseLightness, constantOffset, isShuffling, seed }) {
+function generateAdaptiveColorPalette({ isDarkTheme, paletteSize, baseChroma, baseLightness, constantOffset, isShuffling, seed }) {
   const hueIncrement = 360 / paletteSize;
   const availableColors = [];
   for (let i = 0; i < paletteSize; i++) {
@@ -3377,8 +3593,8 @@ function generateColorPalette({ isDarkTheme, paletteSize, baseChroma, baseLightn
     let chroma = baseChroma;
     let lightness = baseLightness;
     if (isDarkTheme) {
-      chroma = Math.round(baseChroma * 1.8);
-      lightness = Math.round(baseLightness / 2.5);
+      chroma = Math.min(Math.round(baseChroma * 1.8), 100);
+      lightness = Math.min(Math.round(baseLightness / 2.5), 100);
     }
     const lchColor = new Color("lch", [lightness, chroma, hue % 360]).toString();
     availableColors.push(lchColor);
@@ -3394,6 +3610,16 @@ function generateColorPalette({ isDarkTheme, paletteSize, baseChroma, baseLightn
     availableColors.splice(next, 1);
     next = Math.round(next + availableColors.length / 3) % availableColors.length;
   }
+  const cut = result.splice(-seed, seed);
+  result.splice(0, 0, ...cut);
+  return result;
+}
+function processColorPalette({ isDarkTheme, palette, seed }) {
+  const availableColors = [];
+  for (const item of palette) {
+    availableColors.push(new Color(item).to("lch").toString());
+  }
+  const result = availableColors;
   const cut = result.splice(-seed, seed);
   result.splice(0, 0, ...cut);
   return result;
@@ -3421,69 +3647,3 @@ function removeCSS() {
     el.remove();
   });
 }
-var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
-    this.plugin = plugin;
-  }
-  renderPalette(paletteEl) {
-    paletteEl.empty();
-    let palette = this.plugin.palettes.light;
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      palette = this.plugin.palettes.dark;
-    }
-    palette.forEach((paletteColor) => {
-      paletteEl.createEl("div", { attr: { style: `flex: 1; height: 20px; background-color: ${paletteColor}` } });
-    });
-  }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    new import_obsidian.Setting(containerEl).setName("Palette size").setDesc("How many different colors are available.").addSlider(
-      (slider) => slider.setLimits(8, 32, 8).setValue(this.plugin.settings.palette).onChange(async (value) => {
-        slider.showTooltip();
-        this.plugin.settings.palette = value;
-        await this.plugin.saveSettings();
-        this.renderPalette(paletteEl);
-      })
-    );
-    const paletteEl = containerEl.createEl("div", {
-      cls: "palette",
-      attr: { style: `display: flex; align-items: stretch` }
-    });
-    this.renderPalette(paletteEl);
-    new import_obsidian.Setting(containerEl).setName("Palette shift").setDesc("If the colors of some tags don't fit, you can shift the palette.").addSlider(
-      (slider) => slider.setLimits(0, 10, 1).setValue(this.plugin.settings.seed).onChange(async (value) => {
-        slider.showTooltip();
-        this.plugin.settings.seed = value;
-        await this.plugin.saveSettings();
-        this.renderPalette(paletteEl);
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("Saturation").addDropdown(
-      (dropdown) => dropdown.addOption(String(DEFAULT_SETTINGS.chroma), "Default").addOptions({
-        "5": "Faded",
-        "32": "Moderate",
-        "64": "Vivid",
-        "128": "Excessive"
-      }).setValue(String(this.plugin.settings.chroma)).onChange(async (value) => {
-        this.plugin.settings.chroma = Number(value);
-        await this.plugin.saveSettings();
-        this.renderPalette(paletteEl);
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("Lightness").addDropdown(
-      (dropdown) => dropdown.addOption(String(DEFAULT_SETTINGS.lightness), "Default").addOptions({
-        "0": "Dark",
-        "32": "Medium Dark",
-        "64": "Medium",
-        "90": "Light",
-        "100": "Bleach"
-      }).setValue(String(this.plugin.settings.lightness)).onChange(async (value) => {
-        this.plugin.settings.lightness = Number(value);
-        await this.plugin.saveSettings();
-        this.renderPalette(paletteEl);
-      })
-    );
-  }
-};

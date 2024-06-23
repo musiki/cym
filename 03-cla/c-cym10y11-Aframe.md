@@ -6,9 +6,9 @@ num:  10 - 11
 year: 2023
 ---
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 10 - 11
-
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
 # A-frame
 
 Es un framework en javascript para crear experiencias de realidad virtual. Utiliza la arquitectura ECS (Entity Component System) donde cada objeto es una entidad.

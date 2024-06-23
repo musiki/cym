@@ -4,31 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f319604a69c347e1",
+        "id": "825fa4f9af293c03",
         "type": "tabs",
         "children": [
           {
-            "id": "88530fd3c41f2a07",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "cym-metamap.canvas",
-                "viewState": {
-                  "x": 842.7763503656669,
-                  "y": -297.73398239323643,
-                  "zoom": 0.007071881672881598
-                }
-              }
-            }
-          },
-          {
-            "id": "8852ed998a8eeb99",
+            "id": "2b37d2d60daeb58c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -36,32 +21,20 @@
             }
           },
           {
-            "id": "35c46ce1aad3821f",
+            "id": "627990a30017f1b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/zaracho POC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "507fc085200b60bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-moc/teatro MOC.md",
-                "mode": "preview",
+                "file": "00-in/Nicolas Schoffer.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5,
-    "collapsed": true
+    "width": 413.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -129,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cym-metamap.canvas"
+                "file": "00-in/Nicolas Schoffer.md"
               }
             }
           },
@@ -147,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cym-metamap.canvas",
+                "file": "00-in/Nicolas Schoffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,14 +128,6 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "a6f58b88c2ffd708",
-            "type": "leaf",
-            "state": {
-              "type": "review-notes",
-              "state": {}
             }
           },
           {
@@ -187,7 +151,7 @@
             }
           },
           {
-            "id": "1b8014d83199ee25",
+            "id": "769a14740826ee17",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -195,7 +159,7 @@
             }
           },
           {
-            "id": "04b7e98c99842c3f",
+            "id": "7a86e7451c9a0945",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -203,7 +167,7 @@
             }
           },
           {
-            "id": "388c858d0bb15da2",
+            "id": "b1c0d6a6ff69022f",
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
@@ -211,7 +175,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       },
       {
         "id": "b33cb9828f682814",
@@ -248,87 +212,90 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5,
-    "collapsed": true
+    "width": 354.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-review-notes-plugin:View Recent Notes": false,
-      "translate:Open translation view": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-metatable:Metatable": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "wikipedia-search:Open Article": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-read-it-later:ReadItLater: Save clipboard": false,
-      "obsidian42-text-transporter:Obsidian42 - Text Transporter": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "obsidian42-brat:BRAT": false,
+      "notion-like-tables:Create loom": false,
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:Create new board": false,
       "digitalgarden:Digital Garden Publication Center": false,
+      "translate:Open translation view": false,
+      "callout-manager:Insert Callout": false,
+      "wikipedia-search:Open Article": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "notion-like-tables:Create loom": false
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "88530fd3c41f2a07",
+  "active": "627990a30017f1b0",
   "lastOpenFiles": [
-    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
-    "01-proj/15/nievas/Drummer.md",
-    "01-proj/23/Zaracho/zaracho POC.md",
-    "00-moc/teatro MOC.md",
-    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
-    "01-proj/23/bassino/TP código.md",
-    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "image/23112422.excalidraw.md",
-    "02-mat/obs/img/Pasted Image 20231124224904_052.png",
-    "01-proj/23/bassino/proyectual bassino/FITON-ART.md",
-    "01-proj/23/bassino/bassino POC.md",
-    "image",
-    "01-proj/23/bassino/Música y arte visual.md",
-    "01-proj/23/bassino/Multi-efecto.md",
-    "01-proj/23/bassino/Clorolaser.md",
-    "02-mat/obs/check-out de imagenes.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/23/bassino/proyectual bassino/CLOROLASER.md",
+    "force",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "cym-metamap.canvas",
+    "00-moc/cym MOC.md",
+    "02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym12-Aframe2.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-visual.md",
+    "03-cla/c-cym09-networking.md",
+    "03-cla/c-cym09-hydra+tone.js.md",
+    "03-cla/c-cym09-flex-grid.md",
+    "03-cla/c-cym08-hydra+p5.js.md",
+    "03-cla/c-cym08-github pages+hydra.md",
+    "03-cla/c-cym07-creative computing.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym06c-tonejs.md",
+    "03-cla/c-cym06b-relaciones sonolumínicas.md",
+    "03-cla/c-cym06-principios generativos.md",
+    "03-cla/c-cym05.06-integración.md",
+    "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym03-mapas.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "image/23112422.excalidraw.md",
+    "image/untref-logo-w.svg",
+    "image/untref-logo-w.png",
+    "02-mat/obs/img/probando Upstart-1696798852409.jpeg",
+    "02-mat/obs/img/probando Upstart-1696798852406.jpeg",
+    "smart-chats",
+    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
+    "02-mat/obs/img/Pasted Image 20231124224904_052.png",
+    "image",
     "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
     "02-mat/obs/img/sensor de distancia (1) 1.pdf",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
-    "00-moc/códigos MOC.md",
-    "01-proj/23/Petroccelli/Cajita Musical.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
-    "01-proj/23/Petroccelli/petroccelli POC.md",
-    "00-in/Nicolas Schöffer.md",
     "02-mat/obs/img/sensor de distancia 3.pdf",
-    "02-mat/obs/img/sensor de distancia 2.pdf",
-    "02-mat/obs/img/sensor de distancia 2 2.pdf",
-    "02-mat/obs/img/sensor de distancia 2 1.pdf",
-    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
-    "00-moc/topoi MOC.md",
-    "04-out/topoi/aroma.md",
-    "04-out/topoi/t-topoi.md",
-    "04-out/topoi/t-topoi 1.md",
-    "02-mat/obs/tpl/probando Upstart-1696798852409.jpeg",
-    "02-mat/obs/tpl/probando Upstart-1696798852406.jpeg",
-    "cym-metamap.canvas",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
     "02-mat/obs/img/image/TP código-1698190820134.jpeg",
     "02-mat/obs/img/image/TP código-1698190820125.jpeg",
     "02-mat/obs/img/image/TP código-1698190820112.jpeg",
     "02-mat/obs/img/image/TP código-1698190820106.jpeg",
-    "02-mat/obs/img/image/TP código-1698190820103.jpeg",
-    "02-mat/obs/img/image/TP código-1698190820089.jpeg",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Untitled.canvas",

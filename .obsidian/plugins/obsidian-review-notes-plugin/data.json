@@ -2249,7 +2249,7 @@
       "filename": "topoi MOC"
     },
     {
-      "path": "conflict-files-obsidian-git.md",
+      "path": "02-mat/obs/tpl/conflict-files-obsidian-git.md",
       "filename": "conflict-files-obsidian-git"
     },
     {
@@ -2397,11 +2397,11 @@
       "filename": "probando Upstart-1696798852403"
     },
     {
-      "path": "02-mat/obs/tpl/probando Upstart-1696798852406.jpeg",
+      "path": "02-mat/obs/img/probando Upstart-1696798852406.jpeg",
       "filename": "probando Upstart-1696798852406"
     },
     {
-      "path": "02-mat/obs/tpl/probando Upstart-1696798852409.jpeg",
+      "path": "02-mat/obs/img/probando Upstart-1696798852409.jpeg",
       "filename": "probando Upstart-1696798852409"
     },
     {
@@ -3321,8 +3321,8 @@
       "filename": "t-person"
     },
     {
-      "path": "00-in/Nicolas Schöffer.md",
-      "filename": "Nicolas Schöffer"
+      "path": "00-in/Nicolas Schoffer.md",
+      "filename": "Nicolas Schoffer"
     },
     {
       "path": "00-in/Clemens Wöllner.md",
@@ -3399,6 +3399,54 @@
     {
       "path": "02-mat/obs/img/Pasted Image 20231124224904_052.png",
       "filename": "Pasted Image 20231124224904_052"
+    },
+    {
+      "path": "01-proj/23/bassino/proyectual bassino/FITOn.md",
+      "filename": "FITOn"
+    },
+    {
+      "path": "00-in/test press.md",
+      "filename": "test press"
+    },
+    {
+      "path": "02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md",
+      "filename": "Hace falta salir del software exclusivo de la música europea"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-templater.md",
+      "filename": "t-templater"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-entrevistas.md",
+      "filename": "t-entrevistas"
+    },
+    {
+      "path": "04-out/bibliografía/El Azar y la Necesidad2.md",
+      "filename": "El Azar y la Necesidad2"
+    },
+    {
+      "path": "conflict-files-obsidian-git.md",
+      "filename": "conflict-files-obsidian-git"
+    },
+    {
+      "path": "image/untref-logo-w.png",
+      "filename": "untref-logo-w"
+    },
+    {
+      "path": "image/untref-logo-w.svg",
+      "filename": "untref-logo-w"
+    },
+    {
+      "path": "03-cla/c-cym09-hydra+tone.js.md",
+      "filename": "c-cym09-hydra+tone.js"
+    },
+    {
+      "path": "03-cla/c-cym10y11-Aframe.md",
+      "filename": "c-cym10y11-Aframe"
+    },
+    {
+      "path": "03-cla/c-cym12-Aframe2.md",
+      "filename": "c-cym12-Aframe2"
     }
   ]
 }

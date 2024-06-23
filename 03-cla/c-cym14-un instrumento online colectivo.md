@@ -6,13 +6,20 @@ num:  14
 year: 2023
 ---
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 14
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
+# un instrumento online colectivo
 
-
+---
 
 # introducción 
 
+
+---
+
+## música en red
+note: 
 - Desde hace unas décadas, la música en red puede considerarse un conjunto de acciones musicales innovadoras facilitadas por la tecnología. 
 - Una performance musical en red se produce cuando un grupo de músicos, situados en diferentes lugares físicos, interactúan a través de una red para actuar como si estuvieran situados en la misma sala (Lazzaro J & Wawzynel J ,2001) .
 
@@ -22,32 +29,40 @@ UNTREF | CYM23 | 14
 	- En una interrelación muy estrecha, las limitaciones tecnológicas se convierten en recursos estéticos. Por ejemplo, el abanico de tiempos que establecen las redes LAN o WAN, desde lo estrechamente sincronizado hasta lo vagamente sincronizado, puede compararse con las implicaciones armónicas y de articulación entre un arpegio y un acorde.  
 	- Esto es inherente a la evolución de los lenguajes de programación de flujos dedicados a la música. En el caso de MaxMSP, donde el control MIDI (1987), una información en el rango RIA (Realistic Interaction Approach) precede al MSP (Max Signal Processing, 1990-1997), normalmente una señal en el rango LAA (Latency Accepting Approach). En otras palabras, la latencia se convierte en un parámetro musical.  
 
-
-> [!INFO]  > Probá esto. 
-  abrí el terminal  escriba traceroute 192.205.33.93 o cualquier dirección web (sin http :// o https://)   traceroute es un comando que permite trazar los saltos entre tu ordenador y un destino final.   Cada línea muestra el número de salto, tres medidas para el tiempo de ida y vuelta (RTT), el nombre del sistema y la dirección IP alcanzada en ese salto.  
-  
+---
+> [!tip] Probá esto. 
+> 	1.abrí el terminal  escriba traceroute 192.205.33.93 o cualquier dirección web (sin http :// o https://)
+> 	2.traceroute es un comando que permite trazar los saltos entre tu ordenador y un destino final.
+> 	3.Cada línea muestra el número de salto, tres medidas para el tiempo de ida y vuelta (RTT), el nombre del sistema y la dirección IP alcanzada en ese salto.  
+---
 ### Tiempo de ida y vuelta (RTT)
-El tiempo que tarda un paquete en llegar a un salto y volver, mostrado en milisegundos (ms). Por defecto, tracert envía tres paquetes a cada salto, por lo que la salida muestra tres tiempos de ida y vuelta por salto. El RTT también se denomina a veces latencia. Un factor importante que puede afectar al RTT es la distancia física entre los saltos.  
+
+
+note: El tiempo que tarda un paquete en llegar a un salto y volver, mostrado en milisegundos (ms). Por defecto, tracert envía tres paquetes a cada salto, por lo que la salida muestra tres tiempos de ida y vuelta por salto. El RTT también se denomina a veces latencia. Un factor importante que puede afectar al RTT es la distancia física entre los saltos.  
   
 Si aparece un asterisco (*) para el RTT, significa que un paquete no fue devuelto dentro del tiempo esperado.  
 
 (para saber mas [aquí](https://hpbn.co/))
 
+---
 ## que es un exo-instrumento?
 
-Es un concepto devenido de la teoría sobre Epitemeo de Bernard Stiegler. En ella Stiegler alude a una relación entre la técnica y la vida de los humanos como algo que se sabe antes de nacer, o en un mundo ideal  y que se recuerda (o aprende) mientras dura la vida. Así la técnica pasa a ser una extensión somática de las necesidades del cuerpo. Dentro de la técnica se incluyen los instrumentos de medición científica, las armas de guerra, las herramientas y también los instrumentos musicales. Un exo-instrumento es aquel que permite que este transpaso somático entre el cuerpo y el instrumento trascienda la cognición del emisor (el cuerpo ) y sea compartida con el instrumento. Mas aún, que ese instrumento musical, diseñado para generar un tipo de intercambio informativo en la situación de concieto, es decir entre los demás performers y el público, también pueda incorporarlos en su disposición material. 
+note: Es un concepto devenido de la teoría sobre Epitemeo de Bernard Stiegler. En ella Stiegler alude a una relación entre la técnica y la vida de los humanos como algo que se sabe antes de nacer, o en un mundo ideal  y que se recuerda (o aprende) mientras dura la vida. Así la técnica pasa a ser una extensión somática de las necesidades del cuerpo. Dentro de la técnica se incluyen los instrumentos de medición científica, las armas de guerra, las herramientas y también los instrumentos musicales. Un exo-instrumento es aquel que permite que este transpaso somático entre el cuerpo y el instrumento trascienda la cognición del emisor (el cuerpo ) y sea compartida con el instrumento. Mas aún, que ese instrumento musical, diseñado para generar un tipo de intercambio informativo en la situación de concieto, es decir entre los demás performers y el público, también pueda incorporarlos en su disposición material. 
 
 Todas ideas especulativas aparecen lentamente en allgunas experiencias e instrumentos del arte sonoro y la composición de la tradición escrita. 
 
+---
 ## algunos ejemplos
 
 
-El programador petet creó este valence-aleator, no es exactamente un ejemplo, pero si puede aportar en cuanto al tipo de interface minimalista, y la utilización de simulación física para la introducción y relación de assests (positrones electrones, anillos).
+note: El programador petet creó este valence-aleator, no es exactamente un ejemplo, pero si puede aportar en cuanto al tipo de interface minimalista, y la utilización de simulación física para la introducción y relación de assests (positrones electrones, anillos).
 
-https://petet.itch.io/valence-aleator
-
+---
+<iframe src="https://petet.itch.io/valence-aleator" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+---
 Por ejemplo en el Gravitaphon de Christian Grammel se propone un objeto no posible de manipular por una persona, que contiene mecanismos misteriosos dentro reaccionando a diferentes ángulos y momentos.
 
+---
 <iframe title="Gravitaphon" height="240" width="426" src="https://player.vimeo.com/video/536362703?h=faed38eed0&amp;app_id=122963" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.775 / 1; width: 100%; height: 100%;"></iframe>
 
 o en "real-time ist getting realer all the time" de icholas Mortimer y Kevin Rittberger los performers reaccionan ante un exo-instrumento (llamado ICO-bass) hecho de tierra, cuerdas, vinchas electromagnéticas y un desbalance que modifica todos los parámetros. El instrumento es totalmente manipulado colectivamente.  

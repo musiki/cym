@@ -1,5 +1,5 @@
 {
-  "shouldDebug": false,
+  "logLevel": "off",
   "createAtObsidianAttachmentFolder": false,
   "customFolderForNewFiles": "",
   "removeMarkdownOnExport": true,
@@ -9,7 +9,8 @@
   "showWelcomeModal": false,
   "showWhatsNewModal": true,
   "defaultFrozenColumnCount": 1,
-  "pluginVersion": "8.12.2",
+  "pluginVersion": "8.16.0",
+  "shouldDebug": false,
   "showDonationModal": true,
   "exportRenderMarkdown": true,
   "appData": {},

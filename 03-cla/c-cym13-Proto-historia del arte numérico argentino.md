@@ -4,7 +4,16 @@ type: class
 tags: cym, arte numérico
 unit: 0
 num:  13
-year: 2023
+year : 2023
+
+---
+
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
+
+# Proto-historia del arte numérico argentino
+
 ---
 
 ```mermaid

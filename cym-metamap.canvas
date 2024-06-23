@@ -28,11 +28,11 @@
 		{"type":"text","text":"Instituto DiTella","id":"17e246241b80fd29","x":480,"y":11,"width":157,"height":53,"color":"1"},
 		{"type":"text","text":"Cybernetic Serendipity","id":"3f5b179c2c47e4c9","x":200,"y":-573,"width":157,"height":53,"color":"#fff700"},
 		{"type":"text","text":"9 evenings","id":"3bcfa319e254f5b1","x":200,"y":-307,"width":157,"height":53,"color":"#fff700"},
-		{"id":"c871e3cf70d51538","type":"file","file":"04-out/espacios/EAT Experiments in arts and technologies.md","x":118,"y":-156,"width":239,"height":220,"color":"#fff71a"},
 		{"type":"text","text":"John Pierce","id":"c5da4a8a5edd6cc1","x":1020,"y":-240,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"max mathews","id":"3a6bb4260b1fcf91","x":1020,"y":-49,"width":250,"height":51,"color":"6"},
 		{"type":"text","text":"Bell Labs","id":"e033db8d2fd0807e","x":703,"y":-49,"width":157,"height":53,"color":"1"},
-		{"type":"text","text":"\nDavid Tudor","id":"f7c32750d3288c8c","x":1020,"y":-156,"width":250,"height":51,"color":"6"}
+		{"type":"text","text":"\nDavid Tudor","id":"f7c32750d3288c8c","x":1020,"y":-156,"width":250,"height":51,"color":"6"},
+		{"id":"c871e3cf70d51538","type":"file","file":"04-out/espacios/EAT Experiments in arts and technologies.md","x":159,"y":-156,"width":239,"height":220,"color":"#fff71a"}
 	],
 	"edges":[
 		{"id":"b1428d4e06303eea","fromNode":"3f5b179c2c47e4c9","fromSide":"right","toNode":"a152d7beada44b0f","toSide":"left"},

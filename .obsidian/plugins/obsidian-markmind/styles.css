@@ -96,6 +96,10 @@
   border-radius: 4px;
 }
 
+.mm-node .mm-node-content img {
+   min-width:50px;
+}
+
 .mm-node.node-wireFrame .mm-node-content {
   border-radius: 6px;
   border-bottom-left-radius: 0;
@@ -132,6 +136,9 @@
 .mm-node-edit>ol,
 .mm-node-edit>ul {
   padding-left: 20px;
+}
+.mm-node-edit audio{
+min-width:300px
 }
 
 /* 笔记渲染表格 */
@@ -1333,7 +1340,7 @@
   font-size: 14px;
   position: absolute;
   left: 0;
-  top:20px;
+  top: 20px;
   right: 0;
   bottom: 0;
   overflow-y: auto;
@@ -1973,4 +1980,112 @@ th {
 .mm-translate-text {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+/* 点击 a 标签 */
+
+.mm-link-menu {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border: 1px solid #000;
+  border-radius: 3px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* .mm-link-menu:before {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #333;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+} */
+
+.mm-link-menu svg {
+  fill: #ccc;
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+.theme-light .mm-link-menu {
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+.theme-light .mm-link-menu svg {
+  fill: #333;
+}
+
+/* 遮挡文字节点 */
+.mm-node-cover {
+  position: absolute;
+  z-index: 1000;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.mm-node-cover:hover {
+  opacity: 0;
+  background-color: transparent;
+}
+
+/* 联系线两边的标志 */
+
+.mm-assist-lineMarker span {
+  display:inline-block;
+}
+
+.mm-assist-lineMarker>span {
+ width: 30px;
+ cursor: pointer;
+}
+
+.mm-assist-lineMarker>span.mm-circle .shape {
+  width: 10px;
+  height: 10px;
+  background-color: #817f7f;
+  border-radius: 50%;
+}
+
+.mm-sline .shape {
+  width: 2px;
+  height: 10px;
+  background-color: #817f7f;
+}
+ span.mm-sline .line {
+  width: 20px;
+}
+
+.mm-rect .shape {
+  width: 10px;
+  height: 10px;
+  background-color: #817f7f;
+}
+
+.mm-arrow .shape {
+  width: 0;
+  height: 0;
+  background-color: #817f7f;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #817f7f;
+  border-bottom: 5px solid transparent;
+  background: transparent !important;
+}
+
+.mm-arrow1 .shape {
+  width: 0;
+  height: 0;
+  background-color: #817f7f;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #817f7f;
+  border-bottom: 5px solid transparent;
+  background: transparent !important;
 }

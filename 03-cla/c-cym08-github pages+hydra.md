@@ -12,8 +12,9 @@ num: 8
 year: 2023
 ---
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 08
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
 
 # Github pages
 

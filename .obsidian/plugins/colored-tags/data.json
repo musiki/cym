@@ -1,8 +1,14 @@
 {
-  "chroma": 16,
-  "lightness": 87,
-  "palette": 16,
-  "seed": 0,
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
   "knownTags": {
     "patrones": 1,
     "generativad": 2,
@@ -152,7 +158,8 @@
     "systematicmusicology": 144,
     "dataart": 145,
     "luz": 146,
-    "aroma": 147
+    "aroma": 147,
+    "filosofía/science": 1
   },
-  "_version": 2
+  "_version": 3
 }

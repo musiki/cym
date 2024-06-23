@@ -1,0 +1,13 @@
+{
+  "cm6RenderAll": false,
+  "renderImages": false,
+  "renderPDF": false,
+  "renderIframe": false,
+  "renderExcalidraw": false,
+  "renderMsgFile": false,
+  "renderRichLink": false,
+  "renderTransclusion": false,
+  "previewOnHoverInternalLink": true,
+  "refreshImagesAfterChange": false,
+  "WYSIWYG": false
+}

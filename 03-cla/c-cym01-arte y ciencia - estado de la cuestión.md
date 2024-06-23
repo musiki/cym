@@ -1,11 +1,15 @@
 ---
 title: arte y ciencia estado de la cuestión
-tags: cym , class
-theme: consult
+tags:
+  - cym
+  - class
+theme: moon
 ---
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23
+
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+UNTREF | CYM24
 # arte y ciencia
 ## estado de la cuestión
 ---
@@ -13,15 +17,15 @@ UNTREF | CYM23
 
 <i class="fas fa-spinner fa-pulse fa-3x"></i>
 
---
+---
  la clase de cym es **modular**. No es una clase expositiva unicamente, sino que se trazan mapas , módulos y referencias por donde construir un proyecto pero también un contexto. 
  
---
+---
  Hay que ser **generosx**! es muy importante la participación , para lo cual vamos a usar ***discord***. Allí podrán compartir sus proyectos, pero también es muy importante comentar los posteos de lxs compañerxs (elogiar, criticar, compartir referencias o ideas)
 
 ---
 # objetivos
-
+<i class="fa-solid fa-heart fa-beat"></i>
 
 --
 - pensar y crear el futuro de la música.

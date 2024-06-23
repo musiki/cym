@@ -4,11 +4,12 @@ tags: cym, música visual, armonía-expandida, class
 unit: 0
 num:  2
 year: 2023
-theme: consult
+theme: sky
 ---
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 02
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+UNTREF | CYM24
 
 # Arte generativo
 

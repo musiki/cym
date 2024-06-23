@@ -1,3 +1,9 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": "Rmaki",
+  "enabledCssSnippets": [
+    "s1",
+    "obsidian",
+    "cards"
+  ]
 }

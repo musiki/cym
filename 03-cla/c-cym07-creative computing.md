@@ -6,11 +6,15 @@ num:  7
 year: 2023
 ---
 
-
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 07
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
 
 # human-book-computer
+
+---
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDtU2dVrBeA?si=l5a5VVC4C3UnH4th" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -11,9 +11,9 @@ unit: 0
 num: 9
 year: 2023
 ---
-
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 09
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+CYM24
 
 - [ ] # [[r-como hacer un proyectual]]
 

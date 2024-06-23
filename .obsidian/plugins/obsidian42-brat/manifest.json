@@ -1,7 +1,7 @@
 {
 	"id": "obsidian42-brat",
-	"name": "Obsidian42 - BRAT",
-	"version": "0.7.1",
+	"name": "BRAT",
+	"version": "1.0.1",
 	"minAppVersion": "1.4.16",
 	"description": "Easily install a beta version of a plugin for testing.",
 	"author": "TfTHacker",
@@ -9,7 +9,7 @@
 	"helpUrl": "https://tfthacker.com/BRAT",
 	"isDesktopOnly": false,
 	"fundingUrl": {
-        "Buy Me a Coffee": "https://bit.ly/o42-kofi",
-        "Vist my site": "https://tfthacker.com"
-    }
+		"Buy Me a Coffee": "https://bit.ly/o42-kofi",
+		"Visit my site": "https://tfthacker.com"
+	}
 }

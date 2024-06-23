@@ -12,8 +12,10 @@ author: cdp
 ---
 
 
-<!-- slide bg="#010100" -->
-UNTREF | CYM23 | 06
+<!-- slide bg="#010100"--> 
+![[untref-logo-w.svg|100]]
+UNTREF | CYM24
+
 # tone.js
 ---
 

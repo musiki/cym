@@ -1,0 +1,19 @@
+{
+  "height": 100,
+  "style": "solid",
+  "showInInternalEmbed": false,
+  "internalEmbedHeight": null,
+  "showInPreviewEmbed": false,
+  "previewEmbedHeight": null,
+  "frontmatterField": null,
+  "bannerDragModifier": "none",
+  "iconHorizontalAlignment": "left",
+  "iconHorizontalTransform": null,
+  "iconVerticalAlignment": "center",
+  "iconVerticalTransform": null,
+  "useTwemoji": false,
+  "showPreviewInLocalModal": false,
+  "localSuggestionsLimit": null,
+  "bannersFolder": "02-mat/obs/img",
+  "allowMobileDrag": false
+}

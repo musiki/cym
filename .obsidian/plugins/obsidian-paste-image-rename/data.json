@@ -1,0 +1,10 @@
+{
+  "imageNamePattern": "\\02-mat\\obs\\img\\{{fileName}}",
+  "dupNumberAtStart": false,
+  "dupNumberDelimiter": "-",
+  "dupNumberAlways": false,
+  "autoRename": true,
+  "handleAllAttachments": false,
+  "excludeExtensionPattern": "",
+  "disableRenameNotice": true
+}

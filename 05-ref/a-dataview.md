@@ -4,8 +4,8 @@
 hay tres tipos de queries, TABLE (yaml metadata), LIST (páginas) y TASK(checkboxes)
 
 el formato básico es 
-
 ```
+
 ```dataview
  TABLE|LIST|TASK <field> [AS "Column Name"], <field>, ..., <field> FROM <source> 
  WHERE <expression>
