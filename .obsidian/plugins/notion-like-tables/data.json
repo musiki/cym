@@ -7,10 +7,10 @@
   "defaultEmbedHeight": "340px",
   "hasMigratedTo800": true,
   "showWelcomeModal": false,
-  "showDonationModal": true,
   "showWhatsNewModal": true,
   "defaultFrozenColumnCount": 1,
-  "pluginVersion": "8.4.1",
+  "pluginVersion": "8.12.2",
+  "showDonationModal": true,
   "exportRenderMarkdown": true,
   "appData": {},
   "state": {

@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "07fb56c3e7af28b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-moc/eventos MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-moc/eventos MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -220,10 +233,20 @@
       "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "7a0659e804f99fd7",
+  "active": "07fb56c3e7af28b8",
   "lastOpenFiles": [
-    "cym-metamap.canvas",
     "00-moc/eventos MOC.md",
+    "conflict-files-obsidian-git.md",
+    "04-out/topoi/aroma.md",
+    "04-out/bibliografía/Together in Music.md",
+    "02-mat/obs/tpl/t-person.md",
+    "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
+    "01-proj/23/bassino/proyectual bassino/FITOn.md",
+    "00-in/Pasted image 20220906234521.png.md",
+    "00-in/Nicolas Schöffer.md",
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+    "00-in/Clemens Wöllner.md",
+    "cym-metamap.canvas",
     "04-out/eventos/La memoria de los materiales.md",
     "00-in/Sun Thinking.md",
     "00-in/Proto-Indo-European.md",
@@ -240,14 +263,6 @@
     "03-cla/c-cym04-vida digital.md",
     "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "03-cla/c-cym00-presentación.md",
-    "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
-    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
-    "home.md",
-    "README.md",
-    "05-ref/meta-aprendizaje.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "01-proj/23/beltrame/Exercise.md",
-    "00-in/obras MOC.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/sensor de distancia 3.pdf",
@@ -257,7 +272,6 @@
     "02-mat/obs/img/sensor de distancia 1.pdf",
     "02-mat/obs/img/sensor de distancia (1).pdf",
     "02-mat/obs/img/sensor de distancia (1) 3.pdf",
-    "02-mat/obs/img/sensor de distancia (1) 2.pdf",
     "02-mat/obs/img/image/Clorolaser-1698787226572.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226571.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226568.jpeg",

@@ -1,4 +1,5 @@
 {
   "changeStandardNoteMode": false,
-  "openInPreview": true
+  "openInPreview": true,
+  "preferOpenTab": false
 }

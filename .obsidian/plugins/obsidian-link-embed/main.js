@@ -800,7 +800,7 @@ var JSONLinkParser = class extends Parser {
     const title = data.title || "";
     const image = data.images[0] || "";
     let description = data.description || "";
-    description = description.replace(/\n/g, " ");
+    description = description.replace(/\n/g, " ").replace(/\\/g, "\\\\");
     return { title, image, description };
   }
 };
@@ -814,7 +814,7 @@ var MicroLinkParser = class extends Parser {
     const title = data.data.title || "";
     const image = ((_a = data.data.image) == null ? void 0 : _a.url) || ((_b = data.data.logo) == null ? void 0 : _b.url) || "";
     let description = data.data.description || "";
-    description = description.replace(/\n/g, " ");
+    description = description.replace(/\n/g, " ").replace(/\\/g, "\\\\");
     return { title, image, description };
   }
 };
@@ -828,7 +828,7 @@ var IframelyParser = class extends Parser {
     const title = ((_a = data.meta) == null ? void 0 : _a.title) || "";
     const image = ((_b = data.links[0]) == null ? void 0 : _b.href) || "";
     let description = ((_c = data.meta) == null ? void 0 : _c.description) || "";
-    description = description.replace(/\n/g, " ");
+    description = description.replace(/\n/g, " ").replace(/\\/g, "\\\\");
     return { title, image, description };
   }
 };
@@ -837,8 +837,8 @@ var LocalParser = class extends Parser {
     let title = data.title || "";
     const image = data.image || "";
     let description = data.description || "";
-    description = description.replace(/\n/g, " ");
-    title = title.replace(/\n/g, " ");
+    description = description.replace(/\n/g, " ").replace(/\\/g, "\\\\");
+    title = title.replace(/\n/g, " ").replace(/\\/g, "\\\\");
     return { title, image, description };
   }
   getTitle(doc, url) {
@@ -1159,7 +1159,7 @@ var ObsidianLinkEmbedSettingTab = class extends import_obsidian3.PluginSettingTa
           let bReplace = false;
           for (let elem of elems) {
             let description = elem[5] || "";
-            description = description.replace(/\n/g, " ");
+            description = description.replace(/\n/g, " ").replace(/\\/g, "\\\\");
             description = import_he.default.unescape(description);
             let title = import_he.default.unescape(elem[4] || "");
             const origin = elem[0];
