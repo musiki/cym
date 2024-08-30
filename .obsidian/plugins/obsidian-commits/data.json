@@ -191,7 +191,7 @@
     },
     "01-proj/22/ancarola/Final CyM - Metrónomo.md": {
       "size": 368,
-      "tags": 3,
+      "tags": 0,
       "links": 0
     },
     "01-proj/23/beltrame/beltrame.md": {
@@ -841,7 +841,7 @@
     },
     "03-cla/c-cym13-Proto-historia del arte numérico argentino.md": {
       "size": 1575,
-      "tags": 3,
+      "tags": 0,
       "links": 0
     },
     "02-mat/css.md": {
@@ -1476,20 +1476,20 @@
     },
     "01-proj/23/Petroccelli/Dopplermanían´t (idea).md": {
       "size": 1788,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md": {
       "size": 11796,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 600,
+      "Refactor": 602,
       "Create": 547,
-      "Link": 365,
+      "Link": 367,
       "Expand": 54
     }
   },
@@ -1506,12 +1506,12 @@
       "8": 44,
       "9": 177,
       "10": 55,
-      "11": 96,
+      "11": 98,
       "12": 43,
       "13": 29,
       "14": 38,
       "15": 97,
-      "16": 84,
+      "16": 86,
       "17": 9,
       "18": 180,
       "19": 10,
@@ -1526,10 +1526,10 @@
       "Mon": 51,
       "Tue": 670,
       "Wed": 311,
-      "Thu": 103,
+      "Thu": 105,
       "Fri": 127,
       "Sat": 0,
-      "Sun": 304
+      "Sun": 306
     }
   },
   "recentCommits": {
@@ -1694,6 +1694,8 @@
         "<a class=\"internal-link\" href=\"01-proj/23/shifres/Multi-efecto 1.md\"> Multi-efecto 1 </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
+        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Susanne Kennedy.md\"> Susanne Kennedy </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
@@ -1742,9 +1744,7 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Humanos.md\"> Humanos </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Internetmusic.md\"> Internetmusic </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Livecoding.md\"> Livecoding </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Racionalizacion_(videojuegos).md\"> Racionalizacion_(videojuegos) </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/Livecoding.md\"> Livecoding </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/bibliografía/Eric Sadin_La humanidad aumentada.md\"> Eric Sadin_La humanidad aumentada </a>",
@@ -1877,7 +1877,9 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Intervencion del espacio público.md\"> Intervencion del espacio público </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-cym-class.md\"> t-cym-class </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
-        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>"
+        "<a class=\"internal-link\" href=\"04-out/obras/Boid Simulation.md\"> Boid Simulation </a>",
+        "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",

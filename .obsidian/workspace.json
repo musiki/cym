@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
+                "file": "00-moc/eventos MOC.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -108,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00-moc/eventos MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +136,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -145,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "00-moc/eventos MOC.md"
               }
             }
           },
@@ -174,7 +177,7 @@
             }
           },
           {
-            "id": "f4949edf1deabcba",
+            "id": "fa9936118b34495e",
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
@@ -186,14 +189,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "notion-like-tables:Create new loom": false,
       "obsidian-book-search-plugin:Create new book note": false,
@@ -208,44 +217,37 @@
       "digitalgarden:Digital Garden Publication Center": false,
       "wikipedia-search:Open Article": false,
       "templater-obsidian:Templater": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "workspaces:Manage workspace layouts": false
+      "obsidian-statusbar-pomo:Start pomodoro": false
     }
   },
-  "active": "dd1acde2c75a4600",
+  "active": "7a0659e804f99fd7",
   "lastOpenFiles": [
-    "01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md",
-    "conflict-files-obsidian-git.md",
-    "01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md",
-    "01-proj/23/Petroccelli/Dopplermanían´t (idea).md",
-    "01-proj/23/beltrame/Una mirada profunda.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "03-cla/c-cym00-presentación.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym05.06-integración.md",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "cym-metamap.canvas",
+    "00-moc/eventos MOC.md",
+    "04-out/eventos/La memoria de los materiales.md",
+    "00-in/Sun Thinking.md",
+    "00-in/Proto-Indo-European.md",
+    "00-in/Patrones de Turing.md",
+    "00-in/La conciencia social del arte generativo..md",
+    "04-out/eventos/Cybernetic Serendipity.md",
     "03-cla/c-cym15-interactividad.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym14-un instrumento online colectivo.md",
+    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
+    "03-cla/c-cym10y11-Aframe.md",
+    "03-cla/c-cym09-flex-grid.md",
     "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym09-visual.md",
+    "03-cla/c-cym07-cohesión audiovisual.md",
+    "03-cla/c-cym04-vida digital.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+    "03-cla/c-cym00-presentación.md",
+    "04-out/bibliografía/Myriam Robayo Pedraza_La canción social como expresión de inconformismo.md",
+    "04-out/bibliografía/Eric Sadin_La humanidad aumentada.md",
+    "home.md",
+    "README.md",
+    "05-ref/meta-aprendizaje.md",
+    "03-cla/c-cym02-arte generativo.md",
+    "01-proj/23/beltrame/Exercise.md",
+    "00-in/obras MOC.md",
     "02-mat/procesos/Untitled.loom",
     "02-mat/obs/img/sensor de distancia.pdf",
     "02-mat/obs/img/sensor de distancia 3.pdf",
@@ -267,7 +269,6 @@
     "02-mat/obs/img/image/Clorolaser-1698787226558.jpeg",
     "02-mat/obs/img/image/Clorolaser-1698787226555.jpeg",
     "Sin título 1.canvas",
-    "Sin título.canvas",
-    "cym-metamap.canvas"
+    "Sin título.canvas"
   ]
 }
