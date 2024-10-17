@@ -3,7 +3,7 @@ type: person
 photo: 
 tags: instalación, interface , luz
 born in city: Oran
-born year: 1956
+year: 1956
 dead year: 
 city: Paris
 country: 

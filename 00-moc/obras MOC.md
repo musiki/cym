@@ -5,6 +5,10 @@ SORT year DESC
 ```
 
 
+## pioneros de arte y ciencia
+
+Jim Campbell
+David Rockeby
 
 ## metaversos
 

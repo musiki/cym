@@ -3301,11 +3301,11 @@
       "filename": "01-tone.js"
     },
     {
-      "path": "00-in/Gustav Metzger.md",
+      "path": "04-out/personas/Gustav Metzger.md",
       "filename": "Gustav Metzger"
     },
     {
-      "path": "00-in/Max Bense.md",
+      "path": "04-out/personas/Max Bense.md",
       "filename": "Max Bense"
     },
     {
@@ -3313,7 +3313,7 @@
       "filename": "t-person"
     },
     {
-      "path": "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+      "path": "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md",
       "filename": "Jean-Robert Sedano et Solveig de Ory"
     },
     {
@@ -3321,11 +3321,11 @@
       "filename": "t-person"
     },
     {
-      "path": "00-in/Nicolas Schoffer.md",
+      "path": "04-out/personas/Nicolas Schoffer.md",
       "filename": "Nicolas Schoffer"
     },
     {
-      "path": "00-in/Clemens Wöllner.md",
+      "path": "04-out/personas/Clemens Wöllner.md",
       "filename": "Clemens Wöllner"
     },
     {
@@ -3447,6 +3447,282 @@
     {
       "path": "03-cla/c-cym12-Aframe2.md",
       "filename": "c-cym12-Aframe2"
+    },
+    {
+      "path": "02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md",
+      "filename": "Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han"
+    },
+    {
+      "path": "00-in/Proto-Indo-European.md",
+      "filename": "Proto-Indo-European"
+    },
+    {
+      "path": "00-in/Vedic Sanskrit.md",
+      "filename": "Vedic Sanskrit"
+    },
+    {
+      "path": "04-out/procedimientos/combinational creativity.md",
+      "filename": "combinational creativity"
+    },
+    {
+      "path": "02-mat/python/ds/music-scales.csv",
+      "filename": "music-scales"
+    },
+    {
+      "path": "01-proj/22/ancarola/tp-01-topoi.md",
+      "filename": "tp-01-topoi"
+    },
+    {
+      "path": "01-proj/22/cymproj/webgl/3js01/index.html",
+      "filename": "index"
+    },
+    {
+      "path": "01-proj/22/lopez/tp-01-topoi.md",
+      "filename": "tp-01-topoi"
+    },
+    {
+      "path": "01-proj/23/Petroccelli/TP TOPOI - Ezequiel A. Petroccelli.pdf",
+      "filename": "TP TOPOI - Ezequiel A. Petroccelli"
+    },
+    {
+      "path": "01-proj/23/beltrame/beltrame.md",
+      "filename": "beltrame"
+    },
+    {
+      "path": "01-proj/tp/prueba tutorial.md",
+      "filename": "prueba tutorial"
+    },
+    {
+      "path": "02-mat/cloud ides.md",
+      "filename": "cloud ides"
+    },
+    {
+      "path": "02-mat/jasvascript/js-cheatsheet.md",
+      "filename": "js-cheatsheet"
+    },
+    {
+      "path": "02-mat/jasvascript/js-playground.md",
+      "filename": "js-playground"
+    },
+    {
+      "path": "02-mat/obs/tpl/mat-partitura.md",
+      "filename": "mat-partitura"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0093.mp4",
+      "filename": "VID-20231017-WA0093"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0096.mp4",
+      "filename": "VID-20231017-WA0096"
+    },
+    {
+      "path": "02-mat/obs/img/231017-arthouse/VID-20231017-WA0099.mp4",
+      "filename": "VID-20231017-WA0099"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-alumno-POC.md",
+      "filename": "t-alumno-POC"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-book.md",
+      "filename": "t-book"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-cym-init-slide.md",
+      "filename": "t-cym-init-slide"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-liquid.md",
+      "filename": "t-liquid"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-movie.md",
+      "filename": "t-movie"
+    },
+    {
+      "path": "02-mat/org/i-sackbut.md",
+      "filename": "i-sackbut"
+    },
+    {
+      "path": "02-mat/org/i-theremin.md",
+      "filename": "i-theremin"
+    },
+    {
+      "path": "02-mat/partituras/ave maria palestrina.md",
+      "filename": "ave maria palestrina"
+    },
+    {
+      "path": "02-mat/partituras/bianco dolce signo.md",
+      "filename": "bianco dolce signo"
+    },
+    {
+      "path": "02-mat/partituras/canciones.md",
+      "filename": "canciones"
+    },
+    {
+      "path": "02-mat/partituras/unendilech freude.md",
+      "filename": "unendilech freude"
+    },
+    {
+      "path": "02-mat/procesos/Untitled.loom",
+      "filename": "Untitled"
+    },
+    {
+      "path": "02-mat/procesos/r-vinculación bidireccional.md",
+      "filename": "r-vinculación bidireccional"
+    },
+    {
+      "path": "02-mat/python/ds/composers.csv",
+      "filename": "composers"
+    },
+    {
+      "path": "02-mat/python/ds/songs-top10s.csv",
+      "filename": "songs-top10s"
+    },
+    {
+      "path": "02-mat/python/ds/top10s.csv",
+      "filename": "top10s"
+    },
+    {
+      "path": "02-mat/python/py-foundations.md",
+      "filename": "py-foundations"
+    },
+    {
+      "path": "02-mat/python/pycolors.md",
+      "filename": "pycolors"
+    },
+    {
+      "path": "02-mat/python/python music.md",
+      "filename": "python music"
+    },
+    {
+      "path": "04-out/bibliografía/Esteban Castromán_Tecnopoéticas argentinas.md",
+      "filename": "Esteban Castromán_Tecnopoéticas argentinas"
+    },
+    {
+      "path": "04-out/bibliografía/Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo.md",
+      "filename": "Guerrini Gustavino Suarez_Usos de la ciencia en el arte argentino contemporáneo"
+    },
+    {
+      "path": "04-out/bibliografía/John D Barrow_El libro de la nada.md",
+      "filename": "John D Barrow_El libro de la nada"
+    },
+    {
+      "path": "04-out/bibliografía/Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications.md",
+      "filename": "Stephan Olariu Albert Y Zomaya_Handbook of Bioinspired Algorithms and Applications"
+    },
+    {
+      "path": "04-out/bibliografía/Tim Ingold_Eine kurze Geschichte der Linien.md",
+      "filename": "Tim Ingold_Eine kurze Geschichte der Linien"
+    },
+    {
+      "path": "04-out/bibliografía/Xuan Thuan Trinh_The Secret Melody.md",
+      "filename": "Xuan Thuan Trinh_The Secret Melody"
+    },
+    {
+      "path": "04-out/bibliografía/cym.bib",
+      "filename": "cym"
+    },
+    {
+      "path": "04-out/espacios/Academy of Fine Arts Vienna.md",
+      "filename": "Academy of Fine Arts Vienna"
+    },
+    {
+      "path": "04-out/espacios/MIT Medialab.md",
+      "filename": "MIT Medialab"
+    },
+    {
+      "path": "04-out/glosario/PaaS.md",
+      "filename": "PaaS"
+    },
+    {
+      "path": "04-out/personas/Douglas Barret.md",
+      "filename": "Douglas Barret"
+    },
+    {
+      "path": "04-out/personas/Harari Yuval Noah.md",
+      "filename": "Harari Yuval Noah"
+    },
+    {
+      "path": "04-out/personas/Klaus Schwab.md",
+      "filename": "Klaus Schwab"
+    },
+    {
+      "path": "04-out/procedimientos/extrañamiento.md",
+      "filename": "extrañamiento"
+    },
+    {
+      "path": "04-out/procedimientos/tipologías de instalación.md",
+      "filename": "tipologías de instalación"
+    },
+    {
+      "path": "04-out/topoi/Historia de la tecnología.md",
+      "filename": "Historia de la tecnología"
+    },
+    {
+      "path": "LICENSE",
+      "filename": "LICENSE"
+    },
+    {
+      "path": "force",
+      "filename": "force"
+    },
+    {
+      "path": "02-mat/mat-partitura.md",
+      "filename": "mat-partitura"
+    },
+    {
+      "path": "02-mat/obs/tpl/t-concept.md",
+      "filename": "t-concept"
+    },
+    {
+      "path": "00-in/catalexis.md",
+      "filename": "catalexis"
+    },
+    {
+      "path": "00-in/Clemens Wöllner.md",
+      "filename": "Clemens Wöllner"
+    },
+    {
+      "path": "00-in/INGENIERIA INVERTIDA.md",
+      "filename": "INGENIERIA INVERTIDA"
+    },
+    {
+      "path": "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+      "filename": "Jean-Robert Sedano et Solveig de Ory"
+    },
+    {
+      "path": "00-in/Max Bense.md",
+      "filename": "Max Bense"
+    },
+    {
+      "path": "00-in/Nicolas Schoffer.md",
+      "filename": "Nicolas Schoffer"
+    },
+    {
+      "path": "00-in/Gustav Metzger.md",
+      "filename": "Gustav Metzger"
+    },
+    {
+      "path": "00-in/combinational creativity.md",
+      "filename": "combinational creativity"
+    },
+    {
+      "path": "04-out/obras/Very Nervous System.md",
+      "filename": "Very Nervous System"
+    },
+    {
+      "path": "04-out/personas/David Rokeby.md",
+      "filename": "David Rokeby"
+    },
+    {
+      "path": "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md",
+      "filename": "UNTITLED CHAT 2024-10-16 14 50 42"
+    },
+    {
+      "path": "04-out/personas/Jim Campbell.md",
+      "filename": "Jim Campbell"
     }
   ]
 }

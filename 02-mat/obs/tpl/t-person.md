@@ -2,10 +2,10 @@
 type: person
 photo: 
 tags: 
-born in city: Buenos Aires
-born year: 1985
+born in city: 
+year: 
 dead year: 
-city: Buenos Aires
+city: 
 country: 
 connect: 
 url:

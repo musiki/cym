@@ -199,11 +199,6 @@
       "tags": 0,
       "links": 2
     },
-    "00-in/combinational creativity.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Vedic Sanskrit.md": {
       "size": 621,
       "tags": 0,
@@ -226,11 +221,6 @@
     },
     "01-proj/23/bassino/Música y arte visual.md": {
       "size": 10554,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/hd-hydra.md": {
-      "size": 0,
       "tags": 0,
       "links": 0
     },
@@ -1264,11 +1254,6 @@
       "tags": 3,
       "links": 0
     },
-    "04-out/bibliografía/b-Azar y necesidad.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/eventos/Cybernetic Serendipity.md": {
       "size": 0,
       "tags": 4,
@@ -1379,28 +1364,8 @@
       "tags": 1,
       "links": 0
     },
-    "00-in/Gustav Metzger.md": {
-      "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Max Bense.md": {
-      "size": 2491,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Jean-Robert Sedano et Solveig de Ory.md": {
-      "size": 0,
-      "tags": 3,
-      "links": 0
-    },
     "02-mat/obs/tpl/t-person.md": {
       "size": 0,
-      "tags": 0,
-      "links": 0
-    },
-    "00-in/Clemens Wöllner.md": {
-      "size": 4959,
       "tags": 0,
       "links": 0
     },
@@ -1494,11 +1459,6 @@
       "tags": 1,
       "links": 0
     },
-    "02-mat/mat-partitura.md": {
-      "size": 249,
-      "tags": 0,
-      "links": 0
-    },
     "02-mat/obs/tpl/t-templater.md": {
       "size": 112,
       "tags": 0,
@@ -1514,18 +1474,148 @@
       "tags": 0,
       "links": 1
     },
-    "00-in/Nicolas Schoffer.md": {
+    "02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md": {
+      "size": 25111,
+      "tags": 1,
+      "links": 1
+    },
+    "02-mat/obs/tpl/mat-partitura.md": {
+      "size": 249,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/mat-partitura.md": {
+      "size": 249,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/bibliografía/b-Azar y necesidad.md": {
       "size": 0,
       "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Dick Raaijmakers.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Clemens Wöllner.md": {
+      "size": 4959,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md": {
+      "size": 0,
+      "tags": 3,
+      "links": 0
+    },
+    "04-out/personas/Max Bense.md": {
+      "size": 2491,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Nicolas Schoffer.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Gustav Metzger.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Ingenieria inversa.md": {
+      "size": 43,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/obs/tpl/t-concept.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/procedimientos/combinational creativity.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/catalexis.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "00-in/Gustav Metzger.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/INGENIERIA INVERTIDA.md": {
+      "size": 43,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md": {
+      "size": 264,
+      "tags": 3,
+      "links": 0
+    },
+    "00-in/Max Bense.md": {
+      "size": 2491,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/Nicolas Schoffer.md": {
+      "size": 162,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/combinational creativity.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "00-in/hd-hydra.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/obras/Very Nervous System.md": {
+      "size": 0,
+      "tags": 1,
+      "links": 0
+    },
+    "smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md": {
+      "size": 30,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/David Rokeby.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "campbellDialogosIlusorios2000.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/Jim Campbell.md": {
+      "size": 0,
+      "tags": 2,
       "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 543,
-      "Create": 405,
-      "Link": 327,
-      "Expand": 55
+      "Refactor": 564,
+      "Create": 426,
+      "Link": 337,
+      "Expand": 56
     }
   },
   "dailyCommits": {
@@ -1534,42 +1624,43 @@
       "1": 30,
       "2": 85,
       "3": 3,
-      "4": 24,
-      "5": 22,
+      "4": 29,
+      "5": 26,
       "6": 6,
       "7": 32,
       "8": 19,
-      "9": 183,
+      "9": 184,
       "10": 55,
       "11": 139,
-      "12": 52,
-      "13": 55,
+      "12": 70,
+      "13": 60,
       "14": 19,
       "15": 16,
-      "16": 31,
+      "16": 34,
       "17": 37,
       "18": 203,
       "19": 21,
-      "20": 74,
-      "21": 67,
+      "20": 85,
+      "21": 69,
       "22": 69,
-      "23": 44
+      "23": 48
     }
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 73,
-      "Tue": 144,
-      "Wed": 665,
-      "Thu": 160,
-      "Fri": 139,
+      "Mon": 84,
+      "Tue": 147,
+      "Wed": 670,
+      "Thu": 167,
+      "Fri": 143,
       "Sat": 0,
-      "Sun": 149
+      "Sun": 172
     }
   },
   "recentCommits": {
     "/": {
       "Expanded": [
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Sheehan.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Sheehan </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md\"> Hace falta salir del software exclusivo de la música europea </a>",
         "<a class=\"internal-link\" href=\"00-in/test press.md\"> test press </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
@@ -1619,10 +1710,30 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
         "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
         "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
+        "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"campbellDialogosIlusorios2000.md\"> campbellDialogosIlusorios2000 </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md\"> UNTITLED CHAT 2024-10-16 14 50 42 </a>",
+        "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md\"> UNTITLED CHAT 2024-10-16 03 34 12 </a>",
+        "<a class=\"internal-link\" href=\"00-in/David Rokeby.md\"> David Rokeby </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"00-in/hd-hydra.md\"> hd-hydra </a>",
+        "<a class=\"internal-link\" href=\"00-in/combinational creativity.md\"> combinational creativity </a>",
+        "<a class=\"internal-link\" href=\"00-in/Nicolas Schoffer.md\"> Nicolas Schoffer </a>",
+        "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>",
+        "<a class=\"internal-link\" href=\"00-in/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
+        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
+        "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
+        "<a class=\"internal-link\" href=\"00-in/Clemens Wöllner.md\"> Clemens Wöllner </a>",
+        "<a class=\"internal-link\" href=\"00-in/catalexis.md\"> catalexis </a>",
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dick Raaijmakers.md\"> Dick Raaijmakers </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
+        "<a class=\"internal-link\" href=\"02-mat/mat-partitura.md\"> mat-partitura </a>",
+        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>",
@@ -1652,30 +1763,24 @@
         "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro.md\"> Trazo Sonoro </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dibujo Sonoro.md\"> Dibujo Sonoro </a>",
-        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/Sin título.md\"> Sin título </a>",
-        "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"05-ref/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"05-ref/a-yuda.md\"> a-yuda </a>",
-        "<a class=\"internal-link\" href=\"05-ref/a-snippets.md\"> a-snippets </a>",
-        "<a class=\"internal-link\" href=\"05-ref/a-plugins.md\"> a-plugins </a>",
-        "<a class=\"internal-link\" href=\"05-ref/a-dataview.md\"> a-dataview </a>",
-        "<a class=\"internal-link\" href=\"05-ref/a-dataview playground.md\"> a-dataview playground </a>",
-        "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md\"> Projekte generativer Ästhetik. (The projects of generative aesthetics </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/tp/tp04-aplicación js fundamentals.md\"> tp04-aplicación js fundamentals </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Reseña.md\"> Reseña </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Exercise.md\"> Exercise </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/\"Una mirada profunda\".md\"> \"Una mirada profunda\" </a>",
-        "<a class=\"internal-link\" href=\"00-in/Susanne Kennedy.md\"> Susanne Kennedy </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/TP código.md\"> TP código </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/personas/Jim Campbell.md\"> Jim Campbell </a>",
+        "<a class=\"internal-link\" href=\"00-in/Jim Campbell.md\"> Jim Campbell </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/David Rokeby.md\"> David Rokeby </a>",
+        "<a class=\"internal-link\" href=\"04-out/procedimientos/combinational creativity.md\"> combinational creativity </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-concept.md\"> t-concept </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/combinational creativity.md\"> combinational creativity </a>",
+        "<a class=\"internal-link\" href=\"00-in/Ingenieria inversa.md\"> Ingenieria inversa </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Gustav Metzger.md\"> Gustav Metzger </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Nicolas Schoffer.md\"> Nicolas Schoffer </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Max Bense.md\"> Max Bense </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Clemens Wöllner.md\"> Clemens Wöllner </a>",
+        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/mat-partitura.md\"> mat-partitura </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Sheehan.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Sheehan </a>",
         "<a class=\"internal-link\" href=\"00-in/Nicolas Schoffer.md\"> Nicolas Schoffer </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad2.md\"> El Azar y la Necesidad2 </a>",
@@ -1711,24 +1816,17 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Yuk Hui.md\"> Yuk Hui </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Simon Steen-Andersen écouter, observer, hacker-ed.md\"> Simon Steen-Andersen écouter, observer, hacker-ed </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"00-in/Juan Sorrentino.md\"> Juan Sorrentino </a>",
-        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
-        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/personas MOC.md\"> personas MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/proyectos MOC.md\"> proyectos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym-mindMap.md\"> c-cym-mindMap </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"00-in/Jim Campbell.md\"> Jim Campbell </a>",
+        "<a class=\"internal-link\" href=\"04-out/obras/Very Nervous System.md\"> Very Nervous System </a>",
+        "<a class=\"internal-link\" href=\"00-in/Jean-Robert Sedano et Solveig de Ory.md\"> Jean-Robert Sedano et Solveig de Ory </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"00-in/catalexis.md\"> catalexis </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/combinational creativity.md\"> combinational creativity </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Sheehan.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Sheehan </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md\"> Hace falta salir del software exclusivo de la música europea </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-entrevistas.md\"> t-entrevistas </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITOn.md\"> FITOn </a>",
@@ -1771,15 +1869,7 @@
         "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym02-fundamentales de js.md\"> c-cym02-fundamentales de js </a>",
         "<a class=\"internal-link\" href=\"00-in/que hace atractivo al arte interactivo?.md\"> que hace atractivo al arte interactivo? </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/whoosh.md\"> whoosh </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-obra.md\"> t-obra </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Proyectual - Dopplermanían´t.md\"> Proyectual - Dopplermanían´t </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/Clorolaser.md\"> Clorolaser </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-10 16.27.21.excalidraw.md\"> Drawing 2023-09-10 16.27.21.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/Drawing 2023-09-12 20.17.31.excalidraw.md\"> Drawing 2023-09-12 20.17.31.excalidraw </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/La instalación como forma del arte contemporáneo 1.md\"> La instalación como forma del arte contemporáneo 1 </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/t-topoi 1.md\"> t-topoi 1 </a>"
+        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1788,6 +1878,9 @@
         "<a class=\"internal-link\" href=\"image/23112422.excalidraw.md\"> 23112422.excalidraw </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/Clemens Wöllner.md\"> Clemens Wöllner </a>",
+        "<a class=\"internal-link\" href=\"00-in/hd-hydra.md\"> hd-hydra </a>",
+        "<a class=\"internal-link\" href=\"04-out/bibliografía/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad2.md\"> El Azar y la Necesidad2 </a>",
@@ -1835,12 +1928,11 @@
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/coloquial MOC.md\"> coloquial MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/bib MOC.md\"> bib MOC </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>"
       ],
       "Linked": [
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym10y11-Aframe.md\"> c-cym10y11-Aframe </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym12-Aframe2.md\"> c-cym12-Aframe2 </a>",
@@ -1889,9 +1981,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/Coloquio/Presentación del coloquio de música visual.md\"> Presentación del coloquio de música visual </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym09-visual.md\"> c-cym09-visual </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-in/cym MOC.md\"> cym MOC </a>",
-        "<a class=\"internal-link\" href=\"00-in/eventos MOC.md\"> eventos MOC </a>"
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Removed Tags from": [
         "<a class=\"internal-link\" href=\"00-in/c-i102-Timbre y Materiales.md\"> c-i102-Timbre y Materiales </a>",
@@ -1909,7 +1999,9 @@
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-in/Agregación limitada por difusión.md\"> Agregación limitada por difusión </a>",
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>"
+        "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
       ],
       "Removed Links from": [
         "<a class=\"internal-link\" href=\"00-in/slider test.md\"> slider test </a>",
@@ -1922,7 +2014,8 @@
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
         "<a class=\"internal-link\" href=\"04-out/topoi/Azar.md\"> Azar </a>",
         "<a class=\"internal-link\" href=\"01-proj/tp/tp01-topoi.md\"> tp01-topoi </a>",
-        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>"
+        "<a class=\"internal-link\" href=\"03-cla/c-cym01-arte y ciencia - estado de la cuestión.md\"> c-cym01-arte y ciencia - estado de la cuestión </a>",
+        "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>"
       ]
     }
   },

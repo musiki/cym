@@ -650,5 +650,13 @@
       ],
       "key": "M"
     }
+  ],
+  "global-search-and-replace:search-and-replace": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "F"
+    }
   ]
 }

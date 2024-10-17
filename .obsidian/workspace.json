@@ -13,28 +13,53 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
+                "file": "02-mat/obs/tpl/t-person.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "t-person"
             }
           },
           {
-            "id": "627990a30017f1b0",
+            "id": "c24cfceb2165d8fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Nicolas Schoffer.md",
-                "mode": "source",
+                "file": "00-moc/obras MOC.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "obras MOC"
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "a63e7d550aa29f51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0eacf297a7a16dca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/personas MOC.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "personas MOC"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -54,7 +79,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -69,7 +96,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -77,14 +106,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 200
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -93,7 +124,7 @@
       {
         "id": "aaca835876e592bb",
         "type": "tabs",
-        "dimension": 19.474196689386563,
+        "dimension": 45.46296296296296,
         "children": [
           {
             "id": "8c7ec6495dcddec6",
@@ -101,8 +132,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-in/Nicolas Schoffer.md"
-              }
+                "file": "00-moc/obras MOC.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of obras MOC"
             }
           },
           {
@@ -110,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "QUICKSHARE_SIDE_VIEW",
-              "state": {}
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
             }
           },
           {
@@ -119,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-in/Nicolas Schoffer.md",
+                "file": "00-moc/obras MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +162,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for obras MOC"
             }
           },
           {
@@ -135,7 +172,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -147,15 +186,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
-            }
-          },
-          {
-            "id": "769a14740826ee17",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -163,7 +196,9 @@
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -171,16 +206,58 @@
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "dadcd00ddeddea13",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          },
+          {
+            "id": "cf6de22936ce8633",
+            "type": "leaf",
+            "state": {
+              "type": "smart_chatgpt",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "4d93d36d5cc7f27f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "76095988d6fe887d",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 10
       },
       {
         "id": "b33cb9828f682814",
         "type": "tabs",
-        "dimension": 44.40116845180137,
+        "dimension": 18.51851851851852,
         "children": [
           {
             "id": "20c732dc2cc0ecaf",
@@ -190,7 +267,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           }
         ]
@@ -198,21 +277,23 @@
       {
         "id": "0b21d0481a2a08a7",
         "type": "tabs",
-        "dimension": 36.12463485881207,
+        "dimension": 36.01851851851852,
         "children": [
           {
             "id": "d666d2187372564f",
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 251.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,59 +305,61 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "notion-like-tables:Create loom": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-kanban:Create new board": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-metatable:Metatable": false,
-      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian42-text-transporter:Text Transporter": false,
       "obsidian42-brat:BRAT": false,
-      "notion-like-tables:Create loom": false,
-      "obsidian-review-notes-plugin:View Recent Notes": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-kanban:Create new board": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "translate:Open translation view": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "callout-manager:Insert Callout": false,
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+      "translate:Open translation view": false,
+      "digitalgarden:Digital Garden Publication Center": false,
       "wikipedia-search:Open Article": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-book-search-plugin:Create new book note": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "templater-obsidian:Templater": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "627990a30017f1b0",
+  "active": "c24cfceb2165d8fa",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "04-out/personas/Jim Campbell.md",
+    "00-moc/personas MOC.md",
+    "campbellDialogosIlusorios2000.md",
+    "02-mat/obs/tpl/t-person.md",
+    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
+    "00-in/Clemens Wöllner.md",
+    "00-in/Nicolas Schoffer.md",
+    "04-out/personas/Clemens Wöllner.md",
+    "04-out/personas/Gustav Metzger.md",
+    "04-out/personas/Hans Haake.md",
+    "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md",
+    "04-out/personas/Juan Sorrentino.md",
+    "04-out/personas/Max Bense.md",
+    "04-out/personas/Nicolas Schoffer.md",
+    "04-out/personas/Yuval Noah Harari.md",
+    "04-out/personas/Andrés Aizicovich.md",
+    "04-out/personas/David Rokeby.md",
+    "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md",
+    "smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md",
+    "04-out/obras/Very Nervous System.md",
+    "00-moc/obras MOC.md",
+    "02-mat/obs/tpl/t-obra.md",
+    "02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md",
     "force",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
-    "03-cla/c-cym00-presentación.md",
+    "00-in/hd-hydra.md",
+    "00-in/combinational creativity.md",
+    "00-in/Max Bense.md",
     "cym-metamap.canvas",
-    "00-moc/cym MOC.md",
-    "02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md",
-    "03-cla/c-cym14-un instrumento online colectivo.md",
-    "03-cla/c-cym13-Proto-historia del arte numérico argentino.md",
-    "03-cla/c-cym12-Aframe2.md",
-    "03-cla/c-cym10y11-Aframe.md",
-    "03-cla/c-cym09-visual.md",
-    "03-cla/c-cym09-networking.md",
-    "03-cla/c-cym09-hydra+tone.js.md",
-    "03-cla/c-cym09-flex-grid.md",
-    "03-cla/c-cym08-hydra+p5.js.md",
-    "03-cla/c-cym08-github pages+hydra.md",
-    "03-cla/c-cym07-creative computing.md",
-    "03-cla/c-cym07-cohesión audiovisual.md",
-    "03-cla/c-cym06c-tonejs.md",
-    "03-cla/c-cym06b-relaciones sonolumínicas.md",
-    "03-cla/c-cym06-principios generativos.md",
-    "03-cla/c-cym05.06-integración.md",
-    "03-cla/c-cym04-vida digital.md",
-    "03-cla/c-cym03-mapas.md",
-    "03-cla/c-cym02-arte generativo.md",
-    "image/23112422.excalidraw.md",
     "image/untref-logo-w.svg",
     "image/untref-logo-w.png",
     "02-mat/obs/img/probando Upstart-1696798852409.jpeg",
