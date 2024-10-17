@@ -1612,8 +1612,8 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 564,
-      "Create": 426,
+      "Refactor": 565,
+      "Create": 427,
       "Link": 337,
       "Expand": 56
     }
@@ -1625,7 +1625,7 @@
       "2": 85,
       "3": 3,
       "4": 29,
-      "5": 26,
+      "5": 28,
       "6": 6,
       "7": 32,
       "8": 19,
@@ -1651,7 +1651,7 @@
       "Mon": 84,
       "Tue": 147,
       "Wed": 670,
-      "Thu": 167,
+      "Thu": 169,
       "Fri": 143,
       "Sat": 0,
       "Sun": 172
@@ -1713,6 +1713,7 @@
         "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"campbellDialogosIlusorios2000.md\"> campbellDialogosIlusorios2000 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md\"> UNTITLED CHAT 2024-10-16 14 50 42 </a>",
@@ -1762,8 +1763,7 @@
         "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>",
         "<a class=\"internal-link\" href=\"00-in/Gustav Metzger.md\"> Gustav Metzger </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Una mirada profunda.md\"> Una mirada profunda </a>"
+        "<a class=\"internal-link\" href=\"02-mat/partituras/tonejs/01-tone.js.md\"> 01-tone.js </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"04-out/personas/Jim Campbell.md\"> Jim Campbell </a>",
@@ -1878,6 +1878,7 @@
         "<a class=\"internal-link\" href=\"image/23112422.excalidraw.md\"> 23112422.excalidraw </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"00-in/Clemens Wöllner.md\"> Clemens Wöllner </a>",
         "<a class=\"internal-link\" href=\"00-in/hd-hydra.md\"> hd-hydra </a>",
         "<a class=\"internal-link\" href=\"04-out/bibliografía/b-Azar y necesidad.md\"> b-Azar y necesidad </a>",
@@ -1927,8 +1928,7 @@
         "<a class=\"internal-link\" href=\"00-moc/obras MOC.md\"> obras MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/eventos MOC.md\"> eventos MOC </a>",
         "<a class=\"internal-link\" href=\"00-moc/espacios MOC.md\"> espacios MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/cym MOC.md\"> cym MOC </a>"
+        "<a class=\"internal-link\" href=\"00-moc/códigos MOC.md\"> códigos MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",

@@ -36,9 +36,24 @@
               "icon": "lucide-file",
               "title": "obras MOC"
             }
+          },
+          {
+            "id": "8fc9a4fdd328272f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "a63e7d550aa29f51",
@@ -132,10 +147,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-moc/obras MOC.md"
+                "file": "conflict-files-obsidian-git.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of obras MOC"
+              "title": "Outline of conflict-files-obsidian-git"
             }
           },
           {
@@ -154,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-moc/obras MOC.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +179,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for obras MOC"
+              "title": "Backlinks for conflict-files-obsidian-git"
             }
           },
           {
@@ -330,8 +345,10 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "c24cfceb2165d8fa",
+  "active": "8fc9a4fdd328272f",
   "lastOpenFiles": [
+    "00-moc/obras MOC.md",
+    "conflict-files-obsidian-git.md",
     "04-out/personas/Jim Campbell.md",
     "00-moc/personas MOC.md",
     "campbellDialogosIlusorios2000.md",
@@ -352,13 +369,11 @@
     "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md",
     "smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md",
     "04-out/obras/Very Nervous System.md",
-    "00-moc/obras MOC.md",
     "02-mat/obs/tpl/t-obra.md",
     "02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md",
     "force",
     "00-in/hd-hydra.md",
     "00-in/combinational creativity.md",
-    "00-in/Max Bense.md",
     "cym-metamap.canvas",
     "image/untref-logo-w.svg",
     "image/untref-logo-w.png",
