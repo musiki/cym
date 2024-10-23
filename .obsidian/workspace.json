@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "825fa4f9af293c03",
+        "id": "0483e486cbea20a8",
         "type": "tabs",
         "children": [
           {
-            "id": "2b37d2d60daeb58c",
+            "id": "724fab3359c3f630",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/obs/tpl/t-person.md",
+                "file": "05-obs/check-out de imagenes.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "t-person"
-            }
-          },
-          {
-            "id": "c24cfceb2165d8fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-moc/obras MOC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "obras MOC"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "a63e7d550aa29f51",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0eacf297a7a16dca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-moc/personas MOC.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "personas MOC"
+              "title": "check-out de imagenes"
             }
           }
         ]
@@ -115,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 387.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -192,26 +155,6 @@
             }
           },
           {
-            "id": "7a86e7451c9a0945",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "b1c0d6a6ff69022f",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-chat-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
             "id": "dadcd00ddeddea13",
             "type": "leaf",
             "state": {
@@ -222,17 +165,17 @@
             }
           },
           {
-            "id": "cf6de22936ce8633",
+            "id": "1c74552e36445997",
             "type": "leaf",
             "state": {
-              "type": "smart_chatgpt",
+              "type": "review-queue-list-view",
               "state": {},
               "icon": "lucide-file",
               "title": "Plugin no longer active"
             }
           },
           {
-            "id": "4d93d36d5cc7f27f",
+            "id": "1974cdde1fa64ce0",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -242,7 +185,7 @@
             }
           },
           {
-            "id": "76095988d6fe887d",
+            "id": "5fa2194ece6ad344",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -252,7 +195,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 8
       },
       {
         "id": "b33cb9828f682814",
@@ -293,7 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 359.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -330,50 +273,50 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "c24cfceb2165d8fa",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "00-moc/obras MOC.md",
-    "04-out/personas/Jim Campbell.md",
-    "00-moc/personas MOC.md",
+    "02-mat/obs/tpl/mat-partitura.md",
+    "04-out/procedimientos/combinational creativity.md",
+    "04-out/procedimientos/tipologías de instalación.md",
+    "04-out/procedimientos/extrañamiento.md",
+    "04-out/procedimientos/meta-aprendizaje.md",
+    "05-obs/check-out de imagenes.md",
+    "02-mat/org/i-theremin.md",
+    "02-mat/org/i-sackbut.md",
+    "02-mat/procesos/r-vinculación bidireccional.md",
+    "02-mat/procesos/r-como hacer un proyectual.md",
+    "cym-metamap.canvas",
     "campbellDialogosIlusorios2000.md",
-    "02-mat/obs/tpl/t-person.md",
-    "00-in/Jean-Robert Sedano et Solveig de Ory.md",
-    "00-in/Clemens Wöllner.md",
-    "00-in/Nicolas Schoffer.md",
-    "04-out/personas/Clemens Wöllner.md",
-    "04-out/personas/Gustav Metzger.md",
-    "04-out/personas/Hans Haake.md",
-    "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md",
-    "04-out/personas/Juan Sorrentino.md",
-    "04-out/personas/Max Bense.md",
-    "04-out/personas/Nicolas Schoffer.md",
-    "04-out/personas/Yuval Noah Harari.md",
-    "04-out/personas/Andrés Aizicovich.md",
-    "04-out/personas/David Rokeby.md",
+    "home.md",
+    "00-moc/personas MOC.md",
+    "05-obs/tpl/t-person.md",
+    "00-moc/coloquial MOC.md",
+    "02-mat/coloquial/un objeto mas allá de la música.md",
+    "00-in/pacto da música na saúde mental e física.md",
+    "smart-chats/UNTITLED CHAT 2024-10-23 06 21 03.md",
     "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md",
     "smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md",
-    "04-out/obras/Very Nervous System.md",
-    "02-mat/obs/tpl/t-obra.md",
-    "02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md",
+    "03-cla/c-cym00-presentación.md",
+    "02-mat/procesos/Untitled.loom",
+    "02-mat/python/python abjad.md",
+    "02-mat/python/pycolors.md",
+    "02-mat/python/py-foundations.md",
+    "02-mat/rant.md",
+    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "force",
-    "00-in/hd-hydra.md",
-    "00-in/combinational creativity.md",
-    "cym-metamap.canvas",
-    "image/untref-logo-w.svg",
-    "image/untref-logo-w.png",
-    "02-mat/obs/img/probando Upstart-1696798852409.jpeg",
-    "02-mat/obs/img/probando Upstart-1696798852406.jpeg",
+    "05-obs/img/untref-logo-w.svg",
+    "05-obs/img/untref-logo-w.png",
+    "05-obs/img/probando Upstart-1696798852409.jpeg",
+    "05-obs/img/probando Upstart-1696798852406.jpeg",
     "smart-chats",
-    "02-mat/obs/img/Presentación del coloquio de Música visual.pptx",
+    "05-obs/img/Presentación del coloquio de Música visual.pptx",
     "01-proj/23/Zaracho/Presentación - Música-Política.pdf",
-    "02-mat/obs/img/Pasted Image 20231124224904_052.png",
+    "05-obs/img/Pasted Image 20231124224904_052.png",
     "image",
-    "02-mat/obs/img/proyectual_cym_bassino_borrador (1).pdf",
-    "02-mat/obs/img/sensor de distancia (1) 1.pdf",
-    "02-mat/obs/img/sensor de distancia.pdf",
-    "02-mat/obs/img/proyectual CLOROLASER 1.pdf",
-    "02-mat/obs/img/sensor de distancia 3.pdf",
+    "05-obs/img/proyectual_cym_bassino_borrador (1).pdf",
+    "05-obs/img/sensor de distancia (1) 1.pdf",
+    "05-obs/img/sensor de distancia.pdf",
+    "05-obs/img/proyectual CLOROLASER 1.pdf",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
     "02-mat/obs/img/image/TP código-1698190820134.jpeg",
     "02-mat/obs/img/image/TP código-1698190820125.jpeg",

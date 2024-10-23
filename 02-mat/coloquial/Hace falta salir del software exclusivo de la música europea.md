@@ -1,6 +1,7 @@
 ---
 tags:
   - entrevistas
+  - curaduría
 place: 
 persona: 
 connections: 

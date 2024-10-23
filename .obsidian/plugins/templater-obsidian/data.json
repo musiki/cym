@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "02-mat/obs/tpl",
+  "templates_folder": "05-obs/tpl",
   "templates_pairs": [
     [
       "",
@@ -11,17 +11,47 @@
   "auto_jump_to_cursor": false,
   "enable_system_commands": true,
   "shell_path": "",
-  "user_scripts_folder": "02-mat/obs/templates",
+  "user_scripts_folder": "05-obs/tpl",
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
+      "folder": "04-out/espacios",
+      "template": "05-obs/tpl/t-espacios.md"
+    },
+    {
+      "folder": "04-out/obras",
+      "template": "05-obs/tpl/t-obra.md"
+    },
+    {
+      "folder": "04-out/personas",
+      "template": "05-obs/tpl/t-person.md"
+    },
+    {
+      "folder": "03-cla",
+      "template": "05-obs/tpl/t-cym-class.md"
+    },
+    {
+      "folder": "02-mat/coloquial",
+      "template": "05-obs/tpl/t-entrevistas.md"
+    },
+    {
+      "folder": "04-out/glosario",
+      "template": "05-obs/tpl/t-concept.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
       "template": ""
     }
   ],
   "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "02-mat/obs/tpl/t-persona.md"
+    "05-obs/tpl/t-person.md",
+    "05-obs/tpl/t-espacios.md",
+    "05-obs/tpl/t-obra.md"
   ],
   "startup_templates": [
     ""

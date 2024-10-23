@@ -369,7 +369,7 @@
         "es",
         "de"
       ],
-      "api_key": "679eca84-77ce-6459-d638-b84d1e5451de:fx",
+      "api_key": "8155a769-4ca6-4278-a28f-1d44c15c63f8",
       "auto_translate": false,
       "auto_translate_interval": 500,
       "validated": true,
@@ -539,7 +539,7 @@
         ]
       },
       "version": "1.0.3",
-      "host": "https://api-free.deepl.com/v2",
+      "host": "https://api.deepl.com/v2",
       "formality": "formal"
     },
     "fasttext": {

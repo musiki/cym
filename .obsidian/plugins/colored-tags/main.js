@@ -26,7 +26,7 @@ var __publicField = (obj, key, value) => {
   return value;
 };
 
-// main.ts
+// src/main.ts
 var main_exports = {};
 __export(main_exports, {
   default: () => ColoredTagsPlugin
@@ -3089,7 +3089,7 @@ Color.extend(luminance);
 Color.extend(interpolation);
 Color.extend(contrastMethods);
 
-// coloredClassApplyerPlugin.ts
+// src/coloredClassApplyerPlugin.ts
 var import_view = require("@codemirror/view");
 function coloredClassApplyer(domElement) {
   const tagElements = [];
@@ -3118,19 +3118,21 @@ function coloredClassApplyer(domElement) {
     }
   });
 }
-var coloredClassApplyerPlugin = import_view.ViewPlugin.fromClass(class {
-  constructor(view) {
-    coloredClassApplyer(view.dom);
+var coloredClassApplyerPlugin = import_view.ViewPlugin.fromClass(
+  class {
+    constructor(view) {
+      coloredClassApplyer(view.dom);
+    }
+    update(update) {
+      coloredClassApplyer(update.view.dom);
+    }
   }
-  update(update) {
-    coloredClassApplyer(update.view.dom);
-  }
-});
+);
 
-// ColoredTagsPluginSettingTab.ts
+// src/ColoredTagsPluginSettingTab.ts
 var import_obsidian = require("obsidian");
 
-// defaultSettings.ts
+// src/defaultSettings.ts
 var DEFAULT_SETTINGS = {
   palette: {
     seed: 0,
@@ -3146,7 +3148,7 @@ var DEFAULT_SETTINGS = {
   _version: 3
 };
 
-// ColoredTagsPluginSettingTab.ts
+// src/ColoredTagsPluginSettingTab.ts
 var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -3163,8 +3165,16 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
     palette.forEach((paletteColor, index) => {
       const firstElementStyles = "border-radius: var(--radius-m) 0 0 var(--radius-m)";
       const lastElementStyles = "border-radius: 0 var(--radius-m) var(--radius-m) 0";
-      const styles = [index === 0 && firstElementStyles, "flex: 1", "height: 2em", `background-color: ${paletteColor}`, index === palette.length - 1 && lastElementStyles];
-      paletteEl.createEl("div", { attr: { style: styles.filter(Boolean).join(";") } });
+      const styles = [
+        index === 0 && firstElementStyles,
+        "flex: 1",
+        "height: 2em",
+        `background-color: ${paletteColor}`,
+        index === palette.length - 1 && lastElementStyles
+      ];
+      paletteEl.createEl("div", {
+        attr: { style: styles.filter(Boolean).join(";") }
+      });
     });
   }
   renderTags(containerEl) {
@@ -3175,19 +3185,23 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
     }
     const tagEl = containerEl.createEl("div", {
       cls: "tagsExample",
-      attr: { style: `display: flex; gap: 0.5em; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 1em 0 2em;` }
+      attr: {
+        style: `display: flex; gap: 0.5em; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 1em 0 2em;`
+      }
     });
     tagsArray.sort((a2, b2) => {
       return tagsObject[b2] - tagsObject[a2];
     });
     const mostPopularTags = tagsArray.splice(0, 2);
-    const mostPopularNestedTags = Object.values(tagsArray.reduce((acc, tag) => {
-      const nestingLevel = tag.split("/").length;
-      if (!acc[nestingLevel]) {
-        acc[nestingLevel] = tag;
-      }
-      return acc;
-    }, {}));
+    const mostPopularNestedTags = Object.values(
+      tagsArray.reduce((acc, tag) => {
+        const nestingLevel = tag.split("/").length;
+        if (!acc[nestingLevel]) {
+          acc[nestingLevel] = tag;
+        }
+        return acc;
+      }, {})
+    );
     [...mostPopularTags, ...mostPopularNestedTags].forEach((tag) => {
       const link = tagEl.createEl("a", { attr: { href: tag } });
       link.classList.add("tag");
@@ -3217,7 +3231,9 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
     if (this.plugin.settings.palette.selected === "custom") {
       const customPaletteField = new import_obsidian.Setting(containerEl).setName("Custom palette").setDesc("").addText((text) => {
         text.inputEl.style.minWidth = "100%";
-        text.setValue(this.plugin.settings.palette.custom).setPlaceholder("Paste palette");
+        text.setValue(
+          this.plugin.settings.palette.custom
+        ).setPlaceholder("Paste palette");
         text.onChange(async (value) => {
           if (/^([A-Fa-f0-9]{6}(-|$))+$/i.test(value)) {
             this.plugin.settings.palette.custom = value;
@@ -3231,7 +3247,9 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
 				You can share the best color palettes or get one <a href="https://github.com/pfrankov/obsidian-colored-tags/discussions/18">from the community</a>.
 			`.trim();
     }
-    new import_obsidian.Setting(containerEl).setName("Palette shift").setDesc("If the colors of some tags don't fit, you can shift the palette.").addSlider(
+    new import_obsidian.Setting(containerEl).setName("Palette shift").setDesc(
+      "If the colors of some tags don't fit, you can shift the palette."
+    ).addSlider(
       (slider) => slider.setLimits(0, this.plugin.palettes.light.length - 1, 1).setValue(this.plugin.settings.palette.seed).onChange(async (value) => {
         slider.showTooltip();
         this.plugin.settings.palette.seed = value;
@@ -3247,14 +3265,18 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
     );
     if (this.showAccessibility) {
       new import_obsidian.Setting(containerEl).setName("High text contrast").setDesc("Use only white and black colors for texts").addToggle(
-        (toggle) => toggle.setValue(this.plugin.settings.accessibility.highTextContrast).onChange(async (value) => {
+        (toggle) => toggle.setValue(
+          this.plugin.settings.accessibility.highTextContrast
+        ).onChange(async (value) => {
           this.plugin.settings.accessibility.highTextContrast = value;
           await this.plugin.saveSettings();
           this.display();
         })
       );
     }
-    new import_obsidian.Setting(containerEl).setHeading().setName("\u{1F9EA} Experimental").setDesc("Dangerous actions or insanely unstable options that could be changed or removed in any time").addToggle(
+    new import_obsidian.Setting(containerEl).setHeading().setName("\u{1F9EA} Experimental").setDesc(
+      "Dangerous actions or insanely unstable options that could be changed or removed in any time"
+    ).addToggle(
       (toggle) => toggle.setValue(this.showExperimental).onChange(async (value) => {
         this.showExperimental = value;
         this.display();
@@ -3275,14 +3297,22 @@ var ColoredTagsPluginSettingTab = class extends import_obsidian.PluginSettingTab
           this.display();
         })
       );
-      new import_obsidian.Setting(containerEl).setName("Reset config").setDesc("\u{1F6A8} All colors of all tags will be recalculated as if it was the first launch of the plugin. Requires restart of Obsidian.").addButton(
+      new import_obsidian.Setting(containerEl).setName("Reset config").setDesc(
+        "\u{1F6A8} All colors of all tags will be recalculated as if it was the first launch of the plugin. Requires restart of Obsidian."
+      ).addButton(
         (button) => button.setButtonText("Reset").setClass("mod-warning").onClick(async () => {
-          new import_obsidian.Notice(`\u2705 Reset is done
-Please restart Obsidian`, 1e4);
+          new import_obsidian.Notice(
+            `\u2705 Reset is done
+Please restart Obsidian`,
+            1e4
+          );
           button.setDisabled(true);
           button.buttonEl.setAttribute("disabled", "true");
           button.buttonEl.classList.remove("mod-warning");
-          this.plugin.settings = Object.assign({}, DEFAULT_SETTINGS);
+          this.plugin.settings = Object.assign(
+            {},
+            DEFAULT_SETTINGS
+          );
           await this.plugin.saveData(this.plugin.settings);
         })
       );
@@ -3290,7 +3320,7 @@ Please restart Obsidian`, 1e4);
   }
 };
 
-// main.ts
+// src/main.ts
 var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
@@ -3306,17 +3336,34 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
     this.app.workspace.onLayoutReady(async () => {
       await this.saveKnownTags();
       this.reload();
+      window.setTimeout(() => {
+        this.checkUpdates();
+      }, 5e3);
       this.registerEvent(
-        this.app.workspace.on("editor-change", (0, import_obsidian2.debounce)(async () => {
-          await this.saveKnownTags();
-          this.update();
-        }, 3e3, true))
+        this.app.workspace.on(
+          "editor-change",
+          (0, import_obsidian2.debounce)(
+            async () => {
+              await this.saveKnownTags();
+              this.update();
+            },
+            3e3,
+            true
+          )
+        )
       );
       this.registerEvent(
-        this.app.workspace.on("active-leaf-change", (0, import_obsidian2.debounce)(async () => {
-          await this.saveKnownTags();
-          this.update();
-        }, 300, true))
+        this.app.workspace.on(
+          "active-leaf-change",
+          (0, import_obsidian2.debounce)(
+            async () => {
+              await this.saveKnownTags();
+              this.update();
+            },
+            300,
+            true
+          )
+        )
       );
       this.addSettingTab(new ColoredTagsPluginSettingTab(this.app, this));
       this.registerEditorExtension(coloredClassApplyerPlugin);
@@ -3350,7 +3397,9 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
       });
     });
     if (isNeedToSave) {
-      this.settings.knownTags = Object.fromEntries(this.tagsMap.entries());
+      this.settings.knownTags = Object.fromEntries(
+        this.tagsMap.entries()
+      );
       await this.saveData(this.settings);
     }
   }
@@ -3369,10 +3418,31 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
       }
     });
   }
+  async checkUpdates() {
+    try {
+      const { json: response } = await (0, import_obsidian2.requestUrl)({
+        url: "https://api.github.com/repos/pfrankov/obsidian-colored-tags/releases/latest",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        contentType: "application/json"
+      });
+      if (response.tag_name !== this.manifest.version) {
+        new import_obsidian2.Notice(`\u2B06\uFE0F Colored Tags: a new version is available`);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
   reload() {
     this.onunload();
     this.generatePalettes();
     this.update();
+    this.updatingInterval = window.setInterval(
+      this.checkUpdates.bind(this),
+      108e5
+    );
   }
   async saveSettings() {
     await this.saveData(this.settings);
@@ -3387,7 +3457,9 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
     chunks.forEach((chunk) => {
       const key = [combinedTag, chunk].filter(Boolean).join("/");
       const order = this.tagsMap.get(key) || 1;
-      const filteredPalette = palette.filter((colorString) => colorString !== lastColor);
+      const filteredPalette = palette.filter(
+        (colorString) => colorString !== lastColor
+      );
       const colorFromPalette = filteredPalette[(order - 1) % filteredPalette.length];
       lastColor = colorFromPalette;
       let newColor;
@@ -3434,8 +3506,12 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
     if (highTextContrast) {
       const whiteColor = new Color("white");
       const blackColor = new Color("black");
-      const onWhite = Math.abs(backgroundColor.contrast(whiteColor, "APCA"));
-      const onBlack = Math.abs(backgroundColor.contrast(blackColor, "APCA"));
+      const onWhite = Math.abs(
+        backgroundColor.contrast(whiteColor, "APCA")
+      );
+      const onBlack = Math.abs(
+        backgroundColor.contrast(blackColor, "APCA")
+      );
       color = onWhite > onBlack ? whiteColor : blackColor;
     } else {
       color = darkenColorForContrast(backgroundColor);
@@ -3445,30 +3521,62 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
   colorizeTag(tagName) {
     tagName = tagName.replace(/#/g, "");
     const tagHref = "#" + tagName.replace(/\//g, "\\/");
-    const tagFlat = tagName.replace(/[^0-9a-z-]/ig, "");
-    const { background: backgroundLight, color: colorLight, linearGradient: linearGradientLight } = this.getColors(tagName, this.palettes.light, this.settings.mixColors, this.settings.transition, this.settings.accessibility.highTextContrast);
-    const { background: backgroundDark, color: colorDark, linearGradient: linearGradientDark } = this.getColors(tagName, this.palettes.dark, this.settings.mixColors, this.settings.transition, this.settings.accessibility.highTextContrast);
+    const tagFlat = tagName.replace(/[^0-9a-z-]/gi, "");
+    const {
+      background: backgroundLight,
+      color: colorLight,
+      linearGradient: linearGradientLight
+    } = this.getColors(
+      tagName,
+      this.palettes.light,
+      this.settings.mixColors,
+      this.settings.transition,
+      this.settings.accessibility.highTextContrast
+    );
+    const {
+      background: backgroundDark,
+      color: colorDark,
+      linearGradient: linearGradientDark
+    } = this.getColors(
+      tagName,
+      this.palettes.dark,
+      this.settings.mixColors,
+      this.settings.transition,
+      this.settings.accessibility.highTextContrast
+    );
     const selectors = [
       `a.tag[href="${tagHref}"]`,
       `.cm-s-obsidian .cm-line span.cm-hashtag.colored-tag-${tagName.toLowerCase().replace(/\//g, "\\/")}`
     ];
     if (tagFlat) {
-      selectors.push(`.cm-s-obsidian .cm-line span.cm-tag-${tagFlat.toLowerCase()}.cm-hashtag`);
-      selectors.push(`.cm-s-obsidian .cm-line span.cm-tag-${tagFlat}.cm-hashtag`);
+      selectors.push(
+        `.cm-s-obsidian .cm-line span.cm-tag-${tagFlat.toLowerCase()}.cm-hashtag`
+      );
+      selectors.push(
+        `.cm-s-obsidian .cm-line span.cm-tag-${tagFlat}.cm-hashtag`
+      );
     }
-    const lightThemeSelectors = selectors.map((selector) => "body " + selector);
-    const darkThemeSelectors = selectors.map((selector) => "body.theme-dark " + selector);
+    const lightThemeSelectors = selectors.map(
+      (selector) => "body " + selector
+    );
+    const darkThemeSelectors = selectors.map(
+      (selector) => "body.theme-dark " + selector
+    );
     const linearGradientRotation = "108deg";
     appendCSS(`
 			${lightThemeSelectors.join(", ")} {
 				background-color: ${backgroundLight};
 				color: ${colorLight};
-				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientLight.join(", ")});
+				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientLight.join(
+      ", "
+    )});
 			}
 			${darkThemeSelectors.join(", ")} {
 				background-color: ${backgroundDark};
 				color: ${colorDark};
-				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientDark.join(", ")});
+				background-image: linear-gradient(${linearGradientRotation}, ${linearGradientDark.join(
+      ", "
+    )});
 			}
 		`);
   }
@@ -3550,6 +3658,7 @@ var ColoredTagsPlugin = class extends import_obsidian2.Plugin {
   onunload() {
     this.renderedTagsSet.clear();
     removeCSS();
+    window.clearInterval(this.updatingInterval);
   }
 };
 var darkenMemoization = /* @__PURE__ */ new Map();
@@ -3585,7 +3694,15 @@ function darkenColorForContrast(baseColor) {
   darkenMemoization.set(memoizationKey, result);
   return result;
 }
-function generateAdaptiveColorPalette({ isDarkTheme, paletteSize, baseChroma, baseLightness, constantOffset, isShuffling, seed }) {
+function generateAdaptiveColorPalette({
+  isDarkTheme,
+  paletteSize,
+  baseChroma,
+  baseLightness,
+  constantOffset,
+  isShuffling,
+  seed
+}) {
   const hueIncrement = 360 / paletteSize;
   const availableColors = [];
   for (let i = 0; i < paletteSize; i++) {
@@ -3596,7 +3713,11 @@ function generateAdaptiveColorPalette({ isDarkTheme, paletteSize, baseChroma, ba
       chroma = Math.min(Math.round(baseChroma * 1.8), 100);
       lightness = Math.min(Math.round(baseLightness / 2.5), 100);
     }
-    const lchColor = new Color("lch", [lightness, chroma, hue % 360]).toString();
+    const lchColor = new Color("lch", [
+      lightness,
+      chroma,
+      hue % 360
+    ]).toString();
     availableColors.push(lchColor);
   }
   if (!isShuffling) {
@@ -3614,7 +3735,11 @@ function generateAdaptiveColorPalette({ isDarkTheme, paletteSize, baseChroma, ba
   result.splice(0, 0, ...cut);
   return result;
 }
-function processColorPalette({ isDarkTheme, palette, seed }) {
+function processColorPalette({
+  isDarkTheme,
+  palette,
+  seed
+}) {
   const availableColors = [];
   for (const item of palette) {
     availableColors.push(new Color(item).to("lch").toString());
@@ -3647,3 +3772,5 @@ function removeCSS() {
     el.remove();
   });
 }
+
+/* nosourcemap */

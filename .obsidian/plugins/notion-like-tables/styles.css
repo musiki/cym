@@ -37,17 +37,6 @@
   margin-bottom: 0.5em;
 }
 
-/* src/obsidian/modal/whats-new-modal/styles.css */
-.dataloom-whats-new-modal__spacer {
-  height: 10px;
-}
-.dataloom-whats-new-modal__badge-container {
-  margin: 20px 0px;
-}
-.dataloom-whats-new-modal__content strong {
-  font-size: var(--font-ui-large);
-}
-
 /* src/shared/spacing/styles.css */
 .dataloom-overflow--wrap {
   overflow: hidden;

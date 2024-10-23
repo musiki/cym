@@ -632,15 +632,6 @@
       "key": "B"
     }
   ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "E"
-    }
-  ],
   "notion-like-tables:add-column": [],
   "obsidian-markmind:Toggle to markdown or mindmap": [
     {
@@ -657,6 +648,15 @@
         "Ctrl"
       ],
       "key": "F"
+    }
+  ],
+  "markdown:toggle-preview": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
     }
   ]
 }

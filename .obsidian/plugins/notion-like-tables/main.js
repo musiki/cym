@@ -438,20 +438,20 @@ var require_react_development = __commonJS({
         {
           Object.freeze(emptyObject);
         }
-        function Component2(props, context, updater) {
+        function Component(props, context, updater) {
           this.props = props;
           this.context = context;
           this.refs = emptyObject;
           this.updater = updater || ReactNoopUpdateQueue;
         }
-        Component2.prototype.isReactComponent = {};
-        Component2.prototype.setState = function(partialState, callback) {
+        Component.prototype.isReactComponent = {};
+        Component.prototype.setState = function(partialState, callback) {
           if (typeof partialState !== "object" && typeof partialState !== "function" && partialState != null) {
             throw new Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
           }
           this.updater.enqueueSetState(this, partialState, callback, "setState");
         };
-        Component2.prototype.forceUpdate = function(callback) {
+        Component.prototype.forceUpdate = function(callback) {
           this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
         };
         {
@@ -460,7 +460,7 @@ var require_react_development = __commonJS({
             replaceState: ["replaceState", "Refactor your code to use setState instead (see https://github.com/facebook/react/issues/3236)."]
           };
           var defineDeprecationWarning = function(methodName, info) {
-            Object.defineProperty(Component2.prototype, methodName, {
+            Object.defineProperty(Component.prototype, methodName, {
               get: function() {
                 warn("%s(...) is deprecated in plain JavaScript React classes. %s", info[0], info[1]);
                 return void 0;
@@ -475,7 +475,7 @@ var require_react_development = __commonJS({
         }
         function ComponentDummy() {
         }
-        ComponentDummy.prototype = Component2.prototype;
+        ComponentDummy.prototype = Component.prototype;
         function PureComponent(props, context, updater) {
           this.props = props;
           this.context = context;
@@ -484,7 +484,7 @@ var require_react_development = __commonJS({
         }
         var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
         pureComponentPrototype.constructor = PureComponent;
-        assign(pureComponentPrototype, Component2.prototype);
+        assign(pureComponentPrototype, Component.prototype);
         pureComponentPrototype.isPureReactComponent = true;
         function createRef() {
           var refObject = {
@@ -1549,8 +1549,8 @@ var require_react_development = __commonJS({
             return describeNativeComponentFrame(fn2, false);
           }
         }
-        function shouldConstruct(Component3) {
-          var prototype = Component3.prototype;
+        function shouldConstruct(Component2) {
+          var prototype = Component2.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -2056,7 +2056,7 @@ var require_react_development = __commonJS({
           only: onlyChild
         };
         exports.Children = Children;
-        exports.Component = Component2;
+        exports.Component = Component;
         exports.Fragment = REACT_FRAGMENT_TYPE;
         exports.Profiler = REACT_PROFILER_TYPE;
         exports.PureComponent = PureComponent;
@@ -3620,8 +3620,8 @@ var require_react_dom_development = __commonJS({
             return describeNativeComponentFrame(fn2, false);
           }
         }
-        function shouldConstruct(Component2) {
-          var prototype = Component2.prototype;
+        function shouldConstruct(Component) {
+          var prototype = Component.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -11054,9 +11054,9 @@ var require_react_dom_development = __commonJS({
         var contextStackCursor = createCursor(emptyContextObject);
         var didPerformWorkStackCursor = createCursor(false);
         var previousContext = emptyContextObject;
-        function getUnmaskedContext(workInProgress2, Component2, didPushOwnContextIfProvider) {
+        function getUnmaskedContext(workInProgress2, Component, didPushOwnContextIfProvider) {
           {
-            if (didPushOwnContextIfProvider && isContextProvider(Component2)) {
+            if (didPushOwnContextIfProvider && isContextProvider(Component)) {
               return previousContext;
             }
             return contextStackCursor.current;
@@ -11193,8 +11193,8 @@ var require_react_dom_development = __commonJS({
                 case HostRoot:
                   return node.stateNode.context;
                 case ClassComponent: {
-                  var Component2 = node.type;
-                  if (isContextProvider(Component2)) {
+                  var Component = node.type;
+                  if (isContextProvider(Component)) {
                     return node.stateNode.__reactInternalMemoizedMergedChildContext;
                   }
                   break;
@@ -13651,7 +13651,7 @@ var require_react_dom_development = __commonJS({
           }
           return true;
         }
-        function renderWithHooks(current2, workInProgress2, Component2, props, secondArg, nextRenderLanes) {
+        function renderWithHooks(current2, workInProgress2, Component, props, secondArg, nextRenderLanes) {
           renderLanes = nextRenderLanes;
           currentlyRenderingFiber$1 = workInProgress2;
           {
@@ -13671,7 +13671,7 @@ var require_react_dom_development = __commonJS({
               ReactCurrentDispatcher$1.current = HooksDispatcherOnMountInDEV;
             }
           }
-          var children = Component2(props, secondArg);
+          var children = Component(props, secondArg);
           if (didScheduleRenderPhaseUpdateDuringThisPass) {
             var numberOfReRenders = 0;
             do {
@@ -13691,7 +13691,7 @@ var require_react_dom_development = __commonJS({
                 hookTypesUpdateIndexDev = -1;
               }
               ReactCurrentDispatcher$1.current = HooksDispatcherOnRerenderInDEV;
-              children = Component2(props, secondArg);
+              children = Component(props, secondArg);
             } while (didScheduleRenderPhaseUpdateDuringThisPass);
           }
           ReactCurrentDispatcher$1.current = ContextOnlyDispatcher;
@@ -15490,10 +15490,10 @@ var require_react_dom_development = __commonJS({
             child = child.sibling;
           }
         }
-        function resolveDefaultProps(Component2, baseProps) {
-          if (Component2 && Component2.defaultProps) {
+        function resolveDefaultProps(Component, baseProps) {
+          if (Component && Component.defaultProps) {
             var props = assign({}, baseProps);
-            var defaultProps = Component2.defaultProps;
+            var defaultProps = Component.defaultProps;
             for (var propName in defaultProps) {
               if (props[propName] === void 0) {
                 props[propName] = defaultProps[propName];
@@ -16422,22 +16422,22 @@ var require_react_dom_development = __commonJS({
           workInProgress2.child = reconcileChildFibers(workInProgress2, current2.child, null, renderLanes2);
           workInProgress2.child = reconcileChildFibers(workInProgress2, null, nextChildren, renderLanes2);
         }
-        function updateForwardRef(current2, workInProgress2, Component2, nextProps, renderLanes2) {
+        function updateForwardRef(current2, workInProgress2, Component, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component2.propTypes;
+              var innerPropTypes = Component.propTypes;
               if (innerPropTypes) {
                 checkPropTypes(
                   innerPropTypes,
                   nextProps,
                   // Resolved props
                   "prop",
-                  getComponentNameFromType(Component2)
+                  getComponentNameFromType(Component)
                 );
               }
             }
           }
-          var render3 = Component2.render;
+          var render3 = Component.render;
           var ref = workInProgress2.ref;
           var nextChildren;
           var hasId;
@@ -16475,11 +16475,11 @@ var require_react_dom_development = __commonJS({
           reconcileChildren(current2, workInProgress2, nextChildren, renderLanes2);
           return workInProgress2.child;
         }
-        function updateMemoComponent(current2, workInProgress2, Component2, nextProps, renderLanes2) {
+        function updateMemoComponent(current2, workInProgress2, Component, nextProps, renderLanes2) {
           if (current2 === null) {
-            var type = Component2.type;
-            if (isSimpleFunctionComponent(type) && Component2.compare === null && // SimpleMemoComponent codepath doesn't resolve outer props either.
-            Component2.defaultProps === void 0) {
+            var type = Component.type;
+            if (isSimpleFunctionComponent(type) && Component.compare === null && // SimpleMemoComponent codepath doesn't resolve outer props either.
+            Component.defaultProps === void 0) {
               var resolvedType = type;
               {
                 resolvedType = resolveFunctionForHotReloading(type);
@@ -16502,7 +16502,7 @@ var require_react_dom_development = __commonJS({
                   getComponentNameFromType(type)
                 );
               }
-              if (Component2.defaultProps !== void 0) {
+              if (Component.defaultProps !== void 0) {
                 var componentName = getComponentNameFromType(type) || "Unknown";
                 if (!didWarnAboutDefaultPropsOnFunctionComponent[componentName]) {
                   error("%s: Support for defaultProps will be removed from memo components in a future major release. Use JavaScript default parameters instead.", componentName);
@@ -16510,14 +16510,14 @@ var require_react_dom_development = __commonJS({
                 }
               }
             }
-            var child = createFiberFromTypeAndProps(Component2.type, null, nextProps, workInProgress2, workInProgress2.mode, renderLanes2);
+            var child = createFiberFromTypeAndProps(Component.type, null, nextProps, workInProgress2, workInProgress2.mode, renderLanes2);
             child.ref = workInProgress2.ref;
             child.return = workInProgress2;
             workInProgress2.child = child;
             return child;
           }
           {
-            var _type = Component2.type;
+            var _type = Component.type;
             var _innerPropTypes = _type.propTypes;
             if (_innerPropTypes) {
               checkPropTypes(
@@ -16533,7 +16533,7 @@ var require_react_dom_development = __commonJS({
           var hasScheduledUpdateOrContext = checkScheduledUpdateOrContext(current2, renderLanes2);
           if (!hasScheduledUpdateOrContext) {
             var prevProps = currentChild.memoizedProps;
-            var compare = Component2.compare;
+            var compare = Component.compare;
             compare = compare !== null ? compare : shallowEqual2;
             if (compare(prevProps, nextProps) && current2.ref === workInProgress2.ref) {
               return bailoutOnAlreadyFinishedWork(current2, workInProgress2, renderLanes2);
@@ -16546,7 +16546,7 @@ var require_react_dom_development = __commonJS({
           workInProgress2.child = newChild;
           return newChild;
         }
-        function updateSimpleMemoComponent(current2, workInProgress2, Component2, nextProps, renderLanes2) {
+        function updateSimpleMemoComponent(current2, workInProgress2, Component, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
               var outerMemoType = workInProgress2.elementType;
@@ -16586,7 +16586,7 @@ var require_react_dom_development = __commonJS({
               }
             }
           }
-          return updateFunctionComponent(current2, workInProgress2, Component2, nextProps, renderLanes2);
+          return updateFunctionComponent(current2, workInProgress2, Component, nextProps, renderLanes2);
         }
         function updateOffscreenComponent(current2, workInProgress2, renderLanes2) {
           var nextProps = workInProgress2.pendingProps;
@@ -16676,24 +16676,24 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function updateFunctionComponent(current2, workInProgress2, Component2, nextProps, renderLanes2) {
+        function updateFunctionComponent(current2, workInProgress2, Component, nextProps, renderLanes2) {
           {
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component2.propTypes;
+              var innerPropTypes = Component.propTypes;
               if (innerPropTypes) {
                 checkPropTypes(
                   innerPropTypes,
                   nextProps,
                   // Resolved props
                   "prop",
-                  getComponentNameFromType(Component2)
+                  getComponentNameFromType(Component)
                 );
               }
             }
           }
           var context;
           {
-            var unmaskedContext = getUnmaskedContext(workInProgress2, Component2, true);
+            var unmaskedContext = getUnmaskedContext(workInProgress2, Component, true);
             context = getMaskedContext(workInProgress2, unmaskedContext);
           }
           var nextChildren;
@@ -16705,12 +16705,12 @@ var require_react_dom_development = __commonJS({
           {
             ReactCurrentOwner$1.current = workInProgress2;
             setIsRendering(true);
-            nextChildren = renderWithHooks(current2, workInProgress2, Component2, nextProps, context, renderLanes2);
+            nextChildren = renderWithHooks(current2, workInProgress2, Component, nextProps, context, renderLanes2);
             hasId = checkDidRenderIdHook();
             if (workInProgress2.mode & StrictLegacyMode) {
               setIsStrictModeForDevtools(true);
               try {
-                nextChildren = renderWithHooks(current2, workInProgress2, Component2, nextProps, context, renderLanes2);
+                nextChildren = renderWithHooks(current2, workInProgress2, Component, nextProps, context, renderLanes2);
                 hasId = checkDidRenderIdHook();
               } finally {
                 setIsStrictModeForDevtools(false);
@@ -16732,7 +16732,7 @@ var require_react_dom_development = __commonJS({
           reconcileChildren(current2, workInProgress2, nextChildren, renderLanes2);
           return workInProgress2.child;
         }
-        function updateClassComponent(current2, workInProgress2, Component2, nextProps, renderLanes2) {
+        function updateClassComponent(current2, workInProgress2, Component, nextProps, renderLanes2) {
           {
             switch (shouldError(workInProgress2)) {
               case false: {
@@ -16755,20 +16755,20 @@ var require_react_dom_development = __commonJS({
               }
             }
             if (workInProgress2.type !== workInProgress2.elementType) {
-              var innerPropTypes = Component2.propTypes;
+              var innerPropTypes = Component.propTypes;
               if (innerPropTypes) {
                 checkPropTypes(
                   innerPropTypes,
                   nextProps,
                   // Resolved props
                   "prop",
-                  getComponentNameFromType(Component2)
+                  getComponentNameFromType(Component)
                 );
               }
             }
           }
           var hasContext;
-          if (isContextProvider(Component2)) {
+          if (isContextProvider(Component)) {
             hasContext = true;
             pushContextProvider(workInProgress2);
           } else {
@@ -16779,15 +16779,15 @@ var require_react_dom_development = __commonJS({
           var shouldUpdate;
           if (instance === null) {
             resetSuspendedCurrentOnMountInLegacyMode(current2, workInProgress2);
-            constructClassInstance(workInProgress2, Component2, nextProps);
-            mountClassInstance(workInProgress2, Component2, nextProps, renderLanes2);
+            constructClassInstance(workInProgress2, Component, nextProps);
+            mountClassInstance(workInProgress2, Component, nextProps, renderLanes2);
             shouldUpdate = true;
           } else if (current2 === null) {
-            shouldUpdate = resumeMountClassInstance(workInProgress2, Component2, nextProps, renderLanes2);
+            shouldUpdate = resumeMountClassInstance(workInProgress2, Component, nextProps, renderLanes2);
           } else {
-            shouldUpdate = updateClassInstance(current2, workInProgress2, Component2, nextProps, renderLanes2);
+            shouldUpdate = updateClassInstance(current2, workInProgress2, Component, nextProps, renderLanes2);
           }
-          var nextUnitOfWork = finishClassComponent(current2, workInProgress2, Component2, shouldUpdate, hasContext, renderLanes2);
+          var nextUnitOfWork = finishClassComponent(current2, workInProgress2, Component, shouldUpdate, hasContext, renderLanes2);
           {
             var inst = workInProgress2.stateNode;
             if (shouldUpdate && inst.props !== nextProps) {
@@ -16799,19 +16799,19 @@ var require_react_dom_development = __commonJS({
           }
           return nextUnitOfWork;
         }
-        function finishClassComponent(current2, workInProgress2, Component2, shouldUpdate, hasContext, renderLanes2) {
+        function finishClassComponent(current2, workInProgress2, Component, shouldUpdate, hasContext, renderLanes2) {
           markRef(current2, workInProgress2);
           var didCaptureError = (workInProgress2.flags & DidCapture) !== NoFlags;
           if (!shouldUpdate && !didCaptureError) {
             if (hasContext) {
-              invalidateContextProvider(workInProgress2, Component2, false);
+              invalidateContextProvider(workInProgress2, Component, false);
             }
             return bailoutOnAlreadyFinishedWork(current2, workInProgress2, renderLanes2);
           }
           var instance = workInProgress2.stateNode;
           ReactCurrentOwner$1.current = workInProgress2;
           var nextChildren;
-          if (didCaptureError && typeof Component2.getDerivedStateFromError !== "function") {
+          if (didCaptureError && typeof Component.getDerivedStateFromError !== "function") {
             nextChildren = null;
             {
               stopProfilerTimerIfRunning();
@@ -16845,7 +16845,7 @@ var require_react_dom_development = __commonJS({
           }
           workInProgress2.memoizedState = instance.state;
           if (hasContext) {
-            invalidateContextProvider(workInProgress2, Component2, true);
+            invalidateContextProvider(workInProgress2, Component, true);
           }
           return workInProgress2.child;
         }
@@ -16945,45 +16945,45 @@ var require_react_dom_development = __commonJS({
           var lazyComponent = elementType;
           var payload = lazyComponent._payload;
           var init2 = lazyComponent._init;
-          var Component2 = init2(payload);
-          workInProgress2.type = Component2;
-          var resolvedTag = workInProgress2.tag = resolveLazyComponentTag(Component2);
-          var resolvedProps = resolveDefaultProps(Component2, props);
+          var Component = init2(payload);
+          workInProgress2.type = Component;
+          var resolvedTag = workInProgress2.tag = resolveLazyComponentTag(Component);
+          var resolvedProps = resolveDefaultProps(Component, props);
           var child;
           switch (resolvedTag) {
             case FunctionComponent: {
               {
-                validateFunctionComponentInDev(workInProgress2, Component2);
-                workInProgress2.type = Component2 = resolveFunctionForHotReloading(Component2);
+                validateFunctionComponentInDev(workInProgress2, Component);
+                workInProgress2.type = Component = resolveFunctionForHotReloading(Component);
               }
-              child = updateFunctionComponent(null, workInProgress2, Component2, resolvedProps, renderLanes2);
+              child = updateFunctionComponent(null, workInProgress2, Component, resolvedProps, renderLanes2);
               return child;
             }
             case ClassComponent: {
               {
-                workInProgress2.type = Component2 = resolveClassForHotReloading(Component2);
+                workInProgress2.type = Component = resolveClassForHotReloading(Component);
               }
-              child = updateClassComponent(null, workInProgress2, Component2, resolvedProps, renderLanes2);
+              child = updateClassComponent(null, workInProgress2, Component, resolvedProps, renderLanes2);
               return child;
             }
             case ForwardRef: {
               {
-                workInProgress2.type = Component2 = resolveForwardRefForHotReloading(Component2);
+                workInProgress2.type = Component = resolveForwardRefForHotReloading(Component);
               }
-              child = updateForwardRef(null, workInProgress2, Component2, resolvedProps, renderLanes2);
+              child = updateForwardRef(null, workInProgress2, Component, resolvedProps, renderLanes2);
               return child;
             }
             case MemoComponent: {
               {
                 if (workInProgress2.type !== workInProgress2.elementType) {
-                  var outerPropTypes = Component2.propTypes;
+                  var outerPropTypes = Component.propTypes;
                   if (outerPropTypes) {
                     checkPropTypes(
                       outerPropTypes,
                       resolvedProps,
                       // Resolved for outer only
                       "prop",
-                      getComponentNameFromType(Component2)
+                      getComponentNameFromType(Component)
                     );
                   }
                 }
@@ -16991,8 +16991,8 @@ var require_react_dom_development = __commonJS({
               child = updateMemoComponent(
                 null,
                 workInProgress2,
-                Component2,
-                resolveDefaultProps(Component2.type, resolvedProps),
+                Component,
+                resolveDefaultProps(Component.type, resolvedProps),
                 // The inner type can have defaults too
                 renderLanes2
               );
@@ -17001,33 +17001,33 @@ var require_react_dom_development = __commonJS({
           }
           var hint = "";
           {
-            if (Component2 !== null && typeof Component2 === "object" && Component2.$$typeof === REACT_LAZY_TYPE) {
+            if (Component !== null && typeof Component === "object" && Component.$$typeof === REACT_LAZY_TYPE) {
               hint = " Did you wrap a component in React.lazy() more than once?";
             }
           }
-          throw new Error("Element type is invalid. Received a promise that resolves to: " + Component2 + ". " + ("Lazy element type must resolve to a class or function." + hint));
+          throw new Error("Element type is invalid. Received a promise that resolves to: " + Component + ". " + ("Lazy element type must resolve to a class or function." + hint));
         }
-        function mountIncompleteClassComponent(_current, workInProgress2, Component2, nextProps, renderLanes2) {
+        function mountIncompleteClassComponent(_current, workInProgress2, Component, nextProps, renderLanes2) {
           resetSuspendedCurrentOnMountInLegacyMode(_current, workInProgress2);
           workInProgress2.tag = ClassComponent;
           var hasContext;
-          if (isContextProvider(Component2)) {
+          if (isContextProvider(Component)) {
             hasContext = true;
             pushContextProvider(workInProgress2);
           } else {
             hasContext = false;
           }
           prepareToReadContext(workInProgress2, renderLanes2);
-          constructClassInstance(workInProgress2, Component2, nextProps);
-          mountClassInstance(workInProgress2, Component2, nextProps, renderLanes2);
-          return finishClassComponent(null, workInProgress2, Component2, true, hasContext, renderLanes2);
+          constructClassInstance(workInProgress2, Component, nextProps);
+          mountClassInstance(workInProgress2, Component, nextProps, renderLanes2);
+          return finishClassComponent(null, workInProgress2, Component, true, hasContext, renderLanes2);
         }
-        function mountIndeterminateComponent(_current, workInProgress2, Component2, renderLanes2) {
+        function mountIndeterminateComponent(_current, workInProgress2, Component, renderLanes2) {
           resetSuspendedCurrentOnMountInLegacyMode(_current, workInProgress2);
           var props = workInProgress2.pendingProps;
           var context;
           {
-            var unmaskedContext = getUnmaskedContext(workInProgress2, Component2, false);
+            var unmaskedContext = getUnmaskedContext(workInProgress2, Component, false);
             context = getMaskedContext(workInProgress2, unmaskedContext);
           }
           prepareToReadContext(workInProgress2, renderLanes2);
@@ -17037,8 +17037,8 @@ var require_react_dom_development = __commonJS({
             markComponentRenderStarted(workInProgress2);
           }
           {
-            if (Component2.prototype && typeof Component2.prototype.render === "function") {
-              var componentName = getComponentNameFromType(Component2) || "Unknown";
+            if (Component.prototype && typeof Component.prototype.render === "function") {
+              var componentName = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutBadClass[componentName]) {
                 error("The <%s /> component appears to have a render method, but doesn't extend React.Component. This is likely to cause errors. Change %s to extend React.Component instead.", componentName, componentName);
                 didWarnAboutBadClass[componentName] = true;
@@ -17049,7 +17049,7 @@ var require_react_dom_development = __commonJS({
             }
             setIsRendering(true);
             ReactCurrentOwner$1.current = workInProgress2;
-            value = renderWithHooks(null, workInProgress2, Component2, props, context, renderLanes2);
+            value = renderWithHooks(null, workInProgress2, Component, props, context, renderLanes2);
             hasId = checkDidRenderIdHook();
             setIsRendering(false);
           }
@@ -17059,7 +17059,7 @@ var require_react_dom_development = __commonJS({
           workInProgress2.flags |= PerformedWork;
           {
             if (typeof value === "object" && value !== null && typeof value.render === "function" && value.$$typeof === void 0) {
-              var _componentName = getComponentNameFromType(Component2) || "Unknown";
+              var _componentName = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutModulePatternComponent[_componentName]) {
                 error("The <%s /> component appears to be a function component that returns a class instance. Change %s to a class that extends React.Component instead. If you can't use a class try assigning the prototype on the function as a workaround. `%s.prototype = React.Component.prototype`. Don't use an arrow function since it cannot be called with `new` by React.", _componentName, _componentName, _componentName);
                 didWarnAboutModulePatternComponent[_componentName] = true;
@@ -17072,7 +17072,7 @@ var require_react_dom_development = __commonJS({
             typeof value === "object" && value !== null && typeof value.render === "function" && value.$$typeof === void 0
           ) {
             {
-              var _componentName2 = getComponentNameFromType(Component2) || "Unknown";
+              var _componentName2 = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutModulePatternComponent[_componentName2]) {
                 error("The <%s /> component appears to be a function component that returns a class instance. Change %s to a class that extends React.Component instead. If you can't use a class try assigning the prototype on the function as a workaround. `%s.prototype = React.Component.prototype`. Don't use an arrow function since it cannot be called with `new` by React.", _componentName2, _componentName2, _componentName2);
                 didWarnAboutModulePatternComponent[_componentName2] = true;
@@ -17082,7 +17082,7 @@ var require_react_dom_development = __commonJS({
             workInProgress2.memoizedState = null;
             workInProgress2.updateQueue = null;
             var hasContext = false;
-            if (isContextProvider(Component2)) {
+            if (isContextProvider(Component)) {
               hasContext = true;
               pushContextProvider(workInProgress2);
             } else {
@@ -17091,15 +17091,15 @@ var require_react_dom_development = __commonJS({
             workInProgress2.memoizedState = value.state !== null && value.state !== void 0 ? value.state : null;
             initializeUpdateQueue(workInProgress2);
             adoptClassInstance(workInProgress2, value);
-            mountClassInstance(workInProgress2, Component2, props, renderLanes2);
-            return finishClassComponent(null, workInProgress2, Component2, true, hasContext, renderLanes2);
+            mountClassInstance(workInProgress2, Component, props, renderLanes2);
+            return finishClassComponent(null, workInProgress2, Component, true, hasContext, renderLanes2);
           } else {
             workInProgress2.tag = FunctionComponent;
             {
               if (workInProgress2.mode & StrictLegacyMode) {
                 setIsStrictModeForDevtools(true);
                 try {
-                  value = renderWithHooks(null, workInProgress2, Component2, props, context, renderLanes2);
+                  value = renderWithHooks(null, workInProgress2, Component, props, context, renderLanes2);
                   hasId = checkDidRenderIdHook();
                 } finally {
                   setIsStrictModeForDevtools(false);
@@ -17111,16 +17111,16 @@ var require_react_dom_development = __commonJS({
             }
             reconcileChildren(null, workInProgress2, value, renderLanes2);
             {
-              validateFunctionComponentInDev(workInProgress2, Component2);
+              validateFunctionComponentInDev(workInProgress2, Component);
             }
             return workInProgress2.child;
           }
         }
-        function validateFunctionComponentInDev(workInProgress2, Component2) {
+        function validateFunctionComponentInDev(workInProgress2, Component) {
           {
-            if (Component2) {
-              if (Component2.childContextTypes) {
-                error("%s(...): childContextTypes cannot be defined on a function component.", Component2.displayName || Component2.name || "Component");
+            if (Component) {
+              if (Component.childContextTypes) {
+                error("%s(...): childContextTypes cannot be defined on a function component.", Component.displayName || Component.name || "Component");
               }
             }
             if (workInProgress2.ref !== null) {
@@ -17139,22 +17139,22 @@ var require_react_dom_development = __commonJS({
                 error("Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s", info);
               }
             }
-            if (Component2.defaultProps !== void 0) {
-              var componentName = getComponentNameFromType(Component2) || "Unknown";
+            if (Component.defaultProps !== void 0) {
+              var componentName = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutDefaultPropsOnFunctionComponent[componentName]) {
                 error("%s: Support for defaultProps will be removed from function components in a future major release. Use JavaScript default parameters instead.", componentName);
                 didWarnAboutDefaultPropsOnFunctionComponent[componentName] = true;
               }
             }
-            if (typeof Component2.getDerivedStateFromProps === "function") {
-              var _componentName3 = getComponentNameFromType(Component2) || "Unknown";
+            if (typeof Component.getDerivedStateFromProps === "function") {
+              var _componentName3 = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutGetDerivedStateOnFunctionComponent[_componentName3]) {
                 error("%s: Function components do not support getDerivedStateFromProps.", _componentName3);
                 didWarnAboutGetDerivedStateOnFunctionComponent[_componentName3] = true;
               }
             }
-            if (typeof Component2.contextType === "object" && Component2.contextType !== null) {
-              var _componentName4 = getComponentNameFromType(Component2) || "Unknown";
+            if (typeof Component.contextType === "object" && Component.contextType !== null) {
+              var _componentName4 = getComponentNameFromType(Component) || "Unknown";
               if (!didWarnAboutContextTypeOnFunctionComponent[_componentName4]) {
                 error("%s: Function components do not support contextType.", _componentName4);
                 didWarnAboutContextTypeOnFunctionComponent[_componentName4] = true;
@@ -17916,8 +17916,8 @@ var require_react_dom_development = __commonJS({
               pushHostContext(workInProgress2);
               break;
             case ClassComponent: {
-              var Component2 = workInProgress2.type;
-              if (isContextProvider(Component2)) {
+              var Component = workInProgress2.type;
+              if (isContextProvider(Component)) {
                 pushContextProvider(workInProgress2);
               }
               break;
@@ -18044,10 +18044,10 @@ var require_react_dom_development = __commonJS({
               return mountLazyComponent(current2, workInProgress2, elementType, renderLanes2);
             }
             case FunctionComponent: {
-              var Component2 = workInProgress2.type;
+              var Component = workInProgress2.type;
               var unresolvedProps = workInProgress2.pendingProps;
-              var resolvedProps = workInProgress2.elementType === Component2 ? unresolvedProps : resolveDefaultProps(Component2, unresolvedProps);
-              return updateFunctionComponent(current2, workInProgress2, Component2, resolvedProps, renderLanes2);
+              var resolvedProps = workInProgress2.elementType === Component ? unresolvedProps : resolveDefaultProps(Component, unresolvedProps);
+              return updateFunctionComponent(current2, workInProgress2, Component, resolvedProps, renderLanes2);
             }
             case ClassComponent: {
               var _Component = workInProgress2.type;
@@ -18352,8 +18352,8 @@ var require_react_dom_development = __commonJS({
               bubbleProperties(workInProgress2);
               return null;
             case ClassComponent: {
-              var Component2 = workInProgress2.type;
-              if (isContextProvider(Component2)) {
+              var Component = workInProgress2.type;
+              if (isContextProvider(Component)) {
                 popContext(workInProgress2);
               }
               bubbleProperties(workInProgress2);
@@ -18671,8 +18671,8 @@ var require_react_dom_development = __commonJS({
           popTreeContext(workInProgress2);
           switch (workInProgress2.tag) {
             case ClassComponent: {
-              var Component2 = workInProgress2.type;
-              if (isContextProvider(Component2)) {
+              var Component = workInProgress2.type;
+              if (isContextProvider(Component)) {
                 popContext(workInProgress2);
               }
               var flags = workInProgress2.flags;
@@ -22359,18 +22359,18 @@ var require_react_dom_development = __commonJS({
         var createFiber = function(tag, pendingProps, key, mode) {
           return new FiberNode(tag, pendingProps, key, mode);
         };
-        function shouldConstruct$1(Component2) {
-          var prototype = Component2.prototype;
+        function shouldConstruct$1(Component) {
+          var prototype = Component.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function isSimpleFunctionComponent(type) {
           return typeof type === "function" && !shouldConstruct$1(type) && type.defaultProps === void 0;
         }
-        function resolveLazyComponentTag(Component2) {
-          if (typeof Component2 === "function") {
-            return shouldConstruct$1(Component2) ? ClassComponent : FunctionComponent;
-          } else if (Component2 !== void 0 && Component2 !== null) {
-            var $$typeof = Component2.$$typeof;
+        function resolveLazyComponentTag(Component) {
+          if (typeof Component === "function") {
+            return shouldConstruct$1(Component) ? ClassComponent : FunctionComponent;
+          } else if (Component !== void 0 && Component !== null) {
+            var $$typeof = Component.$$typeof;
             if ($$typeof === REACT_FORWARD_REF_TYPE) {
               return ForwardRef;
             }
@@ -22807,9 +22807,9 @@ var require_react_dom_development = __commonJS({
           var fiber = get(parentComponent);
           var parentContext = findCurrentUnmaskedContext(fiber);
           if (fiber.tag === ClassComponent) {
-            var Component2 = fiber.type;
-            if (isContextProvider(Component2)) {
-              return processChildContext(fiber, Component2, parentContext);
+            var Component = fiber.type;
+            if (isContextProvider(Component)) {
+              return processChildContext(fiber, Component, parentContext);
             }
           }
           return parentContext;
@@ -32184,8 +32184,8 @@ var require_react_jsx_runtime_development = __commonJS({
             return describeNativeComponentFrame(fn2, false);
           }
         }
-        function shouldConstruct(Component2) {
-          var prototype = Component2.prototype;
+        function shouldConstruct(Component) {
+          var prototype = Component.prototype;
           return !!(prototype && prototype.isReactComponent);
         }
         function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -42814,21 +42814,12 @@ __export(main_exports, {
   default: () => DataLoomPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian22 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 
 // src/obsidian/modal/welcome-modal/index.tsx
 var import_obsidian = require("obsidian");
 
 // src/obsidian/shared/index.ts
-var renderBuyMeACoffeeBadge = (contentEl, width = 175) => {
-  const linkEl = contentEl.createEl("a", {
-    href: "https://www.buymeacoffee.com/treywallis"
-  });
-  const imgEl = linkEl.createEl("img");
-  imgEl.src = "https://github.com/trey-wallis/obsidian-dataloom/assets/40307803/dee919ac-1065-4595-8511-7e7e7a962356";
-  imgEl.alt = "Buy me a coffee";
-  imgEl.width = width;
-};
 var renderDivider = (contentEl) => {
   const isFirstChild = contentEl.children.length === 0;
   const dividerEl = contentEl.createEl("hr", {
@@ -42920,104 +42911,9 @@ var WelcomeModal = class extends import_obsidian.Modal {
   }
 };
 
-// src/obsidian/modal/whats-new-modal/index.tsx
-var import_obsidian3 = require("obsidian");
-
-// src/data/network.ts
-var import_obsidian2 = require("obsidian");
-var getLastestGithubRelease = async () => {
-  try {
-    const response = await (0, import_obsidian2.requestUrl)({
-      url: "https://api.github.com/repos/trey-wallis/obsidian-dataloom/releases/latest",
-      method: "GET"
-    });
-    const body = response.json;
-    return body;
-  } catch (err) {
-    console.error(err);
-    new import_obsidian2.Notice("Error fetching latest release");
-    return null;
-  }
-};
-
-// src/obsidian/modal/whats-new-modal/index.tsx
-var WhatsNewModal = class extends import_obsidian3.Modal {
-  constructor(app) {
-    super(app);
-  }
-  async onOpen() {
-    const { containerEl } = this;
-    const data = await getLastestGithubRelease();
-    const { body, tag_name } = data;
-    setModalTitle(containerEl, `DataLoom ${tag_name}`);
-    const { contentEl } = this;
-    this.renderDescription(contentEl);
-    renderDivider(contentEl);
-    this.renderContent(contentEl, body);
-  }
-  async renderDescription(containerEl) {
-    containerEl.createDiv({
-      text: "Thank you for using DataLoom! Here are the latest updates:"
-    });
-  }
-  async renderContent(contentEl, body) {
-    const data = await getLastestGithubRelease();
-    if (data) {
-      const bodyEl = contentEl.createDiv({
-        cls: "dataloom-whats-new-modal__content"
-      });
-      const replacedText = this.replaceIssueNumbersWithLinks(body);
-      import_obsidian3.MarkdownRenderer.render(
-        this.app,
-        replacedText,
-        bodyEl,
-        "",
-        new import_obsidian3.Component()
-      );
-      bodyEl.querySelectorAll("a").forEach((a2) => {
-        const issueNumber = this.extractIssueNumberFromURL(a2.getText());
-        if (issueNumber) {
-          a2.setText(issueNumber);
-        }
-      });
-      contentEl.createDiv({
-        cls: "dataloom-whats-new-modal__spacer"
-      });
-      contentEl.createEl("a", {
-        text: "View all releases",
-        href: "https://github.com/trey-wallis/obsidian-dataloom/releases"
-      });
-    } else {
-      contentEl.createDiv({
-        text: "Couldn't fetch latest release from GitHub."
-      });
-    }
-  }
-  replaceIssueNumbersWithLinks(text) {
-    const regex = /#(\d+)/g;
-    const replacedText = text.replace(
-      regex,
-      "https://github.com/trey-wallis/obsidian-dataloom/issues/$1"
-    );
-    return replacedText;
-  }
-  extractIssueNumberFromURL(text) {
-    const regex = /\/(\d+)$/;
-    const matches = text.match(regex);
-    if (matches && matches.length > 1) {
-      return "#" + matches[1];
-    }
-    return null;
-  }
-  onClose() {
-    const { contentEl } = this;
-    contentEl.empty();
-  }
-};
-
 // src/obsidian/dataloom-settings-tab.ts
-var import_obsidian4 = require("obsidian");
-var import_obsidian5 = require("obsidian");
+var import_obsidian2 = require("obsidian");
+var import_obsidian3 = require("obsidian");
 var import_js_logger2 = __toESM(require_logger());
 
 // src/shared/logger/constants.ts
@@ -43065,7 +42961,7 @@ var formatMessageForLogger = (...args) => {
 };
 
 // src/obsidian/dataloom-settings-tab.ts
-var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
+var DataLoomSettingsTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -43073,27 +42969,14 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    this.renderSupportHeader(containerEl);
     this.renderFileSettings(containerEl);
     this.renderTableSettings(containerEl);
     this.renderExportSettings(containerEl);
     this.renderEmbeddedLoomSettings(containerEl);
-    this.renderModalSettings(containerEl);
     this.renderDebugSettings(containerEl);
   }
-  renderSupportHeader(containerEl) {
-    new import_obsidian5.Setting(containerEl).setName("DataLoom").setHeading();
-    const supportDesc = new DocumentFragment();
-    supportDesc.createDiv({
-      text: "Enjoying the plugin? Please buy me an herbal tea to support the development of DataLoom."
-    });
-    new import_obsidian5.Setting(containerEl).setDesc(supportDesc);
-    renderBuyMeACoffeeBadge(containerEl);
-    const spacing = containerEl.createDiv();
-    spacing.style.marginBottom = "0.75em";
-  }
   renderFileSettings(containerEl) {
-    new import_obsidian5.Setting(containerEl).setName("File").setHeading();
+    new import_obsidian3.Setting(containerEl).setName("File").setHeading();
     const attachmentsFolderDesc = new DocumentFragment();
     attachmentsFolderDesc.createDiv({
       text: "Create looms in the attachments folder defined in the Obsidian settings."
@@ -43109,7 +42992,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
     attachmentsFolderDesc.createDiv({
       text: "Otherwise, the folder location below will be used"
     });
-    new import_obsidian5.Setting(containerEl).setName("Create looms in the attachments folder").setDesc(attachmentsFolderDesc).addToggle((cb) => {
+    new import_obsidian3.Setting(containerEl).setName("Create looms in the attachments folder").setDesc(attachmentsFolderDesc).addToggle((cb) => {
       cb.setValue(
         this.plugin.settings.createAtObsidianAttachmentFolder
       ).onChange(async (value) => {
@@ -43123,7 +43006,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
       text: "Where newly created looms are placed. Default location is the vault root folder, if not specified."
     });
     if (this.plugin.settings.createAtObsidianAttachmentFolder === false) {
-      new import_obsidian5.Setting(containerEl).setName("Default location for new looms").setDesc(defaultLocationDesc).addText((cb) => {
+      new import_obsidian3.Setting(containerEl).setName("Default location for new looms").setDesc(defaultLocationDesc).addText((cb) => {
         cb.setValue(
           this.plugin.settings.customFolderForNewFiles
         ).onChange(async (value) => {
@@ -43138,8 +43021,8 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
     freezeColumnsDesc.createSpan({
       text: "The number of columns to stay in place when the table scrolls horizontally."
     });
-    new import_obsidian5.Setting(containerEl).setName("Table").setHeading();
-    new import_obsidian5.Setting(containerEl).setName("Frozen columns").setDesc(freezeColumnsDesc).addDropdown((cb) => {
+    new import_obsidian3.Setting(containerEl).setName("Table").setHeading();
+    new import_obsidian3.Setting(containerEl).setName("Frozen columns").setDesc(freezeColumnsDesc).addDropdown((cb) => {
       cb.addOptions({
         "0": "0",
         "1": "1",
@@ -43158,8 +43041,8 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
     removeMarkdownOnExportDesc.createSpan({
       text: "If enabled, content will be exported as plain text instead of markdown. For example, if enabled, a checkbox cell's content will be exported true or false instead of [ ] or [x]."
     });
-    new import_obsidian5.Setting(containerEl).setName("Export").setHeading();
-    new import_obsidian5.Setting(containerEl).setName("Remove markdown").setDesc(removeMarkdownOnExportDesc).addToggle((cb) => {
+    new import_obsidian3.Setting(containerEl).setName("Export").setHeading();
+    new import_obsidian3.Setting(containerEl).setName("Remove markdown").setDesc(removeMarkdownOnExportDesc).addToggle((cb) => {
       cb.setValue(
         this.plugin.settings.removeMarkdownOnExport
       ).onChange(async (value) => {
@@ -43169,7 +43052,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
     });
   }
   renderEmbeddedLoomSettings(containerEl) {
-    new import_obsidian5.Setting(containerEl).setName("Embedded looms").setHeading();
+    new import_obsidian3.Setting(containerEl).setName("Embedded looms").setHeading();
     const defaultEmbedWidthDesc = new DocumentFragment();
     defaultEmbedWidthDesc.createSpan({
       text: "The default embedded loom width. Accepts valid HTML width values. Like 100px, 50%, etc."
@@ -43178,7 +43061,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
       text: "Please close and reopen your embedded looms for this setting to take effect",
       cls: "dataloom-modal-text--emphasize"
     });
-    new import_obsidian5.Setting(containerEl).setName("Default embedded loom width").setDesc(defaultEmbedWidthDesc).addText((cb) => {
+    new import_obsidian3.Setting(containerEl).setName("Default embedded loom width").setDesc(defaultEmbedWidthDesc).addText((cb) => {
       cb.setValue(this.plugin.settings.defaultEmbedWidth).onChange(
         async (value) => {
           this.plugin.settings.defaultEmbedWidth = value;
@@ -43194,7 +43077,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
       text: "Please close and reopen your embedded looms for this setting to take effect",
       cls: "dataloom-modal-text--emphasize"
     });
-    new import_obsidian5.Setting(containerEl).setName("Default embedded loom height").setDesc(defaultEmbedHeightDesc).addText((cb) => {
+    new import_obsidian3.Setting(containerEl).setName("Default embedded loom height").setDesc(defaultEmbedHeightDesc).addText((cb) => {
       cb.setValue(this.plugin.settings.defaultEmbedHeight).onChange(
         async (value) => {
           this.plugin.settings.defaultEmbedHeight = value;
@@ -43203,22 +43086,9 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
       );
     });
   }
-  renderModalSettings(containerEl) {
-    new import_obsidian5.Setting(containerEl).setName("Modal").setHeading();
-    new import_obsidian5.Setting(containerEl).setName("Release notes").setDesc(
-      "Display release notes the first time a loom file is opened after the plugin is updated."
-    ).addToggle((cb) => {
-      cb.setValue(this.plugin.settings.showWhatsNewModal).onChange(
-        async (value) => {
-          this.plugin.settings.showWhatsNewModal = value;
-          await this.plugin.saveSettings();
-        }
-      );
-    });
-  }
   renderDebugSettings(containerEl) {
-    new import_obsidian5.Setting(containerEl).setName("Debugging").setHeading();
-    new import_obsidian5.Setting(containerEl).setName("Log level").setDesc(
+    new import_obsidian3.Setting(containerEl).setName("Debugging").setHeading();
+    new import_obsidian3.Setting(containerEl).setName("Log level").setDesc(
       "Sets the log level. Please use trace to see all log messages."
     ).addDropdown((cb) => {
       cb.addOptions({
@@ -43244,7 +43114,7 @@ var DataLoomSettingsTab = class extends import_obsidian4.PluginSettingTab {
 var import_view = require("@codemirror/view");
 
 // src/obsidian/embedded/embedded-app-manager.tsx
-var import_obsidian19 = require("obsidian");
+var import_obsidian17 = require("obsidian");
 
 // src/data/constants.ts
 var DEFAULT_LOOM_NAME = "Untitled";
@@ -43824,19 +43694,13 @@ function toPropertyKey(t2) {
 }
 
 // node_modules/@babel/runtime/helpers/esm/defineProperty.js
-function _defineProperty(obj, key, value) {
-  key = toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
+function _defineProperty(e, r2, t2) {
+  return (r2 = toPropertyKey(r2)) in e ? Object.defineProperty(e, r2, {
+    value: t2,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[r2] = t2, e;
 }
 
 // node_modules/@babel/runtime/helpers/esm/objectSpread2.js
@@ -49087,7 +48951,7 @@ function systemToComponent(systemSpec, map2, Root6) {
       return handlers;
     }, {});
   }
-  const Component2 = import_react5.default.forwardRef((propsWithChildren, ref) => {
+  const Component = import_react5.default.forwardRef((propsWithChildren, ref) => {
     const { children, ...props } = propsWithChildren;
     const [system2] = import_react5.default.useState(() => {
       return tap(init(systemSpec), (system22) => applyPropsToSystem(system22, props));
@@ -49156,7 +49020,7 @@ function systemToComponent(systemSpec, map2, Root6) {
     useIsomorphicLayoutEffect$2(() => subscribe(source, callback), [callback, source]);
   };
   return {
-    Component: Component2,
+    Component,
     usePublisher: usePublisher2,
     useEmitterValue: useEmitterValue2,
     useEmitter: useEmitter2
@@ -53572,10 +53436,10 @@ var hasDarkTheme = () => {
 };
 
 // src/shared/render-utils.ts
-var import_obsidian10 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 
 // src/obsidian/dataloom-view.tsx
-var import_obsidian8 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 var import_client = __toESM(require_client());
 
 // src/obsidian/utils.ts
@@ -53680,7 +53544,7 @@ function Divider({
 }
 
 // src/react/shared/error-display/index.tsx
-var import_obsidian6 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 
 // src/react/shared/padding/index.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime());
@@ -53762,7 +53626,7 @@ function ErrorDisplay({
 }) {
   function handleCopyClick() {
     navigator.clipboard.writeText(copyErrorMessage);
-    new import_obsidian6.Notice("Copied error to clipboard");
+    new import_obsidian4.Notice("Copied error to clipboard");
   }
   let className = "dataloom-error";
   if (isEmbeddedApp)
@@ -53842,7 +53706,7 @@ Error message: ${message}`;
 }
 
 // src/data/serialize-frontmatter.ts
-var import_obsidian7 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
 // src/data/date-utils.ts
 var dateTimeToObsidianDateTime = (value, includeTime) => {
@@ -53893,7 +53757,7 @@ var serializeFrontmatter = async (app, state) => {
     const file = app.vault.getAbstractFileByPath(sourceFileCell.path);
     if (!file)
       throw new Error("Source file not found");
-    if (!(file instanceof import_obsidian7.TFile))
+    if (!(file instanceof import_obsidian5.TFile))
       throw new Error("Expected TFile");
     for (const column of columns) {
       const {
@@ -54006,7 +53870,7 @@ var LastSavedManager = class _LastSavedManager {
 // src/obsidian/dataloom-view.tsx
 var import_jsx_runtime11 = __toESM(require_jsx_runtime());
 var DATA_LOOM_VIEW = "dataloom";
-var DataLoomView = class extends import_obsidian8.TextFileView {
+var DataLoomView = class extends import_obsidian6.TextFileView {
   constructor(leaf, pluginId, pluginVersion) {
     super(leaf);
     this.handleSaveLoomState = async (appId, state, shouldSaveFrontmatter) => {
@@ -54123,7 +53987,7 @@ var handleLinkClick = (app, event) => {
 };
 
 // src/shared/render-embed.ts
-var import_obsidian9 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 var renderText = async (app, leaf, value) => {
   var _a2, _b;
   const div = document.createElement("div");
@@ -54131,8 +53995,8 @@ var renderText = async (app, leaf, value) => {
   div.style.height = "100%";
   try {
     const view = leaf.view;
-    if (view instanceof import_obsidian9.MarkdownView || view instanceof DataLoomView) {
-      await import_obsidian9.MarkdownRenderer.render(
+    if (view instanceof import_obsidian7.MarkdownView || view instanceof DataLoomView) {
+      await import_obsidian7.MarkdownRenderer.render(
         app,
         value,
         div,
@@ -54160,11 +54024,11 @@ var renderMarkdown = async (app, leaf, markdown) => {
   try {
     const formattedMarkdown = replaceNewLinesWithBr(markdown);
     const view2 = leaf == null ? void 0 : leaf.view;
-    if (view2 instanceof import_obsidian10.MarkdownView || view2 instanceof DataLoomView) {
+    if (view2 instanceof import_obsidian8.MarkdownView || view2 instanceof DataLoomView) {
       const file = view2.file;
       if (file === null)
         return div;
-      await import_obsidian10.MarkdownRenderer.render(
+      await import_obsidian8.MarkdownRenderer.render(
         app,
         formattedMarkdown,
         div,
@@ -54230,7 +54094,7 @@ var useRenderMarkdown = (markdown, options) => {
   };
 };
 var isOnMobile = () => {
-  return import_obsidian10.Platform.isMobile;
+  return import_obsidian8.Platform.isMobile;
 };
 var getResourcePath = (app, filePath) => {
   return app.vault.adapter.getResourcePath(filePath);
@@ -54382,7 +54246,7 @@ function Menu({
 var import_react14 = __toESM(require_react());
 
 // src/react/shared/icon/index.tsx
-var import_obsidian11 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 var import_react13 = __toESM(require_react());
 var import_jsx_runtime13 = __toESM(require_jsx_runtime());
 function Icon({
@@ -54412,7 +54276,7 @@ function Icon({
         if (color) {
           div.style.color = color;
         }
-        (0, import_obsidian11.setIcon)(div, lucideId);
+        (0, import_obsidian9.setIcon)(div, lucideId);
         const svg = div.querySelector("svg");
         if (svg) {
           svg.addClass("dataloom-svg");
@@ -54885,7 +54749,7 @@ function CalculationMenu({
 var import_react15 = __toESM(require_react());
 
 // src/shared/keyboard-event.ts
-var import_obsidian12 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 var isWindowsUndoDown = (e) => e.ctrlKey && e.key === "z";
 var isWindowsRedoDown = (e) => e.ctrlKey && e.key === "y";
 var isMacUndoDown = (e) => e.metaKey && e.key === "z";
@@ -54894,9 +54758,9 @@ var isInsertLineDown = (e) => {
   return e.shiftKey && e.key === "Enter";
 };
 var isInsertLineAltDown = (e) => {
-  if (import_obsidian12.Platform.isMacOS) {
+  if (import_obsidian10.Platform.isMacOS) {
     return e.metaKey && e.key === "Enter";
-  } else if (import_obsidian12.Platform.isWin || import_obsidian12.Platform.isLinux) {
+  } else if (import_obsidian10.Platform.isWin || import_obsidian10.Platform.isLinux) {
     return e.altKey && e.key === "Enter";
   }
 };
@@ -57519,7 +57383,7 @@ function RowOptions2({
 
 // src/react/loom-app/body-cell-container/index.tsx
 var import_react38 = __toESM(require_react());
-var import_obsidian13 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 
 // src/react/loom-app/text-cell/index.tsx
 var import_jsx_runtime47 = __toESM(require_jsx_runtime());
@@ -59420,7 +59284,7 @@ function BodyCellContainer(props) {
   async function copyTextToClipboard(value) {
     try {
       await navigator.clipboard.writeText(value);
-      new import_obsidian13.Notice("Copied cell content to clipboard");
+      new import_obsidian11.Notice("Copied cell content to clipboard");
     } catch (err) {
       console.error(err);
     }
@@ -60522,7 +60386,7 @@ function ActiveFilterBubble({ numActive }) {
 var import_react47 = __toESM(require_react());
 
 // src/obsidian/modal/export-modal.tsx
-var import_obsidian16 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 var import_client2 = __toESM(require_client());
 
 // src/react/export-app/index.tsx
@@ -63408,10 +63272,10 @@ var exportToMarkdown = (app, loomState, shouldRemoveMarkdown) => {
 };
 
 // src/react/export-app/index.tsx
-var import_obsidian15 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 
 // src/shared/export/download-utils.ts
-var import_obsidian14 = require("obsidian");
+var import_obsidian12 = require("obsidian");
 var getBlobTypeForExportType = (type) => {
   switch (type) {
     case "CSV" /* CSV */:
@@ -63426,7 +63290,7 @@ var getExportFileName = (filePath) => {
   const replaceExtension = filePath.replace(`.${LOOM_EXTENSION}`, "");
   const replaceSlash = replaceExtension.replace(/\//g, "-");
   const replaceSpaces = replaceSlash.replace(/ /g, "_");
-  const timestamp = (0, import_obsidian14.moment)().format("YYYY_MM_DD-HH_mm_ss");
+  const timestamp = (0, import_obsidian12.moment)().format("YYYY_MM_DD-HH_mm_ss");
   return replaceSpaces + "-" + timestamp;
 };
 var downloadFile = (fileName, blobType, data) => {
@@ -63465,7 +63329,7 @@ function ExportApp({ app, loomState, loomFilePath }) {
   );
   async function handleCopyClick(value) {
     await navigator.clipboard.writeText(value);
-    new import_obsidian15.Notice("Copied to clipboard");
+    new import_obsidian13.Notice("Copied to clipboard");
   }
   function handleDownloadClick() {
     const fileName = getExportFileName(loomFilePath);
@@ -63517,7 +63381,7 @@ function ExportApp({ app, loomState, loomFilePath }) {
 
 // src/obsidian/modal/export-modal.tsx
 var import_jsx_runtime94 = __toESM(require_jsx_runtime());
-var ExportModal = class extends import_obsidian16.Modal {
+var ExportModal = class extends import_obsidian14.Modal {
   constructor(app, loomFile, loomState) {
     super(app);
     this.app = app;
@@ -63552,7 +63416,7 @@ var ExportModal = class extends import_obsidian16.Modal {
 };
 
 // src/obsidian/modal/import-modal.tsx
-var import_obsidian17 = require("obsidian");
+var import_obsidian15 = require("obsidian");
 var import_client3 = __toESM(require_client());
 
 // src/react/import-app/index.tsx
@@ -65413,7 +65277,7 @@ function ImportApp({ state, onStateChange }) {
 
 // src/obsidian/modal/import-modal.tsx
 var import_jsx_runtime118 = __toESM(require_jsx_runtime());
-var ImportModal = class extends import_obsidian17.Modal {
+var ImportModal = class extends import_obsidian15.Modal {
   constructor(app, loomFile, loomState) {
     super(app);
     this.handleStateChange = async (state) => {
@@ -65426,7 +65290,7 @@ var ImportModal = class extends import_obsidian17.Modal {
         //No app id. Target all views of this file
         state
       );
-      new import_obsidian17.Notice("Success! DataLoom import completed.");
+      new import_obsidian15.Notice("Success! DataLoom import completed.");
       this.close();
     };
     this.loomFile = loomFile;
@@ -66522,7 +66386,7 @@ function FolderSourceOptions({
 }
 
 // src/react/loom-app/option-bar/sources-menu/add-source-submenu/index.tsx
-var import_obsidian18 = require("obsidian");
+var import_obsidian16 = require("obsidian");
 
 // src/react/loom-app/option-bar/sources-menu/add-source-submenu/frontmatter-source-options.tsx
 var import_jsx_runtime136 = __toESM(require_jsx_runtime());
@@ -66598,7 +66462,7 @@ function AddSourceSubmenu({
   const propertyKeySelectId = import_react49.default.useId();
   const propertyTypeSelectId = import_react49.default.useId();
   function handleAddClick() {
-    const formattedPath = (0, import_obsidian18.normalizePath)(path);
+    const formattedPath = (0, import_obsidian16.normalizePath)(path);
     if (type === null) {
       setError({
         message: "Please select a type",
@@ -70599,7 +70463,7 @@ var useCloseOnObsidianModalOpen = () => {
 // src/react/loom-app/app/index.tsx
 var import_js_logger23 = __toESM(require_logger());
 var import_jsx_runtime147 = __toESM(require_jsx_runtime());
-function App10() {
+function App9() {
   const { reactAppId, isMarkdownView } = useAppMount();
   const { loomState, resizingColumnId, searchText, onRedo, onUndo } = useLoomState();
   const tableRef = import_react63.default.useRef(null);
@@ -70767,8 +70631,8 @@ Error info: ${(_a2 = this.state.errorInfo) == null ? void 0 : _a2.componentStack
           title: "DataLoom experienced an error",
           errorMessage: (_b = this.state.errorMessage) != null ? _b : "",
           copyErrorMessage,
-          helpMessage: "For help fixing this error please post in the bugs channel on the Discord:",
-          helpURL: "https://discord.gg/QaFbepMdN4"
+          helpMessage: "For help fixing this error please make a bug issue in the GitHub repository",
+          helpURL: "https://github.com/decaf-dev/obsidian-dataloom/issues/new?assignees=&labels=bug&projects=&template=BUG.yml"
         }
       );
     }
@@ -70802,7 +70666,7 @@ function LoomApp({
         {
           initialState: loomState,
           onSaveState,
-          children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(DragProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(MenuProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(App10, {}) }) })
+          children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(DragProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(MenuProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime149.jsx)(App9, {}) }) })
         }
       ) })
     }
@@ -70817,7 +70681,7 @@ var loadPreviewModeApps = (app, markdownLeaves, pluginVersion) => {
     const leaf = markdownLeaves[i2];
     const view = leaf.view;
     let mode = "";
-    if (view instanceof import_obsidian19.MarkdownView) {
+    if (view instanceof import_obsidian17.MarkdownView) {
       mode = view.getMode();
     }
     if (mode === "preview")
@@ -70967,7 +70831,7 @@ function EditingViewPlugin(app, pluginVersion) {
 }
 
 // src/data/loom-file.ts
-var import_obsidian20 = require("obsidian");
+var import_obsidian18 = require("obsidian");
 
 // src/data/file-operations.ts
 var createFolder = async (app, folderPath) => {
@@ -71023,7 +70887,7 @@ var createLoomFile = async (app, pluginVersion, defaultFrozenColumnCount, folder
       customFolderForNewFiles
     });
     await createFolder(app, folderPath);
-    const filePath = (0, import_obsidian20.normalizePath)(folderPath + "/" + fileName);
+    const filePath = (0, import_obsidian18.normalizePath)(folderPath + "/" + fileName);
     const formattedPath = removeLeadingPeriod(filePath);
     const loomState = createLoomState(1, 1, {
       pluginVersion,
@@ -71033,7 +70897,7 @@ var createLoomFile = async (app, pluginVersion, defaultFrozenColumnCount, folder
     const file = await createFile(app, formattedPath, serializedState);
     return file;
   } catch (err) {
-    new import_obsidian20.Notice("Could not create loom file");
+    new import_obsidian18.Notice("Could not create loom file");
     throw err;
   }
 };
@@ -71056,7 +70920,7 @@ var getFolderForNewLoomFile = async (app, options) => {
   } else {
     folderPath = customFolderForNewFiles;
   }
-  const normalized = (0, import_obsidian20.normalizePath)(folderPath);
+  const normalized = (0, import_obsidian18.normalizePath)(folderPath);
   return normalized;
 };
 var getFileName2 = () => {
@@ -71070,7 +70934,7 @@ var removeLeadingPeriod = (path) => {
 };
 
 // src/data/main-utils.ts
-var import_obsidian21 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 var handleFileRename = async (app, file, oldPath, currentAppVersion) => {
   const loomFiles = getAllVaultLoomFiles(app);
   let totalLinksUpdated = 0;
@@ -71097,7 +70961,7 @@ var handleFileRename = async (app, file, oldPath, currentAppVersion) => {
     }
   }
   if (totalLinksUpdated > 0) {
-    new import_obsidian21.Notice(
+    new import_obsidian19.Notice(
       `Updated ${totalLinksUpdated} link${totalLinksUpdated > 1 ? "s" : ""} in ${numFilesUpdated} loom file${numFilesUpdated > 1 ? "s" : ""}.`
     );
   }
@@ -71243,12 +71107,11 @@ var DEFAULT_SETTINGS = {
   defaultEmbedHeight: "340px",
   hasMigratedTo800: false,
   showWelcomeModal: true,
-  showWhatsNewModal: true,
   defaultFrozenColumnCount: 1,
   pluginVersion: ""
 };
 var FILE_NAME = "main.ts";
-var DataLoomPlugin = class extends import_obsidian22.Plugin {
+var DataLoomPlugin = class extends import_obsidian20.Plugin {
   /**
    * Called on plugin load.
    * This can be when the plugin is enabled or Obsidian is first opened.
@@ -71291,7 +71154,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       EventManager.getInstance().emit("file-frontmatter-change");
       this.registerEvent(
         this.app.vault.on("create", (file) => {
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian20.TFile) {
             import_js_logger24.default.trace(FILE_NAME, "registerEvent", "vault.create event called");
             EventManager.getInstance().emit("file-create");
           }
@@ -71336,10 +71199,10 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
         try {
           await this.app.vault.rename(file, newFilePath);
         } catch (err) {
-          new import_obsidian22.Notice(
+          new import_obsidian20.Notice(
             `Failed renaming ${file.path} to ${newFilePath}`
           );
-          new import_obsidian22.Notice("Please rename this file manually");
+          new import_obsidian20.Notice("Please rename this file manually");
         }
       }
       this.settings.hasMigratedTo800 = true;
@@ -71397,7 +71260,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
     this.registerEvent(
       this.app.workspace.on("file-menu", (menu, file) => {
         import_js_logger24.default.trace(FILE_NAME, "registerEvent", "file-menu event called");
-        if (file instanceof import_obsidian22.TFolder) {
+        if (file instanceof import_obsidian20.TFolder) {
           menu.addItem((item) => {
             item.setTitle("New loom").setIcon("document").onClick(async () => {
               await this.newLoomFile(file.path);
@@ -71427,9 +71290,6 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
         }
         if (shouldOpen) {
           this.displayModalsOnLoomOpen = false;
-          if (this.settings.showWhatsNewModal) {
-            new WhatsNewModal(this.app).open();
-          }
         }
       })
     );
@@ -71438,7 +71298,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
         "rename",
         async (file, oldPath) => {
           import_js_logger24.default.trace(FILE_NAME, "registerEvent", "rename event called");
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian20.TFile) {
             handleFileRename(
               this.app,
               file,
@@ -71452,7 +71312,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
     this.registerEvent(
       this.app.vault.on("modify", async (file) => {
         import_js_logger24.default.trace(FILE_NAME, "registerEvent", "vault.modify event called", file);
-        if (file instanceof import_obsidian22.TFile) {
+        if (file instanceof import_obsidian20.TFile) {
           if (file.extension === LOOM_EXTENSION) {
             const lastSavedFile = LastSavedManager.getInstance().getLastSavedFile();
             if (lastSavedFile === file.path) {
@@ -71477,7 +71337,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
     this.registerEvent(
       this.app.vault.on("rename", (file) => {
         import_js_logger24.default.trace(FILE_NAME, "registerEvent", "vault.rename event called");
-        if (file instanceof import_obsidian22.TFile) {
+        if (file instanceof import_obsidian20.TFile) {
           EventManager.getInstance().emit("file-rename");
         } else {
           EventManager.getInstance().emit("folder-rename");
@@ -71487,7 +71347,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
     this.registerEvent(
       this.app.vault.on("delete", (file) => {
         import_js_logger24.default.trace(FILE_NAME, "registerEvent", "vault.delete event called");
-        if (file instanceof import_obsidian22.TFile) {
+        if (file instanceof import_obsidian20.TFile) {
           EventManager.getInstance().emit("file-delete");
         } else {
           EventManager.getInstance().emit("folder-delete");
@@ -71515,7 +71375,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       this.app.metadataCache.on(
         "changed",
         async (file) => {
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian20.TFile) {
             import_js_logger24.default.trace(FILE_NAME, "registerEvent", "metadataCache.changed event called");
             await new Promise(
               (resolve) => setTimeout(resolve, 100)
@@ -71563,7 +71423,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       hotkeys: [{ modifiers: ["Mod", "Shift"], key: "\\" }],
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking) {
             EventManager.getInstance().emit("add-column");
@@ -71579,7 +71439,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       hotkeys: [{ modifiers: ["Mod", "Shift"], key: "Backspace" }],
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking) {
             EventManager.getInstance().emit("delete-column");
@@ -71595,7 +71455,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       hotkeys: [{ modifiers: ["Mod", "Shift"], key: "Enter" }],
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking)
             EventManager.getInstance().emit("add-row");
@@ -71610,7 +71470,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       hotkeys: [{ modifiers: ["Alt", "Shift"], key: "Backspace" }],
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking) {
             EventManager.getInstance().emit("delete-row");
@@ -71625,7 +71485,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       name: "Export as markdown",
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking) {
             EventManager.getInstance().emit("download-markdown");
@@ -71640,7 +71500,7 @@ var DataLoomPlugin = class extends import_obsidian22.Plugin {
       name: "Export as CSV",
       checkCallback: (checking) => {
         const loomView = this.app.workspace.getActiveViewOfType(DataLoomView);
-        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian22.MarkdownView);
+        const markdownView = this.app.workspace.getActiveViewOfType(import_obsidian20.MarkdownView);
         if (loomView || markdownView) {
           if (!checking) {
             EventManager.getInstance().emit("download-csv");
@@ -71800,3 +71660,5 @@ papaparse/papaparse.min.js:
   License: MIT
   *)
 */
+
+/* nosourcemap */

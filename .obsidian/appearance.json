@@ -1,9 +1,10 @@
 {
-  "accentColor": "",
-  "cssTheme": "Rmaki",
+  "accentColor": "#337175",
+  "cssTheme": "Obsidianite",
   "enabledCssSnippets": [
     "s1",
     "obsidian",
     "cards"
-  ]
+  ],
+  "theme": "moonstone"
 }

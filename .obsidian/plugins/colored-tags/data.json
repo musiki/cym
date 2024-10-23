@@ -163,7 +163,9 @@
     "retórica": 148,
     "procedimientos": 149,
     "leds": 150,
-    "light": 151
+    "light": 151,
+    "curaduría": 152,
+    "s21": 153
   },
   "_version": 3
 }

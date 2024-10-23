@@ -1,1 +1,1 @@
-![[Presentación del coloquio de música visual 1.pdf]]
+![[Presentación del coloquio de Música visual 1.pdf]]

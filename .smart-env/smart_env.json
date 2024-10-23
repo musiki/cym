@@ -1,0 +1,22 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true
+  },
+  "smart_sources": {
+    "embed_model": {
+      "model_key": "text-embedding-3-large",
+      "legacy_transformers": true
+    },
+    "smart_change": {
+      "active": true
+    }
+  },
+  "file_exclusions": "Untitled",
+  "folder_exclusions": "smart-chats",
+  "excluded_headings": "",
+  "smart_chats": {
+    "fs_path": "smart-chats"
+  },
+  "smart_chats_folder": "smart-chats"
+}
