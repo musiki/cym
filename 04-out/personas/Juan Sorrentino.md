@@ -1,7 +1,9 @@
 ---
 type: person
 photo: https://resizer.glanacion.com/resizer/v2/juan-sorrentino-originario-de-chaco-se-formo-como-QIKZBDTQ4JFRRISOE2IZKJZAOQ.JPG
-tags: artesvisuales , argentina 
+tags:
+  - artesvisuales
+  - argentina
 born in city: Resistencia
 year: 
 dead year: 

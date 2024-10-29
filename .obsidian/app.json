@@ -13,7 +13,7 @@
   "attachmentFolderPath": "05-obs/img",
   "newFileLocation": "folder",
   "newFileFolderPath": "00-in",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "readableLineLength": false,
   "showInlineTitle": true
 }

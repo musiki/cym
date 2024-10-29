@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "projects": {},
+  "selectedDraftVaultPath": "02-mat/generatividad/Generatividad/Index.md",
+  "userScriptFolder": "05-obs/tpl",
+  "sessionStorage": "data",
+  "sessions": [
+    {
+      "start": "2024-10-27T15:15:41.251Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-10-24T05:51:03.187Z",
+      "total": 48,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 48,
+          "scenes": {
+            "Introducción": 48,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-10-23T15:00:11.697Z",
+      "total": 32,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 32,
+          "scenes": {
+            "Azar": 0,
+            "Patrones geométricos": 18,
+            "Palíndromos": 4,
+            "Recursion": 10,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    }
+  ],
+  "showWordCountInStatusBar": true,
+  "startNewSessionEachDay": true,
+  "sessionGoal": 500,
+  "applyGoalTo": "all",
+  "notifyOnGoal": true,
+  "countDeletionsForGoal": false,
+  "keepSessionCount": 30,
+  "sessionFile": "longform-sessions.json",
+  "numberScenes": false,
+  "sceneTemplate": null,
+  "workflows": {
+    "Default Workflow": {
+      "name": "Default Workflow",
+      "description": "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "remove-links",
+          "optionValues": {
+            "remove-wikilinks": true,
+            "remove-external-links": true
+          }
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "$3{#} $1",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\\n\\n---\\n\\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
+}

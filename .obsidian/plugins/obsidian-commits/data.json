@@ -661,17 +661,17 @@
     },
     "04-out/personas/Carlos Trilnik.md": {
       "size": 62,
-      "tags": 3,
+      "tags": 4,
       "links": 0
     },
     "04-out/personas/Cecila Arditto.md": {
       "size": 0,
-      "tags": 5,
+      "tags": 6,
       "links": 0
     },
     "04-out/personas/Dennis Smalley.md": {
       "size": 0,
-      "tags": 4,
+      "tags": 3,
       "links": 0
     },
     "04-out/personas/Douglas Barret.md": {
@@ -735,7 +735,7 @@
       "links": 0
     },
     "04-out/topoi/Filosofía 21.md": {
-      "size": 96,
+      "size": 2113,
       "tags": 3,
       "links": 0
     },
@@ -916,7 +916,7 @@
     },
     "04-out/personas/Mario Bunge.md": {
       "size": 164,
-      "tags": 2,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/Enno Poppe.md": {
@@ -931,7 +931,7 @@
     },
     "04-out/glosario/README.md": {
       "size": 12,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/obras/README.md": {
@@ -1171,7 +1171,7 @@
     },
     "04-out/personas/Andrés Aizicovich.md": {
       "size": 18871,
-      "tags": 3,
+      "tags": 4,
       "links": 0
     },
     "04-out/eventos/Cybernetic Serendipity.md": {
@@ -1404,11 +1404,6 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/INGENIERIA INVERTIDA.md": {
-      "size": 43,
-      "tags": 0,
-      "links": 0
-    },
     "00-in/Jean-Robert Sedano et Solveig de Ory.md": {
       "size": 264,
       "tags": 3,
@@ -1441,12 +1436,12 @@
     },
     "04-out/personas/David Rokeby.md": {
       "size": 0,
-      "tags": 0,
+      "tags": 1,
       "links": 0
     },
     "04-out/personas/Jim Campbell.md": {
       "size": 0,
-      "tags": 3,
+      "tags": 4,
       "links": 0
     },
     "02-mat/coloquial/un objeto mas allá de la música.md": {
@@ -1593,14 +1588,74 @@
       "size": 0,
       "tags": 1,
       "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Index.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Azar.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Emergencia.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Autómatas.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Fractales.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Hibridación (AR).md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Simulación (VR).md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Patrones geométricos.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Recursion.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Palíndromos.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "02-mat/generatividad/Generatividad/Introducción.md": {
+      "size": 0,
+      "tags": 0,
+      "links": 0
+    },
+    "04-out/personas/George Legrady.md": {
+      "size": 2124,
+      "tags": 2,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
-      "Refactor": 603,
-      "Create": 430,
-      "Link": 342,
-      "Expand": 57
+      "Refactor": 609,
+      "Create": 442,
+      "Link": 349,
+      "Expand": 59
     }
   },
   "dailyCommits": {
@@ -1609,11 +1664,11 @@
       "1": 30,
       "2": 85,
       "3": 3,
-      "4": 29,
+      "4": 42,
       "5": 29,
       "6": 6,
       "7": 32,
-      "8": 22,
+      "8": 25,
       "9": 184,
       "10": 55,
       "11": 139,
@@ -1622,9 +1677,9 @@
       "14": 19,
       "15": 16,
       "16": 69,
-      "17": 37,
-      "18": 203,
-      "19": 21,
+      "17": 46,
+      "18": 204,
+      "19": 22,
       "20": 85,
       "21": 69,
       "22": 69,
@@ -1634,9 +1689,9 @@
   "weeklyCommits": {
     "/": {
       "Mon": 84,
-      "Tue": 147,
-      "Wed": 708,
-      "Thu": 170,
+      "Tue": 160,
+      "Wed": 718,
+      "Thu": 174,
       "Fri": 143,
       "Sat": 0,
       "Sun": 180
@@ -1645,6 +1700,8 @@
   "recentCommits": {
     "/": {
       "Expanded": [
+        "<a class=\"internal-link\" href=\"00-in/George Legrady.md\"> George Legrady </a>",
+        "<a class=\"internal-link\" href=\"04-out/topoi/Filosofía 21.md\"> Filosofía 21 </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/un objecto mas allá de la música.md\"> un objecto mas allá de la música </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Sheehan.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Sheehan </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md\"> Hace falta salir del software exclusivo de la música europea </a>",
@@ -1693,11 +1750,21 @@
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
         "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Juan Sorrentino.md\"> Juan Sorrentino </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
-        "<a class=\"internal-link\" href=\"00-in/Golan Levin.md\"> Golan Levin </a>",
-        "<a class=\"internal-link\" href=\"image/23110619.excalidraw.md\"> 23110619.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Introducción.md\"> Introducción </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Palíndromos.md\"> Palíndromos </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Recursion.md\"> Recursion </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Patrones geométricos.md\"> Patrones geométricos </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Simulación (VR).md\"> Simulación (VR) </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Hibridación (AR).md\"> Hibridación (AR) </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Fractales.md\"> Fractales </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Autómatas.md\"> Autómatas </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Emergencia.md\"> Emergencia </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Azar.md\"> Azar </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Index.md\"> Index </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
         "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-23 06 21 03.md\"> UNTITLED CHAT 2024-10-23 06 21 03 </a>",
         "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
@@ -1736,21 +1803,12 @@
         "<a class=\"internal-link\" href=\"00-in/Pasted image 20220906234521.png.md\"> Pasted image 20220906234521.png </a>",
         "<a class=\"internal-link\" href=\"image/23112422.excalidraw.md\"> 23112422.excalidraw </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Trazo Sonoro - PROYECTUAL.md\"> Trazo Sonoro - PROYECTUAL </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Petroccelli/Dopplermanían´t (idea).md\"> Dopplermanían´t (idea) </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/title.md\"> title </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"00-in/Untitled.md\"> Untitled </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/t-person.md\"> t-person </a>",
-        "<a class=\"internal-link\" href=\"00-in/Max Bense.md\"> Max Bense </a>"
+        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/FITON-ART.md\"> FITON-ART </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/personas/George Legrady.md\"> George Legrady </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Introducción.md\"> Introducción </a>",
+        "<a class=\"internal-link\" href=\"02-mat/generatividad/Generatividad/Introduccd.md\"> Introduccd </a>",
         "<a class=\"internal-link\" href=\"05-obs/tpl/t-obra.md\"> t-obra </a>",
         "<a class=\"internal-link\" href=\"05-obs/tpl/t-topoi.md\"> t-topoi </a>",
         "<a class=\"internal-link\" href=\"05-obs/tpl/t-templater.md\"> t-templater </a>",
@@ -1798,12 +1856,16 @@
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/mat-partitura.md\"> mat-partitura </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Sheehan.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Sheehan </a>",
-        "<a class=\"internal-link\" href=\"00-in/Nicolas Schoffer.md\"> Nicolas Schoffer </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"04-out/bibliografía/El Azar y la Necesidad2.md\"> El Azar y la Necesidad2 </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-templater.md\"> t-templater </a>"
+        "<a class=\"internal-link\" href=\"00-in/Nicolas Schoffer.md\"> Nicolas Schoffer </a>"
       ],
       "Tagged": [
+        "<a class=\"internal-link\" href=\"04-out/personas/Carlos Trilnik.md\"> Carlos Trilnik </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"00-in/George Legrady.md\"> George Legrady </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/David Rokeby.md\"> David Rokeby </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Jim Campbell.md\"> Jim Campbell </a>",
+        "<a class=\"internal-link\" href=\"04-out/glosario/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/un objeto mas allá de la música.md\"> un objeto mas allá de la música </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Hace falta salir del software exclusivo de la música europea.md\"> Hace falta salir del software exclusivo de la música europea </a>",
@@ -1847,14 +1909,7 @@
         "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/CAGE - Una representación interactiva de 4’33’’.md\"> CAGE - Una representación interactiva de 4’33’’ </a>",
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Tecnología digital, cibernética y capitalismo, Yuk Hui.md\"> Tecnología digital, cibernética y capitalismo, Yuk Hui </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/t-topoi.md\"> t-topoi </a>",
-        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>",
-        "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
-        "<a class=\"internal-link\" href=\"00-in/Andrés Aizicovich.md\"> Andrés Aizicovich </a>",
-        "<a class=\"internal-link\" href=\"00-in/La memoria de los materiales.md\"> La memoria de los materiales </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/Zaracho/Botonera rítmica.md\"> Botonera rítmica </a>",
-        "<a class=\"internal-link\" href=\"04-out/personas/Martin Rohrmeier.md\"> Martin Rohrmeier </a>",
-        "<a class=\"internal-link\" href=\"02-mat/jasvascript/02-setup/02-setup.md\"> 02-setup </a>",
-        "<a class=\"internal-link\" href=\"01-proj/23/bassino/proyectual bassino/CLOROLASER.md\"> CLOROLASER </a>"
+        "<a class=\"internal-link\" href=\"04-out/topoi/arte de datos.md\"> arte de datos </a>"
       ],
       "Refactored": [
         "<a class=\"internal-link\" href=\"04-out/topoi/Sistemas complejos.md\"> Sistemas complejos </a>",
@@ -1863,6 +1918,7 @@
         "<a class=\"internal-link\" href=\"image/23112422.excalidraw.md\"> 23112422.excalidraw </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"00-in/INGENIERIA INVERTIDA.md\"> INGENIERIA INVERTIDA </a>",
         "<a class=\"internal-link\" href=\"02-mat/obs/tpl/mat-partitura.md\"> mat-partitura </a>",
         "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-23 06 21 03.md\"> UNTITLED CHAT 2024-10-23 06 21 03 </a>",
         "<a class=\"internal-link\" href=\"smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md\"> UNTITLED CHAT 2024-10-16 03 34 12 </a>",
@@ -1912,8 +1968,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
         "<a class=\"internal-link\" href=\"01-proj/23/beltrame/Prueba Proyectual.md\"> Prueba Proyectual </a>",
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>",
-        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>",
-        "<a class=\"internal-link\" href=\"00-moc/teatro MOC.md\"> teatro MOC </a>"
+        "<a class=\"internal-link\" href=\"00-moc/topoi MOC.md\"> topoi MOC </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"02-mat/coloquial/Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han.md\"> Las cabezas van a rodar, horror forma y la música de Kelley Shee Heads Will Roll han </a>",
@@ -1986,6 +2041,8 @@
         "<a class=\"internal-link\" href=\"03-cla/c-cym13-Proto-historia del arte numérico argentino.md\"> c-cym13-Proto-historia del arte numérico argentino </a>",
         "<a class=\"internal-link\" href=\"01-proj/22/ancarola/Final CyM - Metrónomo.md\"> Final CyM - Metrónomo </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Cecila Arditto.md\"> Cecila Arditto </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>",
+        "<a class=\"internal-link\" href=\"04-out/personas/Mario Bunge.md\"> Mario Bunge </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Dennis Smalley.md\"> Dennis Smalley </a>"
       ],
       "Removed Links from": [

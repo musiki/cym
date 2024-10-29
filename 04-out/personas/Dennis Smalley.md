@@ -1,6 +1,9 @@
 ---
 type: person
-tags: compositor, espectromorfología, música electrónica
+tags: 
+- composer 
+- espectromorfología
+- 108B
 photo: https://www.sonoloco.com/rev/grm/c1030/smalleyop.jpg
 mates: 
 year: 

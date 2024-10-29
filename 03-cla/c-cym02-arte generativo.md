@@ -92,7 +92,7 @@ acúfenos [distorsiones perceptivas - audición]
 
 
 
-### FORMAS DE TRADUCCIÓn METáFORA CYM
+### Formas  de traducción-metáfora en CyM 
 
 - Utilizar la ciencia como una herramienta concreta de creación de material artístico: **Xenakis**.
 - Vinculan ciencia y material artístico con una transferencia **abductiva** de los atributos de un fenómeno natural (numérico, sistémico, abstracto) a uno artístico de un modo no totalmente lineal.

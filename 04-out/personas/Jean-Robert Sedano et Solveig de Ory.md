@@ -1,7 +1,10 @@
 ---
 type: person
 photo: 
-tags: instalación, interface , luz
+tags: 
+ - instalación
+ - interface
+ - luz
 born in city: Oran
 year: 1956
 dead year: 

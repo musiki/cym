@@ -10,7 +10,6 @@
   "mermaid-themes",
   "music-code-blocks",
   "obsidian-wordnet-plugin",
-  "obsidian-contextual-typography",
   "better-inline-fields",
   "notion-like-tables",
   "obsidian-activity-history",
@@ -43,7 +42,6 @@
   "obsidian-icons-plugin",
   "obsidian-image-gallery",
   "obsidian-imgur-plugin",
-  "obsidian-kanban",
   "obsidian-link-embed",
   "link-favicon",
   "liquid-templates",
@@ -99,5 +97,6 @@
   "metadata-menu",
   "templater-obsidian",
   "obsidian-statusbar-pomo",
-  "obsidian-textgenerator-plugin"
+  "obsidian-textgenerator-plugin",
+  "longform"
 ]

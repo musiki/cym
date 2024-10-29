@@ -1,7 +1,11 @@
 ---
 type: person
 photo: 
-tags: artesvisuales ,colaboratividad, artejuego
+tags:
+  - artesvisuales
+  - colaboratividad
+  - artejuego
+  - argentina
 born in city: Buenos Aires
 year: 1985
 dead year: 

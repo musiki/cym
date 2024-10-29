@@ -1,10 +1,11 @@
 {
   "accentColor": "#337175",
-  "cssTheme": "Obsidianite",
+  "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "s1",
-    "obsidian",
-    "cards"
+    "cards",
+    "s1 2",
+    "obsidian"
   ],
   "theme": "moonstone"
 }

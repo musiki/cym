@@ -1,7 +1,7 @@
 ---
 type: person
 photo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoaG_qG11O-xdKwpsMRge6v6PmXQzsOFXACA&s
-tags: 
+tags: pioneer 
 born in city: Tilsonburg
 year: 1960
 dead year: 
@@ -11,15 +11,12 @@ connect:
 url:
 ---
 
-David Rokeby
+ David Rokeby es una de las figuras más influyentes del mundo del arte interactivo y digital. Desde la década de 1980, ha estado a la vanguardia de la exploración y la superación de los límites de cómo puede utilizarse la tecnología en el arte. Su uso creativo de la tecnología le ha convertido en un pionero en su campo.
 
+La obra de Rokeby aúna tecnología y arte de una forma inmersiva e interactiva que fomenta la participación del público. Mediante el uso de software, sonido, vídeo y otros medios digitales, crea instalaciones que reaccionan a su entorno o a las acciones de las personas. Este enfoque permite a los espectadores experimentar el arte de forma directa y personal, involucrándose con él en lugar de limitarse a observarlo.
 
- David Rokeby is one of the most influential figures in the world of interactive and digital art. Since the 1980s, he has been at the forefront of exploring and pushing the boundaries of how technology can be used in art. His creative use of technology has made him a pioneer in his field.
+Sus innovadoras creaciones se han expuesto en algunas de las instituciones artísticas más prestigiosas del mundo. Desde el Museo de Arte Moderno de Nueva York hasta la Bienal de Venecia, la obra de Rokeby ha recibido un amplio reconocimiento por su innovación e impacto.
 
-Rokeby's work brings together technology and art in an immersive, interactive manner that encourages audience participation. By using software, sound, video, and other digital mediums, he creates installations that react to their environment or to people's actions. This approach allows viewers to experience art in a direct and personal way, engaging with it rather than just observing it.
+Las importantes contribuciones de David Rokeby al arte digital no sólo han dado forma a cómo percibimos e interactuamos con esta forma de expresión, sino también a cómo entendemos nuestra relación con la tecnología. Su obra ofrece una reflexión sobre cómo estamos entrelazados con la tecnología, desafiándonos a pensar de forma crítica sobre su papel en nuestras vidas.
 
-His innovative creations have been showcased at some of the world's most prestigious art institutions. From the Museum of Modern Art in New York to the Venice Biennale, Rokeby's work has received widespread recognition for its innovation and impact.
-
-David Rokeby's significant contributions to digital art have not only shaped how we perceive and interact with this form of expression but also how we understand our relationship with technology. His work offers a reflection on how we are intertwined with technology, challenging us to think critically about its role in our lives.
-
-As a leading figure in new media art, David Rokeby continues to inspire artists across the globe with his innovative use of technology. His pioneering work has had a lasting impact on the field of digital art and continues to influence how we interact with both technology and artistic expression today.
+Como figura destacada del arte de los nuevos medios, David Rokeby sigue inspirando a artistas de todo el mundo con su innovador uso de la tecnología. Su trabajo pionero ha tenido un impacto duradero en el campo del arte digital y sigue influyendo en la forma en que interactuamos hoy tanto con la tecnología como con la expresión artística.

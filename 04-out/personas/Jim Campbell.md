@@ -5,6 +5,8 @@ tags:
   - leds
   - light
   - instalación
+  - pioneer
+
 born in city: Chicago
 year: 1956
 dead year: 

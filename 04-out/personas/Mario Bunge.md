@@ -1,6 +1,6 @@
 ---
 type: person
-tags: filosofía , filosofía/science
+tags: filosofía/science
 born: 
 url: 
 photo: https://www.biografiasyvidas.com/biografia/b/fotos/bunge.jpg

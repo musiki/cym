@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "0483e486cbea20a8",
+        "id": "8529457df088f1de",
         "type": "tabs",
         "children": [
           {
-            "id": "724fab3359c3f630",
+            "id": "a44ee3c60f49c263",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-obs/check-out de imagenes.md",
-                "mode": "preview",
+                "file": "04-out/personas/Jim Campbell.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "check-out de imagenes"
+              "title": "Jim Campbell"
+            }
+          },
+          {
+            "id": "d7cd073687353329",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-moc/personas MOC.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "personas MOC"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "f03f3c1b2f7ed418",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "204b15a364176a77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-out/personas/George Legrady.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "George Legrady"
             }
           }
         ]
@@ -78,7 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.5
+    "width": 315.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -165,7 +202,7 @@
             }
           },
           {
-            "id": "1c74552e36445997",
+            "id": "1974cdde1fa64ce0",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -175,17 +212,27 @@
             }
           },
           {
-            "id": "1974cdde1fa64ce0",
+            "id": "3bd2b6a1b0e2cffa",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          },
+          {
+            "id": "a041b030fa35a365",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
-            "id": "5fa2194ece6ad344",
+            "id": "934cb1e1f57334ac",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -195,7 +242,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       },
       {
         "id": "b33cb9828f682814",
@@ -236,7 +283,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 359.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,7 +302,6 @@
       "notion-like-tables:Create loom": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-kanban:Create new board": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-metatable:Metatable": false,
       "obsidian42-brat:BRAT": false,
@@ -273,36 +320,38 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "d7cd073687353329",
   "lastOpenFiles": [
-    "02-mat/obs/tpl/mat-partitura.md",
-    "04-out/procedimientos/combinational creativity.md",
-    "04-out/procedimientos/tipologías de instalación.md",
-    "04-out/procedimientos/extrañamiento.md",
-    "04-out/procedimientos/meta-aprendizaje.md",
-    "05-obs/check-out de imagenes.md",
-    "02-mat/org/i-theremin.md",
-    "02-mat/org/i-sackbut.md",
-    "02-mat/procesos/r-vinculación bidireccional.md",
-    "02-mat/procesos/r-como hacer un proyectual.md",
-    "cym-metamap.canvas",
-    "campbellDialogosIlusorios2000.md",
-    "home.md",
+    "04-out/eventos/La memoria de los materiales.md",
     "00-moc/personas MOC.md",
-    "05-obs/tpl/t-person.md",
+    "04-out/personas/Andrés Aizicovich.md",
+    "04-out/personas/Carlos Trilnik.md",
+    "04-out/personas/Cecila Arditto.md",
+    "04-out/personas/Juan Sorrentino.md",
+    "04-out/personas/George Legrady.md",
+    "04-out/personas/Jim Campbell.md",
+    "04-out/personas/Dennis Smalley.md",
+    "04-out/personas/Mario Bunge.md",
+    "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md",
+    "04-out/personas/Yotam Mann.md",
+    "04-out/personas/David Rokeby.md",
+    "04-out/topoi/Filosofía 21.md",
+    "00-moc/cym MOC.md",
     "00-moc/coloquial MOC.md",
-    "02-mat/coloquial/un objeto mas allá de la música.md",
-    "00-in/pacto da música na saúde mental e física.md",
-    "smart-chats/UNTITLED CHAT 2024-10-23 06 21 03.md",
-    "smart-chats/UNTITLED CHAT 2024-10-16 14 50 42.md",
-    "smart-chats/UNTITLED CHAT 2024-10-16 03 34 12.md",
-    "03-cla/c-cym00-presentación.md",
+    "00-moc/códigos MOC.md",
+    "00-moc/bib MOC.md",
+    "04-out/obras/Boid Simulation.md",
+    "04-out/obras/whoosh.md",
+    "04-out/obras/Very Nervous System.md",
+    "04-out/obras/README.md",
+    "04-out/glosario/PaaS.md",
+    "04-out/glosario/PWA.md",
+    "04-out/glosario/README.md",
+    "04-out/glosario/URI.md",
+    "02-mat/generatividad/Generatividad",
+    "02-mat/generatividad",
+    "cym-metamap.canvas",
     "02-mat/procesos/Untitled.loom",
-    "02-mat/python/python abjad.md",
-    "02-mat/python/pycolors.md",
-    "02-mat/python/py-foundations.md",
-    "02-mat/rant.md",
-    "03-cla/c-cym01-arte y ciencia - estado de la cuestión.md",
     "force",
     "05-obs/img/untref-logo-w.svg",
     "05-obs/img/untref-logo-w.png",
@@ -315,8 +364,6 @@
     "image",
     "05-obs/img/proyectual_cym_bassino_borrador (1).pdf",
     "05-obs/img/sensor de distancia (1) 1.pdf",
-    "05-obs/img/sensor de distancia.pdf",
-    "05-obs/img/proyectual CLOROLASER 1.pdf",
     "02-mat/obs/img/image/TP código-1698190820140.jpeg",
     "02-mat/obs/img/image/TP código-1698190820134.jpeg",
     "02-mat/obs/img/image/TP código-1698190820125.jpeg",
