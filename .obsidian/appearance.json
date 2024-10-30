@@ -7,5 +7,7 @@
     "s1 2",
     "obsidian"
   ],
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "interfaceFontFamily": "Consolas",
+  "textFontFamily": "Consolas"
 }

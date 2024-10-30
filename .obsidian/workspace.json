@@ -8,21 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a44ee3c60f49c263",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-out/personas/Jim Campbell.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Jim Campbell"
-            }
-          },
-          {
             "id": "d7cd073687353329",
             "type": "leaf",
             "state": {
@@ -35,28 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "personas MOC"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "f03f3c1b2f7ed418",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "204b15a364176a77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-out/personas/George Legrady.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "George Legrady"
             }
           }
         ]
@@ -115,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 200
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -237,12 +200,32 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "f1eaf254630bc215",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "190414bbfda6c623",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       },
       {
         "id": "b33cb9828f682814",
@@ -322,15 +305,15 @@
   },
   "active": "d7cd073687353329",
   "lastOpenFiles": [
-    "04-out/eventos/La memoria de los materiales.md",
+    "04-out/personas/George Legrady.md",
     "00-moc/personas MOC.md",
+    "04-out/personas/Dennis Smalley.md",
+    "04-out/eventos/La memoria de los materiales.md",
     "04-out/personas/Andrés Aizicovich.md",
     "04-out/personas/Carlos Trilnik.md",
     "04-out/personas/Cecila Arditto.md",
     "04-out/personas/Juan Sorrentino.md",
-    "04-out/personas/George Legrady.md",
     "04-out/personas/Jim Campbell.md",
-    "04-out/personas/Dennis Smalley.md",
     "04-out/personas/Mario Bunge.md",
     "04-out/personas/Jean-Robert Sedano et Solveig de Ory.md",
     "04-out/personas/Yotam Mann.md",
