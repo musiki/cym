@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-in/Locus Solus.md",
+                "file": "04-out/obras/Locus Solus.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -280,7 +280,7 @@
   "lastOpenFiles": [
     "00-moc/obras MOC.md",
     "04-out/obras/README.md",
-    "00-in/Locus Solus.md",
+    "04-out/obras/Locus Solus.md",
     "00-moc/coloquial MOC.md",
     "05-obs/tpl/t-movie.md",
     "05-obs/tpl/t-alumno-POC.md",
