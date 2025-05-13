@@ -934,11 +934,6 @@
       "tags": 1,
       "links": 0
     },
-    "04-out/obras/README.md": {
-      "size": 9,
-      "tags": 0,
-      "links": 0
-    },
     "04-out/topoi/README.md": {
       "size": 9,
       "tags": 0,
@@ -1664,7 +1659,7 @@
       "tags": 0,
       "links": 0
     },
-    "00-in/Locus Solus.md": {
+    "04-out/obras/Locus Solus.md": {
       "size": 5191,
       "tags": 2,
       "links": 0
@@ -1672,7 +1667,7 @@
   },
   "commitTypes": {
     "/": {
-      "Refactor": 1173,
+      "Refactor": 1175,
       "Create": 449,
       "Link": 896,
       "Expand": 68
@@ -1694,7 +1689,7 @@
       "11": 144,
       "12": 600,
       "13": 60,
-      "14": 42,
+      "14": 44,
       "15": 26,
       "16": 69,
       "17": 46,
@@ -1709,7 +1704,7 @@
   "weeklyCommits": {
     "/": {
       "Mon": 84,
-      "Tue": 173,
+      "Tue": 175,
       "Wed": 718,
       "Thu": 704,
       "Fri": 673,
@@ -1826,6 +1821,7 @@
         "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
       ],
       "Renamed": [
+        "<a class=\"internal-link\" href=\"04-out/obras/Locus Solus.md\"> Locus Solus </a>",
         "<a class=\"internal-link\" href=\"00-in/Projekte generativer Ästhetik.md\"> Projekte generativer Ästhetik </a>",
         "<a class=\"internal-link\" href=\"04-out/imc/Cosmic Observatory Background Explorer.md\"> Cosmic Observatory Background Explorer </a>",
         "<a class=\"internal-link\" href=\"02-mat/generatividad/Recursion.md\"> Recursion </a>",
@@ -1875,8 +1871,7 @@
         "<a class=\"internal-link\" href=\"05-obs/a-plugins.md\"> a-plugins </a>",
         "<a class=\"internal-link\" href=\"05-obs/a-dataview.md\"> a-dataview </a>",
         "<a class=\"internal-link\" href=\"05-obs/a-dataview playground.md\"> a-dataview playground </a>",
-        "<a class=\"internal-link\" href=\"04-out/procedimientos/meta-aprendizaje.md\"> meta-aprendizaje </a>",
-        "<a class=\"internal-link\" href=\"02-mat/obs/img/23112422.excalidraw.md\"> 23112422.excalidraw </a>"
+        "<a class=\"internal-link\" href=\"04-out/procedimientos/meta-aprendizaje.md\"> meta-aprendizaje </a>"
       ],
       "Tagged": [
         "<a class=\"internal-link\" href=\"00-in/Locus Solus.md\"> Locus Solus </a>",
@@ -1939,6 +1934,7 @@
         "<a class=\"internal-link\" href=\"04-out/imc/Cosmic Observatory Background Explorer.md\"> Cosmic Observatory Background Explorer </a>"
       ],
       "Deleted": [
+        "<a class=\"internal-link\" href=\"04-out/obras/README.md\"> README </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Gustav Metzger 1.md\"> Gustav Metzger 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Max Bense 1.md\"> Max Bense 1 </a>",
         "<a class=\"internal-link\" href=\"04-out/personas/Nicolas Schoffer 1.md\"> Nicolas Schoffer 1 </a>",
@@ -1988,8 +1984,7 @@
         "<a class=\"internal-link\" href=\"04-ref/a-dataview playground.md\"> a-dataview playground </a>",
         "<a class=\"internal-link\" href=\"00-in/Presentación para coloquio de Música visual.md\"> Presentación para coloquio de Música visual </a>",
         "<a class=\"internal-link\" href=\"00-in/Ingeniería invertida.md\"> Ingeniería invertida </a>",
-        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>",
-        "<a class=\"internal-link\" href=\"conflict-files-obsidian-git.md\"> conflict-files-obsidian-git </a>"
+        "<a class=\"internal-link\" href=\"00-in/01-tone.md\"> 01-tone </a>"
       ],
       "Linked": [
         "<a class=\"internal-link\" href=\"04-out/imc/Cosmic Observatory Background Explorer.md\"> Cosmic Observatory Background Explorer </a>",
