@@ -1,7 +1,6 @@
 ---
 type: person
-photo: 
-tags: 
+img:tags: 
 born in city: 
 year: 
 dead year: 

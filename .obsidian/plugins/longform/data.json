@@ -1,10 +1,334 @@
 {
   "version": 3,
   "projects": {},
-  "selectedDraftVaultPath": "02-mat/generatividad/Generatividad/Index.md",
+  "selectedDraftVaultPath": "02-mat/generatividad/Index.md",
   "userScriptFolder": "05-obs/tpl",
   "sessionStorage": "data",
   "sessions": [
+    {
+      "start": "2025-05-13T12:15:38.732Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-04-08T07:06:06.191Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-03-12T23:20:14.317Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-03-09T11:30:22.478Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-03-08T09:00:35.846Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-02-19T20:04:24.242Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-02-15T21:52:49.327Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2025-01-04T13:02:41.348Z",
+      "total": 80,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0
+          }
+        },
+        "02-mat/generatividad/Index.md": {
+          "total": 80,
+          "scenes": {
+            "Introducción": 48,
+            "Patrones geométricos": 18,
+            "Palíndromos": 4,
+            "Recursion": 10,
+            "Autómatas": 0,
+            "Azar": 0,
+            "Emergencia": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-12-17T14:05:09.681Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-12-07T16:34:03.488Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-12-06T21:35:22.419Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-12-05T11:51:23.439Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-11-27T13:38:56.785Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-11-20T11:39:44.585Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-11-16T21:09:57.507Z",
+      "total": 0,
+      "drafts": {
+        "02-mat/generatividad/Generatividad/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Introducción": 0,
+            "Azar": 0,
+            "Patrones geométricos": 0,
+            "Palíndromos": 0,
+            "Recursion": 0,
+            "Emergencia": 0,
+            "Autómatas": 0,
+            "Fractales": 0,
+            "Hibridación (AR)": 0,
+            "Simulación (VR)": 0
+          }
+        }
+      }
+    },
     {
       "start": "2024-10-30T13:59:05.103Z",
       "total": 0,
@@ -120,6 +444,9 @@
   "sessionFile": "longform-sessions.json",
   "numberScenes": false,
   "sceneTemplate": null,
+  "waitForSync": false,
+  "fallbackWaitEnabled": true,
+  "fallbackWaitTime": 5,
   "workflows": {
     "Default Workflow": {
       "name": "Default Workflow",

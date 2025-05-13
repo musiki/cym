@@ -1,6 +1,6 @@
 ---
 type: person
-photo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoaG_qG11O-xdKwpsMRge6v6PmXQzsOFXACA&s
+img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoaG_qG11O-xdKwpsMRge6v6PmXQzsOFXACA&s
 tags: pioneer 
 born in city: Tilsonburg
 year: 1960

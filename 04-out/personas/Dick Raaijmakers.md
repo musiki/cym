@@ -1,6 +1,6 @@
 ---
 type: person
-photo: 
+img: 
 tags:  
 born in city:
 born:

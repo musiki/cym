@@ -650,7 +650,14 @@
       "key": "F"
     }
   ],
-  "markdown:toggle-preview": [],
+  "markdown:toggle-preview": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "`"
+    }
+  ],
   "editor:toggle-source": [
     {
       "modifiers": [

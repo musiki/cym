@@ -1,6 +1,6 @@
 ```dataview
 TABLE without ID  ("![|100](" + photo + ")") as foto, file.link as evento , tags, year
-FROM #eventos
+FROM "04-out/eventos"
 
 ```
 

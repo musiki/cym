@@ -1,11 +1,11 @@
 {
-  "version": "0.7.41",
-  "endpoint": "https://api.openai.com/v1",
+  "version": "0.7.47",
+  "endpoint": "https://api.deepseek.com",
   "models": [],
   "api_key": "",
   "encrypt_keys": false,
-  "selectedProvider": "OpenAI Chat (Langchain) 1",
-  "max_tokens": 500,
+  "selectedProvider": "OpenAI Chat (Langchain) 1 2",
+  "max_tokens": 2000,
   "temperature": 0.7,
   "frequency_penalty": 0.5,
   "showStatusBar": true,
@@ -13,7 +13,7 @@
   "freeCursorOnStreaming": false,
   "allowJavascriptRun": false,
   "experiment": false,
-  "promptsPath": "textgenerator/templates",
+  "promptsPath": "05-obsr/templates",
   "textGenPath": "textgenerator/",
   "prefix": "\n\n",
   "tgSelectionLimiter": "^\\*\\*\\*",
@@ -21,7 +21,7 @@
   "context": {
     "customInstructEnabled": true,
     "includeClipboard": true,
-    "customInstruct": "Title: {{title}}\n  \nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}",
+    "customInstruct": "contenido:\n{{title}}\n{{contexto}}\n\nprompt:\nEres un escritor académico en el campo de la nueva organología, la composición con extensiones a las matemáticas, la codificación, la fabricación digital y la filosofía especulativa. Estructura la respuesta en tres secciones: primero una sinopsis, texto puro, sin títulos, sin jerga, sin introducción, sólo definiciones duras. En segundo lugar, el **núcleo**, con las ideas principales en forma de lista, utilizando los destacados indicados si procede, y las **cuestiones de investigación**. Asegúrese de que las preguntas de investigación sean fundamentales, inventivas y de vanguardia, con citas en línea de los trabajos y publicaciones fundacionales. Incluya un **bloque de referencias BibTeX** al final.\n\n- **Si existen notas relacionadas**, intégrelas utilizando **la sintaxis wiki-links de Obsidian (`[[ ]]`)**.\n- **Sugiere conexiones significativas** entre {{title}} y otros conceptos de mis notas, utilizando `[[Related Note]]` si procede.\n- **Utilizar citas en línea** de fuentes académicas y referenciarlas en un **bloque BibTeX**.\n\n---\n\n## Núcleo\n\nDesglosar los principios fundamentales de {{title}} en una lista estructurada.  \n- Utilice **puntos concisos y bien referenciados** que expliquen las ideas clave.  \n- Si procede, sugiera **conexiones con notas existentes** utilizando `[[ ]]`.\n- Si son necesarias ecuaciones matemáticas, hágalas en látex en línea utilizando $ $ y en párrafo utilizando $$ $$. \n- Resaltar, ser selectivo y elegante, tiempo al tiempo, nunca títulos, y sólo una palabra con estos criterios: \n\t- **conceptos relevantes** con etiquetas <mark class='hltr-blue'>.   \n\t- si es controvertido, polémico, ambiguo, discutido por la academia, no consensuado, antagónico, incluir **referencias históricas** y **discusiones críticas** con <mark class='hltr-red'>.\n- con <mark class=«hltr-verde»>: ideas centrales (pocas no más de 3 por texto) hasta 3.\n- con <mark class=«hltr-amarillo»> etiquetas: autores, obras de arte, datos concretos, fechas de giro.\n- con <mark class=«hltr-purple»>: imaginativo, inspirador para extenderse en la imaginación o campos creativos, onírico. ( hasta 2)\n- con <mark class=«hltr-naranja»>metodologías, métodos, métodos de análisis, construcciones y técnicas de composición\n- No TE OLVIDES de cerrar las marcas </mark> cuando la definición esté puesta.\n- Cite las fuentes **en línea** utilizando `(@autor AÑO : Nümero de Página)`.  \n\n---\n\n## Preguntas de investigación\n\n- **¿Cuáles son los retos teóricos emergentes en {{title}}?**.  \n- ¿Cómo se relaciona {{título}} con los debates contemporáneos en [campo relevante]**?  \n- ¿A qué aplicaciones especulativas o disruptivas podría dar lugar {{title}} en un futuro próximo?**.  \n\nApoye cada pregunta con una **cita académica** en línea.\n\n---\n\n## Referencias\nProporcione referencias extensas en formato BibTeX, utilizando el blocktext «```bibtex» incluyendo trabajos fundacionales y las últimas investigaciones sobre {{title}} y {{content}}.\nHasta 6.  Utilice exclusivamente obras citadas en {{content}} sincronizando la referencia o actualizándola. ",
     "contextTemplate": "Title: {{title}}\n\t\nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}"
   },
   "requestTimeout": 300000,
@@ -62,6 +62,7 @@
   "autoSuggestOptions": {
     "customInstructEnabled": true,
     "customInstruct": "Continue the follwing text:\nTitle: {{title}}\n{{query}}",
+    "systemPrompt": "",
     "isEnabled": false,
     "allowInNewLine": false,
     "delay": 300,
@@ -90,6 +91,10 @@
     "OpenAI Chat (Langchain) 1": {
       "extends": "OpenAI Chat (Langchain)",
       "name": "OpenAI Chat 1"
+    },
+    "OpenAI Chat (Langchain) 1 2": {
+      "extends": "OpenAI Chat (Langchain)",
+      "name": "deepseek 70b"
     }
   },
   "LLMProviderOptions": {
@@ -107,12 +112,18 @@
       "api_key": "",
       "model": "gpt-4"
     },
-    "Ollama (Langchain)": {}
+    "Ollama (Langchain)": {},
+    "OpenAI Chat (Langchain) 1 2": {
+      "basePath": "https://api.deepseek.com",
+      "api_key": "",
+      "model": "deepseek-chat"
+    }
   },
   "LLMProviderOptionsKeysHashed": {
     "whisper.api_key": "__@#key_prefix#@__",
     "OpenAI Chat (Langchain).api_key": "__@#key_prefix#@__sk-proj-_lreHB0mvI0ewxiinp7TJWSR8-5BlHBcFXP2m50e4DVo5MrF0Db_oD8atODZMuFKO-a0h7NkSPT3BlbkFJFpbb8aeBJvEydqsp5a7gm5jxGZzZupcL_n3DZcFGfNvRf5eBpnxEz-4jgTP6ChYkHJjBMYC6sA",
-    "OpenAI Chat (Langchain) 1.api_key": "__@#key_prefix#@__sk-proj-_lreHB0mvI0ewxiinp7TJWSR8-5BlHBcFXP2m50e4DVo5MrF0Db_oD8atODZMuFKO-a0h7NkSPT3BlbkFJFpbb8aeBJvEydqsp5a7gm5jxGZzZupcL_n3DZcFGfNvRf5eBpnxEz-4jgTP6ChYkHJjBMYC6sA"
+    "OpenAI Chat (Langchain) 1.api_key": "__@#key_prefix#@__sk-proj-_lreHB0mvI0ewxiinp7TJWSR8-5BlHBcFXP2m50e4DVo5MrF0Db_oD8atODZMuFKO-a0h7NkSPT3BlbkFJFpbb8aeBJvEydqsp5a7gm5jxGZzZupcL_n3DZcFGfNvRf5eBpnxEz-4jgTP6ChYkHJjBMYC6sA",
+    "OpenAI Chat (Langchain) 1 2.api_key": "__@#key_prefix#@__sk-7f3144e82c9a4f3795edd5083ac0dbca"
   },
   "api_key_encrypted": "__@#key_prefix#@__sk-proj-_lreHB0mvI0ewxiinp7TJWSR8-5BlHBcFXP2m50e4DVo5MrF0Db_oD8atODZMuFKO-a0h7NkSPT3BlbkFJFpbb8aeBJvEydqsp5a7gm5jxGZzZupcL_n3DZcFGfNvRf5eBpnxEz-4jgTP6ChYkHJjBMYC6sA"
 }

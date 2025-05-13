@@ -1,6 +1,6 @@
 ---
 type: person
-photo: https://www.impactmania.com/im/wp-content/uploads/2019/01/George-Legrady_UCSB_impactmania.jpg
+img: https://www.impactmania.com/im/wp-content/uploads/2019/01/George-Legrady_UCSB_impactmania.jpg
 tags: 
 - pioneer
  - 

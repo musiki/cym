@@ -1,7 +1,6 @@
 ---
 type: person
-photo: 
-tags: 
+img:tags: 
 born in city: Buenos Aires
 year: 1985
 dead year: 

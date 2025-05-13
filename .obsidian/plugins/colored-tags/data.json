@@ -167,7 +167,12 @@
     "curaduría": 152,
     "s21": 153,
     "pioneer": 154,
-    "-": 155
+    "-": 155,
+    "philosophy": 156,
+    "philosophy/science": 1,
+    "nuevaorganología": 157,
+    "imc": 158,
+    "instalación/recorrido": 1
   },
   "_version": 3
 }

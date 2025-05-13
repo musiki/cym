@@ -98,5 +98,7 @@
   "templater-obsidian",
   "obsidian-statusbar-pomo",
   "obsidian-textgenerator-plugin",
-  "longform"
+  "longform",
+  "better-fn",
+  "obsidian-pandoc-reference-list"
 ]

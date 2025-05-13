@@ -3,7 +3,7 @@ title: arte y ciencia estado de la cuestión
 tags:
   - cym
   - class
-theme: moon
+theme: zztt
 ---
 
 

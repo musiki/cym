@@ -1,6 +1,6 @@
 ---
 type: person
-photo: https://d16kd6gzalkogb.cloudfront.net/artist_images/Jim-Campbell-artist.jpg
+img: https://d16kd6gzalkogb.cloudfront.net/artist_images/Jim-Campbell-artist.jpg
 tags:
   - leds
   - light

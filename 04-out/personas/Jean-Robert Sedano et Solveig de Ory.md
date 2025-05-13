@@ -1,7 +1,6 @@
 ---
 type: person
-photo: 
-tags: 
+img:tags: 
  - instalación
  - interface
  - luz

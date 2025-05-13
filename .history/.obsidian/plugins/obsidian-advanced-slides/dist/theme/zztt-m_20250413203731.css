@@ -1,0 +1,235 @@
+@import "https://fonts.googleapis.com/css?family=Helvetica:400,700";
+@import url("https://fonts.cdnfonts.com/css/dank-mono"); /* Ensure Dank Mono is available */
+
+:root {
+  --r-background-color: #fff; /* White background for light theme */
+  --r-main-font: "Dank Mono", Helvetica, Arial, sans-serif;
+  --r-main-font-size: 32px; /* Slightly larger for clarity */
+  --r-main-color: #000; /* Black text for contrast */
+  --r-block-margin: 24px; /* Increased for more white space */
+  --r-heading-margin: 0 0 24px 0; /* Generous spacing below headings */
+  --r-heading-font: "Dank Mono", Helvetica, Arial, sans-serif;
+  --r-heading-color: #000; /* Black for headings */
+  --r-heading-line-height: 1.2; /* Relaxed line height */
+  --r-heading-letter-spacing: -0.01em; /* Subtle tightening */
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading1-font-weight: normal;
+  --r-heading2-font-weight: normal;
+  --r-heading3-font-weight: normal;
+  --r-heading4-font-weight: normal;
+  --r-heading5-font-weight: normal;
+  --r-heading6-font-weight: normal;
+  --r-heading1-size: 3em; /* Clean, proportional sizes */
+  --r-heading2-size: 2em;
+  --r-heading3-size: 1.5em;
+  --r-heading4-size: 1.2em;
+  --r-heading5-size: 1em;
+  --r-heading6-size: 0.8em;
+  --r-code-font: "Dank Mono", monospace;
+  --r-link-color: #000; /* Black links to stay minimal */
+  --r-link-color-hover: #666; /* Subtle hover effect */
+  --r-selection-background-color: #000;
+  --r-selection-color: #fff;
+  --r-italic-color: #8b7b8b; /* Elegant mauve for italics */
+}
+
+.reveal-viewport {
+  background: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+  text-align: left; /* Left-aligned for modern art aesthetic */
+  min-height: 100vh;
+  padding: 40px; /* Large margins for white space */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+}
+
+.reveal .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  font-weight: inherit;
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Constrain content width for readability */
+  max-height: calc(100vh - 80px);
+  padding: 40px 0; /* Vertical padding only */
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: left;
+  margin: 0;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  font-family: var(--r-heading-font);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  font-size: inherit; /* Use defined sizes */
+  color: var(--r-heading-color);
+}
+
+.reveal h1 {
+  font-size: var(--r-heading1-size);
+}
+.reveal h2 {
+  font-size: var(--r-heading2-size);
+}
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+.reveal h5 {
+  font-size: var(--r-heading5-size);
+}
+.reveal h6 {
+  font-size: var(--r-heading6-size);
+}
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.4; /* Relaxed for readability */
+  max-width: 100%;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: calc(100vh - 80px);
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: normal; /* Avoid bold to keep minimal */
+  color: var(--r-main-color);
+}
+
+.reveal em {
+  font-style: italic;
+  color: var(--r-italic-color); /* Mauve for subtle elegance */
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: var(--r-block-margin) 0;
+  padding-left: 40px;
+}
+
+.reveal ul li,
+.reveal ol li {
+  margin-bottom: 12px;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  margin-left: 20px;
+}
+
+.reveal blockquote {
+  display: block;
+  width: 80%;
+  margin: var(--r-block-margin) 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+  color: var(--r-italic-color);
+  border-left: 2px solid var(--r-italic-color);
+  background: none;
+  box-shadow: none;
+}
+
+.reveal pre {
+  display: block;
+  width: 90%;
+  margin: var(--r-block-margin) 0;
+  text-align: left;
+  font-size: 0.8em;
+  font-family: var(--r-code-font);
+  line-height: 1.5;
+  background: #f5f5f5; /* Subtle grey for code blocks */
+  color: var(--r-main-color);
+  padding: 20px;
+  border-radius: 0; /* Sharp edges for minimalism */
+}
+
+.reveal code {
+  font-family: var(--r-code-font);
+  background: #f5f5f5;
+  padding: 2px 6px;
+}
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.reveal .controls,
+.reveal .slide-number,
+.reveal .progress {
+  color: #000; /* Black for visibility */
+}
+
+.reveal .mermaid svg {
+  font-family: var(--r-main-font) !important;
+  max-width: 100%;
+}
+
+.reveal ref {
+  font-size: 0.7em;
+  color: var(--r-italic-color);
+  margin-top: var(--r-block-margin);
+  text-align: left;
+}

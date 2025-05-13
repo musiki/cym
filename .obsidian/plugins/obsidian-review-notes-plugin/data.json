@@ -1341,8 +1341,8 @@
       "filename": "espacios MOC"
     },
     {
-      "path": "00-in/Projekte generativer Ästhetik. (The projects of generative aesthetics.md",
-      "filename": "Projekte generativer Ästhetik. (The projects of generative aesthetics"
+      "path": "00-in/Projekte generativer Ästhetik.md",
+      "filename": "Projekte generativer Ästhetik"
     },
     {
       "path": "00-in/Projekte generativer Ästhetik.md",
@@ -3693,16 +3693,16 @@
       "filename": "Jean-Robert Sedano et Solveig de Ory"
     },
     {
-      "path": "00-in/Max Bense.md",
-      "filename": "Max Bense"
+      "path": "04-out/personas/Max Bense 1.md",
+      "filename": "Max Bense 1"
     },
     {
-      "path": "00-in/Nicolas Schoffer.md",
-      "filename": "Nicolas Schoffer"
+      "path": "04-out/personas/Nicolas Schoffer 1.md",
+      "filename": "Nicolas Schoffer 1"
     },
     {
-      "path": "00-in/Gustav Metzger.md",
-      "filename": "Gustav Metzger"
+      "path": "04-out/personas/Gustav Metzger 1.md",
+      "filename": "Gustav Metzger 1"
     },
     {
       "path": "00-in/combinational creativity.md",
@@ -3737,52 +3737,88 @@
       "filename": "pacto da música na saúde mental e física"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Index.md",
+      "path": "02-mat/generatividad/Index.md",
       "filename": "Index"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Azar.md",
+      "path": "02-mat/generatividad/Azar.md",
       "filename": "Azar"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Emergencia.md",
+      "path": "02-mat/generatividad/Emergencia.md",
       "filename": "Emergencia"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Autómatas.md",
+      "path": "02-mat/generatividad/Autómatas.md",
       "filename": "Autómatas"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Fractales.md",
+      "path": "02-mat/generatividad/Fractales.md",
       "filename": "Fractales"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Hibridación (AR).md",
+      "path": "02-mat/generatividad/Hibridación (AR).md",
       "filename": "Hibridación (AR)"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Simulación (VR).md",
+      "path": "02-mat/generatividad/Simulación (VR).md",
       "filename": "Simulación (VR)"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Patrones geométricos.md",
+      "path": "02-mat/generatividad/Patrones geométricos.md",
       "filename": "Patrones geométricos"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Recursion.md",
+      "path": "02-mat/generatividad/Recursion.md",
       "filename": "Recursion"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Palíndromos.md",
+      "path": "02-mat/generatividad/Palíndromos.md",
       "filename": "Palíndromos"
     },
     {
-      "path": "02-mat/generatividad/Generatividad/Introducción.md",
+      "path": "02-mat/generatividad/Introducción.md",
       "filename": "Introducción"
     },
     {
       "path": "04-out/personas/George Legrady.md",
       "filename": "George Legrady"
+    },
+    {
+      "path": "04-out/eventos/Exploring the Decentralized Web.md",
+      "filename": "Exploring the Decentralized Web"
+    },
+    {
+      "path": "05-obs/img/image/Exploring the Decentralized Web-1731791911536.jpeg",
+      "filename": "Exploring the Decentralized Web-1731791911536"
+    },
+    {
+      "path": "05-obs/img/image/Exploring the Decentralized Web-1731791939353.jpeg",
+      "filename": "Exploring the Decentralized Web-1731791939353"
+    },
+    {
+      "path": "05-obs/img/image/Exploring the Decentralized Web-1731792320746.jpeg",
+      "filename": "Exploring the Decentralized Web-1731792320746"
+    },
+    {
+      "path": "04-out/personas/United Visual Artists (UVA).md",
+      "filename": "United Visual Artists (UVA)"
+    },
+    {
+      "path": "02-mat/coloquial/Transindividuación.md",
+      "filename": "Transindividuación"
+    },
+    {
+      "path": "04-out/imc/Cosmic Observatory Background Explorer.md",
+      "filename": "Cosmic Observatory Background Explorer"
+    },
+    {
+      "path": "05-obs/tpl/tg-concept.md",
+      "filename": "tg-concept"
+    },
+    {
+      "path": "00-in/Locus Solus.md",
+      "filename": "Locus Solus"
     }
   ]
 }

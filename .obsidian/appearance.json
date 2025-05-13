@@ -1,6 +1,6 @@
 {
   "accentColor": "#337175",
-  "cssTheme": "Minimal",
+  "cssTheme": "Sanctum",
   "enabledCssSnippets": [
     "s1",
     "cards",
@@ -8,6 +8,6 @@
     "obsidian"
   ],
   "theme": "moonstone",
-  "interfaceFontFamily": "Consolas",
-  "textFontFamily": "Consolas"
+  "interfaceFontFamily": "DankMono Nerd Font,Consolas",
+  "textFontFamily": "DankMono Nerd Font,Dank Mono,Consolas"
 }

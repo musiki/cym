@@ -1,0 +1,240 @@
+/* Use local font fallbacks to avoid remote font issues */
+:root {
+  --r-background-color: #ffffff; /* Pure white for white cube aesthetic */
+  --r-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Clean, modern sans-serif */
+  --r-main-font-size: 1.2em; /* Base font size */
+  --r-main-color: #000000; /* Black for high contrast */
+  --r-block-margin: 24px;
+  --r-heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --r-heading-color: #000000;
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: -0.02em; /* Tighter for elegance */
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading1-font-weight: 500; /* Medium weight for modern look */
+  --r-heading2-font-weight: 500;
+  --r-heading3-font-weight: 400;
+  --r-heading4-font-weight: 400;
+  --r-heading5-font-weight: 400;
+  --r-heading6-font-weight: 400;
+  --r-heading1-size: 3.2em; /* Slightly smaller for balance */
+  --r-heading2-size: 2.4em;
+  --r-heading3-size: 1.8em;
+  --r-heading4-size: 1.4em;
+  --r-heading5-size: 1.1em;
+  --r-heading6-size: 0.9em;
+  --r-code-font: "Courier New", Courier, monospace; /* Reliable monospace fallback */
+  --r-link-color: #000000;
+  --r-link-color-hover: #4a4a4a; /* Subtle gray for hover */
+  --r-selection-background-color: #000000;
+  --r-selection-color: #ffffff;
+  --r-italic-color: #6a6a6a; /* Neutral gray for italics */
+}
+
+.reveal-viewport {
+  background: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+  text-align: left; /* Left-aligned content for museum aesthetic */
+  min-height: 100vh;
+  padding: 60px; /* Generous padding for spaciousness */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+}
+
+.reveal .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left; /* Left-align slides */
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  font-weight: inherit;
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* Wider for modern layouts */
+  max-height: calc(100vh - 120px);
+  padding: 40px 0;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: left; /* Enforce left alignment */
+  margin: 0; /* Align to left edge */
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  font-family: var(--r-heading-font);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  font-size: inherit;
+  color: var(--r-heading-color);
+  text-align: left; /* Left-align headings */
+}
+
+.reveal h1 {
+  font-size: var(--r-heading1-size);
+}
+.reveal h2 {
+  font-size: var(--r-heading2-size);
+}
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+.reveal h5 {
+  font-size: var(--r-heading5-size);
+}
+.reveal h6 {
+  font-size: var(--r-heading6-size);
+}
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.5; /* More breathing room */
+  max-width: 100%;
+  text-align: left; /* Left-align paragraphs */
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: calc(100vh - 120px);
+  display: block;
+  margin: var(--r-block-margin) 0; /* Avoid centering */
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: 500; /* Medium weight for emphasis */
+  color: var(--r-main-color);
+}
+
+.reveal em {
+  font-style: italic;
+  color: var(--r-italic-color);
+}
+
+.reveal ul,
+.reveal ol {
+  text-align: left; /* Left-align lists */
+  width: auto;
+  max-width: 80%;
+  margin: var(--r-block-margin) 0;
+  padding-left: 30px;
+}
+
+.reveal ul li,
+.reveal ol li {
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: none; /* Minimalist, no bullets */
+}
+
+.reveal ul ul {
+  list-style-type: none;
+  font-size: 0.9em;
+  margin: 8px 0 8px 20px;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  margin-left: 20px;
+}
+
+.reveal blockquote {
+  display: block;
+  width: 80%;
+  margin: var(--r-block-margin) 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+  color: var(--r-italic-color);
+  border-left: 1px solid var(--r-italic-color); /* Thinner for subtlety */
+  background: none;
+  box-shadow: none;
+  text-align: left;
+}
+
+.reveal pre {
+  display: block;
+  width: 90%;
+  margin: var(--r-block-margin) 0;
+  text-align: left;
+  font-size: 0.85em;
+  font-family: var(--r-code-font);
+  line-height: 1.5;
+  background: #fafafa; /* Slightly off-white for softness */
+  color: var(--r-main-color);
+  padding: 20px;
+  border-radius: 0; /* Sharp edges for modernity */
+}
+
+.reveal code {
+  font-family: var(--r-code-font);
+  background: #fafafa;
+  padding: 2px 6px;
+}
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: underline; /* Subtle underline for clarity */
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.reveal .controls,
+.reveal .slide-number,
+.reveal .progress {
+  color: #000000;
+}
+
+.reveal .mermaid svg {
+  font-family: var(--r-main-font) !important;
+  max-width: 100%;
+}
+
+.reveal ref {
+  font-size: 0.7em;
+  color: var(--r-italic-color);
+  margin-top: var(--r-block-margin);
+  text-align: left;
+}

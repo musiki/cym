@@ -93,7 +93,7 @@ var ThumbySettingTab = class extends import_obsidian.PluginSettingTab {
         }
       }
     }
-    new import_obsidian.Setting(containerEl).setName("Responsive Card-Style Thumbnails").setDesc("Switch to card-style thumbnails for narrow screens").addToggle((toggle) => toggle.setValue(this.plugin.settings.responsiveCardStyle).onChange((value) => __async(this, null, function* () {
+    new import_obsidian.Setting(containerEl).setName("Responsive Mobile-Style Thumbnails").setDesc("Switch to mobile-style thumbnails on narrow screens (title below the image)").addToggle((toggle) => toggle.setValue(this.plugin.settings.responsiveCardStyle).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.responsiveCardStyle = value;
       yield this.plugin.saveSettings();
       this.display();
@@ -107,7 +107,7 @@ var ThumbySettingTab = class extends import_obsidian.PluginSettingTab {
 
 // main.ts
 var DEFAULT_SETTINGS = {
-  storeInfo: false,
+  storeInfo: true,
   saveImages: false,
   imageLocation: "defaultAttachment",
   imageFolder: "",
@@ -126,6 +126,14 @@ var URL_TYPES = {
   ]
 };
 var ThumbyPlugin = class extends import_obsidian2.Plugin {
+  constructor() {
+    super(...arguments);
+    this.editorObserver = new ResizeObserver((entries) => {
+      for (const editor of entries) {
+        this.responsiveCardCheck(editor.target);
+      }
+    });
+  }
   loadSettings() {
     return __async(this, null, function* () {
       this.settings = Object.assign({}, DEFAULT_SETTINGS, yield this.loadData());
@@ -134,21 +142,24 @@ var ThumbyPlugin = class extends import_obsidian2.Plugin {
   saveSettings() {
     return __async(this, null, function* () {
       yield this.saveData(this.settings);
-      const editors = document.querySelectorAll(".cm-editor");
-      for (const key in editors) {
-        if (Object.prototype.hasOwnProperty.call(editors, key)) {
-          const editor = editors[key];
-          this.responsiveCardCheck(editor);
-        }
-      }
+      this.responsiveCardCheckAllEditors();
     });
+  }
+  responsiveCardCheckAllEditors() {
+    const editors = document.querySelectorAll(".workspace-leaf .view-content");
+    for (const key in editors) {
+      if (Object.prototype.hasOwnProperty.call(editors, key)) {
+        const editor = editors[key];
+        this.responsiveCardCheck(editor);
+      }
+    }
   }
   responsiveCardCheck(editor) {
     const vidBlocks = editor.querySelectorAll(".block-language-vid");
     for (const key in vidBlocks) {
       if (Object.prototype.hasOwnProperty.call(vidBlocks, key)) {
         const block = vidBlocks[key];
-        if (this.settings.responsiveCardStyle && block && block.offsetWidth < 370) {
+        if (this.settings.responsiveCardStyle && block && block.offsetWidth < 290) {
           block.addClass("thumbnail-card-style");
         } else {
           block.removeClass("thumbnail-card-style");
@@ -156,21 +167,48 @@ var ThumbyPlugin = class extends import_obsidian2.Plugin {
       }
     }
   }
+  setEditorResizeObservers() {
+    if (!this.editorObserver)
+      return;
+    this.editorObserver.disconnect();
+    const editorElems = document.querySelectorAll(".workspace-leaf .view-content");
+    for (const key in editorElems) {
+      if (Object.prototype.hasOwnProperty.call(editorElems, key)) {
+        const editor = editorElems[key];
+        this.editorObserver.observe(editor);
+      }
+    }
+  }
+  waitForVidBlockLoad(view, callback) {
+    let intervalCount = 0;
+    const interval = window.setInterval(() => {
+      const elements = view.contentEl.querySelectorAll(".block-language-vid");
+      if (elements.length > 0) {
+        window.clearInterval(interval);
+        callback();
+      }
+      if (intervalCount > 20) {
+        window.clearInterval(interval);
+      }
+      intervalCount++;
+    }, 100);
+    this.registerInterval(interval);
+  }
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
       this.addSettingTab(new ThumbySettingTab(this.app, this));
-      this.editorObserver = new ResizeObserver((entries) => {
-        for (const editor of entries) {
-          this.responsiveCardCheck(editor.target);
-        }
+      this.app.workspace.onLayoutReady(() => {
+        this.setEditorResizeObservers();
+        this.registerEvent(this.app.workspace.on("file-open", () => {
+          this.setEditorResizeObservers();
+        }));
       });
-      const editors = document.querySelectorAll(".cm-editor");
-      for (const key in editors) {
-        if (Object.prototype.hasOwnProperty.call(editors, key)) {
-          const editor = editors[key];
-          this.editorObserver.observe(editor);
-        }
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian2.MarkdownView);
+      if (activeView) {
+        this.waitForVidBlockLoad(activeView, () => {
+          this.responsiveCardCheck(activeView.contentEl);
+        });
       }
       this.registerMarkdownCodeBlockProcessor("vid", (source, el, ctx) => __async(this, null, function* () {
         var _a, _b, _c;
@@ -194,14 +232,14 @@ var ThumbyPlugin = class extends import_obsidian2.Plugin {
         if (!info.vidFound) {
           const component = new import_obsidian2.MarkdownRenderChild(el);
           this.removeDummyBlock(el);
-          import_obsidian2.MarkdownRenderer.renderMarkdown(`>[!WARNING] Cannot find video
+          import_obsidian2.MarkdownRenderer.render(this.app, `>[!WARNING] Cannot find video
 >${info.url}`, el, sourcePath, component);
           return;
         }
         if (this.hasManyUrls(sourceLines)) {
           const component = new import_obsidian2.MarkdownRenderChild(el);
           this.removeDummyBlock(el);
-          import_obsidian2.MarkdownRenderer.renderMarkdown(`>[!WARNING] Cannot accept multiple URLs yet`, el, sourcePath, component);
+          import_obsidian2.MarkdownRenderer.render(this.app, `>[!WARNING] Cannot accept multiple video URLs`, el, sourcePath, component);
           return;
         }
         if (this.settings.storeInfo && !info.infoStored) {
@@ -230,7 +268,7 @@ ${clipText}
       });
       this.addCommand({
         id: "insert-video-title-link",
-        name: "Insert link with video title from URL in clipboard",
+        name: "Insert video title link from URL in clipboard",
         editorCallback: (editor, view) => __async(this, null, function* () {
           const clipText = yield navigator.clipboard.readText();
           const id = yield this.getVideoId(clipText);
@@ -245,7 +283,9 @@ ${clipText}
     });
   }
   onunload() {
-    this.editorObserver.disconnect();
+    if (this.editorObserver) {
+      this.editorObserver.disconnect();
+    }
   }
   hasManyUrls(lines) {
     return lines.length > 1 && lines.every((e) => /^((https*:\/\/)|(www\.))+\S*$/.test(e.trim()));
@@ -258,16 +298,50 @@ ${clipText}
         thumbnailUrl = this.app.vault.getResourcePath(file);
       }
     }
-    const container = el.createEl("a", { href: info.url });
-    container.addClass("thumbnail");
-    container.createEl("img", { attr: { "src": thumbnailUrl } }).addClass("thumbnail-img");
-    const textBox = container.createDiv();
-    textBox.addClass("thumbnail-text");
-    textBox.createDiv({ text: info.title, title: info.title }).addClass("thumbnail-title");
-    textBox.createEl("a", { text: info.author, href: info.authorUrl, title: info.author }).addClass("thumbnail-author");
+    const container = el.createEl("a", {
+      href: info.url,
+      cls: "thumbnail"
+    });
+    const imgContainer = container.createDiv({
+      cls: "thumbnail-img-container"
+    });
+    imgContainer.createEl("img", {
+      attr: { src: thumbnailUrl },
+      cls: "thumbnail-img"
+    });
+    const iconsContainer = imgContainer.createDiv({
+      cls: "img-icons-container"
+    });
+    const textBox = container.createDiv({ cls: "thumbnail-text" });
+    textBox.createDiv({
+      text: info.title,
+      title: info.title,
+      cls: "thumbnail-title"
+    });
+    textBox.createEl("a", {
+      text: info.author,
+      href: info.authorUrl,
+      title: info.author,
+      cls: "thumbnail-author"
+    });
+    const isInPlaylist = this.isInPlaylist(info.url);
+    if (isInPlaylist) {
+      const graphic = iconsContainer.createSvg("svg", {
+        attr: { height: "24", width: "24", viewBox: "0 0 24 24" },
+        cls: "thumbnail-playlist-svg"
+      });
+      const titleTag = graphic.createSvg("title");
+      titleTag.textContent = "In a playlist";
+      graphic.createSvg("path", {
+        attr: {
+          stroke: "white",
+          d: "M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"
+        }
+      });
+    }
     const timestamp = this.getTimestamp(info.url);
     if (timestamp !== "") {
-      container.createDiv({ text: timestamp }).addClass("timestamp");
+      iconsContainer.createDiv({ text: timestamp, cls: "timestamp" });
     }
   }
   createDummyBlock(el) {
@@ -279,6 +353,9 @@ ${clipText}
     if (dummy) {
       el.removeChild(dummy);
     }
+  }
+  isInPlaylist(url) {
+    return url.contains("&list=") || url.contains("?list=");
   }
   getTimestamp(url) {
     let tIndex = url.indexOf("?t=");
@@ -614,3 +691,5 @@ ${info.url}
     });
   }
 };
+
+/* nosourcemap */

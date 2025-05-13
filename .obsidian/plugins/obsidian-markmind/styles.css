@@ -300,7 +300,8 @@
     display: block;
     border: 1px solid #ccc;
     border-radius: 3px;
-    height: 28px
+    height: 28px;
+    box-shadow: none
 }
 
 .theme-dark .cm-form-row select {
@@ -371,6 +372,10 @@
 
 .theme-dark .cm-structure-delete {
     border: 1px solid #000
+}
+
+.theme-dark .cm-structure-delete svg {
+    fill: #adabab;
 }
 
 .cm-structure-item {
@@ -1045,7 +1050,8 @@ th {
     max-width: 100%
 }
 
-.cm-node-text {
+.cm-node-text,
+.mm-node-edit {
     max-width: 450px;
     border-radius: 3px;
     outline: 0;
@@ -1054,6 +1060,12 @@ th {
     min-height: 18px;
     word-wrap: break-word
 }
+
+/* .cm-node-text mjx-math,
+.mm-node-edit mjx-math {
+    max-width: 100%;
+    overflow: auto;
+} */
 
 .cm-edit-node .cm-node-text {
     padding-right: 2px
@@ -1205,15 +1217,20 @@ th {
     overflow: visible
 }
 
+.cm-node-floatmenus {
+    position: fixed;
+    width: 320px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #666
+}
 
-/* @font-face{
-  font-family: 'myFont'; 
-  src:url('http://cdn.ghost-jack.top/chinese.ttf');
-} */
-
-
-.mm-handdraw-theme {
-    font-family: 'myFont';
+.theme-dark .cm-node-floatmenus {
+    background: #333;
+    color: #a3a3a3;
+    box-shadow: 0 0 10px #222;
+    border: 1px solid #000
 }
 
 .mm-app-container {
@@ -1223,7 +1240,7 @@ th {
     right: 0;
     bottom: 0;
     display: flex;
-    font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif;
+    /* font-family: Helvetica, Tahoma, Arial, "PingFang SC", STXihei, "Microsoft yahei", "WenQuanYi Micro Hei", sans-serif; */
 }
 
 .mm-mindmap-container {
@@ -1304,9 +1321,6 @@ th {
     border-radius: 4px;
 }
 
-.mm-node .mm-node-edit {
-    max-width: 450px;
-}
 
 .mm-node .mm-node-content img {
     min-width: 50px;
@@ -1738,6 +1752,8 @@ th {
     padding-top: 4px;
 }
 
+
+
 /* .mm-edit-node .mm-node-assist .mm-node-annotate{
     float: none;
     display: none;
@@ -2122,7 +2138,7 @@ th {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 1px solid #444343;
+    border: 1px solid #7f7e7e;
     left: -3px;
     top: -3px;
 }
@@ -2302,7 +2318,13 @@ th {
 .li-node .node-assist {
     height: 30px;
     box-sizing: border-box;
-    padding-top: 8px;
+    padding-top: 4px;
+}
+
+.li-node .node-assist .mm-icon-item {
+    margin-right: 6px;
+    vertical-align: initial;
+    cursor: pointer;
 }
 
 .linkSetup {
@@ -2353,7 +2375,7 @@ th {
 }
 
 .mm-list li.node-showNode>.node-control .text {
-    border-bottom: 2px solid #989898;
+    /* border-bottom: 2px solid #989898; */
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 3px;
@@ -2384,7 +2406,8 @@ th {
 }
 
 .text ol li {
-    list-style-type: disc;
+    list-style-type: decimal;
+    margin-left: 16px;
 }
 
 .text>p,
@@ -3479,4 +3502,94 @@ span.mm-sline .line {
 .mm-node-text-input,
 .mm-node-stroke-input {
     border: 0 !important;
+}
+
+
+.mm-node-image-embed {
+    position: relative;
+    display: inline-block;
+}
+
+.mm-node-image-control {
+    position: absolute;
+    right: -14px;
+    top: -2px;
+}
+
+
+.cm-mindmap-ppt {
+    padding: 0 12px;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    background: hsla(0, 0%, 100%, .8);
+    border-radius: 5px;
+    opacity: .8;
+    height: 40px;
+    font-size: 12px;
+    user-select: none;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.theme-dark .cm-mindmap-ppt {
+    background: hsl(0deg 0% 25.2% / 80%);
+    box-shadow: 0 0 10px #222
+}
+
+.cm-mindmap-ppt span {
+    vertical-align: middle;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cm-mindmap-ppt span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cm-mindmap-ppt span.cm-ppt-exit svg {
+    width: 16px;
+    height: 16px;
+}
+
+.cm-mindmap-ppt span.cm-ppt-clear svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.mm-ppt-page {
+    position: absolute;
+    z-index: 1000;
+    background: rgb(238 186 69 / 20%);
+}
+
+.mm-ppt-page .mm-ppt-del {
+    position: absolute;
+    right: 0px;
+    display: block;
+
+    top: 0px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mm-ppt-page .mm-ppt-num {
+    background-color: #202020;
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mm-node-embed {
+    display: none !important;
 }

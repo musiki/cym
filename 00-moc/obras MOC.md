@@ -26,7 +26,7 @@ Raymond Llul-La rueda
 
 ## interactividad
 Alexander Schubert
-Stefan Prins-
+Stefan Prins
 Oscar Escudero
 
 ## bioart
