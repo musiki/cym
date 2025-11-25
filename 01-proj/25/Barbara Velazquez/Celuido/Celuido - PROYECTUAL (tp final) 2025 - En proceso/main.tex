@@ -1,0 +1,504 @@
+\documentclass[spanish]{report}
+
+% -------------------------
+% PAQUETES GENERALES
+% -------------------------
+\usepackage[utf8]{inputenc}       % Codificación UTF-8
+\usepackage[spanish]{babel}       % Configuración del idioma en español
+\usepackage{graphicx, tikz, amsmath, amssymb, xcolor, fancyhdr, svg, geometry, hyperref, csquotes}
+\renewcommand{\familydefault}{\sfdefault} % Fuente sans-serif por defecto
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pgfgantt} % Cronograma tipo Gantt basado en TikZ
+
+\renewcommand{\lstlistingname}{Resultado}
+
+% colores más suaves para el resaltado
+\definecolor{blue}{HTML}{0C429F}
+\definecolor{dkgreen}{HTML}{009681}
+\definecolor{gray}{HTML}{CCCCCC}
+\definecolor{mauve}{HTML}{4327C2}
+
+\lstset{
+  frame=tb,
+  language=R,
+  aboveskip=8mm,
+  belowskip=8mm,
+  captionpos=b,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\ttfamily\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=5
+}
+
+% -------------------------
+% CONFIGURACIÓN DE FECHA Y HORA
+% -------------------------
+\usepackage{datetime2}
+\DTMsetdatestyle{ddmmyyyy} % Formato de fecha dd-mm-yyyy
+\newcommand{\fechaHoy}{\DTMdisplaydate{\year}{\month}{\day}{-1}} % Generar fecha
+
+% -------------------------
+% CONFIGURACIÓN DE FORMATO Y MÁRGENES
+% -------------------------
+\setlength{\headheight}{19.7pt}
+\addtolength{\topmargin}{-7.7pt}
+\setlength{\intextsep}{80pt}
+\newcommand{\headervshift}{0cm}
+\newcommand{\headersep}{4cm}
+\newcommand{\sectionsep}{1cm}
+
+% -------------------------
+% CONFIGURACIÓN DEL HEADER
+% -------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Página número en el footer y logo en el header
+\lhead{\includesvg[width=1cm]{UNTREF_Logo_2016}}
+\rfoot{\thepage}
+
+% Autor, año, título y cátedra a la derecha
+\fancyhead[R]{\textit{\ \autor \quad \annoActual \quad \tituloDocumento \quad \abreviaturaCatedra}}
+
+\renewcommand{\headrulewidth}{0.0pt}
+
+\definecolor{indigo}{rgb}{0.29, 0.0, 0.51}
+
+% -------------------------
+% VARIABLES PRINCIPALES
+% -------------------------
+\newcommand{\tituloDocumento}{Proyecto Final de Ciencia y Música}
+\newcommand{\subtitulo}{Documento proyectual compatible para  presentación en festivales, galerías y museos de arte y tecnología}
+\newcommand{\autor}{Barbara Velazquez}
+\newcommand{\apellidos}{Velazquez}
+\newcommand{\catedra}{Ciencia y música}
+\newcommand{\carrera}{Licenciatura en Música}
+\newcommand{\universidad}{UNIVERSIDAD NACIONAL DE TRES DE FEBRERO}
+
+\newcommand{\abreviaturaCatedra}{cym}
+\newcommand{\annoActual}{\the\year}
+
+% -------------------------
+% CONFIGURACIÓN DE CITAS Y BIBLIOGRAFÍA (APA)
+% -------------------------
+\usepackage[
+    backend=biber,
+    style=apa,
+    urldate=long,
+    maxcitenames=3,
+    maxbibnames=99,
+    backref=false,
+    language=spanish
+]{biblatex}
+
+\DeclareLanguageMapping{spanish}{spanish-apa}
+
+\AtEveryBibitem{%
+    \clearfield{month}
+    \clearfield{issn}
+    \clearfield{doi}
+}
+
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+\DeclareFieldFormat{postnote}{#1}
+\renewcommand*{\mkbibnamefamily}[1]{\textbf{#1}}
+
+\addbibresource{ref.bib}
+
+% -------------------------
+% HIPERVÍNCULOS
+% -------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=black,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+% -------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------
+\title{\tituloDocumento}
+\author{\autor}
+\date{\fechaHoy}
+
+% -------------------------
+% DOCUMENTO PRINCIPAL
+% -------------------------
+
+\begin{documento}
+
+\input{caratula}
+
+% -------------------------
+% PORTADA
+% -------------------------
+\begin{center}
+    {\Large \tituloDocumento}\\[0.5cm]
+    {\large \subtitulo}\\[0.5cm]
+    {\large \autor}\\[0.3cm]
+    {\small \fechaHoy}\\[1cm]
+    {\large \universidad}\\
+    {\large \carrera}\\
+    {\large \catedra}
+\end{center}
+
+\vspace*{2cm}
+\thispagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
+% -------------------------
+% 1. TÍTULO / SUBTÍTULO
+% -------------------------
+\vspace{\sectionsep}
+\vspace{\sectionsep}
+\section{Celuido}
+
+\subsection{Subtítulo}
+Es una performance de sonificación e iluminación colectiva generada por el movimiento de los brazos a partir del celular como sensor.
+
+Se brindará un sistema de reglas que funciona como disparador para pensar la meditación que deviene en improvisación de movimiento, música y luz.  
+
+% -------------------------
+% 2. SÍNTESIS
+% -------------------------
+\vspace{\sectionsep}
+\section{Síntesis}
+La obra emplea un telefono celular fijado al brazo como unidad de captura y síntesis del movimiento. 
+
+El acelerómetro y el giroscopio del mismo proveen datos continuos que se mapean en tiempo real a parámetros sonoros (frecuencia, modulación, ruido) y a parámetros visuales (color y brillo). El propio dispositivo actúa como sistema de salida: utilizando su parlante y su display para la sonificación e iluminación.
+
+La ejecución se organiza mediante un conjunto de reglas operativas que son leídas por une guía, que estructuran una instancia inicial de meditación, brindandole atención al cuerpo y al espacio. Cada participante se incorpora en una improvisación guiada, donde el sonido y la luz se enlazan a través del movimiento.
+
+% -------------------------
+% 3. OBJETIVOS
+% -------------------------
+\vspace{\sectionsep}
+\section{Objetivos}
+\begin{itemize}
+
+    \item \underline{Meta-Instrumento}:
+    Crear un instrumento digital que emplea los sensores del celular para producir sonido y luz en tiempo real, integrándolo al cuerpo mediante su colocación en el brazo y haciéndolo accesible a través de una URL para su uso directo, garantizando disponibilidad ubicua.
+    
+    \item \underline{Improvisación consciente}:
+    Crear una partitura instructiva que abra una práctica de meditación colectiva, desde la cual les participantes improvisen con su dispositivo de manera consciente del entorno, de sus gestos, del sonido y de la presencia de otres.
+
+    \item \underline{Solarpunk}:
+    Explorar la utopía solarpunk re-agenciando el celular, un dispositivo cotidiano, para convertirlo en un medio sensible de escucha, luz y movimiento. Convertirlo en un instrumento que fomente prácticas tecnológicas sensibles, cooperativas y conscientes del entorno.
+
+\end{itemize}
+
+% -------------------------
+% 4. JUSTIFICACIÓN / MEMORIA CONCEPTUAL
+% -------------------------
+\vspace{\sectionsep}
+\section{Justificación y memoria conceptual}
+En un entorno marcado por la saturación digital y por la innovación permanente de la tecnología, el celular se presenta como una herramienta cada vez más compleja y menos accesible en términos de comprensión y agencia. Su uso queda restringido a la lógica de las aplicaciones, que simplifican la interacción y ocultan la naturaleza material y operativa del dispositivo. Esta opacidad, lo que Matthew Fuller y Usman Haque describen como la condición de caja negra de las infraestructuras digitales, produce una relación en la que el celular aparece como un agente que “actúa” sobre quien lo usa, reduciendo su capacidad de intervenir, modificar o reapropiarse del medio.
+
+Frente a este imaginario, la obra escapa a los modelos cerrados y prescriptivos de uso, desde su instrumento hasta su obra, ofreciendo una práctica que devuelve complejidad y agencia. En línea con Fuller y Haque, el proyecto rompe con la interfaz clausurada y habilita modos creativos de habitar tecnologías que suelen percibirse como inabordables o incluso invasivas. Al convertir el dispositivo en un meta-instrumento orientado a la experimentación, la interacción y el juego, se interrumpe la cadena de automatismos cotidianos y se recupera un vínculo activo con la tecnología, el espacio, la música y la comunidad.
+
+Así, la obra no solo abre la caja negra del celular, sino que propone nuevas ecologías de interacción donde lo digital deja de ser un entorno de consumo guiado para convertirse en un territorio de exploración, producción y apropiación sensible.
+
+
+\subsection{Contexto}
+Esta obra amplía la definición de instrumento y de ensamble musical. Al tomar el cuerpo - concebido como en el canto, como instrumento vivo - e hibridarlo con un elemento cotidiano, el celular, y brindar instrucciones accesibles, se amplían las formas tradicionales de organización musical. Así, el ensamble no solo se organiza en torno a la interacción entre intérpretes, sino que incluye la relación dinámica entre cuerpo, dispositivo y entorno.
+
+La propuesta no requiere conocimientos previos, permitiendo que cualquier persona participe y aprenda activamente. Democratiza el acceso y redefine los roles convencionales de intérprete y expectante, invitando a una práctica musical basada en la sensibilidad, la escucha y la cooperación.
+
+Aunque el celular no fue diseñado para hacer música, aquí funciona como un dispositivo activo y central dentro del proceso performativo. Su uso es inmediato y tangible: con solo mover el brazo, el intérprete genera sonido y luz, estableciendo una conexión directa entre gesto y resultado.
+
+
+\subsection{Estado del arte}
+\begin{itemize}
+    \item \underline{William Forsythe - Coreographic Objects}
+    Forsythe brinda instrucciones para la danza, permitiendo pensar el movimiento a partir de la imaginación de objetos, lineas, y puntos en el espacio. 
+    De su trabajo tomo sus instrucciones son accesibles, que no requieren conocimientos previos para seguirlas y las expando por fuera de la danza.
+
+
+    \item \underline{Pauline Oliveros - Deep Listening}
+    Oliveros desarrolla su método de escucha intensiva y escribe partituras que adoptan la forma de instrucciones abiertas, invitaciones a un tipo particular de escucha o de interacción. No buscan fijar un resultado, sino habilitar una situación perceptiva. Muchas de sus piezas funcionan como tareas, preguntas o modos de estar en relación con el sonido.
+    De su trabajo, tomo sus instrucciones para escuchar de manera consciente, y expando hacia la conciencia corporal.
+
+    \item \underline{Golan Levin, Scott Gibbons, Gregory Shakar, Yasmin Sohrawardy et al. - Dialtones: A Telesymphony}
+    Dialtones es una obra donde el celular de les espectadores funciona como parte de la obra a partir de sus ringtones.
+    De esta obra tomo el antecedente de usar el celular como altavoz. 
+
+\end{itemize}
+
+
+\subsubsection{Literatura comentada}
+
+\begin{itemize}
+    \item Imaginario especulativo: 
+    Desde la perspectiva de Pauline Oliveros, es posible desplegar un imaginario especulativo donde la escucha profunda habilita nuevas formas de relación entre cuerpo, espacio y tecnología. En su enfoque, la escucha deja de ser un gesto pasivo y se convierte en una atención expandida, transformando la percepción a partir de un sistema de reglas.
+
+    Entendida la percepción como núcleo de interacción entre los sentidos, esa atención puede extenderse no solo a la escucha sino también al movimiento y al entorno. La práctica artística se vuelve así un modo de afinar la sensibilidad hacia lo que acontece entre cuerpo y espacio. En este marco, los dispositivos tecnológicos no operan únicamente como herramientas, sino como mediadores que amplían y reorganizan estas relaciones. La obra deja de definirse por un resultado estable y se entiende como una experiencia en desarrollo, sostenida por nuevas formas de habitar y co-crear el campo perceptual.
+
+
+    \item Paradigma: 
+    En Urban Versioning System, Fuller y Haque introducen la noción de caja negra para describir los procesos opacos mediante los cuales sistemas urbanos y tecnológicos generan efectos sin exponer sus operaciones internas. Esta idea resulta pertinente para la obra en tanto el meta-instrumento opera mediante sensores y transformaciones de datos que no son directamente accesibles, pero determinan su comportamiento. La caja negra funciona aquí como un modelo para comprender esa capa de mediación técnica donde se producen las variaciones y respuestas del sistema.
+    
+    \item La crisis ecológica y la saturación tecnológica obligan a repensar cómo se diseñan, distribuyen y usan los dispositivos que organizan la vida cotidiana. En ese contexto, el celular —ese “black mirror” que condensa vigilancia, extracción de datos y dependencia material— encarna tanto el problema como la posibilidad: es una interfaz ubicua que concentra capas de poder técnico, pero también una plataforma accesible para reimaginar otras relaciones con la tecnología. En el auge de las distopías, es fundamental imaginar nuevos mundos posibles tomando como punto de partida el mundo que ya habitamos. Es allí donde me resuena lo solarpunk: permite imaginar futuros donde la tecnología opera como infraestructura regenerativa.
+    Explorar obras que trabajan con sensores y gestualidades del cuerpo implica intervenir críticamente ese espejo negro, desviarlo de su uso habitual y reabrirlo como un espacio para imaginar futuros más sostenibles y sensibles, desde lo cotidiano.
+
+\end{itemize}
+
+% -------------------------
+% 5. DESCRIPCIÓN
+% -------------------------
+\vspace{\sectionsep}
+\section{Descripción}
+Al inicio, une guía le entregará al público una URL a la que cada persona deberá acceder desde su celular inteligente. Se les pide que suban el brillo y el volumen al máximo, y que activen el modo “no molestar” para no ser interrumpidos. Luego, se les proporcionará un soporte que deberán colocar en su brazo hábil, donde fijarán su dispositivo.
+
+Una vez preparades, le guía les leerá en voz alta un conjunto de instrucciones divididas en tres partes, orientadas a un uso consciente del instrumento, poniendo énfasis en la relación entre movimiento y escucha.
+
+Finalizada esta introducción, se dará paso a una improvisación libre de duración indeterminada, donde cada participante explorará el instrumento desde su corporalidad y percepción sonora.
+
+
+\subsection{Explicación y principio de funcionamiento}
+
+\underline{Meta-Instrumento}:
+Se utiliza el celular colocado en el antebrazo con un portacelular (similar al que se utiliza para deportes, como el running) y vía web se accede a la información de dos sensores: acelerometro y giroscopio. 
+
+Acelerometro: Traduce el movimiento físico en intensidad para disparar sonido.
+Calcula la magnitud del movimiento, si esa magnitud es mayor a 2: dispara un grain (oscilador muy corto) y a veces agrega un burst de ruido (probabilidad 0.3).
+La intensidad del movimiento también controla: la duración del grain, la duración del burst de ruido,
+el ataque/decay de las envolventes.
+
+Giroscopio:
+Lee beta (inclinación hacia adelante/atrás).
+Se mapea linealmente con la función mapRange desde [-90, 90] a un factor de tono (pitchFactor) entre 0.5 y 4. Este factor modifica la frecuencia base del oscilador, por lo que:
+Cuando el dispositivo está inclinado hacia adelante o atrás, cambia la frecuencia del sonido (más bajo o más alto).
+Además, beta se usa para actualizar un gradiente de color dinámico en el fondo, también mapeado linealmente a valores RGB para crear una transición visual según la inclinación.
+El pitchFactor derivado de beta también es parte de la lógica para detectar si el dispositivo está en estado "quieto" y en una posición grave (frecuencia baja), condición que puede gatillar un efecto de ruido (glitch).
+En otras palabras, el giroscopio controla la altura del sonido y el color.
+
+
+\underline{Obra}:
+La práctica comienza con estar de pie o sentadx, brazo libre, y prestar atención a la respiración. Luego, se visualiza una línea imaginaria entre codo y mano que puede orientarse en cualquier eje espacial (horizontal, vertical o profundidad), explorando movimientos lineales o curvos entre dos puntos, repitiendo hasta tres veces si la atención lo permite. A continuación, se trabaja la profundidad imaginando puntos cercanos, lejanos o situados delante y detrás del cuerpo, y se experimenta con distintas velocidades, moviéndose rápida o lentamente, alternando ambas. Durante todo el proceso, se cultiva la escucha activa antes, durante y después del movimiento, esperando en silencio si no hay sonidos. Finalmente, se observa un movimiento para imitarlo, variando su velocidad, y se detiene cuando la atención se disuelve, cerrando la práctica volviendo a la respiración.
+
+
+\vspace{\sectionsep}
+
+% Estilos
+\tikzstyle{block} = [rectangle, draw, node distance=2.5cm,
+    text width=4em, text centered, rounded corners, minimum height=4em,
+    font=\Large\bfseries]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse, node distance=4cm,
+    minimum height=1cm, text width=4em, text centered, font=\Large\bfseries]
+
+\begin{tikzpicture}[node distance = 2cm, auto]
+
+    % Nodos solo con letras
+    \node [cloud] (criterios) {A};
+    \node [cloud, left of=criterios] (tabla) {T};
+    \node [block, below of=criterios] (n) {B};
+    \node [block, below of=n] (neff) {C};
+    \node [cloud, right of=neff] (suprimir) {X};
+    \node [block, below of=neff] (eval) {D};
+    \node [cloud, left of=eval] (publicar) {P};
+    \node [cloud, right of=eval] (revisar) {R};
+
+    % Flechas principales
+    \path [line] (n) -- node {sí}(neff);
+    \path [line] (neff) -- node {sí}(eval);
+
+    % Decisiones
+    \path [line,dashed] (eval) -- node {sí}(publicar);
+    \path [line,dashed] (eval) -- node {no}(revisar);
+
+    % Condiciones de “no”
+    \path [line,dashed] (n) -| node [near start]{no}(suprimir);
+    \path [line,dashed] (neff) -- node {no}(suprimir);
+
+    % Conexiones iniciales
+    \path [line,dashed] (tabla) -- (criterios);
+    \path [line,dashed] (criterios) -- (n);
+
+\end{tikzpicture}
+
+
+
+% -------------------------
+% GRÁFICO EN TIKZ
+% -------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[grow=right, sibling distance=3cm, level distance=2cm,
+    every node/.style={rectangle, rounded corners, draw, align=center, text width=3.5cm},
+    level 1/.style={sibling distance=4cm},
+    level 2/.style={sibling distance=3cm},
+    level 3/.style={sibling distance=2cm}]
+
+  \node[fill=white!50] {Idea Inicial}
+    child { node[fill=white!50] {Diseño} 
+      child { node[fill=white!30] {Prototipo} }
+      child { node[fill=white!30] {Optimización} }
+    }
+    child { node[fill=white!30] {Vínculo} 
+      child { node[fill=white!30] {Contexto} }
+      child { node[fill=white!30] {Público} }
+    };
+
+\end{tikzpicture}
+\caption{Ejemplo 1.}
+\end{figure}
+
+
+
+\subsection{Entorno}
+Es una obra-momento, requiere de un espacio amplio, silencioso.
+\begin{itemize}
+    \item Tipología de circulación del objeto: funciona como performance/taller en horario fijo
+    \item Comportamiento del público: entrada por turnos, por grupos. Se propone un recorrido guiado.
+    \item Duración mínima de la experiencia, 30 minutos.
+\end{itemize}
+
+% -------------------------
+% 6. DESARROLLO
+% -------------------------
+\vspace{\sectionsep}
+\section{Desarrollo}
+El desarrollo organiza el proyecto en tiempo y tareas. No se trata solo de una lista de actividades, sino de un relato de cómo la obra pasará de la idea al prototipo, del prototipo a la exhibición y de la exhibición a su documentación y seguimiento.
+
+
+\vspace{\sectionsep}
+
+\subsection{Cronograma}
+En esta subsección se presenta el cronograma por etapas y meses de trabajo. Se recomienda separar al menos cuatro fases: investigación, prototipado, pruebas con público y montaje/exhibición. A continuación se incluye una visualización tipo Gantt construida con \texttt{pgfgantt}, que emula el estilo de los diagramas en Mermaid.
+
+\begin{figure}[H]
+    \centering
+    \begin{ganttchart}[
+        hgrid,
+        vgrid,
+        compress calendar,
+        time slot format=isodate,
+        x unit=0.065cm,
+        y unit chart=0.5cm,
+        milestone label font=\footnotesize,
+        bar label font=\footnotesize,
+        group label font=\footnotesize\bfseries
+    ]{2025-04-01}{2025-09-30}
+        \gantttitle{Cronograma general del proyecto}{183} \\
+        \gantttitlecalendar{year, month=name} \\
+        \ganttgroup{Fase 1: Investigación}{2025-04-01}{2025-04-30} \\
+        \ganttbar{Relevamiento teórico y referencias}{2025-04-01}{2025-04-20} \\
+        \ganttbar{Definición de caso de uso y entorno}{2025-04-15}{2025-04-30} \\
+        \ganttgroup{Fase 2: Prototipo técnico}{2025-05-01}{2025-06-15} \\
+        \ganttbar{Diseño de interacción y mapeos}{2025-05-01}{2025-05-20} \\
+        \ganttbar{Implementación hardware/software}{2025-05-15}{2025-06-15} \\
+        \ganttgroup{Fase 3: Pruebas con público}{2025-06-16}{2025-08-15} \\
+        \ganttbar{Test interno y ajuste fino}{2025-06-16}{2025-07-15} \\
+        \ganttbar{Sesiones piloto con usuarios}{2025-07-16}{2025-08-15} \\
+        \ganttgroup{Fase 4: Montaje y exhibición}{2025-08-16}{2025-09-30} \\
+        \ganttbar{Montaje en sala y calibración}{2025-08-16}{2025-09-10} \\
+        \ganttbar{Exhibición y documentación}{2025-09-11}{2025-09-30} \\
+        \ganttmilestone{Entrega de informe final}{2025-09-30}
+    \end{ganttchart}
+    \caption{Cronograma general del proyecto en formato Gantt.}
+    \label{fig:cronograma-gantt}
+\end{figure}
+
+A continuación se sugiere una tabla de cronograma por rubro y mes, que ayuda a visualizar en qué períodos se concentra cada tipo de trabajo (teórico, técnico, material, montaje, difusión).
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccccccc}
+        \hline
+        Rubro / Mes & Abr & May & Jun & Jul & Ago & Sep & Oct \\
+        \hline
+        Investigación teórica         & X & X &   &   &   &   &   \\
+        Desarrollo de software        &   & X & X & X &   &   &   \\
+        Prototipado físico            &   &   & X & X & X &   &   \\
+        Montaje en sala               &   &   &   &   & X & X &   \\
+        Difusión y comunicación       &   &   &   & X & X & X & X \\
+        \hline
+    \end{tabular}
+    \caption{Cronograma por rubro y mes. La X indica la actividad principal en cada período.}
+    \label{tab:cronograma-rubro-mes}
+\end{table}
+
+% -------------------------
+% 7. LISTA DE MATERIALES
+% -------------------------
+\vspace{\sectionsep}
+\section{Lista de materiales}
+En esta sección se enumeran los materiales necesarios para la realización y exhibición de la obra, distinguiendo entre materiales de construcción (estructuras, soportes, acabados), componentes electrónicos (sensores, actuadores, placas, cables), sistemas de cómputo (ordenadores, mini-PC, dispositivos de audio y video) y elementos de seguridad y señalización. El texto debe ser lo bastante claro como para que un técnico de una institución pueda prever compatibilidades y necesidades logísticas.
+
+% -------------------------
+% 8. RIDER
+% -------------------------
+\vspace{\sectionsep}
+\section{Rider}
+El rider detalla las condiciones técnicas y espaciales que la institución debe proveer: dimensiones mínimas, oscuridad o nivel de luz requerido, cantidad y ubicación de tomas de corriente, potencia eléctrica, puntos de anclaje, proyectores, sistemas de sonido, soportes para pantallas, accesibilidad, tiempos de montaje y desmontaje. Se recomienda diferenciar entre requerimientos imprescindibles y deseables, para facilitar la negociación con festivales y museos.
+
+% -------------------------
+% 9. PLANOS
+% -------------------------
+\vspace{\sectionsep}
+\section{Planos}
+Este apartado describe y adjunta la información espacial: vistas en planta, cortes, diagramas de circulación y ubicaciones de dispositivos. En el texto se explica cómo leer los planos: dónde se sitúa el público, cómo se distribuyen las fuentes sonoras y visuales, qué zonas requieren cableado visible o oculto. Si no hay planos definitivos, se presenta al menos un boceto esquemático que permita entender la lógica espacial de la obra.
+
+% -------------------------
+% 10. PRESUPUESTO
+% -------------------------
+\vspace{\sectionsep}
+\section{Presupuesto}
+El presupuesto organiza los gastos estimados del proyecto por rubro y cantidad. Se recomienda diferenciar entre costos de producción (materiales, herramientas, alquiler de equipamiento), honorarios artísticos/técnicos, transporte, seguros, montaje y comunicación. A continuación se incluye una tabla modelo que puede adaptarse a las cifras reales del proyecto.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrrrr}
+        \hline
+        Rubro & Costo unitario (CHF) & Cantidad & Subtotal (CHF) \\
+        \hline
+        Sensores y hardware          & 80   & 5   & 400  \\
+        Computadora / mini PC        & 900  & 1   & 900  \\
+        Material de construcción     & 150  & 1   & 150  \\
+        Honorarios artista           & 3000 & 1   & 3000 \\
+        Honorarios asistencia técnica& 800  & 1   & 800  \\
+        Gastos de comunicación       & 500  & 1   & 500  \\
+        \hline
+        Total estimado               &      &     & 5750 \\
+        \hline
+    \end{tabular}
+    \caption{Presupuesto preliminar por rubro. Los valores son orientativos.}
+    \label{tab:presupuesto}
+\end{table}
+
+El texto debe aclarar, en términos narrativos, cuáles costos podrían absorberse por la institución (equipamiento ya disponible) y cuáles requieren financiamiento específico o co-producción.
+
+% -------------------------
+% 11. REFERENCIAS / COMUNICACIÓN
+% -------------------------
+\vspace{\sectionsep}
+\section{Referencias y comunicación}
+Esta sección integra la bibliografía, los materiales de difusión y la narrativa pública del proyecto. Articula cómo la obra dialoga con un campo de referencia y cómo se proyecta hacia su audiencia.
+
+\subsection{Bibliografía}
+Aquí se listan las referencias teóricas, técnicas y artísticas que informan el proyecto. Se sugiere priorizar fuentes que hayan tenido un impacto concreto en decisiones de diseño. La bibliografía se gestiona con \texttt{biblatex} y puede incluir libros, artículos, papers, documentación de software y catálogos de exposiciones.
+\printbibliography
+
+\subsection{Teaser}
+En este apartado se redacta un texto breve (entre 50 y 120 palabras) pensado para catálogos, webs de festivales o redes sociales. El teaser debe condensar el tono de la obra y enfatizar su singularidad sin caer en tecnicismos excesivos. Idealmente, este texto funciona también como base para un pitch oral en contexto de residencia o curaduría.
+
+\subsection{Blog / bitácora}
+Se describe aquí la estrategia de documentación del proceso: bitácora en línea, blog, repositorio de código, diario de pruebas con público, registro audiovisual. El objetivo es mostrar que el proyecto no es solo un resultado final, sino una investigación en curso, cuyas etapas pueden ser compartidas y analizadas.
+
+\subsection{Statement}
+El statement es el texto en primera persona donde el/la artista explica su posición frente al proyecto: qué le interesa investigar, cómo se relaciona esta obra con su trayectoria y qué preguntas estéticas, políticas o filosóficas quiere abrir. No se trata de justificar cada decisión, sino de ubicar la obra en un horizonte más amplio de práctica artística y de investigación.
+
+\end{document}

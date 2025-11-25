@@ -13,44 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-out/home.md",
+                "file": "01-proj/25/Barbara Velazquez/TP2/☀︎⋆ ೃ࿔ obra cym ⋆⁺𖤓⋆.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "home"
-            }
-          },
-          {
-            "id": "c3d4a7253db2d452",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Acceso a la info del TP Final."
-            }
-          },
-          {
-            "id": "75e1a93eacc16706",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "☀︎⋆ ೃ࿔ obra cym ⋆⁺𖤓⋆"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -255,63 +226,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "daily-notes:Abrir la nota de hoy": false,
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "obsidian-git:Open Git source control": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "75e1a93eacc16706",
+  "active": "ec88c86385c7fa2a",
   "lastOpenFiles": [
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/watch_v=SHfS4uKUxZI&t=1s",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/Untitled diagram _ Mermaid Chart-2025-09-08-005527.png",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/UNTREF_Logo_2016.svg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/reproduccio╠ün micelar.png",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/reproduccio╠ün micelar.jpg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/ref.bib",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/main.tex",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/IMG_8099.jpeg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/IMG_8098.jpeg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/IMG_8097.jpeg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/IMG_8096.jpeg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/hongos.jpg",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/caratula.tex",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso/Captura de pantalla 2025-09-09 a la(s) 22.02.08.png",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025 - En proceso",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025/main.tex",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025/ref.bib",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025/watch_v=SHfS4uKUxZI&t=1s",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025/caratula.tex",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025",
+    "01-proj/25/Barbara Velazquez/Celuido/Celuido - PROYECTUAL (tp final) 2025.zip",
+    "01-proj/25/Barbara Velazquez/TP2/☀︎⋆ ೃ࿔ obra cym ⋆⁺𖤓⋆.md",
+    "README.md",
+    "01-proj/25/Barbara Velazquez/TP1 - Paradigmas Operativos.md",
+    "Prueba.md",
+    "a-advancedslides.md",
+    "06-out/home.md",
+    "hola mundo.md",
     "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
     "conflict-files-obsidian-git.md",
-    "Proyectual ultimo actualizado.pdf",
-    "06-out/topoi/performance en red/BogdanVera_SSSP_preview.pdf",
-    "06-out/topoi/performance en red/Blockchain_Paper_ICMC_20222.pdf",
-    "06-out/topoi/performance en red",
     "06-out/obras/mud muse.md",
     "04-tp/tpfinal-proyectual.md",
     "03-cla/c-cym09-performance en red.md",
     "01-proj/25/Peterschmitt/TP 02/Blog.md",
-    "01-proj/25/Peterschmitt/TP 02",
     "01-proj/25/Peterschmitt/TP 01/Paradigmas Operativos.md",
     "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
-    "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador",
     "01-proj/25/Peterschmitt/Ideas/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
-    "01-proj/25/Peterschmitt/Ideas",
-    "01-proj/25/Ada Gomiz/tp1_Ada_Gomiz.pdf",
-    "Sin título.base",
     "01-proj/25/Carlos Lescano/TP2/Acceso a Blog del TP2.md",
-    "01-proj/25/Carlos Lescano/TP Final",
     "01-proj/25/Tomas Fernandez/TP01 Paradigmas operativos.md",
     "00-moc/proyectos MOC.md",
-    "README.md",
     "a-mermaid.md",
     "04-tp/arc/tp01-topoi.md",
     "04-tp/arc/tp03-guía de lectura MONTFORT.md",
     "04-tp/arc/tp04-aplicación js fundamentals.md",
     "04-tp/arc/tp06-guía de lectura SADIN.md",
     "04-tp/arc/tp05-guía de lectura GROYS.md",
-    "03-cla/c-cym08-vida.md",
-    "01-proj/25/Peterschmitt/TP 01/(aun no se como subir el codigo aca perdOOOOOOOOON, pero dejo el link).md",
-    "01-proj/25/Peterschmitt/Proyecto Final/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
-    "06-out/topoi/vida artificial/genetic algortighms.md",
-    "05-obs/img/Pasted image 20251022164933.png",
-    "05-obs/img/Pasted image 20251022163702.png",
-    "05-obs/img/Pasted image 20251022163642.png",
-    "05-obs/img/Pasted image 20251022163435.png",
-    "03-cla/23/c-cym08-github pages+hydra.md",
-    "06-out/ingeniería inversa/Ingenieria inversa.md",
-    "06-out/sistemas paramétricos/turing_gray_scott.gif",
-    "05-obs/img/frankenstein.gif",
-    "05-obs/img/Pasted image 20251015081906.png",
-    "05-obs/img/Pasted image 20250926112238.png",
-    "05-obs/img/Pasted image 20250926104149.png",
-    "05-obs/img/Pasted image 20250924090749.png",
     "Sin título.canvas",
     "cym-metamap.canvas",
     "Sin título 1.canvas",
