@@ -26,14 +26,14 @@
             "id": "a7952cf26892fa54",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://carlosdaniellescano.github.io/escp/proyecto-proximo.html",
-                "title": "Proyecto próximo - ESC/P",
-                "mode": "webview"
+                "file": "01-proj/25/Dai Miauro/TP 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "globe-2",
-              "title": "Proyecto próximo - ESC/P"
+              "icon": "lucide-file",
+              "title": "TP 2"
             }
           }
         ],
@@ -60,7 +60,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -158,12 +158,27 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "01-proj/25/Dai Miauro/TP 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Outline of TP 2"
+            }
+          },
+          {
+            "id": "a333ad852cfeb1d1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -175,20 +190,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "daily-notes:Abrir la nota de hoy": false,
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "publish:Publicar cambios": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "obsidian-git:Open Git source control": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
   "active": "a7952cf26892fa54",
   "lastOpenFiles": [
+    "01-proj/25/Dai Miauro/tp1.pdf",
+    "01-proj/25/Dai Miauro/TP 2.md",
+    "01-proj/25/Dai Miauro/TP Final/presente perpetuo proof of concept.mp3",
+    "01-proj/25/Dai Miauro/TP Final/Proyectual TP Final.pdf",
     "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
     "01-proj/25/Carlos Lescano/TP1/TP1_Lescano_Carlos__Daniel (1).pdf",
     "01-proj/25/Carlos Lescano/TP1/TP1 Salida -VacaMuertaDatos.mp3",
@@ -205,8 +221,6 @@
     "01-proj/25/Garcia/Proyectual/Proyectual.md",
     "01-proj/25/Garcia/Proyectual",
     "01-proj/25/Carlos Lescano/TP2/Acceso a Blog del TP2.md",
-    "01-proj/25/Carlos Lescano/TP2",
-    "01-proj/25/Carlos Lescano/TP Final",
     "01-proj/25/Peterschmitt/TP 01/Paradigmas Operativos.md",
     "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
     "06-out/obras/mud muse.md",
@@ -227,7 +241,6 @@
     "01-proj/25/Tomas Fernandez/TP01 Paradigmas operativos.md",
     "01-proj/25/Peterschmitt/Ideas/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
     "01-proj/25/Peterschmitt/Sin título.md",
-    "04-tp/tp02-blog.md",
     "06-out/sistemas paramétricos/turing_gray_scott.gif",
     "05-obs/img/frankenstein.gif",
     "05-obs/img/Pasted image 20251015081906.png",
