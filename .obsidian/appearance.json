@@ -9,5 +9,6 @@
   ],
   "theme": "obsidian",
   "interfaceFontFamily": "DankMono Nerd Font,Consolas",
-  "textFontFamily": "DankMono Nerd Font,Dank Mono,Consolas"
+  "textFontFamily": "DankMono Nerd Font,Dank Mono,Consolas",
+  "baseFontSize": 21
 }
