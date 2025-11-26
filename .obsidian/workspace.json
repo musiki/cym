@@ -6,7 +6,6 @@
       {
         "id": "853095fe4fd8616f",
         "type": "tabs",
-        "dimension": 48.829648894668395,
         "children": [
           {
             "id": "d8b069b78a2a1564",
@@ -14,91 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-out/obras/Horos.md",
+                "file": "b/2025 balance.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Horos"
-            }
-          },
-          {
-            "id": "229ab2db144631ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06-out/obras/mud muse.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "mud muse"
-            }
-          },
-          {
-            "id": "1664d828b62c2f78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym08-vida.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "c-cym08-vida"
-            }
-          },
-          {
-            "id": "c0711bc8988d1295",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03-cla/c-cym09-performance en red.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "c-cym09-performance en red"
-            }
-          },
-          {
-            "id": "eeaddf3e04fe1bdc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "ab9e11b68a548040",
-        "type": "tabs",
-        "dimension": 51.170351105331605,
-        "children": [
-          {
-            "id": "63e38e843a7c641c",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Slide Preview"
+              "title": "2025 balance"
             }
           }
         ]
@@ -233,8 +154,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           },
           {
@@ -293,8 +214,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           },
           {
@@ -303,12 +224,52 @@
             "state": {
               "type": "QUICKSHARE_SIDE_VIEW",
               "state": {},
-              "icon": "cloud",
-              "title": "QuickShare"
+              "icon": "lucide-ghost",
+              "title": "QUICKSHARE_SIDE_VIEW"
+            }
+          },
+          {
+            "id": "2a69a864c70ec600",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
+            }
+          },
+          {
+            "id": "d06be196cfed8b70",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "QUICKSHARE_SIDE_VIEW"
+            }
+          },
+          {
+            "id": "f5288b897574c1ab",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
+            }
+          },
+          {
+            "id": "5ecbb98945c8b2c0",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "QUICKSHARE_SIDE_VIEW"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 14
       },
       {
         "id": "b33cb9828f682814",
@@ -356,34 +317,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-git:Open Git source control": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
-      "obsidian42-text-transporter:Text Transporter": false,
-      "translate:Open translation view": false,
-      "omnisearch:Omnisearch": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "wikipedia-search:Open Article": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "callout-manager:Insert Callout": false,
-      "obsidian42-brat:BRAT": false,
-      "obsidian-book-search-plugin:Create new book note": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eeaddf3e04fe1bdc",
+  "active": "d8b069b78a2a1564",
   "lastOpenFiles": [
+    "06-out/eventos/Atucha II.md",
+    "b/2025 balance.md",
+    "06-out/home.md",
+    "06-out/obras/Horos.md",
+    "06-out/obras/mud muse.md",
+    "06-out/eventos/La memoria de los materiales.md",
+    "06-out/espacios/Bell Labs.md",
+    "06-out/espacios/espacios.base",
+    "06-out/espacios/Ars Electronica.md",
+    "06-out/espacios/Akademie der bildenden Künste Wien.md",
+    "03-cla/c-cym08-vida.md",
     "03-cla/c-cym09-performance en red.md",
     "conflict-files-obsidian-git.md",
     "03-cla/c-cym10-proyectual.md",
@@ -393,13 +348,10 @@
     "06-out/topoi/performance en red/Unconfirmed 424829.crdownload",
     "06-out/topoi/performance en red",
     "03-cla/23/c-cym09-networking.md",
-    "03-cla/c-cym08-vida.md",
     "03-cla/c-cym04-introducción al código.md",
-    "06-out/obras/mud muse.md",
     "06-out/obras/obras.base",
     "06-out/obras/whoosh.md",
     "b/from dataviewjs a lilypond.md",
-    "06-out/obras/Horos.md",
     "06-out/topoi/internet/web 3.0 glosario y knowledge graphs.md",
     "03-cla/c-cym05-metáfora y re.md",
     "03-cla/c-cym06-generatividad.md",
@@ -412,18 +364,10 @@
     "05-obs/img/Pasted image 20251022163642.png",
     "05-obs/img/Pasted image 20251022163435.png",
     "b/02-vida -dev.md",
-    "b/01-vida-cod-moc.md",
     "cym",
-    "06-out/topoi/vida artificial/genetic algortighms.md",
     "05-obs/img/TP_1.pdf",
-    "01-proj/25/Peterschmitt/TP 01/(aun no se como subir el codigo aca perdOOOOOOOOON, pero dejo el link).md",
     "01-proj/25/Peterschmitt/TP 01",
-    "01-proj/25/Peterschmitt/Proyecto Final/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
     "01-proj/25/Peterschmitt/Proyecto Final",
-    "b/Vida artificial.md",
-    "06-out/topoi/vida artificial/0 cosmos química inicial.md",
-    "b/ácido sim 1.md",
-    "06-out/topoi/música visual",
     "05-obs/img/frankenstein.gif",
     "05-obs/img/Pasted image 20251015081906.png",
     "05-obs/img/Pasted image 20250926112238.png",

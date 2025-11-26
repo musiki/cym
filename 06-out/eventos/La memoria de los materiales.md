@@ -4,6 +4,7 @@ tags:
   - instalación
   - argentina
   - eventos
+  - vivenciales
 place: arthaus
 curators: María Teresa Constantín, Gabriela Vicente Irrazabal
 connections:

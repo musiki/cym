@@ -1,6 +1,6 @@
 ---
 type: class
-tags: cym, música visual, armonía expandida,class, diy, imi
+tags: [cym, música visual, armonía expandida,class], diy, imi
 unit: 1
 num:  14
 year: 2023

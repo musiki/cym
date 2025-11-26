@@ -16,3 +16,7 @@ views:
     image: note.img
     cardSize: 230
     imageAspectRatio: 0.55
+  - type: map
+    name: map
+    coordinates: note.coordinates
+    markerIcon: note.icon
