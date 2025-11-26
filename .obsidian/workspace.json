@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5ee1f4ceb8c88870",
+        "id": "d61acad1af9701b0",
         "type": "tabs",
         "children": [
           {
-            "id": "7cd8b1f618af7b1d",
+            "id": "09c8dd2343426c28",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "01-proj/25/Dai Miauro/tp1.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de tp1"
             }
           }
         ],
@@ -166,7 +167,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7cd8b1f618af7b1d",
+  "active": "1eba2e95c20747cb",
   "lastOpenFiles": [
     "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
     "01-proj/25/Carlos Lescano/TP1/TP1_Lescano_Carlos__Daniel (1).pdf",
