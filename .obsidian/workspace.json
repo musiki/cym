@@ -138,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/25/Dai Miauro/tp1.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de tp1"
+              "title": "Esquema"
             }
           }
         ],
