@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8c94f23545b7df80",
+        "id": "5ee1f4ceb8c88870",
         "type": "tabs",
         "children": [
           {
-            "id": "47269bda56e9de7c",
+            "id": "7cd8b1f618af7b1d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Registro de cambios 1.10.6"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -168,7 +166,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47269bda56e9de7c",
+  "active": "7cd8b1f618af7b1d",
   "lastOpenFiles": [
     "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
     "01-proj/25/Carlos Lescano/TP1/TP1_Lescano_Carlos__Daniel (1).pdf",
