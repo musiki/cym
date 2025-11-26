@@ -4,40 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "03bf7873737f1eb0",
+        "id": "8c94f23545b7df80",
         "type": "tabs",
         "children": [
           {
-            "id": "d0d22dc4936c8e5c",
+            "id": "47269bda56e9de7c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "currentVersion": "1.10.6"
               },
-              "icon": "lucide-file",
-              "title": "Acceso a la info del TP Final."
-            }
-          },
-          {
-            "id": "a7952cf26892fa54",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://carlosdaniellescano.github.io/escp/proyecto-proximo.html",
-                "title": "Proyecto próximo - ESC/P",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Proyecto próximo - ESC/P"
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.10.6"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,11 +165,10 @@
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
       "publish:Publicar cambios": false,
-      "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a7952cf26892fa54",
+  "active": "47269bda56e9de7c",
   "lastOpenFiles": [
     "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
     "01-proj/25/Carlos Lescano/TP1/TP1_Lescano_Carlos__Daniel (1).pdf",
