@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3da4420770736e73",
+        "id": "064ca6e24f0b83d5",
         "type": "tabs",
         "children": [
           {
-            "id": "adc83c284210624b",
+            "id": "7387483bd3f640f7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-proj/25/Peterschmitt/TP 02/Blog.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Blog"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -143,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/25/Peterschmitt/TP 02/Blog.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Blog"
+              "title": "Esquema"
             }
           }
         ],
@@ -173,7 +167,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "adc83c284210624b",
+  "active": "7387483bd3f640f7",
   "lastOpenFiles": [
     "01-proj/25/Peterschmitt/TP 02/Blog.md",
     "01-proj/25/Peterschmitt/TP 01/Paradigmas Operativos.md",
