@@ -28,12 +28,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://blogcym.vercel.app/frecuencias-y-consciencia/",
-                "title": "Frecuencias y Consciencia",
+                "url": "https://blogcym.vercel.app/",
+                "title": "Bienvenid@",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Frecuencias y Consciencia"
+              "title": "Bienvenid@"
             }
           }
         ],
