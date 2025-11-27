@@ -4,19 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "501153706545e86c",
+        "id": "35170c44c6328d65",
         "type": "tabs",
         "children": [
           {
-            "id": "9400ec88e8bda655",
+            "id": "3a2a49bdbca9da6b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "01-proj/25/Dai Miauro/tp1.pdf"
+                "file": "02-mat/rant.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-file-text",
-              "title": "tp1"
+              "icon": "lucide-file",
+              "title": "rant"
             }
           }
         ]
@@ -86,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 460.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -264,9 +267,29 @@
               "icon": "lucide-ghost",
               "title": "QUICKSHARE_SIDE_VIEW"
             }
+          },
+          {
+            "id": "f3052af52e7d3137",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "f2c5f36a9eae15de",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
+            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 16
       },
       {
         "id": "b33cb9828f682814",
@@ -320,48 +343,65 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian42-brat:BRAT": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "translate:Open translation view": false,
+      "wikipedia-search:Open Article": false,
+      "callout-manager:Insert Callout": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "9400ec88e8bda655",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
-    "01-proj/25/Garcia/Proyectual/Proyectual.pdf",
+    "01-proj/25/velazquez/25-velazquez_topfinal.pdf",
+    "velazquez/Unconfirmed 41002.crdownload",
+    "01-proj/25/velazquez",
+    "concret-lab.md",
+    "06-out/topoi/generatividad/generative models.md",
+    "01-proj/25/peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
+    "01-proj/25/peterschmitt/Proyectual Sombrero Disociador/Proyectual ultimo actualizado.pdf",
+    "b/Vedic Sanskrit.md",
+    "b/Proto-Indo-European.md",
+    "b/hi augmentation.md",
+    "04-tp/tpfinal-proyectual.md",
+    "04-tp/tp02-blog/blog/blog MOC.md",
+    "04-tp/tp02-blog",
+    "03-cla/c-cym10-proyectual.md",
+    "04-tp/tp01-paradigmas operativos.md",
+    "01-proj/25/Daira Pollard/TP1 Paradigmas Operativos☢️.md",
+    "01-proj/25/Daira Pollard/SPOILER_tp01.md",
     "b/2025 balance.md",
-    "01-proj/25/Dai Miauro/TP Final/Proyectual TP Final.pdf",
+    "01-proj/25/fernandez/TP03 TP FINAL.pdf",
+    "01-proj/25/miauro/tp1.pdf",
+    "01-proj/25/fernandez/TP02 BLOG TOMÁS FERNANDEZ.md",
+    "01-proj/25/garcía/Proyectual/Proyectual.pdf",
+    "01-proj/25/miauro/TP Final/Proyectual TP Final.pdf",
     "README.md",
     "Sin título.base",
-    "01-proj/25/Daira Pollard/SPOILER_tp01.md",
     "conflict-files-obsidian-git.md",
-    "01-proj/25/Dai Miauro/tp1.pdf",
-    "Proyectual ultimo actualizado.pdf",
-    "04-tp/tpfinal-proyectual.md",
-    "01-proj/25/Peterschmitt/TP 02/Blog.md",
-    "01-proj/25/Peterschmitt/TP 01/Paradigmas Operativos.md",
-    "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
-    "01-proj/25/Peterschmitt/Ideas/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
-    "01-proj/25/Peterschmitt/TP 02",
-    "01-proj/25/Peterschmitt/TP 01",
-    "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador",
-    "01-proj/25/Peterschmitt/Ideas",
-    "01-proj/25/Peterschmitt",
-    "01-proj/25/Garcia/TP2/TP2.md",
-    "01-proj/25/Garcia/TP2",
-    "01-proj/25/Garcia/TP1/TP1.md",
-    "01-proj/25/Garcia/Resumen de TPs.md",
-    "01-proj/25/Garcia/Proyectual/Proyectual.md",
-    "01-proj/25/Dai Miauro/TP 2.md",
-    "01-proj/25/Carlos Lescano/TP2/Acceso a Blog del TP2.md",
-    "01-proj/25/Carlos Lescano/TP Final/Acceso a la info del TP Final..md",
-    "01-proj/25/Tomas Fernandez/TP01 Paradigmas operativos.md",
-    "01-proj/25/Dai Miauro/Holiwisss.md",
-    "01-proj/25/Carlos Lescano/TP1/TP1_Lescano_Carlos__Daniel/UNTREF_Logo_2016.svg",
-    "06-out/eventos/Atucha II.md",
-    "06-out/home.md",
-    "06-out/obras/Horos.md",
-    "06-out/obras/mud muse.md",
-    "06-out/eventos/La memoria de los materiales.md",
-    "06-out/espacios/Bell Labs.md",
-    "06-out/espacios/Ars Electronica.md",
+    "01-proj/25/peterschmitt/TP 02/Blog.md",
+    "01-proj/25/peterschmitt/TP 01/Paradigmas Operativos.md",
+    "01-proj/25/peterschmitt/Ideas/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
+    "01-proj/25/peterschmitt/TP 02",
+    "01-proj/25/garcía/TP2/TP2.md",
+    "01-proj/25/garcía/TP1/TP1.md",
+    "01-proj/25/garcía/Resumen de TPs.md",
+    "01-proj/25/garcía/Proyectual/Proyectual.md",
+    "01-proj/25/miauro/TP 2.md",
+    "01-proj/25/lescano/TP2/Acceso a Blog del TP2.md",
+    "01-proj/25/lescano/TP1/TP1_Lescano_Carlos__Daniel/UNTREF_Logo_2016.svg",
     "05-obs/img/Pasted image 20251022164933.png",
     "05-obs/img/Pasted image 20251022163702.png",
     "05-obs/img/Pasted image 20251022163642.png",
