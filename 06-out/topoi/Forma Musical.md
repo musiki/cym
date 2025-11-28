@@ -1,7 +1,8 @@
 ---
 type: topoi
 author: Sabrina Beltrame
-tags: forma musical
+tags:
+  - músicaescrita
 publish: 2023
 img: https://i.imgur.com/r0lTWQM.png
 ---

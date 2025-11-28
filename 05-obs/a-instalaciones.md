@@ -1,3 +1,6 @@
+---
+type: help
+---
 
 
 ## como instalar git 

@@ -1,10 +1,11 @@
 ---
 type: topoi
-tags: azar, generativad, topoi, cym
+tags:
+  - generative
 unit: 32
 publish: 2021
 author: zztt
-img: "https://noosphere.princeton.edu/images/movie256_b.gif"
+img: https://noosphere.princeton.edu/images/movie256_b.gif
 ---
 
 ### unit: 0

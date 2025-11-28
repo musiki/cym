@@ -1,8 +1,9 @@
 ---
-tags: #1
+tags:
 name: 1
 val1: text1
 val2: text2
+type: help
 ---
 
 

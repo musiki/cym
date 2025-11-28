@@ -4,6 +4,7 @@ img: https://www.fondation-langlois.org/html/inc/corners/cropCorners.php?src=med
 year: 1990
 tags:
   - interactividad
+  - vidaartificial
 person: "[[David Rokeby]]"
 ranking: "1"
 ---

@@ -1,7 +1,8 @@
 ---
 type: person
 img: https://i.imgur.com/FD90JyD.png
-tags: stocastics, composer
+tags:
+  - composer
 born in city: Brăila
 year: 1922
 dead year: 2001

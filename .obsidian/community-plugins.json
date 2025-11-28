@@ -1,8 +1,7 @@
 [
-<<<<<<< HEAD
   "maps",
   "obsidian-plugin-groups",
-=======
->>>>>>> origin/main
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-linter",
+  "workspaces-plus"
 ]

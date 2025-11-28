@@ -1,9 +1,10 @@
 ---
 author: Gustavo Zaracho
-tags: topoi 
+tags:
+  - enviroments
 type: topoi
 publish: 2023
-img: "https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png"
+img: https://schott-production.s3.eu-central-1.amazonaws.com/media/Allgemein/Blog/Blog_Bilder_847_420_px_1000_500_px__3.png
 ---
 
 

@@ -3,6 +3,7 @@ title: energía
 tags:
   - class
 type: class
+year: 2025
 ---
 
 <grid drag="60 55" drop="5 10" bg="black" align="left">

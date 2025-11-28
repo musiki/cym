@@ -6,6 +6,7 @@
       {
         "id": "35170c44c6328d65",
         "type": "tabs",
+        "dimension": 53.294460641399425,
         "children": [
           {
             "id": "3a2a49bdbca9da6b",
@@ -13,13 +14,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-mat/rant.md",
+                "file": "06-out/obras/mud muse.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "rant"
+              "title": "mud muse"
+            }
+          }
+        ]
+      },
+      {
+        "id": "731f639288ec1e0d",
+        "type": "tabs",
+        "dimension": 46.70553935860058,
+        "children": [
+          {
+            "id": "3e504b3ad4262df1",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "06-out/obras/obras.base",
+                "viewName": "lista"
+              },
+              "icon": "lucide-table",
+              "title": "obras"
             }
           }
         ]
@@ -54,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mermaid",
+                "query": "tag:generatividad",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 460.5
+    "width": 279.5
   },
   "right": {
     "id": "f8c878636ee6998f",
@@ -337,6 +358,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "workspaces-plus:Manage workspaces": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -360,47 +382,47 @@
       "wikipedia-search:Open Article": false,
       "callout-manager:Insert Callout": false,
       "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "58a6bf3eeea06c75",
+  "active": "3e504b3ad4262df1",
   "lastOpenFiles": [
+    "06-out/personas/prs.base",
+    "00-moc/cym.base",
+    "06-out/obras/obras.base",
+    "06-out/personas/Geoffrey Hinton.md",
+    "06-out/topoi/Intervencion del espacio público.md",
+    "06-out/topoi/Música y Política.md",
+    "06-out/topoi/topoi.base",
+    "06-out/topoi/Interfaces.md",
+    "06-out/topoi/física/Física.md",
+    "06-out/topoi/Arte participativo.md",
+    "06-out/topoi/Livecoding.md",
+    "06-out/topoi/Azar.md",
+    "06-out/topoi/Forma Musical.md",
+    "06-out/topoi/Racionalizacion_(videojuegos).md",
+    "06-out/topoi/música visual/Música Visual.md",
+    "06-out/topoi/Introducción a la psicoacústica.md",
+    "06-out/topoi/La reología del arte.md",
+    "06-out/topoi/arqueología de medios/arqueología de medios.md",
+    "00-moc/topoi MOC.md",
+    "06-out/personas/Leonard Baum.md",
+    "06-out/personas/Iannis Xenakis.md",
+    "06-out/personas/Max Bense.md",
+    "06-out/obras/mud muse.md",
+    "06-out/obras/space junk.md",
+    "06-out/obras/Very Nervous System.md",
+    "06-out/obras/stranger visions.md",
+    "06-out/obras/Rainforest IV.md",
+    "06-out/obras/Atmosphères.md",
+    "06-out/obras/Nommos Alpha.md",
     "01-proj/25/velazquez/25-velazquez_topfinal.pdf",
     "velazquez/Unconfirmed 41002.crdownload",
     "01-proj/25/velazquez",
-    "concret-lab.md",
-    "06-out/topoi/generatividad/generative models.md",
-    "01-proj/25/peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
     "01-proj/25/peterschmitt/Proyectual Sombrero Disociador/Proyectual ultimo actualizado.pdf",
-    "b/Vedic Sanskrit.md",
-    "b/Proto-Indo-European.md",
-    "b/hi augmentation.md",
-    "04-tp/tpfinal-proyectual.md",
-    "04-tp/tp02-blog/blog/blog MOC.md",
     "04-tp/tp02-blog",
-    "03-cla/c-cym10-proyectual.md",
-    "04-tp/tp01-paradigmas operativos.md",
-    "01-proj/25/Daira Pollard/TP1 Paradigmas Operativos☢️.md",
-    "01-proj/25/Daira Pollard/SPOILER_tp01.md",
-    "b/2025 balance.md",
     "01-proj/25/fernandez/TP03 TP FINAL.pdf",
-    "01-proj/25/miauro/tp1.pdf",
-    "01-proj/25/fernandez/TP02 BLOG TOMÁS FERNANDEZ.md",
-    "01-proj/25/garcía/Proyectual/Proyectual.pdf",
-    "01-proj/25/miauro/TP Final/Proyectual TP Final.pdf",
-    "README.md",
-    "Sin título.base",
-    "conflict-files-obsidian-git.md",
-    "01-proj/25/peterschmitt/TP 02/Blog.md",
-    "01-proj/25/peterschmitt/TP 01/Paradigmas Operativos.md",
-    "01-proj/25/peterschmitt/Ideas/La Teoría Sintérgica de Jacobo Grinberg postula que la realidad, tal como la conocemos, no es una creación de nuestros sentidos, sino una construcción de la conciencia humana..md",
-    "01-proj/25/peterschmitt/TP 02",
-    "01-proj/25/garcía/TP2/TP2.md",
-    "01-proj/25/garcía/TP1/TP1.md",
-    "01-proj/25/garcía/Resumen de TPs.md",
-    "01-proj/25/garcía/Proyectual/Proyectual.md",
-    "01-proj/25/miauro/TP 2.md",
-    "01-proj/25/lescano/TP2/Acceso a Blog del TP2.md",
     "01-proj/25/lescano/TP1/TP1_Lescano_Carlos__Daniel/UNTREF_Logo_2016.svg",
     "05-obs/img/Pasted image 20251022164933.png",
     "05-obs/img/Pasted image 20251022163702.png",

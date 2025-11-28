@@ -1,9 +1,9 @@
 ---
 type: topoi
-tags: topoi,
+tags:
 unit: 0
 author:
-img: "https://i.imgur.com/G9QGKHP.png"
+img: https://i.imgur.com/G9QGKHP.png
 ---
 
 

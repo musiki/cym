@@ -2,6 +2,7 @@
 type: person
 img: https://i.imgur.com/SZX82V7.png
 tags:
+  - soundart
 born in city: Maastricht
 year: 1930
 died: "2013"

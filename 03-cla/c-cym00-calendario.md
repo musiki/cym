@@ -1,8 +1,8 @@
 ---
 title: cym25
 tags:
-  
   - class
+year: 2025
 ---
 <<<<<<< HEAD
 

@@ -1,5 +1,5 @@
 
-![[topoi BASE.base]]
+![[topoi.base]]
 
 
 ```dataview

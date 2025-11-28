@@ -2,7 +2,8 @@
 type: obra
 img: https://i.imgur.com/4ekNKBW.png
 year: 1965
-tags: mathmusic , symbolicmusic
+tags:
+  - músicaescrita
 person: "[[Iannis Xenakis]]"
 premiereDate:
 premierePlace:

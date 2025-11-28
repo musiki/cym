@@ -1,3 +1,6 @@
+---
+type: help
+---
 
 
 <!-- .slide: class="drop" data-background-image="https://picsum.photos/id/177/2515/1830" -->

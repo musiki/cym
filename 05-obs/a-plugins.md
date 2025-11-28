@@ -1,3 +1,6 @@
+---
+type: help
+---
 
 Estos son los plugins indispensables para correr el vault de cym:
 
