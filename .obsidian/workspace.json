@@ -11,15 +11,12 @@
             "id": "09c8dd2343426c28",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "01-proj/25/velazquez/25-velazquez_topfinal.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Proyectual final"
+              "icon": "lucide-file-text",
+              "title": "25-velazquez_topfinal"
             }
           }
         ]
@@ -143,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-proj/25/Peterschmitt/Proyectual Sombrero Disociador/Proyectual final.md",
+                "file": "01-proj/25/velazquez/25-velazquez_topfinal.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Proyectual final"
+              "title": "Esquema de 25-velazquez_topfinal"
             }
           }
         ],
