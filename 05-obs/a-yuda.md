@@ -1,3 +1,6 @@
+---
+type: help
+---
 /toc
 
 # instalar obsidian

@@ -1,9 +1,10 @@
 ---
 type: topoi
 author: Fabian Bassino
-tags: musica visual, topoi
+tags:
+  - visualmusic
 publish: 2023
-img: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01033765677435.5afc69e398f54.gif"
+img: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01033765677435.5afc69e398f54.gif
 ---
 
 # Música Visual

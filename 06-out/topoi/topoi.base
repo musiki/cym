@@ -1,0 +1,28 @@
+filters:
+  or:
+    - type == "topoi"
+views:
+  - type: cards
+    name: gal
+    filters:
+      and:
+        - '!file.name.startsWith("t-")'
+    order:
+      - file.name
+      - author
+    image: note.img
+  - type: table
+    name: list
+    filters:
+      and:
+        - '!file.name.startsWith("t-")'
+    order:
+      - file.name
+      - author
+      - tags
+    sort:
+      - property: author
+        direction: ASC
+    image: note.img
+    columnSize:
+      note.author: 292

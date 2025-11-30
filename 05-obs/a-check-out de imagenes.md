@@ -1,5 +1,6 @@
 ---
-ruta de imágenes : 02-mat/obs/img
+ruta de imágenes: 02-mat/obs/img
+type: help
 ---
 
 ### config

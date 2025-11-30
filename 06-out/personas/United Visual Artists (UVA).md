@@ -1,12 +1,13 @@
 ---
 type: person
-img:  https://images.squarespace-cdn.com/content/v1/5cfd3effe02806000151e559/1702905078035-D4OAJ0SI9GAVWE1Q3BDB/OurTime_01_byJackHemms.jpg
-tags: 
-born in city:  London
+img: https://images.squarespace-cdn.com/content/v1/5cfd3effe02806000151e559/1702905078035-D4OAJ0SI9GAVWE1Q3BDB/OurTime_01_byJackHemms.jpg
+tags:
+  - artesvisuales
+born in city: London
 year: 2003
-dead year: 
-city: 
-country: 
+dead year:
+city:
+country:
 connect: Matt Clark
 url: https://www.uva.co.uk/
 ---

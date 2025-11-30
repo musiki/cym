@@ -5,7 +5,7 @@ bienvenidxs al repositorio público de información musical de la cátedra de Ci
 
 ![[obras.base]]
 # topoi
-![[topoi BASE.base]]
+![[topoi.base]]
 # bibliografía
 ![[bib.base]]
 # instrumentos de medición científica

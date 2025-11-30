@@ -1,10 +1,12 @@
 ---
 type: topoi
-tags: videojuegos, capitalismo, sociologia, topoi
+tags:
+  - videogames
+  - enviroments
 unit: 52
 author: Nicolás López
 date: 2022-08-30
-img: "https://d3i71xaburhd42.cloudfront.net/a250d1234a74d0679f4504bf8bc96da50c924014/3-Figure2-1.png"
+img: https://d3i71xaburhd42.cloudfront.net/a250d1234a74d0679f4504bf8bc96da50c924014/3-Figure2-1.png
 ---
 
 <iframe height="360" width="640" src="https://padlet.com/marcosnicolaslopez/racionalizaci-n-en-videojuegos-k4gktoles1yb68nx" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.77778 / 1; width: 100%; height: 100%;"></iframe>

@@ -1,4 +1,5 @@
 ---
+coordinates: "48.202778, 16.361389"
 connections:
 city: Wien
 url:
@@ -7,6 +8,8 @@ year: 1692
 works:
 img: https://i.imgur.com/eifaZm7.png
 person: Peter Strudel
+icon: "landmark"
+color: "red"
 ---
 
 

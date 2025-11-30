@@ -1,0 +1,257 @@
+\documentclass[spanish]{report}
+
+% -------------------------
+% PAQUETES GENERALES
+% -------------------------
+\usepackage[utf8]{inputenc}       % Codificación UTF-8
+\usepackage[spanish]{babel}       % Configuración del idioma en español
+\usepackage{graphicx, tikz, amsmath, amssymb, xcolor, fancyhdr, svg, geometry, hyperref, csquotes} 
+\renewcommand{\familydefault}{\sfdefault} % Fuente sans-serif por defecto
+\usepackage{graphicx, tikz, amsmath, amssymb, xcolor, fancyhdr, svg, geometry, hyperref, csquotes} 
+\renewcommand{\familydefault}{\sfdefault} % Fuente sans-serif por defecto
+
+% -------------------------
+% CONFIGURACIÓN DE FECHA Y HORA
+% -------------------------
+\usepackage{datetime2} 
+\DTMsetdatestyle{ddmmyyyy} % Formato de fecha dd-mm-yyyy
+\newcommand{\fechaHoy}{\DTMdisplaydate{\year}{\month}{\day}{-1}} % Generar fecha en español
+
+% -------------------------
+% CONFIGURACIÓN DE FORMATO Y MÁRGENES
+% -------------------------
+\setlength{\headheight}{19.7pt}  % Asegurar espacio suficiente para fancyhdr
+\addtolength{\topmargin}{-7.7pt} % Ajuste del margen superior para compensar el header
+\usepackage{float}                % Mejor control de figuras flotantes
+\setlength{\intextsep}{80pt}       % Espaciado global entre figuras y texto
+\newcommand{\headervshift}{0cm} % Ajuste vertical del logo
+\newcommand{\headersep}{4cm} % Espaciado entre header y texto
+\newcommand{\sectionsep}{1cm} % Espaciado entre secciones
+
+
+% -------------------------
+% CONFIGURACIÓN DEL HEADER
+% -------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Página número a la izquierda antes del logo
+\lhead{\thepage \quad \vspace{-5pt}\includesvg[width=1cm]{UNTREF_Logo_2016}}
+
+% Autor, año, título y cátedra a la derecha
+\rhead{\textit{\apellidos \quad \annoActual \quad \tituloDocumento \quad \abreviaturaCatedra}}
+
+\renewcommand{\headrulewidth}{0.0pt} % Sin línea en header
+
+% Define colors
+\definecolor{indigo}{rgb}{0.29, 0.0, 0.51}
+
+
+% -------------------------
+% VARIABLES PRINCIPALES
+% -------------------------
+\newcommand{\tituloDocumento}{Paradigmas Operativos en la obra \\ \\  La Mapoteca Colaborativa \\Iconoclasistas - 2009   }
+\newcommand{\subtitulo}{ }
+\newcommand{\autor}{Lescano Carlos Daniel}
+\newcommand{\apellidos}{Lescano}
+\newcommand{\catedra}{Ciencia y música}
+\newcommand{\carrera}{Licenciatura en Artes Electrónicas}
+\newcommand{\universidad}{UNIVERSIDAD NACIONAL DE TRES DE FEBRERO}
+
+\newcommand{\abreviaturaCatedra}{i1}
+\newcommand{\annoActual}{\the\year} % Año actual
+
+% -------------------------
+% CONFIGURACIÓN DE CITAS Y BIBLIOGRAFÍA (APA)
+% -------------------------
+\usepackage[
+    backend=biber,
+    style=apa,
+    urldate=long,
+    maxcitenames=3,
+    maxbibnames=99,
+    backref=false,
+    language=spanish
+]{biblatex}
+
+\DeclareLanguageMapping{spanish}{spanish-apa}
+
+% Personalización de la bibliografía en APA
+\AtEveryBibitem{%
+    \clearfield{month}   % Eliminar mes
+    \clearfield{issn}    % Eliminar ISSN
+    \clearfield{doi}     % Opcionalmente eliminar DOI
+}
+
+% Modificar formato de las citas
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+\DeclareFieldFormat{postnote}{#1}  % Evita agregar "p." en páginas
+\renewcommand*{\mkbibnamefamily}[1]{\textbf{#1}} % Apellidos en negrita
+
+% Agregar archivo de bibliografía
+\addbibresource{ref.bib}
+
+% -------------------------
+% CONFIGURACIÓN DE HIPERVÍNCULOS
+% -------------------------
+\hypersetup{
+    colorlinks=true,     % Habilitar colores en enlaces
+    linkcolor=black,     % Color negro para enlaces internos
+    citecolor=blue,      % Color azul para citas
+    filecolor=black,     
+    urlcolor=black,      
+    pdfborder={0 0 0}    % Quitar bordes en hipervínculos
+}
+
+% -------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------
+\title{\tituloDocumento}
+\author{\autor}
+\date{\fechaHoy}
+
+
+
+% -------------------------
+% DOCUMENTO PRINCIPAL
+% -------------------------
+\begin{document}
+
+\input{caratula}
+% \maketitle
+
+% -------------------------
+% TITULO EN PRIMERA PÁGINA
+% -------------------------
+\begin{center}
+    {\Large \tituloDocumento}\\[0.5cm]
+    {\large \autor}\\[0.3cm]
+    {\small \fechaHoy}\\[1cm]
+    {\large \universidad}\\
+    {\large \carrera}\end{center}
+    
+\vspace*{2cm}
+\thispagestyle{empty} % Sin header en portada
+
+\pagestyle{fancy} % Aplicar header en el resto del documento
+
+\section{Introducción}
+El presente trabajo aborda la noción de paradigma operativo en obras artísticas que articulan intuición y razón. Se analiza el caso de la Mapoteca Colaborativa y se proyecta una micro-obra sonora basada en datos sísmicos. La revisión del estado del arte incluye cartografías colaborativas, prácticas de sonificación de datos y metodologías de traducción entre dominios (visual $\leftrightarrow$ sonoro).
+
+Se elige la matriz ETS con retroalimentación, ampliada por las nociones de distinción mínima (Spencer-Brown), autopoiesis (Maturana y Varela) y transducción (Simondon). La metodología consiste en traducir entradas heterogéneas (relatos o datos) a un lenguaje común (mapa o sonido).
+
+\section{Etapa 1: Identificación en obras referenciales}
+Se toma como obra referencial \emph{La Mapoteca Colaborativa} del colectivo Iconoclasistas. 
+En ella subyace un paradigma operativo de tipo \textbf{Entrada–Transformación–Salida (ETS) con retroalimentación}. 
+El proceso consiste en recolectar relatos y memorias de las comunidades (entrada), transformarlos mediante dinámicas de taller en símbolos gráficos (transformación) y producir mapas colectivos (salida). 
+La salida retorna a la comunidad, modulando nuevas entradas, en un ciclo autopoietico.
+
+\section{Etapa 2: Definición del paradigma operativo}
+
+\subsection{Definición filosófica}
+La intuición fundante sostiene que \emph{“el mapa no representa un territorio fijo, sino que es un territorio en disputa donde la comunidad reconstituye su agencia simbólica”}.  
+La razón estructurante organiza esa intuición a través de un método colectivo que regula consignas y materiales, de modo que la apertura subjetiva se cristalice en formas legibles.
+
+\subsection{Definición matemática / algorítmica}
+El paradigma puede expresarse como función compuesta:
+\[
+f: (E) \rightarrow (T(E)) \rightarrow S
+\]
+donde \(E\) son las entradas comunitarias, \(T\) es el operador de traducción gráfica, y \(S\) es la salida visual (mapa).  
+El ciclo de retroalimentación se modela como:
+\[
+E_{n+1} = g(S_n, C)
+\]
+siendo \(C\) la comunidad y \(S_n\) el mapa producido en la iteración \(n\).
+
+En pseudocódigo:
+
+\begin{verbatim}
+input[] = {relatos, memorias};
+Salida mapa_colaborativo;
+
+Inicio() {
+  recopilar(input);
+  distinguir_elementos();
+  traducir_a_simbolos();
+  organizar_en_mapa();
+  mapa_colaborativo = generar_mapa();
+}
+
+FeedbackEnLoop() {
+  mostrar_mapa(mapa_colaborativo);
+  comunidad_reacciona();
+  ajustar_representacion();
+  mapa_colaborativo = generar_mapa();
+}
+
+\end{verbatim}
+
+\section{Etapa 3: Demostración experimental}
+Para aislar su funcionamiento, se puede implementar una visualización simple: 
+un formulario web en el cual los participantes cargan palabras clave de sus vivencias, 
+que son traducidas automáticamente en íconos pre-definidos en un lienzo digital. 
+El resultado es un mapa emergente que se transforma con cada nueva entrada, mostrando el ciclo ETS + feedback.
+
+
+\section{Etapa 4: Micro-obra en 7 días}
+La micro-obra propuesta parte del mismo paradigma ETS pero lo traslada al dominio sonoro, en una versión reducida y minimalista.  
+
+\subsection*{Descripción}
+Se emplean datos abiertos del \emph{Observatorio de Sismicidad Inducida},  que es un proyecto independiente de investigación científica que materializa más de cinco años de investigación y monitoreo de la actividad sísmica en Patagonia y centra su atención en el fenómeno de la sismicidad inducida o disparada por la actividad humana especialmente, aunque no exclusivamente, en el área de Vaca Muerta como consecuencia del fracking. 
+Un script en Python obtiene el archivo \texttt{.json} con información sobre la creación de pozos y la ocurrencia de sismos.  
+La sonificación no busca representar la totalidad de las variables, sino destacar únicamente la \textbf{aceleración de los eventos en el tiempo}.  
+
+El mapeo elegido es el siguiente:
+\begin{itemize}
+    \item Creación de un nuevo pozo $\rightarrow$ sonido percusivo agudo.  
+    \item Ocurrencia de un sismo $\rightarrow$ sonido percusivo grave.  
+\end{itemize}
+
+La secuencia sonora resultante enfatiza la densidad temporal: 
+a medida que los eventos se vuelven más frecuentes, la textura percusiva se intensifica, 
+convirtiéndose en un registro sonoro de la aceleración histórica del fenómeno.
+
+\subsection*{Nuevo paradigma operativo}
+Este sistema constituye un \textbf{ETS sonoro simplificado}:  
+\begin{itemize}
+    \item \textbf{Entrada}\,: datos en formato JSON (pozos y sismos).  
+    \item \textbf{Transformación}\,: asignación mínima de eventos a sonidos percusivos (agudo/grave).  
+    \item \textbf{Salida}\,: secuencia de golpes percusivos reproducidos como sonido.  
+\end{itemize}
+
+A diferencia del paradigma referencial de la Mapoteca, en esta primera instancia no se incorpora retroalimentación. 
+El foco está puesto en la traducción directa y condensada del fenómeno al dominio sonoro, 
+reduciendo la complejidad representacional al mínimo para resaltar el pulso creciente de los datos.  
+Una forma de pensarlo sería la siguiente
+
+\[
+f: (E) \rightarrow (T(E)) \rightarrow S
+\]
+Siendo 
+E = entradas (pozos y sismos),  T(E) = traducción de cada evento a sonido percusivo,  
+S = salida sonora total (pulsos acumulados).O pensándolo como sumatoria, puede expresarse como:
+\[
+S(t) = \sum_{i=1}^{n} \sigma(e_i, t)
+\]
+donde cada evento \(e_i\) es clasificado como pozo (agudo) o sismo (grave), 
+y la función $\sigma$ genera un pulso sonoro en el tiempo $t$ correspondiente.
+S(t) significa “el sonido total de la obra en el tiempo t, compuesto por la suma de todos los eventos ocurridos hasta ese momento”.
+
+
+
+
+
+\section{Conclusiones y crítica}
+El análisis de \emph{La Mapoteca Colaborativa} y la micro-obra sonora de sismicidad permite concluir que los paradigmas operativos ETS con retroalimentación (o su versión simplificada sin feedback) son herramientas muy potentes para articular intuición y razón en la creación artística.  
+
+La visualización de datos científicos, como en los mapas colaborativos, permite que información compleja y heterogénea —relatos, memorias o registros históricos— se convierta en una forma gráfica inteligible, accesible y abierta a reinterpretaciones colectivas. Esta transformación resalta cómo la representación visual puede constituirse como un medio de apropiación y resignificación del conocimiento, permitiendo a las comunidades y al público establecer nuevas relaciones con la información y generar sentido más allá de su dimensión puramente informativa.
+
+De manera análoga, la sonificación de datos sísmicos demuestra cómo la transformación de un fenómeno científico en material sensible puede revelar patrones y cualidades que no son inmediatamente evidentes en su forma original. La conversión de eventos de pozos y sismos en pulsos percusivos agudos o graves enfatiza la aceleración de los eventos y produce una experiencia temporal y corporal del dato, llevando la información científica al dominio de lo perceptible y experiencial. Este enfoque evidencia la potencia del arte para construir interfaces entre conocimiento, sensación y emoción, generando un registro que es simultáneamente informativo, estético y crítico.
+
+Ambas prácticas muestran que la apropiación de datos científicos en el arte no consiste simplemente en su reproducción, sino en su transformación operativa: mediante paradigmas que traducen y condensan información compleja en representaciones sensibles, el artista puede explorar nuevas capas de significado y generar experiencias que son tanto cognitivas como afectivas. En este sentido, la visualización y sonificación de datos se convierten en materiales artísticos por derecho propio, capaces de abrir canales de interpretación inéditos y de provocar reflexiones sobre la relación entre información, experiencia y creación.
+
+Finalmente, el uso de paradigmas operativos como marco metodológico permite formalizar estos procesos, facilitando la planificación y experimentación sistemática, mientras que la iteración y el loop conceptual aseguran que la intuición y la creatividad puedan dialogar con la lógica y la estructura del conocimiento científico. Esto evidencia que la integración de arte y ciencia a través de la transformación operativa de datos constituye una estrategia poderosa para expandir el alcance perceptivo y conceptual de la obra, y para posicionar la experiencia sensible como un vehículo legítimo de conocimiento y reflexión crítica.
+
+
+\end{document}

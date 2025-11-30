@@ -1,3 +1,6 @@
+---
+type: help
+---
 # gantt
 
 ```mermaid

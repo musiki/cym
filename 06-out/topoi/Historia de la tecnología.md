@@ -1,6 +1,6 @@
 ---
 type: topoi
-tags: topoi
+tags:
 unit: 14
 author:
 img: https://i.imgur.com/fo4nKCu.png

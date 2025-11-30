@@ -1,9 +1,11 @@
 ---
-img: "https://www.deselys-psicologo.com/wp-content/uploads/2016/08/5776854365_411da97e9c_b.jpg"
+img: https://www.deselys-psicologo.com/wp-content/uploads/2016/08/5776854365_411da97e9c_b.jpg
 type: topoi
-tags: topoi,
+tags:
+  - publicspace
+  - participatory
 unit: 51
-author: 
+author:
 ---
 ## modos de escucha
 

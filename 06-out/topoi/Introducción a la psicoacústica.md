@@ -1,10 +1,11 @@
 ---
 type: topoi
-tags: psicoacústica, topoi
-unit: 00
+tags:
+  - auralarchitecture
+unit: 0
 author: Ezequiel A. Petroccelli
 publish: 2023
-img: "https://c8.alamy.com/compit/2g7me18/bianco-e-nero-sfondo-illusione-ottica-illustrazione-vettoriale-2g7me18.jpg"
+img: https://c8.alamy.com/compit/2g7me18/bianco-e-nero-sfondo-illusione-ottica-illustrazione-vettoriale-2g7me18.jpg
 ---
 
 

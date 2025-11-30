@@ -20,9 +20,15 @@ views:
       - file.name
       - year
       - person
+      - file.tags
     sort:
+      - property: tags
+        direction: ASC
       - property: year
         direction: ASC
     image: note.img
     cardSize: 110
     imageAspectRatio: 0.85
+    columnSize:
+      file.name: 228
+      note.person: 205

@@ -1,3 +1,7 @@
 [
-  "obsidian-git"
+  "maps",
+  "obsidian-plugin-groups",
+  "obsidian-git",
+  "obsidian-linter",
+  "workspaces-plus"
 ]

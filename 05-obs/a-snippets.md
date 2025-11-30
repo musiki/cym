@@ -1,3 +1,6 @@
+---
+type: help
+---
 
 
 ## [modular CSS](https://github.com/efemkay/obsidian-modular-css-layout?search=1)

@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.ext != "html"
+    - file.ext != "js"
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: file.ext
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - tags
+      - year
+      - person
+    columnSize:
+      note.tags: 180

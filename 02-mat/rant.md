@@ -2,7 +2,7 @@
 type: code
 url: 
 year:
-tags: generative, generativeliterature, cym, process, generative tools
+tags: [generative, generativeliterature, cym, process, generativetools]
 ---
 
 ```rant

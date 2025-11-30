@@ -51,3 +51,19 @@ views:
     imageFit: ""
     imageAspectRatio: 0.85
     cardSize: 140
+  - type: table
+    name: list
+    groupBy:
+      property: "tags:"
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - tags
+    sort:
+      - property: year
+        direction: ASC
+    image: note.img
+    imageFit: ""
+    imageAspectRatio: 0.85
+    cardSize: 140

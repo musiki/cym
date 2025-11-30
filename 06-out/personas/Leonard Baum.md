@@ -5,7 +5,7 @@ tags:
   - generatividad
   - speechrecognition
 born in city:
-year: "1931"
+year: 1931
 died: "2017"
 died in city:
 age:

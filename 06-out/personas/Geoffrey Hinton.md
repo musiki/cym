@@ -4,7 +4,7 @@ img: https://i.imgur.com/2gpiqsE.png
 tags:
   - ai
 born in city: Wimbledn
-year: "1947"
+year: 1947
 died:
 died in city:
 age: "77"

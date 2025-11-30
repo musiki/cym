@@ -11,7 +11,6 @@ url:
 connect:
 ---
 
-
 1.Rainforest IV es una instalación sonora colectiva en la que objetos resonantes cotidianos (metales, tubos, muelles, cubos, etc.) actúan como resonadores-acústicos y altavoces mediante excitadores/transductores.
 2. Cada objeto transforma señales eléctricas en vibración mecánica, creando un ecosistema acústico realimentado, descentralizado y emergente.
 

@@ -2,6 +2,7 @@
 type: person
 img: https://i.imgur.com/hKy6z8z.png
 tags:
+  - philosophy/aesthetics
 born in city: Strassbourg
 year: 1910
 dead year: 1990
