@@ -13,4 +13,3 @@ connect:
   - "[[Soundings, A Contemporary Score]]"
 url: https://www.tristanperich.com/
 ---
-

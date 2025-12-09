@@ -43,15 +43,16 @@
             "id": "25f989f03daabf17",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "06-out/personas/Tristan Perich.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "01-proj/25/peterschmitt/Proyectual Sombrero Sonoro/Proyectual Sombrero Sonoro.pdf",
+                "page": 2,
+                "left": -10,
+                "top": 755,
+                "zoom": 1.4987745098039216
               },
-              "icon": "lucide-file",
-              "title": "Tristan Perich"
+              "icon": "lucide-file-text",
+              "title": "Proyectual Sombrero Sonoro"
             }
           },
           {
@@ -435,13 +436,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "25f989f03daabf17",
+  "active": "58a6bf3eeea06c75",
   "lastOpenFiles": [
+    "01-proj/25/peterschmitt/Proyectual Sombrero Sonoro/Proyectual Sombrero Sonoro.pdf",
+    "01-proj/25/Proyectual ultimoooo.pdf",
+    "06-out/personas/Tristan Perich.md",
     "conflict-files-obsidian-git.md",
     "README.md",
     "cym",
-    "Proyectual ultimoooo.pdf",
-    "01-proj/25/peterschmitt/Proyectual Sombrero Sonoro/Proyectual Sombrero Sonoro.pdf",
     "01-proj/25/peterschmitt/Proyectual Sombrero Sonoro",
     "05-obs/a-yuda.md",
     "05-obs/a-snippets.md",
@@ -481,8 +483,6 @@
     "03-cla/23/c-cym08-github pages+hydra.md",
     "03-cla/23/c-cym09-flex-grid.md",
     "03-cla/23/c-cym10-Aframe.md",
-    "03-cla/23/c-cym12-Aframe2.md",
-    "03-cla/23/c-cym14-un instrumento online colectivo.md",
     "Untitled.canvas",
     "cym-metamap.canvas",
     "Sin título 1.canvas",
