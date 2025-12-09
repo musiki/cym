@@ -40,21 +40,6 @@
             }
           },
           {
-            "id": "022b2631fb246c03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          },
-          {
             "id": "25f989f03daabf17",
             "type": "leaf",
             "state": {
@@ -450,10 +435,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "022b2631fb246c03",
+  "active": "25f989f03daabf17",
   "lastOpenFiles": [
-    "README.md",
     "conflict-files-obsidian-git.md",
+    "README.md",
     "cym",
     "Proyectual ultimoooo.pdf",
     "01-proj/25/peterschmitt/Proyectual Sombrero Sonoro/Proyectual Sombrero Sonoro.pdf",
