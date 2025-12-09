@@ -1,8 +1,10 @@
 ---
-tags: 
-place: 
-connections: 
-url: 
-img: 
+tags:
+place:
+connections:
+url:
+img:
 year:
+curators:
+city:
 ---

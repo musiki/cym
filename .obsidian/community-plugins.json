@@ -3,5 +3,7 @@
   "obsidian-plugin-groups",
   "obsidian-git",
   "obsidian-linter",
-  "workspaces-plus"
+  "workspaces-plus",
+  "pdf-plus",
+  "oz-image-plugin"
 ]

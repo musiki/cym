@@ -1,20 +1,3 @@
----
-type: class
-tags:
-  - cym
-  - música
-  - visual
-  - armonía
-  - expandida
-  - class
-unit: 0
-num: 8
-year: 2023
----
-
-<!-- slide bg="#010100"--> 
-![[untref-logo-w.svg|100]]
-CYM24
 
 # Github pages
 

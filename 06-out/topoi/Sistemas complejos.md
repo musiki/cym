@@ -8,7 +8,7 @@ img: https://annex.exploratorium.edu/complexity/CompLexicon/sfi.gif
 ---
 
 
-[[Craig Reynols]] [[Boid Simulation]]
+[[Craig Reynolds]] [[Boid Simulation]]
 
 <iframe title="Craig Reynolds - Original 1986 Boids simulation" src="https://www.youtube.com/embed/86iQiV3-3IA?feature=oembed" height="150" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.33333 / 1; width: 100%; height: 100%;"></iframe>
 

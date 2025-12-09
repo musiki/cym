@@ -1,8 +1,7 @@
 ---
 type: person
 img: https://i.imgur.com/pfMfG5b.png
-tags:
-  - artistcoders
+tags: [artistcoders, vidaartificial ]
 born in city: Boston
 year: 1953
 dead year:
@@ -77,3 +76,5 @@ Craig W. Reynolds es un especialista en vida artificial y gráficos por computad
 ```
 
 
+
+**Craig W. Reynolds** (born March 15, 1953), is an [artificial life](https://en.wikipedia.org/wiki/Artificial_life "Artificial life") and [computer graphics](https://en.wikipedia.org/wiki/Computer_graphics "Computer graphics") expert, who created the [Boids](https://en.wikipedia.org/wiki/Boids "Boids") artificial life simulation in 1986.[[1]](https://en.wikipedia.org/wiki/Craig_Reynolds_(computer_graphics)#cite_note-1) Reynolds worked on the film _[Tron](https://en.wikipedia.org/wiki/Tron "Tron")_ (1982) as a scene programmer, and on [Batman Returns](https://en.wikipedia.org/wiki/Batman_Returns "Batman Returns")_ (1992) as part of the video image crew. Reynolds won the 1998 [Academy Scientific and Technical Award](https://en.wikipedia.org/wiki/Academy_Scientific_and_Technical_Award "Academy Scientific and Technical Award") in recognition of "his pioneering contributions to the development of three-dimensional computer animation for motion picture production."[[2]](https://en.wikipedia.org/wiki/Craig_Reynolds_(computer_graphics)#cite_note-2) He is the

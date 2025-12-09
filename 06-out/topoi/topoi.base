@@ -9,7 +9,6 @@ views:
         - '!file.name.startsWith("t-")'
     order:
       - file.name
-      - author
     image: note.img
   - type: table
     name: list
@@ -21,8 +20,9 @@ views:
       - author
       - tags
     sort:
-      - property: author
+      - property: file.name
         direction: ASC
     image: note.img
     columnSize:
+      file.name: 366
       note.author: 292

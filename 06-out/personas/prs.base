@@ -61,6 +61,8 @@ views:
       - year
       - tags
     sort:
+      - property: tags
+        direction: ASC
       - property: year
         direction: ASC
     image: note.img

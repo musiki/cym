@@ -9,7 +9,7 @@ place: arthaus
 curators: María Teresa Constantín, Gabriela Vicente Irrazabal
 connections:
 url: https://arthaus.ar/visuales/muestras-activas/
-img: https://arthaus.ar/wp-content/uploads/2023/10/slider_02.png
+img: https://i.imgur.com/DvEFUUF.png
 year: 2023
 city: Buenos Aires
 ---
@@ -19,6 +19,9 @@ Sergio Lamanna
 Donjo León
 Hernán Soriano
 [[Juan Sorrentino]]
+
+
+
 
 **Cazadores-recolectores**
 *¿Qué sucede si desde el presente el artista va hacia el pasado para hacer propios saberes técnicos y materiales de otros tiempos? ¿qué se puede construir desde una arqueología de lo desechado por obsoleto o viejo? ¿qué cambios o hallazgos genera el arte al permitir conexiones perceptivas y conceptuales de algo olvidado o desaparecido?* 

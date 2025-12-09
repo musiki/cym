@@ -45,4 +45,4 @@ hay varios artistas-contemporáneos-teólogos o teólogos-estetas que trabajan e
 - Lauren McCarthy crea rituales tecnológicos de conexión interpersonal, que recuerdan liturgias relacionales.
 ---
 ### Conclusión
-La teología estética de los nuevos medios ya no es necesariamente cristiana ni litúrgica, sino que opera como forma de pensamiento encarnada en lo sensible digital. Estos artistas no ilustran teología: la producen, en clave contemporánea, afectiva, espiritual y crítica.
+La teología estética de los nuevos medios  no es necesariamente cristiana ni litúrgica, sino que opera como forma de pensamiento encarnada en lo sensible digital.

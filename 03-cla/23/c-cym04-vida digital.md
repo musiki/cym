@@ -1,6 +1,6 @@
 ---
 type: class
-tags: cym, vida digital
+tags: vidadigital
 unit: 1
 num:  4
 year: 2023
@@ -42,6 +42,8 @@ note: alfabeto:::para eso repasemos el concepto de lenguaje natural. El punto in
 Las palabras si ya tienen un significado por fuera del contenido fonético. Es decir que los fonemas construyen en su combinación algo que ellos mismos no poseen. Formando dos conjuntos : los intelegibles, pertenecientes al lenguaje y los no-inteligibles (todo lo que está fuera del lenguaje). Finalmente todo se abarca dentro.
 
 ---
+
+
 ```mermaid
 flowchart TD
 
@@ -53,19 +55,17 @@ subgraph alfabeto
 grafo1-->grafo2-->grafo3
 end
 end
-
 end
 end
 end
-
-
 ```
+```
+
+
+
 ---
 
 # lenguaje formal 
-
----
-
 
 
 note: los lenguajes de programación en cambio son lenguajes formales, no emergen de forma natural sino de modo estructurado. Esto es un poco lo que provoca el shock cultural que sentimos cuando empezamos a programar. La forma de hablar con los sistemas exo-humanos es aun formal en el sentido que le damos al lenguaje. Esta es también la revolución del 2017 con los Transformers de ML. Que por primera vez un lenguaje natural llega a la convergencia de los históricos lenguajes formales. Lo ampliaremos al hablar de ML. 
@@ -73,20 +73,20 @@ Los lenguajes formales están compuestos por 1. albabeto, sintáxis y semántica
 
 ---
 
-### alfabeto
-paul klee
+# alfabeto
+## paul klee
 
 
 ---
 
-### alfabeto
+# alfabeto
 
-arnold schoenberg
+## arnold schoenberg
 
 
 ---
-### alfabeto
-arnold schoenberg
+# alfabeto
+## arnold schoenberg
 
 - [[r-memex]]
 - [[hi augmentation]]
@@ -94,27 +94,24 @@ arnold schoenberg
 - [[Augmented Cognition]]
 
 ---
-### alfabeto
-mark andre
+# alfabeto
+## mark andre
 
 
 
 ---
-### alfabeto
-helmut lachenmann 
+# alfabeto
+## helmut lachenmann 
 
 ---
-### alfabeto
-
-punto, linea y plano. 
+# alfabeto
+## punto, linea y plano. 
 
 ---
-### alfabeto
+# alfabeto
 
-```javascript
-
+```js
 for (int i = 0; i < 10; i++) {print(i)}
-
 ```
 
 ---
@@ -149,6 +146,7 @@ subgraph 1985
 d1[Tim Berners-Lee]-->d
 end
 ```
+
 
 ---
 ## semántica
@@ -244,8 +242,6 @@ ejemplos en obisidian
 ---
 note:todos ellos tienen también enlaces a una nueva ciencia del artículo científico, representación en látex sin js, comentarios en disqus, gestores de referencias (mendeley, zotero, paperbox) y link-ificación automática.
 
----
-
 
 ---
 Gestores de notas , referencias, vida etc.
@@ -259,23 +255,22 @@ Niklas Luhman
 
 
 ---
+
 <iframe title="Einblicke in das System der Zettel - Geheimnis um Niklas Luhmanns Zettelkasten" src="https://www.youtube.com/embed/4veq2i3teVk?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 ---
 
-# sumario de herramientas e ideas 
+## sumario de herramientas e ideas 
 
-[[a-dataview]] 
-guido 
-exalidraw 
-mermaid
-mnemonis medium
-space repetition
-project-based subject
-executable books
-dynamic music scores
-new papers
-
-
+[[a-dataview]] <br>
+guido <br>
+exalidraw <br>
+mermaid<br>
+mnemonis medium<br>
+space repetition<br>
+project-based subject<br>
+executable books<br>
+dynamic music scores<br>
+new papers<br>
 ---
 
 [[blog MOC]]
