@@ -1,7 +1,8 @@
 filters:
   and:
-    - type == "person"
+    - file.folder == "06-out/personas"
     - '!file.name.startsWith("t-")'
+    - file.ext != "base"
 views:
   - type: cards
     name: all
@@ -69,3 +70,15 @@ views:
     imageFit: ""
     imageAspectRatio: 0.85
     cardSize: 140
+  - type: cards
+    name: scientists
+    filters:
+      and:
+        - file.tags.contains("science")
+    order:
+      - file.name
+    sort:
+      - property: file.name
+        direction: ASC
+    image: note.img
+    imageAspectRatio: 0.6

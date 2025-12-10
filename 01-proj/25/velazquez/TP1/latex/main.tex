@@ -1,0 +1,318 @@
+\documentclass[spanish]{report}
+
+% -------------------------
+% PAQUETES GENERALES
+% -------------------------
+\usepackage[utf8]{inputenc}       % Codificación UTF-8
+\usepackage[spanish]{babel}       % Configuración del idioma en español
+\usepackage{graphicx, tikz, amsmath, amssymb, xcolor, fancyhdr, svg, geometry, hyperref, csquotes} 
+\renewcommand{\familydefault}{\sfdefault} % Fuente sans-serif por defecto
+\usepackage{listings}
+\usepackage{color}
+\renewcommand{\lstlistingname}{Resultado}
+
+% colores más suaves para el resaltado
+\definecolor{blue}{HTML}{0C429F}
+\definecolor{dkgreen}{HTML}{009681}
+\definecolor{gray}{HTML}{CCCCCC}
+\definecolor{mauve}{HTML}{4327C2}
+
+\lstset{frame=tb,
+  language=R,
+  aboveskip=8mm,
+  belowskip=8mm,
+  captionpos=b,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\ttfamily\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=5
+}
+
+% -------------------------
+% CONFIGURACIÓN DE FECHA Y HORA
+% -------------------------
+\usepackage{datetime2} 
+\DTMsetdatestyle{ddmmyyyy} % Formato de fecha dd-mm-yyyy
+\newcommand{\fechaHoy}{\DTMdisplaydate{\year}{\month}{\day}{-1}} % Generar fecha en español
+
+% -------------------------
+% CONFIGURACIÓN DE FORMATO Y MÁRGENES
+% -------------------------
+\setlength{\headheight}{19.7pt}  % Asegurar espacio suficiente para fancyhdr
+\addtolength{\topmargin}{-7.7pt} % Ajuste del margen superior para compensar el header
+\usepackage{float}                % Mejor control de figuras flotantes
+\setlength{\intextsep}{80pt}       % Espaciado global entre figuras y texto
+\newcommand{\headervshift}{0cm} % Ajuste vertical del logo
+\newcommand{\headersep}{4cm} % Espaciado entre header y texto
+\newcommand{\sectionsep}{1cm} % Espaciado entre secciones
+
+
+% -------------------------
+% CONFIGURACIÓN DEL HEADER
+% -------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+% Página número a la izquierda antes del logo
+\lhead{\thepage \quad \vspace{-5pt}\includesvg[width=1cm]{UNTREF_Logo_2016}}
+
+% Autor, año, título y cátedra a la derecha
+\rhead{\textit{\apellidos \quad \annoActual \quad \tituloDocumento \quad \abreviaturaCatedra}}
+
+\renewcommand{\headrulewidth}{0.0pt} % Sin línea en header
+
+% Define colors
+\definecolor{indigo}{rgb}{0.29, 0.0, 0.51}
+
+
+% -------------------------
+% VARIABLES PRINCIPALES
+% -------------------------
+\newcommand{\tituloDocumento}{Paradigmas operativos}
+\newcommand{\subtitulo}{Noción de paradigma operativo como estructura lógica-metodológica que articula intuición y razón en la creación artística con base científica y algorítmica}
+\newcommand{\autor}{Barbara Velazquez}
+\newcommand{\apellidos}{Velazquez}
+\newcommand{\catedra}{Ciencia y música}
+\newcommand{\carrera}{Licenciatura en Música}
+\newcommand{\universidad}{UNIVERSIDAD NACIONAL DE TRES DE FEBRERO}
+
+\newcommand{\abreviaturaCatedra}{cym}
+\newcommand{\annoActual}{\the\year} % Año actual
+
+% -------------------------
+% CONFIGURACIÓN DE CITAS Y BIBLIOGRAFÍA (APA)
+% -------------------------
+\usepackage[
+    backend=biber,
+    style=apa,
+    urldate=long,
+    maxcitenames=3,
+    maxbibnames=99,
+    backref=false,
+    language=spanish
+]{biblatex}
+
+\DeclareLanguageMapping{spanish}{spanish-apa}
+
+% Personalización de la bibliografía en APA
+\AtEveryBibitem{%
+    \clearfield{month}   % Eliminar mes
+    \clearfield{issn}    % Eliminar ISSN
+    \clearfield{doi}     % Opcionalmente eliminar DOI
+}
+
+% Modificar formato de las citas
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+\DeclareFieldFormat{postnote}{#1}  % Evita agregar "p." en páginas
+\renewcommand*{\mkbibnamefamily}[1]{\textbf{#1}} % Apellidos en negrita
+
+% Agregar archivo de bibliografía
+\addbibresource{ref.bib}
+
+% -------------------------
+% CONFIGURACIÓN DE HIPERVÍNCULOS
+% -------------------------
+\hypersetup{
+    colorlinks=true,     % Habilitar colores en enlaces
+    linkcolor=black,     % Color negro para enlaces internos
+    citecolor=blue,      % Color azul para citas
+    filecolor=black,     
+    urlcolor=black,      
+    pdfborder={0 0 0}    % Quitar bordes en hipervínculos
+}
+
+% -------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------
+\title{\tituloDocumento}
+\author{\autor}
+\date{\fechaHoy}
+
+
+
+% -------------------------
+% DOCUMENTO PRINCIPAL
+% -------------------------
+\begin{document}
+
+\input{caratula}
+% \maketitle
+
+% -------------------------
+% TITULO EN PRIMERA PÁGINA
+% -------------------------
+\begin{center}
+    {\Large \tituloDocumento}\\[0.5cm]
+    {\large \autor}\\[0.3cm]
+    {\small \fechaHoy}\\[1cm]
+    {\large \universidad}\\
+    {\large \carrera}\\
+    {\large \catedra}\end{center}
+    
+\vspace*{2cm}
+\thispagestyle{empty} % Sin header en portada
+
+\pagestyle{fancy} % Aplicar header en el resto del documento
+
+% -------------------------
+% SECCIONES
+% -------------------------
+
+
+\section{Introducción - Paradigma operativo}
+\vspace{\sectionsep}
+Paradigma operativo: el cuerpo como interfaz expandida
+
+\vspace{\sectionsep} En este paradigma, el cuerpo puede prolongarse mediante prótesis, sensores o algoritmos; la agencia se distribuye entre lo biológico y lo maquínico, no como sustitución, sino como cooperación activa entre sistemas. En la cultura contemporánea, el cuerpo deja de pensarse como unidad cerrada y se concibe como una plataforma conectable.
+
+\vspace{\sectionsep} “El cuerpo ya no es concebido como el límite natural de lo humano, sino como un soporte abierto a ser intervenido, reprogramado o prolongado mediante dispositivos técnicos” \parencite {Sibilia, 2005, p. 45.}
+
+\vspace{\sectionsep} La extensión del cuerpo mediante dispositivos tecnológicos actúa como expansión de la agencia, respondiendo a los gestos del performer con cierta autonomía.
+
+\vspace{\sectionsep} “La tecnocultura contemporánea produce cuerpos que ya no se bastan a sí mismos, que reclaman ser complementados, optimizados o rediseñados” \parencite {Sibilia, 2005, p. 62.}
+
+\vspace{\sectionsep} Así, la agencia fluye entre biología y máquina, generando un cuerpo ampliado, atravesado por intensidades y conexiones. Los dispositivos no son añadidos externos, sino extensiones de la propia corporeidad, y la obra surge de esta interacción distribuida de fuerzas, donde le performer se convierte en un nodo dentro de un ensamblaje relacional.
+
+
+\subsection{Obras referenciales y/o estado del arte}
+\vspace{\sectionsep}
+Exoskeleton. \parencite{Stelarc, 1997}.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.7]{unnamed.jpg}
+\caption{Stelarc}
+\label{blackhole}
+\end{figure}
+
+
+\vspace{2cm}
+\section{Metodología}
+\vspace{\sectionsep}
+
+\begin{equation}
+(\cdot_{h} \; \diamond^{-1} \; \cdot_{ai}) \; \subset \; (M_{h} \; \cup \; \blacksquare_{d}) \; \leftrightarrow \; \square_{h}
+\end{equation}
+
+\vspace{0.5cm}
+donde:
+
+$\cdot_{h}$ = agente humano (cuerpo)
+
+$\diamond^{-1}$ = transferencia / transformación de agencia
+
+$\cdot_{ai}$ = agente artificial (máquinas, sistemas autónomos)
+
+$M_{h}$ = material híbrido (cuerpo + prótesis + sensores)
+
+$\blacksquare_{d}$ = material digital (interfaces, datos)
+
+$\square_{h}$ = entorno híbrido (redes, espacio tecnocultural)
+
+Operadores clave:
+
+$\diamond^{-1}$ = cambio de agencia: desplazamiento de lo humano hacia lo artificial
+
+$\leftrightarrow$ = "interfaceado": mediación entre sistemas y cuerpos
+
+$\subset$ = inclusión: el cuerpo queda subsumido dentro de una ecología mayor de sistemas
+
+
+\vspace{0.5cm}
+En la práctica artística de Stelarc, el $\cdot_{h}$ (cuerpo humano) ya no se concibe como entidad autosuficiente, sino como un nodo en proceso de transferencia de agencia $\diamond^{-1}$ hacia el $\cdot_{ai}$ (sistemas artificiales). El cuerpo deviene $M_{h}$ (material híbrido), ensamblado con $\blacksquare_{d}$ (materiales digitales) y reconfigurado en un $\square_{h}$ (entorno híbrido). A través del "interfaceado "$\leftrightarrow$, lo humano no actúa como centro, sino como elemento dentro de una red de prótesis, algoritmos y dispositivos. Así, la obsolescencia del cuerpo en Stelarc no es mera desaparición, sino su reinscripción como nodo relacional, subordinado $\subset$ a dinámicas más amplias donde la agencia circula y se redistribuye entre humano y máquina.
+
+
+\begin{lstlisting}[language=JavaScript, caption=
+Simulación conceptual del paradigma operativo en JavaScript., label=lst:js_new_paradigm]
+// Pseudocódigo conceptual del paradigma operativo
+
+function Sistema(AgenteHumano, ObjetoInstrumental, MaterialHibrido, RedistribAgencia) {
+    // La interfaz procesa el movimiento humano
+    let señal = ObjetoInstrumental.procesar(AgenteHumano);  
+    
+    // La extensión/prótesis responde a la señal
+    let accion = MaterialHibrido.actuar(señal);           
+    
+    // La agencia se redistribuye y se integra en el resultado final
+    return combinar(AgenteHumano, accion, RedistribAgencia); 
+}
+
+function combinar(AgenteHumano, Accion, RedistribAgencia) {
+    return { MovimientoIntegrado: AgenteHumano + Accion + RedistribAgencia };
+}
+
+// Uso conceptual
+let output = Sistema(1, { procesar: m => m*0.8 }, { actuar: s => s*1.2 }, 0.5);
+console.log(output); // { MovimientoIntegrado: 2.46 }
+\end{lstlisting}
+
+
+% -------------------------
+% GRÁFICO DEL PARADIGMA OPERATIVO
+% -------------------------
+
+\begin{tikzpicture}[every node/.style={rectangle, rounded corners, draw, align=center, text width=3.5cm}]
+
+% Coordenadas circulares para los nodos
+\node (Cuerpo)      at (90:5cm)  [fill=orange!50] {Agente Humano \\ $\cdot_{h}$};
+\node (Protesis)    at (18:5cm)  [fill=green!30] {Material Híbrido \\ $M_{h}$};
+\node (Instrumento) at (306:5cm) [fill=yellow!30] {Objeto Instrumental \\ $\diamond_{i}$};
+\node (Agencia)     at (234:5cm) [fill=blue!30] {Redistribución de Agencia \\ $\cdot_{h} \diamond^{-1} \cdot_{ai}$};
+\node (Resultado)   at (162:5cm) [fill=violet!30] {Resultado Integrado \\ $\odot$};
+
+% Conexiones bidireccionales
+\foreach \i/\j in {Cuerpo/Protesis, Cuerpo/Instrumento, Cuerpo/Agencia, Cuerpo/Resultado,
+                    Protesis/Instrumento, Protesis/Agencia, Protesis/Resultado,
+                    Instrumento/Agencia, Instrumento/Resultado,
+                    Agencia/Resultado} {
+    \draw[<->, thick] (\i) -- (\j);
+}
+\end{tikzpicture}
+
+
+
+
+
+\caption{Diagrama del flujo del sistema inspirado en la obra de Stelarc. Los nodos representan entidades. Las flechas bidireccionales muestran la interrelación dinámica entre todos los elementos del sistema, que evidencia el ensamblaje de fuerzas y relaciones que atraviesan cuerpos, prótesis, algoritmos y entornos híbridos.}
+
+
+\section{Demostración}
+\vspace{\sectionsep}
+Creación de proto-prótesis a partir de un telefono celular inteligente.
+
+Para poner a prueba el paradigma operativo del cuerpo como interfaz expandida, realicé una micro-obra utilizando un teléfono inteligente como mediador entre movimiento corporal y generación sonora. El dispositivo, equipado con acelerómetro y giroscopio, permite registrar desplazamientos en los ejes X e Y.
+
+A través de la aplicación MobMuPlat, estos datos de movimiento se traducen en parámetros de control para el sonido en tiempo real. Así, el gesto corporal no se limita a accionar un instrumento externo, sino que se convierte directamente en variable operativa del sonido.
+
+    \includegraphics[width=0.5\linewidth]{mi brazo 1.jpeg}
+    \includegraphics[width=0.5\linewidth]{mi brazo.jpeg}
+
+\section{Conclusiones, crítica, refutación}
+\vspace{\sectionsep}
+La obra y el pensamiento de Stelarc invitan a repensar el cuerpo humano y su relación con la tecnología: un cuerpo que puede ser ampliado y distribuido a través de sistemas. La interacción entre performer-prótesis evidencia que los sistemas humanos y no humanos pueden formar ensamblajes creativos, donde la obra emerge de la interrelación dinámica de fuerzas y acciones.
+
+En diversos textos y entrevistas, Stelarc ha sostenido que “el cuerpo está obsoleto”, sugiriendo que la forma humana resulta inadecuada frente al entorno tecnológico contemporáneo, como así también que las inteligencias artificiales constituyen una amenaza. Lejos de la obsolescencia o la amenaza, lo que se observa en la práctica artística y tecnológica es que la producción de sentido surge de la interacción: el cuerpo, los dispositivos, los algoritmos y los sistemas autónomos funcionan como nodos en una red que redistribuye la agencia y que se reconfigura en cada instancia performativa.
+
+En este sentido, el paradigma de Stelarc puede expandirse hacia una visión en la cual las máquinas no operan como enemigas ni sustitutas, sino como co-agentes dentro de ensamblajes heterogéneos. La obra reside en la relación entre el cuerpo - sensor/protesis - entorno, creando un sistema complejo y afectivo.
+
+% -------------------------
+% BIBLIOGRAFÍA
+% -------------------------
+
+\vspace{5cm}
+\section{Bibliografía}
+\printbibliography 
+- Sibilia, P. (2006). El hombre postorgánico: Cuerpo, subjetividad y tecnologías digitales.
+
+- Stelarc. (2023). An Interview with Stelarc. Northwestern Art Review. Recuperado de: 
+
+https://www.northwesternartreview.org/articles/an-interview-with-stelarc
+
+\end{document}
