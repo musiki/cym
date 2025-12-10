@@ -37,3 +37,6 @@ what Kyle Gann calls maximalist style.
 
 Gordon Pask, cibernetic public participation
     [https://eliza-pert.medium.com/1969-ab2783c47cbf](https://eliza-pert.medium.com/1969-ab2783c47cbf)
+
+
+Erin Manning, [The dance of Attention, 2013](http://www.inflexions.org/n6_manning.pdf)

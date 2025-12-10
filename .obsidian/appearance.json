@@ -1,13 +1,13 @@
 {
   "accentColor": "#337175",
-  "cssTheme": "Minimal",
+  "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
     "s1",
     "obsidian",
     "cards",
     "mathjax sizes"
   ],
-  "theme": "moonstone",
+  "theme": "obsidian",
   "interfaceFontFamily": "DankMono Nerd Font,Consolas",
   "textFontFamily": "DankMono Nerd Font,Dank Mono,Consolas",
   "baseFontSize": 21
