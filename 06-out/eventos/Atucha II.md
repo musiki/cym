@@ -105,3 +105,17 @@ Es difícil anticipar de antemano qué puede surgir de cruces especificos y cola
 
 ![](https://i.imgur.com/DlqdnbE.png)
 
+## Bárbara Velazquez
+
+### 1
+Me resultó especialmente revelador comprender que existe una diversidad de matrices energéticas contemporáneas, y que la mayoría de los sistemas de generación eléctrica se sostienen en un mismo principio operativo: inducir el movimiento de una turbina mediante agua en alguno de sus estados —líquido o vapor— para convertir energía mecánica en energía eléctrica. Este mecanismo, cuya continuidad histórica le da un carácter casi primitivo, funciona al mismo tiempo como soporte para desarrollos tecnológicos y científicos de gran complejidad, convirtiéndose en una norma estructurante del campo energético.
+
+Esta lógica —un conjunto mínimo de reglas capaz de desplegar posibilidades casi infinitas— me permite repensar la creación musical desde un paradigma afín: partir de una regla elemental, incluso de algo que percibimos como arcaico o conocido, para habilitar expansiones y transformaciones que se multiplican a partir de ese gesto inicial, como el agua en movimiento desencadena toda una arquitectura energética.
+
+### 2
+Desde una perspectiva especulativa, imagino una acción artística que no reproduzca literalmente la tecnología nuclear, sino que se base en sus principios fundamentales: la fisión, que requiere la interacción precisa de neutrones para desencadenar la liberación de energía, y la fusión, proceso de combinación y transformación constante; el calor como resultado y motor de procesos dinámicos. Este sistema propone una red de dispositivos interconectados, donde cada unidad reacciona y modifica su comportamiento en función de las señales recibidas de las demás, generando un flujo de información y energía contenida que remite al imaginario del reactor nuclear: un núcleo opaco, complejo y en constante circulación interna. Así, cada gesto o evento en un dispositivo funciona como un “neutrón” que desencadena reacciones en otros nodos, estableciendo un diálogo cíclico y reactivo que expande el concepto de interacción tecnológica hacia una metáfora viva de la energía atómica, abarcando dimensiones simbólicas, perceptuales y éticas sin apropiarse de la tecnología de manera literal.
+
+### 3
+Entendiendo la ausencia del pleroma pitágorico, la contemporaneidad se caracteriza por una creciente hiperespecificidad de las áreas de conocimiento, que fragmenta saberes y disciplinas antes entrelazadas. Es una visita guíada una manera de generar un puente, un atisbo de conexión y de acercamiento a esa transdisciplinariedad, que deviene en enriquecimiento del área de conocimiento estudiada.
+En les estudiantes de artes electrónicas y música, la vínculación es por un lado humana, habitar ese espacio de generación genera un lazo de pertenencia y cercanía, y por el otro también es inspiradora para la creación de sistemas complejos que permiten profundizar la conexión entre arte-ciencia.  
+Desde lo personal, creo que todo estudiante y persona que habita el país, debería conocer una central porque genera un vínculo con la creación de la energía eléctrica que sostiene cada elemento de lo cotidiano. Es en esa conexión, donde se generan infinitos interrogantes de cómo hacer y pensar la música, me obliga a ampliar los horizontes de conocimientos hacia la ciencia y a seguir profundizando la investigación sobre cosmologías, en todos sus despliegues.

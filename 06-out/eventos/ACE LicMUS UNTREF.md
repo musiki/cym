@@ -28,6 +28,8 @@ LAL (UNLP, Gonnet)
 Servicio Meteorológico Nacional
 
 
+# statement
+En el siglo XIX, Claude Monet inventa su "pincelada pura" y los espectros atmosféricos,al comprender, leyendo a Helmholtz, que el ojo no percibe colores objetivos sino fenómenos perceptuales de luz y tiempo retiniano. Décadas después, Wassily Kandinsky transforma el espacio-tiempo de Einstein y las geometrías no euclidianas de Klein en un plano pictórico regido por fuerzas dinámicas; Duchamp lo hará con su "cuarta dimensión" comprendiendo los hipersólidos de Poincaré (1926); Nam June Paik materializará la teoría de la señal de Wiener en Random Access y Magnet TV (1961). Aun, podríamos especular que György Ligeti inspira a Edward Lorenz y sus atractores  caóticos (1963) componiendo Atmosphères (1961). No sabemos cuando ni como sucede pero los modelos de la mente artística y la científica se realimentan y colisionan reciprocamente en misteriosos meandros. Por ello, desde la cátedra de Ciencia y Música de la LicMus UNTREF impulsamos en 2025 el proyecto Arte, Ciencia y Educación (ACE-LicMus UNTREF) con la visita al Complejo Nuclear Atucha, junto a estudiantes y docentes de Música y Artes Electronicas. Agradecemos al apoyo de la Coordinación, el Rectorado de UNTREF y NA-SA Argentina que posibilitaron el proyecto. Seguimos en 2026! #cymuntref #ACEcymuntref #licmusuntref #arteciencia #músicaciencia #cienciaargentina
 
 # objetivos
 
