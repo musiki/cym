@@ -9,8 +9,6 @@ img: https://i.imgur.com/xhug498.jpeg
 year: 2025
 city: Lima San Nicolás
 ---
-https://docs.google.com/forms/d/170pLTMIyavbDXsk2rSVz5F-HaoKbWQYPbgR6gDijTKQ/edit˛
-
 
 
 # devoluciones de alumnxs

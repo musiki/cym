@@ -324,9 +324,29 @@
               "icon": "lucide-ghost",
               "title": "QUICKSHARE_SIDE_VIEW"
             }
+          },
+          {
+            "id": "15959458140887d6",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "4bee71aa64a24bcc",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
+            }
           }
         ],
-        "currentTab": 16
+        "currentTab": 18
       },
       {
         "id": "b33cb9828f682814",
@@ -384,7 +404,24 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian42-brat:BRAT": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "translate:Open translation view": false,
+      "wikipedia-search:Open Article": false,
+      "callout-manager:Insert Callout": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "3e504b3ad4262df1",
