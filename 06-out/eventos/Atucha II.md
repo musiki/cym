@@ -18,7 +18,12 @@ city: Lima San Nicolás
 ## Delfina Peterschmitt
 ### Transferencia conceptual desde la ciencia al arte.
 ``
-Durante mi recorrido por Atucha II hubo varios momentos y conceptos que funcionaron como disparadores poéticos, pero hubo uno que, sin esperarlo, se transformó en un verdadero paradigma operativo para mi práctica artística: la noción de **sistema crítico** y la forma en que la planta entera parece estar diseñada para evitar que la energía cruce ciertos límites. Mientras observaba el esquema del reactor y los mecanismos de control, principalmente las barras moderadoras, el flujo de neutrones y los sistemas de regulación en tiempo real, tuve la sensación de estar frente a una metáfora física del equilibrio humano: un cuerpo o una mente que contiene dentro de sí un movimiento permanente, invisible, que debe ser regulado para no excederse ni apagarse por completo. Esa lógica de tensión entre potencia y contención, entre expansión y control, me resultó profundamente inspiradora.Lo que resonó en mí fue el modo en que la energía no se “ve”, pero deja huellas, curvas, mediciones, mapas térmicos, patrones. Esa idea se traduce directamente a mi lenguaje artístico: pensar el sonido, la luz o el gesto como trazadores de una fuerza interna que no se ve directamente, pero cuya presencia es innegable.
+Durante mi recorrido por Atucha II hubo varios momentos y conceptos que funcionaron como disparadores poéticos, pero hubo uno que, sin esperarlo, se transformó en un verdadero paradigma operativo para mi práctica artística: la noción de **sistema crítico** y la forma en que la planta entera parece estar diseñada para evitar que la energía cruce ciertos límites. Mientras observaba el esquema del reactor y los mecanismos de control, principalmente las barras moderadoras, el flujo de neutrones y los sistemas de regulación en tiempo real, tuve la sensación de estar frente a una *metáfora física del equilibrio humano*: 
+
+>un cuerpo o una mente que contiene dentro de sí un movimiento permanente, invisible, que debe ser regulado para no excederse ni apagarse por completo. 
+
+Esa **lógica de tensión** entre potencia y contención, entre expansión y control, me resultó profundamente inspiradora. Lo que resonó en mí fue el modo en que la energía no se “ve”, pero deja huellas, curvas, mediciones, mapas térmicos, patrones. Esa idea se traduce directamente a mi lenguaje artístico: pensar el sonido, la luz o el gesto como **trazadores** de una fuerza interna que no se ve directamente, pero cuya presencia es innegable.
+
 Desde ahí se volvió evidente un puente conceptual: la planta como organismo y el arte como un intento de revelar sus pulsos internos. Lo que más me impactó no fue lo imponente sino lo microscópico: las variaciones mínimas que desencadenan transformaciones enormes.
 Este concepto podría convertirse en un paradigma operativo para mí de varias maneras:
 #### Como estructura sonora: 
@@ -28,9 +33,9 @@ traducir las curvas del flujo de neutrones o la variación térmica en oscilacio
 un dispositivo donde el cuerpo humano funcione como “reactor emocional”, con sensores que midan mínimas variaciones (ritmo cardíaco, conductancia, ondas cerebrales) y las conviertan en una modulación sonora o visual.
 
 #### Como narrativa: 
-la idea del “punto crítico”, ese umbral donde algo cambia sin retorno, como metáfora poética del pensamiento o del estado emocional.
+la idea del “**punto crítico**”, ese umbral donde algo cambia sin retorno, como metáfora poética del pensamiento o del estado emocional.
 Como imagen o visualidad: trabajar con mapas de calor o esquemas internos del reactor como abstracciones geométricas que traduzcan energía contenida.
-#### Síntesis
+### Síntesis
 lo que me inspiró en Atucha II no fue solamente su dimensión técnica, sino la idea de un sistema que pulsa. Esa coexistencia de precisión, peligro, latencia y equilibrio me abrió la posibilidad de pensar mi obra como un campo donde fuerzas invisibles se vuelven sensibles, donde el arte funciona como mediador entre energía y percepción, del mismo modo que la ingeniería lo hace entre energía y materia.
 ### 2. Especulación Arte → Ciencia
 Después de haber conocido más de cerca el proceso de generación de energía nuclear, empecé a imaginar una acción artística que no reproduzca literalmente su tecnología, sino que dialogue con su lógica profunda, con su dimensión simbólica, perceptiva y ética. No me interesa apropiarme del procedimiento técnico, sino interpretar lo que la energía atómica significa como fenómeno humano: una fuerza descomunal contenida, regulada y traducida a utilidad. La acción que imagino tendría forma de instalación performática interactiva, donde el público se convierte en un elemento central del sistema, casi como si cada cuerpo funcionara como un “reactor emocional” o un “núcleo inestable” que requiere regulación y lectura de sus variaciones internas.
