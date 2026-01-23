@@ -1,2 +1,0 @@
-
-sator tenet opera rotas

@@ -1,4 +1,0 @@
-#procedimientos
-
-
-La creatividad combinatoria se refiere al proceso de combinar diferentes ideas, conceptos o elementos de una manera única e innovadora para crear algo nuevo. Este tipo de creatividad implica sintetizar elementos dispares para formar un todo coherente que es mayor que la suma de sus partes. A menudo requiere pensar fuera de lo establecido, establecer conexiones inesperadas y estar abierto a nuevas posibilidades. La creatividad combinatoria puede dar lugar a innovaciones revolucionarias, perspectivas frescas y soluciones originales a problemas complejos. Es una habilidad esencial para artistas, diseñadores, inventores y cualquier persona que busque pensar de forma creativa y producir trabajos novedosos.

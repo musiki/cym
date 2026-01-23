@@ -47,7 +47,7 @@ post-humanismo, feminismo cyborg queer, neurociencias, alteraciones perceptivas,
 ###  50 sociales
   , [[Arte participativo]], exhibiciones históricas , sistemas de creencias, hacktivismo 
 
-### [[Espacio]]
+### [[01 prj/_dev/22 ita/espacio]]
 arquitectura , arquitectura aural 
 ,  tiempo 
 ,  soundscape 

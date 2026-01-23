@@ -2,6 +2,8 @@ filters:
   and:
     - file.ext != "html"
     - file.ext != "js"
+    - '!file.name.startsWith("Icon")'
+    - '!file.name.startsWith("t-")'
 views:
   - type: table
     name: Table
@@ -14,5 +16,11 @@ views:
       - tags
       - year
       - person
+    sort:
+      - property: type
+        direction: ASC
+      - property: year
+        direction: ASC
     columnSize:
-      note.tags: 180
+      note.tags: 192
+      note.year: 108

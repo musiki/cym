@@ -1,4 +1,0 @@
-#topoi 
-
-Gordon Matta-Clark
-

@@ -5,5 +5,8 @@
   "obsidian-linter",
   "workspaces-plus",
   "pdf-plus",
-  "oz-image-plugin"
+  "oz-image-plugin",
+  "dataview",
+  "better-inline-fields",
+  "metadata-menu"
 ]
