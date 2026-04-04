@@ -1,8 +1,10 @@
 # Ignorar archivos temporales y de sistema
 .DS_Store
+.env
 .trash/
 .history/
 .pandoc/  # Asumiendo que "?.pandoc" era un typo para ".pandoc"
+legacy/
 
 # Ignorar configs personales/volátiles en .obsidian
 .obsidian/workspace.json  # Layout de ventanas, cambia mucho
@@ -22,5 +24,4 @@
 .obsidian
 .obsidian/plugins/
 b/
-
 
