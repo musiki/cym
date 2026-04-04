@@ -1,0 +1,34 @@
+name: Notify Platform Content Sync (Content Bus)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cursos/**"
+      - "public/**"
+      - "draft/**"
+      - "CODEOWNERS"
+      - ".github/workflows/notify-platform-on-content-change.yml"
+  workflow_dispatch:
+
+jobs:
+  notify-platform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Content Bus Webhook
+        env:
+          CONTENT_BUS_SECRET: ${{ secrets.CONTENT_BUS_SECRET }}
+        run: |
+          # Avisamos al Content Bus del Framework (Zero Downtime)
+          # Usamos -sS --fail-with-body para que falle en errores 4xx/5xx pero nos muestre el porqué
+          # El '-d @-' es fundamental para leer el JSON del heredoc
+          curl -sS --fail-with-body -X POST https://www.musiki.org.ar/api/webhook/content-update \
+            -H "Authorization: Bearer ${CONTENT_BUS_SECRET}" \
+            -H "Content-Type: application/json" \
+            -d @- <<JSON
+          {
+            "source_repo": "${{ github.repository }}",
+            "source_sha": "${{ github.sha }}",
+            "source_ref": "${{ github.ref_name }}"
+          }
+          JSON

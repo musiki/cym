@@ -1,0 +1,11 @@
+# Public notes require teaching and editorial review.
+/public/ @musiki/docentes-cym @musiki/editorial
+
+# Course-private and draft material stay with the teaching team.
+/cursos/ @musiki/docentes-cym
+/draft/ @musiki/docentes-cym
+
+# Repo automation and governance stay with developers.
+/.github/workflows/ @musiki/devs
+/CODEOWNERS @musiki/devs
+/README.md @musiki/devs
